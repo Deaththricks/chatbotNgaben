@@ -43,7 +43,17 @@
     "dulang tanah": "dulang",
     "dulang atau meja kecil": "dulang",
     "sisig di atas takir ini": "sisig",
-    "malem di atas takir": "malem"
+    "malem di atas takir": "malem",
+    "petulangan": "patulangan",
+    "petulasan": "patulangan",
+    "palebon": "upacara_palebon_ngaben",
+    "pelebon": "upacara_palebon_ngaben",
+    "mamukur": "mamukur_dan_upacara_sebangsa",
+    "memukur": "mamukur_dan_upacara_sebangsa",
+    "panca maha bhuta": "pancamahabutha",
+    "panca mahabhuta": "pancamahabutha",
+    "moksha": "moksa",
+    "molsa": "moksa"
   },
 
   "keep_distinct": [

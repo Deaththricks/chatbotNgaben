@@ -14,8 +14,6 @@ rasa_bot/
 .env
 .env.*
 !.env.example
-endpoints.yml
-credentials.yml
 
 # senior's reference example 
 Graphing/chatbot-budaya-bali/

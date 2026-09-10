@@ -1,33 +1,87 @@
-version: "3.1"
+version: '3.1'
 
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+- sapa
+- pamit
+- bot_challenge
+- out_of_scope
+- tanya_definisi
+- tanya_klasifikasi
+- tanya_jenis
+- tanya_fungsi
+- tanya_bahan
+- tanya_lokasi
+- tanya_waktu
+- tanya_pelaku
+- tanya_simbol
+- tanya_alasan
+- tanya_relasi
+- daftar_istilah
+- bandingkan_istilah
+- cari_istilah
+- minta_acak
+
+entities:
+- istilah
+- istilah2
+- tipe
+
+slots:
+  istilah:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: istilah
+  istilah2:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: istilah2
+  tipe:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: tipe
+
+actions:
+- action_definisi
+- action_klasifikasi
+- action_jenis
+- action_atribut
+- action_alasan
+- action_relasi
+- action_daftar_istilah
+- action_bandingkan
+- action_cari
+- action_acak
+- action_default_fallback
 
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
+  utter_sapa:
+  - text: |-
+      Om Swastiastu 🙏 Saya asisten istilah upacara Ngaben (kremasi Bali). Yang bisa saya bantu:
+      • arti istilah — "apa itu tirtha pangentas"
+      • klasifikasi — "ngaben termasuk apa"
+      • jenis/bagian — "apa saja jenis ngaben"
+      • fungsi/bahan/lokasi/waktu/pelaku — "bade dipakai untuk apa", "pripih terbuat dari apa", "di mana sekah diletakkan"
+      • makna simbolis — "nganyut melambangkan apa"
+      • hubungan — "hubungan sekah dan pitra"
+      • daftar per kategori — "sebutkan tahapan upacara ngaben"
+      • perbandingan — "apa beda bade dan wadah"
+      • pencarian — "cari istilah tirtha"
+  - text: |-
+      Om Swastiastu 🙏 Saya bot glosarium Ngaben. Tanyakan arti, jenis, fungsi, lokasi, waktu,
+      pelaku, makna, atau hubungan sebuah istilah — atau minta "istilah acak" untuk mulai.
+  utter_pamit:
+  - text: Om Santih Santih Santih 🙏 Semoga bermanfaat.
+  - text: Matur suksma 🙏 Semoga membantu. Om Santih Santih Santih.
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: Saya bot glosarium istilah Ngaben. Jawaban saya berasal dari basis pengetahuan (knowledge graph) terminologi upacara Ngaben — bukan opini pribadi, dan bisa ada bagian yang belum lengkap.
+  utter_out_of_scope:
+  - text: Maaf, saya hanya menjawab seputar istilah dalam upacara Ngaben — arti, klasifikasi, jenis, fungsi, bahan, lokasi, waktu, pelaku, makna, hubungan, atau daftar istilah. Coba, misalnya, "apa itu bade".
 
 session_config:
   session_expiration_time: 60

@@ -22,10 +22,11 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-from dotenv import load_dotenv
+from dotenv import find_dotenv, load_dotenv
 from neo4j import GraphDatabase
 
-load_dotenv()
+# .env lives at the repo root; find it regardless of where this script is run from
+load_dotenv(find_dotenv())
 
 # ---- settings (from .env, with dev defaults) ------------------------------
 URI      = os.getenv("NEO4J_URI", "bolt://localhost:7687")
@@ -166,6 +167,8 @@ def load_kb():
             props = {"id": e["id"], "name": e["name"]}
             if e.get("definition"):
                 props["definition"] = e["definition"]
+            if e.get("aliases"):
+                props["aliases"] = e["aliases"]
             for rel, items in e.get("attributes", {}).items():
                 props[rel] = [it["value"] for it in items]
             session.run(f"MERGE (n:Node:{lbl} {{id: $id}}) SET n += $props",

@@ -1,0 +1,17 @@
+# Ngaben chatbot — Python deps. Install into the rasa_bot venv:
+#   uv pip install --python .\rasa_bot\Scripts\python.exe --override overrides.txt -r requirements.txt
+#
+# Rasa 3.6.x requires Python 3.10 (not 3.11).
+
+rasa==3.6.1
+rasa-sdk==3.6.1
+
+# Knowledge graph
+neo4j==5.14.0
+
+# Action-server helpers
+rapidfuzz>=3.0
+python-dotenv>=1.0
+
+# LLM rephrasing layer (Stage 6) — optional at runtime (needs GROQ_API_KEY)
+groq>=0.11

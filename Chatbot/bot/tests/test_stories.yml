@@ -1,91 +1,139 @@
-#### This file contains tests to evaluate that your bot behaves as expected.
-#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+version: "3.1"
 
 stories:
-- story: happy path 1
-  steps:
-  - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+  - story: sapa
+    steps:
+      - user: |
+          selamat pagi
+        intent: sapa
+      - action: utter_sapa
 
-- story: happy path 2
-  steps:
-  - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
-  - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+  - story: bot challenge
+    steps:
+      - user: |
+          kamu bot ya?
+        intent: bot_challenge
+      - action: utter_iamabot
 
-- story: sad path 1
-  steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      yes
-    intent: affirm
-  - action: utter_happy
+  - story: definisi ngaben
+    steps:
+      - user: |
+          apa itu [ngaben](istilah)
+        intent: tanya_definisi
+      - action: action_definisi
 
-- story: sad path 2
-  steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      not really
-    intent: deny
-  - action: utter_goodbye
+  - story: klasifikasi
+    steps:
+      - user: |
+          [ngaben](istilah) termasuk apa
+        intent: tanya_klasifikasi
+      - action: action_klasifikasi
 
-- story: sad path 3
-  steps:
-  - user: |
-      hi
-    intent: greet
-  - action: utter_greet
-  - user: |
-      very terrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      no
-    intent: deny
-  - action: utter_goodbye
+  - story: jenis
+    steps:
+      - user: |
+          apa saja jenis [ngaben](istilah)
+        intent: tanya_jenis
+      - action: action_jenis
 
-- story: say goodbye
-  steps:
-  - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+  - story: fungsi
+    steps:
+      - user: |
+          [bade](istilah) dipakai untuk apa
+        intent: tanya_fungsi
+      - action: action_atribut
 
-- story: bot challenge
-  steps:
-  - user: |
-      are you a bot?
-    intent: bot_challenge
-  - action: utter_iamabot
+  - story: bahan
+    steps:
+      - user: |
+          [pripih emas](istilah) terbuat dari apa
+        intent: tanya_bahan
+      - action: action_atribut
+
+  - story: lokasi
+    steps:
+      - user: |
+          di mana [sekah](istilah) diletakkan
+        intent: tanya_lokasi
+      - action: action_atribut
+
+  - story: waktu
+    steps:
+      - user: |
+          kapan [ngaben](istilah) dilakukan
+        intent: tanya_waktu
+      - action: action_atribut
+
+  - story: pelaku
+    steps:
+      - user: |
+          siapa yang melakukan [ngaben](istilah)
+        intent: tanya_pelaku
+      - action: action_atribut
+
+  - story: simbol
+    steps:
+      - user: |
+          [nganyut](istilah) melambangkan apa
+        intent: tanya_simbol
+      - action: action_atribut
+
+  - story: alasan
+    steps:
+      - user: |
+          kenapa tidak boleh menangis saat [ngaben](istilah)
+        intent: tanya_alasan
+      - action: action_alasan
+
+  - story: relasi dua istilah
+    steps:
+      - user: |
+          apa hubungan [sekah](istilah) dan [pitra](istilah)
+        intent: tanya_relasi
+      - action: action_relasi
+
+  - story: daftar per kategori
+    steps:
+      - user: |
+          sebutkan [tahapan upacara](tipe) ngaben
+        intent: daftar_istilah
+      - action: action_daftar_istilah
+
+  - story: bandingkan
+    steps:
+      - user: |
+          apa beda [bade](istilah) dan [wadah](istilah2)
+        intent: bandingkan_istilah
+      - action: action_bandingkan
+
+  - story: cari
+    steps:
+      - user: |
+          cari istilah yang mengandung kata bade
+        intent: cari_istilah
+      - action: action_cari
+
+  - story: acak
+    steps:
+      - user: |
+          kasih istilah acak
+        intent: minta_acak
+      - action: action_acak
+
+  - story: definisi lalu pamit
+    steps:
+      - user: |
+          jelaskan [bade](istilah)
+        intent: tanya_definisi
+      - action: action_definisi
+      - user: |
+          terima kasih
+        intent: pamit
+      - action: utter_pamit
+
+  - story: di luar topik
+    steps:
+      - user: |
+          berapa harga upacara ngaben
+        intent: out_of_scope
+      - action: utter_out_of_scope
