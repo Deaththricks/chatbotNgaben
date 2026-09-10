@@ -1,0 +1,1954 @@
+CHUNK 8/8 - sentences S3868 .. S4340  (53 sentences)
+
+### S3868
+TEXT: apabila upacara suluban ini selesai, maka jenazah akan dibawa ke bale tempat jenazah disemayamkan.
+NER: jenazah -> ISTILAH_UMUM_RITUAL [cultural] | bale -> BANGUNAN_RITUAL [cultural]
+PARSE:
+# sent_id = S3868
+# text = apabila upacara suluban ini selesai, maka jenazah akan dibawa ke bale tempat jenazah disemayamkan.
+1	apabila	apabila	SCONJ	_	_	5	mark	_	_
+2	upacara	upacara	NOUN	_	_	5	nsubj	_	_
+3	suluban	sulub	NOUN	_	_	2	compound	_	_
+4	ini	ini	DET	_	_	2	det	_	_
+5	selesai	selesai	VERB	_	_	10	advcl	_	_
+6	,	,	PUNCT	_	_	5	punct	_	_
+7	maka	maka	SCONJ	_	_	10	mark	_	_
+8	jenazah	jenazah	NOUN	_	_	10	nsubj:pass	_	_
+9	akan	akan	AUX	_	_	10	aux	_	_
+10	dibawa	bawa	VERB	_	_	0	root	_	_
+11	ke	ke	ADP	_	_	12	case	_	_
+12	bale	bale	NOUN	_	_	10	obl	_	_
+13	tempat	tempat	NOUN	_	_	12	compound	_	_
+14	jenazah	jenazah	NOUN	_	_	13	compound	_	_
+15	disemayamkan	semayam	VERB	_	_	13	acl	_	_
+16	.	.	PUNCT	_	_	10	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[DIBAWA_KE]--> bale tempat jenazah (ISTILAH_UMUM_RITUAL)  type=ENTITY source=dependency_rule
+
+### S3904
+TEXT: di beberapa tempat ada yang melakukan upacara mesaji atau memunjung ketika jenazah masih berada di atas pepaga/asagan.
+NER: mesaji -> TAHAPAN_UPACARA [cultural] | memunjung -> TAHAPAN_UPACARA [cultural] | jenazah -> ISTILAH_UMUM_RITUAL [cultural] | pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga) | asagan -> SARANA_RITUAL [cultural] (canonical: Pepaga)
+PARSE:
+# sent_id = S3904
+# text = di beberapa tempat ada yang melakukan upacara mesaji atau memunjung ketika jenazah masih berada di atas pepaga/asagan.
+1	di	di	ADP	_	_	3	case	_	_
+2	beberapa	beberapa	DET	_	_	3	det	_	_
+3	tempat	tempat	NOUN	_	_	4	obl	_	_
+4	ada	ada	VERB	_	_	0	root	_	_
+5	yang	yang	PRON	_	_	6	nsubj	_	_
+6	melakukan	laku	VERB	_	_	4	acl	_	_
+7	upacara	upacara	NOUN	_	_	6	obj	_	_
+8	mesaji	mesaji	ADJ	_	_	7	amod	_	_
+9	atau	atau	CCONJ	_	_	10	cc	_	_
+10	memunjung	punjung	VERB	_	_	6	conj	_	_
+11	ketika	ketika	SCONJ	_	_	14	mark	_	_
+12	jenazah	jenazah	NOUN	_	_	14	nsubj	_	_
+13	masih	masih	ADV	_	_	14	advmod	_	_
+14	berada	ada	VERB	_	_	10	advcl	_	_
+15	di	di	ADP	_	_	16	case	_	_
+16	atas	atas	ADP	_	_	14	obl	_	_
+17	pepaga/asagan	pepaga/asagan	NOUN	_	_	16	nmod	_	_
+18	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[BERADA_DI]--> atas pepaga/asagan (SARANA_RITUAL)  type=ENTITY source=dependency_rule
+  [1] masyarakat setempat (None) --[MELAKUKAN]--> upacara mesaji (atau memunjung), ketika jenazah masih di atas pepaga/asagan (None)  type=LITERAL source=manual_override
+
+### S3906
+TEXT: setelah upacara mesaji selesai barulah jenazah dipindahkan ke balai-balai tempat jenazah disemayamkan.
+NER: mesaji -> TAHAPAN_UPACARA [cultural] | jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S3906
+# text = setelah upacara mesaji selesai barulah jenazah dipindahkan ke balai-balai tempat jenazah disemayamkan.
+1	setelah	setelah	ADP	_	_	2	case	_	_
+2	upacara	upacara	NOUN	_	_	4	obl	_	_
+3	mesaji	mesaji	NOUN	_	_	2	compound	_	_
+4	selesai	selesai	VERB	_	_	0	root	_	_
+5	barulah	barulah	SCONJ	_	_	7	mark	_	_
+6	jenazah	jenazah	NOUN	_	_	7	nsubj:pass	_	_
+7	dipindahkan	pindah	VERB	_	_	4	advcl	_	_
+8	ke	ke	ADP	_	_	9	case	_	_
+9	balai-balai	balai	NOUN	_	_	7	obl	_	_
+10	tempat	tempat	NOUN	_	_	9	compound	_	_
+11	jenazah	jenazah	NOUN	_	_	10	compound	_	_
+12	disemayamkan	semayam	VERB	_	_	11	acl	_	_
+13	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[DIBAWA_KE]--> balai-balai tempat jenazah (ISTILAH_UMUM_RITUAL)  type=ENTITY source=dependency_rule
+
+### S3909
+TEXT: bagaimana jika jenazah tersebut akan langsung dibawa ke setra untuk segera di kuburkan, bukan diaben?
+NER: jenazah -> ISTILAH_UMUM_RITUAL [cultural] | setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+PARSE:
+# sent_id = S3909
+# text = bagaimana jika jenazah tersebut akan langsung dibawa ke setra untuk segera di kuburkan, bukan diaben?
+1	bagaimana	bagaimana	ADV	_	_	7	advmod	_	_
+2	jika	jika	SCONJ	_	_	7	mark	_	_
+3	jenazah	jenazah	NOUN	_	_	7	nsubj:pass	_	_
+4	tersebut	tersebut	DET	_	_	3	det	_	_
+5	akan	akan	AUX	_	_	7	aux	_	_
+6	langsung	langsung	ADV	_	_	7	advmod	_	_
+7	dibawa	bawa	VERB	_	_	0	root	_	_
+8	ke	ke	ADP	_	_	9	case	_	_
+9	setra	setra	NOUN	_	_	7	obl	_	_
+10	untuk	untuk	SCONJ	_	_	12	mark	_	_
+11	segera	segera	ADV	_	_	12	advmod	_	_
+12	di	di	VERB	_	_	7	xcomp	_	_
+13	kuburkan	kuburkan	X	_	_	12	obj	_	_
+14	,	,	PUNCT	_	_	16	punct	_	_
+15	bukan	bukan	PART	_	_	16	advmod	_	_
+16	diaben	aben	VERB	_	_	7	advcl	_	_
+17	?	?	PUNCT	_	_	7	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[DIBAWA_KE]--> setra untuk segera dikuburkan (bukan diaben) (None)  type=LITERAL source=manual_override
+
+### S3914
+TEXT: namun apabila jenazah akan di "aben" maka ada rangkaian upacara lain yang harus dilakukan sebelum jenazah di bawa ke setra.
+NER: jenazah -> ISTILAH_UMUM_RITUAL [cultural] | setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+PARSE:
+# sent_id = S3914
+# text = namun apabila jenazah akan di "aben" maka ada rangkaian upacara lain yang harus dilakukan sebelum jenazah di bawa ke setra.
+1	namun	namun	CCONJ	_	_	10	cc	_	_
+2	apabila	apabila	SCONJ	_	_	3	mark	_	_
+3	jenazah	jenazah	NOUN	_	_	10	nsubj	_	_
+4	akan	akan	AUX	_	_	3	advmod	_	_
+5	di	di	ADP	_	_	7	case	_	_
+6	"	"	PUNCT	_	_	7	punct	_	_
+7	aben	aben	NOUN	_	_	3	nmod	_	_
+8	"	"	PUNCT	_	_	7	punct	_	_
+9	maka	maka	SCONJ	_	_	10	mark	_	_
+10	ada	ada	VERB	_	_	0	root	_	_
+11	rangkaian	rangkai	NOUN	_	_	10	obj	_	_
+12	upacara	upacara	NOUN	_	_	11	compound	_	_
+13	lain	lain	ADJ	_	_	12	amod	_	_
+14	yang	yang	PRON	_	_	16	nsubj:pass	_	_
+15	harus	harus	AUX	_	_	16	aux	_	_
+16	dilakukan	laku	VERB	_	_	11	acl:relcl	_	_
+17	sebelum	sebelum	SCONJ	_	_	19	mark	_	_
+18	jenazah	jenazah	NOUN	_	_	19	nsubj:pass	_	_
+19	di	di	VERB	_	_	16	advcl	_	_
+20	bawa	bawa	X	_	_	19	goeswith	_	_
+21	ke	ke	ADP	_	_	22	case	_	_
+22	setra	setra	NOUN	_	_	19	obl	_	_
+23	.	.	PUNCT	_	_	10	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[MENJALANI]--> rangkaian upacara lain sebelum dibawa ke setra (jika diaben) (None)  type=LITERAL source=manual_override
+
+### S3936
+TEXT: mamakaikan kain (mewastra), dengan selesainya memandikan pada tahap pertama maka jenazah akan diberi pakaian seperti layaknya orang masih hidup dengan tatanannya sebagai berikut:
+NER: mewastra -> TAHAPAN_UPACARA [cultural] | jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S3936
+# text = mamakaikan kain (mewastra), dengan selesainya memandikan pada tahap pertama maka jenazah akan diberi pakaian seperti layaknya orang masih hidup dengan tatanannya sebagai berikut:
+1	mamakaikan	mamakaikan	NOUN	_	_	0	root	_	_
+2	kain	kain	NOUN	_	_	1	compound	_	_
+3	(	(	PUNCT	_	_	4	punct	_	_
+4	mewastra	mewastra	NOUN	_	_	1	appos	_	_
+5	)	)	PUNCT	_	_	4	punct	_	_
+6	,	,	PUNCT	_	_	8	punct	_	_
+7	dengan	dengan	ADP	_	_	8	case	_	_
+8	selesai	selesai	VERB	_	_	1	acl	_	_
+9	nya	nya	DET	_	_	8	det	_	_
+10	memandikan	mandi	VERB	_	_	1	advcl	_	_
+11	pada	pada	ADP	_	_	12	case	_	_
+12	tahap	tahap	NOUN	_	_	10	obl	_	_
+13	pertama	pertama	ADJ	_	_	12	amod	_	_
+14	maka	maka	SCONJ	_	_	17	mark	_	_
+15	jenazah	jenazah	NOUN	_	_	17	nsubj:pass	_	_
+16	akan	akan	AUX	_	_	17	aux	_	_
+17	diberi	beri	VERB	_	_	10	advcl	_	_
+18	pakaian	pakai	NOUN	_	_	17	obj	_	_
+19	seperti	seperti	ADP	_	_	20	case	_	_
+20	layak	layak	NOUN	_	_	18	nmod	_	_
+21	nya	dia	PRON	_	_	20	nmod:poss	_	_
+22	orang	orang	NOUN	_	_	20	compound	_	_
+23	masih	masih	ADV	_	_	24	advmod	_	_
+24	hidup	hidup	VERB	_	_	20	acl	_	_
+25	dengan	dengan	ADP	_	_	26	case	_	_
+26	tatanan	tatanan	NOUN	_	_	24	obl	_	_
+27	nya	dia	PRON	_	_	26	nmod:poss	_	_
+28	sebagai	sebagai	SCONJ	_	_	29	mark	_	_
+29	berikut	ikut	NOUN	_	_	26	nmod	_	_
+30	:	:	PUNCT	_	_	17	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[DIBERI]--> pakaian seperti layaknya orang masih hidup (None)  type=LITERAL source=manual_override
+
+### S3963
+TEXT: setelah selesai upacara sembah bhakti ini, semua kawangen yang tadi dipakai sembahyang dikumpulkan dan ditaruh di samping jenazah.
+NER: sembah bhakti -> TAHAPAN_UPACARA [cultural] | kawangen -> SARANA_RITUAL [cultural] | jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S3963
+# text = setelah selesai upacara sembah bhakti ini, semua kawangen yang tadi dipakai sembahyang dikumpulkan dan ditaruh di samping jenazah.
+1	setelah	setelah	ADP	_	_	2	case	_	_
+2	selesai	selesai	VERB	_	_	14	xcomp	_	_
+3	upacara	upacara	NOUN	_	_	2	obj	_	_
+4	sembah	sembah	NOUN	_	_	3	compound	_	_
+5	bhakti	bhakti	NOUN	_	_	4	compound	_	_
+6	ini	ini	DET	_	_	3	det	_	_
+7	,	,	PUNCT	_	_	2	punct	_	_
+8	semua	semua	DET	_	_	9	det	_	_
+9	kawangen	kawangen	NOUN	_	_	14	nsubj:pass	_	_
+10	yang	yang	PRON	_	_	12	nsubj:pass	_	_
+11	tadi	tadi	NOUN	_	_	12	obl	_	_
+12	dipakai	pakai	VERB	_	_	9	acl:relcl	_	_
+13	sembahyang	sembahyang	NOUN	_	_	12	obl	_	_
+14	dikumpulkan	kumpul	VERB	_	_	0	root	_	_
+15	dan	dan	CCONJ	_	_	16	cc	_	_
+16	ditaruh	taruh	VERB	_	_	14	conj	_	_
+17	di	di	ADP	_	_	18	case	_	_
+18	samping	samping	NOUN	_	_	16	obl	_	_
+19	jenazah	jenazah	NOUN	_	_	18	compound	_	_
+20	.	.	PUNCT	_	_	14	punct	_	_
+
+RELATIONS:
+  [0] kawangen (SARANA_RITUAL) --[DILETAKKAN_DI]--> samping jenazah (ISTILAH_UMUM_RITUAL)  type=ENTITY source=dependency_rule
+
+### S3964
+TEXT: setelah upacara sembah bhakti selesai, maka jenazah diperciki dan diminumkan tirta yang berasal dari bhatara hyang guru yaitu tirta yang dimohonkan di sanggah atau pamerajan keluarga orang yang meninggal.
+NER: sembah bhakti -> TAHAPAN_UPACARA [cultural] | jenazah -> ISTILAH_UMUM_RITUAL [cultural] | tirta -> TIRTHA_SUCI [cultural] | bhatara -> ENTITAS_KEAGAMAAN [cultural] (canonical: Bhatara) | hyang -> KONSEP_FILOSOFIS [cultural] | sanggah -> BANGUNAN_RITUAL [cultural]
+PARSE:
+# sent_id = S3964
+# text = setelah upacara sembah bhakti selesai, maka jenazah diperciki dan diminumkan tirta yang berasal dari bhatara hyang guru yaitu tirta yang dimohonkan di sanggah atau pamerajan keluarga orang yang meninggal.
+1	setelah	setelah	ADP	_	_	5	case	_	_
+2	upacara	upacara	NOUN	_	_	5	nsubj	_	_
+3	sembah	sembah	NOUN	_	_	2	compound	_	_
+4	bhakti	bhakti	NOUN	_	_	3	compound	_	_
+5	selesai	selesai	VERB	_	_	9	advcl	_	_
+6	,	,	PUNCT	_	_	5	punct	_	_
+7	maka	maka	SCONJ	_	_	9	mark	_	_
+8	jenazah	jenazah	NOUN	_	_	9	nsubj:pass	_	_
+9	diperciki	percik	VERB	_	_	0	root	_	_
+10	dan	dan	CCONJ	_	_	11	cc	_	_
+11	diminumkan	minum	VERB	_	_	9	conj	_	_
+12	tirta	tirta	NOUN	_	_	11	obj	_	_
+13	yang	yang	PRON	_	_	14	nsubj	_	_
+14	berasal	asal	VERB	_	_	12	acl:relcl	_	_
+15	dari	dari	ADP	_	_	16	case	_	_
+16	bhatara	bhatara	NOUN	_	_	14	obl	_	_
+17	hyang	hyang	NOUN	_	_	16	compound	_	_
+18	guru	guru	NOUN	_	_	17	compound	_	_
+19	yaitu	yaitu	ADP	_	_	20	case	_	_
+20	tirta	tirta	NOUN	_	_	16	appos	_	_
+21	yang	yang	PRON	_	_	22	nsubj:pass	_	_
+22	dimohonkan	mohon	VERB	_	_	20	acl:relcl	_	_
+23	di	di	ADP	_	_	24	case	_	_
+24	sanggah	sanggah	NOUN	_	_	22	obl	_	_
+25	atau	atau	CCONJ	_	_	26	cc	_	_
+26	pamerajan	pamer	NOUN	_	_	24	conj	_	_
+27	keluarga	keluarga	NOUN	_	_	26	compound	_	_
+28	orang	orang	NOUN	_	_	27	compound	_	_
+29	yang	yang	PRON	_	_	30	nsubj	_	_
+30	meninggal	tinggal	VERB	_	_	26	acl:relcl	_	_
+31	.	.	PUNCT	_	_	9	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[DIPERCIKI_DAN_DIMINUMKAN]--> tirta (TIRTHA_SUCI)  type=ENTITY source=manual_override
+  [1] tirta (None) --[BERASAL_DARI]--> bhetara hyang guru (KONSEP_FILOSOFIS)  type=ENTITY source=manual_override
+  [2] tirta (None) --[DIMOHONKAN_DI]--> sanggah/pamerajan keluarga orang yang meninggal (None)  type=LITERAL source=manual_override
+
+### S3973
+TEXT: itik-itik, setelah kesepuluh kuku tangan dan kuku kaki dikerik, maka kedua jempol jari-jari tangan (ibu jari) diikat jadi satu dengan seutas tali benang tukelan.
+NER: itik-itik -> SARANA_RITUAL [cultural] | tukelan -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S3973
+# text = itik-itik, setelah kesepuluh kuku tangan dan kuku kaki dikerik, maka kedua jempol jari-jari tangan (ibu jari) diikat jadi satu dengan seutas tali benang tukelan.
+1	itik-itik	itik	NOUN	_	_	10	nsubj:pass	_	_
+2	,	,	PUNCT	_	_	1	punct	_	_
+3	setelah	setelah	ADP	_	_	5	case	_	_
+4	kesepuluh	kesepuluh	NUM	_	_	5	nummod	_	_
+5	kuku	kuku	NOUN	_	_	10	obl	_	_
+6	tangan	tangan	NOUN	_	_	5	compound	_	_
+7	dan	dan	CCONJ	_	_	8	cc	_	_
+8	kuku	kuku	NOUN	_	_	5	conj	_	_
+9	kaki	kaki	NOUN	_	_	8	compound	_	_
+10	dikerik	kerik	VERB	_	_	0	root	_	_
+11	,	,	PUNCT	_	_	21	punct	_	_
+12	maka	maka	SCONJ	_	_	21	mark	_	_
+13	kedua	kedua	NUM	_	_	14	nummod	_	_
+14	jempol	jempol	NOUN	_	_	21	nsubj:pass	_	_
+15	jari-jari	jari	NOUN	_	_	14	compound	_	_
+16	tangan	tangan	NOUN	_	_	15	compound	_	_
+17	(	(	PUNCT	_	_	18	punct	_	_
+18	ibu	ibu	NOUN	_	_	14	appos	_	_
+19	jari	jari	NOUN	_	_	18	compound	_	_
+20	)	)	PUNCT	_	_	18	punct	_	_
+21	diikat	ikat	VERB	_	_	10	advcl	_	_
+22	jadi	jadi	VERB	_	_	21	xcomp	_	_
+23	satu	satu	NUM	_	_	22	nummod	_	_
+24	dengan	dengan	ADP	_	_	25	case	_	_
+25	seutas	seutas	NOUN	_	_	22	obl	_	_
+26	tali	tali	NOUN	_	_	25	compound	_	_
+27	benang	benang	NOUN	_	_	26	compound	_	_
+28	tukelan	tukel	NOUN	_	_	27	compound	_	_
+29	.	.	PUNCT	_	_	21	punct	_	_
+
+RELATIONS:
+  [0] jempol jari tangan (kedua ibu jari) (None) --[DIIKAT_DENGAN]--> tali benang tukelan (SARANA_RITUAL)  type=ENTITY source=manual_override
+
+### S3977
+TEXT: umbi sikapa / sekapa (umbi gadung): jenazah disabuni (digosok) dengan umbi sikapa/sekapa, kemudian dibilas dengan air dan dikeringkan dengan kain kering.
+NER: sikapa -> SARANA_RITUAL [cultural] (canonical: Umbi Gadung) | sekapa -> SARANA_RITUAL [cultural] (canonical: Umbi Gadung) | umbi gadung -> SARANA_RITUAL [cultural] | jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S3977
+# text = umbi sikapa / sekapa (umbi gadung): jenazah disabuni (digosok) dengan umbi sikapa/sekapa, kemudian dibilas dengan air dan dikeringkan dengan kain kering.
+1	umbi	umbi	NOUN	_	_	20	nsubj:pass	_	_
+2	sikapa	sikapa	NOUN	_	_	1	compound	_	_
+3	/	/	PUNCT	_	_	4	punct	_	_
+4	sekapa	sekapa	NOUN	_	_	2	compound	_	_
+5	(	(	PUNCT	_	_	6	punct	_	_
+6	umbi	umbi	NOUN	_	_	4	appos	_	_
+7	gadung	gadung	NOUN	_	_	6	compound	_	_
+8	)	)	PUNCT	_	_	6	punct	_	_
+9	:	:	PUNCT	_	_	1	punct	_	_
+10	jenazah	jenazah	NOUN	_	_	11	nsubj	_	_
+11	disabuni	sabun	VERB	_	_	1	parataxis	_	_
+12	(	(	PUNCT	_	_	13	punct	_	_
+13	digosok	gosok	VERB	_	_	11	appos	_	_
+14	)	)	PUNCT	_	_	13	punct	_	_
+15	dengan	dengan	ADP	_	_	16	case	_	_
+16	umbi	umbi	NOUN	_	_	11	obl	_	_
+17	sikapa/sekapa	sikapa/sekapa	NOUN	_	_	16	compound	_	_
+18	,	,	PUNCT	_	_	20	punct	_	_
+19	kemudian	kemudian	ADV	_	_	20	advmod	_	_
+20	dibilas	bilas	VERB	_	_	0	root	_	_
+21	dengan	dengan	ADP	_	_	22	case	_	_
+22	air	air	NOUN	_	_	20	obl	_	_
+23	dan	dan	CCONJ	_	_	24	cc	_	_
+24	dikeringkan	kering	VERB	_	_	20	conj	_	_
+25	dengan	dengan	ADP	_	_	26	case	_	_
+26	kain	kain	NOUN	_	_	24	obl	_	_
+27	kering	kering	ADJ	_	_	26	amod	_	_
+28	.	.	PUNCT	_	_	20	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[DISABUNI_DENGAN]--> umbi sikapa/sekapa (SARANA_RITUAL)  type=ENTITY source=dependency_rule
+
+### S3984
+TEXT: mewastra (berpakaian): setelah semuanya kering maka jenazah dikenakan pakaian putih-putih.
+NER: mewastra -> TAHAPAN_UPACARA [cultural] | jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S3984
+# text = mewastra (berpakaian): setelah semuanya kering maka jenazah dikenakan pakaian putih-putih.
+1	mewastra	mewastra	PROPN	_	_	12	advcl	_	_
+2	(	(	PUNCT	_	_	3	punct	_	_
+3	berpakaian	pakai	VERB	_	_	1	appos	_	_
+4	)	)	PUNCT	_	_	3	punct	_	_
+5	:	:	PUNCT	_	_	9	punct	_	_
+6	setelah	setelah	ADP	_	_	7	case	_	_
+7	semua	semua	PRON	_	_	12	obl	_	_
+8	nya	nya	DET	_	_	7	det	_	_
+9	kering	kering	ADJ	_	_	12	amod	_	_
+10	maka	maka	SCONJ	_	_	12	mark	_	_
+11	jenazah	jenazah	NOUN	_	_	12	nsubj:pass	_	_
+12	dikenakan	kena	VERB	_	_	0	root	_	_
+13	pakaian	pakai	NOUN	_	_	12	obj	_	_
+14	putih-putih	putih	ADJ	_	_	13	amod	_	_
+15	.	.	PUNCT	_	_	12	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[DIPAKAIKAN]--> pakaian putih-putih (None)  type=LITERAL source=dependency_rule
+
+### S4035
+TEXT: ketiga, tirtha tersebut dipercikkan ke semua badan hingga ke kaki jenazah, setelah itu periuk tempat tirtha pangringkes tersebut dipecahkan dan dibuang di kolong bawah pepaga atau asagan.
+NER: tirtha -> TIRTHA_SUCI [cultural] | jenazah -> ISTILAH_UMUM_RITUAL [cultural] | tirtha pangringkes -> TIRTHA_SUCI [cultural] | pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga) | asagan -> SARANA_RITUAL [cultural] (canonical: Pepaga)
+PARSE:
+# sent_id = S4035
+# text = ketiga, tirtha tersebut dipercikkan ke semua badan hingga ke kaki jenazah, setelah itu periuk tempat tirtha pangringkes tersebut dipecahkan dan dibuang di kolong bawah pepaga atau asagan.
+1	ketiga	ketiga	NUM	_	_	5	nummod	_	_
+2	,	,	PUNCT	_	_	1	punct	_	_
+3	tirtha	tirtha	NOUN	_	_	5	nsubj:pass	_	_
+4	tersebut	tersebut	DET	_	_	3	det	_	_
+5	dipercikkan	percik	VERB	_	_	0	root	_	_
+6	ke	ke	ADP	_	_	8	case	_	_
+7	semua	semua	DET	_	_	8	det	_	_
+8	badan	badan	NOUN	_	_	5	obl	_	_
+9	hingga	hingga	ADP	_	_	11	case	_	_
+10	ke	ke	ADP	_	_	11	case	_	_
+11	kaki	kaki	NOUN	_	_	8	nmod	_	_
+12	jenazah	jenazah	NOUN	_	_	11	compound	_	_
+13	,	,	PUNCT	_	_	21	punct	_	_
+14	setelah	setelah	ADP	_	_	21	case	_	_
+15	itu	itu	DET	_	_	21	det	_	_
+16	periuk	periuk	NOUN	_	_	21	nsubj:pass	_	_
+17	tempat	tempat	NOUN	_	_	16	compound	_	_
+18	tirtha	tirtha	NOUN	_	_	17	compound	_	_
+19	pangringkes	pangringkes	NOUN	_	_	18	compound	_	_
+20	tersebut	tersebut	DET	_	_	19	det	_	_
+21	dipecahkan	pecah	VERB	_	_	5	advcl	_	_
+22	dan	dan	CCONJ	_	_	23	cc	_	_
+23	dibuang	buang	VERB	_	_	21	conj	_	_
+24	di	di	ADP	_	_	25	case	_	_
+25	kolong	kolong	NOUN	_	_	23	obl	_	_
+26	bawah	bawah	NOUN	_	_	25	compound	_	_
+27	pepaga	pepaga	NOUN	_	_	26	compound	_	_
+28	atau	atau	CCONJ	_	_	29	cc	_	_
+29	asagan	asag	NOUN	_	_	27	conj	_	_
+30	.	.	PUNCT	_	_	5	punct	_	_
+
+RELATIONS:
+  [0] tirtha (TIRTHA_SUCI) --[DIPERCIKKAN_PADA]--> seluruh badan hingga ke kaki jenazah (None)  type=LITERAL source=manual_override
+  [1] priuk (tempat tirtha pangringkes) (None) --[DIPECAHKAN]--> setelah tirtha dipercikkan (TIRTHA_SUCI)  type=ENTITY source=manual_override
+  [2] priuk (yang pecah) (None) --[DIBUANG_DI]--> kolong bawah pepaga/asagan (SARANA_RITUAL)  type=ENTITY source=manual_override
+
+### S4062
+TEXT: tirtha ini digunakan untuk ngalukat (pembersihan tingkat awal) pada banten, pada adegan dan yang lainnya.
+NER: tirtha -> TIRTHA_SUCI [cultural] | banten -> SARANA_RITUAL [cultural] (canonical: Banten) | adegan -> SARANA_RITUAL [cultural] (canonical: Adegan)
+PARSE:
+# sent_id = S4062
+# text = tirtha ini digunakan untuk ngalukat (pembersihan tingkat awal) pada banten, pada adegan dan yang lainnya.
+1	tirtha	tirtha	PROPN	_	_	3	nsubj:pass	_	_
+2	ini	ini	DET	_	_	1	det	_	_
+3	digunakan	guna	VERB	_	_	0	root	_	_
+4	untuk	untuk	ADP	_	_	5	case	_	_
+5	ngalukat	ngalukat	NOUN	_	_	3	obl	_	_
+6	(	(	PUNCT	_	_	7	punct	_	_
+7	pembersihan	bersih	NOUN	_	_	5	appos	_	_
+8	tingkat	tingkat	NOUN	_	_	7	compound	_	_
+9	awal	awal	ADJ	_	_	8	amod	_	_
+10	)	)	PUNCT	_	_	7	punct	_	_
+11	pada	pada	ADP	_	_	12	case	_	_
+12	banten	banten	PROPN	_	_	5	nmod	_	_
+13	,	,	PUNCT	_	_	15	punct	_	_
+14	pada	pada	ADP	_	_	15	case	_	_
+15	adegan	adegan	NOUN	_	_	3	obl	_	_
+16	dan	dan	CCONJ	_	_	18	cc	_	_
+17	yang	yang	PRON	_	_	18	nsubj	_	_
+18	lainnya	lainnya	ADJ	_	_	15	conj	_	_
+19	.	.	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] tirtha (TIRTHA_SUCI) --[DIPAKAI_UNTUK]--> ngalukat (None)  type=LITERAL source=manual_override
+  [1] ngalukat (None) --[ADALAH]--> pembersihan tingkat awal (None)  type=LITERAL source=manual_override
+  [2] tirtha (TIRTHA_SUCI) --[DIPAKAI_UNTUK]--> banten (SARANA_RITUAL)  type=ENTITY source=manual_override
+  [3] tirtha (TIRTHA_SUCI) --[DIPAKAI_UNTUK]--> adegan (SARANA_RITUAL) (SARANA_RITUAL)  type=ENTITY source=manual_override
+
+### S4065
+TEXT: tirtha pabersihan ini juga dibuat oleh ida sang sulinggih, yang pada akhekatnya tidak jauh berbeda dengan tirtha panglukatan, namun ada sedikit perbedaan yaitu dalam sarananya tidak memakai "samsam" serta puja yang dipakai berbeda dengan puja pada tirtha panglukatan, dan periuknya tanpa kalung benang dengan uang kepeng.
+NER: tirtha pabersihan -> TIRTHA_SUCI [cultural] | sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih) | tirtha panglukatan -> TIRTHA_SUCI [cultural] (canonical: Tirta Panglukatan) | samsam -> SARANA_RITUAL [cultural] | kepeng -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S4065
+# text = tirtha pabersihan ini juga dibuat oleh ida sang sulinggih, yang pada akhekatnya tidak jauh berbeda dengan tirtha panglukatan, namun ada sedikit perbedaan yaitu dalam sarananya tidak memakai "samsam" serta puja yang dipakai berbeda dengan puja pada tirtha panglukatan, dan periuknya tanpa kalung benang dengan uang kepeng.
+1	tirtha	tirtha	PROPN	_	_	5	nsubj:pass	_	_
+2	pabersihan	pabersihan	PROPN	_	_	1	flat:name	_	_
+3	ini	ini	DET	_	_	1	det	_	_
+4	juga	juga	ADV	_	_	5	advmod	_	_
+5	dibuat	buat	VERB	_	_	0	root	_	_
+6	oleh	oleh	ADP	_	_	7	case	_	_
+7	ida	ida	PROPN	_	_	5	obl	_	_
+8	sang	sang	DET	_	_	9	det	_	_
+9	sulinggih	sulinggih	NOUN	_	_	7	compound	_	_
+10	,	,	PUNCT	_	_	17	punct	_	_
+11	yang	yang	PRON	_	_	17	nsubj	_	_
+12	pada	pada	ADP	_	_	13	case	_	_
+13	akhekat	akhekat	NOUN	_	_	17	obl	_	_
+14	nya	dia	PRON	_	_	13	nmod:poss	_	_
+15	tidak	tidak	PART	_	_	17	advmod	_	_
+16	jauh	jauh	ADJ	_	_	17	advmod	_	_
+17	berbeda	beda	VERB	_	_	5	advcl	_	_
+18	dengan	dengan	ADP	_	_	19	case	_	_
+19	tirtha	tirtha	NOUN	_	_	17	obl	_	_
+20	panglukatan	panglukatan	NOUN	_	_	19	compound	_	_
+21	,	,	PUNCT	_	_	23	punct	_	_
+22	namun	namun	CCONJ	_	_	23	cc	_	_
+23	ada	ada	VERB	_	_	5	conj	_	_
+24	sedikit	sedikit	ADV	_	_	25	advmod	_	_
+25	perbedaan	beda	NOUN	_	_	23	obj	_	_
+26	yaitu	yaitu	SCONJ	_	_	31	mark	_	_
+27	dalam	dalam	ADP	_	_	28	case	_	_
+28	sarana	sarana	NOUN	_	_	31	nsubj	_	_
+29	nya	dia	PRON	_	_	28	nmod:poss	_	_
+30	tidak	tidak	PART	_	_	31	advmod	_	_
+31	memakai	pakai	VERB	_	_	25	advcl	_	_
+32	"	"	PUNCT	_	_	33	punct	_	_
+33	samsam	samsam	NOUN	_	_	31	obj	_	_
+34	"	"	PUNCT	_	_	33	punct	_	_
+35	serta	serta	CCONJ	_	_	36	cc	_	_
+36	puja	puja	NOUN	_	_	31	conj	_	_
+37	yang	yang	PRON	_	_	38	nsubj:pass	_	_
+38	dipakai	pakai	VERB	_	_	36	acl:relcl	_	_
+39	berbeda	beda	VERB	_	_	38	xcomp	_	_
+40	dengan	dengan	ADP	_	_	41	case	_	_
+41	puja	puja	NOUN	_	_	39	obl	_	_
+42	pada	pada	ADP	_	_	43	case	_	_
+43	tirtha	tirtha	NOUN	_	_	41	nmod	_	_
+44	panglukatan	panglukatan	NOUN	_	_	43	compound	_	_
+45	,	,	PUNCT	_	_	47	punct	_	_
+46	dan	dan	CCONJ	_	_	47	cc	_	_
+47	periuknya	periuknya	NOUN	_	_	41	conj	_	_
+48	tanpa	tanpa	ADP	_	_	49	case	_	_
+49	kalung	kalung	NOUN	_	_	47	nmod	_	_
+50	benang	benang	NOUN	_	_	49	compound	_	_
+51	dengan	dengan	ADP	_	_	52	case	_	_
+52	uang	uang	NOUN	_	_	49	nmod	_	_
+53	kepeng	kepeng	NOUN	_	_	52	compound	_	_
+54	.	.	PUNCT	_	_	5	punct	_	_
+
+RELATIONS:
+  [0] tirtha pabersihan (TIRTHA_SUCI) --[DIBUAT_OLEH]--> ida sang sulinggih (ENTITAS_KEAGAMAAN)  type=ENTITY source=manual_override
+  [1] tirtha pabersihan (TIRTHA_SUCI) --[TIDAK_MEMAKAI]--> samsam (tidak seperti tirtha panglukatan) (TIRTHA_SUCI)  type=ENTITY source=manual_override
+  [2] tirtha pabersihan (periuknya) (None) --[TANPA]--> kalung benang dengan uang kepeng (SARANA_RITUAL)  type=ENTITY source=manual_override
+
+### S4074
+TEXT: tirtha ening berfungsi sebagai symbol dari pikiran dan perasaan sang yajamana (orang yang punya upacara), sehingga roh atau atman yang di upacarai tidak mengalami kegoncangan, sehingga dapat mencapai alam sorga dengan tenang.
+NER: tirtha ening -> TIRTHA_SUCI [cultural] | sorga -> KONSEP_FILOSOFIS [cultural]
+PARSE:
+# sent_id = S4074
+# text = tirtha ening berfungsi sebagai symbol dari pikiran dan perasaan sang yajamana (orang yang punya upacara), sehingga roh atau atman yang di upacarai tidak mengalami kegoncangan, sehingga dapat mencapai alam sorga dengan tenang.
+1	tirtha	tirtha	PROPN	_	_	3	nsubj	_	_
+2	ening	ening	PROPN	_	_	1	flat:name	_	_
+3	berfungsi	fungsi	VERB	_	_	0	root	_	_
+4	sebagai	sebagai	ADP	_	_	5	case	_	_
+5	symbol	symbol	NOUN	_	_	3	obl	_	_
+6	dari	dari	ADP	_	_	7	case	_	_
+7	pikiran	pikir	NOUN	_	_	5	nmod	_	_
+8	dan	dan	CCONJ	_	_	9	cc	_	_
+9	perasaan	rasa	NOUN	_	_	7	conj	_	_
+10	sang	sang	DET	_	_	11	det	_	_
+11	yajamana	yajamana	NOUN	_	_	9	compound	_	_
+12	(	(	PUNCT	_	_	13	punct	_	_
+13	orang	orang	NOUN	_	_	11	appos	_	_
+14	yang	yang	PRON	_	_	15	nsubj	_	_
+15	punya	punya	VERB	_	_	13	acl:relcl	_	_
+16	upacara	upacara	NOUN	_	_	15	obj	_	_
+17	)	)	PUNCT	_	_	13	punct	_	_
+18	,	,	PUNCT	_	_	27	punct	_	_
+19	sehingga	sehingga	SCONJ	_	_	27	mark	_	_
+20	roh	roh	NOUN	_	_	27	nsubj	_	_
+21	atau	atau	CCONJ	_	_	22	cc	_	_
+22	atman	atman	NOUN	_	_	20	conj	_	_
+23	yang	yang	PRON	_	_	24	nsubj:pass	_	_
+24	di	di	VERB	_	_	20	acl:relcl	_	_
+25	upacarai	upacarai	X	_	_	24	obj	_	_
+26	tidak	tidak	PART	_	_	27	advmod	_	_
+27	mengalami	alami	VERB	_	_	3	advcl	_	_
+28	kegoncangan	goncang	NOUN	_	_	27	obj	_	_
+29	,	,	PUNCT	_	_	32	punct	_	_
+30	sehingga	sehingga	SCONJ	_	_	32	mark	_	_
+31	dapat	dapat	AUX	_	_	32	aux	_	_
+32	mencapai	capai	VERB	_	_	27	advcl	_	_
+33	alam	alam	NOUN	_	_	32	obj	_	_
+34	sorga	sorga	NOUN	_	_	33	compound	_	_
+35	dengan	dengan	SCONJ	_	_	32	mark	_	_
+36	tenang	tenang	ADJ	_	_	32	amod	_	_
+37	.	.	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] tirtha ening (TIRTHA_SUCI) --[BERFUNGSI_SEBAGAI]--> symbol pikiran dan perasaan sang yajamana ( orang yang punya upacara ) , sehingga roh atau atman yang di upacarai tidak mengalami kegoncangan , sehingga dapat mencapai alam sorga dengan tenang (None)  type=LITERAL source=dependency_rule
+
+### S4077
+TEXT: tirtha pemanah adalah tirtha yang dibuat pada hari "pabersihan" atau juga disebut hari "pengaskaran" yang biasanya bersamaan dengan upacara "pamrasan".
+NER: tirtha -> TIRTHA_SUCI [cultural] | pabersihan -> TAHAPAN_UPACARA [cultural] | pengaskaran -> TAHAPAN_UPACARA [cultural]
+PARSE:
+# sent_id = S4077
+# text = tirtha pemanah adalah tirtha yang dibuat pada hari "pabersihan" atau juga disebut hari "pengaskaran" yang biasanya bersamaan dengan upacara "pamrasan".
+1	tirtha	tirtha	PROPN	_	_	4	nsubj	_	_
+2	pemanah	panah	NOUN	_	_	1	compound	_	_
+3	adalah	adalah	AUX	_	_	4	cop	_	_
+4	tirtha	tirtha	NOUN	_	_	0	root	_	_
+5	yang	yang	PRON	_	_	6	nsubj:pass	_	_
+6	dibuat	buat	VERB	_	_	4	acl:relcl	_	_
+7	pada	pada	ADP	_	_	8	case	_	_
+8	hari	hari	NOUN	_	_	6	obl	_	_
+9	"	"	PUNCT	_	_	10	punct	_	_
+10	pabersihan	pabersihan	NOUN	_	_	8	compound	_	_
+11	"	"	PUNCT	_	_	10	punct	_	_
+12	atau	atau	CCONJ	_	_	14	cc	_	_
+13	juga	juga	ADV	_	_	14	advmod	_	_
+14	disebut	sebut	VERB	_	_	6	conj	_	_
+15	hari	hari	NOUN	_	_	14	obj	_	_
+16	"	"	PUNCT	_	_	17	punct	_	_
+17	pengaskaran	askar	NOUN	_	_	15	compound	_	_
+18	"	"	PUNCT	_	_	17	punct	_	_
+19	yang	yang	PRON	_	_	21	nsubj	_	_
+20	biasanya	biasanya	ADV	_	_	21	advmod	_	_
+21	bersamaan	sama	VERB	_	_	15	acl:relcl	_	_
+22	dengan	dengan	ADP	_	_	23	case	_	_
+23	upacara	upacara	NOUN	_	_	21	obl	_	_
+24	"	"	PUNCT	_	_	25	punct	_	_
+25	pamrasan	pamrasan	NOUN	_	_	23	compound	_	_
+26	"	"	PUNCT	_	_	25	punct	_	_
+27	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] tirtha pemanah (TIRTHA_SUCI) --[ADALAH]--> tirtha yang dibuat pada hari " pabersihan " atau juga disebut hari " pengaskaran " yang biasanya bersamaan dengan upacara " pamrasan " (None)  type=LITERAL source=dependency_rule
+
+### S4079
+TEXT: tirtha pemanah berbeda dengan tirtha-tirtha yang telah disebut diatas, karena tirtha pemanah seperti telah disebutkan diatas dibuat tepat pada waktu upacara "pengaskaran", sedangkan tirtha tersebut dibuat langsung oleh ida sang sulinggih.
+NER: tirtha -> TIRTHA_SUCI [cultural] | pengaskaran -> TAHAPAN_UPACARA [cultural] | sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+PARSE:
+# sent_id = S4079
+# text = tirtha pemanah berbeda dengan tirtha-tirtha yang telah disebut diatas, karena tirtha pemanah seperti telah disebutkan diatas dibuat tepat pada waktu upacara "pengaskaran", sedangkan tirtha tersebut dibuat langsung oleh ida sang sulinggih.
+1	tirtha	tirtha	PROPN	_	_	3	nsubj	_	_
+2	pemanah	panah	NOUN	_	_	1	compound	_	_
+3	berbeda	beda	VERB	_	_	0	root	_	_
+4	dengan	dengan	ADP	_	_	5	case	_	_
+5	tirtha-tirtha	tirtha	NOUN	_	_	3	obl	_	_
+6	yang	yang	PRON	_	_	8	nsubj:pass	_	_
+7	telah	telah	AUX	_	_	8	aux	_	_
+8	disebut	sebut	VERB	_	_	5	acl:relcl	_	_
+9	diatas	diatas	ADP	_	_	8	case	_	_
+10	,	,	PUNCT	_	_	18	punct	_	_
+11	karena	karena	SCONJ	_	_	18	mark	_	_
+12	tirtha	tirtha	NOUN	_	_	18	nsubj:pass	_	_
+13	pemanah	panah	NOUN	_	_	12	compound	_	_
+14	seperti	seperti	ADP	_	_	16	case	_	_
+15	telah	telah	AUX	_	_	16	aux	_	_
+16	disebutkan	sebut	VERB	_	_	12	acl:relcl	_	_
+17	diatas	diatas	ADP	_	_	16	case:adv	_	_
+18	dibuat	buat	VERB	_	_	3	advcl	_	_
+19	tepat	tepat	ADJ	_	_	18	amod	_	_
+20	pada	pada	ADP	_	_	21	case	_	_
+21	waktu	waktu	NOUN	_	_	18	obl	_	_
+22	upacara	upacara	NOUN	_	_	21	compound	_	_
+23	"	"	PUNCT	_	_	24	punct	_	_
+24	pengaskaran	askar	NOUN	_	_	21	compound	_	_
+25	"	"	PUNCT	_	_	24	punct	_	_
+26	,	,	PUNCT	_	_	30	punct	_	_
+27	sedangkan	sedangkan	SCONJ	_	_	30	mark	_	_
+28	tirtha	tirtha	NOUN	_	_	30	nsubj:pass	_	_
+29	tersebut	tersebut	DET	_	_	28	det	_	_
+30	dibuat	buat	VERB	_	_	3	advcl	_	_
+31	langsung	langsung	ADJ	_	_	30	amod	_	_
+32	oleh	oleh	ADP	_	_	33	case	_	_
+33	ida	ida	PROPN	_	_	30	obl	_	_
+34	sang	sang	DET	_	_	35	det	_	_
+35	sulinggih	sulinggih	NOUN	_	_	33	compound	_	_
+36	.	.	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] tirtha pemanah (TIRTHA_SUCI) --[BERBEDA_DENGAN]--> tirtha-tirtha yang telah disebut diatas (None)  type=LITERAL source=dependency_rule
+
+### S4082
+TEXT: perlu diketahui bahwa tirtha pemanah ini hanya digunakan pada upacara pengabenan sawa wedana yang menggunakan "tumpang salu".
+NER: tirtha -> TIRTHA_SUCI [cultural] | pengabenan -> RITUAL_KEMATIAN [cultural] | sawa wedana -> RITUAL_KEMATIAN [cultural] (canonical: Sawa Wedana) | tumpang salu -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S4082
+# text = perlu diketahui bahwa tirtha pemanah ini hanya digunakan pada upacara pengabenan sawa wedana yang menggunakan "tumpang salu".
+1	perlu	perlu	ADV	_	_	2	advmod	_	_
+2	diketahui	ketahui	VERB	_	_	0	root	_	_
+3	bahwa	bahwa	SCONJ	_	_	8	mark	_	_
+4	tirtha	tirtha	NOUN	_	_	8	nsubj:pass	_	_
+5	pemanah	panah	NOUN	_	_	4	compound	_	_
+6	ini	ini	DET	_	_	4	det	_	_
+7	hanya	hanya	ADV	_	_	8	advmod	_	_
+8	digunakan	guna	VERB	_	_	2	ccomp	_	_
+9	pada	pada	ADP	_	_	10	case	_	_
+10	upacara	upacara	NOUN	_	_	8	obl	_	_
+11	pengabenan	kaben	NOUN	_	_	10	compound	_	_
+12	sawa	sawa	NOUN	_	_	11	compound	_	_
+13	wedana	wedana	NOUN	_	_	12	compound	_	_
+14	yang	yang	PRON	_	_	15	nsubj	_	_
+15	menggunakan	guna	VERB	_	_	10	acl:relcl	_	_
+16	"	"	PUNCT	_	_	17	punct	_	_
+17	tumpang	tumpang	NOUN	_	_	15	obj	_	_
+18	salu	salu	NOUN	_	_	17	compound	_	_
+19	"	"	PUNCT	_	_	17	punct	_	_
+20	.	.	PUNCT	_	_	2	punct	_	_
+
+RELATIONS:
+  [0] tirtha pemanah (TIRTHA_SUCI) --[DIPAKAI_UNTUK]--> upacara pengabenan sawa wedana yang menggunakan " tumpang salu " (None)  type=LITERAL source=dependency_rule
+
+### S4086
+TEXT: tirtha penembak ini adalah merupakan tirtha yang wajib dipersembahkan oleh "sang yajamana" atau orang yang memiliki upacara tersebut.
+NER: tirtha -> TIRTHA_SUCI [cultural]
+PARSE:
+# sent_id = S4086
+# text = tirtha penembak ini adalah merupakan tirtha yang wajib dipersembahkan oleh "sang yajamana" atau orang yang memiliki upacara tersebut.
+1	tirtha	tirtha	PROPN	_	_	5	nsubj	_	_
+2	penembak	tembak	NOUN	_	_	1	compound	_	_
+3	ini	ini	DET	_	_	1	det	_	_
+4	adalah	adalah	AUX	_	_	5	cop	_	_
+5	merupakan	merupakan	VERB	_	_	0	root	_	_
+6	tirtha	tirtha	NOUN	_	_	5	acl	_	_
+7	yang	yang	PRON	_	_	9	nsubj:pass	_	_
+8	wajib	wajib	AUX	_	_	9	aux	_	_
+9	dipersembahkan	sembah	VERB	_	_	6	acl:relcl	_	_
+10	oleh	oleh	ADP	_	_	13	case	_	_
+11	"	"	PUNCT	_	_	13	punct	_	_
+12	sang	sang	DET	_	_	13	det	_	_
+13	yajamana	yajamana	NOUN	_	_	9	obl	_	_
+14	"	"	PUNCT	_	_	13	punct	_	_
+15	atau	atau	CCONJ	_	_	16	cc	_	_
+16	orang	orang	NOUN	_	_	13	conj	_	_
+17	yang	yang	PRON	_	_	18	nsubj	_	_
+18	memiliki	milik	VERB	_	_	16	acl:relcl	_	_
+19	upacara	upacara	NOUN	_	_	18	obj	_	_
+20	tersebut	tersebut	DET	_	_	19	det	_	_
+21	.	.	PUNCT	_	_	5	punct	_	_
+
+RELATIONS:
+  [0] tirtha penembak (TIRTHA_SUCI) --[ADALAH]--> tirtha yang wajib dipersembahkan oleh " sang yajamana " atau orang yang memiliki upacara tersebut (None)  type=LITERAL source=dependency_rule
+
+### S4087
+TEXT: tirtha penembak ini juga memiliki hubungan herat dengan itihasa, tepatnya pada bisma parwa bagian dari mahabharata, yaitu ketika rsi bisma dalam keadaan sekarat karena luka parah oleh anak panah yang menembus badannya.
+NER: tirtha -> TIRTHA_SUCI [cultural] | bisma -> Person [general]
+PARSE:
+# sent_id = S4087
+# text = tirtha penembak ini juga memiliki hubungan herat dengan itihasa, tepatnya pada bisma parwa bagian dari mahabharata, yaitu ketika rsi bisma dalam keadaan sekarat karena luka parah oleh anak panah yang menembus badannya.
+1	tirtha	tirtha	PROPN	_	_	5	nsubj	_	_
+2	penembak	tembak	NOUN	_	_	1	compound	_	_
+3	ini	ini	DET	_	_	1	det	_	_
+4	juga	juga	ADV	_	_	5	advmod	_	_
+5	memiliki	milik	VERB	_	_	0	root	_	_
+6	hubungan	hubung	NOUN	_	_	5	obj	_	_
+7	herat	herat	ADJ	_	_	6	amod	_	_
+8	dengan	dengan	ADP	_	_	9	case	_	_
+9	itihasa	itihasa	NOUN	_	_	6	nmod	_	_
+10	,	,	PUNCT	_	_	11	punct	_	_
+11	tepat	tepat	VERB	_	_	5	parataxis	_	_
+12	nya	nya	DET	_	_	11	det	_	_
+13	pada	pada	ADP	_	_	14	case	_	_
+14	bisma	bisma	NOUN	_	_	11	obl	_	_
+15	parwa	parwa	NOUN	_	_	14	compound	_	_
+16	bagian	bagi	NOUN	_	_	15	compound	_	_
+17	dari	dari	ADP	_	_	18	case	_	_
+18	mahabharata	mahabharata	NOUN	_	_	16	nmod	_	_
+19	,	,	PUNCT	_	_	20	punct	_	_
+20	yaitu	yaitu	SCONJ	_	_	22	mark	_	_
+21	ketika	ketika	SCONJ	_	_	22	mark	_	_
+22	rsi	rsi	NOUN	_	_	14	advcl	_	_
+23	bisma	bisma	NOUN	_	_	22	compound	_	_
+24	dalam	dalam	ADP	_	_	25	case	_	_
+25	keadaan	ada	NOUN	_	_	22	nmod	_	_
+26	sekarat	sekarat	ADJ	_	_	25	amod	_	_
+27	karena	karena	ADP	_	_	28	case	_	_
+28	luka	luka	NOUN	_	_	26	nmod	_	_
+29	parah	parah	ADJ	_	_	28	amod	_	_
+30	oleh	oleh	ADP	_	_	31	case	_	_
+31	anak	anak	NOUN	_	_	28	nmod	_	_
+32	panah	panah	NOUN	_	_	31	compound	_	_
+33	yang	yang	PRON	_	_	34	nsubj	_	_
+34	menembus	tembus	VERB	_	_	31	acl:relcl	_	_
+35	badan	badan	NOUN	_	_	34	obj	_	_
+36	nya	dia	PRON	_	_	35	nmod:poss	_	_
+37	.	.	PUNCT	_	_	5	punct	_	_
+
+RELATIONS:
+  [0] tirtha penembak (TIRTHA_SUCI) --[MEMILIKI]--> hubungan erat dengan itihasa (Bisma Parwa, bagian dari Mahabharata) (None)  type=LITERAL source=manual_override
+
+### S4090
+TEXT: sedangkan cucunya yang dari pandawa, yaitu arjuna menyuguhkan air dengan cara memanah tanah yang berada disamping rsi bisma berbaring sehingga air mancur keluar dari tanah, dan langsung mengenai bibir rsi bisma yang sedang berbaring.
+NER: arjuna -> ENTITAS_KEAGAMAAN [cultural] | bisma -> Person [general]
+PARSE:
+# sent_id = S4090
+# text = sedangkan cucunya yang dari pandawa, yaitu arjuna menyuguhkan air dengan cara memanah tanah yang berada disamping rsi bisma berbaring sehingga air mancur keluar dari tanah, dan langsung mengenai bibir rsi bisma yang sedang berbaring.
+1	sedangkan	sedangkan	SCONJ	_	_	2	mark	_	_
+2	cucu	cucu	NOUN	_	_	10	advcl	_	_
+3	nya	dia	PRON	_	_	2	nmod:poss	_	_
+4	yang	yang	PRON	_	_	6	nsubj	_	_
+5	dari	dari	ADP	_	_	6	case	_	_
+6	pandawa	pandawa	NOUN	_	_	2	nmod	_	_
+7	,	,	PUNCT	_	_	2	punct	_	_
+8	yaitu	yaitu	SCONJ	_	_	10	mark	_	_
+9	arjuna	arjuna	NOUN	_	_	10	nsubj	_	_
+10	menyuguhkan	suguh	VERB	_	_	0	root	_	_
+11	air	air	NOUN	_	_	10	obj	_	_
+12	dengan	dengan	ADP	_	_	13	case	_	_
+13	cara	cara	NOUN	_	_	11	nmod	_	_
+14	memanah	manah	VERB	_	_	13	acl	_	_
+15	tanah	tanah	NOUN	_	_	14	obj	_	_
+16	yang	yang	PRON	_	_	17	nsubj	_	_
+17	berada	ada	VERB	_	_	13	acl:relcl	_	_
+18	disamping	disamping	ADP	_	_	19	case	_	_
+19	rsi	rsi	NOUN	_	_	17	obl	_	_
+20	bisma	bisma	NOUN	_	_	19	compound	_	_
+21	berbaring	baring	VERB	_	_	10	conj	_	_
+22	sehingga	sehingga	SCONJ	_	_	25	mark	_	_
+23	air	air	NOUN	_	_	25	nsubj	_	_
+24	mancur	mancur	NOUN	_	_	23	compound	_	_
+25	keluar	keluar	VERB	_	_	21	advcl	_	_
+26	dari	dari	ADP	_	_	27	case	_	_
+27	tanah	tanah	NOUN	_	_	25	obl	_	_
+28	,	,	PUNCT	_	_	29	punct	_	_
+29	dan	dan	CCONJ	_	_	32	cc	_	_
+30	langsung	langsung	ADV	_	_	32	advmod	_	_
+31	mengenai	mengenai	ADP	_	_	32	case	_	_
+32	bibir	bibir	NOUN	_	_	25	obl	_	_
+33	rsi	rsi	NOUN	_	_	32	compound	_	_
+34	bisma	bisma	NOUN	_	_	33	compound	_	_
+35	yang	yang	PRON	_	_	37	nsubj	_	_
+36	sedang	sedang	AUX	_	_	37	aux	_	_
+37	berbaring	baring	VERB	_	_	32	acl:relcl	_	_
+38	.	.	PUNCT	_	_	10	punct	_	_
+
+RELATIONS:
+  [0] arjuna (ENTITAS_KEAGAMAAN) --[MEMANAH]--> tanah (di samping rsi bisma) (None)  type=LITERAL source=manual_override
+  [1] air (dari tanah yang dipanah arjuna) (None) --[MENGENAI]--> bibir rsi bisma (None)  type=LITERAL source=manual_override
+
+### S4096
+TEXT: tirtha ini akan dibawa ke setra untuk dipergunakan pada waktu pembakaran,
+NER: tirtha -> TIRTHA_SUCI [cultural] | setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+PARSE:
+# sent_id = S4096
+# text = tirtha ini akan dibawa ke setra untuk dipergunakan pada waktu pembakaran,
+1	tirtha	tirtha	PROPN	_	_	4	nsubj:pass	_	_
+2	ini	ini	DET	_	_	1	det	_	_
+3	akan	akan	AUX	_	_	4	aux	_	_
+4	dibawa	bawa	VERB	_	_	0	root	_	_
+5	ke	ke	ADP	_	_	6	case	_	_
+6	setra	setra	NOUN	_	_	4	obl	_	_
+7	untuk	untuk	SCONJ	_	_	8	mark	_	_
+8	dipergunakan	guna	VERB	_	_	4	xcomp	_	_
+9	pada	pada	ADP	_	_	10	case	_	_
+10	waktu	waktu	NOUN	_	_	8	obl	_	_
+11	pembakaran	bakar	NOUN	_	_	10	compound	_	_
+12	,	,	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] tirtha (TIRTHA_SUCI) --[DIBAWA_KE]--> setra untuk dipergunakan pada waktu pembakaran (None)  type=LITERAL source=manual_override
+
+### S4103
+TEXT: tirtha kawitan ini dapat dimohon dari merajan kawitan atau merajan pusat dari orang yang meninggal.
+NER: tirtha kawitan -> TIRTHA_SUCI [cultural] | merajan -> BANGUNAN_RITUAL [cultural]
+PARSE:
+# sent_id = S4103
+# text = tirtha kawitan ini dapat dimohon dari merajan kawitan atau merajan pusat dari orang yang meninggal.
+1	tirtha	tirtha	PROPN	_	_	5	nsubj:pass	_	_
+2	kawitan	kawitan	PROPN	_	_	1	flat:name	_	_
+3	ini	ini	DET	_	_	1	det	_	_
+4	dapat	dapat	AUX	_	_	5	aux	_	_
+5	dimohon	mohon	VERB	_	_	0	root	_	_
+6	dari	dari	ADP	_	_	7	case	_	_
+7	merajan	meraj	NOUN	_	_	5	obl	_	_
+8	kawitan	kawitan	NOUN	_	_	7	compound	_	_
+9	atau	atau	CCONJ	_	_	10	cc	_	_
+10	merajan	meraj	NOUN	_	_	7	conj	_	_
+11	pusat	pusat	NOUN	_	_	10	compound	_	_
+12	dari	dari	ADP	_	_	13	case	_	_
+13	orang	orang	NOUN	_	_	10	nmod	_	_
+14	yang	yang	PRON	_	_	15	nsubj	_	_
+15	meninggal	tinggal	VERB	_	_	13	acl:relcl	_	_
+16	.	.	PUNCT	_	_	5	punct	_	_
+
+RELATIONS:
+  [0] tirtha kawitan (TIRTHA_SUCI) --[DIMOHON_DARI]--> merajan kawitan (KONSEP_FILOSOFIS)  type=ENTITY source=dependency_rule
+  [1] tirtha kawitan (TIRTHA_SUCI) --[DIMOHON_DARI]--> merajan pusat (BANGUNAN_RITUAL)  type=ENTITY source=dependency_rule
+
+### S4105
+TEXT: tirtha ini akan dimohonkan oleh pemangku kawitan setempat, dimana terlebih dulu dipersiapkan sarana dan prasarana berupa pras, ajuman, daksina, suci serta rayunan dan kadang-kadang ditambah pajegan.
+NER: tirtha -> TIRTHA_SUCI [cultural] | pemangku -> ENTITAS_KEAGAMAAN [cultural] (canonical: Pemangku) | kawitan -> KONSEP_FILOSOFIS [cultural] | daksina -> SARANA_RITUAL [cultural] (canonical: Daksina) | rayunan -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S4105
+# text = tirtha ini akan dimohonkan oleh pemangku kawitan setempat, dimana terlebih dulu dipersiapkan sarana dan prasarana berupa pras, ajuman, daksina, suci serta rayunan dan kadang-kadang ditambah pajegan.
+1	tirtha	tirtha	PROPN	_	_	4	nsubj:pass	_	_
+2	ini	ini	DET	_	_	1	det	_	_
+3	akan	akan	AUX	_	_	4	aux	_	_
+4	dimohonkan	mohon	VERB	_	_	0	root	_	_
+5	oleh	oleh	ADP	_	_	6	case	_	_
+6	pemangku	mangku	NOUN	_	_	4	obl	_	_
+7	kawitan	kawitan	NOUN	_	_	6	compound	_	_
+8	setempat	setempat	ADJ	_	_	7	amod	_	_
+9	,	,	PUNCT	_	_	13	punct	_	_
+10	dimana	dimana	SCONJ	_	_	13	mark	_	_
+11	terlebih	terlebih	ADV	_	_	13	advmod	_	_
+12	dulu	dulu	ADV	_	_	13	advmod	_	_
+13	dipersiapkan	siap	VERB	_	_	4	advcl	_	_
+14	sarana	sarana	NOUN	_	_	13	obj	_	_
+15	dan	dan	CCONJ	_	_	16	cc	_	_
+16	prasarana	prasarana	NOUN	_	_	14	conj	_	_
+17	berupa	rupa	VERB	_	_	13	conj	_	_
+18	pras	pras	NOUN	_	_	17	obj	_	_
+19	,	,	PUNCT	_	_	20	punct	_	_
+20	ajuman	ajum	NOUN	_	_	18	conj	_	_
+21	,	,	PUNCT	_	_	22	punct	_	_
+22	daksina	daksina	NOUN	_	_	18	conj	_	_
+23	,	,	PUNCT	_	_	24	punct	_	_
+24	suci	suci	ADJ	_	_	18	conj	_	_
+25	serta	serta	CCONJ	_	_	26	cc	_	_
+26	rayunan	rayun	NOUN	_	_	18	conj	_	_
+27	dan	dan	CCONJ	_	_	29	cc	_	_
+28	kadang-kadang	kadang	ADV	_	_	29	advmod	_	_
+29	ditambah	tambah	VERB	_	_	13	conj	_	_
+30	pajegan	pajegan	NOUN	_	_	29	obj	_	_
+31	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] sarana dan prasarana (upacara pemujaan) (None) --[BERUPA]--> pras, ajuman, daksina, suci, rayunan, dan kadang-kadang pajegan (None)  type=LITERAL source=manual_override
+  [1] tirtha (TIRTHA_SUCI) --[DIMOHONKAN_OLEH]--> pemangku kawitan setempat (ENTITAS_KEAGAMAAN)  type=ENTITY source=manual_override
+
+### S4106
+TEXT: tirtha ini memiliki fungsi sebagai sarana untuk mengucapkan permohonan pamit terhadap leluhur, agar nantinya dapat ikut masuk kealam kedewataan.
+NER: tirtha -> TIRTHA_SUCI [cultural]
+PARSE:
+# sent_id = S4106
+# text = tirtha ini memiliki fungsi sebagai sarana untuk mengucapkan permohonan pamit terhadap leluhur, agar nantinya dapat ikut masuk kealam kedewataan.
+1	tirtha	tirtha	PROPN	_	_	3	nsubj	_	_
+2	ini	ini	DET	_	_	1	det	_	_
+3	memiliki	milik	VERB	_	_	0	root	_	_
+4	fungsi	fungsi	NOUN	_	_	3	obj	_	_
+5	sebagai	sebagai	ADP	_	_	6	case	_	_
+6	sarana	sarana	NOUN	_	_	4	nmod	_	_
+7	untuk	untuk	SCONJ	_	_	8	mark	_	_
+8	mengucapkan	ucap	VERB	_	_	6	acl	_	_
+9	permohonan	mohon	NOUN	_	_	8	obj	_	_
+10	pamit	pamit	NOUN	_	_	9	compound	_	_
+11	terhadap	terhadap	ADP	_	_	12	case	_	_
+12	leluhur	leluhur	NOUN	_	_	9	nmod	_	_
+13	,	,	PUNCT	_	_	18	punct	_	_
+14	agar	agar	SCONJ	_	_	18	mark	_	_
+15	nanti	nanti	NOUN	_	_	18	obl	_	_
+16	nya	dia	PRON	_	_	15	nmod:poss	_	_
+17	dapat	dapat	AUX	_	_	18	aux	_	_
+18	ikut	ikut	VERB	_	_	3	advcl	_	_
+19	masuk	masuk	VERB	_	_	18	xcomp	_	_
+20	kealam	kealam	ADP	_	_	21	case	_	_
+21	kedewataan	dewata	NOUN	_	_	19	obl	_	_
+22	.	.	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] tirtha (TIRTHA_SUCI) --[MEMILIKI]--> fungsi sarana untuk mengucapkan permohonan pamit terhadap leluhur , agar nanti nya dapat ikut masuk kealam kedewataan (None)  type=LITERAL source=dependency_rule
+
+### S4109
+TEXT: tirtha kahyangan tiga ini dapat dimohon dari pura desa, pura puseh, pura dalem, pura mrajapti, karena dalam upacara ngaben belumlah lengkap tanpa tirtha kahyangan tiga dimana tempat orang yang meninggal itu berada.
+NER: tirtha kahyangan tiga -> TIRTHA_SUCI [cultural] | pura -> BANGUNAN_RITUAL [cultural] | pura dalem -> BANGUNAN_RITUAL [cultural] | ngaben -> RITUAL_KEMATIAN [cultural]
+PARSE:
+# sent_id = S4109
+# text = tirtha kahyangan tiga ini dapat dimohon dari pura desa, pura puseh, pura dalem, pura mrajapti, karena dalam upacara ngaben belumlah lengkap tanpa tirtha kahyangan tiga dimana tempat orang yang meninggal itu berada.
+1	tirtha	tirtha	PROPN	_	_	6	nsubj:pass	_	_
+2	kahyangan	kahyangan	PROPN	_	_	1	flat:name	_	_
+3	tiga	tiga	NUM	_	_	2	nummod	_	_
+4	ini	ini	DET	_	_	1	det	_	_
+5	dapat	dapat	AUX	_	_	6	aux	_	_
+6	dimohon	mohon	VERB	_	_	0	root	_	_
+7	dari	dari	ADP	_	_	8	case	_	_
+8	pura	pura	NOUN	_	_	6	obl	_	_
+9	desa	desa	NOUN	_	_	8	compound	_	_
+10	,	,	PUNCT	_	_	11	punct	_	_
+11	pura	pura	NOUN	_	_	8	conj	_	_
+12	puseh	puseh	NOUN	_	_	11	compound	_	_
+13	,	,	PUNCT	_	_	14	punct	_	_
+14	pura	pura	NOUN	_	_	8	conj	_	_
+15	dalem	dalem	NOUN	_	_	14	compound	_	_
+16	,	,	PUNCT	_	_	17	punct	_	_
+17	pura	pura	NOUN	_	_	8	conj	_	_
+18	mrajapti	mrajapti	NOUN	_	_	17	compound	_	_
+19	,	,	PUNCT	_	_	25	punct	_	_
+20	karena	karena	SCONJ	_	_	25	mark	_	_
+21	dalam	dalam	ADP	_	_	22	case	_	_
+22	upacara	upacara	NOUN	_	_	25	nmod	_	_
+23	ngaben	ngaben	NOUN	_	_	22	compound	_	_
+24	belumlah	belumlah	ADV	_	_	25	advmod	_	_
+25	lengkap	lengkap	ADJ	_	_	6	conj	_	_
+26	tanpa	tanpa	ADP	_	_	27	case	_	_
+27	tirtha	tirtha	NOUN	_	_	25	nmod	_	_
+28	kahyangan	kahyangan	NOUN	_	_	27	compound	_	_
+29	tiga	tiga	NUM	_	_	28	nummod	_	_
+30	dimana	dimana	SCONJ	_	_	36	mark	_	_
+31	tempat	tempat	NOUN	_	_	36	nsubj	_	_
+32	orang	orang	NOUN	_	_	31	compound	_	_
+33	yang	yang	PRON	_	_	34	nsubj	_	_
+34	meninggal	tinggal	VERB	_	_	31	acl:relcl	_	_
+35	itu	itu	DET	_	_	34	det	_	_
+36	berada	ada	VERB	_	_	25	advcl	_	_
+37	.	.	PUNCT	_	_	6	punct	_	_
+
+RELATIONS:
+  [0] tirtha kahyangan tiga (TIRTHA_SUCI) --[DIMOHON_DARI]--> pura desa (BANGUNAN_RITUAL)  type=ENTITY source=dependency_rule
+  [1] tirtha kahyangan tiga (TIRTHA_SUCI) --[DIMOHON_DARI]--> pura puseh (BANGUNAN_RITUAL)  type=ENTITY source=dependency_rule
+  [2] tirtha kahyangan tiga (TIRTHA_SUCI) --[DIMOHON_DARI]--> pura dalem (BANGUNAN_RITUAL)  type=ENTITY source=dependency_rule
+  [3] tirtha kahyangan tiga (TIRTHA_SUCI) --[DIMOHON_DARI]--> pura mrajapti (BANGUNAN_RITUAL)  type=ENTITY source=dependency_rule
+
+### S4110
+TEXT: tirtha ini akan dimohonkan oleh pemangku kahyangan tiga setempat, dimana terlebih dulu dipersiapkan sarana dan prasarana berupa pras, ajuman, daksina, suci serta rayunan dan kadang-kadang ditambah pajegan.
+NER: tirtha -> TIRTHA_SUCI [cultural] | pemangku -> ENTITAS_KEAGAMAAN [cultural] (canonical: Pemangku) | kahyangan tiga -> BANGUNAN_RITUAL [cultural] | daksina -> SARANA_RITUAL [cultural] (canonical: Daksina) | rayunan -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S4110
+# text = tirtha ini akan dimohonkan oleh pemangku kahyangan tiga setempat, dimana terlebih dulu dipersiapkan sarana dan prasarana berupa pras, ajuman, daksina, suci serta rayunan dan kadang-kadang ditambah pajegan.
+1	tirtha	tirtha	PROPN	_	_	4	nsubj:pass	_	_
+2	ini	ini	DET	_	_	1	det	_	_
+3	akan	akan	AUX	_	_	4	aux	_	_
+4	dimohonkan	mohon	VERB	_	_	0	root	_	_
+5	oleh	oleh	ADP	_	_	6	case	_	_
+6	pemangku	mangku	NOUN	_	_	4	obl	_	_
+7	kahyangan	kahyangan	NOUN	_	_	6	compound	_	_
+8	tiga	tiga	NUM	_	_	7	nummod	_	_
+9	setempat	setempat	ADJ	_	_	6	amod	_	_
+10	,	,	PUNCT	_	_	14	punct	_	_
+11	dimana	dimana	SCONJ	_	_	14	mark	_	_
+12	terlebih	terlebih	ADV	_	_	14	advmod	_	_
+13	dulu	dulu	ADV	_	_	14	advmod	_	_
+14	dipersiapkan	siap	VERB	_	_	4	advcl	_	_
+15	sarana	sarana	NOUN	_	_	14	obj	_	_
+16	dan	dan	CCONJ	_	_	17	cc	_	_
+17	prasarana	prasarana	NOUN	_	_	15	conj	_	_
+18	berupa	rupa	VERB	_	_	14	conj	_	_
+19	pras	pras	NOUN	_	_	18	obj	_	_
+20	,	,	PUNCT	_	_	21	punct	_	_
+21	ajuman	ajum	NOUN	_	_	19	conj	_	_
+22	,	,	PUNCT	_	_	23	punct	_	_
+23	daksina	daksina	NOUN	_	_	19	conj	_	_
+24	,	,	PUNCT	_	_	25	punct	_	_
+25	suci	suci	ADJ	_	_	19	conj	_	_
+26	serta	serta	CCONJ	_	_	27	cc	_	_
+27	rayunan	rayun	NOUN	_	_	19	conj	_	_
+28	dan	dan	CCONJ	_	_	30	cc	_	_
+29	kadang-kadang	kadang	ADV	_	_	30	advmod	_	_
+30	ditambah	tambah	VERB	_	_	14	conj	_	_
+31	pajegan	pajegan	NOUN	_	_	30	obj	_	_
+32	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] sarana dan prasarana (upacara pemujaan) (None) --[BERUPA]--> pras, ajuman, daksina, suci, rayunan, dan kadang-kadang pajegan (None)  type=LITERAL source=manual_override
+  [1] tirtha (TIRTHA_SUCI) --[DIMOHONKAN_OLEH]--> pemangku kahyangan tiga setempat (BANGUNAN_RITUAL)  type=ENTITY source=manual_override
+
+### S4111
+TEXT: tirtha ini memiliki fungsi sebagai sarana yang dapat mengantarkan agar roh orang yang meninggal mendapatkan tempat yang baik atau dalam kata lain roh tersebut tidak mengalami kesengsaraan.
+NER: tirtha -> TIRTHA_SUCI [cultural]
+PARSE:
+# sent_id = S4111
+# text = tirtha ini memiliki fungsi sebagai sarana yang dapat mengantarkan agar roh orang yang meninggal mendapatkan tempat yang baik atau dalam kata lain roh tersebut tidak mengalami kesengsaraan.
+1	tirtha	tirtha	PROPN	_	_	3	nsubj	_	_
+2	ini	ini	DET	_	_	1	det	_	_
+3	memiliki	milik	VERB	_	_	0	root	_	_
+4	fungsi	fungsi	NOUN	_	_	3	obj	_	_
+5	sebagai	sebagai	ADP	_	_	6	case	_	_
+6	sarana	sarana	NOUN	_	_	4	nmod	_	_
+7	yang	yang	PRON	_	_	9	nsubj	_	_
+8	dapat	dapat	AUX	_	_	9	aux	_	_
+9	mengantarkan	antar	VERB	_	_	6	acl:relcl	_	_
+10	agar	agar	ADP	_	_	11	case	_	_
+11	roh	roh	NOUN	_	_	15	nsubj	_	_
+12	orang	orang	NOUN	_	_	11	compound	_	_
+13	yang	yang	PRON	_	_	14	nsubj	_	_
+14	meninggal	tinggal	VERB	_	_	11	acl:relcl	_	_
+15	mendapatkan	dapat	VERB	_	_	9	advcl	_	_
+16	tempat	tempat	NOUN	_	_	15	obj	_	_
+17	yang	yang	PRON	_	_	18	nsubj	_	_
+18	baik	baik	ADJ	_	_	16	acl:relcl	_	_
+19	atau	atau	CCONJ	_	_	26	cc	_	_
+20	dalam	dalam	ADP	_	_	21	case	_	_
+21	kata	kata	NOUN	_	_	26	obl	_	_
+22	lain	lain	ADJ	_	_	21	amod	_	_
+23	roh	roh	NOUN	_	_	26	nsubj	_	_
+24	tersebut	tersebut	DET	_	_	23	det	_	_
+25	tidak	tidak	PART	_	_	26	advmod	_	_
+26	mengalami	alami	VERB	_	_	15	conj	_	_
+27	kesengsaraan	sengsara	NOUN	_	_	26	obj	_	_
+28	.	.	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] tirtha (TIRTHA_SUCI) --[MEMILIKI]--> fungsi sarana yang dapat mengantarkan agar roh orang yang meninggal mendapatkan tempat yang baik atau dalam kata lain roh tersebut tidak mengalami kesengsaraan (None)  type=LITERAL source=dependency_rule
+
+### S4112
+TEXT: tirtha ini juga berfungsi sebagai sarana pengembalian roh (atma) kepada sang pencipta, karena pura kahyangan tiga adalah tempat pemujaan sang pencipta dalam fungsi sebagai utpeti, shtiti dan pralina.
+NER: tirtha -> TIRTHA_SUCI [cultural] | atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma) | pura kahyangan tiga -> BANGUNAN_RITUAL [cultural] | utpeti -> KONSEP_FILOSOFIS [cultural] | pralina -> TAHAPAN_UPACARA [cultural]
+PARSE:
+# sent_id = S4112
+# text = tirtha ini juga berfungsi sebagai sarana pengembalian roh (atma) kepada sang pencipta, karena pura kahyangan tiga adalah tempat pemujaan sang pencipta dalam fungsi sebagai utpeti, shtiti dan pralina.
+1	tirtha	tirtha	PROPN	_	_	4	nsubj:pass	_	_
+2	ini	ini	DET	_	_	1	det	_	_
+3	juga	juga	ADV	_	_	4	advmod	_	_
+4	berfungsi	fungsi	VERB	_	_	0	root	_	_
+5	sebagai	sebagai	ADP	_	_	6	case	_	_
+6	sarana	sarana	NOUN	_	_	4	obl	_	_
+7	pengembalian	kembali	NOUN	_	_	6	compound	_	_
+8	roh	roh	NOUN	_	_	7	compound	_	_
+9	(	(	PUNCT	_	_	10	punct	_	_
+10	atma	atma	NOUN	_	_	6	appos	_	_
+11	)	)	PUNCT	_	_	10	punct	_	_
+12	kepada	kepada	ADP	_	_	14	case	_	_
+13	sang	sang	DET	_	_	14	det	_	_
+14	pencipta	cipta	NOUN	_	_	6	nmod	_	_
+15	,	,	PUNCT	_	_	21	punct	_	_
+16	karena	karena	SCONJ	_	_	21	mark	_	_
+17	pura	pura	NOUN	_	_	21	nsubj	_	_
+18	kahyangan	kahyangan	NOUN	_	_	17	compound	_	_
+19	tiga	tiga	NUM	_	_	18	nummod	_	_
+20	adalah	adalah	AUX	_	_	21	cop	_	_
+21	tempat	tempat	NOUN	_	_	4	advcl	_	_
+22	pemujaan	puja	NOUN	_	_	21	compound	_	_
+23	sang	sang	DET	_	_	24	det	_	_
+24	pencipta	cipta	NOUN	_	_	22	compound	_	_
+25	dalam	dalam	ADP	_	_	26	case	_	_
+26	fungsi	fungsi	NOUN	_	_	21	nmod	_	_
+27	sebagai	sebagai	ADP	_	_	28	case	_	_
+28	utpeti	utpeti	NOUN	_	_	26	nmod	_	_
+29	,	,	PUNCT	_	_	30	punct	_	_
+30	shtiti	shtiti	NOUN	_	_	28	conj	_	_
+31	dan	dan	CCONJ	_	_	32	cc	_	_
+32	pralina	pralina	NOUN	_	_	28	conj	_	_
+33	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] tirtha (TIRTHA_SUCI) --[BERFUNGSI_SEBAGAI]--> sarana pengembalian roh (atma) kepada sang pencipta (None)  type=LITERAL source=manual_override
+  [1] pura kahyangan tiga (BANGUNAN_RITUAL) --[ADALAH]--> tempat pemujaan sang pencipta (None)  type=LITERAL source=manual_override
+  [2] pura kahyangan tiga (BANGUNAN_RITUAL) --[BERFUNGSI_SEBAGAI]--> utpeti (KONSEP_FILOSOFIS)  type=ENTITY source=manual_override
+  [3] pura kahyangan tiga (BANGUNAN_RITUAL) --[BERFUNGSI_SEBAGAI]--> sthiti (None)  type=LITERAL source=manual_override
+  [4] pura kahyangan tiga (BANGUNAN_RITUAL) --[BERFUNGSI_SEBAGAI]--> pralina (TAHAPAN_UPACARA)  type=ENTITY source=manual_override
+
+### S4116
+TEXT: tirtha ini juga berguna sebagai sarana untuk meningkatkan kedudukan roh orang yang meninggal yang masih dalam tingkatan preta menjadi pitara.
+NER: tirtha -> TIRTHA_SUCI [cultural] | pitara -> ENTITAS_KEAGAMAAN [cultural] (canonical: Pitra)
+PARSE:
+# sent_id = S4116
+# text = tirtha ini juga berguna sebagai sarana untuk meningkatkan kedudukan roh orang yang meninggal yang masih dalam tingkatan preta menjadi pitara.
+1	tirtha	tirtha	PROPN	_	_	4	nsubj	_	_
+2	ini	ini	DET	_	_	1	det	_	_
+3	juga	juga	ADV	_	_	4	advmod	_	_
+4	berguna	guna	VERB	_	_	0	root	_	_
+5	sebagai	sebagai	ADP	_	_	6	case	_	_
+6	sarana	sarana	NOUN	_	_	4	obl	_	_
+7	untuk	untuk	SCONJ	_	_	8	mark	_	_
+8	meningkatkan	tingkat	VERB	_	_	6	acl	_	_
+9	kedudukan	duduk	NOUN	_	_	8	obj	_	_
+10	roh	roh	NOUN	_	_	9	compound	_	_
+11	orang	orang	NOUN	_	_	10	compound	_	_
+12	yang	yang	PRON	_	_	13	nsubj	_	_
+13	meninggal	tinggal	VERB	_	_	9	acl:relcl	_	_
+14	yang	yang	PRON	_	_	17	nsubj	_	_
+15	masih	masih	ADV	_	_	17	advmod	_	_
+16	dalam	dalam	ADP	_	_	17	case	_	_
+17	tingkatan	tingkat	NOUN	_	_	13	obl	_	_
+18	preta	preta	NOUN	_	_	17	compound	_	_
+19	menjadi	jadi	VERB	_	_	17	acl	_	_
+20	pitara	pitara	NOUN	_	_	19	obj	_	_
+21	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] tirtha (TIRTHA_SUCI) --[BERFUNGSI_SEBAGAI]--> sarana untuk meningkatkan kedudukan roh orang yang meninggal yang masih dalam tingkatan preta menjadi pitara (None)  type=LITERAL source=dependency_rule
+
+### S4121
+TEXT: oleh sebab itu tirtha pangentas dibuat di gria ida sang sulinggih atau dirumah atau ditempat upacara pengabenan dilaksanakan yaitu saat upacara pengaskaran yang kebetulan dilaksanakan bertepatan pada hari puncak pengabenan dilaksanakan.
+NER: tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas) | gria -> BANGUNAN_RITUAL [cultural] | sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih) | pengabenan -> RITUAL_KEMATIAN [cultural] | pengaskaran -> TAHAPAN_UPACARA [cultural]
+PARSE:
+# sent_id = S4121
+# text = oleh sebab itu tirtha pangentas dibuat di gria ida sang sulinggih atau dirumah atau ditempat upacara pengabenan dilaksanakan yaitu saat upacara pengaskaran yang kebetulan dilaksanakan bertepatan pada hari puncak pengabenan dilaksanakan.
+1	oleh	oleh	ADP	_	_	2	case	_	_
+2	sebab	sebab	NOUN	_	_	6	obl	_	_
+3	itu	itu	DET	_	_	2	det	_	_
+4	tirtha	tirtha	NOUN	_	_	6	nsubj:pass	_	_
+5	pangentas	pangentas	NOUN	_	_	4	compound	_	_
+6	dibuat	buat	VERB	_	_	0	root	_	_
+7	di	di	ADP	_	_	8	case	_	_
+8	gria	gria	NOUN	_	_	6	obl	_	_
+9	ida	ida	PROPN	_	_	8	nmod	_	_
+10	sang	sang	DET	_	_	11	det	_	_
+11	sulinggih	sulinggih	NOUN	_	_	8	conj	_	_
+12	atau	atau	CCONJ	_	_	18	cc	_	_
+13	dirumah	dirumah	ADP	_	_	18	case	_	_
+14	atau	atau	CCONJ	_	_	18	cc	_	_
+15	ditempat	tempat	ADP	_	_	16	case	_	_
+16	upacara	upacara	NOUN	_	_	18	obl	_	_
+17	pengabenan	kaben	NOUN	_	_	16	compound	_	_
+18	dilaksanakan	laksana	VERB	_	_	6	conj	_	_
+19	yaitu	yaitu	SCONJ	_	_	31	mark	_	_
+20	saat	saat	SCONJ	_	_	26	mark	_	_
+21	upacara	upacara	NOUN	_	_	26	nsubj	_	_
+22	pengaskaran	askar	NOUN	_	_	21	compound	_	_
+23	yang	yang	PRON	_	_	25	nsubj:pass	_	_
+24	kebetulan	kebetulan	ADV	_	_	25	advmod	_	_
+25	dilaksanakan	laksana	VERB	_	_	21	acl:relcl	_	_
+26	bertepatan	tepat	VERB	_	_	18	ccomp	_	_
+27	pada	pada	ADP	_	_	28	case	_	_
+28	hari	hari	NOUN	_	_	26	obl:tmod	_	_
+29	puncak	puncak	NOUN	_	_	28	compound	_	_
+30	pengabenan	kaben	NOUN	_	_	29	compound	_	_
+31	dilaksanakan	laksana	VERB	_	_	18	ccomp	_	_
+32	.	.	PUNCT	_	_	6	punct	_	_
+
+RELATIONS:
+  [0] tirtha pangentas (TIRTHA_SUCI) --[DIBUAT_DI]--> gria ida sang sulinggih (kediaman pendeta) atau di rumah (None)  type=LITERAL source=manual_override
+  [1] tirtha pangentas (TIRTHA_SUCI) --[DIBUAT_SAAT]--> upacara pengaskaran (bertepatan dengan puncak upacara pengabenan) (None)  type=LITERAL source=manual_override
+
+### S4126
+TEXT: dari beberapa jenis-jenis tirtha penting yang diperlukan dan yang dipergunakan dalam upacara pengabenanan maka tirtha pangentas adalah tirtha yang paling terpenting dalam hal ini.
+NER: tirtha -> TIRTHA_SUCI [cultural] | tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas)
+PARSE:
+# sent_id = S4126
+# text = dari beberapa jenis-jenis tirtha penting yang diperlukan dan yang dipergunakan dalam upacara pengabenanan maka tirtha pangentas adalah tirtha yang paling terpenting dalam hal ini.
+1	dari	dari	ADP	_	_	3	case	_	_
+2	beberapa	beberapa	DET	_	_	3	det	_	_
+3	jenis-jenis	jenis	NOUN	_	_	18	nmod	_	_
+4	tirtha	tirtha	NOUN	_	_	3	compound	_	_
+5	penting	penting	ADJ	_	_	4	amod	_	_
+6	yang	yang	PRON	_	_	7	nsubj:pass	_	_
+7	diperlukan	perlu	VERB	_	_	3	acl:relcl	_	_
+8	dan	dan	CCONJ	_	_	10	cc	_	_
+9	yang	yang	PRON	_	_	10	nsubj:pass	_	_
+10	dipergunakan	guna	VERB	_	_	3	acl:relcl	_	_
+11	dalam	dalam	ADP	_	_	12	case	_	_
+12	upacara	upacara	NOUN	_	_	10	obl	_	_
+13	pengabenanan	kabenan	NOUN	_	_	12	compound	_	_
+14	maka	maka	SCONJ	_	_	18	mark	_	_
+15	tirtha	tirtha	NOUN	_	_	18	nsubj	_	_
+16	pangentas	pangentas	NOUN	_	_	15	compound	_	_
+17	adalah	adalah	AUX	_	_	18	cop	_	_
+18	tirtha	tirtha	NOUN	_	_	0	root	_	_
+19	yang	yang	PRON	_	_	21	nsubj	_	_
+20	paling	paling	ADV	_	_	21	advmod	_	_
+21	terpenting	penting	ADJ	_	_	18	acl:relcl	_	_
+22	dalam	dalam	ADP	_	_	23	case	_	_
+23	hal	hal	NOUN	_	_	21	nmod	_	_
+24	ini	ini	DET	_	_	23	det	_	_
+25	.	.	PUNCT	_	_	18	punct	_	_
+
+RELATIONS:
+  [0] tirtha pangentas (TIRTHA_SUCI) --[ADALAH]--> tirtha dari beberapa jenis-jenis tirtha penting yang diperlukan dan yang dipergunakan dalam upacara pengabenanan yang paling terpenting dalam hal ini (None)  type=LITERAL source=dependency_rule
+
+### S4128
+TEXT: sebab tirtha pangentas memiliki fungsi utama sebagai sarana untuk "ngentas" atau memberikan jalan dan membersihan noda-noda para roh atau atma orang yang meninggal agar dapat menuju ketempat yang lebih tinggi yaitu ke alam kedewataan sedangkan upacara pengabenan adalah merupakan upacara penyucikan roh atau atman (purusa) orang-orang yang telah meninggal agar terlepas dari ikatan panca mahabhuta (prakerti) sehingga lebih mudah dapat menuju ke alam dewa (swah loka).
+NER: tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas) | atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma) | pengabenan -> RITUAL_KEMATIAN [cultural] | purusa -> KONSEP_FILOSOFIS [cultural] | dewa -> ENTITAS_KEAGAMAAN [cultural] | swah loka -> KONSEP_FILOSOFIS [cultural]
+PARSE:
+# sent_id = S4128
+# text = sebab tirtha pangentas memiliki fungsi utama sebagai sarana untuk "ngentas" atau memberikan jalan dan membersihan noda-noda para roh atau atma orang yang meninggal agar dapat menuju ketempat yang lebih tinggi yaitu ke alam kedewataan sedangkan upacara pengabenan adalah merupakan upacara penyucikan roh atau atman (purusa) orang-orang yang telah meninggal agar terlepas dari ikatan panca mahabhuta (prakerti) sehingga lebih mudah dapat menuju ke alam dewa (swah loka).
+1	sebab	sebab	ADP	_	_	2	case	_	_
+2	tirtha	tirtha	NOUN	_	_	4	nsubj	_	_
+3	pangentas	pangentas	PROPN	_	_	2	nmod	_	_
+4	memiliki	milik	VERB	_	_	0	root	_	_
+5	fungsi	fungsi	NOUN	_	_	4	obj	_	_
+6	utama	utama	ADJ	_	_	5	amod	_	_
+7	sebagai	sebagai	ADP	_	_	8	case	_	_
+8	sarana	sarana	NOUN	_	_	5	nmod	_	_
+9	untuk	untuk	ADP	_	_	11	case	_	_
+10	"	"	PUNCT	_	_	11	punct	_	_
+11	ngentas	ngentas	NOUN	_	_	8	nmod	_	_
+12	"	"	PUNCT	_	_	11	punct	_	_
+13	atau	atau	CCONJ	_	_	14	cc	_	_
+14	memberikan	beri	VERB	_	_	4	conj	_	_
+15	jalan	jalan	NOUN	_	_	14	obj	_	_
+16	dan	dan	CCONJ	_	_	17	cc	_	_
+17	membersihan	bersih	VERB	_	_	14	conj	_	_
+18	noda-noda	noda	NOUN	_	_	17	obj	_	_
+19	para	para	DET	_	_	20	det	_	_
+20	roh	roh	NOUN	_	_	18	compound	_	_
+21	atau	atau	CCONJ	_	_	22	cc	_	_
+22	atma	atma	NOUN	_	_	20	conj	_	_
+23	orang	orang	NOUN	_	_	22	compound	_	_
+24	yang	yang	PRON	_	_	25	nsubj	_	_
+25	meninggal	tinggal	VERB	_	_	22	acl:relcl	_	_
+26	agar	agar	SCONJ	_	_	28	mark	_	_
+27	dapat	dapat	AUX	_	_	28	aux	_	_
+28	menuju	tuju	ADP	_	_	29	case	_	_
+29	ketempat	ketempat	NOUN	_	_	25	obl	_	_
+30	yang	yang	PRON	_	_	32	nsubj	_	_
+31	lebih	lebih	ADV	_	_	32	advmod	_	_
+32	tinggi	tinggi	ADJ	_	_	29	acl:relcl	_	_
+33	yaitu	yaitu	ADP	_	_	35	case	_	_
+34	ke	ke	ADP	_	_	35	case	_	_
+35	alam	alam	NOUN	_	_	29	nmod	_	_
+36	kedewataan	dewata	NOUN	_	_	35	compound	_	_
+37	sedangkan	sedangkan	SCONJ	_	_	41	mark	_	_
+38	upacara	upacara	NOUN	_	_	41	nsubj	_	_
+39	pengabenan	kaben	NOUN	_	_	38	compound	_	_
+40	adalah	adalah	AUX	_	_	41	cop	_	_
+41	merupakan	merupakan	VERB	_	_	4	advcl	_	_
+42	upacara	upacara	NOUN	_	_	41	obj	_	_
+43	penyucikan	sucik	NOUN	_	_	42	compound	_	_
+44	roh	roh	NOUN	_	_	43	compound	_	_
+45	atau	atau	CCONJ	_	_	46	cc	_	_
+46	atman	atman	NOUN	_	_	44	conj	_	_
+47	(	(	PUNCT	_	_	48	punct	_	_
+48	purusa	purusa	NOUN	_	_	46	appos	_	_
+49	)	)	PUNCT	_	_	48	punct	_	_
+50	orang-orang	orang	NOUN	_	_	42	appos	_	_
+51	yang	yang	PRON	_	_	53	nsubj	_	_
+52	telah	telah	AUX	_	_	53	aux	_	_
+53	meninggal	tinggal	VERB	_	_	50	acl:relcl	_	_
+54	agar	agar	SCONJ	_	_	55	mark	_	_
+55	terlepas	lepas	VERB	_	_	53	advcl	_	_
+56	dari	dari	ADP	_	_	57	case	_	_
+57	ikatan	ikat	NOUN	_	_	55	obl	_	_
+58	panca	panca	NOUN	_	_	57	compound	_	_
+59	mahabhuta	mahabhuta	NOUN	_	_	58	compound	_	_
+60	(	(	PUNCT	_	_	61	punct	_	_
+61	prakerti	prakerti	NOUN	_	_	57	appos	_	_
+62	)	)	PUNCT	_	_	61	punct	_	_
+63	sehingga	sehingga	SCONJ	_	_	67	mark	_	_
+64	lebih	lebih	ADV	_	_	65	advmod	_	_
+65	mudah	mudah	ADJ	_	_	67	advmod	_	_
+66	dapat	dapat	AUX	_	_	67	aux	_	_
+67	menuju	tuju	VERB	_	_	55	advcl	_	_
+68	ke	ke	ADP	_	_	69	case	_	_
+69	alam	alam	NOUN	_	_	67	obl	_	_
+70	dewa	dewa	NOUN	_	_	69	compound	_	_
+71	(	(	PUNCT	_	_	72	punct	_	_
+72	swah	swah	NOUN	_	_	69	appos	_	_
+73	loka	loka	NOUN	_	_	72	compound	_	_
+74	)	)	PUNCT	_	_	72	punct	_	_
+75	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] tirtha pangentas (TIRTHA_SUCI) --[MEMILIKI]--> fungsi utama sebagai sarana untuk "ngentas": memberikan jalan dan membersihkan noda-noda roh atau atma orang yang meninggal, agar dapat menuju ke alam kedewataan (None)  type=LITERAL source=manual_override
+  [1] upacara pengabenan (RITUAL_KEMATIAN) --[ADALAH]--> upacara penyucian roh atau atman (purusa) orang yang telah meninggal, agar terlepas dari ikatan panca mahabhuta, sehingga dapat menuju alam dewa (swah loka) (None)  type=LITERAL source=manual_override
+
+### S4167
+TEXT: seperti telah disebutkan diatas bahwa tirtha pangentas adalah air suci gangga yang di mohonkan untuk menyucikan serta melepaskan ikatan roh dari ikatan-ikatan duniawi agar bisa meningkat menuju alam bhwah loka.
+NER: tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas)
+PARSE:
+# sent_id = S4167
+# text = seperti telah disebutkan diatas bahwa tirtha pangentas adalah air suci gangga yang di mohonkan untuk menyucikan serta melepaskan ikatan roh dari ikatan-ikatan duniawi agar bisa meningkat menuju alam bhwah loka.
+1	seperti	seperti	SCONJ	_	_	3	mark	_	_
+2	telah	telah	AUX	_	_	3	aux	_	_
+3	disebutkan	sebut	VERB	_	_	9	advcl	_	_
+4	diatas	diatas	ADP	_	_	3	advmod	_	_
+5	bahwa	bahwa	SCONJ	_	_	9	mark	_	_
+6	tirtha	tirtha	NOUN	_	_	9	nsubj	_	_
+7	pangentas	pangentas	NOUN	_	_	6	compound	_	_
+8	adalah	adalah	AUX	_	_	9	cop	_	_
+9	air	air	NOUN	_	_	0	root	_	_
+10	suci	suci	ADJ	_	_	9	amod	_	_
+11	gangga	gangga	NOUN	_	_	9	compound	_	_
+12	yang	yang	PRON	_	_	13	nsubj:pass	_	_
+13	di	di	VERB	_	_	9	acl:relcl	_	_
+14	mohonkan	mohonkan	X	_	_	13	goeswith	_	_
+15	untuk	untuk	SCONJ	_	_	16	mark	_	_
+16	menyucikan	nyuci	VERB	_	_	13	xcomp	_	_
+17	serta	serta	CCONJ	_	_	18	cc	_	_
+18	melepaskan	lepas	VERB	_	_	13	conj	_	_
+19	ikatan	ikat	NOUN	_	_	18	obj	_	_
+20	roh	roh	NOUN	_	_	19	compound	_	_
+21	dari	dari	ADP	_	_	22	case	_	_
+22	ikatan-ikatan	ikatan	NOUN	_	_	19	nmod	_	_
+23	duniawi	duniawi	NOUN	_	_	22	compound	_	_
+24	agar	agar	SCONJ	_	_	26	mark	_	_
+25	bisa	bisa	AUX	_	_	26	aux	_	_
+26	meningkat	tingkat	VERB	_	_	18	advcl	_	_
+27	menuju	tuju	ADP	_	_	28	case	_	_
+28	alam	alam	NOUN	_	_	26	obl	_	_
+29	bhwah	bhwah	NOUN	_	_	28	compound	_	_
+30	loka	loka	NOUN	_	_	29	compound	_	_
+31	.	.	PUNCT	_	_	9	punct	_	_
+
+RELATIONS:
+  [0] tirtha pangentas (TIRTHA_SUCI) --[ADALAH]--> air suci gangga yang di mohonkan untuk menyucikan serta melepaskan ikatan roh dari ikatan-ikatan duniawi agar bisa meningkat menuju alam bhwah loka (None)  type=LITERAL source=dependency_rule
+
+### S4169
+TEXT: tirtha pangentas adalah seuatu yang memiliki arti yang erat dengan upacara pitra yadnya.
+NER: tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas) | pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+PARSE:
+# sent_id = S4169
+# text = tirtha pangentas adalah seuatu yang memiliki arti yang erat dengan upacara pitra yadnya.
+1	tirtha	tirtha	PROPN	_	_	4	nsubj	_	_
+2	pangentas	pangentas	PROPN	_	_	1	flat:name	_	_
+3	adalah	adalah	AUX	_	_	4	cop	_	_
+4	seuatu	seuatu	NOUN	_	_	0	root	_	_
+5	yang	yang	PRON	_	_	6	nsubj	_	_
+6	memiliki	milik	VERB	_	_	4	acl:relcl	_	_
+7	arti	arti	NOUN	_	_	6	obj	_	_
+8	yang	yang	PRON	_	_	9	nsubj	_	_
+9	erat	erat	ADJ	_	_	7	acl:relcl	_	_
+10	dengan	dengan	ADP	_	_	11	case	_	_
+11	upacara	upacara	NOUN	_	_	9	nmod	_	_
+12	pitra	pitra	NOUN	_	_	11	compound	_	_
+13	yadnya	yadnya	NOUN	_	_	12	compound	_	_
+14	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] tirtha pangentas (TIRTHA_SUCI) --[ADALAH]--> sesuatu yang memiliki arti erat dengan upacara pitra yadnya (None)  type=LITERAL source=manual_override
+
+### S4170
+TEXT: karena tirtha pangentas adalah tirtha yang diharapkan dan diyakini sebagai alat atau sarana sangat penting bagi umat hindu, khususnya dalam hubungannya untuk dapat melepaskan roh para leluhur dari ikatan-ikatan keduniawian, sehingga para leluhur dapat bebas dan bisa meningkat menuju alam bhwah loka.
+NER: tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas) | hindu -> AGAMA [cultural]
+PARSE:
+# sent_id = S4170
+# text = karena tirtha pangentas adalah tirtha yang diharapkan dan diyakini sebagai alat atau sarana sangat penting bagi umat hindu, khususnya dalam hubungannya untuk dapat melepaskan roh para leluhur dari ikatan-ikatan keduniawian, sehingga para leluhur dapat bebas dan bisa meningkat menuju alam bhwah loka.
+1	karena	karena	ADP	_	_	5	case	_	_
+2	tirtha	tirtha	PROPN	_	_	5	nsubj	_	_
+3	pangentas	pangentas	PROPN	_	_	2	flat:name	_	_
+4	adalah	adalah	AUX	_	_	5	cop	_	_
+5	tirtha	tirtha	NOUN	_	_	0	root	_	_
+6	yang	yang	PRON	_	_	7	nsubj:pass	_	_
+7	diharapkan	harap	VERB	_	_	5	acl:relcl	_	_
+8	dan	dan	CCONJ	_	_	9	cc	_	_
+9	diyakini	yakin	VERB	_	_	7	conj	_	_
+10	sebagai	sebagai	ADP	_	_	11	case	_	_
+11	alat	alat	NOUN	_	_	9	obl	_	_
+12	atau	atau	CCONJ	_	_	13	cc	_	_
+13	sarana	sarana	NOUN	_	_	11	conj	_	_
+14	sangat	sangat	ADV	_	_	15	advmod	_	_
+15	penting	penting	ADJ	_	_	13	amod	_	_
+16	bagi	bagi	ADP	_	_	17	case	_	_
+17	umat	umat	NOUN	_	_	15	nmod	_	_
+18	hindu	hindu	NOUN	_	_	17	compound	_	_
+19	,	,	PUNCT	_	_	20	punct	_	_
+20	khususnya	khususnya	ADJ	_	_	5	amod	_	_
+21	dalam	dalam	ADP	_	_	22	case	_	_
+22	hubungan	hubung	NOUN	_	_	20	nmod	_	_
+23	nya	dia	PRON	_	_	22	nmod:poss	_	_
+24	untuk	untuk	SCONJ	_	_	26	mark	_	_
+25	dapat	dapat	AUX	_	_	26	aux	_	_
+26	melepaskan	lepas	VERB	_	_	22	acl	_	_
+27	roh	roh	NOUN	_	_	26	obj	_	_
+28	para	para	DET	_	_	29	det	_	_
+29	leluhur	leluhur	NOUN	_	_	27	compound	_	_
+30	dari	dari	ADP	_	_	31	case	_	_
+31	ikatan-ikatan	ikatan	NOUN	_	_	27	nmod	_	_
+32	keduniawian	keduniawian	NOUN	_	_	31	compound	_	_
+33	,	,	PUNCT	_	_	38	punct	_	_
+34	sehingga	sehingga	SCONJ	_	_	38	mark	_	_
+35	para	para	DET	_	_	36	det	_	_
+36	leluhur	leluhur	NOUN	_	_	38	nsubj	_	_
+37	dapat	dapat	AUX	_	_	38	aux	_	_
+38	bebas	bebas	ADJ	_	_	5	advcl	_	_
+39	dan	dan	CCONJ	_	_	41	cc	_	_
+40	bisa	bisa	AUX	_	_	41	aux	_	_
+41	meningkat	tingkat	VERB	_	_	38	conj	_	_
+42	menuju	tuju	ADP	_	_	43	case	_	_
+43	alam	alam	NOUN	_	_	41	obl	_	_
+44	bhwah	bhwah	NOUN	_	_	43	compound	_	_
+45	loka	loka	NOUN	_	_	44	compound	_	_
+46	.	.	PUNCT	_	_	5	punct	_	_
+
+RELATIONS:
+  [0] tirtha pangentas (TIRTHA_SUCI) --[ADALAH]--> tirtha yang diharapkan dan diyakini sebagai alat atau sarana sangat penting bagi umat hindu, khususnya dalam hubungannya untuk dapat melepaskan roh para leluhur dari ikatan-ikatan keduniawian, sehingga para leluhur dapat bebas dan bisa meningkat menuju alam bhwah loka (None)  type=LITERAL source=manual_override
+
+### S4171
+TEXT: seperti disebutkan diatas bahwa tirtha pangentas adalah air suci gangga yang diturunkan untuk menyucikan para leluhur.
+NER: tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas)
+PARSE:
+# sent_id = S4171
+# text = seperti disebutkan diatas bahwa tirtha pangentas adalah air suci gangga yang diturunkan untuk menyucikan para leluhur.
+1	seperti	seperti	SCONJ	_	_	2	mark	_	_
+2	disebutkan	sebut	VERB	_	_	8	acl	_	_
+3	diatas	diatas	ADP	_	_	2	advmod	_	_
+4	bahwa	bahwa	SCONJ	_	_	8	mark	_	_
+5	tirtha	tirtha	NOUN	_	_	8	nsubj	_	_
+6	pangentas	pangentas	NOUN	_	_	5	compound	_	_
+7	adalah	adalah	AUX	_	_	8	cop	_	_
+8	air	air	NOUN	_	_	0	root	_	_
+9	suci	suci	ADJ	_	_	8	amod	_	_
+10	gangga	gangga	NOUN	_	_	8	compound	_	_
+11	yang	yang	PRON	_	_	12	nsubj:pass	_	_
+12	diturunkan	turun	VERB	_	_	8	acl:relcl	_	_
+13	untuk	untuk	SCONJ	_	_	14	mark	_	_
+14	menyucikan	nyuci	VERB	_	_	12	xcomp	_	_
+15	para	para	DET	_	_	16	det	_	_
+16	leluhur	leluhur	NOUN	_	_	14	obj	_	_
+17	.	.	PUNCT	_	_	8	punct	_	_
+
+RELATIONS:
+  [0] tirtha pangentas (TIRTHA_SUCI) --[ADALAH]--> air suci gangga seperti disebutkan diatas yang diturunkan untuk menyucikan para leluhur (None)  type=LITERAL source=dependency_rule
+
+### S4175
+TEXT: karena upacara mapulang lingga artinya "ngelinggihang lingga" dalam diri, atau dengan kata lain, bahwa tuhan atau brahman di-stanakan atau ditempatkan dalam diri sendiri.
+NER: mapulang lingga -> TAHAPAN_UPACARA [cultural] | ngelinggihang -> TAHAPAN_UPACARA [cultural] | tuhan -> ENTITAS_KEAGAMAAN [cultural] | brahman -> KONSEP_FILOSOFIS [cultural]
+PARSE:
+# sent_id = S4175
+# text = karena upacara mapulang lingga artinya "ngelinggihang lingga" dalam diri, atau dengan kata lain, bahwa tuhan atau brahman di-stanakan atau ditempatkan dalam diri sendiri.
+1	karena	karena	ADP	_	_	2	case	_	_
+2	upacara	upacara	NOUN	_	_	0	root	_	_
+3	mapulang	mapulang	NOUN	_	_	2	compound	_	_
+4	lingga	lingga	NOUN	_	_	3	compound	_	_
+5	arti	arti	VERB	_	_	2	acl	_	_
+6	nya	nya	DET	_	_	5	det	_	_
+7	"	"	PUNCT	_	_	8	punct	_	_
+8	ngelinggihang	ngelinggihang	NOUN	_	_	5	obj	_	_
+9	lingga	lingga	NOUN	_	_	8	compound	_	_
+10	"	"	PUNCT	_	_	8	punct	_	_
+11	dalam	dalam	ADP	_	_	12	case	_	_
+12	diri	diri	PRON	_	_	5	obl	_	_
+13	,	,	PUNCT	_	_	14	punct	_	_
+14	atau	atau	CCONJ	_	_	16	cc	_	_
+15	dengan	dengan	ADP	_	_	16	case	_	_
+16	kata	kata	NOUN	_	_	5	obl	_	_
+17	lain	lain	ADJ	_	_	16	amod	_	_
+18	,	,	PUNCT	_	_	23	punct	_	_
+19	bahwa	bahwa	SCONJ	_	_	23	mark	_	_
+20	tuhan	tuhan	NOUN	_	_	23	nsubj	_	_
+21	atau	atau	CCONJ	_	_	22	cc	_	_
+22	brahman	brahman	NOUN	_	_	20	conj	_	_
+23	di-stanakan	-stana	VERB	_	_	5	advcl	_	_
+24	atau	atau	CCONJ	_	_	25	cc	_	_
+25	ditempatkan	tempat	VERB	_	_	23	conj	_	_
+26	dalam	dalam	ADP	_	_	27	case	_	_
+27	diri	diri	PRON	_	_	25	obl	_	_
+28	sendiri	sendiri	DET	_	_	27	det	_	_
+29	.	.	PUNCT	_	_	2	punct	_	_
+
+RELATIONS:
+  [0] tuhan atau brahman (ENTITAS_KEAGAMAAN) --[DITEMPATKAN]--> diri (None)  type=LITERAL source=dependency_rule
+  [1] upacara mapulang lingga (None) --[BERARTI]--> "ngelinggihang lingga" (dalam diri) (TAHAPAN_UPACARA)  type=ENTITY source=manual_override
+
+### S4177
+TEXT: atma lingga adalah mewujudkan sanghyang ongkans dan tri aksara dalam diri yang berstana dalam bathin.
+NER: atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma) | sanghyang -> ENTITAS_KEAGAMAAN [cultural]
+PARSE:
+# sent_id = S4177
+# text = atma lingga adalah mewujudkan sanghyang ongkans dan tri aksara dalam diri yang berstana dalam bathin.
+1	atma	atma	PROPN	_	_	4	nsubj	_	_
+2	lingga	lingga	PROPN	_	_	1	flat:name	_	_
+3	adalah	adalah	AUX	_	_	4	cop	_	_
+4	mewujudkan	wujud	VERB	_	_	0	root	_	_
+5	sanghyang	sanghyang	NOUN	_	_	4	obj	_	_
+6	ongkans	ongkans	NOUN	_	_	5	compound	_	_
+7	dan	dan	CCONJ	_	_	8	cc	_	_
+8	tri	tri	NOUN	_	_	5	conj	_	_
+9	aksara	aksara	NOUN	_	_	8	compound	_	_
+10	dalam	dalam	ADP	_	_	11	case	_	_
+11	diri	diri	PRON	_	_	4	obl	_	_
+12	yang	yang	PRON	_	_	13	nsubj	_	_
+13	berstana	stana	VERB	_	_	11	acl:relcl	_	_
+14	dalam	dalam	ADP	_	_	15	case	_	_
+15	bathin	bathin	NOUN	_	_	13	obl	_	_
+16	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] atma lingga (KONSEP_FILOSOFIS) --[MEWUJUDKAN]--> sanghyang ongkara dan tri aksara dalam diri (yang berstana dalam bathin) (None)  type=LITERAL source=manual_override
+
+### S4192
+TEXT: seperti telah diuraikan di atas bahwa tirtha pangentas adalah sesunguhnya tirtha gangga yang diturunkan atau dibuat oleh pendeta atau sang sulinggih.
+NER: tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas) | tirtha gangga -> TIRTHA_SUCI [cultural] | sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+PARSE:
+# sent_id = S4192
+# text = seperti telah diuraikan di atas bahwa tirtha pangentas adalah sesunguhnya tirtha gangga yang diturunkan atau dibuat oleh pendeta atau sang sulinggih.
+1	seperti	seperti	SCONJ	_	_	3	mark	_	_
+2	telah	telah	AUX	_	_	3	aux	_	_
+3	diuraikan	urai	VERB	_	_	0	root	_	_
+4	di	di	ADP	_	_	5	case	_	_
+5	atas	atas	NOUN	_	_	3	obl	_	_
+6	bahwa	bahwa	SCONJ	_	_	10	mark	_	_
+7	tirtha	tirtha	NOUN	_	_	10	nsubj	_	_
+8	pangentas	pangentas	NOUN	_	_	7	compound	_	_
+9	adalah	adalah	AUX	_	_	10	cop	_	_
+10	sesunguhnya	sesunguhnya	NOUN	_	_	3	advcl	_	_
+11	tirtha	tirtha	NOUN	_	_	10	compound	_	_
+12	gangga	gangga	NOUN	_	_	11	compound	_	_
+13	yang	yang	PRON	_	_	14	nsubj:pass	_	_
+14	diturunkan	turun	VERB	_	_	10	acl:relcl	_	_
+15	atau	atau	CCONJ	_	_	16	cc	_	_
+16	dibuat	buat	VERB	_	_	14	conj	_	_
+17	oleh	oleh	ADP	_	_	18	case	_	_
+18	pendeta	pendeta	NOUN	_	_	16	obl	_	_
+19	atau	atau	CCONJ	_	_	21	cc	_	_
+20	sang	sang	DET	_	_	21	det	_	_
+21	sulinggih	sulinggih	NOUN	_	_	18	conj	_	_
+22	.	.	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] tirtha pangentas (TIRTHA_SUCI) --[ADALAH]--> tirtha gangga yang diturunkan atau dibuat oleh pendeta/sang sulinggih (None)  type=LITERAL source=manual_override
+
+### S4212
+TEXT: setelah itu dilakukan amrethi karana, yaitu mengucurkan tirtha amertha dalam diri sehingga abu abu kekototan musnah dan badan mulai bersinar bagaikan matahari.
+NER: tirtha -> TIRTHA_SUCI [cultural] | amertha -> KONSEP_FILOSOFIS [cultural] | abu -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S4212
+# text = setelah itu dilakukan amrethi karana, yaitu mengucurkan tirtha amertha dalam diri sehingga abu abu kekototan musnah dan badan mulai bersinar bagaikan matahari.
+1	setelah	setelah	ADP	_	_	3	case	_	_
+2	itu	itu	DET	_	_	3	det	_	_
+3	dilakukan	laku	VERB	_	_	0	root	_	_
+4	amrethi	amrethi	NOUN	_	_	3	nsubj:pass	_	_
+5	karana	karana	NOUN	_	_	4	compound	_	_
+6	,	,	PUNCT	_	_	8	punct	_	_
+7	yaitu	yaitu	SCONJ	_	_	8	mark	_	_
+8	mengucurkan	ucur	VERB	_	_	3	advcl	_	_
+9	tirtha	tirtha	NOUN	_	_	8	obj	_	_
+10	amertha	amertha	NOUN	_	_	9	compound	_	_
+11	dalam	dalam	ADP	_	_	12	case	_	_
+12	diri	diri	PRON	_	_	8	obl	_	_
+13	sehingga	sehingga	SCONJ	_	_	17	mark	_	_
+14	abu	abu	NOUN	_	_	17	nsubj	_	_
+15	abu	abu	NOUN	_	_	14	compound	_	_
+16	kekototan	kotot	NOUN	_	_	15	compound	_	_
+17	musnah	musnah	VERB	_	_	8	advcl	_	_
+18	dan	dan	CCONJ	_	_	19	cc	_	_
+19	badan	badan	NOUN	_	_	20	nsubj	_	_
+20	mulai	mulai	ADV	_	_	21	advmod	_	_
+21	bersinar	sinar	VERB	_	_	17	conj	_	_
+22	bagaikan	bagaikan	ADP	_	_	23	case	_	_
+23	matahari	matahari	NOUN	_	_	21	obl	_	_
+24	.	.	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] badan (None) --[BERSINAR_BAGAIKAN]--> matahari (None)  type=LITERAL source=manual_override
+  [1] abu abu kekototan (kekotoran) (SARANA_RITUAL) --[MUSNAH]--> melalui ritual amrethi karana (None)  type=LITERAL source=manual_override
+  [2] amrethi karana (None) --[DILAKUKAN_DENGAN]--> mengucurkan tirtha amertha dalam diri (KONSEP_FILOSOFIS)  type=ENTITY source=manual_override
+
+### S4266
+TEXT: sebelum pramakusa dimasukkan dalam priuk maka terlebih dulu di mantrai.
+NER: pramakusa -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S4266
+# text = sebelum pramakusa dimasukkan dalam priuk maka terlebih dulu di mantrai.
+1	sebelum	sebelum	SCONJ	_	_	3	mark	_	_
+2	pramakusa	pramakusa	NOUN	_	_	3	nsubj:pass	_	_
+3	dimasukkan	masuk	VERB	_	_	0	root	_	_
+4	dalam	dalam	ADP	_	_	5	case	_	_
+5	priuk	priuk	NOUN	_	_	3	obl	_	_
+6	maka	maka	SCONJ	_	_	9	mark	_	_
+7	terlebih	terlebih	ADV	_	_	9	advmod	_	_
+8	dulu	dulu	ADV	_	_	9	advmod	_	_
+9	di	di	VERB	_	_	3	advcl	_	_
+10	mantrai	mantrai	X	_	_	9	obj	_	_
+11	.	.	PUNCT	_	_	9	punct	_	_
+
+RELATIONS:
+  [0] pramakusa (SARANA_RITUAL) --[DIMASUKKAN_KE_DALAM]--> priuk (None)  type=LITERAL source=dependency_rule
+  [1] pramakusa (SARANA_RITUAL) --[DIMANTRAI]--> sebelum dimasukkan ke dalam priuk (None)  type=LITERAL source=manual_override
+
+### S4273
+TEXT: setelah itu padang lepas dimasukan ke dalam periuk tadi, dan selanjutnya sarana-sarana yang lainnya juga seperti biji padi (jijih), pripih emas, recadana, ulantaga, kalpika juga dimasukkan kedalam periuk tadi yang sebelumnya terlebih dulu masing-masing sarana tersebut dimantrai oleh ida sang sulinggih.
+NER: padang lepas -> SARANA_RITUAL [cultural] | jijih -> SARANA_RITUAL [cultural] | pripih -> SARANA_RITUAL [cultural] | recadana -> RITUAL_KEMATIAN [cultural] (canonical: Swasta) | kalpika -> SARANA_RITUAL [cultural] | sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+PARSE:
+# sent_id = S4273
+# text = setelah itu padang lepas dimasukan ke dalam periuk tadi, dan selanjutnya sarana-sarana yang lainnya juga seperti biji padi (jijih), pripih emas, recadana, ulantaga, kalpika juga dimasukkan kedalam periuk tadi yang sebelumnya terlebih dulu masing-masing sarana tersebut dimantrai oleh ida sang sulinggih.
+1	setelah	setelah	ADP	_	_	5	case	_	_
+2	itu	itu	DET	_	_	5	det	_	_
+3	padang	padang	NOUN	_	_	5	nsubj:pass	_	_
+4	lepas	lepas	ADJ	_	_	3	amod	_	_
+5	dimasukan	masu	VERB	_	_	0	root	_	_
+6	ke	ke	ADP	_	_	8	case	_	_
+7	dalam	dalam	ADP	_	_	8	case	_	_
+8	periuk	periuk	NOUN	_	_	5	obl	_	_
+9	tadi	tadi	DET	_	_	8	det	_	_
+10	,	,	PUNCT	_	_	13	punct	_	_
+11	dan	dan	CCONJ	_	_	13	cc	_	_
+12	selanjutnya	selanjutnya	ADV	_	_	13	advmod	_	_
+13	sarana-sarana	sarana	NOUN	_	_	5	conj	_	_
+14	yang	yang	PRON	_	_	15	nsubj	_	_
+15	lainnya	lainnya	ADJ	_	_	13	acl:relcl	_	_
+16	juga	juga	ADV	_	_	18	advmod	_	_
+17	seperti	seperti	ADP	_	_	18	case	_	_
+18	biji	biji	NOUN	_	_	13	nmod	_	_
+19	padi	padi	NOUN	_	_	18	compound	_	_
+20	(	(	PUNCT	_	_	21	punct	_	_
+21	jijih	jijih	NOUN	_	_	18	appos	_	_
+22	)	)	PUNCT	_	_	21	punct	_	_
+23	,	,	PUNCT	_	_	24	punct	_	_
+24	pripih	pripih	NOUN	_	_	18	conj	_	_
+25	emas	emas	NOUN	_	_	24	compound	_	_
+26	,	,	PUNCT	_	_	27	punct	_	_
+27	recadana	recadana	NOUN	_	_	18	conj	_	_
+28	,	,	PUNCT	_	_	29	punct	_	_
+29	ulantaga	ulantaga	NOUN	_	_	18	conj	_	_
+30	,	,	PUNCT	_	_	31	punct	_	_
+31	kalpika	kalpika	NOUN	_	_	33	nsubj:pass	_	_
+32	juga	juga	ADV	_	_	33	advmod	_	_
+33	dimasukkan	masuk	VERB	_	_	5	advcl	_	_
+34	kedalam	kedalam	ADP	_	_	35	case	_	_
+35	periuk	periuk	NOUN	_	_	33	obl	_	_
+36	tadi	tadi	DET	_	_	35	det	_	_
+37	yang	yang	PRON	_	_	44	obl	_	_
+38	sebelumnya	sebelumnya	ADV	_	_	44	advmod	_	_
+39	terlebih	terlebih	ADV	_	_	40	advmod	_	_
+40	dulu	dulu	NOUN	_	_	44	obl	_	_
+41	masing-masing	masing	DET	_	_	42	det	_	_
+42	sarana	sarana	NOUN	_	_	44	nsubj:pass	_	_
+43	tersebut	tersebut	DET	_	_	42	det	_	_
+44	dimantrai	mantrai	VERB	_	_	33	advcl	_	_
+45	oleh	oleh	ADP	_	_	46	case	_	_
+46	ida	ida	NOUN	_	_	44	obl	_	_
+47	sang	sang	DET	_	_	48	det	_	_
+48	sulinggih	sulinggih	NOUN	_	_	46	compound	_	_
+49	.	.	PUNCT	_	_	5	punct	_	_
+
+RELATIONS:
+  [0] padang lepas (SARANA_RITUAL) --[DIMASUKKAN_KE_DALAM]--> periuk (None)  type=LITERAL source=manual_override
+  [1] kalpika (SARANA_RITUAL) --[DIMASUKKAN_KE_DALAM]--> periuk (None)  type=LITERAL source=manual_override
+  [2] jijih (biji padi) (None) --[DIMASUKKAN_KE_DALAM]--> periuk (None)  type=LITERAL source=manual_override
+  [3] pripih emas (None) --[DIMASUKKAN_KE_DALAM]--> periuk (None)  type=LITERAL source=manual_override
+  [4] recadana (None) --[DIMASUKKAN_KE_DALAM]--> periuk (None)  type=LITERAL source=manual_override
+  [5] ulantaga (None) --[DIMASUKKAN_KE_DALAM]--> periuk (None)  type=LITERAL source=manual_override
+  [6] sarana-sarana tersebut (None) --[DIMANTRAI_OLEH]--> ida sang sulinggih (sebelum dimasukkan) (ENTITAS_KEAGAMAAN)  type=ENTITY source=manual_override
+
+### S4300
+TEXT: pretiwi sangkaning ganda mulih ring pretiwi,
+NER: pretiwi -> KONSEP_FILOSOFIS [cultural]
+PARSE:
+# sent_id = S4300
+# text = pretiwi sangkaning ganda mulih ring pretiwi,
+1	pretiwi	pretiwi	NOUN	_	_	0	root	_	_
+2	sangkaning	sangkaning	NOUN	_	_	1	compound	_	_
+3	ganda	ganda	NOUN	_	_	2	compound	_	_
+4	mulih	mulih	NOUN	_	_	3	compound	_	_
+5	ring	ring	NOUN	_	_	4	compound	_	_
+6	pretiwi	pretiwi	NOUN	_	_	5	compound	_	_
+7	,	,	PUNCT	_	_	1	punct	_	_
+
+RELATIONS:
+  [0] ganda (KONSEP_FILOSOFIS) --[BERASAL_DARI]--> pretiwi (KONSEP_FILOSOFIS)  type=ENTITY source=manual_override
+  [1] ganda (KONSEP_FILOSOFIS) --[KEMBALI_KE]--> pretiwi (KONSEP_FILOSOFIS)  type=ENTITY source=manual_override
+
+### S4301
+TEXT: apah sangkaning rasa.
+NER: apah -> KONSEP_FILOSOFIS [cultural]
+PARSE:
+# sent_id = S4301
+# text = apah sangkaning rasa.
+1	apah	apah	NOUN	_	_	0	root	_	_
+2	sangkaning	sangkaning	NOUN	_	_	1	compound	_	_
+3	rasa	rasa	NOUN	_	_	2	compound	_	_
+4	.	.	PUNCT	_	_	1	punct	_	_
+
+RELATIONS:
+  [0] rasa (KONSEP_FILOSOFIS) --[BERASAL_DARI]--> apah (KONSEP_FILOSOFIS)  type=ENTITY source=manual_override
+
+### S4303
+TEXT: teja sangkaning rupa mulih maring teja,
+NER: teja -> KONSEP_FILOSOFIS [cultural]
+PARSE:
+# sent_id = S4303
+# text = teja sangkaning rupa mulih maring teja,
+1	teja	teja	PROPN	_	_	3	nsubj	_	_
+2	sangkaning	sangkaning	PROPN	_	_	1	flat:name	_	_
+3	rupa	rupa	NOUN	_	_	0	root	_	_
+4	mulih	mulih	NOUN	_	_	3	compound	_	_
+5	maring	maring	NOUN	_	_	4	compound	_	_
+6	teja	teja	NOUN	_	_	5	compound	_	_
+7	,	,	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] rupa (KONSEP_FILOSOFIS) --[BERASAL_DARI]--> teja (KONSEP_FILOSOFIS)  type=ENTITY source=manual_override
+  [1] rupa (KONSEP_FILOSOFIS) --[KEMBALI_KE]--> teja (KONSEP_FILOSOFIS)  type=ENTITY source=manual_override
+
+### S4304
+TEXT: bayu sangkaning ambekan mulih maring bayu.
+NER: bayu -> KONSEP_FILOSOFIS [cultural]
+PARSE:
+# sent_id = S4304
+# text = bayu sangkaning ambekan mulih maring bayu.
+1	bayu	bayu	PROPN	_	_	3	nsubj	_	_
+2	sangkaning	sangkaning	PROPN	_	_	1	flat:name	_	_
+3	ambekan	ambekan	VERB	_	_	0	root	_	_
+4	mulih	mulih	NOUN	_	_	3	obj	_	_
+5	maring	maring	NOUN	_	_	4	compound	_	_
+6	bayu	bayu	NOUN	_	_	5	compound	_	_
+7	.	.	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] ambekan (KONSEP_FILOSOFIS) --[BERASAL_DARI]--> bayu (KONSEP_FILOSOFIS)  type=ENTITY source=manual_override
+  [1] ambekan (KONSEP_FILOSOFIS) --[KEMBALI_KE]--> bayu (KONSEP_FILOSOFIS)  type=ENTITY source=manual_override
+
+### S4305
+TEXT: akasa sangkaning sabda mulih maring akasa,
+NER: akasa -> KONSEP_FILOSOFIS [cultural]
+PARSE:
+# sent_id = S4305
+# text = akasa sangkaning sabda mulih maring akasa,
+1	akasa	akasa	NOUN	_	_	0	root	_	_
+2	sangkaning	sangkaning	PROPN	_	_	1	nmod	_	_
+3	sabda	sabda	NOUN	_	_	1	compound	_	_
+4	mulih	mulih	NOUN	_	_	3	compound	_	_
+5	maring	maring	NOUN	_	_	4	compound	_	_
+6	akasa	akasa	NOUN	_	_	5	compound	_	_
+7	,	,	PUNCT	_	_	1	punct	_	_
+
+RELATIONS:
+  [0] sabda (KONSEP_FILOSOFIS) --[BERASAL_DARI]--> akasa (KONSEP_FILOSOFIS)  type=ENTITY source=manual_override
+  [1] sabda (KONSEP_FILOSOFIS) --[KEMBALI_KE]--> akasa (KONSEP_FILOSOFIS)  type=ENTITY source=manual_override
+
+### S4336
+TEXT: seperti telah disebutkan diatas bahwa tirtha pangentas merupakan tirtha yang terpenting dalam upacara pengabenan, karena tanpa tirtha pangentas maka pengabenan itu dianggap belum dilaksanakan.
+NER: tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas) | pengabenan -> RITUAL_KEMATIAN [cultural]
+PARSE:
+# sent_id = S4336
+# text = seperti telah disebutkan diatas bahwa tirtha pangentas merupakan tirtha yang terpenting dalam upacara pengabenan, karena tanpa tirtha pangentas maka pengabenan itu dianggap belum dilaksanakan.
+1	seperti	seperti	SCONJ	_	_	3	mark	_	_
+2	telah	telah	AUX	_	_	3	aux	_	_
+3	disebutkan	sebut	VERB	_	_	0	root	_	_
+4	diatas	diatas	ADP	_	_	3	advmod	_	_
+5	bahwa	bahwa	SCONJ	_	_	8	mark	_	_
+6	tirtha	tirtha	NOUN	_	_	8	nsubj	_	_
+7	pangentas	pangentas	NOUN	_	_	6	compound	_	_
+8	merupakan	merupakan	VERB	_	_	3	advcl	_	_
+9	tirtha	tirtha	NOUN	_	_	8	obj	_	_
+10	yang	yang	PRON	_	_	11	nsubj	_	_
+11	terpenting	penting	ADJ	_	_	9	acl:relcl	_	_
+12	dalam	dalam	ADP	_	_	13	case	_	_
+13	upacara	upacara	NOUN	_	_	11	nmod	_	_
+14	pengabenan	kaben	NOUN	_	_	13	compound	_	_
+15	,	,	PUNCT	_	_	23	punct	_	_
+16	karena	karena	SCONJ	_	_	23	mark	_	_
+17	tanpa	tanpa	ADP	_	_	18	case	_	_
+18	tirtha	tirtha	NOUN	_	_	23	obl	_	_
+19	pangentas	pangentas	NOUN	_	_	18	compound	_	_
+20	maka	maka	SCONJ	_	_	23	mark	_	_
+21	pengabenan	kaben	NOUN	_	_	23	nsubj:pass	_	_
+22	itu	itu	DET	_	_	21	det	_	_
+23	dianggap	anggap	VERB	_	_	8	advcl	_	_
+24	belum	belum	PART	_	_	25	advmod	_	_
+25	dilaksanakan	laksana	VERB	_	_	23	ccomp	_	_
+26	.	.	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] tirtha pangentas (TIRTHA_SUCI) --[ADALAH]--> tirtha yang terpenting dalam upacara pengabenan (None)  type=LITERAL source=dependency_rule
+  [1] pengabenan (tanpa tirtha pangentas) (None) --[DIANGGAP]--> belum dilaksanakan (None)  type=LITERAL source=manual_override
+
+### S4337
+TEXT: karena kenyataannya tirtha pangentas memiliki nilai filosofis yang sangat tinggi sekali yaitu :
+NER: tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas)
+PARSE:
+# sent_id = S4337
+# text = karena kenyataannya tirtha pangentas memiliki nilai filosofis yang sangat tinggi sekali yaitu :
+1	karena	karena	ADP	_	_	2	case	_	_
+2	kenyataan	nyata	NOUN	_	_	6	obl	_	_
+3	nya	dia	PRON	_	_	2	nmod:poss	_	_
+4	tirtha	tirtha	NOUN	_	_	6	nsubj	_	_
+5	pangentas	pangentas	PROPN	_	_	4	nmod	_	_
+6	memiliki	milik	VERB	_	_	0	root	_	_
+7	nilai	nilai	NOUN	_	_	6	obj	_	_
+8	filosofis	filosofis	NOUN	_	_	7	compound	_	_
+9	yang	yang	PRON	_	_	11	nsubj	_	_
+10	sangat	sangat	ADV	_	_	11	advmod	_	_
+11	tinggi	tinggi	ADJ	_	_	7	acl:relcl	_	_
+12	sekali	sekali	ADV	_	_	11	advmod	_	_
+13	yaitu	yaitu	ADV	_	_	6	advmod	_	_
+14	:	:	PUNCT	_	_	6	punct	_	_
+
+RELATIONS:
+  [0] tirtha pangentas (TIRTHA_SUCI) --[MEMILIKI]--> nilai filosofis yang sangat tinggi sekali (None)  type=LITERAL source=dependency_rule
+
+### S4338
+TEXT: tirtha pangentas secara filosofis adalah sebagai alat sangaskara atau penyucian kepada roh atau atman orang yang telah meninggal dunia, sehingga roh atau atman tersebut kedudukannya menjadi terangkat, yaitu dari roh yang tingkatannya masih preta (atman yang disebut antah karana sarira yang masih terikat suksma sarira/sifat keduniawian) menjadi pitara, sehingga bisa memasuki alam bwah loka yaitu sebagai tumpuan untuk menuju ke alam swah loka.
+NER: tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas) | sangaskara -> TAHAPAN_UPACARA [cultural] | sarira -> KONSEP_FILOSOFIS [cultural] | suksma sarira -> KONSEP_FILOSOFIS [cultural] (canonical: Suksma Sarira) | pitara -> ENTITAS_KEAGAMAAN [cultural] (canonical: Pitra) | bwah loka -> KONSEP_FILOSOFIS [cultural] | swah loka -> KONSEP_FILOSOFIS [cultural]
+PARSE:
+# sent_id = S4338
+# text = tirtha pangentas secara filosofis adalah sebagai alat sangaskara atau penyucian kepada roh atau atman orang yang telah meninggal dunia, sehingga roh atau atman tersebut kedudukannya menjadi terangkat, yaitu dari roh yang tingkatannya masih preta (atman yang disebut antah karana sarira yang masih terikat suksma sarira/sifat keduniawian) menjadi pitara, sehingga bisa memasuki alam bwah loka yaitu sebagai tumpuan untuk menuju ke alam swah loka.
+1	tirtha	tirtha	PROPN	_	_	7	nsubj	_	_
+2	pangentas	pangentas	PROPN	_	_	1	flat:name	_	_
+3	secara	secara	ADP	_	_	4	case:adv	_	_
+4	filosofis	filosofis	ADJ	_	_	1	amod	_	_
+5	adalah	adalah	AUX	_	_	7	cop	_	_
+6	sebagai	sebagai	ADP	_	_	7	case	_	_
+7	alat	alat	NOUN	_	_	0	root	_	_
+8	sangaskara	sangaskara	NOUN	_	_	7	compound	_	_
+9	atau	atau	CCONJ	_	_	10	cc	_	_
+10	penyucian	suci	NOUN	_	_	7	conj	_	_
+11	kepada	kepada	ADP	_	_	12	case	_	_
+12	roh	roh	NOUN	_	_	7	nmod	_	_
+13	atau	atau	CCONJ	_	_	14	cc	_	_
+14	atman	atman	NOUN	_	_	12	conj	_	_
+15	orang	orang	NOUN	_	_	14	compound	_	_
+16	yang	yang	PRON	_	_	18	nsubj	_	_
+17	telah	telah	AUX	_	_	18	aux	_	_
+18	meninggal	tinggal	VERB	_	_	12	acl:relcl	_	_
+19	dunia	dunia	NOUN	_	_	18	obj	_	_
+20	,	,	PUNCT	_	_	28	punct	_	_
+21	sehingga	sehingga	SCONJ	_	_	28	mark	_	_
+22	roh	roh	NOUN	_	_	28	nsubj	_	_
+23	atau	atau	CCONJ	_	_	24	cc	_	_
+24	atman	atman	NOUN	_	_	22	conj	_	_
+25	tersebut	tersebut	DET	_	_	24	det	_	_
+26	kedudukan	duduk	NOUN	_	_	22	conj	_	_
+27	nya	dia	PRON	_	_	26	nmod:poss	_	_
+28	menjadi	jadi	VERB	_	_	7	conj	_	_
+29	terangkat	terangkat	VERB	_	_	28	obj	_	_
+30	,	,	PUNCT	_	_	31	punct	_	_
+31	yaitu	yaitu	ADP	_	_	33	case	_	_
+32	dari	dari	ADP	_	_	33	case	_	_
+33	roh	roh	NOUN	_	_	28	obl	_	_
+34	yang	yang	PRON	_	_	35	nsubj	_	_
+35	tingkatan	tingkat	NOUN	_	_	33	compound	_	_
+36	nya	dia	PRON	_	_	35	nmod:poss	_	_
+37	masih	masih	ADV	_	_	38	advmod	_	_
+38	preta	preta	NOUN	_	_	33	appos	_	_
+39	(	(	PUNCT	_	_	40	punct	_	_
+40	atman	atman	NOUN	_	_	38	appos	_	_
+41	yang	yang	PRON	_	_	42	nsubj	_	_
+42	disebut	sebut	VERB	_	_	40	acl:relcl	_	_
+43	antah	antah	NOUN	_	_	42	obj	_	_
+44	karana	karana	NOUN	_	_	43	compound	_	_
+45	sarira	sarira	NOUN	_	_	44	compound	_	_
+46	yang	yang	PRON	_	_	48	nsubj:pass	_	_
+47	masih	masih	ADV	_	_	48	advmod	_	_
+48	terikat	ikat	VERB	_	_	40	acl:relcl	_	_
+49	suksma	suksma	NOUN	_	_	48	obj	_	_
+50	sarira/sifat	sarira/sifat	NOUN	_	_	49	compound	_	_
+51	keduniawian	keduniawian	NOUN	_	_	50	compound	_	_
+52	)	)	PUNCT	_	_	40	punct	_	_
+53	menjadi	jadi	VERB	_	_	33	advcl	_	_
+54	pitara	pitara	NOUN	_	_	53	obj	_	_
+55	,	,	PUNCT	_	_	58	punct	_	_
+56	sehingga	sehingga	SCONJ	_	_	58	mark	_	_
+57	bisa	bisa	AUX	_	_	58	aux	_	_
+58	memasuki	masuk	VERB	_	_	53	advcl	_	_
+59	alam	alam	NOUN	_	_	58	obj	_	_
+60	bwah	bwah	NOUN	_	_	59	compound	_	_
+61	loka	loka	NOUN	_	_	60	compound	_	_
+62	yaitu	yaitu	ADP	_	_	64	case	_	_
+63	sebagai	sebagai	ADP	_	_	64	case	_	_
+64	tumpuan	tumpu	NOUN	_	_	58	obl	_	_
+65	untuk	untuk	SCONJ	_	_	66	mark	_	_
+66	menuju	tuju	NOUN	_	_	64	nmod	_	_
+67	ke	ke	ADP	_	_	68	case	_	_
+68	alam	alam	NOUN	_	_	66	nmod	_	_
+69	swah	swah	NOUN	_	_	68	compound	_	_
+70	loka	loka	NOUN	_	_	69	compound	_	_
+71	.	.	PUNCT	_	_	7	punct	_	_
+
+RELATIONS:
+  [0] tirtha pangentas (TIRTHA_SUCI) --[ADALAH]--> alat sangaskara kepada roh atau atman orang yang telah meninggal dunia (None)  type=LITERAL source=dependency_rule
+  [1] tirtha pangentas (TIRTHA_SUCI) --[ADALAH]--> penyucian (None)  type=LITERAL source=dependency_rule
+
+### S4339
+TEXT: tirtha pangentas secara filosofis adalah sebagai lambang penunjuk jalan bagi roh atau atman untuk kembali ke asalnya yaitu brahman atau alam swah loka, nan sebagai tujuan terakhir.
+NER: tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas) | brahman -> KONSEP_FILOSOFIS [cultural] | swah loka -> KONSEP_FILOSOFIS [cultural]
+PARSE:
+# sent_id = S4339
+# text = tirtha pangentas secara filosofis adalah sebagai lambang penunjuk jalan bagi roh atau atman untuk kembali ke asalnya yaitu brahman atau alam swah loka, nan sebagai tujuan terakhir.
+1	tirtha	tirtha	PROPN	_	_	7	nsubj	_	_
+2	pangentas	pangentas	PROPN	_	_	1	flat:name	_	_
+3	secara	secara	ADP	_	_	4	case:adv	_	_
+4	filosofis	filosofis	ADJ	_	_	1	amod	_	_
+5	adalah	adalah	AUX	_	_	7	cop	_	_
+6	sebagai	sebagai	ADP	_	_	7	case	_	_
+7	lambang	lambang	NOUN	_	_	0	root	_	_
+8	penunjuk	tunjuk	NOUN	_	_	7	compound	_	_
+9	jalan	jalan	NOUN	_	_	8	compound	_	_
+10	bagi	bagi	ADP	_	_	11	case	_	_
+11	roh	roh	NOUN	_	_	7	nmod	_	_
+12	atau	atau	CCONJ	_	_	13	cc	_	_
+13	atman	atman	NOUN	_	_	11	conj	_	_
+14	untuk	untuk	SCONJ	_	_	15	mark	_	_
+15	kembali	kembali	VERB	_	_	7	acl	_	_
+16	ke	ke	ADP	_	_	17	case	_	_
+17	asal	asal	NOUN	_	_	15	obl	_	_
+18	nya	dia	PRON	_	_	17	nmod:poss	_	_
+19	yaitu	yaitu	ADP	_	_	20	case	_	_
+20	brahman	brahman	NOUN	_	_	17	appos	_	_
+21	atau	atau	CCONJ	_	_	22	cc	_	_
+22	alam	alam	NOUN	_	_	20	conj	_	_
+23	swah	swah	NOUN	_	_	22	compound	_	_
+24	loka	loka	NOUN	_	_	23	compound	_	_
+25	,	,	PUNCT	_	_	26	punct	_	_
+26	nan	nan	NOUN	_	_	20	conj	_	_
+27	sebagai	sebagai	ADP	_	_	28	case	_	_
+28	tujuan	tuju	NOUN	_	_	26	nmod	_	_
+29	terakhir	akhir	ADJ	_	_	28	amod	_	_
+30	.	.	PUNCT	_	_	7	punct	_	_
+
+RELATIONS:
+  [0] tirtha pangentas (TIRTHA_SUCI) --[ADALAH]--> lambang penunjuk jalan bagi roh atau atman untuk kembali ke asalnya (brahman/alam swah loka) sebagai tujuan terakhir (None)  type=LITERAL source=manual_override
+
+### S4340
+TEXT: tirtha pangentas secara filosofis adalah berfungsi sebagai pelebur unsur karma wasana yang mengikat roh atau atman, yang disebut "ngentas" atma atau ulub roh.
+NER: tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas) | karma -> KONSEP_FILOSOFIS [cultural] | atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+PARSE:
+# sent_id = S4340
+# text = tirtha pangentas secara filosofis adalah berfungsi sebagai pelebur unsur karma wasana yang mengikat roh atau atman, yang disebut "ngentas" atma atau ulub roh.
+1	tirtha	tirtha	PROPN	_	_	6	nsubj	_	_
+2	pangentas	pangentas	PROPN	_	_	1	flat:name	_	_
+3	secara	secara	ADP	_	_	4	case:adv	_	_
+4	filosofis	filosofis	ADJ	_	_	1	amod	_	_
+5	adalah	adalah	AUX	_	_	6	cop	_	_
+6	berfungsi	fungsi	VERB	_	_	0	root	_	_
+7	sebagai	sebagai	ADP	_	_	8	case	_	_
+8	pelebur	lebur	NOUN	_	_	6	obl	_	_
+9	unsur	unsur	NOUN	_	_	8	compound	_	_
+10	karma	karma	NOUN	_	_	9	compound	_	_
+11	wasana	wasana	NOUN	_	_	10	compound	_	_
+12	yang	yang	PRON	_	_	13	nsubj	_	_
+13	mengikat	ikat	VERB	_	_	8	acl:relcl	_	_
+14	roh	roh	NOUN	_	_	13	obj	_	_
+15	atau	atau	CCONJ	_	_	16	cc	_	_
+16	atman	atman	NOUN	_	_	14	conj	_	_
+17	,	,	PUNCT	_	_	19	punct	_	_
+18	yang	yang	PRON	_	_	19	nsubj	_	_
+19	disebut	sebut	VERB	_	_	8	acl:relcl	_	_
+20	"	"	PUNCT	_	_	21	punct	_	_
+21	ngentas	ngentas	NOUN	_	_	19	obj	_	_
+22	"	"	PUNCT	_	_	23	punct	_	_
+23	atma	atma	NOUN	_	_	21	compound	_	_
+24	atau	atau	CCONJ	_	_	25	cc	_	_
+25	ulub	ulub	NOUN	_	_	21	conj	_	_
+26	roh	roh	NOUN	_	_	25	compound	_	_
+27	.	.	PUNCT	_	_	6	punct	_	_
+
+RELATIONS:
+  [0] tirtha pangentas (TIRTHA_SUCI) --[BERFUNGSI_SEBAGAI]--> pelebur unsur karma wasana (KONSEP_FILOSOFIS)  type=ENTITY source=dependency_rule
+  [1] pelebur unsur karma wasana (None) --[DIKENAL_SEBAGAI]--> ngentas atma (None)  type=LITERAL source=object_decomposition
+  [2] pelebur unsur karma wasana (None) --[DIKENAL_SEBAGAI]--> ulub roh (None)  type=LITERAL source=object_decomposition

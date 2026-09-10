@@ -1,0 +1,60 @@
+{
+  "_comment": "Tuning for build_kb.py entity-resolution stage. Everything here is optional overrides on top of the automatic pipeline (concept-map -> node_aliases -> gazetteer -> modifier-strip -> unresolved).",
+
+  "strip_modifiers": [
+    "tersebut", "ini", "itu", "baru", "lain", "lainnya", "sang", "ida",
+    "jenis", "hal", "si", "para", "yang", "sebuah", "suatu", "adalah",
+    "atas", "bawah", "dalam", "samping", "sudut", "ruang", "tempat", "hulu",
+    "secarik", "wujud", "kesembilan", "kedelapan", "ketujuh", "keenam",
+    "kelima", "keempat", "ketiga", "kedua", "pertama", "dua", "tiga", "empat",
+    "lima", "enam", "buah",
+    "tadi", "mendiang", "seseorang", "sejumlah", "beberapa", "biji", "segenap",
+    "masing-masing", "setiap", "seluruh", "segala", "helai", "lembar", "keping",
+    "potong", "sebanyak", "banyak", "kesatu", "keenambelas"
+  ],
+  "_strip_note": "Removed only from the START or END of a surface string, then resolution is retried. These do NOT distinguish one ritual entity from another. Semantic modifiers (dewasa, anak, bayi, massal, utuh, pangentas, panglukatan, ...) are deliberately absent so subtypes stay separate.",
+
+  "force_merge": {
+    "_note": "surface string (lowercase) -> canonical id, applied before everything else. Use sparingly for cases the concept map misses.",
+    "abu tulang": "abu",
+    "abu tulang kepala": "abu",
+    "abu daun": "abu",
+    "abu suku tunggal": "abu",
+    "abu abu kekototan": "abu",
+    "sawa baru": "sawa",
+    "sawa utuh": "sawa",
+    "jenazah baru": "jenazah",
+    "mendiang hidup": "mendiang",
+    "mendiang masa hidup": "mendiang",
+    "jenazah seseorang": "jenazah",
+    "jenazah seseorang (yang telah tertanam-titip)": "jenazah",
+    "jenazah /pengawak": "jenazah",
+    "jenazah atau simbolik": "jenazah",
+    "jenazah atau simbolnya": "jenazah",
+    "pitra mendiang": "pitra",
+    "pitra dalam ngangsen": "pitra",
+    "atma pitara": "pitra",
+    "rurub sinom tadi": "rurub sinom",
+    "rurub sinom sebanyak lima buah": "rurub sinom",
+    "eteh-eteh sawa": "eteh-eteh",
+    "adegan dan pengawak": "adegan",
+    "abu seluruhnya": "abu",
+    "abu abu kekototan kekotoran": "abu",
+    "dulang tanah": "dulang",
+    "dulang atau meja kecil": "dulang",
+    "sisig di atas takir ini": "sisig",
+    "malem di atas takir": "malem"
+  },
+
+  "keep_distinct": [
+    "tirtha pangentas", "tirtha panglukatan", "tirtha pabersihan", "tirtha ening",
+    "tirtha kawitan", "sawa wedana", "asti wedana", "atma wedana",
+    "sawa dewasa", "sawa anak", "jenazah bayi", "ngaben massal"
+  ],
+  "_keep_distinct_note": "never collapse these into their head word via modifier-strip; they may still get a broader: <head> link.",
+
+  "type_overrides": {
+    "layon": "ISTILAH_UMUM_RITUAL",
+    "sawa": "ISTILAH_UMUM_RITUAL"
+  }
+}

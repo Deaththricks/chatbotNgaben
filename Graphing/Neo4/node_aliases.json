@@ -1,0 +1,17 @@
+{
+  "_comment": "Spelling / morphology variants that should collapse to ONE knowledge-graph node. variant (lowercase) -> canonical (lowercase). Used by normalize.py. Concept-level merges (mamukur -> ngerorasin, etc.) are intentionally NOT here - see Data/normalization-ngaben.json for those. Edit freely and re-run normalize.py.",
+  "tirta": "tirtha",
+  "kwangen": "kawangen",
+  "kwangen jeriji": "kawangen jeriji",
+  "pitara": "pitra",
+  "pengabenan": "pangabenan",
+  "hal pangabenan": "pangabenan",
+  "nglungah": "ngelungah",
+  "puspalingga": "puspa lingga",
+  "bale pamuun": "bale pamuunan",
+  "balai selunglung": "bale salunglung",
+  "atma/pitara": "atma pitara",
+  "lontar yama purva tattwa": "lontar yama purwana tatwa",
+  "bhetara": "bhatara",
+  "bele-bale": "bale-bale"
+}

@@ -1,0 +1,256 @@
+# Current triples, chunk 7 (S3296..S3862) - from the 916-triple run
+
+S3296  ctx: ketika jenazah sudah berada di atas pepaga/asagan, masyarakat atau keluarga tidak boleh kesusu (tergesa-gesa) untuk memandikannya.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='BERADA_DI' object='pepaga/asagan' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+  [1] subject='keluarga/masyarakat' subject_label=None relation='DILARANG' object='tergesa-gesa memandikan jenazah' object_label='ISTILAH_UMUM_RITUAL' object_type='ENTITY' source='manual_override'
+
+S3330  ctx: sebelum upacara nyiramang layon dilaksanakan, maka krama (masyarakat banjar) akan membuat bale-bale tempat memandikan mayat yang disebut pepaga atau asagan.
+  [0] subject='krama (masyarakat banjar)' subject_label=None relation='MEMBUAT' object='bale-bale tempat memandikan mayat' object_label='BANGUNAN_RITUAL' object_type='ENTITY' source='manual_override'
+  [1] subject='bale-bale (tempat memandikan mayat)' subject_label=None relation='DIKENAL_SEBAGAI' object='pepaga' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+  [2] subject='bale-bale (tempat memandikan mayat)' subject_label=None relation='DIKENAL_SEBAGAI' object='asagan' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+
+S3332  ctx: pepaga atau di beberapa tempat di denpasar menyebut asagan, dan ada juga yang menyebutkan bale penusangan, adalah semacam dipan atau bale darurat yang juga bisa dipergunakan sebagai usungan atau tandu.
+  [0] subject='pepaga' subject_label='SARANA_RITUAL' relation='DIKENAL_SEBAGAI' object='asagan' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+  [1] subject='pepaga' subject_label=None relation='DIKENAL_SEBAGAI' object='bale penusangan (istilah Denpasar)' object_label='BANGUNAN_RITUAL' object_type='ENTITY' source='manual_override'
+  [2] subject='pepaga/asagan' subject_label=None relation='ADALAH' object='semacam dipan atau bale darurat' object_label='BANGUNAN_RITUAL' object_type='ENTITY' source='manual_override'
+  [3] subject='pepaga/asagan' subject_label=None relation='DIPERGUNAKAN_SEBAGAI' object='usungan' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+  [4] subject='pepaga/asagan' subject_label=None relation='DIPERGUNAKAN_SEBAGAI' object='tandu' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+
+S3333  ctx: bale ini terbuat dari bambu dan galar nya juga terdiri dari bilah-bilah bambu berjumlah sebanyak 9 (sembilan) buah.
+  [0] subject='bale' subject_label='BANGUNAN_RITUAL' relation='TERBUAT_DARI' object='bambu' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='galar' subject_label='SARANA_RITUAL' relation='TERDIRI_DARI' object='bilah-bilah bambu (sebanyak 9 buah)' object_label=None object_type='LITERAL' source='manual_override'
+  [2] subject='bale' subject_label='BANGUNAN_RITUAL' relation='TERBUAT_DARI' object='galar' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+
+S3339  ctx: setelah waktu untuk upacara nyiramang layon dimulai, maka para krama atau keluarga yang meninggal akan mengambil jenazah, dari balai tempat jenazah itu disemayamkan (bagi umat hindu di bali yang memiliki tatanan rumah stil bali, tempat persemayaman jenazah ditempatkan di bale semanggen).
+  [0] subject='krama atau keluarga' subject_label='STRUKTUR_SOSIAL_ADAT' relation='MENGAMBIL' object='jenazah' object_label='ISTILAH_UMUM_RITUAL' object_type='ENTITY' source='dependency_rule'
+  [1] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIAMBIL_DARI' object='balai (tempat jenazah disemayamkan)' object_label='ISTILAH_UMUM_RITUAL' object_type='ENTITY' source='manual_override'
+  [2] subject='tempat persemayaman jenazah' subject_label=None relation='DITEMPATKAN_DI' object='bale semanggen (rumah adat Bali)' object_label='BANGUNAN_RITUAL' object_type='ENTITY' source='manual_override'
+
+S3340  ctx: jenazah itu akan diusung menuju ke tempat penusangan (nyiramang layon) yang berupa pepaga atau asagan.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIUSUNG_KE' object='tempat penusangan' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='tempat penusangan' subject_label=None relation='DIPAKAI_UNTUK' object='nyiramang layon' object_label='TAHAPAN_UPACARA' object_type='ENTITY' source='manual_override'
+  [2] subject='tempat penusangan' subject_label=None relation='BERUPA' object='pepaga atau asagan' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+
+S3354  ctx: ini menyimbulkan bahwa jenazah tersebut naik ke pepaga/asagan, dengan terlebih dulu duduk dan kemudian baru tidur tertelentang.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='NAIK_KE' object='pepaga/asagan' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+  [1] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIDUDUKKAN_DULU_SEBELUM' object='tidur tertelentang di pepaga/asagan' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+
+S3355  ctx: disamping itu jenazah yang masuk melalui teben dari pepaga, memiliki makna agar orang yang meninggal tersebut lebih cepat menemui brahman (sang pencipta), sesuai dengan kisah yang disebutkan dalam kitab mahabarata.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='MEMILIKI' object='makna agar orang yang meninggal tersebut lebih cepat menemui brahman ( sang pencipta )' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S3363  ctx: setelah jenazah ditaruh di atas pepaga/asagan, maka di bawah kepala jenazah dialasi dengan bantal biasa (bantal kapuk), sehingga jenazah tersebut seolah-olah seperti orang sedang tidur.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DITARUH' object='atas pepaga/asagan' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+  [1] subject='kepala jenazah' subject_label=None relation='DIALASI_DENGAN' object='bantal biasa (bantal kapuk)' object_label=None object_type='LITERAL' source='manual_override'
+
+S3364  ctx: ada suatu hal penting yang perlu diperhatikan karena hal ini menyangkut soal etika atau tata susila yaitu ketika jenazah baru ditaruh di asagan harus dibiarkan sebentar dan jangan garasa-grusu (tergesa-gesa) membuka pakaiannya, karena perlu menunggu orang yang dituakan atau orang lebih tua, yang akan terlebih dulu mencuci muka dan rambut orang yang meninggal itu.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='HARUS_DIBIARKAN' object='sebentar (sebelum dibuka pakaiannya)' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='orang yang dituakan/lebih tua' subject_label=None relation='MENCUCI' object='muka dan rambut jenazah' object_label='ISTILAH_UMUM_RITUAL' object_type='ENTITY' source='manual_override'
+
+S3446  ctx: mengenakan kain (mewastra), dengan selesainya memandikan pada tahap pertama maka jenazah akan diberi pakaian seperti layaknya orang masih hidup dengan tatanannya sebagai berikut:
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIBERI' object='pakaian seperti layaknya orang masih hidup' object_label=None object_type='LITERAL' source='manual_override'
+
+S3468  ctx: ini dimaksudkan bahwa jenazah tersebut seolah-olah masih hidup, berhias, memakai cincin, kalung, gelang (jika mereka punya) seperti pergi menghadiri kundangan atau pergi ke pura.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='MEMAKAI' object='cincin' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='MEMAKAI' object='kalung' object_label=None object_type='LITERAL' source='dependency_rule'
+  [2] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='MEMAKAI' object='gelang' object_label=None object_type='LITERAL' source='dependency_rule'
+  [3] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIHIAS_SEOLAH_OLAH' object='pergi menghadiri undangan atau ke pura' object_label=None object_type='LITERAL' source='manual_override'
+
+S3496  ctx: kesepuluh: lekesan (daun sirih yang di gulung) ditempelkan sejenak pada gigi jenazah, dan dibersihkan dengan cara mengusap-usapkan tembakau pada bibir jenazah.
+  [0] subject='lekesan' subject_label='SARANA_RITUAL' relation='DITEMPELKAN_DI' object='gigi jenazah (ISTILAH_UMUM_RITUAL)' object_label='ISTILAH_UMUM_RITUAL' object_type='ENTITY' source='manual_override'
+  [1] subject='jenazah (bibir)' subject_label=None relation='DIBERSIHKAN_DENGAN' object='tembakau (diusapkan pada bibir)' object_label=None object_type='LITERAL' source='manual_override'
+
+S3544  ctx: setelah selesai upacara sembah bhakti ini, semua kawangen yang tadi dipakai sembahyang dikumpulkan dan ditaruh di samping jenazah, sebagai tanda doa restu agar perjalanan roh yang meninggal tidak mendapatkan suatu halangan.
+  [0] subject='kawangen' subject_label='SARANA_RITUAL' relation='MELAMBANGKAN' object='tanda doa restu setelah selesai upacara sembah bhakti ini ,' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='kawangen' subject_label='SARANA_RITUAL' relation='DILETAKKAN_DI' object='samping jenazah' object_label='ISTILAH_UMUM_RITUAL' object_type='ENTITY' source='dependency_rule'
+
+S3546  ctx: oleh sebab itu jenazah tersebut sebelumnya diisi dengan sebuah kawangen di tangannya (pada saat akhir pabersihan hidup tangan jenazah/layon ditaruh di dada dengan telapak tangan ditumpuk diisi sebuah kawangen sebagai simbol sikap amusti karana, karena seolah-olah layon/jenazah ikut sembahyang).
+  [0] subject='tangan jenazah/layon' subject_label=None relation='DILETAKKAN_DI' object='dada' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='tangan jenazah/layon' subject_label=None relation='DITARUH_DENGAN' object='posisi telapak tangan ditumpuk (ditumpangkan)' object_label=None object_type='LITERAL' source='manual_override'
+  [2] subject='kawangen' subject_label='SARANA_RITUAL' relation='MELAMBANGKAN' object='sikap amusti karana (seolah-olah layon ikut sembahyang)' object_label=None object_type='LITERAL' source='manual_override'
+
+S3547  ctx: setelah upacara sembah bhakti selesai, maka jenazah diperciki dan diminumkan tirta yang berasal dari bhetara hyang guru yaitu tirta yang dimohonkan di sanggah atau pamerajan keluarga orang yang meninggal.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIPERCIKI_DAN_DIMINUMKAN' object='tirta' object_label='TIRTHA_SUCI' object_type='ENTITY' source='manual_override'
+  [1] subject='tirta' subject_label=None relation='BERASAL_DARI' object='bhetara hyang guru' object_label='KONSEP_FILOSOFIS' object_type='ENTITY' source='manual_override'
+  [2] subject='tirta' subject_label=None relation='DIMOHONKAN_DI' object='sanggah/pamerajan keluarga orang yang meninggal' object_label=None object_type='LITERAL' source='manual_override'
+
+S3559  ctx: waja meka panca datu,
+  [0] subject='waja' subject_label=None relation='BAGIAN_DARI' object='panca datu' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+
+S3584  ctx: pengerikan kuku mutlak dilakukan pada waktu upacara "melelet" (pabersihan mati), dan tidak boleh dilakukan pada saat "pabersihan hidup" yang telah dilaksanakan sebelumnya.
+  [0] subject='pengerikan kuku mutlak' subject_label=None relation='DILAKUKAN_SAAT' object='upacara "melelet" (pabersihan mati)' object_label='TAHAPAN_UPACARA' object_type='ENTITY' source='manual_override'
+  [1] subject='pengerikan kuku' subject_label=None relation='TIDAK_BOLEH_DILAKUKAN_SAAT' object='pabersihan hidup' object_label='TAHAPAN_UPACARA' object_type='ENTITY' source='manual_override'
+
+S3586  ctx: karena pada saat upacara "pabersihan hidup" si jenazah masih dianggap sebagai orang yang masih hidup.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIANGGAP_SEBAGAI' object='orang yang masih hidup' object_label=None object_type='LITERAL' source='manual_override'
+
+S3589  ctx: arit gobed adalah simbol dari rare angon yaitu lambang keperkasaan seorang laki-laki.
+  [0] subject='arit gobed' subject_label='SARANA_RITUAL' relation='ADALAH' object='simbol rare angon yaitu lambang keperkasaan seorang laki-laki' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S3591  ctx: anggapan (ani-ani atau ketam) adalah simbol dari dewi sri, yaitu lambang kesuburan, yang mana nantinya diharapkan wanita yang akan "numitis" memiliki kesuburan untuk dapat melahirkan.
+  [0] subject='anggapan' subject_label='SARANA_RITUAL' relation='ADALAH' object='simbol dewi sri , yang mana nanti nya diharapkan wanita yang akan " numitis " memiliki kesuburan untuk dapat melahirkan dari dewi sri , yaitu lambang kesuburan' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S3599  ctx: namun sekarang ini demi cepatnya, babelonyoh tersebut hanya dioleskan pada dada jenazah, karena pakaian jenazah yang dipakaikan ketika upacara pabersihan hidup masih dibiarkan melekat, sedangkan hanya dada jenazah sajalah yang tidak memakai pakaian.
+  [0] subject='babelonyoh' subject_label='SARANA_RITUAL' relation='DIOLESKAN_DI' object='dada jenazah' object_label='ISTILAH_UMUM_RITUAL' object_type='ENTITY' source='dependency_rule'
+
+S3604  ctx: itik-itik, setelah kesepuluh kuku tangan dan kuku kaki dikerik serta penggunaan babelonyoh dilaksanakan, dan telah dibersihkan dengan air, maka kedua jempol jari-jari tangan (ibu jari) diikat jadi satu dengan seutas tali benang tukelan (benang tenun bali) berwarna putih, begitu juga kedua jempol jari kaki diikat jadi satu dengan seutas tali benang tukelan.
+  [0] subject='jempol jari tangan (kedua ibu jari)' subject_label=None relation='DIIKAT_DENGAN' object='tali benang tukelan (benang tenun bali) berwarna putih' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='jempol jari kaki' subject_label=None relation='DIIKAT_DENGAN' object='tali benang tukelan' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+
+S3610  ctx: umbi sikapa/sekapa (umbi gadung): jenazah disabuni (digosok) dengan umbi sikapa/sekapa, kemudian dibilas dengan air dan dikeringkan dengan kain kering.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DISABUNI_DENGAN' object='umbi sikapa/sekapa' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+  [1] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIBILAS_DENGAN' object='air' object_label=None object_type='LITERAL' source='manual_override'
+  [2] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIKERINGKAN_DENGAN' object='kain kering' object_label=None object_type='LITERAL' source='manual_override'
+
+S3623  ctx: mewastra (berpakaian): setelah semuanya kering maka jenazah kenakan pakaian putih-putih, antara lain pakaian atau kain bawahnya berwarna putih, saput serta umpal (tali saput) juga berwarna putih dan udeng untuk laki-lakipun berwarna putih.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIPAKAIKAN' object='pakaian putih-putih' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='kain bawah' subject_label=None relation='BERWARNA' object='putih' object_label=None object_type='LITERAL' source='manual_override'
+  [2] subject='saput' subject_label=None relation='BERWARNA' object='putih' object_label=None object_type='LITERAL' source='manual_override'
+  [3] subject='umpal' subject_label=None relation='BERWARNA' object='putih' object_label=None object_type='LITERAL' source='manual_override'
+  [4] subject='umpal' subject_label=None relation='ADALAH' object='tali saput' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+  [5] subject='udeng (untuk laki-laki)' subject_label='SARANA_RITUAL' relation='BERWARNA' object='putih' object_label=None object_type='LITERAL' source='manual_override'
+
+S3647  ctx: daun pisang saba setelah selesai berpakaian maka jenazah tersebut dialasi dengan "daun pisang saba" yang berfungsi sebagai tikar.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIALASI_DENGAN' object='daun pisang saba' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='daun pisang saba' subject_label=None relation='BERFUNGSI_SEBAGAI' object='tikar' object_label=None object_type='LITERAL' source='object_decomposition'
+
+S3649  ctx: sesisir pisang kayu sebagai bantal di kepala : disamping mengalasi dengan daun pisang (namun bagi masyarakat yang tidak biasa menggunakan daun pisang tidak menjadi masalah, karena hal ini tidak mutlak digunakan), juga ada penggantian bantal, yang tadinya jenazah tersebut berbantalkan kapuk diganti dengan bantal sesisir buah pisang kayu.
+  [0] subject='bantal kapuk' subject_label=None relation='DIGANTI_DENGAN' object='bantal sesisir buah pisang kayu' object_label=None object_type='LITERAL' source='manual_override'
+
+S3651  ctx: kembali pada makna pada penggunaan sesisir buah pisang kayu untuk bantal, yang dihubungkan dengan kitab purana yang menceriterakan ketika dewa wishnu selesai pengaduk lautan susu untuk mendapatkan tirtha amertha, maka beliau tidur di atas samudra, dialasi dan dipayungi oleh seekor naga (ular cobra) yang berkepala banyak (perhatikan bulir-bulir pisang pada satu sisir, kelihatan seperti kepala ular yang menyembul), sehingga terhindar dari marabahaya dan kepanasan.
+  [0] subject='dewa wishnu' subject_label='ENTITAS_KEAGAMAAN' relation='MENDAPATKAN' object='tirtha amertha' object_label='KONSEP_FILOSOFIS' object_type='ENTITY' source='manual_override'
+  [1] subject='dewa wishnu' subject_label='ENTITAS_KEAGAMAAN' relation='TIDUR_DI' object='atas samudra (dialasi dan dipayungi naga/ular cobra berkepala banyak)' object_label=None object_type='LITERAL' source='manual_override'
+
+S3653  ctx: gegaleng pada kepala: kata "gegaleng" juga berarti bantal untuk tidur.
+  [0] subject='gegaleng kepala' subject_label=None relation='BERARTI' object='bantal untuk tidur' object_label=None object_type='LITERAL' source='manual_override'
+
+S3654  ctx: gegaleng ini dibuat dari uang kepeng (pipis bolong) sebanyak 250 biji serta beberapa potongan-potongan dahan kayu dapdap yang dibungkus dengan kain putih.
+  [0] subject='gegaleng' subject_label='SARANA_RITUAL' relation='TERBUAT_DARI' object='uang kepeng (pipis bolong) sebanyak 250 biji' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='uang kepeng' subject_label=None relation='ADALAH' object='pipis bolong' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+  [2] subject='gegaleng' subject_label='SARANA_RITUAL' relation='TERBUAT_DARI' object='potongan-potongan dahan kayu dapdap yang dibungkus dengan kain putih' object_label=None object_type='LITERAL' source='manual_override'
+
+S3656  ctx: gegaleng ini adalah pengganti bantal kapuk yang telah dipakai pada waktu "pabersihan hidup", sehingga gegaleng ini juga disebut dengan "galeng pengerekan".
+  [0] subject='gegaleng' subject_label=None relation='ADALAH' object='pengganti bantal kapuk yang telah dipakai pada waktu pabersihan hidup' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='gegaleng' subject_label=None relation='DIKENAL_SEBAGAI' object='galeng pengerekan' object_label=None object_type='LITERAL' source='manual_override'
+
+S3694  ctx: om sang hyang widhi, atas se ijin sang hyang hayu, atma sang meninggal lepas bebas dari badannya dan cepat melesat mencapai tujuan.
+  [0] subject='atma' subject_label='KONSEP_FILOSOFIS' relation='LEPAS_BEBAS_DARI' object='badan' object_label=None object_type='LITERAL' source='manual_override'
+
+S3720  ctx: disamping itu "anget-angetan" dapat menghilangkan bau busuk, ini juga bermakna agar orang yang meninggal tersebut kelak numitis lagi, disamping terhindar dari penyakit, juga agar memiliki budhi pekerti dan pikiran baik dan jernih, terlepas dari kebusukan-kebusukan, yang merupakan penyakit dalam kehidupan di dunia ini.
+  [0] subject='anget-angetan' subject_label='SARANA_RITUAL' relation='MENGHILANGKAN' object='bau busuk' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='anget-angetan' subject_label=None relation='BERMAKNA' object='agar orang yang meninggal dapat numitis lagi dan terhindar dari penyakit, serta memiliki budi pekerti dan pikiran yang baik' object_label=None object_type='LITERAL' source='manual_override'
+
+S3728  ctx: adapun makna penggunaan wewangian adalah agar kelak jika numitis lagi selalu mendapat pujian keharuman dalam setiap tingkah lakunya, di samping tersebut tubuhnya agar kelak berbau harum.
+  [0] subject='penggunaan wewangian' subject_label=None relation='BERTUJUAN_AGAR' object='orang yang numitis memperoleh pujian keharuman dalam tingkah lakunya' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='numitis' subject_label='KONSEP_FILOSOFIS' relation='MENYEBABKAN' object='badan menjadi harum' object_label=None object_type='LITERAL' source='manual_override'
+
+S3733  ctx: kwangen jeriji : setelah pelaksanaan eteh-eteh pabersihan mati hampir selesai dilakukan maka pada setiap telapak tangan dan telapak kaki ditaruh masing-masing sebuah "kawangen jeriji".
+  [0] subject='kwangen jeriji' subject_label=None relation='DITARUH_DI' object='telapak tangan' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='kwangen jeriji' subject_label=None relation='DITARUH_DI' object='telapak kaki' object_label=None object_type='LITERAL' source='manual_override'
+
+S3734  ctx: kawangen jeriji adalah sebuah kojong yang dibuat dari daun pisang dan di dalamnya berisi lima buah gulungan "base" (daun sirih), setiap satu gulung daun sirih diikat dengan benang putih, kemudian gulungan sirih dimasukkan ke dalam lubang uang kepeng sampai sepanjang setengah gulungan sirih tersebut.
+  [0] subject='kawangen jeriji' subject_label='SARANA_RITUAL' relation='ADALAH' object='kojong' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='kojong' subject_label=None relation='TERBUAT_DARI' object='daun pisang' object_label=None object_type='LITERAL' source='object_decomposition'
+  [2] subject='kojong (kawangen jeriji)' subject_label=None relation='BERISI' object='lima buah gulungan base (daun sirih)' object_label=None object_type='LITERAL' source='manual_override'
+  [3] subject='gulungan daun sirih' subject_label=None relation='DIIKAT_DENGAN' object='benang putih' object_label=None object_type='LITERAL' source='manual_override'
+  [4] subject='gulungan sirih' subject_label=None relation='DIMASUKKAN_KE' object='lubang uang kepeng' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+
+S3742  ctx: sedangkan "kesuna" atau bawang putih bermakna agar orang tersebut bila numitis kembali, memiliki kuku-kuku yang indah dan putih bersih.
+  [0] subject='kesuna (bawang putih)' subject_label=None relation='BERMAKNA' object='agar orang yang numitis kembali memiliki kuku-kuku yang indah dan putih bersih' object_label=None object_type='LITERAL' source='manual_override'
+
+S3747  ctx: di hulu hati, diisi sebuah kawangen yang berisi 9 biji uang kepeng dan bunga tunjung putih.
+  [0] subject='kawangen' subject_label='SARANA_RITUAL' relation='DILETAKKAN_DI' object='hulu hati' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='kawangen' subject_label='SARANA_RITUAL' relation='BERISI' object='9 biji uang kepeng' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+  [2] subject='kawangen' subject_label='SARANA_RITUAL' relation='BERISI' object='bunga tunjung putih' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S3749  ctx: di dada, diisi sebuah kawangen yang berisi 7 biji uang kepeng dan bunga tunjung putih.
+  [0] subject='kawangen' subject_label='SARANA_RITUAL' relation='DILETAKKAN_DI' object='dada' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='kawangen' subject_label='SARANA_RITUAL' relation='BERISI' object='7 biji uang kepeng' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+  [2] subject='kawangen' subject_label='SARANA_RITUAL' relation='BERISI' object='bunga tunjung putih' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S3753  ctx: di kedua lutut kaki, diisi masing-masing kawangen yang berisi 5 biji uang kepeng dan pusuh bunga cempaka kuning.
+  [0] subject='kawangen' subject_label='SARANA_RITUAL' relation='DILETAKKAN_DI' object='kedua lutut kaki' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='kawangen' subject_label='SARANA_RITUAL' relation='BERISI' object='5 biji uang kepeng' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+  [2] subject='kawangen' subject_label='SARANA_RITUAL' relation='BERISI' object='pusuh bunga cempaka kuning' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S3755  ctx: uang kepeng yang asli diyakini mengandung lima unsur logam yang terdiri dari : (1) perak (putih), tempatnya di timur, dewanya adalah dewa iswara.
+  [0] subject='uang kepeng asli' subject_label='SARANA_RITUAL' relation='MENGANDUNG' object='lima unsur logam' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='perak' subject_label=None relation='BERWARNA' object='putih' object_label=None object_type='LITERAL' source='manual_override'
+  [2] subject='perak' subject_label=None relation='BERADA_DI' object='timur' object_label=None object_type='LITERAL' source='manual_override'
+  [3] subject='perak' subject_label=None relation='BERDEWA' object='dewa iswara' object_label='ENTITAS_KEAGAMAAN' object_type='ENTITY' source='manual_override'
+
+S3756  ctx: (2) tembaga (merah), tempatnya di selatan, dewanya adalah dewa brahma.
+  [0] subject='tembaga' subject_label=None relation='BERWARNA' object='merah' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='tembaga' subject_label=None relation='BERADA_DI' object='selatan' object_label='Place' object_type='ENTITY' source='manual_override'
+  [2] subject='tembaga' subject_label=None relation='BERDEWA' object='dewa brahma' object_label='ENTITAS_KEAGAMAAN' object_type='ENTITY' source='manual_override'
+
+S3757  ctx: (3) emas (kuning), tempatnya di barat, dewanya adalah dewa mahadewa.
+  [0] subject='emas' subject_label=None relation='BERWARNA' object='kuning' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='emas' subject_label=None relation='BERADA_DI' object='barat' object_label=None object_type='LITERAL' source='manual_override'
+  [2] subject='emas' subject_label=None relation='BERDEWA' object='dewa mahadewa' object_label='ENTITAS_KEAGAMAAN' object_type='ENTITY' source='manual_override'
+
+S3758  ctx: (4) besi (hitam), tempatnya di utara, dewanya adalah dewa wishnu, dan (5) logam campuran (manca warna), tempatnya di tengah-tengah, dewanya adalah dewa siwa.
+  [0] subject='besi' subject_label=None relation='BERWARNA' object='hitam' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='besi' subject_label=None relation='BERADA_DI' object='utara' object_label=None object_type='LITERAL' source='manual_override'
+  [2] subject='besi' subject_label=None relation='BERDEWA' object='dewa wishnu' object_label='ENTITAS_KEAGAMAAN' object_type='ENTITY' source='manual_override'
+  [3] subject='logam campuran' subject_label=None relation='BERWARNA' object='manca warna' object_label=None object_type='LITERAL' source='manual_override'
+  [4] subject='logam campuran' subject_label=None relation='BERADA_DI' object='tengah' object_label=None object_type='LITERAL' source='manual_override'
+  [5] subject='logam campuran' subject_label=None relation='BERDEWA' object='dewa siwa' object_label='ENTITAS_KEAGAMAAN' object_type='ENTITY' source='manual_override'
+
+S3760  ctx: a di beberapa tempat atau desa, pada akhir acara "melelet" sebelum jenazah digulung atau sebelum "pangringkesan", ada yang menaruhkan jarum (jaum) dan besi paku pada lengan jenazah.
+  [0] subject='jarum (jaum)' subject_label=None relation='DITARUH_DI' object='lengan jenazah' object_label='ISTILAH_UMUM_RITUAL' object_type='ENTITY' source='manual_override'
+  [1] subject='besi paku' subject_label=None relation='DITARUH_DI' object='lengan jenazah' object_label='ISTILAH_UMUM_RITUAL' object_type='ENTITY' source='manual_override'
+
+S3783  ctx: ketiga, tirtha tersebut dipercikkan ke semua badan hingga ke kaki jenazah, setelah itu priuk tempat tirtha pangringkes tersebut dipecahkan dan dibuang di kolong bawah pepaga atau asagan.
+  [0] subject='tirtha' subject_label='TIRTHA_SUCI' relation='DIPERCIKKAN_PADA' object='seluruh badan hingga ke kaki jenazah' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='priuk (tempat tirtha pangringkes)' subject_label=None relation='DIPECAHKAN' object='setelah tirtha dipercikkan' object_label='TIRTHA_SUCI' object_type='ENTITY' source='manual_override'
+  [2] subject='priuk (yang pecah)' subject_label=None relation='DIBUANG_DI' object='kolong bawah pepaga/asagan' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+
+S3791  ctx: mula-mula jenazah dibungkus dengan kain putih, biasanya akan dibungkus sampai tiga lapis kemudian diikat dengan tali benang tukelan.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIBUNGKUS_DENGAN' object='kain putih' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+  [1] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIBUNGKUS' object='tiga lapis' object_label=None object_type='LITERAL' source='dependency_rule'
+  [2] subject='jenazah (setelah dibungkus tiga lapis)' subject_label=None relation='DIIKAT_DENGAN' object='tali benang tukelan' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+
+S3799  ctx: selesai membungkus (ngeringkes), maka jenazah ditutupi dengan selembar kain putih yang panjangnya kira-kira dua sampai dua setengah meter, sedangkan di atas kain tersebut diisi rurub sinom sebanyak lima buah.
+  [0] subject='kain (penutup jenazah)' subject_label=None relation='DIISI_DENGAN' object='rurub sinom sebanyak lima buah' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+
+S3800  ctx: rurub sinom adalah hiasan yang terbuat dari blangsah (bunga pinang yang belum mekar) dijarit bersama daun kelapa muda (busung), dengan panjang kira-kira 40 sampai 45 sentimeter.
+  [0] subject='rurub sinom' subject_label='SARANA_RITUAL' relation='ADALAH' object='hiasan' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='hiasan' subject_label=None relation='TERBUAT_DARI' object='blangsah' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+  [2] subject='hiasan' subject_label=None relation='TERBUAT_DARI' object='daun kelapa muda (busung)' object_label=None object_type='LITERAL' source='manual_override'
+  [3] subject='blangsah' subject_label='SARANA_RITUAL' relation='ADALAH' object='bunga pinang yang belum mekar' object_label=None object_type='LITERAL' source='manual_override'
+  [4] subject='rurub sinom' subject_label='SARANA_RITUAL' relation='BERUKURAN_PANJANG' object='kira-kira 40 sampai 45 sentimeter' object_label=None object_type='LITERAL' source='manual_override'
+
+S3802  ctx: setelah semua sudah selesai dilakukan, barulah kemudian jenazah dibawa ke balai-balai (bale semanggen) tempat jenazah disemayamkan.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIBAWA_KE' object='balai-balai' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='balai-balai' subject_label=None relation='ADALAH' object='bale semanggen' object_label='BANGUNAN_RITUAL' object_type='ENTITY' source='object_decomposition'
+
+S3811  ctx: untuk jenazah yang dimasukkan ke dalam peti, biasanya rurub sinom yang tadinya telah ditaruh di atas gulungan jenazah, diambil terlebih dulu.
+  [0] subject='rurub sinom' subject_label=None relation='DIAMBIL_DARI' object='gulungan jenazah (sebelum dimasukkan ke peti)' object_label=None object_type='LITERAL' source='manual_override'
+
+S3812  ctx: setelah jenazah dimasukkan ke dalam peti, dan peti telah ditutup rapat maka rurub sinom tadi ditaruh di atas peti dengan posisi menaruhnya sama seperti sebelumnya yaitu di atas kepala, leher, perut, paha dan kaki dengan posisi melintang, seperti ketika menaruh di atas jenazah.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIMASUKKAN_KE_DALAM' object='peti' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='rurub sinom tadi' subject_label='SARANA_RITUAL' relation='DILETAKKAN_DI' object='atas peti' object_label=None object_type='LITERAL' source='manual_override'
+  [2] subject='rurub sinom tadi' subject_label='SARANA_RITUAL' relation='DILETAKKAN_MELINTANG_DI' object='kepala, leher, perut, paha dan kaki' object_label=None object_type='LITERAL' source='manual_override'
+
+S3816  ctx: adapun "ante" yang digunakan untuk "ngeringkes" adalah terbuat dari bilahan-bilahan bambu yang disebut dengan "galar".
+  [0] subject='ante' subject_label='SARANA_RITUAL' relation='TERBUAT_DARI' object='bilahan-bilahan bambu' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='bilahan-bilahan bambu (ante)' subject_label=None relation='DIKENAL_SEBAGAI' object='galar' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+
+S3836  ctx: cawan, "galar" yang ketekannya jatuh pada "cawan", maka bale-bale / dipan yang menggunakan "galar" dengan ketekan "cawan" sangat baik digunakan untuk dipan /plangkan di warung ataupun di dapur.
+  [0] subject='bale-bale/dipan' subject_label=None relation='DIPAKAI_UNTUK' object='warung atau dapur' object_label=None object_type='LITERAL' source='manual_override'
+
+S3843  ctx: oleh karena itu "galar' dengan ketekan "guling" sangat bagus digunakan pada bele-bale atau dipan di kamar tidur, dengan harapan bisa cepat membuat ngantuk dan bisa tidur nyenyak.
+  [0] subject='galar (dengan ketekan guling)' subject_label=None relation='DIGUNAKAN_DENGAN_HARAPAN' object='membuat ngantuk dan tidur nyenyak' object_label=None object_type='LITERAL' source='manual_override'
+
+S3845  ctx: cekur, kata "cekur" artinya bertembang, maka "galar" yang ketekannya jatuh pada "cekur", maka bale-bale tersebut sangat baik ditaruh di pura atau di merajan, karena diharapkan kepada setiap yang menduduki bale-bale tersebut timbul keinginannya untuk bertembang seperti makidung atau makekawin, yang sesuai dengan tempatnya di tempat suci.
+  [0] subject='bale-bale' subject_label=None relation='DILETAKKAN_DI' object='pura atau merajan' object_label='BANGUNAN_RITUAL' object_type='ENTITY' source='manual_override'
+
+S3852  ctx: apabila ingin mendapatkan ketekan "cekur", maka "galar" akan dibuat jumlahnya kelipatan 5, misalnya 5, 10, 15, 20, 25, 30 dan seterusnya.
+  [0] subject='jumlah galar' subject_label=None relation='CONTOH' object='5, 10, 15, 20, 25, 30, dan seterusnya (kelipatan 5)' object_label=None object_type='LITERAL' source='manual_override'
+
+S3860  ctx: upacara mesulub hanyalah merupakan suatu kepercayaan setempat (kepercayaan lokal) yang telah diwarisi turun temurun dari sejak jaman dulu di daerah atau desa setempat.
+  [0] subject='upacara mesulub' subject_label='RITUAL_KEMATIAN' relation='ADALAH' object='kepercayaan setempat yang telah diwarisi turun temurun sejak jaman dulu di daerah atau desa setempat' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='kepercayaan setempat' subject_label=None relation='ADALAH' object='kepercayaan lokal' object_label=None object_type='LITERAL' source='manual_override'
+
+S3862  ctx: disamping itu "upacara mesulub" adalah merupakan konsep "satya" atau kesetiaan.
+  [0] subject='upacara mesulub' subject_label='RITUAL_KEMATIAN' relation='ADALAH' object='konsep satya (kesetiaan)' object_label=None object_type='LITERAL' source='manual_override'

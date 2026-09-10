@@ -1,0 +1,7805 @@
+[
+ {
+  "sentence_id": 4,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "MELAMBANGKAN",
+  "object": "siklus kematian",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "MELAMBANGKAN",
+  "object": "siklus kehidupan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "BERPERAN_SEBAGAI",
+  "object": "ritual yang sangat rigid dan sarat makna",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 12,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "MEMILIKI",
+  "object": "sudut pandang pemaknaan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 16,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "BAGIAN_DARI",
+  "object": "pitra yadnya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 16,
+  "subject": "pitra yadnya",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "pengorbanan suci",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 16,
+  "subject": "pengorbanan suci",
+  "subject_label": null,
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "leluhur",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 26,
+  "subject": "apah",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "MELAMBANGKAN",
+  "object": "unsur cair",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 27,
+  "subject": "teja",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "MELAMBANGKAN",
+  "object": "suhu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 27,
+  "subject": "teja",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "MELAMBANGKAN",
+  "object": "energi",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 28,
+  "subject": "bayu",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "MELAMBANGKAN",
+  "object": "napas",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 28,
+  "subject": "bayu",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "MELAMBANGKAN",
+  "object": "udara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 29,
+  "subject": "akasa",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "MELAMBANGKAN",
+  "object": "rongga tubuh",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 32,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "MEMILIKI",
+  "object": "peran ganda yang saling menguatkan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 58,
+  "subject": "nganyut",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "MELARUNG",
+  "object": "abu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 58,
+  "subject": "nganyut",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "DIHANYUTKAN_KE",
+  "object": "sungai",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 58,
+  "subject": "nganyut",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "DIHANYUTKAN_KE",
+  "object": "laut",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 58,
+  "subject": "nganyut",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "MELAMBANGKAN",
+  "object": "simbol pelepasan terakhir",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 61,
+  "subject": "mapegat",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "MEMILIKI",
+  "object": "makna krusial untuk memutus ikatan emosional dan duniawi antara mendiang ( niskala ) dengan keluarga ( skala )",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 61,
+  "subject": "mapegat",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "BERARTI",
+  "object": "memutuskan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 69,
+  "subject": "gedarba",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MELAMBANGKAN",
+  "object": "beruang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 77,
+  "subject": "naga banda",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MEMILIKI",
+  "object": "panjang 1.600 depa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 92,
+  "subject": "kanoroyang sanksi terberat",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "BERUPA",
+  "object": "pemberhentian keanggotaan desa adat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 104,
+  "subject": "bali aga vs bali dataran",
+  "subject_label": "Place",
+  "relation": "DIPEROLEH",
+  "object": "perbedaan mendasar",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 124,
+  "subject": "bali dataran",
+  "subject_label": "Place",
+  "relation": "MENGGUNAKAN",
+  "object": "sarana mewah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 124,
+  "subject": "sarana mewah",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "bade/petulangan",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 191,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIKUBUR_DENGAN",
+  "object": "kehendak lain",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 197,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "BERDASARKAN",
+  "object": "tingkatan upacara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 215,
+  "subject": "layon",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIGULUNG_DENGAN",
+  "object": "kain putih",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 217,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DINAIKKAN_KE",
+  "object": "usungan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 219,
+  "subject": "sekar ura",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MELAMBANGKAN",
+  "object": "simbol perpisahan antara yang meninggal dengan keluarga yang ditinggal dengan harapan selalu diberikan kesejahteraan dan kemakmuran",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 219,
+  "subject": "sekar ura",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "beras kuning",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 219,
+  "subject": "sekar ura",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "wang kepeng/bolong",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 219,
+  "subject": "sekar ura",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "daun temen",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 219,
+  "subject": "sekar ura",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "kembang rampai",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 224,
+  "subject": "usungan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MEMILIKI",
+  "object": "upacara pembasmian",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 246,
+  "subject": "puspa lingga",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIAMBIL",
+  "object": "keampigan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 253,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIKUBUR_DENGAN",
+  "object": "tata cara penguburan biasa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 254,
+  "subject": "kuburan",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "DIAMBIL",
+  "object": "tulang belulang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 258,
+  "subject": "tegteg",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIBAWA_KE",
+  "object": "pura dalem",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 258,
+  "subject": "tegteg",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DISERTAI",
+  "object": "tujuan matur piuning",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 258,
+  "subject": "tegteg",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DISERTAI",
+  "object": "memohon",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 265,
+  "subject": "tegteg",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "bungkusan tulang belulang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 265,
+  "subject": "tegteg",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPERLAKUKAN_SEPERTI",
+  "object": "sawa utuh",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 270,
+  "subject": "ngaben svasta",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "pelaksanaan atiwa-tiwa terhadap orang yang telah meninggal yang jenazah nya tidak mungkin ditemukan kembali , telah lama terkubur /terpendam , atau karena letak nya terlalu jauh dari jangkauan kita",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 271,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIGANTI_DENGAN",
+  "object": "simbol tirtha",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 271,
+  "subject": "simbol tirtha",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "toyo çarira",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 283,
+  "subject": "banten",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIKENAL_SEBAGAI",
+  "object": "kala puspa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 283,
+  "subject": "banten",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIKENAL_SEBAGAI",
+  "object": "lontar",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 283,
+  "subject": "banten",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIKENAL_SEBAGAI",
+  "object": "lontar yama purva tattwa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 283,
+  "subject": "banten",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "ADALAH",
+  "object": "menjadi",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 332,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "balai posisi kepala berhulu utara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 338,
+  "subject": "soda",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILENGKAPI",
+  "object": "canang sari",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 344,
+  "subject": "eteh-eteh sawa",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERUPA",
+  "object": "kain putih untuk saput , kamben , tapih , sabuk , udeng , pangulungan , angkeb rai , angkeb baga/purus , leluwur , dan tatindih ( biasanya dimohonkan dari sulinggih/griya ) ; kain kuning untuk saput atau selendang ; rantasan kain putih kuning dan kain anyar ; serta samsam , bunga , dan kwangen",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 344,
+  "subject": "eteh-eteh sawa",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERUPA",
+  "object": "kain putih untuk bantal berisi pis bolong 11 kepeng",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 354,
+  "subject": "pepaga",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERBUAT_DARI",
+  "object": "bambu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 354,
+  "subject": "pepaga",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERBUAT_DARI",
+  "object": "hitungan wangke",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 354,
+  "subject": "pepaga",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERBUAT_DARI",
+  "object": "hitungan wangkong",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 354,
+  "subject": "pepaga",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERBUAT_DARI",
+  "object": "hitungan galar",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 354,
+  "subject": "pepaga",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERBUAT_DARI",
+  "object": "hitungan galir",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 354,
+  "subject": "pepaga",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERBUAT_DARI",
+  "object": "hitungan galur",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 354,
+  "subject": "pepaga",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERBUAT_DARI",
+  "object": "hitungan likah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 358,
+  "subject": "pepaga",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "halaman rumah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 358,
+  "subject": "pepaga",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPASANG",
+  "object": "leluwur",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 358,
+  "subject": "pepaga",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPASANG_DI",
+  "object": "atas",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 364,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBAWA_KE",
+  "object": "tempat pemandian",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 365,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "pepaga",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 365,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBARENGI",
+  "object": "kekidungan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 366,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MENUJU",
+  "object": "timur",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 366,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MENUJU",
+  "object": "utara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 370,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIGULUNG_DENGAN",
+  "object": "tikar",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 370,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIGULUNG_DENGAN",
+  "object": "kain yang telah dirajah dengan tikar dan kain yang telah dirajah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 370,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIPASANG",
+  "object": "itik-itik",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 370,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "ibu jari kaki",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 370,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "ibu jari tangan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 370,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIAKHIRI_DENGAN",
+  "object": "lante bambu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 370,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIMASUKKAN_KE_DALAM",
+  "object": "slepa/peti",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 376,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBAWA_KE",
+  "object": "setra",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 400,
+  "subject": "sasih kaenem dan kapitu",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "DIKENAL_SEBAGAI",
+  "object": "dewasa madya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 411,
+  "subject": "wuku kuningan",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "BERADA_DI",
+  "object": "sasih kapitu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 411,
+  "subject": "wuku kuningan",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "BERADA_DI",
+  "object": "sasih kasa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 413,
+  "subject": "uye",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "BERADA_DI",
+  "object": "sasih kasanga",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 413,
+  "subject": "uye",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "BERADA_DI",
+  "object": "sasih katiga",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 414,
+  "subject": "wayang",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "BERADA_DI",
+  "object": "sasih kadasa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 414,
+  "subject": "wayang",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "BERADA_DI",
+  "object": "sasih kapat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 540,
+  "subject": "banten",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPERSEMBAHKAN_KEPADA",
+  "object": "sakabuatan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 541,
+  "subject": "banten panjang ilang",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "LAINNYA",
+  "object": "rateng",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 559,
+  "subject": "sorohan banten",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "LAINNYA",
+  "object": "ajeng sulinggih",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 560,
+  "subject": "banten pejati saha banten peras gede",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "LAINNYA",
+  "object": "asoroh",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 591,
+  "subject": "banten",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPERSEMBAHKAN_KEPADA",
+  "object": "sakabuatan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 616,
+  "subject": "banten nuwur pakuluh",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "LAINNYA",
+  "object": "merajan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 616,
+  "subject": "banten nuwur pakuluh",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "LAINNYA",
+  "object": "paibon",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 616,
+  "subject": "banten nuwur pakuluh",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "LAINNYA",
+  "object": "panti",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 616,
+  "subject": "banten nuwur pakuluh",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "LAINNYA",
+  "object": "kawitan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 618,
+  "subject": "banten",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPERSEMBAHKAN_KEPADA",
+  "object": "piuning",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 618,
+  "subject": "banten",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPERSEMBAHKAN_KEPADA",
+  "object": "merajapati",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 618,
+  "subject": "banten",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPERSEMBAHKAN_KEPADA",
+  "object": "panghulunin setra",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 631,
+  "subject": "banten panebusan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "LAINNYA",
+  "object": "rateng saha salaran sejangkep",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 633,
+  "subject": "banten",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPERSEMBAHKAN_KEPADA",
+  "object": "sulinggih utawi pinandita",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 641,
+  "subject": "banten",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "LAINNYA",
+  "object": "surya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 641,
+  "subject": "surya",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "banten pejati saha suci asoroh",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 679,
+  "subject": "banten",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPERSEMBAHKAN_KEPADA",
+  "object": "asele",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 679,
+  "subject": "asele",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "jauman",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 731,
+  "subject": "banten",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIMOHON",
+  "object": "tirta menurut yang diinginkan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 780,
+  "subject": "puspa asti",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "balai selunglung",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 788,
+  "subject": "pitra yadnya",
+  "subject_label": "RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "dua kata",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 788,
+  "subject": "dua kata",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "pitra",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 789,
+  "subject": "pitra",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "BERARTI",
+  "object": "orangtua",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 789,
+  "subject": "orangtua",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "ayah",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 792,
+  "subject": "pitra yadnya",
+  "subject_label": "RITUAL",
+  "relation": "BERARTI",
+  "object": "pengorbanan yang dilandasi hati yang tulus suci kepada leluhur , terutama kepada orangtua",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 792,
+  "subject": "pitra yadnya",
+  "subject_label": "RITUAL",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "orangtua",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 797,
+  "subject": "pitra yadnya",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "upacara keagamaan yang diadakan untuk menyelenggarakan atau nyangaskara jenazah atau roh keluarga yang meninggal dengan pelbagai sajen dan alat-alat upakara sebagai sarana nya",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 797,
+  "subject": "pitra yadnya",
+  "subject_label": "RITUAL",
+  "relation": "BERPERAN_SEBAGAI",
+  "object": "istilah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 801,
+  "subject": "pitra yadnya",
+  "subject_label": "RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "jenis",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 851,
+  "subject": "pancamahabutha",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "BERWUJUD",
+  "object": "tubuh manusia",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 898,
+  "subject": "sesajen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "ida bhatara kumara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 906,
+  "subject": "jabang bayi",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "MENINGGAL",
+  "object": "kandungan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 917,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBUNGKUS",
+  "object": "kain putih setelah dimandikan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 923,
+  "subject": "jenazah momong",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DISERTAI",
+  "object": "peti samping",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 925,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIMASUKKAN_KE_DALAM",
+  "object": "peti kayu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 925,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIMASUKKAN_KE_DALAM",
+  "object": "kuburan upakara apa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 957,
+  "subject": "jenazah bayi",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DISIRAM_DENGAN",
+  "object": "air biasa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 957,
+  "subject": "jenazah bayi",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIMANDIKAN",
+  "object": "natar rumah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 958,
+  "subject": "jenazah bayi",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DISIRAM_DENGAN",
+  "object": "air kumkuman",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 958,
+  "subject": "air kumkuman",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "air yang diberi serbuk cendana dan kembang serba harum",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 961,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBUNGKUS_DENGAN",
+  "object": "kain putih",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 961,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIIKAT_DENGAN",
+  "object": "benang leleson",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 961,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIIKAT",
+  "object": "sebelas kali",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 961,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "BERASAL_DARI",
+  "object": "hulu kaki",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 964,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBAWA_KE",
+  "object": "balai-balai rumah adat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 967,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "BERPERAN_SEBAGAI",
+  "object": "sawa dewasa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 970,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIMOHON_DARI",
+  "object": "sulinggih",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 970,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "MENURUT",
+  "object": "tata cara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 971,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "TERBUAT_DARI",
+  "object": "klungah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 972,
+  "subject": "sawa anak",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBAKAR",
+  "object": "pitra yadnya nglungah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 972,
+  "subject": "sawa anak",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "TERTULIS",
+  "object": "lontar",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 974,
+  "subject": "abu",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIHANYUTKAN_KE",
+  "object": "laut",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 974,
+  "subject": "abu",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIHANYUTKAN_KE",
+  "object": "sungai",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 978,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIPERCIKKAN_PADA_SEBELUM",
+  "object": "tirtha pangentas",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1016,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "BERTUJUAN",
+  "object": "niskala",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1016,
+  "subject": "niskala",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "batiniah",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 1017,
+  "subject": "mahabutha",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "induk asal",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1024,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBERI",
+  "object": "ampun",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1034,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "bale adat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1034,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBERI",
+  "object": "langse",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1034,
+  "subject": "langse",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "tirai",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 1034,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBERI",
+  "object": "secukupnya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1039,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIMANDIKAN",
+  "object": "balai-balai rumah adat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1039,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "LAINNYA",
+  "object": "semua",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1040,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "BERADA_DI",
+  "object": "atas galar",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1056,
+  "subject": "pepaga",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERFUNGSI_SEBAGAI",
+  "object": "balai-balai alas memandikan ngringkes",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1056,
+  "subject": "pepaga",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERFUNGSI_SEBAGAI",
+  "object": "balai-balai alas memandikan jenazah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1058,
+  "subject": "pepaga",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPASANG",
+  "object": "secarik kain putih",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1060,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "BERASAL_DARI",
+  "object": "rumah adat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1066,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DITELENTANGKAN_DI",
+  "object": "pembungkus",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1066,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBERI",
+  "object": "sarana simbolik pangringkesan , antara lain sesisir pisang selaku kalang bahu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1066,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBERI",
+  "object": "sesisir pisang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1079,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIIKAT_DENGAN",
+  "object": "tali ktekung",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1079,
+  "subject": "tali ktekung",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "tali bambu dipintal",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 1082,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIPAKAIKAN",
+  "object": "baju",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1082,
+  "subject": "sajen kecil",
+  "subject_label": null,
+  "relation": "DIPERSEMBAHKAN_KEPADA",
+  "object": "jenazah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1082,
+  "subject": "sajen kecil",
+  "subject_label": null,
+  "relation": "DIKENAL_SEBAGAI",
+  "object": "pengulapan",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 1086,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "balai-balai rumah adat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1122,
+  "subject": "nyekeh",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "BERARTI",
+  "object": "jenazah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1123,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIKENAL_SEBAGAI",
+  "object": "masekeh",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1128,
+  "subject": "nyekeh sawa",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "DILAKUKAN_OLEH",
+  "object": "keluarga pendeta",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1128,
+  "subject": "nyekeh sawa",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "DILAKUKAN_OLEH",
+  "object": "keluarga raja",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1128,
+  "subject": "nyekeh sawa",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "BERASAL_DARI",
+  "object": "masyarakat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1133,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DINAIKKAN_KE",
+  "object": "tumpang salu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1134,
+  "subject": "sesajen dan punjung",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPERSEMBAHKAN_KEPADA",
+  "object": "mendiang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1138,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MEMPEROLEH",
+  "object": "ayaban upakara diuskamaligi",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1160,
+  "subject": "patus",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "BERPERAN_SEBAGAI",
+  "object": "perwujudan rasa kebersamaan yang ada di dada krama",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1160,
+  "subject": "patus",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "ADALAH",
+  "object": "merupakan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1169,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBAKAR_DENGAN",
+  "object": "status",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1173,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "DITEMPUH_DENGAN",
+  "object": "biaya ringan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1173,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "MEMUPUK",
+  "object": "rasa kebersamaan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1173,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "MEMUPUK",
+  "object": "rasa kekeluargaan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1188,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MEMPEROLEH",
+  "object": "sesaji",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1188,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MEMPEROLEH",
+  "object": "tirtha lainnya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1197,
+  "subject": "jun pere",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERISI",
+  "object": "tulisan aksara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1197,
+  "subject": "jun pere",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERISI",
+  "object": "gambar",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1206,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "BERPERAN_SEBAGAI",
+  "object": "sarana untuk menetapkan kedudukan arwah mendiang pada satu alam roh ( pitra ) tertentu sesuai dengan tingkat upacara nya ( makingsan atau ngaben )",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1213,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "BERADA_DI",
+  "object": "kuburan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1215,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "lubang tempat penguburan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1216,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DISIRAM_DENGAN",
+  "object": "toya penembak",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1219,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBAKAR",
+  "object": "alat pangringkesan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1221,
+  "subject": "abu tulang",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIMASUKKAN_KE_DALAM",
+  "object": "klungah nyuh gading/suku tunggal",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1222,
+  "subject": "abu tulang",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIHANYUTKAN_KE",
+  "object": "laut",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1226,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MEMILIKI",
+  "object": "sesuatu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1226,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DINILAI_DI",
+  "object": "mata umat hindu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1233,
+  "subject": "leteh",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "DIKENAL_SEBAGAI",
+  "object": "sirna",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1238,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "BERADA_DI",
+  "object": "alam",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1255,
+  "subject": "pitra yadnya tahap berikutnya",
+  "subject_label": "RITUAL",
+  "relation": "DISINGGUNG_DI",
+  "object": "uraian terdahulu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1256,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "DIKENAL_SEBAGAI",
+  "object": "mreteka sawa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1289,
+  "subject": "yadnya",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "BERPERAN_SEBAGAI",
+  "object": "swadharma",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1290,
+  "subject": "yadnya",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "BERPERAN_SEBAGAI",
+  "object": "beban",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1308,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "MEMILIKI",
+  "object": "tarif bak barang dagangan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1328,
+  "subject": "besar kecil punia atau honorarium",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "DILAKUKAN_DENGAN",
+  "object": "upacara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1335,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "MEMILIKI",
+  "object": "nilai spiritual yang sama",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1335,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "MEMILIKI",
+  "object": "harga",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1335,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIPUJA_DENGAN",
+  "object": "weda pengastawa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1361,
+  "subject": "yadnya",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "BERDASARKAN",
+  "object": "penuh sredaning citta",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1361,
+  "subject": "yadnya",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "BERDASARKAN",
+  "object": "penuh kesanggupan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1361,
+  "subject": "yadnya",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "BERDASARKAN",
+  "object": "kesungguhan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1361,
+  "subject": "yadnya",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "BERDASARKAN",
+  "object": "kemulusan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1361,
+  "subject": "yadnya",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "BERDASARKAN",
+  "object": "keikhlasan hati",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1407,
+  "subject": "ngaben jenis",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "DILAKUKAN_DENGAN",
+  "object": "sawa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1409,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "sawa baru",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1414,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIURAIKAN",
+  "object": "lembaran terdahulu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1417,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBAWA_KE",
+  "object": "setra",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1419,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "para-para pembakaran",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1421,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBERI",
+  "object": "pakaian selengkap",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1422,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIPERCIKKAN_PADA",
+  "object": "tirtha",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1439,
+  "subject": "abu tulang kepala, tangan, punggung, dada, bokong, paha, dan kaki",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIGILING",
+  "object": "lumat-lumat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1439,
+  "subject": "abu tulang kepala, tangan, punggung, dada, bokong, paha, dan kaki",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIGILING_DI",
+  "object": "sesenden",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1439,
+  "subject": "abu tulang kepala, tangan, punggung, dada, bokong, paha, dan kaki",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIMASUKKAN_KE_DALAM",
+  "object": "klungah nyuh gading",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1452,
+  "subject": "nywasta",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "DILAKUKAN_OLEH",
+  "object": "orang hal sawa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1452,
+  "subject": "nywasta",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "MENURUT",
+  "object": "lontar petunjuknya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1452,
+  "subject": "nywasta",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "MENINGGAL",
+  "object": "pulau seberang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1452,
+  "subject": "nywasta",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "MENINGGAL",
+  "object": "tenggelam",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1452,
+  "subject": "nywasta",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "MENINGGAL",
+  "object": "musibah lain",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1458,
+  "subject": "sesajen dan alat upakara",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DISEDIAKAN_DI",
+  "object": "rumah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1463,
+  "subject": "atma atau roh mendiang",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "DIPERSILAKAN_DI",
+  "object": "adegan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1465,
+  "subject": "pengawak",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "jun pere",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1465,
+  "subject": "jun pere",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "periuk tanah",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 1467,
+  "subject": "adegan dan pengawak",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERADA_DI",
+  "object": "tempat yang telah ditentukan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1468,
+  "subject": "upakara",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DISUCIKAN_DENGAN",
+  "object": "sajen hingga dianggap wajar untuk digunakan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1468,
+  "subject": "upakara",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DISUCIKAN_DENGAN",
+  "object": "tirtha panglukatan dengan sajen dan tirtha panglukatan selaku sarana utama nya , hingga dianggap wajar untuk digunakan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1474,
+  "subject": "sesajen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPERSEMBAHKAN_KEPADA",
+  "object": "diuskamaligi",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1474,
+  "subject": "sesajen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPERSEMBAHKAN_KEPADA",
+  "object": "nasi angkeb",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1474,
+  "subject": "sesajen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPERSEMBAHKAN_KEPADA",
+  "object": "saji",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1474,
+  "subject": "sesajen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPERSEMBAHKAN_KEPADA",
+  "object": "lain-lain",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1476,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIPERCIKKAN_PADA",
+  "object": "kedua perlambang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1482,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBAKAR_DENGAN",
+  "object": "khusuknya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1482,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DISERTAI",
+  "object": "kakawin",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1483,
+  "subject": "abu",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIMASUKKAN_KE_DALAM",
+  "object": "klungah nyuh gading",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1493,
+  "subject": "manah",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "BERISI",
+  "object": "kemampuan sosial ekonomi",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1497,
+  "subject": "sawa wedana",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "MEMBERIKAN",
+  "object": "wibawa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1497,
+  "subject": "sawa wedana",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "MEMBERIKAN",
+  "object": "kemegahan semantap-mantap",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1498,
+  "subject": "sawa wedana",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "DITEMPUH_DI",
+  "object": "nya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1504,
+  "subject": "ngulapin",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "MEMILIKI",
+  "object": "makna yang mirip dengan itu pula",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1504,
+  "subject": "ngulapin",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "BERPERAN_SEBAGAI",
+  "object": "nama upacara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1514,
+  "subject": "adegan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIUSUNG",
+  "object": "setra tempat jasad mendiang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1522,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIKENAL_SEBAGAI",
+  "object": "seseorang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1522,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIKENAL_SEBAGAI",
+  "object": "situasi",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1523,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "LAINNYA",
+  "object": "pamitan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1523,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "hyang prajapati",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1523,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "pura dalem",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1523,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "sedahan setra",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1525,
+  "subject": "adegan dan pengawak",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERADA_DI",
+  "object": "balai adat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1525,
+  "subject": "adegan dan pengawak",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIBERI",
+  "object": "sajen",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1525,
+  "subject": "adegan dan pengawak",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIBERI",
+  "object": "perjamuan lain",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1533,
+  "subject": "pengawak",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MEMPEROLEH",
+  "object": "upacara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1544,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MENYEBARKAN",
+  "object": "bau",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1552,
+  "subject": "sumpe",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERFUNGSI_SEBAGAI",
+  "object": "penguat rekatan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1556,
+  "subject": "panca datu",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MEMILIKI",
+  "object": "daya mistik-religius",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1558,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "atas tumpang salu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1558,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBUNGKUS_DENGAN",
+  "object": "paplengkungan semula",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1559,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MENGHADAPI",
+  "object": "upacara pabersihan dengan berbagai rangkaian nya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1584,
+  "subject": "pitara",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "MEWUJUDKAN",
+  "object": "air ening",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1584,
+  "subject": "pitara",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "MEWUJUDKAN",
+  "object": "bayangan diri",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1588,
+  "subject": "lingga sarira pitara",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "BERUNSUR",
+  "object": "bayu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1588,
+  "subject": "lingga sarira pitara",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "BERUNSUR",
+  "object": "akasa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1601,
+  "subject": "kajang",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERFUNGSI_SEBAGAI",
+  "object": "kain kafan teratas",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1601,
+  "subject": "kajang",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILAKUKAN_DI",
+  "object": "plengkungan sawa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1602,
+  "subject": "kajang",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DISAMBUNG_DENGAN",
+  "object": "lancingan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1603,
+  "subject": "lancingan kajang",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MEMBENTUK",
+  "object": "barisan panjang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1605,
+  "subject": "kajang",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "depan pendeta",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1606,
+  "subject": "kajang",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DISUCIKAN_DENGAN",
+  "object": "puja",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1629,
+  "subject": "kajang suratan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIKENAL_SEBAGAI",
+  "object": "atribut nilai martabat warga",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1629,
+  "subject": "atribut nilai martabat warga",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "cihna kawongan",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 1630,
+  "subject": "kajang warga",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIHASILKAN",
+  "object": "mesti",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1639,
+  "subject": "kajang",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "paplengkungan jenazah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1639,
+  "subject": "kajang",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPUJA",
+  "object": "pamlaspasan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1647,
+  "subject": "manah mendiang",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "DICABUT_DENGAN",
+  "object": "puja pendeta",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1647,
+  "subject": "manah mendiang",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "DILETAKKAN_DI",
+  "object": "angenan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1681,
+  "subject": "damar kurung",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILAKUKAN_DI",
+  "object": "ngaben jenis sawa wedana",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1685,
+  "subject": "adegan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIJELASKAN",
+  "object": "demikian",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1688,
+  "subject": "adegan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERWUJUD",
+  "object": "cili",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1690,
+  "subject": "sanghyang atma dan zat abadi",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "BERADA_DI",
+  "object": "sini",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1713,
+  "subject": "adegan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIAMBIL_DENGAN",
+  "object": "penuh hormat keluarga",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1714,
+  "subject": "adegan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MELAKUKAN",
+  "object": "sembah bakti",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1714,
+  "subject": "adegan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "pendeta",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1732,
+  "subject": "upadesa",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "DIKENAL_DENGAN",
+  "object": "nama upanisad",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1732,
+  "subject": "upadesa",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "BERARTI",
+  "object": "bisikan dang guru",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1732,
+  "subject": "upadesa",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "MENURUT",
+  "object": "ahli",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1738,
+  "subject": "mendiang",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "pemangku",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 1738,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DILAKUKAN_DENGAN",
+  "object": "rendah hati",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1738,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "LAINNYA",
+  "object": "ida bagus",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1747,
+  "subject": "adegan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERADA_DI",
+  "object": "ruang paturon",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1747,
+  "subject": "adegan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERAKHIR_SETELAH",
+  "object": "paguntingan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1747,
+  "subject": "adegan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERAKHIR_SETELAH",
+  "object": "upadesa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1753,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIYAKINI_DENGAN",
+  "object": "penghadang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1754,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "BERPERAN_SEBAGAI",
+  "object": "warga baru",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1754,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIPEROLEH",
+  "object": "pergaulan alam roh",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1763,
+  "subject": "banten",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIHASILKAN",
+  "object": "sekah abin",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1763,
+  "subject": "banten",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERPERAN_SEBAGAI",
+  "object": "dasar",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1764,
+  "subject": "sekah abin",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPANGKU",
+  "object": "nama",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1776,
+  "subject": "upakara",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERUPA",
+  "object": "uang kepeng",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1783,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MENYERAHKAN",
+  "object": "swadharma",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1783,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MENYERAHKAN",
+  "object": "beban",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1783,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MENYERAHKAN",
+  "object": "tanggung jawab",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1794,
+  "subject": "upakara",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILENGKAPI",
+  "object": "keris",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1794,
+  "subject": "upakara",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILENGKAPI",
+  "object": "satu dua perhiasan pusaka",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1794,
+  "subject": "satu dua perhiasan pusaka",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "cincin",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 1814,
+  "subject": "nista, madia, dan utama",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "DIWUJUDKAN_DI",
+  "object": "sini",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1823,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MEMEGANG",
+  "object": "jabatan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1832,
+  "subject": "karma phala orangtua",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "keturunan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1845,
+  "subject": "panebusan dan upacara pitra yadnya",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "kedudukan pitara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1850,
+  "subject": "mamutru",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "LAINNYA",
+  "object": "asal kata",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1850,
+  "subject": "mamutru",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "LAINNYA",
+  "object": "perubahan kata pitra",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1853,
+  "subject": "lontar putru",
+  "subject_label": "NASKAH_SUCI",
+  "relation": "MEMILIKI",
+  "object": "jenis",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1854,
+  "subject": "lontar",
+  "subject_label": "NASKAH_SUCI",
+  "relation": "MERINCI",
+  "object": "atma/pitara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1889,
+  "subject": "pabersihan",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "DILAKUKAN",
+  "object": "tiga hari ngaben",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1898,
+  "subject": "yeh panembak",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DILETAKKAN_DI",
+  "object": "tempat pamrajan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1915,
+  "subject": "pabersihan",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "DILANGSUNGKAN",
+  "object": "misal",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1915,
+  "subject": "pangabenan",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "DIGELAR",
+  "object": "hari kamis",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1931,
+  "subject": "pangabenan",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "BERDASARKAN",
+  "object": "lontar swasta geni purwana tatwa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1931,
+  "subject": "pangabenan",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "BERDASARKAN",
+  "object": "lontar yama purwana tatwa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1936,
+  "subject": "atma lingga-sarira",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "DIBAWA_KE",
+  "object": "alam",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1938,
+  "subject": "pengabenan",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "MEMILIKI",
+  "object": "tingkat utama",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1963,
+  "subject": "pering",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERPERAN_SEBAGAI",
+  "object": "penambah bobot",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1963,
+  "subject": "pering",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERPERAN_SEBAGAI",
+  "object": "nilai",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1963,
+  "subject": "pering",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERPERAN_SEBAGAI",
+  "object": "asri",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1963,
+  "subject": "pering",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "LAINNYA",
+  "object": "mahkota",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1963,
+  "subject": "pering",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILAKUKAN_DI",
+  "object": "sajen surya penebusan, pamerasan, banten teben, dan sebagai nya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1985,
+  "subject": "bade",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MENUNJUKKAN",
+  "object": "status sosial seseorang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1987,
+  "subject": "bade jenis apa",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERDASARKAN",
+  "object": "status",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2000,
+  "subject": "bade",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPAKAI_UNTUK",
+  "object": "jenazah raja bali",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2000,
+  "subject": "jenazah raja bali",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "gelgel/klungkung",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2000,
+  "subject": "bade",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MEMILIKI_TINGKAT",
+  "object": "11",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2001,
+  "subject": "bade",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPAKAI_UNTUK",
+  "object": "keluarga raja",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2001,
+  "subject": "bade",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPAKAI_UNTUK",
+  "object": "raja-raja bawahan raja bali",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2001,
+  "subject": "bade",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MEMILIKI_TINGKAT",
+  "object": "sembilan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2002,
+  "subject": "bade",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "keluarga",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2002,
+  "subject": "bade",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MEMILIKI_TINGKAT",
+  "object": "tujuh",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2028,
+  "subject": "mangle",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "sudut atap wadah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2028,
+  "subject": "mangle",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "sudut atap bade",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2029,
+  "subject": "mangle",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "tingkatan wadah bersangkutan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2029,
+  "subject": "mangle",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "tingkatan bade",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2040,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBARINGKAN",
+  "object": "balai-balai",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2041,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBAKAR",
+  "object": "situ",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2045,
+  "subject": "patulangan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIHASILKAN",
+  "object": "bentuk yang berwujud binatang , yang mempunyai nilai religi tertentu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2065,
+  "subject": "tirtha pangentas dan segala sesuatu syarat agama",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "BERISI",
+  "object": "api jatu pembakaran",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2065,
+  "subject": "tirtha pangentas dan segala sesuatu syarat agama",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "BERISI",
+  "object": "linting anugrah ida sulinggih",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2087,
+  "subject": "naga banda",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPAKAI_UNTUK",
+  "object": "upacara palebon",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2087,
+  "subject": "upacara palebon",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "ngaben",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2087,
+  "subject": "naga banda",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERASAL_DARI",
+  "object": "keluarga",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2093,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MEMILIKI",
+  "object": "ikatan erat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2117,
+  "subject": "peranda buddha",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "BERDASARKAN",
+  "object": "pengertian",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2130,
+  "subject": "peranda shiwa",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "MENEMPATKAN",
+  "object": "diri",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2130,
+  "subject": "peranda shiwa",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "MENEMPATKAN",
+  "object": "jenana",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2130,
+  "subject": "peranda shiwa",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "DILETAKKAN_DI",
+  "object": "atas alias",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2133,
+  "subject": "naga banda",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILAKUKAN_SAAT",
+  "object": "palebon",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2163,
+  "subject": "naga banda",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MEMILIKI",
+  "object": "arti",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2163,
+  "subject": "naga banda",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MEMILIKI",
+  "object": "makna yang bermacam-macam",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2166,
+  "subject": "naga banda",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "ruang bale semanggen",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2168,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MENDIANG_DENGAN",
+  "object": "posisi",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2180,
+  "subject": "bale salunglung",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "BERWUJUD",
+  "object": "rumah kecil sederhana",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2183,
+  "subject": "bale salunglung",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "DIBUAT_DI",
+  "object": "rumah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2183,
+  "subject": "bale salunglung",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "DIBUAT_DI",
+  "object": "bale banjar",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2184,
+  "subject": "bale salunglung",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "DIBAWA_KE",
+  "object": "tempat pembakaran",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2184,
+  "subject": "bale salunglung",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "arah hulu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2234,
+  "subject": "jenazah seseorang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBAKAR",
+  "object": "setra lain",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2252,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MEMILIKI",
+  "object": "keponakan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2252,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MEMILIKI",
+  "object": "cucu-cucu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2262,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIMOHON_DI",
+  "object": "pendeta",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2269,
+  "subject": "bale pamuun dan alat-alat upakara lainnya",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "LAINNYA",
+  "object": "de facto",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2316,
+  "subject": "undagi",
+  "subject_label": "STRUKTUR_SOSIAL_ADAT",
+  "relation": "TERLIBAT_DI",
+  "object": "acara khusus",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2336,
+  "subject": "kajang",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIBERI",
+  "object": "sambungan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2336,
+  "subject": "sambungan",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "lancingan",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2336,
+  "subject": "kajang",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIBERI",
+  "object": "kain putih",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2336,
+  "subject": "kajang",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIBERI",
+  "object": "30 meter",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2336,
+  "subject": "kajang",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MELAMBANGKAN",
+  "object": "tanda hormat bakti kepada mendiang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2337,
+  "subject": "jenazah /pengawak",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "balai-balai bade",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2337,
+  "subject": "kajang",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILIPAT_DI",
+  "object": "jenazah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2337,
+  "subject": "kajang",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILIPAT_DI",
+  "object": "simbol /ditindihkan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2363,
+  "subject": "bale pamuunan",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "DIKELILINGI",
+  "object": "tiga kali",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2364,
+  "subject": "bade",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "hilir",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2364,
+  "subject": "bade",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "teben lembu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2370,
+  "subject": "pradaksina",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "MEMPEROLEH",
+  "object": "imbas kesucian",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2377,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "MEMILIKI",
+  "object": "tujuan pokok",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2380,
+  "subject": "bade",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERPUTAR_DENGAN",
+  "object": "cara prasawya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2380,
+  "subject": "cara prasawya",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "berputar",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2387,
+  "subject": "bade sawa atas",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "hilir lembu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2410,
+  "subject": "pengawak simbolik",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DITINDIHKAN",
+  "object": "atas",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2411,
+  "subject": "jenazah yeh panembak",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DISIRAM",
+  "object": "keadaan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2419,
+  "subject": "adegan, angenan, pisang jati, panguryagan, lain-lain, dan alat",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPERSEMBAHKAN_KEPADA",
+  "object": "hyang agni",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2419,
+  "subject": "hyang agni",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "api",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2448,
+  "subject": "suku tunggal",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "bhatara-bhatari",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2449,
+  "subject": "suku tunggal",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIHANYUTKAN_KE",
+  "object": "laut",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2455,
+  "subject": "pangabenan",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "TERDIRI_DARI",
+  "object": "jenis",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2472,
+  "subject": "pranawa",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "BERARTI",
+  "object": "lambang suara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2473,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MEMPEROLEH",
+  "object": "ketenangan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2473,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MEMPEROLEH",
+  "object": "kemantapan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2473,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MEMPEROLEH",
+  "object": "kesucian",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2480,
+  "subject": "supta pranawa",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "BAGIAN_DARI",
+  "object": "pangabenan jenis pranawa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2480,
+  "subject": "supta pranawa",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "MENGALAMI",
+  "object": "variasi alakadar",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2483,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MEMPEROLEH",
+  "object": "situasi demikian",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2485,
+  "subject": "pangabenan pranawa",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "mendiang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2489,
+  "subject": "atma wedana",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "DIKATAKAN",
+  "object": "pitra yadnya tahap kedua",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2502,
+  "subject": "sawa wedana",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "wedana",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2502,
+  "subject": "sawa wedana",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "DIGELAR_DENGAN",
+  "object": "roh",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2502,
+  "subject": "sawa wedana",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "DIGELAR_DENGAN",
+  "object": "arwah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2502,
+  "subject": "sawa wedana",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "DIGELAR_DENGAN",
+  "object": "badan halus mendiang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2502,
+  "subject": "sawa wedana",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "MENJADI",
+  "object": "atma",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2535,
+  "subject": "pitara",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "MENGELUPASI",
+  "object": "suksmasarira",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2542,
+  "subject": "atma wedana",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "MEMILIKI",
+  "object": "jenis",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2548,
+  "subject": "tirtha pangentas atiwa-tiwa",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIPERCIKKAN_PADA",
+  "object": "sesosok mayat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2548,
+  "subject": "tirtha pangentas atiwa-tiwa",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIPERCIKKAN_PADA",
+  "object": "perlambang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2558,
+  "subject": "ngroras",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "BERASAL_DARI",
+  "object": "kata roras",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2558,
+  "subject": "kata roras",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "bilangan 12",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2563,
+  "subject": "bhuwana alit",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "MEMILIKI",
+  "object": "11 bidang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2566,
+  "subject": "demikian bhuwana agung",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "MEMPEROLEH",
+  "object": "cuntaka",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2566,
+  "subject": "demikian bhuwana agung",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "MEMPEROLEH",
+  "object": "sehari",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2571,
+  "subject": "arjuna",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "MENGHUKUM",
+  "object": "diri",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2571,
+  "subject": "arjuna",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "MENGHUTAN",
+  "object": "nya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2571,
+  "subject": "arjuna",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "MENGHUTAN",
+  "object": "12 tahun",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2612,
+  "subject": "pitra",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "DIBUATKAN_UNTUK",
+  "object": "perlambang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2612,
+  "subject": "perlambang",
+  "subject_label": null,
+  "relation": "DIKENAL_SEBAGAI",
+  "object": "sekah kangsen",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2612,
+  "subject": "pitra",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "ADALAH",
+  "object": "merupakan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2619,
+  "subject": "sekah kangsen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MENGGUNAKAN",
+  "object": "dulang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2619,
+  "subject": "sekah kangsen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MENGGUNAKAN",
+  "object": "meja pendek kecil",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2620,
+  "subject": "dulang atau meja kecil",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "hulu arena upacara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2623,
+  "subject": "sekah kangsen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DISUCIKAN_DENGAN",
+  "object": "tirtha",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2623,
+  "subject": "sekah kangsen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DISUCIKAN_DENGAN",
+  "object": "sajen kecil dengan tirtha dan sajen kecil sebagai pengantar nya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2624,
+  "subject": "pitra mendiang",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "perlambang diri",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2630,
+  "subject": "pitra",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "DINILAI_DENGAN",
+  "object": "upacara penyucian menerima sembah bhakti serta ayaban sajen",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2642,
+  "subject": "sekah kangsen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "SETELAH",
+  "object": "pamralina",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2644,
+  "subject": "abu daun",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIMASUKKAN_KE_DALAM",
+  "object": "klungah nyuh gading",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2645,
+  "subject": "abu suku tunggal",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIHANYUTKAN_KE",
+  "object": "laut",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2645,
+  "subject": "abu suku tunggal",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIHANYUTKAN_KE",
+  "object": "sungai",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2651,
+  "subject": "atma wedana",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "mendiang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2686,
+  "subject": "pitra mendiang",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "BERTAHTA",
+  "object": "sekah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2686,
+  "subject": "pitra mendiang",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "BERTAHTA",
+  "object": "puspalingga",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2748,
+  "subject": "sekah",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "balai pawedan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2748,
+  "subject": "sekah",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIALASI",
+  "object": "dulang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2748,
+  "subject": "sekah",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIALASI",
+  "object": "meja rendah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2748,
+  "subject": "sekah sangge",
+  "subject_label": null,
+  "relation": "JENIS_DARI",
+  "object": "sekah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2750,
+  "subject": "pitra mendiang",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "BERPERAN_SEBAGAI",
+  "object": "sarana",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2750,
+  "subject": "sarana",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "sulinggih pujastawa",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2750,
+  "subject": "pitra mendiang",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "BERPERAN_SEBAGAI",
+  "object": "satu sajen sederhana",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2752,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIHASILKAN",
+  "object": "wujud sekah , agar dapat \" diajak berkomunikasi \" oleh keluarga nya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2758,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MENGALAMI",
+  "object": "perubahan wujud",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2762,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MEMPEROLEH",
+  "object": "upanisad",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2762,
+  "subject": "upanisad",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "pawisik",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2762,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIPEROLEH_DARI",
+  "object": "pendeta jalan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2777,
+  "subject": "bhatara",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "utpeti",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2777,
+  "subject": "utpeti",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "masuk",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2777,
+  "subject": "bhatara",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "DIPERSILAKAN_DI",
+  "object": "puspalingga",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2777,
+  "subject": "puspalingga",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "sejenis sangge",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2777,
+  "subject": "bhatara",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "BERPERAN_SEBAGAI",
+  "object": "badan suksma",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2780,
+  "subject": "sanggar surya baligia",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "MEMILIKI",
+  "object": "ruang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2780,
+  "subject": "sanggar surya baligia",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "MEMPUNYAI_DENGAN",
+  "object": "akibat lanjutan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2787,
+  "subject": "sekah",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DINAIKKAN_KE",
+  "object": "atas bukur",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2794,
+  "subject": "sekah",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERASAL_DARI",
+  "object": "pawedan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2794,
+  "subject": "sangge",
+  "subject_label": null,
+  "relation": "JENIS_DARI",
+  "object": "sekah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2810,
+  "subject": "pawedan tempat",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "LAINNYA",
+  "object": "shiwa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2810,
+  "subject": "shiwa",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "dewa loka",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2812,
+  "subject": "mendiang",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "BERPERAN_SEBAGAI",
+  "object": "pitra",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2812,
+  "subject": "pitra",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "atma",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2824,
+  "subject": "sekah",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIMASUKKAN_KE_DALAM",
+  "object": "pintu belakang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2832,
+  "subject": "sekah",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MEMBELAKANGI",
+  "object": "pendeta",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2843,
+  "subject": "santapan istimewa",
+  "subject_label": null,
+  "relation": "DIPERSEMBAHKAN_KEPADA",
+  "object": "sulinggih, tukang banten, tamu terhormat, dan tamu khusus lainnya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2854,
+  "subject": "pitra mendiang",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "BERSUKA",
+  "object": "cita",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2854,
+  "subject": "pitra mendiang",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "MENYAKSIKAN",
+  "object": "anak cucu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2869,
+  "subject": "pitara",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "MENGGUNAKAN",
+  "object": "tirtha ening",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2869,
+  "subject": "tirtha ening",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "tarpana = bercermin",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2885,
+  "subject": "sulinggih",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "MEMBERIKAN",
+  "object": "panjaya-jaya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2885,
+  "subject": "sulinggih",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "MEMBERIKAN",
+  "object": "ayaban sesayut",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2885,
+  "subject": "sulinggih",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "putra-putri",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2894,
+  "subject": "pralina",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "DILAKUKAN_DENGAN",
+  "object": "upacara saji tarpana dari segi kemeriahan ,",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2923,
+  "subject": "mamukur dan upacara sebangsa",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "DILINDUNGI_DENGAN",
+  "object": "upaya penyucian wilayah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2947,
+  "subject": "abu",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIUYEG",
+  "object": "selumat-lumat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2947,
+  "subject": "abu",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIUYEG",
+  "object": "sesenden",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2947,
+  "subject": "sesenden",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "dulang tanah",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2948,
+  "subject": "abu",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIMASUKKAN_KE_DALAM",
+  "object": "klungah nyuh gading",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2951,
+  "subject": "suku tunggal abu",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIUSUNG",
+  "object": "mapradaksina",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2951,
+  "subject": "suku tunggal abu",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MELAMBANGKAN",
+  "object": "lambang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2954,
+  "subject": "atma pitara",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "MENUJU",
+  "object": "dewaloka",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2968,
+  "subject": "ngajar-ajar",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "BERARTI",
+  "object": "ajar-ajaran",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2968,
+  "subject": "ngajar-ajar",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "BERARTI",
+  "object": "tuntunan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2969,
+  "subject": "ngajar-ajar",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "BERMAKNA",
+  "object": "upacara pernyataan parama suksmaning idep",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2969,
+  "subject": "yadnya",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "DISELESAIKAN",
+  "object": "mesti",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2977,
+  "subject": "kedua pura",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "tempat pemujaan terhadap tuhan penguasa laut dan gunung",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2986,
+  "subject": "pitra",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "BAGIAN_DARI",
+  "object": "sekeluarga tunggalan pamrajan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2986,
+  "subject": "pitra",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "DIBUATKAN_UNTUK",
+  "object": "dua buah daksina tapakan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2986,
+  "subject": "pitra",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "bhatara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2986,
+  "subject": "pitra",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "bhatari",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2988,
+  "subject": "patileman pitra",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "MENINGKAT",
+  "object": "kedudukan bukan kah sejak selesai nya menjadi bhatara atau bhatari",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3007,
+  "subject": "pandita",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "BERPERAN_SEBAGAI",
+  "object": "pemuka agama",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3063,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "BERASAL_DARI",
+  "object": "kotoran-kotoran",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3078,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBUNGKUS_DENGAN",
+  "object": "kain putih dari ujung kepala hingga ujung kaki , agar tidak kelihatan sama sekali",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3080,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DITARUHKAN",
+  "object": "punjung",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3080,
+  "subject": "punjung",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "makanan kecil",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 3110,
+  "subject": "daun intaran",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPAKAI_UNTUK",
+  "object": "lembar",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3110,
+  "subject": "daun intaran",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "kedua alis orang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3118,
+  "subject": "daun dapdap",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIISI_DENGAN",
+  "object": "air",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3118,
+  "subject": "daun dapdap",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "atas takir",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3122,
+  "subject": "malem",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPULUNG",
+  "object": "kelereng",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3122,
+  "subject": "malem",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPULUNG",
+  "object": "minimal dua buah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3122,
+  "subject": "malem",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPULUNG",
+  "object": "ditaruh",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3133,
+  "subject": "paes gedubang",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "atas takir bersama",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3133,
+  "subject": "paes gedubang",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DENGAN",
+  "object": "secarik kain hitam",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3134,
+  "subject": "lekesan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIIKAT_DENGAN",
+  "object": "benang putih",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3134,
+  "subject": "lekesan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIMASUKKAN_KE_DALAM",
+  "object": "lubang satu uang kepeng",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3134,
+  "subject": "lekesan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIISI_DENGAN",
+  "object": "bawang putih",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3134,
+  "subject": "lekesan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "ujung atas",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3141,
+  "subject": "kawangen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIISI_DENGAN",
+  "object": "uang kepeng",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3141,
+  "subject": "uang kepeng",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "pipis bolong",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 3142,
+  "subject": "kwangen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERISI",
+  "object": "lima buah lembaran-lembaran daun sirih",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3142,
+  "subject": "kwangen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIIKAT_DENGAN",
+  "object": "tali benang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3150,
+  "subject": "sekar ura",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILAKUKAN_DI",
+  "object": "persimpangan jalan menuju",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3153,
+  "subject": "sisig",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERBUAT_DARI",
+  "object": "arang pembakaran jaja gina uli",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3153,
+  "subject": "sisig",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERBUAT_DARI",
+  "object": "arang pembakaran jaja uli",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3153,
+  "subject": "sisig",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "atas takir",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3154,
+  "subject": "pecahan kaca dan pecahan besi baja",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "atas takir",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3165,
+  "subject": "anget-angetan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPERCIKKAN_PADA",
+  "object": "hulu hati jenazah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3165,
+  "subject": "anget-angetan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPERCIKKAN_PADA",
+  "object": "upacara ngelelet",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3195,
+  "subject": "banten pamegat",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILAKUKAN_SAAT",
+  "object": "acara maktining layon",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3195,
+  "subject": "banten pamegat",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPAKAI_UNTUK_SEBELUM",
+  "object": "upacara pabresihan mati",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3195,
+  "subject": "upacara pabresihan mati",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "ngelelet",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 3196,
+  "subject": "lis bale gading",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "sasap",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3196,
+  "subject": "lis bale gading",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "rangkadan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3196,
+  "subject": "lis bale gading",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "sorohan kecil",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3196,
+  "subject": "lis bale gading",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "daksina",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3196,
+  "subject": "lis bale gading",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "tipat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3196,
+  "subject": "lis bale gading",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "raka-raka",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3196,
+  "subject": "lis bale gading",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "padma",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3196,
+  "subject": "lis bale gading",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "bersihan payasan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3196,
+  "subject": "lis bale gading",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "benang tatebus",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3196,
+  "subject": "lis bale gading",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "sampian pusung",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3196,
+  "subject": "lis bale gading",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "sanggah urip",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3196,
+  "subject": "lis bale gading",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "gelar sanga",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3196,
+  "subject": "lis bale gading",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "sorohan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3196,
+  "subject": "lis bale gading",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "lis amuan-amuan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3196,
+  "subject": "lis bale gading",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERDIRI_DARI",
+  "object": "coblong",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3221,
+  "subject": "tirta pengeringkes",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIDAPAT_DI",
+  "object": "gria",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3237,
+  "subject": "lekesan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERISI",
+  "object": "tembakau",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3283,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "BERASAL_DARI",
+  "object": "tebenan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3293,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "BERJALAN_DENGAN",
+  "object": "kaki",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3294,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "pepaga/asagan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3295,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "LAINNYA",
+  "object": "bale teben",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3296,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "BERADA_DI",
+  "object": "pepaga/asagan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3330,
+  "subject": "krama",
+  "subject_label": "STRUKTUR_SOSIAL_ADAT",
+  "relation": "MENGHASILKAN",
+  "object": "bale-bale tempat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3332,
+  "subject": "pepaga",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIKENAL_SEBAGAI",
+  "object": "asagan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3333,
+  "subject": "bale",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "TERBUAT_DARI",
+  "object": "bambu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3333,
+  "subject": "bambu",
+  "subject_label": null,
+  "relation": "TERDIRI_DARI",
+  "object": "bilah-bilah bambu",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 3333,
+  "subject": "bale",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "TERBUAT_DARI",
+  "object": "galar",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3334,
+  "subject": "kesembilan galar atau bilah bambu",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DITARUH",
+  "object": "bilah bambu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3339,
+  "subject": "krama atau keluarga",
+  "subject_label": "STRUKTUR_SOSIAL_ADAT",
+  "relation": "MENGAMBIL",
+  "object": "jenazah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3340,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIUSUNG",
+  "object": "tempat penusangan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3340,
+  "subject": "tempat penusangan",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "nyiramang layon",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 3353,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIMASUKKAN_KE_DALAM",
+  "object": "kepala",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3354,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MENUJU",
+  "object": "pepaga/asagan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3355,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MEMILIKI",
+  "object": "makna agar orang yang meninggal tersebut lebih cepat menemui brahman ( sang pencipta )",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3363,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DITARUH",
+  "object": "atas pepaga/asagan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3364,
+  "subject": "jenazah baru",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "asagan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3446,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBERI",
+  "object": "pakaian layak orang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3468,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MEMAKAI",
+  "object": "cincin",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3468,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MEMAKAI",
+  "object": "kalung",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3468,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MEMAKAI",
+  "object": "gelang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3496,
+  "subject": "lekesan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DITEMPELKAN_DI",
+  "object": "gigi jenazah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3496,
+  "subject": "lekesan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIBERSIHKAN_DENGAN",
+  "object": "cara mengusap-usapkan tembakau pada bibir jenazah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3544,
+  "subject": "kawangen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MELAMBANGKAN",
+  "object": "tanda doa restu setelah selesai upacara sembah bhakti ini ,",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3544,
+  "subject": "kawangen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "samping jenazah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3546,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIISI_DENGAN",
+  "object": "kawangen tangan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3546,
+  "subject": "pabersihan hidup tangan jenazah/layon",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "DILETAKKAN_DI",
+  "object": "dada",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3546,
+  "subject": "pabersihan hidup tangan jenazah/layon",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "DITARUH_DENGAN",
+  "object": "telapak tangan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3547,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIMINUMKAN",
+  "object": "tirta yang berasal dari bhetara hyang guru yaitu tirta yang dimohonkan di sanggah atau pamerajan keluarga orang yang meninggal",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3559,
+  "subject": "waja",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "LAINNYA",
+  "object": "panca datu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3583,
+  "subject": "kerik kuku",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "BERTUJUAN",
+  "object": "nanti",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3584,
+  "subject": "pengerikan kuku mutlak",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "DILAKUKAN_SAAT",
+  "object": "upacara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3586,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIKENAL_SEBAGAI",
+  "object": "orang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3599,
+  "subject": "babelonyoh",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIOLESKAN_DI",
+  "object": "dada jenazah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3604,
+  "subject": "itik-itik",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIAMBIL_SETELAH",
+  "object": "kesepuluh kuku tangan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3604,
+  "subject": "itik-itik",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIAMBIL_SETELAH",
+  "object": "kuku kaki",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3610,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DISABUNI_DENGAN",
+  "object": "umbi sikapa/sekapa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3623,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIPAKAIKAN",
+  "object": "pakaian putih-putih",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3623,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIPAKAIKAN",
+  "object": "pakaian",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3623,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIPAKAIKAN",
+  "object": "kain bawah , antara lain pakaian atau kain bawah nya berwarna putih , saput serta umpal ( tali saput )",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3623,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIPAKAIKAN",
+  "object": "umpal",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3623,
+  "subject": "umpal",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "tali saput",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 3623,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIPAKAIKAN",
+  "object": "udeng laki-laki",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3623,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "BERWARNA",
+  "object": "udeng laki-laki",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3647,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIALASI_DENGAN",
+  "object": "daun pisang saba",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3647,
+  "subject": "daun pisang saba",
+  "subject_label": null,
+  "relation": "BERFUNGSI_SEBAGAI",
+  "object": "tikar",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 3649,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "BERBANTALKAN",
+  "object": "kapuk",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3649,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "BERBANTALKAN",
+  "object": "tadi",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3651,
+  "subject": "dewa wishnu",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "LAINNYA",
+  "object": "pengaduk lautan susu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3653,
+  "subject": "gegaleng kepala",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERARTI",
+  "object": "bantal",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3654,
+  "subject": "gegaleng",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERBUAT_DARI",
+  "object": "uang kepeng",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3654,
+  "subject": "uang kepeng",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "pipis bolong",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 3654,
+  "subject": "gegaleng",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERBUAT_DARI",
+  "object": "potongan-potongan dahan kayu dapdap",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3694,
+  "subject": "atma",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "MENINGGAL",
+  "object": "badan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3720,
+  "subject": "anget-angetan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MENGHILANGKAN",
+  "object": "bau busuk",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3728,
+  "subject": "numitis",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "MEMPEROLEH",
+  "object": "pujian keharuman",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3728,
+  "subject": "numitis",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "DILAKUKAN_DI",
+  "object": "samping",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3733,
+  "subject": "kwangen jeriji",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILAKUKAN_SETELAH",
+  "object": "pelaksanaan eteh-eteh pabersihan mati",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3733,
+  "subject": "kwangen jeriji",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DITARUH",
+  "object": "kawangen jeriji",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3733,
+  "subject": "kwangen jeriji",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "telapak tangan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3733,
+  "subject": "kwangen jeriji",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "telapak kaki",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3742,
+  "subject": "kesuna atau bawang putih",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERMAKNA",
+  "object": "orang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3742,
+  "subject": "kesuna atau bawang putih",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MEMILIKI",
+  "object": "kuku-kuku",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3747,
+  "subject": "kawangen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "hulu hati",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3747,
+  "subject": "kawangen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERISI",
+  "object": "9 biji uang kepeng",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3747,
+  "subject": "kawangen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERISI",
+  "object": "bunga tunjung putih",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3749,
+  "subject": "kawangen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "dada",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3749,
+  "subject": "kawangen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERISI",
+  "object": "7 biji uang kepeng",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3749,
+  "subject": "kawangen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERISI",
+  "object": "bunga tunjung putih",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3753,
+  "subject": "kawangen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "kedua lutut kaki",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3753,
+  "subject": "kawangen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERISI",
+  "object": "5 biji uang kepeng",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3753,
+  "subject": "kawangen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERISI",
+  "object": "pusuh bunga cempaka kuning",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3760,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIGULUNG_SEBELUM",
+  "object": "pangringkesan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3783,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIPERCIKKAN_PADA",
+  "object": "badan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3791,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBUNGKUS_DENGAN",
+  "object": "kain putih",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3791,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBUNGKUS",
+  "object": "tiga lapis",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3799,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBUNGKUS_DENGAN",
+  "object": "selembar kain putih",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3799,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIISI_DENGAN",
+  "object": "rurub sinom",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3799,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "kain",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3802,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBAWA_KE",
+  "object": "balai-balai",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3802,
+  "subject": "balai-balai",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "bale semanggen",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 3811,
+  "subject": "rurub sinom",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "jenazah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3812,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIMASUKKAN_KE_DALAM",
+  "object": "peti",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3812,
+  "subject": "rurub sinom tadi",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "peti",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3812,
+  "subject": "rurub sinom tadi",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DITARUH_DENGAN",
+  "object": "posisi",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3816,
+  "subject": "ante",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "TERBUAT_DARI",
+  "object": "bilahan-bilahan bambu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3836,
+  "subject": "bale-bale dipan",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "DIPAKAI_UNTUK",
+  "object": "dipan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3836,
+  "subject": "bale-bale dipan",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "DIPAKAI_UNTUK",
+  "object": "dapur",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3836,
+  "subject": "bale-bale dipan",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "DIPAKAI_UNTUK",
+  "object": "warung",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3843,
+  "subject": "galar",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPAKAI_UNTUK",
+  "object": "bele-bale",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3843,
+  "subject": "galar",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIPAKAI_UNTUK",
+  "object": "dipan kamar tidur",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3843,
+  "subject": "galar",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "MEMBUAT_DENGAN",
+  "object": "harapan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3845,
+  "subject": "galar",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIHASILKAN",
+  "object": "keinginan untuk bertembang seperti makidung atau makekawin , yang sesuai dengan tempat nya di tempat suci",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3845,
+  "subject": "bale-bale",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "merajan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3845,
+  "subject": "bale-bale",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "pura",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3852,
+  "subject": "galar",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIHASILKAN",
+  "object": "jumlah kelipatan 5",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3852,
+  "subject": "jumlah kelipatan 5",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "misalnya 5 10",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 3868,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBAWA_KE",
+  "object": "bale tempat jenazah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3904,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "BERADA_DI",
+  "object": "atas pepaga/asagan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3906,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBAWA_KE",
+  "object": "balai-balai tempat jenazah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3909,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBAWA_KE",
+  "object": "setra",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3914,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "MEMILIKI",
+  "object": "rangkaian upacara lain yang harus dilakukan sebelum jenazah di bawa ke setra",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3936,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIBERI",
+  "object": "pakaian layak orang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3963,
+  "subject": "kawangen",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DILETAKKAN_DI",
+  "object": "samping jenazah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3964,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIMINUMKAN",
+  "object": "tirta yang berasal dari bhatara hyang guru yaitu tirta yang dimohonkan di sanggah atau pamerajan keluarga orang yang meninggal",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3973,
+  "subject": "itik-itik",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIAMBIL_SETELAH",
+  "object": "kesepuluh kuku tangan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3973,
+  "subject": "itik-itik",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIAMBIL_SETELAH",
+  "object": "kuku kaki",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3977,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DISABUNI_DENGAN",
+  "object": "umbi sikapa/sekapa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3984,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIPAKAIKAN",
+  "object": "pakaian putih-putih",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3984,
+  "subject": "jenazah",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "DIPAKAIKAN_SETELAH",
+  "object": "semua",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4035,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIPERCIKKAN_PADA",
+  "object": "badan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4062,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIPAKAI_UNTUK",
+  "object": "ngalukat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4062,
+  "subject": "ngalukat",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "pembersihan tingkat awal",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 4062,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIPAKAI_UNTUK",
+  "object": "adegan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4062,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIPAKAI_UNTUK",
+  "object": "lainnya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4065,
+  "subject": "tirtha pabersihan",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "MEMILIKI",
+  "object": "perbedaan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4074,
+  "subject": "tirtha ening",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "BERFUNGSI_SEBAGAI",
+  "object": "symbol pikiran dan perasaan sang yajamana ( orang yang punya upacara ) , sehingga roh atau atman yang di upacarai tidak mengalami kegoncangan , sehingga dapat mencapai alam sorga dengan tenang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4079,
+  "subject": "tirtha pemanah",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "BERBEDA_DENGAN",
+  "object": "tirtha-tirtha yang telah disebut diatas",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4082,
+  "subject": "tirtha pemanah",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIPAKAI_UNTUK",
+  "object": "upacara pengabenan sawa wedana yang menggunakan \" tumpang salu \"",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4087,
+  "subject": "tirtha penembak",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "MEMILIKI",
+  "object": "hubungan herat dengan itihasa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4090,
+  "subject": "arjuna",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "MENYUGUHKAN",
+  "object": "air cara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4096,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIBAWA_KE",
+  "object": "setra",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4103,
+  "subject": "tirtha kawitan",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIMOHON_DARI",
+  "object": "merajan kawitan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4103,
+  "subject": "tirtha kawitan",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIMOHON_DARI",
+  "object": "merajan pusat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4105,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIPERSIAPKAN",
+  "object": "sarana",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4105,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIPERSIAPKAN",
+  "object": "prasarana",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4106,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "MEMILIKI",
+  "object": "fungsi sarana untuk mengucapkan permohonan pamit terhadap leluhur , agar nanti nya dapat ikut masuk kealam kedewataan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4106,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "LAINNYA",
+  "object": "nanti",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4109,
+  "subject": "tirtha kahyangan tiga",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIMOHON_DARI",
+  "object": "pura desa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4109,
+  "subject": "tirtha kahyangan tiga",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIMOHON_DARI",
+  "object": "pura puseh",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4109,
+  "subject": "tirtha kahyangan tiga",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIMOHON_DARI",
+  "object": "pura dalem",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4109,
+  "subject": "tirtha kahyangan tiga",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIMOHON_DARI",
+  "object": "pura mrajapti",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4110,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIPERSIAPKAN",
+  "object": "sarana",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4110,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIPERSIAPKAN",
+  "object": "prasarana",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4111,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "MEMILIKI",
+  "object": "fungsi sarana yang dapat mengantarkan agar roh orang yang meninggal mendapatkan tempat yang baik atau dalam kata lain roh tersebut tidak mengalami kesengsaraan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4112,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "BERFUNGSI_SEBAGAI",
+  "object": "sarana pengembalian roh",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4112,
+  "subject": "sarana pengembalian roh",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "atma",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 4116,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "BERFUNGSI_SEBAGAI",
+  "object": "sarana untuk meningkatkan kedudukan roh orang yang meninggal yang masih dalam tingkatan preta menjadi pitara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4121,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIBUAT_DI",
+  "object": "gria ida",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4121,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DIBUAT_DI",
+  "object": "sulinggih",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4121,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "DILAKSANAKAN",
+  "object": "upacara pengabenan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4128,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "MEMILIKI",
+  "object": "fungsi utama untuk \" ngentas \"",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4128,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "MEMBERIKAN",
+  "object": "jalan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4175,
+  "subject": "tuhan atau brahman",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "DITEMPATKAN",
+  "object": "diri",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4177,
+  "subject": "atma lingga",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "MEWUJUDKAN",
+  "object": "sanghyang ongkans",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4177,
+  "subject": "atma lingga",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "MEWUJUDKAN",
+  "object": "tri aksara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4177,
+  "subject": "atma lingga",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "MEWUJUDKAN",
+  "object": "diri",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4212,
+  "subject": "abu abu kekototan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERSINAR",
+  "object": "matahari",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4266,
+  "subject": "pramakusa",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIMASUKKAN_KE_DALAM",
+  "object": "priuk",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4266,
+  "subject": "pramakusa",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "LAINNYA",
+  "object": "mantrai",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4273,
+  "subject": "padang lepas",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIBAWA_KE",
+  "object": "periuk",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4273,
+  "subject": "padang lepas",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIMASUKAN",
+  "object": "sarana-sarana yang lainnya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4273,
+  "subject": "kalpika",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "DIMASUKKAN_KE_DALAM",
+  "object": "periuk",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4304,
+  "subject": "bayu sangkaning",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "LAINNYA",
+  "object": "mulih maring bayu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4337,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "MEMILIKI",
+  "object": "nilai filosofis yang sangat tinggi sekali",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4337,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "MEMILIKI",
+  "object": "kenyataan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4340,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "BERFUNGSI_SEBAGAI",
+  "object": "pelebur unsur karma wasana",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4340,
+  "subject": "pelebur unsur karma wasana",
+  "subject_label": null,
+  "relation": "DIKENAL_SEBAGAI",
+  "object": "ngentas atma",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 4340,
+  "subject": "pelebur unsur karma wasana",
+  "subject_label": null,
+  "relation": "DIKENAL_SEBAGAI",
+  "object": "ulub roh",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 6,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "ritual kremasi yang berakar pada filosofi pelepasan jiwa ( atma ) dari ikatan duniawi",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 44,
+  "subject": "sawa wedana",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "upacara jenazah utuh untuk jenazah utuh ( 3-7 hari setelah meninggal )",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 45,
+  "subject": "asti wedana",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "upacara pembakaran tulang belulang yang digali kembali dari kuburan sesuai aturan adat setempat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 46,
+  "subject": "swasta",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "upacara yang dilakukan jika jenazah tidak ditemukan atau meninggal di perantauan , menggunakan kayu cendana dan aksara sakral sebagai simbol pengganti jasad",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 47,
+  "subject": "ngelungah",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "ritual khusus untuk bayi yang belum tumbuh gigi ( suci )",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 48,
+  "subject": "ngaben massal",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "pelaksanaan kolektif untuk efisiensi biaya dan tenaga tanpa mengurangi nilai sakralitas nya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 73,
+  "subject": "naga banda",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "boneka naga raksasa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 73,
+  "subject": "boneka naga raksasa",
+  "subject_label": null,
+  "relation": "MELAMBANGKAN",
+  "object": "pengikat keinginan duniawi raja",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 81,
+  "subject": "singa",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "3:2:2",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 126,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "institusi sosial-religius",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 128,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "identitas budaya dinamis",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 213,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "proses upacara yang dilaksanakan secara langsung tanpa ditanam terlebih dahulu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 271,
+  "subject": "atiwa-tiwa",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "raçadana",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 271,
+  "subject": "atiwa-tiwa",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "tirta yadnya pranawa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 271,
+  "subject": "atiwa-tiwa",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "sama atiwa-tiwa asti vedana",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 271,
+  "subject": "atiwa-tiwa",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "tirta yadnya pranawa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 271,
+  "subject": "atiwa-tiwa",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "BAGIAN_DARI",
+  "object": "ngaben svasta",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 399,
+  "subject": "sasih",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "adalah",
+  "object": "kasa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 399,
+  "subject": "sasih",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "adalah",
+  "object": "karo",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 399,
+  "subject": "sasih",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "adalah",
+  "object": "katiga",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 399,
+  "subject": "sasih",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "adalah",
+  "object": "karo",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 399,
+  "subject": "sasih",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "adalah",
+  "object": "katiga",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 408,
+  "subject": "sasih paruwak tahuk",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "adalah",
+  "object": "sasih berbadankan kosong",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 415,
+  "subject": "malamasa",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "adalah",
+  "object": "sasih yang ditampih atau diduakalikan , disebut juga malamasa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 738,
+  "subject": "puspa asti",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "abu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 785,
+  "subject": "pitra yadnya",
+  "subject_label": "RITUAL",
+  "relation": "adalah",
+  "object": "istilah umat hindu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 809,
+  "subject": "pitra yadnya",
+  "subject_label": "RITUAL",
+  "relation": "adalah",
+  "object": "hasil penyempurnaan terakhir",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 809,
+  "subject": "pitra yadnya",
+  "subject_label": "RITUAL",
+  "relation": "ADALAH",
+  "object": "rupa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 822,
+  "subject": "pitra yadnya",
+  "subject_label": "RITUAL",
+  "relation": "adalah",
+  "object": "upacara keagamaan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 971,
+  "subject": "pitra yadnya jenis",
+  "subject_label": "RITUAL",
+  "relation": "adalah",
+  "object": "nglungah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1126,
+  "subject": "nyekeh sawa",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "pekerjaan berat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1136,
+  "subject": "damar kurung",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "sarana permohonan kepada sanghyang agni , agar keletehan yang dipancarkan sawa mendiang diblokir terbatas , yakni hanya sebatas tanah pekarangan keluarga mendiang saja",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1150,
+  "subject": "sawa",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "adalah",
+  "object": "jenazah mendiang orangtua",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1163,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "yadnya pelaksanaan ajaran agama , yang hendak lah didukung dengan sredaning manah atau rasa hati tulus dan ikhlas",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1189,
+  "subject": "tirtha",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "adalah",
+  "object": "sarana restu dari ida bhatara di kahyangan tersebut terhadap arwah mendiang dalam peristiwa beralih nya dari dunia manusia ke dunia roh",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1205,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "adalah",
+  "object": "sarana yang secara formal religius berfungsi memotong ikatan dan hubungan jasad dengan atma -jiwa dari mendiang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1253,
+  "subject": "ngaben bahasa alus-singgih",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "malebuang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1253,
+  "subject": "ngaben bahasa alus-singgih",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "atiwa-tiwa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1253,
+  "subject": "ngaben bahasa alus-singgih",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "atiwa-tiwa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1261,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "satu yadnya yang paling banyak ragam nya dari segi variasi besar kecil nya biaya dan \" wibawa \" lahiriah nya ,",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1298,
+  "subject": "nista",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "adalah",
+  "object": "tinggi rendah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1298,
+  "subject": "nista",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "adalah",
+  "object": "derajat yadnya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1378,
+  "subject": "yama purwana tatwa",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "adalah",
+  "object": "lontar",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1429,
+  "subject": "daksina",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "penegasan secara formal bahwa yadnya sudah selesai ( siddhaning yadnya )",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1430,
+  "subject": "beras catur",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "lambang kekuatan panca dewata",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1456,
+  "subject": "nywasta",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "ngaben",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1461,
+  "subject": "adegan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "alat upakara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1477,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "adalah",
+  "object": "siratan terakhir",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1477,
+  "subject": "tirtha pangentas",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "daun alang-alang",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 1597,
+  "subject": "kajang atau kakerebsari",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "alat upakara yang pelik dalam pangabenan ini",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1609,
+  "subject": "moksa",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "adalah",
+  "object": "satu jiwa/atma paratma/brahman",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1610,
+  "subject": "ngaben",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "satu tahap untuk mencapai moksa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1642,
+  "subject": "angenan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "pelita kecil",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1642,
+  "subject": "pelita kecil",
+  "subject_label": null,
+  "relation": "TERBUAT_DARI",
+  "object": "kulit telur ayam",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 1650,
+  "subject": "pisang jati",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "upakara yang berbadankan bakul-kecil ( bagaikan daksina )",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1657,
+  "subject": "panguryagan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "alat upakara yang beralaskan tembong ( nyiru yang tabing nya tinggi ) , berisi bermacam-macam ramuan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1699,
+  "subject": "sangaskara, samskara, atau panyangaskara",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "adalah",
+  "object": "upacara penyucian",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1717,
+  "subject": "adegan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "alat upakara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1717,
+  "subject": "alat upakara",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "tempat atma mendiang",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 1782,
+  "subject": "pamerasan",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "adalah",
+  "object": "upacara timbang , antara mendiang yang akan pergi ke dunia lain dengan keluarga ( terutama anak-anak ) yang masih hidup",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1879,
+  "subject": "lontar",
+  "subject_label": "NASKAH_SUCI",
+  "relation": "adalah",
+  "object": "bacaan pilihan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1899,
+  "subject": "yeh panembak",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "adalah",
+  "object": "sarana penyucian jenazah yang digunakan oleh penganut sekte paksa surya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1937,
+  "subject": "sawa wedana",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "pengabenan yang paling banyak ada upacara , sesajen dan upakara nya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 1982,
+  "subject": "bade",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "bangunan sawa untuk sawa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2003,
+  "subject": "wadah",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "usungan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2034,
+  "subject": "mangle",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "pengganti tingkat bade",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2055,
+  "subject": "patulangan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "pertanda bahwa mereka merupakan keturunan dari orang yang condong pada paksa wesnawa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2055,
+  "subject": "patulangan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERBENTUK",
+  "object": "naga kahang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2055,
+  "subject": "patulangan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERBENTUK",
+  "object": "gajah mina",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2056,
+  "subject": "patulangan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "ciri paksa brahmanisme",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2056,
+  "subject": "patulangan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERBENTUK",
+  "object": "macan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2056,
+  "subject": "patulangan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERBENTUK",
+  "object": "singa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2056,
+  "subject": "patulangan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERBENTUK",
+  "object": "gadarba",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2056,
+  "subject": "gadarba",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "beruang",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2056,
+  "subject": "patulangan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BERBENTUK",
+  "object": "binatang buas lainnya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2115,
+  "subject": "swadharma kemasyarakatan",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "adalah",
+  "object": "mahayana",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2115,
+  "subject": "mahayana",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "kendaraan besar",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2124,
+  "subject": "swadharma",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "adalah",
+  "object": "fungsi pokok",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2124,
+  "subject": "swadharma",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "BERTUJUAN_UNTUK",
+  "object": "mamari-suddha ( menyucikan ) dunia ini",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2198,
+  "subject": "bale salunglung",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "adalah",
+  "object": "bagaikan pitraloka",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2198,
+  "subject": "bale salunglung",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "adalah",
+  "object": "tempat pitra mendiang yang diaben",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2198,
+  "subject": "bale salunglung",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "adalah",
+  "object": "wilayah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2198,
+  "subject": "wilayah",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "kantongnya sesuatu",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2198,
+  "subject": "bale salunglung",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "adalah",
+  "object": "tempat pitra mendiang yang diaben",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2198,
+  "subject": "bale salunglung",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "adalah",
+  "object": "wilayah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2198,
+  "subject": "wilayah",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "kantongnya sesuatu",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2212,
+  "subject": "bale salunglung",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "adalah",
+  "object": "simbol pitraloka ( untuk tempat badan halus nya mendiang )",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2212,
+  "subject": "bale pamuunan",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "adalah",
+  "object": "bhuta-loka alias dunia materi",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2212,
+  "subject": "bale pamuunan",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "adalah",
+  "object": "tempat unsur jenazah bersangkutan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2224,
+  "subject": "ngangkid galih",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "adalah",
+  "object": "kegiatan kerja semata",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2256,
+  "subject": "pamerasan",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "adalah",
+  "object": "uang kepeng",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2258,
+  "subject": "pamerasan",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "adalah",
+  "object": "sarana pemberitahuan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2258,
+  "subject": "sarana pemberitahuan",
+  "subject_label": null,
+  "relation": "DITUJUKAN_UNTUK",
+  "object": "mendiang",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2265,
+  "subject": "nyikut karang",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "adalah",
+  "object": "upacara yang sangat sederhana",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2323,
+  "subject": "bade dan lembu",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "sarana yang benar-benar berkeadaan \" siap pakai \" betapa mesti nya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2323,
+  "subject": "bade dan lembu",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "BAGIAN_DARI",
+  "object": "alat penting lainnya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2340,
+  "subject": "adegan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "arak-arakan indah",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2374,
+  "subject": "prasawya",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "adalah",
+  "object": "lambang gerak peningkatan diri",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2406,
+  "subject": "jenazah atau simbolik",
+  "subject_label": "ISTILAH_UMUM_RITUAL",
+  "relation": "adalah",
+  "object": "sasaran kegiatan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2462,
+  "subject": "sawa wedana",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "satu upacara pangabenan yang menggunakan upakara dan sesajen sebagai yang telah kita utarakan pada uraian terdahulu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2483,
+  "subject": "supta pranawa",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "satu pangabenan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2520,
+  "subject": "atma wedana",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "yadnya yang tidak bersifat sebel",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2527,
+  "subject": "pura, pamrajan, atau kahyangan jenis apa",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "adalah",
+  "object": "dewaloka",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2527,
+  "subject": "pura, pamrajan, atau kahyangan jenis apa",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "adalah",
+  "object": "alam kedewaan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2555,
+  "subject": "atma wedana",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "upacara penyucian pitra",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2604,
+  "subject": "kedua ngangsen",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "upacara penyucian sementara bagi sang pitra yang barusan lepas pertalian dengan stulasarira nya , supaya suksmasarira nya tidak masih dilekati bekas-bekas badan kasar sama sekali",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2635,
+  "subject": "tarpana dan muspa",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "adalah",
+  "object": "klimaks upacara sederhana",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2649,
+  "subject": "ngangsen",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "upacara untuk bertangguh",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2667,
+  "subject": "payadnyan",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "adalah",
+  "object": "bangunan pokok",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2672,
+  "subject": "payadnyan",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "adalah",
+  "object": "bangunan yang paling rendah dari segi ukuran ,",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2758,
+  "subject": "suksma sarira",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "adalah",
+  "object": "tanpa berbadan sama sekali atau hanya \" atma tattwatma \" ( atma yang mulus sama sekali )",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2768,
+  "subject": "sangge",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "dia",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2803,
+  "subject": "pawedan samping tempat ngajum",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "adalah",
+  "object": "tempat sulinggih",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2803,
+  "subject": "tempat sulinggih",
+  "subject_label": null,
+  "relation": "DIPERSEMBAHKAN_KEPADA",
+  "object": "upacara atma wedana",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 2819,
+  "subject": "payadnyan",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "adalah",
+  "object": "sekadar bangunan darurat buatan manusia",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2850,
+  "subject": "punia",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "adalah",
+  "object": "syarat mutlak",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2872,
+  "subject": "manah tirtha ening",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "adalah",
+  "object": "pawai",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2904,
+  "subject": "pralina",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "adalah",
+  "object": "istilah yang telah cukup memasyarakat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 2914,
+  "subject": "suksma sarira",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "adalah",
+  "object": "materi",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3001,
+  "subject": "punia",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "adalah",
+  "object": "perwujudan nyata lahir lah dari pernyataan parama suksma lahir batin ( purusa-pradana ) , atas jasa tuntunan yang telah dianugrahkan oleh beliau , hingga patileman dapat selesai secara tuntas",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3004,
+  "subject": "punia",
+  "subject_label": "KONSEP_HUKUM_ADAT",
+  "relation": "adalah",
+  "object": "perwujudan sredaning cita",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3004,
+  "subject": "perwujudan sredaning cita",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "wujud ketulus-ikhlasan hati pihak",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 3091,
+  "subject": "atma baan nyilih dan nyawa",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "adalah",
+  "object": "pinjaman",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3155,
+  "subject": "anggapan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "pisau khusus",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3155,
+  "subject": "arit gobed",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "sabit kecil",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3583,
+  "subject": "kerik kuku",
+  "subject_label": "TAHAPAN_UPACARA",
+  "relation": "adalah",
+  "object": "bertujuan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3589,
+  "subject": "arit gobed",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "simbol rare angon dari rare angon yaitu lambang keperkasaan seorang laki-laki",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3591,
+  "subject": "anggapan",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "simbol dewi sri , yang mana nanti nya diharapkan wanita yang akan \" numitis \" memiliki kesuburan untuk dapat melahirkan dari dewi sri , yaitu lambang kesuburan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3622,
+  "subject": "bhuta kala",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "adalah",
+  "object": "hilang",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3656,
+  "subject": "gegaleng",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "pengganti bantal kapuk",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3734,
+  "subject": "kawangen jeriji",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "kojong",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3734,
+  "subject": "kojong",
+  "subject_label": null,
+  "relation": "TERBUAT_DARI",
+  "object": "daun pisang",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 3755,
+  "subject": "dewa",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "adalah",
+  "object": "dewa iswara",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3756,
+  "subject": "dewa",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "adalah",
+  "object": "dewa brahma",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3757,
+  "subject": "dewa",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "adalah",
+  "object": "dewa mahadewa",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3758,
+  "subject": "dewa",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "adalah",
+  "object": "dewa wishnu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3758,
+  "subject": "dewa",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "adalah",
+  "object": "logam campuran",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3758,
+  "subject": "logam campuran",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "manca warna",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 3758,
+  "subject": "dewa",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "adalah",
+  "object": "tempat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3758,
+  "subject": "dewa",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "adalah",
+  "object": "logam campuran",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3758,
+  "subject": "logam campuran",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "manca warna",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 3758,
+  "subject": "dewa",
+  "subject_label": "ENTITAS_KEAGAMAAN",
+  "relation": "adalah",
+  "object": "tempat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3800,
+  "subject": "rurub sinom",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "hiasan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3800,
+  "subject": "hiasan",
+  "subject_label": null,
+  "relation": "TERBUAT_DARI",
+  "object": "blangsah",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 3800,
+  "subject": "blangsah",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "bunga pinang",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 3816,
+  "subject": "ante",
+  "subject_label": "SARANA_RITUAL",
+  "relation": "adalah",
+  "object": "terbuat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3860,
+  "subject": "upacara mesulub",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "kepercayaan setempat",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 3860,
+  "subject": "kepercayaan setempat",
+  "subject_label": null,
+  "relation": "ADALAH",
+  "object": "kepercayaan lokal",
+  "object_label": null,
+  "source": "object_decomposition"
+ },
+ {
+  "sentence_id": 3862,
+  "subject": "upacara mesulub",
+  "subject_label": "RITUAL_KEMATIAN",
+  "relation": "adalah",
+  "object": "konsep satya",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4077,
+  "subject": "tirtha pemanah",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "adalah",
+  "object": "tirtha yang dibuat pada hari \" pabersihan \" atau juga disebut hari \" pengaskaran \" yang biasanya bersamaan dengan upacara \" pamrasan \"",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4086,
+  "subject": "tirtha penembak",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "adalah",
+  "object": "tirtha yang wajib dipersembahkan oleh \" sang yajamana \" atau orang yang memiliki upacara tersebut",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4112,
+  "subject": "pura kahyangan tiga",
+  "subject_label": "BANGUNAN_RITUAL",
+  "relation": "adalah",
+  "object": "tempat pemujaan pencipta",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4126,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "adalah",
+  "object": "tirtha dari beberapa jenis-jenis tirtha penting yang diperlukan dan yang dipergunakan dalam upacara pengabenanan yang paling terpenting dalam hal ini",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4167,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "adalah",
+  "object": "air suci gangga yang di mohonkan untuk menyucikan serta melepaskan ikatan roh dari ikatan-ikatan duniawi agar bisa meningkat menuju alam bhwah loka",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4169,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "adalah",
+  "object": "seuatu",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4170,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "adalah",
+  "object": "tirtha yang diharapkan dan diyakini sebagai alat atau sarana sangat penting bagi umat hindu , sehingga para leluhur dapat bebas dan bisa meningkat menuju alam bhwah loka",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4171,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "adalah",
+  "object": "air suci gangga seperti disebutkan diatas yang diturunkan untuk menyucikan para leluhur",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4177,
+  "subject": "atma lingga",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "adalah",
+  "object": "mewujudkan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4192,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "adalah",
+  "object": "sesunguhnya tirtha gangga",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4303,
+  "subject": "teja sangkaning",
+  "subject_label": "KONSEP_FILOSOFIS",
+  "relation": "adalah",
+  "object": "mulih maring teja",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4336,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "adalah",
+  "object": "tirtha yang terpenting dalam upacara pengabenan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4338,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "adalah",
+  "object": "alat sangaskara kepada roh atau atman orang yang telah meninggal dunia",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4338,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "adalah",
+  "object": "penyucian",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4338,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "adalah",
+  "object": "menjadi",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4338,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "adalah",
+  "object": "penyucian",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4339,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "adalah",
+  "object": "lambang penunjuk jalan",
+  "object_label": null,
+  "source": "dependency_rule"
+ },
+ {
+  "sentence_id": 4340,
+  "subject": "tirtha pangentas",
+  "subject_label": "TIRTHA_SUCI",
+  "relation": "adalah",
+  "object": "berfungsi",
+  "object_label": null,
+  "source": "dependency_rule"
+ }
+]

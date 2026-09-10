@@ -1,0 +1,344 @@
+{
+ "overrides": {
+  "923": [
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIIRINGI",
+    "object": "peti (di sampingnya)",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "917": [
+   {
+    "subject": "jenazah bayi",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIBUNGKUS_DENGAN",
+    "object": "kain putih",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   },
+   {
+    "subject": "jenazah bayi",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIBUNGKUS_SETELAH",
+    "object": "dimandikan",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "925": [
+   {
+    "subject": "jenazah bayi",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIMASUKKAN_KE_DALAM",
+    "object": "peti kayu",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "957": [
+   {
+    "subject": "jenazah bayi",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DISIRAM_DENGAN",
+    "object": "air biasa",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "jenazah bayi",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIMANDIKAN_DI",
+    "object": "natar rumah",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "dusa",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "ADALAH",
+    "object": "balai-balai khusus pemandian jenazah",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "jenazah bayi",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIMANDIKAN_DI_ATAS",
+    "object": "dusa",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "1039": [
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIMANDIKAN_DI_ATAS",
+    "object": "balai-balai rumah adat",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1056": [
+   {
+    "subject": "pepaga",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "BERFUNGSI_SEBAGAI",
+    "object": "balai-balai alas ngringkes",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "pepaga",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "BERFUNGSI_SEBAGAI",
+    "object": "balai-balai alas memandikan jenazah",
+    "object_label": "ISTILAH_UMUM_RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "1058": [
+   {
+    "subject": "kain putih",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIPASANG_DI_ATAS",
+    "object": "pepaga",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   },
+   {
+    "subject": "kain putih",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DISEBUT",
+    "object": "\"leluhur\" (langit-langit tandu)",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1060": [
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIPINDAHKAN_DARI",
+    "object": "rumah adat",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIPINDAHKAN_KE",
+    "object": "pepaga",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   },
+   {
+    "subject": "kain penutup",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIBUKA",
+    "object": "setelah jenazah dipindahkan ke pepaga",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1066": [
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DITELENTANGKAN_DI",
+    "object": "pembungkus",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIBERI",
+    "object": "berbagai sarana simbolik pangringkesan",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   },
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIBERI",
+    "object": "sesisir pisang",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "972": [
+   {
+    "subject": "sawa anak yang telah berusia lima bulan ke atas",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIBAKAR_DALAM",
+    "object": "pitra yadnya nglungah",
+    "object_label": "RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "1017": [
+   {
+    "subject": "mahabutha (yang lima unsur)",
+    "subject_label": "KONSEP_FILOSOFIS",
+    "relation": "KEMBALI_KEPADA",
+    "object": "induk asalnya masing-masing",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1188": [
+   {
+    "subject": "sawa",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "MEMPEROLEH",
+    "object": "sesaji",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   },
+   {
+    "subject": "sawa",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "MEMPEROLEH",
+    "object": "tirtha lainnya",
+    "object_label": "TIRTHA_SUCI",
+    "source": "manual_override"
+   },
+   {
+    "subject": "upacara ngaben titip",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "MEMPERGUNAKAN",
+    "object": "tirtha panglukatan",
+    "object_label": "TIRTHA_SUCI",
+    "source": "manual_override"
+   },
+   {
+    "subject": "upacara ngaben titip",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "MEMPERGUNAKAN",
+    "object": "tirtha pabersihan",
+    "object_label": "TIRTHA_SUCI",
+    "source": "manual_override"
+   }
+  ],
+  "1219": [
+   {
+    "subject": "sawa",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DITANAM_ATAU_DIBAKAR_BERSAMA",
+    "object": "semua alat pangringkesan",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "978": [
+   {
+    "subject": "tirtha (dari pamrajan/kahyangan tiga/prajapati)",
+    "subject_label": "TIRTHA_SUCI",
+    "relation": "DIPERCIKKAN_SEBELUM",
+    "object": "tirtha pangentas",
+    "object_label": "TIRTHA_SUCI",
+    "source": "manual_override"
+   },
+   {
+    "subject": "tirtha (dari pamrajan/kahyangan tiga/prajapati)",
+    "subject_label": "TIRTHA_SUCI",
+    "relation": "DIPERCIKKAN_PADA",
+    "object": "saat menjelang penguburan atau pembakaran sawa",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1169": [
+   {
+    "subject": "sawa",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DITANAM_ATAU_DIBAKAR",
+    "object": "dengan status dititip",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "sawa (dititip)",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "MENUNGGU",
+    "object": "rezeki untuk menggelar ngaben",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ]
+ },
+ "additions": {
+  "789": [
+   {
+    "subject": "orangtua",
+    "subject_label": null,
+    "relation": "ADALAH",
+    "object": "ibu",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "792": [
+   {
+    "subject": "pitra yadnya",
+    "subject_label": "RITUAL",
+    "relation": "DITUJUKAN_UNTUK",
+    "object": "leluhur",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "851": [
+   {
+    "subject": "manusia",
+    "subject_label": null,
+    "relation": "DINILAI_SEBAGAI",
+    "object": "pihak berhutang",
+    "object_label": "KONSEP_FILOSOFIS",
+    "source": "manual_override"
+   }
+  ],
+  "1016": [
+   {
+    "subject": "wujud sawa",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "BERUBAH_MENJADI",
+    "object": "unsur, elemen atau mahabutha",
+    "object_label": "KONSEP_FILOSOFIS",
+    "source": "manual_override"
+   },
+   {
+    "subject": "mahabutha",
+    "subject_label": "KONSEP_FILOSOFIS",
+    "relation": "ADALAH",
+    "object": "asal materi yang jauh lebih halus dari benda (lebih halus dari abu)",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1215": [
+   {
+    "subject": "sawa",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DILETAKKAN_DI",
+    "object": "para-para tempat pembakaran",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "974": [
+   {
+    "subject": "abu",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DISUGUHKAN",
+    "object": "sesaji sederhana",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   }
+  ]
+ }
+}

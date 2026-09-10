@@ -1,0 +1,328 @@
+==========================================================================
+NGABEN KNOWLEDGE BASE -- BUILD REPORT
+==========================================================================
+input rows (normalized)   : 735
+canonical entities        : 393
+  fragments -> review     : 14
+  with a definition       : 45
+  with a broader link     : 88
+  unresolved (kept as-is) : 190
+passages                  : 478
+  glossary / faq          : 7 / 5
+relations (entity edges)  : 290
+  HIGH / MED / LOW        : 84 / 170 / 36
+facts.jsonl (HIGH+MED)    : 254
+review_queue.jsonl        : 50
+
+entity types
+----------------------------------------
+   117  SARANA_RITUAL
+    57  ISTILAH_UMUM_RITUAL
+    40  KONSEP_FILOSOFIS
+    37  BANGUNAN_RITUAL
+    36  TAHAPAN_UPACARA
+    29  RITUAL_KEMATIAN
+    27  ENTITAS_KEAGAMAAN
+    22  KONSEP_HUKUM_ADAT
+    16  TIRTHA_SUCI
+     4  RITUAL
+     3  STRUKTUR_SOSIAL_ADAT
+     3  NASKAH_SUCI
+     1  Place
+     1  KASTA_SOSIAL
+
+predicates in relations.jsonl
+----------------------------------------
+    61  ADALAH                 (HIGH 16)
+    21  BERADA_DI              (HIGH 7)
+    21  DILETAKKAN_DI          (HIGH 12)
+    12  DITUJUKAN_UNTUK        (HIGH 5)
+    11  LAINNYA                (HIGH 0)
+    11  DIPERSEMBAHKAN_KEPADA  (HIGH 7)
+    10  MENUJU                 (HIGH 2)
+    10  DIKENAL_SEBAGAI        (HIGH 5)
+     9  TERDIRI_DARI           (HIGH 2)
+     6  BAGIAN_DARI            (HIGH 2)
+     4  MEMILIKI               (HIGH 0)
+     4  DIBUNGKUS_DENGAN       (HIGH 2)
+     4  MEMPEROLEH             (HIGH 0)
+     4  MENGHASILKAN           (HIGH 0)
+     4  DIPAKAI_UNTUK          (HIGH 2)
+     3  BERDASARKAN            (HIGH 1)
+     3  DISERTAI               (HIGH 1)
+     3  DIPASANG               (HIGH 0)
+     3  BERPERAN_SEBAGAI       (HIGH 2)
+     3  DIBERI                 (HIGH 2)
+     3  DIGUNAKAN_UNTUK        (HIGH 1)
+     3  SETELAH                (HIGH 2)
+     3  TERBUAT_DARI           (HIGH 1)
+     2  DISIRAM_DENGAN         (HIGH 1)
+     2  DIMOHON_DARI           (HIGH 2)
+     2  BERARTI                (HIGH 1)
+     2  DIKENAI                (HIGH 0)
+     2  SEBELUM                (HIGH 2)
+     2  BERFUNGSI_SEBAGAI      (HIGH 0)
+     2  DIPERSILAKAN_DI        (HIGH 0)
+     2  DIUSUNG                (HIGH 0)
+     2  BERUNSUR               (HIGH 0)
+     2  DILAKUKAN_DI           (HIGH 0)
+     2  DIBAWA_KE              (HIGH 0)
+     2  MENGGUNAKAN            (HIGH 0)
+     2  BERTAHTA               (HIGH 0)
+     2  DILAKUKAN_SAAT         (HIGH 0)
+     1  DIHANYUTKAN_KE         (HIGH 1)
+     1  MEWAJIBKAN             (HIGH 1)
+     1  DIGULUNG_DENGAN        (HIGH 1)
+     1  DIKUBUR_DENGAN         (HIGH 0)
+     1  DIPERLAKUKAN_SEPERTI   (HIGH 0)
+     1  DIGANTI_DENGAN         (HIGH 0)
+     1  DILENGKAPI             (HIGH 0)
+     1  DIAKHIRI_DENGAN        (HIGH 0)
+     1  DIMOHON                (HIGH 0)
+     1  DIBUNGKUS              (HIGH 0)
+     1  TERTULIS               (HIGH 0)
+     1  BERTUJUAN_UNTUK        (HIGH 0)
+     1  DIPUJA                 (HIGH 0)
+     1  BERASAL_DARI           (HIGH 0)
+     1  MENSYARATKAN           (HIGH 0)
+     1  DIGILING_DI            (HIGH 0)
+     1  DILAKUKAN_OLEH         (HIGH 0)
+     1  MENURUT                (HIGH 0)
+     1  DISUCIKAN_DENGAN       (HIGH 0)
+     1  MENGHADAPI             (HIGH 0)
+     1  DISAMBUNG_DENGAN       (HIGH 1)
+     1  MELAMBANGKAN           (HIGH 1)
+     1  MENYERAHKAN            (HIGH 0)
+     1  MERINCI                (HIGH 0)
+     1  BERPENGARUH_PADA       (HIGH 0)
+     1  MENJELANG              (HIGH 0)
+     1  DILAKUKAN_DENGAN       (HIGH 0)
+     1  DIBAKAR                (HIGH 0)
+     1  BERPUTAR_DENGAN        (HIGH 0)
+     1  MENJADI                (HIGH 0)
+     1  MENGELUPASI            (HIGH 0)
+     1  DIALASI                (HIGH 0)
+     1  MEMBERIKAN             (HIGH 0)
+     1  DIUYEG                 (HIGH 0)
+     1  DISEMBURKAN_DI         (HIGH 0)
+     1  MENGAMBIL              (HIGH 0)
+     1  DITARUH                (HIGH 0)
+     1  DITEMPELKAN_DI         (HIGH 0)
+     1  DIISI_DENGAN           (HIGH 0)
+     1  DIMINUMKAN             (HIGH 0)
+     1  DIOLESKAN_DI           (HIGH 0)
+     1  DISABUNI_DENGAN        (HIGH 0)
+     1  BERWARNA               (HIGH 0)
+     1  BERBEDA_DENGAN         (HIGH 0)
+     1  DIBUAT_DI              (HIGH 1)
+     1  DILAKSANAKAN           (HIGH 0)
+
+review-queue reasons
+----------------------------------------
+    14  surface string looks like a sentence fragment, not an entity name
+    12  decomposed sub-relation with an unresolved endpoint
+    10  relation could not be classified (LAINNYA)
+     5  neither endpoint resolves to a known entity
+     1  object follows 'dengan' in source, unexpected for DIKUBUR_DENGAN
+     1  object follows 'bagi' in source, unexpected for BERASAL_DARI
+     1  object follows 'di' in source, unexpected for DIBAKAR
+     1  object follows 'dengan' in source, unexpected for BERPUTAR_DENGAN
+     1  object follows 'pada' in source, unexpected for DISEMBURKAN_DI
+     1  object follows 'di' in source, unexpected for DITARUH
+     1  object follows 'pada' in source, unexpected for DITEMPELKAN_DI
+     1  object follows 'pada' in source, unexpected for DIOLESKAN_DI
+     1  object follows 'dengan' in source, unexpected for BERBEDA_DENGAN
+     1  object follows 'sebagai' in source, unexpected for ADALAH
+
+unresolved entities (add to concept map / gazetteer / entity_resolution.json)
+----------------------------------------
+  'acara maktining layon'                  type=SARANA_RITUAL  aliases=[]
+  'air kumkuman'                           type=TIRTHA_SUCI  aliases=[]
+  'ajeng sulinggih'                        type=ENTITAS_KEAGAMAAN  aliases=[]
+  'alat pangringkesan'                     type=TAHAPAN_UPACARA  aliases=[]
+  'alat sangaskara'                        type=TAHAPAN_UPACARA  aliases=[]
+  'alat upakara'                           type=SARANA_RITUAL  aliases=[]
+  'asele'                                  type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'atas pepaga/asagan'                     type=SARANA_RITUAL  aliases=[]
+  'atas takir bersama'                     type=SARANA_RITUAL  aliases=[]
+  'atma baan nyilih'                       type=KONSEP_FILOSOFIS  aliases=[]
+  'atma lingga-sarira'                     type=KONSEP_FILOSOFIS  aliases=[]
+  'atma pitara'                            type=ENTITAS_KEAGAMAAN  aliases=[]
+  'atribut nilai martabat warga'           type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'ayaban sesayut'                         type=SARANA_RITUAL  aliases=[]
+  'ayaban upakara diuskamaligi'            type=TAHAPAN_UPACARA  aliases=[]
+  'bade sawa atas'                         type=SARANA_RITUAL  aliases=[]
+  'balai-balai'                            type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'balai-balai alas memandikan jenazah'    type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'balai-balai bade'                       type=SARANA_RITUAL  aliases=[]
+  'balai-balai tempat jenazah'             type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'balai pawedan'                          type=BANGUNAN_RITUAL  aliases=[]
+  'bale-bale dipan'                        type=BANGUNAN_RITUAL  aliases=[]
+  'bale teben'                             type=BANGUNAN_RITUAL  aliases=[]
+  'bale tempat jenazah'                    type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'bali dataran'                           type=Place  aliases=[]
+  'bambu'                                  type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'bangunan sawa'                          type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'banten nuwur pakuluh'                   type=SARANA_RITUAL  aliases=[]
+  'banten pamegat'                         type=SARANA_RITUAL  aliases=[]
+  'banten panebusan'                       type=SARANA_RITUAL  aliases=[]
+  'banten panjang ilang'                   type=SARANA_RITUAL  aliases=[]
+  'besar kecil punia'                      type=KONSEP_HUKUM_ADAT  aliases=[]
+  'bhatara-bhatari'                        type=ENTITAS_KEAGAMAAN  aliases=[]
+  'bhuta kala'                             type=ENTITAS_KEAGAMAAN  aliases=[]
+  'boneka naga raksasa'                    type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'canang sari'                            type=SARANA_RITUAL  aliases=[]
+  'cara prasawya'                          type=TAHAPAN_UPACARA  aliases=[]
+  'dada jenazah'                           type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'daun pisang saba'                       type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'derajat yadnya'                         type=KONSEP_FILOSOFIS  aliases=[]
+  'dewa brahma'                            type=ENTITAS_KEAGAMAAN  aliases=[]
+  'dewa iswara'                            type=ENTITAS_KEAGAMAAN  aliases=[]
+  'dewa mahadewa'                          type=ENTITAS_KEAGAMAAN  aliases=[]
+  'dewa wishnu'                            type=ENTITAS_KEAGAMAAN  aliases=[]
+  'dewasa madya'                           type=KONSEP_HUKUM_ADAT  aliases=[]
+  'dua kata'                               type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'eteh-eteh sawa'                         type=SARANA_RITUAL  aliases=[]
+  'gegaleng kepala'                        type=SARANA_RITUAL  aliases=[]
+  'gigi jenazah'                           type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'hari pabersihan'                        type=TAHAPAN_UPACARA  aliases=[]
+  'hiasan'                                 type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'hulu hati jenazah'                      type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'hyang agni'                             type=KONSEP_FILOSOFIS  aliases=[]
+  'hyang prajapati'                        type=ENTITAS_KEAGAMAAN  aliases=[]
+  'jenazah bayi'                           type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'jenazah mendiang orangtua'              type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'jenazah momong'                         type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'jenazah /pengawak'                      type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'jenazah raja bali'                      type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'jenazah seseorang'                      type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'jumlah kelipatan 5'                     type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'kajang suratan'                         type=SARANA_RITUAL  aliases=[]
+  'kanoroyang sanksi terberat'             type=KONSEP_HUKUM_ADAT  aliases=[]
+  'karma phala orangtua'                   type=KONSEP_FILOSOFIS  aliases=[]
+  'karma wasana'                           type=KONSEP_FILOSOFIS  aliases=[]
+  'kata roras'                             type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'kawangen tangan'                        type=SARANA_RITUAL  aliases=[]
+  'kedudukan pitara'                       type=ENTITAS_KEAGAMAAN  aliases=[]
+  'kepercayaan setempat'                   type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'klungah nyuh gading'                    type=SARANA_RITUAL  aliases=[]
+  'klungah nyuh gading/suku tunggal'       type=SARANA_RITUAL  aliases=[]
+  'kojong'                                 type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'lambang kekuatan panca dewata'          type=KONSEP_FILOSOFIS  aliases=[]
+  'lancingan kajang'                       type=SARANA_RITUAL  aliases=[]
+  'lante bambu'                            type=SARANA_RITUAL  aliases=[]
+  'lingga sarira pitara'                   type=KONSEP_FILOSOFIS  aliases=[]
+  'linting anugrah ida sulinggih'          type=ENTITAS_KEAGAMAAN  aliases=[]
+  'lis amuan-amuan'                        type=SARANA_RITUAL  aliases=[]
+  'lis bale gading'                        type=SARANA_RITUAL  aliases=[]
+  'logam campuran'                         type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'lontar petunjuknya'                     type=NASKAH_SUCI  aliases=[]
+  'lontar yama purwana tatwa'              type=NASKAH_SUCI  aliases=[]
+  'lubang satu uang kepeng'                type=SARANA_RITUAL  aliases=[]
+  'lubang tempat penguburan'               type=TAHAPAN_UPACARA  aliases=[]
+  'mahayana'                               type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'manah mendiang'                         type=KONSEP_FILOSOFIS  aliases=[]
+  'manah tirtha ening'                     type=KONSEP_FILOSOFIS  aliases=[]
+  'merajan kawitan'                        type=KONSEP_FILOSOFIS  aliases=[]
+  'merajan pusat'                          type=BANGUNAN_RITUAL  aliases=[]
+  'ngaben bahasa alus-singgih'             type=RITUAL_KEMATIAN  aliases=[]
+  'ngaben jenis sawa wedana'               type=RITUAL_KEMATIAN  aliases=[]
+  'ngaben svasta'                          type=RITUAL_KEMATIAN  aliases=[]
+  'ngalukat'                               type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'nyekeh sawa'                            type=RITUAL_KEMATIAN  aliases=[]
+  'pabersihan hidup tangan jenazah/layon'  type=TAHAPAN_UPACARA  aliases=[]
+  'pangabenan jenis pranawa'               type=RITUAL_KEMATIAN  aliases=[]
+  'pangabenan pranawa'                     type=RITUAL_KEMATIAN  aliases=[]
+  'panghulunin setra'                      type=BANGUNAN_RITUAL  aliases=[]
+  'paplengkungan jenazah'                  type=BANGUNAN_RITUAL  aliases=[]
+  'paplengkungan semula'                   type=BANGUNAN_RITUAL  aliases=[]
+  'pawedan samping tempat ngajum'          type=BANGUNAN_RITUAL  aliases=[]
+  'pelebur unsur karma wasana'             type=KONSEP_FILOSOFIS  aliases=[]
+  'pelita kecil'                           type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'pemberangkatan setra'                   type=BANGUNAN_RITUAL  aliases=[]
+  'pengerikan kuku mutlak'                 type=TAHAPAN_UPACARA  aliases=[]
+  'pengganti tingkat bade'                 type=SARANA_RITUAL  aliases=[]
+  'pengorbanan suci'                       type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'pepaga/asagan'                          type=SARANA_RITUAL  aliases=[]
+  'peranda buddha'                         type=ENTITAS_KEAGAMAAN  aliases=[]
+  'peranda shiwa'                          type=ENTITAS_KEAGAMAAN  aliases=[]
+  'perlambang'                             type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'pitra mendiang'                         type=KONSEP_FILOSOFIS  aliases=[]
+  'pitra yadnya nglungah'                  type=RITUAL  aliases=[]
+  'pitra yadnya tahap berikutnya'          type=RITUAL  aliases=[]
+  'pitra yadnya tahap kedua'               type=RITUAL  aliases=[]
+  'plengkungan sawa'                       type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'punjung'                                type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'pura desa'                              type=BANGUNAN_RITUAL  aliases=[]
+  'pura mrajapti'                          type=BANGUNAN_RITUAL  aliases=[]
+  'pura puseh'                             type=BANGUNAN_RITUAL  aliases=[]
+  'rateng saha salaran sejangkep'          type=SARANA_RITUAL  aliases=[]
+  'rurub sinom tadi'                       type=SARANA_RITUAL  aliases=[]
+  'sajen kecil'                            type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'sajen surya'                            type=ENTITAS_KEAGAMAAN  aliases=[]
+  'sambungan'                              type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'sanggah urip'                           type=BANGUNAN_RITUAL  aliases=[]
+  'sanggar surya baligia'                  type=BANGUNAN_RITUAL  aliases=[]
+  'sarana'                                 type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'sarana mewah'                           type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'sarana pemberitahuan'                   type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'sarana pengembalian roh'                type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'sarana penyucian jenazah'               type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'sasih kaenem'                           type=KONSEP_HUKUM_ADAT  aliases=[]
+  'sasih kapat'                            type=KONSEP_HUKUM_ADAT  aliases=[]
+  'sasih kasa'                             type=KONSEP_HUKUM_ADAT  aliases=[]
+  'sasih katiga'                           type=KONSEP_HUKUM_ADAT  aliases=[]
+  'sasih paruwak tahuk'                    type=KONSEP_HUKUM_ADAT  aliases=[]
+  'satu dua perhiasan pusaka'              type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'satu jiwa/atma paratma/brahman'         type=KONSEP_FILOSOFIS  aliases=[]
+  'satu pangabenan'                        type=RITUAL_KEMATIAN  aliases=[]
+  'satu upacara pangabenan'                type=RITUAL_KEMATIAN  aliases=[]
+  'satu yadnya'                            type=KONSEP_FILOSOFIS  aliases=[]
+  'sawa anak'                              type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'sawa dewasa'                            type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'sedahan setra'                          type=BANGUNAN_RITUAL  aliases=[]
+  'sekah sangge'                           type=SARANA_RITUAL  aliases=[]
+  'sekeluarga tunggalan pamrajan'          type=BANGUNAN_RITUAL  aliases=[]
+  'selembar kain putih'                    type=SARANA_RITUAL  aliases=[]
+  'sesunguhnya tirtha gangga'              type=TIRTHA_SUCI  aliases=[]
+  'setra tempat jasad mendiang'            type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'setra tempat pembakaran'                type=BANGUNAN_RITUAL  aliases=[]
+  'simbol dewi sri'                        type=ENTITAS_KEAGAMAAN  aliases=[]
+  'simbol pitraloka'                       type=KONSEP_FILOSOFIS  aliases=[]
+  'simbol tirtha'                          type=TIRTHA_SUCI  aliases=[]
+  'slepa/peti'                             type=SARANA_RITUAL  aliases=[]
+  'sorohan banten'                         type=SARANA_RITUAL  aliases=[]
+  'sorohan kecil'                          type=SARANA_RITUAL  aliases=[]
+  'sudut atap bade'                        type=SARANA_RITUAL  aliases=[]
+  'suku tunggal abu'                       type=SARANA_RITUAL  aliases=[]
+  'sulinggih utawi pinandita'              type=ENTITAS_KEAGAMAAN  aliases=[]
+  'swadharma kemasyarakatan'               type=KONSEP_HUKUM_ADAT  aliases=[]
+  'tali ktekung'                           type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'tempat penusangan'                      type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'tempat pitra mendiang'                  type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'tempat unsur jenazah'                   type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'tiga hari ngaben'                       type=RITUAL_KEMATIAN  aliases=[]
+  'tingkatan bade'                         type=SARANA_RITUAL  aliases=[]
+  'tirta pengeringkes'                     type=TIRTHA_SUCI  aliases=[]
+  'tirtha pangentas atiwa-tiwa'            type=TIRTHA_SUCI  aliases=[]
+  'tirtha pemanah'                         type=TIRTHA_SUCI  aliases=[]
+  'tirtha penembak'                        type=TIRTHA_SUCI  aliases=[]
+  'tirtha-tirtha'                          type=TIRTHA_SUCI  aliases=[]
+  'uang kepeng'                            type=SARANA_RITUAL  aliases=[]
+  'udeng laki-laki'                        type=SARANA_RITUAL  aliases=[]
+  'umbi sikapa/sekapa'                     type=SARANA_RITUAL  aliases=[]
+  'umpal'                                  type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'upacara jenazah utuh'                   type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'upacara ngelelet'                       type=TAHAPAN_UPACARA  aliases=[]
+  'upacara pabersihan'                     type=TAHAPAN_UPACARA  aliases=[]
+  'upacara pabresihan mati'                type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'upacara palebon'                        type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'upacara pengabenan'                     type=RITUAL_KEMATIAN  aliases=[]
+  'upacara pengabenan sawa wedana'         type=RITUAL_KEMATIAN  aliases=[]
+  'upacara penyucian pitra'                type=KONSEP_FILOSOFIS  aliases=[]
+  'upacara saji tarpana'                   type=TAHAPAN_UPACARA  aliases=[]
+  'wang kepeng/bolong'                     type=SARANA_RITUAL  aliases=[]
+  'weda pengastawa'                        type=KONSEP_FILOSOFIS  aliases=[]
+  'wilayah'                                type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'wuku kuningan'                          type=KONSEP_HUKUM_ADAT  aliases=[]
+  'yama purwana tatwa'                     type=ENTITAS_KEAGAMAAN  aliases=[]

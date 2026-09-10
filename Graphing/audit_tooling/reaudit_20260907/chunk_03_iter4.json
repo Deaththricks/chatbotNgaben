@@ -1,0 +1,320 @@
+{
+ "overrides": {
+  "1261": [
+   {
+    "subject": "ngaben",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "ADALAH",
+    "object": "salah satu yadnya yang paling banyak ragamnya",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "ngaben",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "BERVARIASI_DALAM",
+    "object": "besar kecilnya biaya",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "ngaben",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "BERVARIASI_DALAM",
+    "object": "wibawa lahiriah",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1290": [
+   {
+    "subject": "yadnya",
+    "subject_label": "KONSEP_FILOSOFIS",
+    "relation": "HARUS_DIRASAKAN_SEBAGAI",
+    "object": "beban (bagi pemikulnya)",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1308": [
+   {
+    "subject": "tirtha",
+    "subject_label": "TIRTHA_SUCI",
+    "relation": "MEMILIKI",
+    "object": "tarif",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1328": [
+   {
+    "subject": "punia",
+    "subject_label": "KONSEP_HUKUM_ADAT",
+    "relation": "DISINKRONKAN_DENGAN",
+    "object": "jenis upacara",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1407": [
+   {
+    "subject": "ngaben cara yama purwana tatwa",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "DILAKUKAN_DENGAN",
+    "object": "sawa",
+    "object_label": "ISTILAH_UMUM_RITUAL",
+    "source": "manual_override"
+   },
+   {
+    "subject": "ngaben cara yama purwana tatwa",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "BERSASARAN",
+    "object": "jenazah secara nyata",
+    "object_label": "ISTILAH_UMUM_RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "1421": [
+   {
+    "subject": "sawa",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIBERI",
+    "object": "pakaian lengkap",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1422": [
+   {
+    "subject": "sawa",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIPERCIKI_DENGAN",
+    "object": "berbagai jenis tirtha",
+    "object_label": "TIRTHA_SUCI",
+    "source": "manual_override"
+   }
+  ],
+  "1439": [
+   {
+    "subject": "abu tulang kepala, tangan, punggung, dada, bokong, paha, dan kaki",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIGILING_DI",
+    "object": "sesenden",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   },
+   {
+    "subject": "abu tulang kepala, tangan, punggung, dada, bokong, paha, dan kaki",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIMASUKKAN_KE_DALAM",
+    "object": "klungah nyuh gading",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   },
+   {
+    "subject": "abu tulang kepala, tangan, punggung, dada, bokong, paha, dan kaki",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIBENTUK_MENJADI",
+    "object": "sukutunggal (wujud perlambang badan)",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "1452": [
+   {
+    "subject": "nywasta",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "DILAKUKAN_DALAM_HAL",
+    "object": "jenazah yang tak dapat ditemukan (mati dalam pertempuran, tenggelam, di pulau seberang, dsb.)",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1456": [
+   {
+    "subject": "nywasta",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "ADALAH",
+    "object": "ngaben yang sangat sederhana",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1458": [
+   {
+    "subject": "sesajen dan alat upakara",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DISEDIAKAN_DI",
+    "object": "rumah yang bersangkutan",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1461": [
+   {
+    "subject": "adegan",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "ADALAH",
+    "object": "alat upakara",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   },
+   {
+    "subject": "adegan",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "TERBUAT_DARI",
+    "object": "daun rontal",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "adegan",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "BERALASKAN",
+    "object": "bakul kecil atau pangkon",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1467": [
+   {
+    "subject": "adegan dan pengawak",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIDUDUKKAN_DI",
+    "object": "tempat yang telah ditentukan",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1468": [
+   {
+    "subject": "upakara",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DISUCIKAN_DENGAN",
+    "object": "sajen",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "upakara",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DISUCIKAN_DENGAN",
+    "object": "tirtha panglukatan",
+    "object_label": "TIRTHA_SUCI",
+    "source": "manual_override"
+   }
+  ],
+  "1523": [
+   {
+    "subject": "mendiang",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "BERPAMITAN_KEPADA",
+    "object": "hyang prajapati",
+    "object_label": "ENTITAS_KEAGAMAAN",
+    "source": "manual_override"
+   },
+   {
+    "subject": "mendiang",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "BERPAMITAN_KEPADA",
+    "object": "pura dalem",
+    "object_label": "BANGUNAN_RITUAL",
+    "source": "manual_override"
+   },
+   {
+    "subject": "mendiang",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "BERPAMITAN_KEPADA",
+    "object": "sedahan setra",
+    "object_label": "BANGUNAN_RITUAL",
+    "source": "manual_override"
+   },
+   {
+    "subject": "mendiang",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "MELAKUKAN",
+    "object": "muspa pamitan",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1609": [
+   {
+    "subject": "moksa",
+    "subject_label": "KONSEP_FILOSOFIS",
+    "relation": "ADALAH",
+    "object": "penyatuan jiwa/atma dengan paratma/brahman",
+    "object_label": "KONSEP_FILOSOFIS",
+    "source": "manual_override"
+   },
+   {
+    "subject": "moksa",
+    "subject_label": null,
+    "relation": "ADALAH",
+    "object": "kembalinya unsur badan manusia ke asalnya (bhuwana agung/pancamahabutha)",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1642": [
+   {
+    "subject": "angenan",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "TERBUAT_DARI",
+    "object": "kulit telur ayam berminyak kelapa",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "angenan",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "ADALAH",
+    "object": "pelita kecil",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   }
+  ]
+ },
+ "additions": {
+  "1417": [
+   {
+    "subject": "semua sarana",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIBAWA_KE",
+    "object": "setra",
+    "object_label": "BANGUNAN_RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "1558": [
+   {
+    "subject": "sawa",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIBARINGKAN_DI",
+    "object": "tumpang salu",
+    "object_label": "BANGUNAN_RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "1601": [
+   {
+    "subject": "kajang",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "BERFUNGSI_SEBAGAI",
+    "object": "kain kafan teratas (pada plengkungan sawa)",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1639": [
+   {
+    "subject": "kajang",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DILETAKKAN_DI",
+    "object": "paplengkungan jenazah",
+    "object_label": "BANGUNAN_RITUAL",
+    "source": "manual_override"
+   }
+  ]
+ }
+}

@@ -1,0 +1,3681 @@
+S1: laporan komprehensif: upacara ngaben dalam perspektif teologi, sosial, dan budaya bali
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  bali -> Place [general]
+
+S3: upacara ngaben merupakan elemen fundamental dalam identitas masyarakat bali yang melampaui sekadar tradisi pemakaman.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  bali -> Place [general]
+
+S4: sebagai ritual yang sangat rigid dan sarat makna, ngaben merepresentasikan siklus kehidupan dan kematian dalam kosmologi hindu bali.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  hindu -> AGAMA [cultural]
+  bali -> Place [general]
+
+S5: di tengah arus modernisasi dan globalisasi, laporan ini mendokumentasikan nilai-nilai luhur ngaben sekaligus menganalisis adaptasi tradisi ini dalam realitas kontemporer.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S6: secara teologis, ngaben adalah ritual kremasi yang berakar pada filosofi pelepasan jiwa ( atma ) dari ikatan duniawi.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+
+S7: praktik ini tersebar di seluruh wilayah bali yang memiliki luas 5.561 km² dengan populasi sekitar 3,9 juta jiwa.
+  bali -> Place [general]
+
+S8: laporan ini menyintesis aspek spiritual yang sakral dengan realitas sosial-ekonomi, mencakup landasan filosofis panca maha bhuta, klasifikasi teknis berdasarkan kondisi jenazah, hingga pergeseran praktis menuju penggunaan krematorium.
+  panca maha bhuta -> KONSEP_FILOSOFIS [cultural] (canonical: Panca Maha Bhuta)
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S9: pemahaman mendalam mengenai konsep dasar ngaben sangat diperlukan sebelum kita menelaah lebih jauh nilai-nilai filosofis yang menggerakkan setiap sendi prosesinya.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S11: ketepatan terminologi dalam memahami ngaben sangat krusial karena setiap istilah mengandung muatan sakralitas yang menentukan sah atau tidaknya sebuah ritual dalam perspektif teologi hindu bali.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  hindu -> AGAMA [cultural]
+  bali -> Place [general]
+
+S12: secara etimologis, "ngaben" memiliki beberapa sudut pandang pemaknaan.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S14: pendapat lain menyatakan kata ini berasal dari beya yang berarti "bekal", merujuk pada persiapan roh untuk perjalanan panjangnya.
+  beya -> KONSEP_FILOSOFIS [cultural]
+
+S15: secara historis, akar tradisi ini dapat ditarik hingga peristiwa bharatayuddha di india sekitar tahun 400 sm, yang kemudian dibawa oleh keturunan kaisar bharata ke nusantara dan berkembang pesat di bali sejak abad ke-8.
+  india -> Place [general]
+  nusantara -> Place [general]
+  bali -> Place [general]
+
+S16: dalam sistem keagamaan hindu, ngaben diklasifikasikan sebagai bagian dari pitra yadnya , yaitu pengorbanan suci yang ditujukan kepada leluhur.
+  hindu -> AGAMA [cultural]
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+
+S17: tujuan utamanya adalah membersihkan karma yang melekat selama hidup dan memandu atma menuju alam pitra (leluhur).
+  karma -> KONSEP_FILOSOFIS [cultural]
+  atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+  pitra -> KONSEP_FILOSOFIS [cultural] (canonical: Pitra)
+
+S18: puncak dari pencapaian spiritual ini adalah mokshatam atmanam , yaitu penyatuan sempurna antara jiwa dengan brahman (tuhan), sehingga jiwa terbebas dari roda reinkarnasi.
+  mokshatam atmanam -> KONSEP_FILOSOFIS [cultural] (canonical: Moksha)
+  brahman -> KONSEP_FILOSOFIS [cultural]
+  tuhan -> ENTITAS_KEAGAMAAN [cultural]
+
+S21: setiap tindakan dalam prosesi ngaben bukanlah sekadar gerak koreografis, melainkan representasi dari kompas filosofis yang dipegang teguh oleh masyarakat bali.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  bali -> Place [general]
+
+S22: konsep panca maha bhuta
+  panca maha bhuta -> KONSEP_FILOSOFIS [cultural] (canonical: Panca Maha Bhuta)
+
+S23: filosofi utama ngaben adalah pengembalian unsur-unsur pembentuk tubuh fisik manusia yang disebut panca maha bhuta kembali ke alam semesta.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  panca maha bhuta -> KONSEP_FILOSOFIS [cultural] (canonical: Panca Maha Bhuta)
+
+S26: apah (air): mewakili unsur cair dalam tubuh.
+  apah -> KONSEP_FILOSOFIS [cultural]
+
+S27: teja (panas/api): mewakili suhu dan energi.
+  teja -> KONSEP_FILOSOFIS [cultural]
+
+S28: bayu (angin): mewakili napas dan udara.
+  bayu -> KONSEP_FILOSOFIS [cultural]
+
+S29: akasa (eter/ruang): mewakili rongga dalam tubuh.
+  akasa -> KONSEP_FILOSOFIS [cultural]
+  eter -> KONSEP_FILOSOFIS [cultural]
+
+S30: melalui kremasi, unsur-unsur ini dilepaskan secara sistematis agar atma tidak lagi terbelenggu oleh jasad kasar ( sharira ).
+  atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+  sharira -> KONSEP_FILOSOFIS [cultural]
+
+S32: ngaben memiliki peran ganda yang saling menguatkan:
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S33: nilai religius: sebagai sarana penyucian roh, penerimaan hukum karma, dan upaya mencapai moksha .
+  karma -> KONSEP_FILOSOFIS [cultural]
+  moksha -> KONSEP_FILOSOFIS [cultural] (canonical: Moksha)
+
+S35: nilai sosial: memperkuat kohesi komunal melalui sistem nguopin dan matulung (gotong royong).
+  gotong royong -> STRUKTUR_SOSIAL_ADAT [cultural]
+
+S36: partisipasi kolektif dari keluarga, dadia (keluarga besar), hingga banjar menunjukkan solidaritas sosial sebagai pilar utama pelestarian identitas.
+  dadia -> STRUKTUR_SOSIAL_ADAT [cultural] (canonical: Dadia)
+  banjar -> STRUKTUR_SOSIAL_ADAT [cultural] (canonical: Banjar)
+
+S38: berdasarkan perspektif auguste comte, masyarakat bali menunjukkan transisi pemikiran yang dinamis:
+  bali -> Place [general]
+
+S39: tahap teologis: masyarakat memandang ngaben murni sebagai intervensi ilahi untuk membebaskan jiwa.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S42: jenis atau klasifikasi ngaben
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S43: tradisi bali menunjukkan fleksibilitas tinggi dalam mengakomodasi kondisi jenazah melalui klasifikasi upacara berikut.
+  bali -> Place [general]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S44: sawa wedana adalah upacara untuk jenazah utuh (3-7 hari setelah meninggal); di era modern, penggunaan formalin umum dilakukan untuk memperlambat pembusukan selama masa persiapan.
+  sawa wedana -> RITUAL_KEMATIAN [cultural] (canonical: Sawa Wedana)
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S45: asti wedana adalah upacara pembakaran tulang belulang yang digali kembali dari kuburan sesuai aturan adat setempat.
+  asti wedana -> RITUAL_KEMATIAN [cultural] (canonical: Asti Wedana)
+  kuburan -> BANGUNAN_RITUAL [cultural]
+
+S46: swasta adalah upacara yang dilakukan jika jenazah tidak ditemukan atau meninggal di perantauan, menggunakan kayu cendana dan aksara sakral sebagai simbol pengganti jasad.
+  swasta -> RITUAL_KEMATIAN [cultural] (canonical: Swasta)
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S47: ngelungah adalah ritual khusus untuk bayi yang belum tumbuh gigi (suci); jenazahnya segera dikubur dan upacaranya dilakukan minimal 12 hari kemudian.
+  ngelungah -> RITUAL_KEMATIAN [cultural] (canonical: Ngelungah)
+
+S48: ngaben massal adalah pelaksanaan kolektif oleh warga desa untuk efisiensi biaya dan tenaga tanpa mengurangi nilai sakralitasnya.
+  ngaben massal -> RITUAL_KEMATIAN [cultural] (canonical: Ngaben Massal)
+
+S49: meskipun kondisi fisik jenazah berbeda, setiap jenis ini tetap mengikuti tahapan inti penyucian yang sistematis.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S51: setiap tahapan dalam ngaben merupakan proses penyucian sistematis yang dirancang untuk mengantarkan roh menuju kesempurnaan.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S52: ngulapin: ritual pemanggilan roh di tempat meninggalnya seseorang.
+  ngulapin -> TAHAPAN_UPACARA [cultural] (canonical: Ngulapin)
+
+S53: nyiramin/ngeringkes: memandikan jenazah dan membungkusnya dengan kain kafan serta perlengkapan ritual ( ngajum ).
+  nyiramin -> TAHAPAN_UPACARA [cultural]
+  ngeringkes -> TAHAPAN_UPACARA [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  ngajum -> TAHAPAN_UPACARA [cultural]
+
+S54: ngawit pengaksaran: pemberian aksara suci pada jenazah oleh sulinggih.
+  pengaksaran -> TAHAPAN_UPACARA [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+
+S55: mapegat: ritual pemutusan hubungan duniawi.
+  mapegat -> TAHAPAN_UPACARA [cultural] (canonical: Mapegat)
+
+S56: pabasmian: proses kremasi jenazah di dalam sarana petulangan .
+  pabasmian -> TAHAPAN_UPACARA [cultural] (canonical: Pabasmian)
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  petulangan -> SARANA_RITUAL [cultural] (canonical: Petulangan)
+
+S57: nuduk galih: pengumpulan sisa-sisa tulang (abu) setelah pembakaran.
+  nuduk galih -> TAHAPAN_UPACARA [cultural] (canonical: Nuduk Galih)
+  abu -> SARANA_RITUAL [cultural]
+
+S58: nganyut: melarung abu ke sungai atau laut sebagai simbol pelepasan terakhir menuju moksha .
+  nganyut -> TAHAPAN_UPACARA [cultural] (canonical: Nganyut)
+  abu -> SARANA_RITUAL [cultural]
+  moksha -> KONSEP_FILOSOFIS [cultural] (canonical: Moksha)
+
+S59: nyegara gunung: ritual penyucian roh di pura tertentu untuk mensyukuri selesainya prosesi.
+  nyegara gunung -> TAHAPAN_UPACARA [cultural] (canonical: Nyegara Gunung)
+  pura -> BANGUNAN_RITUAL [cultural]
+
+S60: analisis ritual mapegat
+  mapegat -> TAHAPAN_UPACARA [cultural] (canonical: Mapegat)
+
+S61: secara teologis, mapegat (berarti "memutuskan") memiliki makna krusial untuk memutus ikatan emosional dan duniawi antara mendiang ( niskala ) dengan keluarga ( skala ).
+  mapegat -> TAHAPAN_UPACARA [cultural] (canonical: Mapegat)
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+  niskala -> KONSEP_FILOSOFIS [cultural]
+
+S62: tanpa ritual ini, dikhawatirkan roh akan "gentayangan" karena masih terikat pada harta atau keluarga, sehingga menghambat perjalanannya menuju brahman.
+  brahman -> KONSEP_FILOSOFIS [cultural]
+
+S63: sarana, upakara, dan perlengkapan
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S64: sarana dalam ngaben bukan sekadar estetika, melainkan simbol spiritual kompleks yang berfungsi sebagai kendaraan bagi jiwa.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S65: petulangan (sarkopagus)
+  petulangan -> SARANA_RITUAL [cultural] (canonical: Petulangan)
+  sarkopagus -> SARANA_RITUAL [cultural] (canonical: Petulangan)
+
+S66: petulangan berbentuk binatang simbolis yang menentukan status sosial atau kasta mendiang:
+  petulangan -> SARANA_RITUAL [cultural] (canonical: Petulangan)
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S67: lembu (putih/hitam): putih untuk pendeta/sulinggih; hitam untuk kasta brahmana welaka dan ksatria.
+  sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+  brahmana welaka -> KASTA_SOSIAL [cultural]
+  ksatria -> KASTA_SOSIAL [cultural]
+
+S68: singa: umumnya digunakan oleh raja-raja atau warga pasek.
+  singa -> SARANA_RITUAL [cultural]
+  pasek -> KASTA_SOSIAL [cultural]
+
+S69: gedarba: berbentuk menyerupai beruang berwarna hitam, digunakan oleh wangsa sudra jadma (masyarakat umum).
+  gedarba -> SARANA_RITUAL [cultural]
+  wangsa sudra jadma -> KASTA_SOSIAL [cultural]
+
+S70: gajah mina: kombinasi gajah dan ikan, digunakan oleh golongan wesia.
+  gajah mina -> SARANA_RITUAL [cultural]
+  wesia -> KASTA_SOSIAL [cultural]
+
+S71: menjangan: digunakan oleh golongan aria.
+  menjangan -> SARANA_RITUAL [cultural]
+  aria -> KASTA_SOSIAL [cultural]
+
+S72: naga banda
+  naga banda -> SARANA_RITUAL [cultural] (canonical: Naga Banda)
+
+S73: naga banda adalah boneka naga raksasa yang melambangkan pengikat keinginan duniawi raja.
+  naga banda -> SARANA_RITUAL [cultural] (canonical: Naga Banda)
+
+S74: terdapat perdebatan teologis mengenai ritus memanah naga banda oleh sulinggih:
+  naga banda -> SARANA_RITUAL [cultural] (canonical: Naga Banda)
+  sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+
+S76: perspektif prof. dr. tjokorda rai sudarta: memanah bukan untuk membunuh, melainkan memberikan "arah" (sepuluh penjuru mata angin) bagi jiwa dalam menempuh perjalanannya sesuai hukum karma.
+  karma -> KONSEP_FILOSOFIS [cultural]
+
+S77: secara teknis, naga banda seharusnya memiliki panjang 1.600 depa (sekitar 2,4 km) .
+  naga banda -> SARANA_RITUAL [cultural] (canonical: Naga Banda)
+
+S81: misalnya, perbandingan kepala lembu adalah 2:1:1, sedangkan singa adalah 3:2:2.
+  singa -> SARANA_RITUAL [cultural]
+
+S84: struktur sosial bali yang personalistik dan kolektif memungkinkan terlaksananya upacara besar melalui pembagian kerja yang masif.
+  bali -> Place [general]
+
+S85: otoritas spiritual: sulinggih dan pemangku bertugas muput (menyelesaikan) upacara melalui doa dan pembersihan ritual.
+  sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+  pemangku -> ENTITAS_KEAGAMAAN [cultural] (canonical: Pemangku)
+  muput -> TAHAPAN_UPACARA [cultural]
+
+S87: secara antropologis, pembagian gender terlihat jelas: 3.092 laki-laki (mengerjakan konstruksi berat seperti bade dan petulangan ) dan 2.499 perempuan (menyiapkan banten dan logistik makanan).
+  bade -> SARANA_RITUAL [cultural] (canonical: Bade)
+  petulangan -> SARANA_RITUAL [cultural] (canonical: Petulangan)
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S88: solidaritas ini menjadi pilar utama masyarakat bali dalam menjalankan tanggung jawab kolektif.
+  bali -> Place [general]
+
+S90: ketertiban dijaga melalui hukum adat ( awig-awig ) yang memberikan sanksi bagi pelanggar kesepakatan komunal:
+  awig-awig -> KONSEP_HUKUM_ADAT [cultural]
+
+S91: kasepekang: pengucilan sosial; warga kehilangan akses layanan banjar namun terkadang masih diizinkan menggunakan setra .
+  kasepekang -> KONSEP_HUKUM_ADAT [cultural] (canonical: Kasepekang)
+  banjar -> STRUKTUR_SOSIAL_ADAT [cultural] (canonical: Banjar)
+  setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+
+S92: kanoroyang: sanksi terberat berupa pemberhentian keanggotaan desa adat.
+  kanoroyang -> KONSEP_HUKUM_ADAT [cultural] (canonical: Kanoroyang)
+
+S93: pelanggar kehilangan hak total atas fasilitas desa, termasuk larangan mengubur atau mengabenkan jenazah di setra desa setempat.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+
+S96: kasus di desa adat pangkung karung , tabanan, menunjukkan bagaimana konflik sosial (sanksi kanoroyang akibat penolakan pemekaran desa) memaksa warga yang terbuang untuk menggunakan krematorium karena dilarang menggunakan setra desa.
+  tabanan -> Place [general]
+  kanoroyang -> KONSEP_HUKUM_ADAT [cultural] (canonical: Kanoroyang)
+  setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+
+S98: krematorium seperti santha yana di denpasar kini menjadi pilihan utama karena beberapa faktor:
+  denpasar -> Place [general]
+
+S100: namun, tingginya permintaan membuat keluarga harus mengikuti sistem antrean karena adanya kuota harian maksimal 8 jenazah .
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S101: perbandingan biaya: ngaben mandiri tradisional memerlukan minimal idr 20.000.000 , sementara krematorium menawarkan paket mekinsan di geni mulai dari idr 7.500.000 hingga paket lengkap ngelanus sekitar idr 19.000.000 .
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  ngelanus -> RITUAL_KEMATIAN [cultural] (canonical: Ngelanus)
+
+S102: pragmatisme: transformasi ritual menjadi layanan jasa terpaket (komodifikasi) tetap dianggap sah secara teologis selama elemen inti ritual dan keterlibatan sulinggih tetap dipertahankan.
+  sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+
+S104: bali aga vs bali dataran: terdapat perbedaan mendasar antara masyarakat pegunungan ( bali aga ) yang mempertahankan tradisi asli kuno (seperti di trunyan) dengan masyarakat bali dataran yang mendapat pengaruh kuat dari tradisi hindu-majapahit pasca jatuhnya kerajaan di jawa.
+  bali -> Place [general]
+  hindu -> AGAMA [cultural]
+  majapahit -> Place [general]
+  jawa -> Place [general]
+
+S105: adaptasi ekonomi: keluarga kurang mampu beradaptasi melalui ngaben massal atau memanfaatkan yayasan nirlaba seperti yayasan pengayom umat hindu (ypuh) yang mengutamakan pelayanan tanpa mencari laba berlebih.
+  ngaben massal -> RITUAL_KEMATIAN [cultural] (canonical: Ngaben Massal)
+  hindu -> AGAMA [cultural]
+
+S107: atma: roh atau jiwa yang menghidupkan makhluk hidup.
+  atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+
+S108: banjar: satuan organisasi kemasyarakatan terkecil di bali.
+  banjar -> STRUKTUR_SOSIAL_ADAT [cultural] (canonical: Banjar)
+  bali -> Place [general]
+
+S109: banten: sesajen atau persembahan suci sebagai sarana ritual.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  sesajen -> SARANA_RITUAL [cultural]
+
+S110: kanoroyang: sanksi pemecatan dari keanggotaan desa adat.
+  kanoroyang -> KONSEP_HUKUM_ADAT [cultural] (canonical: Kanoroyang)
+
+S111: panca maha bhuta: lima unsur alam pembentuk fisik (tanah, air, api, udara, eter).
+  panca maha bhuta -> KONSEP_FILOSOFIS [cultural] (canonical: Panca Maha Bhuta)
+  eter -> KONSEP_FILOSOFIS [cultural]
+
+S112: pitra yadnya: upacara suci yang ditujukan bagi leluhur.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+
+S113: sulinggih: pendeta atau tokoh suci yang memiliki otoritas spiritual tertinggi.
+  sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+
+S115: mengapa tidak boleh ada air mata saat ngaben?
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S117: mengapa memilih krematorium dibandingkan kuburan tradisional?
+  kuburan -> BANGUNAN_RITUAL [cultural]
+
+S118: karena efisiensi waktu, kepastian biaya yang jauh lebih murah, dan solusi bagi mereka yang terkena sanksi adat ( kanoroyang ).
+  kanoroyang -> KONSEP_HUKUM_ADAT [cultural] (canonical: Kanoroyang)
+
+S119: apakah ngaben di krematorium sah secara agama?
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S120: sah, sejauh ritual inti dan pemujaan oleh sulinggih tetap dijalankan sesuai sastranya.
+  sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+
+S122: krematorium ini memiliki kuota harian yang ketat, yakni maksimal melayani 8 jenazah per hari untuk menjaga keteraturan prosesi.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S123: apa perbedaan utama ngaben bali aga dan bali dataran?
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  bali -> Place [general]
+
+S124: bali dataran menggunakan sarana mewah (bade/petulangan) pengaruh majapahit, sedangkan bali aga lebih menonjolkan tradisi asli yang terkadang tidak menggunakan pembakaran fisik secara masif.
+  bali -> Place [general]
+  bade -> SARANA_RITUAL [cultural] (canonical: Bade)
+  petulangan -> SARANA_RITUAL [cultural] (canonical: Petulangan)
+  majapahit -> Place [general]
+
+S126: ngaben adalah institusi sosial-religius yang kompleks, berfungsi sebagai mekanisme spiritual pemurnian jiwa sekaligus perekat kohesi sosial.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S128: kemampuan tradisi ini untuk beradaptasi—baik melalui efisiensi biaya maupun penggunaan teknologi—membuktikan bahwa ngaben adalah identitas budaya dinamis yang terus menjaga harmoni antara manusia, alam, dan sang pencipta.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S129: upacara atiwa-tiwa
+  upacara atiwa-tiwa -> RITUAL [cultural]
+
+S130: manusia mulai sejak terbentuknya didalam kandungan, lahir hingga dewasa dan akhirnya meninggal dunia, selalu melalui suatu proses alam sesuai dengan kehendak tuhan yang maha esa, ida sang hyang widhi wasa.
+  tuhan -> ENTITAS_KEAGAMAAN [cultural]
+  hyang widhi wasa -> ENTITAS_KEAGAMAAN [cultural]
+
+S132: untuk hal itulah manusia dituntut selalu berbuat kebaikan dan selalu beryadnya dalam bentuk persembahan dan korban suci kehadapan hyang widhi wasa dengan segala bentuk manifestasi-nya.
+  hyang widhi wasa -> ENTITAS_KEAGAMAAN [cultural]
+
+S133: sebab bukan upakara yang besar dan megah yang menjamin manusia saat meninggalnya kelak akan secara otomatis mendapatkan sorga (amoring acintya), akan tetapi karma wasananyalah yang akan menuntun dan menentukan kelak di kemudian hari saat meninggalnya.
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+  sorga -> KONSEP_FILOSOFIS [cultural]
+  amoring acintya -> KONSEP_FILOSOFIS [cultural] (canonical: Moksha)
+  karma -> KONSEP_FILOSOFIS [cultural]
+
+S134: para sentana atau keluarga hanya berusaha untuk mengupacarainya sesuai dengan kemampuannya sebagai rasa bhaktinya kepada mereka yang meninggal dunia.
+  sentana -> STRUKTUR_SOSIAL_ADAT [cultural]
+
+S142: mati menurut tattwa
+  tattwa -> KONSEP_FILOSOFIS [cultural]
+
+S143: orang dikatakan telah mati apabila atmanya telah lepas dari panca maha bhuta.
+  panca maha bhuta -> KONSEP_FILOSOFIS [cultural] (canonical: Panca Maha Bhuta)
+
+S144: hal ini disebutkan dalam vrasphati tattwa, sebagai berikut:
+  tattwa -> KONSEP_FILOSOFIS [cultural]
+
+S145: "kala ikang mati ngarania wihturun mapasah lawan panca maha bhuta juga tekang atma ri sarira, ikang aganal juga ilang, ikang atma langeng tan molah, apan ibek ikang rat kabeh dening atma"
+  panca maha bhuta -> KONSEP_FILOSOFIS [cultural] (canonical: Panca Maha Bhuta)
+  atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+  sarira -> KONSEP_FILOSOFIS [cultural]
+
+S146: artinya: "pada waktu mati namanya, hanya berarti berpisahnya panca maha bhuta dengan atma yang ada pada tubuhnya, hanya badan kasarnya saja yang lenyap, sedangkan atmanya tetap tak berubah, sebab dunia ini penuh dengan atma."
+  panca maha bhuta -> KONSEP_FILOSOFIS [cultural] (canonical: Panca Maha Bhuta)
+  atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+
+S150: dalam lontar pretekaning wong mati disebutkan bahwa:
+  lontar pretekaning wong mati -> NASKAH_SUCI [cultural]
+
+S162: di keningnya ditaruh daun intaran.
+  daun intaran -> SARANA_RITUAL [cultural]
+
+S170: kemaluan ditutup dengan daun terong bagi laki-laki dan daun tunjung bagi wanita.
+  daun terong -> SARANA_RITUAL [cultural] (canonical: Daun Terong Polo)
+
+S172: diletakkan kwangen pada dada dan di setiap persendian sebagai lambang pengurip-urip.
+  kwangen -> SARANA_RITUAL [cultural] (canonical: Kwangen)
+
+S176: berakhir diadakan persembahyangan dan mapegat.
+  mapegat -> TAHAPAN_UPACARA [cultural] (canonical: Mapegat)
+
+S177: ngaben berdasarkan keadaan jenazah
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S178: berdasarkan keadaan jenazah orang yang diaben, upacara ngaben dapat dibagi menjadi 3 (tiga) bagian, antara lain:
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S180: sava vedana
+  sava vedana -> RITUAL_KEMATIAN [cultural] (canonical: Sawa Wedana)
+
+S181: yaitu ngaben yang langsung ada jenazah.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S182: upacara ngaben seperti ini sering kita temui di masyarakat.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S183: sebagai obyek dari pengabenan seperti ini adalah jenazah utuh dari beliau yang telah meninggal dunia (almarhum).
+  pengabenan -> RITUAL_KEMATIAN [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S186: yaitu upacara ngaben yang mana orang yang diaben, jenazahnya terlebih dahulu ditanam di setra.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+
+S188: hal ini bisa saja terjadi mengingat satu dan lain hal yang mengharuskan jenazah harus dikubur terlebih dahulu, seperti misalnya karena adanya sengker desa dalam pelaksanaan suatu upacara dewa yadnya di desa bersangkutan.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  sengker desa -> KONSEP_HUKUM_ADAT [cultural]
+  dewa yadnya -> RITUAL [cultural]
+
+S189: bisa juga dikarenakan sengker jagat sebagai akibat adanya upacara di besakih, yang berlaku untuk seluruh bali, dan lain sebagainya.
+  sengker jagat -> KONSEP_HUKUM_ADAT [cultural]
+  bali -> Place [general]
+
+S190: daripada berlama-lama jenazah masih di rumah yang ujung-ujungnya dapat menyebabkan rasa sedih yang berkepanjangan, maka penguburan jenazah masih dapat dibenarkan (mekingsan di pretiwi).
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  penguburan -> TAHAPAN_UPACARA [cultural]
+  mekingsan di pretiwi -> TAHAPAN_UPACARA [cultural]
+
+S191: atau dengan kehendak lain seperti keterbatasan akan dana, maka sebagai hasil keputusan keluarga, jenazah untuk sementara dikubur terlebih dahulu.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S192: atau adanya dresta di suatu daerah yang masih melakukan penguburan jenazah sebagai prosesi ngaben.
+  dresta -> KONSEP_HUKUM_ADAT [cultural]
+  penguburan -> TAHAPAN_UPACARA [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S194: svasta
+  svasta -> RITUAL_KEMATIAN [cultural] (canonical: Swasta)
+
+S195: yaitu upacara ngaben di mana jenazah orang yang mau diaben tidak ditemukan (pejah ring sunantara).
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  pejah ring sunantara -> KONSEP_FILOSOFIS [cultural]
+
+S196: hal ini dapat juga kita jumpai di kehidupan masyarakat, seperti misalnya meninggal karena peperangan, pesawat jatuh, tenggelam, bencana alam lainnya (tanah longsor dan sebagainya), sehingga jenazah tidak dapat ditemukan.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S197: ngaben berdasarkan tingkatan upacara
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  tingkatan upacara -> KONSEP_HUKUM_ADAT [cultural]
+
+S198: dalam lontar sundarigama dan lontar lokha tattwa, disebutkan ada 5 (lima) tingkatan ngaben, antara lain sebagai berikut:
+  lontar sundarigama -> NASKAH_SUCI [cultural]
+  lontar lokha tattwa -> NASKAH_SUCI [cultural]
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S200: sorganya ada di daksina, dewatanya brahma, tirtanya amertha kamandalu, dedarinya sang gagar mayang.
+  daksina -> SARANA_RITUAL [cultural] (canonical: Daksina)
+  brahma -> ENTITAS_KEAGAMAAN [cultural]
+  amertha -> KONSEP_FILOSOFIS [cultural]
+
+S201: sava vedana.
+  sava vedana -> RITUAL_KEMATIAN [cultural] (canonical: Sawa Wedana)
+
+S202: sorganya ring pascima, dewatanya mahadewa, tirtanya amerta kundalini, dedarinya dewi sulasih.
+  dewi sulasih -> ENTITAS_KEAGAMAAN [cultural]
+
+S204: sorganya ring uttara, dewatanya visnu, tirtanya amerta pawitra, dedarinya tunjung biru.
+  tunjung biru -> ENTITAS_KEAGAMAAN [cultural]
+
+S205: svasta.
+  svasta -> RITUAL_KEMATIAN [cultural] (canonical: Swasta)
+
+S206: sorganya ring wetan, dewatanya sanghyang isvara, tirtanya maha amertha, dedarinya dewi supraba.
+  sanghyang -> ENTITAS_KEAGAMAAN [cultural]
+  amertha -> KONSEP_FILOSOFIS [cultural]
+  dewi supraba -> ENTITAS_KEAGAMAAN [cultural]
+
+S207: pitra yadnya.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+
+S208: sorganya ring madya, dewatanya bhatara siva, tirtanya tirta sanjivani, dedarinya devi supini.
+  madya -> KONSEP_HUKUM_ADAT [cultural] (canonical: Madya)
+  bhatara -> ENTITAS_KEAGAMAAN [cultural] (canonical: Bhatara)
+  siva -> ENTITAS_KEAGAMAAN [cultural]
+  tirta -> TIRTHA_SUCI [cultural]
+
+S209: proses ngaben sesuai dengan keadaan jenazah
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S210: seperti disebutkan di atas, ada 3 (tiga) jenis ngaben sesuai dengan keadaan jenazah.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S212: sava vedana
+  sava vedana -> RITUAL_KEMATIAN [cultural] (canonical: Sawa Wedana)
+
+S213: ngaben ini merupakan suatu proses upacara yang dilaksanakan secara langsung tanpa ditanam terlebih dahulu.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S215: setelah upacara nyiraman, layon digulung dengan kain putih selanjutnya diletakkan di bale gede / saka roras atau tempat yang diperuntukkan untuk itu.
+  layon -> SARANA_RITUAL [cultural]
+  kain putih -> SARANA_RITUAL [cultural]
+  bale gede -> BANGUNAN_RITUAL [cultural]
+  saka roras -> BANGUNAN_RITUAL [cultural]
+
+S217: sampai pada hari yang telah ditentukan atau hari pengutangan, dilaksanakan pelebon, diawali dengan upacara ngaskara dan caru pengelambuk, selanjutnya jenazah dinaikkan ke usungan lalu berangkat ke setra.
+  pengutangan -> TAHAPAN_UPACARA [cultural]
+  pelebon -> RITUAL_KEMATIAN [cultural] (canonical: Pabasmian)
+  ngaskara -> TAHAPAN_UPACARA [cultural]
+  caru pengelambuk -> SARANA_RITUAL [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  usungan -> SARANA_RITUAL [cultural]
+  setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+
+S219: dalam perjalanan ke setra ditaburkan sekar ura yang terdiri dari beras kuning, wang kepeng/bolong, dan daun temen serta kembang rampai, sebagai simbol perpisahan antara yang meninggal dengan keluarga yang ditinggal dengan harapan selalu diberikan kesejahteraan dan kemakmuran.
+  setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+  sekar ura -> SARANA_RITUAL [cultural] (canonical: Sekar Ura)
+  wang kepeng -> SARANA_RITUAL [cultural]
+  kembang rampai -> SARANA_RITUAL [cultural]
+
+S221: juga dibarengi suara beleganjur yang gemuruh dengan maksud membangunkan unsur panca maha bhuta.
+  beleganjur -> SARANA_RITUAL [cultural]
+  panca maha bhuta -> KONSEP_FILOSOFIS [cultural] (canonical: Panca Maha Bhuta)
+
+S222: pada tiap persimpangan jalan dilakukan pemutaran atau mesirig sebanyak tiga kali berlawanan arah jarum jam (prasawya), sebagai simbol perpisahan antara yang akan dipelebon dengan desa pakraman.
+  mesirig -> TAHAPAN_UPACARA [cultural]
+  prasawya -> TAHAPAN_UPACARA [cultural] (canonical: Prasawya)
+
+S224: begitu akan sampai di setra diputar kembali tiga kali, demikian juga sampai di tempat pembasmian diputar kembali, lalu usungan diturunkan dan diadakan upacara pembasmian.
+  setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+  usungan -> SARANA_RITUAL [cultural]
+
+S225: namun sebelumnya diadakan upacara ngaturang piuning ke pura dalem dan prajapati dengan menyertakan daksina linggih sebagai perwujudan atma yang meninggal.
+  ngaturang piuning -> TAHAPAN_UPACARA [cultural]
+  pura dalem -> BANGUNAN_RITUAL [cultural]
+  prajapati -> ENTITAS_KEAGAMAAN [cultural]
+  daksina linggih -> SARANA_RITUAL [cultural] (canonical: Daksina Linggih)
+  atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+
+S227: mayat ditempatkan di tempat yang telah disediakan, dibuka dan diberikan tirta pengelukatan, pabersihan, kahyangan tiga, kawitan, dan terakhir pangentas.
+  tirta -> TIRTHA_SUCI [cultural]
+  pabersihan -> TAHAPAN_UPACARA [cultural]
+  kahyangan tiga -> BANGUNAN_RITUAL [cultural]
+  kawitan -> KONSEP_FILOSOFIS [cultural]
+  pangentas -> KONSEP_FILOSOFIS [cultural]
+
+S228: langkah selanjutnya adalah ngayaban banten yang diletakkan di dada berupa daksina dengan kelengkapannya, barulah dilakukan pembakaran.
+  ngayaban -> TAHAPAN_UPACARA [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  daksina -> SARANA_RITUAL [cultural] (canonical: Daksina)
+
+S232: sisa pembakaran berupa tulang/galih dipungut, ditaruh pada sesenden/dulang tanah sebagai alas penguyegan, lalu ditumbuk dan ditaruh pada nyuh gading yang telah dikasturi sebagai wujud puspa asti.
+  sesenden -> SARANA_RITUAL [cultural]
+  dulang -> SARANA_RITUAL [cultural]
+  penguyegan -> SARANA_RITUAL [cultural]
+  nyuh gading -> SARANA_RITUAL [cultural]
+  puspa asti -> SARANA_RITUAL [cultural] (canonical: Puspa Asti)
+
+S234: sisa tulang/galih lainnya dibersihkan dengan sarana kukusan dan kain kasa putih, selanjutnya dibentuk/direka menyerupai bentuk orang-orangan di atas selembar kain putih beralaskan klasa.
+  kasa putih -> SARANA_RITUAL [cultural]
+  kain putih -> SARANA_RITUAL [cultural]
+
+S235: rekaan itu diisi kwangen sejumlah 22 (dua puluh dua) buah dan ditaruh pada ubun-ubun, mata, telinga, dahi, hidung, mulut, kerongkongan, pusar, hulu hati, perut, kemaluan, pantat, kaki, tangan, dan jari-jari.
+  kwangen -> SARANA_RITUAL [cultural] (canonical: Kwangen)
+
+S237: langkah selanjutnya adalah diadakan upacara puja utpati yang dilakukan oleh sulinggih/pandita dengan maksud memberikan jalan tuntunan serta menghidupkan dan mempertemukan rerekaan (cili) dengan puspa asti.
+  puja utpati -> TAHAPAN_UPACARA [cultural]
+  sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+  pandita -> ENTITAS_KEAGAMAAN [cultural]
+  cili -> SARANA_RITUAL [cultural]
+  puspa asti -> SARANA_RITUAL [cultural] (canonical: Puspa Asti)
+
+S238: rerekaan sebagai wujud badan manusia, sedangkan puspa asti wujud dari atmanya.
+  puspa asti -> SARANA_RITUAL [cultural] (canonical: Puspa Asti)
+
+S240: sisa galih lainnya dibungkus dengan kain putih, disertakan bersama alat/sarana pembersihannya untuk selanjutnya diikutkan dalam proses nganyut.
+  kain putih -> SARANA_RITUAL [cultural]
+  nganyut -> TAHAPAN_UPACARA [cultural] (canonical: Nganyut)
+
+S242: sebagai akhir dari rangkaian upacara ini adalah upacara nganyut ke segara atau sungai terdekat yang bermuara ke laut.
+  nganyut -> TAHAPAN_UPACARA [cultural] (canonical: Nganyut)
+
+S244: setelah itu dilanjutkan dengan upacara ngangkid, kembali dibentuk berupa puspa lingga atau daksina linggih.
+  ngangkid -> TAHAPAN_UPACARA [cultural] (canonical: Ngangkid)
+  puspa lingga -> SARANA_RITUAL [cultural]
+  daksina linggih -> SARANA_RITUAL [cultural] (canonical: Daksina Linggih)
+
+S246: dilanjutkan dengan ngerorasin di pura dalem; puspa lingga tersebut dibuka keampigan bila upacara ini cukup sampai di sini saja.
+  ngerorasin -> TAHAPAN_UPACARA [cultural] (canonical: Ngerorasin)
+  pura dalem -> BANGUNAN_RITUAL [cultural]
+  puspa lingga -> SARANA_RITUAL [cultural]
+
+S247: sebagai pembersihan terakhir, diadakan pecaruan di pekarangan rumah, merajan, serta merajan dadia.
+  merajan -> BANGUNAN_RITUAL [cultural]
+  dadia -> STRUKTUR_SOSIAL_ADAT [cultural] (canonical: Dadia)
+
+S248: bilamana upacara pitra yadnya ini dilanjutkan tanpa jeda waktu yang agak lama, maka disebut dengan istilah ngaben numandang mantri atau ngelanus.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  numandang mantri -> RITUAL_KEMATIAN [cultural] (canonical: Ngelanus)
+  ngelanus -> RITUAL_KEMATIAN [cultural] (canonical: Ngelanus)
+
+S249: upacara ini, begitu selesai nganyut, seketika itu mapegat mangening-ngening, mecaru, ngerorasin, nyepuh, dilanjutkan dengan penyekahan, ngalap don bingin, ngajum sekah; setelah ngadegan sekah sebagaimana mestinya, selanjutnya dipralina dan kembali diwujudkan dengan ngadegan puspalingga, diakhiri dengan nganyut ke segara.
+  nganyut -> TAHAPAN_UPACARA [cultural] (canonical: Nganyut)
+  mapegat -> TAHAPAN_UPACARA [cultural] (canonical: Mapegat)
+  mangening-ngening -> TAHAPAN_UPACARA [cultural]
+  mecaru -> TAHAPAN_UPACARA [cultural]
+  ngerorasin -> TAHAPAN_UPACARA [cultural] (canonical: Ngerorasin)
+  nyepuh -> TAHAPAN_UPACARA [cultural]
+  penyekahan -> TAHAPAN_UPACARA [cultural]
+  ngalap don bingin -> TAHAPAN_UPACARA [cultural]
+  ngajum -> TAHAPAN_UPACARA [cultural]
+  sekah -> SARANA_RITUAL [cultural] (canonical: Sekah)
+  ngadegan sekah -> TAHAPAN_UPACARA [cultural]
+  puspalingga -> SARANA_RITUAL [cultural] (canonical: Sekah)
+
+S250: sebagai upacara kelanjutannya adalah kembali ngulapin sang dewa pitara untuk dilinggihkan di pemrajan (sanggah pretiwi), dan bila sudah waktunya diadakan upacara meajar-ajar, barulah beliau sang dewa hyang dilinggihkan kembali pada sanggah mrajan dadia dan/atau pemaksan (ngwangi) pada masing-masing keluarga.
+  ngulapin -> TAHAPAN_UPACARA [cultural] (canonical: Ngulapin)
+  dewa -> ENTITAS_KEAGAMAAN [cultural]
+  pitara -> ENTITAS_KEAGAMAAN [cultural] (canonical: Pitra)
+  sanggah -> BANGUNAN_RITUAL [cultural]
+  pretiwi -> KONSEP_FILOSOFIS [cultural]
+  dewa hyang -> ENTITAS_KEAGAMAAN [cultural]
+  mrajan -> BANGUNAN_RITUAL [cultural]
+  dadia -> STRUKTUR_SOSIAL_ADAT [cultural] (canonical: Dadia)
+  pemaksan -> TAHAPAN_UPACARA [cultural]
+
+S253: upacara ini dilakukan bila sawa telah terlebih dahulu dikubur dengan tata cara penguburan biasa.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  penguburan -> TAHAPAN_UPACARA [cultural]
+
+S254: bila telah siap dilakukan upacara, maka kuburan dibongkar dan diambil tulang belulangnya.
+  kuburan -> BANGUNAN_RITUAL [cultural]
+
+S255: upacara ngaben dengan dasar tulang belulang inilah yang disebut ngaben asti vedana.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S257: diawali dengan membuat tegteg berupa bentuk manusia terbuat dari kayu cendana, atau cukup berupa daksina pengawak yang dihiasi sedemikian rupa dan diberi gambar orang sesuai jenis kelamin serta pipil nama sebagai perwujudan atma orang yang diaben.
+  tegteg -> SARANA_RITUAL [cultural]
+  daksina pengawak -> SARANA_RITUAL [cultural]
+  atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+
+S258: tegteg lalu diiring ke pura dalem, dengan tujuan matur piuning serta memohon atma yang akan diaben.
+  tegteg -> SARANA_RITUAL [cultural]
+  pura dalem -> BANGUNAN_RITUAL [cultural]
+  matur piuning -> TAHAPAN_UPACARA [cultural]
+  atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+
+S259: acara ini cukup dipimpin oleh pemangku setempat.
+  pemangku -> ENTITAS_KEAGAMAAN [cultural] (canonical: Pemangku)
+
+S260: dilanjutkan dengan upacara ngulapin di pura merajapati.
+  ngulapin -> TAHAPAN_UPACARA [cultural] (canonical: Ngulapin)
+  pura -> BANGUNAN_RITUAL [cultural]
+  merajapati -> BANGUNAN_RITUAL [cultural]
+
+S261: barulah diadakan acara ngeplugin di atas kuburan dengan memukul-mukul kuburan sebanyak tiga kali dengan upih (pelepah buah pinang).
+  ngeplugin -> TAHAPAN_UPACARA [cultural] (canonical: Ngulapin)
+  kuburan -> BANGUNAN_RITUAL [cultural]
+  upih -> SARANA_RITUAL [cultural]
+
+S262: upacara ngangkid/ngendagin dipimpin oleh pinandita/pandita/sulinggih.
+  ngangkid -> TAHAPAN_UPACARA [cultural] (canonical: Ngangkid)
+  ngendagin -> TAHAPAN_UPACARA [cultural] (canonical: Ngangkid)
+  pinandita -> ENTITAS_KEAGAMAAN [cultural] (canonical: Pemangku)
+  pandita -> ENTITAS_KEAGAMAAN [cultural]
+  sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+
+S263: bila telah dibongkar dan ditemukan tulang belulangnya, diletakkan wang kepeng sebanyak 200 kepeng yang diikat dengan benang; ujungnya dipegang oleh para sentana secara bergantian sebagai ungkapan bahwa semua keluarga siap melaksanakan upacara.
+  wang kepeng -> SARANA_RITUAL [cultural]
+  sentana -> STRUKTUR_SOSIAL_ADAT [cultural]
+
+S264: tulang belulang diangkat, ditempatkan di bale panusangan/pesiraman setinggi hulu hati dengan kayu dadap sebagai bahan pokok dan diberikan leluwur kain putih; tulang belulang dibersihkan lalu dibungkus kain putih (disebut ngeringkes) dan diletakkan pada tempat yang telah disediakan, masih di areal setra.
+  bale panusangan -> BANGUNAN_RITUAL [cultural]
+  leluwur -> SARANA_RITUAL [cultural]
+  kain putih -> SARANA_RITUAL [cultural]
+  ngeringkes -> TAHAPAN_UPACARA [cultural]
+  setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+
+S265: tegteg diletakkan di atas bungkusan tulang belulang tersebut, lalu diupacarai sebagaimana layaknya sawa utuh, selanjutnya tegteg ditempatkan di tumpang salu.
+  tegteg -> SARANA_RITUAL [cultural]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  tumpang salu -> SARANA_RITUAL [cultural]
+
+S266: lebih lanjut diadakan pembakaran tulang belulang tersebut, diawali upacara ngaskara dan dilanjutkan dengan proses seperti pada sava vedana di atas, hingga tuntas sebagaimana disebutkan dalam upacara ngelinggihang dewa hyang.
+  ngaskara -> TAHAPAN_UPACARA [cultural]
+  sava vedana -> RITUAL_KEMATIAN [cultural] (canonical: Sawa Wedana)
+  ngelinggihang -> TAHAPAN_UPACARA [cultural]
+  dewa hyang -> ENTITAS_KEAGAMAAN [cultural]
+
+S268: ngaben svasta
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  svasta -> RITUAL_KEMATIAN [cultural] (canonical: Swasta)
+
+S269: secara umum, pengertian svasta adalah mengadakan upacara pitra yadnya (atiwa-tiwa) dengan tujuan menjadikan arwah orang yang telah meninggal menjadi suci.
+  svasta -> RITUAL_KEMATIAN [cultural] (canonical: Swasta)
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  atiwa-tiwa -> RITUAL_KEMATIAN [cultural]
+
+S270: secara khusus, ngaben svasta dimaksudkan untuk pelaksanaan atiwa-tiwa terhadap orang yang telah meninggal yang jenazahnya tidak mungkin ditemukan kembali, telah lama terkubur/terpendam, atau karena letaknya terlalu jauh dari jangkauan kita.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  svasta -> RITUAL_KEMATIAN [cultural] (canonical: Swasta)
+  atiwa-tiwa -> RITUAL_KEMATIAN [cultural]
+
+S271: adapun atiwa-tiwa yang tergolong dalam ngaben svasta adalah raçadana atau tirta yadnya pranawa, yakni sawa diganti dengan simbol tirtha (toyo çarira), sedangkan tata pelaksanaannya sama dengan atiwa-tiwa asti vedana — mulai dari matur piuning ke pura dalem, pembakaran, hingga nganyut, dan dilanjutkan dengan upacara sebagaimana mestinya hingga upacara ngelinggihang dewa hyang.
+  atiwa-tiwa -> RITUAL_KEMATIAN [cultural]
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  svasta -> RITUAL_KEMATIAN [cultural] (canonical: Swasta)
+  tirta -> TIRTHA_SUCI [cultural]
+  yadnya -> KONSEP_FILOSOFIS [cultural]
+  pranawa -> RITUAL_KEMATIAN [cultural] (canonical: Pranawa)
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  tirtha -> TIRTHA_SUCI [cultural]
+  matur piuning -> TAHAPAN_UPACARA [cultural]
+  pura dalem -> BANGUNAN_RITUAL [cultural]
+  nganyut -> TAHAPAN_UPACARA [cultural] (canonical: Nganyut)
+  ngelinggihang -> TAHAPAN_UPACARA [cultural]
+  dewa hyang -> ENTITAS_KEAGAMAAN [cultural]
+
+S272: perbedaannya, pada asti vedana diadakan ngangkid tulang belulang, sedangkan pada svasta tidak ada ngangkid tulang belulang; obyeknya adalah tirtha, sehingga yang diringkes adalah tirtha itu sendiri.
+  ngangkid -> TAHAPAN_UPACARA [cultural] (canonical: Ngangkid)
+  svasta -> RITUAL_KEMATIAN [cultural] (canonical: Swasta)
+  tirtha -> TIRTHA_SUCI [cultural]
+
+S273: dalam lontar purwa gama disebutkan:
+  lontar -> NASKAH_SUCI [cultural]
+  purwa gama -> NASKAH_SUCI [cultural]
+
+S274: "mwang kramaning mati yan tan kapangguh walungnia mwah mati ring sunantara yan wenang swasta.
+  swasta -> RITUAL_KEMATIAN [cultural] (canonical: Swasta)
+
+S277: tirtha, ika maka awak sang mati, saha suci laksana tigang soroh, ring sang ngajengin asoroh, bubur pirata, nasi angkeb, ajengan putih kuning saparikrama papasang wenang, karma jangkep ginwe kala puspa, enjing hanyut ring sagara.
+  tirtha -> TIRTHA_SUCI [cultural]
+  soroh -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+  bubur pirata -> SARANA_RITUAL [cultural]
+  nasi angkeb -> SARANA_RITUAL [cultural]
+  karma -> KONSEP_FILOSOFIS [cultural]
+  kala puspa -> SARANA_RITUAL [cultural]
+
+S278: yang kapangguh walung nia wenang preteka kadi nguni, mangkana ling hyang manu ring sang manta kabeh."
+  hyang -> KONSEP_FILOSOFIS [cultural]
+
+S279: artinya: tatacara penyelenggaraan orang mati yang tidak ditemukan mayatnya, atau meninggal di tempat yang jauh (sunantara), dapat diselenggarakan dan diselesaikan dengan swasta (ngaben).
+  swasta -> RITUAL_KEMATIAN [cultural] (canonical: Swasta)
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S280: pelaksanaannya diselesaikan dengan tirtha, dibakar di bawah sanggar; cukup tirtha itu sebagai lambang badan yang meninggal, dengan upacara banten suci tigang soroh, banten yang menimpun satu soroh, bubur pirata, nasi angkeb, nasi putih kuning dengan kelengkapannya, dikerjakan dengan kala puspa, lalu dihanyutkan ke segara.
+  tirtha -> TIRTHA_SUCI [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  soroh -> SARANA_RITUAL [cultural]
+  bubur pirata -> SARANA_RITUAL [cultural]
+  nasi angkeb -> SARANA_RITUAL [cultural]
+  kala puspa -> SARANA_RITUAL [cultural]
+
+S282: demikian sabda sang hyang manu kepada semua orang.
+  hyang -> KONSEP_FILOSOFIS [cultural]
+
+S283: dalam lontar tersebut, banten yang menjadi simbol orang yang meninggal disebut kala puspa, sebagaimana juga disebutkan dalam lontar yama purva tattwa.
+  lontar -> NASKAH_SUCI [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  kala puspa -> SARANA_RITUAL [cultural]
+  yama purva tattwa -> NASKAH_SUCI [cultural]
+
+S285: dalam penyelenggaraan ngaben svasta ini, lontar yama purana tattwa menyebutkan sebagai berikut:
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  svasta -> RITUAL_KEMATIAN [cultural] (canonical: Swasta)
+  lontar -> NASKAH_SUCI [cultural]
+  yama purana tattwa -> NASKAH_SUCI [cultural]
+
+S286: "iki pawarah sang hyang yama, maka sidhaning tingkahing angupakara sawning wang mati bener, mageseng ugi presidha mulih maring bhatara brahma, yadyapitan pabya, swasta ring sang hyang agni presiddha manggih ayu sang hyang atma."
+  hyang -> KONSEP_FILOSOFIS [cultural]
+  yama -> ENTITAS_KEAGAMAAN [cultural]
+  bhatara -> ENTITAS_KEAGAMAAN [cultural] (canonical: Bhatara)
+  brahma -> ENTITAS_KEAGAMAAN [cultural]
+  swasta -> RITUAL_KEMATIAN [cultural] (canonical: Swasta)
+  agni -> ENTITAS_KEAGAMAAN [cultural]
+  atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+
+S287: artinya: inilah sabda sang hyang yama: sesuaikan dengan kemampuanmu mengupacarai orang yang meninggal, lakukan dengan upacara nista, madya, dan utama, asal mati dengan benar (tidak salah ulah pati); bakarlah, akan sampai juga pada bhatara brahma.
+  hyang -> KONSEP_FILOSOFIS [cultural]
+  yama -> ENTITAS_KEAGAMAAN [cultural]
+  nista -> KONSEP_HUKUM_ADAT [cultural] (canonical: Nista)
+  madya -> KONSEP_HUKUM_ADAT [cultural] (canonical: Madya)
+  bhatara -> ENTITAS_KEAGAMAAN [cultural] (canonical: Bhatara)
+  brahma -> ENTITAS_KEAGAMAAN [cultural]
+
+S288: meskipun dengan biaya yang sangat sederhana, lakukan ngaben swasta pada bhatara agni, akan berhasil mendapatkan kerahayuan sang hyang atma.
+  ngaben swasta -> RITUAL_KEMATIAN [cultural]
+  bhatara -> ENTITAS_KEAGAMAAN [cultural] (canonical: Bhatara)
+  agni -> ENTITAS_KEAGAMAAN [cultural]
+  hyang -> KONSEP_FILOSOFIS [cultural]
+  atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+
+S289: tentang petunjuk upakara dalam ngaben svasta, lontar yama purana tattwa menyebutkan sebagai berikut:
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  svasta -> RITUAL_KEMATIAN [cultural] (canonical: Swasta)
+  lontar -> NASKAH_SUCI [cultural]
+  yama purana tattwa -> NASKAH_SUCI [cultural]
+
+S290: "upakarania mageseng ring setra tiwakan tirta pangentas gadi nguni, dulurin daksina artha 225 mwah wija catur warna mewadah tembekur neher bhinasmi.
+  setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+  tirta pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas)
+  daksina -> SARANA_RITUAL [cultural] (canonical: Daksina)
+  wija -> SARANA_RITUAL [cultural]
+  catur warna -> KASTA_SOSIAL [cultural]
+  tembekur -> SARANA_RITUAL [cultural]
+
+S291: ring bhasmining sava ri sampuning geseng, arengnia reka ring kwangi mpinda padma arepaken saji tarpana, nuli ayaban bubuh pirata satus kutus kwehnia, nasi angkeb, punjung putih kuning, klungah kinasturi, karuhun tang pajati ring sang hyang prajapati.
+  tarpana -> TAHAPAN_UPACARA [cultural]
+  bubuh pirata -> SARANA_RITUAL [cultural]
+  nasi angkeb -> SARANA_RITUAL [cultural]
+  punjung putih kuning -> SARANA_RITUAL [cultural]
+  klungah -> SARANA_RITUAL [cultural]
+  hyang -> KONSEP_FILOSOFIS [cultural]
+  prajapati -> ENTITAS_KEAGAMAAN [cultural]
+
+S292: ritelas mangkana, hanyut ring genah pengarungan prasidha ayu sang hyang atma, mwah sang angarepaken sava.
+  hyang -> KONSEP_FILOSOFIS [cultural]
+  atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+
+S293: kunang ri wekasan wenang sekama-kama angerorasin dadi pada nemu ayu sang makarya lan sang sane kinaryanin mwang pada bhatara pada sukha, mahyang ring negara sri aji."
+  bhatara -> ENTITAS_KEAGAMAAN [cultural] (canonical: Bhatara)
+
+S294: artinya: upacara mageseng, setibanya di setra, diperciki tirta pangentas seperti biasa, didahului dengan daksina disertai wang 225 kepeng dan beras bija catur warna beralaskan tembekur, lalu dibakar.
+  upacara mageseng -> TAHAPAN_UPACARA [cultural]
+  setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+  tirta pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas)
+  daksina -> SARANA_RITUAL [cultural] (canonical: Daksina)
+  kepeng -> SARANA_RITUAL [cultural]
+  bija -> SARANA_RITUAL [cultural]
+  catur warna -> KASTA_SOSIAL [cultural]
+  tembekur -> SARANA_RITUAL [cultural]
+
+S295: setelah mayat selesai digeseng, abunya direka dengan kwangen berbentuk padma, dihadapkan dengan saji tarpana, bubuh pirata 108 (seratus delapan) tanding banyaknya, nasi angkeb, punjung putih kuning, kelungah nyuh gading dikasturi, didahului dengan pejati kehadapan sang hyang prajapati.
+  kwangen -> SARANA_RITUAL [cultural] (canonical: Kwangen)
+  tarpana -> TAHAPAN_UPACARA [cultural]
+  bubuh pirata -> SARANA_RITUAL [cultural]
+  nasi angkeb -> SARANA_RITUAL [cultural]
+  punjung putih kuning -> SARANA_RITUAL [cultural]
+  kelungah -> SARANA_RITUAL [cultural]
+  nyuh gading -> SARANA_RITUAL [cultural]
+  pejati -> SARANA_RITUAL [cultural] (canonical: Banten Pejati)
+  hyang -> KONSEP_FILOSOFIS [cultural]
+  prajapati -> ENTITAS_KEAGAMAAN [cultural]
+
+S296: setelah selesai, lalu dihanyutkan di tempat perarungan; selamatlah sang hyang atma dan yang menyelenggarakan upacara ngaben.
+  hyang -> KONSEP_FILOSOFIS [cultural]
+  atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S297: kemudian hari, apabila berkeinginan melakukan upacara ngerorasin, dapat dilakukan kapan saja agar semua mendapatkan keselamatan — baik yang menyelenggarakan maupun yang diupacarai — demikian juga bhatara sangat senang berstana dan hidup di alam maha kuasa.
+  ngerorasin -> TAHAPAN_UPACARA [cultural] (canonical: Ngerorasin)
+  bhatara -> ENTITAS_KEAGAMAAN [cultural] (canonical: Bhatara)
+
+S300: kecuali pitra yadnya — baik yang mependem maupun mageseng seperti tersebut di atas — yang dilakukan terhadap orang dewasa, maka terhadap sawa anak-anak juga disebut pitra yadnya, karena yang diupacarai adalah juga arwah.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S301: untuk atiwa-tiwa bagi anak-anak diatur sebagai berikut:
+  atiwa-tiwa -> RITUAL_KEMATIAN [cultural]
+
+S303: anak/bayi yang berumur kurang dari tigang sasih dilakukan dengan cara mapendem saja dengan upacara secukupnya, yaitu banten pejati untuk di merajapati sebagai permakluman serta dilengkapi banten lainnya sesuai desa kala patra; kemudian bila diadakan upacara atiwa-tiwa, hal ini disebut ngelunggah.
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+  banten pejati -> SARANA_RITUAL [cultural]
+  merajapati -> BANGUNAN_RITUAL [cultural]
+  desa kala patra -> KONSEP_HUKUM_ADAT [cultural]
+  upacara atiwa-tiwa -> RITUAL [cultural]
+
+S305: piuning ke pura dalem, dengan banten: canang meraka, daksina, tipat kelanan, telur bekasem, segehan putih kuning.
+  piuning -> TAHAPAN_UPACARA [cultural]
+  pura dalem -> BANGUNAN_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  canang meraka -> SARANA_RITUAL [cultural]
+  daksina -> SARANA_RITUAL [cultural] (canonical: Daksina)
+  tipat kelanan -> SARANA_RITUAL [cultural]
+
+S306: piuning ke merajapati, dengan banten: canang ketipat daksina, peras.
+  piuning -> TAHAPAN_UPACARA [cultural]
+  merajapati -> BANGUNAN_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  canang ketipat -> SARANA_RITUAL [cultural]
+  daksina -> SARANA_RITUAL [cultural] (canonical: Daksina)
+  peras -> SARANA_RITUAL [cultural]
+
+S307: piuning ke sedahan setra, dengan banten: canang meraka, tipat kelanan.
+  piuning -> TAHAPAN_UPACARA [cultural]
+  setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  canang meraka -> SARANA_RITUAL [cultural]
+  tipat kelanan -> SARANA_RITUAL [cultural]
+
+S308: piuning di bangbang rare, dengan banten: sorohan pengambeyan, pengulapan, peras, daksina, kelungah nyuh gading disurat omkara.
+  piuning -> TAHAPAN_UPACARA [cultural]
+  bangbang rare -> BANGUNAN_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  sorohan -> SARANA_RITUAL [cultural]
+  pengulapan -> SARANA_RITUAL [cultural]
+  peras -> SARANA_RITUAL [cultural]
+  daksina -> SARANA_RITUAL [cultural] (canonical: Daksina)
+  kelungah -> SARANA_RITUAL [cultural]
+  nyuh gading -> SARANA_RITUAL [cultural]
+
+S309: banten kepada roh bayi: bunga pudak, bangsah pinang, kerek sari, punjung, dan banten bajang.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  bajang -> KONSEP_FILOSOFIS [cultural]
+
+S310: tirtha pengerapuh.
+  tirtha pengerapuh -> TIRTHA_SUCI [cultural]
+
+S311: setelah banten tersebut tersedia dan siap, upacara dilaksanakan dipimpin oleh pemangku, dengan jalan melakukan pemujaan agar roh bayi kembali dengan tujuan untuk disucikan.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  pemangku -> ENTITAS_KEAGAMAAN [cultural] (canonical: Pemangku)
+
+S312: selanjutnya diperciki tirtha yang telah dimohon pada merajapati, kemulan, kahyangan tiga, dan lainnya, maka bangbang diratakan serta semua banten dipendam.
+  tirtha -> TIRTHA_SUCI [cultural]
+  merajapati -> BANGUNAN_RITUAL [cultural]
+  kahyangan tiga -> BANGUNAN_RITUAL [cultural]
+  bangbang -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S314: ngaben numandang mantri
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  numandang mantri -> RITUAL_KEMATIAN [cultural] (canonical: Ngelanus)
+
+S315: upacara pitra yadnya terdiri pula dari tingkatan nista, madya, dan uttama; demikian juga halnya pengabenan, seperti telah disinggung di depan.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  nista -> KONSEP_HUKUM_ADAT [cultural] (canonical: Nista)
+  madya -> KONSEP_HUKUM_ADAT [cultural] (canonical: Madya)
+  pengabenan -> RITUAL_KEMATIAN [cultural]
+
+S316: dilihat dari segi waktu pelaksanaan — mengingat kemampuan serta waktu yang tersedia, dan untuk meminimalisasi dana serta keberadaan waktu bagi para penyelenggara — maka upacara pengabenan setelah pembakaran jenazah dilanjutkan dengan nganyut tanpa jeda waktu, dilakukan mapegat mangening-ngening, mecaru, ngerorasin, nyepuh, dilaksanakan penyekahan dengan diawali upacara nganget don bingin, ngajum sekah sebagaimana mestinya, pralina (kageseng), selanjutnya kembali ngelinggihang puspalingga dan terakhir nganyut; setelah itu barulah diadakan upacara meajar-ajar serta ngelinggihan dewa hyang.
+  pengabenan -> RITUAL_KEMATIAN [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  nganyut -> TAHAPAN_UPACARA [cultural] (canonical: Nganyut)
+  mapegat -> TAHAPAN_UPACARA [cultural] (canonical: Mapegat)
+  mangening-ngening -> TAHAPAN_UPACARA [cultural]
+  mecaru -> TAHAPAN_UPACARA [cultural]
+  ngerorasin -> TAHAPAN_UPACARA [cultural] (canonical: Ngerorasin)
+  nyepuh -> TAHAPAN_UPACARA [cultural]
+  penyekahan -> TAHAPAN_UPACARA [cultural]
+  nganget don bingin -> TAHAPAN_UPACARA [cultural]
+  ngajum -> TAHAPAN_UPACARA [cultural]
+  sekah -> SARANA_RITUAL [cultural] (canonical: Sekah)
+  pralina -> TAHAPAN_UPACARA [cultural]
+  ngelinggihang -> TAHAPAN_UPACARA [cultural]
+  puspalingga -> SARANA_RITUAL [cultural] (canonical: Sekah)
+  dewa hyang -> ENTITAS_KEAGAMAAN [cultural]
+
+S317: dari urutan tersebut, jelas bahwa upacara ini disebut ngelanus atau numandang mantri.
+  ngelanus -> RITUAL_KEMATIAN [cultural] (canonical: Ngelanus)
+  numandang mantri -> RITUAL_KEMATIAN [cultural] (canonical: Ngelanus)
+
+S318: perlu diingat bahwa semua bentuk dan jenis upacara pitra yadnya ini patut menggunakan kain kajang selengkapnya sesuai peruntukannya, serta tirta tunggang dari bhatara kawitan/leluhur.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  kain kajang -> SARANA_RITUAL [cultural]
+  tirta tunggang -> TIRTHA_SUCI [cultural] (canonical: Tirta Tunggang)
+  bhatara -> ENTITAS_KEAGAMAAN [cultural] (canonical: Bhatara)
+  kawitan -> KONSEP_FILOSOFIS [cultural]
+
+S319: demikian juga bilamana melakukan upacara panyekahan/mamukur (atma wedana), patut menggunakan tirta pingit dan menggunakan damar kurung.
+  mamukur -> RITUAL_KEMATIAN [cultural] (canonical: Ngerorasin)
+  atma wedana -> RITUAL_KEMATIAN [cultural] (canonical: Ngerorasin)
+  tirta pingit -> TIRTHA_SUCI [cultural] (canonical: Tirta Pingit)
+  damar kurung -> SARANA_RITUAL [cultural] (canonical: Damar Kurung)
+
+S320: bila tidak demikian, tidaklah sidakarya yadnya yang kita laksanakan.
+  yadnya -> KONSEP_FILOSOFIS [cultural]
+
+S321: makna dan tujuan ngaben
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S322: tujuan pokok dari ngaben adalah melepaskan dan selanjutnya membersihkan atau menyucikan atma dari ikatan panca maha bhuta yang disebut sthula sarira.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+  panca maha bhuta -> KONSEP_FILOSOFIS [cultural] (canonical: Panca Maha Bhuta)
+  sarira -> KONSEP_FILOSOFIS [cultural]
+
+S323: sthula sarira ini berwujud sepuluh alat indrya.
+  sarira -> KONSEP_FILOSOFIS [cultural]
+
+S324: lima alat indrya, dalam lontar tattwa jnana disebut panca budhindrya atau panca jnanendrya, yaitu: mata (caksvindrya), hidung (ghranendrya), telinga (srotendrya), lidah (jihvendrya), dan kulit (tvagindrya).
+  lontar tattwa jnana -> NASKAH_SUCI [cultural]
+
+S325: sedangkan lima indrya lainnya, dalam lontar tattwa jnana disebut panca karmendrya, yaitu: kaki (padendrya), tangan (panindrya), mulut (vagindrya), dubur (pavindrya), dan kemaluan (upathendrya).
+  lontar tattwa jnana -> NASKAH_SUCI [cultural]
+
+S327: pembakaran mayat saat ngaben dilakukan secara skala, yaitu api alam, sedangkan secara niskala dibakar dengan api yang dikeluarkan melalui puja pandita yang disebut agni pralina.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  niskala -> KONSEP_FILOSOFIS [cultural]
+  pandita -> ENTITAS_KEAGAMAAN [cultural]
+  agni -> ENTITAS_KEAGAMAAN [cultural]
+  pralina -> TAHAPAN_UPACARA [cultural]
+
+S328: persiapan ngaben
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S329: secara umum, ada beberapa hal yang perlu diketahui sebelum melakukan suatu upacara ngaben, mulai sejak orang meninggal hingga dilakukan nganyut.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  nganyut -> TAHAPAN_UPACARA [cultural] (canonical: Nganyut)
+
+S332: jenazah diletakkan pada balai dengan posisi kepala berhulu utara atau timur.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S333: sekujur tubuhnya diberi air kayu cendana atau air kumkuman.
+  kumkuman -> TIRTHA_SUCI [cultural]
+
+S335: mata ditutup dengan wang kepeng.
+  wang kepeng -> SARANA_RITUAL [cultural]
+
+S337: sekujur tubuhnya ditutup dengan kain rurub yang baru.
+  kain rurub -> SARANA_RITUAL [cultural]
+
+S338: lalu disuguhi soda berupa nasi, minum, buah-buahan, jajan, dan lainnya, dilengkapi canang sari beserta kelengkapannya.
+  soda -> SARANA_RITUAL [cultural]
+  canang -> SARANA_RITUAL [cultural]
+
+S342: sebelum memandikan jenazah, ada beberapa hal yang perlu dipersiapkan:
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S343: alat pembersihan, berupa kapar berisi sisig, ambuh, tepung tawar, nasi sebawu, lengis gamet, kunyit, bangle, dan gamongan (sami mecacak); yeh kumkuman, don intaran, don tuwung bolo, don dadap, swah/petat, cermin, waja, pecahan kaca, sabun, benang itik-itik, serta kain raid dan kain angkeb baga (putih).
+  sisig -> SARANA_RITUAL [cultural] (canonical: Sisig)
+  ambuh -> SARANA_RITUAL [cultural]
+  yeh kumkuman -> TIRTHA_SUCI [cultural]
+  intaran -> SARANA_RITUAL [cultural] (canonical: Daun Intaran)
+  waja -> SARANA_RITUAL [cultural] (canonical: Waja)
+  pecahan kaca -> SARANA_RITUAL [cultural] (canonical: Pecahan Kaca)
+  itik-itik -> SARANA_RITUAL [cultural]
+  angkeb -> SARANA_RITUAL [cultural]
+
+S344: eteh-eteh sawa, berupa kain putih untuk saput, kamben, tapih, sabuk, udeng, pangulungan, angkeb rai, angkeb baga/purus, leluwur, dan tatindih (biasanya dimohonkan dari sulinggih/griya); kain putih untuk bantal berisi pis bolong 11 kepeng; kain kuning untuk saput atau selendang; rantasan kain putih kuning dan kain anyar; serta samsam, bunga, dan kwangen.
+  eteh-eteh -> SARANA_RITUAL [cultural]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  kain putih -> SARANA_RITUAL [cultural]
+  saput -> SARANA_RITUAL [cultural]
+  udeng -> SARANA_RITUAL [cultural]
+  angkeb -> SARANA_RITUAL [cultural]
+  leluwur -> SARANA_RITUAL [cultural]
+  sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+  griya -> BANGUNAN_RITUAL [cultural]
+  kepeng -> SARANA_RITUAL [cultural]
+  rantasan -> SARANA_RITUAL [cultural]
+  samsam -> SARANA_RITUAL [cultural]
+  kwangen -> SARANA_RITUAL [cultural] (canonical: Kwangen)
+
+S346: tirta
+  tirta -> TIRTHA_SUCI [cultural]
+
+S347: kamulan/merajan/kawitan.
+  kamulan -> BANGUNAN_RITUAL [cultural]
+  merajan -> BANGUNAN_RITUAL [cultural]
+  kawitan -> KONSEP_FILOSOFIS [cultural]
+
+S348: kahyangan tiga dan lainnya yang dianggap perlu.
+  kahyangan tiga -> BANGUNAN_RITUAL [cultural]
+
+S349: tirta pemargi dari griya/pandita.
+  tirta pemargi -> TIRTHA_SUCI [cultural]
+  griya -> BANGUNAN_RITUAL [cultural]
+  pandita -> ENTITAS_KEAGAMAAN [cultural]
+
+S350: tirta pangentas, tunggang, dan pingit.
+  tirta pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas)
+
+S351: dan tirta lain yang dianggap perlu sesuai desa mawacara (dresta).
+  tirta -> TIRTHA_SUCI [cultural]
+  desa mawacara -> KONSEP_HUKUM_ADAT [cultural]
+  dresta -> KONSEP_HUKUM_ADAT [cultural]
+
+S353: makarya pepaga dan slepa
+  pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga)
+  slepa -> SARANA_RITUAL [cultural]
+
+S354: pepaga terbuat dari bambu dengan hitungan: likah, wangke, wangkong, dan galar, galir, galur.
+  pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga)
+  galar -> SARANA_RITUAL [cultural]
+
+S355: perlu diperhatikan bahwa hitungan tersebut harus jatuh pada wangke dan galar.
+  galar -> SARANA_RITUAL [cultural]
+
+S356: besar dan panjangnya disesuaikan dengan keadaan jenazah.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S358: pepaga ditempatkan di halaman rumah, di atasnya dipasang/direntangkan leluwur berupa kain putih.
+  pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga)
+  leluwur -> SARANA_RITUAL [cultural]
+  kain putih -> SARANA_RITUAL [cultural]
+
+S359: setelah siap, barulah jenazah diturunkan.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S360: pepaga ini sekaligus bisa dipergunakan untuk mengusung jenazah ke setra.
+  pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga)
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+
+S362: memandikan jenazah
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S364: sebelum jenazah diusung ke tempat pemandian, terlebih dahulu diadakan upacara nanginin, yaitu membangunkan almarhum seperti halnya membangunkan orang yang sedang tidur, dengan memanggil namanya dan mengucapkan kata-kata dengan lemah lembut serta memberitahukan untuk segera dimandikan — lebih baik lagi disertai kekidungan yang berhubungan dengan kidung pitra yadnya.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  nanginin -> TAHAPAN_UPACARA [cultural] (canonical: Nanginin)
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+
+S365: selanjutnya jenazah diangkat dan diletakkan pada pepaga yang telah disediakan, masih dibarengi kekidungan.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga)
+
+S366: jenazah membujur ke utara atau ke timur.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S367: kain rurub dibuka dengan hati-hati, selanjutnya pemandian jenazah dimulai dengan urutan sebagai berikut: kemaluan (purus/baga) ditutup dengan kain yang telah disediakan — dilakukan oleh anak tertua atau terkecil, sesuai jenis kelamin almarhum; kramas dilakukan terlebih dahulu oleh anak tertua atau orang tua almarhum, dengan maksud memberi jalan dan maaf atas kesalahan selama hidup, kemudian dilanjutkan oleh mangku yang ditunjuk; mencuci muka dengan sabun hingga bersih lalu mesisig dengan jaja uli yang dibakar; sekujur tubuh dimandikan dengan blonyoh (gamongan, kunyit, dan bangle), dibasuh, diberi sabun, dibilas, lalu diberi air kumkuman; tikar diganti dengan yang baru; semua kuku dikerik dan dibungkus dengan daun dadap (kerikan kuku tangan diletakkan di bawah telapak tangan posisi amusti, kerikan kuku kaki diletakkan di sela-sela kaki posisi ngeka padha); kepala jenazah diberikan bantal blayag pisang kaikik dengan 225 wang kepeng, diberikan destar bila laki-laki dan disanggul bila wanita; dikenakan kain penggulungan, dengan arah lipatan ke kiri bila laki-laki dan ke kanan bila wanita; mesasad dengan daun alang-alang dari kepala hingga kaki; pada tangan kanan dan kiri masing-masing diletakkan 1 kwangen dengan 5 wang kepeng; di ubun-ubun 1 kwangen dengan 11 wang kepeng; di dada 1 kwangen dengan 11 wang kepeng; kaki kanan dan kiri masing-masing 1 kwangen dengan 5 wang kepeng; lambung kanan dan kiri masing-masing 8 kwangen dengan 15 wang kepeng; selanjutnya kembali diperciki air kumkuman.
+  kain rurub -> SARANA_RITUAL [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  kramas -> TAHAPAN_UPACARA [cultural]
+  mesisig -> TAHAPAN_UPACARA [cultural]
+  kumkuman -> TIRTHA_SUCI [cultural]
+  blayag pisang -> SARANA_RITUAL [cultural]
+  wang kepeng -> SARANA_RITUAL [cultural]
+  destar -> SARANA_RITUAL [cultural]
+  mesasad -> TAHAPAN_UPACARA [cultural]
+  alang-alang -> SARANA_RITUAL [cultural]
+  kwangen -> SARANA_RITUAL [cultural] (canonical: Kwangen)
+
+S368: kelengkapan sawa yang dipasang selanjutnya adalah sebagai berikut: kaca diletakkan pada mata; monmon pada mulut; daun intaran pada alis; daun delem pada pipi; bunga menuh pada hidung; bunga kelor pada taring; lempengan tembaga pada gigi; sekeping besi pada kaki kiri dan kanan; daun terong bolo pada kemaluan (prana) bagi pria dan daun tunjung putih bagi wanita; anget-anget pada pusar (lebih baik diseburkan, dilakukan oleh anak tertua atau terkecil).
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  monmon -> SARANA_RITUAL [cultural]
+  daun intaran -> SARANA_RITUAL [cultural]
+  daun delem -> SARANA_RITUAL [cultural]
+  bunga menuh -> SARANA_RITUAL [cultural] (canonical: Kuncup Melati)
+  daun terong -> SARANA_RITUAL [cultural] (canonical: Daun Terong Polo)
+
+S369: pemercikan tirta dilakukan dengan urutan: tirta sanggah kamulan almarhum; tirta merajan dadia; tirta kawitan; tirta kahyangan tiga; tirta lainnya yang diperlukan menurut desa mawacara; dan tirta pemargi dari pandita.
+  tirta -> TIRTHA_SUCI [cultural]
+  tirta sanggah kamulan -> TIRTHA_SUCI [cultural]
+  tirta merajan dadia -> TIRTHA_SUCI [cultural]
+  tirta kawitan -> TIRTHA_SUCI [cultural]
+  tirta kahyangan tiga -> TIRTHA_SUCI [cultural]
+  desa mawacara -> KONSEP_HUKUM_ADAT [cultural]
+  tirta pemargi -> TIRTHA_SUCI [cultural]
+  pandita -> ENTITAS_KEAGAMAAN [cultural]
+
+S370: selanjutnya dipasang itik-itik pada ibu jari tangan dan kaki, jenazah digulung dengan tikar dan kain yang telah dirajah, diakhiri dengan lante dari bambu, lalu dimasukkan ke dalam slepa/peti dan ditempatkan pada bale gede/sakaroras atau tempat yang disiapkan, dengan posisi kepala ke utara atau ke timur.
+  itik-itik -> SARANA_RITUAL [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  lante -> SARANA_RITUAL [cultural]
+  slepa -> SARANA_RITUAL [cultural]
+  bale gede -> BANGUNAN_RITUAL [cultural]
+
+S371: peti secara keseluruhan ditutup dengan kain putih sebanyak tujuh lembar, diakhiri dengan untaian sekar sinom dan kain kajang.
+  kain putih -> SARANA_RITUAL [cultural]
+  sinom -> SARANA_RITUAL [cultural]
+  kain kajang -> SARANA_RITUAL [cultural]
+
+S372: penutupan dilakukan setelah diadakan pengaskaran yang dibarengi upacara ngajum kajang; kajang adalah selimut kain putih bertuliskan sad dasaksara (16 bijaksara) sesuai masing-masing prasasti.
+  pengaskaran -> TAHAPAN_UPACARA [cultural]
+  ngajum kajang -> TAHAPAN_UPACARA [cultural] (canonical: Ngajum Kajang)
+  kain putih -> SARANA_RITUAL [cultural]
+  sad dasaksara -> KONSEP_FILOSOFIS [cultural]
+  bijaksara -> KONSEP_FILOSOFIS [cultural]
+
+S373: saat layon ditempatkan, ditutup dengan kajang serta kereb sinom yang telah diupacarai oleh pandita.
+  layon -> SARANA_RITUAL [cultural]
+  kajang -> SARANA_RITUAL [cultural] (canonical: Kajang)
+  sinom -> SARANA_RITUAL [cultural]
+  pandita -> ENTITAS_KEAGAMAAN [cultural]
+
+S374: haturkan sodan dengan makanan kesukaan almarhum, disembahyangi oleh sentana dan keluarga.
+  sodan -> SARANA_RITUAL [cultural]
+  sentana -> STRUKTUR_SOSIAL_ADAT [cultural]
+
+S375: pada malam hari atau hari yang sama dilakukan saji tarpana serta upacara ngajum kajang yang dipuput oleh pandita.
+  tarpana -> TAHAPAN_UPACARA [cultural]
+  ngajum kajang -> TAHAPAN_UPACARA [cultural] (canonical: Ngajum Kajang)
+  pandita -> ENTITAS_KEAGAMAAN [cultural]
+
+S376: bila telah datang hari baik, minimal/maksimal selama 7 hari sejak meninggal, jenazah diusung ke setra untuk dibasmi oleh sang hyang birawi.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+  hyang -> KONSEP_FILOSOFIS [cultural]
+
+S377: dewasa ngaben
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S378: untuk dewasa (hari baik) ngaben, ada beberapa hal yang perlu diketahui.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S381: berdasarkan sasih
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+
+S384: uttarayana
+  uttarayana -> KONSEP_HUKUM_ADAT [cultural]
+
+S386: pada saat ini menunjukkan sasih kadasa, dyestha, asada, kasa, karo, dan katiga.
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+  kadasa -> KONSEP_HUKUM_ADAT [cultural]
+  dyestha -> KONSEP_HUKUM_ADAT [cultural]
+  asada -> KONSEP_HUKUM_ADAT [cultural]
+  kasa -> KONSEP_HUKUM_ADAT [cultural]
+  karo -> KONSEP_HUKUM_ADAT [cultural]
+  katiga -> KONSEP_HUKUM_ADAT [cultural]
+
+S387: umumnya baik untuk upacara pitra yadnya, sebab pintu alam visnu, pitra, dan yama sedang terbuka.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  yama -> ENTITAS_KEAGAMAAN [cultural]
+
+S388: namun khusus sasih kadasa tidak diperkenankan untuk membakar mayat, dianggap mencemari alam skala dan niskala, karena sasih kadasa adalah saat pesamuhan para dewa, sedangkan sasih dyestha dan asadha dianggap sasih mati atau sasih tanpa amertha.
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+  kadasa -> KONSEP_HUKUM_ADAT [cultural]
+  niskala -> KONSEP_FILOSOFIS [cultural]
+  dewa -> ENTITAS_KEAGAMAAN [cultural]
+  dyestha -> KONSEP_HUKUM_ADAT [cultural]
+  amertha -> KONSEP_FILOSOFIS [cultural]
+
+S390: indrayana
+  indrayana -> KONSEP_HUKUM_ADAT [cultural]
+
+S392: ada dua saat: pertama saat matahari datang dari utara (sasih kapat), kedua saat matahari datang dari selatan (sasih kawulu).
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+  kapat -> KONSEP_HUKUM_ADAT [cultural]
+  kawulu -> KONSEP_HUKUM_ADAT [cultural]
+
+S393: dalam lontar-lontar wariga disebutkan bahwa pada saat ini alam dewa sedang terbuka, sehingga sasih kapat sangat baik untuk dewa yadnya, sedangkan sasih kawulu baik untuk upacara bhuta yadnya.
+  lontar -> NASKAH_SUCI [cultural]
+  lontar wariga -> NASKAH_SUCI [cultural]
+  dewa -> ENTITAS_KEAGAMAAN [cultural]
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+  kapat -> KONSEP_HUKUM_ADAT [cultural]
+  dewa yadnya -> RITUAL [cultural]
+  kawulu -> KONSEP_HUKUM_ADAT [cultural]
+  bhuta yadnya -> RITUAL [cultural]
+
+S395: daksinayana
+  daksinayana -> KONSEP_HUKUM_ADAT [cultural]
+
+S396: saat matahari berada di belahan selatan bumi, menunjukkan sasih kalima, kaenem, dan kapitu.
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+  kalima -> KONSEP_HUKUM_ADAT [cultural]
+  kaenem -> KONSEP_HUKUM_ADAT [cultural]
+  kapitu -> KONSEP_HUKUM_ADAT [cultural]
+
+S397: sasih kalima baik untuk dewa dan manusa yadnya, sebab sama-sama terbuka alam dewa dan bhatara.
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+  kalima -> KONSEP_HUKUM_ADAT [cultural]
+  dewa -> ENTITAS_KEAGAMAAN [cultural]
+  manusa yadnya -> RITUAL [cultural]
+  bhatara -> ENTITAS_KEAGAMAAN [cultural] (canonical: Bhatara)
+
+S398: sasih kaenem dan kapitu sangat baik untuk bhuta yadnya; untuk manusa dan pitra yadnya, kedua sasih ini disebut dewasa madya (sedang-sedang saja).
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+  kaenem -> KONSEP_HUKUM_ADAT [cultural]
+  kapitu -> KONSEP_HUKUM_ADAT [cultural]
+  bhuta yadnya -> RITUAL [cultural]
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  madya -> KONSEP_HUKUM_ADAT [cultural] (canonical: Madya)
+
+S399: dengan demikian, dapat disimpulkan bahwa sasih yang baik untuk melaksanakan pitra yadnya, khususnya ngaben, adalah kasa, karo, dan katiga, dengan yang utama pada sasih karo.
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  kasa -> KONSEP_HUKUM_ADAT [cultural]
+  karo -> KONSEP_HUKUM_ADAT [cultural]
+  katiga -> KONSEP_HUKUM_ADAT [cultural]
+
+S400: sasih kaenem dan kapitu disebut dewasa madya.
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+  kaenem -> KONSEP_HUKUM_ADAT [cultural]
+  kapitu -> KONSEP_HUKUM_ADAT [cultural]
+  madya -> KONSEP_HUKUM_ADAT [cultural] (canonical: Madya)
+
+S401: pada sasih kadasa boleh, asal tidak membakar mayat; namun khusus untuk mamukur atau nyekah, sasih kadasa justru sangat baik.
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+  kadasa -> KONSEP_HUKUM_ADAT [cultural]
+  mamukur -> RITUAL_KEMATIAN [cultural] (canonical: Ngerorasin)
+  nyekah -> RITUAL_KEMATIAN [cultural] (canonical: Ngerorasin)
+
+S403: "agnir jyotir ah ah suklah san-masa uttarayanam, tattra prayata gacchanti brahma brahma-vido janah."
+  brahma -> ENTITAS_KEAGAMAAN [cultural]
+
+S404: artinya: api, sinar, bulan terang (sukla paksa), waktu matahari ke utara — dengan mengambil jalan ini, mereka yang mengetahui brahman akan pergi ke brahman.
+  brahman -> KONSEP_FILOSOFIS [cultural]
+
+S407: akan tetapi perlu diperhatikan apakah sasih itu tidak paruwak tahuk, yaitu sasih tanpa tumpek (wulan tanpa sirah), atau sasih mala/malamasa.
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+  paruwak tahuk -> KONSEP_HUKUM_ADAT [cultural]
+  tumpek -> KONSEP_HUKUM_ADAT [cultural]
+  mala -> KONSEP_FILOSOFIS [cultural]
+  malamasa -> KONSEP_HUKUM_ADAT [cultural]
+
+S408: sasih paruwak tahuk adalah sasih berbadankan kosong, terdiri dari:
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+  paruwak tahuk -> KONSEP_HUKUM_ADAT [cultural]
+
+S409: ● tumpek landep pada sasih dyestha dan kalima.
+  tumpek -> KONSEP_HUKUM_ADAT [cultural]
+  landep -> KONSEP_HUKUM_ADAT [cultural]
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+  dyestha -> KONSEP_HUKUM_ADAT [cultural]
+  kalima -> KONSEP_HUKUM_ADAT [cultural]
+
+S410: ● wariga ada pada sasih asada dan kaenem.
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+  asada -> KONSEP_HUKUM_ADAT [cultural]
+  kaenem -> KONSEP_HUKUM_ADAT [cultural]
+
+S411: ● wuku kuningan ada pada sasih kasa dan kapitu.
+  wuku -> KONSEP_HUKUM_ADAT [cultural]
+  kuningan -> KONSEP_HUKUM_ADAT [cultural]
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+  kasa -> KONSEP_HUKUM_ADAT [cultural]
+  kapitu -> KONSEP_HUKUM_ADAT [cultural]
+
+S412: ● krulut ada pada sasih karo dan kawulu.
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+  karo -> KONSEP_HUKUM_ADAT [cultural]
+  kawulu -> KONSEP_HUKUM_ADAT [cultural]
+
+S413: ● uye ada pada sasih katiga dan kasanga.
+  uye -> KONSEP_HUKUM_ADAT [cultural]
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+  katiga -> KONSEP_HUKUM_ADAT [cultural]
+  kasanga -> KONSEP_HUKUM_ADAT [cultural]
+
+S414: ● wayang ada pada sasih kapat dan kadasa.
+  wayang -> KONSEP_HUKUM_ADAT [cultural]
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+  kapat -> KONSEP_HUKUM_ADAT [cultural]
+  kadasa -> KONSEP_HUKUM_ADAT [cultural]
+
+S415: malamasa adalah sasih yang ditampih atau diduakalikan, disebut juga malamasa.
+  malamasa -> KONSEP_HUKUM_ADAT [cultural]
+  sasih -> KONSEP_HUKUM_ADAT [cultural]
+
+S416: hal ini jatuh tiga atau empat tahun sekali, misalnya mala karo, mala sada, dan lainnya.
+  mala karo -> KONSEP_HUKUM_ADAT [cultural]
+  mala sada -> KONSEP_HUKUM_ADAT [cultural]
+
+S418: berdasarkan wuku dan wewaran
+  wuku -> KONSEP_HUKUM_ADAT [cultural]
+  wewaran -> KONSEP_HUKUM_ADAT [cultural]
+
+S419: dilihat dari wuku, seperti wuku ingkel wong dan was penganten, serta hari dan wewaran, adalah sebagai berikut:
+  wuku -> KONSEP_HUKUM_ADAT [cultural]
+  wuku ingkel wong -> KONSEP_HUKUM_ADAT [cultural]
+  was penganten -> KONSEP_HUKUM_ADAT [cultural]
+  wewaran -> KONSEP_HUKUM_ADAT [cultural]
+
+S422: wuku ingkel wong dan was penganten tidak diperkenankan sebagai patokan untuk ngaben.
+  wuku ingkel wong -> KONSEP_HUKUM_ADAT [cultural]
+  was penganten -> KONSEP_HUKUM_ADAT [cultural]
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S423: hari/wewaran yang tidak boleh dipergunakan untuk ngaben adalah:
+  wewaran -> KONSEP_HUKUM_ADAT [cultural]
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S424: gotongan — jumlah urip sapta wara dan panca wara 13 (tiga belas) berturut-turut tiga kali.
+  gotongan -> KONSEP_HUKUM_ADAT [cultural]
+
+S425: semut sedulur — jumlah sapta wara dan panca wara 14 (empat belas) berturut-turut tiga kali.
+  semut sedulur -> KONSEP_HUKUM_ADAT [cultural]
+
+S427: pasa, purwani, purnama, dan tilem.
+  pasa -> KONSEP_HUKUM_ADAT [cultural]
+  purwani -> KONSEP_HUKUM_ADAT [cultural]
+  purnama -> KONSEP_HUKUM_ADAT [cultural]
+  tilem -> KONSEP_HUKUM_ADAT [cultural]
+
+S428: panglong apisan (catus pamanggahan) dan panglong/pinanggal ping 8, yang disebut gagak anungsang pati.
+  panglong -> KONSEP_HUKUM_ADAT [cultural]
+
+S431: berdasarkan wuku dan wewaran, ditetapkan dewasa ngaben adalah sebagai berikut:
+  wuku -> KONSEP_HUKUM_ADAT [cultural]
+  wewaran -> KONSEP_HUKUM_ADAT [cultural]
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S432: ● buda dan wrespati wuku landep.
+  buda -> KONSEP_HUKUM_ADAT [cultural]
+  wuku -> KONSEP_HUKUM_ADAT [cultural]
+  landep -> KONSEP_HUKUM_ADAT [cultural]
+
+S433: ● anggara dan saniscara wuku ukir.
+  anggara -> KONSEP_HUKUM_ADAT [cultural]
+  saniscara -> KONSEP_HUKUM_ADAT [cultural]
+  wuku -> KONSEP_HUKUM_ADAT [cultural]
+  ukir -> KONSEP_HUKUM_ADAT [cultural]
+
+S434: ● wraspati wuku kulantir.
+  wraspati -> KONSEP_HUKUM_ADAT [cultural]
+  wuku -> KONSEP_HUKUM_ADAT [cultural]
+  kulantir -> KONSEP_HUKUM_ADAT [cultural]
+
+S435: ● anggara dan sukra wuku gumbreg.
+  anggara -> KONSEP_HUKUM_ADAT [cultural]
+  sukra -> KONSEP_HUKUM_ADAT [cultural]
+  wuku -> KONSEP_HUKUM_ADAT [cultural]
+  gumbreg -> KONSEP_HUKUM_ADAT [cultural]
+
+S436: ● wraspati wuku julungwangi.
+  wraspati -> KONSEP_HUKUM_ADAT [cultural]
+  wuku -> KONSEP_HUKUM_ADAT [cultural]
+  julungwangi -> KONSEP_HUKUM_ADAT [cultural]
+
+S437: ● budha dan sukra wuku kuningan.
+  sukra -> KONSEP_HUKUM_ADAT [cultural]
+  wuku -> KONSEP_HUKUM_ADAT [cultural]
+  kuningan -> KONSEP_HUKUM_ADAT [cultural]
+
+S438: ● wraspati dan sukra wuku pahang.
+  wraspati -> KONSEP_HUKUM_ADAT [cultural]
+  sukra -> KONSEP_HUKUM_ADAT [cultural]
+  wuku -> KONSEP_HUKUM_ADAT [cultural]
+  pahang -> KONSEP_HUKUM_ADAT [cultural]
+
+S439: ● sukra wuku merakih.
+  sukra -> KONSEP_HUKUM_ADAT [cultural]
+  wuku -> KONSEP_HUKUM_ADAT [cultural]
+  merakih -> KONSEP_HUKUM_ADAT [cultural]
+
+S440: ● soma wuku medangkungan.
+  soma -> KONSEP_HUKUM_ADAT [cultural]
+  wuku -> KONSEP_HUKUM_ADAT [cultural]
+  medangkungan -> KONSEP_HUKUM_ADAT [cultural]
+
+S441: ● sukra wuku matal.
+  sukra -> KONSEP_HUKUM_ADAT [cultural]
+  wuku -> KONSEP_HUKUM_ADAT [cultural]
+  matal -> KONSEP_HUKUM_ADAT [cultural]
+
+S442: ● budha wuku uye.
+  wuku -> KONSEP_HUKUM_ADAT [cultural]
+  uye -> KONSEP_HUKUM_ADAT [cultural]
+
+S443: ● redite wuku prangbakat.
+  redite -> KONSEP_HUKUM_ADAT [cultural]
+  wuku -> KONSEP_HUKUM_ADAT [cultural]
+  prangbakat -> KONSEP_HUKUM_ADAT [cultural]
+
+S444: ● soma dan saniscara wuku ugu.
+  soma -> KONSEP_HUKUM_ADAT [cultural]
+  saniscara -> KONSEP_HUKUM_ADAT [cultural]
+  wuku -> KONSEP_HUKUM_ADAT [cultural]
+  ugu -> KONSEP_HUKUM_ADAT [cultural]
+
+S445: ● budha wuku wayang.
+  wuku -> KONSEP_HUKUM_ADAT [cultural]
+  wayang -> KONSEP_HUKUM_ADAT [cultural]
+
+S446: ● sukra wuku kelawu.
+  sukra -> KONSEP_HUKUM_ADAT [cultural]
+  wuku -> KONSEP_HUKUM_ADAT [cultural]
+  kelawu -> KONSEP_HUKUM_ADAT [cultural]
+
+S447: hari-hari di atas merupakan patokan berdasarkan wewaran, namun harus diperhatikan apakah hari tersebut tidak kekeran desa atau kekeran jagat.
+  wewaran -> KONSEP_HUKUM_ADAT [cultural]
+  kekeran desa -> KONSEP_HUKUM_ADAT [cultural]
+  kekeran jagat -> KONSEP_HUKUM_ADAT [cultural]
+
+S448: kekeran desa artinya hari tersebut tidak diblokir/disengker oleh suatu upacara yang sedang dilaksanakan desa adat, seperti odalan, ngenteg linggih atau melaspas, ngusaba, dan sebagainya.
+  kekeran desa -> KONSEP_HUKUM_ADAT [cultural]
+  odalan -> RITUAL [cultural]
+  ngusaba -> RITUAL [cultural]
+
+S449: kekeran jagat artinya saat-saat diblokir/disengker oleh daerah, khususnya bali, saat panca wali krama atau pelaksanaan upacara lainnya yang sedang berlangsung di besakih serta sad kahyangan lainnya.
+  kekeran jagat -> KONSEP_HUKUM_ADAT [cultural]
+  bali -> Place [general]
+  krama -> STRUKTUR_SOSIAL_ADAT [cultural]
+  sad kahyangan -> BANGUNAN_RITUAL [cultural]
+
+S450: pelaksanaan ngaben
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S452: hal ini sesuai dengan hasil seminar parisadha hindu dharma, yang tertuang dalam piagam campuhan sebagai hasil pesamuan agung tanggal 17–23 november 1961, sebagai berikut:
+  hindu -> AGAMA [cultural]
+
+S453: di dalam 7 (tujuh) hari tidak memilih dewasa, tetapi tetap memperhitungkan desa kala patra.
+  desa kala patra -> KONSEP_HUKUM_ADAT [cultural]
+
+S454: misalnya, bila desa sedang dalam pelaksanaan upacara pada kahyangan tiga, maka ngaben tidak boleh dilaksanakan.
+  kahyangan tiga -> BANGUNAN_RITUAL [cultural]
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S455: dalam 7 (tujuh) hari tidak memilih dewasa, tetapi tetap menghindari saniscara kliwon, buda kliwon, anggara kliwon, buda wage, prewani, purnama, tilem, dora/pasa, kala gotongan, semut sedulur, patirtan di kahyangan desa setempat, dan patirtan di merajan.
+  saniscara -> KONSEP_HUKUM_ADAT [cultural]
+  buda -> KONSEP_HUKUM_ADAT [cultural]
+  anggara -> KONSEP_HUKUM_ADAT [cultural]
+  purnama -> KONSEP_HUKUM_ADAT [cultural]
+  tilem -> KONSEP_HUKUM_ADAT [cultural]
+  pasa -> KONSEP_HUKUM_ADAT [cultural]
+  gotongan -> KONSEP_HUKUM_ADAT [cultural]
+  semut sedulur -> KONSEP_HUKUM_ADAT [cultural]
+  patirtan -> BANGUNAN_RITUAL [cultural]
+  merajan -> BANGUNAN_RITUAL [cultural]
+
+S456: bila hal di atas tidak bisa dilakukan dalam 7 (tujuh) hari, maka jalan keluarnya adalah dengan cara nyineb, yaitu ditanam terlebih dahulu dan dilakukan pada malam hari atau menjelang pagi tanpa upacara.
+  nyineb -> TAHAPAN_UPACARA [cultural]
+
+S457: pada tempat penguburan, tepat di mulut jenazah diisi atau ditancapkan bambu/ploncor.
+  penguburan -> TAHAPAN_UPACARA [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S458: bila telah tiba hari baik, barulah diadakan upacara sebagaimana mestinya, dengan cara tirta dituangkan melalui bambu tersebut, selanjutnya bambu dicabut dan gundukan tanah ditimbun kembali sebagaimana mestinya.
+  tirta -> TIRTHA_SUCI [cultural]
+
+S459: dalam upacara ngaben ini dipuput oleh pandita dan juga dibarengi dengan pembacaan sloka suci, yang sering disebut mamutru.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  pandita -> ENTITAS_KEAGAMAAN [cultural]
+  mamutru -> TAHAPAN_UPACARA [cultural]
+
+S460: perlakuan mamutru ini tiada lain adalah memberikan petunjuk kepada almarhum dalam perjalanannya menuju alam niskala.
+  mamutru -> TAHAPAN_UPACARA [cultural]
+  niskala -> KONSEP_FILOSOFIS [cultural]
+
+S461: dapat tidaknya beliau mencapai sorga tiada terlepas dari perbuatannya di alam nyata ini, lazim disebut sesuai dengan suba asuba karma beliau.
+  sorga -> KONSEP_FILOSOFIS [cultural]
+  karma -> KONSEP_FILOSOFIS [cultural]
+
+S462: jadi, bukan banten/upakara yang besar dan mewah yang menjadi jaminan mendapat sorga, melainkan suba asuba karmanya.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+  sorga -> KONSEP_FILOSOFIS [cultural]
+
+S463: nganyut
+  nganyut -> TAHAPAN_UPACARA [cultural] (canonical: Nganyut)
+
+S464: upacara ini dilakukan setelah semua hasil pembakaran mayat dikumpulkan dan dibentuk menjadi puspa asti.
+  puspa asti -> SARANA_RITUAL [cultural] (canonical: Puspa Asti)
+
+S468: selanjutnya galih dikumpulkan dengan mempergunakan sepit/sumpit yang diambil dengan tangan kiri, lalu ditaruh pada sesenden, dan sisa lainnya dipungut serta ditempatkan pada kukusan yang dialasi kain putih.
+  sesenden -> SARANA_RITUAL [cultural]
+  kain putih -> SARANA_RITUAL [cultural]
+
+S469: galih yang di sesenden ditumbuk/diuyeg hingga halus dan ditaruh pada kelungah nyuh gading yang telah dikasturi dan dibentuk menjadi puspa asti.
+  sesenden -> SARANA_RITUAL [cultural]
+  kelungah -> SARANA_RITUAL [cultural]
+  nyuh gading -> SARANA_RITUAL [cultural]
+  puspa asti -> SARANA_RITUAL [cultural] (canonical: Puspa Asti)
+
+S470: galih yang di kukusan dibersihkan hingga betul-betul bersih, lalu diserahkan kepada pemangku dan dibentuk menjadi bentuk orang-orangan di atas selembar kain putih beralaskan tikar/klasa.
+  pemangku -> ENTITAS_KEAGAMAAN [cultural] (canonical: Pemangku)
+  kain putih -> SARANA_RITUAL [cultural]
+
+S471: pada orang-orangan tersebut, di tiap bagian tubuhnya ditempatkan kwangen (diuraikan pada bagian ngereka di akhir naskah ini).
+  kwangen -> SARANA_RITUAL [cultural] (canonical: Kwangen)
+
+S472: beberapa mantra saat ngeringkes
+  ngeringkes -> TAHAPAN_UPACARA [cultural]
+
+S473: dalam pelaksanaan pengeringkesan, saat meletakkan eteh-eteh layon sesuai peruntukannya, disertai dengan pengucapan mantra sebagai berikut:
+  eteh-eteh -> SARANA_RITUAL [cultural]
+  layon -> SARANA_RITUAL [cultural]
+
+S476: pasang momon: om sang hyang ayuparihara, sah saking raga pantara, mur melecut, lepas wus teka eng eedan.
+  hyang -> KONSEP_FILOSOFIS [cultural]
+  eedan -> SARANA_RITUAL [cultural]
+
+S477: pasang waja pada gigi: om sang hyang cinta mani pantep ring lambe nemu si anu (nama almarhum) teguh tos ya namah.
+  waja -> SARANA_RITUAL [cultural] (canonical: Waja)
+  hyang -> KONSEP_FILOSOFIS [cultural]
+
+S478: pasang sekar/kwangen pada masing-masing bagian tubuh: om puspa maha beratha ya namah.
+  kwangen -> SARANA_RITUAL [cultural] (canonical: Kwangen)
+
+S479: masisigsig: om waja sudha lepas puspa dantya yasa ya namah swaha.
+  waja -> SARANA_RITUAL [cultural] (canonical: Waja)
+  swaha -> SARANA_RITUAL [cultural]
+
+S480: wedak: om waja papa sudha lara pati sengsara ya namah swaha.
+  waja -> SARANA_RITUAL [cultural] (canonical: Waja)
+  swaha -> SARANA_RITUAL [cultural]
+
+S482: boreh/bebek: om galugu sumalah, lumpat bhatara tan amis, tan andih, tan abacin, ambune si anu (nama almarhum) angisep sarining wawangi, satingkebang rat, lepas mamanahe, citane, idepa, adadi ya satrya.
+  boreh -> SARANA_RITUAL [cultural]
+  bhatara -> ENTITAS_KEAGAMAAN [cultural] (canonical: Bhatara)
+
+S484: kamben: om awiwahih agodong wiku pasek pageh aywa ajar-ajar tan hana anyukra tani wenang sita goba putih.
+  pasek -> KASTA_SOSIAL [cultural]
+
+S485: ampok-ampok: om sang hyang gandhi amurwyani bungkahing kapurusan sang hyang panaput lutut sih mungguh ring tungtungin kapurusan.
+  hyang -> KONSEP_FILOSOFIS [cultural]
+
+S487: tabel makna simbolis eteh-eteh layon
+  eteh-eteh -> SARANA_RITUAL [cultural]
+  layon -> SARANA_RITUAL [cultural]
+
+S488: guna lebih mudah mengetahui makna secara simbolis dari eteh-eteh layon, berikut dapat dilihat pada tabel di bawah ini.
+  eteh-eteh -> SARANA_RITUAL [cultural]
+  layon -> SARANA_RITUAL [cultural]
+
+S494: intaran
+  intaran -> SARANA_RITUAL [cultural] (canonical: Daun Intaran)
+
+S500: kacip melati
+  kacip melati -> SARANA_RITUAL [cultural]
+
+S503: waja
+  waja -> SARANA_RITUAL [cultural] (canonical: Waja)
+
+S506: daun delem
+  daun delem -> SARANA_RITUAL [cultural]
+
+S512: daun terong
+  daun terong -> SARANA_RITUAL [cultural] (canonical: Daun Terong Polo)
+
+S515: daun teratai
+  daun teratai -> SARANA_RITUAL [cultural]
+
+S520: upakara ngaben
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S521: tetandingan banten upakara atiwa-tiwa sawa prakerti menurut yama tatwa adalah sebagai berikut:
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+  atiwa-tiwa -> RITUAL_KEMATIAN [cultural]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  yama -> ENTITAS_KEAGAMAAN [cultural]
+
+S523: dudonan upakara ring pengaskaran
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+  pengaskaran -> TAHAPAN_UPACARA [cultural]
+
+S524: palet i — sorohan banten pengeresikan/pabersihan
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  pabersihan -> TAHAPAN_UPACARA [cultural]
+
+S525: banten byokawon.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S526: banten tatebasan durmanggala.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  tatebasan -> SARANA_RITUAL [cultural]
+  durmanggala -> TAHAPAN_UPACARA [cultural]
+
+S527: banten tatebasan prayascita.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  tatebasan -> SARANA_RITUAL [cultural]
+  prayascita -> TAHAPAN_UPACARA [cultural]
+
+S528: banten pengilapan.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S529: lis bale gading.
+  lis -> SARANA_RITUAL [cultural]
+  bale gading -> BANGUNAN_RITUAL [cultural]
+
+S530: palet ii — sorohan banten munggah ring sanggah surya
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  sanggah -> BANGUNAN_RITUAL [cultural]
+  surya -> ENTITAS_KEAGAMAAN [cultural]
+
+S531: daksina dwang soroh.
+  daksina -> SARANA_RITUAL [cultural] (canonical: Daksina)
+  soroh -> SARANA_RITUAL [cultural]
+
+S532: suci asoroh.
+  asoroh -> SARANA_RITUAL [cultural]
+
+S533: banten peras.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  peras -> SARANA_RITUAL [cultural]
+
+S534: sodan/ajuman.
+  sodan -> SARANA_RITUAL [cultural]
+
+S536: banten sor surya (banten gelar sangga).
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  surya -> ENTITAS_KEAGAMAAN [cultural]
+  gelar sangga -> SARANA_RITUAL [cultural]
+
+S537: palet iii — sorohan banten ring ajeng sawa
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  ajeng -> Person [general]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S538: banten ayaban tumpeng solas utawi tumpeng selikur.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  tumpeng -> SARANA_RITUAL [cultural]
+
+S539: suci asoroh.
+  asoroh -> SARANA_RITUAL [cultural]
+
+S540: banten saji sakabuatan.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S541: banten panjang ilang mentah lan rateng.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S542: banten pengadang-ngadang.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S543: banten nasi angkeb.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  nasi angkeb -> SARANA_RITUAL [cultural]
+
+S544: bubur pirata.
+  bubur pirata -> SARANA_RITUAL [cultural]
+
+S546: sekar ura.
+  sekar ura -> SARANA_RITUAL [cultural] (canonical: Sekar Ura)
+
+S547: adegan sawa.
+  adegan -> SARANA_RITUAL [cultural] (canonical: Adegan)
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S548: palet iv — sorohan banten pemelaspas kajang
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  kajang -> SARANA_RITUAL [cultural] (canonical: Kajang)
+
+S549: banten ayaban tumpeng limang asoroh.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  tumpeng -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+
+S550: suci asoroh.
+  asoroh -> SARANA_RITUAL [cultural]
+
+S551: daksina gede asoroh.
+  daksina -> SARANA_RITUAL [cultural] (canonical: Daksina)
+  asoroh -> SARANA_RITUAL [cultural]
+
+S552: banten pemelaspas saha banten peras pemelaspas.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  peras -> SARANA_RITUAL [cultural]
+
+S553: kwangen dwalikur besik, rurub sinom, sekar ura.
+  kwangen -> SARANA_RITUAL [cultural] (canonical: Kwangen)
+  rurub sinom -> SARANA_RITUAL [cultural] (canonical: Rurub Sinom)
+  sekar ura -> SARANA_RITUAL [cultural] (canonical: Sekar Ura)
+
+S554: tatebasan pasupati.
+  tatebasan -> SARANA_RITUAL [cultural]
+  pasupati -> TAHAPAN_UPACARA [cultural]
+
+S555: palet v — sorohan banten pemerasan
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S556: banten ayaban tumpeng limang saha suci asoroh.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  tumpeng -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+
+S557: banten sorohan, jaja bantal, jaja pasung, sate, tipat sirikan masing-masing telung dasa telu.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  sorohan -> SARANA_RITUAL [cultural]
+  jaja bantal -> SARANA_RITUAL [cultural]
+  jaja pasung -> SARANA_RITUAL [cultural]
+
+S558: banten papegatan asoroh.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  asoroh -> SARANA_RITUAL [cultural]
+
+S559: sorohan banten ring ajeng sulinggih
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  ajeng -> Person [general]
+  sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+
+S560: banten pejati saha banten peras gede, suci asoroh.
+  banten pejati -> SARANA_RITUAL [cultural]
+  peras -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+
+S561: daksina gede asoroh.
+  daksina -> SARANA_RITUAL [cultural] (canonical: Daksina)
+  asoroh -> SARANA_RITUAL [cultural]
+
+S564: tirta
+  tirta -> TIRTHA_SUCI [cultural]
+
+S565: tirta penembak.
+  tirta -> TIRTHA_SUCI [cultural]
+
+S566: tirta pengentas.
+  tirta -> TIRTHA_SUCI [cultural]
+
+S567: tirta penyeeb.
+  tirta penyeeb -> TIRTHA_SUCI [cultural] (canonical: Tirta Penyeeb)
+
+S568: tirta pemerelina.
+  tirta pemerelina -> TIRTHA_SUCI [cultural]
+
+S571: sorohan banten tedun sawa
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S572: banten caru pengelambuk (caru siap brumbun) saha eedannya.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  caru pengelambuk -> SARANA_RITUAL [cultural]
+  caru siap brumbun -> SARANA_RITUAL [cultural]
+
+S574: dudonan banten ring tunon
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  tunon -> BANGUNAN_RITUAL [cultural]
+
+S575: banten pabyokawon.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S576: banten tatebasan durmenggala.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  tatebasan -> SARANA_RITUAL [cultural]
+
+S577: banten tatebasan prayascita.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  tatebasan -> SARANA_RITUAL [cultural]
+  prayascita -> TAHAPAN_UPACARA [cultural]
+
+S578: lis gede bale gading.
+  lis -> SARANA_RITUAL [cultural]
+  bale gading -> BANGUNAN_RITUAL [cultural]
+
+S579: banten pangulapan.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S580: banten pejati asoroh.
+  banten pejati -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+
+S581: suci asoroh jangkep.
+  asoroh -> SARANA_RITUAL [cultural]
+
+S582: banten peras gede.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  peras -> SARANA_RITUAL [cultural]
+
+S583: palet iii — sorohan banten sor surya
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  surya -> ENTITAS_KEAGAMAAN [cultural]
+
+S584: banten pejati saha banten gelar sangga.
+  banten pejati -> SARANA_RITUAL [cultural]
+  gelar sangga -> SARANA_RITUAL [cultural]
+
+S585: banten penebusan mentah lan rateng.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S586: daksina gede asoroh.
+  daksina -> SARANA_RITUAL [cultural] (canonical: Daksina)
+  asoroh -> SARANA_RITUAL [cultural]
+
+S587: salaran hidup.
+  salaran -> SARANA_RITUAL [cultural]
+
+S588: palet iv — sorohan banten ring ajeng sawa/puspalingga
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  ajeng -> Person [general]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  puspalingga -> SARANA_RITUAL [cultural] (canonical: Sekah)
+
+S589: banten ayaban tumpeng 11 utawi tumpeng 21.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  tumpeng -> SARANA_RITUAL [cultural]
+
+S590: suci asoroh jangkep.
+  asoroh -> SARANA_RITUAL [cultural]
+
+S591: banten saji sakabuatan.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S592: banten pengadang-adang.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S593: bubur pirata putih kuning lan nasi angkeb.
+  bubur pirata -> SARANA_RITUAL [cultural]
+  nasi angkeb -> SARANA_RITUAL [cultural]
+
+S595: pasucian lan rantasan.
+  pasucian -> TAHAPAN_UPACARA [cultural]
+  rantasan -> SARANA_RITUAL [cultural]
+
+S596: palet v — sorohan banten punyumpi areng
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S597: banten pejati asoroh.
+  banten pejati -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+
+S598: banten penyumpit areng.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S599: bulan pane aisiki, toya anyar, klunggah nyuh gading.
+  nyuh gading -> SARANA_RITUAL [cultural]
+
+S600: palet vi — sorohan banten eedan pangrekan puspalingga
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  eedan -> SARANA_RITUAL [cultural]
+  puspalingga -> SARANA_RITUAL [cultural] (canonical: Sekah)
+
+S601: banten pejati asoroh.
+  banten pejati -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+
+S603: kasa lan daun pisang kakikik (pisang bali/alas).
+  kasa -> KONSEP_HUKUM_ADAT [cultural]
+  bali -> Place [general]
+
+S604: kwangen dwalikur siki.
+  kwangen -> SARANA_RITUAL [cultural] (canonical: Kwangen)
+
+S605: pasucian, rurub sinom, klasa/tikeh.
+  pasucian -> TAHAPAN_UPACARA [cultural]
+  rurub sinom -> SARANA_RITUAL [cultural] (canonical: Rurub Sinom)
+
+S606: sasenden, carang dadap muang tebu angen nguyeg.
+  nguyeg -> TAHAPAN_UPACARA [cultural] (canonical: Nguyeg)
+
+S607: klunggah nyuh gading saha eedan puspalingga.
+  nyuh gading -> SARANA_RITUAL [cultural]
+  eedan -> SARANA_RITUAL [cultural]
+  puspalingga -> SARANA_RITUAL [cultural] (canonical: Sekah)
+
+S608: palet vii — banten ring tunon/pamuunan sawusang ngeseng
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  tunon -> BANGUNAN_RITUAL [cultural]
+
+S609: banten caru ayam brumbun.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S610: gelar sangga.
+  gelar sangga -> SARANA_RITUAL [cultural]
+
+S611: palet viii — banten penganyutan ke segara
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S612: pejati saha suci asoroh.
+  pejati -> SARANA_RITUAL [cultural] (canonical: Banten Pejati)
+  asoroh -> SARANA_RITUAL [cultural]
+
+S613: sodan/punjung putih kuning adulang.
+  sodan -> SARANA_RITUAL [cultural]
+  punjung putih kuning -> SARANA_RITUAL [cultural]
+
+S614: segehan manca warna asoroh.
+  asoroh -> SARANA_RITUAL [cultural]
+
+S615: palet ix — sorohan banten penyanggra
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S616: banten nuwur pakuluh ring merajan, paibon, panti, lan kawitan.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  nuwur -> TAHAPAN_UPACARA [cultural]
+  merajan -> BANGUNAN_RITUAL [cultural]
+  paibon -> BANGUNAN_RITUAL [cultural]
+  panti -> BANGUNAN_RITUAL [cultural]
+  kawitan -> KONSEP_FILOSOFIS [cultural]
+
+S617: banten nuwur pakuluh ring kahyangan tiga desa.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  nuwur -> TAHAPAN_UPACARA [cultural]
+  kahyangan tiga -> BANGUNAN_RITUAL [cultural]
+
+S618: banten atur piuning ring dalem, merajapati, lan panghulunin setra.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  piuning -> TAHAPAN_UPACARA [cultural]
+  merajapati -> BANGUNAN_RITUAL [cultural]
+  setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+
+S619: banten panuwur sulinggih.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+
+S620: banten gambelan lan sekehe santi, dan lainnya.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S621: catatan: yan jage nglanus utawi pacang nyekah, patut ngulapin / mamitan (makedas kedas) riin ring segara utawi ring genahe nganyut.
+  nyekah -> RITUAL_KEMATIAN [cultural] (canonical: Ngerorasin)
+  ngulapin -> TAHAPAN_UPACARA [cultural] (canonical: Ngulapin)
+  nganyut -> TAHAPAN_UPACARA [cultural] (canonical: Nganyut)
+
+S623: banten caru pekeludan inggih punika:
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S624: ring natah: caru ayam brumbun bebek belang kalung.
+  natah -> BANGUNAN_RITUAL [cultural]
+
+S625: ring merajan: caru ayam brumbum saha banten penyepuhan asoroh
+  merajan -> BANGUNAN_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  asoroh -> SARANA_RITUAL [cultural]
+
+S627: sorohan banten ngulapin / mamitang ring segara
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  ngulapin -> TAHAPAN_UPACARA [cultural] (canonical: Ngulapin)
+
+S628: banten pejati asoroh saha suci, sebagai upasaksi ring surya.
+  banten pejati -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+  upasaksi -> KONSEP_FILOSOFIS [cultural]
+  surya -> ENTITAS_KEAGAMAAN [cultural]
+
+S629: banten pangresikan, byokaon, durmanggala, prayascita, pangulapan.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  pangresikan -> TAHAPAN_UPACARA [cultural]
+  byokaon -> TAHAPAN_UPACARA [cultural]
+  durmanggala -> TAHAPAN_UPACARA [cultural]
+  prayascita -> TAHAPAN_UPACARA [cultural]
+
+S630: banten ayaban tumpeng lima saha suci asoroh.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  tumpeng -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+
+S631: banten panebusan mentah lan rateng saha salaran sejangkepnya.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  panebusan -> TAHAPAN_UPACARA [cultural]
+  salaran -> SARANA_RITUAL [cultural]
+
+S632: banten caru ayam selem saha gelar sangga.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  gelar sangga -> SARANA_RITUAL [cultural]
+
+S633: banten pengajeng sulinggih utawi pinandita.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+  pinandita -> ENTITAS_KEAGAMAAN [cultural] (canonical: Pemangku)
+
+S634: canang oyodan, rantasan, pasucian, penastan, cecepan.
+  canang -> SARANA_RITUAL [cultural]
+  oyodan -> SARANA_RITUAL [cultural]
+  rantasan -> SARANA_RITUAL [cultural]
+  pasucian -> TAHAPAN_UPACARA [cultural]
+
+S635: kwangen majinah 11 keteng angen lingga sang kaulapin.
+  kwangen -> SARANA_RITUAL [cultural] (canonical: Kwangen)
+
+S638: banten ngerorasin, nyekah, mamukur ("nyekah kurung")
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  ngerorasin -> TAHAPAN_UPACARA [cultural] (canonical: Ngerorasin)
+  nyekah -> RITUAL_KEMATIAN [cultural] (canonical: Ngerorasin)
+  mamukur -> RITUAL_KEMATIAN [cultural] (canonical: Ngerorasin)
+
+S639: rikalaning jaga ngawentenang karya penyekahan, patut karyanin dengan upacara nganget don bingin.
+  penyekahan -> TAHAPAN_UPACARA [cultural]
+  nganget don bingin -> TAHAPAN_UPACARA [cultural]
+
+S640: palet i — banten nganget don bingin
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  nganget don bingin -> TAHAPAN_UPACARA [cultural]
+
+S641: banten munggah ring surya: banten pejati saha suci asoroh.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  surya -> ENTITAS_KEAGAMAAN [cultural]
+  banten pejati -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+
+S642: banten pengeresikan, byokaon, durmenggala, prayascita, pengulapan.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  byokaon -> TAHAPAN_UPACARA [cultural]
+  prayascita -> TAHAPAN_UPACARA [cultural]
+  pengulapan -> SARANA_RITUAL [cultural]
+
+S643: banten tumpeng lima asoroh, suci asoroh, caru ayam brumbun asoroh, utawi manut desa mawacara.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  tumpeng -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+  desa mawacara -> KONSEP_HUKUM_ADAT [cultural]
+
+S644: banten papendakan, canang oyodan, canang tambur, kawas angen papendakan, utawi manut desa kala patra/desa mawacara.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  canang -> SARANA_RITUAL [cultural]
+  oyodan -> SARANA_RITUAL [cultural]
+  canang tambur -> SARANA_RITUAL [cultural]
+  desa kala patra -> KONSEP_HUKUM_ADAT [cultural]
+  desa mawacara -> KONSEP_HUKUM_ADAT [cultural]
+
+S645: eteh-etehnya: tiying gading angen ngalap/nganget don bingin; klasa/tikeh pandan berisi kasa; bokoran berisi kasa dua lembar putih kuning; tiyuk/lemat sudhamala; tatopong, genjer-genjer, kulambi, umbul-umbul tiga sampir, dan lainnya menurut dewa mawacara.
+  nganget don bingin -> TAHAPAN_UPACARA [cultural]
+  kasa -> KONSEP_HUKUM_ADAT [cultural]
+  dewa -> ENTITAS_KEAGAMAAN [cultural]
+
+S646: palet ii — banten manah toyo ning
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  manah -> KONSEP_FILOSOFIS [cultural]
+
+S647: soroh banten pengeresikan.
+  soroh -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S648: soroh banten surya.
+  soroh -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  surya -> ENTITAS_KEAGAMAAN [cultural]
+
+S649: soroh banten ayaban.
+  soroh -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S650: sorohan banten papendakan.
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S651: eteh-eteh/perangkatannya.
+  eteh-eteh -> SARANA_RITUAL [cultural]
+
+S652: toples/genah tirta, panah, dan lainnya menurut dresta.
+  tirta -> TIRTHA_SUCI [cultural]
+  dresta -> KONSEP_HUKUM_ADAT [cultural]
+
+S654: banten penyekahan
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  penyekahan -> TAHAPAN_UPACARA [cultural]
+
+S655: palet i — sorohan banten pengeresikan
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S656: banten byokaon.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  byokaon -> TAHAPAN_UPACARA [cultural]
+
+S657: banten tatebasan prayascita.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  tatebasan -> SARANA_RITUAL [cultural]
+  prayascita -> TAHAPAN_UPACARA [cultural]
+
+S658: banten tatebasan durmenggala.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  tatebasan -> SARANA_RITUAL [cultural]
+
+S659: banten pengulapan.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  pengulapan -> SARANA_RITUAL [cultural]
+
+S660: lis bale gading.
+  lis -> SARANA_RITUAL [cultural]
+  bale gading -> BANGUNAN_RITUAL [cultural]
+
+S661: padudusan alit asoroh saha catursari asoroh.
+  asoroh -> SARANA_RITUAL [cultural]
+  catursari -> SARANA_RITUAL [cultural]
+
+S662: palet ii — sorohan banten munggah ring sanggar surya
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  sanggar surya -> BANGUNAN_RITUAL [cultural]
+
+S663: suci dwang soroh jangkep.
+  soroh -> SARANA_RITUAL [cultural]
+
+S664: daksina gede asoroh.
+  daksina -> SARANA_RITUAL [cultural] (canonical: Daksina)
+  asoroh -> SARANA_RITUAL [cultural]
+
+S665: banten pejati asoroh.
+  banten pejati -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+
+S666: banten pras pengambyan.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S667: dewa dewi.
+  dewa -> ENTITAS_KEAGAMAAN [cultural]
+  dewi -> ENTITAS_KEAGAMAAN [cultural] (canonical: Devi)
+
+S668: tatebasan ardhanareswari, tatebasan sidhakarya.
+  tatebasan -> SARANA_RITUAL [cultural]
+
+S669: daksina lingga asoroh.
+  daksina -> SARANA_RITUAL [cultural] (canonical: Daksina)
+  asoroh -> SARANA_RITUAL [cultural]
+
+S670: catursari asoroh.
+  catursari -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+
+S671: banten pejati asoroh.
+  banten pejati -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+
+S672: banten gelar sangga asoroh.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  gelar sangga -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+
+S673: banten pagnian asoroh.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  asoroh -> SARANA_RITUAL [cultural]
+
+S674: palet iv — sorohan banten ring damar kurung
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  damar kurung -> SARANA_RITUAL [cultural] (canonical: Damar Kurung)
+
+S675: suci asoroh jangkep.
+  asoroh -> SARANA_RITUAL [cultural]
+
+S676: banten pejati asoroh.
+  banten pejati -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+
+S677: catursari asoroh.
+  catursari -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+
+S679: banten saji asele (jauman).
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S680: palet v — sorohan banten mapurwa daksina / nedungan bhatara lingga
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  daksina -> SARANA_RITUAL [cultural] (canonical: Daksina)
+  bhatara -> ENTITAS_KEAGAMAAN [cultural] (canonical: Bhatara)
+
+S681: banten pejati asoroh.
+  banten pejati -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+
+S682: banten ayaban tumpeng lima asoroh saha suci.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  tumpeng -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+
+S683: banten caru brumbun sejangkepnya.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S684: banten gelar sangga asoroh.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  gelar sangga -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+
+S685: banten angen mapurwa daksina (daksina gede berisi pejati lan suci asoroh).
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  daksina -> SARANA_RITUAL [cultural] (canonical: Daksina)
+  pejati -> SARANA_RITUAL [cultural] (canonical: Banten Pejati)
+  asoroh -> SARANA_RITUAL [cultural]
+
+S686: palet vi — sorohan banten ring arepan puspalingga
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  arepan -> SARANA_RITUAL [cultural]
+  puspalingga -> SARANA_RITUAL [cultural] (canonical: Sekah)
+
+S687: banten pejati, suci, catur pada asoroh ring lingga.
+  banten pejati -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+
+S688: banten suci, pejati, catur ring sangge.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  pejati -> SARANA_RITUAL [cultural] (canonical: Banten Pejati)
+  sangge -> SARANA_RITUAL [cultural]
+
+S689: banten catursari, asuci, pejati ring sekah.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  catursari -> SARANA_RITUAL [cultural]
+  pejati -> SARANA_RITUAL [cultural] (canonical: Banten Pejati)
+  sekah -> SARANA_RITUAL [cultural] (canonical: Sekah)
+
+S690: banten ayaban tumpeng selikur.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  tumpeng -> SARANA_RITUAL [cultural]
+
+S691: banten saji dwang soroh putih kuning magula pasir (untuk sangge lan puspalingga).
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  soroh -> SARANA_RITUAL [cultural]
+  sangge -> SARANA_RITUAL [cultural]
+  puspalingga -> SARANA_RITUAL [cultural] (canonical: Sekah)
+
+S692: banten sesayut pengideran limang soroh.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  sesayut -> SARANA_RITUAL [cultural]
+  soroh -> SARANA_RITUAL [cultural]
+
+S693: adegan/puspalingga.
+  adegan -> SARANA_RITUAL [cultural] (canonical: Adegan)
+  puspalingga -> SARANA_RITUAL [cultural] (canonical: Sekah)
+
+S694: pras arepan.
+  arepan -> SARANA_RITUAL [cultural]
+
+S695: tahenan.
+  tahenan -> SARANA_RITUAL [cultural]
+
+S696: kaklentingan.
+  kaklentingan -> SARANA_RITUAL [cultural]
+
+S697: rantasan seperadeg lan pasucian.
+  rantasan -> SARANA_RITUAL [cultural]
+  pasucian -> TAHAPAN_UPACARA [cultural]
+
+S698: dyuskamaliggi asoroh.
+  asoroh -> SARANA_RITUAL [cultural]
+
+S699: palet vii — sorohan banten ring ajeng sulinggih
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  ajeng -> Person [general]
+  sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+
+S700: daksina gede asoroh.
+  daksina -> SARANA_RITUAL [cultural] (canonical: Daksina)
+  asoroh -> SARANA_RITUAL [cultural]
+
+S701: banten pejati saha suci asoroh.
+  banten pejati -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+
+S702: banten pras.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S703: punia saka sidan.
+  punia -> KONSEP_HUKUM_ADAT [cultural]
+
+S705: palet viii — sorohan banten mamutru
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  mamutru -> TAHAPAN_UPACARA [cultural]
+
+S706: banten pras.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S707: punia.
+  punia -> KONSEP_HUKUM_ADAT [cultural]
+
+S709: palet ix — sorohan banten ngeliwet / makarya bubur
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S710: banten pejati asoroh.
+  banten pejati -> SARANA_RITUAL [cultural]
+  asoroh -> SARANA_RITUAL [cultural]
+
+S711: suci asoroh jangkep.
+  asoroh -> SARANA_RITUAL [cultural]
+
+S716: palet x — sorohan banten pangilen (menurut dewa mawacara)
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  dewa -> ENTITAS_KEAGAMAAN [cultural]
+
+S717: canang oyodan, canang tambur.
+  canang -> SARANA_RITUAL [cultural]
+  oyodan -> SARANA_RITUAL [cultural]
+  canang tambur -> SARANA_RITUAL [cultural]
+
+S718: banten papendakan (menurut desa kala patra).
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  desa kala patra -> KONSEP_HUKUM_ADAT [cultural]
+
+S719: puja pralina sekah, muspa sekah.
+  pralina -> TAHAPAN_UPACARA [cultural]
+  sekah -> SARANA_RITUAL [cultural] (canonical: Sekah)
+  muspa -> TAHAPAN_UPACARA [cultural]
+
+S720: palet xi — eteh-eteh ngesdeng sekah
+  eteh-eteh -> SARANA_RITUAL [cultural]
+  sekah -> SARANA_RITUAL [cultural] (canonical: Sekah)
+
+S721: sesenden untuk tempat ngeseng.
+  sesenden -> SARANA_RITUAL [cultural]
+
+S722: tebu satugel untuk nguyeg saha sidu ental.
+  nguyeg -> TAHAPAN_UPACARA [cultural] (canonical: Nguyeg)
+
+S723: klunggah nyuh gading berisi bablonyoh.
+  nyuh gading -> SARANA_RITUAL [cultural]
+
+S724: kamben sekah saha sekar sejangkepnya.
+  sekah -> SARANA_RITUAL [cultural] (canonical: Sekah)
+
+S726: saat ngadegang, banten rayunan putih kuning.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  rayunan -> SARANA_RITUAL [cultural]
+
+S727: palet xii — sorohan banten penyanggra
+  sorohan -> SARANA_RITUAL [cultural]
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S728: banten gambelan/gender dan lainnya.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S729: banten sekehe santi.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S730: banten panuwuran sulinggih dan lainnya.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+
+S731: banten nuwur tirta menurut yang diinginkan.
+  banten -> SARANA_RITUAL [cultural] (canonical: Banten)
+  nuwur -> TAHAPAN_UPACARA [cultural]
+  tirta -> TIRTHA_SUCI [cultural]
+
+S732: dan perangkatan lainnya menurut desa mawacara dan pengapti.
+  desa mawacara -> KONSEP_HUKUM_ADAT [cultural]
+
+S733: dalam upacara - upakara ngeroras/penyekahan, bilamana sekah lebih dari satu, upakara yang ditambahkan adalah: banten pejati, suci, catursari, adegan sekah, pras arepan, tahenan, kaklentingan, rantasan, pasucian, dan dyus kamaliggi, masing-masing pada puspalingga.
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+  penyekahan -> TAHAPAN_UPACARA [cultural]
+  sekah -> SARANA_RITUAL [cultural] (canonical: Sekah)
+  banten pejati -> SARANA_RITUAL [cultural]
+  catursari -> SARANA_RITUAL [cultural]
+  adegan -> SARANA_RITUAL [cultural] (canonical: Adegan)
+  arepan -> SARANA_RITUAL [cultural]
+  tahenan -> SARANA_RITUAL [cultural]
+  kaklentingan -> SARANA_RITUAL [cultural]
+  rantasan -> SARANA_RITUAL [cultural]
+  pasucian -> TAHAPAN_UPACARA [cultural]
+  puspalingga -> SARANA_RITUAL [cultural] (canonical: Sekah)
+
+S735: ngereka dilakukan setelah jenazah hangus menjadi abu, dengan urutan sebagai berikut:
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  abu -> SARANA_RITUAL [cultural]
+
+S737: puspa asti
+  puspa asti -> SARANA_RITUAL [cultural] (canonical: Puspa Asti)
+
+S738: puspa asti adalah abu yang diambil dengan mempergunakan sumpit/sepit, lalu dihancurkan/ditumbuk pada sebuah sesenden.
+  puspa asti -> SARANA_RITUAL [cultural] (canonical: Puspa Asti)
+  abu -> SARANA_RITUAL [cultural]
+  sesenden -> SARANA_RITUAL [cultural]
+
+S739: setelah hancur/halus, dimasukkan ke kelapa gading yang telah di kasturi dan diwujudkan menjadi puspa asti.
+  puspa asti -> SARANA_RITUAL [cultural] (canonical: Puspa Asti)
+
+S741: ngereka galih
+  ngereka galih -> TAHAPAN_UPACARA [cultural] (canonical: Ngereka Galih)
+
+S742: yaitu sisa pembakaran mayat berupa tulang/galih/abu (di luar bagian untuk puspa asti), yang dipungut dan dibersihkan, kemudian dibentuk seperti wujud manusia di atas sehelai tikar yang dilapisi kain sesuai peruntukannya, dilengkapi beberapa kwangen sebagai berikut:
+  abu -> SARANA_RITUAL [cultural]
+  puspa asti -> SARANA_RITUAL [cultural] (canonical: Puspa Asti)
+  kwangen -> SARANA_RITUAL [cultural] (canonical: Kwangen)
+
+S745: jumlah kwangen
+  kwangen -> SARANA_RITUAL [cultural] (canonical: Kwangen)
+
+S778: setelah semua selesai, dilakukan pembungkusan sebagaimana mestinya, berbentuk segi empat, lalu dinaikkan ke tandu yang telah disiapkan sebelumnya.
+  tandu -> SARANA_RITUAL [cultural]
+
+S780: dalam hal ini, puspa asti ditaruh pada balai selunglung atau dipangku oleh salah seorang keluarga; persembahyangan ini dipimpin oleh sulinggih.
+  puspa asti -> SARANA_RITUAL [cultural] (canonical: Puspa Asti)
+  balai selunglung -> SARANA_RITUAL [cultural]
+  sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+
+S781: selanjutnya, baik puspa asti maupun galih yang telah direka sebagai wujud manusia tersebut dihanyutkan ke segara atau ke sungai yang bermuara ke laut.
+  puspa asti -> SARANA_RITUAL [cultural] (canonical: Puspa Asti)
+
+S782: mengapa sawa (mayat) dibakar
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S783: mengapa sawa (mayat) dibakar tatkala melakukan pitra yadnya?
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+
+S784: sebelum pertanyaan itu dijawab dengan berbagai alasannya, maka ada baiknya terlebih dahulu saya kemukakan tentang pengertian pitra yadnya dan keberadaannya yang ber-bhinneka.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+
+S785: sebagaimana diketahui, pitra yadnya telah menjadi sebuah istilah bagi umat hindu di sini.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  hindu -> AGAMA [cultural]
+
+S786: istilah ini merupakan bagian dari panca yadnya.
+  panca yadnya -> RITUAL [cultural]
+
+S787: empat yadnya yang lain, yakni dewa yadnya, manusa yadnya, rsi yadnya dan butha yadnya.
+  yadnya -> KONSEP_FILOSOFIS [cultural]
+  dewa yadnya -> RITUAL [cultural]
+  manusa yadnya -> RITUAL [cultural]
+  rsi yadnya -> RITUAL [cultural]
+
+S788: pitra yadnya terdiri dari dua kata, yakni "pitra" dan "yadnya".
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+
+S789: secara harfiah, "pitra" berarti orangtua (ayah dan ibu).
+  pitra -> KONSEP_FILOSOFIS [cultural] (canonical: Pitra)
+
+S791: sedangkan kata "yadnya" berarti pengorbanan yang didasari hati yang tulus ikhlas nan suci.
+  yadnya -> KONSEP_FILOSOFIS [cultural]
+
+S792: jadi, "pitra yadnya" berarti pengorbanan yang dilandasi hati yang tulus suci kepada leluhur, terutama kepada orangtua.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+
+S796: begitu pulalah istilah pitra yadnya.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+
+S797: sebagai istilah, pitra yadnya memiliki arti tersendiri, yakni upacara keagamaan yang diadakan untuk menyelenggarakan atau nyangaskara jenazah atau roh keluarga yang meninggal dengan pelbagai sajen dan alat-alat upakara sebagai sarananya.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S798: demikianlah kurang lebih artinya dengan ditekankan secara kesusilaan supaya pihak penyelenggara bisa memandang, bahwa pengadaan berbagai sarana itu bukanlah pengorbanan suci yang merupakan swadharma (kewajiban) pribadinya semata-mata.
+  swadharma -> KONSEP_HUKUM_ADAT [cultural]
+
+S799: tegasnya, pitra yadnya sebagai istilah keagamaan hindu di bali, sasarannya cukup luas, yakni tidak hanya bagi roh orangtua atau leluhur, melainkan untuk segenap roh keluarga yang meninggal.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  hindu -> AGAMA [cultural]
+  bali -> Place [general]
+
+S800: namun ada pula maknanya yang sempit, yakni ia hanya bermaksud pengorbanan dalam bentuk upacara-upakara yang tidak merangkum pengorbanan dalam wujud lainnya.
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S801: pitra yadnya terdiri dari beberapa jenis yang pelaksanaannya ber-bhinneka.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+
+S803: hal itu disebabkan oleh kedatangan agama hindu ke bali tidak hanya sekali saja, melainkan bergelombang-gelombang dalam jarak puluhan bahkan ratusan tahun.
+  hindu -> AGAMA [cultural]
+  bali -> Place [general]
+
+S805: hal itu kita bisa lihat, betapa berbeda tata cara hidup beragamanya (termasuk aturan pitra yadnya) di sekitar danau batur (bangli), di daerah pegunungan, di sembiran (buleleng) dan sekitarnya, bila dibandingkan dengan tata cara hidup beragamanya umat hindu di dataran rendah pada umumnya.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  batur -> Place [general]
+  bangli -> Place [general]
+  buleleng -> Place [general]
+  hindu -> AGAMA [cultural]
+
+S806: tanpa mengurangi arti penting - dan sangat menarik - untuk dibahas, buku ini tidak menguraikan secara khusus pitra yadnya ala pegunungan itu.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+
+S807: saya hanya mengutarakan pitra yadnya secara umum, yang berlaku di sebagian besar masyarakat umat hindu di sini, terutama di dataran rendah.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  hindu -> AGAMA [cultural]
+
+S809: antara lain karena pitra yadnya yang dilakukan di dataran rendah inilah yang rupanya merupakan hasil penyempurnaan terakhir dari yang ening sira empu kuturan, dang hyang dwijendra, empu lutuk dan lain-lain.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  hyang -> KONSEP_FILOSOFIS [cultural]
+
+S810: sedangkan umat hindu di pegunungan, belum beranjak dari tradisinya yang lebih tua.
+  hindu -> AGAMA [cultural]
+
+S812: sebagaimana dinyatakan dalam sejarah, dang hyang nirartha (dang hyang dwijendra) sudah sekitar 400 tahun yang silam sudah menyebarkan pembaruan di bali, suatu usaha yang juga dilakukan empu kuturan jauh-jauh sebelumnya.
+  hyang -> KONSEP_FILOSOFIS [cultural]
+  bali -> Place [general]
+
+S813: namun dresta bali mula di udik belum juga terjamah dan mengadopsi ajaran dua empu besar itu.
+  dresta -> KONSEP_HUKUM_ADAT [cultural]
+  bali -> Place [general]
+
+S815: kedua empu itu bersikap: dipakai tidaknya sesuatu cara oleh sekelompok umat, mereka serahkan sepenuhnya pada sredaning manah, atau kemulusan hati masing-masing kelompok masyarakat tersebut.
+  sredaning manah -> KONSEP_FILOSOFIS [cultural]
+
+S816: karena bukankah pelaksanaan agama tanpa dilandasi sredaning manah adalah kemunafikan?
+  sredaning manah -> KONSEP_FILOSOFIS [cultural]
+
+S819: selintas telah disinggung, upacara pitra yadnya umumnya digelar oleh keluarga yang masih hidup untuk anggota keluarganya yang meninggal dunia.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+
+S820: melakukan pitra yadnya adalah swadharma alias kewajiban.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  swadharma -> KONSEP_HUKUM_ADAT [cultural]
+
+S822: tidak lain lantaran pitra yadnya itu sendiri merupakan suatu upacara keagamaan.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+
+S826: tradisi ini adalah suatu tugas suci, swadharma atau kewajiban yang mutlak, karena sudah merupakan utang.
+  swadharma -> KONSEP_HUKUM_ADAT [cultural]
+
+S835: bukankah, pada mulanya, ketika kita berada di cucupu (rahim) ibu, tubuh kita hanya sekadar dua sel yang teramat kecilnya?
+  cucupu -> KONSEP_FILOSOFIS [cultural]
+
+S847: tidak lain bahwa, pada hakikatnya stula sarira (jasad), setiap makhluk termasuk manusia adalah terdiri dari benda-benda yang sama saja asalnya dengan benda-benda isi alam semesta yang ada di sekitar kita.
+  stula sarira -> KONSEP_FILOSOFIS [cultural] (canonical: Sthula Sarira)
+
+S848: semuanya berasal dari unsur atau elemen yang sama, yakni pancamahabutha yang terdiri dari pratiwi (zat tanah, serba keras atau padat), apah (zat air atau yang cair), teja (zat panas dan cahaya), bayu (udara), dan akasa (ether).
+  pancamahabutha -> KONSEP_FILOSOFIS [cultural]
+  pratiwi -> KONSEP_FILOSOFIS [cultural]
+  apah -> KONSEP_FILOSOFIS [cultural]
+  teja -> KONSEP_FILOSOFIS [cultural]
+  bayu -> KONSEP_FILOSOFIS [cultural]
+  akasa -> KONSEP_FILOSOFIS [cultural]
+  ether -> KONSEP_FILOSOFIS [cultural]
+
+S849: dari pancamahabutha, kita memperoleh pinjaman zat-zat yang membuat kita hidup, hingga dari "mereka"-lah kita berhutang.
+  pancamahabutha -> KONSEP_FILOSOFIS [cultural]
+
+S850: kita berhutang selama pancamahabutha itu terakit wungkul berbentuk stula sarira (badan kasar) baik sewaktu masih hidup maupun setelah meninggal.
+  pancamahabutha -> KONSEP_FILOSOFIS [cultural]
+  stula sarira -> KONSEP_FILOSOFIS [cultural] (canonical: Sthula Sarira)
+
+S851: jelasnya, semasih pancamahabutha berwujud tubuh manusia termasuk setelah meninggal selaku sawa (jenazah), manusia "pemakai" lima unsur zat itu dinilai selaku pihak berhutang.
+  pancamahabutha -> KONSEP_FILOSOFIS [cultural]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S857: unsur-unsur stula sarira itu harus dikembalikan kepada pemiliknya atau asalnya semula, yakni sang pancamahabutha.
+  stula sarira -> KONSEP_FILOSOFIS [cultural] (canonical: Sthula Sarira)
+  pancamahabutha -> KONSEP_FILOSOFIS [cultural]
+
+S858: dengan kata lain, sawa harus secepatnya dihancurkan, hingga masing-masing unsurnya kembali menunggal dengan asalnya.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S860: adakah seseorang yang telah (baru) meninggal dapat berinisiatif mengembalikan bahan tubuhnya kepada sang pancamahabutha?
+  pancamahabutha -> KONSEP_FILOSOFIS [cultural]
+
+S865: apalagi kita telah berhutang jasa kepada orangtua atau leluhur yang telah "memberikan" kama bang dan kama petak yang kemudian menjadi tubuh kita.
+  kama bang -> KONSEP_FILOSOFIS [cultural]
+  kama petak -> KONSEP_FILOSOFIS [cultural]
+
+S867: inilah yang menjadi latar belakang adanya swadharma seorang anak untuk mengadakan pitra yadnya untuk orangtua atau leluhurnya.
+  swadharma -> KONSEP_HUKUM_ADAT [cultural]
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+
+S868: bila mau memberi rumus secara tata buku, kira-kira begini: setiap ego berutang kama bang dan kama petak pada orangtuanya.
+  kama bang -> KONSEP_FILOSOFIS [cultural]
+  kama petak -> KONSEP_FILOSOFIS [cultural]
+
+S869: orang tua berhutang unsur stula sarira pada pancamahabutha.
+  stula sarira -> KONSEP_FILOSOFIS [cultural] (canonical: Sthula Sarira)
+  pancamahabutha -> KONSEP_FILOSOFIS [cultural]
+
+S870: bila orangtua meninggal, keturunannya lah yang wajib membantu membakar (membayari hutang) stula sarira orang tuanya hingga kembali menunggal dengan pancamahabutha.
+  stula sarira -> KONSEP_FILOSOFIS [cultural] (canonical: Sthula Sarira)
+  pancamahabutha -> KONSEP_FILOSOFIS [cultural]
+
+S871: nah, lalu orang yang tergolong ekstrem rasional, mungkin berpendapat, bukankah sawa yang dibiarkan melalui proses pembusukan alamiah akan kembali jua ke asalnya, meski lebih lambat?
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S877: lebih-lebih dalam menyelenggarakan upacara untuk jenazah, yang ada kaitannya dengan jiwa mendiang (yang bernilai gaib dan halus).
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S879: untuk itu, ditentukan satu tata upacara dengan pelbagai upakara dan acaranya: jangankan acara yang ada kaitannya dengan kegaiban (jiwa), sedang untuk soal soal yang sekuler duniawi biasa pun, sangat diperlukan adanya tata upacara, demi adanya rasa kemantapan, rasa sah atau legalnya sesuatu.
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S881: jadi begitulah dalam pitra yadnya, dilakukan dengan berbagai upacara dan upakara yang mengandung arti simbolik.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S882: upacara dan upakara itu sangat penting, bahkan beberapa di antaranya sangat esensial yang tidak dapat ditiadakan.
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S884: dalam pitra yadnya, tingkat usia orang yang meninggal menentukan jenis upacara dan upakara yang berlaku.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S888: jadi, ada empat jenis tingkat usia yang merupakan dasar pokok penentuan tata upacara dan upakara pitra yadnya itu.
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+
+S891: sang bayi yang tadinya menghuni gua garbha atau cucupu manik (rahim) ibu, begitu lahir tidak langsung diterima secara formal.
+  gua garbha -> KONSEP_FILOSOFIS [cultural]
+  cucupu manik -> KONSEP_FILOSOFIS [cultural]
+
+S893: dengan kalimat lain, secara formal religius ia masih dinilai makhluk suci selaku warga cucupu.
+  cucupu -> KONSEP_FILOSOFIS [cultural]
+
+S894: karena itu, pada usia tersebut ia belum diberi nama, tidak dikenai upakara apapun bagi dirinya.
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S895: namun kalau toh sering dibuatkan upakara (sesajen) sehubungan dengan kelahirannya, semua itu tidak boleh langsung tertuju pada dirinya.
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+  sesajen -> SARANA_RITUAL [cultural]
+
+S896: upakara itu, hanyalah bertujuan untuk mensucikan ibu dan bagi sanak catur, empat "teman" yang menyertai sang bayi lahir seperti ari-ari dan sebagainya.
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+  ari-ari -> SARANA_RITUAL [cultural]
+
+S897: upakara itu juga penyucian bagi pihak lain yang ikut ambil bagian saat bayi itu dilahirkan.
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S898: selain itu, sesajen yang dihaturkan itu tertuju kepada ida bhatara kumara yang diyakini sebagai "mengasuh" bayi tersebut.
+  sesajen -> SARANA_RITUAL [cultural]
+  ida bhatara kumara -> ENTITAS_KEAGAMAAN [cultural]
+
+S899: bila sajen dapetan dan sesajen lain yang kalau ditujukan kepada manusia dewasa diayab oleh orangnya, maka untuk bayi yang berusia sebelum 105 hari, sajen itu hanya diayab (ditujukan) kepada bhatara mahyang, alias kepada atma leluhur yang berinkarnasi pada bayi tersebut.
+  dapetan -> SARANA_RITUAL [cultural]
+  sesajen -> SARANA_RITUAL [cultural]
+  bhatara mahyang -> ENTITAS_KEAGAMAAN [cultural]
+  atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+
+S902: si bayi juga tidak diperciki tirtha, tidak kena tepung tawar dan sebagainya.
+  tirtha -> TIRTHA_SUCI [cultural]
+
+S904: bayi itu selaku dan dinilai sejajar dengan dewa, jadi masih suci murni.
+  dewa -> ENTITAS_KEAGAMAAN [cultural]
+
+S906: berdasarkan semua itu, bila si jabang bayi meninggal semasih dalam kandungan, atau saat lahir sebelum tali pusat dipotong, ada yang memakai tradisi membiarkan ari-ari tetap menunggal (membiarkan menjadi satu) dengan jasad sang bayi.
+  jabang bayi -> KONSEP_FILOSOFIS [cultural]
+  ari-ari -> SARANA_RITUAL [cultural]
+
+S907: namun bila saat lahir masih hidup dan meninggal setelah tali pusatnya dipotong, maka dengan atau tanpa ari-ari, jasad bayi tersebut dibungkus dengan kain putih setelah dimandikan.
+  ari-ari -> SARANA_RITUAL [cultural]
+  kain putih -> SARANA_RITUAL [cultural]
+
+S909: tanpa peti dan tanpa upakara apapun.
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S911: jenazah bayi tersebut, dikubur begitu saja, tanpa perlu memilih dewasa ayu (hari baik).
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  dewasa ayu -> KONSEP_HUKUM_ADAT [cultural]
+
+S912: begitu dikubur, selesailah sudah pitra yadnya bagi si bayi tersebut.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+
+S913: bukankah atmanya adalah dewa dan masih suci murni laksana air?
+  dewa -> ENTITAS_KEAGAMAAN [cultural]
+
+S915: dalam beberapa hal, tata upacaranya sama dengan bayi yang belum kepus pungsed, misalnya tidak perlu memilih hari baik, tidak perlu ada upakara.
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S916: kalau ada sesajen, sasaran sesajen itu tidak tertuju kepadanya.
+  sesajen -> SARANA_RITUAL [cultural]
+
+S917: namun lantaran telah pernah ada upacara bertalian dengan kelahirannya, maka perlu dibuatkan acara ala kadarnya antara lain, jenazah dibungkus kain putih setelah dimandikan.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  kain putih -> SARANA_RITUAL [cultural]
+
+S919: namun jenazah itu tidak langsung dimasukkan ke dalam peti.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S920: melainkan baru dimasukkan ke dalam peti di kuburan menjelang penguburan.
+  kuburan -> BANGUNAN_RITUAL [cultural]
+  penguburan -> TAHAPAN_UPACARA [cultural]
+
+S921: upacara lain, yaitu ngeluhurang bhatara kumara, atau mempersilakan dewa pengasuh bayi kembali ke kahyangan, karena yang diasuh telah tiada.
+  bhatara -> ENTITAS_KEAGAMAAN [cultural] (canonical: Bhatara)
+  dewa -> ENTITAS_KEAGAMAAN [cultural]
+
+S922: selain itu ada upacara mempersilakan sanak catur agar kembali bersama sang bayi ke gua garbha ibunya.
+  gua garbha -> KONSEP_FILOSOFIS [cultural]
+
+S923: saat berangkat ke kuburan, jenazah di momong, diiringi peti di sampingnya.
+  kuburan -> BANGUNAN_RITUAL [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S924: di kuburan, dengan upacara sederhana, pengantar jenazah mohon tempat kepada sedahan setra dan hyang prajapati, sebagai penguasa kuburan.
+  kuburan -> BANGUNAN_RITUAL [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+  hyang -> KONSEP_FILOSOFIS [cultural]
+  prajapati -> ENTITAS_KEAGAMAAN [cultural]
+
+S925: setelah itu, jenazah dimasukkan ke dalam peti kayu, kemudian di kuburan tanpa upakara apapun yang tertuju langsung kepadanya.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  kuburan -> BANGUNAN_RITUAL [cultural]
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S926: maka selesailah pitra yadnya untuk bayi tersebut.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+
+S930: yang dimaksudkan di sini bukan bulan kalender, bukan bulan purnama-tilem, melainkan bulan pawukon.
+  purnama -> KONSEP_HUKUM_ADAT [cultural]
+  tilem -> KONSEP_HUKUM_ADAT [cultural]
+
+S936: pertama, ada sebagian acara yang digelar di depan pamrajan rong tiga.
+  pamrajan rong tiga -> BANGUNAN_RITUAL [cultural]
+
+S937: upacara ini bertujuan untuk atur uning (memberitahukan) sekaligus "mendaftarkan" kepada hyang guru, bahwa dalam lingkungan rumah tangga bersangkutan telah ada tambahan warga baru selaku keturunannya yang ikut memohon perlindungan-nya.
+  hyang -> KONSEP_FILOSOFIS [cultural]
+
+S944: dan setelah bayi tersebut berusia 105 hari, saat itu pulalah anak tersebut mulai berpisah dengan bajang-bajang (kawan pengasuhnya semula ketika anak tersebut berada dalam cucupu) yakni bajang pusuh, blego buki dan sebagainya.
+  bajang -> KONSEP_FILOSOFIS [cultural]
+  cucupu -> KONSEP_FILOSOFIS [cultural]
+
+S945: ketiga, dengan tekep guungan.
+  tekep guungan -> SARANA_RITUAL [cultural]
+
+S950: pada saat inilah, sang anak baru pertama kali diberi sasaran upakara, misalnya mulai kena tepung tawar, tirtha (air suci), ngayab dan sebagainya.
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+  tirtha -> TIRTHA_SUCI [cultural]
+
+S951: sajen pokok yang diayabkan kepadanya, yakni terutama sajen penyambutan yang selalu disertai beberapa sajen kecil yang disebut "tulung" selaku honorarium bagi anggota keluarga yang telah membantunya.
+  tulung -> SARANA_RITUAL [cultural]
+
+S954: karena anak tersebut belum dibebani tanggungjawab atas akibat prilakunya (mungkin sama dengan belum cakap hukum), maka hukum karma belum berlaku bagi dirinya.
+  karma -> KONSEP_FILOSOFIS [cultural]
+
+S955: ciri-cirinya adalah, bayi tersebut tak perlu ikut ngayab abaya kala atau mabiakaonan dan tetebasan.
+  tetebasan -> TAHAPAN_UPACARA [cultural]
+
+S956: nah, bila sang bayi setelah berusia 105 hari atau lebih (sebelum gigi susunya tanggal) meninggal dunia, maka bentuk pitra yadnyanya adalah sebagai berikut:
+  pitra -> KONSEP_FILOSOFIS [cultural] (canonical: Pitra)
+
+S957: pertama-tama jenazah bayi tersebut dimandikan dengan air biasa di atas dusa (balai-balai khusus pemandian jenazah) di natar rumah.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S958: setelah bersih, jenazah bayi tersebut dimandikan dengan air kumkuman (air yang diberi serbuk cendana dan kembang serba harum).
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  kumkuman -> TIRTHA_SUCI [cultural]
+
+S959: sawa ini belum, bahkan tak wajar diberi ramuan eteh-eteh pangeringkes.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  eteh-eteh -> SARANA_RITUAL [cultural]
+
+S960: hanya cukup dadanya diisi sebuah kwangen dengan dua atau 11 uang kepeng sebagai sesarinya.
+  kwangen -> SARANA_RITUAL [cultural] (canonical: Kwangen)
+  kepeng -> SARANA_RITUAL [cultural]
+
+S961: sawa itu kemudian dibungkus dengan kain putih dan diikat dengan benang leleson, dibelit sebelas kali dari hulu ke kaki.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  kain putih -> SARANA_RITUAL [cultural]
+
+S962: arah belitan, baik kain pembungkus maupun benang pengikat adalah dari kanan ke kiri bila sawa itu pria.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S963: sedangkan bila sawa itu wanita, maka arah belitan sebaliknya, yakni dari kiri ke kanan.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S964: setelah terbungkus, sawa tersebut digotong ke balai-balai rumah adat.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S966: keluarga duka lalu menyuguhkan punjung, dan sesaji sederhana yang diletakkan di sebelah kanan sawa.
+  sesaji -> SARANA_RITUAL [cultural]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S967: karena sawa tersebut telah berkedudukan selaku sawa dewasa, maka dalam batas tertentu penyelesaiannya disesuaikan dengan ketentuan dewasa ayu atau hari baik.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  dewasa ayu -> KONSEP_HUKUM_ADAT [cultural]
+
+S968: misalnya, penguburan atau pembakaran mayat tidak boleh dilakukan pada hari raya, purnama, tilem, odalan di kahyangan tiga.
+  penguburan -> TAHAPAN_UPACARA [cultural]
+  purnama -> KONSEP_HUKUM_ADAT [cultural]
+  tilem -> KONSEP_HUKUM_ADAT [cultural]
+  odalan -> RITUAL [cultural]
+  kahyangan tiga -> BANGUNAN_RITUAL [cultural]
+
+S969: bagi sawa seusia ini, pada penguburan atau pembakarannya dipercikkan air suci yang disebut tirtha panglepas rare atau tirtha pangentas yang dibuat dari air klungah nyuh gading (klungah adalah kelapa yang lebih muda dari kelapa muda/kuud).
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  penguburan -> TAHAPAN_UPACARA [cultural]
+  tirtha panglepas rare -> TIRTHA_SUCI [cultural]
+  tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas)
+  klungah -> SARANA_RITUAL [cultural]
+  nyuh gading -> SARANA_RITUAL [cultural]
+
+S970: tentu saja tirtha tersebut dimohon dari seorang sulinggih menurut tata cara betapa mestinya.
+  tirtha -> TIRTHA_SUCI [cultural]
+  sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+
+S971: karena tirtha tersebut dibuat dari klungah, maka pitra yadnya jenis ini dinamakan pula nglungah.
+  tirtha -> TIRTHA_SUCI [cultural]
+  klungah -> SARANA_RITUAL [cultural]
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  nglungah -> RITUAL_KEMATIAN [cultural]
+
+S972: menurut ketentuan, sebagaimana tertulis dalam beberapa lontar, hanya sawa anak yang telah berusia lima bulan ke atas boleh atau sebaiknya dibakar dalam pitra yadnya nglungah ini.
+  lontar -> NASKAH_SUCI [cultural]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  nglungah -> RITUAL_KEMATIAN [cultural]
+
+S973: abunya kemudian dimasukkan ke dalam klungah nyuh gading (kelapa kuning).
+  klungah -> SARANA_RITUAL [cultural]
+  nyuh gading -> SARANA_RITUAL [cultural]
+
+S974: setelah disuguhkan sesaji sederhana, abu itu dihanyutkan ke laut atau ke sungai.
+  sesaji -> SARANA_RITUAL [cultural]
+  abu -> SARANA_RITUAL [cultural]
+
+S975: tapi bila sawa di bawah usia lima bulan, sawanya hanya ditanam setelah dipercikkan tirtha pangentas.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas)
+
+S976: perlu ditegaskan, sehubungan dengan sawa tersebut adalah "sawa seseorang", artinya sudah diperlakukan sebagai sawa dewasa, maka untuk pitra yadnyanya dimohon pula tirtha dari pamrajan atau sanggahnya (pura keluarga).
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  pitra -> KONSEP_FILOSOFIS [cultural] (canonical: Pitra)
+  tirtha -> TIRTHA_SUCI [cultural]
+  pamrajan -> BANGUNAN_RITUAL [cultural]
+  pura -> BANGUNAN_RITUAL [cultural]
+
+S977: pura kahyangan tiga, pura pangulun setra atau prajapati dan beberapa pura lainnya.
+  pura kahyangan tiga -> BANGUNAN_RITUAL [cultural]
+  setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+  prajapati -> ENTITAS_KEAGAMAAN [cultural]
+
+S978: tirtha ini dipercikkan sebelum tirtha pangentas pada saat menjelang penguburan atau pembakaran sawa.
+  tirtha -> TIRTHA_SUCI [cultural]
+  tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas)
+  penguburan -> TAHAPAN_UPACARA [cultural]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S979: pada pitra yadnya nglungah ini, tidak usah dilanjutkan dengan upacara atma wedana (mamukur) yang bertujuan untuk menyucikan jiwa atau rohnya.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  nglungah -> RITUAL_KEMATIAN [cultural]
+  atma wedana -> RITUAL_KEMATIAN [cultural] (canonical: Ngerorasin)
+  mamukur -> RITUAL_KEMATIAN [cultural] (canonical: Ngerorasin)
+
+S980: sebab, mendiang hanyalah seorang kanak-kanak.
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S982: sedang jiwanya, menurut keyakinan, belum wajar dibebani tanggung jawab karma pala.
+  karma -> KONSEP_FILOSOFIS [cultural]
+
+S983: itulah sebabnya, pitra yadnya bagi dirinya hanyalah untuk sawa atau stula sarira (badan kasarnya) saja.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  stula sarira -> KONSEP_FILOSOFIS [cultural] (canonical: Sthula Sarira)
+
+S984: bukankah jiwa kanak-kanak dinilai masih suci, belum diliputi dosa, sehingga belum dilekati karma pala?
+  karma -> KONSEP_FILOSOFIS [cultural]
+
+S987: bila gigi susunya telah tanggal anak tersebut meninggal - misalnya baru berusia tujuh tahun - maka pitra yadnya yang dilakukan sama dengan upacara yang harus dilakukan untuk orang dewasa atau orang tua renta.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+
+S989: karena menurut pandangan hindu, seorang anak yang giginya sudah mulai tanggal, sudah mulai dinilai selaku "orang" atau manusia dalam kadar sepenuhnya.
+  hindu -> AGAMA [cultural]
+
+S992: ia mulai dibebani tanggungjawab karma pala, sudah mulai terkena dosa.
+  karma -> KONSEP_FILOSOFIS [cultural]
+
+S993: jelasnya, jiwanya mulai dilekati akibat perbuatannya (subha asubha karma).
+  subha asubha karma -> KONSEP_FILOSOFIS [cultural]
+
+S994: demikian pula upacara otonannya (upacara hari kelahiran) tidak lagi memakai penyambutan, melainkan diganti dengan tetebasan dan biakaonan atau disebut pula biakala.
+  tetebasan -> TAHAPAN_UPACARA [cultural]
+  biakaonan -> TAHAPAN_UPACARA [cultural]
+  biakala -> TAHAPAN_UPACARA [cultural]
+
+S997: tetebasan dipakai pada saat upacara otonan, mengandung makna bahwa anak tersebut hendaknya menebus segala dosanya.
+  tetebasan -> TAHAPAN_UPACARA [cultural]
+  otonan -> RITUAL [cultural]
+
+S998: sedangkan dengan biakaonan atau biakala mengandung arti, bahwa anak tersebut harus berusaha membebaskan hati dan jiwa dari pengaruh sang kala.
+  biakaonan -> TAHAPAN_UPACARA [cultural]
+  biakala -> TAHAPAN_UPACARA [cultural]
+
+S999: begitulah upacara manusa yadnya (otonan) seseorang sejak mulai giginya tanggal sampai tua renta.
+  manusa yadnya -> RITUAL [cultural]
+  otonan -> RITUAL [cultural]
+
+S1000: bagaimana pelaksanaan pitra yadnya bagi sawa pada usia ini?
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1002: mreteka sawa
+  mreteka sawa -> RITUAL_KEMATIAN [cultural]
+
+S1003: pelaksanaan pitra yadnya bagi sawa yang giginya sudah tanggal pada dasarnya dapat dibagi dua tahap, yakni tahap penyelenggaraan sawa dan tahap penyelenggaraan jiwa-atma.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+
+S1004: tahap penyelenggaraan sawa ini dinamakan mreteka sawa.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  mreteka sawa -> RITUAL_KEMATIAN [cultural]
+
+S1005: upacara ini sering pula disebut atiwa-tiwa atau malebu.
+  atiwa-tiwa -> RITUAL_KEMATIAN [cultural]
+
+S1006: nama yang lebih populer lagi adalah ngaben.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S1008: bukankah "lebu" berarti abu?
+  abu -> SARANA_RITUAL [cultural]
+
+S1009: demikian pula istilah "ngaben" punya akar "abu", sehingga searti dengan istilah malebu dengan segala perubahannya.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  abu -> SARANA_RITUAL [cultural]
+
+S1010: kata "abu" setelah mendapat pengiring (akhiran) "an" menjadi "abuan" yang kalau "disandikan" menjadi "abon" (sebagaimana pula kata "bebatuan" menjadi "bebaton", "cecaruan" menjadi "cecaron", "keratuan" menjadi "keraton").
+  abu -> SARANA_RITUAL [cultural]
+
+S1011: dengan mendapat penganter anu suara "abon" berubah menjadi "ngabon." dengan eras onek (meta-tesis) untuk lebih menghaluskan arti, "ngabon” menjadi “ngaben." mari kita bandingkan beberapa kata yang mendapat eras-onek sejenis untuk memperhalus arti, yakni"metakon" menjadi "metaken", "ngongkon" menjadi "ngengken," "durung" menjadi "dereng" dan sebagainya.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S1012: sawa dibakar
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1013: memang sesuai dengan kenyataan yang terlihat, upacara ngaben, umumnya dilakukan dengan membakar sawa sehingga menjadi abu.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  abu -> SARANA_RITUAL [cultural]
+
+S1014: namun hakikat tujuannya tidak sekadar sampai hanya menjadi abu.
+  abu -> SARANA_RITUAL [cultural]
+
+S1015: abu hanyalah wujud sekala (lahiriah) semata.
+  abu -> SARANA_RITUAL [cultural]
+  sekala -> KONSEP_FILOSOFIS [cultural]
+
+S1016: secara niskala (batiniah) ngaben bertujuan untuk memusnahkan segenap jasad sawa sehalus-halusnya, sehingga wujud sawa dari benda yang wungkul menjadi unsur, elemen atau mahabutha, yakni asal materi yang jauh lebih halus dari pada benda, lebih halus dari abu.
+  niskala -> KONSEP_FILOSOFIS [cultural]
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  mahabutha -> KONSEP_FILOSOFIS [cultural]
+  abu -> SARANA_RITUAL [cultural]
+
+S1017: terutama semua mahabutha yang lima unsur itu, kembali kepada induk asalnya masing-masing.
+  mahabutha -> KONSEP_FILOSOFIS [cultural]
+
+S1018: dengan musnahnya benda-benda jasad menjadi mahabutha, maka hilanglah daya kekuatannya untuk mengikat segala jenis kemampuan manusia (dasendria, dasa bayu, manah, budi, ah-angkara dan sebagainya).
+  mahabutha -> KONSEP_FILOSOFIS [cultural]
+  dasendria -> KONSEP_FILOSOFIS [cultural]
+  dasa bayu -> KONSEP_FILOSOFIS [cultural]
+  manah -> KONSEP_FILOSOFIS [cultural]
+
+S1019: dengan tiadanya daya ikatan itu, hampir hilang pulalah "aku" mendiang.
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1020: maka dapatlah sang atma untuk bebas berjalan ke alam lain betapa mestinya..
+  atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+
+S1021: selain itu dengan hilangnya benda-benda jasad selaku pengikatnya karena berubah wujud dari benda menjadi unsur mahabutha dengan berbagai jenis upakara selaku sarana simboliknya maka kemanunggalan bekas diri mendiang pun dipisah-pisahkan pula secara religius, hingga hilanglah "sang aku" (ego) yang tadinya bertengger pada orang yang bersangkutan.
+  mahabutha -> KONSEP_FILOSOFIS [cultural]
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1022: dengan demikian, dapatlah sang atma secara bebas menuju alam lain yang sewajarnya.
+  atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+
+S1023: memang alangkah peliknya makna hakiki ngaben yang kita lakukan.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S1024: sebagaimana pula diketahui, upacara itu selalu pula diiringi tujuan tambahan, misalnya permohonan kepada tuhan yang maha pengampun agar mendiang diberi ampun.
+  tuhan -> ENTITAS_KEAGAMAAN [cultural]
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1025: selain itu adanya bhakti atau salam akhir dari anak cucu yang ditinggalkan, ada serah terima tugas kemasyarakatan dari mendiang kepada ahli warisnya, diampuninya kesalahan mendiang oleh masyarakat yang ditinggal, dan banyak lagi yang sebaiknya nanti diuraikan secara lebih jelas pada pembahasan berikutnya.
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1026: dua tahap mreteka sawa
+  mreteka sawa -> RITUAL_KEMATIAN [cultural]
+
+S1027: upacara mreteka sawa ini bukanlah dilakukan sekali jadi dan upacara ngaben-nya sendiri.
+  mreteka sawa -> RITUAL_KEMATIAN [cultural]
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S1028: upacara pendahuluannya tidak upacara ini terdiri dari dua bagian, yakni upacara pendahuluan lain adalah upacara tingkat awal sebelum upacara ngaben.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S1030: begitu seseorang diketahui meninggal, sawa dibaringkan begitu rupa, yakni tubuhnya ditelentangkan tengadah dan diusahakan selurus-lurusnya dari kepala ke kaki.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1032: mulut jenazah dikatupkan rapat-rapat, kelopak matanya diurut-urut hingga terpejam sempurna.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1033: setelah itu, sawa "dirurubi" (ditutup) kain putih sampai tak tampak sedikitpun.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  kain putih -> SARANA_RITUAL [cultural]
+
+S1034: jenazah itu dibaringkan di bale adat (bila ada) dan sebaiknya pula diberi langse (tirai) secukupnya.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  bale adat -> BANGUNAN_RITUAL [cultural]
+  langse -> SARANA_RITUAL [cultural]
+
+S1035: punjung yakni nasi dengan lauk pauk sebagaimana bentuk penganan orang hidup diletakkan di sebelah kanan jenazah dan mendiang "dipersilakan menikmati" hidangan itu.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1036: sementara itu, air dan sabun untuk memandikan sawa disiapkan.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1038: ini bukan untuk penganan, melainkan guna diambil minyak bekas gorengan itu seperlunya untuk sarana memijat sekujur tubuh jenazah nantinya, agar segenap otot untuk beberapa jam tetap lentur, tidak cepat kaku dan kejang.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1039: setelah semuanya itu siap, jenazah pun dimandikan di atas balai-balai rumah adat.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1040: cara memandikan, yakni, mula-mula tikar alas jenazah ditarik, sehingga sawa berada di atas galar.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  galar -> SARANA_RITUAL [cultural]
+
+S1042: tapi sebelum dimandikan, tubuh jenazah dipijat-pijat dengan minyak goreng bekas tadi.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1045: setelah tubuh jenazah dikeringkan, tikar kembali digelar.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1046: tubuh jenazah dibaringkan lagi seperti semula.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1050: alangkah mengerikan seandainya mulut jenazah menganga.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1051: demikianlah, setelah jenazah ditutup kembali dengan kain putih, langse (tirai) bale adat kembali ditutup.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  kain putih -> SARANA_RITUAL [cultural]
+  langse -> SARANA_RITUAL [cultural]
+  bale adat -> BANGUNAN_RITUAL [cultural]
+
+S1052: itulah tindakan tahap awal, untuk menunggu acara pangringkesan atau pagulungan atau disebut pula nyaputin yang pembuatan upakaranya bisa memakan waktu lima sampai enam jam meski telah dibantu anggota banjar secara bergotong - royong.
+  pangringkesan -> TAHAPAN_UPACARA [cultural]
+  nyaputin -> TAHAPAN_UPACARA [cultural] (canonical: Ngeringkes)
+  banjar -> STRUKTUR_SOSIAL_ADAT [cultural] (canonical: Banjar)
+
+S1054: beberapa desa adat belakangan ini, mulai bertindak lebih maju, tentu setelah mendapat restu dari pendeta, yakni tidak memilih dewasa ayu (hari baik), asal tidak bertepatan dengan rerainan jagat.
+  dewasa ayu -> KONSEP_HUKUM_ADAT [cultural]
+
+S1055: sebelum pelaksanaan pangringkesan, terlebih dahulu, di pelataran rumah disiapkan pepaga (tandu bambu yang ditopang tiang rendah).
+  pangringkesan -> TAHAPAN_UPACARA [cultural]
+  pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga)
+  tandu -> SARANA_RITUAL [cultural]
+
+S1056: pepaga ini berfungsi sebagai balai-balai alas memandikan jenazah dan ngringkes.
+  pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga)
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1057: pepaga itu membujur dengan berkiblat timur-barat.
+  pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga)
+
+S1058: di atas pepaga itu dipasang secarik kain putih selaku "leluhur" atau langit-langit tandu tersebut.
+  pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga)
+  kain putih -> SARANA_RITUAL [cultural]
+  tandu -> SARANA_RITUAL [cultural]
+
+S1059: di balai-balai bambu itu, digelar daun pisang saba (pisang kepok) yang berfungsi sebagai tikar alas jenazah.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1060: setelah jenazah dipindahkan dari rumah adat ke pepaga, kain penutup dibuka.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga)
+
+S1062: keluarga yang lebih muda atau keturunannya menutup alat vital jenazah dengan secarik kain putih.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  kain putih -> SARANA_RITUAL [cultural]
+
+S1063: kemudian dengan diiringi lantunan kekawin khusus, jenazah pun dimandikan beramai-ramai.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1064: sekujur tubuh jenazah digosok dengan berbagai ramuan yang khas.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1065: kemudian jenazah diangkat seperlunya untuk meluluskan masuknya tikar dan kain putih pangringkes yang dibentang di bawah jasad tersebut.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  kain putih -> SARANA_RITUAL [cultural]
+
+S1066: jenazah ditelentangkan di atas pembungkus itu, serta mulailah diberi berbagai sarana simbolik pangringkesan, antara lain sesisir pisang selaku kalang bahu.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  pangringkesan -> TAHAPAN_UPACARA [cultural]
+
+S1068: pada mata, alis, telinga, tiap-tiap ruas tulang, persendian, aurat dan sebagainya, diletakkan beraneka jenis sarana, termasuk cincin permata yang dimasukkan ke dalam mulut jenazah.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1069: hal ini diyakini, bahwa cincin yang disebut monmon itu merupakan sarana untuk meredam bau di kala terjadi pembusukan.
+  monmon -> SARANA_RITUAL [cultural]
+
+S1070: tentu saja dalam tahap ini, tidak boleh dilupakan memercikkan tirtha pangringkesan.
+  tirtha -> TIRTHA_SUCI [cultural]
+  pangringkesan -> TAHAPAN_UPACARA [cultural]
+
+S1071: maka tibalah saatnya kain pangringkesan digulungkan ke tubuh jenazah.
+  pangringkesan -> TAHAPAN_UPACARA [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1072: cara menggulung diatur sedemikian rupa, sehingga tepi kain datang dari arah tangan kanan jenazah (bagi pria) dan sebaliknya bagi wanita.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1074: kemudian sekujur tubuhnya, dililit dengan benang atau pita kain putih.
+  kain putih -> SARANA_RITUAL [cultural]
+
+S1076: cara menggulung dan pembuatan simpul tikar di kedua ujung, mirip dengan kain putih yang digunakan sebelumnya.
+  kain putih -> SARANA_RITUAL [cultural]
+
+S1078: terakhir, disorongkan lah "ante" (jeruji bilah-bilah bambu) yang berfungsi sebagai pengukuh jenazah.
+  ante -> SARANA_RITUAL [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1079: kemudian jenazah diikat dengan tali ktekung (tali bambu dipintal).
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1080: dengan demikian, selesailah sudah pokok pangringkesan.
+  pangringkesan -> TAHAPAN_UPACARA [cultural]
+
+S1081: perlu ditegaskan, bahwa pengaturan cara bungkus kain dan tikar pangringkes itu (belit kanan dan belit kiri) mengandung makna purusa dan pradana, sejalan dengan kedudukan pihak-pihak bersangkutan menurut jenis kelaminnya.
+  purusa -> KONSEP_FILOSOFIS [cultural]
+  pradana -> KONSEP_FILOSOFIS [cultural]
+
+S1082: jenazah yang masih tetap di atas pepaga itu, kemudian dikenakan baju serta disuguhi sajen kecil yang disebut pengulapan.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga)
+  pengulapan -> SARANA_RITUAL [cultural]
+
+S1084: keluarga mendiang kemudian menyurukkan dirinya tiga kali di bawah jenazah.
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1085: sembah dan surukan itu, merupakan perwujudan tanda hormat atau bhakti kepada mendiang.
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1086: sesudah pangringkesan, jenazah dibaringkan kembali di atas balai-balai rumah adat.
+  pangringkesan -> TAHAPAN_UPACARA [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1087: penyimpangan ini ada kalanya ditopang dengan tumpang salu, yakni balai-balai kecil khas, dimasukkan ke dalam peti serta dikurung dengan paplengkungan yang diselimuti kain putih seluruhnya.
+  tumpang salu -> SARANA_RITUAL [cultural]
+  paplengkungan -> BANGUNAN_RITUAL [cultural]
+  kain putih -> SARANA_RITUAL [cultural]
+
+S1088: kemudian langse kembali ditutup untuk mengurung jenazah seperti semula.
+  langse -> SARANA_RITUAL [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1089: kinilah saatnya bagi keluarga yang ditinggalkan untuk memberikan ayaban saji dan punjung kepada mendiang.
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1091: tentu tidak perlu diulas lagi, bahwa tirthalah yang merupakan pengantar utama dari ayaban itu yang diiringi pula dengan sembah dan bhakti keluarga mendiang, terutama anak, cucu dan keturunan lainnya.
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1092: dan itulah pokok-pokok upacara pangringkesan selaku upacara pendahuluan.
+  pangringkesan -> TAHAPAN_UPACARA [cultural]
+
+S1093: lalu apa artinya berbagai sarana upakara pangringkesan yang beraneka rupa itu?
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+  pangringkesan -> TAHAPAN_UPACARA [cultural]
+
+S1095: namun bukan sembarang adat, karena telah mendapat imbas kesucian dan telah berkedudukan sebagai sarana pelaksana agama seperti yang diamanatkan manawa dharmasastra ii-6.
+  manawa dharmasastra -> NASKAH_SUCI [cultural]
+
+S1103: mengenai pemberian sembah bhakti kepada pitara seseorang perlu diberi catatan sekadarnya.
+  sembah bhakti -> TAHAPAN_UPACARA [cultural]
+  pitara -> ENTITAS_KEAGAMAAN [cultural] (canonical: Pitra)
+
+S1106: kala membaca penjelasan upacara pendahuluan pitra yadnya yang secara realnya berwujud upacara ngringkes, sebagian pembaca mungkin bertanya-tanya, mengapa ada sarana upakara yang beraneka ragam dilekatkan pada sawa, serta ikut dibungkus.
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1107: hampir tak ada bagian tubuh jenazah yang luput dari tempelan.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1109: pada mata misalnya selain ditempeli bunga teleng, juga ditempeli pecahan cermin.
+  bunga teleng -> SARANA_RITUAL [cultural] (canonical: Bunga Teleng)
+
+S1110: begitu pula kulit, kebagian lindasan telur dan urutan umbi gadung.
+  umbi gadung -> SARANA_RITUAL [cultural]
+
+S1114: selain itu penempelan benda atau ramuan tadi merupakan sarana pengantar doa dan permohonan, semoga pada penjelmaan berikutnya mendiang mendapatkan bagian tubuh yang ideal.
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1115: misalnya, sinar matanya cemerlang dan memiliki penglihatan tajam, kulitnya putih mulus bagaikan umbi gadung atau kulit telur.
+  umbi gadung -> SARANA_RITUAL [cultural]
+
+S1119: suatu hal yang tidak boleh kita lupakan, bahwa mengadakan arcana yang dipanjatkan ke bawah kaki-nya, adalah suatu perbuatan, suatu karma yang pasti berpahala.
+  karma -> KONSEP_FILOSOFIS [cultural]
+
+S1120: setelah pangringkesan, upacara selanjutnya bisa nyekeh atau malelet, dikubur atau dibakar titip, atau langsung diaben secara tuntas.
+  pangringkesan -> TAHAPAN_UPACARA [cultural]
+  nyekeh -> RITUAL_KEMATIAN [cultural]
+
+S1121: nyekeh atau malelet atau sering pula disebut masimpen ini, biasanya ditempuh dalam melakukan upacara pitra yadnya terhadap seorang raja, keluarganya atau seorang pendeta.
+  nyekeh -> RITUAL_KEMATIAN [cultural]
+  masimpen -> RITUAL_KEMATIAN [cultural]
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+
+S1122: nyekeh berarti jenazah dibaringkan di rumah adat dalam jangka waktu agak lama hingga tiba jatuhnya hari h untuk ngaben sesuai dewasa yang dipilih.
+  nyekeh -> RITUAL_KEMATIAN [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S1123: jenazah bisa disebut masekeh, bila telah berada minimal satu bulan, pernah dilewati bulan purnama dan tilem, serta upacaranya sudah memenuhi syarat.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  masekeh -> RITUAL_KEMATIAN [cultural]
+  purnama -> KONSEP_HUKUM_ADAT [cultural]
+  tilem -> KONSEP_HUKUM_ADAT [cultural]
+
+S1124: membiarkan jenazah berbaring berlama-lama tanpa diberi upacara nyekeh, merupakan pelanggaran hukum adat.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  nyekeh -> RITUAL_KEMATIAN [cultural]
+
+S1125: sebab, wilayah desa adat akan terhimbas oleh leteh dan pelanggaran tadi mengakibatkan kacuntakan.
+  leteh -> KONSEP_HUKUM_ADAT [cultural]
+
+S1126: nyekeh sawa merupakan pekerjaan berat, bila dibandingkan dengan menempuh jalan lain.
+  nyekeh -> RITUAL_KEMATIAN [cultural]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1127: dikatakan berat, karena persiapan upacara harus betul-betul matang, selain secara rutin harus menyediakan sesajen kepada mendiang.
+  sesajen -> SARANA_RITUAL [cultural]
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1128: itulah sebabnya, nyekeh sawa lebih sering ditempuh keluarga raja atau pendeta, karena dari golongan masyarakat itu yang memang lebih mampu melakukan upacara ini.
+  nyekeh -> RITUAL_KEMATIAN [cultural]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1129: oleh karena menempuh jalan ini lebih berat, maka begitu seseorang meninggal, pihak keluarga harus sudah memutuskan : apakah sawa disekeh atau tidak.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1130: jika diputuskan disekeh, maka sarana dan cara melakukan pangringkesan dibuat lebih telaten dan permanen.
+  pangringkesan -> TAHAPAN_UPACARA [cultural]
+
+S1131: ramuan upakara pun dibuat lebih mantap, agar kualitasnya lebih baik sebagai pengawet sawa.
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1132: dengan dikenalnya formalin sebagai pengawet sawa yang lebih modern dan kualitasnya lebih bagus, maka sawa yang berbaring lebih dari tiga hari, berbulan-bulan atau mungkin satu tahun, tidak akan menimbulkan masalah.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1133: setelah selesai ngringkes, sawa dinaikkan di tumpang salu di rumah adat.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  tumpang salu -> SARANA_RITUAL [cultural]
+
+S1134: sesajen dan punjung dihaturkan kepada mendiang.
+  sesajen -> SARANA_RITUAL [cultural]
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1135: sejak ini pula penyekehan sudah mulai dilaksanakan, misalnya memasang damar kurung - lengkap dengan sesajen- yang diletakkan di samping pintu gerbang rumah.
+  damar kurung -> SARANA_RITUAL [cultural] (canonical: Damar Kurung)
+  sesajen -> SARANA_RITUAL [cultural]
+
+S1136: damar kurung itu merupakan sarana permohonan kepada sanghyang agni, agar keletehan yang dipancarkan sawa mendiang diblokir terbatas, yakni hanya sebatas tanah pekarangan keluarga mendiang saja.
+  damar kurung -> SARANA_RITUAL [cultural] (canonical: Damar Kurung)
+  sanghyang agni -> ENTITAS_KEAGAMAAN [cultural]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1137: dengan demikian, seluruh wilayah desa adat tidak kena cuntaka.
+  cuntaka -> KONSEP_HUKUM_ADAT [cultural] (canonical: Cuntaka)
+
+S1138: mendiang mendapat ayaban upakara diuskamaligi, yang bermakna penyucian, sehingga letehnya sawa tidak atau kurang memancar ke luar dan tidak menghimbasi yang lain.
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+  diuskamaligi -> TAHAPAN_UPACARA [cultural]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1139: sebagaimana upacara yang cukup besar lainnya, upacara ini juga diawali dengan permohonan kepada sanghyang surya sebagai manifestasi ida sanghyang widhi yang menyaksikan segala perbuatan makhluk di dunia ini.
+  sanghyang surya -> ENTITAS_KEAGAMAAN [cultural]
+
+S1140: permohonan ini dilakukan dengan menghaturkan sesajen di sanggar tutuan.
+  sesajen -> SARANA_RITUAL [cultural]
+  sanggar tutuan -> BANGUNAN_RITUAL [cultural]
+
+S1141: selama nyekeh berlangsung, setiap purnama dan tilem upakara damar kurung, diuskamaligi dan sajian sebagaimana telah disebutkan agar dibuat ulang.
+  nyekeh -> RITUAL_KEMATIAN [cultural]
+  purnama -> KONSEP_HUKUM_ADAT [cultural]
+  tilem -> KONSEP_HUKUM_ADAT [cultural]
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+  damar kurung -> SARANA_RITUAL [cultural] (canonical: Damar Kurung)
+  diuskamaligi -> TAHAPAN_UPACARA [cultural]
+
+S1142: tanpa pengulangan ini, prajuru desa adat akan keberatan atas adanya "sawa permanen" dalam areal desa, yang dinilai menjadi penular kacuntakan.
+  prajuru -> STRUKTUR_SOSIAL_ADAT [cultural]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1143: demikian pokok-pokok tata cara nvekeh, yang diakhiri dengan tibanya upacara ngaben (pembakaran jenazah) selaku klimaks dari pitra yadnya bagian ngupakara sawa (mengupacarai jasadnya).
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya)
+  ngupakara sawa -> RITUAL_KEMATIAN [cultural]
+
+S1144: tentang ngaben ini, akan dibahas nanti secara khusus.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S1145: menitip sawa dan upacaranya
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1147: hasrat itu tidak hanya berlaku bagi orang yang memikul beban benda fisik, melainkan juga beban swadharma yang bersifat non fisik.
+  swadharma -> KONSEP_HUKUM_ADAT [cultural]
+
+S1148: demikianlah seseorang yang bertanggung jawab atas jenazah seorang keluarganya.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1149: mereka tentulah sangat ingin untuk segera "menyelesaikan" sawa tersebut secara tuntas.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1150: apa lagi bila sawa itu adalah jenazah mendiang orangtuanya.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1154: namun sebagaimana juga hasrat manusia lainnya, kehendak melangsungkan upacara ngaben tidaklah selalu dapat terwujud.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S1156: kalau ditinjau dari segi syarat agama dalam arti sempit, hampir tidak ada halangan untuk melangsungkan upacara ngaben.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S1157: agama dalam petunjuknya melalui pelbagai lontar, terutama yama purwana tatwa, menetapkan syarat esensial yang sangat minim bagi satu pengabenan.
+  lontar -> NASKAH_SUCI [cultural]
+  yama -> ENTITAS_KEAGAMAAN [cultural]
+  pengabenan -> RITUAL_KEMATIAN [cultural]
+
+S1159: apa lagi bila dikaitkan dengan adanya bantuan krama (anggota) banjar adat dengan patus (rasa patuh atau kebersamaan) kegotongroyongan.
+  krama -> STRUKTUR_SOSIAL_ADAT [cultural]
+  banjar -> STRUKTUR_SOSIAL_ADAT [cultural] (canonical: Banjar)
+  patus -> KONSEP_HUKUM_ADAT [cultural] (canonical: Gotong Royong)
+
+S1160: patus yang benar-benar merupakan bantuan gratis, selaku perwujudan rasa kebersamaan yang ada di dada krama.
+  patus -> KONSEP_HUKUM_ADAT [cultural] (canonical: Gotong Royong)
+  krama -> STRUKTUR_SOSIAL_ADAT [cultural]
+
+S1161: dalam hal ini penanggung jawab sesosok sawa adalah tetap seorang manusia sebagai subjek.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1163: ngaben adalah suatu yadnya selaku pelaksanaan ajaran agama, yang hendaklah didukung dengan sredaning manah atau rasa hati tulus dan ikhlas.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  yadnya -> KONSEP_FILOSOFIS [cultural]
+  sredaning manah -> KONSEP_FILOSOFIS [cultural]
+
+S1165: syukurlah bila pelaksanaan upacara yang bertaraf serba mewah dan glamour itu tidak menimbulkan utang baru karena sesuai dengan kemampuan ekonomi dan tetap berlatar belakang pada keinginan pokok, yakni melakukan swadharma.
+  swadharma -> KONSEP_HUKUM_ADAT [cultural]
+
+S1167: karena biaya belum siap, maka upacara ngaben ditunda.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S1169: sawa itu ditanam atau dibakar dengan status dititip sebelum ada rezeki, yang datangnya entah kapan untuk, menggelar upacara ngaben beberapa bulan atau bahkan beberapa tahun kemudian.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S1170: namun tidak semua penundaan ngaben ditempuh akibat berlatar belakang gengsi-gengsian.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S1171: ada alasan lain yang bisa diterima, misalnya menunggu penyelenggaraan ngaben massal, yakni ngaben serentak yang dilakukan banjar, desa atau kelompok dadia (keluarga besar) yang biayanya ditanggung bersama.
+  ngaben massal -> RITUAL_KEMATIAN [cultural] (canonical: Ngaben Massal)
+  banjar -> STRUKTUR_SOSIAL_ADAT [cultural] (canonical: Banjar)
+  dadia -> STRUKTUR_SOSIAL_ADAT [cultural] (canonical: Dadia)
+
+S1173: selain ngaben berstandar yang agak tinggi bisa ditempuh dengan biaya ringan, juga dapat memupuk rasa kekeluargaan dan kebersamaan.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S1175: misalnya, ngaben terdahulu belum lewat setahun.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S1176: menurut kepercayaan, tabu untuk melakukan ngaben berikutnya, bila ngaben terdahulu belum melampaui masa setahun.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S1177: selain itu, penundaan ngaben ditempuh, lantaran desa adat sedang melakukan upacara keagamaan atau sedang memperbaiki pura secara besar-besaran.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  pura -> BANGUNAN_RITUAL [cultural]
+
+S1179: sawa yang dititipkan di kuburan atau setra akan digali setelah tiba saatnya upacara ngaben.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  kuburan -> BANGUNAN_RITUAL [cultural]
+  setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S1180: penggalian sawa ini sering dilakukan hanya dengan cara formal religius.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1181: artinya, yang diambil tidak harus berupa tulang jenazah - karena sudah dibakar misalnya - namun hanya cukup mengambil sejumput tanah gundukan bekas mendiang dikubur.
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1183: artinya dewasa ayu (hari baik) harus tetap dicari dari seorang sulinggih atau rohaniawan yang dianggap berhak, serta disetujui pula oleh prajuru adat.
+  dewasa ayu -> KONSEP_HUKUM_ADAT [cultural]
+  sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+  prajuru -> STRUKTUR_SOSIAL_ADAT [cultural]
+
+S1185: diuskamaligi/penyucian, sajen untuk di sanggar surya, pura prajapati (pura yang terletak di setra), sanggah atau merajan, pura dalem dan tak ketinggalan pula sesajen selaku ayaban bagi arwah mendiang, serta sesajen papegatan (sesajen untuk perpisahan).
+  diuskamaligi -> TAHAPAN_UPACARA [cultural]
+  sanggar surya -> BANGUNAN_RITUAL [cultural]
+  pura -> BANGUNAN_RITUAL [cultural]
+  prajapati -> ENTITAS_KEAGAMAAN [cultural]
+  setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+  sanggah -> BANGUNAN_RITUAL [cultural]
+  merajan -> BANGUNAN_RITUAL [cultural]
+  pura dalem -> BANGUNAN_RITUAL [cultural]
+  sesajen -> SARANA_RITUAL [cultural]
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1186: jika sawa dibakar titip, maka perlu pula dibuatkan sesajen untuk dihaturkan ke segara (laut).
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  sesajen -> SARANA_RITUAL [cultural]
+
+S1187: sesajen ini dihaturkan pada saat abu jenazah dihanyutkan ke samudera.
+  sesajen -> SARANA_RITUAL [cultural]
+  abu -> SARANA_RITUAL [cultural]
+  jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1188: sebagaimana pula dalam upacara lainnya, dalam upacara ini juga mempergunakan tirtha antara lain, tirtha panglukatan dan pabersihan selaku sarana penyucian, agar sawa boleh dan wajar menerima sesaji dan tirtha lainnya.
+  tirtha -> TIRTHA_SUCI [cultural]
+  tirtha panglukatan -> TIRTHA_SUCI [cultural] (canonical: Tirta Panglukatan)
+  pabersihan -> TAHAPAN_UPACARA [cultural]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  sesaji -> SARANA_RITUAL [cultural]
+
+S1189: tirtha yang dimohon di pamerajan dan pura lainnya, merupakan sarana restu dari ida bhatara di kahyangan tersebut terhadap arwah mendiang dalam peristiwa beralihnya dari dunia manusia ke dunia roh.
+  tirtha -> TIRTHA_SUCI [cultural]
+  pura -> BANGUNAN_RITUAL [cultural]
+  bhatara -> ENTITAS_KEAGAMAAN [cultural] (canonical: Bhatara)
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1190: terutama tirtha pangentas pakingsan, tegasnya bukan tirtha pangabenan, merupakan sarana untuk meresmikan pengalihan dunia kehidupan itu.
+  tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas)
+  pangabenan -> RITUAL_KEMATIAN [cultural]
+
+S1191: tirtha pangentas ini sifatnya sangat khas, bahkan sangat khusus sifatnya, yakni khusus dipuja atau dibuat untuk upacara ini.
+  tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas)
+
+S1192: ciri-ciri tirtha ini pun sangat khas pula, yakni dibuat pada hari upacara tersebut.
+  tirtha -> TIRTHA_SUCI [cultural]
+
+S1193: artinya, tirtha ini pantang menginap, jadi tak mungkin dipuja atau dibuat pada hari-hari sebelumnya.
+  tirtha -> TIRTHA_SUCI [cultural]
+
+S1194: tirtha ini disiapkan secara individual.
+  tirtha -> TIRTHA_SUCI [cultural]
+
+S1195: walaupun pada hari yang sama seorang pendeta memuja tirtha itu untuk beberapa sawa, namun sejak semula telah disiapkan jun pere (periuk kecil khusus) sepasang untuk masing-masing sawa.
+  tirtha -> TIRTHA_SUCI [cultural]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  jun pere -> SARANA_RITUAL [cultural]
+
+S1196: semua pasangan itu sesuai dengan jumlah sawa, dideretkan di depan pendeta guna dipuja sekaligus.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1197: masing-masing jun pere itu berisi tulisan aksara dan gambar yang khas.
+  jun pere -> SARANA_RITUAL [cultural]
+
+S1198: ramuan tirtha selain terdiri dari air dan berbagai kembang, juga berisi ikatan daun alang-alang, kepingan logam (terutama emas), permata dan sebagainya.
+  tirtha -> TIRTHA_SUCI [cultural]
+  alang-alang -> SARANA_RITUAL [cultural]
+
+S1199: sekadar untuk upacara ini, tidaklah perlu memakai kekitir dan walantaga, yakni berkas kertas bersurat khusus, yang berisi bendera kecil bertangkai lidi.
+  kekitir -> SARANA_RITUAL [cultural]
+  walantaga -> SARANA_RITUAL [cultural]
+
+S1200: hanya untuk tirtha pangentas ngaben yang memakai kekitir dan walantaga.
+  tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas)
+  ngaben -> RITUAL_KEMATIAN [cultural]
+  kekitir -> SARANA_RITUAL [cultural]
+  walantaga -> SARANA_RITUAL [cultural]
+
+S1201: sesosok sawa boleh mendapat tirtha pangentas sejenis hanya sekali saja.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas)
+
+S1202: ini berarti, sawa yang pernah mendapat upacara tanam atau bakar titip, atau yang sudah diaben, tak boleh lagi diberi upacara sejenis untuk kedua kalinya.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1204: secara religius, hal itu diyakini akan berakibat fatal bagi pelanggarnya, baik itu pendeta yang memberi tirtha, maupun keluarga mendiang.
+  tirtha -> TIRTHA_SUCI [cultural]
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1205: tirtha pangentas merupakan sarana yang secara formal religius berfungsi memotong ikatan dan hubungan jasad dengan atma -jiwa dari mendiang.
+  tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas)
+  atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1206: tirtha itu juga selaku sarana untuk menetapkan kedudukan arwah mendiang pada satu alam roh (pitra) tertentu sesuai dengan tingkat upacaranya (makingsan atau ngaben).
+  tirtha -> TIRTHA_SUCI [cultural]
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+  pitra -> KONSEP_FILOSOFIS [cultural] (canonical: Pitra)
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S1207: tirtha ini diyakini benar-benar memiliki daya gaib keagamaan untuk memotong atau memisahkan atma dengan jasad manusia.
+  tirtha -> TIRTHA_SUCI [cultural]
+  atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+
+S1208: karena itu, tirta ini pantang untuk dijunjung oleh wanita yang sedang hamil pada saat ke kuburan misalnya.
+  tirta -> TIRTHA_SUCI [cultural]
+  kuburan -> BANGUNAN_RITUAL [cultural]
+
+S1209: manik atau jabang bayi bisa terpotong dari cucupu atau rahim dan akibatnya bisa keguguran.
+  jabang bayi -> KONSEP_FILOSOFIS [cultural]
+  cucupu -> KONSEP_FILOSOFIS [cultural]
+
+S1211: pertama-tama setelah segala sesuatunya siap, diadakan upakara pepegatan di pekarangan rumah.
+  upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+
+S1212: soal ayaban saji bagi mendiang ada dua jenis dresta atau tradisi.
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+  dresta -> KONSEP_HUKUM_ADAT [cultural]
+
+S1213: ada daerah yang membiasakan ayaban itu dilakukan di rumah, ada pula setelah sawa berada di kuburan setelah dibakar atau dikubur.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  kuburan -> BANGUNAN_RITUAL [cultural]
+
+S1214: di mana pun ayaban itu diadakan hampir selalu disertai dengan puspanjali atau sembah dari keluarga yang derajat kedudukannya lebih rendah dari mendiang.
+  puspanjali -> TAHAPAN_UPACARA [cultural]
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1215: setelah tiba di setra, sawa diletakkan di atas lubang tempat penguburan atau di atas para-para tempat pembakarannya nanti.
+  setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra)
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  penguburan -> TAHAPAN_UPACARA [cultural]
+
+S1216: setelah gulungan pangringkesar dibongkar, sawa disiram dengan toya penembak.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  toya penembak -> TIRTHA_SUCI [cultural] (canonical: Yeh Panembak)
+
+S1217: menjelang tirtha disiratkan kepada mendiang, terlebih dahulu mendiang diberi pakaian.
+  tirtha -> TIRTHA_SUCI [cultural]
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1218: setelah itu, disiratkan tirtha berturut-turut dan tirtha pangentas disiratkan terakhir. semua jun pere tempat tirtha tadi dimusnahkan.
+  tirtha -> TIRTHA_SUCI [cultural]
+  tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas)
+  jun pere -> SARANA_RITUAL [cultural]
+
+S1219: setelah itu, barulah sawa ditanam atau dibakar beserta semua alat pangringkesannya.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1221: abu tulang dipungut dan dimasukkan ke dalam klungah nyuh gading/suku tunggal.
+  abu -> SARANA_RITUAL [cultural]
+  klungah -> SARANA_RITUAL [cultural]
+  nyuh gading -> SARANA_RITUAL [cultural]
+  suku tunggal -> SARANA_RITUAL [cultural] (canonical: Puspa Asti)
+
+S1222: kemudian abu tulang itu dihanyutkan ke laut.
+  abu -> SARANA_RITUAL [cultural]
+
+S1224: kini hanya tinggal menunggu upacara ngaben.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S1226: di mata umat hindu terutama di bali, sawa dinilai sesuatu yang leteh atau tidak suci.
+  hindu -> AGAMA [cultural]
+  bali -> Place [general]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  leteh -> KONSEP_HUKUM_ADAT [cultural]
+
+S1227: keletehan itu ditularkan kepada keluarga dekat, orang yang ikut menangani penguburan dan rumah tempat sawa.
+  penguburan -> TAHAPAN_UPACARA [cultural]
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1229: keletehan seperti ini disebut pula sebel atau cuntaka.
+  sebel -> KONSEP_HUKUM_ADAT [cultural] (canonical: Cuntaka)
+  cuntaka -> KONSEP_HUKUM_ADAT [cultural] (canonical: Cuntaka)
+
+S1230: orang-orang yang terkena leteh tidak dibenarkan ikut serta dalam kegiatan upacara keagamaan tertentu.
+  leteh -> KONSEP_HUKUM_ADAT [cultural]
+
+S1231: begitu pula segala benda yang dipergunakan untuk sawa pantang digunakan untuk upacara tertentu.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1232: untuk menyucikan kembali rumah yang tadi ditempati sawa, setelah 12 atau 42 hari sejak penguburan atau pembakaran mayat, diadakanlah upacara caru, prayascita dan diuskamaligi.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+  penguburan -> TAHAPAN_UPACARA [cultural]
+  prayascita -> TAHAPAN_UPACARA [cultural]
+  diuskamaligi -> TAHAPAN_UPACARA [cultural]
+
+S1233: setelah diadakan upacara itu, barulah leteh itu dianggap sirna.
+  leteh -> KONSEP_HUKUM_ADAT [cultural]
+
+S1235: apakah antara mendiang dengan keluarganya putus hubungan?
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1237: jangankan baru hanya upacara serba "titip", setelah ngaben pun, hubungan itu dianggap tetap berlangsung.
+  ngaben -> RITUAL_KEMATIAN [cultural]
+
+S1238: hanya saja, keluarga yang ditinggalkan berada di dunia ini, sedang para mendiang berada di alamnya masing-masing.
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1240: sebagai suatu misal, anda punya sawa yang masih ditanam atau dibakar titip.
+  sawa -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1241: suatu hari, di rumah anda ada kegiatan upacara yang sifatnya bersukaria, apakah itu upacara tiga bulanan anak, otonan, upacara perkawinan, atau pesta karena naik pangkat.
+  otonan -> RITUAL [cultural]
+
+S1242: sebelum acara menikmati santapan yang serba lezat, maka menurut tata susila, anda menghaturkan sesaji di sanggah atau merajan termasuk memberikan suguhan kepada para leluhur atau anggota keluarga yang sudah mendiang.
+  sesaji -> SARANA_RITUAL [cultural]
+  sanggah -> BANGUNAN_RITUAL [cultural]
+  merajan -> BANGUNAN_RITUAL [cultural]
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1243: untuk menghaturkan suguhan kepada mendiang yang sawanya masih ditanam atau dibakar titip, anda tak usah pergi ke kuburan.
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+  kuburan -> BANGUNAN_RITUAL [cultural]
+
+S1244: buatlah suguhan berbentuk pepunjungan (seperti suguhan untuk orang hidup) kepada mendiang.
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1246: ucapan waktu menghaturkan suguhan, yakni dengan memanggil-manggil mendiang agar pulang menyantap suguhan itu.
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+
+S1247: akan tetapi, bila mendiang sudah diaben namun belum upacara memukur, sajikanlah suguhan itu di pelangkiran rumah adat.
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+  pelangkiran -> BANGUNAN_RITUAL [cultural]
+
+S1248: kalau sudah memukur maka mendiang tidak lagi disebut pitra tapi bhatara.
+  mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+  pitra -> KONSEP_FILOSOFIS [cultural] (canonical: Pitra)
+  bhatara -> ENTITAS_KEAGAMAAN [cultural] (canonical: Bhatara)
+
+S1249: karena itu, untuk memuja beliau tidak lagi dari rumah melainkan di sanggah atau di merajan.
+  sanggah -> BANGUNAN_RITUAL [cultural]
+  merajan -> BANGUNAN_RITUAL [cultural]
+

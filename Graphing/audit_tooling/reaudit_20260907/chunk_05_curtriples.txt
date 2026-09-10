@@ -1,0 +1,218 @@
+# Current triples, chunk 5 (S2212..S2686) - from the 916-triple run
+
+S2212  ctx: kalau bale salunglung merupakan simbol pitraloka (untuk tempat badan halusnya mendiang), maka bale pamuunan merupakan sebaliknya, yakni bhuta-loka alias dunianya materi, tempat unsur jenazah bersangkutan.
+  [0] subject='bale salunglung' subject_label='BANGUNAN_RITUAL' relation='ADALAH' object='simbol pitraloka ( untuk tempat badan halus nya mendiang )' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='bale pamuunan' subject_label='BANGUNAN_RITUAL' relation='ADALAH' object='bhuta-loka alias dunia materi' object_label='ENTITAS_KEAGAMAAN' object_type='ENTITY' source='dependency_rule'
+  [2] subject='bale pamuunan' subject_label='BANGUNAN_RITUAL' relation='ADALAH' object='tempat unsur jenazah bersangkutan' object_label='ISTILAH_UMUM_RITUAL' object_type='LITERAL' source='dependency_rule'
+
+S2224  ctx: ngangkid galih yang dilakukan sehari menjelang pangabenan ini hampir hanya merupakan kegiatan kerja semata.
+  [0] subject='ngangkid galih' subject_label='TAHAPAN_UPACARA' relation='ADALAH' object='kegiatan kerja semata' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S2234  ctx: tetapi, sering terjadi bahwa jenazah seseorang (yang telah tertanam-titip) pada sebuah setra, diaben di setra lain.
+  [0] subject='jenazah seseorang (yang telah tertanam-titip)' subject_label='ISTILAH_UMUM_RITUAL' relation='DIBAKAR' object='setra lain' object_label='BANGUNAN_RITUAL' object_type='ENTITY' source='manual_override'
+  [1] subject='jenazah seseorang' subject_label=None relation='TERTANAM_TITIP_DI' object='sebuah setra' object_label='BANGUNAN_RITUAL' object_type='ENTITY' source='manual_override'
+
+S2252  ctx: besar kemungkinan bahwa mendiang yang diaben mempunyai banyak keponakan, cucu-cucu dan sebagainya yang merupakan keluarga sampingan (bukan keluarga satu sidikara/saling sembah).
+  [0] subject='mendiang' subject_label='ISTILAH_UMUM_RITUAL' relation='MEMILIKI' object='keponakan' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='mendiang' subject_label='ISTILAH_UMUM_RITUAL' relation='MEMILIKI' object='cucu-cucu' object_label=None object_type='LITERAL' source='dependency_rule'
+  [2] subject='mendiang (keponakan, cucu-cucu)' subject_label=None relation='TERGOLONG' object='keluarga sampingan (bukan keluarga satu sidikara/saling sembah)' object_label=None object_type='LITERAL' source='manual_override'
+
+S2256  ctx: pamerasan adalah sejumlah uang kepeng yang dibungkus dengan daun "dapdap", diikat benang tridatu.
+  [0] subject='pamerasan' subject_label=None relation='ADALAH' object='sejumlah uang kepeng' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+  [1] subject='uang kepeng' subject_label=None relation='DIBUNGKUS_DENGAN' object='daun dapdap' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+  [2] subject='uang kepeng' subject_label=None relation='DIIKAT_DENGAN' object='benang tridatu' object_label=None object_type='LITERAL' source='manual_override'
+
+S2258  ctx: pamerasan merupakan sarana pemberitahuan akan adanya pangabenan untuk mendiang, serta selaku tanda, bahwa keluarga mendiang tidak lupa akan adanya ikatan keluarga.
+  [0] subject='pamerasan' subject_label=None relation='ADALAH' object='sarana pemberitahuan akan adanya pangabenan untuk mendiang' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='pamerasan' subject_label=None relation='ADALAH' object='tanda bahwa keluarga mendiang tidak lupa akan ikatan keluarga' object_label=None object_type='LITERAL' source='manual_override'
+
+S2262  ctx: oleh sang cucu, biasa pula tirtha itu dimohon pada pendeta yang muput pangabenan itu sendiri.
+  [0] subject='tirtha' subject_label=None relation='DIMOHON_KEPADA' object='pendeta yang muput pangabenan itu sendiri' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='sang cucu' subject_label=None relation='MEMOHON' object='tirtha' object_label='TIRTHA_SUCI' object_type='ENTITY' source='manual_override'
+
+S2265  ctx: nyikut karang adalah upacara yang sangat sederhana.
+  [0] subject='nyikut karang' subject_label='TAHAPAN_UPACARA' relation='ADALAH' object='upacara yang sangat sederhana' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S2269  ctx: bale pamuun dan sejumlah alat-alat upakara lainnya, sebenarnya telah selesai secara de facto.
+  [0] subject='bale pamuun (dan alat-alat upakara lainnya)' subject_label=None relation='TELAH_SELESAI_SECARA' object='de facto' object_label=None object_type='LITERAL' source='manual_override'
+
+S2316  ctx: begitu pula sang undagi (pembuat bade) dengan bade atau wadah dan lembunya pun terlibat pula pada suatu acara khusus.
+  [0] subject='undagi' subject_label='STRUKTUR_SOSIAL_ADAT' relation='TERLIBAT_DI' object='acara khusus' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S2323  ctx: hanya setelah diplaspas-lah, bade dan lembu (termasuk segala alat penting lainnya) merupakan sarana yang benar-benar berkeadaan "siap pakai" betapa mestinya.
+  [0] subject='bade dan lembu' subject_label=None relation='TERGOLONG_BERSAMA' object='alat penting lainnya' object_label=None object_type='LITERAL' source='manual_override'
+
+S2336  ctx: kajang yang hanya beberapa asta panjangnya, diberilah sambungan ("lancingan") kain putih dua atau 30 meter lagi, hingga puluhan anggota keluarga dapat berbaris menjunjungnya keluar dari rumah menuju tempat bade, selaku tanda hormat baktinya kepada mendiang.
+  [0] subject='kajang' subject_label='SARANA_RITUAL' relation='DIBERI' object='sambungan' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='sambungan' subject_label=None relation='ADALAH' object='lancingan' object_label='SARANA_RITUAL' object_type='ENTITY' source='object_decomposition'
+  [2] subject='kajang' subject_label='SARANA_RITUAL' relation='DIBERI' object='kain putih' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+  [3] subject='kajang' subject_label='SARANA_RITUAL' relation='DIBERI' object='30 meter' object_label=None object_type='LITERAL' source='dependency_rule'
+  [4] subject='kajang' subject_label='SARANA_RITUAL' relation='MELAMBANGKAN' object='tanda hormat bakti kepada mendiang' object_label='ISTILAH_UMUM_RITUAL' object_type='LITERAL' source='dependency_rule'
+
+S2337  ctx: setelah jenazah/pengawak terletak rapi di balai-balai bade, kajang pun dinaikkan serta dilipat-lipat/ditindihkan pada jenazah atau simbolnya itu.
+  [0] subject='jenazah /pengawak' subject_label='ISTILAH_UMUM_RITUAL' relation='DILETAKKAN_DI' object='balai-balai bade' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+  [1] subject='kajang' subject_label='SARANA_RITUAL' relation='DILIPAT_DI' object='jenazah' object_label='ISTILAH_UMUM_RITUAL' object_type='ENTITY' source='manual_override'
+  [2] subject='kajang' subject_label='SARANA_RITUAL' relation='DILIPAT_DI' object='simbol' object_label=None object_type='LITERAL' source='manual_override'
+
+S2340  ctx: adegan dan sebagainya ini sering dijadikan unsur arak-arakan indah oleh pemudi-pemudi keluarga bersangkutan.
+  [0] subject='adegan' subject_label=None relation='DIJADIKAN' object='unsur arak-arakan indah (oleh pemudi-pemudi keluarga bersangkutan)' object_label=None object_type='LITERAL' source='manual_override'
+
+S2363  ctx: bale pamuunan yang telah dihuni lembu, dikelilingi pula sebanyak tiga kali oleh bade dengan jenazahnya.
+  [0] subject='bale pamuunan' subject_label=None relation='DIKELILINGI_OLEH' object='bade dengan jenazahnya (sebanyak tiga kali)' object_label=None object_type='LITERAL' source='manual_override'
+
+S2364  ctx: setelah itulah baru bade diletakkan di sebelah hilir atau teben sang lembu.
+  [0] subject='bade' subject_label='SARANA_RITUAL' relation='DILETAKKAN_DI' object='teben lembu' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S2370  ctx: pradaksina melambangkan turunnya purusa guna meresapi pradana, turunnya immaterial meresapi material, hingga material memperoleh imbas kesucian dari yang immaterial.
+  [0] subject='pradaksina' subject_label=None relation='MELAMBANGKAN' object='turunnya purusa meresapi pradana (material memperoleh imbas kesucian dari yang immaterial)' object_label=None object_type='LITERAL' source='manual_override'
+
+S2374  ctx: prasawya adalah lambang gerak peningkatan diri dari sesuatu, atau gerak ke atas.
+  [0] subject='prasawya' subject_label='TAHAPAN_UPACARA' relation='ADALAH' object='lambang gerak peningkatan diri' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S2377  ctx: ngaben mempunyai tujuan pokok untuk merubah jenazah atau "benda bekas" badan seseorang, hingga kembali menjadi pancamahabutha sebagaimana asalnya semula.
+  [0] subject='ngaben' subject_label='RITUAL_KEMATIAN' relation='MEMILIKI' object='tujuan pokok' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S2380  ctx: tentunya mudah dibayangkan bahwa bade seyogyanya berputar dengan cara prasawya (berputar ke kiri, berlawanan dengan putaran jarum jam), serta berlawanan pula dengan gerak pradaksina yang dilakukan pada upacara dewa yadnya di pura.
+  [0] subject='bade' subject_label='SARANA_RITUAL' relation='BERPUTAR_DENGAN' object='cara prasawya' object_label='TAHAPAN_UPACARA' object_type='ENTITY' source='dependency_rule'
+  [1] subject='cara prasawya' subject_label=None relation='ADALAH' object='berputar' object_label=None object_type='LITERAL' source='object_decomposition'
+
+S2387  ctx: setelah berkeliling sekitar bale pamuunan yang dihuni lembu, maka bade dengan sawa di atasnya itu diletakkan di sebelah hilir lembu.
+  [0] subject='bade' subject_label=None relation='DILETAKKAN_DI' object='sebelah hilir lembu' object_label=None object_type='LITERAL' source='manual_override'
+
+S2406  ctx: kini, jenazah atau simboliknya menjadi sasaran segala kegiatan.
+  [0] subject='jenazah atau simbolik' subject_label=None relation='MENJADI' object='sasaran segala kegiatan' object_label=None object_type='LITERAL' source='manual_override'
+
+S2419  ctx: adegan, angenan, pisang jati, panguryagan dan lain-lain alat yang harus dibakar, semua dihaturkan kepada hyang agni (api) tanpa sisa.
+  [0] subject='adegan, angenan, pisang jati, panguryagan, dan lain-lain alat yang harus dibakar' subject_label=None relation='DIPERSEMBAHKAN_KEPADA' object='hyang agni (api), tanpa sisa' object_label='KONSEP_FILOSOFIS' object_type='ENTITY' source='manual_override'
+  [1] subject='hyang agni' subject_label=None relation='ADALAH' object='api' object_label=None object_type='LITERAL' source='manual_override'
+
+S2448  ctx: suku tunggal yang telah dinilai selaku "pribadi" mendiang, dipangku dan diajak menghaturkan sembah bakti pamitan (dilakukan dari tempat itu saja) kepada semua bhatara-bhatari yang "bersemayam" di semua pura dan pamrajan panyiwiannya.
+  [0] subject='suku tunggal' subject_label=None relation='MENGHATURKAN' object='sembah bakti pamitan kepada bhatara-bhatari' object_label='ENTITAS_KEAGAMAAN' object_type='ENTITY' source='manual_override'
+  [1] subject='bhatara-bhatari' subject_label=None relation='BERSEMAYAM_DI' object='pura dan pamrajan panyiwiannya' object_label='BANGUNAN_RITUAL' object_type='ENTITY' source='manual_override'
+
+S2449  ctx: selanjutnya suku tunggal itu diarak dan dihanyut ke laut.
+  [0] subject='suku tunggal' subject_label='SARANA_RITUAL' relation='DIHANYUTKAN_KE' object='laut' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S2455  ctx: dari semua uraian terdahulu, maka jelaslah bahwa pangabenan terdiri dari berbagai jenis, masing-masing mempunyai nama sendiri-sendiri.
+  [0] subject='pangabenan' subject_label=None relation='TERDIRI_DARI' object='berbagai jenis' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='pangabenan jenis (masing-masing)' subject_label=None relation='MEMILIKI' object='nama sendiri-sendiri' object_label=None object_type='LITERAL' source='manual_override'
+
+S2472  ctx: "pranawa" juga berarti lambang suara "om".
+  [0] subject='pranawa' subject_label=None relation='BERARTI' object='lambang suara "om"' object_label=None object_type='LITERAL' source='manual_override'
+
+S2473  ctx: dengan demikian, pangabenan yang menggunakan nama pranawa dilatarbelakangi oleh hasrat supaya mendiang (baik jenazah ataupun atmanya) dapat memperoleh ketenangan, kemantapan serta kesucian, seimbang dengan makna istilah itu sendiri.
+  [0] subject='mendiang' subject_label='ISTILAH_UMUM_RITUAL' relation='MEMPEROLEH' object='ketenangan' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='mendiang' subject_label='ISTILAH_UMUM_RITUAL' relation='MEMPEROLEH' object='kemantapan' object_label=None object_type='LITERAL' source='dependency_rule'
+  [2] subject='mendiang' subject_label='ISTILAH_UMUM_RITUAL' relation='MEMPEROLEH' object='kesucian' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S2480  ctx: supta pranawa masih tergolong pangabenan jenis pranawa, namun telah mengalami variasi alakadarnya.
+  [0] subject='supta pranawa' subject_label='RITUAL_KEMATIAN' relation='BAGIAN_DARI' object='pangabenan jenis pranawa' object_label='RITUAL_KEMATIAN' object_type='ENTITY' source='dependency_rule'
+  [1] subject='supta pranawa' subject_label='RITUAL_KEMATIAN' relation='MENGALAMI' object='variasi alakadar' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S2483  ctx: dengan demikian, "supta pranawa" adalah satu pangabenan yang berlandaskan hasrat, semoga mendiang mendapatkan situasi demikian di alam lain.
+  [0] subject='mendiang' subject_label=None relation='MEMPEROLEH' object='situasi demikian di alam lain' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='supta pranawa' subject_label=None relation='ADALAH' object='satu pangabenan yang berlandaskan hasrat, semoga mendiang mendapatkan situasi demikian di alam lain' object_label=None object_type='LITERAL' source='manual_override'
+
+S2485  ctx: pangabenan pranawa, hanya digunakan bagi mendiang yang telah tak ada sawanya lagi.
+  [0] subject='pangabenan pranawa' subject_label=None relation='DITUJUKAN_UNTUK' object='mendiang yang telah tak ada sawanya lagi' object_label=None object_type='LITERAL' source='manual_override'
+
+S2489  ctx: atma wedana boleh dikatakan pitra yadnya tahap kedua.
+  [0] subject='atma wedana' subject_label='RITUAL_KEMATIAN' relation='DIKATAKAN' object='pitra yadnya tahap kedua' object_label='RITUAL' object_type='ENTITY' source='dependency_rule'
+
+S2502  ctx: sawa wedana digelar dengan tujuan menyucikan (wedana) roh, arwah atau badan halus mendiang, supaya menjadi atma yang tanpa badan sama sekali.
+  [0] subject='sawa wedana' subject_label=None relation='BERTUJUAN_MENYUCIKAN' object='roh' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='sawa wedana' subject_label=None relation='BERTUJUAN_MENYUCIKAN' object='arwah' object_label=None object_type='LITERAL' source='manual_override'
+  [2] subject='sawa wedana' subject_label=None relation='BERTUJUAN_MENYUCIKAN' object='badan halus mendiang' object_label='ISTILAH_UMUM_RITUAL' object_type='ENTITY' source='manual_override'
+  [3] subject='badan halus mendiang (roh/arwah)' subject_label=None relation='MENJADI' object='atma yang tanpa badan sama sekali' object_label=None object_type='LITERAL' source='manual_override'
+
+S2520  ctx: di samping itu perlu diketengahkan, bahwa berbeda dengan ngaben, atma wedana merupakan yadnya yang tidak bersifat sebel.
+  [0] subject='atma wedana' subject_label='RITUAL_KEMATIAN' relation='ADALAH' object='yadnya yang tidak bersifat sebel' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='atma wedana' subject_label=None relation='BERBEDA_DENGAN' object='ngaben (dalam hal sifat sebel)' object_label='RITUAL_KEMATIAN' object_type='ENTITY' source='manual_override'
+
+S2527  ctx: pura, pamrajan, atau kahyangan jenis apapun, di mata hati umat hindu merupakan dewaloka atau alam kedewaan.
+  [0] subject='pura, pamrajan, atau kahyangan jenis apapun' subject_label=None relation='ADALAH' object='dewaloka' object_label='KONSEP_FILOSOFIS' object_type='ENTITY' source='manual_override'
+  [1] subject='pura, pamrajan, atau kahyangan jenis apapun' subject_label=None relation='ADALAH' object='alam kedewaan' object_label=None object_type='LITERAL' source='manual_override'
+
+S2535  ctx: dengan melakukan upacara atma wedana, sang pitara mengelupasi suksmasarira yang merupakan "kulit dirinya", sebagaimana halnya seekor udang yang tengah menylongsong.
+  [0] subject='pitara' subject_label='ENTITAS_KEAGAMAAN' relation='MENGELUPASI' object='suksmasarira' object_label='KONSEP_FILOSOFIS' object_type='ENTITY' source='dependency_rule'
+
+S2542  ctx: sebagaimana halnya pangabenan, atma wedana pun ada beberapa jenis, masing-masing punya nama dan ciri-ciri tersendiri.
+  [0] subject='atma wedana' subject_label='RITUAL_KEMATIAN' relation='MEMILIKI' object='jenis' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='jenis atma wedana (masing-masing)' subject_label=None relation='MEMILIKI' object='nama dan ciri-ciri tersendiri' object_label=None object_type='LITERAL' source='manual_override'
+
+S2548  ctx: tirtha pangentas atiwa-tiwa hanya boleh disiratkan sekali saja kepada sesosok mayat atau perlambangnya.
+  [0] subject='tirtha pangentas atiwa-tiwa' subject_label='TIRTHA_SUCI' relation='DIPERCIKKAN_PADA' object='sesosok mayat' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='tirtha pangentas atiwa-tiwa' subject_label='TIRTHA_SUCI' relation='DIPERCIKKAN_PADA' object='perlambang' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S2555  ctx: atma wedana adalah nama resmi upacara penyucian pitra menurut pustaka yang kita warisi.
+  [0] subject='atma wedana' subject_label='RITUAL_KEMATIAN' relation='ADALAH' object='upacara penyucian pitra' object_label='KONSEP_FILOSOFIS' object_type='ENTITY' source='dependency_rule'
+
+S2558  ctx: ngroras, menurut aksaranya, berasal dari kata "roras" (bilangan 12).
+  [0] subject='ngroras' subject_label='RITUAL_KEMATIAN' relation='BERASAL_DARI' object='kata roras' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='kata roras' subject_label=None relation='ADALAH' object='bilangan 12' object_label=None object_type='LITERAL' source='object_decomposition'
+
+S2563  ctx: ingatlah, bhuwana alit hanya mempunyai 11 bidang yang mudah ditimpa suasana "sebel".
+  [0] subject='bhuwana alit' subject_label='KONSEP_FILOSOFIS' relation='MEMILIKI' object='11 bidang' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S2566  ctx: demikian juga bhuwana agung, masing-masing arah yang berjumlah 11 itu menerima cuntaka selama sehari.
+  [0] subject='bhuwana agung (masing-masing arah yang berjumlah 11)' subject_label=None relation='MEMPEROLEH' object='cuntaka selama sehari' object_label='KONSEP_HUKUM_ADAT' object_type='ENTITY' source='manual_override'
+
+S2571  ctx: begitu pula sang arjuna menghukum dirinya, ataupun "menghutannya" sang rama beserta laksmana, masing-masing selama 12 tahun juga.
+  [0] subject='arjuna' subject_label=None relation='MENGHUKUM' object='diri' object_label=None object_type='LITERAL' source='manual_override'
+
+S2604  ctx: kedua, ngangsen adalah upacara penyucian sementara bagi sang pitra yang barusan lepas pertalian dengan stulasariranya, supaya suksmasariranya tidak masih dilekati bekas-bekas badan kasar sama sekali.
+  [0] subject='ngangsen' subject_label=None relation='ADALAH' object='upacara penyucian sementara bagi sang pitra' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='pitra (dalam ngangsen)' subject_label=None relation='BARU_LEPAS_PERTALIAN_DENGAN' object='stulasarira nya' object_label=None object_type='LITERAL' source='manual_override'
+  [2] subject='ngangsen' subject_label=None relation='BERTUJUAN' object='agar suksmasarira pitra tidak lagi dilekati bekas-bekas badan kasar' object_label=None object_type='LITERAL' source='manual_override'
+
+S2612  ctx: pitra mendiang, yang merupakan sasaran upacara dibuatkan perlambang yang disebut sekah kangsen.
+  [0] subject='pitra' subject_label='KONSEP_FILOSOFIS' relation='DIBUATKAN_UNTUK' object='perlambang' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='perlambang' subject_label=None relation='DIKENAL_SEBAGAI' object='sekah kangsen' object_label='SARANA_RITUAL' object_type='ENTITY' source='object_decomposition'
+
+S2619  ctx: sekah kangsen menggunakan sebuah dulang atau sebuah meja pendek - kecil selaku singgasananya.
+  [0] subject='sekah kangsen' subject_label='SARANA_RITUAL' relation='MENGGUNAKAN' object='dulang' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+  [1] subject='sekah kangsen' subject_label='SARANA_RITUAL' relation='MENGGUNAKAN' object='meja pendek kecil' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S2620  ctx: dulang atau meja kecil itu diletakkan di bagian hulu arena upacara.
+  [0] subject='dulang atau meja kecil' subject_label='SARANA_RITUAL' relation='DILETAKKAN_DI' object='hulu arena upacara' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S2623  ctx: pertama-tama, sekah kangsen disucikan dengan tirtha dan sajen kecil sebagai pengantarnya.
+  [0] subject='sekah kangsen' subject_label='SARANA_RITUAL' relation='DISUCIKAN_DENGAN' object='tirtha' object_label='TIRTHA_SUCI' object_type='ENTITY' source='dependency_rule'
+  [1] subject='sekah kangsen' subject_label='SARANA_RITUAL' relation='DISUCIKAN_DENGAN' object='sajen kecil dengan tirtha dan sajen kecil sebagai pengantar nya' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S2624  ctx: sang pitra mendiang dipersilakan masuk ke dalam sekah kangsen serta memakai wujud tersebut selaku "pralingga"-nya (perlambang diri yang dihuni).
+  [0] subject='pitra mendiang' subject_label=None relation='DIPERSILAKAN_MASUK_KE' object='sekah kangsen' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+  [1] subject='pitra mendiang' subject_label=None relation='MEMAKAI' object='wujud tersebut selaku pralingga (perlambang diri yang dihuni)' object_label=None object_type='LITERAL' source='manual_override'
+
+S2630  ctx: dengan upacara penyucian ini, pitra yang telah berada di sekah kangsen itu dinilai wajar menerima sembah bhakti serta ayaban sajen.
+  [0] subject='pitra' subject_label=None relation='MENERIMA' object='sembah bhakti serta ayaban sajen' object_label='TAHAPAN_UPACARA' object_type='ENTITY' source='manual_override'
+
+S2635  ctx: tarpana dan muspa inilah merupakan klimaks dalam upacara sederhana ini.
+  [0] subject='tarpana dan muspa' subject_label='TAHAPAN_UPACARA' relation='ADALAH' object='klimaks upacara sederhana' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S2642  ctx: setelah pamralina, sekah kangsen itupun dibongkar.
+  [0] subject='sekah kangsen' subject_label=None relation='DIBONGKAR_SETELAH' object='pamralina' object_label=None object_type='LITERAL' source='manual_override'
+
+S2644  ctx: kemudian, abu daun tersebut yang dinilai selaku bekas-bekas stulasarira mendiang, dimasukkan ke dalam klungah nyuh gading yang dibentuk menjadi suku tunggal.
+  [0] subject='abu daun (yang dinilai selaku bekas-bekas stulasarira mendiang)' subject_label=None relation='DIMASUKKAN_KE_DALAM' object='klungah nyuh gading (yang dibentuk menjadi suku tunggal)' object_label=None object_type='LITERAL' source='manual_override'
+
+S2645  ctx: selanjutnya, dengan melalui upacara mapepegat (perpisahan), abu dalam suku tunggal dihanyutkan ke laut atau sungai.
+  [0] subject='abu suku tunggal' subject_label='SARANA_RITUAL' relation='DIHANYUTKAN_KE' object='laut' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='abu suku tunggal' subject_label='SARANA_RITUAL' relation='DIHANYUTKAN_KE' object='sungai' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S2649  ctx: ngangsen adalah upacara untuk bertangguh.
+  [0] subject='ngangsen' subject_label='RITUAL_KEMATIAN' relation='ADALAH' object='upacara untuk bertangguh' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S2651  ctx: mungkin sampai lima atau sepuluh tahun kemudiannya lah baru atma wedana sesungguhnya dapat diadakan bagi mendiang.
+  [0] subject='atma wedana' subject_label=None relation='DITUJUKAN_UNTUK' object='mendiang (baru dapat diadakan setelah mungkin lima atau sepuluh tahun kemudian)' object_label=None object_type='LITERAL' source='manual_override'
+
+S2667  ctx: sedangkan payadnyan adalah bangunan pokok pada arena ini.
+  [0] subject='payadnyan' subject_label=None relation='ADALAH' object='bangunan pokok pada arena ini' object_label=None object_type='LITERAL' source='manual_override'
+
+S2672  ctx: dari segi ukuran, payadnyan merupakan bangunan yang paling rendah, tetapi dihias paling indah.
+  [0] subject='payadnyan' subject_label=None relation='ADALAH' object='bangunan yang paling rendah (dari segi ukuran)' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='payadnyan' subject_label=None relation='DIHIAS_PALING' object='indah' object_label=None object_type='LITERAL' source='manual_override'
+
+S2686  ctx: dalam sekah atau puspalingga inilah pitra mendiang bertahta.
+  [0] subject='pitra mendiang' subject_label='KONSEP_FILOSOFIS' relation='BERTAHTA' object='sekah' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+  [1] subject='pitra mendiang' subject_label='KONSEP_FILOSOFIS' relation='BERTAHTA' object='puspalingga' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'

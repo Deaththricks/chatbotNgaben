@@ -1,0 +1,297 @@
+{
+ "overrides": {
+  "1782": [
+   {
+    "subject": "pamerasan",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "ADALAH",
+    "object": "upacara timbang terima (secara keagamaan)",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "pamerasan",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "DILAKUKAN_ANTARA",
+    "object": "mendiang dan keluarga yang masih hidup",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1982": [
+   {
+    "subject": "bade",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "ADALAH",
+    "object": "bangunan untuk sawa",
+    "object_label": "ISTILAH_UMUM_RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "1987": [
+   {
+    "subject": "jenis bade yang dipakai seseorang",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DITENTUKAN_BERDASARKAN",
+    "object": "status orang tersebut dalam tata kemasyarakatan pada zaman itu",
+    "object_label": "STRUKTUR_SOSIAL_ADAT",
+    "source": "manual_override"
+   }
+  ],
+  "2034": [
+   {
+    "subject": "mangle",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "ADALAH",
+    "object": "pengganti tingkat bade atau wadah",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "2045": [
+   {
+    "subject": "patulangan",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIBUAT_BERBENTUK",
+    "object": "binatang (yang mempunyai nilai religi tertentu)",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "patulangan",
+    "subject_label": null,
+    "relation": "BERFUNGSI_SEBAGAI",
+    "object": "tempat pembaringan jenazah (dan dapur pembakaran)",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "2055": [
+   {
+    "subject": "patulangan yang berbentuk naga kahang dan gajah mina",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "ADALAH",
+    "object": "pertanda bahwa keluarga tersebut keturunan dari orang yang condong pada paksa wesnawa",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "patulangan",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "BERBENTUK",
+    "object": "naga kahang",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   },
+   {
+    "subject": "patulangan",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "BERBENTUK",
+    "object": "gajah mina",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "1738": [
+   {
+    "subject": "mendiang",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "ADALAH",
+    "object": "pemangku",
+    "object_label": "ENTITAS_KEAGAMAAN",
+    "source": "manual_override"
+   },
+   {
+    "subject": "mendiang",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "ADALAH",
+    "object": "pejabat",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "mendiang",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "ADALAH",
+    "object": "sastrawan",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1747": [
+   {
+    "subject": "adegan",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "BERADA_DI",
+    "object": "ruang paturon (di samping jenazah)",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1853": [
+   {
+    "subject": "lontar putru",
+    "subject_label": null,
+    "relation": "MEMILIKI_JENIS",
+    "object": "putru sangaskara",
+    "object_label": "NASKAH_SUCI",
+    "source": "manual_override"
+   },
+   {
+    "subject": "lontar putru",
+    "subject_label": null,
+    "relation": "MEMILIKI_JENIS",
+    "object": "putru saji",
+    "object_label": "NASKAH_SUCI",
+    "source": "manual_override"
+   }
+  ],
+  "2000": [
+   {
+    "subject": "bade",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIPAKAI_UNTUK",
+    "object": "jenazah raja bali",
+    "object_label": "ISTILAH_UMUM_RITUAL",
+    "source": "manual_override"
+   },
+   {
+    "subject": "bade",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "MEMILIKI_TINGKAT",
+    "object": "11",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "raja bali",
+    "subject_label": null,
+    "relation": "BERASAL_DARI",
+    "object": "gelgel/klungkung",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "1714": [
+   {
+    "subject": "adegan",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "MELAKUKAN",
+    "object": "sembah bakti",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "adegan",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIBAWA_MENGHADAP",
+    "object": "pendeta",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "2184": [
+   {
+    "subject": "bale salunglung",
+    "subject_label": "BANGUNAN_RITUAL",
+    "relation": "DIBAWA_KE",
+    "object": "tempat pembakaran",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "bale salunglung",
+    "subject_label": null,
+    "relation": "DILETAKKAN_DI",
+    "object": "sekitar empat atau lima meter di arah hulu dari tempat pembakaran jenazah",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "2065": []
+ },
+ "additions": {
+  "1717": [
+   {
+    "subject": "adegan",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "ADALAH",
+    "object": "alat upakara",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "1963": [
+   {
+    "subject": "pering",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "MELAMBANGKAN",
+    "object": "purusa-pradana",
+    "object_label": "KONSEP_FILOSOFIS",
+    "source": "manual_override"
+   },
+   {
+    "subject": "pering",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DILETAKKAN_PADA",
+    "object": "sajen untuk surya",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   },
+   {
+    "subject": "pering",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DILETAKKAN_PADA",
+    "object": "penebusan",
+    "object_label": "TAHAPAN_UPACARA",
+    "source": "manual_override"
+   },
+   {
+    "subject": "pering",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DILETAKKAN_PADA",
+    "object": "pamerasan",
+    "object_label": "TAHAPAN_UPACARA",
+    "source": "manual_override"
+   },
+   {
+    "subject": "pering",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DILETAKKAN_PADA",
+    "object": "banten teben",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "2002": [
+   {
+    "subject": "bade",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "MEMILIKI_TINGKAT",
+    "object": "tujuh",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "2087": [
+   {
+    "subject": "naga banda",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIGUNAKAN_DALAM",
+    "object": "upacara palebon (ngaben)",
+    "object_label": "RITUAL_KEMATIAN",
+    "source": "manual_override"
+   }
+  ],
+  "1845": [
+   {
+    "subject": "semua upacara dalam pitra yadnya",
+    "subject_label": "RITUAL",
+    "relation": "MEMPENGARUHI",
+    "object": "kedudukan pitara",
+    "object_label": "ENTITAS_KEAGAMAAN",
+    "source": "manual_override"
+   }
+  ]
+ }
+}

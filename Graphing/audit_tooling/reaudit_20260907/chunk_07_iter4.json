@@ -1,0 +1,158 @@
+{
+ "overrides": {
+  "3355": [
+   {
+    "subject": "jenazah yang masuk melalui teben dari pepaga",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "BERMAKNA",
+    "object": "agar orang yang meninggal lebih cepat menemui brahman (sang pencipta)",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIMASUKKAN_MELALUI",
+    "object": "teben pepaga/asagan",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "3339": [
+   {
+    "subject": "krama atau keluarga",
+    "subject_label": "STRUKTUR_SOSIAL_ADAT",
+    "relation": "MENGAMBIL",
+    "object": "jenazah",
+    "object_label": "ISTILAH_UMUM_RITUAL",
+    "source": "manual_override"
+   },
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIAMBIL_DARI",
+    "object": "balai (tempat jenazah disemayamkan)",
+    "object_label": "ISTILAH_UMUM_RITUAL",
+    "source": "manual_override"
+   },
+   {
+    "subject": "tempat persemayaman jenazah",
+    "subject_label": null,
+    "relation": "DITEMPATKAN_DI",
+    "object": "bale semanggen",
+    "object_label": "BANGUNAN_RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "3544": [
+   {
+    "subject": "kawangen",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "MELAMBANGKAN",
+    "object": "tanda doa restu",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "kawangen",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DILETAKKAN_DI",
+    "object": "samping jenazah",
+    "object_label": "ISTILAH_UMUM_RITUAL",
+    "source": "manual_override"
+   },
+   {
+    "subject": "kawangen (di samping jenazah)",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "BERTUJUAN_AGAR",
+    "object": "perjalanan roh yang meninggal tidak mendapat halangan",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "3589": [
+   {
+    "subject": "arit gobed",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "ADALAH",
+    "object": "simbol rare angon",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "arit gobed",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "MELAMBANGKAN",
+    "object": "keperkasaan seorang laki-laki",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "3591": [
+   {
+    "subject": "anggapan (ani-ani atau ketam)",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "ADALAH",
+    "object": "simbol dewi sri",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "anggapan",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "MELAMBANGKAN",
+    "object": "kesuburan",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "penggunaan anggapan",
+    "subject_label": null,
+    "relation": "BERTUJUAN_AGAR",
+    "object": "wanita yang numitis memiliki kesuburan untuk melahirkan",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "3728": [
+   {
+    "subject": "penggunaan wewangian",
+    "subject_label": null,
+    "relation": "BERTUJUAN_AGAR",
+    "object": "orang yang numitis memperoleh pujian keharuman dalam tingkah lakunya",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "penggunaan wewangian",
+    "subject_label": null,
+    "relation": "BERTUJUAN_AGAR",
+    "object": "tubuh jenazah kelak berbau harum",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ]
+ },
+ "additions": {
+  "3546": [
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIISI_DENGAN",
+    "object": "kawangen di tangan",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "3799": [
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DITUTUPI_DENGAN",
+    "object": "kain putih (panjang kira-kira 2 sampai 2,5 meter)",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   }
+  ]
+ }
+}

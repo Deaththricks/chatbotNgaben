@@ -1,0 +1,952 @@
+i will write down all of the things i consider to be weird, wrong and stuff like that for each triple. i will be using (subject)-(relation)-(object) as a format to write my triples so that it is easier to write for me. the numbers here will represent the sentece_id. if i mark a passage here with /111, that means that if what i instruct is not possible through the system, we will just do a manual override. example: (213: it is not stated what type of ngaben this is, which makes the whole sentence give a wrong info, i think this is an issue in the sentence segmentation part. I want this fixed from the system if possible, but if its too risky, i will just do it manually /111)(other passages might not be as explicit that i want it to be tried to be fixed from the system and if not i want to do a manual override. so you will have to figure it out if you see a /111)
+
+
+46: ""upacara yang dilakukan jika jenazah tidak ditemukan atau meninggal di perantauan , menggunakan kayu cendana dan aksara sakral sebagai simbol pengganti jasad"," could be split into two, one talks about "upacara yang dilakukan jika jenazah tidak ditemukan atau meninggal di perantauan" or the definition, and one talks about "menggunakan kayu cendana dan aksara sakral sebagai simbol pengganti jasad" or the tool used
+
+58: nganyut is said to be 'dihanyutkan' to a river or sea, while the actual sentence is saying that its supposed to be the 'abu'. The extraction for this is good, but i get why the system couldn't get this because the sentence is a bit weird. its supposed to be something like "abu-dihanyutkan_ke-sungai" (remember, abu is the object) /111
+
+191: i wanna drop this one, but i think i can do it manually /111
+
+213: it is not stated what type of ngaben this is, which makes the whole sentence give a wrong info, i think this is an issue in the sentence segmentation part. I want this fixed from the system if possible, but if its too risky, i will just do it manually /111
+
+215: there could be another triple here, "layon-diletakkan-bale gede", and "layon-diletakkan-saka roras"
+
+219: "simbol perpisahan antara yang meninggal dengan keluarga yang ditinggal dengan harapan selalu diberikan kesejahteraan dan kemakmuran" object is too long, if its possible split it into "sekar ura-melambangkan-simbol perpisahan antara yang meninggal dengan keluarga yang ditinggal' and "sekar ura-melambangkan-harapan selalu diberikan kesejahteraan dan kemakmuran"
+
+224: drop this /111
+
+246: there should be another triple here: "ngerorasin-diadakan_di-pura dalem
+
+258: "tegteg-disertai-memohon" doesn't explain the full meaning of the sentence. it should be something like "tegteg-digunakan_untuk-matur piuning serta memohon atma yang akan diaben" /111
+
+270: im in a dillema, i feel taht the object is to long. i want it to be split like this. "ngaben svasta-adalah-pelaksanaan atiwa-tiwa terhadap orang yang telah meninggal yang jenazah nya tidak mungkin ditemukan Kembali", "ngaben svasta-ditujukan untuk - jenazah yang telah lama terkubur /terpendam ", "ngaben svasta-ditujukan untuk - jenazah yang terlalu jauh dari jangkauan kita" idk if this is possible to make the triples like that, so /111
+
+271: "atiwa-tiwa-adalah-sama atiwa-tiwa asti vedana" is a bit wrong because it is supposed to be "raçadana-adalah-sama atiwa-tiwa asti vedana", and "tirta yadnya pranawa-adalah-sama atiwa-tiwa asti vedana", /111. apart from this, 271 is very good
+
+338: there should be more triples for this, for each of the components that make a 'soda'
+
+344: the object is too long. for each component, i want it to be a separate triple "eteh eteh sawa-berupa-kain putih untuk saput", "eteh eteh sawa-berupa-kamben", etc /111
+
+344.2: holy fuck this should be separated into so much more relations instead of a long object like this. remember to be as terse as possible. /111
+
+354: you are missing this triple "pepaga-terbuat_dari-hitungan likah"
+
+358: there should be another extraction here: "leluwur-berupa/adalah-kain putih"
+
+364: there should be more extraction here for the nanginin ceremony. /111
+
+399: the subject should be: "sasih yang baik"
+
+400: split this into two extractions
+
+drop these: 540, 541, 559, 560, 591, 616, 618, 631, 641, 641, 679, 
+
+738: the object should be "abu yang diambil dengan mempergunakan sumpit/sepit"
+
+788: there should be one more extraction that goes like "dua kata-adalah-yadnya"
+
+797: the object is too long. if an object is too long and can be split without it disturbing its meaning, split it. /111
+
+801: object should be: "beberapa jenis yang pelaksanaannya ber-bhinneka"
+
+809: the triple should only be like this, which is "pitra yadnya dataran rendah-adalah-hasil penyempurnaan terakhir yang ening sira empu kuturan", "pitra yadnya dataran rendah-adalah-hasil penyempurnaan terakhir dang hyang dwijendra" "pitra yadnya dataran rendah-adalah-hasil penyempurnaan terakhir empu lutuk", "pitra yadnya dataran rendah-adalah-hasil penyempurnaan terakhir dan lain-lain"
+
+906: drop this
+
+917: this one is a bit weird because i do believe this one talking about a corpse of a baby, so i think this might result in some innacuracies. either try to fix this or drop this /111
+
+925: same thing with this, i think this is talking about a corpse of a baby, so if we cant somehow make these triples better, i think we should just drop it. i want to try to fix all the triples that are related to a baby corpse (please crosscheck with the raw material), if not, i think i want it dropped.
+
+961: sawa-berasal dari-hulu kak is wrong, drop that
+
+967: drop
+
+971: tirtha-terbuat dari-klungah. i wish we know what tirtha is made out of klungah so its clear. /111
+
+971: "pitra yadnya jenis-adalah-nglungah", drop the "jenis"
+
+978: i wish i we can see what kind of tirtha it is refering to here. /111
+
+1016: there should be more extraction here no? /111
+
+1122: innacurate object
+
+1128: drop the "nyekeh sawa-berasal dari-masyarakat" relation
+
+1136: split this relation
+
+from now on, i will be using /112 to say that i think a certain relation has too long of an object and due to its raw sentence, and that the object can be split into multiple relations. remember: make it as terse but not lose is meaning. /0 means to drop a certain extraction. /113 will be if i think that there could be more relations extracted from the raw sentence, or that the subject is too long and thus the triple need to be split even more, but the object length itself is not a concern such with the case with /112. /114 is for if i think the raw sentence itself is making the triple to be weird, and thus its missing context, thus if we cant fix it however way, we drop it. /115 is for if i think the object is too long, so either make it more terse or split it into more relations. /116 is for if the triple is slightly innacurate. /1 is for a good instances of extractions
+
+1138: /112
+
+1150: /0
+
+1160: /113
+
+1163: /113
+
+1169: /114
+
+1173: the first triple here should be"ngaben-dapat ditempuh dengan-biaya ringan"
+
+1188: /113, /111
+
+1189: /112
+
+1205: /112
+
+1206: /115
+
+1213:/114
+
+1238: /0
+
+1253: the subject here should be just "ngaben"
+
+1261: /112
+
+1328: /116, it should be. "punia-disikronkan dengan-jenis upacara"
+
+1361: /1
+
+1409: /114
+
+1429: /113
+
+1430: /113
+
+1349: /113
+
+1452: the triples for this is just such a mess. its innacurate here and there
+
+1456: the object should be "ngaben yang sangat sederhana"
+
+1461: /113
+
+1463: /0
+
+1465: /113
+
+1474: the objects here are what makes a sesajen, the subject here should be sesajen and the relations should be adjusted as well
+
+1477: /113
+
+
+================================================================================
+CONTINUATION — audited by Claude, S1482 through S4340 (rest of the 805-triple /
+484-sentence corpus), same voice/purpose as the manual audit above. Corpus is
+the POST-Iteration-2 re-run.
+
+MASTER SHORTHAND LEGEND (consolidated — supersedes any per-part definitions
+below; all codes below carry /111 semantics implicitly: try a system/cell-51
+fix first, manual override only if too risky/infeasible):
+  /1   good extraction, no issue.
+  /0   drop this extraction.
+  /112 object too long BECAUSE the raw sentence is long/complex -> must split
+       into multiple relations (not optional).
+  /113 more relations extractable from the sentence, OR subject too long and
+       needs splitting further (under-extraction / subject bloat).
+  /114 the raw sentence itself makes the triple weird/missing context -> drop
+       if it can't be fixed.
+  /115 object longer than it should be (terseness problem) -> shorten or
+       split, whichever preserves meaning (my choice).
+  /116 triple is slightly inaccurate (minor correction, not structural).
+  /117 missing coordinate/disjunctive member -- object or subject dropped one
+       item of an atau/dan list; add the missing member(s) back.
+  /118 wrong subject and/or object -- extractor grabbed the wrong entity (from
+       an embedded clause, a borrowed span, or reversed give/receive direction).
+  /119 wrong/mislabeled relation -- the predicate doesn't match the sentence's
+       actual verb/meaning (a meaning problem, not a length problem).
+  /120 nonsense / self-loop / tautological triple -- garbled fragment, subject
+       repeats as object, or object just restates the subject.
+  /121 relation label is a bare temporal/discourse marker used as if it were a
+       predicate (e.g. SETELAH, MENJELANG) -- wrong shape, not meaningless;
+       fold into a real predicate or drop just that relation.
+  /122 clause-stripped / too terse (mirror of /115) -- object or subject
+       dropped a defining yang/untuk/bahwa/agar/appositive clause that carries
+       the actual meaning; restore it.
+================================================================================
+
+## Part 1 — S1482 through S2363 (continuation of user's manual audit, done by Claude in the same
+## voice/shorthand). Corpus is the POST-Iteration-2 re-run (805 triples / 484 sentences).
+## Shorthand reference (as confirmed with the user): /111 implicit on every entry (try system fix,
+## manual override only if too risky). /1 good. /0 drop. /112 object too long because raw sentence
+## is complex -> must split. /113 more relations extractable / subject too long, need more splits.
+## /114 raw sentence itself makes the triple weird/context-missing -> drop if unfixable. /115
+## object too long (terseness problem) -> shorten or split, my choice. /116 slightly inaccurate.
+## New code I'm introducing this pass:
+## /121 — relation label is a bare temporal/discourse marker used as if it were a predicate
+##        (e.g. "SETELAH", "MENJELANG") — should be folded into a real predicate or dropped as
+##        its own relation, not treated as a nonsense-level DROP since it's not meaningless, just
+##        the wrong shape for a relation label.
+
+1482: missing extraction — "sawa DIBAKAR DENGAN KHUSUK" and "sawa MENJADI abu (seluruhnya)" are both dropped; only the "disertai kakawin" fact survived. /113
+
+1483: object drops "(yang dikasturi dan disukutunggalkan)" — the perfuming/shaping process. /115
+
+1493: same anchor bug flagged before — "termasuk kemampuan sosial ekonominya" attaches to "standar kedudukan seseorang di masyarakat" (what it's a component of), not to "manah" (the unrelated grammatical subject). fix: kemampuan sosial ekonomi-jenis_dari-standar kedudukan seseorang di masyarakat. /116
+
+1514: subject "adegan" drops its defining clause "(yang sudah disisipkan sebuah awak-awakaning sawa yang terbuat dari sebilah papan cendana atau majagau tipis)" — what's actually fitted inside it. /113
+
+1522: relation[0] "mendiang-dikenal_sebagai-seseorang" — drops "yang masih hidup" (still alive), the entire point, and label should be dianggap_sebagai not dikenal_sebagai. /116. relation[1] "mendiang-dikenal_sebagai-situasi" is nonsense — "situasi" comes from "dalam situasi itu," an adjunct, not a predicate nominal. /0
+
+1523: relation[0] "mendiang-lainnya-pamitan" — LAINNYA is a non-label; should be melakukan-pamitan. /116. (the other 3 relations to hyang prajapati/pura dalem/sedahan setra are good.)
+
+1533: drops "sama dengan sawa asli dalam pengabenan itu" — the whole point (pengawak treated identically to the real corpse), leaving "memperoleh upacara" almost content-free. /113
+
+1544: object "bau" drops "yang kurang sedap" (unpleasant) — the entire point. /115
+
+1552: same gap flagged before — drops "antar badan peti dengan tutupnya" (between the coffin body and lid). still broken. /115
+
+1556: whole purpose-clause chain dropped (memohon kepada hyang widhi/panca dewata agar unsur jasad mendiang kembali ke bhuwana agung). /113
+
+1558: relation[1] "sawa-dibungkus_dengan-paplengkungan semula" — verb is dikurung (enclosed), not dibungkus (wrapped), and "semula" ("sebagaimana semula" = as before) got fused into the object. fix: sawa-dikurung_dengan-paplengkungan. /116
+
+1584: relation label wrong — verb is mewujudkan (manifests), not melambangkan (symbolizes); also drops "dalam air ening" (the medium). /116. missing: tarpana-dilakukan_dengan-pujastawa, tarpana-dilakukan_oleh-ida sang sadaka. /113
+
+1601: relation[1] "kajang-dilakukan_di-plengkungan sawa" — kajang is an object, not something "performed at"; should be berada_di. still broken from before. /116
+
+1602: missing: lancingan-adalah-kain putih (panjangnya puluhan meter) — the appositive definition dropped entirely. /113
+
+1603: this sentence's extraction changed since last audit (no longer the wrong-subject bug) but now drops the actual main clause — "lancingan kajang ini dijunjung dengan khidmat oleh segenap keturunan mendiang" (solemnly carried by all descendants). missing: lancingan kajang-dijunjung_oleh-segenap keturunan mendiang. also worth adding: jenazah-diangkut_ke-setra tempat pembakaran (the adverbial clause, currently unextracted). /113
+
+1605: object drops "(yang memujanya)" — minor. /115
+
+1606: drops the second coordinate verb "dihidupkan" and its purpose ("untuk dapat bertuah"). missing: kajang-dihidupkan_dengan-puja. /113
+
+1609: object is garbled — "satu jiwa/atma paratma/brahman" should read "penyatuan jiwa/atma dengan paratma/brahman." /116. also drops the entire second coordinate definition ("serta kembalinya pula unsur badan manusia ke asalnya yakni badannya bhuwana agung/pancamahabutha"). /113
+
+1629: relation[0] "kajang suratan-dikenal_sebagai-atribut nilai martabat warga" — verb is "dianggap...selaku" (considered as), not "dikenal sebagai" (known as); fix label to berperan_sebagai. /116. missing: kajang-memiliki-nilai dan bobot istimewa. /113
+
+1639: relation[1] "kajang-dipuja-pamlaspasan" — pamlaspasan is the OCCASION it's blessed AT, not the object of worship. fix: dipuja_pada. still broken from before. /116
+
+1642: relation "pelita kecil-terbuat_dari-kulit telur ayam" drops "berminyak kelapa" (oiled with coconut oil). /115
+
+1657: object is one long dumped string ("alat upakara yang beralaskan tembong (nyiru yang tabingnya tinggi), berisi bermacam-macam ramuan") — should split into panguryagan-beralaskan-tembong and panguryagan-berisi-bermacam-macam ramuan. /112
+
+1681: this whole relation is wrong — "damar kurung-dilakukan_di-ngaben jenis sawa wedana" garbles the locative/temporal frame as the relation itself, losing the actual verb "dinyalakan" (is lit) entirely and dropping the coordinate "bersamaan dengan angenan" (angenan also lit). fix: damar kurung-dinyalakan_saat-ngaben jenis sawa wedana (dan angenan turut dinyalakan). same DILAKUKAN_DI-on-non-event-sarana bug flagged as N2 way back, still unfixed. /116
+
+1688: relation label wrong — verb is berwujud (takes the form of), not melambangkan (symbolizes). still broken from before. /116. missing: cili-terbuat_dari-rontal (dilapisi kertas emas). /113
+
+1713: object garbles agent+manner together ("penuh hormat keluarga"). fix: adegan-diambil_oleh-keluarga (yang ngaben). still broken from before. /116
+
+1714: drops "dibawa menghadap" — the actual first action (brought to face the priest), before "melakukan sembah bakti." missing: adegan-dibawa_menghadap-pendeta. /113
+
+1717: relation[1] "alat upakara-adalah-tempat atma mendiang" — subject should be adegan (adegan is both the alat upakara AND the seat for the atma), not "alat upakara" restating itself; also drops "didudukkan" (is seated). /116
+
+1732: relation[1] drops the second coordinate definition ("atau juga berarti 'tatwa pengarahan hidup'"). missing: upadesa-berarti-tatwa pengarahan hidup. /113. NOTE: this sentence's raw text itself looks truncated mid-clause ("...perlu kita catat, bahwa" — no continuation) — see raw_issues file.
+
+1738: relation[0] only captures 1 of 3 appositive members (pemangku); missing pejabat, sastrawan dan sebagainya. /113. relation[1] "mendiang-dilakukan_dengan-rendah hati" is still wrong — the sentence's real subject of "mundurlah...dengan rendah hati" is the honorific title-holder ("ida bagus atau ida ayu"), not mendiang itself. culturally dense/hard to cleanly triple-ify — recommend drop. /114. relation[2] "mendiang-lainnya-ida bagus" — LAINNYA non-label, also drops "atau ida ayu." /116. (good: subject is now correctly "mendiang," not the old "mendiang hidup" fusion bug — that part is fixed.)
+
+1747: relations[1]/[2] use "setelah" as a bare relation label (temporal marker, not a real predicate) — same weak-shape as the earlier-flagged S2642 case. /121. relation[0] drops "di samping jenazah." /115
+
+1753: verb "diyakini akan akrab dengan X" — the real predicate adjective "akrab" was dropped for the epistemic wrapper "diyakini." fix: mendiang-akrab_dengan-penghadang. still broken from before. /116
+
+1754: relation[1] "mendiang-memperoleh-pergaulan alam roh" is redundant/garbled — "dalam pergaulan di alam roh tersebut" is really the location of relation[0]'s acceptance-as-new-member, not a separately "obtained" thing. recommend merging into one relation: mendiang-diterima_sebagai-warga baru (dalam pergaulan alam roh). /116
+
+1763: relation[0] "banten-menghasilkan-sekah abin" is wrong — banten doesn't produce sekah abin; sentence coordinates two separate facts (banten = the base; sekah abin = the special mark) that got merged into a fake produce-relation. fix: drop, replace with sekah abin-berperan_sebagai-ciri khusus. /0. relation[1] subject drops "bebangkit atau pulagembal" (which kind of banten). /115
+
+1764: object "nama" is nonsense — comes from the parenthetical etymology "(abin = dipangku)," not a real object. the actual content ("oleh yang menggelar yadnya") is missing entirely. /0. missing: sekah abin-dipangku_oleh-yang menggelar yadnya. /113
+
+1776: drops the entire defining clause on uang kepeng (wrapped in dapdap leaf, tied with tridatu thread). /113
+
+1782: object dumps most of the sentence poorly ("upacara timbang" truncates "timbang terima," not even a real word alone) and drops the whole "antara mendiang...yang masih hidup" clause explaining what it's a handover BETWEEN. still broken despite being a plain ADALAH case — the "antara X dengan Y" attachment isn't covered by the yang-clause fix. split into: pamerasan-adalah-upacara timbang terima (secara keagamaan) + pamerasan-dilakukan_antara-mendiang dan keluarga yang masih hidup. /112
+
+1783: drops the second coordinate clause ("diiringi dengan penyerahan hak dan berbagai milik yang dulunya ada pada mendiang"). missing: mendiang-menyerahkan-hak (dan berbagai milik). /113
+
+1823: good — subject is now correctly "mendiang" (the "mendiang masa hidup" fusion bug from before is fixed). but the sentence's actual main clause — "dalam pengabenan upacara panebusan merupakan sesuatu yang mutlak" — is still entirely unextracted. missing: upacara panebusan-adalah-sesuatu yang mutlak (dalam pengabenan). /113
+
+1832: relation label wrong — "diwariskan kepada" (can be inherited by), not "ditujukan_untuk" (aimed at). also drops "atau leluhur" and "(dalam batas tertentu)." fix: karma phala orangtua atau leluhur-diwariskan_kepada-keturunan (dalam batas tertentu). still broken from before. /116
+
+1845: relation label wrong — "berpengaruh kepada" (influences), not "ditujukan_untuk." fix: mempengaruhi. still broken from before. /116
+
+1850: LAINNYA used for both relations, and both objects drop the actual quoted root words ("putru," "pitra"). fix: mamutru-berasal_dari_kata-putru / mamutru-merupakan_perubahan_dari-pitra. still broken from before. /116
+
+1853: object "jenis" alone is vacuous — the two named types ("putru sangaskara," "putru saji," introduced via "antara lain") were dropped entirely. missing: lontar putru-memiliki_jenis-putru sangaskara / putru saji. /112
+
+1889: good — this is one of Claude's targeted overrides from the Iteration-2 batch and it's clean. /1
+
+1898: drops "menunggu saat digunakan pada pengabenan." missing: yeh panembak-digunakan_pada-pengabenan. /113
+
+1899: good — full defining clause retained, and the "menurut sejumlah pakar" attribution correctly excluded. /1
+
+1915: sentence coordinates two clauses (pabersihan Monday / pangabenan Thursday); only the second survived. missing: pabersihan-dilangsungkan_pada-hari senin. /113
+
+1931: object is garbled — merges the actual lontar name ("yama purwana tatwa") with an unrelated ceremony type mentioned later in the sentence ("swasta geni") into one fake compound. /116. also the real content — that recadana or a simple swasta geni suffices to complete the pangabenan — is missing. /113
+
+1937: good — the defining clause is now retained (previously this was flagged as still-broken; looks fixed now, just some stray tokenization spacing "upakara nya"). /1
+
+1938: verb "dinilai" (is rated as) is an evaluation, not "memiliki" (possession). fix: dinilai_sebagai. still broken from before. /116
+
+1963: relation[3] "pering-lainnya-mahkota" should be menyerupai (resembles, per "bagaikan mahkotanya"). /116. relation[4] is still the exact garbled-single-string-dump bug flagged before ("sajen surya untuk surya , penebusan , pamerasan , banten teben dan sebagai nya" with a duplicated "surya" and stray punctuation) — the walk clearly reaches all 4 list members (proven by relations[0]-[2] being clean) but dumps this one instead of splitting. needs: pering-diletakkan_pada-sajen untuk surya / penebusan / pamerasan / banten teben, four separate relations. /112
+
+1982: object has a duplication artifact — "bangunan sawa untuk sawa" repeats "sawa." fix: bangunan untuk sawa. /116
+
+1987: subject is an awkward fragment of a relative clause ("bade jenis apa"); object drops "dalam tata kemasyarakatan pada zaman itu." low priority. /116
+
+2000: subject drops "yang bertingkat 11" (11-tiered) — same bade/patulangan tier-qualifier-stripping bug flagged before, this specific case still open. /115. relation[1]: "(gelgel/klungkung)" modifies "raja," not "jenazah" — should restructure as raja bali-berasal_dari-gelgel/klungkung. /116
+
+2001: good 2-item list, but subject drops "bertingkat sembilan" (same tier-stripping bug). /115
+
+2002: subject drops "bertingkat tujuh" (tier bug again). /115. object drops the entire defining relative clause ("yang leluhurnya pernah menjadi punggawa dan pejabat yang sederajat"). /112
+
+2003: drops the entire defining relative clause describing this bade variant (no badawang base, possibly tiered, boma ornament, limited-color cloth). split into: wadah-adalah-usungan yang tanpa badawang + wadah-memakai-hiasan boma dan warna kapas terbatas. /112
+
+2028: relation[0] verb should be "digantungkan" (hung) not "diletakkan," and drops "atau wadah" + "di masing-masing tingkatan." /116. relation[1] uses "menjelang" as a bare relation label — same weak-shape issue as 1747. /121
+
+2029: relation label wrong — "tergantung pada" (depends on), not "diletakkan_di" (a location). also redundant with 2028's placement fact. fix: bergantung_pada. still broken from before. /116
+
+2034: drops "atau wadah" — 2-item list, second member missing even though the general 2-item-list fix landed elsewhere. /115
+
+2040: drops "diturunkan" — the first of 2 coordinate verbs (diturunkan serta dibaringkan). missing: jenazah-diturunkan-(di kuburan). /113
+
+2045: the first half of the sentence — describing patulangan's practical shape (tempat pembaringan jenazah + dapur pembakaran) — entirely dropped. missing: patulangan-berfungsi_sebagai-tempat pembaringan jenazah (dan dapur pembakaran). /113
+
+2055: good — subject now correctly keeps "patulangan" with both berbentuk relations split out (naga kahang, gajah mina) — that part is clearly fixed from before. but object of relation[0] "pertanda" drops the whole "bahwa mereka merupakan keturunan dari orang yang condong pada paksa wesnawa" clause — a bahwa-complement on the copula root, same shape flagged before as not covered. split: patulangan-adalah-pertanda bahwa mereka keturunan dari orang yang condong pada paksa wesnawa. /112
+
+2056: good — this one's clean now, full 4-way berbentuk list + the gadarba=beruang gloss, no issues. /1
+
+2065: same anchor bug flagged before, and the source sentence itself is convoluted enough that I'm not confident any clean fix exists without more context. low confidence either way — recommend leaving as a known-weak instance rather than forcing a fix. /114
+
+2087: relation[2] "naga banda-berasal_dari-keluarga" is still wrong — "dari keluarga tertentu saja" restricts WHO may use it, not where it originates. fix: ditujukan_untuk-keluarga tertentu saja. still broken from before. /116
+
+2093: object drops "dengan masyarakat." /115. the second clause ("mempunyai pertalian yang intim dengan soal duniawiah material") is entirely unextracted. missing: mendiang-memiliki-pertalian intim dengan soal duniawi material. /113
+
+2115: wrong subject — "dinamai" applies to "kelompok ini," not "swadharma kemasyarakatannya" (which is the reason-clause for the naming). fix: kelompok ini-adalah-paksa mahayana (kendaraan besar). still broken from before. /116. also missing the purpose clause entirely: kelompok (paksa mahayana)-bertugas_mengangkut-masyarakat manusia ke alam sana. /113
+
+2117: "berdasarkan" is a citation/reasoning-basis adjunct, not a real predicate — nonsense triple. still broken from before. /0. missing: peranda buddha-memakai-naga banda (pada palebonnya). /113
+
+2124: subject drops "beliau untuk mamari-suddha (menyucikan) dunia ini" — the purpose clause sitting on the subject side is entirely dropped, confirms the fix doesn't cover subject-side purpose clauses. split: swadharma (beliau)-bertujuan_untuk-menyucikan dunia ini + swadharma-adalah-fungsi pokok (beliau). /112
+
+2130: relations[0]/[1] both drop "pada daya suci hyang widhi itu" — the actual destination. /115. relation[2] is a broken fragment ("atas alias") + wrong voice (passive DILETAKKAN when the priest actively places himself) — still broken from before. fix: peranda shiwa-menempatkan_diri_di-luar alam duniawi. /116. also drops the sentence's conclusion entirely: peranda shiwa-turun_meresapi-alam ini. /113
+
+2133: verb should be "digunakan_saat" — naga banda is used, not "performed." still broken from before. /116
+
+2166: relation[0] drops "berdampingan dengan jenazah mendiang" — the key point (juxtaposition with the corpse), not just the room. /115. relation[1] uses "menjelang" as a bare label — same weak-shape issue. /121
+
+2180: verb should be "berwujud" (takes the form of), not "melambangkan" (symbolizes) — recurrence of the same berwujud/melambangkan confusion flagged since Iteration 0. still broken. /116
+
+2184: relation[1] drops the distance and reference point ("sekitar empat atau lima meter... dari tempat pembakaran jenazah"). still too terse from before. /115
+
+2198: nested object_decomposition child (relation[3], "wilayah-adalah-kantongnya sesuatu") still drops "segala" and the defining clause "yang didetasering di dunia ini" even though the top-level split (relations 0-2) works fine — confirms the recursive-decomposition gap flagged before is still open. /115
+
+2224: subject drops "yang dilakukan sehari menjelang pangabenan ini," object drops "hampir" (almost). minor hedging nuance, borderline-OK as before. /116
+
+2234: subject drops "(yang telah tertanam-titip)" — describes the prior provisional-burial site. /115
+
+2252: drops "banyak," "dan sebagainya," and — significantly — the entire defining clause classifying these relatives as distant kin ("keluarga sampingan, bukan keluarga satu sidikara/saling sembah"). missing: mendiang (keponakan, cucu-cucu)-tergolong-keluarga sampingan (bukan keluarga satu sidikara/saling sembah). /113
+
+2256: drops "sejumlah" and the entire defining relative clause (wrapped in dapdap, tied with tridatu). split: pamerasan-adalah-sejumlah uang kepeng + uang kepeng-dibungkus_dengan-daun dapdap + uang kepeng-diikat_dengan-benang tridatu. /112
+
+2258: same not-holding case flagged before, confirmed still broken twice now. relation[0] drops "akan adanya pangabenan untuk mendiang" entirely. relation[1] wrongly attaches "untuk mendiang" to the sarana itself instead of to "pangabenan." also the second parataxis conjunct ("serta selaku tanda, bahwa keluarga mendiang tidak lupa akan ikatan keluarga") is entirely dropped. split: pamerasan-adalah-sarana pemberitahuan akan adanya pangabenan untuk mendiang + pamerasan-adalah-tanda bahwa keluarga mendiang tidak lupa akan ikatan keluarga (drop relation[1] as currently structured). /112
+
+2262: relation label wrong — "pada pendeta" means from/to a person, not a location; fix: dimohon_kepada. still broken from before. /116. missing: sang cucu-memohon-tirtha, and the defining clause "yang muput pangabenan itu sendiri." /113
+
+2269: LAINNYA + "de facto" as object is nonsense — "secara de facto" is an adverb describing completion status, not an entity. still broken from before. /0. missing: bale pamuun (dan alat-alat upakara lainnya)-telah_selesai_secara-de facto. /113
+
+2323: relation[1] "bade dan lembu-bagian_dari-alat penting lainnya" is backwards/wrong — "termasuk segala alat penting lainnya" groups bade & lembu WITH other tools under "sarana siap pakai," it isn't a part-whole relation. recommend drop or restructure as bade dan lembu-tergolong_bersama-alat penting lainnya. still broken from before (same "termasuk"-mislabel family the N6/D11 swap doesn't reach). /116
+
+2336: minor — relation[3] "kajang-diberi-30 meter" drops "dua atau" (a 2-to-30-meter range/disjunct). /115. otherwise this sentence looks well-fixed now (full 3-way list + "kepada mendiang" qualifier both present).
+
+2337: relation[2] object "simbol /ditindihkan" is garbled — the raw text's "dilipat-lipat/ditindihkan" slash-separated verb pair leaked a stray "/ditindihkan" fragment into the object. fix: object should just be "simbol." /116
+
+2340: wrong label (ADALAH implies identity; text says "dijadikan" = made into) and drops "unsur" — adegan is a component of the procession, not the whole thing. also drops "oleh pemudi-pemudi keluarga bersangkutan." fix: dijadikan-unsur arak-arakan indah (oleh pemudi-pemudi keluarga). still broken from before. /116
+
+2363: "tiga kali" is just frequency; the real missing content is the agent doing the circling (the bade carrying the corpse). fix: dikelilingi_oleh-bade dengan jenazahnya (sebanyak tiga kali). still broken from before. /116. missing: bale pamuunan-dihuni-lembu (dropped from subject). /113
+
+## STATS
+Total triples reviewed: 174 (across 107 sentences, S1482-S2363)
+Sentences with zero issues (fully clean, no entry above): 25 — S1497, S1504, S1525, S1559, S1588,
+  S1597, S1610, S1647, S1650, S1699, S1794, S1854, S1879, S1889, S1899, S1936, S1937, S1985, S2056,
+  S2163, S2183, S2212, S2224(borderline-keep), S2265, S2316
+Sentences flagged (at least one entry above): 82 / 107 (77%)
+Rough triple-level split: of 174 relations, ~41 sit in fully-clean sentences (no issue at all);
+  most flagged sentences also contain at least one still-good relation alongside the flagged one
+  (e.g. S1523's 3 good recipient relations, S2055's 2 good BERBENTUK relations) — so treat the
+  82/107 sentence-level number as the more meaningful "needs attention" ratio; a strict per-triple
+  good/bad split would need one more counting pass than I had budget for here.
+New codes introduced: /121 (bare temporal/discourse marker used as a relation label, e.g. SETELAH,
+  MENJELANG — wrong shape, not nonsense; fold into a real predicate or drop the relation).
+Repeat offenders (same defect Iteration 2 already flagged, confirmed STILL broken in fresh data):
+  D1/D2 clause-retention gaps (many — MEMILIKI/ADALAH+complex clause still drops content in ~15+
+  sentences this range), D6 garbled-single-string-dump (S1963[4], exactly as before), the
+  berwujud/melambangkan confusion (S1688, S2180), bade/patulangan tier-stripping (S2000/S2001/S2002),
+  D11 termasuk-anchor bug (S1493, S2065), several DILAKUKAN_DI/SETELAH/MENJELANG-as-bare-label cases
+  (new pattern, related to old N2, now also seen with SETELAH/MENJELANG specifically).
+Genuinely fixed since Iteration 2 (confirmed clean in this range): S1523's coordinate-recipient
+  list, S1699's 3-way subject list, S1738/S1823's subject-fusion bug (mendiang hidup -> mendiang),
+  S2055/S2056's bade/patulangan BERBENTUK list, S2336's coordinate-object list, S1889 (targeted
+  override), S1899/S1937/S2212 (clause retention holding well).
+
+
+new shorthand added this pass (merge into the master scheme):
+/117 = missing coordinate/disjunctive member — object or subject dropped one item of an "atau/dan"
+  list; add the missing member(s) back into the same triple.
+/118 = wrong subject and/or object — the extractor grabbed the wrong entity (from an embedded
+  clause, a borrowed span, or reversed direction of who-does-what-to-whom).
+/119 = wrong/mislabeled relation — the predicate itself doesn't match the sentence's actual verb
+  or meaning (not a length problem, a meaning problem).
+/120 = nonsense / self-loop / tautological triple — garbled fragment, subject repeats as object,
+  or the object just restates the subject with no new information.
+/122 = clause-stripped / too terse (the mirror of /115) — object or subject dropped a defining
+  yang/untuk/bahwa/agar/appositive clause that carries the actual meaning; restore it.
+
+2364: missing "sebelah hilir" disjunct — bade-diletakkan_di-sebelah hilir atau teben lembu /117
+
+2370: wrong subject AND wrong relation. pradaksina doesn't "memperoleh" anything, it SYMBOLIZES the
+whole descent chain (purusa meresapi pradana -> material memperoleh imbas kesucian). should be
+pradaksina-melambangkan-turunnya purusa meresapi pradana (material memperoleh imbas kesucian dari
+yang immaterial) /111
+
+2374: missing "atau gerak ke atas" disjunct /117
+
+2377: object way too terse, drops the entire "untuk merubah jenazah...pancamahabutha sebagaimana
+asalnya semula" purpose clause which IS the point of the sentence /122
+
+2380: [1] bare verb object "berputar" — cara prasawya-adalah-berputar ke kiri, berlawanan dengan
+putaran jarum jam /122. also missing entirely: bade-berlawanan_dengan-gerak pradaksina yang
+dilakukan pada upacara dewa yadnya di pura /113
+
+2387: subject garbled ("bade sawa atas" should be "bade dengan sawa di atasnya" or just "bade"),
+object drops "sebelah" /111
+
+2406: "menjadi" softened to "adalah" and "segala" (every) dropped — jenazah atau simbolik-menjadi-
+sasaran segala kegiatan /116
+
+2419: subject phrasing garbled ("lain-lain, dan alat" should read "dan lain-lain alat yang harus
+dibakar"), and drops "tanpa sisa" (without remainder) /116. second relation (hyang agni-adalah-api)
+is a good clarifying gloss /1
+
+2448: flattens the actual act (paying farewell homage) into generic "directed to" — suku tunggal-
+menghaturkan-sembah bakti pamitan kepada bhatara-bhatari /119. missing: bhatara-bhatari-bersemayam_di
+-pura dan pamrajan panyiwiannya /113
+
+2449: /1 — good, confirms the nganyut/abu wrong-subject class (flag.txt 58b/c) is NOT recurring here
+
+2455: drops "berbagai" (various) — pangabenan-terdiri_dari-berbagai jenis /116. missing: pangabenan
+jenis (masing-masing)-memiliki-nama sendiri-sendiri /113
+
+2472: drops the "om" appositive naming which sound — pranawa-berarti-lambang suara "om" /116
+
+2473: all three coordinate members (ketenangan/kemantapan/kesucian) correctly split /1 — good.
+but the sentence's actual MAIN clause (what motivates using the name "pranawa") is entirely
+missing — pangabenan yang menggunakan nama pranawa-dilatarbelakangi_oleh-hasrat supaya mendiang
+memperoleh ketenangan, kemantapan, serta kesucian /113
+
+2480: /1 — both relations fine
+
+2483: [0] drops "di alam lain" /116. [1] clause-stripped, drops "yang berlandaskan hasrat, semoga
+mendiang mendapatkan situasi demikian di alam lain" /122
+
+2485: drops the crucial defining clause "yang telah tak ada sawanya lagi" (no corpse remains) —
+without it the triple is much broader than what the sentence actually claims /122
+
+2489: /1 — fine as-is
+
+2502: [0] drop, tautological gloss "(wedana)" of the verb, not a distinct entity /0. [1][2][3]
+wrong relation — roh/arwah/badan halus are what's PURIFIED by the ceremony, not something it's
+"digelar dengan" — sawa wedana-bertujuan_menyucikan-roh/arwah/badan halus mendiang /119. [4] wrong
+subject — the ceremony doesn't "become" atma, the deceased's spirit does — badan halus mendiang
+(roh/arwah)-menjadi-atma yang tanpa badan sama sekali /118
+
+2520: relation itself is fine, keep. missing: atma wedana-berbeda_dengan-ngaben (dalam hal sifat
+sebel) /113
+
+2527: subject truncated "apa" should be "apapun", otherwise good — coordinate list AND both object
+disjuncts (dewaloka / alam kedewaan) correctly split, nice confirmation the subject-side conjunct
+walk is holding here /116
+
+2535: drops the appositive "yang merupakan 'kulit dirinya'" defining what suksmasarira is /122
+
+2542: drops "beberapa" /116. also drops "masing-masing punya nama dan ciri-ciri tersendiri" /113
+
+2548: both relations drop "hanya...sekali saja" (only once) — a defining ritual constraint, not
+decoration /116
+
+2555: drops "nama resmi" (official name) framing — atma wedana-adalah-nama resmi upacara penyucian
+pitra /116. good that the "menurut pustaka..." attribution is correctly excluded
+
+2558: /1 — both fine, correctly excludes "menurut aksaranya" attribution
+
+2563: drops the defining relative clause "yang mudah ditimpa suasana sebel" (prone to ritual
+impurity) /122
+
+2566: [0] subject bleed ("demikian" stray adverb) + drops the appositive "masing-masing arah yang
+berjumlah 11" — bhuwana agung (masing-masing arah yang berjumlah 11)-memperoleh-cuntaka selama
+sehari /118. [1] drop, duplicate duration fragment /0
+
+2571: [0] fine /1. [1] too garbled to safely reconstruct (drops "sang rama beserta laksmana", likely
+wrong subject too — reads like a separate mythological comparison) — recommend drop /114
+
+2604: subject wrongly keeps "kedua" (list marker "secondly"), object dumps the whole sentence
+unsplit — split into: ngangsen-adalah-upacara penyucian sementara bagi sang pitra / pitra (dalam
+ngangsen)-baru_lepas_pertalian_dengan-stulasarira nya / ngangsen-bertujuan-agar suksmasarira pitra
+tidak lagi dilekati bekas-bekas badan kasar /112
+
+2612: [0] wrong relation, benefactive-passive inversion — "dibuatkan" means the effigy is made FOR
+pitra (recipient), not that pitra produces it — pitra mendiang-dibuatkan-perlambang (yang disebut
+sekah kangsen) /119. [1] fine /1
+
+2619: /1 — both fine, drops "selaku singgasananya" but too minor to chase
+
+2620: /1 — fine
+
+2623: [0] fine /1. [1] duplication bug, object repeats "dengan tirtha dan sajen kecil" — sekah
+kangsen-disucikan_dengan-sajen kecil (sebagai pengantar) /116
+
+2624: wrong relation — this isn't an identity claim (ADALAH), the sentence says pitra is INVITED
+to enter and take this form. split into: pitra mendiang-dipersilakan_masuk_ke-sekah kangsen /
+pitra mendiang-memakai-wujud tersebut selaku pralingga (perlambang diri yang dihuni) /112
+
+2630: garbled — "dengan upacara penyucian ini" wrongly folded in as if evaluative. fix: pitra-
+menerima-sembah bhakti serta ayaban sajen /119
+
+2635: /1 — good, subject coordination (tarpana dan muspa) held
+
+2642: "SETELAH" alone isn't a predicate — drops the actual action. fix: sekah kangsen-dibongkar_
+setelah-pamralina /119
+
+2644: both subject and object drop their defining relative clauses (bekas-bekas stulasarira
+mendiang / dibentuk menjadi suku tunggal) /122
+
+2645: /1 — good, 2-item disjunct correctly split
+
+2649: /1 — good, purpose clause retained
+
+2651: drops the significant temporal constraint (this rite often waits 5-10 years) /122
+
+2667: drops "pada arena ini" locative /116
+
+2672: garbled trailing fragment + drops the actual contrastive point ("tetapi dihias paling
+indah" — the most beautifully decorated). fix object to "bangunan yang paling rendah (dari segi
+ukuran)" /119, and ADD payadnyan-dihias_paling-indah /113
+
+2686: /1 — good, 2-item disjunct correctly split, correct direction
+
+2748: /1 — all four relations correct, and this is the N6/termasuk-swap regression-check target:
+CONFIRMED HOLDING (sekah sangge-jenis_dari-sekah, correct direction)
+
+2750: sentence is heavily garbled/run-on, "selaku sarananya" describes the offering not pitra
+mendiang's role — parser misattachment drags the subject into all three relations. recommend drop
+all three /114, ADD the one recoverable fact: pitra mendiang-dipersilakan_masuk_ke-(wujud/
+puspalingga) /113
+
+2752: wrong relation (mendiang doesn't "produce" the sekah-form, mendiang IS REBORN into it) +
+garbled undifferentiated dump. split into: mendiang-lahir_dalam_wujud-sekah / mendiang (dalam
+wujud sekah)-diajak_berkomunikasi_oleh-keluarga /112
+
+2758: [0] fine /1. [1] wrong subject — "dari suksma sarira menjadi X" means suksma sarira CHANGES
+INTO X, it doesn't equal X. fix: mendiang-berubah_dari_suksma_sarira_menjadi-tanpa berbadan sama
+sekali atau atma tattwatma /118
+
+2762: [0][1] fine /1. [2] wrong relation, reverses agency + nonsense object fusing two unrelated
+nouns. fix: mendiang-memperoleh_dari-pendeta /119, plus ADD upanisad-tentang-jalan yang harus
+ditempuh /113
+
+2768: object truncated to a meaningless bare pronoun "dia" — the actual folk-etymology claim was
+dropped. fix: sangge-adalah-"sang ngae" diri kita /122
+
+2777: [0] mislabeled, bhatara is invited to PERFORM utpeti not "directed for the purpose of" it —
+bhatara-dipersilakan_untuk-utpeti (masuk dan menghuni) /119. [1] missing "dan menghuni" /117.
+[2][3][4] fine /1. missing entirely: "dipendak (disongsong) secara khusus" (specially welcomed) —
+bhatara-dipendak_secara-khusus /113
+
+2780: [0] drops "tiga buah" (three) quantity /116. [1] "akibat lanjutannya" is a vague abstract
+noun with no further specification in the source — borderline meaningless as an isolated triple,
+recommend drop /114
+
+2787: /1 — good
+
+2794: [0] wrong relation label — "diturunkan" (carried down) mislabeled as BERASAL_DARI (originates
+from), loses the physical-relocation sense. fix: sekah-diturunkan_dari-pawedan /119. [1] fine /1 —
+N6/termasuk direction confirmed still holding here too
+
+2803: [0] subject wrongly fuses an adjunct clause into the entity name — pawedan-adalah-tempat sang
+sulinggih dalam memuja /118. [1] wrong relation, DIPERSEMBAHKAN_KEPADA doesn't fit a location —
+tempat sulinggih (dalam memuja)-digunakan_untuk-segenap upacara atma wedana ini /119. missing:
+pawedan-juga_adalah-tempat ngajum serta mengutpeti sekah /113
+
+2810: [0] nonsense LAINNYA catch-all, real predicate is the sentence's central claim — pawedan
+(tempat memuja)-merupakan-"shiwa (dewa) loka" /119. [1] fine as a standalone gloss but redundant
+once [0] is fixed, keep either way /1. missing: the contrastive negation "bukan sekadar madyapada"
+/113
+
+2812: [0] fine /1. [1] drops the defining clause "yang masih bersuksmasarira" that distinguishes
+pitra from plain atma /122
+
+2819: drops "di mercapada ini" (in this mortal realm) locative /116
+
+2824: wrong relation, "melalui" (through) mislabeled as "ke dalam" (into) — the sekah passes
+THROUGH the door, not into it. fix: sekah-dimasukkan_melalui-pintu belakang /119
+
+2832: drops the defining relative clause + conditional framing ("yang ada di pawedannya", "kalau
+masuk melalui jalan depan") /122
+
+2843: /1 — GOOD, and worth flagging as a positive: this was the D7/N3 benefactive-passive-inversion
+target from the automated audit and it now reads correctly (food offered TO the priest/guests,
+not reversed). confirms that fix is holding for the hatur-verb class it was scoped to.
+
+2850: relation itself fine, keep. missing: punia (besar-kecilnya)-sepadan_dengan-jenis yadnya dan
+martabat sang mayadnya /113
+
+2854: [0] borderline OK ("bersuka cita" is an odd relation label but captures the fact), keep /1.
+[1] drops the embedded clause describing WHAT is witnessed, turning a specific event into a vague
+"sees grandchildren" — pitra mendiang-menyaksikan-anak cucu (nya) melakukan upacara manusa yadnya
+tersebut /122
+
+2869: [0] fine /1. [1] nonsense — "tarpana = bercermin" is a parenthetical etymological gloss of
+the RITE NAME, not a definition of tirtha ening. drop /0, and ADD the actual missing result clause:
+pitara (menggunakan tirtha ening)-hingga_tampak-bayangan nya /113
+
+2872: clause-stripped, drops "yang bernilai seni, lebih-lebih yang untuk pamukuran" — this is the
+exact D1/N1 gap flagged repeatedly across every prior audit iteration and it's STILL open here /122
+
+2885: [0][1] fine /1, correct active-voice giving with no inversion — good confirmation. [2]
+misdirects the "kepada putra-putri" clause by making the giver the subject of a "directed-for"
+relation, redundant with [0]/[1] — recommend drop /0
+
+2894: wrong relation — "kalah dengan" means "loses to/less grand than" (comparison), mislabeled as
+DILAKUKAN_DENGAN which erases the comparative meaning. fix: pralina-kalah_meriah_dibanding-upacara
+saji tarpana /119
+
+2904: /1 — fine, clause retained
+
+2914: drops the concessive qualifier "walaupun sangat halus" — an important philosophical nuance
+/122
+
+2923: subject coordination (mamukur dan upacara sebangsa) held /1 for that part, but object drops
+"yang ketat dengan berbagai pantangannya" /122
+
+2947: [0] nonsense, "selumat-lumatnya" is a manner adverb not an entity — drop /0. [1] mislabeled,
+should be a location not a direct object — abu-digiling_di_atas-sesenden /119. [2] fine /1
+
+2948: both subject and object drop defining relative clauses ("yang sudah lumat" / "yang
+disukutunggalkan") /122
+
+2951: base relation ("diusung mapradaksina") is fine as far as it goes, keep. but the sentence's
+CORE content (the ash's status/sanctity transformation) is entirely missing — ADD: suku tunggal
+abu (diarak mapradaksina)-melambangkan-diresapkannya sinar suci hyang widhi / abu-berubah_dari-
+bekas benda badan linggasarira / abu-menjadi-mahabutha yang suci /113
+
+2954: drops the petitionary framing "dimohonkan agar dapat", turns a hoped-for outcome into a
+stated fact — atma pitara-dimohonkan_agar_menuju-dewaloka /116
+
+2968: /1 — good, both disjunct members correctly split
+
+2969: drops the "alias" gloss clause that translates the fancy term into plain language — this IS
+the sentence's clarifying payload /122
+
+2977: /1 — decent, captures the full clause
+
+2986: [0] fine /1. [1] wrong relation, benefactive-passive inversion — "dibuat...bagi-nya" means
+the offerings are made FOR pitra, not that pitra produces them. fix: pitra-menerima-dua buah
+daksina tapakan (dibuat untuknya) /119. [2][3] wrong subject — "masing-masing untuk bhatara dan
+bhatari" describes which OFFERING is for which deity, not that pitra itself is directed at them.
+fix: daksina tapakan (satu)-ditujukan_untuk-bhatara / ...-bhatari /118 — this confirms the D7-
+adjacent gap (needs full subject_label plumbing, not yet done) is still open exactly as flagged
+in the last audit
+
+2988: subject wrongly fuses "patileman" (a temporal adjunct) into the entity name, and the object
+is a garbled run-on burying the actual destination status inside junk text. fix: pitra-meningkat_
+kedudukan_menjadi-bhatara atau bhatari (sejak selesainya patileman) /112
+
+3001: dumps the entire sentence as one undifferentiated object. split into: punia-adalah-
+perwujudan nyata dari pernyataan parama suksma lahir batin (purusa-pradana) / punia-lahir_atas-
+jasa tuntunan yang telah dianugrahkan oleh beliau / patileman-dapat_selesai_secara-tuntas (berkat
+punia) /112
+
+3004: [0] fine /1. [1] duplication artifact, "ketulus-ikhlasan hati pihak" repeated verbatim —
+perwujudan sredaning cita-adalah-wujud dari ketulus-ikhlasan hati pihak yang bersangkutan /116
+
+3007: relation captures only the appositive, keep as-is. missing the sentence's actual main
+predicate — ADD: pandita (selaku pemuka agama)-memaklumi-ketentuan punia yang demikian itu /113
+
+3063: major meaning-reversal — "dibersihkan dari X" means X is REMOVED from the corpse; BERASAL_
+DARI wrongly implies the corpse originates from the dirt. fix: jenazah-dibersihkan_dari-kotoran-
+kotoran (yang telah lama berada pada badan orang yang meninggal) /118. also missing second
+coordinate "maupun dari hal-hal yang lain" /117
+
+3078: purpose clause "agar tidak kelihatan sama sekali" glued onto the object instead of being its
+own triple. split into: jenazah-ditutup_dengan-kain putih (dari ujung kepala hingga ujung kaki) /
+jenazah (ditutup kain putih)-bertujuan-agar tidak kelihatan sama sekali /112
+
+3080: /1 — ALL FOUR relations correct. good confirmation the D13 wrong-subject override + D8/DIISI
+split fix are both holding cleanly on this exact sentence.
+
+3091: clause-stripped, drops "yang tidak memiliki ketentuan batas, sehingga nyawa itu dapat
+diambil sewaktu-waktu..." — the defining consequence clause, the whole point of the metaphor /122
+
+3110: [0] nonsense, "lembar" is just the counting classifier not a purpose-object. fix: daun
+intaran-digunakan_sebanyak-2 lembar /0 (replace, don't drop outright). [1] drops "yang meninggal,
+ketika upacara mabersih mati (ngelelet)" /122
+
+3118: [0][1] fine /1. but the sentence's MAIN point ("gunanya adalah untuk sampo pencuci rambut
+bagi jenazah") is completely unextracted — ADD: daun dapdap (yang dihaluskan)-berguna_sebagai-
+sampo pencuci rambut (keramas) bagi jenazah / daun dapdap-digunakan_saat-upacara nyiramang layon
+/113
+
+3122: [0][1] borderline acceptable (size/count descriptors), keep /1. [2] nonsense — "ditaruh" is a
+second coordinate VERB, not a noun object, drop /0. sentence's actual purpose (placed in the
+corpse's ear-holes during melelet) entirely missing — ADD: malem (setelah dipulung, minimal dua
+buah)-ditaruh_di-atas takir / malem (di atas takir)-digunakan_untuk-ditaruh pada kedua lubang
+kuping jenazah ketika upacara melelet /113
+
+3133: [0] stray fragment "bersama" glued onto the location — paes gedubang-diletakkan_di-atas
+takir /116. [1] drops the defining purpose clause for the cloth /122
+
+3134: [0][1][2] fine /1. [3] duplicate/confused extraction of [2]'s location, not a separate
+placement fact — drop /0. this is the exact same S3134 issue the last automated audit flagged,
+confirmed still open
+
+3141: [0][1] fine /1, general facts correct. but the two SPECIFIC quantity/placement variants (11
+kepeng at joints, 25 kepeng at chest) are entirely missing — major under-extraction. ADD: kawangen-
+diisi-11 kepeng (ditaruh pada setiap persendian/buku-buku) / kawangen-diisi-25 kepeng untuk
+pebaktian jenazah (ditaruh di dada, seolah-olah dipegang oleh tangan jenazah) /113
+
+3142: [0][1] fine /1. but the sentence's central purpose (fingers/toes placement, garlic symbolizing
+nails) is entirely missing — ADD: kwangen (setiap gulungan)-diisi_dengan-uang kepeng / kwangen-
+diisi_dengan-bawang putih sebagai lambang kuku (di ujungnya) / kwangen (dengan bawang putih ini)-
+ditaruh_di-tiap-tiap jari tangan dan kaki jenazah /113
+
+3150: generic DILAKUKAN_DI replaces the specific verb "ditaburkan" (scattered), object also
+truncated dropping the destination "ke setra". fix: sekar ura-ditaburkan_di-setiap persimpangan
+jalan menuju setra /119
+
+3153: [0] drops "atau jaja gina" disjunct /117. [1] fine /1. missing purpose clause "yang nantinya
+digunakan untuk gosok gigi jenazah" — ADD: sisig (di atas takir ini)-digunakan_untuk-gosok gigi
+jenazah /113
+
+3154: subject coordination held /1 for that part, but the sentence's actual specific detail (which
+material goes where) is the main content and entirely missing — ADD: pecahan kaca-ditaruh_di-kedua
+mata (jenazah) / pecahan besi baja-ditaruh_di-gigi jenazah /113
+
+3155: both relations clause-stripped, drop their purpose obliques ("yang digunakan untuk memotong
+padi pada masa lalu" / "untuk memotong rumput") /122 — confirms this exact named sentence from the
+last audit is still broken (the D1 MEMILIKI/purpose-oblique gap)
+
+3165: both relations use the wrong verb — text says "dikunyah dan kemudian disemburkan" (chewed
+then sprayed), not "dipercikkan" (sprinkled), and the second relation wrongly sprays the substance
+"onto" a ceremony-name instead of giving it a temporal qualifier. fix: anget-angetan-disemburkan_
+pada-hulu hati jenazah / anget-angetan-disemburkan_saat-upacara ngelelet /119 — confirms this
+exact named sentence is still broken
+
+3195: [0] DILAKUKAN_SAAT misfits a sarana (ritual object) — a banten is USED at an event. fix:
+banten pamegat-digunakan_saat-acara maktining layon /119. [1][2] fine /1
+
+3196: /1 — excellent, all 15 coordinate members correctly captured, great confirmation the
+transitive conjunct walk is holding for large flat lists
+
+3221: /1 — fine
+
+3237: direction/predicate reversed — should be lekesan CONTAINS tembakau (lekesan is the whole,
+tembakau one ingredient), not "tembakau is a type of lekesan". fix: lekesan-berisi/termasuk-
+tembakau /118 — this looks like the termasuk-swap rule over-firing on an "including" sense of
+termasuk rather than a true membership sense; worth a narrower trigger condition
+
+3294: base relation fine, keep. sentence is packed with placement-orientation detail entirely
+missing — ADD: jenazah-harus_melalui-ujung pepaga/asagan yang di teben (barat) / jenazah-
+dimasukkan-kepala terlebih dahulu / kaki jenazah-berselonjor_ke-teben/barat /113
+
+3295: vacuous LAINNYA label + garbled object conflating the platform with the direction. fix or
+split: jenazah-naik-bale (dari arah teben menuju luanan/hulu), or split into jenazah-bergerak_dari-
+teben / jenazah-menuju-luanan (hulu) /119
+
+3296: base relation fine but only captures the subordinate clause; the sentence's actual
+behavioral-norm point is missing — ADD: keluarga/masyarakat-dilarang-tergesa-gesa memandikan
+jenazah /113
+
+3330: MENGHASILKAN is an odd paraphrase for "membuat" (build), and the missing alias is the bigger
+loss. fix: krama (masyarakat banjar)-membuat-bale-bale tempat memandikan mayat /119, ADD: bale-
+bale (tempat memandikan mayat)-dikenal_sebagai-pepaga / ...-dikenal_sebagai-asagan /113
+
+3332: base relation fine, only captures the pepaga=asagan equivalence — everything else (Denpasar
+alias, definitional clause, dual-use-as-bier/stretcher) is missing. ADD: pepaga-dikenal_sebagai-
+bale penusangan (istilah Denpasar) / pepaga/asagan-adalah-semacam dipan atau bale darurat /
+pepaga/asagan-dipergunakan_sebagai-usungan / ...-dipergunakan_sebagai-tandu /113
+
+## STATS (part 2 — S2364 through S3332)
+
+Sentences covered: 107
+Triples reviewed: 187
+Triples flagged as inaccurate/wrong/nonsense/incomplete-in-itself (bad): 96
+Triples that are correct as extracted (good): 91
+Good/bad ratio (this segment, existing-triple accuracy only): 91/187 ≈ 48.7% good / 51.3% bad
+Sentences with zero issues at all (no FIX and no ADD needed): S2449, S2473, S2480, S2489, S2558,
+S2619(minor loss ignored), S2620, S2635, S2645, S2649, S2686, S2748, S2787, S2843, S2904, S2968,
+S2977, S3080, S3196, S3221 — 20 sentences
+
+Separate from the accuracy ratio above: ~40 additional ADD proposals for missing triples were
+logged across this range (under-extraction is still common in the dense procedural passages —
+S3110-S3154, S3294-S3332 especially), same pattern the automated Iteration 2 audit already flagged
+as an open ADD-appetite question (N12/D16) — not counted against the "bad" tally since the ratio
+above is about whether existing triples are individually correct, not about recall/completeness.
+
+Two good, worth calling out explicitly: S2843 and S3080 were both previously-flagged trouble spots
+(benefactive-passive inversion and the DIISI_DI split, respectively) in the last automated audit —
+both now read cleanly, confirming those targeted fixes are holding on the exact sentences they
+were meant to fix.
+
+New shorthand codes introduced: see top of file (/117, /118, /119, /120, /122).
+
+
+3333: "bambu-terdiri_dari-bilah-bilah bambu" is wrong subject, it should be "galar" that consists of the bamboo strips (bambu can't consist of itself), and it's missing the count "sebanyak 9 buah" /116
+
+3339: there could be more extraction here: "jenazah-diambil_dari-balai (tempat jenazah disemayamkan)", and for bali-style houses: "tempat persemayaman jenazah-ditempatkan_di-bale semanggen" /113
+
+3340: "tempat penusangan-adalah-nyiramang layon" doesn't make sense, a place can't BE a ceremony stage. also missing what the tempat penusangan physically consists of: "tempat penusangan-berupa-pepaga atau asagan" /112
+
+3354: "jenazah-menuju-pepaga/asagan" should be "naik_ke" not "menuju" (still the same bug flagged before for active "naik ke X", the fix for passive di-...-kan forms didn't cover this). also missing the sit-then-lie-down procedure /116 /113
+
+3363: missing the main point of the sentence, the pillow placed under the head: "kepala jenazah-dialasi_dengan-bantal biasa (bantal kapuk)" /113
+
+3364: the extraction "jenazah baru-diletakkan_di-asagan" is just restating something already established and misses the sentence's actual point entirely (must wait before undressing; an elder washes face/hair first). drop this one and replace with the real content /0 /113
+
+3446: "jenazah-diberi-pakaian layak orang" drops "seperti layaknya orang MASIH HIDUP" which is the entire symbolic point /116
+
+3468: good triples (cincin/kalung/gelang all captured) but missing the framing: "jenazah-dihias_seolah-olah-pergi menghadiri undangan atau ke pura" /113
+
+3496: "lekesan-dibersihkan_dengan-cara mengusap-usapkan tembakau pada bibir jenazah" is wrong subject, it's the corpse's lips being cleaned with tobacco, not lekesan cleaning itself /116
+
+3544: "kawangen-melambangkan-tanda doa restu setelah selesai upacara sembah bhakti ini" has a stray temporal clause glued onto the object and drops the actual purpose "agar perjalanan roh yang meninggal tidak mendapatkan suatu halangan" /115
+
+3547: object is way too long and dumps everything into one string. split: "jenazah-diperciki_dan_diminumkan-tirta", "tirta-berasal_dari-bhetara hyang guru", "tirta-dimohonkan_di-sanggah/pamerajan keluarga orang yang meninggal". also "diperciki" is dropped entirely, only "diminumkan" survived /112
+
+3559: "waja-lainnya-panca datu" should be "bagian_dari", "meka" is balinese for adalah/yaitu /116
+
+3584: "pengerikan kuku mutlak-dilakukan_saat-upacara" is truncated, should specify "melelet (pabersihan mati)". also missing the prohibition against doing it during pabersihan hidup /116 /113
+
+3586: same sentence flagged twice before (iteration 1 AND 2) and still broken. "jenazah-dikenal_sebagai-orang" should be "dianggap_sebagai-orang yang masih hidup", both the label and the missing "masih hidup" qualifier /116
+
+3589: duplication bug, "simbol rare angon DARI rare angon" repeats "rare angon" /116
+
+3591: same duplication bug as 3589, "simbol dewi sri DARI dewi sri" repeats "dewi sri". this looks like a systemic pattern specifically in "X adalah simbol dari Y, yaitu Z" constructions, see also 4074 below /116
+
+3604: both relations are junk ("itik-itik-setelah-kesepuluh kuku tangan/kuku kaki", SETELAH isn't a real predicate here, itik-itik is a heading label not a real subject). the actual content (thumbs and toes tied with white thread) is completely missing. drop both, this is the same still-open section-heading-as-subject bug from the last audit /0 /113
+
+3610: good but missing the rinse+dry steps that follow: "jenazah-dibilas_dengan-air", "jenazah-dikeringkan_dengan-kain kering" /113
+
+3623: "jenazah-berwarna-udeng laki-laki" is nonsense, the corpse isn't "colored" by a headdress. should be "udeng (untuk laki-laki)-berwarna-putih". also "saput" (a whole separate garment) is missing entirely from any relation, and the "berwarna putih" qualifier is lost from pakaian/kain bawah/umpal too /116 /113
+
+3649: states the OLD practice (bantal kapuk) as if it were current, but the sentence's actual point is a substitution. should be "bantal kapuk-diganti_dengan-bantal sesisir buah pisang kayu" /116
+
+3651: "dewa wishnu-lainnya-pengaduk lautan susu" is a vacuous LAINNYA reducing a whole myth (obtaining the nectar of immortality, sleeping on a cobra) to nothing. relabel to "dewa wishnu-mendapatkan-tirtha amertha" and add "dewa wishnu-tidur_di-atas samudra (dialasi dan dipayungi naga/ular cobra berkepala banyak)" /116 /113
+
+3653: "gegaleng kepala-berarti-bantal" drops "untuk tidur" /115
+
+3654: minor, drops "sebanyak 250 biji" count and "yang dibungkus dengan kain putih" from the two objects /115
+
+3656: "gegaleng-adalah-pengganti bantal kapuk" drops "yang telah dipakai pada waktu pabersihan hidup", and the alias "galeng pengerekan" is missing entirely /116 /113
+
+3694: "atma-meninggal-badan" is nonsense, should be "lepas_bebas_dari-badan" (the soul is freed FROM the body, not that it dies the body) /116
+
+3720: good but drops the entire symbolic-purpose payload (reincarnation, disease-avoidance, good character), only the physical "menghilangkan bau busuk" fact survived /113
+
+3728: "numitis-memperoleh-pujian keharuman" is wrong subject, numitis (an abstract process) can't obtain praise. should be "penggunaan wewangian-bertujuan_agar-orang yang numitis memperoleh pujian keharuman dalam tingkah lakunya". also drops the body-becoming-fragrant clause /116 /113
+
+3733: two good placements (telapak tangan/kaki) but the third relation "kwangen jeriji-setelah-pelaksanaan eteh-eteh pabersihan mati" is junk, same heading-as-subject bug as 3604. good news: the self-loop that used to be here (kwangen jeriji DITARUH kawangen jeriji) is gone now, the self-loop filter worked /0 (for the SETELAH one only)
+
+3734: good start but massively under-extracted, drops "berisi lima buah gulungan base (daun sirih)", "diikat dengan benang putih", "dimasukkan ke dalam lubang uang kepeng" entirely /113
+
+3742: "kesuna atau bawang putih-bermakna-orang" is meaningless alone, needs the full clause. "kesuna atau bawang putih-memiliki-kuku-kuku" is wrong subject (garlic doesn't have fingernails, drop it, the reincarnated person does) /116 /0
+
+3758: still missing the housekeeping fix from last iteration: "logam campuran-berada_di-tengah-tengah" was supposed to be added alongside the other panca-datu overrides but isn't there /113
+
+3760: main point of the sentence (needle and iron nail placed on the corpse's arm) produces zero triples, only a minor SEBELUM clause survived /113
+
+3783: drops "hingga ke kaki jenazah" and the entire second clause (pot broken and discarded) /112
+
+3791: good but missing "kemudian diikat dengan tali benang tukelan" (tied with thread) entirely /113
+
+3799: "jenazah-diisi_dengan-rurub sinom" is wrong subject, it's the CLOTH that's covered with rurub sinom, not the corpse. also drops the count "sebanyak lima buah". the third relation "jenazah-diletakkan_di-kain" looks like a garbled leftover of the same misparse /0 /116
+
+3800: minor, drops "dijarit bersama daun kelapa muda (busung)" as a whole separate material and the length (40-45cm), also "yang belum mekar" qualifier on blangsah /113 /115
+
+3811: "rurub sinom-ditujukan_untuk-jenazah" misreads the sentence, it's about REMOVING the rurub sinom before coffining, not it being generically "for" the corpse /116
+
+3812: minor nuance loss, reduced to bare "diletakkan_di-peti" when the sentence gives a detailed position (head/neck/stomach/thighs/feet, crosswise) /115
+
+3816: missing the alias fact: "bilahan-bilahan bambu (ante)-dikenal_sebagai-galar" /113
+
+3836: "bale-bale dipan-dipakai_untuk-dipan" is circular nonsense (subject already contains "dipan"), drop it. the other one drops "di dapur" from a 2-item list /0 /116
+
+3843: "galar-membuat_dengan-harapan" is nonsense, "harapan" got mistagged as a Place. should be "digunakan_dengan_harapan-membuat ngantuk dan tidur nyenyak" /116
+
+3845: drops "atau merajan" from a 2-item list (di pura atau di merajan) /116
+
+3852: numeric list truncated after 2 of 6 values (5, 10 instead of the full 5/10/15/20/25/30) /112
+
+3860: drops "yang telah diwarisi turun temurun dari sejak jaman dulu di daerah atau desa setempat" (same clause-retention gap as before, this exact sentence was flagged last iteration and still isn't fully fixed) /116
+
+3862: drops the coordinate gloss "atau kesetiaan" /115
+
+3904: main clause of the sentence (some places also perform an additional ceremony, mesaji/memunjung) is completely missing, only the subordinate clause survived /113
+
+3909: drops "untuk segera dikuburkan (bukan diaben)", the crucial distinguishing qualifier that this is about burial not cremation /116
+
+3914: "jenazah-memiliki-rangkaian upacara lain..." is wrong relation, the corpse doesn't "possess" a series of ceremonies, it undergoes them (and only if cremation is chosen) /116
+
+3936: same issue as 3446 (duplicate passage), drops "masih hidup" /116
+
+3964: same D15 giant-object-dump issue as 3547 (duplicate passage) /112
+
+4062: "tirtha-dipakai_untuk-lainnya" is vacuous, drop it. also "banten" (first item in a 3-item list: banten, adegan, lainnya) is missing entirely, only "adegan" survived /0 /113
+
+4065: "tirtha pabersihan-memiliki-perbedaan" is too vague, doesn't say what the differences actually are. also drops who makes it entirely /113
+
+4074: same duplication bug as 3589/3591, "symbol pikiran DARI pikiran dan perasaan" repeats "pikiran" /116
+
+4087: improved from before (used to drop "dengan itihasa" entirely, now it's there) but still drops "tepatnya pada bisma parwa bagian dari mahabharata" /115
+
+4090: garbled duplicate ("air CARA DENGAN CARA memanah tanah"), and the actual payoff of the myth (water reaching bisma's lips) is missing entirely /116 /113
+
+4096: drops "untuk dipergunakan pada waktu pembakaran" /115
+
+4105: both relations misconstrue the sentence (it's not "tirtha dipersiapkan sarana/prasarana", it's "sarana dan prasarana [for the ceremony] consist of X, Y, Z" plus a separate fact about who requests the tirtha). also the whole 6-item "berupa" list is dropped wholesale, not just truncated (same as flagged last iteration, still broken) /0 /112
+
+4110: same issue as 4105 (duplicate structure) /0 /112
+
+4112: "sarana pengembalian roh-adalah-atma" reads oddly, "(atma)" was a parenthetical gloss on roh, not an identity claim about "sarana". also drops "kepada sang pencipta" and the whole utpeti/sthiti/pralina 3-item list entirely /116 /113
+
+4121: "dibuat_di-gria ida" and "dibuat_di-sulinggih" should merge into one entity ("gria ida sang sulinggih" = the priest's residence), splitting it makes the priest himself sound like a location. also drops "atau dirumah" and the pengaskaran-timing detail /116 /113
+
+4128: improved (now has "untuk ngentas") but still truncated, drops most of the purpose clause. also the coordinate 2nd verb "membersihkan noda-noda" is missing, and the entire second independent clause about upacara pengabenan is unextracted /115 /113
+
+4169: the raw sentence itself is grammatically broken ("arti yang dengan upacara" is missing a word) — checked against ngaben-merge-cleaned.txt line 3783, confirmed this is a genuine typo in the source, not a segmentation artifact. best-effort fix given the source: "adalah-sesuatu yang memiliki arti (erat) dengan upacara pitra yadnya" /114 (flagging as raw-file issue too, see raw_issues_part3.md)
+
+4170: improved (much longer than before) but still drops the middle clause "khususnya dalam hubungannya untuk dapat melepaskan roh para leluhur dari ikatan-ikatan keduniawian" — same sentence flagged as still-broken last iteration /115
+
+4175: good news, the subject-side fix worked here ("tuhan atau brahman" both kept, previously "brahman" was dropped). but the ceremony-name definition clause is still missing entirely: "upacara mapulang lingga-berarti-'ngelinggihang lingga' (dalam diri)" /113
+
+4177: raw source has a genuine typo, doubled "adalah adalah" (confirmed at line 3789 of ngaben-merge-cleaned.txt). the extraction inherited the garble: "adalah-mewujudkan sanghyang ongkans" has ADALAH taking a verb phrase, nonsense. also drops "tri aksara" and "yang berstana dalam bathin". possible additional typo: "Sanghyang Ongkans" might be meant to be "Sanghyang Ongkara/Omkara" (the standard term), not confident enough to say for sure /114 (raw-file issue, see raw_issues_part3.md) /116
+
+4192: drops "yang diturunkan atau dibuat oleh pendeta/sang sulinggih" (who brings it down) /115
+
+4212: "abu abu kekototan-bersinar-matahari" is wrong subject, the ash VANISHES, it's the BODY that shines. also the whole amrethi karana ritual clause is missing /116 /113
+
+4266: good but missing "terlebih dulu di mantrai" (blessed before insertion) as its own fact /113
+
+4273: "dibawa_ke-periuk" should be "dimasukkan_ke_dalam" for consistency (compare 4266's correct usage). "padang lepas-dimasukan-sarana-sarana yang lainnya" is nonsense coordination (padang lepas doesn't act on the other items), drop it. of a 5-item list (jijih, pripih emas, recadana, ulantaga, kalpika) only kalpika survived, the other 4 plus the final mantra-blessing clause are missing /0 /116 /113
+
+4336: drops the causal justification "karena tanpa tirtha pangentas maka pengabenan itu dianggap belum dilaksanakan" — arguably the more important half of the sentence /113
+
+4339: drops "bagi roh atau atman untuk kembali ke asalnya (brahman/alam swah loka) sebagai tujuan terakhir", the whole purpose clause /116
+
+4340: minor, drops "yang mengikat roh atau atman" qualifier on karma wasana, otherwise good (both aliases correctly captured) /115
+
+## Positive confirmations worth noting (fixes from the last batch holding up)
+- 3747, 3749, 3753: the DIISI_DI two-triple split (placement + contents) is now clean across all three sentences — this fix landed well.
+- 3733: the self-loop filter worked, the "kwangen jeriji DITARUH kawangen jeriji" nonsense from before is gone.
+- 4106, 4111, 4116: the MEMILIKI-fungsi clause-retention fix is holding cleanly on these (the exact sentences flagged as broken last iteration).
+- 4175: subject-side coordinate list fix worked ("tuhan atau brahman" both kept).
+- 4300-4305 (Panca Maha Bhuta closing verses): still clean, manual override holding.
+- 3599, 3647, 3802, 3868, 3906, 3984, 4077, 4082, 4086, 4103, 4109, 4126, 4167, 4171, 4337: no issues found.
+
+## STATS
+Total triples reviewed: 186
+Total sentences reviewed: 108
+Sentences with at least one flagged issue: ~79 (approx — many entries bundle multiple sub-issues per sentence, an exact triple-level tally would need a second pass)
+Triples with a direct correctness problem (wrong subject/object/label, nonsense, duplication, or truncated-to-meaninglessness): ~62 of 186 (~33%)
+Sentences with zero issues (clean): ~29 of 108 (~27%)
+Note: this section of the corpus (S3333-S4340, body-preparation/ritual-tool-assembly + closing philosophical passages) has a notably higher flag rate than earlier chunks — consistent with what the automated Iteration 2 audit already found as "the densest under-extraction territory in the whole corpus."
+
+No new shorthand codes introduced — the existing /0, /1, /111-116 scheme covered everything found in this range.

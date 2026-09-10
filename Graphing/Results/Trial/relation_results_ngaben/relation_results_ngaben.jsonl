@@ -1,0 +1,2834 @@
+{
+  "sentence_id": 4,
+  "text": "sebagai ritual yang sangat rigid dan sarat makna, ngaben merepresentasikan siklus kehidupan dan kematian dalam kosmologi hindu bali.",
+  "relations": [
+    {
+      "subject": "ngaben",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "merepresentasikan",
+      "relation_type": "SIMBOLISME",
+      "object": "siklus kehidupan",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "ngaben",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "merepresentasikan",
+      "relation_type": "SIMBOLISME",
+      "object": "ritual yang sangat rigid dan sarat makna",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 6,
+  "text": "secara teologis, ngaben adalah ritual kremasi yang berakar pada filosofi pelepasan jiwa ( atma ) dari ikatan duniawi.",
+  "relations": [
+    {
+      "subject": "ngaben",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "ritual kremasi yang berakar pada filosofi pelepasan jiwa ( atma ) dari ikatan duniawi",
+      "object_type": "KONSEP_FILOSOFIS",
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 12,
+  "text": "secara etimologis, \"ngaben\" memiliki beberapa sudut pandang pemaknaan.",
+  "relations": [
+    {
+      "subject": "ngaben",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "memiliki",
+      "relation_type": "ATRIBUT",
+      "object": "sudut pandang pemaknaan",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 16,
+  "text": "dalam sistem keagamaan hindu, ngaben diklasifikasikan sebagai bagian dari pitra yadnya , yaitu pengorbanan suci yang ditujukan kepada leluhur.",
+  "relations": [
+    {
+      "subject": "ngaben",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "diklasifikasikan",
+      "relation_type": "KLASIFIKASI",
+      "object": "bagian pitra yadnya , yaitu pengorbanan suci yang ditujukan kepada leluhur",
+      "object_type": "RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 26,
+  "text": "apah (air): mewakili unsur cair dalam tubuh.",
+  "relations": [
+    {
+      "subject": "apah",
+      "subject_type": "KONSEP_FILOSOFIS",
+      "true_relation": "mewakili",
+      "relation_type": "SIMBOLISME",
+      "object": "unsur cair",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 27,
+  "text": "teja (panas/api): mewakili suhu dan energi.",
+  "relations": [
+    {
+      "subject": "teja",
+      "subject_type": "KONSEP_FILOSOFIS",
+      "true_relation": "mewakili",
+      "relation_type": "SIMBOLISME",
+      "object": "suhu",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "teja",
+      "subject_type": "KONSEP_FILOSOFIS",
+      "true_relation": "mewakili",
+      "relation_type": "SIMBOLISME",
+      "object": "energi",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 28,
+  "text": "bayu (angin): mewakili napas dan udara.",
+  "relations": [
+    {
+      "subject": "bayu",
+      "subject_type": "KONSEP_FILOSOFIS",
+      "true_relation": "mewakili",
+      "relation_type": "SIMBOLISME",
+      "object": "napas",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "bayu",
+      "subject_type": "KONSEP_FILOSOFIS",
+      "true_relation": "mewakili",
+      "relation_type": "SIMBOLISME",
+      "object": "udara",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 29,
+  "text": "akasa (eter/ruang): mewakili rongga dalam tubuh.",
+  "relations": [
+    {
+      "subject": "akasa",
+      "subject_type": "KONSEP_FILOSOFIS",
+      "true_relation": "mewakili",
+      "relation_type": "SIMBOLISME",
+      "object": "rongga tubuh",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 32,
+  "text": "ngaben memiliki peran ganda yang saling menguatkan:",
+  "relations": [
+    {
+      "subject": "ngaben",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "memiliki",
+      "relation_type": "ATRIBUT",
+      "object": "peran ganda yang saling menguatkan",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 44,
+  "text": "sawa wedana adalah upacara untuk jenazah utuh (3-7 hari setelah meninggal); di era modern, penggunaan formalin umum dilakukan untuk memperlambat pembusukan selama masa persiapan.",
+  "relations": [
+    {
+      "subject": "sawa wedana",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "upacara jenazah utuh",
+      "object_type": "ISTILAH_UMUM_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 45,
+  "text": "asti wedana adalah upacara pembakaran tulang belulang yang digali kembali dari kuburan sesuai aturan adat setempat.",
+  "relations": [
+    {
+      "subject": "asti wedana",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "upacara pembakaran tulang belulang yang digali kembali dari kuburan sesuai aturan adat setempat",
+      "object_type": "BANGUNAN_RITUAL",
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 46,
+  "text": "swasta adalah upacara yang dilakukan jika jenazah tidak ditemukan atau meninggal di perantauan, menggunakan kayu cendana dan aksara sakral sebagai simbol pengganti jasad.",
+  "relations": [
+    {
+      "subject": "swasta",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "upacara yang dilakukan jika jenazah tidak ditemukan atau meninggal di perantauan , menggunakan kayu cendana dan aksara sakral sebagai simbol pengganti jasad",
+      "object_type": "ISTILAH_UMUM_RITUAL",
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 47,
+  "text": "ngelungah adalah ritual khusus untuk bayi yang belum tumbuh gigi (suci); jenazahnya segera dikubur dan upacaranya dilakukan minimal 12 hari kemudian.",
+  "relations": [
+    {
+      "subject": "ngelungah",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "ritual khusus",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 48,
+  "text": "ngaben massal adalah pelaksanaan kolektif oleh warga desa untuk efisiensi biaya dan tenaga tanpa mengurangi nilai sakralitasnya.",
+  "relations": [
+    {
+      "subject": "ngaben massal",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "pelaksanaan kolektif",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 58,
+  "text": "nganyut: melarung abu ke sungai atau laut sebagai simbol pelepasan terakhir menuju moksha .",
+  "relations": [
+    {
+      "subject": "nganyut",
+      "subject_type": "TAHAPAN_UPACARA",
+      "true_relation": "melarung",
+      "relation_type": "larung",
+      "object": "abu",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "nganyut",
+      "subject_type": "TAHAPAN_UPACARA",
+      "true_relation": "melarung",
+      "relation_type": "larung",
+      "object": "sungai",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "nganyut",
+      "subject_type": "TAHAPAN_UPACARA",
+      "true_relation": "melarung",
+      "relation_type": "larung",
+      "object": "laut",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "nganyut",
+      "subject_type": "TAHAPAN_UPACARA",
+      "true_relation": "melarung",
+      "relation_type": "larung",
+      "object": "simbol pelepasan terakhir",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 61,
+  "text": "secara teologis, mapegat (berarti \"memutuskan\") memiliki makna krusial untuk memutus ikatan emosional dan duniawi antara mendiang ( niskala ) dengan keluarga ( skala ).",
+  "relations": [
+    {
+      "subject": "mapegat",
+      "subject_type": "TAHAPAN_UPACARA",
+      "true_relation": "memiliki",
+      "relation_type": "ATRIBUT",
+      "object": "makna krusial",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "mapegat",
+      "subject_type": "TAHAPAN_UPACARA",
+      "true_relation": "berarti",
+      "relation_type": "DEFINISI",
+      "object": "memutuskan",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 69,
+  "text": "gedarba: berbentuk menyerupai beruang berwarna hitam, digunakan oleh wangsa sudra jadma (masyarakat umum).",
+  "relations": [
+    {
+      "subject": "gedarba",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "menyerupai",
+      "relation_type": "SIMBOLISME",
+      "object": "beruang berwarna hitam",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "gedarba",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "berbentuk",
+      "relation_type": "DEFINISI",
+      "object": "berbentuk",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 73,
+  "text": "naga banda adalah boneka naga raksasa yang melambangkan pengikat keinginan duniawi raja.",
+  "relations": [
+    {
+      "subject": "naga banda",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "boneka naga raksasa yang melambangkan pengikat keinginan duniawi raja",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 77,
+  "text": "secara teknis, naga banda seharusnya memiliki panjang 1.600 depa (sekitar 2,4 km) .",
+  "relations": [
+    {
+      "subject": "naga banda",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "memiliki",
+      "relation_type": "ATRIBUT",
+      "object": "panjang 1.600 depa ( sekitar 2,4 km )",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 81,
+  "text": "misalnya, perbandingan kepala lembu adalah 2:1:1, sedangkan singa adalah 3:2:2.",
+  "relations": [
+    {
+      "subject": "singa",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "3:2:2",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 92,
+  "text": "kanoroyang: sanksi terberat berupa pemberhentian keanggotaan desa adat.",
+  "relations": [
+    {
+      "subject": "kanoroyang sanksi terberat",
+      "subject_type": "KONSEP_HUKUM_ADAT",
+      "true_relation": "berupa",
+      "relation_type": "DEFINISI",
+      "object": "pemberhentian keanggotaan desa adat",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 104,
+  "text": "bali aga vs bali dataran: terdapat perbedaan mendasar antara masyarakat pegunungan ( bali aga ) yang mempertahankan tradisi asli kuno (seperti di trunyan) dengan masyarakat bali dataran yang mendapat pengaruh kuat dari tradisi hindu-majapahit pasca jatuhnya kerajaan di jawa.",
+  "relations": [
+    {
+      "subject": "bali aga vs bali dataran",
+      "subject_type": "Place",
+      "true_relation": "terdapat",
+      "relation_type": "ATRIBUT",
+      "object": "perbedaan mendasar",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 124,
+  "text": "bali dataran menggunakan sarana mewah (bade/petulangan) pengaruh majapahit, sedangkan bali aga lebih menonjolkan tradisi asli yang terkadang tidak menggunakan pembakaran fisik secara masif.",
+  "relations": [
+    {
+      "subject": "bali dataran",
+      "subject_type": "Place",
+      "true_relation": "menggunakan",
+      "relation_type": "TUJUAN",
+      "object": "sarana mewah ( bade/petulangan )",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 126,
+  "text": "ngaben adalah institusi sosial-religius yang kompleks, berfungsi sebagai mekanisme spiritual pemurnian jiwa sekaligus perekat kohesi sosial.",
+  "relations": [
+    {
+      "subject": "ngaben",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "institusi sosial-religius yang kompleks",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 128,
+  "text": "kemampuan tradisi ini untuk beradaptasi—baik melalui efisiensi biaya maupun penggunaan teknologi—membuktikan bahwa ngaben adalah identitas budaya dinamis yang terus menjaga harmoni antara manusia, alam, dan sang pencipta.",
+  "relations": [
+    {
+      "subject": "ngaben",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "identitas budaya dinamis yang terus menjaga harmoni antara manusia , alam , dan sang pencipta",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 134,
+  "text": "para sentana atau keluarga hanya berusaha untuk mengupacarainya sesuai dengan kemampuannya sebagai rasa bhaktinya kepada mereka yang meninggal dunia.",
+  "relations": [
+    {
+      "subject": "upakara",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "tidak menjamin",
+      "relation_type": "NORMA",
+      "object": "sorga",
+      "object_type": "KONSEP_FILOSOFIS",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "karma wasana",
+      "subject_type": "KONSEP_FILOSOFIS",
+      "true_relation": "menentukan",
+      "relation_type": "NORMA",
+      "object": "nasib setelah meninggal",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 191,
+  "text": "atau dengan kehendak lain seperti keterbatasan akan dana, maka sebagai hasil keputusan keluarga, jenazah untuk sementara dikubur terlebih dahulu.",
+  "relations": [
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dikubur",
+      "relation_type": "TINDAKAN",
+      "object": "kehendak lain",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 197,
+  "text": "ngaben berdasarkan tingkatan upacara",
+  "relations": [
+    {
+      "subject": "ngaben",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "berdasarkan",
+      "relation_type": "NORMA",
+      "object": "tingkatan upacara",
+      "object_type": "KONSEP_HUKUM_ADAT",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 213,
+  "text": "ngaben ini merupakan suatu proses upacara yang dilaksanakan secara langsung tanpa ditanam terlebih dahulu.",
+  "relations": [
+    {
+      "subject": "ngaben",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "merupakan",
+      "relation_type": "DEFINISI",
+      "object": "proses upacara yang dilaksanakan secara langsung tanpa ditanam terlebih dahulu",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 215,
+  "text": "setelah upacara nyiraman, layon digulung dengan kain putih selanjutnya diletakkan di bale gede / saka roras atau tempat yang diperuntukkan untuk itu.",
+  "relations": [
+    {
+      "subject": "layon",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "digulung",
+      "relation_type": "TINDAKAN",
+      "object": "kain putih",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 217,
+  "text": "sampai pada hari yang telah ditentukan atau hari pengutangan, dilaksanakan pelebon, diawali dengan upacara ngaskara dan caru pengelambuk, selanjutnya jenazah dinaikkan ke usungan lalu berangkat ke setra.",
+  "relations": [
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dinaikkan",
+      "relation_type": "LOKASI",
+      "object": "usungan",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 219,
+  "text": "dalam perjalanan ke setra ditaburkan sekar ura yang terdiri dari beras kuning, wang kepeng/bolong, dan daun temen serta kembang rampai, sebagai simbol perpisahan antara yang meninggal dengan keluarga yang ditinggal dengan harapan selalu diberikan kesejahteraan dan kemakmuran.",
+  "relations": [
+    {
+      "subject": "sekar ura",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "ditaburkan",
+      "relation_type": "TINDAKAN",
+      "object": "simbol perpisahan antara yang meninggal dengan keluarga yang ditinggal dengan harapan selalu diberikan kesejahteraan dan kemakmuran",
+      "object_type": "Place",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "sekar ura",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "terdiri",
+      "relation_type": "ATRIBUT",
+      "object": "beras kuning",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "sekar ura",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "terdiri",
+      "relation_type": "ATRIBUT",
+      "object": "wang kepeng/bolong",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "sekar ura",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "terdiri",
+      "relation_type": "ATRIBUT",
+      "object": "daun temen",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "sekar ura",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "terdiri",
+      "relation_type": "ATRIBUT",
+      "object": "kembang rampai",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 224,
+  "text": "begitu akan sampai di setra diputar kembali tiga kali, demikian juga sampai di tempat pembasmian diputar kembali, lalu usungan diturunkan dan diadakan upacara pembasmian.",
+  "relations": [
+    {
+      "subject": "usungan",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "diadakan",
+      "relation_type": "ATRIBUT",
+      "object": "upacara pembasmian",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 246,
+  "text": "dilanjutkan dengan ngerorasin di pura dalem; puspa lingga tersebut dibuka keampigan bila upacara ini cukup sampai di sini saja.",
+  "relations": [
+    {
+      "subject": "puspa lingga",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "dibuka",
+      "relation_type": "TINDAKAN",
+      "object": "keampigan",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 253,
+  "text": "upacara ini dilakukan bila sawa telah terlebih dahulu dikubur dengan tata cara penguburan biasa.",
+  "relations": [
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dikubur",
+      "relation_type": "TINDAKAN",
+      "object": "tata cara penguburan biasa",
+      "object_type": "TAHAPAN_UPACARA",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 254,
+  "text": "bila telah siap dilakukan upacara, maka kuburan dibongkar dan diambil tulang belulangnya.",
+  "relations": [
+    {
+      "subject": "kuburan",
+      "subject_type": "BANGUNAN_RITUAL",
+      "true_relation": "diambil",
+      "relation_type": "TINDAKAN",
+      "object": "tulang belulang",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 258,
+  "text": "tegteg lalu diiring ke pura dalem, dengan tujuan matur piuning serta memohon atma yang akan diaben.",
+  "relations": [
+    {
+      "subject": "tegteg",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "diiring",
+      "relation_type": "URUTAN",
+      "object": "pura dalem",
+      "object_type": "BANGUNAN_RITUAL",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "tegteg",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "diiring",
+      "relation_type": "URUTAN",
+      "object": "tujuan matur piuning",
+      "object_type": "TAHAPAN_UPACARA",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "tegteg",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "diiring",
+      "relation_type": "URUTAN",
+      "object": "memohon",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 265,
+  "text": "tegteg diletakkan di atas bungkusan tulang belulang tersebut, lalu diupacarai sebagaimana layaknya sawa utuh, selanjutnya tegteg ditempatkan di tumpang salu.",
+  "relations": [
+    {
+      "subject": "tegteg",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "diletakkan",
+      "relation_type": "LOKASI",
+      "object": "bungkusan tulang belulang",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "tegteg",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "diupacarai",
+      "relation_type": "upacara",
+      "object": "layak sawa utuh",
+      "object_type": "ISTILAH_UMUM_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 270,
+  "text": "secara khusus, ngaben svasta dimaksudkan untuk pelaksanaan atiwa-tiwa terhadap orang yang telah meninggal yang jenazahnya tidak mungkin ditemukan kembali, telah lama terkubur/terpendam, atau karena letaknya terlalu jauh dari jangkauan kita.",
+  "relations": [
+    {
+      "subject": "ngaben svasta",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "dimaksudkan",
+      "relation_type": "DEFINISI",
+      "object": "pelaksanaan atiwa-tiwa",
+      "object_type": "RITUAL_KEMATIAN",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 271,
+  "text": "adapun atiwa-tiwa yang tergolong dalam ngaben svasta adalah raçadana atau tirta yadnya pranawa, yakni sawa diganti dengan simbol tirtha (toyo çarira), sedangkan tata pelaksanaannya sama dengan atiwa-tiwa asti vedana — mulai dari matur piuning ke pura dalem, pembakaran, hingga nganyut, dan dilanjutkan dengan upacara sebagaimana mestinya hingga upacara ngelinggihang dewa hyang.",
+  "relations": [
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "diganti",
+      "relation_type": "ganti",
+      "object": "simbol tirtha ( toyo çarira )",
+      "object_type": "TIRTHA_SUCI",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "atiwa-tiwa",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "raçadana",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "atiwa-tiwa",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "tirta yadnya pranawa",
+      "object_type": "RITUAL_KEMATIAN",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "atiwa-tiwa",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "sama atiwa-tiwa asti vedana",
+      "object_type": "RITUAL_KEMATIAN",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "atiwa-tiwa",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "tergolong",
+      "relation_type": "KLASIFIKASI",
+      "object": "ngaben svasta",
+      "object_type": "RITUAL_KEMATIAN",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 283,
+  "text": "dalam lontar tersebut, banten yang menjadi simbol orang yang meninggal disebut kala puspa, sebagaimana juga disebutkan dalam lontar yama purva tattwa.",
+  "relations": [
+    {
+      "subject": "banten",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "disebut",
+      "relation_type": "DEFINISI",
+      "object": "kala puspa",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "banten",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "disebut",
+      "relation_type": "DEFINISI",
+      "object": "lontar",
+      "object_type": "NASKAH_SUCI",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "banten",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "disebutkan",
+      "relation_type": "DEFINISI",
+      "object": "lontar yama purva tattwa",
+      "object_type": "NASKAH_SUCI",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "banten",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "menjadi",
+      "relation_type": "DEFINISI",
+      "object": "menjadi",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 332,
+  "text": "jenazah diletakkan pada balai dengan posisi kepala berhulu utara atau timur.",
+  "relations": [
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "diletakkan",
+      "relation_type": "LOKASI",
+      "object": "balai posisi kepala berhulu utara",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 338,
+  "text": "lalu disuguhi soda berupa nasi, minum, buah-buahan, jajan, dan lainnya, dilengkapi canang sari beserta kelengkapannya.",
+  "relations": [
+    {
+      "subject": "soda",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "dilengkapi",
+      "relation_type": "ATRIBUT",
+      "object": "canang sari",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 344,
+  "text": "eteh-eteh sawa, berupa kain putih untuk saput, kamben, tapih, sabuk, udeng, pangulungan, angkeb rai, angkeb baga/purus, leluwur, dan tatindih (biasanya dimohonkan dari sulinggih/griya); kain putih untuk bantal berisi pis bolong 11 kepeng; kain kuning untuk saput atau selendang; rantasan kain putih kuning dan kain anyar; serta samsam, bunga, dan kwangen.",
+  "relations": [
+    {
+      "subject": "eteh-eteh sawa",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "berupa",
+      "relation_type": "DEFINISI",
+      "object": "kain putih",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 354,
+  "text": "pepaga terbuat dari bambu dengan hitungan: likah, wangke, wangkong, dan galar, galir, galur.",
+  "relations": [
+    {
+      "subject": "pepaga",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "terbuat",
+      "relation_type": "ATRIBUT",
+      "object": "bambu",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "pepaga",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "terbuat",
+      "relation_type": "AKIBAT",
+      "object": "hitungan likah",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 358,
+  "text": "pepaga ditempatkan di halaman rumah, di atasnya dipasang/direntangkan leluwur berupa kain putih.",
+  "relations": [
+    {
+      "subject": "pepaga",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "ditempatkan",
+      "relation_type": "LOKASI",
+      "object": "halaman rumah",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "pepaga",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "dipasang/direntangkan",
+      "relation_type": "pasang/dang",
+      "object": "leluwur",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "pepaga",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "dipasang/direntangkan",
+      "relation_type": "pasang/dang",
+      "object": "atas",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 364,
+  "text": "sebelum jenazah diusung ke tempat pemandian, terlebih dahulu diadakan upacara nanginin, yaitu membangunkan almarhum seperti halnya membangunkan orang yang sedang tidur, dengan memanggil namanya dan mengucapkan kata-kata dengan lemah lembut serta memberitahukan untuk segera dimandikan — lebih baik lagi disertai kekidungan yang berhubungan dengan kidung pitra yadnya.",
+  "relations": [
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "diusung",
+      "relation_type": "usung",
+      "object": "tempat pemandian",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 365,
+  "text": "selanjutnya jenazah diangkat dan diletakkan pada pepaga yang telah disediakan, masih dibarengi kekidungan.",
+  "relations": [
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "diletakkan",
+      "relation_type": "LOKASI",
+      "object": "pepaga yang telah disediakan",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dibarengi",
+      "relation_type": "bareng",
+      "object": "kekidungan",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 366,
+  "text": "jenazah membujur ke utara atau ke timur.",
+  "relations": [
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "membujur",
+      "relation_type": "bujur",
+      "object": "utara",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 370,
+  "text": "selanjutnya dipasang itik-itik pada ibu jari tangan dan kaki, jenazah digulung dengan tikar dan kain yang telah dirajah, diakhiri dengan lante dari bambu, lalu dimasukkan ke dalam slepa/peti dan ditempatkan pada bale gede/sakaroras atau tempat yang disiapkan, dengan posisi kepala ke utara atau ke timur.",
+  "relations": [
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "digulung",
+      "relation_type": "TINDAKAN",
+      "object": "tikar",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "digulung",
+      "relation_type": "TINDAKAN",
+      "object": "kain yang telah dirajah",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dipasang",
+      "relation_type": "TINDAKAN",
+      "object": "itik-itik",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dipasang",
+      "relation_type": "TINDAKAN",
+      "object": "ibu jari tangan",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "diakhiri",
+      "relation_type": "akhir",
+      "object": "lante bambu",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dimasukkan",
+      "relation_type": "LOKASI",
+      "object": "slepa/peti",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 376,
+  "text": "bila telah datang hari baik, minimal/maksimal selama 7 hari sejak meninggal, jenazah diusung ke setra untuk dibasmi oleh sang hyang birawi.",
+  "relations": [
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "diusung",
+      "relation_type": "usung",
+      "object": "setra",
+      "object_type": "BANGUNAN_RITUAL",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "datang",
+      "relation_type": "datang",
+      "object": "hari baik",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 399,
+  "text": "dengan demikian, dapat disimpulkan bahwa sasih yang baik untuk melaksanakan pitra yadnya, khususnya ngaben, adalah kasa, karo, dan katiga, dengan yang utama pada sasih karo.",
+  "relations": [
+    {
+      "subject": "sasih",
+      "subject_type": "KONSEP_HUKUM_ADAT",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "kasa , yang utama pada sasih karo",
+      "object_type": "KONSEP_HUKUM_ADAT",
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "sasih",
+      "subject_type": "KONSEP_HUKUM_ADAT",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "karo",
+      "object_type": "KONSEP_HUKUM_ADAT",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "sasih",
+      "subject_type": "KONSEP_HUKUM_ADAT",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "katiga",
+      "object_type": "KONSEP_HUKUM_ADAT",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 400,
+  "text": "sasih kaenem dan kapitu disebut dewasa madya.",
+  "relations": [
+    {
+      "subject": "sasih kaenem",
+      "subject_type": "KONSEP_HUKUM_ADAT",
+      "true_relation": "disebut",
+      "relation_type": "DEFINISI",
+      "object": "dewasa madya",
+      "object_type": "KONSEP_HUKUM_ADAT",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 408,
+  "text": "sasih paruwak tahuk adalah sasih berbadankan kosong, terdiri dari:",
+  "relations": [
+    {
+      "subject": "sasih paruwak tahuk",
+      "subject_type": "KONSEP_HUKUM_ADAT",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "sasih berbadankan kosong",
+      "object_type": "KONSEP_HUKUM_ADAT",
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 411,
+  "text": "● wuku kuningan ada pada sasih kasa dan kapitu.",
+  "relations": [
+    {
+      "subject": "wuku kuningan",
+      "subject_type": "KONSEP_HUKUM_ADAT",
+      "true_relation": "ada",
+      "relation_type": "LOKASI",
+      "object": "sasih kasa",
+      "object_type": "KONSEP_HUKUM_ADAT",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 413,
+  "text": "● uye ada pada sasih katiga dan kasanga.",
+  "relations": [
+    {
+      "subject": "uye",
+      "subject_type": "KONSEP_HUKUM_ADAT",
+      "true_relation": "ada",
+      "relation_type": "LOKASI",
+      "object": "sasih katiga",
+      "object_type": "KONSEP_HUKUM_ADAT",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 414,
+  "text": "● wayang ada pada sasih kapat dan kadasa.",
+  "relations": [
+    {
+      "subject": "wayang",
+      "subject_type": "KONSEP_HUKUM_ADAT",
+      "true_relation": "ada",
+      "relation_type": "LOKASI",
+      "object": "sasih kapat",
+      "object_type": "KONSEP_HUKUM_ADAT",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 415,
+  "text": "malamasa adalah sasih yang ditampih atau diduakalikan, disebut juga malamasa.",
+  "relations": [
+    {
+      "subject": "malamasa",
+      "subject_type": "KONSEP_HUKUM_ADAT",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "sasih yang ditampih atau diduakalikan , disebut juga malamasa",
+      "object_type": "KONSEP_HUKUM_ADAT",
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 540,
+  "text": "banten saji sakabuatan.",
+  "relations": [
+    {
+      "subject": "banten",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "saji",
+      "relation_type": "PERSEMBAHAN",
+      "object": "sakabuatan",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 541,
+  "text": "banten panjang ilang mentah lan rateng.",
+  "relations": [
+    {
+      "subject": "banten panjang ilang",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "mentah",
+      "relation_type": "ATRIBUT",
+      "object": "rateng",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 559,
+  "text": "sorohan banten ring ajeng sulinggih",
+  "relations": [
+    {
+      "subject": "sorohan banten",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "ring",
+      "relation_type": "LOKASI",
+      "object": "ajeng sulinggih",
+      "object_type": "ENTITAS_KEAGAMAAN",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 560,
+  "text": "banten pejati saha banten peras gede, suci asoroh.",
+  "relations": [
+    {
+      "subject": "banten pejati saha banten peras gede",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "suci",
+      "relation_type": "ATRIBUT",
+      "object": "asoroh",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 591,
+  "text": "banten saji sakabuatan.",
+  "relations": [
+    {
+      "subject": "banten",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "saji",
+      "relation_type": "PERSEMBAHAN",
+      "object": "sakabuatan",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 616,
+  "text": "banten nuwur pakuluh ring merajan, paibon, panti, lan kawitan.",
+  "relations": [
+    {
+      "subject": "banten nuwur pakuluh",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "ring",
+      "relation_type": "LOKASI",
+      "object": "merajan",
+      "object_type": "BANGUNAN_RITUAL",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "banten nuwur pakuluh",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "ring",
+      "relation_type": "LOKASI",
+      "object": "paibon",
+      "object_type": "BANGUNAN_RITUAL",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "banten nuwur pakuluh",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "ring",
+      "relation_type": "LOKASI",
+      "object": "panti",
+      "object_type": "BANGUNAN_RITUAL",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "banten nuwur pakuluh",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "ring",
+      "relation_type": "LOKASI",
+      "object": "kawitan",
+      "object_type": "KONSEP_FILOSOFIS",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 618,
+  "text": "banten atur piuning ring dalem, merajapati, lan panghulunin setra.",
+  "relations": [
+    {
+      "subject": "banten",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "atur",
+      "relation_type": "PERSEMBAHAN",
+      "object": "piuning ring dalem",
+      "object_type": "TAHAPAN_UPACARA",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "banten",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "atur",
+      "relation_type": "PERSEMBAHAN",
+      "object": "merajapati",
+      "object_type": "BANGUNAN_RITUAL",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "banten",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "atur",
+      "relation_type": "PERSEMBAHAN",
+      "object": "panghulunin setra",
+      "object_type": "BANGUNAN_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 631,
+  "text": "banten panebusan mentah lan rateng saha salaran sejangkepnya.",
+  "relations": [
+    {
+      "subject": "banten panebusan",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "mentah",
+      "relation_type": "ATRIBUT",
+      "object": "rateng saha salaran sejangkep",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 633,
+  "text": "banten pengajeng sulinggih utawi pinandita.",
+  "relations": [
+    {
+      "subject": "banten",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "pengajeng",
+      "relation_type": "PERSEMBAHAN",
+      "object": "sulinggih utawi pinandita",
+      "object_type": "ENTITAS_KEAGAMAAN",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 641,
+  "text": "banten munggah ring surya: banten pejati saha suci asoroh.",
+  "relations": [
+    {
+      "subject": "banten",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "munggah",
+      "relation_type": "LOKASI",
+      "object": "surya : banten pejati saha suci asoroh",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 679,
+  "text": "banten saji asele (jauman).",
+  "relations": [
+    {
+      "subject": "banten",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "saji",
+      "relation_type": "PERSEMBAHAN",
+      "object": "asele ( jauman )",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 731,
+  "text": "banten nuwur tirta menurut yang diinginkan.",
+  "relations": [
+    {
+      "subject": "banten",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "nuwur",
+      "relation_type": "NORMA",
+      "object": "tirta",
+      "object_type": "TIRTHA_SUCI",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 738,
+  "text": "puspa asti adalah abu yang diambil dengan mempergunakan sumpit/sepit, lalu dihancurkan/ditumbuk pada sebuah sesenden.",
+  "relations": [
+    {
+      "subject": "puspa asti",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "abu yang diambil dengan mempergunakan sumpit/sepit , lalu dihancurkan / ditumbuk pada sebuah sesenden",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 780,
+  "text": "dalam hal ini, puspa asti ditaruh pada balai selunglung atau dipangku oleh salah seorang keluarga; persembahyangan ini dipimpin oleh sulinggih.",
+  "relations": [
+    {
+      "subject": "puspa asti",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "ditaruh",
+      "relation_type": "LOKASI",
+      "object": "balai selunglung",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 783,
+  "text": "mengapa sawa (mayat) dibakar tatkala melakukan pitra yadnya?",
+  "relations": [
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "melakukan",
+      "relation_type": "NORMA",
+      "object": "pitra yadnya",
+      "object_type": "RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 785,
+  "text": "sebagaimana diketahui, pitra yadnya telah menjadi sebuah istilah bagi umat hindu di sini.",
+  "relations": [
+    {
+      "subject": "pitra yadnya",
+      "subject_type": "RITUAL",
+      "true_relation": "menjadi",
+      "relation_type": "DEFINISI",
+      "object": "istilah umat hindu",
+      "object_type": "AGAMA",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 788,
+  "text": "pitra yadnya terdiri dari dua kata, yakni \"pitra\" dan \"yadnya\".",
+  "relations": [
+    {
+      "subject": "pitra yadnya",
+      "subject_type": "RITUAL",
+      "true_relation": "terdiri",
+      "relation_type": "ATRIBUT",
+      "object": "dua kata , yakni \" pitra \" dan \" yadnya \"",
+      "object_type": "KONSEP_FILOSOFIS",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 789,
+  "text": "secara harfiah, \"pitra\" berarti orangtua (ayah dan ibu).",
+  "relations": [
+    {
+      "subject": "pitra",
+      "subject_type": "KONSEP_FILOSOFIS",
+      "true_relation": "berarti",
+      "relation_type": "DEFINISI",
+      "object": "orangtua ( ayah dan ibu ) secara harfiah ,",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 792,
+  "text": "jadi, \"pitra yadnya\" berarti pengorbanan yang dilandasi hati yang tulus suci kepada leluhur, terutama kepada orangtua.",
+  "relations": [
+    {
+      "subject": "pitra yadnya",
+      "subject_type": "RITUAL",
+      "true_relation": "berarti",
+      "relation_type": "DEFINISI",
+      "object": "pengorbanan yang dilandasi hati yang tulus suci kepada leluhur",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 797,
+  "text": "sebagai istilah, pitra yadnya memiliki arti tersendiri, yakni upacara keagamaan yang diadakan untuk menyelenggarakan atau nyangaskara jenazah atau roh keluarga yang meninggal dengan pelbagai sajen dan alat-alat upakara sebagai sarananya.",
+  "relations": [
+    {
+      "subject": "pitra yadnya",
+      "subject_type": "RITUAL",
+      "true_relation": "memiliki",
+      "relation_type": "ATRIBUT",
+      "object": "arti tersendiri , yakni upacara keagamaan yang diadakan untuk menyelenggarakan atau nyangaskara jenazah atau roh keluarga yang meninggal dengan pelbagai sajen dan alat-alat upakara sebagai sarana nya",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "pitra yadnya",
+      "subject_type": "RITUAL",
+      "true_relation": "memiliki",
+      "relation_type": "ATRIBUT",
+      "object": "istilah",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 801,
+  "text": "pitra yadnya terdiri dari beberapa jenis yang pelaksanaannya ber-bhinneka.",
+  "relations": [
+    {
+      "subject": "pitra yadnya",
+      "subject_type": "RITUAL",
+      "true_relation": "terdiri",
+      "relation_type": "ATRIBUT",
+      "object": "jenis yang pelaksanaan nya ber-bhinneka",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 809,
+  "text": "antara lain karena pitra yadnya yang dilakukan di dataran rendah inilah yang rupanya merupakan hasil penyempurnaan terakhir dari yang ening sira empu kuturan, dang hyang dwijendra, empu lutuk dan lain-lain.",
+  "relations": [
+    {
+      "subject": "pitra yadnya",
+      "subject_type": "RITUAL",
+      "true_relation": "merupakan",
+      "relation_type": "DEFINISI",
+      "object": "hasil penyempurnaan terakhir dari yang ening sira empu kuturan , dang hyang dwijendra , empu lutuk dan lain-lain",
+      "object_type": "KONSEP_FILOSOFIS",
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "pitra yadnya",
+      "subject_type": "RITUAL",
+      "true_relation": "rupa",
+      "relation_type": "DEFINISI",
+      "object": "rupa",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 822,
+  "text": "tidak lain lantaran pitra yadnya itu sendiri merupakan suatu upacara keagamaan.",
+  "relations": [
+    {
+      "subject": "pitra yadnya",
+      "subject_type": "RITUAL",
+      "true_relation": "merupakan",
+      "relation_type": "DEFINISI",
+      "object": "upacara keagamaan",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 851,
+  "text": "jelasnya, semasih pancamahabutha berwujud tubuh manusia termasuk setelah meninggal selaku sawa (jenazah), manusia \"pemakai\" lima unsur zat itu dinilai selaku pihak berhutang.",
+  "relations": [
+    {
+      "subject": "pancamahabutha",
+      "subject_type": "KONSEP_FILOSOFIS",
+      "true_relation": "berwujud",
+      "relation_type": "SIMBOLISME",
+      "object": "tubuh manusia",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 898,
+  "text": "selain itu, sesajen yang dihaturkan itu tertuju kepada ida bhatara kumara yang diyakini sebagai \"mengasuh\" bayi tersebut.",
+  "relations": [
+    {
+      "subject": "sesajen",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "tertuju",
+      "relation_type": "TUJUAN",
+      "object": "ida bhatara kumara yang diyakini sebagai \" mengasuh \" bayi tersebut",
+      "object_type": "ENTITAS_KEAGAMAAN",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 906,
+  "text": "berdasarkan semua itu, bila si jabang bayi meninggal semasih dalam kandungan, atau saat lahir sebelum tali pusat dipotong, ada yang memakai tradisi membiarkan ari-ari tetap menunggal (membiarkan menjadi satu) dengan jasad sang bayi.",
+  "relations": [
+    {
+      "subject": "jabang bayi",
+      "subject_type": "KONSEP_FILOSOFIS",
+      "true_relation": "meninggal",
+      "relation_type": "PERISTIWA",
+      "object": "kandungan",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 917,
+  "text": "namun lantaran telah pernah ada upacara bertalian dengan kelahirannya, maka perlu dibuatkan acara ala kadarnya antara lain, jenazah dibungkus kain putih setelah dimandikan.",
+  "relations": [
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dibungkus",
+      "relation_type": "TINDAKAN",
+      "object": "kain putih",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 923,
+  "text": "saat berangkat ke kuburan, jenazah di momong, diiringi peti di sampingnya.",
+  "relations": [
+    {
+      "subject": "jenazah momong",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "diiringi",
+      "relation_type": "URUTAN",
+      "object": "peti samping",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "jenazah momong",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "berangkat",
+      "relation_type": "URUTAN",
+      "object": "kuburan",
+      "object_type": "BANGUNAN_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 925,
+  "text": "setelah itu, jenazah dimasukkan ke dalam peti kayu, kemudian di kuburan tanpa upakara apapun yang tertuju langsung kepadanya.",
+  "relations": [
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dimasukkan",
+      "relation_type": "LOKASI",
+      "object": "peti kayu",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dimasukkan",
+      "relation_type": "LOKASI",
+      "object": "kuburan upakara apa",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 957,
+  "text": "pertama-tama jenazah bayi tersebut dimandikan dengan air biasa di atas dusa (balai-balai khusus pemandian jenazah) di natar rumah.",
+  "relations": [
+    {
+      "subject": "jenazah bayi",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dimandikan",
+      "relation_type": "mandi",
+      "object": "air biasa",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "jenazah bayi",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dimandikan",
+      "relation_type": "mandi",
+      "object": "natar rumah",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 958,
+  "text": "setelah bersih, jenazah bayi tersebut dimandikan dengan air kumkuman (air yang diberi serbuk cendana dan kembang serba harum).",
+  "relations": [
+    {
+      "subject": "jenazah bayi",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dimandikan",
+      "relation_type": "mandi",
+      "object": "air kumkuman ( air yang diberi serbuk cendana dan kembang serba harum )",
+      "object_type": "TIRTHA_SUCI",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 961,
+  "text": "sawa itu kemudian dibungkus dengan kain putih dan diikat dengan benang leleson, dibelit sebelas kali dari hulu ke kaki.",
+  "relations": [
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dibungkus",
+      "relation_type": "TINDAKAN",
+      "object": "kain putih",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "diikat",
+      "relation_type": "TINDAKAN",
+      "object": "benang leleson",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dibelit",
+      "relation_type": "belit",
+      "object": "sebelas kali",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dibelit",
+      "relation_type": "belit",
+      "object": "hulu kaki",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 964,
+  "text": "setelah terbungkus, sawa tersebut digotong ke balai-balai rumah adat.",
+  "relations": [
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "digotong",
+      "relation_type": "TINDAKAN",
+      "object": "balai-balai rumah adat",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 967,
+  "text": "karena sawa tersebut telah berkedudukan selaku sawa dewasa, maka dalam batas tertentu penyelesaiannya disesuaikan dengan ketentuan dewasa ayu atau hari baik.",
+  "relations": [
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "berkedudukan",
+      "relation_type": "LOKASI",
+      "object": "sawa dewasa",
+      "object_type": "ISTILAH_UMUM_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 970,
+  "text": "tentu saja tirtha tersebut dimohon dari seorang sulinggih menurut tata cara betapa mestinya.",
+  "relations": [
+    {
+      "subject": "tirtha",
+      "subject_type": "TIRTHA_SUCI",
+      "true_relation": "dimohon",
+      "relation_type": "NORMA",
+      "object": "sulinggih",
+      "object_type": "ENTITAS_KEAGAMAAN",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "tirtha",
+      "subject_type": "TIRTHA_SUCI",
+      "true_relation": "dimohon",
+      "relation_type": "NORMA",
+      "object": "tata cara betapa mesti nya",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 971,
+  "text": "karena tirtha tersebut dibuat dari klungah, maka pitra yadnya jenis ini dinamakan pula nglungah.",
+  "relations": [
+    {
+      "subject": "tirtha",
+      "subject_type": "TIRTHA_SUCI",
+      "true_relation": "dibuat",
+      "relation_type": "ATRIBUT",
+      "object": "klungah",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "pitra yadnya jenis",
+      "subject_type": "RITUAL",
+      "true_relation": "dinamakan",
+      "relation_type": "DEFINISI",
+      "object": "nglungah",
+      "object_type": "RITUAL_KEMATIAN",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 972,
+  "text": "menurut ketentuan, sebagaimana tertulis dalam beberapa lontar, hanya sawa anak yang telah berusia lima bulan ke atas boleh atau sebaiknya dibakar dalam pitra yadnya nglungah ini.",
+  "relations": [
+    {
+      "subject": "sawa anak",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dibakar",
+      "relation_type": "AKIBAT",
+      "object": "pitra yadnya nglungah",
+      "object_type": "RITUAL",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "sawa anak",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "tertulis",
+      "relation_type": "tulis",
+      "object": "lontar",
+      "object_type": "NASKAH_SUCI",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 974,
+  "text": "setelah disuguhkan sesaji sederhana, abu itu dihanyutkan ke laut atau ke sungai.",
+  "relations": [
+    {
+      "subject": "abu",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "dihanyutkan",
+      "relation_type": "hanyut",
+      "object": "laut",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "abu",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "dihanyutkan",
+      "relation_type": "hanyut",
+      "object": "sungai",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 978,
+  "text": "tirtha ini dipercikkan sebelum tirtha pangentas pada saat menjelang penguburan atau pembakaran sawa.",
+  "relations": [
+    {
+      "subject": "tirtha",
+      "subject_type": "TIRTHA_SUCI",
+      "true_relation": "dipercikkan",
+      "relation_type": "sebelum",
+      "object": "tirtha pangentas",
+      "object_type": "TIRTHA_SUCI",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 997,
+  "text": "tetebasan dipakai pada saat upacara otonan, mengandung makna bahwa anak tersebut hendaknya menebus segala dosanya.",
+  "relations": [
+    {
+      "subject": "tetebasan",
+      "subject_type": "TAHAPAN_UPACARA",
+      "true_relation": "mengandung",
+      "relation_type": "kandung",
+      "object": "makna",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1016,
+  "text": "secara niskala (batiniah) ngaben bertujuan untuk memusnahkan segenap jasad sawa sehalus-halusnya, sehingga wujud sawa dari benda yang wungkul menjadi unsur, elemen atau mahabutha, yakni asal materi yang jauh lebih halus dari pada benda, lebih halus dari abu.",
+  "relations": [
+    {
+      "subject": "ngaben",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "bertujuan",
+      "relation_type": "TUJUAN",
+      "object": "niskala ( batiniah )",
+      "object_type": "KONSEP_FILOSOFIS",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1017,
+  "text": "terutama semua mahabutha yang lima unsur itu, kembali kepada induk asalnya masing-masing.",
+  "relations": [
+    {
+      "subject": "mahabutha",
+      "subject_type": "KONSEP_FILOSOFIS",
+      "true_relation": "kembali",
+      "relation_type": "kembali",
+      "object": "induk asal",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1024,
+  "text": "sebagaimana pula diketahui, upacara itu selalu pula diiringi tujuan tambahan, misalnya permohonan kepada tuhan yang maha pengampun agar mendiang diberi ampun.",
+  "relations": [
+    {
+      "subject": "mendiang",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "diberi",
+      "relation_type": "PERSEMBAHAN",
+      "object": "ampun",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1034,
+  "text": "jenazah itu dibaringkan di bale adat (bila ada) dan sebaiknya pula diberi langse (tirai) secukupnya.",
+  "relations": [
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dibaringkan",
+      "relation_type": "LOKASI",
+      "object": "bale adat ( bila ada )",
+      "object_type": "BANGUNAN_RITUAL",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "diberi",
+      "relation_type": "PERSEMBAHAN",
+      "object": "langse ( tirai )",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "diberi",
+      "relation_type": "PERSEMBAHAN",
+      "object": "secukupnya",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1039,
+  "text": "setelah semuanya itu siap, jenazah pun dimandikan di atas balai-balai rumah adat.",
+  "relations": [
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dimandikan",
+      "relation_type": "mandi",
+      "object": "balai-balai rumah adat",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "siap",
+      "relation_type": "siap",
+      "object": "semua",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1040,
+  "text": "cara memandikan, yakni, mula-mula tikar alas jenazah ditarik, sehingga sawa berada di atas galar.",
+  "relations": [
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "berada",
+      "relation_type": "LOKASI",
+      "object": "atas galar",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1056,
+  "text": "pepaga ini berfungsi sebagai balai-balai alas memandikan jenazah dan ngringkes.",
+  "relations": [
+    {
+      "subject": "pepaga",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "berfungsi",
+      "relation_type": "TUJUAN",
+      "object": "balai-balai alas memandikan jenazah",
+      "object_type": "ISTILAH_UMUM_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1058,
+  "text": "di atas pepaga itu dipasang secarik kain putih selaku \"leluhur\" atau langit-langit tandu tersebut.",
+  "relations": [
+    {
+      "subject": "pepaga",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "dipasang",
+      "relation_type": "TINDAKAN",
+      "object": "secarik kain putih",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1060,
+  "text": "setelah jenazah dipindahkan dari rumah adat ke pepaga, kain penutup dibuka.",
+  "relations": [
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dipindahkan",
+      "relation_type": "pindah",
+      "object": "rumah adat",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1066,
+  "text": "jenazah ditelentangkan di atas pembungkus itu, serta mulailah diberi berbagai sarana simbolik pangringkesan, antara lain sesisir pisang selaku kalang bahu.",
+  "relations": [
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "ditelentangkan",
+      "relation_type": "telentang",
+      "object": "pembungkus",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "diberi",
+      "relation_type": "PERSEMBAHAN",
+      "object": "sarana simbolik pangringkesan",
+      "object_type": "TAHAPAN_UPACARA",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "diberi",
+      "relation_type": "PERSEMBAHAN",
+      "object": "sesisir pisang",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1079,
+  "text": "kemudian jenazah diikat dengan tali ktekung (tali bambu dipintal).",
+  "relations": [
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "diikat",
+      "relation_type": "TINDAKAN",
+      "object": "tali ktekung ( tali bambu dipintal )",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1082,
+  "text": "jenazah yang masih tetap di atas pepaga itu, kemudian dikenakan baju serta disuguhi sajen kecil yang disebut pengulapan.",
+  "relations": [
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dikenakan",
+      "relation_type": "TINDAKAN",
+      "object": "baju",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "disuguhi",
+      "relation_type": "suguh",
+      "object": "sajen kecil yang disebut pengulapan",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1086,
+  "text": "sesudah pangringkesan, jenazah dibaringkan kembali di atas balai-balai rumah adat.",
+  "relations": [
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dibaringkan",
+      "relation_type": "LOKASI",
+      "object": "balai-balai rumah adat",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1122,
+  "text": "nyekeh berarti jenazah dibaringkan di rumah adat dalam jangka waktu agak lama hingga tiba jatuhnya hari h untuk ngaben sesuai dewasa yang dipilih.",
+  "relations": [
+    {
+      "subject": "nyekeh",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "berarti",
+      "relation_type": "DEFINISI",
+      "object": "jenazah dibaringkan di rumah adat dalam jangka waktu agak lama hingga tiba jatuh nya hari h untuk ngaben sesuai dewasa yang dipilih",
+      "object_type": "ISTILAH_UMUM_RITUAL",
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1123,
+  "text": "jenazah bisa disebut masekeh, bila telah berada minimal satu bulan, pernah dilewati bulan purnama dan tilem, serta upacaranya sudah memenuhi syarat.",
+  "relations": [
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "disebut",
+      "relation_type": "DEFINISI",
+      "object": "masekeh",
+      "object_type": "RITUAL_KEMATIAN",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "jenazah",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dilewati",
+      "relation_type": "lewat",
+      "object": "bulan purnama",
+      "object_type": "KONSEP_HUKUM_ADAT",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1126,
+  "text": "nyekeh sawa merupakan pekerjaan berat, bila dibandingkan dengan menempuh jalan lain.",
+  "relations": [
+    {
+      "subject": "nyekeh sawa",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "merupakan",
+      "relation_type": "DEFINISI",
+      "object": "pekerjaan berat",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1128,
+  "text": "itulah sebabnya, nyekeh sawa lebih sering ditempuh keluarga raja atau pendeta, karena dari golongan masyarakat itu yang memang lebih mampu melakukan upacara ini.",
+  "relations": [
+    {
+      "subject": "nyekeh sawa",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "ditempuh",
+      "relation_type": "URUTAN",
+      "object": "keluarga raja",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "nyekeh sawa",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "ditempuh",
+      "relation_type": "URUTAN",
+      "object": "golongan masyarakat , karena yang memang lebih mampu melakukan upacara ini",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1133,
+  "text": "setelah selesai ngringkes, sawa dinaikkan di tumpang salu di rumah adat.",
+  "relations": [
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dinaikkan",
+      "relation_type": "LOKASI",
+      "object": "tumpang salu",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1134,
+  "text": "sesajen dan punjung dihaturkan kepada mendiang.",
+  "relations": [
+    {
+      "subject": "sesajen",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "dihaturkan",
+      "relation_type": "PERSEMBAHAN",
+      "object": "mendiang",
+      "object_type": "ISTILAH_UMUM_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1136,
+  "text": "damar kurung itu merupakan sarana permohonan kepada sanghyang agni, agar keletehan yang dipancarkan sawa mendiang diblokir terbatas, yakni hanya sebatas tanah pekarangan keluarga mendiang saja.",
+  "relations": [
+    {
+      "subject": "damar kurung",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "merupakan",
+      "relation_type": "DEFINISI",
+      "object": "sarana permohonan",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1138,
+  "text": "mendiang mendapat ayaban upakara diuskamaligi, yang bermakna penyucian, sehingga letehnya sawa tidak atau kurang memancar ke luar dan tidak menghimbasi yang lain.",
+  "relations": [
+    {
+      "subject": "mendiang",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "mendapat",
+      "relation_type": "ATRIBUT",
+      "object": "ayaban upakara diuskamaligi , yang bermakna penyucian , sehingga leteh nya sawa tidak atau kurang memancar ke luar dan tidak menghimbasi yang lain",
+      "object_type": "TAHAPAN_UPACARA",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1150,
+  "text": "apa lagi bila sawa itu adalah jenazah mendiang orangtuanya.",
+  "relations": [
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "jenazah mendiang orangtua",
+      "object_type": "ISTILAH_UMUM_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1160,
+  "text": "patus yang benar-benar merupakan bantuan gratis, selaku perwujudan rasa kebersamaan yang ada di dada krama.",
+  "relations": [
+    {
+      "subject": "patus",
+      "subject_type": "KONSEP_HUKUM_ADAT",
+      "true_relation": "selaku",
+      "relation_type": "KLASIFIKASI",
+      "object": "perwujudan rasa kebersamaan yang ada di dada krama",
+      "object_type": "STRUKTUR_SOSIAL_ADAT",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "patus",
+      "subject_type": "KONSEP_HUKUM_ADAT",
+      "true_relation": "merupakan",
+      "relation_type": "DEFINISI",
+      "object": "merupakan",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1163,
+  "text": "ngaben adalah suatu yadnya selaku pelaksanaan ajaran agama, yang hendaklah didukung dengan sredaning manah atau rasa hati tulus dan ikhlas.",
+  "relations": [
+    {
+      "subject": "ngaben",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "adalah",
+      "relation_type": "DEFINISI",
+      "object": "yadnya pelaksanaan ajaran agama , yang hendak lah didukung dengan sredaning manah atau rasa hati tulus dan ikhlas",
+      "object_type": "KONSEP_FILOSOFIS",
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1169,
+  "text": "sawa itu ditanam atau dibakar dengan status dititip sebelum ada rezeki, yang datangnya entah kapan untuk, menggelar upacara ngaben beberapa bulan atau bahkan beberapa tahun kemudian.",
+  "relations": [
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dibakar",
+      "relation_type": "AKIBAT",
+      "object": "status dititip sebelum ada rezeki , yang datang nya entah kapan untuk , menggelar upacara ngaben beberapa bulan atau bahkan beberapa tahun kemudian",
+      "object_type": "RITUAL_KEMATIAN",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1173,
+  "text": "selain ngaben berstandar yang agak tinggi bisa ditempuh dengan biaya ringan, juga dapat memupuk rasa kekeluargaan dan kebersamaan.",
+  "relations": [
+    {
+      "subject": "ngaben",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "ditempuh",
+      "relation_type": "URUTAN",
+      "object": "biaya ringan",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "ngaben",
+      "subject_type": "RITUAL_KEMATIAN",
+      "true_relation": "memupuk",
+      "relation_type": "pupuk",
+      "object": "rasa kekeluargaan",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1179,
+  "text": "sawa yang dititipkan di kuburan atau setra akan digali setelah tiba saatnya upacara ngaben.",
+  "relations": [
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "tiba",
+      "relation_type": "tiba",
+      "object": "saat upacara ngaben",
+      "object_type": "RITUAL_KEMATIAN",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1187,
+  "text": "sesajen ini dihaturkan pada saat abu jenazah dihanyutkan ke samudera.",
+  "relations": [
+    {
+      "subject": "sesajen",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "dihanyutkan",
+      "relation_type": "hanyut",
+      "object": "samudera",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1188,
+  "text": "sebagaimana pula dalam upacara lainnya, dalam upacara ini juga mempergunakan tirtha antara lain, tirtha panglukatan dan pabersihan selaku sarana penyucian, agar sawa boleh dan wajar menerima sesaji dan tirtha lainnya.",
+  "relations": [
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "menerima",
+      "relation_type": "URUTAN",
+      "object": "sesaji",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "menerima",
+      "relation_type": "URUTAN",
+      "object": "tirtha lainnya",
+      "object_type": "TIRTHA_SUCI",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1189,
+  "text": "tirtha yang dimohon di pamerajan dan pura lainnya, merupakan sarana restu dari ida bhatara di kahyangan tersebut terhadap arwah mendiang dalam peristiwa beralihnya dari dunia manusia ke dunia roh.",
+  "relations": [
+    {
+      "subject": "tirtha",
+      "subject_type": "TIRTHA_SUCI",
+      "true_relation": "merupakan",
+      "relation_type": "DEFINISI",
+      "object": "sarana restu",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1197,
+  "text": "masing-masing jun pere itu berisi tulisan aksara dan gambar yang khas.",
+  "relations": [
+    {
+      "subject": "jun pere",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "berisi",
+      "relation_type": "ATRIBUT",
+      "object": "tulisan aksara",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    },
+    {
+      "subject": "jun pere",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "berisi",
+      "relation_type": "ATRIBUT",
+      "object": "gambar yang khas",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1205,
+  "text": "tirtha pangentas merupakan sarana yang secara formal religius berfungsi memotong ikatan dan hubungan jasad dengan atma -jiwa dari mendiang.",
+  "relations": [
+    {
+      "subject": "tirtha pangentas",
+      "subject_type": "TIRTHA_SUCI",
+      "true_relation": "merupakan",
+      "relation_type": "DEFINISI",
+      "object": "sarana yang secara formal religius berfungsi memotong ikatan dan hubungan jasad dengan atma -jiwa dari mendiang",
+      "object_type": "ISTILAH_UMUM_RITUAL",
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1206,
+  "text": "tirtha itu juga selaku sarana untuk menetapkan kedudukan arwah mendiang pada satu alam roh (pitra) tertentu sesuai dengan tingkat upacaranya (makingsan atau ngaben).",
+  "relations": [
+    {
+      "subject": "tirtha",
+      "subject_type": "TIRTHA_SUCI",
+      "true_relation": "selaku",
+      "relation_type": "KLASIFIKASI",
+      "object": "sarana",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1213,
+  "text": "ada daerah yang membiasakan ayaban itu dilakukan di rumah, ada pula setelah sawa berada di kuburan setelah dibakar atau dikubur.",
+  "relations": [
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "berada",
+      "relation_type": "LOKASI",
+      "object": "kuburan",
+      "object_type": "BANGUNAN_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1215,
+  "text": "setelah tiba di setra, sawa diletakkan di atas lubang tempat penguburan atau di atas para-para tempat pembakarannya nanti.",
+  "relations": [
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "diletakkan",
+      "relation_type": "LOKASI",
+      "object": "lubang tempat penguburan",
+      "object_type": "TAHAPAN_UPACARA",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "tiba",
+      "relation_type": "tiba",
+      "object": "setra",
+      "object_type": "BANGUNAN_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1216,
+  "text": "setelah gulungan pangringkesar dibongkar, sawa disiram dengan toya penembak.",
+  "relations": [
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "disiram",
+      "relation_type": "TINDAKAN",
+      "object": "toya penembak",
+      "object_type": "TIRTHA_SUCI",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1219,
+  "text": "setelah itu, barulah sawa ditanam atau dibakar beserta semua alat pangringkesannya.",
+  "relations": [
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dibakar",
+      "relation_type": "AKIBAT",
+      "object": "alat pangringkesan",
+      "object_type": "TAHAPAN_UPACARA",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1221,
+  "text": "abu tulang dipungut dan dimasukkan ke dalam klungah nyuh gading/suku tunggal.",
+  "relations": [
+    {
+      "subject": "abu tulang",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "dimasukkan",
+      "relation_type": "LOKASI",
+      "object": "klungah nyuh gading/suku tunggal",
+      "object_type": "SARANA_RITUAL",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1222,
+  "text": "kemudian abu tulang itu dihanyutkan ke laut.",
+  "relations": [
+    {
+      "subject": "abu tulang",
+      "subject_type": "SARANA_RITUAL",
+      "true_relation": "dihanyutkan",
+      "relation_type": "hanyut",
+      "object": "laut",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1226,
+  "text": "di mata umat hindu terutama di bali, sawa dinilai sesuatu yang leteh atau tidak suci.",
+  "relations": [
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dinilai",
+      "relation_type": "ATRIBUT",
+      "object": "sesuatu yang leteh atau tidak suci",
+      "object_type": "KONSEP_HUKUM_ADAT",
+      "object_kind": "ENTITY"
+    },
+    {
+      "subject": "sawa",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "dinilai",
+      "relation_type": "ATRIBUT",
+      "object": "mata umat hindu",
+      "object_type": "AGAMA",
+      "object_kind": "ENTITY"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1233,
+  "text": "setelah diadakan upacara itu, barulah leteh itu dianggap sirna.",
+  "relations": [
+    {
+      "subject": "leteh",
+      "subject_type": "KONSEP_HUKUM_ADAT",
+      "true_relation": "dianggap",
+      "relation_type": "DEFINISI",
+      "object": "sirna",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+
+{
+  "sentence_id": 1238,
+  "text": "hanya saja, keluarga yang ditinggalkan berada di dunia ini, sedang para mendiang berada di alamnya masing-masing.",
+  "relations": [
+    {
+      "subject": "mendiang",
+      "subject_type": "ISTILAH_UMUM_RITUAL",
+      "true_relation": "berada",
+      "relation_type": "LOKASI",
+      "object": "alam",
+      "object_type": null,
+      "object_kind": "LITERAL"
+    }
+  ]
+}
+

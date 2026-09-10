@@ -1,0 +1,255 @@
+# Current triples, chunk 1 (S4..S785) - from the 916-triple run
+
+S4  ctx: sebagai ritual yang sangat rigid dan sarat makna, ngaben merepresentasikan siklus kehidupan dan kematian dalam kosmologi hindu bali.
+  [0] subject='ngaben' subject_label='RITUAL_KEMATIAN' relation='MELAMBANGKAN' object='siklus kematian' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='ngaben' subject_label='RITUAL_KEMATIAN' relation='MELAMBANGKAN' object='siklus kehidupan' object_label=None object_type='LITERAL' source='dependency_rule'
+  [2] subject='ngaben' subject_label='RITUAL_KEMATIAN' relation='BERPERAN_SEBAGAI' object='ritual yang sangat rigid dan sarat makna' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S6  ctx: secara teologis, ngaben adalah ritual kremasi yang berakar pada filosofi pelepasan jiwa ( atma ) dari ikatan duniawi.
+  [0] subject='ngaben' subject_label='RITUAL_KEMATIAN' relation='ADALAH' object='ritual kremasi yang berakar pada filosofi pelepasan jiwa ( atma ) dari ikatan duniawi' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S12  ctx: secara etimologis, "ngaben" memiliki beberapa sudut pandang pemaknaan.
+  [0] subject='ngaben' subject_label='RITUAL_KEMATIAN' relation='MEMILIKI' object='sudut pandang pemaknaan' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S16  ctx: dalam sistem keagamaan hindu, ngaben diklasifikasikan sebagai bagian dari pitra yadnya , yaitu pengorbanan suci yang ditujukan kepada leluhur.
+  [0] subject='ngaben' subject_label='RITUAL_KEMATIAN' relation='BAGIAN_DARI' object='pitra yadnya' object_label='RITUAL' object_type='ENTITY' source='dependency_rule'
+  [1] subject='pitra yadnya' subject_label='RITUAL' relation='ADALAH' object='pengorbanan suci' object_label=None object_type='LITERAL' source='object_decomposition'
+  [2] subject='pengorbanan suci' subject_label=None relation='DITUJUKAN_UNTUK' object='leluhur' object_label=None object_type='LITERAL' source='object_decomposition'
+
+S26  ctx: apah (air): mewakili unsur cair dalam tubuh.
+  [0] subject='apah' subject_label='KONSEP_FILOSOFIS' relation='MELAMBANGKAN' object='unsur cair' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S27  ctx: teja (panas/api): mewakili suhu dan energi.
+  [0] subject='teja' subject_label='KONSEP_FILOSOFIS' relation='MELAMBANGKAN' object='suhu' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='teja' subject_label='KONSEP_FILOSOFIS' relation='MELAMBANGKAN' object='energi' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S28  ctx: bayu (angin): mewakili napas dan udara.
+  [0] subject='bayu' subject_label='KONSEP_FILOSOFIS' relation='MELAMBANGKAN' object='napas' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='bayu' subject_label='KONSEP_FILOSOFIS' relation='MELAMBANGKAN' object='udara' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S29  ctx: akasa (eter/ruang): mewakili rongga dalam tubuh.
+  [0] subject='akasa' subject_label='KONSEP_FILOSOFIS' relation='MELAMBANGKAN' object='rongga tubuh' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S32  ctx: ngaben memiliki peran ganda yang saling menguatkan:
+  [0] subject='ngaben' subject_label='RITUAL_KEMATIAN' relation='MEMILIKI' object='peran ganda yang saling menguatkan' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S44  ctx: sawa wedana adalah upacara untuk jenazah utuh (3-7 hari setelah meninggal); di era modern, penggunaan formalin umum dilakukan untuk memperlambat pembusukan selama masa persiapan.
+  [0] subject='sawa wedana' subject_label='RITUAL_KEMATIAN' relation='ADALAH' object='upacara jenazah utuh ( 3-7 hari setelah meninggal )' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S45  ctx: asti wedana adalah upacara pembakaran tulang belulang yang digali kembali dari kuburan sesuai aturan adat setempat.
+  [0] subject='asti wedana' subject_label='RITUAL_KEMATIAN' relation='ADALAH' object='upacara pembakaran tulang belulang yang digali kembali dari kuburan sesuai aturan adat setempat' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S46  ctx: swasta adalah upacara yang dilakukan jika jenazah tidak ditemukan atau meninggal di perantauan, menggunakan kayu cendana dan aksara sakral sebagai simbol pengganti jasad.
+  [0] subject='swasta' subject_label='RITUAL_KEMATIAN' relation='ADALAH' object='upacara yang dilakukan jika jenazah tidak ditemukan atau meninggal di perantauan' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='swasta' subject_label='RITUAL_KEMATIAN' relation='MENGGUNAKAN' object='kayu cendana dan aksara sakral sebagai simbol pengganti jasad' object_label=None object_type='LITERAL' source='manual_override'
+
+S47  ctx: ngelungah adalah ritual khusus untuk bayi yang belum tumbuh gigi (suci); jenazahnya segera dikubur dan upacaranya dilakukan minimal 12 hari kemudian.
+  [0] subject='ngelungah' subject_label='RITUAL_KEMATIAN' relation='ADALAH' object='ritual khusus untuk bayi yang belum tumbuh gigi ( suci )' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S48  ctx: ngaben massal adalah pelaksanaan kolektif oleh warga desa untuk efisiensi biaya dan tenaga tanpa mengurangi nilai sakralitasnya.
+  [0] subject='ngaben massal' subject_label='RITUAL_KEMATIAN' relation='ADALAH' object='pelaksanaan kolektif untuk efisiensi biaya dan tenaga tanpa mengurangi nilai sakralitas nya' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S58  ctx: nganyut: melarung abu ke sungai atau laut sebagai simbol pelepasan terakhir menuju moksha .
+  [0] subject='nganyut' subject_label='TAHAPAN_UPACARA' relation='BERUPA' object='pelarungan abu ke sungai atau laut' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='abu' subject_label='SARANA_RITUAL' relation='DIHANYUTKAN_KE' object='sungai' object_label=None object_type='LITERAL' source='manual_override'
+  [2] subject='abu' subject_label='SARANA_RITUAL' relation='DIHANYUTKAN_KE' object='laut' object_label=None object_type='LITERAL' source='manual_override'
+  [3] subject='nganyut' subject_label='TAHAPAN_UPACARA' relation='MELAMBANGKAN' object='pelepasan terakhir menuju moksha' object_label='KONSEP_FILOSOFIS' object_type='ENTITY' source='manual_override'
+
+S61  ctx: secara teologis, mapegat (berarti "memutuskan") memiliki makna krusial untuk memutus ikatan emosional dan duniawi antara mendiang ( niskala ) dengan keluarga ( skala ).
+  [0] subject='mapegat' subject_label='TAHAPAN_UPACARA' relation='MEMILIKI' object='makna krusial untuk memutus ikatan emosional dan duniawi antara mendiang ( niskala ) dengan keluarga ( skala )' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='mapegat' subject_label='TAHAPAN_UPACARA' relation='BERARTI' object='memutuskan' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S69  ctx: gedarba: berbentuk menyerupai beruang berwarna hitam, digunakan oleh wangsa sudra jadma (masyarakat umum).
+  [0] subject='gedarba' subject_label='SARANA_RITUAL' relation='MELAMBANGKAN' object='beruang' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S73  ctx: naga banda adalah boneka naga raksasa yang melambangkan pengikat keinginan duniawi raja.
+  [0] subject='naga banda' subject_label='SARANA_RITUAL' relation='ADALAH' object='boneka naga raksasa' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='boneka naga raksasa' subject_label=None relation='MELAMBANGKAN' object='pengikat keinginan duniawi raja' object_label=None object_type='LITERAL' source='object_decomposition'
+
+S77  ctx: secara teknis, naga banda seharusnya memiliki panjang 1.600 depa (sekitar 2,4 km) .
+  [0] subject='naga banda' subject_label='SARANA_RITUAL' relation='MEMILIKI' object='panjang 1.600 depa' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S81  ctx: misalnya, perbandingan kepala lembu adalah 2:1:1, sedangkan singa adalah 3:2:2.
+  [0] subject='singa' subject_label='SARANA_RITUAL' relation='ADALAH' object='3:2:2' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S92  ctx: kanoroyang: sanksi terberat berupa pemberhentian keanggotaan desa adat.
+  [0] subject='kanoroyang sanksi terberat' subject_label='KONSEP_HUKUM_ADAT' relation='BERUPA' object='pemberhentian keanggotaan desa adat' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S104  ctx: bali aga vs bali dataran: terdapat perbedaan mendasar antara masyarakat pegunungan ( bali aga ) yang mempertahankan tradisi asli kuno (seperti di trunyan) dengan masyarakat bali dataran yang mendapat pengaruh kuat dari tradisi hindu-majapahit pasca jatuhnya kerajaan di jawa.
+  [0] subject='bali aga vs bali dataran' subject_label='Place' relation='MEMPEROLEH' object='perbedaan mendasar' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S124  ctx: bali dataran menggunakan sarana mewah (bade/petulangan) pengaruh majapahit, sedangkan bali aga lebih menonjolkan tradisi asli yang terkadang tidak menggunakan pembakaran fisik secara masif.
+  [0] subject='bali dataran' subject_label='Place' relation='MENGGUNAKAN' object='sarana mewah' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='sarana mewah' subject_label=None relation='ADALAH' object='bade/petulangan' object_label=None object_type='LITERAL' source='object_decomposition'
+
+S126  ctx: ngaben adalah institusi sosial-religius yang kompleks, berfungsi sebagai mekanisme spiritual pemurnian jiwa sekaligus perekat kohesi sosial.
+  [0] subject='ngaben' subject_label='RITUAL_KEMATIAN' relation='ADALAH' object='institusi sosial-religius' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S128  ctx: kemampuan tradisi ini untuk beradaptasi—baik melalui efisiensi biaya maupun penggunaan teknologi—membuktikan bahwa ngaben adalah identitas budaya dinamis yang terus menjaga harmoni antara manusia, alam, dan sang pencipta.
+  [0] subject='ngaben' subject_label='RITUAL_KEMATIAN' relation='ADALAH' object='identitas budaya dinamis' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S133  ctx: sebab bukan upakara yang besar dan megah yang menjamin manusia saat meninggalnya kelak akan secara otomatis mendapatkan sorga (amoring acintya), akan tetapi karma wasananyalah yang akan menuntun dan menentukan kelak di kemudian hari saat meninggalnya.
+  [0] subject='upakara' subject_label='SARANA_RITUAL' relation='TIDAK_MENJAMIN' object='sorga' object_label='KONSEP_FILOSOFIS' object_type='ENTITY' source='manual_override'
+  [1] subject='karma wasana' subject_label='KONSEP_FILOSOFIS' relation='MENENTUKAN' object='nasib setelah meninggal' object_label=None object_type='LITERAL' source='manual_override'
+
+S197  ctx: ngaben berdasarkan tingkatan upacara
+  [0] subject='ngaben' subject_label='RITUAL_KEMATIAN' relation='BERDASARKAN' object='tingkatan upacara' object_label='KONSEP_HUKUM_ADAT' object_type='ENTITY' source='dependency_rule'
+
+S215  ctx: setelah upacara nyiraman, layon digulung dengan kain putih selanjutnya diletakkan di bale gede / saka roras atau tempat yang diperuntukkan untuk itu.
+  [0] subject='layon' subject_label='SARANA_RITUAL' relation='DIGULUNG_DENGAN' object='kain putih' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+  [1] subject='layon' subject_label='SARANA_RITUAL' relation='DILETAKKAN_DI' object='bale gede' object_label='BANGUNAN_RITUAL' object_type='ENTITY' source='manual_override'
+  [2] subject='layon' subject_label='SARANA_RITUAL' relation='DILETAKKAN_DI' object='saka roras' object_label='BANGUNAN_RITUAL' object_type='ENTITY' source='manual_override'
+
+S217  ctx: sampai pada hari yang telah ditentukan atau hari pengutangan, dilaksanakan pelebon, diawali dengan upacara ngaskara dan caru pengelambuk, selanjutnya jenazah dinaikkan ke usungan lalu berangkat ke setra.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DINAIKKAN_KE' object='usungan' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+
+S219  ctx: dalam perjalanan ke setra ditaburkan sekar ura yang terdiri dari beras kuning, wang kepeng/bolong, dan daun temen serta kembang rampai, sebagai simbol perpisahan antara yang meninggal dengan keluarga yang ditinggal dengan harapan selalu diberikan kesejahteraan dan kemakmuran.
+  [0] subject='sekar ura' subject_label='SARANA_RITUAL' relation='MELAMBANGKAN' object='perpisahan antara yang meninggal dengan keluarga yang ditinggal' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='sekar ura' subject_label='SARANA_RITUAL' relation='MELAMBANGKAN' object='harapan selalu diberikan kesejahteraan dan kemakmuran' object_label=None object_type='LITERAL' source='manual_override'
+  [2] subject='sekar ura' subject_label='SARANA_RITUAL' relation='TERDIRI_DARI' object='beras kuning' object_label=None object_type='LITERAL' source='manual_override'
+  [3] subject='sekar ura' subject_label='SARANA_RITUAL' relation='TERDIRI_DARI' object='wang kepeng/bolong' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+  [4] subject='sekar ura' subject_label='SARANA_RITUAL' relation='TERDIRI_DARI' object='daun temen' object_label=None object_type='LITERAL' source='manual_override'
+  [5] subject='sekar ura' subject_label='SARANA_RITUAL' relation='TERDIRI_DARI' object='kembang rampai' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+
+S246  ctx: dilanjutkan dengan ngerorasin di pura dalem; puspa lingga tersebut dibuka keampigan bila upacara ini cukup sampai di sini saja.
+  [0] subject='puspa lingga' subject_label='SARANA_RITUAL' relation='DIAMBIL' object='keampigan' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='ngerorasin' subject_label='TAHAPAN_UPACARA' relation='DIADAKAN_DI' object='pura dalem' object_label='BANGUNAN_RITUAL' object_type='ENTITY' source='manual_override'
+
+S253  ctx: upacara ini dilakukan bila sawa telah terlebih dahulu dikubur dengan tata cara penguburan biasa.
+  [0] subject='sawa' subject_label='ISTILAH_UMUM_RITUAL' relation='DIKUBUR_DENGAN' object='tata cara penguburan biasa' object_label='TAHAPAN_UPACARA' object_type='ENTITY' source='dependency_rule'
+
+S254  ctx: bila telah siap dilakukan upacara, maka kuburan dibongkar dan diambil tulang belulangnya.
+  [0] subject='kuburan' subject_label='BANGUNAN_RITUAL' relation='DIAMBIL' object='tulang belulang' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S258  ctx: tegteg lalu diiring ke pura dalem, dengan tujuan matur piuning serta memohon atma yang akan diaben.
+  [0] subject='tegteg' subject_label='SARANA_RITUAL' relation='DIBAWA_KE' object='pura dalem' object_label='BANGUNAN_RITUAL' object_type='ENTITY' source='manual_override'
+  [1] subject='tegteg' subject_label='SARANA_RITUAL' relation='DIPAKAI_UNTUK' object='matur piuning serta memohon atma yang akan diaben' object_label=None object_type='LITERAL' source='manual_override'
+
+S265  ctx: tegteg diletakkan di atas bungkusan tulang belulang tersebut, lalu diupacarai sebagaimana layaknya sawa utuh, selanjutnya tegteg ditempatkan di tumpang salu.
+  [0] subject='tegteg' subject_label='SARANA_RITUAL' relation='DILETAKKAN_DI' object='bungkusan tulang belulang' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='tegteg' subject_label='SARANA_RITUAL' relation='DIPERLAKUKAN_SEPERTI' object='sawa utuh' object_label='ISTILAH_UMUM_RITUAL' object_type='ENTITY' source='dependency_rule'
+
+S270  ctx: secara khusus, ngaben svasta dimaksudkan untuk pelaksanaan atiwa-tiwa terhadap orang yang telah meninggal yang jenazahnya tidak mungkin ditemukan kembali, telah lama terkubur/terpendam, atau karena letaknya terlalu jauh dari jangkauan kita.
+  [0] subject='ngaben svasta' subject_label='RITUAL_KEMATIAN' relation='ADALAH' object='pelaksanaan atiwa-tiwa terhadap orang yang telah meninggal yang jenazahnya tidak mungkin ditemukan kembali' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='ngaben svasta' subject_label='RITUAL_KEMATIAN' relation='DITUJUKAN_UNTUK' object='jenazah yang telah lama terkubur/terpendam' object_label=None object_type='LITERAL' source='manual_override'
+  [2] subject='ngaben svasta' subject_label='RITUAL_KEMATIAN' relation='DITUJUKAN_UNTUK' object='jenazah yang terlalu jauh dari jangkauan kita' object_label=None object_type='LITERAL' source='manual_override'
+
+S271  ctx: adapun atiwa-tiwa yang tergolong dalam ngaben svasta adalah raçadana atau tirta yadnya pranawa, yakni sawa diganti dengan simbol tirtha (toyo çarira), sedangkan tata pelaksanaannya sama dengan atiwa-tiwa asti vedana — mulai dari matur piuning ke pura dalem, pembakaran, hingga nganyut, dan dilanjutkan dengan upacara sebagaimana mestinya hingga upacara ngelinggihang dewa hyang.
+  [0] subject='sawa' subject_label='ISTILAH_UMUM_RITUAL' relation='DIGANTI_DENGAN' object='simbol tirtha' object_label='TIRTHA_SUCI' object_type='ENTITY' source='manual_override'
+  [1] subject='simbol tirtha' subject_label=None relation='ADALAH' object='toyo çarira' object_label=None object_type='LITERAL' source='manual_override'
+  [2] subject='atiwa-tiwa' subject_label='RITUAL_KEMATIAN' relation='ADALAH' object='raçadana' object_label=None object_type='LITERAL' source='manual_override'
+  [3] subject='atiwa-tiwa' subject_label='RITUAL_KEMATIAN' relation='ADALAH' object='tirta yadnya pranawa' object_label='RITUAL_KEMATIAN' object_type='ENTITY' source='manual_override'
+  [4] subject='raçadana' subject_label=None relation='SAMA_DENGAN' object='atiwa-tiwa asti vedana' object_label='RITUAL_KEMATIAN' object_type='ENTITY' source='manual_override'
+  [5] subject='tirta yadnya pranawa' subject_label=None relation='SAMA_DENGAN' object='atiwa-tiwa asti vedana' object_label='RITUAL_KEMATIAN' object_type='ENTITY' source='manual_override'
+  [6] subject='atiwa-tiwa' subject_label='RITUAL_KEMATIAN' relation='BAGIAN_DARI' object='ngaben svasta' object_label='RITUAL_KEMATIAN' object_type='ENTITY' source='manual_override'
+
+S283  ctx: dalam lontar tersebut, banten yang menjadi simbol orang yang meninggal disebut kala puspa, sebagaimana juga disebutkan dalam lontar yama purva tattwa.
+  [0] subject='banten' subject_label='SARANA_RITUAL' relation='DIKENAL_SEBAGAI' object='kala puspa' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+
+S332  ctx: jenazah diletakkan pada balai dengan posisi kepala berhulu utara atau timur.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DILETAKKAN_DI' object='balai posisi kepala berhulu utara' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S338  ctx: lalu disuguhi soda berupa nasi, minum, buah-buahan, jajan, dan lainnya, dilengkapi canang sari beserta kelengkapannya.
+  [0] subject='soda' subject_label='SARANA_RITUAL' relation='DILENGKAPI' object='canang sari' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+  [1] subject='soda' subject_label='SARANA_RITUAL' relation='BERUPA' object='nasi' object_label=None object_type='LITERAL' source='manual_override'
+  [2] subject='soda' subject_label='SARANA_RITUAL' relation='BERUPA' object='minum' object_label=None object_type='LITERAL' source='manual_override'
+  [3] subject='soda' subject_label='SARANA_RITUAL' relation='BERUPA' object='buah-buahan' object_label=None object_type='LITERAL' source='manual_override'
+  [4] subject='soda' subject_label='SARANA_RITUAL' relation='BERUPA' object='jajan' object_label=None object_type='LITERAL' source='manual_override'
+
+S344  ctx: eteh-eteh sawa, berupa kain putih untuk saput, kamben, tapih, sabuk, udeng, pangulungan, angkeb rai, angkeb baga/purus, leluwur, dan tatindih (biasanya dimohonkan dari sulinggih/griya); kain putih untuk bantal berisi pis bolong 11 kepeng; kain kuning untuk saput atau selendang; rantasan kain putih kuning dan kain anyar; serta samsam, bunga, dan kwangen.
+  [0] subject='eteh-eteh sawa' subject_label='SARANA_RITUAL' relation='BERUPA' object='kain putih untuk saput' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+  [1] subject='eteh-eteh sawa' subject_label='SARANA_RITUAL' relation='BERUPA' object='kamben' object_label=None object_type='LITERAL' source='manual_override'
+  [2] subject='eteh-eteh sawa' subject_label='SARANA_RITUAL' relation='BERUPA' object='tapih' object_label=None object_type='LITERAL' source='manual_override'
+  [3] subject='eteh-eteh sawa' subject_label='SARANA_RITUAL' relation='BERUPA' object='sabuk' object_label=None object_type='LITERAL' source='manual_override'
+  [4] subject='eteh-eteh sawa' subject_label='SARANA_RITUAL' relation='BERUPA' object='udeng' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+  [5] subject='eteh-eteh sawa' subject_label='SARANA_RITUAL' relation='BERUPA' object='pangulungan' object_label=None object_type='LITERAL' source='manual_override'
+  [6] subject='eteh-eteh sawa' subject_label='SARANA_RITUAL' relation='BERUPA' object='angkeb rai' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+  [7] subject='eteh-eteh sawa' subject_label='SARANA_RITUAL' relation='BERUPA' object='angkeb baga/purus' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+  [8] subject='eteh-eteh sawa' subject_label='SARANA_RITUAL' relation='BERUPA' object='leluwur' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+  [9] subject='eteh-eteh sawa' subject_label='SARANA_RITUAL' relation='BERUPA' object='tatindih' object_label=None object_type='LITERAL' source='manual_override'
+  [10] subject='eteh-eteh sawa' subject_label='SARANA_RITUAL' relation='BERUPA' object='kain putih untuk bantal berisi pis bolong 11 kepeng' object_label=None object_type='LITERAL' source='manual_override'
+  [11] subject='eteh-eteh sawa' subject_label='SARANA_RITUAL' relation='BERUPA' object='kain kuning untuk saput atau selendang' object_label=None object_type='LITERAL' source='manual_override'
+  [12] subject='eteh-eteh sawa' subject_label='SARANA_RITUAL' relation='BERUPA' object='rantasan kain putih kuning dan kain anyar' object_label=None object_type='LITERAL' source='manual_override'
+  [13] subject='eteh-eteh sawa' subject_label='SARANA_RITUAL' relation='BERUPA' object='samsam' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+  [14] subject='eteh-eteh sawa' subject_label='SARANA_RITUAL' relation='BERUPA' object='bunga' object_label=None object_type='LITERAL' source='manual_override'
+  [15] subject='eteh-eteh sawa' subject_label='SARANA_RITUAL' relation='BERUPA' object='kwangen' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+  [16] subject='eteh-eteh sawa' subject_label='SARANA_RITUAL' relation='DIMOHONKAN_DARI' object='sulinggih/griya' object_label='ENTITAS_KEAGAMAAN' object_type='ENTITY' source='manual_override'
+
+S354  ctx: pepaga terbuat dari bambu dengan hitungan: likah, wangke, wangkong, dan galar, galir, galur.
+  [0] subject='pepaga' subject_label='SARANA_RITUAL' relation='TERBUAT_DARI' object='bambu' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='pepaga' subject_label='SARANA_RITUAL' relation='TERBUAT_DARI' object='hitungan wangke' object_label=None object_type='LITERAL' source='dependency_rule'
+  [2] subject='pepaga' subject_label='SARANA_RITUAL' relation='TERBUAT_DARI' object='hitungan wangkong' object_label=None object_type='LITERAL' source='dependency_rule'
+  [3] subject='pepaga' subject_label='SARANA_RITUAL' relation='TERBUAT_DARI' object='hitungan galar' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+  [4] subject='pepaga' subject_label='SARANA_RITUAL' relation='TERBUAT_DARI' object='hitungan galir' object_label=None object_type='LITERAL' source='dependency_rule'
+  [5] subject='pepaga' subject_label='SARANA_RITUAL' relation='TERBUAT_DARI' object='hitungan galur' object_label=None object_type='LITERAL' source='dependency_rule'
+  [6] subject='pepaga' subject_label='SARANA_RITUAL' relation='TERBUAT_DARI' object='hitungan likah' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S358  ctx: pepaga ditempatkan di halaman rumah, di atasnya dipasang/direntangkan leluwur berupa kain putih.
+  [0] subject='pepaga' subject_label='SARANA_RITUAL' relation='DILETAKKAN_DI' object='halaman rumah' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='pepaga' subject_label='SARANA_RITUAL' relation='DIPASANG' object='leluwur' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+  [2] subject='leluwur' subject_label='SARANA_RITUAL' relation='BERUPA' object='kain putih' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+
+S364  ctx: sebelum jenazah diusung ke tempat pemandian, terlebih dahulu diadakan upacara nanginin, yaitu membangunkan almarhum seperti halnya membangunkan orang yang sedang tidur, dengan memanggil namanya dan mengucapkan kata-kata dengan lemah lembut serta memberitahukan untuk segera dimandikan — lebih baik lagi disertai kekidungan yang berhubungan dengan kidung pitra yadnya.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIBAWA_KE' object='tempat pemandian' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='nanginin' subject_label='TAHAPAN_UPACARA' relation='ADALAH' object='membangunkan almarhum seperti membangunkan orang yang sedang tidur' object_label=None object_type='LITERAL' source='manual_override'
+  [2] subject='nanginin' subject_label='TAHAPAN_UPACARA' relation='DISERTAI' object='kekidungan yang berhubungan dengan kidung pitra yadnya' object_label=None object_type='LITERAL' source='manual_override'
+
+S365  ctx: selanjutnya jenazah diangkat dan diletakkan pada pepaga yang telah disediakan, masih dibarengi kekidungan.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DILETAKKAN_DI' object='pepaga' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+  [1] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIBARENGI' object='kekidungan' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S366  ctx: jenazah membujur ke utara atau ke timur.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='MENUJU' object='timur' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='MENUJU' object='utara' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S370  ctx: selanjutnya dipasang itik-itik pada ibu jari tangan dan kaki, jenazah digulung dengan tikar dan kain yang telah dirajah, diakhiri dengan lante dari bambu, lalu dimasukkan ke dalam slepa/peti dan ditempatkan pada bale gede/sakaroras atau tempat yang disiapkan, dengan posisi kepala ke utara atau ke timur.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIGULUNG_DENGAN' object='tikar' object_label=None object_type='LITERAL' source='dependency_rule'
+  [1] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIGULUNG_DENGAN' object='kain yang telah dirajah dengan tikar dan kain yang telah dirajah' object_label=None object_type='LITERAL' source='dependency_rule'
+  [2] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIPASANG' object='itik-itik' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+  [3] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DILETAKKAN_DI' object='ibu jari kaki' object_label=None object_type='LITERAL' source='dependency_rule'
+  [4] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DILETAKKAN_DI' object='ibu jari tangan' object_label=None object_type='LITERAL' source='dependency_rule'
+  [5] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIAKHIRI_DENGAN' object='lante bambu' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+  [6] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIMASUKKAN_KE_DALAM' object='slepa/peti' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+
+S376  ctx: bila telah datang hari baik, minimal/maksimal selama 7 hari sejak meninggal, jenazah diusung ke setra untuk dibasmi oleh sang hyang birawi.
+  [0] subject='jenazah' subject_label='ISTILAH_UMUM_RITUAL' relation='DIBAWA_KE' object='setra' object_label='BANGUNAN_RITUAL' object_type='ENTITY' source='dependency_rule'
+
+S399  ctx: dengan demikian, dapat disimpulkan bahwa sasih yang baik untuk melaksanakan pitra yadnya, khususnya ngaben, adalah kasa, karo, dan katiga, dengan yang utama pada sasih karo.
+  [0] subject='sasih yang baik untuk pitra yadnya (khususnya ngaben)' subject_label='KONSEP_HUKUM_ADAT' relation='ADALAH' object='kasa' object_label='KONSEP_HUKUM_ADAT' object_type='ENTITY' source='manual_override'
+  [1] subject='sasih yang baik untuk pitra yadnya (khususnya ngaben)' subject_label='KONSEP_HUKUM_ADAT' relation='ADALAH' object='karo' object_label='KONSEP_HUKUM_ADAT' object_type='ENTITY' source='manual_override'
+  [2] subject='sasih yang baik untuk pitra yadnya (khususnya ngaben)' subject_label='KONSEP_HUKUM_ADAT' relation='ADALAH' object='katiga' object_label='KONSEP_HUKUM_ADAT' object_type='ENTITY' source='manual_override'
+
+S400  ctx: sasih kaenem dan kapitu disebut dewasa madya.
+  [0] subject='sasih kaenem' subject_label='KONSEP_HUKUM_ADAT' relation='DIKENAL_SEBAGAI' object='dewasa madya' object_label='KONSEP_HUKUM_ADAT' object_type='ENTITY' source='manual_override'
+  [1] subject='sasih kapitu' subject_label='KONSEP_HUKUM_ADAT' relation='DIKENAL_SEBAGAI' object='dewasa madya' object_label='KONSEP_HUKUM_ADAT' object_type='ENTITY' source='manual_override'
+
+S408  ctx: sasih paruwak tahuk adalah sasih berbadankan kosong, terdiri dari:
+  [0] subject='sasih paruwak tahuk' subject_label='KONSEP_HUKUM_ADAT' relation='ADALAH' object='sasih berbadankan kosong' object_label='KONSEP_HUKUM_ADAT' object_type='LITERAL' source='dependency_rule'
+
+S411  ctx: ● wuku kuningan ada pada sasih kasa dan kapitu.
+  [0] subject='wuku kuningan' subject_label='KONSEP_HUKUM_ADAT' relation='BERADA_DI' object='sasih kapitu' object_label='KONSEP_HUKUM_ADAT' object_type='ENTITY' source='dependency_rule'
+  [1] subject='wuku kuningan' subject_label='KONSEP_HUKUM_ADAT' relation='BERADA_DI' object='sasih kasa' object_label='KONSEP_HUKUM_ADAT' object_type='ENTITY' source='dependency_rule'
+
+S413  ctx: ● uye ada pada sasih katiga dan kasanga.
+  [0] subject='uye' subject_label='KONSEP_HUKUM_ADAT' relation='BERADA_DI' object='sasih kasanga' object_label='KONSEP_HUKUM_ADAT' object_type='ENTITY' source='dependency_rule'
+  [1] subject='uye' subject_label='KONSEP_HUKUM_ADAT' relation='BERADA_DI' object='sasih katiga' object_label='KONSEP_HUKUM_ADAT' object_type='ENTITY' source='dependency_rule'
+
+S414  ctx: ● wayang ada pada sasih kapat dan kadasa.
+  [0] subject='wayang' subject_label='KONSEP_HUKUM_ADAT' relation='BERADA_DI' object='sasih kadasa' object_label='KONSEP_HUKUM_ADAT' object_type='ENTITY' source='dependency_rule'
+  [1] subject='wayang' subject_label='KONSEP_HUKUM_ADAT' relation='BERADA_DI' object='sasih kapat' object_label='KONSEP_HUKUM_ADAT' object_type='ENTITY' source='dependency_rule'
+
+S415  ctx: malamasa adalah sasih yang ditampih atau diduakalikan, disebut juga malamasa.
+  [0] subject='malamasa' subject_label='KONSEP_HUKUM_ADAT' relation='ADALAH' object='sasih yang ditampih atau diduakalikan , disebut juga malamasa' object_label=None object_type='LITERAL' source='dependency_rule'
+
+S633  ctx: banten pengajeng sulinggih utawi pinandita.
+  [0] subject='banten' subject_label='SARANA_RITUAL' relation='DIPERSEMBAHKAN_KEPADA' object='sulinggih utawi pinandita' object_label='ENTITAS_KEAGAMAAN' object_type='ENTITY' source='dependency_rule'
+
+S738  ctx: puspa asti adalah abu yang diambil dengan mempergunakan sumpit/sepit, lalu dihancurkan/ditumbuk pada sebuah sesenden.
+  [0] subject='puspa asti' subject_label='SARANA_RITUAL' relation='ADALAH' object='abu yang diambil dengan mempergunakan sumpit/sepit' object_label=None object_type='LITERAL' source='manual_override'
+  [1] subject='puspa asti' subject_label='SARANA_RITUAL' relation='DIHANCURKAN_DI' object='sesenden' object_label='SARANA_RITUAL' object_type='ENTITY' source='manual_override'
+
+S780  ctx: dalam hal ini, puspa asti ditaruh pada balai selunglung atau dipangku oleh salah seorang keluarga; persembahyangan ini dipimpin oleh sulinggih.
+  [0] subject='puspa asti' subject_label='SARANA_RITUAL' relation='DILETAKKAN_DI' object='balai selunglung' object_label='SARANA_RITUAL' object_type='ENTITY' source='dependency_rule'
+
+S785  ctx: sebagaimana diketahui, pitra yadnya telah menjadi sebuah istilah bagi umat hindu di sini.
+  [0] subject='pitra yadnya' subject_label='RITUAL' relation='ADALAH' object='istilah umat hindu' object_label='AGAMA' object_type='ENTITY' source='dependency_rule'

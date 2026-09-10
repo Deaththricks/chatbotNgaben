@@ -1,0 +1,22 @@
+# Rasa
+models/
+.rasa/
+*.tar.gz
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+rasa_bot/
+.venv/
+
+# secrets — DON'T commit these
+.env
+.env.*
+!.env.example
+endpoints.yml
+credentials.yml
+
+# senior's reference example — not our code
+Graphing/chatbot-budaya-bali/
+Graphing/chatbot-budaya-bali.zip

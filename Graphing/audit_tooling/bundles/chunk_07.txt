@@ -1,0 +1,2517 @@
+CHUNK 7/8 - sentences S3296 .. S3862  (59 sentences)
+
+### S3296
+TEXT: ketika jenazah sudah berada di atas pepaga/asagan, masyarakat atau keluarga tidak boleh kesusu (tergesa-gesa) untuk memandikannya.
+NER: jenazah -> ISTILAH_UMUM_RITUAL [cultural] | pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga) | asagan -> SARANA_RITUAL [cultural] (canonical: Pepaga)
+PARSE:
+# sent_id = S3296
+# text = ketika jenazah sudah berada di atas pepaga/asagan, masyarakat atau keluarga tidak boleh kesusu (tergesa-gesa) untuk memandikannya.
+1	ketika	ketika	SCONJ	_	_	4	mark	_	_
+2	jenazah	jenazah	NOUN	_	_	4	nsubj	_	_
+3	sudah	sudah	AUX	_	_	4	aux	_	_
+4	berada	ada	VERB	_	_	14	advcl	_	_
+5	di	di	ADP	_	_	7	case	_	_
+6	atas	atas	ADP	_	_	7	case	_	_
+7	pepaga/asagan	pepaga/asagan	NOUN	_	_	4	obl	_	_
+8	,	,	PUNCT	_	_	4	punct	_	_
+9	masyarakat	masyarakat	NOUN	_	_	14	nsubj	_	_
+10	atau	atau	CCONJ	_	_	11	cc	_	_
+11	keluarga	keluarga	NOUN	_	_	9	conj	_	_
+12	tidak	tidak	PART	_	_	14	advmod	_	_
+13	boleh	boleh	AUX	_	_	14	aux	_	_
+14	kesusu	kesusu	VERB	_	_	0	root	_	_
+15	(	(	PUNCT	_	_	16	punct	_	_
+16	tergesa-gesa	tergesa	ADJ	_	_	14	appos	_	_
+17	)	)	PUNCT	_	_	16	punct	_	_
+18	untuk	untuk	SCONJ	_	_	19	mark	_	_
+19	memandikan	mandi	VERB	_	_	14	xcomp	_	_
+20	nya	dia	PRON	_	_	19	obj	_	_
+21	.	.	PUNCT	_	_	14	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[BERADA_DI]--> pepaga/asagan (SARANA_RITUAL)  type=ENTITY source=dependency_rule
+  [1] keluarga/masyarakat (None) --[DILARANG]--> tergesa-gesa memandikan jenazah (ISTILAH_UMUM_RITUAL)  type=ENTITY source=manual_override
+
+### S3330
+TEXT: sebelum upacara nyiramang layon dilaksanakan, maka krama (masyarakat banjar) akan membuat bale-bale tempat memandikan mayat yang disebut pepaga atau asagan.
+NER: nyiramang layon -> TAHAPAN_UPACARA [cultural] (canonical: Nyiramang Layon) | krama -> STRUKTUR_SOSIAL_ADAT [cultural] | banjar -> STRUKTUR_SOSIAL_ADAT [cultural] (canonical: Banjar) | bale-bale -> BANGUNAN_RITUAL [cultural] | pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga) | asagan -> SARANA_RITUAL [cultural] (canonical: Pepaga)
+PARSE:
+# sent_id = S3330
+# text = sebelum upacara nyiramang layon dilaksanakan, maka krama (masyarakat banjar) akan membuat bale-bale tempat memandikan mayat yang disebut pepaga atau asagan.
+1	sebelum	sebelum	SCONJ	_	_	5	mark	_	_
+2	upacara	upacara	NOUN	_	_	5	nsubj:pass	_	_
+3	nyiramang	nyiramang	NOUN	_	_	2	compound	_	_
+4	layon	layon	NOUN	_	_	3	compound	_	_
+5	dilaksanakan	laksana	VERB	_	_	14	advcl	_	_
+6	,	,	PUNCT	_	_	5	punct	_	_
+7	maka	maka	SCONJ	_	_	14	mark	_	_
+8	krama	krama	NOUN	_	_	14	nsubj	_	_
+9	(	(	PUNCT	_	_	10	punct	_	_
+10	masyarakat	masyarakat	NOUN	_	_	8	appos	_	_
+11	banjar	banjar	NOUN	_	_	10	compound	_	_
+12	)	)	PUNCT	_	_	10	punct	_	_
+13	akan	akan	AUX	_	_	14	aux	_	_
+14	membuat	buat	VERB	_	_	0	root	_	_
+15	bale-bale	bale	NOUN	_	_	14	obj	_	_
+16	tempat	tempat	NOUN	_	_	15	compound	_	_
+17	memandikan	mandi	VERB	_	_	15	acl	_	_
+18	mayat	mayat	NOUN	_	_	17	obj	_	_
+19	yang	yang	PRON	_	_	20	nsubj:pass	_	_
+20	disebut	sebut	VERB	_	_	18	acl:relcl	_	_
+21	pepaga	pepaga	NOUN	_	_	20	obj	_	_
+22	atau	atau	CCONJ	_	_	23	cc	_	_
+23	asagan	asag	NOUN	_	_	21	conj	_	_
+24	.	.	PUNCT	_	_	14	punct	_	_
+
+RELATIONS:
+  [0] krama (masyarakat banjar) (None) --[MEMBUAT]--> bale-bale tempat memandikan mayat (BANGUNAN_RITUAL)  type=ENTITY source=manual_override
+  [1] bale-bale (tempat memandikan mayat) (None) --[DIKENAL_SEBAGAI]--> pepaga (SARANA_RITUAL)  type=ENTITY source=manual_override
+  [2] bale-bale (tempat memandikan mayat) (None) --[DIKENAL_SEBAGAI]--> asagan (SARANA_RITUAL)  type=ENTITY source=manual_override
+
+### S3332
+TEXT: pepaga atau di beberapa tempat di denpasar menyebut asagan, dan ada juga yang menyebutkan bale penusangan, adalah semacam dipan atau bale darurat yang juga bisa dipergunakan sebagai usungan atau tandu.
+NER: pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga) | denpasar -> Place [general] | asagan -> SARANA_RITUAL [cultural] (canonical: Pepaga) | bale penusangan -> BANGUNAN_RITUAL [cultural] (canonical: Pepaga) | usungan -> SARANA_RITUAL [cultural] | tandu -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S3332
+# text = pepaga atau di beberapa tempat di denpasar menyebut asagan, dan ada juga yang menyebutkan bale penusangan, adalah semacam dipan atau bale darurat yang juga bisa dipergunakan sebagai usungan atau tandu.
+1	pepaga	pepaga	NOUN	_	_	8	nsubj	_	_
+2	atau	atau	CCONJ	_	_	5	cc	_	_
+3	di	di	ADP	_	_	5	case	_	_
+4	beberapa	beberapa	DET	_	_	5	det	_	_
+5	tempat	tempat	NOUN	_	_	1	nmod	_	_
+6	di	di	ADP	_	_	7	case	_	_
+7	denpasar	denpasar	NOUN	_	_	5	nmod	_	_
+8	menyebut	sebut	VERB	_	_	0	root	_	_
+9	asagan	asag	NOUN	_	_	8	obj	_	_
+10	,	,	PUNCT	_	_	12	punct	_	_
+11	dan	dan	CCONJ	_	_	12	cc	_	_
+12	ada	ada	VERB	_	_	8	conj	_	_
+13	juga	juga	ADV	_	_	12	advmod	_	_
+14	yang	yang	PRON	_	_	15	nsubj	_	_
+15	menyebutkan	sebut	VERB	_	_	12	acl	_	_
+16	bale	bale	NOUN	_	_	15	obj	_	_
+17	penusangan	tusang	NOUN	_	_	16	compound	_	_
+18	,	,	PUNCT	_	_	21	punct	_	_
+19	adalah	adalah	AUX	_	_	21	cop	_	_
+20	semacam	semacam	DET	_	_	21	det	_	_
+21	dipan	dipan	NOUN	_	_	8	parataxis	_	_
+22	atau	atau	CCONJ	_	_	23	cc	_	_
+23	bale	bale	NOUN	_	_	21	conj	_	_
+24	darurat	darurat	ADJ	_	_	23	amod	_	_
+25	yang	yang	PRON	_	_	28	nsubj:pass	_	_
+26	juga	juga	ADV	_	_	28	advmod	_	_
+27	bisa	bisa	AUX	_	_	28	aux	_	_
+28	dipergunakan	guna	VERB	_	_	21	acl:relcl	_	_
+29	sebagai	sebagai	ADP	_	_	30	case	_	_
+30	usungan	usung	NOUN	_	_	28	obl	_	_
+31	atau	atau	CCONJ	_	_	32	cc	_	_
+32	tandu	tandu	NOUN	_	_	30	conj	_	_
+33	.	.	PUNCT	_	_	8	punct	_	_
+
+RELATIONS:
+  [0] pepaga (SARANA_RITUAL) --[DIKENAL_SEBAGAI]--> asagan (SARANA_RITUAL)  type=ENTITY source=dependency_rule
+  [1] pepaga (None) --[DIKENAL_SEBAGAI]--> bale penusangan (istilah Denpasar) (BANGUNAN_RITUAL)  type=ENTITY source=manual_override
+  [2] pepaga/asagan (None) --[ADALAH]--> semacam dipan atau bale darurat (BANGUNAN_RITUAL)  type=ENTITY source=manual_override
+  [3] pepaga/asagan (None) --[DIPERGUNAKAN_SEBAGAI]--> usungan (SARANA_RITUAL)  type=ENTITY source=manual_override
+  [4] pepaga/asagan (None) --[DIPERGUNAKAN_SEBAGAI]--> tandu (SARANA_RITUAL)  type=ENTITY source=manual_override
+
+### S3333
+TEXT: bale ini terbuat dari bambu dan galar nya juga terdiri dari bilah-bilah bambu berjumlah sebanyak 9 (sembilan) buah.
+NER: bale -> BANGUNAN_RITUAL [cultural] | galar -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S3333
+# text = bale ini terbuat dari bambu dan galar nya juga terdiri dari bilah-bilah bambu berjumlah sebanyak 9 (sembilan) buah.
+1	bale	bale	PROPN	_	_	3	nsubj:pass	_	_
+2	ini	ini	DET	_	_	1	det	_	_
+3	terbuat	buat	VERB	_	_	0	root	_	_
+4	dari	dari	ADP	_	_	5	case	_	_
+5	bambu	bambu	NOUN	_	_	3	obl	_	_
+6	dan	dan	CCONJ	_	_	7	cc	_	_
+7	galar	galar	NOUN	_	_	5	conj	_	_
+8	nya	dia	PRON	_	_	7	nmod:poss	_	_
+9	juga	juga	ADV	_	_	10	advmod	_	_
+10	terdiri	diri	VERB	_	_	5	acl:relcl	_	_
+11	dari	dari	ADP	_	_	12	case	_	_
+12	bilah-bilah	bilah	NOUN	_	_	10	obl	_	_
+13	bambu	bambu	NOUN	_	_	12	compound	_	_
+14	berjumlah	jumlah	VERB	_	_	12	acl	_	_
+15	sebanyak	sebanyak	ADP	_	_	20	case	_	_
+16	9	9	NUM	_	_	20	nummod	_	_
+17	(	(	PUNCT	_	_	18	punct	_	_
+18	sembilan	sembilan	NUM	_	_	16	appos	_	_
+19	)	)	PUNCT	_	_	18	punct	_	_
+20	buah	buah	NOUN	_	_	14	obj	_	_
+21	.	.	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] bale (BANGUNAN_RITUAL) --[TERBUAT_DARI]--> bambu (None)  type=LITERAL source=manual_override
+  [1] galar (SARANA_RITUAL) --[TERDIRI_DARI]--> bilah-bilah bambu (sebanyak 9 buah) (None)  type=LITERAL source=manual_override
+  [2] bale (BANGUNAN_RITUAL) --[TERBUAT_DARI]--> galar (SARANA_RITUAL)  type=ENTITY source=manual_override
+
+### S3339
+TEXT: setelah waktu untuk upacara nyiramang layon dimulai, maka para krama atau keluarga yang meninggal akan mengambil jenazah, dari balai tempat jenazah itu disemayamkan (bagi umat hindu di bali yang memiliki tatanan rumah stil bali, tempat persemayaman jenazah ditempatkan di bale semanggen).
+NER: nyiramang layon -> TAHAPAN_UPACARA [cultural] (canonical: Nyiramang Layon) | krama -> STRUKTUR_SOSIAL_ADAT [cultural] | jenazah -> ISTILAH_UMUM_RITUAL [cultural] | hindu -> AGAMA [cultural] | bali -> Place [general] | bale semanggen -> BANGUNAN_RITUAL [cultural]
+PARSE:
+# sent_id = S3339
+# text = setelah waktu untuk upacara nyiramang layon dimulai, maka para krama atau keluarga yang meninggal akan mengambil jenazah, dari balai tempat jenazah itu disemayamkan (bagi umat hindu di bali yang memiliki tatanan rumah stil bali, tempat persemayaman jenazah ditempatkan di bale semanggen).
+1	setelah	setelah	ADP	_	_	2	case	_	_
+2	waktu	waktu	NOUN	_	_	7	obl	_	_
+3	untuk	untuk	ADP	_	_	4	case	_	_
+4	upacara	upacara	NOUN	_	_	2	nmod	_	_
+5	nyiramang	nyiramang	NOUN	_	_	4	compound	_	_
+6	layon	layon	NOUN	_	_	5	compound	_	_
+7	dimulai	mulai	VERB	_	_	0	root	_	_
+8	,	,	PUNCT	_	_	7	punct	_	_
+9	maka	maka	SCONJ	_	_	17	mark	_	_
+10	para	para	DET	_	_	11	det	_	_
+11	krama	krama	NOUN	_	_	17	nsubj	_	_
+12	atau	atau	CCONJ	_	_	13	cc	_	_
+13	keluarga	keluarga	NOUN	_	_	11	conj	_	_
+14	yang	yang	PRON	_	_	15	nsubj	_	_
+15	meninggal	tinggal	VERB	_	_	11	acl:relcl	_	_
+16	akan	akan	AUX	_	_	17	aux	_	_
+17	mengambil	ambil	VERB	_	_	7	advcl	_	_
+18	jenazah	jenazah	NOUN	_	_	17	obj	_	_
+19	,	,	PUNCT	_	_	21	punct	_	_
+20	dari	dari	ADP	_	_	21	case	_	_
+21	balai	balai	NOUN	_	_	25	obl	_	_
+22	tempat	tempat	NOUN	_	_	21	compound	_	_
+23	jenazah	jenazah	NOUN	_	_	22	compound	_	_
+24	itu	itu	DET	_	_	23	det	_	_
+25	disemayamkan	semayam	VERB	_	_	17	parataxis	_	_
+26	(	(	PUNCT	_	_	28	punct	_	_
+27	bagi	bagi	ADP	_	_	28	case	_	_
+28	umat	umat	NOUN	_	_	25	obl	_	_
+29	hindu	hindu	NOUN	_	_	28	compound	_	_
+30	di	di	ADP	_	_	31	case	_	_
+31	bali	bali	PROPN	_	_	28	nmod	_	_
+32	yang	yang	PRON	_	_	33	nsubj	_	_
+33	memiliki	milik	VERB	_	_	28	acl:relcl	_	_
+34	tatanan	tatanan	NOUN	_	_	33	obj	_	_
+35	rumah	rumah	NOUN	_	_	34	compound	_	_
+36	stil	stil	NOUN	_	_	35	compound	_	_
+37	bali	bali	PROPN	_	_	36	nmod	_	_
+38	,	,	PUNCT	_	_	42	punct	_	_
+39	tempat	tempat	NOUN	_	_	42	nsubj:pass	_	_
+40	persemayaman	semayam	NOUN	_	_	39	compound	_	_
+41	jenazah	jenazah	NOUN	_	_	40	compound	_	_
+42	ditempatkan	tempat	VERB	_	_	33	ccomp	_	_
+43	di	di	ADP	_	_	44	case	_	_
+44	bale	bale	NOUN	_	_	42	obl	_	_
+45	semanggen	semanggen	NOUN	_	_	44	compound	_	_
+46	)	)	PUNCT	_	_	42	punct	_	_
+47	.	.	PUNCT	_	_	7	punct	_	_
+
+RELATIONS:
+  [0] krama atau keluarga (STRUKTUR_SOSIAL_ADAT) --[MENGAMBIL]--> jenazah (ISTILAH_UMUM_RITUAL)  type=ENTITY source=dependency_rule
+  [1] jenazah (ISTILAH_UMUM_RITUAL) --[DIAMBIL_DARI]--> balai (tempat jenazah disemayamkan) (ISTILAH_UMUM_RITUAL)  type=ENTITY source=manual_override
+  [2] tempat persemayaman jenazah (None) --[DITEMPATKAN_DI]--> bale semanggen (rumah adat Bali) (BANGUNAN_RITUAL)  type=ENTITY source=manual_override
+
+### S3340
+TEXT: jenazah itu akan diusung menuju ke tempat penusangan (nyiramang layon) yang berupa pepaga atau asagan.
+NER: jenazah -> ISTILAH_UMUM_RITUAL [cultural] | nyiramang layon -> TAHAPAN_UPACARA [cultural] (canonical: Nyiramang Layon) | pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga) | asagan -> SARANA_RITUAL [cultural] (canonical: Pepaga)
+PARSE:
+# sent_id = S3340
+# text = jenazah itu akan diusung menuju ke tempat penusangan (nyiramang layon) yang berupa pepaga atau asagan.
+1	jenazah	jenazah	NOUN	_	_	4	nsubj:pass	_	_
+2	itu	itu	DET	_	_	1	det	_	_
+3	akan	akan	AUX	_	_	4	aux	_	_
+4	diusung	usung	VERB	_	_	0	root	_	_
+5	menuju	tuju	ADP	_	_	7	case	_	_
+6	ke	ke	ADP	_	_	7	case	_	_
+7	tempat	tempat	NOUN	_	_	4	obl	_	_
+8	penusangan	tusang	NOUN	_	_	7	compound	_	_
+9	(	(	PUNCT	_	_	10	punct	_	_
+10	nyiramang	nyiramang	NOUN	_	_	7	appos	_	_
+11	layon	layon	NOUN	_	_	10	compound	_	_
+12	)	)	PUNCT	_	_	10	punct	_	_
+13	yang	yang	PRON	_	_	14	nsubj	_	_
+14	berupa	rupa	VERB	_	_	7	acl:relcl	_	_
+15	pepaga	pepaga	NOUN	_	_	14	obj	_	_
+16	atau	atau	CCONJ	_	_	17	cc	_	_
+17	asagan	asag	NOUN	_	_	15	conj	_	_
+18	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[DIUSUNG_KE]--> tempat penusangan (None)  type=LITERAL source=manual_override
+  [1] tempat penusangan (None) --[DIPAKAI_UNTUK]--> nyiramang layon (TAHAPAN_UPACARA)  type=ENTITY source=manual_override
+  [2] tempat penusangan (None) --[BERUPA]--> pepaga atau asagan (SARANA_RITUAL)  type=ENTITY source=manual_override
+
+### S3354
+TEXT: ini menyimbulkan bahwa jenazah tersebut naik ke pepaga/asagan, dengan terlebih dulu duduk dan kemudian baru tidur tertelentang.
+NER: jenazah -> ISTILAH_UMUM_RITUAL [cultural] | pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga) | asagan -> SARANA_RITUAL [cultural] (canonical: Pepaga)
+PARSE:
+# sent_id = S3354
+# text = ini menyimbulkan bahwa jenazah tersebut naik ke pepaga/asagan, dengan terlebih dulu duduk dan kemudian baru tidur tertelentang.
+1	ini	ini	DET	_	_	2	nsubj	_	_
+2	menyimbulkan	simbul	VERB	_	_	0	root	_	_
+3	bahwa	bahwa	SCONJ	_	_	6	mark	_	_
+4	jenazah	jenazah	NOUN	_	_	6	nsubj	_	_
+5	tersebut	tersebut	DET	_	_	4	det	_	_
+6	naik	naik	VERB	_	_	2	ccomp	_	_
+7	ke	ke	ADP	_	_	8	case	_	_
+8	pepaga/asagan	pepaga/asagan	NOUN	_	_	6	obl	_	_
+9	,	,	PUNCT	_	_	13	punct	_	_
+10	dengan	dengan	SCONJ	_	_	13	mark	_	_
+11	terlebih	terlebih	ADV	_	_	13	advmod	_	_
+12	dulu	dulu	ADV	_	_	13	advmod	_	_
+13	duduk	duduk	VERB	_	_	2	advcl	_	_
+14	dan	dan	CCONJ	_	_	17	cc	_	_
+15	kemudian	kemudian	ADV	_	_	17	advmod	_	_
+16	baru	baru	ADV	_	_	17	advmod	_	_
+17	tidur	tidur	VERB	_	_	13	conj	_	_
+18	tertelentang	telentang	VERB	_	_	17	acl	_	_
+19	.	.	PUNCT	_	_	2	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[NAIK_KE]--> pepaga/asagan (SARANA_RITUAL)  type=ENTITY source=manual_override
+  [1] jenazah (ISTILAH_UMUM_RITUAL) --[DIDUDUKKAN_DULU_SEBELUM]--> tidur tertelentang di pepaga/asagan (SARANA_RITUAL)  type=ENTITY source=manual_override
+
+### S3355
+TEXT: disamping itu jenazah yang masuk melalui teben dari pepaga, memiliki makna agar orang yang meninggal tersebut lebih cepat menemui brahman (sang pencipta), sesuai dengan kisah yang disebutkan dalam kitab mahabarata.
+NER: jenazah -> ISTILAH_UMUM_RITUAL [cultural] | pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga) | brahman -> KONSEP_FILOSOFIS [cultural]
+PARSE:
+# sent_id = S3355
+# text = disamping itu jenazah yang masuk melalui teben dari pepaga, memiliki makna agar orang yang meninggal tersebut lebih cepat menemui brahman (sang pencipta), sesuai dengan kisah yang disebutkan dalam kitab mahabarata.
+1	disamping	disamping	ADP	_	_	11	case	_	_
+2	itu	itu	DET	_	_	11	det	_	_
+3	jenazah	jenazah	NOUN	_	_	11	nsubj	_	_
+4	yang	yang	PRON	_	_	5	nsubj	_	_
+5	masuk	masuk	VERB	_	_	3	acl:relcl	_	_
+6	melalui	melalui	ADP	_	_	7	case	_	_
+7	teben	teben	NOUN	_	_	5	obl	_	_
+8	dari	dari	ADP	_	_	9	case	_	_
+9	pepaga	pepaga	NOUN	_	_	7	nmod	_	_
+10	,	,	PUNCT	_	_	3	punct	_	_
+11	memiliki	milik	VERB	_	_	0	root	_	_
+12	makna	makna	NOUN	_	_	11	obj	_	_
+13	agar	agar	SCONJ	_	_	20	mark	_	_
+14	orang	orang	NOUN	_	_	20	nsubj	_	_
+15	yang	yang	PRON	_	_	16	nsubj	_	_
+16	meninggal	tinggal	VERB	_	_	14	acl:relcl	_	_
+17	tersebut	tersebut	DET	_	_	16	det	_	_
+18	lebih	lebih	ADV	_	_	19	advmod	_	_
+19	cepat	cepat	ADJ	_	_	20	advmod	_	_
+20	menemui	temu	VERB	_	_	11	ccomp	_	_
+21	brahman	brahman	NOUN	_	_	20	obj	_	_
+22	(	(	PUNCT	_	_	24	punct	_	_
+23	sang	sang	DET	_	_	24	det	_	_
+24	pencipta	cipta	NOUN	_	_	21	appos	_	_
+25	)	)	PUNCT	_	_	24	punct	_	_
+26	,	,	PUNCT	_	_	27	punct	_	_
+27	sesuai	sesuai	ADJ	_	_	11	parataxis	_	_
+28	dengan	dengan	ADP	_	_	29	case	_	_
+29	kisah	kisah	NOUN	_	_	27	nmod	_	_
+30	yang	yang	PRON	_	_	31	nsubj:pass	_	_
+31	disebutkan	sebut	VERB	_	_	29	acl:relcl	_	_
+32	dalam	dalam	ADP	_	_	33	case	_	_
+33	kitab	kitab	NOUN	_	_	31	obl	_	_
+34	mahabarata	mahabarata	NOUN	_	_	33	compound	_	_
+35	.	.	PUNCT	_	_	11	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[MEMILIKI]--> makna agar orang yang meninggal tersebut lebih cepat menemui brahman ( sang pencipta ) (None)  type=LITERAL source=dependency_rule
+
+### S3363
+TEXT: setelah jenazah ditaruh di atas pepaga/asagan, maka di bawah kepala jenazah dialasi dengan bantal biasa (bantal kapuk), sehingga jenazah tersebut seolah-olah seperti orang sedang tidur.
+NER: jenazah -> ISTILAH_UMUM_RITUAL [cultural] | pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga) | asagan -> SARANA_RITUAL [cultural] (canonical: Pepaga)
+PARSE:
+# sent_id = S3363
+# text = setelah jenazah ditaruh di atas pepaga/asagan, maka di bawah kepala jenazah dialasi dengan bantal biasa (bantal kapuk), sehingga jenazah tersebut seolah-olah seperti orang sedang tidur.
+1	setelah	setelah	ADP	_	_	2	case	_	_
+2	jenazah	jenazah	NOUN	_	_	3	nsubj:pass	_	_
+3	ditaruh	taruh	VERB	_	_	13	advcl	_	_
+4	di	di	ADP	_	_	6	case	_	_
+5	atas	atas	ADP	_	_	3	obl	_	_
+6	pepaga/asagan	pepaga/asagan	NOUN	_	_	5	nmod	_	_
+7	,	,	PUNCT	_	_	3	punct	_	_
+8	maka	maka	SCONJ	_	_	13	mark	_	_
+9	di	di	ADP	_	_	10	case	_	_
+10	bawah	bawah	NOUN	_	_	13	obl	_	_
+11	kepala	kepala	NOUN	_	_	10	compound	_	_
+12	jenazah	jenazah	NOUN	_	_	11	compound	_	_
+13	dialasi	alasi	VERB	_	_	0	root	_	_
+14	dengan	dengan	ADP	_	_	15	case	_	_
+15	bantal	bantal	NOUN	_	_	13	obl	_	_
+16	biasa	biasa	ADJ	_	_	15	amod	_	_
+17	(	(	PUNCT	_	_	18	punct	_	_
+18	bantal	bantal	NOUN	_	_	15	appos	_	_
+19	kapuk	kapuk	NOUN	_	_	18	compound	_	_
+20	)	)	PUNCT	_	_	18	punct	_	_
+21	,	,	PUNCT	_	_	29	punct	_	_
+22	sehingga	sehingga	SCONJ	_	_	29	mark	_	_
+23	jenazah	jenazah	NOUN	_	_	29	nsubj	_	_
+24	tersebut	tersebut	DET	_	_	23	det	_	_
+25	seolah-olah	seolah	ADV	_	_	29	advmod	_	_
+26	seperti	seperti	ADP	_	_	27	case	_	_
+27	orang	orang	NOUN	_	_	29	obl	_	_
+28	sedang	sedang	AUX	_	_	29	aux	_	_
+29	tidur	tidur	VERB	_	_	13	ccomp	_	_
+30	.	.	PUNCT	_	_	13	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[DITARUH]--> atas pepaga/asagan (SARANA_RITUAL)  type=ENTITY source=dependency_rule
+  [1] kepala jenazah (None) --[DIALASI_DENGAN]--> bantal biasa (bantal kapuk) (None)  type=LITERAL source=manual_override
+
+### S3364
+TEXT: ada suatu hal penting yang perlu diperhatikan karena hal ini menyangkut soal etika atau tata susila yaitu ketika jenazah baru ditaruh di asagan harus dibiarkan sebentar dan jangan garasa-grusu (tergesa-gesa) membuka pakaiannya, karena perlu menunggu orang yang dituakan atau orang lebih tua, yang akan terlebih dulu mencuci muka dan rambut orang yang meninggal itu.
+NER: jenazah -> ISTILAH_UMUM_RITUAL [cultural] | asagan -> SARANA_RITUAL [cultural] (canonical: Pepaga)
+PARSE:
+# sent_id = S3364
+# text = ada suatu hal penting yang perlu diperhatikan karena hal ini menyangkut soal etika atau tata susila yaitu ketika jenazah baru ditaruh di asagan harus dibiarkan sebentar dan jangan garasa-grusu (tergesa-gesa) membuka pakaiannya, karena perlu menunggu orang yang dituakan atau orang lebih tua, yang akan terlebih dulu mencuci muka dan rambut orang yang meninggal itu.
+1	ada	ada	VERB	_	_	0	root	_	_
+2	suatu	suatu	DET	_	_	3	det	_	_
+3	hal	hal	NOUN	_	_	1	obj	_	_
+4	penting	penting	ADJ	_	_	3	amod	_	_
+5	yang	yang	PRON	_	_	7	nsubj:pass	_	_
+6	perlu	perlu	ADV	_	_	7	advmod	_	_
+7	diperhatikan	perhatikan	VERB	_	_	3	acl:relcl	_	_
+8	karena	karena	SCONJ	_	_	11	mark	_	_
+9	hal	hal	NOUN	_	_	11	nsubj	_	_
+10	ini	ini	DET	_	_	9	det	_	_
+11	menyangkut	sangkut	VERB	_	_	7	advcl	_	_
+12	soal	soal	NOUN	_	_	11	obj	_	_
+13	etika	etika	NOUN	_	_	12	compound	_	_
+14	atau	atau	CCONJ	_	_	15	cc	_	_
+15	tata	tata	NOUN	_	_	12	conj	_	_
+16	susila	susila	NOUN	_	_	15	compound	_	_
+17	yaitu	yaitu	SCONJ	_	_	21	mark	_	_
+18	ketika	ketika	SCONJ	_	_	21	mark	_	_
+19	jenazah	jenazah	NOUN	_	_	21	nsubj:pass	_	_
+20	baru	baru	ADJ	_	_	19	amod	_	_
+21	ditaruh	taruh	VERB	_	_	25	advcl	_	_
+22	di	di	ADP	_	_	23	case	_	_
+23	asagan	asag	NOUN	_	_	21	obl	_	_
+24	harus	harus	AUX	_	_	25	aux	_	_
+25	dibiarkan	biar	VERB	_	_	11	advcl	_	_
+26	sebentar	sebentar	ADV	_	_	25	advmod	_	_
+27	dan	dan	CCONJ	_	_	29	cc	_	_
+28	jangan	jangan	PART	_	_	29	advmod	_	_
+29	garasa-grusu	garasa	NOUN	_	_	25	conj	_	_
+30	(	(	PUNCT	_	_	31	punct	_	_
+31	tergesa-gesa	tergesa	ADJ	_	_	29	appos	_	_
+32	)	)	PUNCT	_	_	31	punct	_	_
+33	membuka	buka	VERB	_	_	29	acl	_	_
+34	pakaian	pakai	NOUN	_	_	33	obj	_	_
+35	nya	dia	PRON	_	_	34	nmod:poss	_	_
+36	,	,	PUNCT	_	_	39	punct	_	_
+37	karena	karena	SCONJ	_	_	39	mark	_	_
+38	perlu	perlu	ADV	_	_	39	advmod	_	_
+39	menunggu	tunggu	VERB	_	_	25	advcl	_	_
+40	orang	orang	NOUN	_	_	39	obj	_	_
+41	yang	yang	PRON	_	_	42	nsubj:pass	_	_
+42	dituakan	tua	VERB	_	_	40	acl:relcl	_	_
+43	atau	atau	CCONJ	_	_	44	cc	_	_
+44	orang	orang	NOUN	_	_	40	conj	_	_
+45	lebih	lebih	ADV	_	_	46	advmod	_	_
+46	tua	tua	ADJ	_	_	44	amod	_	_
+47	,	,	PUNCT	_	_	52	punct	_	_
+48	yang	yang	PRON	_	_	52	nsubj	_	_
+49	akan	akan	AUX	_	_	52	aux	_	_
+50	terlebih	terlebih	ADV	_	_	52	advmod	_	_
+51	dulu	dulu	ADV	_	_	52	advmod	_	_
+52	mencuci	cuci	VERB	_	_	40	acl:relcl	_	_
+53	muka	muka	NOUN	_	_	52	obj	_	_
+54	dan	dan	CCONJ	_	_	55	cc	_	_
+55	rambut	rambut	NOUN	_	_	53	conj	_	_
+56	orang	orang	NOUN	_	_	55	compound	_	_
+57	yang	yang	PRON	_	_	58	nsubj	_	_
+58	meninggal	tinggal	VERB	_	_	55	acl:relcl	_	_
+59	itu	itu	DET	_	_	58	det	_	_
+60	.	.	PUNCT	_	_	1	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[HARUS_DIBIARKAN]--> sebentar (sebelum dibuka pakaiannya) (None)  type=LITERAL source=manual_override
+  [1] orang yang dituakan/lebih tua (None) --[MENCUCI]--> muka dan rambut jenazah (ISTILAH_UMUM_RITUAL)  type=ENTITY source=manual_override
+
+### S3446
+TEXT: mengenakan kain (mewastra), dengan selesainya memandikan pada tahap pertama maka jenazah akan diberi pakaian seperti layaknya orang masih hidup dengan tatanannya sebagai berikut:
+NER: mewastra -> TAHAPAN_UPACARA [cultural] | jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S3446
+# text = mengenakan kain (mewastra), dengan selesainya memandikan pada tahap pertama maka jenazah akan diberi pakaian seperti layaknya orang masih hidup dengan tatanannya sebagai berikut:
+1	mengenakan	kena	VERB	_	_	0	root	_	_
+2	kain	kain	NOUN	_	_	1	obj	_	_
+3	(	(	PUNCT	_	_	4	punct	_	_
+4	mewastra	mewastra	NOUN	_	_	2	appos	_	_
+5	)	)	PUNCT	_	_	4	punct	_	_
+6	,	,	PUNCT	_	_	8	punct	_	_
+7	dengan	dengan	ADP	_	_	8	case	_	_
+8	selesai	selesai	VERB	_	_	1	xcomp	_	_
+9	nya	nya	DET	_	_	8	det	_	_
+10	memandikan	mandi	VERB	_	_	1	advcl	_	_
+11	pada	pada	ADP	_	_	12	case	_	_
+12	tahap	tahap	NOUN	_	_	10	obl	_	_
+13	pertama	pertama	ADJ	_	_	12	amod	_	_
+14	maka	maka	SCONJ	_	_	17	mark	_	_
+15	jenazah	jenazah	NOUN	_	_	17	nsubj:pass	_	_
+16	akan	akan	AUX	_	_	17	aux	_	_
+17	diberi	beri	VERB	_	_	1	parataxis	_	_
+18	pakaian	pakai	NOUN	_	_	17	obj	_	_
+19	seperti	seperti	ADP	_	_	20	case	_	_
+20	layak	layak	NOUN	_	_	18	nmod	_	_
+21	nya	dia	PRON	_	_	20	nmod:poss	_	_
+22	orang	orang	NOUN	_	_	20	compound	_	_
+23	masih	masih	ADV	_	_	24	advmod	_	_
+24	hidup	hidup	VERB	_	_	20	acl	_	_
+25	dengan	dengan	ADP	_	_	26	case	_	_
+26	tatanan	tatanan	NOUN	_	_	24	obl	_	_
+27	nya	dia	PRON	_	_	26	nmod:poss	_	_
+28	sebagai	sebagai	SCONJ	_	_	29	mark	_	_
+29	berikut	ikut	NOUN	_	_	26	nmod	_	_
+30	:	:	PUNCT	_	_	17	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[DIBERI]--> pakaian seperti layaknya orang masih hidup (None)  type=LITERAL source=manual_override
+
+### S3468
+TEXT: ini dimaksudkan bahwa jenazah tersebut seolah-olah masih hidup, berhias, memakai cincin, kalung, gelang (jika mereka punya) seperti pergi menghadiri kundangan atau pergi ke pura.
+NER: jenazah -> ISTILAH_UMUM_RITUAL [cultural] | pura -> BANGUNAN_RITUAL [cultural]
+PARSE:
+# sent_id = S3468
+# text = ini dimaksudkan bahwa jenazah tersebut seolah-olah masih hidup, berhias, memakai cincin, kalung, gelang (jika mereka punya) seperti pergi menghadiri kundangan atau pergi ke pura.
+1	ini	ini	DET	_	_	2	nsubj:pass	_	_
+2	dimaksudkan	maksud	VERB	_	_	0	root	_	_
+3	bahwa	bahwa	SCONJ	_	_	8	mark	_	_
+4	jenazah	jenazah	NOUN	_	_	8	nsubj	_	_
+5	tersebut	tersebut	DET	_	_	4	det	_	_
+6	seolah-olah	seolah	ADV	_	_	8	advmod	_	_
+7	masih	masih	ADV	_	_	8	advmod	_	_
+8	hidup	hidup	VERB	_	_	2	ccomp	_	_
+9	,	,	PUNCT	_	_	10	punct	_	_
+10	berhias	hias	VERB	_	_	8	conj	_	_
+11	,	,	PUNCT	_	_	12	punct	_	_
+12	memakai	pakai	VERB	_	_	8	conj	_	_
+13	cincin	cincin	NOUN	_	_	12	obj	_	_
+14	,	,	PUNCT	_	_	15	punct	_	_
+15	kalung	kalung	NOUN	_	_	13	conj	_	_
+16	,	,	PUNCT	_	_	17	punct	_	_
+17	gelang	gelang	NOUN	_	_	13	conj	_	_
+18	(	(	PUNCT	_	_	21	punct	_	_
+19	jika	jika	SCONJ	_	_	21	mark	_	_
+20	mereka	mereka	PRON	_	_	21	nsubj	_	_
+21	punya	punya	VERB	_	_	17	acl	_	_
+22	)	)	PUNCT	_	_	21	punct	_	_
+23	seperti	seperti	SCONJ	_	_	24	mark	_	_
+24	pergi	pergi	VERB	_	_	21	xcomp	_	_
+25	menghadiri	hadir	VERB	_	_	24	xcomp	_	_
+26	kundangan	kundang	NOUN	_	_	25	obj	_	_
+27	atau	atau	CCONJ	_	_	28	cc	_	_
+28	pergi	pergi	VERB	_	_	25	conj	_	_
+29	ke	ke	ADP	_	_	30	case	_	_
+30	pura	pura	NOUN	_	_	28	obl	_	_
+31	.	.	PUNCT	_	_	2	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[MEMAKAI]--> cincin (None)  type=LITERAL source=dependency_rule
+  [1] jenazah (ISTILAH_UMUM_RITUAL) --[MEMAKAI]--> kalung (None)  type=LITERAL source=dependency_rule
+  [2] jenazah (ISTILAH_UMUM_RITUAL) --[MEMAKAI]--> gelang (None)  type=LITERAL source=dependency_rule
+  [3] jenazah (ISTILAH_UMUM_RITUAL) --[DIHIAS_SEOLAH_OLAH]--> pergi menghadiri undangan atau ke pura (None)  type=LITERAL source=manual_override
+
+### S3496
+TEXT: kesepuluh: lekesan (daun sirih yang di gulung) ditempelkan sejenak pada gigi jenazah, dan dibersihkan dengan cara mengusap-usapkan tembakau pada bibir jenazah.
+NER: lekesan -> SARANA_RITUAL [cultural] | jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S3496
+# text = kesepuluh: lekesan (daun sirih yang di gulung) ditempelkan sejenak pada gigi jenazah, dan dibersihkan dengan cara mengusap-usapkan tembakau pada bibir jenazah.
+1	kesepuluh	kesepuluh	NUM	_	_	11	nummod	_	_
+2	:	:	PUNCT	_	_	1	punct	_	_
+3	lekesan	lekesan	NOUN	_	_	11	nsubj:pass	_	_
+4	(	(	PUNCT	_	_	5	punct	_	_
+5	daun	daun	NOUN	_	_	3	appos	_	_
+6	sirih	sirih	NOUN	_	_	5	compound	_	_
+7	yang	yang	PRON	_	_	9	nsubj	_	_
+8	di	di	ADP	_	_	9	case	_	_
+9	gulung	gulung	X	_	_	5	nmod	_	_
+10	)	)	PUNCT	_	_	5	punct	_	_
+11	ditempelkan	tempell	VERB	_	_	0	root	_	_
+12	sejenak	sejenak	ADV	_	_	11	advmod	_	_
+13	pada	pada	ADP	_	_	14	case	_	_
+14	gigi	gigi	NOUN	_	_	11	obl	_	_
+15	jenazah	jenazah	NOUN	_	_	14	compound	_	_
+16	,	,	PUNCT	_	_	18	punct	_	_
+17	dan	dan	CCONJ	_	_	18	cc	_	_
+18	dibersihkan	bersih	VERB	_	_	11	conj	_	_
+19	dengan	dengan	ADP	_	_	20	case	_	_
+20	cara	cara	NOUN	_	_	18	obl	_	_
+21	mengusap-usapkan	usap	VERB	_	_	20	acl	_	_
+22	tembakau	tembakau	NOUN	_	_	21	obj	_	_
+23	pada	pada	ADP	_	_	24	case	_	_
+24	bibir	bibir	NOUN	_	_	21	obl	_	_
+25	jenazah	jenazah	NOUN	_	_	24	compound	_	_
+26	.	.	PUNCT	_	_	11	punct	_	_
+
+RELATIONS:
+  [0] lekesan (SARANA_RITUAL) --[DITEMPELKAN_DI]--> gigi jenazah (ISTILAH_UMUM_RITUAL) (ISTILAH_UMUM_RITUAL)  type=ENTITY source=manual_override
+  [1] jenazah (bibir) (None) --[DIBERSIHKAN_DENGAN]--> tembakau (diusapkan pada bibir) (None)  type=LITERAL source=manual_override
+
+### S3544
+TEXT: setelah selesai upacara sembah bhakti ini, semua kawangen yang tadi dipakai sembahyang dikumpulkan dan ditaruh di samping jenazah, sebagai tanda doa restu agar perjalanan roh yang meninggal tidak mendapatkan suatu halangan.
+NER: sembah bhakti -> TAHAPAN_UPACARA [cultural] | kawangen -> SARANA_RITUAL [cultural] | jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S3544
+# text = setelah selesai upacara sembah bhakti ini, semua kawangen yang tadi dipakai sembahyang dikumpulkan dan ditaruh di samping jenazah, sebagai tanda doa restu agar perjalanan roh yang meninggal tidak mendapatkan suatu halangan.
+1	setelah	setelah	ADP	_	_	2	case	_	_
+2	selesai	selesai	VERB	_	_	14	xcomp	_	_
+3	upacara	upacara	NOUN	_	_	2	obj	_	_
+4	sembah	sembah	NOUN	_	_	3	compound	_	_
+5	bhakti	bhakti	NOUN	_	_	4	compound	_	_
+6	ini	ini	DET	_	_	3	det	_	_
+7	,	,	PUNCT	_	_	2	punct	_	_
+8	semua	semua	DET	_	_	9	det	_	_
+9	kawangen	kawangen	NOUN	_	_	14	nsubj:pass	_	_
+10	yang	yang	PRON	_	_	12	nsubj:pass	_	_
+11	tadi	tadi	NOUN	_	_	12	obl	_	_
+12	dipakai	pakai	VERB	_	_	9	acl:relcl	_	_
+13	sembahyang	sembahyang	NOUN	_	_	12	obj	_	_
+14	dikumpulkan	kumpul	VERB	_	_	0	root	_	_
+15	dan	dan	CCONJ	_	_	16	cc	_	_
+16	ditaruh	taruh	VERB	_	_	14	conj	_	_
+17	di	di	ADP	_	_	18	case	_	_
+18	samping	samping	NOUN	_	_	16	obl	_	_
+19	jenazah	jenazah	NOUN	_	_	18	compound	_	_
+20	,	,	PUNCT	_	_	22	punct	_	_
+21	sebagai	sebagai	ADP	_	_	22	case	_	_
+22	tanda	tanda	NOUN	_	_	14	obl	_	_
+23	doa	doa	NOUN	_	_	22	compound	_	_
+24	restu	restu	NOUN	_	_	23	compound	_	_
+25	agar	agar	ADP	_	_	26	case	_	_
+26	perjalanan	jalan	NOUN	_	_	22	nmod	_	_
+27	roh	roh	NOUN	_	_	26	compound	_	_
+28	yang	yang	PRON	_	_	29	nsubj	_	_
+29	meninggal	tinggal	VERB	_	_	26	acl:relcl	_	_
+30	tidak	tidak	PART	_	_	31	advmod	_	_
+31	mendapatkan	dapat	VERB	_	_	29	xcomp	_	_
+32	suatu	suatu	DET	_	_	33	det	_	_
+33	halangan	halang	NOUN	_	_	31	obj	_	_
+34	.	.	PUNCT	_	_	14	punct	_	_
+
+RELATIONS:
+  [0] kawangen (SARANA_RITUAL) --[MELAMBANGKAN]--> tanda doa restu setelah selesai upacara sembah bhakti ini , (None)  type=LITERAL source=dependency_rule
+  [1] kawangen (SARANA_RITUAL) --[DILETAKKAN_DI]--> samping jenazah (ISTILAH_UMUM_RITUAL)  type=ENTITY source=dependency_rule
+
+### S3546
+TEXT: oleh sebab itu jenazah tersebut sebelumnya diisi dengan sebuah kawangen di tangannya (pada saat akhir pabersihan hidup tangan jenazah/layon ditaruh di dada dengan telapak tangan ditumpuk diisi sebuah kawangen sebagai simbol sikap amusti karana, karena seolah-olah layon/jenazah ikut sembahyang).
+NER: jenazah -> ISTILAH_UMUM_RITUAL [cultural] | kawangen -> SARANA_RITUAL [cultural] | pabersihan hidup -> TAHAPAN_UPACARA [cultural] (canonical: Pabersihan Hidup) | layon -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S3546
+# text = oleh sebab itu jenazah tersebut sebelumnya diisi dengan sebuah kawangen di tangannya (pada saat akhir pabersihan hidup tangan jenazah/layon ditaruh di dada dengan telapak tangan ditumpuk diisi sebuah kawangen sebagai simbol sikap amusti karana, karena seolah-olah layon/jenazah ikut sembahyang).
+1	oleh	oleh	ADP	_	_	2	case	_	_
+2	sebab	sebab	NOUN	_	_	7	obl	_	_
+3	itu	itu	DET	_	_	2	det	_	_
+4	jenazah	jenazah	NOUN	_	_	7	nsubj:pass	_	_
+5	tersebut	tersebut	DET	_	_	4	det	_	_
+6	sebelumnya	sebelumnya	ADV	_	_	7	advmod	_	_
+7	diisi	isi	VERB	_	_	0	root	_	_
+8	dengan	dengan	ADP	_	_	10	case	_	_
+9	sebuah	buah	DET	_	_	10	det	_	_
+10	kawangen	kawangen	NOUN	_	_	7	obl	_	_
+11	di	di	ADP	_	_	12	case	_	_
+12	tangan	tangan	NOUN	_	_	10	nmod	_	_
+13	nya	dia	PRON	_	_	12	nmod:poss	_	_
+14	(	(	PUNCT	_	_	22	punct	_	_
+15	pada	pada	ADP	_	_	16	case	_	_
+16	saat	saat	NOUN	_	_	22	obl	_	_
+17	akhir	akhir	ADJ	_	_	16	amod	_	_
+18	pabersihan	pabersihan	NOUN	_	_	22	nsubj:pass	_	_
+19	hidup	hidup	NOUN	_	_	18	compound	_	_
+20	tangan	tangan	NOUN	_	_	19	compound	_	_
+21	jenazah/layon	jenazah/layon	NOUN	_	_	20	compound	_	_
+22	ditaruh	taruh	VERB	_	_	7	advcl	_	_
+23	di	di	ADP	_	_	24	case	_	_
+24	dada	dada	NOUN	_	_	22	obl	_	_
+25	dengan	dengan	ADP	_	_	26	case	_	_
+26	telapak	telapak	NOUN	_	_	22	obl	_	_
+27	tangan	tangan	NOUN	_	_	26	compound	_	_
+28	ditumpuk	tumpuk	VERB	_	_	22	conj	_	_
+29	diisi	isi	VERB	_	_	28	xcomp	_	_
+30	sebuah	buah	DET	_	_	31	det	_	_
+31	kawangen	kawangen	NOUN	_	_	29	obj	_	_
+32	sebagai	sebagai	ADP	_	_	33	case	_	_
+33	simbol	simbol	NOUN	_	_	29	obl	_	_
+34	sikap	sikap	NOUN	_	_	33	compound	_	_
+35	amusti	amusti	NOUN	_	_	34	compound	_	_
+36	karana	karana	NOUN	_	_	35	compound	_	_
+37	,	,	PUNCT	_	_	41	punct	_	_
+38	karena	karena	SCONJ	_	_	41	mark	_	_
+39	seolah-olah	seolah	SCONJ	_	_	41	mark	_	_
+40	layon/jenazah	layon/jenazah	NOUN	_	_	41	nsubj	_	_
+41	ikut	ikut	VERB	_	_	33	advcl	_	_
+42	sembahyang	sembahyang	NOUN	_	_	41	obj	_	_
+43	)	)	PUNCT	_	_	41	punct	_	_
+44	.	.	PUNCT	_	_	7	punct	_	_
+
+RELATIONS:
+  [0] tangan jenazah/layon (None) --[DILETAKKAN_DI]--> dada (None)  type=LITERAL source=manual_override
+  [1] tangan jenazah/layon (None) --[DITARUH_DENGAN]--> posisi telapak tangan ditumpuk (ditumpangkan) (None)  type=LITERAL source=manual_override
+  [2] kawangen (SARANA_RITUAL) --[MELAMBANGKAN]--> sikap amusti karana (seolah-olah layon ikut sembahyang) (None)  type=LITERAL source=manual_override
+
+### S3547
+TEXT: setelah upacara sembah bhakti selesai, maka jenazah diperciki dan diminumkan tirta yang berasal dari bhetara hyang guru yaitu tirta yang dimohonkan di sanggah atau pamerajan keluarga orang yang meninggal.
+NER: sembah bhakti -> TAHAPAN_UPACARA [cultural] | jenazah -> ISTILAH_UMUM_RITUAL [cultural] | tirta -> TIRTHA_SUCI [cultural] | hyang -> KONSEP_FILOSOFIS [cultural] | sanggah -> BANGUNAN_RITUAL [cultural]
+PARSE:
+# sent_id = S3547
+# text = setelah upacara sembah bhakti selesai, maka jenazah diperciki dan diminumkan tirta yang berasal dari bhetara hyang guru yaitu tirta yang dimohonkan di sanggah atau pamerajan keluarga orang yang meninggal.
+1	setelah	setelah	ADP	_	_	5	case	_	_
+2	upacara	upacara	NOUN	_	_	5	nsubj	_	_
+3	sembah	sembah	NOUN	_	_	2	compound	_	_
+4	bhakti	bhakti	NOUN	_	_	3	compound	_	_
+5	selesai	selesai	VERB	_	_	9	advcl	_	_
+6	,	,	PUNCT	_	_	5	punct	_	_
+7	maka	maka	SCONJ	_	_	9	mark	_	_
+8	jenazah	jenazah	NOUN	_	_	9	nsubj:pass	_	_
+9	diperciki	percik	VERB	_	_	0	root	_	_
+10	dan	dan	CCONJ	_	_	11	cc	_	_
+11	diminumkan	minum	VERB	_	_	9	conj	_	_
+12	tirta	tirta	NOUN	_	_	11	obj	_	_
+13	yang	yang	PRON	_	_	14	nsubj	_	_
+14	berasal	asal	VERB	_	_	12	acl:relcl	_	_
+15	dari	dari	ADP	_	_	16	case	_	_
+16	bhetara	bhetara	NOUN	_	_	14	obl	_	_
+17	hyang	hyang	NOUN	_	_	16	compound	_	_
+18	guru	guru	NOUN	_	_	17	compound	_	_
+19	yaitu	yaitu	ADP	_	_	20	case	_	_
+20	tirta	tirta	NOUN	_	_	16	appos	_	_
+21	yang	yang	PRON	_	_	22	nsubj:pass	_	_
+22	dimohonkan	mohon	VERB	_	_	20	acl:relcl	_	_
+23	di	di	ADP	_	_	24	case	_	_
+24	sanggah	sanggah	NOUN	_	_	22	obl	_	_
+25	atau	atau	CCONJ	_	_	26	cc	_	_
+26	pamerajan	pamer	NOUN	_	_	24	conj	_	_
+27	keluarga	keluarga	NOUN	_	_	26	compound	_	_
+28	orang	orang	NOUN	_	_	27	compound	_	_
+29	yang	yang	PRON	_	_	30	nsubj	_	_
+30	meninggal	tinggal	VERB	_	_	26	acl:relcl	_	_
+31	.	.	PUNCT	_	_	9	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[DIPERCIKI_DAN_DIMINUMKAN]--> tirta (TIRTHA_SUCI)  type=ENTITY source=manual_override
+  [1] tirta (None) --[BERASAL_DARI]--> bhetara hyang guru (KONSEP_FILOSOFIS)  type=ENTITY source=manual_override
+  [2] tirta (None) --[DIMOHONKAN_DI]--> sanggah/pamerajan keluarga orang yang meninggal (None)  type=LITERAL source=manual_override
+
+### S3559
+TEXT: waja meka panca datu,
+NER: waja -> SARANA_RITUAL [cultural] (canonical: Waja) | panca datu -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S3559
+# text = waja meka panca datu,
+1	waja	waja	NOUN	_	_	2	nsubj	_	_
+2	meka	meka	VERB	_	_	0	root	_	_
+3	panca	panca	NOUN	_	_	2	obj	_	_
+4	datu	datu	NOUN	_	_	3	compound	_	_
+5	,	,	PUNCT	_	_	1	punct	_	_
+
+RELATIONS:
+  [0] waja (None) --[BAGIAN_DARI]--> panca datu (SARANA_RITUAL)  type=ENTITY source=manual_override
+
+### S3584
+TEXT: pengerikan kuku mutlak dilakukan pada waktu upacara "melelet" (pabersihan mati), dan tidak boleh dilakukan pada saat "pabersihan hidup" yang telah dilaksanakan sebelumnya.
+NER: pengerikan kuku -> TAHAPAN_UPACARA [cultural] | melelet -> TAHAPAN_UPACARA [cultural] | pabersihan mati -> TAHAPAN_UPACARA [cultural] (canonical: Pabersihan Mati) | pabersihan hidup -> TAHAPAN_UPACARA [cultural] (canonical: Pabersihan Hidup)
+PARSE:
+# sent_id = S3584
+# text = pengerikan kuku mutlak dilakukan pada waktu upacara "melelet" (pabersihan mati), dan tidak boleh dilakukan pada saat "pabersihan hidup" yang telah dilaksanakan sebelumnya.
+1	pengerikan	erik	NOUN	_	_	4	nsubj:pass	_	_
+2	kuku	kuku	NOUN	_	_	1	compound	_	_
+3	mutlak	mutlak	ADJ	_	_	2	amod	_	_
+4	dilakukan	laku	VERB	_	_	0	root	_	_
+5	pada	pada	ADP	_	_	6	case	_	_
+6	waktu	waktu	NOUN	_	_	4	obl	_	_
+7	upacara	upacara	NOUN	_	_	6	compound	_	_
+8	"	"	PUNCT	_	_	9	punct	_	_
+9	melelet	melelet	NOUN	_	_	6	compound	_	_
+10	"	"	PUNCT	_	_	9	punct	_	_
+11	(	(	PUNCT	_	_	12	punct	_	_
+12	pabersihan	pabersihan	NOUN	_	_	9	compound	_	_
+13	mati	mati	ADJ	_	_	12	amod	_	_
+14	)	)	PUNCT	_	_	12	punct	_	_
+15	,	,	PUNCT	_	_	19	punct	_	_
+16	dan	dan	CCONJ	_	_	19	cc	_	_
+17	tidak	tidak	PART	_	_	19	advmod	_	_
+18	boleh	boleh	AUX	_	_	19	aux	_	_
+19	dilakukan	laku	VERB	_	_	4	conj	_	_
+20	pada	pada	ADP	_	_	21	case	_	_
+21	saat	saat	NOUN	_	_	19	obl	_	_
+22	"	"	PUNCT	_	_	23	punct	_	_
+23	pabersihan	pabersihan	NOUN	_	_	21	compound	_	_
+24	hidup	hidup	ADJ	_	_	23	amod	_	_
+25	"	"	PUNCT	_	_	23	punct	_	_
+26	yang	yang	PRON	_	_	28	nsubj:pass	_	_
+27	telah	telah	AUX	_	_	28	aux	_	_
+28	dilaksanakan	laksana	VERB	_	_	23	acl:relcl	_	_
+29	sebelumnya	sebelumnya	ADJ	_	_	28	amod	_	_
+30	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] pengerikan kuku mutlak (None) --[DILAKUKAN_SAAT]--> upacara "melelet" (pabersihan mati) (TAHAPAN_UPACARA)  type=ENTITY source=manual_override
+  [1] pengerikan kuku (None) --[TIDAK_BOLEH_DILAKUKAN_SAAT]--> pabersihan hidup (TAHAPAN_UPACARA)  type=ENTITY source=manual_override
+
+### S3586
+TEXT: karena pada saat upacara "pabersihan hidup" si jenazah masih dianggap sebagai orang yang masih hidup.
+NER: pabersihan hidup -> TAHAPAN_UPACARA [cultural] (canonical: Pabersihan Hidup) | jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S3586
+# text = karena pada saat upacara "pabersihan hidup" si jenazah masih dianggap sebagai orang yang masih hidup.
+1	karena	karena	SCONJ	_	_	7	mark	_	_
+2	pada	pada	ADP	_	_	3	case	_	_
+3	saat	saat	NOUN	_	_	12	obl	_	_
+4	upacara	upacara	NOUN	_	_	3	compound	_	_
+5	"	"	PUNCT	_	_	6	punct	_	_
+6	pabersihan	pabersihan	NOUN	_	_	7	nsubj	_	_
+7	hidup	hidup	VERB	_	_	12	advcl	_	_
+8	"	"	PUNCT	_	_	6	punct	_	_
+9	si	si	DET	_	_	10	det	_	_
+10	jenazah	jenazah	NOUN	_	_	12	nsubj:pass	_	_
+11	masih	masih	ADV	_	_	12	advmod	_	_
+12	dianggap	anggap	VERB	_	_	0	root	_	_
+13	sebagai	sebagai	ADP	_	_	14	case	_	_
+14	orang	orang	NOUN	_	_	12	obl	_	_
+15	yang	yang	PRON	_	_	17	nsubj	_	_
+16	masih	masih	ADV	_	_	17	advmod	_	_
+17	hidup	hidup	ADJ	_	_	14	acl:relcl	_	_
+18	.	.	PUNCT	_	_	12	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[DIANGGAP_SEBAGAI]--> orang yang masih hidup (None)  type=LITERAL source=manual_override
+
+### S3589
+TEXT: arit gobed adalah simbol dari rare angon yaitu lambang keperkasaan seorang laki-laki.
+NER: arit gobed -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S3589
+# text = arit gobed adalah simbol dari rare angon yaitu lambang keperkasaan seorang laki-laki.
+1	arit	arit	PROPN	_	_	4	nsubj	_	_
+2	gobed	gobed	PROPN	_	_	1	flat:name	_	_
+3	adalah	adalah	AUX	_	_	4	cop	_	_
+4	simbol	simbol	NOUN	_	_	0	root	_	_
+5	dari	dari	ADP	_	_	6	case	_	_
+6	rare	rare	NOUN	_	_	4	nmod	_	_
+7	angon	angon	NOUN	_	_	6	compound	_	_
+8	yaitu	yaitu	ADP	_	_	9	case	_	_
+9	lambang	lambang	NOUN	_	_	6	appos	_	_
+10	keperkasaan	perkasa	NOUN	_	_	9	compound	_	_
+11	seorang	orang	DET	_	_	12	det	_	_
+12	laki-laki	laki	NOUN	_	_	10	compound	_	_
+13	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] arit gobed (SARANA_RITUAL) --[ADALAH]--> simbol rare angon yaitu lambang keperkasaan seorang laki-laki (None)  type=LITERAL source=dependency_rule
+
+### S3591
+TEXT: anggapan (ani-ani atau ketam) adalah simbol dari dewi sri, yaitu lambang kesuburan, yang mana nantinya diharapkan wanita yang akan "numitis" memiliki kesuburan untuk dapat melahirkan.
+NER: anggapan -> SARANA_RITUAL [cultural] | ani-ani -> SARANA_RITUAL [cultural] | dewi -> ENTITAS_KEAGAMAAN [cultural] (canonical: Devi) | numitis -> KONSEP_FILOSOFIS [cultural]
+PARSE:
+# sent_id = S3591
+# text = anggapan (ani-ani atau ketam) adalah simbol dari dewi sri, yaitu lambang kesuburan, yang mana nantinya diharapkan wanita yang akan "numitis" memiliki kesuburan untuk dapat melahirkan.
+1	anggapan	anggap	NOUN	_	_	8	nsubj	_	_
+2	(	(	PUNCT	_	_	3	punct	_	_
+3	ani-ani	ani-ani	NOUN	_	_	1	appos	_	_
+4	atau	atau	CCONJ	_	_	5	cc	_	_
+5	ketam	ketam	NOUN	_	_	3	conj	_	_
+6	)	)	PUNCT	_	_	3	punct	_	_
+7	adalah	adalah	AUX	_	_	8	cop	_	_
+8	simbol	simbol	NOUN	_	_	0	root	_	_
+9	dari	dari	ADP	_	_	10	case	_	_
+10	dewi	dewi	NOUN	_	_	8	nmod	_	_
+11	sri	sri	NOUN	_	_	10	compound	_	_
+12	,	,	PUNCT	_	_	14	punct	_	_
+13	yaitu	yaitu	ADP	_	_	14	case	_	_
+14	lambang	lambang	NOUN	_	_	10	appos	_	_
+15	kesuburan	subur	NOUN	_	_	14	compound	_	_
+16	,	,	PUNCT	_	_	21	punct	_	_
+17	yang	yang	PRON	_	_	21	nsubj:pass	_	_
+18	mana	mana	PRON	_	_	17	nmod	_	_
+19	nanti	nanti	NOUN	_	_	21	obl	_	_
+20	nya	nya	DET	_	_	19	det	_	_
+21	diharapkan	harap	VERB	_	_	8	acl:relcl	_	_
+22	wanita	wanita	NOUN	_	_	21	obj	_	_
+23	yang	yang	PRON	_	_	26	nsubj	_	_
+24	akan	akan	AUX	_	_	26	aux	_	_
+25	"	"	PUNCT	_	_	26	punct	_	_
+26	numitis	numitis	ADJ	_	_	22	acl:relcl	_	_
+27	"	"	PUNCT	_	_	26	punct	_	_
+28	memiliki	milik	VERB	_	_	21	ccomp	_	_
+29	kesuburan	subur	NOUN	_	_	28	obj	_	_
+30	untuk	untuk	SCONJ	_	_	32	mark	_	_
+31	dapat	dapat	AUX	_	_	32	aux	_	_
+32	melahirkan	lahir	VERB	_	_	28	xcomp	_	_
+33	.	.	PUNCT	_	_	8	punct	_	_
+
+RELATIONS:
+  [0] anggapan (SARANA_RITUAL) --[ADALAH]--> simbol dewi sri , yang mana nanti nya diharapkan wanita yang akan " numitis " memiliki kesuburan untuk dapat melahirkan dari dewi sri , yaitu lambang kesuburan (None)  type=LITERAL source=dependency_rule
+
+### S3599
+TEXT: namun sekarang ini demi cepatnya, babelonyoh tersebut hanya dioleskan pada dada jenazah, karena pakaian jenazah yang dipakaikan ketika upacara pabersihan hidup masih dibiarkan melekat, sedangkan hanya dada jenazah sajalah yang tidak memakai pakaian.
+NER: babelonyoh -> SARANA_RITUAL [cultural] (canonical: Babelonyoh) | jenazah -> ISTILAH_UMUM_RITUAL [cultural] | pabersihan hidup -> TAHAPAN_UPACARA [cultural] (canonical: Pabersihan Hidup)
+PARSE:
+# sent_id = S3599
+# text = namun sekarang ini demi cepatnya, babelonyoh tersebut hanya dioleskan pada dada jenazah, karena pakaian jenazah yang dipakaikan ketika upacara pabersihan hidup masih dibiarkan melekat, sedangkan hanya dada jenazah sajalah yang tidak memakai pakaian.
+1	namun	namun	CCONJ	_	_	11	cc	_	_
+2	sekarang	sekarang	NOUN	_	_	11	obl	_	_
+3	ini	ini	DET	_	_	2	det	_	_
+4	demi	demi	ADP	_	_	5	case	_	_
+5	cepat	cepat	NOUN	_	_	11	obl	_	_
+6	nya	dia	PRON	_	_	5	nmod:poss	_	_
+7	,	,	PUNCT	_	_	5	punct	_	_
+8	babelonyoh	babelonyoh	NOUN	_	_	11	nsubj:pass	_	_
+9	tersebut	tersebut	DET	_	_	8	det	_	_
+10	hanya	hanya	ADV	_	_	11	advmod	_	_
+11	dioleskan	oles	VERB	_	_	0	root	_	_
+12	pada	pada	ADP	_	_	13	case	_	_
+13	dada	dada	NOUN	_	_	11	obl	_	_
+14	jenazah	jenazah	NOUN	_	_	13	compound	_	_
+15	,	,	PUNCT	_	_	26	punct	_	_
+16	karena	karena	SCONJ	_	_	26	mark	_	_
+17	pakaian	pakai	NOUN	_	_	26	nsubj:pass	_	_
+18	jenazah	jenazah	NOUN	_	_	17	compound	_	_
+19	yang	yang	PRON	_	_	20	nsubj:pass	_	_
+20	dipakaikan	pakai	VERB	_	_	17	acl:relcl	_	_
+21	ketika	ketika	SCONJ	_	_	24	mark	_	_
+22	upacara	upacara	NOUN	_	_	24	nsubj	_	_
+23	pabersihan	pabersihan	NOUN	_	_	22	compound	_	_
+24	hidup	hidup	VERB	_	_	20	advcl	_	_
+25	masih	masih	ADV	_	_	26	advmod	_	_
+26	dibiarkan	biar	VERB	_	_	11	advcl	_	_
+27	melekat	lekat	VERB	_	_	26	ccomp	_	_
+28	,	,	PUNCT	_	_	31	punct	_	_
+29	sedangkan	sedangkan	SCONJ	_	_	31	mark	_	_
+30	hanya	hanya	ADV	_	_	31	advmod	_	_
+31	dada	dada	NOUN	_	_	26	obl	_	_
+32	jenazah	jenazah	NOUN	_	_	31	compound	_	_
+33	sajalah	sajalah	NOUN	_	_	32	compound	_	_
+34	yang	yang	PRON	_	_	36	nsubj	_	_
+35	tidak	tidak	PART	_	_	36	advmod	_	_
+36	memakai	pakai	VERB	_	_	31	acl:relcl	_	_
+37	pakaian	pakai	NOUN	_	_	36	obj	_	_
+38	.	.	PUNCT	_	_	11	punct	_	_
+
+RELATIONS:
+  [0] babelonyoh (SARANA_RITUAL) --[DIOLESKAN_DI]--> dada jenazah (ISTILAH_UMUM_RITUAL)  type=ENTITY source=dependency_rule
+
+### S3604
+TEXT: itik-itik, setelah kesepuluh kuku tangan dan kuku kaki dikerik serta penggunaan babelonyoh dilaksanakan, dan telah dibersihkan dengan air, maka kedua jempol jari-jari tangan (ibu jari) diikat jadi satu dengan seutas tali benang tukelan (benang tenun bali) berwarna putih, begitu juga kedua jempol jari kaki diikat jadi satu dengan seutas tali benang tukelan.
+NER: itik-itik -> SARANA_RITUAL [cultural] | babelonyoh -> SARANA_RITUAL [cultural] (canonical: Babelonyoh) | tukelan -> SARANA_RITUAL [cultural] | bali -> Place [general]
+PARSE:
+# sent_id = S3604
+# text = itik-itik, setelah kesepuluh kuku tangan dan kuku kaki dikerik serta penggunaan babelonyoh dilaksanakan, dan telah dibersihkan dengan air, maka kedua jempol jari-jari tangan (ibu jari) diikat jadi satu dengan seutas tali benang tukelan (benang tenun bali) berwarna putih, begitu juga kedua jempol jari kaki diikat jadi satu dengan seutas tali benang tukelan.
+1	itik-itik	itik	NOUN	_	_	10	nsubj:pass	_	_
+2	,	,	PUNCT	_	_	1	punct	_	_
+3	setelah	setelah	ADP	_	_	5	case	_	_
+4	kesepuluh	kesepuluh	NUM	_	_	5	nummod	_	_
+5	kuku	kuku	NOUN	_	_	10	obl	_	_
+6	tangan	tangan	NOUN	_	_	5	compound	_	_
+7	dan	dan	CCONJ	_	_	8	cc	_	_
+8	kuku	kuku	NOUN	_	_	5	conj	_	_
+9	kaki	kaki	NOUN	_	_	8	compound	_	_
+10	dikerik	kerik	VERB	_	_	0	root	_	_
+11	serta	serta	CCONJ	_	_	14	cc	_	_
+12	penggunaan	guna	NOUN	_	_	14	nsubj:pass	_	_
+13	babelonyoh	babelonyoh	NOUN	_	_	12	compound	_	_
+14	dilaksanakan	laksana	VERB	_	_	10	conj	_	_
+15	,	,	PUNCT	_	_	18	punct	_	_
+16	dan	dan	CCONJ	_	_	18	cc	_	_
+17	telah	telah	AUX	_	_	18	aux	_	_
+18	dibersihkan	bersih	VERB	_	_	14	conj	_	_
+19	dengan	dengan	ADP	_	_	20	case	_	_
+20	air	air	NOUN	_	_	18	obl	_	_
+21	,	,	PUNCT	_	_	31	punct	_	_
+22	maka	maka	SCONJ	_	_	31	mark	_	_
+23	kedua	kedua	NUM	_	_	24	nummod	_	_
+24	jempol	jempol	NOUN	_	_	31	nsubj:pass	_	_
+25	jari-jari	jari	NOUN	_	_	24	compound	_	_
+26	tangan	tangan	NOUN	_	_	25	compound	_	_
+27	(	(	PUNCT	_	_	28	punct	_	_
+28	ibu	ibu	NOUN	_	_	24	appos	_	_
+29	jari	jari	NOUN	_	_	28	compound	_	_
+30	)	)	PUNCT	_	_	28	punct	_	_
+31	diikat	ikat	VERB	_	_	10	advcl	_	_
+32	jadi	jadi	VERB	_	_	31	ccomp	_	_
+33	satu	satu	NUM	_	_	32	nummod	_	_
+34	dengan	dengan	ADP	_	_	35	case	_	_
+35	seutas	seutas	NOUN	_	_	32	obl	_	_
+36	tali	tali	NOUN	_	_	35	compound	_	_
+37	benang	benang	NOUN	_	_	36	compound	_	_
+38	tukelan	tukel	NOUN	_	_	37	compound	_	_
+39	(	(	PUNCT	_	_	40	punct	_	_
+40	benang	benang	NOUN	_	_	35	appos	_	_
+41	tenun	tenun	NOUN	_	_	40	compound	_	_
+42	bali	bali	PROPN	_	_	41	nmod	_	_
+43	)	)	PUNCT	_	_	40	punct	_	_
+44	berwarna	warna	VERB	_	_	35	acl	_	_
+45	putih	putih	ADJ	_	_	44	amod	_	_
+46	,	,	PUNCT	_	_	53	punct	_	_
+47	begitu	begitu	ADV	_	_	53	advmod	_	_
+48	juga	juga	ADV	_	_	47	fixed	_	_
+49	kedua	kedua	NUM	_	_	50	nummod	_	_
+50	jempol	jempol	NOUN	_	_	53	nsubj:pass	_	_
+51	jari	jari	NOUN	_	_	50	compound	_	_
+52	kaki	kaki	NOUN	_	_	51	compound	_	_
+53	diikat	ikat	VERB	_	_	31	advcl	_	_
+54	jadi	jadi	VERB	_	_	53	xcomp	_	_
+55	satu	satu	NUM	_	_	54	nummod	_	_
+56	dengan	dengan	ADP	_	_	57	case	_	_
+57	seutas	seutas	NOUN	_	_	54	obl	_	_
+58	tali	tali	NOUN	_	_	57	compound	_	_
+59	benang	benang	NOUN	_	_	58	compound	_	_
+60	tukelan	tukel	NOUN	_	_	59	compound	_	_
+61	.	.	PUNCT	_	_	31	punct	_	_
+
+RELATIONS:
+  [0] jempol jari tangan (kedua ibu jari) (None) --[DIIKAT_DENGAN]--> tali benang tukelan (benang tenun bali) berwarna putih (None)  type=LITERAL source=manual_override
+  [1] jempol jari kaki (None) --[DIIKAT_DENGAN]--> tali benang tukelan (SARANA_RITUAL)  type=ENTITY source=manual_override
+
+### S3610
+TEXT: umbi sikapa/sekapa (umbi gadung): jenazah disabuni (digosok) dengan umbi sikapa/sekapa, kemudian dibilas dengan air dan dikeringkan dengan kain kering.
+NER: sikapa -> SARANA_RITUAL [cultural] (canonical: Umbi Gadung) | sekapa -> SARANA_RITUAL [cultural] (canonical: Umbi Gadung) | umbi gadung -> SARANA_RITUAL [cultural] | jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S3610
+# text = umbi sikapa/sekapa (umbi gadung): jenazah disabuni (digosok) dengan umbi sikapa/sekapa, kemudian dibilas dengan air dan dikeringkan dengan kain kering.
+1	umbi	umbi	NOUN	_	_	19	nsubj:pass	_	_
+2	sikapa/	sikapa/	NOUN	_	_	1	compound	_	_
+3	sekapa	sekapa	NOUN	_	_	2	compound	_	_
+4	(	(	PUNCT	_	_	5	punct	_	_
+5	umbi	umbi	NOUN	_	_	3	appos	_	_
+6	gadung	gadung	NOUN	_	_	5	compound	_	_
+7	)	)	PUNCT	_	_	5	punct	_	_
+8	:	:	PUNCT	_	_	1	punct	_	_
+9	jenazah	jenazah	NOUN	_	_	10	nsubj	_	_
+10	disabuni	sabun	VERB	_	_	1	acl	_	_
+11	(	(	PUNCT	_	_	12	punct	_	_
+12	digosok	gosok	VERB	_	_	10	appos	_	_
+13	)	)	PUNCT	_	_	12	punct	_	_
+14	dengan	dengan	ADP	_	_	15	case	_	_
+15	umbi	umbi	NOUN	_	_	10	obl	_	_
+16	sikapa/sekapa	sikapa/sekapa	NOUN	_	_	15	compound	_	_
+17	,	,	PUNCT	_	_	19	punct	_	_
+18	kemudian	kemudian	ADV	_	_	19	advmod	_	_
+19	dibilas	bilas	VERB	_	_	0	root	_	_
+20	dengan	dengan	ADP	_	_	21	case	_	_
+21	air	air	NOUN	_	_	19	obl	_	_
+22	dan	dan	CCONJ	_	_	23	cc	_	_
+23	dikeringkan	kering	VERB	_	_	19	conj	_	_
+24	dengan	dengan	ADP	_	_	25	case	_	_
+25	kain	kain	NOUN	_	_	23	obl	_	_
+26	kering	kering	ADJ	_	_	25	amod	_	_
+27	.	.	PUNCT	_	_	19	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[DISABUNI_DENGAN]--> umbi sikapa/sekapa (SARANA_RITUAL)  type=ENTITY source=dependency_rule
+  [1] jenazah (ISTILAH_UMUM_RITUAL) --[DIBILAS_DENGAN]--> air (None)  type=LITERAL source=manual_override
+  [2] jenazah (ISTILAH_UMUM_RITUAL) --[DIKERINGKAN_DENGAN]--> kain kering (None)  type=LITERAL source=manual_override
+
+### S3623
+TEXT: mewastra (berpakaian): setelah semuanya kering maka jenazah kenakan pakaian putih-putih, antara lain pakaian atau kain bawahnya berwarna putih, saput serta umpal (tali saput) juga berwarna putih dan udeng untuk laki-lakipun berwarna putih.
+NER: mewastra -> TAHAPAN_UPACARA [cultural] | jenazah -> ISTILAH_UMUM_RITUAL [cultural] | saput -> SARANA_RITUAL [cultural] | udeng -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S3623
+# text = mewastra (berpakaian): setelah semuanya kering maka jenazah kenakan pakaian putih-putih, antara lain pakaian atau kain bawahnya berwarna putih, saput serta umpal (tali saput) juga berwarna putih dan udeng untuk laki-lakipun berwarna putih.
+1	mewastra	mewastra	PROPN	_	_	12	advcl	_	_
+2	(	(	PUNCT	_	_	3	punct	_	_
+3	berpakaian	pakai	VERB	_	_	1	appos	_	_
+4	)	)	PUNCT	_	_	3	punct	_	_
+5	:	:	PUNCT	_	_	9	punct	_	_
+6	setelah	setelah	ADP	_	_	7	case	_	_
+7	semua	semua	PRON	_	_	12	obl	_	_
+8	nya	nya	DET	_	_	7	det	_	_
+9	kering	kering	ADJ	_	_	7	amod	_	_
+10	maka	maka	SCONJ	_	_	12	mark	_	_
+11	jenazah	jenazah	NOUN	_	_	12	nsubj	_	_
+12	kenakan	kena	VERB	_	_	0	root	_	_
+13	pakaian	pakai	NOUN	_	_	12	obj	_	_
+14	putih-putih	putih	ADJ	_	_	13	amod	_	_
+15	,	,	PUNCT	_	_	18	punct	_	_
+16	antara	antara	ADP	_	_	18	case	_	_
+17	lain	lain	ADJ	_	_	16	fixed	_	_
+18	pakaian	pakai	NOUN	_	_	12	obl	_	_
+19	atau	atau	CCONJ	_	_	20	cc	_	_
+20	kain	kain	NOUN	_	_	18	conj	_	_
+21	bawah	bawah	NOUN	_	_	20	compound	_	_
+22	nya	dia	PRON	_	_	21	nmod:poss	_	_
+23	berwarna	warna	VERB	_	_	18	ccomp	_	_
+24	putih	putih	ADJ	_	_	23	amod	_	_
+25	,	,	PUNCT	_	_	26	punct	_	_
+26	saput	saput	ADJ	_	_	23	amod	_	_
+27	serta	serta	CCONJ	_	_	28	cc	_	_
+28	umpal	umpal	NOUN	_	_	18	conj	_	_
+29	(	(	PUNCT	_	_	30	punct	_	_
+30	tali	tali	NOUN	_	_	28	appos	_	_
+31	saput	saput	ADJ	_	_	30	amod	_	_
+32	)	)	PUNCT	_	_	30	punct	_	_
+33	juga	juga	ADV	_	_	34	advmod	_	_
+34	berwarna	warna	VERB	_	_	12	conj	_	_
+35	putih	putih	ADJ	_	_	34	amod	_	_
+36	dan	dan	CCONJ	_	_	37	cc	_	_
+37	udeng	udeng	NOUN	_	_	34	conj	_	_
+38	untuk	untuk	ADP	_	_	39	case	_	_
+39	laki-laki	laki	NOUN	_	_	37	nmod	_	_
+40	pun	pun	PART	_	_	39	advmod:emph	_	_
+41	berwarna	warna	VERB	_	_	39	acl	_	_
+42	putih	putih	ADJ	_	_	41	amod	_	_
+43	.	.	PUNCT	_	_	12	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[DIPAKAIKAN]--> pakaian putih-putih (None)  type=LITERAL source=manual_override
+  [1] kain bawah (None) --[BERWARNA]--> putih (None)  type=LITERAL source=manual_override
+  [2] saput (None) --[BERWARNA]--> putih (None)  type=LITERAL source=manual_override
+  [3] umpal (None) --[BERWARNA]--> putih (None)  type=LITERAL source=manual_override
+  [4] umpal (None) --[ADALAH]--> tali saput (SARANA_RITUAL)  type=ENTITY source=manual_override
+  [5] udeng (untuk laki-laki) (SARANA_RITUAL) --[BERWARNA]--> putih (None)  type=LITERAL source=manual_override
+
+### S3647
+TEXT: daun pisang saba setelah selesai berpakaian maka jenazah tersebut dialasi dengan "daun pisang saba" yang berfungsi sebagai tikar.
+NER: jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S3647
+# text = daun pisang saba setelah selesai berpakaian maka jenazah tersebut dialasi dengan "daun pisang saba" yang berfungsi sebagai tikar.
+1	daun	daun	NOUN	_	_	0	root	_	_
+2	pisang	pisang	NOUN	_	_	1	compound	_	_
+3	saba	saba	NOUN	_	_	2	compound	_	_
+4	setelah	setelah	ADP	_	_	5	case	_	_
+5	selesai	selesai	VERB	_	_	1	acl	_	_
+6	berpakaian	pakai	VERB	_	_	5	xcomp	_	_
+7	maka	maka	SCONJ	_	_	10	mark	_	_
+8	jenazah	jenazah	NOUN	_	_	10	nsubj:pass	_	_
+9	tersebut	tersebut	DET	_	_	8	det	_	_
+10	dialasi	alasi	VERB	_	_	6	advcl	_	_
+11	dengan	dengan	ADP	_	_	13	case	_	_
+12	"	"	PUNCT	_	_	13	punct	_	_
+13	daun	daun	NOUN	_	_	10	obl	_	_
+14	pisang	pisang	NOUN	_	_	13	compound	_	_
+15	saba	saba	NOUN	_	_	14	compound	_	_
+16	"	"	PUNCT	_	_	13	punct	_	_
+17	yang	yang	PRON	_	_	18	nsubj	_	_
+18	berfungsi	fungsi	VERB	_	_	13	acl:relcl	_	_
+19	sebagai	sebagai	ADP	_	_	20	case	_	_
+20	tikar	tikar	NOUN	_	_	18	obl	_	_
+21	.	.	PUNCT	_	_	6	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[DIALASI_DENGAN]--> daun pisang saba (None)  type=LITERAL source=dependency_rule
+  [1] daun pisang saba (None) --[BERFUNGSI_SEBAGAI]--> tikar (None)  type=LITERAL source=object_decomposition
+
+### S3649
+TEXT: sesisir pisang kayu sebagai bantal di kepala : disamping mengalasi dengan daun pisang (namun bagi masyarakat yang tidak biasa menggunakan daun pisang tidak menjadi masalah, karena hal ini tidak mutlak digunakan), juga ada penggantian bantal, yang tadinya jenazah tersebut berbantalkan kapuk diganti dengan bantal sesisir buah pisang kayu.
+NER: jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S3649
+# text = sesisir pisang kayu sebagai bantal di kepala : disamping mengalasi dengan daun pisang (namun bagi masyarakat yang tidak biasa menggunakan daun pisang tidak menjadi masalah, karena hal ini tidak mutlak digunakan), juga ada penggantian bantal, yang tadinya jenazah tersebut berbantalkan kapuk diganti dengan bantal sesisir buah pisang kayu.
+1	sesisir	sesisir	NOUN	_	_	25	nsubj	_	_
+2	pisang	pisang	NOUN	_	_	1	compound	_	_
+3	kayu	kayu	NOUN	_	_	2	compound	_	_
+4	sebagai	sebagai	ADP	_	_	5	case	_	_
+5	bantal	bantal	NOUN	_	_	1	nmod	_	_
+6	di	di	ADP	_	_	7	case	_	_
+7	kepala	kepala	NOUN	_	_	5	nmod	_	_
+8	:	:	PUNCT	_	_	9	punct	_	_
+9	disamping	samping	VERB	_	_	1	appos	_	_
+10	mengalasi	alas	VERB	_	_	9	xcomp	_	_
+11	dengan	dengan	ADP	_	_	12	case	_	_
+12	daun	daun	NOUN	_	_	10	obl	_	_
+13	pisang	pisang	NOUN	_	_	12	compound	_	_
+14	(	(	PUNCT	_	_	21	punct	_	_
+15	namun	namun	CCONJ	_	_	25	cc	_	_
+16	bagi	bagi	ADP	_	_	17	case	_	_
+17	masyarakat	masyarakat	NOUN	_	_	25	obl	_	_
+18	yang	yang	PRON	_	_	21	nsubj	_	_
+19	tidak	tidak	PART	_	_	21	advmod	_	_
+20	biasa	biasa	ADJ	_	_	21	amod	_	_
+21	menggunakan	guna	VERB	_	_	17	acl:relcl	_	_
+22	daun	daun	NOUN	_	_	21	obj	_	_
+23	pisang	pisang	NOUN	_	_	22	compound	_	_
+24	tidak	tidak	PART	_	_	25	advmod	_	_
+25	menjadi	jadi	VERB	_	_	0	root	_	_
+26	masalah	masalah	NOUN	_	_	25	obj	_	_
+27	,	,	PUNCT	_	_	33	punct	_	_
+28	karena	karena	SCONJ	_	_	33	mark	_	_
+29	hal	hal	NOUN	_	_	33	nsubj:pass	_	_
+30	ini	ini	DET	_	_	29	det	_	_
+31	tidak	tidak	PART	_	_	32	advmod	_	_
+32	mutlak	mutlak	ADJ	_	_	33	amod	_	_
+33	digunakan	guna	VERB	_	_	25	advcl	_	_
+34	)	)	PUNCT	_	_	33	punct	_	_
+35	,	,	PUNCT	_	_	37	punct	_	_
+36	juga	juga	ADV	_	_	37	advmod	_	_
+37	ada	ada	VERB	_	_	25	conj	_	_
+38	penggantian	ganti	NOUN	_	_	37	obj	_	_
+39	bantal	bantal	NOUN	_	_	38	compound	_	_
+40	,	,	PUNCT	_	_	46	punct	_	_
+41	yang	yang	PRON	_	_	46	obl	_	_
+42	tadi	tadi	NOUN	_	_	46	obl	_	_
+43	nya	dia	PRON	_	_	42	nmod:poss	_	_
+44	jenazah	jenazah	NOUN	_	_	46	nsubj	_	_
+45	tersebut	tersebut	DET	_	_	44	det	_	_
+46	berbantalkan	bantal	VERB	_	_	38	acl:relcl	_	_
+47	kapuk	kapuk	NOUN	_	_	46	obj	_	_
+48	diganti	ganti	VERB	_	_	46	ccomp	_	_
+49	dengan	dengan	ADP	_	_	50	case	_	_
+50	bantal	bantal	NOUN	_	_	48	obl	_	_
+51	sesisir	sesisir	NOUN	_	_	50	compound	_	_
+52	buah	buah	NOUN	_	_	51	compound	_	_
+53	pisang	pisang	NOUN	_	_	52	compound	_	_
+54	kayu	kayu	NOUN	_	_	53	compound	_	_
+55	.	.	PUNCT	_	_	1	punct	_	_
+
+RELATIONS:
+  [0] bantal kapuk (None) --[DIGANTI_DENGAN]--> bantal sesisir buah pisang kayu (None)  type=LITERAL source=manual_override
+
+### S3651
+TEXT: kembali pada makna pada penggunaan sesisir buah pisang kayu untuk bantal, yang dihubungkan dengan kitab purana yang menceriterakan ketika dewa wishnu selesai pengaduk lautan susu untuk mendapatkan tirtha amertha, maka beliau tidur di atas samudra, dialasi dan dipayungi oleh seekor naga (ular cobra) yang berkepala banyak (perhatikan bulir-bulir pisang pada satu sisir, kelihatan seperti kepala ular yang menyembul), sehingga terhindar dari marabahaya dan kepanasan.
+NER: dewa -> ENTITAS_KEAGAMAAN [cultural] | tirtha -> TIRTHA_SUCI [cultural] | amertha -> KONSEP_FILOSOFIS [cultural]
+PARSE:
+# sent_id = S3651
+# text = kembali pada makna pada penggunaan sesisir buah pisang kayu untuk bantal, yang dihubungkan dengan kitab purana yang menceriterakan ketika dewa wishnu selesai pengaduk lautan susu untuk mendapatkan tirtha amertha, maka beliau tidur di atas samudra, dialasi dan dipayungi oleh seekor naga (ular cobra) yang berkepala banyak (perhatikan bulir-bulir pisang pada satu sisir, kelihatan seperti kepala ular yang menyembul), sehingga terhindar dari marabahaya dan kepanasan.
+1	kembali	kembali	VERB	_	_	0	root	_	_
+2	pada	pada	ADP	_	_	3	case	_	_
+3	makna	makna	NOUN	_	_	1	obl	_	_
+4	pada	pada	ADP	_	_	5	case	_	_
+5	penggunaan	guna	NOUN	_	_	1	obl	_	_
+6	sesisir	sesisir	NOUN	_	_	5	compound	_	_
+7	buah	buah	NOUN	_	_	6	compound	_	_
+8	pisang	pisang	NOUN	_	_	7	compound	_	_
+9	kayu	kayu	NOUN	_	_	8	compound	_	_
+10	untuk	untuk	ADP	_	_	11	case	_	_
+11	bantal	bantal	NOUN	_	_	8	nmod	_	_
+12	,	,	PUNCT	_	_	14	punct	_	_
+13	yang	yang	PRON	_	_	14	nsubj:pass	_	_
+14	dihubungkan	hubung	VERB	_	_	5	acl:relcl	_	_
+15	dengan	dengan	ADP	_	_	16	case	_	_
+16	kitab	kitab	NOUN	_	_	14	obl	_	_
+17	purana	purana	NOUN	_	_	16	compound	_	_
+18	yang	yang	PRON	_	_	19	nsubj	_	_
+19	menceriterakan	ceritera	VERB	_	_	16	acl:relcl	_	_
+20	ketika	ketika	SCONJ	_	_	23	mark	_	_
+21	dewa	dewa	NOUN	_	_	23	nsubj	_	_
+22	wishnu	wishnu	NOUN	_	_	21	compound	_	_
+23	selesai	selesai	VERB	_	_	19	ccomp	_	_
+24	pengaduk	aduk	NOUN	_	_	23	obj	_	_
+25	lautan	laut	NOUN	_	_	24	compound	_	_
+26	susu	susu	NOUN	_	_	25	compound	_	_
+27	untuk	untuk	SCONJ	_	_	28	mark	_	_
+28	mendapatkan	dapat	VERB	_	_	23	xcomp	_	_
+29	tirtha	tirtha	NOUN	_	_	28	obj	_	_
+30	amertha	amertha	PROPN	_	_	29	nmod	_	_
+31	,	,	PUNCT	_	_	34	punct	_	_
+32	maka	maka	SCONJ	_	_	34	mark	_	_
+33	beliau	beliau	PRON	_	_	34	nsubj	_	_
+34	tidur	tidur	VERB	_	_	1	dep	_	_
+35	di	di	ADP	_	_	36	case	_	_
+36	atas	atas	ADP	_	_	34	obl	_	_
+37	samudra	samudra	NOUN	_	_	36	nmod	_	_
+38	,	,	PUNCT	_	_	39	punct	_	_
+39	dialasi	alasi	VERB	_	_	34	conj	_	_
+40	dan	dan	CCONJ	_	_	41	cc	_	_
+41	dipayungi	payung	VERB	_	_	34	conj	_	_
+42	oleh	oleh	ADP	_	_	44	case	_	_
+43	seekor	seekor	DET	_	_	44	det	_	_
+44	naga	naga	NOUN	_	_	41	obl	_	_
+45	(	(	PUNCT	_	_	46	punct	_	_
+46	ular	ular	NOUN	_	_	44	appos	_	_
+47	cobra	cobra	NOUN	_	_	46	compound	_	_
+48	)	)	PUNCT	_	_	46	punct	_	_
+49	yang	yang	PRON	_	_	50	nsubj	_	_
+50	berkepala	kepala	VERB	_	_	44	acl:relcl	_	_
+51	banyak	banyak	ADV	_	_	50	advmod	_	_
+52	(	(	PUNCT	_	_	53	punct	_	_
+53	perhatikan	perhatikan	VERB	_	_	50	xcomp	_	_
+54	bulir-bulir	bulir	NOUN	_	_	53	obj	_	_
+55	pisang	pisang	NOUN	_	_	54	compound	_	_
+56	pada	pada	ADP	_	_	58	case	_	_
+57	satu	satu	NUM	_	_	58	nummod	_	_
+58	sisir	sisir	NOUN	_	_	53	obl	_	_
+59	,	,	PUNCT	_	_	60	punct	_	_
+60	kelihatan	lihat	VERB	_	_	53	conj	_	_
+61	seperti	seperti	ADP	_	_	62	case	_	_
+62	kepala	kepala	NOUN	_	_	60	obl	_	_
+63	ular	ular	NOUN	_	_	62	compound	_	_
+64	yang	yang	PRON	_	_	65	nsubj	_	_
+65	menyembul	sembul	VERB	_	_	62	acl:relcl	_	_
+66	)	)	PUNCT	_	_	53	punct	_	_
+67	,	,	PUNCT	_	_	69	punct	_	_
+68	sehingga	sehingga	SCONJ	_	_	69	mark	_	_
+69	terhindar	hindar	VERB	_	_	53	advcl	_	_
+70	dari	dari	ADP	_	_	71	case	_	_
+71	marabahaya	marabahaya	NOUN	_	_	69	obl	_	_
+72	dan	dan	CCONJ	_	_	73	cc	_	_
+73	kepanasan	panas	NOUN	_	_	71	conj	_	_
+74	.	.	PUNCT	_	_	1	punct	_	_
+
+RELATIONS:
+  [0] dewa wishnu (ENTITAS_KEAGAMAAN) --[MENDAPATKAN]--> tirtha amertha (KONSEP_FILOSOFIS)  type=ENTITY source=manual_override
+  [1] dewa wishnu (ENTITAS_KEAGAMAAN) --[TIDUR_DI]--> atas samudra (dialasi dan dipayungi naga/ular cobra berkepala banyak) (None)  type=LITERAL source=manual_override
+
+### S3653
+TEXT: gegaleng pada kepala: kata "gegaleng" juga berarti bantal untuk tidur.
+NER: gegaleng -> SARANA_RITUAL [cultural] (canonical: Gegaleng)
+PARSE:
+# sent_id = S3653
+# text = gegaleng pada kepala: kata "gegaleng" juga berarti bantal untuk tidur.
+1	gegaleng	gegaleng	NOUN	_	_	10	nsubj	_	_
+2	pada	pada	ADP	_	_	3	case	_	_
+3	kepala	kepala	NOUN	_	_	1	nmod	_	_
+4	:	:	PUNCT	_	_	5	punct	_	_
+5	kata	kata	NOUN	_	_	3	appos	_	_
+6	"	"	PUNCT	_	_	7	punct	_	_
+7	gegaleng	gegaleng	NOUN	_	_	5	compound	_	_
+8	"	"	PUNCT	_	_	7	punct	_	_
+9	juga	juga	ADV	_	_	10	advmod	_	_
+10	berarti	arti	VERB	_	_	0	root	_	_
+11	bantal	bantal	NOUN	_	_	10	obj	_	_
+12	untuk	untuk	SCONJ	_	_	13	mark	_	_
+13	tidur	tidur	VERB	_	_	10	xcomp	_	_
+14	.	.	PUNCT	_	_	10	punct	_	_
+
+RELATIONS:
+  [0] gegaleng kepala (None) --[BERARTI]--> bantal untuk tidur (None)  type=LITERAL source=manual_override
+
+### S3654
+TEXT: gegaleng ini dibuat dari uang kepeng (pipis bolong) sebanyak 250 biji serta beberapa potongan-potongan dahan kayu dapdap yang dibungkus dengan kain putih.
+NER: gegaleng -> SARANA_RITUAL [cultural] (canonical: Gegaleng) | kepeng -> SARANA_RITUAL [cultural] | pipis bolong -> SARANA_RITUAL [cultural] | kain putih -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S3654
+# text = gegaleng ini dibuat dari uang kepeng (pipis bolong) sebanyak 250 biji serta beberapa potongan-potongan dahan kayu dapdap yang dibungkus dengan kain putih.
+1	gegaleng	gegaleng	PROPN	_	_	3	nsubj:pass	_	_
+2	ini	ini	DET	_	_	1	det	_	_
+3	dibuat	buat	VERB	_	_	0	root	_	_
+4	dari	dari	ADP	_	_	5	case	_	_
+5	uang	uang	NOUN	_	_	3	obl	_	_
+6	kepeng	kepeng	NOUN	_	_	5	compound	_	_
+7	(	(	PUNCT	_	_	8	punct	_	_
+8	pipis	pipis	NOUN	_	_	5	appos	_	_
+9	bolong	bolong	NOUN	_	_	8	compound	_	_
+10	)	)	PUNCT	_	_	8	punct	_	_
+11	sebanyak	sebanyak	ADP	_	_	13	case	_	_
+12	250	250	NUM	_	_	13	nummod	_	_
+13	biji	biji	NOUN	_	_	5	nmod	_	_
+14	serta	serta	CCONJ	_	_	16	cc	_	_
+15	beberapa	beberapa	DET	_	_	16	det	_	_
+16	potongan-potongan	potong	NOUN	_	_	5	conj	_	_
+17	dahan	dahan	NOUN	_	_	16	compound	_	_
+18	kayu	kayu	NOUN	_	_	17	compound	_	_
+19	dapdap	dapdap	NOUN	_	_	18	compound	_	_
+20	yang	yang	PRON	_	_	21	nsubj:pass	_	_
+21	dibungkus	bungkus	VERB	_	_	16	acl:relcl	_	_
+22	dengan	dengan	ADP	_	_	23	case	_	_
+23	kain	kain	NOUN	_	_	21	obl	_	_
+24	putih	putih	ADJ	_	_	23	amod	_	_
+25	.	.	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] gegaleng (SARANA_RITUAL) --[TERBUAT_DARI]--> uang kepeng (pipis bolong) sebanyak 250 biji (None)  type=LITERAL source=manual_override
+  [1] uang kepeng (None) --[ADALAH]--> pipis bolong (SARANA_RITUAL)  type=ENTITY source=manual_override
+  [2] gegaleng (SARANA_RITUAL) --[TERBUAT_DARI]--> potongan-potongan dahan kayu dapdap yang dibungkus dengan kain putih (None)  type=LITERAL source=manual_override
+
+### S3656
+TEXT: gegaleng ini adalah pengganti bantal kapuk yang telah dipakai pada waktu "pabersihan hidup", sehingga gegaleng ini juga disebut dengan "galeng pengerekan".
+NER: gegaleng -> SARANA_RITUAL [cultural] (canonical: Gegaleng) | pabersihan hidup -> TAHAPAN_UPACARA [cultural] (canonical: Pabersihan Hidup)
+PARSE:
+# sent_id = S3656
+# text = gegaleng ini adalah pengganti bantal kapuk yang telah dipakai pada waktu "pabersihan hidup", sehingga gegaleng ini juga disebut dengan "galeng pengerekan".
+1	gegaleng	gegaleng	NOUN	_	_	4	nsubj	_	_
+2	ini	ini	DET	_	_	1	det	_	_
+3	adalah	adalah	AUX	_	_	4	cop	_	_
+4	pengganti	ganti	NOUN	_	_	0	root	_	_
+5	bantal	bantal	NOUN	_	_	4	compound	_	_
+6	kapuk	kapuk	NOUN	_	_	5	compound	_	_
+7	yang	yang	PRON	_	_	9	nsubj:pass	_	_
+8	telah	telah	AUX	_	_	9	aux	_	_
+9	dipakai	pakai	VERB	_	_	4	acl:relcl	_	_
+10	pada	pada	ADP	_	_	11	case	_	_
+11	waktu	waktu	NOUN	_	_	9	obl	_	_
+12	"	"	PUNCT	_	_	13	punct	_	_
+13	pabersihan	pabersihan	NOUN	_	_	11	compound	_	_
+14	hidup	hidup	ADJ	_	_	13	amod	_	_
+15	"	"	PUNCT	_	_	13	punct	_	_
+16	,	,	PUNCT	_	_	21	punct	_	_
+17	sehingga	sehingga	SCONJ	_	_	21	mark	_	_
+18	gegaleng	gegaleng	NOUN	_	_	21	nsubj:pass	_	_
+19	ini	ini	DET	_	_	18	det	_	_
+20	juga	juga	ADV	_	_	21	advmod	_	_
+21	disebut	sebut	VERB	_	_	4	advcl	_	_
+22	dengan	dengan	ADP	_	_	24	case	_	_
+23	"	"	PUNCT	_	_	24	punct	_	_
+24	galeng	galeng	NOUN	_	_	21	obl	_	_
+25	pengerekan	pengerekan	NOUN	_	_	24	compound	_	_
+26	"	"	PUNCT	_	_	24	punct	_	_
+27	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] gegaleng (None) --[ADALAH]--> pengganti bantal kapuk yang telah dipakai pada waktu pabersihan hidup (None)  type=LITERAL source=manual_override
+  [1] gegaleng (None) --[DIKENAL_SEBAGAI]--> galeng pengerekan (None)  type=LITERAL source=manual_override
+
+### S3694
+TEXT: om sang hyang widhi, atas se ijin sang hyang hayu, atma sang meninggal lepas bebas dari badannya dan cepat melesat mencapai tujuan.
+NER: hyang -> KONSEP_FILOSOFIS [cultural] | atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+PARSE:
+# sent_id = S3694
+# text = om sang hyang widhi, atas se ijin sang hyang hayu, atma sang meninggal lepas bebas dari badannya dan cepat melesat mencapai tujuan.
+1	om	om	NOUN	_	_	15	advcl	_	_
+2	sang	sang	DET	_	_	3	det	_	_
+3	hyang	hyang	NOUN	_	_	1	compound	_	_
+4	widhi	widhi	NOUN	_	_	3	compound	_	_
+5	,	,	PUNCT	_	_	8	punct	_	_
+6	atas	atas	ADP	_	_	8	case	_	_
+7	se	se	NUM	_	_	8	nummod	_	_
+8	ijin	ijin	NOUN	_	_	1	nmod	_	_
+9	sang	sang	DET	_	_	10	det	_	_
+10	hyang	hyang	NOUN	_	_	8	compound	_	_
+11	hayu	hayu	NOUN	_	_	10	compound	_	_
+12	,	,	PUNCT	_	_	13	punct	_	_
+13	atma	atma	NOUN	_	_	15	nsubj	_	_
+14	sang	sang	DET	_	_	13	det	_	_
+15	meninggal	tinggal	VERB	_	_	0	root	_	_
+16	lepas	lepas	VERB	_	_	15	amod	_	_
+17	bebas	bebas	ADJ	_	_	16	amod	_	_
+18	dari	dari	ADP	_	_	19	case	_	_
+19	badan	badan	NOUN	_	_	15	obl	_	_
+20	nya	dia	PRON	_	_	19	nmod:poss	_	_
+21	dan	dan	CCONJ	_	_	23	cc	_	_
+22	cepat	cepat	ADJ	_	_	23	advmod	_	_
+23	melesat	lesat	VERB	_	_	15	conj	_	_
+24	mencapai	capai	VERB	_	_	23	xcomp	_	_
+25	tujuan	tuju	NOUN	_	_	24	obj	_	_
+26	.	.	PUNCT	_	_	15	punct	_	_
+
+RELATIONS:
+  [0] atma (KONSEP_FILOSOFIS) --[LEPAS_BEBAS_DARI]--> badan (None)  type=LITERAL source=manual_override
+
+### S3720
+TEXT: disamping itu "anget-angetan" dapat menghilangkan bau busuk, ini juga bermakna agar orang yang meninggal tersebut kelak numitis lagi, disamping terhindar dari penyakit, juga agar memiliki budhi pekerti dan pikiran baik dan jernih, terlepas dari kebusukan-kebusukan, yang merupakan penyakit dalam kehidupan di dunia ini.
+NER: anget-angetan -> SARANA_RITUAL [cultural] | numitis -> KONSEP_FILOSOFIS [cultural]
+PARSE:
+# sent_id = S3720
+# text = disamping itu "anget-angetan" dapat menghilangkan bau busuk, ini juga bermakna agar orang yang meninggal tersebut kelak numitis lagi, disamping terhindar dari penyakit, juga agar memiliki budhi pekerti dan pikiran baik dan jernih, terlepas dari kebusukan-kebusukan, yang merupakan penyakit dalam kehidupan di dunia ini.
+1	disamping	disamping	ADP	_	_	7	case	_	_
+2	itu	itu	DET	_	_	7	det	_	_
+3	"	"	PUNCT	_	_	4	punct	_	_
+4	anget-angetan	angetangetan	VERB	_	_	7	nsubj	_	_
+5	"	"	PUNCT	_	_	4	punct	_	_
+6	dapat	dapat	AUX	_	_	7	aux	_	_
+7	menghilangkan	hilang	VERB	_	_	0	root	_	_
+8	bau	bau	NOUN	_	_	7	obj	_	_
+9	busuk	busuk	ADJ	_	_	8	amod	_	_
+10	,	,	PUNCT	_	_	13	punct	_	_
+11	ini	ini	PRON	_	_	13	nsubj	_	_
+12	juga	juga	ADV	_	_	13	advmod	_	_
+13	bermakna	makna	VERB	_	_	7	parataxis	_	_
+14	agar	agar	SCONJ	_	_	23	mark	_	_
+15	orang	orang	NOUN	_	_	23	nsubj:pass	_	_
+16	yang	yang	PRON	_	_	17	nsubj	_	_
+17	meninggal	tinggal	VERB	_	_	15	acl:relcl	_	_
+18	tersebut	tersebut	DET	_	_	17	det	_	_
+19	kelak	kelak	NOUN	_	_	17	obj	_	_
+20	numitis	numitis	ADJ	_	_	19	amod	_	_
+21	lagi	lagi	ADV	_	_	20	advmod	_	_
+22	,	,	PUNCT	_	_	23	punct	_	_
+23	disamping	samping	VERB	_	_	13	advcl	_	_
+24	terhindar	hindar	VERB	_	_	23	ccomp	_	_
+25	dari	dari	ADP	_	_	26	case	_	_
+26	penyakit	sakit	NOUN	_	_	24	obl	_	_
+27	,	,	PUNCT	_	_	30	punct	_	_
+28	juga	juga	ADV	_	_	30	advmod	_	_
+29	agar	agar	SCONJ	_	_	30	mark	_	_
+30	memiliki	milik	VERB	_	_	23	advcl	_	_
+31	budhi	budhi	NOUN	_	_	30	obj	_	_
+32	pekerti	pekerti	NOUN	_	_	31	compound	_	_
+33	dan	dan	CCONJ	_	_	34	cc	_	_
+34	pikiran	pikir	NOUN	_	_	31	conj	_	_
+35	baik	baik	ADJ	_	_	34	amod	_	_
+36	dan	dan	CCONJ	_	_	37	cc	_	_
+37	jernih	jernih	ADJ	_	_	35	conj	_	_
+38	,	,	PUNCT	_	_	39	punct	_	_
+39	terlepas	lepas	VERB	_	_	30	conj	_	_
+40	dari	dari	ADP	_	_	41	case	_	_
+41	kebusukan-kebusukan	busuk	NOUN	_	_	39	obl	_	_
+42	,	,	PUNCT	_	_	44	punct	_	_
+43	yang	yang	PRON	_	_	44	nsubj	_	_
+44	merupakan	merupakan	VERB	_	_	41	acl:relcl	_	_
+45	penyakit	sakit	NOUN	_	_	44	obj	_	_
+46	dalam	dalam	ADP	_	_	47	case	_	_
+47	kehidupan	hidup	NOUN	_	_	45	nmod	_	_
+48	di	di	ADP	_	_	49	case	_	_
+49	dunia	dunia	NOUN	_	_	47	nmod	_	_
+50	ini	ini	DET	_	_	49	det	_	_
+51	.	.	PUNCT	_	_	7	punct	_	_
+
+RELATIONS:
+  [0] anget-angetan (SARANA_RITUAL) --[MENGHILANGKAN]--> bau busuk (None)  type=LITERAL source=dependency_rule
+  [1] anget-angetan (None) --[BERMAKNA]--> agar orang yang meninggal dapat numitis lagi dan terhindar dari penyakit, serta memiliki budi pekerti dan pikiran yang baik (None)  type=LITERAL source=manual_override
+
+### S3728
+TEXT: adapun makna penggunaan wewangian adalah agar kelak jika numitis lagi selalu mendapat pujian keharuman dalam setiap tingkah lakunya, di samping tersebut tubuhnya agar kelak berbau harum.
+NER: numitis -> KONSEP_FILOSOFIS [cultural]
+PARSE:
+# sent_id = S3728
+# text = adapun makna penggunaan wewangian adalah agar kelak jika numitis lagi selalu mendapat pujian keharuman dalam setiap tingkah lakunya, di samping tersebut tubuhnya agar kelak berbau harum.
+1	ada	ada	ADV	_	_	8	advmod	_	_
+2	pun	pun	PART	_	_	1	advmod:emph	_	_
+3	makna	makna	NOUN	_	_	8	nsubj	_	_
+4	penggunaan	guna	NOUN	_	_	3	compound	_	_
+5	wewangian	wewang	NOUN	_	_	4	compound	_	_
+6	adalah	adalah	AUX	_	_	8	cop	_	_
+7	agar	agar	SCONJ	_	_	13	mark	_	_
+8	kelak	kelak	NOUN	_	_	0	root	_	_
+9	jika	jika	SCONJ	_	_	13	mark	_	_
+10	numitis	numitis	NOUN	_	_	13	nsubj	_	_
+11	lagi	lagi	ADV	_	_	13	advmod	_	_
+12	selalu	selalu	ADV	_	_	13	advmod	_	_
+13	mendapat	dapat	VERB	_	_	8	ccomp	_	_
+14	pujian	puji	NOUN	_	_	13	obj	_	_
+15	keharuman	harum	NOUN	_	_	14	compound	_	_
+16	dalam	dalam	ADP	_	_	18	case	_	_
+17	setiap	setiap	DET	_	_	18	det	_	_
+18	tingkah	tingkah	NOUN	_	_	14	nmod	_	_
+19	laku	laku	NOUN	_	_	18	compound	_	_
+20	nya	dia	PRON	_	_	19	nmod:poss	_	_
+21	,	,	PUNCT	_	_	23	punct	_	_
+22	di	di	ADP	_	_	23	case	_	_
+23	samping	samping	NOUN	_	_	13	obl	_	_
+24	tersebut	tersebut	DET	_	_	23	det	_	_
+25	tubuh	tubuh	NOUN	_	_	13	advcl	_	_
+26	nya	dia	PRON	_	_	25	nmod:poss	_	_
+27	agar	agar	SCONJ	_	_	29	mark	_	_
+28	kelak	kelak	NOUN	_	_	29	nsubj	_	_
+29	berbau	bau	VERB	_	_	25	advcl	_	_
+30	harum	harum	ADJ	_	_	29	amod	_	_
+31	.	.	PUNCT	_	_	8	punct	_	_
+
+RELATIONS:
+  [0] penggunaan wewangian (None) --[BERTUJUAN_AGAR]--> orang yang numitis memperoleh pujian keharuman dalam tingkah lakunya (None)  type=LITERAL source=manual_override
+  [1] numitis (KONSEP_FILOSOFIS) --[MENYEBABKAN]--> badan menjadi harum (None)  type=LITERAL source=manual_override
+
+### S3733
+TEXT: kwangen jeriji : setelah pelaksanaan eteh-eteh pabersihan mati hampir selesai dilakukan maka pada setiap telapak tangan dan telapak kaki ditaruh masing-masing sebuah "kawangen jeriji".
+NER: kwangen -> SARANA_RITUAL [cultural] (canonical: Kwangen) | eteh-eteh -> SARANA_RITUAL [cultural] | pabersihan mati -> TAHAPAN_UPACARA [cultural] (canonical: Pabersihan Mati) | kawangen jeriji -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S3733
+# text = kwangen jeriji : setelah pelaksanaan eteh-eteh pabersihan mati hampir selesai dilakukan maka pada setiap telapak tangan dan telapak kaki ditaruh masing-masing sebuah "kawangen jeriji".
+1	kwangen	kwangen	NOUN	_	_	11	nsubj:pass	_	_
+2	jeriji	jeriji	NOUN	_	_	1	compound	_	_
+3	:	:	PUNCT	_	_	1	punct	_	_
+4	setelah	setelah	ADP	_	_	5	case	_	_
+5	pelaksanaan	laksana	NOUN	_	_	11	obl	_	_
+6	eteh-eteh	eteh	NOUN	_	_	5	compound	_	_
+7	pabersihan	pabersihan	NOUN	_	_	6	compound	_	_
+8	mati	mati	ADJ	_	_	7	amod	_	_
+9	hampir	hampir	ADV	_	_	10	advmod	_	_
+10	selesai	selesai	VERB	_	_	11	advcl	_	_
+11	dilakukan	laku	VERB	_	_	0	root	_	_
+12	maka	maka	SCONJ	_	_	20	mark	_	_
+13	pada	pada	ADP	_	_	15	case	_	_
+14	setiap	setiap	DET	_	_	15	det	_	_
+15	telapak	telapak	NOUN	_	_	20	obl	_	_
+16	tangan	tangan	NOUN	_	_	15	compound	_	_
+17	dan	dan	CCONJ	_	_	18	cc	_	_
+18	telapak	telapak	NOUN	_	_	15	conj	_	_
+19	kaki	kaki	NOUN	_	_	18	compound	_	_
+20	ditaruh	taruh	VERB	_	_	11	conj	_	_
+21	masing-masing	masing	DET	_	_	24	det	_	_
+22	sebuah	buah	DET	_	_	24	det	_	_
+23	"	"	PUNCT	_	_	24	punct	_	_
+24	kawangen	kawangen	NOUN	_	_	20	obj	_	_
+25	jeriji	jeriji	NOUN	_	_	24	compound	_	_
+26	"	"	PUNCT	_	_	24	punct	_	_
+27	.	.	PUNCT	_	_	11	punct	_	_
+
+RELATIONS:
+  [0] kwangen jeriji (None) --[DITARUH_DI]--> telapak tangan (None)  type=LITERAL source=manual_override
+  [1] kwangen jeriji (None) --[DITARUH_DI]--> telapak kaki (None)  type=LITERAL source=manual_override
+
+### S3734
+TEXT: kawangen jeriji adalah sebuah kojong yang dibuat dari daun pisang dan di dalamnya berisi lima buah gulungan "base" (daun sirih), setiap satu gulung daun sirih diikat dengan benang putih, kemudian gulungan sirih dimasukkan ke dalam lubang uang kepeng sampai sepanjang setengah gulungan sirih tersebut.
+NER: kawangen jeriji -> SARANA_RITUAL [cultural] | kepeng -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S3734
+# text = kawangen jeriji adalah sebuah kojong yang dibuat dari daun pisang dan di dalamnya berisi lima buah gulungan "base" (daun sirih), setiap satu gulung daun sirih diikat dengan benang putih, kemudian gulungan sirih dimasukkan ke dalam lubang uang kepeng sampai sepanjang setengah gulungan sirih tersebut.
+1	kawangen	kawangen	PROPN	_	_	5	nsubj	_	_
+2	jeriji	jeriji	PROPN	_	_	1	flat:name	_	_
+3	adalah	adalah	AUX	_	_	5	cop	_	_
+4	sebuah	buah	DET	_	_	5	det	_	_
+5	kojong	kojong	NOUN	_	_	0	root	_	_
+6	yang	yang	PRON	_	_	7	nsubj:pass	_	_
+7	dibuat	buat	VERB	_	_	5	acl:relcl	_	_
+8	dari	dari	ADP	_	_	9	case	_	_
+9	daun	daun	NOUN	_	_	7	obl	_	_
+10	pisang	pisang	NOUN	_	_	9	compound	_	_
+11	dan	dan	CCONJ	_	_	15	cc	_	_
+12	di	di	ADP	_	_	13	case	_	_
+13	dalam	dalam	NOUN	_	_	14	nmod:lmod	_	_
+14	nya	dia	PRON	_	_	15	obl	_	_
+15	berisi	isi	VERB	_	_	7	conj	_	_
+16	lima	lima	NUM	_	_	17	nummod	_	_
+17	buah	buah	NOUN	_	_	18	nmod	_	_
+18	gulungan	gulung	NOUN	_	_	15	obj	_	_
+19	"	"	PUNCT	_	_	20	punct	_	_
+20	base	base	NOUN	_	_	18	compound	_	_
+21	"	"	PUNCT	_	_	20	punct	_	_
+22	(	(	PUNCT	_	_	23	punct	_	_
+23	daun	daun	NOUN	_	_	20	compound	_	_
+24	sirih	sirih	NOUN	_	_	23	compound	_	_
+25	)	)	PUNCT	_	_	23	punct	_	_
+26	,	,	PUNCT	_	_	32	punct	_	_
+27	setiap	setiap	DET	_	_	29	det	_	_
+28	satu	satu	NUM	_	_	29	nummod	_	_
+29	gulung	gulung	NOUN	_	_	32	nsubj:pass	_	_
+30	daun	daun	NOUN	_	_	29	compound	_	_
+31	sirih	sirih	NOUN	_	_	30	compound	_	_
+32	diikat	ikat	VERB	_	_	15	advcl	_	_
+33	dengan	dengan	ADP	_	_	34	case	_	_
+34	benang	benang	NOUN	_	_	32	obl	_	_
+35	putih	putih	ADJ	_	_	34	amod	_	_
+36	,	,	PUNCT	_	_	40	punct	_	_
+37	kemudian	kemudian	ADV	_	_	40	advmod	_	_
+38	gulungan	gulung	NOUN	_	_	40	nsubj:pass	_	_
+39	sirih	sirih	NOUN	_	_	38	compound	_	_
+40	dimasukkan	masuk	VERB	_	_	32	advcl	_	_
+41	ke	ke	ADP	_	_	43	case	_	_
+42	dalam	dalam	ADP	_	_	43	case	_	_
+43	lubang	lubang	NOUN	_	_	40	obl	_	_
+44	uang	uang	NOUN	_	_	43	compound	_	_
+45	kepeng	kepeng	NOUN	_	_	44	compound	_	_
+46	sampai	sampai	ADP	_	_	49	case	_	_
+47	sepanjang	sepanjang	ADP	_	_	49	case	_	_
+48	setengah	setengah	NUM	_	_	49	nummod	_	_
+49	gulungan	gulung	NOUN	_	_	43	nmod	_	_
+50	sirih	sirih	NOUN	_	_	49	compound	_	_
+51	tersebut	tersebut	DET	_	_	49	det	_	_
+52	.	.	PUNCT	_	_	5	punct	_	_
+
+RELATIONS:
+  [0] kawangen jeriji (SARANA_RITUAL) --[ADALAH]--> kojong (None)  type=LITERAL source=dependency_rule
+  [1] kojong (None) --[TERBUAT_DARI]--> daun pisang (None)  type=LITERAL source=object_decomposition
+  [2] kojong (kawangen jeriji) (None) --[BERISI]--> lima buah gulungan base (daun sirih) (None)  type=LITERAL source=manual_override
+  [3] gulungan daun sirih (None) --[DIIKAT_DENGAN]--> benang putih (None)  type=LITERAL source=manual_override
+  [4] gulungan sirih (None) --[DIMASUKKAN_KE]--> lubang uang kepeng (SARANA_RITUAL)  type=ENTITY source=manual_override
+
+### S3742
+TEXT: sedangkan "kesuna" atau bawang putih bermakna agar orang tersebut bila numitis kembali, memiliki kuku-kuku yang indah dan putih bersih.
+NER: kesuna -> SARANA_RITUAL [cultural] | numitis -> KONSEP_FILOSOFIS [cultural]
+PARSE:
+# sent_id = S3742
+# text = sedangkan "kesuna" atau bawang putih bermakna agar orang tersebut bila numitis kembali, memiliki kuku-kuku yang indah dan putih bersih.
+1	sedangkan	sedangkan	SCONJ	_	_	8	mark	_	_
+2	"	"	PUNCT	_	_	3	punct	_	_
+3	kesuna	kesuna	NOUN	_	_	8	nsubj	_	_
+4	"	"	PUNCT	_	_	3	punct	_	_
+5	atau	atau	CCONJ	_	_	6	cc	_	_
+6	bawang	bawang	NOUN	_	_	3	conj	_	_
+7	putih	putih	ADJ	_	_	6	amod	_	_
+8	bermakna	makna	VERB	_	_	0	root	_	_
+9	agar	agar	ADP	_	_	10	case	_	_
+10	orang	orang	NOUN	_	_	8	obl	_	_
+11	tersebut	tersebut	DET	_	_	10	det	_	_
+12	bila	bila	SCONJ	_	_	14	mark	_	_
+13	numitis	numitis	ADJ	_	_	14	amod	_	_
+14	kembali	kembali	VERB	_	_	8	advcl	_	_
+15	,	,	PUNCT	_	_	16	punct	_	_
+16	memiliki	milik	VERB	_	_	8	advcl	_	_
+17	kuku-kuku	kuku	NOUN	_	_	16	obj	_	_
+18	yang	yang	PRON	_	_	19	nsubj	_	_
+19	indah	indah	ADJ	_	_	17	acl:relcl	_	_
+20	dan	dan	CCONJ	_	_	21	cc	_	_
+21	putih	putih	ADJ	_	_	19	conj	_	_
+22	bersih	bersih	ADJ	_	_	21	amod	_	_
+23	.	.	PUNCT	_	_	8	punct	_	_
+
+RELATIONS:
+  [0] kesuna (bawang putih) (None) --[BERMAKNA]--> agar orang yang numitis kembali memiliki kuku-kuku yang indah dan putih bersih (None)  type=LITERAL source=manual_override
+
+### S3747
+TEXT: di hulu hati, diisi sebuah kawangen yang berisi 9 biji uang kepeng dan bunga tunjung putih.
+NER: kawangen -> SARANA_RITUAL [cultural] | kepeng -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S3747
+# text = di hulu hati, diisi sebuah kawangen yang berisi 9 biji uang kepeng dan bunga tunjung putih.
+1	di	di	ADP	_	_	2	case	_	_
+2	hulu	hulu	NOUN	_	_	5	obl	_	_
+3	hati	hati	NOUN	_	_	2	compound	_	_
+4	,	,	PUNCT	_	_	2	punct	_	_
+5	diisi	isi	VERB	_	_	0	root	_	_
+6	sebuah	buah	DET	_	_	7	det	_	_
+7	kawangen	kawangen	NOUN	_	_	5	nsubj:pass	_	_
+8	yang	yang	PRON	_	_	9	nsubj	_	_
+9	berisi	isi	VERB	_	_	7	acl:relcl	_	_
+10	9	9	NUM	_	_	11	nummod	_	_
+11	biji	biji	NOUN	_	_	9	obj	_	_
+12	uang	uang	NOUN	_	_	11	compound	_	_
+13	kepeng	kepeng	NOUN	_	_	12	compound	_	_
+14	dan	dan	CCONJ	_	_	15	cc	_	_
+15	bunga	bunga	NOUN	_	_	11	conj	_	_
+16	tunjung	tunjung	NOUN	_	_	15	compound	_	_
+17	putih	putih	ADJ	_	_	16	amod	_	_
+18	.	.	PUNCT	_	_	5	punct	_	_
+
+RELATIONS:
+  [0] kawangen (SARANA_RITUAL) --[DILETAKKAN_DI]--> hulu hati (None)  type=LITERAL source=dependency_rule
+  [1] kawangen (SARANA_RITUAL) --[BERISI]--> 9 biji uang kepeng (SARANA_RITUAL)  type=ENTITY source=dependency_rule
+  [2] kawangen (SARANA_RITUAL) --[BERISI]--> bunga tunjung putih (None)  type=LITERAL source=dependency_rule
+
+### S3749
+TEXT: di dada, diisi sebuah kawangen yang berisi 7 biji uang kepeng dan bunga tunjung putih.
+NER: kawangen -> SARANA_RITUAL [cultural] | kepeng -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S3749
+# text = di dada, diisi sebuah kawangen yang berisi 7 biji uang kepeng dan bunga tunjung putih.
+1	di	di	ADP	_	_	2	case	_	_
+2	dada	dada	NOUN	_	_	4	obl	_	_
+3	,	,	PUNCT	_	_	2	punct	_	_
+4	diisi	isi	VERB	_	_	0	root	_	_
+5	sebuah	buah	DET	_	_	6	det	_	_
+6	kawangen	kawangen	NOUN	_	_	4	nsubj:pass	_	_
+7	yang	yang	PRON	_	_	8	nsubj	_	_
+8	berisi	isi	VERB	_	_	6	acl:relcl	_	_
+9	7	7	NUM	_	_	10	nummod	_	_
+10	biji	biji	NOUN	_	_	8	obj	_	_
+11	uang	uang	NOUN	_	_	10	compound	_	_
+12	kepeng	kepeng	NOUN	_	_	11	compound	_	_
+13	dan	dan	CCONJ	_	_	14	cc	_	_
+14	bunga	bunga	NOUN	_	_	10	conj	_	_
+15	tunjung	tunjung	NOUN	_	_	14	compound	_	_
+16	putih	putih	ADJ	_	_	15	amod	_	_
+17	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] kawangen (SARANA_RITUAL) --[DILETAKKAN_DI]--> dada (None)  type=LITERAL source=dependency_rule
+  [1] kawangen (SARANA_RITUAL) --[BERISI]--> 7 biji uang kepeng (SARANA_RITUAL)  type=ENTITY source=dependency_rule
+  [2] kawangen (SARANA_RITUAL) --[BERISI]--> bunga tunjung putih (None)  type=LITERAL source=dependency_rule
+
+### S3753
+TEXT: di kedua lutut kaki, diisi masing-masing kawangen yang berisi 5 biji uang kepeng dan pusuh bunga cempaka kuning.
+NER: kawangen -> SARANA_RITUAL [cultural] | kepeng -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S3753
+# text = di kedua lutut kaki, diisi masing-masing kawangen yang berisi 5 biji uang kepeng dan pusuh bunga cempaka kuning.
+1	di	di	ADP	_	_	3	case	_	_
+2	kedua	kedua	NUM	_	_	3	nummod	_	_
+3	lutut	lutut	NOUN	_	_	6	obl	_	_
+4	kaki	kaki	NOUN	_	_	3	compound	_	_
+5	,	,	PUNCT	_	_	3	punct	_	_
+6	diisi	isi	VERB	_	_	0	root	_	_
+7	masing-masing	masing	DET	_	_	8	det	_	_
+8	kawangen	kawangen	NOUN	_	_	6	nsubj:pass	_	_
+9	yang	yang	PRON	_	_	10	nsubj	_	_
+10	berisi	isi	VERB	_	_	8	acl:relcl	_	_
+11	5	5	NUM	_	_	12	nummod	_	_
+12	biji	biji	NOUN	_	_	10	obj	_	_
+13	uang	uang	NOUN	_	_	12	compound	_	_
+14	kepeng	kepeng	NOUN	_	_	13	compound	_	_
+15	dan	dan	CCONJ	_	_	16	cc	_	_
+16	pusuh	pusuh	NOUN	_	_	12	conj	_	_
+17	bunga	bunga	NOUN	_	_	16	compound	_	_
+18	cempaka	cempaka	NOUN	_	_	17	compound	_	_
+19	kuning	kuning	NOUN	_	_	18	compound	_	_
+20	.	.	PUNCT	_	_	6	punct	_	_
+
+RELATIONS:
+  [0] kawangen (SARANA_RITUAL) --[DILETAKKAN_DI]--> kedua lutut kaki (None)  type=LITERAL source=dependency_rule
+  [1] kawangen (SARANA_RITUAL) --[BERISI]--> 5 biji uang kepeng (SARANA_RITUAL)  type=ENTITY source=dependency_rule
+  [2] kawangen (SARANA_RITUAL) --[BERISI]--> pusuh bunga cempaka kuning (None)  type=LITERAL source=dependency_rule
+
+### S3755
+TEXT: uang kepeng yang asli diyakini mengandung lima unsur logam yang terdiri dari : (1) perak (putih), tempatnya di timur, dewanya adalah dewa iswara.
+NER: kepeng -> SARANA_RITUAL [cultural] | dewa -> ENTITAS_KEAGAMAAN [cultural]
+PARSE:
+# sent_id = S3755
+# text = uang kepeng yang asli diyakini mengandung lima unsur logam yang terdiri dari : (1) perak (putih), tempatnya di timur, dewanya adalah dewa iswara.
+1	uang	uang	NOUN	_	_	5	nsubj:pass	_	_
+2	kepeng	kepeng	NOUN	_	_	1	compound	_	_
+3	yang	yang	PRON	_	_	4	nsubj	_	_
+4	asli	asli	ADJ	_	_	1	acl:relcl	_	_
+5	diyakini	yakin	VERB	_	_	0	root	_	_
+6	mengandung	kandung	VERB	_	_	5	xcomp	_	_
+7	lima	lima	NUM	_	_	8	nummod	_	_
+8	unsur	unsur	NOUN	_	_	6	obj	_	_
+9	logam	logam	NOUN	_	_	8	compound	_	_
+10	yang	yang	PRON	_	_	11	nsubj:pass	_	_
+11	terdiri	diri	VERB	_	_	8	acl:relcl	_	_
+12	dari	dari	ADP	_	_	17	case	_	_
+13	:	:	PUNCT	_	_	12	punct	_	_
+14	(	(	PUNCT	_	_	15	punct	_	_
+15	1	1	NUM	_	_	17	nummod	_	_
+16	)	)	PUNCT	_	_	15	punct	_	_
+17	perak	perak	NOUN	_	_	11	obl	_	_
+18	(	(	PUNCT	_	_	19	punct	_	_
+19	putih	putih	ADJ	_	_	17	appos	_	_
+20	)	)	PUNCT	_	_	19	punct	_	_
+21	,	,	PUNCT	_	_	22	punct	_	_
+22	tempat	tempat	NOUN	_	_	8	conj	_	_
+23	nya	dia	PRON	_	_	22	nmod:poss	_	_
+24	di	di	ADP	_	_	25	case	_	_
+25	timur	timur	NOUN	_	_	22	nmod	_	_
+26	,	,	PUNCT	_	_	30	punct	_	_
+27	dewa	dewa	NOUN	_	_	30	nsubj	_	_
+28	nya	dia	PRON	_	_	27	nmod:poss	_	_
+29	adalah	adalah	AUX	_	_	30	cop	_	_
+30	dewa	dewa	NOUN	_	_	6	advcl	_	_
+31	iswara	iswara	NOUN	_	_	30	compound	_	_
+32	.	.	PUNCT	_	_	6	punct	_	_
+
+RELATIONS:
+  [0] uang kepeng asli (SARANA_RITUAL) --[MENGANDUNG]--> lima unsur logam (None)  type=LITERAL source=manual_override
+  [1] perak (None) --[BERWARNA]--> putih (None)  type=LITERAL source=manual_override
+  [2] perak (None) --[BERADA_DI]--> timur (None)  type=LITERAL source=manual_override
+  [3] perak (None) --[BERDEWA]--> dewa iswara (ENTITAS_KEAGAMAAN)  type=ENTITY source=manual_override
+
+### S3756
+TEXT: (2) tembaga (merah), tempatnya di selatan, dewanya adalah dewa brahma.
+NER: selatan -> Place [general] | dewa -> ENTITAS_KEAGAMAAN [cultural] | brahma -> ENTITAS_KEAGAMAAN [cultural]
+PARSE:
+# sent_id = S3756
+# text = (2) tembaga (merah), tempatnya di selatan, dewanya adalah dewa brahma.
+1	(	(	PUNCT	_	_	2	punct	_	_
+2	2	2	NUM	_	_	4	nummod	_	_
+3	)	)	PUNCT	_	_	2	punct	_	_
+4	tembaga	tembaga	NOUN	_	_	17	parataxis	_	_
+5	(	(	PUNCT	_	_	6	punct	_	_
+6	merah	merah	ADJ	_	_	4	appos	_	_
+7	)	)	PUNCT	_	_	6	punct	_	_
+8	,	,	PUNCT	_	_	9	punct	_	_
+9	tempat	tempat	NOUN	_	_	4	appos	_	_
+10	nya	dia	PRON	_	_	9	nmod:poss	_	_
+11	di	di	ADP	_	_	12	case	_	_
+12	selatan	selatan	NOUN	_	_	9	nmod	_	_
+13	,	,	PUNCT	_	_	9	punct	_	_
+14	dewa	dewa	NOUN	_	_	17	nsubj	_	_
+15	nya	dia	PRON	_	_	14	nmod:poss	_	_
+16	adalah	adalah	AUX	_	_	17	cop	_	_
+17	dewa	dewa	NOUN	_	_	0	root	_	_
+18	brahma	brahma	NOUN	_	_	17	compound	_	_
+19	.	.	PUNCT	_	_	17	punct	_	_
+
+RELATIONS:
+  [0] tembaga (None) --[BERWARNA]--> merah (None)  type=LITERAL source=manual_override
+  [1] tembaga (None) --[BERADA_DI]--> selatan (Place)  type=ENTITY source=manual_override
+  [2] tembaga (None) --[BERDEWA]--> dewa brahma (ENTITAS_KEAGAMAAN)  type=ENTITY source=manual_override
+
+### S3757
+TEXT: (3) emas (kuning), tempatnya di barat, dewanya adalah dewa mahadewa.
+NER: dewa -> ENTITAS_KEAGAMAAN [cultural]
+PARSE:
+# sent_id = S3757
+# text = (3) emas (kuning), tempatnya di barat, dewanya adalah dewa mahadewa.
+1	(	(	PUNCT	_	_	2	punct	_	_
+2	3	3	NUM	_	_	4	nummod	_	_
+3	)	)	PUNCT	_	_	2	punct	_	_
+4	emas	emas	NOUN	_	_	17	parataxis	_	_
+5	(	(	PUNCT	_	_	6	punct	_	_
+6	kuning	kuning	NOUN	_	_	4	appos	_	_
+7	)	)	PUNCT	_	_	6	punct	_	_
+8	,	,	PUNCT	_	_	9	punct	_	_
+9	tempat	tempat	NOUN	_	_	4	compound	_	_
+10	nya	dia	PRON	_	_	9	nmod:poss	_	_
+11	di	di	ADP	_	_	12	case	_	_
+12	barat	barat	NOUN	_	_	9	nmod	_	_
+13	,	,	PUNCT	_	_	9	punct	_	_
+14	dewa	dewa	NOUN	_	_	17	nsubj	_	_
+15	nya	dia	PRON	_	_	14	nmod:poss	_	_
+16	adalah	adalah	AUX	_	_	17	cop	_	_
+17	dewa	dewa	NOUN	_	_	0	root	_	_
+18	mahadewa	mahadewa	NOUN	_	_	17	compound	_	_
+19	.	.	PUNCT	_	_	17	punct	_	_
+
+RELATIONS:
+  [0] emas (None) --[BERWARNA]--> kuning (None)  type=LITERAL source=manual_override
+  [1] emas (None) --[BERADA_DI]--> barat (None)  type=LITERAL source=manual_override
+  [2] emas (None) --[BERDEWA]--> dewa mahadewa (ENTITAS_KEAGAMAAN)  type=ENTITY source=manual_override
+
+### S3758
+TEXT: (4) besi (hitam), tempatnya di utara, dewanya adalah dewa wishnu, dan (5) logam campuran (manca warna), tempatnya di tengah-tengah, dewanya adalah dewa siwa.
+NER: dewa -> ENTITAS_KEAGAMAAN [cultural] | siwa -> ENTITAS_KEAGAMAAN [cultural]
+PARSE:
+# sent_id = S3758
+# text = (4) besi (hitam), tempatnya di utara, dewanya adalah dewa wishnu, dan (5) logam campuran (manca warna), tempatnya di tengah-tengah, dewanya adalah dewa siwa.
+1	(	(	PUNCT	_	_	2	punct	_	_
+2	4	4	NUM	_	_	4	nummod	_	_
+3	)	)	PUNCT	_	_	2	punct	_	_
+4	besi	besi	NOUN	_	_	17	compound	_	_
+5	(	(	PUNCT	_	_	6	punct	_	_
+6	hitam	hitam	ADJ	_	_	4	appos	_	_
+7	)	)	PUNCT	_	_	6	punct	_	_
+8	,	,	PUNCT	_	_	9	punct	_	_
+9	tempat	tempat	NOUN	_	_	4	conj	_	_
+10	nya	dia	PRON	_	_	9	nmod:poss	_	_
+11	di	di	ADP	_	_	12	case	_	_
+12	utara	utara	NOUN	_	_	9	nmod	_	_
+13	,	,	PUNCT	_	_	9	punct	_	_
+14	dewa	dewa	NOUN	_	_	17	nsubj	_	_
+15	nya	dia	PRON	_	_	14	nmod:poss	_	_
+16	adalah	adalah	AUX	_	_	17	cop	_	_
+17	dewa	dewa	NOUN	_	_	0	root	_	_
+18	wishnu	wishnu	NOUN	_	_	17	compound	_	_
+19	,	,	PUNCT	_	_	24	punct	_	_
+20	dan	dan	CCONJ	_	_	24	cc	_	_
+21	(	(	PUNCT	_	_	22	punct	_	_
+22	5	5	NUM	_	_	17	appos	_	_
+23	)	)	PUNCT	_	_	22	punct	_	_
+24	logam	logam	NOUN	_	_	17	conj	_	_
+25	campuran	campur	NOUN	_	_	24	compound	_	_
+26	(	(	PUNCT	_	_	27	punct	_	_
+27	manca	manca	NOUN	_	_	24	appos	_	_
+28	warna	warna	NOUN	_	_	27	compound	_	_
+29	)	)	PUNCT	_	_	27	punct	_	_
+30	,	,	PUNCT	_	_	31	punct	_	_
+31	tempat	tempat	NOUN	_	_	17	conj	_	_
+32	nya	dia	PRON	_	_	31	nmod:poss	_	_
+33	di	di	ADP	_	_	34	case	_	_
+34	tengah-tengah	tengah	NOUN	_	_	31	nmod	_	_
+35	,	,	PUNCT	_	_	39	punct	_	_
+36	dewa	dewa	NOUN	_	_	39	nsubj	_	_
+37	nya	dia	PRON	_	_	36	nmod:poss	_	_
+38	adalah	adalah	AUX	_	_	39	cop	_	_
+39	dewa	dewa	NOUN	_	_	17	parataxis	_	_
+40	siwa	siwa	NOUN	_	_	39	compound	_	_
+41	.	.	PUNCT	_	_	17	punct	_	_
+
+RELATIONS:
+  [0] besi (None) --[BERWARNA]--> hitam (None)  type=LITERAL source=manual_override
+  [1] besi (None) --[BERADA_DI]--> utara (None)  type=LITERAL source=manual_override
+  [2] besi (None) --[BERDEWA]--> dewa wishnu (ENTITAS_KEAGAMAAN)  type=ENTITY source=manual_override
+  [3] logam campuran (None) --[BERWARNA]--> manca warna (None)  type=LITERAL source=manual_override
+  [4] logam campuran (None) --[BERADA_DI]--> tengah (None)  type=LITERAL source=manual_override
+  [5] logam campuran (None) --[BERDEWA]--> dewa siwa (ENTITAS_KEAGAMAAN)  type=ENTITY source=manual_override
+
+### S3760
+TEXT: a di beberapa tempat atau desa, pada akhir acara "melelet" sebelum jenazah digulung atau sebelum "pangringkesan", ada yang menaruhkan jarum (jaum) dan besi paku pada lengan jenazah.
+NER: melelet -> TAHAPAN_UPACARA [cultural] | jenazah -> ISTILAH_UMUM_RITUAL [cultural] | pangringkesan -> TAHAPAN_UPACARA [cultural]
+PARSE:
+# sent_id = S3760
+# text = a di beberapa tempat atau desa, pada akhir acara "melelet" sebelum jenazah digulung atau sebelum "pangringkesan", ada yang menaruhkan jarum (jaum) dan besi paku pada lengan jenazah.
+1	a	a	PROPN	_	_	23	nsubj	_	_
+2	di	di	ADP	_	_	4	case	_	_
+3	beberapa	beberapa	DET	_	_	4	det	_	_
+4	tempat	tempat	NOUN	_	_	1	nmod	_	_
+5	atau	atau	CCONJ	_	_	6	cc	_	_
+6	desa	desa	NOUN	_	_	4	conj	_	_
+7	,	,	PUNCT	_	_	9	punct	_	_
+8	pada	pada	ADP	_	_	9	case	_	_
+9	akhir	akhir	NOUN	_	_	10	nmod	_	_
+10	acara	acara	NOUN	_	_	4	nmod	_	_
+11	"	"	PUNCT	_	_	12	punct	_	_
+12	melelet	melelet	NOUN	_	_	10	compound	_	_
+13	"	"	PUNCT	_	_	12	punct	_	_
+14	sebelum	sebelum	SCONJ	_	_	16	mark	_	_
+15	jenazah	jenazah	NOUN	_	_	16	nsubj:pass	_	_
+16	digulung	gulung	VERB	_	_	23	advcl	_	_
+17	atau	atau	CCONJ	_	_	20	cc	_	_
+18	sebelum	sebelum	ADP	_	_	20	case	_	_
+19	"	"	PUNCT	_	_	20	punct	_	_
+20	pangringkesan	pangringkesan	NOUN	_	_	16	obl	_	_
+21	"	"	PUNCT	_	_	20	punct	_	_
+22	,	,	PUNCT	_	_	23	punct	_	_
+23	ada	ada	VERB	_	_	0	root	_	_
+24	yang	yang	PRON	_	_	25	nsubj	_	_
+25	menaruhkan	taruh	VERB	_	_	23	acl	_	_
+26	jarum	jarum	NOUN	_	_	25	obj	_	_
+27	(	(	PUNCT	_	_	28	punct	_	_
+28	jaum	jaum	NOUN	_	_	26	appos	_	_
+29	)	)	PUNCT	_	_	28	punct	_	_
+30	dan	dan	CCONJ	_	_	31	cc	_	_
+31	besi	besi	NOUN	_	_	26	conj	_	_
+32	paku	paku	NOUN	_	_	31	compound	_	_
+33	pada	pada	ADP	_	_	34	case	_	_
+34	lengan	lengan	NOUN	_	_	31	nmod	_	_
+35	jenazah	jenazah	NOUN	_	_	34	compound	_	_
+36	.	.	PUNCT	_	_	23	punct	_	_
+
+RELATIONS:
+  [0] jarum (jaum) (None) --[DITARUH_DI]--> lengan jenazah (ISTILAH_UMUM_RITUAL)  type=ENTITY source=manual_override
+  [1] besi paku (None) --[DITARUH_DI]--> lengan jenazah (ISTILAH_UMUM_RITUAL)  type=ENTITY source=manual_override
+
+### S3783
+TEXT: ketiga, tirtha tersebut dipercikkan ke semua badan hingga ke kaki jenazah, setelah itu priuk tempat tirtha pangringkes tersebut dipecahkan dan dibuang di kolong bawah pepaga atau asagan.
+NER: tirtha -> TIRTHA_SUCI [cultural] | jenazah -> ISTILAH_UMUM_RITUAL [cultural] | tirtha pangringkes -> TIRTHA_SUCI [cultural] | pepaga -> SARANA_RITUAL [cultural] (canonical: Pepaga) | asagan -> SARANA_RITUAL [cultural] (canonical: Pepaga)
+PARSE:
+# sent_id = S3783
+# text = ketiga, tirtha tersebut dipercikkan ke semua badan hingga ke kaki jenazah, setelah itu priuk tempat tirtha pangringkes tersebut dipecahkan dan dibuang di kolong bawah pepaga atau asagan.
+1	ketiga	ketiga	NUM	_	_	5	nummod	_	_
+2	,	,	PUNCT	_	_	1	punct	_	_
+3	tirtha	tirtha	NOUN	_	_	5	nsubj:pass	_	_
+4	tersebut	tersebut	DET	_	_	3	det	_	_
+5	dipercikkan	percik	VERB	_	_	0	root	_	_
+6	ke	ke	ADP	_	_	8	case	_	_
+7	semua	semua	DET	_	_	8	det	_	_
+8	badan	badan	NOUN	_	_	5	obl	_	_
+9	hingga	hingga	ADP	_	_	11	case	_	_
+10	ke	ke	ADP	_	_	11	case	_	_
+11	kaki	kaki	NOUN	_	_	8	nmod	_	_
+12	jenazah	jenazah	NOUN	_	_	11	compound	_	_
+13	,	,	PUNCT	_	_	21	punct	_	_
+14	setelah	setelah	ADP	_	_	21	case	_	_
+15	itu	itu	DET	_	_	21	det	_	_
+16	priuk	priuk	NOUN	_	_	21	nsubj:pass	_	_
+17	tempat	tempat	NOUN	_	_	16	compound	_	_
+18	tirtha	tirtha	NOUN	_	_	17	compound	_	_
+19	pangringkes	pangringkes	NOUN	_	_	18	compound	_	_
+20	tersebut	tersebut	DET	_	_	16	det	_	_
+21	dipecahkan	pecah	VERB	_	_	5	advcl	_	_
+22	dan	dan	CCONJ	_	_	23	cc	_	_
+23	dibuang	buang	VERB	_	_	21	conj	_	_
+24	di	di	ADP	_	_	25	case	_	_
+25	kolong	kolong	NOUN	_	_	23	obl	_	_
+26	bawah	bawah	NOUN	_	_	25	compound	_	_
+27	pepaga	pepaga	NOUN	_	_	26	compound	_	_
+28	atau	atau	CCONJ	_	_	29	cc	_	_
+29	asagan	asag	NOUN	_	_	27	conj	_	_
+30	.	.	PUNCT	_	_	5	punct	_	_
+
+RELATIONS:
+  [0] tirtha (TIRTHA_SUCI) --[DIPERCIKKAN_PADA]--> seluruh badan hingga ke kaki jenazah (None)  type=LITERAL source=manual_override
+  [1] priuk (tempat tirtha pangringkes) (None) --[DIPECAHKAN]--> setelah tirtha dipercikkan (TIRTHA_SUCI)  type=ENTITY source=manual_override
+  [2] priuk (yang pecah) (None) --[DIBUANG_DI]--> kolong bawah pepaga/asagan (SARANA_RITUAL)  type=ENTITY source=manual_override
+
+### S3791
+TEXT: mula-mula jenazah dibungkus dengan kain putih, biasanya akan dibungkus sampai tiga lapis kemudian diikat dengan tali benang tukelan.
+NER: jenazah -> ISTILAH_UMUM_RITUAL [cultural] | kain putih -> SARANA_RITUAL [cultural] | tukelan -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S3791
+# text = mula-mula jenazah dibungkus dengan kain putih, biasanya akan dibungkus sampai tiga lapis kemudian diikat dengan tali benang tukelan.
+1	mula-mula	mula	ADV	_	_	3	advmod	_	_
+2	jenazah	jenazah	NOUN	_	_	3	nsubj:pass	_	_
+3	dibungkus	bungkus	VERB	_	_	0	root	_	_
+4	dengan	dengan	ADP	_	_	5	case	_	_
+5	kain	kain	NOUN	_	_	3	obl	_	_
+6	putih	putih	ADJ	_	_	5	amod	_	_
+7	,	,	PUNCT	_	_	10	punct	_	_
+8	biasanya	biasanya	ADV	_	_	10	advmod	_	_
+9	akan	akan	AUX	_	_	10	aux	_	_
+10	dibungkus	bungkus	VERB	_	_	3	advcl	_	_
+11	sampai	sampai	ADP	_	_	13	case	_	_
+12	tiga	tiga	NUM	_	_	13	nummod	_	_
+13	lapis	lapis	NOUN	_	_	10	obl	_	_
+14	kemudian	kemudian	ADV	_	_	15	advmod	_	_
+15	diikat	ikat	VERB	_	_	10	advcl	_	_
+16	dengan	dengan	ADP	_	_	17	case	_	_
+17	tali	tali	NOUN	_	_	15	obl	_	_
+18	benang	benang	NOUN	_	_	17	compound	_	_
+19	tukelan	tukel	NOUN	_	_	18	compound	_	_
+20	.	.	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[DIBUNGKUS_DENGAN]--> kain putih (SARANA_RITUAL)  type=ENTITY source=dependency_rule
+  [1] jenazah (ISTILAH_UMUM_RITUAL) --[DIBUNGKUS]--> tiga lapis (None)  type=LITERAL source=dependency_rule
+  [2] jenazah (setelah dibungkus tiga lapis) (None) --[DIIKAT_DENGAN]--> tali benang tukelan (SARANA_RITUAL)  type=ENTITY source=manual_override
+
+### S3799
+TEXT: selesai membungkus (ngeringkes), maka jenazah ditutupi dengan selembar kain putih yang panjangnya kira-kira dua sampai dua setengah meter, sedangkan di atas kain tersebut diisi rurub sinom sebanyak lima buah.
+NER: ngeringkes -> TAHAPAN_UPACARA [cultural] | jenazah -> ISTILAH_UMUM_RITUAL [cultural] | kain putih -> SARANA_RITUAL [cultural] | rurub sinom -> SARANA_RITUAL [cultural] (canonical: Rurub Sinom)
+PARSE:
+# sent_id = S3799
+# text = selesai membungkus (ngeringkes), maka jenazah ditutupi dengan selembar kain putih yang panjangnya kira-kira dua sampai dua setengah meter, sedangkan di atas kain tersebut diisi rurub sinom sebanyak lima buah.
+1	selesai	selesai	VERB	_	_	2	advcl	_	_
+2	membungkus	bungkus	VERB	_	_	0	root	_	_
+3	(	(	PUNCT	_	_	4	punct	_	_
+4	ngeringkes	ngeringkes	NOUN	_	_	2	appos	_	_
+5	)	)	PUNCT	_	_	4	punct	_	_
+6	,	,	PUNCT	_	_	9	punct	_	_
+7	maka	maka	SCONJ	_	_	9	mark	_	_
+8	jenazah	jenazah	NOUN	_	_	9	nsubj:pass	_	_
+9	ditutupi	tutup	VERB	_	_	2	advcl	_	_
+10	dengan	dengan	ADP	_	_	11	case	_	_
+11	selembar	selembar	NOUN	_	_	9	obl	_	_
+12	kain	kain	NOUN	_	_	11	compound	_	_
+13	putih	putih	ADJ	_	_	12	amod	_	_
+14	yang	yang	PRON	_	_	15	nsubj	_	_
+15	panjang	panjang	NOUN	_	_	11	acl	_	_
+16	nya	dia	PRON	_	_	15	nmod:poss	_	_
+17	kira-kira	kira	ADV	_	_	11	advmod	_	_
+18	dua	dua	NUM	_	_	22	nummod	_	_
+19	sampai	sampai	ADP	_	_	22	case	_	_
+20	dua	dua	NUM	_	_	22	nummod	_	_
+21	setengah	setengah	NUM	_	_	22	nummod	_	_
+22	meter	meter	NOUN	_	_	17	nummod	_	_
+23	,	,	PUNCT	_	_	29	punct	_	_
+24	sedangkan	sedangkan	SCONJ	_	_	29	mark	_	_
+25	di	di	ADP	_	_	27	case	_	_
+26	atas	atas	ADP	_	_	27	case	_	_
+27	kain	kain	NOUN	_	_	29	obl	_	_
+28	tersebut	tersebut	DET	_	_	27	det	_	_
+29	diisi	isi	VERB	_	_	9	advcl	_	_
+30	rurub	rurub	NOUN	_	_	29	obj	_	_
+31	sinom	sinom	NOUN	_	_	30	compound	_	_
+32	sebanyak	sebanyak	ADP	_	_	34	case	_	_
+33	lima	lima	NUM	_	_	34	nummod	_	_
+34	buah	buah	NOUN	_	_	30	nmod	_	_
+35	.	.	PUNCT	_	_	9	punct	_	_
+
+RELATIONS:
+  [0] kain (penutup jenazah) (None) --[DIISI_DENGAN]--> rurub sinom sebanyak lima buah (SARANA_RITUAL)  type=ENTITY source=manual_override
+
+### S3800
+TEXT: rurub sinom adalah hiasan yang terbuat dari blangsah (bunga pinang yang belum mekar) dijarit bersama daun kelapa muda (busung), dengan panjang kira-kira 40 sampai 45 sentimeter.
+NER: rurub sinom -> SARANA_RITUAL [cultural] (canonical: Rurub Sinom) | blangsah -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S3800
+# text = rurub sinom adalah hiasan yang terbuat dari blangsah (bunga pinang yang belum mekar) dijarit bersama daun kelapa muda (busung), dengan panjang kira-kira 40 sampai 45 sentimeter.
+1	rurub	rurub	PROPN	_	_	4	nsubj	_	_
+2	sinom	sinom	PROPN	_	_	1	flat:name	_	_
+3	adalah	adalah	AUX	_	_	4	cop	_	_
+4	hiasan	hias	NOUN	_	_	0	root	_	_
+5	yang	yang	PRON	_	_	6	nsubj:pass	_	_
+6	terbuat	buat	VERB	_	_	4	acl:relcl	_	_
+7	dari	dari	ADP	_	_	8	case	_	_
+8	blangsah	blangsah	NOUN	_	_	6	obl	_	_
+9	(	(	PUNCT	_	_	10	punct	_	_
+10	bunga	bunga	NOUN	_	_	8	appos	_	_
+11	pinang	pinang	NOUN	_	_	10	compound	_	_
+12	yang	yang	PRON	_	_	14	nsubj	_	_
+13	belum	belum	PART	_	_	14	advmod	_	_
+14	mekar	mekar	VERB	_	_	10	acl:relcl	_	_
+15	)	)	PUNCT	_	_	10	punct	_	_
+16	dijarit	jarit	VERB	_	_	8	acl:relcl	_	_
+17	bersama	bersama	ADP	_	_	18	case	_	_
+18	daun	daun	NOUN	_	_	16	obl	_	_
+19	kelapa	kelapa	NOUN	_	_	18	compound	_	_
+20	muda	muda	ADJ	_	_	19	amod	_	_
+21	(	(	PUNCT	_	_	22	punct	_	_
+22	busung	busung	NOUN	_	_	18	appos	_	_
+23	)	)	PUNCT	_	_	22	punct	_	_
+24	,	,	PUNCT	_	_	26	punct	_	_
+25	dengan	dengan	ADP	_	_	26	case	_	_
+26	panjang	panjang	NOUN	_	_	18	nmod	_	_
+27	kira-kira	kira	ADV	_	_	26	advmod	_	_
+28	40	40	NUM	_	_	31	nummod	_	_
+29	sampai	sampai	ADP	_	_	31	case	_	_
+30	45	45	NUM	_	_	31	nummod	_	_
+31	sentimeter	sentimeter	NOUN	_	_	26	nmod	_	_
+32	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] rurub sinom (SARANA_RITUAL) --[ADALAH]--> hiasan (None)  type=LITERAL source=manual_override
+  [1] hiasan (None) --[TERBUAT_DARI]--> blangsah (SARANA_RITUAL)  type=ENTITY source=manual_override
+  [2] hiasan (None) --[TERBUAT_DARI]--> daun kelapa muda (busung) (None)  type=LITERAL source=manual_override
+  [3] blangsah (SARANA_RITUAL) --[ADALAH]--> bunga pinang yang belum mekar (None)  type=LITERAL source=manual_override
+  [4] rurub sinom (SARANA_RITUAL) --[BERUKURAN_PANJANG]--> kira-kira 40 sampai 45 sentimeter (None)  type=LITERAL source=manual_override
+
+### S3802
+TEXT: setelah semua sudah selesai dilakukan, barulah kemudian jenazah dibawa ke balai-balai (bale semanggen) tempat jenazah disemayamkan.
+NER: jenazah -> ISTILAH_UMUM_RITUAL [cultural] | bale semanggen -> BANGUNAN_RITUAL [cultural]
+PARSE:
+# sent_id = S3802
+# text = setelah semua sudah selesai dilakukan, barulah kemudian jenazah dibawa ke balai-balai (bale semanggen) tempat jenazah disemayamkan.
+1	setelah	setelah	ADP	_	_	5	case	_	_
+2	semua	semua	PRON	_	_	4	nsubj	_	_
+3	sudah	sudah	AUX	_	_	4	aux	_	_
+4	selesai	selesai	VERB	_	_	5	advcl	_	_
+5	dilakukan	laku	VERB	_	_	11	advcl	_	_
+6	,	,	PUNCT	_	_	5	punct	_	_
+7	baru	baru	ADV	_	_	11	advmod	_	_
+8	lah	lah	PART	_	_	7	advmod:emph	_	_
+9	kemudian	kemudian	ADV	_	_	11	advmod	_	_
+10	jenazah	jenazah	NOUN	_	_	11	nsubj:pass	_	_
+11	dibawa	bawa	VERB	_	_	0	root	_	_
+12	ke	ke	ADP	_	_	13	case	_	_
+13	balai-balai	balai	NOUN	_	_	11	obl	_	_
+14	(	(	PUNCT	_	_	15	punct	_	_
+15	bale	bale	NOUN	_	_	13	appos	_	_
+16	semanggen	semanggen	NOUN	_	_	15	compound	_	_
+17	)	)	PUNCT	_	_	15	punct	_	_
+18	tempat	tempat	NOUN	_	_	20	nsubj:pass	_	_
+19	jenazah	jenazah	NOUN	_	_	18	compound	_	_
+20	disemayamkan	semayam	VERB	_	_	13	acl:relcl	_	_
+21	.	.	PUNCT	_	_	11	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[DIBAWA_KE]--> balai-balai (None)  type=LITERAL source=dependency_rule
+  [1] balai-balai (None) --[ADALAH]--> bale semanggen (BANGUNAN_RITUAL)  type=ENTITY source=object_decomposition
+
+### S3811
+TEXT: untuk jenazah yang dimasukkan ke dalam peti, biasanya rurub sinom yang tadinya telah ditaruh di atas gulungan jenazah, diambil terlebih dulu.
+NER: jenazah -> ISTILAH_UMUM_RITUAL [cultural] | rurub sinom -> SARANA_RITUAL [cultural] (canonical: Rurub Sinom)
+PARSE:
+# sent_id = S3811
+# text = untuk jenazah yang dimasukkan ke dalam peti, biasanya rurub sinom yang tadinya telah ditaruh di atas gulungan jenazah, diambil terlebih dulu.
+1	untuk	untuk	ADP	_	_	2	case	_	_
+2	jenazah	jenazah	NOUN	_	_	22	obl	_	_
+3	yang	yang	PRON	_	_	4	nsubj:pass	_	_
+4	dimasukkan	masuk	VERB	_	_	2	acl:relcl	_	_
+5	ke	ke	ADP	_	_	7	case	_	_
+6	dalam	dalam	ADP	_	_	7	case	_	_
+7	peti	peti	NOUN	_	_	4	obl	_	_
+8	,	,	PUNCT	_	_	2	punct	_	_
+9	biasanya	biasanya	ADV	_	_	16	advmod	_	_
+10	rurub	rurub	NOUN	_	_	22	nsubj:pass	_	_
+11	sinom	sinom	NOUN	_	_	10	compound	_	_
+12	yang	yang	PRON	_	_	16	nsubj:pass	_	_
+13	tadi	tadi	NOUN	_	_	10	nmod	_	_
+14	nya	dia	PRON	_	_	13	nmod:poss	_	_
+15	telah	telah	AUX	_	_	16	aux	_	_
+16	ditaruh	taruh	VERB	_	_	10	acl:relcl	_	_
+17	di	di	ADP	_	_	19	case	_	_
+18	atas	atas	ADP	_	_	19	case	_	_
+19	gulungan	gulung	NOUN	_	_	16	obl	_	_
+20	jenazah	jenazah	NOUN	_	_	19	compound	_	_
+21	,	,	PUNCT	_	_	2	punct	_	_
+22	diambil	ambil	VERB	_	_	0	root	_	_
+23	terlebih	terlebih	ADV	_	_	22	advmod	_	_
+24	dulu	dulu	ADV	_	_	23	fixed	_	_
+25	.	.	PUNCT	_	_	22	punct	_	_
+
+RELATIONS:
+  [0] rurub sinom (None) --[DIAMBIL_DARI]--> gulungan jenazah (sebelum dimasukkan ke peti) (None)  type=LITERAL source=manual_override
+
+### S3812
+TEXT: setelah jenazah dimasukkan ke dalam peti, dan peti telah ditutup rapat maka rurub sinom tadi ditaruh di atas peti dengan posisi menaruhnya sama seperti sebelumnya yaitu di atas kepala, leher, perut, paha dan kaki dengan posisi melintang, seperti ketika menaruh di atas jenazah.
+NER: jenazah -> ISTILAH_UMUM_RITUAL [cultural] | rurub sinom -> SARANA_RITUAL [cultural] (canonical: Rurub Sinom)
+PARSE:
+# sent_id = S3812
+# text = setelah jenazah dimasukkan ke dalam peti, dan peti telah ditutup rapat maka rurub sinom tadi ditaruh di atas peti dengan posisi menaruhnya sama seperti sebelumnya yaitu di atas kepala, leher, perut, paha dan kaki dengan posisi melintang, seperti ketika menaruh di atas jenazah.
+1	setelah	setelah	ADP	_	_	2	case	_	_
+2	jenazah	jenazah	NOUN	_	_	3	nsubj:pass	_	_
+3	dimasukkan	masuk	VERB	_	_	0	root	_	_
+4	ke	ke	ADP	_	_	6	case	_	_
+5	dalam	dalam	ADP	_	_	6	case	_	_
+6	peti	peti	NOUN	_	_	3	obl	_	_
+7	,	,	PUNCT	_	_	11	punct	_	_
+8	dan	dan	CCONJ	_	_	11	cc	_	_
+9	peti	peti	NOUN	_	_	11	nsubj:pass	_	_
+10	telah	telah	AUX	_	_	11	aux	_	_
+11	ditutup	tutup	VERB	_	_	3	conj	_	_
+12	rapat	rapat	NOUN	_	_	11	obj	_	_
+13	maka	maka	SCONJ	_	_	17	mark	_	_
+14	rurub	rurub	NOUN	_	_	17	nsubj:pass	_	_
+15	sinom	sinom	NOUN	_	_	14	compound	_	_
+16	tadi	tadi	NOUN	_	_	15	compound	_	_
+17	ditaruh	taruh	VERB	_	_	11	advcl	_	_
+18	di	di	ADP	_	_	20	case	_	_
+19	atas	atas	ADP	_	_	20	case	_	_
+20	peti	peti	NOUN	_	_	17	obl	_	_
+21	dengan	dengan	ADP	_	_	22	case	_	_
+22	posisi	posisi	NOUN	_	_	17	obl	_	_
+23	menaruh	taruh	VERB	_	_	22	acl	_	_
+24	nya	dia	PRON	_	_	23	obj	_	_
+25	sama	sama	ADJ	_	_	23	amod	_	_
+26	seperti	seperti	ADP	_	_	27	case	_	_
+27	sebelumnya	sebelumnya	ADJ	_	_	25	amod	_	_
+28	yaitu	yaitu	ADP	_	_	30	case	_	_
+29	di	di	ADP	_	_	30	case	_	_
+30	atas	atas	NOUN	_	_	23	obl	_	_
+31	kepala	kepala	NOUN	_	_	30	compound	_	_
+32	,	,	PUNCT	_	_	33	punct	_	_
+33	leher	leher	NOUN	_	_	30	conj	_	_
+34	,	,	PUNCT	_	_	35	punct	_	_
+35	perut	perut	NOUN	_	_	30	conj	_	_
+36	,	,	PUNCT	_	_	37	punct	_	_
+37	paha	paha	NOUN	_	_	30	conj	_	_
+38	dan	dan	CCONJ	_	_	39	cc	_	_
+39	kaki	kaki	NOUN	_	_	30	conj	_	_
+40	dengan	dengan	ADP	_	_	41	case	_	_
+41	posisi	posisi	NOUN	_	_	37	nmod	_	_
+42	melintang	lintang	VERB	_	_	41	amod	_	_
+43	,	,	PUNCT	_	_	46	punct	_	_
+44	seperti	seperti	SCONJ	_	_	46	mark	_	_
+45	ketika	ketika	SCONJ	_	_	46	mark	_	_
+46	menaruh	taruh	VERB	_	_	41	acl	_	_
+47	di	di	ADP	_	_	49	case	_	_
+48	atas	atas	ADP	_	_	49	case	_	_
+49	jenazah	jenazah	NOUN	_	_	46	obl	_	_
+50	.	.	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[DIMASUKKAN_KE_DALAM]--> peti (None)  type=LITERAL source=manual_override
+  [1] rurub sinom tadi (SARANA_RITUAL) --[DILETAKKAN_DI]--> atas peti (None)  type=LITERAL source=manual_override
+  [2] rurub sinom tadi (SARANA_RITUAL) --[DILETAKKAN_MELINTANG_DI]--> kepala, leher, perut, paha dan kaki (None)  type=LITERAL source=manual_override
+
+### S3816
+TEXT: adapun "ante" yang digunakan untuk "ngeringkes" adalah terbuat dari bilahan-bilahan bambu yang disebut dengan "galar".
+NER: ante -> SARANA_RITUAL [cultural] | ngeringkes -> TAHAPAN_UPACARA [cultural] | galar -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S3816
+# text = adapun "ante" yang digunakan untuk "ngeringkes" adalah terbuat dari bilahan-bilahan bambu yang disebut dengan "galar".
+1	ada	ada	ADV	_	_	13	advmod	_	_
+2	pun	pun	PART	_	_	1	advmod:emph	_	_
+3	"	"	PUNCT	_	_	4	punct	_	_
+4	ante	ante	NOUN	_	_	13	nsubj:pass	_	_
+5	"	"	PUNCT	_	_	4	punct	_	_
+6	yang	yang	PRON	_	_	7	nsubj:pass	_	_
+7	digunakan	guna	VERB	_	_	4	acl:relcl	_	_
+8	untuk	untuk	ADP	_	_	10	case	_	_
+9	"	"	PUNCT	_	_	10	punct	_	_
+10	ngeringkes	ngeringkes	PROPN	_	_	7	obl	_	_
+11	"	"	PUNCT	_	_	10	punct	_	_
+12	adalah	adalah	AUX	_	_	13	cop	_	_
+13	terbuat	buat	VERB	_	_	0	root	_	_
+14	dari	dari	ADP	_	_	15	case	_	_
+15	bilahan-bilahan	bilah	NOUN	_	_	13	obl	_	_
+16	bambu	bambu	NOUN	_	_	15	compound	_	_
+17	yang	yang	PRON	_	_	18	nsubj:pass	_	_
+18	disebut	sebut	VERB	_	_	15	acl:relcl	_	_
+19	dengan	dengan	ADP	_	_	21	case	_	_
+20	"	"	PUNCT	_	_	21	punct	_	_
+21	galar	galar	NOUN	_	_	18	obl	_	_
+22	"	"	PUNCT	_	_	21	punct	_	_
+23	.	.	PUNCT	_	_	13	punct	_	_
+
+RELATIONS:
+  [0] ante (SARANA_RITUAL) --[TERBUAT_DARI]--> bilahan-bilahan bambu (None)  type=LITERAL source=dependency_rule
+  [1] bilahan-bilahan bambu (ante) (None) --[DIKENAL_SEBAGAI]--> galar (SARANA_RITUAL)  type=ENTITY source=manual_override
+
+### S3836
+TEXT: cawan, "galar" yang ketekannya jatuh pada "cawan", maka bale-bale / dipan yang menggunakan "galar" dengan ketekan "cawan" sangat baik digunakan untuk dipan /plangkan di warung ataupun di dapur.
+NER: galar -> SARANA_RITUAL [cultural] | bale-bale -> BANGUNAN_RITUAL [cultural]
+PARSE:
+# sent_id = S3836
+# text = cawan, "galar" yang ketekannya jatuh pada "cawan", maka bale-bale / dipan yang menggunakan "galar" dengan ketekan "cawan" sangat baik digunakan untuk dipan /plangkan di warung ataupun di dapur.
+1	cawan	cawan	NOUN	_	_	0	root	_	_
+2	,	,	PUNCT	_	_	4	punct	_	_
+3	"	"	PUNCT	_	_	4	punct	_	_
+4	galar	galar	NOUN	_	_	1	appos	_	_
+5	"	"	PUNCT	_	_	4	punct	_	_
+6	yang	yang	PRON	_	_	7	nsubj	_	_
+7	ketekan	ketek	NOUN	_	_	9	nsubj	_	_
+8	nya	dia	PRON	_	_	7	nmod:poss	_	_
+9	jatuh	jatuh	VERB	_	_	1	acl:relcl	_	_
+10	pada	pada	ADP	_	_	12	case	_	_
+11	"	"	PUNCT	_	_	12	punct	_	_
+12	cawan	cawan	NOUN	_	_	9	obl	_	_
+13	"	"	PUNCT	_	_	12	punct	_	_
+14	,	,	PUNCT	_	_	16	punct	_	_
+15	maka	maka	SCONJ	_	_	31	mark	_	_
+16	bale-bale	bale	NOUN	_	_	31	nsubj:pass	_	_
+17	/	/	PUNCT	_	_	18	punct	_	_
+18	dipan	dipan	NOUN	_	_	16	compound	_	_
+19	yang	yang	PRON	_	_	20	nsubj	_	_
+20	menggunakan	guna	VERB	_	_	16	acl:relcl	_	_
+21	"	"	PUNCT	_	_	22	punct	_	_
+22	galar	galar	NOUN	_	_	20	obj	_	_
+23	"	"	PUNCT	_	_	22	punct	_	_
+24	dengan	dengan	ADP	_	_	25	case	_	_
+25	ketekan	ketek	NOUN	_	_	20	obl	_	_
+26	"	"	PUNCT	_	_	27	punct	_	_
+27	cawan	cawan	NOUN	_	_	25	compound	_	_
+28	"	"	PUNCT	_	_	27	punct	_	_
+29	sangat	sangat	ADV	_	_	30	advmod	_	_
+30	baik	baik	ADJ	_	_	31	advmod	_	_
+31	digunakan	guna	VERB	_	_	9	dep	_	_
+32	untuk	untuk	ADP	_	_	33	case	_	_
+33	dipan	dipan	NOUN	_	_	31	obl	_	_
+34	/plangkan	/plang	PUNCT	_	_	33	punct	_	_
+35	di	di	ADP	_	_	36	case	_	_
+36	warung	warung	NOUN	_	_	31	obl	_	_
+37	atau	atau	CCONJ	_	_	40	cc	_	_
+38	pun	pun	PART	_	_	36	advmod:emph	_	_
+39	di	di	ADP	_	_	40	case	_	_
+40	dapur	dapur	NOUN	_	_	36	nmod	_	_
+41	.	.	PUNCT	_	_	31	punct	_	_
+
+RELATIONS:
+  [0] bale-bale/dipan (None) --[DIPAKAI_UNTUK]--> warung atau dapur (None)  type=LITERAL source=manual_override
+
+### S3843
+TEXT: oleh karena itu "galar' dengan ketekan "guling" sangat bagus digunakan pada bele-bale atau dipan di kamar tidur, dengan harapan bisa cepat membuat ngantuk dan bisa tidur nyenyak.
+NER: galar -> SARANA_RITUAL [cultural] | bale -> BANGUNAN_RITUAL [cultural]
+PARSE:
+# sent_id = S3843
+# text = oleh karena itu "galar' dengan ketekan "guling" sangat bagus digunakan pada bele-bale atau dipan di kamar tidur, dengan harapan bisa cepat membuat ngantuk dan bisa tidur nyenyak.
+1	oleh	oleh	ADP	_	_	14	dep	_	_
+2	karena	karena	ADP	_	_	1	fixed	_	_
+3	itu	itu	PRON	_	_	1	fixed	_	_
+4	"	"	PUNCT	_	_	5	punct	_	_
+5	galar	galar	NOUN	_	_	14	nsubj:pass	_	_
+6	'	'	PUNCT	_	_	5	punct	_	_
+7	dengan	dengan	ADP	_	_	8	case	_	_
+8	ketekan	ketek	NOUN	_	_	5	nmod	_	_
+9	"	"	PUNCT	_	_	10	punct	_	_
+10	guling	guling	VERB	_	_	8	amod	_	_
+11	"	"	PUNCT	_	_	10	punct	_	_
+12	sangat	sangat	ADV	_	_	13	advmod	_	_
+13	bagus	bagus	ADJ	_	_	14	amod	_	_
+14	digunakan	guna	VERB	_	_	0	root	_	_
+15	pada	pada	ADP	_	_	16	case	_	_
+16	bele-bale	bele	NOUN	_	_	14	obl	_	_
+17	atau	atau	CCONJ	_	_	18	cc	_	_
+18	dipan	dipan	NOUN	_	_	16	conj	_	_
+19	di	di	ADP	_	_	20	case	_	_
+20	kamar	kamar	NOUN	_	_	18	nmod	_	_
+21	tidur	tidur	NOUN	_	_	20	compound	_	_
+22	,	,	PUNCT	_	_	27	punct	_	_
+23	dengan	dengan	ADP	_	_	24	case	_	_
+24	harapan	harap	NOUN	_	_	27	obl	_	_
+25	bisa	bisa	AUX	_	_	27	aux	_	_
+26	cepat	cepat	ADJ	_	_	27	advmod	_	_
+27	membuat	buat	VERB	_	_	14	advcl	_	_
+28	ngantuk	ngantuk	ADJ	_	_	27	amod	_	_
+29	dan	dan	CCONJ	_	_	31	cc	_	_
+30	bisa	bisa	AUX	_	_	31	aux	_	_
+31	tidur	tidur	VERB	_	_	27	conj	_	_
+32	nyenyak	nyenyak	ADJ	_	_	31	amod	_	_
+33	.	.	PUNCT	_	_	14	punct	_	_
+
+RELATIONS:
+  [0] galar (dengan ketekan guling) (None) --[DIGUNAKAN_DENGAN_HARAPAN]--> membuat ngantuk dan tidur nyenyak (None)  type=LITERAL source=manual_override
+
+### S3845
+TEXT: cekur, kata "cekur" artinya bertembang, maka "galar" yang ketekannya jatuh pada "cekur", maka bale-bale tersebut sangat baik ditaruh di pura atau di merajan, karena diharapkan kepada setiap yang menduduki bale-bale tersebut timbul keinginannya untuk bertembang seperti makidung atau makekawin, yang sesuai dengan tempatnya di tempat suci.
+NER: galar -> SARANA_RITUAL [cultural] | bale-bale -> BANGUNAN_RITUAL [cultural] | pura -> BANGUNAN_RITUAL [cultural] | merajan -> BANGUNAN_RITUAL [cultural]
+PARSE:
+# sent_id = S3845
+# text = cekur, kata "cekur" artinya bertembang, maka "galar" yang ketekannya jatuh pada "cekur", maka bale-bale tersebut sangat baik ditaruh di pura atau di merajan, karena diharapkan kepada setiap yang menduduki bale-bale tersebut timbul keinginannya untuk bertembang seperti makidung atau makekawin, yang sesuai dengan tempatnya di tempat suci.
+1	cekur	cekur	NOUN	_	_	0	root	_	_
+2	,	,	PUNCT	_	_	3	punct	_	_
+3	kata	kata	NOUN	_	_	1	compound	_	_
+4	"	"	PUNCT	_	_	5	punct	_	_
+5	cekur	cekur	NOUN	_	_	3	compound	_	_
+6	"	"	PUNCT	_	_	5	punct	_	_
+7	arti	arti	NOUN	_	_	5	compound	_	_
+8	nya	dia	PRON	_	_	7	nmod:poss	_	_
+9	bertembang	tembang	VERB	_	_	7	acl	_	_
+10	,	,	PUNCT	_	_	13	punct	_	_
+11	maka	maka	SCONJ	_	_	18	mark	_	_
+12	"	"	PUNCT	_	_	13	punct	_	_
+13	galar	galar	NOUN	_	_	9	nsubj	_	_
+14	"	"	PUNCT	_	_	13	punct	_	_
+15	yang	yang	PRON	_	_	16	nsubj	_	_
+16	ketekan	ketek	NOUN	_	_	18	nsubj	_	_
+17	nya	dia	PRON	_	_	16	nmod:poss	_	_
+18	jatuh	jatuh	VERB	_	_	13	acl:relcl	_	_
+19	pada	pada	ADP	_	_	21	case	_	_
+20	"	"	PUNCT	_	_	21	punct	_	_
+21	cekur	cekur	NOUN	_	_	18	obl	_	_
+22	"	"	PUNCT	_	_	21	punct	_	_
+23	,	,	PUNCT	_	_	29	punct	_	_
+24	maka	maka	SCONJ	_	_	29	mark	_	_
+25	bale-bale	bale	NOUN	_	_	29	nsubj:pass	_	_
+26	tersebut	tersebut	DET	_	_	25	det	_	_
+27	sangat	sangat	ADV	_	_	29	advmod	_	_
+28	baik	baik	ADJ	_	_	29	advmod	_	_
+29	ditaruh	taruh	VERB	_	_	9	advcl	_	_
+30	di	di	ADP	_	_	31	case	_	_
+31	pura	pura	NOUN	_	_	29	obl	_	_
+32	atau	atau	CCONJ	_	_	34	cc	_	_
+33	di	di	ADP	_	_	34	case	_	_
+34	merajan	meraj	NOUN	_	_	31	nmod	_	_
+35	,	,	PUNCT	_	_	37	punct	_	_
+36	karena	karena	SCONJ	_	_	37	mark	_	_
+37	diharapkan	harap	VERB	_	_	29	advcl	_	_
+38	kepada	kepada	ADP	_	_	41	case	_	_
+39	setiap	setiap	DET	_	_	40	det	_	_
+40	yang	yang	PRON	_	_	41	nsubj	_	_
+41	menduduki	duduk	VERB	_	_	44	csubj	_	_
+42	bale-bale	bale	NOUN	_	_	41	obj	_	_
+43	tersebut	tersebut	DET	_	_	42	det	_	_
+44	timbul	timbul	VERB	_	_	9	advcl	_	_
+45	keinginan	ingin	NOUN	_	_	44	obj	_	_
+46	nya	dia	PRON	_	_	45	nmod:poss	_	_
+47	untuk	untuk	SCONJ	_	_	48	mark	_	_
+48	bertembang	tembang	VERB	_	_	45	acl	_	_
+49	seperti	seperti	ADP	_	_	50	case	_	_
+50	makidung	makidung	NOUN	_	_	48	obl	_	_
+51	atau	atau	CCONJ	_	_	52	cc	_	_
+52	makekawin	makekawin	NOUN	_	_	50	conj	_	_
+53	,	,	PUNCT	_	_	55	punct	_	_
+54	yang	yang	PRON	_	_	55	nsubj	_	_
+55	sesuai	sesuai	ADJ	_	_	50	acl:relcl	_	_
+56	dengan	dengan	ADP	_	_	57	case	_	_
+57	tempat	tempat	NOUN	_	_	55	nmod	_	_
+58	nya	dia	PRON	_	_	57	nmod:poss	_	_
+59	di	di	ADP	_	_	60	case	_	_
+60	tempat	tempat	NOUN	_	_	57	nmod	_	_
+61	suci	suci	ADJ	_	_	60	amod	_	_
+62	.	.	PUNCT	_	_	9	punct	_	_
+
+RELATIONS:
+  [0] bale-bale (None) --[DILETAKKAN_DI]--> pura atau merajan (BANGUNAN_RITUAL)  type=ENTITY source=manual_override
+
+### S3852
+TEXT: apabila ingin mendapatkan ketekan "cekur", maka "galar" akan dibuat jumlahnya kelipatan 5, misalnya 5, 10, 15, 20, 25, 30 dan seterusnya.
+NER: galar -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S3852
+# text = apabila ingin mendapatkan ketekan "cekur", maka "galar" akan dibuat jumlahnya kelipatan 5, misalnya 5, 10, 15, 20, 25, 30 dan seterusnya.
+1	apabila	apabila	SCONJ	_	_	3	mark	_	_
+2	ingin	ingin	AUX	_	_	3	aux	_	_
+3	mendapatkan	dapat	VERB	_	_	14	advcl	_	_
+4	ketekan	ketek	NOUN	_	_	3	obj	_	_
+5	"	"	PUNCT	_	_	6	punct	_	_
+6	cekur	cekur	NOUN	_	_	4	compound	_	_
+7	"	"	PUNCT	_	_	6	punct	_	_
+8	,	,	PUNCT	_	_	14	punct	_	_
+9	maka	maka	SCONJ	_	_	14	mark	_	_
+10	"	"	PUNCT	_	_	11	punct	_	_
+11	galar	galar	NOUN	_	_	14	nsubj:pass	_	_
+12	"	"	PUNCT	_	_	11	punct	_	_
+13	akan	akan	AUX	_	_	14	aux	_	_
+14	dibuat	buat	VERB	_	_	0	root	_	_
+15	jumlah	jumlah	NOUN	_	_	14	obj	_	_
+16	nya	dia	PRON	_	_	15	nmod:poss	_	_
+17	kelipatan	lipat	NOUN	_	_	15	compound	_	_
+18	5	5	NUM	_	_	17	nummod	_	_
+19	,	,	PUNCT	_	_	20	punct	_	_
+20	misalnya	misalnya	NOUN	_	_	15	appos	_	_
+21	5	5	NUM	_	_	20	nummod	_	_
+22	,	,	PUNCT	_	_	23	punct	_	_
+23	10	10	NUM	_	_	21	nummod	_	_
+24	,	,	PUNCT	_	_	25	punct	_	_
+25	15	15	NUM	_	_	21	nummod	_	_
+26	,	,	PUNCT	_	_	27	punct	_	_
+27	20	20	NUM	_	_	25	nummod	_	_
+28	,	,	PUNCT	_	_	29	punct	_	_
+29	25	25	NUM	_	_	27	nummod	_	_
+30	,	,	PUNCT	_	_	31	punct	_	_
+31	30	30	NUM	_	_	21	nummod	_	_
+32	dan	dan	CCONJ	_	_	33	cc	_	_
+33	seterusnya	seterusnya	NOUN	_	_	21	conj	_	_
+34	.	.	PUNCT	_	_	14	punct	_	_
+
+RELATIONS:
+  [0] jumlah galar (None) --[CONTOH]--> 5, 10, 15, 20, 25, 30, dan seterusnya (kelipatan 5) (None)  type=LITERAL source=manual_override
+
+### S3860
+TEXT: upacara mesulub hanyalah merupakan suatu kepercayaan setempat (kepercayaan lokal) yang telah diwarisi turun temurun dari sejak jaman dulu di daerah atau desa setempat.
+NER: upacara mesulub -> RITUAL_KEMATIAN [cultural]
+PARSE:
+# sent_id = S3860
+# text = upacara mesulub hanyalah merupakan suatu kepercayaan setempat (kepercayaan lokal) yang telah diwarisi turun temurun dari sejak jaman dulu di daerah atau desa setempat.
+1	upacara	upacara	NOUN	_	_	5	nsubj	_	_
+2	mesulub	mesulub	NOUN	_	_	1	compound	_	_
+3	hanya	hanya	ADV	_	_	5	advmod	_	_
+4	lah	lah	PART	_	_	3	advmod:emph	_	_
+5	merupakan	merupakan	VERB	_	_	0	root	_	_
+6	suatu	suatu	DET	_	_	7	det	_	_
+7	kepercayaan	percaya	NOUN	_	_	5	obj	_	_
+8	setempat	setempat	ADJ	_	_	7	amod	_	_
+9	(	(	PUNCT	_	_	10	punct	_	_
+10	kepercayaan	percaya	NOUN	_	_	7	appos	_	_
+11	lokal	lokal	ADJ	_	_	10	amod	_	_
+12	)	)	PUNCT	_	_	10	punct	_	_
+13	yang	yang	PRON	_	_	15	nsubj:pass	_	_
+14	telah	telah	AUX	_	_	15	aux	_	_
+15	diwarisi	waris	VERB	_	_	7	acl:relcl	_	_
+16	turun	turun	VERB	_	_	15	ccomp	_	_
+17	temurun	temurun	ADJ	_	_	16	amod	_	_
+18	dari	dari	ADP	_	_	20	case	_	_
+19	sejak	sejak	ADP	_	_	20	case	_	_
+20	jaman	jam	NOUN	_	_	16	obl	_	_
+21	dulu	dulu	NOUN	_	_	20	compound	_	_
+22	di	di	ADP	_	_	23	case	_	_
+23	daerah	daerah	NOUN	_	_	20	nmod	_	_
+24	atau	atau	CCONJ	_	_	25	cc	_	_
+25	desa	desa	NOUN	_	_	23	conj	_	_
+26	setempat	setempat	ADJ	_	_	25	amod	_	_
+27	.	.	PUNCT	_	_	5	punct	_	_
+
+RELATIONS:
+  [0] upacara mesulub (RITUAL_KEMATIAN) --[ADALAH]--> kepercayaan setempat yang telah diwarisi turun temurun sejak jaman dulu di daerah atau desa setempat (None)  type=LITERAL source=manual_override
+  [1] kepercayaan setempat (None) --[ADALAH]--> kepercayaan lokal (None)  type=LITERAL source=manual_override
+
+### S3862
+TEXT: disamping itu "upacara mesulub" adalah merupakan konsep "satya" atau kesetiaan.
+NER: upacara mesulub -> RITUAL_KEMATIAN [cultural]
+PARSE:
+# sent_id = S3862
+# text = disamping itu "upacara mesulub" adalah merupakan konsep "satya" atau kesetiaan.
+1	disamping	disamping	ADP	_	_	8	case	_	_
+2	itu	itu	DET	_	_	8	det	_	_
+3	"	"	PUNCT	_	_	4	punct	_	_
+4	upacara	upacara	NOUN	_	_	8	nsubj	_	_
+5	mesulub	mesulub	NOUN	_	_	4	compound	_	_
+6	"	"	PUNCT	_	_	4	punct	_	_
+7	adalah	adalah	AUX	_	_	8	cop	_	_
+8	merupakan	merupakan	VERB	_	_	0	root	_	_
+9	konsep	konsep	NOUN	_	_	8	obj	_	_
+10	"	"	PUNCT	_	_	11	punct	_	_
+11	satya	satya	NOUN	_	_	9	compound	_	_
+12	"	"	PUNCT	_	_	11	punct	_	_
+13	atau	atau	CCONJ	_	_	14	cc	_	_
+14	kesetiaan	setia	NOUN	_	_	11	conj	_	_
+15	.	.	PUNCT	_	_	8	punct	_	_
+
+RELATIONS:
+  [0] upacara mesulub (RITUAL_KEMATIAN) --[ADALAH]--> konsep satya (kesetiaan) (None)  type=LITERAL source=manual_override

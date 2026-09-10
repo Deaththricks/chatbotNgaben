@@ -1,0 +1,1840 @@
+CHUNK 4/8 - sentences S1699 .. S2198  (59 sentences)
+
+### S1699
+TEXT: sangaskara, samskara atau panyangaskara adalah upacara penyucian.
+NER: sangaskara -> TAHAPAN_UPACARA [cultural]
+PARSE:
+# sent_id = S1699
+# text = sangaskara, samskara atau panyangaskara adalah upacara penyucian.
+1	sangaskara	sangaskara	PROPN	_	_	7	nsubj	_	_
+2	,	,	PUNCT	_	_	3	punct	_	_
+3	samskara	samskara	NOUN	_	_	1	conj	_	_
+4	atau	atau	CCONJ	_	_	5	cc	_	_
+5	panyangaskara	panyangaskara	PROPN	_	_	1	conj	_	_
+6	adalah	adalah	AUX	_	_	7	cop	_	_
+7	upacara	upacara	NOUN	_	_	0	root	_	_
+8	penyucian	suci	NOUN	_	_	7	compound	_	_
+9	.	.	PUNCT	_	_	7	punct	_	_
+
+RELATIONS:
+  [0] sangaskara, samskara, atau panyangaskara (TAHAPAN_UPACARA) --[ADALAH]--> upacara penyucian (None)  type=LITERAL source=dependency_rule
+
+### S1713
+TEXT: sebentar kemudian, adegan yang semula berada di samping jenazah, diambil dengan penuh hormat oleh keluarga yang ngaben (bila ada anak mendiang yang terkemuka).
+NER: adegan -> SARANA_RITUAL [cultural] (canonical: Adegan) | jenazah -> ISTILAH_UMUM_RITUAL [cultural] | ngaben -> RITUAL_KEMATIAN [cultural] | mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S1713
+# text = sebentar kemudian, adegan yang semula berada di samping jenazah, diambil dengan penuh hormat oleh keluarga yang ngaben (bila ada anak mendiang yang terkemuka).
+1	sebentar	sebentar	ADV	_	_	12	advmod	_	_
+2	kemudian	kemudian	ADV	_	_	1	fixed	_	_
+3	,	,	PUNCT	_	_	1	punct	_	_
+4	adegan	adegan	NOUN	_	_	12	nsubj:pass	_	_
+5	yang	yang	PRON	_	_	7	nsubj	_	_
+6	semula	semula	NOUN	_	_	7	obl	_	_
+7	berada	ada	VERB	_	_	4	acl:relcl	_	_
+8	di	di	ADP	_	_	9	case	_	_
+9	samping	samping	NOUN	_	_	7	obl	_	_
+10	jenazah	jenazah	NOUN	_	_	9	compound	_	_
+11	,	,	PUNCT	_	_	4	punct	_	_
+12	diambil	ambil	VERB	_	_	0	root	_	_
+13	dengan	dengan	ADP	_	_	15	case	_	_
+14	penuh	penuh	ADJ	_	_	15	amod	_	_
+15	hormat	hormat	NOUN	_	_	12	obl	_	_
+16	oleh	oleh	ADP	_	_	17	case	_	_
+17	keluarga	keluarga	NOUN	_	_	15	nmod	_	_
+18	yang	yang	PRON	_	_	19	nsubj	_	_
+19	ngaben	ngaben	VERB	_	_	17	acl:relcl	_	_
+20	(	(	PUNCT	_	_	22	punct	_	_
+21	bila	bila	SCONJ	_	_	22	mark	_	_
+22	ada	ada	VERB	_	_	17	appos	_	_
+23	anak	anak	NOUN	_	_	22	obj	_	_
+24	mendiang	mendiang	NOUN	_	_	23	compound	_	_
+25	yang	yang	PRON	_	_	26	nsubj	_	_
+26	terkemuka	terkemuka	ADJ	_	_	23	acl:relcl	_	_
+27	)	)	PUNCT	_	_	22	punct	_	_
+28	.	.	PUNCT	_	_	12	punct	_	_
+
+RELATIONS:
+  [0] adegan (SARANA_RITUAL) --[DIAMBIL_OLEH]--> keluarga (yang ngaben) (None)  type=LITERAL source=manual_override
+
+### S1714
+TEXT: adegan itu dibawa menghadap serta melakukan sembah bakti kepada pendeta.
+NER: adegan -> SARANA_RITUAL [cultural] (canonical: Adegan)
+PARSE:
+# sent_id = S1714
+# text = adegan itu dibawa menghadap serta melakukan sembah bakti kepada pendeta.
+1	adegan	adegan	NOUN	_	_	3	nsubj:pass	_	_
+2	itu	itu	DET	_	_	1	det	_	_
+3	dibawa	bawa	VERB	_	_	0	root	_	_
+4	menghadap	hadap	VERB	_	_	3	xcomp	_	_
+5	serta	serta	CCONJ	_	_	6	cc	_	_
+6	melakukan	laku	VERB	_	_	3	conj	_	_
+7	sembah	sembah	NOUN	_	_	6	obj	_	_
+8	bakti	bakti	NOUN	_	_	7	compound	_	_
+9	kepada	kepada	ADP	_	_	10	case	_	_
+10	pendeta	pendeta	NOUN	_	_	6	obl	_	_
+11	.	.	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] adegan (SARANA_RITUAL) --[MELAKUKAN]--> sembah bakti (None)  type=LITERAL source=dependency_rule
+  [1] adegan (SARANA_RITUAL) --[DITUJUKAN_UNTUK]--> pendeta (None)  type=LITERAL source=dependency_rule
+  [2] adegan (SARANA_RITUAL) --[DIBAWA_MENGHADAP]--> pendeta (None)  type=LITERAL source=manual_override
+
+### S1717
+TEXT: adegan, adalah alat upakara, tempat atma mendiang "didudukkan".
+NER: adegan -> SARANA_RITUAL [cultural] (canonical: Adegan) | upakara -> SARANA_RITUAL [cultural] (canonical: Banten) | atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma) | mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S1717
+# text = adegan, adalah alat upakara, tempat atma mendiang "didudukkan".
+1	adegan	adegan	NOUN	_	_	4	nsubj	_	_
+2	,	,	PUNCT	_	_	1	punct	_	_
+3	adalah	adalah	AUX	_	_	4	cop	_	_
+4	alat	alat	NOUN	_	_	0	root	_	_
+5	upakara	upakara	NOUN	_	_	4	compound	_	_
+6	,	,	PUNCT	_	_	7	punct	_	_
+7	tempat	tempat	NOUN	_	_	4	appos	_	_
+8	atma	atma	NOUN	_	_	7	compound	_	_
+9	mendiang	mendiang	NOUN	_	_	8	compound	_	_
+10	"	"	PUNCT	_	_	7	punct	_	_
+11	didudukkan	duduk	VERB	_	_	4	acl	_	_
+12	"	"	PUNCT	_	_	11	punct	_	_
+13	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] adegan (SARANA_RITUAL) --[ADALAH]--> tempat atma mendiang (ISTILAH_UMUM_RITUAL)  type=ENTITY source=manual_override
+
+### S1732
+TEXT: upadesa yang dalam masyarakat kita lebih dikenal dengan nama upanisad, menurut para ahli memang berarti "bisikan dang guru" kepada sisia atau juga berarti "tatwa pengarahan hidup." tentang acara yang pelik ini, satu hal perlu kita catat, bahwa
+NER: upadesa -> TAHAPAN_UPACARA [cultural] | upanisad -> KONSEP_FILOSOFIS [cultural]
+PARSE:
+# sent_id = S1732
+# text = upadesa yang dalam masyarakat kita lebih dikenal dengan nama upanisad, menurut para ahli memang berarti "bisikan dang guru" kepada sisia atau juga berarti "tatwa pengarahan hidup." tentang acara yang pelik ini, satu hal perlu kita catat, bahwa
+1	upadesa	upadesa	NOUN	_	_	7	nsubj:pass	_	_
+2	yang	yang	PRON	_	_	4	det	_	_
+3	dalam	dalam	ADP	_	_	4	case	_	_
+4	masyarakat	masyarakat	NOUN	_	_	1	nmod	_	_
+5	kita	kita	PRON	_	_	4	nmod:poss	_	_
+6	lebih	lebih	ADV	_	_	7	advmod	_	_
+7	dikenal	kenal	VERB	_	_	0	root	_	_
+8	dengan	dengan	ADP	_	_	9	case	_	_
+9	nama	nama	NOUN	_	_	7	obl	_	_
+10	upanisad	upanisad	NOUN	_	_	9	compound	_	_
+11	,	,	PUNCT	_	_	16	punct	_	_
+12	menurut	menurut	ADP	_	_	14	case	_	_
+13	para	para	DET	_	_	14	det	_	_
+14	ahli	ahli	NOUN	_	_	16	obl	_	_
+15	memang	memang	ADV	_	_	16	advmod	_	_
+16	berarti	arti	VERB	_	_	7	advcl	_	_
+17	"	"	PUNCT	_	_	18	punct	_	_
+18	bisikan	bisikan	NOUN	_	_	16	obj	_	_
+19	dang	dang	NOUN	_	_	18	compound	_	_
+20	guru	guru	NOUN	_	_	19	compound	_	_
+21	"	"	PUNCT	_	_	18	punct	_	_
+22	kepada	kepada	ADP	_	_	23	case	_	_
+23	sisia	sisia	NOUN	_	_	18	nmod	_	_
+24	atau	atau	CCONJ	_	_	26	cc	_	_
+25	juga	juga	ADV	_	_	26	advmod	_	_
+26	berarti	arti	VERB	_	_	16	conj	_	_
+27	"	"	PUNCT	_	_	28	punct	_	_
+28	tatwa	tatwa	NOUN	_	_	26	obj	_	_
+29	pengarahan	karah	NOUN	_	_	28	compound	_	_
+30	hidup	hidup	NOUN	_	_	29	compound	_	_
+31	.	.	PUNCT	_	_	16	punct	_	_
+32	"	"	PUNCT	_	_	28	punct	_	_
+33	tentang	tentang	ADP	_	_	34	case	_	_
+34	acara	acara	NOUN	_	_	43	obl	_	_
+35	yang	yang	PRON	_	_	36	nsubj	_	_
+36	pelik	pelik	ADJ	_	_	34	acl:relcl	_	_
+37	ini	ini	DET	_	_	34	det	_	_
+38	,	,	PUNCT	_	_	34	punct	_	_
+39	satu	satu	NUM	_	_	40	nummod	_	_
+40	hal	hal	NOUN	_	_	43	compound	_	_
+41	perlu	perlu	ADV	_	_	43	advmod	_	_
+42	kita	kita	PRON	_	_	43	nsubj	_	_
+43	catat	catat	VERB	_	_	7	dep	_	_
+44	,	,	PUNCT	_	_	43	punct	_	_
+45	bahwa	bahwa	SCONJ	_	_	43	mark	_	_
+
+RELATIONS:
+  [0] upadesa (TAHAPAN_UPACARA) --[DIKENAL_DENGAN]--> nama upanisad (KONSEP_FILOSOFIS)  type=ENTITY source=dependency_rule
+  [1] upadesa (TAHAPAN_UPACARA) --[BERARTI]--> bisikan dang guru (None)  type=LITERAL source=dependency_rule
+  [2] upadesa (None) --[BERARTI]--> tatwa pengarahan hidup (None)  type=LITERAL source=manual_override
+
+### S1738
+TEXT: kalau mendiang semasa hidupnya punya kedudukan tertentu (seorang pemangku, pejabat, sastrawan dan sebagainya), dengan rendah hati mundurlah ida bagus atau ida ayu kita.
+NER: mendiang -> ISTILAH_UMUM_RITUAL [cultural] | pemangku -> ENTITAS_KEAGAMAAN [cultural] (canonical: Pemangku)
+PARSE:
+# sent_id = S1738
+# text = kalau mendiang semasa hidupnya punya kedudukan tertentu (seorang pemangku, pejabat, sastrawan dan sebagainya), dengan rendah hati mundurlah ida bagus atau ida ayu kita.
+1	kalau	kalau	SCONJ	_	_	6	mark	_	_
+2	mendiang	mendiang	NOUN	_	_	6	nsubj	_	_
+3	semasa	semasa	ADP	_	_	4	case	_	_
+4	hidup	hidup	NOUN	_	_	2	nmod	_	_
+5	nya	dia	PRON	_	_	4	nmod:poss	_	_
+6	punya	punya	VERB	_	_	0	root	_	_
+7	kedudukan	duduk	NOUN	_	_	6	obj	_	_
+8	tertentu	tertentu	DET	_	_	7	det	_	_
+9	(	(	PUNCT	_	_	11	punct	_	_
+10	seorang	orang	DET	_	_	11	det	_	_
+11	pemangku	mangku	NOUN	_	_	7	appos	_	_
+12	,	,	PUNCT	_	_	13	punct	_	_
+13	pejabat	pejabat	NOUN	_	_	11	conj	_	_
+14	,	,	PUNCT	_	_	15	punct	_	_
+15	sastrawan	sastrawan	NOUN	_	_	11	conj	_	_
+16	dan	dan	CCONJ	_	_	18	cc	_	_
+17	sebagai	sebagai	ADP	_	_	18	case	_	_
+18	nya	dia	PRON	_	_	11	nmod	_	_
+19	)	)	PUNCT	_	_	11	punct	_	_
+20	,	,	PUNCT	_	_	23	punct	_	_
+21	dengan	dengan	ADP	_	_	23	case	_	_
+22	rendah	rendah	ADJ	_	_	23	amod	_	_
+23	hati	hati	NOUN	_	_	6	obl	_	_
+24	mundur	mundur	VERB	_	_	6	advcl	_	_
+25	lah	lah	PART	_	_	24	advmod:emph	_	_
+26	ida	ida	NOUN	_	_	24	obj	_	_
+27	bagus	bagus	ADJ	_	_	26	amod	_	_
+28	atau	atau	CCONJ	_	_	29	cc	_	_
+29	ida	ida	PRON	_	_	27	conj	_	_
+30	ayu	ayu	NOUN	_	_	29	compound	_	_
+31	kita	kita	PRON	_	_	30	nmod:poss	_	_
+32	.	.	PUNCT	_	_	6	punct	_	_
+
+RELATIONS:
+  [0] mendiang (ISTILAH_UMUM_RITUAL) --[ADALAH]--> pemangku (ENTITAS_KEAGAMAAN)  type=ENTITY source=manual_override
+  [1] mendiang (ISTILAH_UMUM_RITUAL) --[ADALAH]--> pejabat (None)  type=LITERAL source=manual_override
+  [2] mendiang (ISTILAH_UMUM_RITUAL) --[ADALAH]--> sastrawan (None)  type=LITERAL source=manual_override
+  [3] mendiang (ISTILAH_UMUM_RITUAL) --[MEMILIKI_ALIAS]--> ida bagus (KASTA_SOSIAL)  type=ENTITY source=manual_override
+  [4] mendiang (ISTILAH_UMUM_RITUAL) --[MEMILIKI_ALIAS]--> ida ayu (KASTA_SOSIAL)  type=ENTITY source=manual_override
+
+### S1747
+TEXT: begitulah setelah paguntingan dan upadesa, berakhirnya, kembalilah adegan didudukkan pada ruang paturon di samping jenazah.
+NER: paguntingan -> TAHAPAN_UPACARA [cultural] | upadesa -> TAHAPAN_UPACARA [cultural] | adegan -> SARANA_RITUAL [cultural] (canonical: Adegan) | jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S1747
+# text = begitulah setelah paguntingan dan upadesa, berakhirnya, kembalilah adegan didudukkan pada ruang paturon di samping jenazah.
+1	begitu	begitu	ADV	_	_	8	advmod	_	_
+2	lah	lah	PART	_	_	1	advmod:emph	_	_
+3	setelah	setelah	ADP	_	_	4	case	_	_
+4	paguntingan	paguntingan	NOUN	_	_	8	obl	_	_
+5	dan	dan	CCONJ	_	_	6	cc	_	_
+6	upadesa	upadesa	NOUN	_	_	4	conj	_	_
+7	,	,	PUNCT	_	_	4	punct	_	_
+8	berakhir	akhir	VERB	_	_	14	advcl	_	_
+9	nya	nya	DET	_	_	8	det	_	_
+10	,	,	PUNCT	_	_	8	punct	_	_
+11	kembali	kembali	ADV	_	_	14	advmod	_	_
+12	lah	lah	PART	_	_	11	advmod:emph	_	_
+13	adegan	adegan	NOUN	_	_	14	nsubj:pass	_	_
+14	didudukkan	duduk	VERB	_	_	0	root	_	_
+15	pada	pada	ADP	_	_	16	case	_	_
+16	ruang	ruang	NOUN	_	_	14	obl	_	_
+17	paturon	paturon	NOUN	_	_	16	compound	_	_
+18	di	di	ADP	_	_	19	case	_	_
+19	samping	samping	NOUN	_	_	16	nmod	_	_
+20	jenazah	jenazah	NOUN	_	_	19	compound	_	_
+21	.	.	PUNCT	_	_	14	punct	_	_
+
+RELATIONS:
+  [0] adegan (SARANA_RITUAL) --[BERADA_DI]--> ruang paturon (None)  type=LITERAL source=dependency_rule
+  [1] adegan (SARANA_RITUAL) --[BERAKHIR_SETELAH]--> paguntingan (TAHAPAN_UPACARA)  type=ENTITY source=dependency_rule
+  [2] adegan (SARANA_RITUAL) --[BERAKHIR_SETELAH]--> upadesa (TAHAPAN_UPACARA)  type=ENTITY source=dependency_rule
+  [3] sekah kangsen (None) --[DISERTAI_DI]--> samping jenazah (ISTILAH_UMUM_RITUAL)  type=ENTITY source=manual_override
+
+### S1753
+TEXT: dengan demikian, mendiang diyakini akan "akrab" dengan para penghadang itu.
+NER: mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S1753
+# text = dengan demikian, mendiang diyakini akan "akrab" dengan para penghadang itu.
+1	dengan	dengan	ADV	_	_	5	advmod	_	_
+2	demikian	demikian	PRON	_	_	1	fixed	_	_
+3	,	,	PUNCT	_	_	1	punct	_	_
+4	mendiang	mendiang	NOUN	_	_	5	nsubj:pass	_	_
+5	diyakini	yakin	VERB	_	_	0	root	_	_
+6	akan	akan	AUX	_	_	8	aux	_	_
+7	"	"	PUNCT	_	_	8	punct	_	_
+8	akrab	akrab	ADJ	_	_	5	amod	_	_
+9	"	"	PUNCT	_	_	8	punct	_	_
+10	dengan	dengan	ADP	_	_	12	case	_	_
+11	para	para	DET	_	_	12	det	_	_
+12	penghadang	hadang	NOUN	_	_	5	obl	_	_
+13	itu	itu	DET	_	_	12	det	_	_
+14	.	.	PUNCT	_	_	5	punct	_	_
+
+RELATIONS:
+  [0] mendiang (ISTILAH_UMUM_RITUAL) --[AKRAB_DENGAN]--> penghadang (None)  type=LITERAL source=manual_override
+
+### S1754
+TEXT: karena akrab, maka mendiang diterima sebagai "warga baru" dalam pergaulan di alam roh tersebut.
+NER: mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S1754
+# text = karena akrab, maka mendiang diterima sebagai "warga baru" dalam pergaulan di alam roh tersebut.
+1	karena	karena	ADP	_	_	2	case	_	_
+2	akrab	akrab	ADJ	_	_	6	amod	_	_
+3	,	,	PUNCT	_	_	2	punct	_	_
+4	maka	maka	SCONJ	_	_	6	mark	_	_
+5	mendiang	mendiang	NOUN	_	_	6	nsubj:pass	_	_
+6	diterima	terima	VERB	_	_	0	root	_	_
+7	sebagai	sebagai	ADP	_	_	9	case	_	_
+8	"	"	PUNCT	_	_	9	punct	_	_
+9	warga	warga	NOUN	_	_	6	obl	_	_
+10	baru	baru	ADJ	_	_	9	amod	_	_
+11	"	"	PUNCT	_	_	9	punct	_	_
+12	dalam	dalam	ADP	_	_	13	case	_	_
+13	pergaulan	gaul	NOUN	_	_	6	obl	_	_
+14	di	di	ADP	_	_	15	case	_	_
+15	alam	alam	NOUN	_	_	13	nmod	_	_
+16	roh	roh	NOUN	_	_	15	compound	_	_
+17	tersebut	tersebut	DET	_	_	15	det	_	_
+18	.	.	PUNCT	_	_	6	punct	_	_
+
+RELATIONS:
+  [0] mendiang (ISTILAH_UMUM_RITUAL) --[DITERIMA_SEBAGAI]--> warga baru dalam pergaulan alam roh (None)  type=LITERAL source=manual_override
+
+### S1763
+TEXT: tentu saja sebuah banten bebangkit atau pulagembal selaku dasarnya, serta sebuah sekah abin sebagai ciri khususnya.
+NER: banten -> SARANA_RITUAL [cultural] (canonical: Banten) | bebangkit -> SARANA_RITUAL [cultural] | pulagembal -> SARANA_RITUAL [cultural] | sekah abin -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S1763
+# text = tentu saja sebuah banten bebangkit atau pulagembal selaku dasarnya, serta sebuah sekah abin sebagai ciri khususnya.
+1	tentu	tentu	ADV	_	_	5	advmod	_	_
+2	saja	saja	ADV	_	_	1	fixed	_	_
+3	sebuah	buah	DET	_	_	4	det	_	_
+4	banten	banten	NOUN	_	_	5	nsubj	_	_
+5	bebangkit	bangkit	VERB	_	_	0	root	_	_
+6	atau	atau	CCONJ	_	_	7	cc	_	_
+7	pulagembal	pulagembal	ADJ	_	_	5	conj	_	_
+8	selaku	selaku	VERB	_	_	5	conj	_	_
+9	dasar	dasar	NOUN	_	_	8	obj	_	_
+10	nya	nya	DET	_	_	9	det	_	_
+11	,	,	PUNCT	_	_	14	punct	_	_
+12	serta	serta	CCONJ	_	_	14	cc	_	_
+13	sebuah	buah	DET	_	_	14	det	_	_
+14	sekah	sekah	NOUN	_	_	5	conj	_	_
+15	abin	abin	NOUN	_	_	14	compound	_	_
+16	sebagai	sebagai	ADP	_	_	17	case	_	_
+17	ciri	ciri	NOUN	_	_	14	nmod	_	_
+18	khususnya	khususnya	ADJ	_	_	17	amod	_	_
+19	.	.	PUNCT	_	_	5	punct	_	_
+
+RELATIONS:
+  [0] sekah abin (None) --[BERPERAN_SEBAGAI]--> ciri khusus (None)  type=LITERAL source=manual_override
+  [1] banten bebangkit atau pulagembal (SARANA_RITUAL) --[BERPERAN_SEBAGAI]--> dasar (None)  type=LITERAL source=manual_override
+
+### S1764
+TEXT: sebagaimana namanya, sekah abin ini dipangku (abin = dipangku) oleh yang menggelar yadnya di kala ia menghaturkan sembah bhakti.
+NER: sekah abin -> SARANA_RITUAL [cultural] | yadnya -> KONSEP_FILOSOFIS [cultural] | sembah bhakti -> TAHAPAN_UPACARA [cultural]
+PARSE:
+# sent_id = S1764
+# text = sebagaimana namanya, sekah abin ini dipangku (abin = dipangku) oleh yang menggelar yadnya di kala ia menghaturkan sembah bhakti.
+1	sebagaimana	sebagaimana	ADP	_	_	2	case	_	_
+2	nama	nama	NOUN	_	_	8	obl	_	_
+3	nya	dia	PRON	_	_	2	nmod:poss	_	_
+4	,	,	PUNCT	_	_	2	punct	_	_
+5	sekah	sekah	NOUN	_	_	8	nsubj:pass	_	_
+6	abin	abin	NOUN	_	_	5	compound	_	_
+7	ini	ini	DET	_	_	5	det	_	_
+8	dipangku	pangku	VERB	_	_	0	root	_	_
+9	(	(	PUNCT	_	_	10	punct	_	_
+10	abin	abin	NOUN	_	_	8	appos	_	_
+11	=	=	SYM	_	_	10	compound	_	_
+12	dipangku	pangku	VERB	_	_	10	compound	_	_
+13	)	)	PUNCT	_	_	10	punct	_	_
+14	oleh	oleh	SCONJ	_	_	16	mark	_	_
+15	yang	yang	PRON	_	_	16	nsubj	_	_
+16	menggelar	gelar	VERB	_	_	8	acl	_	_
+17	yadnya	yadnya	NOUN	_	_	16	obj	_	_
+18	di	di	ADP	_	_	19	case	_	_
+19	kala	kala	NOUN	_	_	16	obl	_	_
+20	ia	dia	PRON	_	_	21	nsubj	_	_
+21	menghaturkan	menghaturkan	VERB	_	_	16	xcomp	_	_
+22	sembah	sembah	NOUN	_	_	21	obj	_	_
+23	bhakti	bhakti	NOUN	_	_	22	compound	_	_
+24	.	.	PUNCT	_	_	8	punct	_	_
+
+RELATIONS:
+  [0] sekah abin (None) --[DIPANGKU_OLEH]--> yang menggelar yadnya (None)  type=LITERAL source=manual_override
+
+### S1776
+TEXT: upakara itu berupa uang kepeng yang dibungkus dengan daun dapdap dan diikat dengan benang tridatu (merah, hitam dan putih).
+NER: upakara -> SARANA_RITUAL [cultural] (canonical: Banten) | kepeng -> SARANA_RITUAL [cultural] | daun dapdap -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S1776
+# text = upakara itu berupa uang kepeng yang dibungkus dengan daun dapdap dan diikat dengan benang tridatu (merah, hitam dan putih).
+1	upakara	upakara	NOUN	_	_	3	nsubj	_	_
+2	itu	itu	DET	_	_	1	det	_	_
+3	berupa	rupa	VERB	_	_	0	root	_	_
+4	uang	uang	NOUN	_	_	3	obj	_	_
+5	kepeng	kepeng	NOUN	_	_	4	compound	_	_
+6	yang	yang	PRON	_	_	7	nsubj:pass	_	_
+7	dibungkus	bungkus	VERB	_	_	4	acl:relcl	_	_
+8	dengan	dengan	ADP	_	_	9	case	_	_
+9	daun	daun	NOUN	_	_	7	obl	_	_
+10	dapdap	dapdap	NOUN	_	_	9	compound	_	_
+11	dan	dan	CCONJ	_	_	12	cc	_	_
+12	diikat	ikat	VERB	_	_	7	conj	_	_
+13	dengan	dengan	ADP	_	_	14	case	_	_
+14	benang	benang	NOUN	_	_	12	obl	_	_
+15	tridatu	tridatu	NOUN	_	_	14	compound	_	_
+16	(	(	PUNCT	_	_	17	punct	_	_
+17	merah	merah	ADJ	_	_	14	appos	_	_
+18	,	,	PUNCT	_	_	19	punct	_	_
+19	hitam	hitam	ADJ	_	_	17	amod	_	_
+20	dan	dan	CCONJ	_	_	21	cc	_	_
+21	putih	putih	ADJ	_	_	17	conj	_	_
+22	)	)	PUNCT	_	_	17	punct	_	_
+23	.	.	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] upakara (SARANA_RITUAL) --[BERUPA]--> uang kepeng (SARANA_RITUAL)  type=ENTITY source=dependency_rule
+  [1] uang kepeng (None) --[DIBUNGKUS_DENGAN]--> daun dapdap (SARANA_RITUAL)  type=ENTITY source=manual_override
+  [2] uang kepeng (None) --[DIIKAT_DENGAN]--> benang tridatu (merah, hitam dan putih) (None)  type=LITERAL source=manual_override
+
+### S1782
+TEXT: menurut sang arif bijaksana, pamerasan adalah upacara timbang terima secara keagamaan, antara mendiang yang akan pergi ke dunia lain dengan keluarga (terutama anak-anak) yang masih hidup.
+NER: pamerasan -> TAHAPAN_UPACARA [cultural] | mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S1782
+# text = menurut sang arif bijaksana, pamerasan adalah upacara timbang terima secara keagamaan, antara mendiang yang akan pergi ke dunia lain dengan keluarga (terutama anak-anak) yang masih hidup.
+1	menurut	menurut	ADP	_	_	3	case	_	_
+2	sang	sang	DET	_	_	3	det	_	_
+3	arif	arif	NOUN	_	_	8	nmod	_	_
+4	bijaksana	bijaksana	ADJ	_	_	3	amod	_	_
+5	,	,	PUNCT	_	_	3	punct	_	_
+6	pamerasan	mamer	NOUN	_	_	8	nsubj	_	_
+7	adalah	adalah	AUX	_	_	8	cop	_	_
+8	upacara	upacara	NOUN	_	_	0	root	_	_
+9	timbang	timbang	NOUN	_	_	8	compound	_	_
+10	terima	terima	VERB	_	_	9	acl	_	_
+11	secara	secara	ADP	_	_	12	case	_	_
+12	keagamaan	agama	NOUN	_	_	8	nmod	_	_
+13	,	,	PUNCT	_	_	15	punct	_	_
+14	antara	antara	ADP	_	_	15	case	_	_
+15	mendiang	mendiang	NOUN	_	_	8	nmod	_	_
+16	yang	yang	PRON	_	_	18	nsubj	_	_
+17	akan	akan	AUX	_	_	18	aux	_	_
+18	pergi	pergi	VERB	_	_	15	acl:relcl	_	_
+19	ke	ke	ADP	_	_	20	case	_	_
+20	dunia	dunia	NOUN	_	_	18	obl	_	_
+21	lain	lain	ADJ	_	_	20	amod	_	_
+22	dengan	dengan	ADP	_	_	23	case	_	_
+23	keluarga	keluarga	NOUN	_	_	18	obl	_	_
+24	(	(	PUNCT	_	_	26	punct	_	_
+25	terutama	terutama	ADV	_	_	26	advmod	_	_
+26	anak-anak	anak	NOUN	_	_	23	appos	_	_
+27	)	)	PUNCT	_	_	26	punct	_	_
+28	yang	yang	PRON	_	_	30	nsubj	_	_
+29	masih	masih	ADV	_	_	30	advmod	_	_
+30	hidup	hidup	VERB	_	_	23	acl:relcl	_	_
+31	.	.	PUNCT	_	_	8	punct	_	_
+
+RELATIONS:
+  [0] pamerasan (TAHAPAN_UPACARA) --[ADALAH]--> upacara timbang , antara mendiang yang akan pergi ke dunia lain dengan keluarga ( terutama anak-anak ) yang masih hidup (None)  type=LITERAL source=dependency_rule
+
+### S1783
+TEXT: mendiang menyerahkan swadharma, beban dan tanggung jawab, diiringi dengan penyerahan hak dan berbagai milik yang dulunya ada pada mendiang.
+NER: mendiang -> ISTILAH_UMUM_RITUAL [cultural] | swadharma -> KONSEP_HUKUM_ADAT [cultural]
+PARSE:
+# sent_id = S1783
+# text = mendiang menyerahkan swadharma, beban dan tanggung jawab, diiringi dengan penyerahan hak dan berbagai milik yang dulunya ada pada mendiang.
+1	mendiang	mendiang	PROPN	_	_	2	nsubj	_	_
+2	menyerahkan	serah	VERB	_	_	0	root	_	_
+3	swadharma	swadharma	NOUN	_	_	2	obj	_	_
+4	,	,	PUNCT	_	_	5	punct	_	_
+5	beban	beban	NOUN	_	_	3	conj	_	_
+6	dan	dan	CCONJ	_	_	7	cc	_	_
+7	tanggung	tanggung	NOUN	_	_	3	conj	_	_
+8	jawab	jawab	NOUN	_	_	7	compound	_	_
+9	,	,	PUNCT	_	_	10	punct	_	_
+10	diiringi	iring	VERB	_	_	2	xcomp	_	_
+11	dengan	dengan	ADP	_	_	12	case	_	_
+12	penyerahan	serah	NOUN	_	_	10	obl	_	_
+13	hak	hak	NOUN	_	_	12	compound	_	_
+14	dan	dan	CCONJ	_	_	16	cc	_	_
+15	berbagai	berbagai	DET	_	_	16	det	_	_
+16	milik	milik	NOUN	_	_	12	conj	_	_
+17	yang	yang	PRON	_	_	20	obj	_	_
+18	dulu	dulu	NOUN	_	_	20	obl	_	_
+19	nya	dia	PRON	_	_	18	nmod:poss	_	_
+20	ada	ada	VERB	_	_	16	acl:relcl	_	_
+21	pada	pada	ADP	_	_	22	case	_	_
+22	mendiang	mendiang	NOUN	_	_	20	obl	_	_
+23	.	.	PUNCT	_	_	2	punct	_	_
+
+RELATIONS:
+  [0] mendiang (ISTILAH_UMUM_RITUAL) --[MENYERAHKAN]--> swadharma (KONSEP_HUKUM_ADAT)  type=ENTITY source=dependency_rule
+  [1] mendiang (ISTILAH_UMUM_RITUAL) --[MENYERAHKAN]--> beban (None)  type=LITERAL source=dependency_rule
+  [2] mendiang (ISTILAH_UMUM_RITUAL) --[MENYERAHKAN]--> tanggung jawab (None)  type=LITERAL source=dependency_rule
+  [3] mendiang (None) --[MENYERAHKAN]--> hak dan berbagai milik yang dulunya ada pada mendiang (None)  type=LITERAL source=manual_override
+
+### S1794
+TEXT: upakara ini juga dilengkapi keris (bila ada) dan satu dua perhiasan pusaka (cincin dan sebagainya).
+NER: upakara -> SARANA_RITUAL [cultural] (canonical: Banten)
+PARSE:
+# sent_id = S1794
+# text = upakara ini juga dilengkapi keris (bila ada) dan satu dua perhiasan pusaka (cincin dan sebagainya).
+1	upakara	upakara	NOUN	_	_	4	nsubj:pass	_	_
+2	ini	ini	DET	_	_	1	det	_	_
+3	juga	juga	ADV	_	_	4	advmod	_	_
+4	dilengkapi	lengkap	VERB	_	_	0	root	_	_
+5	keris	keris	NOUN	_	_	4	obj	_	_
+6	(	(	PUNCT	_	_	8	punct	_	_
+7	bila	bila	SCONJ	_	_	8	mark	_	_
+8	ada	ada	VERB	_	_	5	appos	_	_
+9	)	)	PUNCT	_	_	8	punct	_	_
+10	dan	dan	CCONJ	_	_	13	cc	_	_
+11	satu	satu	NUM	_	_	13	nummod	_	_
+12	dua	dua	NUM	_	_	13	nummod	_	_
+13	perhiasan	hias	NOUN	_	_	5	conj	_	_
+14	pusaka	pusaka	NOUN	_	_	13	compound	_	_
+15	(	(	PUNCT	_	_	16	punct	_	_
+16	cincin	cincin	NOUN	_	_	13	appos	_	_
+17	dan	dan	CCONJ	_	_	19	cc	_	_
+18	sebagai	sebagai	ADP	_	_	19	case	_	_
+19	nya	dia	PRON	_	_	16	conj	_	_
+20	)	)	PUNCT	_	_	16	punct	_	_
+21	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] upakara (SARANA_RITUAL) --[DILENGKAPI]--> keris (None)  type=LITERAL source=dependency_rule
+  [1] upakara (SARANA_RITUAL) --[DILENGKAPI]--> satu dua perhiasan pusaka (None)  type=LITERAL source=dependency_rule
+  [2] satu dua perhiasan pusaka (None) --[ADALAH]--> cincin (None)  type=LITERAL source=object_decomposition
+
+### S1823
+TEXT: perlu ditegaskan, sesuai dengan opini masyarakat, bila mendiang di masa hidupnya memegang jabatan, maka dalam pengabenan upacara panebusan merupakan sesuatu yang mutlak atau paling tidak dianggap sangat penting.
+NER: mendiang -> ISTILAH_UMUM_RITUAL [cultural] | pengabenan -> RITUAL_KEMATIAN [cultural] | panebusan -> TAHAPAN_UPACARA [cultural]
+PARSE:
+# sent_id = S1823
+# text = perlu ditegaskan, sesuai dengan opini masyarakat, bila mendiang di masa hidupnya memegang jabatan, maka dalam pengabenan upacara panebusan merupakan sesuatu yang mutlak atau paling tidak dianggap sangat penting.
+1	perlu	perlu	ADV	_	_	2	advmod	_	_
+2	ditegaskan	tegas	VERB	_	_	0	root	_	_
+3	,	,	PUNCT	_	_	4	punct	_	_
+4	sesuai	sesuai	ADJ	_	_	2	amod	_	_
+5	dengan	dengan	ADP	_	_	6	case	_	_
+6	opini	opini	NOUN	_	_	2	obl	_	_
+7	masyarakat	masyarakat	NOUN	_	_	6	compound	_	_
+8	,	,	PUNCT	_	_	15	punct	_	_
+9	bila	bila	SCONJ	_	_	15	mark	_	_
+10	mendiang	mendiang	NOUN	_	_	15	nsubj	_	_
+11	di	di	ADP	_	_	12	case	_	_
+12	masa	masa	NOUN	_	_	10	nmod	_	_
+13	hidup	hidup	NOUN	_	_	12	compound	_	_
+14	nya	dia	PRON	_	_	13	nmod:poss	_	_
+15	memegang	pegang	VERB	_	_	2	advcl	_	_
+16	jabatan	jabat	NOUN	_	_	15	obj	_	_
+17	,	,	PUNCT	_	_	23	punct	_	_
+18	maka	maka	SCONJ	_	_	23	mark	_	_
+19	dalam	dalam	ADP	_	_	20	case	_	_
+20	pengabenan	kaben	NOUN	_	_	23	obl	_	_
+21	upacara	upacara	NOUN	_	_	20	compound	_	_
+22	panebusan	panebusan	NOUN	_	_	21	compound	_	_
+23	merupakan	merupakan	VERB	_	_	2	advcl	_	_
+24	sesuatu	suatu	PRON	_	_	23	obj	_	_
+25	yang	yang	PRON	_	_	26	nsubj	_	_
+26	mutlak	mutlak	ADJ	_	_	24	acl:relcl	_	_
+27	atau	atau	CCONJ	_	_	30	cc	_	_
+28	paling	paling	ADV	_	_	30	advmod	_	_
+29	tidak	tidak	PART	_	_	30	advmod	_	_
+30	dianggap	anggap	VERB	_	_	26	conj	_	_
+31	sangat	sangat	ADV	_	_	32	advmod	_	_
+32	penting	penting	ADJ	_	_	30	amod	_	_
+33	.	.	PUNCT	_	_	2	punct	_	_
+
+RELATIONS:
+  [0] mendiang (ISTILAH_UMUM_RITUAL) --[MEMEGANG]--> jabatan (None)  type=LITERAL source=dependency_rule
+  [1] upacara panebusan (None) --[ADALAH]--> sesuatu yang mutlak (dalam pengabenan) (None)  type=LITERAL source=manual_override
+
+### S1832
+TEXT: dengan demikian, karma phala orangtua atau leluhur (dalam batas tertentu) dapat diwariskan kepada keturunannya.
+NER: karma phala -> KONSEP_FILOSOFIS [cultural]
+PARSE:
+# sent_id = S1832
+# text = dengan demikian, karma phala orangtua atau leluhur (dalam batas tertentu) dapat diwariskan kepada keturunannya.
+1	dengan	dengan	ADV	_	_	15	advmod	_	_
+2	demikian	demikian	PRON	_	_	1	fixed	_	_
+3	,	,	PUNCT	_	_	1	punct	_	_
+4	karma	karma	NOUN	_	_	15	nsubj:pass	_	_
+5	phala	phala	NOUN	_	_	4	compound	_	_
+6	orangtua	orangtua	NOUN	_	_	5	compound	_	_
+7	atau	atau	CCONJ	_	_	8	cc	_	_
+8	leluhur	leluhur	NOUN	_	_	6	conj	_	_
+9	(	(	PUNCT	_	_	11	punct	_	_
+10	dalam	dalam	ADP	_	_	11	case	_	_
+11	batas	batas	NOUN	_	_	8	nmod	_	_
+12	tertentu	tertentu	DET	_	_	11	amod	_	_
+13	)	)	PUNCT	_	_	11	punct	_	_
+14	dapat	dapat	AUX	_	_	15	aux	_	_
+15	diwariskan	waris	VERB	_	_	0	root	_	_
+16	kepada	kepada	ADP	_	_	17	case	_	_
+17	keturunan	turun	NOUN	_	_	15	obl	_	_
+18	nya	dia	PRON	_	_	17	nmod:poss	_	_
+19	.	.	PUNCT	_	_	15	punct	_	_
+
+RELATIONS:
+  [0] karma phala orangtua atau leluhur (KONSEP_FILOSOFIS) --[DIWARISKAN_KEPADA]--> keturunan (dalam batas tertentu) (None)  type=LITERAL source=manual_override
+
+### S1845
+TEXT: panebusan dan bahkan semua upacara dalam pitra yadnya pasti berpengaruh kepada kedudukan sang pitara di alam sana.
+NER: panebusan -> TAHAPAN_UPACARA [cultural] | pitra yadnya -> RITUAL [cultural] (canonical: Pitra Yadnya) | pitara -> ENTITAS_KEAGAMAAN [cultural] (canonical: Pitra)
+PARSE:
+# sent_id = S1845
+# text = panebusan dan bahkan semua upacara dalam pitra yadnya pasti berpengaruh kepada kedudukan sang pitara di alam sana.
+1	panebusan	panebusan	NOUN	_	_	10	nsubj	_	_
+2	dan	dan	CCONJ	_	_	1	cc	_	_
+3	bahkan	bahkan	SCONJ	_	_	10	mark	_	_
+4	semua	semua	DET	_	_	5	det	_	_
+5	upacara	upacara	NOUN	_	_	1	conj	_	_
+6	dalam	dalam	ADP	_	_	7	case	_	_
+7	pitra	pitra	NOUN	_	_	5	nmod	_	_
+8	yadnya	yadnya	NOUN	_	_	7	compound	_	_
+9	pasti	pasti	ADV	_	_	10	advmod	_	_
+10	berpengaruh	pengaruh	VERB	_	_	0	root	_	_
+11	kepada	kepada	ADP	_	_	12	case	_	_
+12	kedudukan	duduk	NOUN	_	_	10	obl	_	_
+13	sang	sang	DET	_	_	14	det	_	_
+14	pitara	pitara	NOUN	_	_	12	compound	_	_
+15	di	di	ADP	_	_	16	case	_	_
+16	alam	alam	NOUN	_	_	12	nmod	_	_
+17	sana	sana	NOUN	_	_	16	compound	_	_
+18	.	.	PUNCT	_	_	10	punct	_	_
+
+RELATIONS:
+  [0] panebusan (TAHAPAN_UPACARA) --[MEMPENGARUHI]--> kedudukan pitara (ENTITAS_KEAGAMAAN)  type=ENTITY source=manual_override
+
+### S1850
+TEXT: mamutru tentu saja asal katanya "putru" dan merupakan perubahan dari kata "pitra".
+NER: mamutru -> TAHAPAN_UPACARA [cultural] | pitra -> KONSEP_FILOSOFIS [cultural] (canonical: Pitra)
+PARSE:
+# sent_id = S1850
+# text = mamutru tentu saja asal katanya "putru" dan merupakan perubahan dari kata "pitra".
+1	mamutru	mamutru	PROPN	_	_	2	nsubj	_	_
+2	tentu	tentu	VERB	_	_	0	root	_	_
+3	saja	saja	ADV	_	_	2	advmod	_	_
+4	asal	asal	NOUN	_	_	2	obj	_	_
+5	kata	kata	NOUN	_	_	4	compound	_	_
+6	nya	dia	PRON	_	_	5	nmod:poss	_	_
+7	"	"	PUNCT	_	_	8	punct	_	_
+8	putru	putru	NOUN	_	_	5	appos	_	_
+9	"	"	PUNCT	_	_	8	punct	_	_
+10	dan	dan	CCONJ	_	_	11	cc	_	_
+11	merupakan	merupakan	VERB	_	_	2	conj	_	_
+12	perubahan	ubah	NOUN	_	_	11	obj	_	_
+13	dari	dari	ADP	_	_	14	case	_	_
+14	kata	kata	NOUN	_	_	12	nmod	_	_
+15	"	"	PUNCT	_	_	16	punct	_	_
+16	pitra	pitra	NOUN	_	_	14	compound	_	_
+17	"	"	PUNCT	_	_	16	punct	_	_
+18	.	.	PUNCT	_	_	2	punct	_	_
+
+RELATIONS:
+  [0] mamutru (None) --[BERASAL_DARI_KATA]--> putru (None)  type=LITERAL source=manual_override
+  [1] mamutru (None) --[MERUPAKAN_PERUBAHAN_DARI]--> pitra (KONSEP_FILOSOFIS)  type=ENTITY source=manual_override
+
+### S1853
+TEXT: lontar putru ada beberapa jenis antara lain putru sangaskara, dan putru saji.
+NER: lontar putru -> NASKAH_SUCI [cultural] | putru sangaskara -> NASKAH_SUCI [cultural] | putru saji -> NASKAH_SUCI [cultural]
+PARSE:
+# sent_id = S1853
+# text = lontar putru ada beberapa jenis antara lain putru sangaskara, dan putru saji.
+1	lontar	lontar	NOUN	_	_	3	nsubj	_	_
+2	putru	putru	PROPN	_	_	1	nmod	_	_
+3	ada	ada	VERB	_	_	0	root	_	_
+4	beberapa	beberapa	DET	_	_	5	det	_	_
+5	jenis	jenis	NOUN	_	_	3	obj	_	_
+6	antara	antara	ADP	_	_	8	case	_	_
+7	lain	lain	ADJ	_	_	6	fixed	_	_
+8	putru	putru	NOUN	_	_	5	nmod	_	_
+9	sangaskara	sangaskara	NOUN	_	_	8	compound	_	_
+10	,	,	PUNCT	_	_	12	punct	_	_
+11	dan	dan	CCONJ	_	_	12	cc	_	_
+12	putru	putru	NOUN	_	_	8	conj	_	_
+13	saji	saji	NOUN	_	_	12	compound	_	_
+14	.	.	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] lontar putru (NASKAH_SUCI) --[MEMILIKI]--> jenis (None)  type=LITERAL source=dependency_rule
+  [1] lontar putru (None) --[MEMILIKI_JENIS]--> putru sangaskara (NASKAH_SUCI)  type=ENTITY source=manual_override
+  [2] lontar putru (None) --[MEMILIKI_JENIS]--> putru saji (NASKAH_SUCI)  type=ENTITY source=manual_override
+
+### S1854
+TEXT: masing-masing lontar itu lebih banyak merinci tentang atma/pitara itu.
+NER: lontar -> NASKAH_SUCI [cultural] | atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma) | pitara -> ENTITAS_KEAGAMAAN [cultural] (canonical: Pitra)
+PARSE:
+# sent_id = S1854
+# text = masing-masing lontar itu lebih banyak merinci tentang atma/pitara itu.
+1	masing-masing	masing	DET	_	_	2	det	_	_
+2	lontar	lontar	NOUN	_	_	6	nsubj	_	_
+3	itu	itu	DET	_	_	2	det	_	_
+4	lebih	lebih	ADV	_	_	6	advmod	_	_
+5	banyak	banyak	ADV	_	_	6	advmod	_	_
+6	merinci	rinci	VERB	_	_	0	root	_	_
+7	tentang	tentang	ADP	_	_	8	case	_	_
+8	atma/pitara	atma/pitara	NOUN	_	_	6	obl	_	_
+9	itu	itu	DET	_	_	8	det	_	_
+10	.	.	PUNCT	_	_	6	punct	_	_
+
+RELATIONS:
+  [0] lontar (NASKAH_SUCI) --[MERINCI]--> atma/pitara (ENTITAS_KEAGAMAAN)  type=ENTITY source=dependency_rule
+
+### S1879
+TEXT: sejalan dengan arti pemberian pengarahan ini, maka lontar yang dibaca sudah merupakan bacaan pilihan.
+NER: lontar -> NASKAH_SUCI [cultural]
+PARSE:
+# sent_id = S1879
+# text = sejalan dengan arti pemberian pengarahan ini, maka lontar yang dibaca sudah merupakan bacaan pilihan.
+1	sejalan	jalan	VERB	_	_	0	root	_	_
+2	dengan	dengan	ADP	_	_	3	case	_	_
+3	arti	arti	NOUN	_	_	1	obl	_	_
+4	pemberian	beri	NOUN	_	_	3	compound	_	_
+5	pengarahan	karah	NOUN	_	_	4	compound	_	_
+6	ini	ini	DET	_	_	5	det	_	_
+7	,	,	PUNCT	_	_	1	punct	_	_
+8	maka	maka	SCONJ	_	_	13	mark	_	_
+9	lontar	lontar	NOUN	_	_	13	nsubj	_	_
+10	yang	yang	PRON	_	_	11	nsubj:pass	_	_
+11	dibaca	baca	VERB	_	_	9	acl:relcl	_	_
+12	sudah	sudah	AUX	_	_	13	aux	_	_
+13	merupakan	merupakan	VERB	_	_	1	advcl	_	_
+14	bacaan	baca	NOUN	_	_	13	obj	_	_
+15	pilihan	pilih	NOUN	_	_	14	compound	_	_
+16	.	.	PUNCT	_	_	13	punct	_	_
+
+RELATIONS:
+  [0] lontar (NASKAH_SUCI) --[ADALAH]--> bacaan pilihan (None)  type=LITERAL source=dependency_rule
+
+### S1889
+TEXT: dengan demikian, bila pabersihan dilakukan dua atau tiga hari sebelum ngaben, maka pengambilan air ini tidaklah pada hari pabersihan, melainkan disesuaikan dengan syarat tadi.
+NER: pabersihan -> TAHAPAN_UPACARA [cultural] | ngaben -> RITUAL_KEMATIAN [cultural]
+PARSE:
+# sent_id = S1889
+# text = dengan demikian, bila pabersihan dilakukan dua atau tiga hari sebelum ngaben, maka pengambilan air ini tidaklah pada hari pabersihan, melainkan disesuaikan dengan syarat tadi.
+1	dengan	dengan	ADV	_	_	6	advmod	_	_
+2	demikian	demikian	PRON	_	_	1	fixed	_	_
+3	,	,	PUNCT	_	_	1	punct	_	_
+4	bila	bila	SCONJ	_	_	6	mark	_	_
+5	pabersihan	pabersihan	NOUN	_	_	6	nsubj:pass	_	_
+6	dilakukan	laku	VERB	_	_	0	root	_	_
+7	dua	dua	NUM	_	_	10	nummod	_	_
+8	atau	atau	CCONJ	_	_	10	cc	_	_
+9	tiga	tiga	NUM	_	_	10	nummod	_	_
+10	hari	hari	NOUN	_	_	6	obl	_	_
+11	sebelum	sebelum	ADP	_	_	12	case	_	_
+12	ngaben	ngaben	NOUN	_	_	10	nmod	_	_
+13	,	,	PUNCT	_	_	6	punct	_	_
+14	maka	maka	SCONJ	_	_	15	mark	_	_
+15	pengambilan	ambil	NOUN	_	_	21	nsubj	_	_
+16	air	air	NOUN	_	_	15	compound	_	_
+17	ini	ini	DET	_	_	15	det	_	_
+18	tidak	tidak	PART	_	_	21	advmod	_	_
+19	lah	lah	PART	_	_	18	advmod:emph	_	_
+20	pada	pada	ADP	_	_	21	case	_	_
+21	hari	hari	NOUN	_	_	6	obl	_	_
+22	pabersihan	pabersihan	NOUN	_	_	21	compound	_	_
+23	,	,	PUNCT	_	_	25	punct	_	_
+24	melainkan	lain	SCONJ	_	_	25	mark	_	_
+25	disesuaikan	sesuai	VERB	_	_	21	advcl	_	_
+26	dengan	dengan	ADP	_	_	27	case	_	_
+27	syarat	syarat	NOUN	_	_	25	obl	_	_
+28	tadi	tadi	DET	_	_	27	det	_	_
+29	.	.	PUNCT	_	_	15	punct	_	_
+
+RELATIONS:
+  [0] pabersihan (None) --[DILAKUKAN]--> dua atau tiga hari sebelum ngaben (None)  type=LITERAL source=manual_override
+
+### S1898
+TEXT: yeh panembak itu ditaruh di suatu tempat di pamrajan, menunggu saat digunakan pada pengabenan.
+NER: yeh panembak -> TIRTHA_SUCI [cultural] (canonical: Yeh Panembak) | pamrajan -> BANGUNAN_RITUAL [cultural] | pengabenan -> RITUAL_KEMATIAN [cultural]
+PARSE:
+# sent_id = S1898
+# text = yeh panembak itu ditaruh di suatu tempat di pamrajan, menunggu saat digunakan pada pengabenan.
+1	yeh	yeh	NOUN	_	_	4	nsubj:pass	_	_
+2	panembak	panembak	NOUN	_	_	1	compound	_	_
+3	itu	itu	DET	_	_	1	det	_	_
+4	ditaruh	taruh	VERB	_	_	0	root	_	_
+5	di	di	ADP	_	_	7	case	_	_
+6	suatu	suatu	DET	_	_	7	det	_	_
+7	tempat	tempat	NOUN	_	_	4	obl	_	_
+8	di	di	ADP	_	_	9	case	_	_
+9	pamrajan	pamraj	NOUN	_	_	7	nmod	_	_
+10	,	,	PUNCT	_	_	11	punct	_	_
+11	menunggu	tunggu	VERB	_	_	4	advcl	_	_
+12	saat	saat	SCONJ	_	_	13	mark	_	_
+13	digunakan	guna	VERB	_	_	11	advcl	_	_
+14	pada	pada	ADP	_	_	15	case	_	_
+15	pengabenan	kaben	NOUN	_	_	13	obl	_	_
+16	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] yeh panembak (TIRTHA_SUCI) --[DILETAKKAN_DI]--> tempat pamrajan (BANGUNAN_RITUAL)  type=ENTITY source=dependency_rule
+  [1] yeh panembak (None) --[DIGUNAKAN_PADA]--> pengabenan (RITUAL_KEMATIAN)  type=ENTITY source=manual_override
+
+### S1899
+TEXT: menurut sejumlah pakar, yeh panembak yang sudah lazim dipakai umat hindu di bali itu, adalah sarana penyucian jenazah yang digunakan oleh penganut sekte paksa surya.
+NER: yeh panembak -> TIRTHA_SUCI [cultural] (canonical: Yeh Panembak) | hindu -> AGAMA [cultural] | bali -> Place [general] | jenazah -> ISTILAH_UMUM_RITUAL [cultural] | surya -> ENTITAS_KEAGAMAAN [cultural]
+PARSE:
+# sent_id = S1899
+# text = menurut sejumlah pakar, yeh panembak yang sudah lazim dipakai umat hindu di bali itu, adalah sarana penyucian jenazah yang digunakan oleh penganut sekte paksa surya.
+1	menurut	menurut	ADP	_	_	3	case	_	_
+2	sejumlah	jumlah	DET	_	_	3	det	_	_
+3	pakar	pakar	NOUN	_	_	18	nmod	_	_
+4	,	,	PUNCT	_	_	3	punct	_	_
+5	yeh	yeh	NOUN	_	_	18	nsubj	_	_
+6	panembak	panembak	NOUN	_	_	5	compound	_	_
+7	yang	yang	PRON	_	_	10	nsubj:pass	_	_
+8	sudah	sudah	AUX	_	_	10	aux	_	_
+9	lazim	lazim	ADJ	_	_	10	amod	_	_
+10	dipakai	pakai	VERB	_	_	5	acl:relcl	_	_
+11	umat	umat	NOUN	_	_	10	obj	_	_
+12	hindu	hindu	NOUN	_	_	11	compound	_	_
+13	di	di	ADP	_	_	14	case	_	_
+14	bali	bali	NOUN	_	_	11	nmod	_	_
+15	itu	itu	DET	_	_	14	det	_	_
+16	,	,	PUNCT	_	_	10	punct	_	_
+17	adalah	adalah	AUX	_	_	18	cop	_	_
+18	sarana	sarana	NOUN	_	_	0	root	_	_
+19	penyucian	suci	NOUN	_	_	18	compound	_	_
+20	jenazah	jenazah	NOUN	_	_	19	compound	_	_
+21	yang	yang	PRON	_	_	22	nsubj:pass	_	_
+22	digunakan	guna	VERB	_	_	18	acl:relcl	_	_
+23	oleh	oleh	ADP	_	_	24	case	_	_
+24	penganut	anut	NOUN	_	_	22	obl	_	_
+25	sekte	sekte	NOUN	_	_	24	compound	_	_
+26	paksa	paksa	NOUN	_	_	25	compound	_	_
+27	surya	surya	NOUN	_	_	26	compound	_	_
+28	.	.	PUNCT	_	_	18	punct	_	_
+
+RELATIONS:
+  [0] yeh panembak (TIRTHA_SUCI) --[ADALAH]--> sarana penyucian jenazah yang digunakan oleh penganut sekte paksa surya (None)  type=LITERAL source=dependency_rule
+
+### S1915
+TEXT: suatu misal, pabersihan dilangsungkan pada hari senin dan pangabenan digelar hari kamis tiga hari kemudian.
+NER: pabersihan -> TAHAPAN_UPACARA [cultural] | pangabenan -> RITUAL_KEMATIAN [cultural]
+PARSE:
+# sent_id = S1915
+# text = suatu misal, pabersihan dilangsungkan pada hari senin dan pangabenan digelar hari kamis tiga hari kemudian.
+1	suatu	suatu	DET	_	_	2	det	_	_
+2	misal	misal	NOUN	_	_	5	obl	_	_
+3	,	,	PUNCT	_	_	2	punct	_	_
+4	pabersihan	pabersihan	NOUN	_	_	5	nsubj:pass	_	_
+5	dilangsungkan	langsung	VERB	_	_	0	root	_	_
+6	pada	pada	ADP	_	_	7	case	_	_
+7	hari	hari	NOUN	_	_	5	obl:tmod	_	_
+8	senin	senin	NOUN	_	_	7	compound	_	_
+9	dan	dan	CCONJ	_	_	11	cc	_	_
+10	pangabenan	pangabenan	NOUN	_	_	11	nsubj:pass	_	_
+11	digelar	gelar	VERB	_	_	5	conj	_	_
+12	hari	hari	NOUN	_	_	11	obj	_	_
+13	kamis	kamis	NOUN	_	_	12	compound	_	_
+14	tiga	tiga	NUM	_	_	15	nummod	_	_
+15	hari	hari	NOUN	_	_	12	compound	_	_
+16	kemudian	kemudian	ADV	_	_	15	advmod	_	_
+17	.	.	PUNCT	_	_	5	punct	_	_
+
+RELATIONS:
+  [0] pangabenan (RITUAL_KEMATIAN) --[DIGELAR]--> hari kamis (None)  type=LITERAL source=dependency_rule
+  [1] pabersihan (None) --[DILANGSUNGKAN_PADA]--> hari senin (None)  type=LITERAL source=manual_override
+
+### S1931
+TEXT: berdasarkan lontar yama purwana tatwa, recadana (istilah lombok dan karangasem) atau swasta geni yang sederhana pun pangabenan telah selesai dengan tuntas.
+NER: lontar -> NASKAH_SUCI [cultural] | yama -> ENTITAS_KEAGAMAAN [cultural] | recadana -> RITUAL_KEMATIAN [cultural] (canonical: Swasta) | karangasem -> Place [general] | swasta -> RITUAL_KEMATIAN [cultural] (canonical: Swasta) | pangabenan -> RITUAL_KEMATIAN [cultural]
+PARSE:
+# sent_id = S1931
+# text = berdasarkan lontar yama purwana tatwa, recadana (istilah lombok dan karangasem) atau swasta geni yang sederhana pun pangabenan telah selesai dengan tuntas.
+1	berdasarkan	berdasar	ADP	_	_	2	case	_	_
+2	lontar	lontar	NOUN	_	_	22	obl	_	_
+3	yama	yama	NOUN	_	_	2	compound	_	_
+4	purwana	purwana	NOUN	_	_	3	compound	_	_
+5	tatwa	tatwa	NOUN	_	_	4	compound	_	_
+6	,	,	PUNCT	_	_	7	punct	_	_
+7	recadana	recadana	NOUN	_	_	4	conj	_	_
+8	(	(	PUNCT	_	_	9	punct	_	_
+9	istilah	istilah	NOUN	_	_	7	appos	_	_
+10	lombok	lombok	NOUN	_	_	9	compound	_	_
+11	dan	dan	CCONJ	_	_	12	cc	_	_
+12	karangasem	karangasem	NOUN	_	_	9	conj	_	_
+13	)	)	PUNCT	_	_	9	punct	_	_
+14	atau	atau	CCONJ	_	_	16	cc	_	_
+15	swasta	swasta	ADJ	_	_	3	conj	_	_
+16	geni	geni	NOUN	_	_	15	compound	_	_
+17	yang	yang	PRON	_	_	18	nsubj	_	_
+18	sederhana	sederhana	ADJ	_	_	16	acl:relcl	_	_
+19	pun	pun	PART	_	_	18	advmod:emph	_	_
+20	pangabenan	pangabenan	NOUN	_	_	22	nsubj	_	_
+21	telah	telah	AUX	_	_	22	aux	_	_
+22	selesai	selesai	VERB	_	_	0	root	_	_
+23	dengan	dengan	SCONJ	_	_	22	mark	_	_
+24	tuntas	tuntas	ADJ	_	_	22	amod	_	_
+25	.	.	PUNCT	_	_	22	punct	_	_
+
+RELATIONS:
+  [0] recadana atau swasta geni (None) --[MELENGKAPI]--> pangabenan (RITUAL_KEMATIAN)  type=ENTITY source=manual_override
+
+### S1936
+TEXT: terutama, atma dengan lingga-sariranya diberangkatkanlah ke alamnya pula.
+NER: atma -> KONSEP_FILOSOFIS [cultural] (canonical: Atma)
+PARSE:
+# sent_id = S1936
+# text = terutama, atma dengan lingga-sariranya diberangkatkanlah ke alamnya pula.
+1	terutama	terutama	ADV	_	_	7	advmod	_	_
+2	,	,	PUNCT	_	_	1	punct	_	_
+3	atma	atma	PROPN	_	_	7	nsubj:pass	_	_
+4	dengan	dengan	ADP	_	_	5	case	_	_
+5	lingga-sarira	lingga	NOUN	_	_	3	nmod	_	_
+6	nya	dia	PRON	_	_	5	nmod:poss	_	_
+7	diberangkatkan	berangkat	VERB	_	_	0	root	_	_
+8	lah	lah	PART	_	_	7	advmod:emph	_	_
+9	ke	ke	ADP	_	_	10	case	_	_
+10	alam	alam	NOUN	_	_	7	obl	_	_
+11	nya	dia	PRON	_	_	10	nmod:poss	_	_
+12	pula	pula	ADV	_	_	7	advmod	_	_
+13	.	.	PUNCT	_	_	7	punct	_	_
+
+RELATIONS:
+  [0] atma lingga-sarira (KONSEP_FILOSOFIS) --[DIBAWA_KE]--> alam (None)  type=LITERAL source=dependency_rule
+
+### S1937
+TEXT: sebagaimana telah disebutkan, bahwa sawa wedana adalah pengabenan yang paling banyak ada upacara, sesajen dan upakaranya.
+NER: sawa wedana -> RITUAL_KEMATIAN [cultural] (canonical: Sawa Wedana) | pengabenan -> RITUAL_KEMATIAN [cultural] | sesajen -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S1937
+# text = sebagaimana telah disebutkan, bahwa sawa wedana adalah pengabenan yang paling banyak ada upacara, sesajen dan upakaranya.
+1	sebagaimana	sebagaimana	SCONJ	_	_	3	mark	_	_
+2	telah	telah	AUX	_	_	3	aux	_	_
+3	disebutkan	sebut	VERB	_	_	0	root	_	_
+4	,	,	PUNCT	_	_	3	punct	_	_
+5	bahwa	bahwa	SCONJ	_	_	9	mark	_	_
+6	sawa	sawa	NOUN	_	_	9	nsubj	_	_
+7	wedana	wedana	NOUN	_	_	6	compound	_	_
+8	adalah	adalah	AUX	_	_	9	cop	_	_
+9	pengabenan	kaben	NOUN	_	_	3	advcl	_	_
+10	yang	yang	PRON	_	_	13	nsubj	_	_
+11	paling	paling	ADV	_	_	13	advmod	_	_
+12	banyak	banyak	ADV	_	_	13	advmod	_	_
+13	ada	ada	VERB	_	_	9	acl:relcl	_	_
+14	upacara	upacara	NOUN	_	_	13	obj	_	_
+15	,	,	PUNCT	_	_	16	punct	_	_
+16	sesajen	sesajen	NOUN	_	_	14	conj	_	_
+17	dan	dan	CCONJ	_	_	18	cc	_	_
+18	upakara	upakara	NOUN	_	_	14	conj	_	_
+19	nya	dia	PRON	_	_	18	nmod:poss	_	_
+20	.	.	PUNCT	_	_	9	punct	_	_
+
+RELATIONS:
+  [0] sawa wedana (RITUAL_KEMATIAN) --[ADALAH]--> pengabenan yang paling banyak ada upacara , sesajen dan upakara nya (None)  type=LITERAL source=dependency_rule
+
+### S1938
+TEXT: karena itu pengabenan ini dinilai tingkat utama.
+NER: pengabenan -> RITUAL_KEMATIAN [cultural]
+PARSE:
+# sent_id = S1938
+# text = karena itu pengabenan ini dinilai tingkat utama.
+1	karena	karena	ADP	_	_	2	case	_	_
+2	itu	itu	PRON	_	_	5	obl	_	_
+3	pengabenan	kaben	NOUN	_	_	5	nsubj:pass	_	_
+4	ini	ini	DET	_	_	3	det	_	_
+5	dinilai	nilai	VERB	_	_	0	root	_	_
+6	tingkat	tingkat	NOUN	_	_	5	obj	_	_
+7	utama	utama	ADJ	_	_	6	amod	_	_
+8	.	.	PUNCT	_	_	5	punct	_	_
+
+RELATIONS:
+  [0] pengabenan (RITUAL_KEMATIAN) --[DINILAI_SEBAGAI]--> tingkat utama (None)  type=LITERAL source=manual_override
+
+### S1963
+TEXT: pering dibuat berpasang-pasangan sebagai perlambang purusa-pradana dan diletakkan selaku penambah bobot, nilai dan asri bagaikan mahkotanya pada sajen untuk surya, penebusan, pamerasan, banten teben dan sebagainya.
+NER: pering -> SARANA_RITUAL [cultural] (canonical: Pering) | purusa -> KONSEP_FILOSOFIS [cultural] | pradana -> KONSEP_FILOSOFIS [cultural] | surya -> ENTITAS_KEAGAMAAN [cultural] | pamerasan -> TAHAPAN_UPACARA [cultural] | banten teben -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S1963
+# text = pering dibuat berpasang-pasangan sebagai perlambang purusa-pradana dan diletakkan selaku penambah bobot, nilai dan asri bagaikan mahkotanya pada sajen untuk surya, penebusan, pamerasan, banten teben dan sebagainya.
+1	pering	pering	NOUN	_	_	2	nsubj:pass	_	_
+2	dibuat	buat	VERB	_	_	0	root	_	_
+3	berpasang-pasangan	pasang	VERB	_	_	2	xcomp	_	_
+4	sebagai	sebagai	ADP	_	_	5	case	_	_
+5	perlambang	perlambang	NOUN	_	_	3	obl	_	_
+6	purusa-pradana	purusa	NOUN	_	_	5	compound	_	_
+7	dan	dan	CCONJ	_	_	8	cc	_	_
+8	diletakkan	letak	VERB	_	_	2	conj	_	_
+9	selaku	selaku	ADP	_	_	10	case	_	_
+10	penambah	tambah	NOUN	_	_	8	obl	_	_
+11	bobot	bobot	NOUN	_	_	10	compound	_	_
+12	,	,	PUNCT	_	_	13	punct	_	_
+13	nilai	nilai	NOUN	_	_	10	conj	_	_
+14	dan	dan	CCONJ	_	_	15	cc	_	_
+15	asri	asri	NOUN	_	_	13	conj	_	_
+16	bagaikan	bagai	VERB	_	_	2	conj	_	_
+17	mahkota	mahkota	NOUN	_	_	16	obj	_	_
+18	nya	dia	PRON	_	_	17	nmod:poss	_	_
+19	pada	pada	ADP	_	_	20	case	_	_
+20	sajen	sajen	NOUN	_	_	16	obl	_	_
+21	untuk	untuk	ADP	_	_	22	case	_	_
+22	surya	surya	NOUN	_	_	20	nmod	_	_
+23	,	,	PUNCT	_	_	24	punct	_	_
+24	penebusan	tebus	NOUN	_	_	22	conj	_	_
+25	,	,	PUNCT	_	_	26	punct	_	_
+26	pamerasan	mamer	NOUN	_	_	22	conj	_	_
+27	,	,	PUNCT	_	_	28	punct	_	_
+28	banten	banten	PROPN	_	_	22	conj	_	_
+29	teben	teben	NOUN	_	_	28	compound	_	_
+30	dan	dan	CCONJ	_	_	31	cc	_	_
+31	sebagai	sebagai	NOUN	_	_	22	conj	_	_
+32	nya	dia	PRON	_	_	31	nmod:poss	_	_
+33	.	.	PUNCT	_	_	2	punct	_	_
+
+RELATIONS:
+  [0] pering (SARANA_RITUAL) --[MENYERUPAI]--> mahkota (None)  type=LITERAL source=manual_override
+
+### S1982
+TEXT: bade adalah bangunan untuk sawa.
+NER: bade -> SARANA_RITUAL [cultural] (canonical: Bade) | sawa -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S1982
+# text = bade adalah bangunan untuk sawa.
+1	bade	bade	PROPN	_	_	3	nsubj	_	_
+2	adalah	adalah	AUX	_	_	3	cop	_	_
+3	bangunan	bangun	NOUN	_	_	0	root	_	_
+4	untuk	untuk	ADP	_	_	5	case	_	_
+5	sawa	sawa	NOUN	_	_	3	nmod	_	_
+6	.	.	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] bade (SARANA_RITUAL) --[ADALAH]--> bangunan sawa (ISTILAH_UMUM_RITUAL)  type=LITERAL source=dependency_rule
+
+### S1985
+TEXT: selain itu bade menunjukkan status sosial seseorang dalam masyarakat.
+NER: bade -> SARANA_RITUAL [cultural] (canonical: Bade)
+PARSE:
+# sent_id = S1985
+# text = selain itu bade menunjukkan status sosial seseorang dalam masyarakat.
+1	selain	selain	ADP	_	_	4	case	_	_
+2	itu	itu	DET	_	_	4	det	_	_
+3	bade	bade	NOUN	_	_	4	nsubj	_	_
+4	menunjukkan	tunjuk	VERB	_	_	0	root	_	_
+5	status	status	NOUN	_	_	4	obj	_	_
+6	sosial	sosial	NOUN	_	_	5	compound	_	_
+7	seseorang	orang	PRON	_	_	6	compound	_	_
+8	dalam	dalam	ADP	_	_	9	case	_	_
+9	masyarakat	masyarakat	NOUN	_	_	5	nmod	_	_
+10	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] bade (SARANA_RITUAL) --[MENUNJUKKAN]--> status sosial seseorang (None)  type=LITERAL source=dependency_rule
+
+### S1987
+TEXT: bade jenis apa yang boleh dan wajar dipakai oleh seseorang, ditentukan berdasarkan statusnya dalam tata kemasyarakatan pada zaman itu.
+NER: bade -> SARANA_RITUAL [cultural] (canonical: Bade)
+PARSE:
+# sent_id = S1987
+# text = bade jenis apa yang boleh dan wajar dipakai oleh seseorang, ditentukan berdasarkan statusnya dalam tata kemasyarakatan pada zaman itu.
+1	bade	bade	PROPN	_	_	8	nsubj:pass	_	_
+2	jenis	jenis	NOUN	_	_	1	compound	_	_
+3	apa	apa	PRON	_	_	2	compound	_	_
+4	yang	yang	PRON	_	_	5	nsubj	_	_
+5	boleh	boleh	AUX	_	_	8	aux	_	_
+6	dan	dan	CCONJ	_	_	7	cc	_	_
+7	wajar	wajar	ADJ	_	_	8	amod	_	_
+8	dipakai	pakai	VERB	_	_	0	root	_	_
+9	oleh	oleh	ADP	_	_	10	case	_	_
+10	seseorang	orang	PRON	_	_	8	obl	_	_
+11	,	,	PUNCT	_	_	12	punct	_	_
+12	ditentukan	tentu	VERB	_	_	8	conj	_	_
+13	berdasarkan	berdasar	ADP	_	_	14	case	_	_
+14	status	status	NOUN	_	_	12	obl	_	_
+15	nya	dia	PRON	_	_	14	nmod:poss	_	_
+16	dalam	dalam	ADP	_	_	17	case	_	_
+17	tata	tata	NOUN	_	_	14	nmod	_	_
+18	kemasyarakatan	masyarakat	NOUN	_	_	17	compound	_	_
+19	pada	pada	ADP	_	_	20	case	_	_
+20	zaman	zaman	NOUN	_	_	17	nmod	_	_
+21	itu	itu	DET	_	_	20	det	_	_
+22	.	.	PUNCT	_	_	8	punct	_	_
+
+RELATIONS:
+  [0] bade jenis (SARANA_RITUAL) --[ADALAH]--> bade dalam tata kemasyarakatan pada zaman itu (None)  type=LITERAL source=manual_override
+
+### S2000
+TEXT: bade yang bertingkat 11 dipakai untuk jenazah raja bali (gelgel/klungkung).
+NER: bade -> SARANA_RITUAL [cultural] (canonical: Bade) | jenazah -> ISTILAH_UMUM_RITUAL [cultural] | bali -> Place [general] | gelgel -> Place [general] | klungkung -> Place [general]
+PARSE:
+# sent_id = S2000
+# text = bade yang bertingkat 11 dipakai untuk jenazah raja bali (gelgel/klungkung).
+1	bade	bade	PROPN	_	_	5	nsubj:pass	_	_
+2	yang	yang	PRON	_	_	3	nsubj	_	_
+3	bertingkat	tingkat	VERB	_	_	1	acl:relcl	_	_
+4	11	11	NUM	_	_	3	nummod	_	_
+5	dipakai	pakai	VERB	_	_	0	root	_	_
+6	untuk	untuk	ADP	_	_	7	case	_	_
+7	jenazah	jenazah	NOUN	_	_	5	obl	_	_
+8	raja	raja	NOUN	_	_	7	compound	_	_
+9	bali	bali	PROPN	_	_	8	nmod	_	_
+10	(	(	PUNCT	_	_	11	punct	_	_
+11	gelgel/klungkung	gelgel/klungkung	NOUN	_	_	7	appos	_	_
+12	)	)	PUNCT	_	_	11	punct	_	_
+13	.	.	PUNCT	_	_	5	punct	_	_
+
+RELATIONS:
+  [0] bade (SARANA_RITUAL) --[DIPAKAI_UNTUK]--> jenazah raja bali (ISTILAH_UMUM_RITUAL)  type=ENTITY source=dependency_rule
+  [1] jenazah raja bali (None) --[ADALAH]--> gelgel/klungkung (None)  type=LITERAL source=object_decomposition
+  [2] bade (SARANA_RITUAL) --[MEMILIKI_TINGKAT]--> 11 (None)  type=LITERAL source=dependency_rule
+  [3] raja bali (None) --[BERASAL_DARI]--> gelgel/klungkung (None)  type=LITERAL source=manual_override
+
+### S2001
+TEXT: bade bertingkat sembilan digunakan untuk keluarga raja atau raja-raja bawahan raja bali.
+NER: bade -> SARANA_RITUAL [cultural] (canonical: Bade) | bali -> Place [general]
+PARSE:
+# sent_id = S2001
+# text = bade bertingkat sembilan digunakan untuk keluarga raja atau raja-raja bawahan raja bali.
+1	bade	bade	PROPN	_	_	4	nsubj:pass	_	_
+2	bertingkat	tingkat	VERB	_	_	1	acl	_	_
+3	sembilan	sembilan	NUM	_	_	2	nummod	_	_
+4	digunakan	guna	VERB	_	_	0	root	_	_
+5	untuk	untuk	ADP	_	_	6	case	_	_
+6	keluarga	keluarga	NOUN	_	_	4	obl	_	_
+7	raja	raja	NOUN	_	_	6	compound	_	_
+8	atau	atau	CCONJ	_	_	9	cc	_	_
+9	raja-raja	raja	NOUN	_	_	6	conj	_	_
+10	bawahan	bawah	NOUN	_	_	9	compound	_	_
+11	raja	raja	NOUN	_	_	10	compound	_	_
+12	bali	bali	PROPN	_	_	11	nmod	_	_
+13	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] bade (SARANA_RITUAL) --[DIPAKAI_UNTUK]--> keluarga raja (None)  type=LITERAL source=dependency_rule
+  [1] bade (SARANA_RITUAL) --[DIPAKAI_UNTUK]--> raja-raja bawahan raja bali (None)  type=LITERAL source=dependency_rule
+  [2] bade (SARANA_RITUAL) --[MEMILIKI_TINGKAT]--> sembilan (None)  type=LITERAL source=dependency_rule
+
+### S2002
+TEXT: bade bertingkat tujuh dipakai bagi keluarga yang leluhurnya pernah menjadi punggawa dan pejabat yang sederajat.
+NER: bade -> SARANA_RITUAL [cultural] (canonical: Bade)
+PARSE:
+# sent_id = S2002
+# text = bade bertingkat tujuh dipakai bagi keluarga yang leluhurnya pernah menjadi punggawa dan pejabat yang sederajat.
+1	bade	bade	PROPN	_	_	4	nsubj:pass	_	_
+2	bertingkat	tingkat	VERB	_	_	1	acl	_	_
+3	tujuh	tujuh	NUM	_	_	2	nummod	_	_
+4	dipakai	pakai	VERB	_	_	0	root	_	_
+5	bagi	bagi	ADP	_	_	6	case	_	_
+6	keluarga	keluarga	NOUN	_	_	4	obl	_	_
+7	yang	yang	PRON	_	_	10	nsubj	_	_
+8	leluhurnya	leluhur	ADV	_	_	10	advmod	_	_
+9	pernah	pernah	ADV	_	_	10	advmod	_	_
+10	menjadi	jadi	VERB	_	_	6	acl:relcl	_	_
+11	punggawa	punggawa	NOUN	_	_	10	obj	_	_
+12	dan	dan	CCONJ	_	_	13	cc	_	_
+13	pejabat	pejabat	NOUN	_	_	11	conj	_	_
+14	yang	yang	PRON	_	_	15	nsubj	_	_
+15	sederajat	sederajat	ADJ	_	_	13	acl:relcl	_	_
+16	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] bade (SARANA_RITUAL) --[DITUJUKAN_UNTUK]--> keluarga yang leluhurnya pernah menjadi punggawa dan pejabat yang sederajat (None)  type=LITERAL source=manual_override
+
+### S2003
+TEXT: adapun wadah adalah usungan yang tanpa badawang mungkin bertingkat memakai hiasan boma dan warna kapas terbatas.
+NER: wadah -> SARANA_RITUAL [cultural] (canonical: Bade) | usungan -> SARANA_RITUAL [cultural] | boma -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S2003
+# text = adapun wadah adalah usungan yang tanpa badawang mungkin bertingkat memakai hiasan boma dan warna kapas terbatas.
+1	ada	ada	ADV	_	_	5	advmod	_	_
+2	pun	pun	PART	_	_	1	advmod:emph	_	_
+3	wadah	wadah	NOUN	_	_	5	nsubj	_	_
+4	adalah	adalah	AUX	_	_	5	cop	_	_
+5	usungan	usung	NOUN	_	_	0	root	_	_
+6	yang	yang	PRON	_	_	10	nsubj	_	_
+7	tanpa	tanpa	ADP	_	_	8	case	_	_
+8	badawang	badawang	NOUN	_	_	10	obl	_	_
+9	mungkin	mungkin	AUX	_	_	10	aux	_	_
+10	bertingkat	tingkat	VERB	_	_	5	acl:relcl	_	_
+11	memakai	pakai	VERB	_	_	10	xcomp	_	_
+12	hiasan	hias	NOUN	_	_	11	obj	_	_
+13	boma	boma	NOUN	_	_	12	compound	_	_
+14	dan	dan	CCONJ	_	_	15	cc	_	_
+15	warna	warna	NOUN	_	_	12	conj	_	_
+16	kapas	kapas	NOUN	_	_	15	compound	_	_
+17	terbatas	terbatas	VERB	_	_	16	acl	_	_
+18	.	.	PUNCT	_	_	5	punct	_	_
+
+RELATIONS:
+  [0] wadah (SARANA_RITUAL) --[ADALAH]--> usungan yang tanpa badawang (None)  type=LITERAL source=manual_override
+  [1] wadah (SARANA_RITUAL) --[MEMAKAI]--> hiasan boma dan warna kapas terbatas (None)  type=LITERAL source=manual_override
+
+### S2028
+TEXT: menjelang pemberangkatan ke setra, mangle digantungkan pada tiap sudut atap bade atau wadah di masing-masing tingkatan.
+NER: setra -> BANGUNAN_RITUAL [cultural] (canonical: Setra) | mangle -> SARANA_RITUAL [cultural] (canonical: Mangle) | bade -> SARANA_RITUAL [cultural] (canonical: Bade) | wadah -> SARANA_RITUAL [cultural] (canonical: Bade)
+PARSE:
+# sent_id = S2028
+# text = menjelang pemberangkatan ke setra, mangle digantungkan pada tiap sudut atap bade atau wadah di masing-masing tingkatan.
+1	menjelang	menjelang	VERB	_	_	7	advcl	_	_
+2	pemberangkatan	berangkat	NOUN	_	_	1	obj	_	_
+3	ke	ke	ADP	_	_	4	case	_	_
+4	setra	setra	NOUN	_	_	2	nmod	_	_
+5	,	,	PUNCT	_	_	1	punct	_	_
+6	mangle	mangle	NOUN	_	_	7	nsubj:pass	_	_
+7	digantungkan	gantung	VERB	_	_	0	root	_	_
+8	pada	pada	ADP	_	_	10	case	_	_
+9	tiap	tiap	DET	_	_	10	det	_	_
+10	sudut	sudut	NOUN	_	_	7	obl	_	_
+11	atap	atap	NOUN	_	_	10	compound	_	_
+12	bade	bade	NOUN	_	_	11	compound	_	_
+13	atau	atau	CCONJ	_	_	14	cc	_	_
+14	wadah	wadah	NOUN	_	_	12	conj	_	_
+15	di	di	ADP	_	_	17	case	_	_
+16	masing-masing	masing	DET	_	_	17	det	_	_
+17	tingkatan	tingkat	NOUN	_	_	10	nmod	_	_
+18	.	.	PUNCT	_	_	7	punct	_	_
+
+RELATIONS:
+  [0] mangle (SARANA_RITUAL) --[DILETAKKAN_DI]--> sudut atap wadah (SARANA_RITUAL)  type=ENTITY source=dependency_rule
+  [1] mangle (SARANA_RITUAL) --[DILETAKKAN_DI]--> sudut atap bade (SARANA_RITUAL)  type=ENTITY source=dependency_rule
+  [2] mangle (SARANA_RITUAL) --[DIGANTUNGKAN_DI]--> masing-masing tingkatan bade atau wadah (SARANA_RITUAL)  type=ENTITY source=manual_override
+
+### S2029
+TEXT: dengan demikian, banyak sedikitnya mangle yang harus dibuat, tergantung pada tingkatan bade atau wadah bersangkutan.
+NER: mangle -> SARANA_RITUAL [cultural] (canonical: Mangle) | bade -> SARANA_RITUAL [cultural] (canonical: Bade) | wadah -> SARANA_RITUAL [cultural] (canonical: Bade)
+PARSE:
+# sent_id = S2029
+# text = dengan demikian, banyak sedikitnya mangle yang harus dibuat, tergantung pada tingkatan bade atau wadah bersangkutan.
+1	dengan	dengan	ADV	_	_	11	advmod	_	_
+2	demikian	demikian	PRON	_	_	1	fixed	_	_
+3	,	,	PUNCT	_	_	1	punct	_	_
+4	banyak	banyak	ADV	_	_	6	advmod	_	_
+5	sedikitnya	sedikitnya	ADV	_	_	6	advmod	_	_
+6	mangle	mangle	NOUN	_	_	11	nsubj:pass	_	_
+7	yang	yang	PRON	_	_	9	nsubj:pass	_	_
+8	harus	harus	AUX	_	_	9	aux	_	_
+9	dibuat	buat	VERB	_	_	6	acl:relcl	_	_
+10	,	,	PUNCT	_	_	11	punct	_	_
+11	tergantung	gantung	VERB	_	_	0	root	_	_
+12	pada	pada	ADP	_	_	13	case	_	_
+13	tingkatan	tingkat	NOUN	_	_	11	obl	_	_
+14	bade	bade	NOUN	_	_	13	compound	_	_
+15	atau	atau	CCONJ	_	_	16	cc	_	_
+16	wadah	wadah	NOUN	_	_	14	conj	_	_
+17	bersangkutan	sangkut	VERB	_	_	16	amod	_	_
+18	.	.	PUNCT	_	_	11	punct	_	_
+
+RELATIONS:
+  [0] mangle (SARANA_RITUAL) --[BERGANTUNG_PADA]--> tingkatan bade atau wadah (SARANA_RITUAL)  type=ENTITY source=manual_override
+
+### S2034
+TEXT: dalam hal ini, mangle merupakan pengganti tingkat bade atau wadah.
+NER: mangle -> SARANA_RITUAL [cultural] (canonical: Mangle) | bade -> SARANA_RITUAL [cultural] (canonical: Bade) | wadah -> SARANA_RITUAL [cultural] (canonical: Bade)
+PARSE:
+# sent_id = S2034
+# text = dalam hal ini, mangle merupakan pengganti tingkat bade atau wadah.
+1	dalam	dalam	ADP	_	_	2	case	_	_
+2	hal	hal	NOUN	_	_	6	obl	_	_
+3	ini	ini	DET	_	_	2	det	_	_
+4	,	,	PUNCT	_	_	2	punct	_	_
+5	mangle	mangle	NOUN	_	_	6	nsubj	_	_
+6	merupakan	merupakan	VERB	_	_	0	root	_	_
+7	pengganti	ganti	NOUN	_	_	6	obj	_	_
+8	tingkat	tingkat	NOUN	_	_	7	compound	_	_
+9	bade	bade	NOUN	_	_	8	compound	_	_
+10	atau	atau	CCONJ	_	_	11	cc	_	_
+11	wadah	wadah	NOUN	_	_	9	conj	_	_
+12	.	.	PUNCT	_	_	6	punct	_	_
+
+RELATIONS:
+  [0] mangle (SARANA_RITUAL) --[ADALAH]--> pengganti tingkat bade (SARANA_RITUAL)  type=ENTITY source=dependency_rule
+  [1] mangle (SARANA_RITUAL) --[DILETAKKAN_DI]--> wadah (SARANA_RITUAL)  type=ENTITY source=manual_override
+
+### S2040
+TEXT: setelah tiba di kuburan, jenazah pun diturunkan serta dibaringkan dalam "balai-balai".
+NER: kuburan -> BANGUNAN_RITUAL [cultural] | jenazah -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S2040
+# text = setelah tiba di kuburan, jenazah pun diturunkan serta dibaringkan dalam "balai-balai".
+1	setelah	setelah	SCONJ	_	_	2	mark	_	_
+2	tiba	tiba	VERB	_	_	8	advcl	_	_
+3	di	di	ADP	_	_	4	case	_	_
+4	kuburan	kubur	NOUN	_	_	2	obl	_	_
+5	,	,	PUNCT	_	_	2	punct	_	_
+6	jenazah	jenazah	NOUN	_	_	8	nsubj:pass	_	_
+7	pun	pun	PART	_	_	6	advmod:emph	_	_
+8	diturunkan	turun	VERB	_	_	0	root	_	_
+9	serta	serta	CCONJ	_	_	10	cc	_	_
+10	dibaringkan	baring	VERB	_	_	8	conj	_	_
+11	dalam	dalam	ADP	_	_	13	case	_	_
+12	"	"	PUNCT	_	_	13	punct	_	_
+13	balai-balai	balai	NOUN	_	_	10	obl	_	_
+14	"	"	PUNCT	_	_	13	punct	_	_
+15	.	.	PUNCT	_	_	8	punct	_	_
+
+RELATIONS:
+  [0] jenazah (ISTILAH_UMUM_RITUAL) --[DIBARINGKAN]--> balai-balai (None)  type=LITERAL source=dependency_rule
+  [1] jenazah (None) --[DITURUNKAN_DI]--> kuburan (BANGUNAN_RITUAL)  type=ENTITY source=manual_override
+
+### S2045
+TEXT: di samping bentuk yang ditentukan oleh konstruksi praktisnya selaku tempat pembaringan "jenazah plus dapur" pembakaran, maka patulangan dibuat dalam berbagai bentuk yang berwujud binatang, yang mempunyai nilai religi tertentu.
+NER: jenazah -> ISTILAH_UMUM_RITUAL [cultural] | patulangan -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S2045
+# text = di samping bentuk yang ditentukan oleh konstruksi praktisnya selaku tempat pembaringan "jenazah plus dapur" pembakaran, maka patulangan dibuat dalam berbagai bentuk yang berwujud binatang, yang mempunyai nilai religi tertentu.
+1	di	di	ADP	_	_	2	case	_	_
+2	samping	samping	NOUN	_	_	22	obl	_	_
+3	bentuk	bentuk	NOUN	_	_	2	compound	_	_
+4	yang	yang	PRON	_	_	5	nsubj:pass	_	_
+5	ditentukan	tentu	VERB	_	_	3	acl:relcl	_	_
+6	oleh	oleh	ADP	_	_	7	case	_	_
+7	konstruksi	konstruksi	NOUN	_	_	5	obl	_	_
+8	praktis	praktis	NOUN	_	_	7	compound	_	_
+9	nya	nya	DET	_	_	8	det	_	_
+10	selaku	selaku	ADP	_	_	11	case	_	_
+11	tempat	tempat	NOUN	_	_	5	obl	_	_
+12	pembaringan	baring	NOUN	_	_	11	compound	_	_
+13	"	"	PUNCT	_	_	14	punct	_	_
+14	jenazah	jenazah	NOUN	_	_	11	appos	_	_
+15	plus	plus	NOUN	_	_	14	compound	_	_
+16	dapur	dapur	NOUN	_	_	15	compound	_	_
+17	"	"	PUNCT	_	_	14	punct	_	_
+18	pembakaran	bakar	NOUN	_	_	16	compound	_	_
+19	,	,	PUNCT	_	_	22	punct	_	_
+20	maka	maka	SCONJ	_	_	22	mark	_	_
+21	patulangan	patulangan	NOUN	_	_	22	nsubj:pass	_	_
+22	dibuat	buat	VERB	_	_	0	root	_	_
+23	dalam	dalam	ADP	_	_	25	case	_	_
+24	berbagai	berbagai	DET	_	_	25	det	_	_
+25	bentuk	bentuk	NOUN	_	_	22	obl	_	_
+26	yang	yang	PRON	_	_	27	nsubj	_	_
+27	berwujud	wujud	VERB	_	_	25	acl:relcl	_	_
+28	binatang	binatang	NOUN	_	_	27	obj	_	_
+29	,	,	PUNCT	_	_	31	punct	_	_
+30	yang	yang	PRON	_	_	31	nsubj	_	_
+31	mempunyai	punya	VERB	_	_	25	acl:relcl	_	_
+32	nilai	nilai	NOUN	_	_	31	obj	_	_
+33	religi	religi	NOUN	_	_	32	compound	_	_
+34	tertentu	tertentu	DET	_	_	33	det	_	_
+35	.	.	PUNCT	_	_	22	punct	_	_
+
+RELATIONS:
+  [0] patulangan (SARANA_RITUAL) --[MENGHASILKAN]--> bentuk yang berwujud binatang , yang mempunyai nilai religi tertentu (None)  type=LITERAL source=dependency_rule
+  [1] patulangan (None) --[BERFUNGSI_SEBAGAI]--> tempat pembaringan jenazah (dan dapur pembakaran) (None)  type=LITERAL source=manual_override
+
+### S2055
+TEXT: patulangan yang berbentuk naga kahang dan gajah mina (yakni binatang yang biasa hidup di air), adalah pertanda bahwa mereka merupakan keturunan dari orang yang condong pada paksa wesnawa.
+NER: patulangan -> SARANA_RITUAL [cultural] | naga kahang -> SARANA_RITUAL [cultural] | gajah mina -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S2055
+# text = patulangan yang berbentuk naga kahang dan gajah mina (yakni binatang yang biasa hidup di air), adalah pertanda bahwa mereka merupakan keturunan dari orang yang condong pada paksa wesnawa.
+1	patulangan	patulangan	NOUN	_	_	20	nsubj	_	_
+2	yang	yang	PRON	_	_	3	nsubj	_	_
+3	berbentuk	bentuk	VERB	_	_	1	acl:relcl	_	_
+4	naga	naga	NOUN	_	_	3	obj	_	_
+5	kahang	kahang	NOUN	_	_	4	compound	_	_
+6	dan	dan	CCONJ	_	_	7	cc	_	_
+7	gajah	gajah	NOUN	_	_	4	conj	_	_
+8	mina	mina	NOUN	_	_	7	compound	_	_
+9	(	(	PUNCT	_	_	11	punct	_	_
+10	yakni	yakni	SCONJ	_	_	11	advmod	_	_
+11	binatang	binatang	NOUN	_	_	1	appos	_	_
+12	yang	yang	PRON	_	_	14	nsubj	_	_
+13	biasa	biasa	ADV	_	_	14	advmod	_	_
+14	hidup	hidup	VERB	_	_	11	acl:relcl	_	_
+15	di	di	ADP	_	_	16	case	_	_
+16	air	air	NOUN	_	_	14	obl	_	_
+17	)	)	PUNCT	_	_	11	punct	_	_
+18	,	,	PUNCT	_	_	11	punct	_	_
+19	adalah	adalah	AUX	_	_	20	cop	_	_
+20	pertanda	pertanda	NOUN	_	_	0	root	_	_
+21	bahwa	bahwa	SCONJ	_	_	23	mark	_	_
+22	mereka	mereka	PRON	_	_	23	nsubj	_	_
+23	merupakan	merupakan	VERB	_	_	20	ccomp	_	_
+24	keturunan	turun	NOUN	_	_	23	obj	_	_
+25	dari	dari	ADP	_	_	26	case	_	_
+26	orang	orang	NOUN	_	_	24	nmod	_	_
+27	yang	yang	PRON	_	_	28	nsubj	_	_
+28	condong	condong	VERB	_	_	26	acl:relcl	_	_
+29	pada	pada	ADP	_	_	30	case	_	_
+30	paksa	paksa	NOUN	_	_	28	obl	_	_
+31	wesnawa	wesnawa	NOUN	_	_	30	compound	_	_
+32	.	.	PUNCT	_	_	20	punct	_	_
+
+RELATIONS:
+  [0] patulangan (SARANA_RITUAL) --[ADALAH]--> pertanda bahwa mereka merupakan keturunan dari orang yang condong pada paksa wesnawa (None)  type=LITERAL source=dependency_rule
+  [1] patulangan (SARANA_RITUAL) --[BERBENTUK]--> naga kahang (SARANA_RITUAL)  type=ENTITY source=dependency_rule
+  [2] patulangan (SARANA_RITUAL) --[BERBENTUK]--> gajah mina (SARANA_RITUAL)  type=ENTITY source=dependency_rule
+
+### S2056
+TEXT: sedang patulangan yang berbentuk macan, singa, gadarba (beruang) dan binatang buas lainnya adalah ciri paksa brahmanisme.
+NER: patulangan -> SARANA_RITUAL [cultural] | singa -> SARANA_RITUAL [cultural]
+PARSE:
+# sent_id = S2056
+# text = sedang patulangan yang berbentuk macan, singa, gadarba (beruang) dan binatang buas lainnya adalah ciri paksa brahmanisme.
+1	sedang	sedang	AUX	_	_	2	advmod	_	_
+2	patulangan	patulangan	NOUN	_	_	18	nsubj	_	_
+3	yang	yang	PRON	_	_	4	nsubj	_	_
+4	berbentuk	bentuk	VERB	_	_	2	acl:relcl	_	_
+5	macan	macan	NOUN	_	_	4	obj	_	_
+6	,	,	PUNCT	_	_	7	punct	_	_
+7	singa	singa	NOUN	_	_	5	conj	_	_
+8	,	,	PUNCT	_	_	9	punct	_	_
+9	gadarba	gadarba	NOUN	_	_	5	conj	_	_
+10	(	(	PUNCT	_	_	11	punct	_	_
+11	beruang	beruang	NOUN	_	_	9	appos	_	_
+12	)	)	PUNCT	_	_	11	punct	_	_
+13	dan	dan	CCONJ	_	_	14	cc	_	_
+14	binatang	binatang	NOUN	_	_	5	conj	_	_
+15	buas	buas	NOUN	_	_	14	compound	_	_
+16	lainnya	lainnya	ADJ	_	_	14	amod	_	_
+17	adalah	adalah	AUX	_	_	18	cop	_	_
+18	ciri	ciri	NOUN	_	_	0	root	_	_
+19	paksa	paksa	NOUN	_	_	18	compound	_	_
+20	brahmanisme	brahmanisme	NOUN	_	_	19	compound	_	_
+21	.	.	PUNCT	_	_	18	punct	_	_
+
+RELATIONS:
+  [0] patulangan (SARANA_RITUAL) --[ADALAH]--> ciri paksa brahmanisme (None)  type=LITERAL source=dependency_rule
+  [1] patulangan (SARANA_RITUAL) --[BERBENTUK]--> macan (None)  type=LITERAL source=dependency_rule
+  [2] patulangan (SARANA_RITUAL) --[BERBENTUK]--> singa (SARANA_RITUAL)  type=ENTITY source=dependency_rule
+  [3] patulangan (SARANA_RITUAL) --[BERBENTUK]--> gadarba (None)  type=LITERAL source=dependency_rule
+  [4] gadarba (None) --[ADALAH]--> beruang (None)  type=LITERAL source=object_decomposition
+  [5] patulangan (SARANA_RITUAL) --[BERBENTUK]--> binatang buas lainnya (None)  type=LITERAL source=dependency_rule
+
+### S2065
+TEXT: tirtha pangentas dan segala sesuatu syarat agama dijalankan, termasuk "api jatu pembakaran, dengan linting anugrah ida sang sulinggih" tak terkecuali.
+NER: tirtha pangentas -> TIRTHA_SUCI [cultural] (canonical: Tirta Pangentas) | sulinggih -> ENTITAS_KEAGAMAAN [cultural] (canonical: Sulinggih)
+PARSE:
+# sent_id = S2065
+# text = tirtha pangentas dan segala sesuatu syarat agama dijalankan, termasuk "api jatu pembakaran, dengan linting anugrah ida sang sulinggih" tak terkecuali.
+1	tirtha	tirtha	PROPN	_	_	8	nsubj:pass	_	_
+2	pangentas	pangentas	PROPN	_	_	1	flat:name	_	_
+3	dan	dan	CCONJ	_	_	4	cc	_	_
+4	segala	segala	PRON	_	_	1	conj	_	_
+5	sesuatu	suatu	PRON	_	_	4	compound	_	_
+6	syarat	syarat	NOUN	_	_	5	compound	_	_
+7	agama	agama	NOUN	_	_	6	compound	_	_
+8	dijalankan	jalan	VERB	_	_	0	root	_	_
+9	,	,	PUNCT	_	_	10	punct	_	_
+10	termasuk	termasuk	VERB	_	_	8	advcl	_	_
+11	"	"	PUNCT	_	_	12	punct	_	_
+12	api	api	NOUN	_	_	10	obj	_	_
+13	jatu	jatu	NOUN	_	_	12	compound	_	_
+14	pembakaran	bakar	NOUN	_	_	13	compound	_	_
+15	,	,	PUNCT	_	_	17	punct	_	_
+16	dengan	dengan	ADP	_	_	17	case	_	_
+17	linting	linting	NOUN	_	_	10	obl	_	_
+18	anugrah	anugrah	NOUN	_	_	17	compound	_	_
+19	ida	ida	PROPN	_	_	18	nmod	_	_
+20	sang	sang	DET	_	_	21	det	_	_
+21	sulinggih	sulinggih	NOUN	_	_	19	compound	_	_
+22	"	"	PUNCT	_	_	12	punct	_	_
+23	tak	tak	PART	_	_	24	advmod	_	_
+24	terkecuali	kecuali	VERB	_	_	17	acl	_	_
+25	.	.	PUNCT	_	_	8	punct	_	_
+
+RELATIONS:
+  [0] tirtha pangentas dan segala sesuatu syarat agama (TIRTHA_SUCI) --[BERISI]--> api jatu pembakaran (None)  type=LITERAL source=dependency_rule
+  [1] tirtha pangentas dan segala sesuatu syarat agama (TIRTHA_SUCI) --[BERISI]--> linting anugrah ida sulinggih (ENTITAS_KEAGAMAAN)  type=ENTITY source=dependency_rule
+
+### S2087
+TEXT: naga banda hanya digunakan dalam upacara palebon (ngaben) dari keluarga tertentu saja.
+NER: naga banda -> SARANA_RITUAL [cultural] (canonical: Naga Banda) | ngaben -> RITUAL_KEMATIAN [cultural]
+PARSE:
+# sent_id = S2087
+# text = naga banda hanya digunakan dalam upacara palebon (ngaben) dari keluarga tertentu saja.
+1	naga	naga	PROPN	_	_	4	nsubj:pass	_	_
+2	banda	banda	PROPN	_	_	1	flat:name	_	_
+3	hanya	hanya	ADV	_	_	4	advmod	_	_
+4	digunakan	guna	VERB	_	_	0	root	_	_
+5	dalam	dalam	ADP	_	_	6	case	_	_
+6	upacara	upacara	NOUN	_	_	4	obl	_	_
+7	palebon	palebon	NOUN	_	_	6	compound	_	_
+8	(	(	PUNCT	_	_	9	punct	_	_
+9	ngaben	ngaben	NOUN	_	_	6	appos	_	_
+10	)	)	PUNCT	_	_	9	punct	_	_
+11	dari	dari	ADP	_	_	12	case	_	_
+12	keluarga	keluarga	NOUN	_	_	4	obl	_	_
+13	tertentu	tertentu	DET	_	_	12	det	_	_
+14	saja	saja	ADV	_	_	12	advmod	_	_
+15	.	.	PUNCT	_	_	4	punct	_	_
+
+RELATIONS:
+  [0] naga banda (SARANA_RITUAL) --[DITUJUKAN_UNTUK]--> keluarga tertentu saja (None)  type=LITERAL source=manual_override
+
+### S2093
+TEXT: yakni mendiang yang diaben semasa hidupnya mempunyai ikatan erat dengan masyarakat, mempunyai pertalian yang intim dengan soal duniawiah material.
+NER: mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S2093
+# text = yakni mendiang yang diaben semasa hidupnya mempunyai ikatan erat dengan masyarakat, mempunyai pertalian yang intim dengan soal duniawiah material.
+1	yakni	yakni	SCONJ	_	_	8	mark	_	_
+2	mendiang	mendiang	NOUN	_	_	8	nsubj	_	_
+3	yang	yang	PRON	_	_	4	nsubj:pass	_	_
+4	diaben	aben	VERB	_	_	2	acl:relcl	_	_
+5	semasa	semasa	ADP	_	_	6	case	_	_
+6	hidup	hidup	NOUN	_	_	4	obl	_	_
+7	nya	dia	PRON	_	_	6	nmod:poss	_	_
+8	mempunyai	punya	VERB	_	_	0	root	_	_
+9	ikatan	ikat	NOUN	_	_	8	obj	_	_
+10	erat	erat	ADJ	_	_	9	amod	_	_
+11	dengan	dengan	ADP	_	_	12	case	_	_
+12	masyarakat	masyarakat	NOUN	_	_	9	nmod	_	_
+13	,	,	PUNCT	_	_	14	punct	_	_
+14	mempunyai	punya	VERB	_	_	8	parataxis	_	_
+15	pertalian	tali	NOUN	_	_	14	obj	_	_
+16	yang	yang	PRON	_	_	17	nsubj	_	_
+17	intim	intim	ADJ	_	_	15	acl:relcl	_	_
+18	dengan	dengan	ADP	_	_	19	case	_	_
+19	soal	soal	NOUN	_	_	15	nmod	_	_
+20	duniawiah	duniawiah	NOUN	_	_	19	compound	_	_
+21	material	material	ADJ	_	_	20	amod	_	_
+22	.	.	PUNCT	_	_	8	punct	_	_
+
+RELATIONS:
+  [0] mendiang (ISTILAH_UMUM_RITUAL) --[MEMILIKI]--> ikatan erat dengan masyarakat (None)  type=LITERAL source=manual_override
+  [1] mendiang (None) --[MEMILIKI]--> pertalian intim dengan soal duniawi material (None)  type=LITERAL source=manual_override
+
+### S2115
+TEXT: kelompok ini, karena swadharma kemasyarakatannya itu, dinamai paksa mahayana (kendaraan besar), kerana bertugas "memuat" ("mengangkut") masyarakat manusia ke alam sana.
+NER: swadharma -> KONSEP_HUKUM_ADAT [cultural]
+PARSE:
+# sent_id = S2115
+# text = kelompok ini, karena swadharma kemasyarakatannya itu, dinamai paksa mahayana (kendaraan besar), kerana bertugas "memuat" ("mengangkut") masyarakat manusia ke alam sana.
+1	kelompok	kelompok	NOUN	_	_	10	obl	_	_
+2	ini	ini	DET	_	_	1	det	_	_
+3	,	,	PUNCT	_	_	1	punct	_	_
+4	karena	karena	SCONJ	_	_	5	mark	_	_
+5	swadharma	swadharma	NOUN	_	_	10	nsubj:pass	_	_
+6	kemasyarakatan	masyarakat	NOUN	_	_	5	compound	_	_
+7	nya	dia	PRON	_	_	6	nmod:poss	_	_
+8	itu	itu	DET	_	_	6	det	_	_
+9	,	,	PUNCT	_	_	5	punct	_	_
+10	dinamai	nama	VERB	_	_	0	root	_	_
+11	paksa	paksa	VERB	_	_	10	amod	_	_
+12	mahayana	mahayana	NOUN	_	_	11	obj	_	_
+13	(	(	PUNCT	_	_	14	punct	_	_
+14	kendaraan	kendara	NOUN	_	_	12	appos	_	_
+15	besar	besar	ADJ	_	_	14	amod	_	_
+16	)	)	PUNCT	_	_	14	punct	_	_
+17	,	,	PUNCT	_	_	19	punct	_	_
+18	kerana	kerana	NOUN	_	_	19	nsubj	_	_
+19	bertugas	tugas	VERB	_	_	10	parataxis	_	_
+20	"	"	PUNCT	_	_	21	punct	_	_
+21	memuat	muat	VERB	_	_	19	xcomp	_	_
+22	"	"	PUNCT	_	_	21	punct	_	_
+23	(	(	PUNCT	_	_	25	punct	_	_
+24	"	"	PUNCT	_	_	25	punct	_	_
+25	mengangkut	angkut	VERB	_	_	21	appos	_	_
+26	"	"	PUNCT	_	_	25	punct	_	_
+27	)	)	PUNCT	_	_	25	punct	_	_
+28	masyarakat	masyarakat	NOUN	_	_	21	obj	_	_
+29	manusia	manusia	NOUN	_	_	28	compound	_	_
+30	ke	ke	ADP	_	_	31	case	_	_
+31	alam	alam	NOUN	_	_	28	nmod	_	_
+32	sana	sana	NOUN	_	_	31	compound	_	_
+33	.	.	PUNCT	_	_	10	punct	_	_
+
+RELATIONS:
+  [0] kelompok ini (None) --[ADALAH]--> paksa mahayana (kendaraan besar) (None)  type=LITERAL source=manual_override
+  [1] kelompok (paksa mahayana) (None) --[BERTUGAS_MENGANGKUT]--> masyarakat manusia ke alam sana (None)  type=LITERAL source=manual_override
+
+### S2117
+TEXT: berdasarkan pengertian inilah, seorang peranda buddha dinilai wajar memakai naga banda pada palebonnya.
+NER: peranda -> ENTITAS_KEAGAMAAN [cultural] | naga banda -> SARANA_RITUAL [cultural] (canonical: Naga Banda)
+PARSE:
+# sent_id = S2117
+# text = berdasarkan pengertian inilah, seorang peranda buddha dinilai wajar memakai naga banda pada palebonnya.
+1	berdasarkan	berdasar	ADP	_	_	2	case	_	_
+2	pengertian	pengertian	NOUN	_	_	9	obl	_	_
+3	ini	ini	DET	_	_	2	det	_	_
+4	lah	lah	PART	_	_	3	advmod:emph	_	_
+5	,	,	PUNCT	_	_	2	punct	_	_
+6	seorang	orang	DET	_	_	7	det	_	_
+7	peranda	peranda	NOUN	_	_	9	nsubj:pass	_	_
+8	buddha	buddha	NOUN	_	_	7	compound	_	_
+9	dinilai	nilai	VERB	_	_	0	root	_	_
+10	wajar	wajar	ADJ	_	_	9	amod	_	_
+11	memakai	pakai	VERB	_	_	9	xcomp	_	_
+12	naga	naga	NOUN	_	_	11	obj	_	_
+13	banda	banda	NOUN	_	_	12	compound	_	_
+14	pada	pada	ADP	_	_	15	case	_	_
+15	palebon	palebon	NOUN	_	_	12	nmod	_	_
+16	nya	dia	PRON	_	_	15	nmod:poss	_	_
+17	.	.	PUNCT	_	_	9	punct	_	_
+
+RELATIONS:
+  [0] peranda buddha (ENTITAS_KEAGAMAAN) --[MEMAKAI]--> naga banda (pada palebonnya) (SARANA_RITUAL)  type=ENTITY source=manual_override
+
+### S2124
+TEXT: swadharma beliau untuk mamari-suddha (menyucikan) dunia ini, merupakan fungsi pokok beliau.
+NER: swadharma -> KONSEP_HUKUM_ADAT [cultural]
+PARSE:
+# sent_id = S2124
+# text = swadharma beliau untuk mamari-suddha (menyucikan) dunia ini, merupakan fungsi pokok beliau.
+1	swadharma	swadharma	NOUN	_	_	11	nsubj	_	_
+2	beliau	beliau	PRON	_	_	1	nmod:poss	_	_
+3	untuk	untuk	ADP	_	_	4	case	_	_
+4	mamari-suddha	mamari	NOUN	_	_	1	nmod	_	_
+5	(	(	PUNCT	_	_	6	punct	_	_
+6	menyucikan	nyuci	VERB	_	_	4	appos	_	_
+7	)	)	PUNCT	_	_	6	punct	_	_
+8	dunia	dunia	NOUN	_	_	6	obj	_	_
+9	ini	ini	DET	_	_	8	det	_	_
+10	,	,	PUNCT	_	_	1	punct	_	_
+11	merupakan	merupakan	VERB	_	_	0	root	_	_
+12	fungsi	fungsi	NOUN	_	_	11	obj	_	_
+13	pokok	pokok	NOUN	_	_	12	compound	_	_
+14	beliau	beliau	PRON	_	_	13	nmod:poss	_	_
+15	.	.	PUNCT	_	_	11	punct	_	_
+
+RELATIONS:
+  [0] swadharma (KONSEP_HUKUM_ADAT) --[ADALAH]--> fungsi pokok (None)  type=LITERAL source=dependency_rule
+  [1] swadharma (KONSEP_HUKUM_ADAT) --[BERTUJUAN_UNTUK]--> mamari-suddha ( menyucikan ) dunia ini (None)  type=LITERAL source=dependency_rule
+
+### S2130
+TEXT: peranda shiwa menempatkan "diri" atau jenananya pada daya suci hyang widhi itu, mula-mula di atas alias di "luar" alam duniawi, lalu turun meresapi alam ini.
+NER: peranda -> ENTITAS_KEAGAMAAN [cultural] | shiwa -> ENTITAS_KEAGAMAAN [cultural] | hyang -> KONSEP_FILOSOFIS [cultural]
+PARSE:
+# sent_id = S2130
+# text = peranda shiwa menempatkan "diri" atau jenananya pada daya suci hyang widhi itu, mula-mula di atas alias di "luar" alam duniawi, lalu turun meresapi alam ini.
+1	peranda	peranda	NOUN	_	_	3	nsubj	_	_
+2	shiwa	shiwa	NOUN	_	_	1	compound	_	_
+3	menempatkan	tempat	VERB	_	_	0	root	_	_
+4	"	"	PUNCT	_	_	5	punct	_	_
+5	diri	diri	PRON	_	_	3	obj	_	_
+6	"	"	PUNCT	_	_	5	punct	_	_
+7	atau	atau	CCONJ	_	_	8	cc	_	_
+8	jenana	jenana	NOUN	_	_	5	conj	_	_
+9	nya	dia	PRON	_	_	8	nmod:poss	_	_
+10	pada	pada	ADP	_	_	11	case	_	_
+11	daya	daya	NOUN	_	_	8	nmod	_	_
+12	suci	suci	ADJ	_	_	11	amod	_	_
+13	hyang	hyang	NOUN	_	_	11	compound	_	_
+14	widhi	widhi	NOUN	_	_	13	compound	_	_
+15	itu	itu	DET	_	_	14	det	_	_
+16	,	,	PUNCT	_	_	19	punct	_	_
+17	mula-mula	mula	ADV	_	_	19	advmod	_	_
+18	di	di	ADP	_	_	19	case	_	_
+19	atas	atas	NOUN	_	_	3	obl	_	_
+20	alias	alias	NOUN	_	_	19	compound	_	_
+21	di	di	ADP	_	_	25	case	_	_
+22	"	"	PUNCT	_	_	25	punct	_	_
+23	luar	luar	ADP	_	_	25	case	_	_
+24	"	"	PUNCT	_	_	25	punct	_	_
+25	alam	alam	NOUN	_	_	20	nmod	_	_
+26	duniawi	duniawi	ADJ	_	_	25	amod	_	_
+27	,	,	PUNCT	_	_	29	punct	_	_
+28	lalu	lalu	SCONJ	_	_	29	mark	_	_
+29	turun	turun	VERB	_	_	3	advcl	_	_
+30	meresapi	resap	VERB	_	_	29	xcomp	_	_
+31	alam	alam	NOUN	_	_	30	obj	_	_
+32	ini	ini	DET	_	_	31	det	_	_
+33	.	.	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] peranda shiwa (ENTITAS_KEAGAMAAN) --[MENEMPATKAN]--> diri/jenana pada daya suci hyang widhi (None)  type=LITERAL source=manual_override
+  [1] peranda shiwa (ENTITAS_KEAGAMAAN) --[MENEMPATKAN_DIRI_DI]--> luar alam duniawi (mula-mula di atas) (None)  type=LITERAL source=manual_override
+  [2] peranda shiwa (ENTITAS_KEAGAMAAN) --[TURUN_MERESAPI]--> alam ini (None)  type=LITERAL source=manual_override
+
+### S2133
+TEXT: oleh karena peranda buddha erat kaitannya dengan alam ini, maka digunakanlah naga banda pada saat palebon.
+NER: peranda -> ENTITAS_KEAGAMAAN [cultural] | naga banda -> SARANA_RITUAL [cultural] (canonical: Naga Banda)
+PARSE:
+# sent_id = S2133
+# text = oleh karena peranda buddha erat kaitannya dengan alam ini, maka digunakanlah naga banda pada saat palebon.
+1	oleh	oleh	ADP	_	_	3	case	_	_
+2	karena	karena	ADP	_	_	1	fixed	_	_
+3	peranda	peranda	NOUN	_	_	13	obl	_	_
+4	buddha	buddha	NOUN	_	_	3	compound	_	_
+5	erat	erat	ADJ	_	_	3	amod	_	_
+6	kaitan	kait	NOUN	_	_	3	compound	_	_
+7	nya	dia	PRON	_	_	6	nmod:poss	_	_
+8	dengan	dengan	ADP	_	_	9	case	_	_
+9	alam	alam	NOUN	_	_	6	nmod	_	_
+10	ini	ini	DET	_	_	9	det	_	_
+11	,	,	PUNCT	_	_	3	punct	_	_
+12	maka	maka	SCONJ	_	_	13	mark	_	_
+13	digunakan	guna	VERB	_	_	0	root	_	_
+14	lah	lah	PART	_	_	13	advmod:emph	_	_
+15	naga	naga	NOUN	_	_	13	nsubj:pass	_	_
+16	banda	banda	NOUN	_	_	15	compound	_	_
+17	pada	pada	ADP	_	_	18	case	_	_
+18	saat	saat	NOUN	_	_	13	obl	_	_
+19	palebon	palebon	NOUN	_	_	18	compound	_	_
+20	.	.	PUNCT	_	_	13	punct	_	_
+
+RELATIONS:
+  [0] naga banda (SARANA_RITUAL) --[DIGUNAKAN_SAAT]--> palebon (None)  type=LITERAL source=manual_override
+
+### S2163
+TEXT: jadi, naga banda itu memiliki arti dan makna yang bermacam-macam.
+NER: naga banda -> SARANA_RITUAL [cultural] (canonical: Naga Banda)
+PARSE:
+# sent_id = S2163
+# text = jadi, naga banda itu memiliki arti dan makna yang bermacam-macam.
+1	jadi	jadi	VERB	_	_	6	advcl	_	_
+2	,	,	PUNCT	_	_	1	punct	_	_
+3	naga	naga	NOUN	_	_	6	nsubj	_	_
+4	banda	banda	NOUN	_	_	3	compound	_	_
+5	itu	itu	DET	_	_	3	det	_	_
+6	memiliki	milik	VERB	_	_	0	root	_	_
+7	arti	arti	NOUN	_	_	6	obj	_	_
+8	dan	dan	CCONJ	_	_	9	cc	_	_
+9	makna	makna	NOUN	_	_	7	conj	_	_
+10	yang	yang	PRON	_	_	11	nsubj	_	_
+11	bermacam-macam	macam	VERB	_	_	9	acl:relcl	_	_
+12	.	.	PUNCT	_	_	6	punct	_	_
+
+RELATIONS:
+  [0] naga banda (SARANA_RITUAL) --[MEMILIKI]--> makna yang bermacam-macam (None)  type=LITERAL source=dependency_rule
+
+### S2166
+TEXT: menjelang dan sampai dengan hari pabersihan, naga banda diletakkan berdampingan dengan jenazah mendiang pada ruang bale semanggen.
+NER: pabersihan -> TAHAPAN_UPACARA [cultural] | naga banda -> SARANA_RITUAL [cultural] (canonical: Naga Banda) | jenazah -> ISTILAH_UMUM_RITUAL [cultural] | mendiang -> ISTILAH_UMUM_RITUAL [cultural] | bale semanggen -> BANGUNAN_RITUAL [cultural]
+PARSE:
+# sent_id = S2166
+# text = menjelang dan sampai dengan hari pabersihan, naga banda diletakkan berdampingan dengan jenazah mendiang pada ruang bale semanggen.
+1	menjelang	menjelang	VERB	_	_	10	advcl	_	_
+2	dan	dan	CCONJ	_	_	1	cc	_	_
+3	sampai	sampai	ADP	_	_	5	case	_	_
+4	dengan	dengan	ADP	_	_	5	case	_	_
+5	hari	hari	NOUN	_	_	1	obl	_	_
+6	pabersihan	pabersihan	NOUN	_	_	5	compound	_	_
+7	,	,	PUNCT	_	_	1	punct	_	_
+8	naga	naga	NOUN	_	_	10	nsubj:pass	_	_
+9	banda	banda	NOUN	_	_	8	compound	_	_
+10	diletakkan	letak	VERB	_	_	0	root	_	_
+11	berdampingan	damping	VERB	_	_	10	xcomp	_	_
+12	dengan	dengan	ADP	_	_	13	case	_	_
+13	jenazah	jenazah	NOUN	_	_	11	obl	_	_
+14	mendiang	mendiang	NOUN	_	_	13	compound	_	_
+15	pada	pada	ADP	_	_	16	case	_	_
+16	ruang	ruang	NOUN	_	_	10	obl	_	_
+17	bale	bale	NOUN	_	_	16	compound	_	_
+18	semanggen	semanggen	NOUN	_	_	17	compound	_	_
+19	.	.	PUNCT	_	_	10	punct	_	_
+
+RELATIONS:
+  [0] naga banda (SARANA_RITUAL) --[DILETAKKAN_DI]--> ruang bale semanggen (BANGUNAN_RITUAL)  type=ENTITY source=manual_override
+  [1] naga banda (SARANA_RITUAL) --[BERDAMPINGAN_DENGAN]--> jenazah mendiang (ISTILAH_UMUM_RITUAL)  type=ENTITY source=manual_override
+
+### S2180
+TEXT: bale salunglung berwujud sebuah rumah kecil sederhana.
+NER: bale salunglung -> BANGUNAN_RITUAL [cultural] (canonical: Bale Salunglung)
+PARSE:
+# sent_id = S2180
+# text = bale salunglung berwujud sebuah rumah kecil sederhana.
+1	bale	bale	PROPN	_	_	3	nsubj	_	_
+2	salunglung	salunglung	PROPN	_	_	1	flat:name	_	_
+3	berwujud	wujud	VERB	_	_	0	root	_	_
+4	sebuah	buah	DET	_	_	5	det	_	_
+5	rumah	rumah	NOUN	_	_	3	obj	_	_
+6	kecil	kecil	ADJ	_	_	5	amod	_	_
+7	sederhana	sederhana	ADJ	_	_	5	amod	_	_
+8	.	.	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] bale salunglung (BANGUNAN_RITUAL) --[BERWUJUD]--> rumah kecil sederhana (None)  type=LITERAL source=dependency_rule
+
+### S2183
+TEXT: bale salunglung dibuat di rumah atau di bale banjar.
+NER: bale salunglung -> BANGUNAN_RITUAL [cultural] (canonical: Bale Salunglung) | bale banjar -> BANGUNAN_RITUAL [cultural]
+PARSE:
+# sent_id = S2183
+# text = bale salunglung dibuat di rumah atau di bale banjar.
+1	bale	bale	PROPN	_	_	3	nsubj:pass	_	_
+2	salunglung	salunglung	PROPN	_	_	1	flat:name	_	_
+3	dibuat	buat	VERB	_	_	0	root	_	_
+4	di	di	ADP	_	_	5	case	_	_
+5	rumah	rumah	NOUN	_	_	3	obl	_	_
+6	atau	atau	CCONJ	_	_	8	cc	_	_
+7	di	di	ADP	_	_	8	case	_	_
+8	bale	bale	NOUN	_	_	3	obl	_	_
+9	banjar	banjar	NOUN	_	_	8	compound	_	_
+10	.	.	PUNCT	_	_	3	punct	_	_
+
+RELATIONS:
+  [0] bale salunglung (BANGUNAN_RITUAL) --[DIBUAT_DI]--> rumah (None)  type=LITERAL source=dependency_rule
+  [1] bale salunglung (BANGUNAN_RITUAL) --[DIBUAT_DI]--> bale banjar (BANGUNAN_RITUAL)  type=ENTITY source=dependency_rule
+
+### S2184
+TEXT: tetapi pada hari pangabenan (sebelum pengangkutan jenazah) bale salunglung dibawa ke tempat pembakaran lebih dulu dan diletakkan sekitar empat atau lima meter di arah hulu dari tempat pembakaran jenazah.
+NER: pangabenan -> RITUAL_KEMATIAN [cultural] | jenazah -> ISTILAH_UMUM_RITUAL [cultural] | bale salunglung -> BANGUNAN_RITUAL [cultural] (canonical: Bale Salunglung)
+PARSE:
+# sent_id = S2184
+# text = tetapi pada hari pangabenan (sebelum pengangkutan jenazah) bale salunglung dibawa ke tempat pembakaran lebih dulu dan diletakkan sekitar empat atau lima meter di arah hulu dari tempat pembakaran jenazah.
+1	tetapi	tetapi	CCONJ	_	_	12	cc	_	_
+2	pada	pada	ADP	_	_	3	case	_	_
+3	hari	hari	NOUN	_	_	12	obl:tmod	_	_
+4	pangabenan	pangabenan	NOUN	_	_	3	compound	_	_
+5	(	(	PUNCT	_	_	7	punct	_	_
+6	sebelum	sebelum	ADP	_	_	7	case	_	_
+7	pengangkutan	angkut	NOUN	_	_	3	nmod	_	_
+8	jenazah	jenazah	NOUN	_	_	7	compound	_	_
+9	)	)	PUNCT	_	_	7	punct	_	_
+10	bale	bale	NOUN	_	_	12	nsubj:pass	_	_
+11	salunglung	salunglung	NOUN	_	_	10	compound	_	_
+12	dibawa	bawa	VERB	_	_	0	root	_	_
+13	ke	ke	ADP	_	_	14	case	_	_
+14	tempat	tempat	NOUN	_	_	12	obl	_	_
+15	pembakaran	bakar	NOUN	_	_	14	compound	_	_
+16	lebih	lebih	ADV	_	_	17	advmod	_	_
+17	dulu	dulu	ADV	_	_	14	advmod	_	_
+18	dan	dan	CCONJ	_	_	19	cc	_	_
+19	diletakkan	letak	VERB	_	_	12	conj	_	_
+20	sekitar	sekitar	ADP	_	_	24	case	_	_
+21	empat	empat	NUM	_	_	24	nummod	_	_
+22	atau	atau	CCONJ	_	_	24	cc	_	_
+23	lima	lima	NUM	_	_	24	nummod	_	_
+24	meter	meter	NOUN	_	_	19	nummod	_	_
+25	di	di	ADP	_	_	26	case	_	_
+26	arah	arah	NOUN	_	_	19	obl	_	_
+27	hulu	hulu	NOUN	_	_	26	compound	_	_
+28	dari	dari	ADP	_	_	29	case	_	_
+29	tempat	tempat	NOUN	_	_	26	nmod	_	_
+30	pembakaran	bakar	NOUN	_	_	29	compound	_	_
+31	jenazah	jenazah	NOUN	_	_	30	compound	_	_
+32	.	.	PUNCT	_	_	12	punct	_	_
+
+RELATIONS:
+  [0] bale salunglung (BANGUNAN_RITUAL) --[DIBAWA_KE]--> tempat pembakaran (None)  type=LITERAL source=dependency_rule
+  [1] bale salunglung (BANGUNAN_RITUAL) --[DILETAKKAN_DI]--> arah hulu (None)  type=LITERAL source=dependency_rule
+  [2] bale salunglung (None) --[DILETAKKAN_DI]--> sekitar empat atau lima meter di arah hulu dari tempat pembakaran jenazah (None)  type=LITERAL source=manual_override
+
+### S2198
+TEXT: kiranya tidak terlalu salah bila dinyatakan, bahwa bale salunglung adalah bagaikan pitraloka, tempat pitra mendiang yang diaben, atau wilayah "kantongnya segala sesuatu yang didetasering di dunia ini."
+NER: bale salunglung -> BANGUNAN_RITUAL [cultural] (canonical: Bale Salunglung) | pitraloka -> KONSEP_FILOSOFIS [cultural] | pitra -> KONSEP_FILOSOFIS [cultural] (canonical: Pitra) | mendiang -> ISTILAH_UMUM_RITUAL [cultural]
+PARSE:
+# sent_id = S2198
+# text = kiranya tidak terlalu salah bila dinyatakan, bahwa bale salunglung adalah bagaikan pitraloka, tempat pitra mendiang yang diaben, atau wilayah "kantongnya segala sesuatu yang didetasering di dunia ini."
+1	kira	kira	NOUN	_	_	5	nsubj	_	_
+2	nya	dia	PRON	_	_	1	nmod:poss	_	_
+3	tidak	tidak	PART	_	_	5	advmod	_	_
+4	terlalu	terlalu	ADV	_	_	5	advmod	_	_
+5	salah	salah	VERB	_	_	0	root	_	_
+6	bila	bila	SCONJ	_	_	7	mark	_	_
+7	dinyatakan	nyata	VERB	_	_	5	acl	_	_
+8	,	,	PUNCT	_	_	13	punct	_	_
+9	bahwa	bahwa	SCONJ	_	_	13	mark	_	_
+10	bale	bale	NOUN	_	_	13	nsubj	_	_
+11	salunglung	salunglung	NOUN	_	_	10	compound	_	_
+12	adalah	adalah	AUX	_	_	13	cop	_	_
+13	bagaikan	bagaik	NOUN	_	_	7	advcl	_	_
+14	pitraloka	pitraloka	NOUN	_	_	13	compound	_	_
+15	,	,	PUNCT	_	_	16	punct	_	_
+16	tempat	tempat	NOUN	_	_	13	conj	_	_
+17	pitra	pitra	NOUN	_	_	16	compound	_	_
+18	mendiang	mendiang	NOUN	_	_	17	compound	_	_
+19	yang	yang	PRON	_	_	20	nsubj:pass	_	_
+20	diaben	aben	VERB	_	_	16	acl:relcl	_	_
+21	,	,	PUNCT	_	_	23	punct	_	_
+22	atau	atau	CCONJ	_	_	23	cc	_	_
+23	wilayah	wilayah	NOUN	_	_	13	conj	_	_
+24	"	"	PUNCT	_	_	25	punct	_	_
+25	kantongnya	kantongnya	NOUN	_	_	23	appos	_	_
+26	segala	segala	DET	_	_	27	det	_	_
+27	sesuatu	suatu	PRON	_	_	25	compound	_	_
+28	yang	yang	PRON	_	_	29	nsubj:pass	_	_
+29	didetasering	detaserng	VERB	_	_	27	acl:relcl	_	_
+30	di	di	ADP	_	_	31	case	_	_
+31	dunia	dunia	NOUN	_	_	29	obl	_	_
+32	ini	ini	DET	_	_	31	det	_	_
+33	.	.	PUNCT	_	_	5	punct	_	_
+34	"	"	PUNCT	_	_	5	punct	_	_
+
+RELATIONS:
+  [0] bale salunglung (BANGUNAN_RITUAL) --[ADALAH]--> bagaikan pitraloka (KONSEP_FILOSOFIS)  type=ENTITY source=manual_override
+  [1] bale salunglung (BANGUNAN_RITUAL) --[ADALAH]--> tempat pitra mendiang yang diaben (None)  type=LITERAL source=manual_override
+  [2] bale salunglung (BANGUNAN_RITUAL) --[ADALAH]--> wilayah (None)  type=LITERAL source=manual_override
+  [3] wilayah (None) --[ADALAH]--> kantongnya segala sesuatu yang didetasering di dunia ini (None)  type=LITERAL source=manual_override

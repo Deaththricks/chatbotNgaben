@@ -1,0 +1,189 @@
+==============================================================================
+NGABEN RELATION NORMALIZATION REPORT
+==============================================================================
+input : ..\Results\Final\relation_results_ngaben\relation_results_ngaben.json
+output: relation_results_ngaben.normalized.json
+
+rows                : 980  ->  904   (-76)
+  dropped (junk)     : 0
+  dropped (balinese) : 6
+  dropped (self-loop): 0
+  dropped (fragment) : 46
+  dropped (bare word): 8
+  clause->literal    : 6
+  berarti->literal   : 1
+  duplicates removed : 16
+nodes               : 617  ->  540   (-77)
+edges (unique)       : 368  ->  325   (-43)
+isolated nodes       : 160  ->  148   (-12)
+distinct relations   : 311  ->  271
+  final set          : ADALAH, AKRAB_DENGAN, BAGIAN_DARI, BARU_LEPAS_PERTALIAN_DENGAN, BERADA_DI, BERAKAR_PADA, BERALASKAN, BERANGKAT_KE, BERARTI, BERASAL_DARI, BERASAL_DARI_KATA, BERBEDA_DENGAN, BERBENTUK, BERDAMPINGAN_DENGAN, BERDASARKAN, BERDEWA, BERFUNGSI_SEBAGAI, BERFUNGSI_UNTUK, BERGANTUNG_PADA, BERISI, BERLAWANAN_DENGAN, BERMAKNA, BERPAMITAN_KEPADA, BERPERAN_SEBAGAI, BERPUTAR_DENGAN, BERSELONJOR_KE, BERSEMAYAM_DI, BERSINAR_BAGAIKAN, BERSUKA, BERTAHTA, BERTUGAS_MENGANGKUT, BERTUJUAN_AGAR, BERTUJUAN_MENYUCIKAN, BERTUJUAN_POKOK, BERTUJUAN_UNTUK, BERUBAH_DARI, BERUBAH_DARI_SUKSMA_SARIRA_MENJADI, BERUBAH_MENJADI, BERUKURAN_PANJANG, BERUNSUR, BERUPA, BERVARIASI_DALAM, BERWARNA, BERWUJUD, BUKAN_SEKADAR, CONTOH, DAPAT_MEMASUKI, DAPAT_MENCAPAI, DAPAT_SELESAI_SECARA, DIADAKAN_DI, DIAJAK_BERKOMUNIKASI_OLEH, DIAKHIRI_DENGAN, DIALASI, DIALASI_DENGAN, DIAMBIL_DARI, DIAMBIL_OLEH, DIANGGAP_SEBAGAI, DIAWALI_DENGAN, DIBAKAR_DENGAN, DIBARINGKAN, DIBARINGKAN_DI, DIBASMI_OLEH, DIBAWA_KE, DIBAWA_MENGHADAP, DIBERI, DIBERSIHKAN_DARI, DIBERSIHKAN_DENGAN, DIBILAS_DENGAN, DIBONGKAR, DIBONGKAR_SETELAH, DIBUATKAN, DIBUAT_BERBENTUK, DIBUAT_DI, DIBUAT_OLEH, DIBUAT_SAAT, DIBUKA, DIBUNGKUS, DIBUNGKUS_DENGAN, DIBUNGKUS_SETELAH, DICABUT_DENGAN, DIDUDUKKAN_DI, DIDUDUKKAN_DULU_SEBELUM, DIDUKUNG_DENGAN, DIGANTI_DENGAN, DIGANTUNGKAN_DI, DIGELAR, DIGILING_DI_ATAS, DIGULUNG_DENGAN, DIGUNAKAN_DALAM, DIGUNAKAN_DENGAN_HARAPAN, DIGUNAKAN_PADA, DIGUNAKAN_SAAT, DIGUNAKAN_SEBANYAK, DIGUNAKAN_SEBELUM, DIHANCURKAN_DI, DIHANYUTKAN_KE, DIHIAS_PALING, DIHIAS_SEOLAH_OLAH, DIHIDUPKAN_DENGAN, DIHUNI, DIIKAT, DIIKAT_DENGAN, DIISI, DIISI_DENGAN, DIJADIKAN, DIJUNJUNG_OLEH, DIKELILINGI_OLEH, DIKENAL_SEBAGAI, DIKERINGKAN_DENGAN, DIKUBUR, DIKUBUR_DENGAN, DIKUMPULKAN, DIKURUNG_DENGAN, DILAKUKAN, DILAKUKAN_ANTARA, DILAKUKAN_DALAM_HAL, DILAKUKAN_DENGAN, DILAKUKAN_DI, DILAKUKAN_OLEH, DILAKUKAN_SAAT, DILAKUKAN_SEBELUM, DILANGSUNGKAN_PADA, DILARANG, DILENGKAPI, DILETAKKAN_DENGAN, DILETAKKAN_DI, DILETAKKAN_MELINTANG_DI, DILETAKKAN_PADA, DILINDUNGI_DENGAN, DILIPAT_DI, DIMANDIKAN_DI, DIMANDIKAN_DI_ATAS, DIMANTRAI, DIMANTRAI_OLEH, DIMASUKKAN_KE_DALAM, DIMASUKKAN_MELALUI, DIMOHONKAN_AGAR_MENUJU, DIMOHONKAN_DARI, DIMOHONKAN_DI, DIMOHONKAN_OLEH, DIMOHON_DARI, DIMOHON_KEPADA, DINAIKKAN_KE, DINILAI_SEBAGAI, DINYALAKAN_SAAT, DIOLESKAN_DI, DIPAKAIKAN, DIPAKAI_UNTUK, DIPANGKU_OLEH, DIPASANG, DIPASANG_DI_ATAS, DIPASANG_PADA, DIPECAHKAN, DIPENDAK_SECARA, DIPERCIKI_DAN_DIMINUMKAN, DIPERCIKI_DENGAN, DIPERCIKKAN_PADA, DIPERCIKKAN_SEBELUM, DIPERLAKUKAN_SEPERTI, DIPEROLEH_DARI, DIPERSATUKAN_DENGAN, DIPERSEMBAHKAN_KEPADA, DIPERSILAKAN_DI, DIPERSILAKAN_MASUK_KE, DIPERSILAKAN_UNTUK, DIPIMPIN_OLEH, DIPINDAHKAN_DARI, DIPINDAHKAN_KE, DIPUJA, DIPUJA_PADA, DIPULUNG, DISABUNI_DENGAN, DISAMBUNG_DENGAN, DISEDIAKAN_DI, DISEMBURKAN_PADA, DISEMBURKAN_SAAT, DISERTAI, DISINKRONKAN_DENGAN, DISIRAM_DENGAN, DISISIPI, DISUCIKAN_DENGAN, DISUGUHKAN, DITABURKAN_DI, DITANAM_ATAU_DIBAKAR, DITANAM_ATAU_DIBAKAR_BERSAMA, DITARUHKAN_DI_SAMPING, DITARUH_DENGAN, DITELENTANGKAN_DI, DITEMPELKAN_DI, DITEMPUH_DENGAN, DITERIMA_SEBAGAI, DITUJUKAN_UNTUK, DITURUNKAN_DARI, DITURUNKAN_DI, DITUTUPI_DENGAN, DITUTUP_DENGAN, DIUSUNG, DIUSUNG_KE, HARUS_DIBIARKAN, HARUS_DIRASAKAN_SEBAGAI, HARUS_MELALUI, HINGGA_TAMPAK, KALAH_MERIAH_DIBANDING, KEMBALI_KE, LAHIR_ATAS, LAHIR_DALAM_WUJUD, LAINNYA, LEPAS_BEBAS_DARI, MELAKUKAN, MELAMBANGKAN, MELENGKAPI, MELIPUTI, MEMAKAI, MEMAKLUMI, MEMANAH, MEMBELAKANGI, MEMBERIKAN, MEMBUAT, MEMBUJUR_KE, MEMEGANG, MEMILIKI, MEMILIKI_JENIS, MEMILIKI_TINGKAT, MEMOHON, MEMPENGARUHI, MEMPEROLEH, MEMPEROLEH_DARI, MEMPERTAHANKAN, MEMUPUK, MENDAPATKAN, MENDAPAT_PENGARUH_DARI, MENEMPATKAN, MENEMPATKAN_DIRI_DI, MENENTUKAN, MENERIMA, MENGALAMI, MENGAMBIL, MENGANDUNG, MENGELUPASI, MENGGUNAKAN, MENGHADAPI, MENGHATURKAN, MENGHILANGKAN, MENINGKAT_KEDUDUKAN_MENJADI, MENJADI, MENJAGA, MENJALANI, MENONJOLKAN, MENUJU, MENUNGGU, MENUNJUKKAN, MENYAKSIKAN, MENYEBARKAN, MENYERAHKAN, MERINCI, MERUPAKAN_PERUBAHAN_DARI, MEWUJUDKAN, MUSNAH, SAMA_DENGAN, SEPANJANG, TANPA, TERBUAT_DARI, TERDIRI_DARI, TERLIBAT_DI, TERTANAM_TITIP_DI, TIDAK_BOLEH_DILAKUKAN_SAAT, TIDAK_MEMAKAI, TIDAK_MENGGUNAKAN, TIDAK_MENJAMIN, TIDUR_DI, TURUN_MERESAPI
+
+
+1. NODE MERGES
+--------------
+  'tirta'                                       -> 'tirtha'                            (6 row(s))
+  'kwangen'                                     -> 'kawangen'                          (4 row(s))
+  'pitara'                                      -> 'pitra'                             (4 row(s))
+  'puspalingga'                                 -> 'puspa lingga'                      (4 row(s))
+  'pengabenan'                                  -> 'pangabenan'                        (2 row(s))
+  'kwangen jeriji'                              -> 'kawangen jeriji'                   (2 row(s))
+  'balai selunglung'                            -> 'bale salunglung'                   (1 row(s))
+  'nglungah'                                    -> 'ngelungah'                         (1 row(s))
+  'atma/pitara'                                 -> 'atma pitara'                       (1 row(s))
+
+2. ROWS DROPPED
+---------------
+  (none)
+
+2b. ROWS DROPPED (non-Indonesian sentence)
+------------------------------------------
+  S4303: ['maring', 'sangkaning']  [teja sangkaning rupa mulih maring teja,]
+  S4303: ['maring', 'sangkaning']  [teja sangkaning rupa mulih maring teja,]
+  S4304: ['maring', 'sangkaning']  [bayu sangkaning ambekan mulih maring bayu.]
+  S4304: ['maring', 'sangkaning']  [bayu sangkaning ambekan mulih maring bayu.]
+  S4305: ['maring', 'sangkaning']  [akasa sangkaning sabda mulih maring akasa,]
+  S4305: ['maring', 'sangkaning']  [akasa sangkaning sabda mulih maring akasa,]
+
+2c. SELF-LOOPS DROPPED
+----------------------
+  (none)
+
+2d. FRAGMENTS DROPPED (not an entity name)
+------------------------------------------
+  S283: 'banten simbol orang yang meninggal' -DIKENAL_SEBAGAI-> 'kala puspa' (ENTITY)
+  S399: 'sasih yang baik untuk pitra yadnya khususnya ngaben' -ADALAH-> 'karo' (ENTITY)
+  S399: 'sasih yang baik untuk pitra yadnya khususnya ngaben' -ADALAH-> 'kasa' (ENTITY)
+  S399: 'sasih yang baik untuk pitra yadnya khususnya ngaben' -ADALAH-> 'katiga' (ENTITY)
+  S972: 'sawa anak yang telah berusia lima bulan ke atas' -DIBAKAR_DALAM-> 'pitra yadnya nglungah' (ENTITY)
+  S1017: 'mahabutha yang lima unsur' -KEMBALI_KEPADA-> 'induk asalnya masing-masing' (LITERAL)
+  S1407: 'ngaben cara yama purwana tatwa' -BERSASARAN-> 'jenazah secara nyata' (ENTITY)
+  S1407: 'ngaben cara yama purwana tatwa' -DILAKUKAN_DENGAN-> 'sawa' (ENTITY)
+  S1439: 'abu tulang kepala, tangan, punggung, dada, bokong, paha, dan kaki' -DIGILING_DI-> 'sesenden' (ENTITY)
+  S1439: 'abu tulang kepala, tangan, punggung, dada, bokong, paha, dan kaki' -DIMASUKKAN_KE_DALAM-> 'klungah nyuh gading' (ENTITY)
+  S1439: 'abu tulang kepala, tangan, punggung, dada, bokong, paha, dan kaki' -DIBENTUK_MENJADI-> 'sukutunggal wujud perlambang badan' (ENTITY)
+  S1832: 'karma phala orangtua atau leluhur' -DIWARISKAN_KEPADA-> 'keturunan dalam batas tertentu' (LITERAL)
+  S1845: 'semua upacara dalam pitra yadnya' -MEMPENGARUHI-> 'kedudukan pitara' (ENTITY)
+  S1987: 'jenis bade yang dipakai seseorang' -DITENTUKAN_BERDASARKAN-> 'status orang tersebut dalam tata kemasyarakatan pada zaman itu' (ENTITY)
+  S2055: 'patulangan yang berbentuk naga kahang dan gajah mina' -ADALAH-> 'pertanda bahwa keluarga tersebut keturunan dari orang yang condong pada paksa wesnawa' (LITERAL)
+  S2198: 'bale salunglung' -ADALAH-> 'bagaikan pitraloka' (ENTITY)
+  S2212: 'bale pamuunan' -ADALAH-> 'bhuta-loka alias dunia materi' (ENTITY)
+  S2234: 'jenazah seseorang yang telah tertanam-titip' -DIABEN_DI-> 'setra lain' (ENTITY)
+  S2269: 'bale pamuun dan alat-alat upakara lainnya' -TELAH_SELESAI_SECARA-> 'de facto' (LITERAL)
+  S2419: 'adegan, angenan, pisang jati, panguryagan, dan lain-lain alat yang harus dibakar' -DIPERSEMBAHKAN_KEPADA-> 'hyang agni (api), tanpa sisa' (ENTITY)
+  S2473: 'pangabenan yang menggunakan nama pranawa' -DILATARBELAKANGI_OLEH-> 'hasrat supaya mendiang memperoleh ketenangan, kemantapan, serta kesucian' (LITERAL)
+  S2527: 'pura, pamrajan, atau kahyangan jenis apapun' -ADALAH-> 'alam kedewaan' (LITERAL)
+  S2527: 'pura, pamrajan, atau kahyangan jenis apapun' -ADALAH-> 'dewaloka' (ENTITY)
+  S2566: 'bhuwana agung masing-masing arah yang berjumlah 11' -MEMPEROLEH-> 'cuntaka selama sehari' (ENTITY)
+  S2644: 'abu daun yang dinilai selaku bekas-bekas stulasarira mendiang' -DIMASUKKAN_KE_DALAM-> 'klungah nyuh gading yang dibentuk menjadi suku tunggal' (LITERAL)
+  S2803: 'tempat sang sulinggih dalam memuja' -DIPAKAI_UNTUK-> 'segenap upacara atma wedana ini' (ENTITY)
+  S2948: 'abu yang sudah lumat' -DIMASUKKAN_KE_DALAM-> 'klungah nyuh gading yang disukutunggalkan' (ENTITY)
+  S2951: 'suku tunggal abu diarak mapradaksina' -MELAMBANGKAN-> 'diresapkannya sinar suci hyang widhi' (ENTITY)
+  S3091: 'atma baan nyilih dan nyawa' -ADALAH-> 'pinjaman yang tidak memiliki ketentuan batas, sehingga nyawa itu dapat diambil sewaktu-waktu kapan saja tanpa ada pemberitahuan sebelumnya' (LITERAL)
+  S3118: 'daun dapdap yang dihaluskan' -BERGUNA_SEBAGAI-> 'sampo pencuci rambut (keramas) bagi jenazah' (LITERAL)
+  S3122: 'malem setelah dipulung, minimal dua buah' -DITARUH_DI-> 'atas takir' (ENTITY)
+  S3142: 'kwangen dengan bawang putih ini' -DITARUH_DI-> 'tiap-tiap jari tangan dan kaki jenazah' (LITERAL)
+  S3153: 'sisig di atas takir ini' -DIPAKAI_UNTUK-> 'gosok gigi jenazah' (ENTITY)
+  S3154: 'pecahan kaca dan pecahan besi baja' -DILETAKKAN_DI-> 'atas takir' (ENTITY)
+  S3355: 'jenazah yang masuk melalui teben dari pepaga' -BERMAKNA-> 'agar orang yang meninggal lebih cepat menemui brahman sang pencipta' (LITERAL)
+  S3364: 'orang yang dituakan/lebih tua' -MENCUCI-> 'muka dan rambut jenazah' (ENTITY)
+  S3604: 'jempol jari tangan kedua ibu jari' -DIIKAT_DENGAN-> 'tali benang tukelan (benang tenun bali) berwarna putih' (LITERAL)
+  S3783: 'priuk yang pecah' -DIBUANG_DI-> 'kolong bawah pepaga/asagan' (ENTITY)
+  S3791: 'jenazah setelah dibungkus tiga lapis' -DIIKAT_DENGAN-> 'tali benang tukelan' (ENTITY)
+  S3973: 'jempol jari tangan kedua ibu jari' -DIIKAT_DENGAN-> 'tali benang tukelan' (ENTITY)
+  S4035: 'priuk yang pecah' -DIBUANG_DI-> 'kolong bawah pepaga/asagan' (ENTITY)
+  S4074: 'roh atau atman yang diupacarai' -TIDAK_MENGALAMI-> 'kegoncangan' (LITERAL)
+  S4090: 'air dari tanah yang dipanah arjuna' -MENGENAI-> 'bibir rsi bisma' (LITERAL)
+  S4105: 'sarana dan prasarana upacara pemujaan' -BERUPA-> 'pras, ajuman, daksina, suci, rayunan, dan kadang-kadang pajegan' (LITERAL)
+  S4110: 'sarana dan prasarana upacara pemujaan' -BERUPA-> 'pras, ajuman, daksina, suci, rayunan, dan kadang-kadang pajegan' (LITERAL)
+  S4338: 'roh atau atman orang yang telah meninggal' -NAIK_KEDUDUKAN_DARI-> 'preta menjadi pitara' (ENTITY)
+
+2e. CLOSED-CLASS LITERAL VALUES DROPPED
+---------------------------------------
+  S366: jenazah -[MEMBUJUR_KE]-> 'timur'
+  S366: jenazah -[MEMBUJUR_KE]-> 'utara'
+  S2571: arjuna -[MENGHUKUM]-> 'diri'
+  S3755: perak -[BERADA_DI]-> 'timur'
+  S3757: emas -[BERADA_DI]-> 'barat'
+  S3758: besi -[BERADA_DI]-> 'utara'
+  S3758: logam campuran -[BERADA_DI]-> 'tengah'
+  S4175: tuhan atau brahman -[DITEMPATKAN]-> 'diri'
+
+3. CLAUSE OBJECTS DEMOTED (entity -> literal property)
+------------------------------------------------------
+  S1609  moksa -[ADALAH]-> penyatuan jiwa/atma dengan paratma/brahman
+  S2323  bade dan lembu -[MENJADI]-> sarana yang benar-benar "siap pakai" hanya setelah diplaspas
+  S2535  pitra -[MENGELUPASI]-> suksmasarira yang merupakan kulit dirinya
+  S2812  pitra -[ADALAH]-> atma yang masih bersuksmasarira
+  S3110  daun intaran -[DITARUH_DI]-> kedua alis jenazah ketika upacara mabersih mati / ngelelet
+  S4340  tirtha pangentas -[BERFUNGSI_SEBAGAI]-> pelebur unsur karma wasana yang mengikat roh atau atman
+
+4. STRAY LABELS REMOVED FROM LITERAL ROWS
+-----------------------------------------
+  7 row(s); e.g. S408(KONSEP_HUKUM_ADAT), S1066(SARANA_RITUAL), S1136(ENTITAS_KEAGAMAAN), S1610(KONSEP_FILOSOFIS), S1982(ISTILAH_UMUM_RITUAL), S2212(ISTILAH_UMUM_RITUAL), S2336(ISTILAH_UMUM_RITUAL)
+
+5. RELATION REMAP
+-----------------
+  'DITARUH_DI'           -> 'DILETAKKAN_DI' (7)
+  'JENIS_DARI'           -> 'BAGIAN_DARI'  (3)
+  'DITEMPATKAN_DI'       -> 'DILETAKKAN_DI' (2)
+  'MEMPERGUNAKAN'        -> 'MENGGUNAKAN'  (2)
+  'BERTUJUAN'            -> 'BERTUJUAN_UNTUK' (2)
+  'DIPERGUNAKAN_SEBAGAI' -> 'DIPAKAI_UNTUK' (2)
+  'DIBARENGI'            -> 'DISERTAI'     (1)
+  'DISEBUT'              -> 'DIKENAL_SEBAGAI' (1)
+  'DIPUJA_DENGAN'        -> 'DIPUJA'       (1)
+  'DIPERLAKUKAN_SAMA_DENGAN' -> 'SAMA_DENGAN'  (1)
+  'DIKENAL_DENGAN'       -> 'DIKENAL_SEBAGAI' (1)
+  'MENYERUPAI'           -> 'MELAMBANGKAN' (1)
+  'TERGOLONG'            -> 'BAGIAN_DARI'  (1)
+  'TERGOLONG_BERSAMA'    -> 'BAGIAN_DARI'  (1)
+  'DIKATAKAN'            -> 'DIKENAL_SEBAGAI' (1)
+  'TENTANG'              -> 'LAINNYA'      (1)
+  'JUGA_ADALAH'          -> 'ADALAH'       (1)
+  'MERUPAKAN'            -> 'ADALAH'       (1)
+  'SEPADAN_DENGAN'       -> 'SAMA_DENGAN'  (1)
+  'DIDAPAT_DI'           -> 'DIPEROLEH_DARI' (1)
+  'DIMASUKKAN'           -> 'DIMASUKKAN_KE_DALAM' (1)
+  'NAIK'                 -> 'MENUJU'       (1)
+  'NAIK_KE'              -> 'MENUJU'       (1)
+  'DITARUH'              -> 'DILETAKKAN_DI' (1)
+  'DIMASUKKAN_KE'        -> 'DIMASUKKAN_KE_DALAM' (1)
+  'DIANGGAP'             -> 'DIKENAL_SEBAGAI' (1)
+
+5b. SENT TO 'LAINNYA' (review these - raw kept in raw_relation)
+---------------------------------------------------------------
+  'TENTANG'              e.g. upanisad -> jalan yang harus ditempuh
+
+5c. STILL-UNMAPPED RELATIONS (add to relation_map.json)
+-------------------------------------------------------
+  (none)
+
+5d. BERARTI OBJECTS DEMOTED (entity -> definition literal)
+----------------------------------------------------------
+  1 row(s)
+
+6. LABEL CONFLICTS RESOLVED (merged nodes)
+------------------------------------------
+  'tumpang salu'                 {'SARANA_RITUAL': 2, 'BANGUNAN_RITUAL': 1}  ->  SARANA_RITUAL  (from gazetteer)
+  'bale salunglung'              {'SARANA_RITUAL': 1, 'BANGUNAN_RITUAL': 8}  ->  BANGUNAN_RITUAL  (from gazetteer)
+  'pitra'                        {'KONSEP_FILOSOFIS': 9, 'ENTITAS_KEAGAMAAN': 2}  ->  KONSEP_FILOSOFIS  (from gazetteer)
+
+7. DUPLICATE ROWS REMOVED
+-------------------------
+  S974  abu -[DIHANYUTKAN_KE]-> laut
+  S974  abu -[DIHANYUTKAN_KE]-> sungai
+  S1717  adegan -[ADALAH]-> alat upakara
+  S2256  uang kepeng -[DIBUNGKUS_DENGAN]-> daun dapdap
+  S3654  uang kepeng -[ADALAH]-> pipis bolong
+  S3749  kawangen -[BERISI]-> bunga tunjung putih
+  S3936  jenazah -[DIBERI]-> pakaian seperti layaknya orang masih hidup
+  S3963  kawangen -[DILETAKKAN_DI]-> samping jenazah
+  S3964  jenazah -[DIPERCIKI_DAN_DIMINUMKAN]-> tirtha
+  S3964  tirtha -[BERASAL_DARI]-> bhetara hyang guru
+  S3964  tirtha -[DIMOHONKAN_DI]-> sanggah/pamerajan keluarga orang yang meninggal
+  S3977  jenazah -[DIBILAS_DENGAN]-> air
+  S3977  jenazah -[DISABUNI_DENGAN]-> umbi sikapa/sekapa
+  S3984  jenazah -[DIPAKAIKAN]-> pakaian putih-putih
+  S4035  priuk tempat tirtha pangringkes -[DIPECAHKAN]-> setelah tirtha dipercikkan
+  S4035  tirtha -[DIPERCIKKAN_PADA]-> seluruh badan hingga ke kaki jenazah

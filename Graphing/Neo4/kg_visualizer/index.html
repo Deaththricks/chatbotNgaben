@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ngaben Knowledge Graph</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.9/standalone/umd/vis-network.min.js"></script>
+<script src="graph_data.js"></script>
+<style>
+  :root{
+    --bg:#12141a; --panel:#1b1e26; --panel2:#232734; --line:#333a48;
+    --text:#e7e9ee; --muted:#9aa3b2; --accent:#6ea8fe;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;font:13px/1.45 system-ui,Segoe UI,Roboto,sans-serif;
+    background:var(--bg);color:var(--text)}
+  #app{display:flex;height:100%}
+  #sidebar{width:290px;flex:0 0 290px;background:var(--panel);border-right:1px solid var(--line);
+    display:flex;flex-direction:column;overflow-y:auto}
+  #graph{flex:1;position:relative}
+  #net{position:absolute;inset:0}
+  h1{font-size:14px;margin:0;padding:14px 14px 6px}
+  h2{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
+    margin:16px 14px 6px}
+  .sect{padding:0 14px 4px}
+  .stat{display:flex;justify-content:space-between;color:var(--muted);padding:1px 14px}
+  .stat b{color:var(--text)}
+  input[type=text]{width:100%;padding:7px 9px;background:var(--panel2);border:1px solid var(--line);
+    border-radius:6px;color:var(--text);font-size:13px}
+  label.row{display:flex;align-items:center;gap:7px;padding:3px 14px;cursor:pointer;user-select:none}
+  label.row:hover{background:var(--panel2)}
+  label.row .sw{width:11px;height:11px;border-radius:3px;flex:0 0 11px}
+  label.row .ct{margin-left:auto;color:var(--muted);font-variant-numeric:tabular-nums}
+  .btnrow{display:flex;gap:6px;padding:6px 14px}
+  button{flex:1;padding:6px 8px;background:var(--panel2);border:1px solid var(--line);
+    border-radius:6px;color:var(--text);cursor:pointer;font-size:12px}
+  button:hover{border-color:var(--accent)}
+  #detail{position:absolute;top:12px;right:12px;width:340px;max-height:calc(100% - 24px);
+    overflow-y:auto;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:14px;display:none;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+  #detail h3{margin:0 0 2px;font-size:15px}
+  #detail .type{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+  #detail .close{position:absolute;top:8px;right:10px;background:none;border:none;color:var(--muted);
+    font-size:18px;width:auto;padding:0}
+  #detail .grp{margin-top:12px}
+  #detail .grp .k{color:var(--accent);font-weight:600;margin-bottom:3px}
+  #detail .v{padding:3px 0;border-bottom:1px solid var(--line);color:var(--text)}
+  #detail .v small{color:var(--muted);display:block}
+  .hint{color:var(--muted);padding:4px 14px 14px;font-size:11px}
+  .legend-note{color:var(--muted);font-size:11px;padding:2px 14px 10px}
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="sidebar">
+    <h1>Ngaben Knowledge Graph</h1>
+    <div class="sect"><input id="search" type="text" placeholder="Search node…" autocomplete="off"></div>
+
+    <h2>Overview</h2>
+    <div class="stat"><span>nodes shown</span><b id="s-nodes">0</b></div>
+    <div class="stat"><span>edges shown</span><b id="s-edges">0</b></div>
+    <div class="stat"><span>isolated</span><b id="s-iso">0</b></div>
+
+    <div class="btnrow">
+      <button id="fit">Fit view</button>
+      <button id="physics">Freeze</button>
+    </div>
+    <label class="row"><input type="checkbox" id="show-iso"> <span>show isolated nodes</span></label>
+    <label class="row"><input type="checkbox" id="show-edge-labels" checked> <span>edge labels</span></label>
+
+    <h2>Node types</h2>
+    <div class="btnrow">
+      <button data-all="type">all</button><button data-none="type">none</button>
+    </div>
+    <div id="type-filters"></div>
+
+    <h2>Relations</h2>
+    <div class="btnrow">
+      <button data-all="rel">all</button><button data-none="rel">none</button>
+    </div>
+    <div id="rel-filters"></div>
+    <div class="hint">Click a node for its literal properties &amp; source sentences.</div>
+  </div>
+
+  <div id="graph">
+    <div id="net"></div>
+    <div id="detail">
+      <button class="close" id="detail-close">×</button>
+      <h3 id="d-name"></h3>
+      <div class="type" id="d-type"></div>
+      <div id="d-body"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const G = window.GRAPH_DATA;
+if(!G){
+  document.body.innerHTML='<p style="padding:20px">graph_data.js not found — run <code>python build_graph.py</code> first.</p>';
+  throw new Error("no graph data");
+}
+if(typeof vis === "undefined"){
+  document.body.innerHTML='<p style="padding:20px">vis-network failed to load (offline?). Reconnect to the internet, or vendor <code>vis-network.min.js</code> locally and point the &lt;script&gt; tag at it.</p>';
+  throw new Error("vis-network missing");
+}
+
+// ---- palette: stable colour per node type --------------------------------
+const PALETTE = ["#6ea8fe","#63d2b0","#f6c453","#e07a5f","#b892e0","#e6739f",
+                 "#7ec8e3","#9ccc65","#ffab91","#a1887f","#90a4ae","#ce93d8",
+                 "#80cbc4","#fff176","#f48fb1"];
+const types = Object.keys(G.meta.node_types);
+const typeColor = {};
+types.forEach((t,i)=> typeColor[t] = PALETTE[i % PALETTE.length]);
+
+const rels = Object.keys(G.meta.relation_types);
+
+// ---- filter state -------------------------------------------------------
+const activeTypes = new Set(types);
+const activeRels  = new Set(rels);
+let showIsolated = false;
+let showEdgeLabels = true;
+
+// ---- build vis datasets ----------------------------------------------------
+const allNodes = G.nodes.map(n => ({
+  id:n.id,
+  label:n.label || n.id,
+  _type:n.type,
+  _isolated:n.isolated,
+  _degree:n.degree,
+  _data:n,
+  shape:"dot",
+  size: 8 + Math.sqrt(n.degree)*4,
+  color:{background:typeColor[n.type]||"#888",
+         border:"#0008", highlight:{background:typeColor[n.type],border:"#fff"}},
+  font:{color:"#e7e9ee",size:12,strokeWidth:3,strokeColor:"#12141a"}
+}));
+
+const CONF_OPACITY = {HIGH:0.9, MED:0.5, LOW:0.2};
+const allEdges = G.edges.map((e,i) => ({
+  id:"e"+i, from:e.from, to:e.to, _rel:e.rel, _conf:e.confidence||null, _data:e,
+  label:e.rel, arrows:"to",
+  dashes: e.rel === "TERMASUK_JENIS",
+  color:{color:"#5b6474",highlight:"#6ea8fe",
+         opacity: e.confidence ? CONF_OPACITY[e.confidence] : 0.8},
+  font:{color:"#9aa3b2",size:9,strokeWidth:3,strokeColor:"#12141a",align:"middle"},
+  smooth:{type:"dynamic"}
+}));
+
+const nodes = new vis.DataSet(allNodes);
+const edges = new vis.DataSet(allEdges);
+
+const container = document.getElementById("net");
+const network = new vis.Network(container, {nodes,edges}, {
+  physics:{
+    solver:"forceAtlas2Based",
+    forceAtlas2Based:{gravitationalConstant:-55,springLength:110,springConstant:0.05,damping:0.5},
+    stabilization:{iterations:250}
+  },
+  interaction:{hover:true,tooltipDelay:120,multiselect:true},
+  nodes:{borderWidth:1.5},
+  edges:{selectionWidth:2}
+});
+
+// ---- filtering ---------------------------------------------------------
+function apply(){
+  const keepNode = n => activeTypes.has(n._type) && (showIsolated || !n._isolated);
+  const visibleNodeIds = new Set(allNodes.filter(keepNode).map(n=>n.id));
+
+  nodes.update(allNodes.map(n => ({id:n.id, hidden:!visibleNodeIds.has(n.id)})));
+  edges.update(allEdges.map(e => ({
+    id:e.id,
+    hidden: !(activeRels.has(e._rel) && visibleNodeIds.has(e.from) && visibleNodeIds.has(e.to)),
+    label: showEdgeLabels ? e._rel : ""
+  })));
+
+  const vEdges = allEdges.filter(e => activeRels.has(e._rel) && visibleNodeIds.has(e.from) && visibleNodeIds.has(e.to));
+  document.getElementById("s-nodes").textContent = visibleNodeIds.size;
+  document.getElementById("s-edges").textContent = vEdges.length;
+  document.getElementById("s-iso").textContent =
+    allNodes.filter(n=>n._isolated && visibleNodeIds.has(n.id)).length;
+}
+
+// ---- filter UI -------------------------------------------------------------
+function makeFilters(host, keys, counts, set, colorFn){
+  host.innerHTML = "";
+  keys.forEach(k => {
+    const l = document.createElement("label"); l.className="row";
+    const cb = document.createElement("input"); cb.type="checkbox"; cb.checked=true;
+    cb.onchange = () => { cb.checked ? set.add(k) : set.delete(k); apply(); };
+    const sw = document.createElement("span"); sw.className="sw";
+    sw.style.background = colorFn ? colorFn(k) : "#5b6474";
+    const nm = document.createElement("span"); nm.textContent = k;
+    const ct = document.createElement("span"); ct.className="ct"; ct.textContent = counts[k];
+    l.append(cb, sw, nm, ct); host.append(l);
+  });
+}
+makeFilters(document.getElementById("type-filters"), types, G.meta.node_types, activeTypes, k=>typeColor[k]);
+makeFilters(document.getElementById("rel-filters"), rels, G.meta.relation_types, activeRels, null);
+
+document.querySelectorAll("button[data-all],button[data-none]").forEach(b=>{
+  b.onclick = () => {
+    const kind = b.dataset.all || b.dataset.none;
+    const on = !!b.dataset.all;
+    const host = kind==="type" ? "type-filters" : "rel-filters";
+    const set  = kind==="type" ? activeTypes : activeRels;
+    const keys = kind==="type" ? types : rels;
+    set.clear(); if(on) keys.forEach(k=>set.add(k));
+    document.querySelectorAll(`#${host} input`).forEach(cb=>cb.checked=on);
+    apply();
+  };
+});
+
+// ---- toggles -------------------------------------------------------------
+document.getElementById("show-iso").onchange = e => { showIsolated = e.target.checked; apply(); };
+document.getElementById("show-edge-labels").onchange = e => { showEdgeLabels = e.target.checked; apply(); };
+document.getElementById("fit").onclick = () => network.fit({animation:true});
+let physicsOn = true;
+document.getElementById("physics").onclick = e => {
+  physicsOn = !physicsOn; network.setOptions({physics:{enabled:physicsOn}});
+  e.target.textContent = physicsOn ? "Freeze" : "Unfreeze";
+};
+
+// ---- search -----------------------------------------------------------
+const esc = s => String(s == null ? "" : s).replace(/[&<>]/g,
+  c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const nmeta = {};                       // id -> node (for name lookup on edges)
+allNodes.forEach(n => nmeta[n.id] = n);
+const nm = id => (nmeta[id] && nmeta[id].label) || id;
+
+let searchTimer = null;
+document.getElementById("search").oninput = e => {
+  clearTimeout(searchTimer);
+  const q = e.target.value.trim().toLowerCase();
+  if(!q) return;
+  searchTimer = setTimeout(() => {
+    const hit = allNodes.find(n => (n.label||n.id).toLowerCase().includes(q))
+             || allNodes.find(n => n.id.toLowerCase().includes(q));
+    if(hit){
+      network.selectNodes([hit.id]);
+      network.focus(hit.id, {scale:1.1, animation:true});
+      showDetail(hit.id);
+    }
+  }, 220);
+};
+
+// ---- detail panel -------------------------------------------------------
+const detail = document.getElementById("detail");
+document.getElementById("detail-close").onclick = () => detail.style.display="none";
+
+function showDetail(id){
+  const n = allNodes.find(x=>x.id===id); if(!n) return;
+  const d = n._data;
+  document.getElementById("d-name").textContent = d.label || d.id;
+  document.getElementById("d-type").textContent = d.type + (d.isolated ? " · isolated" : ` · degree ${d.degree}`);
+  const body = document.getElementById("d-body");
+  body.innerHTML = "";
+
+  const outE = G.edges.filter(e=>e.from===id);
+  const inE  = G.edges.filter(e=>e.to===id);
+  if(outE.length || inE.length){
+    const g = document.createElement("div"); g.className="grp";
+    g.innerHTML = "<div class='k'>relationships</div>";
+    const tag = e => e.confidence ? ` <small style='color:#6a7688'>[${esc(e.confidence)}]</small>` : "";
+    outE.forEach(e=> g.insertAdjacentHTML("beforeend",
+      `<div class='v'>→ <b>${esc(e.rel)}</b> → ${esc(nm(e.to))}${tag(e)}<small>${esc(e.context)}</small></div>`));
+    inE.forEach(e=> g.insertAdjacentHTML("beforeend",
+      `<div class='v'>${esc(nm(e.from))} → <b>${esc(e.rel)}</b> →${tag(e)}<small>${esc(e.context)}</small></div>`));
+    body.append(g);
+  }
+
+  const litRows = d.literal_rows || [];
+  if(litRows.length){
+    const byRel = {};
+    litRows.forEach(r => (byRel[r.rel] = byRel[r.rel]||[]).push(r));
+    Object.entries(byRel).forEach(([rel,rows])=>{
+      const g = document.createElement("div"); g.className="grp";
+      g.innerHTML = `<div class='k'>${esc(rel)}</div>`;
+      rows.forEach(r => g.insertAdjacentHTML("beforeend",
+        `<div class='v'>${esc(r.value)}<small>${esc(r.context)}</small></div>`));
+      body.append(g);
+    });
+  }
+  if(!body.innerHTML) body.innerHTML = "<div class='grp'>no properties</div>";
+  detail.style.display = "block";
+}
+network.on("click", p => { if(p.nodes.length) showDetail(p.nodes[0]); else detail.style.display="none"; });
+
+apply();
+network.once("stabilizationIterationsDone", () => network.fit());
+</script>
+</body>
+</html>

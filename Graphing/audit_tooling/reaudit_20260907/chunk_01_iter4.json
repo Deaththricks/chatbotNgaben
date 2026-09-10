@@ -1,0 +1,388 @@
+{
+ "overrides": {
+  "6": [
+   {
+    "subject": "ngaben",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "ADALAH",
+    "object": "ritual kremasi",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "ngaben",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "BERAKAR_PADA",
+    "object": "filosofi pelepasan jiwa (atma) dari ikatan duniawi",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "69": [
+   {
+    "subject": "gedarba",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "BERBENTUK",
+    "object": "beruang berwarna hitam",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "81": [
+   {
+    "subject": "perbandingan kepala singa",
+    "subject_label": null,
+    "relation": "ADALAH",
+    "object": "3:2:2",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "perbandingan kepala lembu",
+    "subject_label": null,
+    "relation": "ADALAH",
+    "object": "2:1:1",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "92": [
+   {
+    "subject": "kanoroyang",
+    "subject_label": "KONSEP_HUKUM_ADAT",
+    "relation": "ADALAH",
+    "object": "sanksi terberat berupa pemberhentian keanggotaan desa adat",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "104": [
+   {
+    "subject": "bali aga",
+    "subject_label": "Place",
+    "relation": "MEMPERTAHANKAN",
+    "object": "tradisi asli kuno",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "bali dataran",
+    "subject_label": "Place",
+    "relation": "MENDAPAT_PENGARUH_DARI",
+    "object": "tradisi hindu-majapahit",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "246": [
+   {
+    "subject": "puspa lingga",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIBUKA",
+    "object": "keampigan",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "ngerorasin",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "DIADAKAN_DI",
+    "object": "pura dalem",
+    "object_label": "BANGUNAN_RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "254": [
+   {
+    "subject": "tulang belulang",
+    "subject_label": null,
+    "relation": "DIAMBIL_DARI",
+    "object": "kuburan",
+    "object_label": "BANGUNAN_RITUAL",
+    "source": "manual_override"
+   },
+   {
+    "subject": "kuburan",
+    "subject_label": "BANGUNAN_RITUAL",
+    "relation": "DIBONGKAR",
+    "object": "untuk mengambil tulang belulang",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "283": [
+   {
+    "subject": "banten yang menjadi simbol orang yang meninggal",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIKENAL_SEBAGAI",
+    "object": "kala puspa",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "332": [
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DILETAKKAN_DI",
+    "object": "balai",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "MEMBUJUR_KE",
+    "object": "kepala di utara atau timur",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "366": [
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "MEMBUJUR_KE",
+    "object": "timur",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "MEMBUJUR_KE",
+    "object": "utara",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "370": [
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIGULUNG_DENGAN",
+    "object": "tikar",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIGULUNG_DENGAN",
+    "object": "kain yang telah dirajah",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIPASANG",
+    "object": "itik-itik",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   },
+   {
+    "subject": "itik-itik",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIPASANG_PADA",
+    "object": "ibu jari tangan dan kaki",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIAKHIRI_DENGAN",
+    "object": "lante bambu",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   },
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIMASUKKAN_KE_DALAM",
+    "object": "slepa/peti",
+    "object_label": "SARANA_RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "415": [
+   {
+    "subject": "malamasa",
+    "subject_label": "KONSEP_HUKUM_ADAT",
+    "relation": "ADALAH",
+    "object": "sasih yang ditampih atau diduakalikan",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ]
+ },
+ "additions": {
+  "44": [
+   {
+    "subject": "formalin",
+    "subject_label": null,
+    "relation": "DIGUNAKAN_UNTUK",
+    "object": "memperlambat pembusukan (selama masa persiapan)",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "47": [
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIKUBUR",
+    "object": "segera",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "upacara ngelungah",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "DILAKUKAN",
+    "object": "minimal 12 hari kemudian",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "124": [
+   {
+    "subject": "bali aga",
+    "subject_label": "Place",
+    "relation": "MENONJOLKAN",
+    "object": "tradisi asli",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "bali aga",
+    "subject_label": "Place",
+    "relation": "TIDAK_MENGGUNAKAN",
+    "object": "pembakaran fisik secara masif",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "126": [
+   {
+    "subject": "ngaben",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "BERFUNGSI_SEBAGAI",
+    "object": "mekanisme spiritual pemurnian jiwa",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "ngaben",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "BERFUNGSI_SEBAGAI",
+    "object": "perekat kohesi sosial",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "128": [
+   {
+    "subject": "ngaben",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "MENJAGA",
+    "object": "harmoni antara manusia, alam, dan sang pencipta",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "217": [
+   {
+    "subject": "pelebon",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "DIAWALI_DENGAN",
+    "object": "upacara ngaskara",
+    "object_label": "TAHAPAN_UPACARA",
+    "source": "manual_override"
+   },
+   {
+    "subject": "pelebon",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "DIAWALI_DENGAN",
+    "object": "caru pengelambuk",
+    "object_label": "TAHAPAN_UPACARA",
+    "source": "manual_override"
+   },
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "BERANGKAT_KE",
+    "object": "setra",
+    "object_label": "BANGUNAN_RITUAL",
+    "source": "manual_override"
+   }
+  ],
+  "265": [
+   {
+    "subject": "tegteg",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DITEMPATKAN_DI",
+    "object": "tumpang salu",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "364": [
+   {
+    "subject": "nanginin",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "DILAKUKAN_DENGAN",
+    "object": "memanggil nama almarhum dan mengucapkan kata-kata lemah lembut",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "nanginin",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "DILAKUKAN_SEBELUM",
+    "object": "jenazah diusung ke tempat pemandian",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "376": [
+   {
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIBASMI_OLEH",
+    "object": "sang hyang birawi",
+    "object_label": "ENTITAS_KEAGAMAAN",
+    "source": "manual_override"
+   }
+  ],
+  "399": [
+   {
+    "subject": "sasih karo",
+    "subject_label": "KONSEP_HUKUM_ADAT",
+    "relation": "ADALAH",
+    "object": "sasih utama untuk pitra yadnya",
+    "object_label": null,
+    "source": "manual_override"
+   }
+  ],
+  "780": [
+   {
+    "subject": "puspa asti",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIPANGKU_OLEH",
+    "object": "salah seorang keluarga",
+    "object_label": null,
+    "source": "manual_override"
+   },
+   {
+    "subject": "persembahyangan",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "DIPIMPIN_OLEH",
+    "object": "sulinggih",
+    "object_label": "ENTITAS_KEAGAMAAN",
+    "source": "manual_override"
+   }
+  ]
+ }
+}
