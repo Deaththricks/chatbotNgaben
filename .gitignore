@@ -10,13 +10,13 @@ venv/
 rasa_bot/
 .venv/
 
-# secrets — DON'T commit these
+# secrets
 .env
 .env.*
 !.env.example
 endpoints.yml
 credentials.yml
 
-# senior's reference example — not our code
+# senior's reference example 
 Graphing/chatbot-budaya-bali/
 Graphing/chatbot-budaya-bali.zip
