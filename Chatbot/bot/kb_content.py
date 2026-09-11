@@ -157,13 +157,18 @@ class KbContent:
     def faq_for(self, entity_id: str) -> List[dict]:
         return self.faq_by_ent.get(entity_id, [])
 
-    def faq_search(self, text: str, k: int = 3) -> List[dict]:
-        toks = [t for t in re.findall(r"\w+", _norm(text)) if len(t) > 3]
+    # "ngaben" is the corpus topic word -- it appears in nearly every FAQ, so
+    # overlapping on it alone is not a meaningful relevance signal.
+    _GENERIC_TOKENS = {"ngaben"}
+
+    def faq_search(self, text: str, k: int = 3, min_score: int = 2) -> List[dict]:
+        toks = [t for t in re.findall(r"\w+", _norm(text))
+                if len(t) > 3 and t not in self._GENERIC_TOKENS]
         scored = []
         for p in self.all_faq:
             hay = _norm(p.get("text", ""))
             score = sum(1 for t in toks if t in hay)
-            if score:
+            if score >= min_score:
                 scored.append((score, p))
         scored.sort(key=lambda x: -x[0])
         return [p for _, p in scored[:k]]

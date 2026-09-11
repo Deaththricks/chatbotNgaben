@@ -25,10 +25,15 @@ _BOT_DIR = Path(__file__).resolve().parent
 _KB_DIR = (_BOT_DIR / os.getenv("KB_DIR", "../../Graphing/kb")).resolve()
 
 _WS = re.compile(r"\s+")
+# Regex alternation tries branches left-to-right and commits to the first one that
+# matches -- it does NOT prefer the longest match. Every multi-word "apa ..." branch
+# below must come BEFORE the bare "apa(kah)?" branch, or "apa(kah)?" always wins first
+# and silently leaves the rest ("itu", "arti dari", "sih", ...) stuck on the front of
+# the term (e.g. "apa itu depa" -> "itu depa" instead of "depa").
 _QUESTION_LEAD = re.compile(
-    r"^(apa(kah)?|arti|artinya|makna|maksud(nya)?|definisi|jelaskan|tolong jelaskan|"
-    r"apa itu|apa yang dimaksud( dengan)?|apa arti( dari| kata)?|sebutkan|"
-    r"apa sih|apa maksud(nya)?|kasih tahu|coba jelaskan|mau tahu( arti)?)\s+",
+    r"^(apa itu|apa yang dimaksud( dengan)?|apa arti( dari| kata)?|apa sih|"
+    r"apa maksud(nya)?|apa(kah)?|arti|artinya|makna|maksud(nya)?|definisi|"
+    r"tolong jelaskan|jelaskan|sebutkan|kasih tahu|coba jelaskan|mau tahu( arti)?)\s+",
     re.IGNORECASE,
 )
 _QUESTION_TAIL = re.compile(
@@ -57,17 +62,6 @@ class KbResolver:
         ents = json.loads((kb_dir / "entities.json").read_text(encoding="utf-8"))
         self.by_id: dict[str, dict] = {e["id"]: e for e in ents}
 
-        # surface form -> id
-        self.surface: dict[str, str] = {}
-        self.alias_surface: set[str] = set()
-        for e in ents:
-            self.surface.setdefault(_norm(e["name"]), e["id"])
-            for a in e.get("aliases", []):
-                key = _norm(a)
-                if key and key not in self.surface:
-                    self.surface[key] = e["id"]
-                    self.alias_surface.add(key)
-
         res = json.loads((kb_dir / "entity_resolution.json").read_text(encoding="utf-8"))
         self.force_merge: dict[str, str] = {
             _norm(k): v for k, v in res.get("force_merge", {}).items()
@@ -75,12 +69,32 @@ class KbResolver:
         }
         self.strip_modifiers: list[str] = [w.lower() for w in res.get("strip_modifiers", [])]
         self.keep_distinct: set[str] = {_norm(w) for w in res.get("keep_distinct", [])}
+        # Generic/ambiguous entities (see entity_resolution.json's _exclude_note) that
+        # must never be served as an answer, even on an exact-name match -- kept in
+        # entities.json/the graph, just never surfaced by the bot.
+        self.excluded_ids: set[str] = set(res.get("exclude_from_resolution", []))
+        excluded_ids = self.excluded_ids
+
+        # surface form -> id
+        self.surface: dict[str, str] = {}
+        self.alias_surface: set[str] = set()
+        for e in ents:
+            if e["id"] in excluded_ids:
+                continue
+            self.surface.setdefault(_norm(e["name"]), e["id"])
+            for a in e.get("aliases", []):
+                key = _norm(a)
+                if key and key not in self.surface:
+                    self.surface[key] = e["id"]
+                    self.alias_surface.add(key)
 
         self._choices = list(self.surface.keys())
 
         # type -> [entity dict], for "daftar istilah" answers
         self.by_type: dict[str, list[dict]] = {}
         for e in ents:
+            if e["id"] in excluded_ids:
+                continue
             self.by_type.setdefault((e.get("type") or "").upper(), []).append(e)
 
     # -- helpers ---------------------------------------------------------------
@@ -123,7 +137,7 @@ class KbResolver:
         # 2. force_merge
         if raw in self.force_merge:
             _id = self.force_merge[raw]
-            if _id in self.by_id:
+            if _id in self.by_id and _id not in self.excluded_ids:
                 return Match(_id, self.by_id[_id]["name"], "force_merge", 100.0, self.by_id[_id])
 
         # 3. modifier-strip retry (never for keep_distinct surface forms)
@@ -135,7 +149,11 @@ class KbResolver:
 
         # 4. fuzzy
         hit = process.extractOne(raw, self._choices, scorer=fuzz.WRatio)
-        if hit and hit[1] >= fuzzy_threshold:
+        # WRatio's partial-matching component can score a short, unrelated string
+        # deceptively high against a much longer candidate (e.g. "ether" vs "kain
+        # putih panjangnya puluhan meter" scores 80). Plain fuzz.ratio compares the
+        # full strings and isn't fooled by that -- require it too as a sanity floor.
+        if hit and hit[1] >= fuzzy_threshold and fuzz.ratio(raw, hit[0]) >= 60:
             _id = self.surface[hit[0]]
             return Match(_id, self.by_id[_id]["name"], "fuzzy", float(hit[1]), self.by_id[_id])
 
@@ -214,8 +232,9 @@ class KbResolver:
         return out[:k]
 
     def random_entity(self, with_definition: bool = True) -> dict:
-        pool = [e for e in self.by_id.values() if e.get("definition")] if with_definition else None
-        pool = pool or list(self.by_id.values())
+        candidates = [e for e in self.by_id.values() if e["id"] not in self.excluded_ids]
+        pool = [e for e in candidates if e.get("definition")] if with_definition else None
+        pool = pool or candidates
         return random.choice(pool)
 
     def suggest(self, text: str, k: int = 3, threshold: int = 60) -> list[str]:

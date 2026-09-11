@@ -75,3 +75,23 @@ stories:
       - action: utter_out_of_scope
       - intent: tanya_definisi
       - action: action_definisi
+
+  - story: interactive_story_1
+    steps:
+      - intent: sapa
+      - action: utter_sapa
+      - intent: tanya_definisi
+        entities:
+          - istilah: ngaben
+      - slot_was_set:
+          - istilah: ngaben
+      - action: action_definisi
+      - intent: tanya_jenis
+        entities:
+          - istilah: ngaben
+          - tipe: jenis ngaben
+      - slot_was_set:
+          - istilah: ngaben
+      - slot_was_set:
+          - tipe: jenis ngaben
+      - action: action_jenis

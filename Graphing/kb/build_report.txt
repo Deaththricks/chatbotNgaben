@@ -2,27 +2,27 @@
 NGABEN KNOWLEDGE BASE -- BUILD REPORT
 ==========================================================================
 input rows (normalized)   : 904
-canonical entities        : 485
-  fragments -> review     : 8
-  with a definition       : 72
-  with a broader link     : 106
-  unresolved (kept as-is) : 286
-passages                  : 478
-  glossary / faq          : 7 / 5
-relations (entity edges)  : 324
-  HIGH / MED / LOW        : 68 / 212 / 44
-facts.jsonl (HIGH+MED)    : 280
-review_queue.jsonl        : 52
+canonical entities        : 477
+  fragments -> review     : 9
+  with a definition       : 84
+  with a broader link     : 103
+  unresolved (kept as-is) : 278
+passages                  : 494
+  glossary / faq          : 23 / 5
+relations (entity edges)  : 323
+  HIGH / MED / LOW        : 226 / 88 / 9
+facts.jsonl (HIGH+MED)    : 314
+review_queue.jsonl        : 18
 
 entity types
 ----------------------------------------
-   139  SARANA_RITUAL
-   111  ISTILAH_UMUM_RITUAL
-    42  TAHAPAN_UPACARA
+   142  SARANA_RITUAL
+   106  ISTILAH_UMUM_RITUAL
+    41  TAHAPAN_UPACARA
     38  KONSEP_FILOSOFIS
     37  BANGUNAN_RITUAL
-    32  ENTITAS_KEAGAMAAN
-    32  RITUAL_KEMATIAN
+    30  RITUAL_KEMATIAN
+    29  ENTITAS_KEAGAMAAN
     20  TIRTHA_SUCI
     20  KONSEP_HUKUM_ADAT
      4  NASKAH_SUCI
@@ -33,155 +33,158 @@ entity types
 
 predicates in relations.jsonl
 ----------------------------------------
-    31  ADALAH                 (HIGH 10)
-    27  DILETAKKAN_DI          (HIGH 15)
-    24  BERADA_DI              (HIGH 7)
-    15  DIKENAL_SEBAGAI        (HIGH 4)
-    10  BERUPA                 (HIGH 0)
+    28  DILETAKKAN_DI          (HIGH 22)
+    25  ADALAH                 (HIGH 20)
+    24  BERADA_DI              (HIGH 10)
+    14  DIKENAL_SEBAGAI        (HIGH 11)
+    10  BERUPA                 (HIGH 9)
      9  TERDIRI_DARI           (HIGH 3)
      7  BAGIAN_DARI            (HIGH 3)
-     6  DIPAKAI_UNTUK          (HIGH 4)
-     5  MENGGUNAKAN            (HIGH 0)
-     5  BERDEWA                (HIGH 0)
-     4  DIMASUKKAN_KE_DALAM    (HIGH 0)
+     6  DIPAKAI_UNTUK          (HIGH 5)
+     5  MENGGUNAKAN            (HIGH 3)
+     5  BERDEWA                (HIGH 5)
+     4  DIMASUKKAN_KE_DALAM    (HIGH 1)
      4  DIPERSEMBAHKAN_KEPADA  (HIGH 1)
-     4  DIBUNGKUS_DENGAN       (HIGH 3)
-     4  DIISI_DENGAN           (HIGH 0)
-     3  MELAMBANGKAN           (HIGH 0)
+     4  DIBUNGKUS_DENGAN       (HIGH 4)
+     4  DILETAKKAN_PADA        (HIGH 4)
+     4  DIISI_DENGAN           (HIGH 3)
      3  DINAIKKAN_KE           (HIGH 0)
-     3  SAMA_DENGAN            (HIGH 0)
+     3  SAMA_DENGAN            (HIGH 3)
      3  TERBUAT_DARI           (HIGH 1)
      3  DITUJUKAN_UNTUK        (HIGH 3)
-     3  DIBERI                 (HIGH 2)
      3  BERFUNGSI_SEBAGAI      (HIGH 2)
      3  MEMPEROLEH             (HIGH 0)
-     3  BERPERAN_SEBAGAI       (HIGH 2)
-     3  DIBAWA_KE              (HIGH 0)
-     3  BERPAMITAN_KEPADA      (HIGH 0)
-     3  DILETAKKAN_PADA        (HIGH 0)
+     3  BERPERAN_SEBAGAI       (HIGH 3)
+     3  DIBAWA_KE              (HIGH 2)
+     3  BERPAMITAN_KEPADA      (HIGH 3)
      3  BERBENTUK              (HIGH 0)
-     3  BERASAL_DARI           (HIGH 0)
+     3  BERASAL_DARI           (HIGH 3)
      3  BERISI                 (HIGH 0)
+     2  MELAMBANGKAN           (HIGH 2)
      2  BERDASARKAN            (HIGH 1)
-     2  DIAWALI_DENGAN         (HIGH 0)
-     2  DIAMBIL_DARI           (HIGH 0)
+     2  DIAWALI_DENGAN         (HIGH 2)
+     2  DIAMBIL_DARI           (HIGH 2)
      2  DIPASANG               (HIGH 0)
      2  DISIRAM_DENGAN         (HIGH 1)
      2  DIMOHON_DARI           (HIGH 2)
-     2  MELIPUTI               (HIGH 0)
+     2  DIBERI                 (HIGH 2)
+     2  MELIPUTI               (HIGH 2)
      2  DIUSUNG                (HIGH 0)
      2  BERUNSUR               (HIGH 0)
-     2  MEMILIKI_JENIS         (HIGH 0)
+     2  MEMILIKI_JENIS         (HIGH 2)
+     2  MENERIMA               (HIGH 2)
      2  BERTAHTA               (HIGH 0)
-     2  DIGUNAKAN_SAAT         (HIGH 0)
-     2  DIMOHONKAN_OLEH        (HIGH 0)
-     1  MENDAPAT_PENGARUH_DARI (HIGH 0)
-     1  TIDAK_MENJAMIN         (HIGH 0)
+     2  DIGUNAKAN_SAAT         (HIGH 1)
+     2  DIMOHONKAN_OLEH        (HIGH 2)
+     1  MENDAPAT_PENGARUH_DARI (HIGH 1)
+     1  TIDAK_MENJAMIN         (HIGH 1)
      1  DIGULUNG_DENGAN        (HIGH 1)
-     1  BERANGKAT_KE           (HIGH 0)
-     1  DIADAKAN_DI            (HIGH 0)
+     1  BERANGKAT_KE           (HIGH 1)
+     1  DIADAKAN_DI            (HIGH 1)
      1  DIKUBUR_DENGAN         (HIGH 0)
      1  DIPERLAKUKAN_SEPERTI   (HIGH 0)
      1  DIGANTI_DENGAN         (HIGH 0)
      1  DILENGKAPI             (HIGH 0)
-     1  DIMOHONKAN_DARI        (HIGH 0)
-     1  DILAKUKAN_SEBELUM      (HIGH 0)
+     1  DIMOHONKAN_DARI        (HIGH 1)
+     1  DILAKUKAN_SEBELUM      (HIGH 1)
      1  DIAKHIRI_DENGAN        (HIGH 0)
-     1  DIBASMI_OLEH           (HIGH 0)
-     1  DIHANCURKAN_DI         (HIGH 0)
-     1  DIPIMPIN_OLEH          (HIGH 0)
+     1  DIBASMI_OLEH           (HIGH 1)
+     1  DIHANCURKAN_DI         (HIGH 1)
+     1  DIPIMPIN_OLEH          (HIGH 1)
+     1  DINILAI_SEBAGAI        (HIGH 1)
+     1  DIMANDIKAN_DI_ATAS     (HIGH 1)
      1  BERARTI                (HIGH 0)
-     1  DISUGUHKAN             (HIGH 0)
-     1  DIPERCIKKAN_SEBELUM    (HIGH 0)
-     1  BERTUJUAN_UNTUK        (HIGH 0)
-     1  BERUBAH_MENJADI        (HIGH 0)
-     1  DIPASANG_DI_ATAS       (HIGH 0)
-     1  DIPINDAHKAN_KE         (HIGH 0)
-     1  DIBUKA                 (HIGH 0)
-     1  MENUNGGU               (HIGH 0)
-     1  DITANAM_ATAU_DIBAKAR_BERSAMA (HIGH 0)
+     1  DISUGUHKAN             (HIGH 1)
+     1  DIPERCIKKAN_SEBELUM    (HIGH 1)
+     1  BERTUJUAN_UNTUK        (HIGH 1)
+     1  BERUBAH_MENJADI        (HIGH 1)
+     1  DIPASANG_DI_ATAS       (HIGH 1)
+     1  DIPINDAHKAN_KE         (HIGH 1)
+     1  DIBUKA                 (HIGH 1)
+     1  MENUNGGU               (HIGH 1)
+     1  DITANAM_ATAU_DIBAKAR_BERSAMA (HIGH 1)
      1  DIPUJA                 (HIGH 0)
      1  MENSYARATKAN           (HIGH 0)
-     1  DIPERCIKI_DENGAN       (HIGH 0)
-     1  DISUCIKAN_DENGAN       (HIGH 0)
-     1  DIPERSATUKAN_DENGAN    (HIGH 0)
-     1  MENJADI                (HIGH 0)
-     1  MELAKUKAN              (HIGH 0)
-     1  DIBARINGKAN_DI         (HIGH 0)
-     1  DIKURUNG_DENGAN        (HIGH 0)
-     1  DILAKUKAN_OLEH         (HIGH 0)
+     1  DIPERCIKI_DENGAN       (HIGH 1)
+     1  DISUCIKAN_DENGAN       (HIGH 1)
+     1  DIPERSATUKAN_DENGAN    (HIGH 1)
+     1  MENJADI                (HIGH 1)
+     1  MELAKUKAN              (HIGH 1)
+     1  DIBARINGKAN_DI         (HIGH 1)
+     1  DIKURUNG_DENGAN        (HIGH 1)
+     1  DILAKUKAN_OLEH         (HIGH 1)
      1  DISAMBUNG_DENGAN       (HIGH 1)
-     1  DIJUNJUNG_OLEH         (HIGH 0)
+     1  DIJUNJUNG_OLEH         (HIGH 1)
      1  BERWUJUD               (HIGH 0)
      1  MENYERAHKAN            (HIGH 0)
      1  MEMPENGARUHI           (HIGH 0)
-     1  MERUPAKAN_PERUBAHAN_DARI (HIGH 0)
+     1  MERUPAKAN_PERUBAHAN_DARI (HIGH 1)
      1  MERINCI                (HIGH 0)
-     1  DIGUNAKAN_PADA         (HIGH 0)
-     1  MELENGKAPI             (HIGH 0)
-     1  DIGANTUNGKAN_DI        (HIGH 0)
-     1  BERGANTUNG_PADA        (HIGH 0)
-     1  DITURUNKAN_DI          (HIGH 0)
-     1  DIGUNAKAN_DALAM        (HIGH 0)
-     1  MEMAKAI                (HIGH 0)
-     1  BERDAMPINGAN_DENGAN    (HIGH 0)
-     1  TERTANAM_TITIP_DI      (HIGH 0)
-     1  MEMOHON                (HIGH 0)
+     1  DIGUNAKAN_PADA         (HIGH 1)
+     1  MELENGKAPI             (HIGH 1)
+     1  DIGANTUNGKAN_DI        (HIGH 1)
+     1  BERGANTUNG_PADA        (HIGH 1)
+     1  DITURUNKAN_DI          (HIGH 1)
+     1  DIGUNAKAN_DALAM        (HIGH 1)
+     1  MEMAKAI                (HIGH 1)
+     1  BERDAMPINGAN_DENGAN    (HIGH 1)
+     1  TERTANAM_TITIP_DI      (HIGH 1)
+     1  MEMOHON                (HIGH 1)
      1  DIGUNAKAN_UNTUK        (HIGH 0)
+     1  DIHUNI                 (HIGH 1)
      1  BERPUTAR_DENGAN        (HIGH 0)
-     1  BERSEMAYAM_DI          (HIGH 0)
-     1  MENGHATURKAN           (HIGH 0)
-     1  BERTUJUAN_MENYUCIKAN   (HIGH 0)
-     1  BERBEDA_DENGAN         (HIGH 0)
+     1  BERSEMAYAM_DI          (HIGH 1)
+     1  MENGHATURKAN           (HIGH 1)
+     1  BERTUJUAN_MENYUCIKAN   (HIGH 1)
+     1  BERBEDA_DENGAN         (HIGH 1)
      1  DIKENAI                (HIGH 0)
-     1  DIPERSILAKAN_MASUK_KE  (HIGH 0)
-     1  MENERIMA               (HIGH 0)
+     1  DIPERSILAKAN_MASUK_KE  (HIGH 1)
      1  DIALASI                (HIGH 0)
-     1  LAHIR_DALAM_WUJUD      (HIGH 0)
+     1  LAHIR_DALAM_WUJUD      (HIGH 1)
      1  DIPERSILAKAN_DI        (HIGH 0)
-     1  DIPERSILAKAN_UNTUK     (HIGH 0)
+     1  DIPERSILAKAN_UNTUK     (HIGH 1)
      1  MEMBERIKAN             (HIGH 0)
-     1  DIGILING_DI_ATAS       (HIGH 0)
+     1  DIGILING_DI_ATAS       (HIGH 1)
      1  DIMOHONKAN_AGAR_MENUJU (HIGH 1)
-     1  DAPAT_SELESAI_SECARA   (HIGH 0)
-     1  DITARUHKAN_DI_SAMPING  (HIGH 0)
-     1  DITABURKAN_DI          (HIGH 0)
-     1  DISEMBURKAN_PADA       (HIGH 0)
-     1  DISEMBURKAN_SAAT       (HIGH 0)
-     1  DILARANG               (HIGH 0)
-     1  MEMBUAT                (HIGH 0)
+     1  DAPAT_SELESAI_SECARA   (HIGH 1)
+     1  DITARUHKAN_DI_SAMPING  (HIGH 1)
+     1  DITABURKAN_DI          (HIGH 1)
+     1  DISEMBURKAN_PADA       (HIGH 1)
+     1  DISEMBURKAN_SAAT       (HIGH 1)
+     1  DILARANG               (HIGH 1)
+     1  MEMBUAT                (HIGH 1)
      1  MENGAMBIL              (HIGH 0)
-     1  DIDUDUKKAN_DULU_SEBELUM (HIGH 0)
+     1  DIDUDUKKAN_DULU_SEBELUM (HIGH 1)
      1  MENUJU                 (HIGH 1)
-     1  DIMASUKKAN_MELALUI     (HIGH 0)
-     1  DITEMPELKAN_DI         (HIGH 0)
-     1  DIPERCIKI_DAN_DIMINUMKAN (HIGH 0)
-     1  TIDAK_BOLEH_DILAKUKAN_SAAT (HIGH 0)
-     1  DILAKUKAN_SAAT         (HIGH 0)
+     1  DIMASUKKAN_MELALUI     (HIGH 1)
+     1  DITEMPELKAN_DI         (HIGH 1)
+     1  DIPERCIKI_DAN_DIMINUMKAN (HIGH 1)
+     1  TIDAK_BOLEH_DILAKUKAN_SAAT (HIGH 1)
+     1  DILAKUKAN_SAAT         (HIGH 1)
      1  DIOLESKAN_DI           (HIGH 0)
-     1  DIIKAT_DENGAN          (HIGH 0)
+     1  DIIKAT_DENGAN          (HIGH 1)
      1  DISABUNI_DENGAN        (HIGH 0)
-     1  MENDAPATKAN            (HIGH 0)
-     1  BERTUJUAN_AGAR         (HIGH 0)
-     1  DIPECAHKAN             (HIGH 0)
-     1  DIKUMPULKAN            (HIGH 0)
-     1  DIBUAT_OLEH            (HIGH 0)
-     1  TIDAK_MEMAKAI          (HIGH 0)
-     1  TANPA                  (HIGH 0)
-     1  DAPAT_MENCAPAI         (HIGH 0)
-     1  DIBUAT_SAAT            (HIGH 0)
-     1  DILAKUKAN_DENGAN       (HIGH 0)
-     1  DIMANTRAI_OLEH         (HIGH 0)
-     1  KEMBALI_KE             (HIGH 0)
+     1  MENDAPATKAN            (HIGH 1)
+     1  BERTUJUAN_AGAR         (HIGH 1)
+     1  DIPECAHKAN             (HIGH 1)
+     1  DITUTUPI_DENGAN        (HIGH 1)
+     1  DIKUMPULKAN            (HIGH 1)
+     1  DIKERINGKAN_DENGAN     (HIGH 1)
+     1  DIBUAT_OLEH            (HIGH 1)
+     1  TIDAK_MEMAKAI          (HIGH 1)
+     1  TANPA                  (HIGH 1)
+     1  DAPAT_MENCAPAI         (HIGH 1)
+     1  DIBUAT_SAAT            (HIGH 1)
+     1  DILAKUKAN_DENGAN       (HIGH 1)
+     1  DIMANTRAI_OLEH         (HIGH 1)
+     1  KEMBALI_KE             (HIGH 1)
 
 review-queue reasons
 ----------------------------------------
-    39  neither endpoint resolves to a known entity
-     8  surface string looks like a sentence fragment, not an entity name
-     2  decomposed sub-relation with an unresolved endpoint
-     1  object follows 'dengan' in source, unexpected for MENGGUNAKAN
+     9  surface string looks like a sentence fragment, not an entity name
+     6  decomposed sub-relation with an unresolved endpoint
+     2  neither endpoint resolves to a known entity
      1  object follows 'di' in source, unexpected for DINAIKKAN_KE
-     1  object follows 'sebagai' in source, unexpected for ADALAH
 
 unresolved entities (add to concept map / gazetteer / entity_resolution.json)
 ----------------------------------------
@@ -216,24 +219,22 @@ unresolved entities (add to concept map / gazetteer / entity_resolution.json)
   'bale tempat jenazah'                    type=ISTILAH_UMUM_RITUAL  aliases=[]
   'bali aga'                               type=Place  aliases=[]
   'bali dataran'                           type=Place  aliases=[]
-  'bangunan untuk sawa'                    type=ISTILAH_UMUM_RITUAL  aliases=[]
   'bantal kapuk'                           type=ISTILAH_UMUM_RITUAL  aliases=[]
   'banten bebangkit atau pulagembal'       type=SARANA_RITUAL  aliases=[]
   'banten pamegat'                         type=SARANA_RITUAL  aliases=[]
   'berbagai jenis tirtha'                  type=TIRTHA_SUCI  aliases=[]
+  'berbagai sajen dan alat-alat upakara'   type=SARANA_RITUAL  aliases=[]
   'besi'                                   type=ISTILAH_UMUM_RITUAL  aliases=[]
   'besi paku'                              type=ISTILAH_UMUM_RITUAL  aliases=[]
   'bhatara-bhatari'                        type=ISTILAH_UMUM_RITUAL  aliases=[]
   'bhetara hyang guru'                     type=KONSEP_FILOSOFIS  aliases=[]
   'bilahan-bilahan bambu ante'             type=ISTILAH_UMUM_RITUAL  aliases=[]
-  'boneka naga raksasa'                    type=ISTILAH_UMUM_RITUAL  aliases=[]
   'canang sari'                            type=SARANA_RITUAL  aliases=[]
   'cara prasawya'                          type=TAHAPAN_UPACARA  aliases=[]
   'dada jenazah'                           type=ISTILAH_UMUM_RITUAL  aliases=[]
   'daun pisang saba'                       type=ISTILAH_UMUM_RITUAL  aliases=[]
   'dewa brahma'                            type=ENTITAS_KEAGAMAAN  aliases=[]
   'dewa iswara'                            type=ENTITAS_KEAGAMAAN  aliases=[]
-  'dewa loka'                              type=ENTITAS_KEAGAMAAN  aliases=[]
   'dewa mahadewa'                          type=ENTITAS_KEAGAMAAN  aliases=[]
   'dewa siwa'                              type=ENTITAS_KEAGAMAAN  aliases=[]
   'dewa wishnu'                            type=ENTITAS_KEAGAMAAN  aliases=[]
@@ -266,6 +267,7 @@ unresolved entities (add to concept map / gazetteer / entity_resolution.json)
   'jijih biji padi'                        type=ISTILAH_UMUM_RITUAL  aliases=[]
   'jumlah galar'                           type=ISTILAH_UMUM_RITUAL  aliases=[]
   'kain bawah'                             type=ISTILAH_UMUM_RITUAL  aliases=[]
+  'kain kering'                            type=SARANA_RITUAL  aliases=[]
   'kain penutup'                           type=SARANA_RITUAL  aliases=[]
   'kain penutup jenazah'                   type=ISTILAH_UMUM_RITUAL  aliases=[]
   'kain putih panjangnya puluhan meter'    type=SARANA_RITUAL  aliases=[]
@@ -279,12 +281,9 @@ unresolved entities (add to concept map / gazetteer / entity_resolution.json)
   'kawangen di tangan'                     type=SARANA_RITUAL  aliases=[]
   'kedua mata jenazah'                     type=ISTILAH_UMUM_RITUAL  aliases=[]
   'kedudukan pitara'                       type=ENTITAS_KEAGAMAAN  aliases=[]
-  'kelompok ini'                           type=ISTILAH_UMUM_RITUAL  aliases=[]
-  'kelompok paksa mahayana'                type=ISTILAH_UMUM_RITUAL  aliases=[]
   'keluarga/masyarakat'                    type=ISTILAH_UMUM_RITUAL  aliases=[]
   'kemampuan sosial ekonomi'               type=ISTILAH_UMUM_RITUAL  aliases=[]
   'kepala jenazah'                         type=ISTILAH_UMUM_RITUAL  aliases=[]
-  'kepercayaan setempat'                   type=ISTILAH_UMUM_RITUAL  aliases=[]
   'kesuna bawang putih'                    type=ISTILAH_UMUM_RITUAL  aliases=[]
   'klungah nyuh gading/suku tunggal'       type=SARANA_RITUAL  aliases=[]
   'kojong'                                 type=ISTILAH_UMUM_RITUAL  aliases=[]
@@ -295,6 +294,7 @@ unresolved entities (add to concept map / gazetteer / entity_resolution.json)
   'lancingan kajang'                       type=SARANA_RITUAL  aliases=[]
   'lante bambu'                            type=SARANA_RITUAL  aliases=[]
   'leluhur langit-langit tandu'            type=SARANA_RITUAL  aliases=[]
+  'lembu'                                  type=SARANA_RITUAL  aliases=[]
   'lengan jenazah'                         type=ISTILAH_UMUM_RITUAL  aliases=[]
   'lingga sarira pitara'                   type=KONSEP_FILOSOFIS  aliases=[]
   'lis amuan-amuan'                        type=SARANA_RITUAL  aliases=[]
@@ -318,21 +318,21 @@ unresolved entities (add to concept map / gazetteer / entity_resolution.json)
   'ngaben dalam hal sifat sebel'           type=RITUAL_KEMATIAN  aliases=[]
   'ngaben svasta'                          type=RITUAL_KEMATIAN  aliases=[]
   'ngalukat'                               type=ISTILAH_UMUM_RITUAL  aliases=[]
-  'ngentas atma'                           type=KONSEP_FILOSOFIS  aliases=[]
   'nyekeh sawa'                            type=RITUAL_KEMATIAN  aliases=[]
   'orangtua'                               type=ISTILAH_UMUM_RITUAL  aliases=[]
   'pandita selaku pemuka agama'            type=ENTITAS_KEAGAMAAN  aliases=[]
   'pangabenan jenis pranawa'               type=RITUAL_KEMATIAN  aliases=[]
   'pangabenan pranawa'                     type=RITUAL_KEMATIAN  aliases=[]
   'paplengkungan jenazah'                  type=BANGUNAN_RITUAL  aliases=[]
+  'para-para tempat pembakaran'            type=SARANA_RITUAL  aliases=[]
   'pawedan tempat memuja'                  type=BANGUNAN_RITUAL  aliases=[]
   'pecahan besi baja'                      type=ISTILAH_UMUM_RITUAL  aliases=[]
-  'pelbagai sajen dan alat-alat upakara'   type=SARANA_RITUAL  aliases=[]
   'pelebur unsur karma wasana'             type=ISTILAH_UMUM_RITUAL  aliases=[]
   'pelepasan terakhir menuju moksha'       type=KONSEP_FILOSOFIS  aliases=[]
   'pemakaian umbi sikapa/sekapa'           type=ISTILAH_UMUM_RITUAL  aliases=[]
   'pemangku kawitan setempat'              type=ENTITAS_KEAGAMAAN  aliases=[]
-  'pengabenan tanpa tirtha pangentas'      type=RITUAL_KEMATIAN  aliases=[]
+  'penebusan'                              type=TAHAPAN_UPACARA  aliases=[]
+  'pengabenan tanpa tirtha pangentas'      type=ISTILAH_UMUM_RITUAL  aliases=[]
   'pengerikan kuku mutlak'                 type=TAHAPAN_UPACARA  aliases=[]
   'pengganti tingkat bade atau wadah'      type=SARANA_RITUAL  aliases=[]
   'penggunaan anggapan'                    type=ISTILAH_UMUM_RITUAL  aliases=[]
@@ -345,6 +345,7 @@ unresolved entities (add to concept map / gazetteer / entity_resolution.json)
   'perbandingan kepala singa'              type=ISTILAH_UMUM_RITUAL  aliases=[]
   'perlambang'                             type=ISTILAH_UMUM_RITUAL  aliases=[]
   'persembahyangan'                        type=TAHAPAN_UPACARA  aliases=[]
+  'pihak berhutang'                        type=KONSEP_FILOSOFIS  aliases=[]
   'pitara menggunakan tirtha ening'        type=KONSEP_FILOSOFIS  aliases=[]
   'pitra yadnya dataran rendah'            type=RITUAL  aliases=[]
   'pitra yadnya tahap kedua'               type=RITUAL  aliases=[]
@@ -367,7 +368,7 @@ unresolved entities (add to concept map / gazetteer / entity_resolution.json)
   'roh atau atman'                         type=KONSEP_FILOSOFIS  aliases=[]
   'ruang paturon di samping jenazah'       type=ISTILAH_UMUM_RITUAL  aliases=[]
   'sajen kecil'                            type=ISTILAH_UMUM_RITUAL  aliases=[]
-  'sajen untuk surya'                      type=ENTITAS_KEAGAMAAN  aliases=[]
+  'sajen untuk surya'                      type=SARANA_RITUAL  aliases=[]
   'sambungan'                              type=ISTILAH_UMUM_RITUAL  aliases=[]
   'sambungan kain putih'                   type=SARANA_RITUAL  aliases=[]
   'samsam tidak seperti tirtha panglukatan' type=TIRTHA_SUCI  aliases=[]
@@ -377,8 +378,6 @@ unresolved entities (add to concept map / gazetteer / entity_resolution.json)
   'sanggah urip'                           type=BANGUNAN_RITUAL  aliases=[]
   'sanggar surya baligia'                  type=BANGUNAN_RITUAL  aliases=[]
   'santapan istimewa'                      type=ISTILAH_UMUM_RITUAL  aliases=[]
-  'sarana mewah'                           type=ISTILAH_UMUM_RITUAL  aliases=[]
-  'sarana permohonan kepada sanghyang agni' type=ENTITAS_KEAGAMAAN  aliases=[]
   'sarana-sarana tersebut'                 type=ISTILAH_UMUM_RITUAL  aliases=[]
   'sasih kadasa'                           type=KONSEP_HUKUM_ADAT  aliases=[]
   'sasih kaenem'                           type=KONSEP_HUKUM_ADAT  aliases=[]
@@ -395,13 +394,12 @@ unresolved entities (add to concept map / gazetteer / entity_resolution.json)
   'sawa dititip'                           type=ISTILAH_UMUM_RITUAL  aliases=[]
   'sedahan setra'                          type=BANGUNAN_RITUAL  aliases=[]
   'segenap keturunan mendiang'             type=ISTILAH_UMUM_RITUAL  aliases=[]
-  'sejenis sangge'                         type=SARANA_RITUAL  aliases=[]
   'sekah sangge'                           type=SARANA_RITUAL  aliases=[]
   'sekeluarga tunggalan pamrajan'          type=BANGUNAN_RITUAL  aliases=[]
   'semacam dipan atau bale darurat'        type=BANGUNAN_RITUAL  aliases=[]
   'sembah bakti pamitan kepada bhatara-bhatari' type=ENTITAS_KEAGAMAAN  aliases=[]
   'sembah bhakti serta ayaban sajen'       type=TAHAPAN_UPACARA  aliases=[]
-  'semua alat pangringkesan'               type=TAHAPAN_UPACARA  aliases=[]
+  'semua alat pangringkesan'               type=SARANA_RITUAL  aliases=[]
   'semua sarana'                           type=SARANA_RITUAL  aliases=[]
   'sesajen dan alat upakara'               type=SARANA_RITUAL  aliases=[]
   'sesajen dan punjung'                    type=SARANA_RITUAL  aliases=[]
@@ -424,8 +422,6 @@ unresolved entities (add to concept map / gazetteer / entity_resolution.json)
   'sulinggih utawi pinandita'              type=ENTITAS_KEAGAMAAN  aliases=[]
   'tali benang tukelan'                    type=SARANA_RITUAL  aliases=[]
   'tali ktekung'                           type=ISTILAH_UMUM_RITUAL  aliases=[]
-  'tali saput'                             type=SARANA_RITUAL  aliases=[]
-  'tanda hormat bakti kepada mendiang'     type=ISTILAH_UMUM_RITUAL  aliases=[]
   'tangan jenazah/layon'                   type=ISTILAH_UMUM_RITUAL  aliases=[]
   'tarpana dan muspa'                      type=TAHAPAN_UPACARA  aliases=[]
   'teben pepaga/asagan'                    type=SARANA_RITUAL  aliases=[]
@@ -463,7 +459,6 @@ unresolved entities (add to concept map / gazetteer / entity_resolution.json)
   'upacara ngelungah'                      type=RITUAL_KEMATIAN  aliases=[]
   'upacara nyiramang layon'                type=TAHAPAN_UPACARA  aliases=[]
   'upacara pabresihan mati'                type=ISTILAH_UMUM_RITUAL  aliases=[]
-  'upacara palebon ngaben'                 type=RITUAL_KEMATIAN  aliases=[]
   'upacara panebusan'                      type=ISTILAH_UMUM_RITUAL  aliases=[]
   'upacara pengabenan'                     type=RITUAL_KEMATIAN  aliases=[]
   'upacara pengaskaran'                    type=TAHAPAN_UPACARA  aliases=[]

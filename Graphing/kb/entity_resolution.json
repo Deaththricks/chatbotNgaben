@@ -53,7 +53,11 @@
     "panca maha bhuta": "pancamahabutha",
     "panca mahabhuta": "pancamahabutha",
     "moksha": "moksa",
-    "molsa": "moksa"
+    "molsa": "moksa",
+    "kelompok ini": "kelompok_paksa_mahayana",
+    "kepercayaan setempat": "upacara_mesulub",
+    "sarana mewah": "bade",
+    "pangabenan": "ngaben"
   },
 
   "keep_distinct": [
@@ -66,5 +70,8 @@
   "type_overrides": {
     "layon": "ISTILAH_UMUM_RITUAL",
     "sawa": "ISTILAH_UMUM_RITUAL"
-  }
+  },
+
+  "exclude_from_resolution": ["manusia", "badan"],
+  "_exclude_note": "Entity ids the bot must never resolve a user query to or list under a type category -- generic/ambiguous words the extractor over-eagerly turned into standalone entities (see Graphing/kb/glossary_draft_review.md). 'manusia' is just the common word 'human' pulled from one philosophical sentence; 'badan' ('body') is used for 3 unrelated things in the source text (a philosophy term, a specific ritual effigy, and generic body) so no single merge target would be correct. Kept in entities.json/the graph for structural completeness -- read by kb_resolver.py only, which filters them out of every bot-facing surface (exact/alias/fuzzy resolution, type listings, search)."
 }

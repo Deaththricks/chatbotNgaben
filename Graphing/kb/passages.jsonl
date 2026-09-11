@@ -22,7 +22,7 @@
     "hindu",
     "jenazah",
     "ngaben",
-    "panca_maha_bhuta",
+    "pancamahabutha",
     "wilayah"
   ],
   "char_start": 102,
@@ -96,7 +96,7 @@
     "eter",
     "manusia",
     "ngaben",
-    "panca_maha_bhuta",
+    "pancamahabutha",
     "sharira",
     "teja"
   ],
@@ -117,7 +117,7 @@
     "ganda",
     "gotong_royong",
     "karma",
-    "moksha",
+    "moksa",
     "ngaben"
   ],
   "char_start": 3244,
@@ -171,7 +171,7 @@
     "abu",
     "jenazah",
     "mapegat",
-    "moksha",
+    "moksa",
     "ngaben",
     "ngajum",
     "nganyut",
@@ -181,8 +181,8 @@
     "nyegara_gunung",
     "nyiramin",
     "pabasmian",
+    "patulangan",
     "pengaksaran",
-    "petulangan",
     "pura",
     "sulinggih"
   ],
@@ -234,10 +234,11 @@
     "gajah_mina",
     "gedarba",
     "ksatria",
+    "lembu",
     "mendiang",
     "menjangan",
     "pasek",
-    "petulangan",
+    "patulangan",
     "singa",
     "sulinggih",
     "wangsa_sudra_jadma",
@@ -256,7 +257,6 @@
   "text": "Naga Banda  adalah boneka naga raksasa yang melambangkan pengikat keinginan duniawi raja. Terdapat perdebatan teologis mengenai ritus memanah Naga Banda oleh Sulinggih:\n1. Perspektif I Nyoman Singgin Wikarman:  Memanah melambangkan tindakan \"membunuh\" keinginan dan cita-cita duniawi agar tidak merintangi perjalanan roh.\n2. Perspektif Prof. Dr. Tjokorda Rai Sudarta:  Memanah bukan untuk membunuh, melainkan memberikan \"arah\" (sepuluh penjuru mata angin) bagi jiwa dalam menempuh perjalanannya sesuai hukum karma.Secara teknis, Naga Banda seharusnya memiliki panjang  1.600 depa (sekitar 2,4 km) . Namun, untuk alasan praktis dan efisiensi lahan, masyarakat menggunakan  \"depa anak-anak\"  sebagai kompromi ukuran, di mana badan naga dibuat secara formalitas menggunakan tali sementara kepala dan ekor tetap dibuat dengan nilai seni tinggi.",
   "entity_ids": [
     "badan",
-    "boneka_naga_raksasa",
     "karma",
     "naga_banda",
     "sulinggih"
@@ -292,8 +292,8 @@
     "bade",
     "banten",
     "muput",
+    "patulangan",
     "pemangku",
-    "petulangan",
     "sulinggih"
   ],
   "char_start": 8348,
@@ -411,8 +411,7 @@
   "term": "banten",
   "text": "Banten: Sesajen atau persembahan suci sebagai sarana ritual.",
   "entity_ids": [
-    "banten",
-    "sesajen"
+    "banten"
   ],
   "char_start": 11291,
   "char_end": 11354
@@ -444,8 +443,7 @@
   "term": "panca maha bhuta",
   "text": "Panca Maha Bhuta: Lima unsur alam pembentuk fisik (tanah, air, api, udara, eter).",
   "entity_ids": [
-    "eter",
-    "panca_maha_bhuta"
+    "pancamahabutha"
   ],
   "char_start": 11415,
   "char_end": 11499
@@ -487,6 +485,262 @@
   "id": "laporan_komp_027",
   "doc": "Laporan Komprehensif Ngaben",
   "section_path": [
+    "11. Glosarium"
+  ],
+  "kind": "glossary",
+  "term": "ngaben",
+  "text": "Ngaben: Upacara pembakaran jenazah (atiwa-tiwa) yang merupakan bagian dari pitra yadnya, bertujuan memusnahkan jasad sawa dan mengembalikannya menjadi pancamahabutha.",
+  "entity_ids": [
+    "ngaben"
+  ],
+  "char_start": 11641,
+  "char_end": 11810
+}
+
+{
+  "id": "laporan_komp_028",
+  "doc": "Laporan Komprehensif Ngaben",
+  "section_path": [
+    "11. Glosarium"
+  ],
+  "kind": "glossary",
+  "term": "jenazah",
+  "text": "Jenazah: Tubuh orang yang telah meninggal, yang dibawa ke setra untuk diupacarai.",
+  "entity_ids": [
+    "jenazah"
+  ],
+  "char_start": 11811,
+  "char_end": 11895
+}
+
+{
+  "id": "laporan_komp_029",
+  "doc": "Laporan Komprehensif Ngaben",
+  "section_path": [
+    "11. Glosarium"
+  ],
+  "kind": "glossary",
+  "term": "mendiang",
+  "text": "Mendiang: Sebutan hormat untuk orang yang telah meninggal.",
+  "entity_ids": [
+    "mendiang"
+  ],
+  "char_start": 11896,
+  "char_end": 11957
+}
+
+{
+  "id": "laporan_komp_030",
+  "doc": "Laporan Komprehensif Ngaben",
+  "section_path": [
+    "11. Glosarium"
+  ],
+  "kind": "glossary",
+  "term": "tirtha",
+  "text": "Tirtha: Air suci yang dimohon dari sulinggih sebagai sarana restu Ida Bhatara.",
+  "entity_ids": [
+    "tirtha"
+  ],
+  "char_start": 11958,
+  "char_end": 12039
+}
+
+{
+  "id": "laporan_komp_031",
+  "doc": "Laporan Komprehensif Ngaben",
+  "section_path": [
+    "11. Glosarium"
+  ],
+  "kind": "glossary",
+  "term": "sawa",
+  "text": "Sawa: Jenazah dalam konteks upacara, yang dibungkus kain putih sebelum dibakar.",
+  "entity_ids": [
+    "sawa"
+  ],
+  "char_start": 12040,
+  "char_end": 12122
+}
+
+{
+  "id": "laporan_komp_032",
+  "doc": "Laporan Komprehensif Ngaben",
+  "section_path": [
+    "11. Glosarium"
+  ],
+  "kind": "glossary",
+  "term": "pitra",
+  "text": "Pitra: Para pendahulu, seperti orang tua, nenek moyang dan leluhur yang telah meninggal namun masih bersuksmasarira.",
+  "entity_ids": [
+    "pitra"
+  ],
+  "char_start": 12123,
+  "char_end": 12242
+}
+
+{
+  "id": "laporan_komp_033",
+  "doc": "Laporan Komprehensif Ngaben",
+  "section_path": [
+    "11. Glosarium"
+  ],
+  "kind": "glossary",
+  "term": "setra",
+  "text": "Setra: Kuburan atau tempat penguburan/pembakaran jenazah.",
+  "entity_ids": [
+    "setra"
+  ],
+  "char_start": 12243,
+  "char_end": 12303
+}
+
+{
+  "id": "laporan_komp_034",
+  "doc": "Laporan Komprehensif Ngaben",
+  "section_path": [
+    "11. Glosarium"
+  ],
+  "kind": "glossary",
+  "term": "kain putih",
+  "text": "Kain Putih: Kain yang membungkus jenazah/layon sebelum upacara.",
+  "entity_ids": [
+    "kain_putih"
+  ],
+  "char_start": 12304,
+  "char_end": 12370
+}
+
+{
+  "id": "laporan_komp_035",
+  "doc": "Laporan Komprehensif Ngaben",
+  "section_path": [
+    "11. Glosarium"
+  ],
+  "kind": "glossary",
+  "term": "ngerorasin",
+  "text": "Ngerorasin: Upacara penyucian pitra, yang dilaksanakan 12 hari setelah ngaben.",
+  "entity_ids": [
+    "ngerorasin"
+  ],
+  "char_start": 12371,
+  "char_end": 12452
+}
+
+{
+  "id": "laporan_komp_036",
+  "doc": "Laporan Komprehensif Ngaben",
+  "section_path": [
+    "11. Glosarium"
+  ],
+  "kind": "glossary",
+  "term": "yadnya",
+  "text": "Yadnya: Korban suci atau persembahan tulus ikhlas dalam ajaran agama Hindu.",
+  "entity_ids": [
+    "yadnya"
+  ],
+  "char_start": 12453,
+  "char_end": 12531
+}
+
+{
+  "id": "laporan_komp_037",
+  "doc": "Laporan Komprehensif Ngaben",
+  "section_path": [
+    "11. Glosarium"
+  ],
+  "kind": "glossary",
+  "term": "upacara nyiramang layon",
+  "text": "Upacara Nyiramang Layon: Upacara memandikan jenazah, menggunakan daun dapdap.",
+  "entity_ids": [
+    "upacara_nyiramang_layon"
+  ],
+  "char_start": 12532,
+  "char_end": 12612
+}
+
+{
+  "id": "laporan_komp_038",
+  "doc": "Laporan Komprehensif Ngaben",
+  "section_path": [
+    "11. Glosarium"
+  ],
+  "kind": "glossary",
+  "term": "alat upakara",
+  "text": "Alat Upakara: Perlengkapan yang digunakan sebagai sarana ritual (mis. adegan).",
+  "entity_ids": [
+    "alat_upakara"
+  ],
+  "char_start": 12613,
+  "char_end": 12694
+}
+
+{
+  "id": "laporan_komp_039",
+  "doc": "Laporan Komprehensif Ngaben",
+  "section_path": [
+    "11. Glosarium"
+  ],
+  "kind": "glossary",
+  "term": "bhatara",
+  "text": "Bhatara: Sebutan untuk dewa atau Tuhan, atau manifestasi Tuhan yang dipuja.",
+  "entity_ids": [
+    "bhatara"
+  ],
+  "char_start": 12695,
+  "char_end": 12773
+}
+
+{
+  "id": "laporan_komp_040",
+  "doc": "Laporan Komprehensif Ngaben",
+  "section_path": [
+    "11. Glosarium"
+  ],
+  "kind": "glossary",
+  "term": "pepaga",
+  "text": "Pepaga: Balai-balai atau dipan darurat khusus untuk memandikan jenazah.",
+  "entity_ids": [
+    "pepaga"
+  ],
+  "char_start": 12774,
+  "char_end": 12848
+}
+
+{
+  "id": "laporan_komp_041",
+  "doc": "Laporan Komprehensif Ngaben",
+  "section_path": [
+    "11. Glosarium"
+  ],
+  "kind": "glossary",
+  "term": "uang kepeng",
+  "text": "Uang Kepeng: Uang logam tradisional Bali berlubang tengah, dipakai sebagai sarana ritual.",
+  "entity_ids": [
+    "uang_kepeng"
+  ],
+  "char_start": 12849,
+  "char_end": 12941
+}
+
+{
+  "id": "laporan_komp_042",
+  "doc": "Laporan Komprehensif Ngaben",
+  "section_path": [
+    "11. Glosarium"
+  ],
+  "kind": "glossary",
+  "term": "pabersihan",
+  "text": "Pabersihan: Upacara penyucian, juga disebut Pasucian.",
+  "entity_ids": [
+    "pabersihan"
+  ],
+  "char_start": 12942,
+  "char_end": 12998
+}
+
+{
+  "id": "laporan_komp_043",
+  "doc": "Laporan Komprehensif Ngaben",
+  "section_path": [
     "12. FAQ"
   ],
   "kind": "faq",
@@ -496,12 +750,12 @@
   "entity_ids": [
     "ngaben"
   ],
-  "char_start": 11681,
-  "char_end": 11887
+  "char_start": 13039,
+  "char_end": 13245
 }
 
 {
-  "id": "laporan_komp_028",
+  "id": "laporan_komp_044",
   "doc": "Laporan Komprehensif Ngaben",
   "section_path": [
     "12. FAQ"
@@ -511,15 +765,14 @@
   "answer": "Karena efisiensi waktu, kepastian biaya yang jauh lebih murah, dan solusi bagi mereka yang terkena sanksi adat ( Kanoroyang ).",
   "text": "Mengapa memilih krematorium dibandingkan kuburan tradisional? Karena efisiensi waktu, kepastian biaya yang jauh lebih murah, dan solusi bagi mereka yang terkena sanksi adat ( Kanoroyang ).",
   "entity_ids": [
-    "kanoroyang",
     "kuburan"
   ],
-  "char_start": 11888,
-  "char_end": 12080
+  "char_start": 13246,
+  "char_end": 13438
 }
 
 {
-  "id": "laporan_komp_029",
+  "id": "laporan_komp_045",
   "doc": "Laporan Komprehensif Ngaben",
   "section_path": [
     "12. FAQ"
@@ -529,15 +782,14 @@
   "answer": "Sah, sejauh ritual inti dan pemujaan oleh Sulinggih tetap dijalankan sesuai sastranya.",
   "text": "Apakah Ngaben di krematorium sah secara agama? Sah, sejauh ritual inti dan pemujaan oleh Sulinggih tetap dijalankan sesuai sastranya.",
   "entity_ids": [
-    "ngaben",
-    "sulinggih"
+    "ngaben"
   ],
-  "char_start": 12081,
-  "char_end": 12218
+  "char_start": 13439,
+  "char_end": 13576
 }
 
 {
-  "id": "laporan_komp_030",
+  "id": "laporan_komp_046",
   "doc": "Laporan Komprehensif Ngaben",
   "section_path": [
     "12. FAQ"
@@ -546,15 +798,13 @@
   "question": "Berapa kapasitas krematorium modern seperti Santha Yana?",
   "answer": "Krematorium ini memiliki kuota harian yang ketat, yakni maksimal melayani 8 jenazah per hari untuk menjaga keteraturan prosesi.",
   "text": "Berapa kapasitas krematorium modern seperti Santha Yana? Krematorium ini memiliki kuota harian yang ketat, yakni maksimal melayani 8 jenazah per hari untuk menjaga keteraturan prosesi.",
-  "entity_ids": [
-    "jenazah"
-  ],
-  "char_start": 12219,
-  "char_end": 12407
+  "entity_ids": [],
+  "char_start": 13577,
+  "char_end": 13765
 }
 
 {
-  "id": "laporan_komp_031",
+  "id": "laporan_komp_047",
   "doc": "Laporan Komprehensif Ngaben",
   "section_path": [
     "12. FAQ"
@@ -564,19 +814,16 @@
   "answer": "Bali Dataran menggunakan sarana mewah (bade/petulangan) pengaruh Majapahit, sedangkan Bali Aga lebih menonjolkan tradisi asli yang terkadang tidak menggunakan pembakaran fisik secara masif.",
   "text": "Apa perbedaan utama Ngaben Bali Aga dan Bali Dataran? Bali Dataran menggunakan sarana mewah (bade/petulangan) pengaruh Majapahit, sedangkan Bali Aga lebih menonjolkan tradisi asli yang terkadang tidak menggunakan pembakaran fisik secara masif.",
   "entity_ids": [
-    "bade",
     "bali_aga",
     "bali_dataran",
-    "ngaben",
-    "petulangan",
-    "sarana_mewah"
+    "ngaben"
   ],
-  "char_start": 12408,
-  "char_end": 12655
+  "char_start": 13766,
+  "char_end": 14013
 }
 
 {
-  "id": "laporan_komp_032",
+  "id": "laporan_komp_048",
   "doc": "Laporan Komprehensif Ngaben",
   "section_path": [
     "13. Ringkasan"
@@ -586,12 +833,12 @@
     "manusia",
     "ngaben"
   ],
-  "char_start": 12670,
-  "char_end": 13160
+  "char_start": 14028,
+  "char_end": 14518
 }
 
 {
-  "id": "upacara_atiw_033",
+  "id": "upacara_atiw_049",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [],
   "text": "Manusia mulai sejak terbentuknya didalam kandungan, lahir hingga dewasa dan akhirnya meninggal dunia, selalu melalui suatu proses alam sesuai dengan kehendak Tuhan Yang Maha Esa, Ida Sang Hyang Widhi Wasa. Manusia tidaklah dapat menentukannya, hanya kemungkinan merencanakannya saja. Untuk hal itulah manusia dituntut selalu berbuat kebaikan dan selalu beryadnya dalam bentuk persembahan dan korban suci kehadapan Hyang Widhi Wasa dengan segala bentuk manifestasi-Nya. Sebab bukan upakara yang besar dan megah yang menjamin manusia saat meninggalnya kelak akan secara otomatis mendapatkan sorga (amoring Acintya), akan tetapi Karma Wasananyalah yang akan menuntun dan menentukan kelak di kemudian hari saat meninggalnya. Para sentana atau keluarga hanya berusaha untuk mengupacarainya sesuai dengan kemampuannya sebagai rasa bhaktinya kepada mereka yang meninggal dunia.",
@@ -607,24 +854,24 @@
     "sorga",
     "tuhan"
   ],
-  "char_start": 13182,
-  "char_end": 14052
+  "char_start": 14540,
+  "char_end": 15410
 }
 
 {
-  "id": "upacara_atiw_034",
+  "id": "upacara_atiw_050",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "1. Pengertian Mati"
   ],
   "text": "Ada beberapa pendapat tentang mati, antara lain sebagai berikut:",
   "entity_ids": [],
-  "char_start": 14072,
-  "char_end": 14136
+  "char_start": 15430,
+  "char_end": 15494
 }
 
 {
-  "id": "upacara_atiw_035",
+  "id": "upacara_atiw_051",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "1. Pengertian Mati",
@@ -632,12 +879,12 @@
   ],
   "text": "Orang dikatakan telah mati apabila otak dan batang otak sudah tidak berfungsi lagi.",
   "entity_ids": [],
-  "char_start": 14174,
-  "char_end": 14257
+  "char_start": 15532,
+  "char_end": 15615
 }
 
 {
-  "id": "upacara_atiw_036",
+  "id": "upacara_atiw_052",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "1. Pengertian Mati",
@@ -647,16 +894,16 @@
   "entity_ids": [
     "atma",
     "badan",
-    "panca_maha_bhuta",
+    "pancamahabutha",
     "sarira",
     "tattwa"
   ],
-  "char_start": 14281,
-  "char_end": 14832
+  "char_start": 15639,
+  "char_end": 16190
 }
 
 {
-  "id": "upacara_atiw_037",
+  "id": "upacara_atiw_053",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "1. Pengertian Mati",
@@ -671,12 +918,12 @@
     "mapegat",
     "persembahyangan"
   ],
-  "char_start": 14863,
-  "char_end": 15570
+  "char_start": 16221,
+  "char_end": 16928
 }
 
 {
-  "id": "upacara_atiw_038",
+  "id": "upacara_atiw_054",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "2. Ngaben Berdasarkan Keadaan Jenazah"
@@ -686,12 +933,12 @@
     "jenazah",
     "ngaben"
   ],
-  "char_start": 15691,
-  "char_end": 15803
+  "char_start": 17049,
+  "char_end": 17161
 }
 
 {
-  "id": "upacara_atiw_039",
+  "id": "upacara_atiw_055",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "A. Sava Vedana"
@@ -702,12 +949,12 @@
     "ngaben",
     "pangabenan"
   ],
-  "char_start": 15819,
-  "char_end": 16031
+  "char_start": 17177,
+  "char_end": 17389
 }
 
 {
-  "id": "upacara_atiw_040",
+  "id": "upacara_atiw_056",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "B. Asti Vedana"
@@ -725,12 +972,12 @@
     "sengker_jagat",
     "setra"
   ],
-  "char_start": 16047,
-  "char_end": 16989
+  "char_start": 17405,
+  "char_end": 18347
 }
 
 {
-  "id": "upacara_atiw_041",
+  "id": "upacara_atiw_057",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "C. Svasta"
@@ -741,12 +988,12 @@
     "ngaben",
     "pejah_ring_sunantara"
   ],
-  "char_start": 17000,
-  "char_end": 17319
+  "char_start": 18358,
+  "char_end": 18677
 }
 
 {
-  "id": "upacara_atiw_042",
+  "id": "upacara_atiw_058",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "3. Ngaben Berdasarkan Tingkatan Upacara"
@@ -772,12 +1019,12 @@
     "tirtha",
     "tunjung_biru"
   ],
-  "char_start": 17360,
-  "char_end": 18010
+  "char_start": 18718,
+  "char_end": 19368
 }
 
 {
-  "id": "upacara_atiw_043",
+  "id": "upacara_atiw_059",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "4. Proses Ngaben Sesuai Dengan Keadaan Jenazah"
@@ -787,12 +1034,12 @@
     "jenazah",
     "ngaben"
   ],
-  "char_start": 18097,
-  "char_end": 18181
+  "char_start": 19455,
+  "char_end": 19539
 }
 
 {
-  "id": "upacara_atiw_044",
+  "id": "upacara_atiw_060",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "A. Sava Vedana"
@@ -809,8 +1056,7 @@
     "layon",
     "mesirig",
     "ngaben",
-    "pabasmian",
-    "panca_maha_bhuta",
+    "pancamahabutha",
     "pengutangan",
     "prasawya",
     "saka_roras",
@@ -818,14 +1064,15 @@
     "setra",
     "uang_kepeng",
     "upacara_ngaskara",
+    "upacara_palebon_ngaben",
     "usungan"
   ],
-  "char_start": 18197,
-  "char_end": 19410
+  "char_start": 19555,
+  "char_end": 20768
 }
 
 {
-  "id": "upacara_atiw_045",
+  "id": "upacara_atiw_061",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "A. Sava Vedana"
@@ -854,12 +1101,12 @@
     "sesenden",
     "tirtha"
   ],
-  "char_start": 19446,
-  "char_end": 20602
+  "char_start": 20804,
+  "char_end": 21960
 }
 
 {
-  "id": "upacara_atiw_046",
+  "id": "upacara_atiw_062",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "A. Sava Vedana"
@@ -895,12 +1142,12 @@
     "sekah",
     "sulinggih"
   ],
-  "char_start": 20641,
-  "char_end": 22003
+  "char_start": 21999,
+  "char_end": 23361
 }
 
 {
-  "id": "upacara_atiw_047",
+  "id": "upacara_atiw_063",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "A. Sava Vedana"
@@ -916,12 +1163,12 @@
     "sang_dewa_pitara",
     "sanggah"
   ],
-  "char_start": 22028,
-  "char_end": 22337
+  "char_start": 23386,
+  "char_end": 23695
 }
 
 {
-  "id": "upacara_atiw_048",
+  "id": "upacara_atiw_064",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "B. Asti Vedana"
@@ -951,12 +1198,12 @@
     "uang_kepeng",
     "upih"
   ],
-  "char_start": 22353,
-  "char_end": 23571
+  "char_start": 23711,
+  "char_end": 24929
 }
 
 {
-  "id": "upacara_atiw_049",
+  "id": "upacara_atiw_065",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "B. Asti Vedana"
@@ -977,12 +1224,12 @@
     "tumpang_salu",
     "upacara_ngaskara"
   ],
-  "char_start": 23607,
-  "char_end": 24300
+  "char_start": 24965,
+  "char_end": 25658
 }
 
 {
-  "id": "upacara_atiw_050",
+  "id": "upacara_atiw_066",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "C. Ngaben Svasta"
@@ -1008,12 +1255,12 @@
     "tirtha",
     "tulang_belulang"
   ],
-  "char_start": 24332,
-  "char_end": 25435
+  "char_start": 25690,
+  "char_end": 26793
 }
 
 {
-  "id": "upacara_atiw_051",
+  "id": "upacara_atiw_067",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "C. Ngaben Svasta"
@@ -1036,12 +1283,12 @@
     "tirtha",
     "yama_purva_tattwa"
   ],
-  "char_start": 25436,
-  "char_end": 26615
+  "char_start": 26794,
+  "char_end": 27973
 }
 
 {
-  "id": "upacara_atiw_052",
+  "id": "upacara_atiw_068",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "C. Ngaben Svasta"
@@ -1076,12 +1323,12 @@
     "yama",
     "yama_purana_tattwa"
   ],
-  "char_start": 26616,
-  "char_end": 27897
+  "char_start": 27974,
+  "char_end": 29255
 }
 
 {
-  "id": "upacara_atiw_053",
+  "id": "upacara_atiw_069",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "C. Ngaben Svasta"
@@ -1110,12 +1357,12 @@
     "tirta_pangentas",
     "upacara_mageseng"
   ],
-  "char_start": 27898,
-  "char_end": 29039
+  "char_start": 29256,
+  "char_end": 30397
 }
 
 {
-  "id": "upacara_atiw_054",
+  "id": "upacara_atiw_070",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "D. Ngelunggah"
@@ -1145,12 +1392,12 @@
     "tipat_kelanan",
     "upacara_atiwa_tiwa"
   ],
-  "char_start": 29054,
-  "char_end": 30154
+  "char_start": 30412,
+  "char_end": 31512
 }
 
 {
-  "id": "upacara_atiw_055",
+  "id": "upacara_atiw_071",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "D. Ngelunggah"
@@ -1167,12 +1414,12 @@
     "tirtha",
     "tirtha_pengerapuh"
   ],
-  "char_start": 30204,
-  "char_end": 30647
+  "char_start": 31562,
+  "char_end": 32005
 }
 
 {
-  "id": "upacara_atiw_056",
+  "id": "upacara_atiw_072",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "E. Ngaben Numandang Mantri"
@@ -1186,6 +1433,7 @@
     "kain_kajang",
     "kawitan",
     "madya",
+    "mamukur_dan_upacara_sebangsa",
     "mangening_ngening",
     "mapegat",
     "mecaru",
@@ -1206,12 +1454,12 @@
     "tirta_tunggang",
     "upacara_pengabenan"
   ],
-  "char_start": 30682,
-  "char_end": 31825
+  "char_start": 32040,
+  "char_end": 33183
 }
 
 {
-  "id": "upacara_atiw_057",
+  "id": "upacara_atiw_073",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "E. Ngaben Numandang Mantri"
@@ -1220,12 +1468,12 @@
   "entity_ids": [
     "yadnya"
   ],
-  "char_start": 31826,
-  "char_end": 31894
+  "char_start": 33184,
+  "char_end": 33252
 }
 
 {
-  "id": "upacara_atiw_058",
+  "id": "upacara_atiw_074",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "5. Makna dan Tujuan Ngaben"
@@ -1238,17 +1486,17 @@
     "manusia",
     "ngaben",
     "niskala",
-    "panca_maha_bhuta",
+    "pancamahabutha",
     "pandita",
     "pralina",
     "sarira"
   ],
-  "char_start": 31922,
-  "char_end": 32820
+  "char_start": 33280,
+  "char_end": 34178
 }
 
 {
-  "id": "upacara_atiw_059",
+  "id": "upacara_atiw_075",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "6. Persiapan Ngaben"
@@ -1258,12 +1506,12 @@
     "ngaben",
     "nganyut"
   ],
-  "char_start": 32841,
-  "char_end": 32985
+  "char_start": 34199,
+  "char_end": 34343
 }
 
 {
-  "id": "upacara_atiw_060",
+  "id": "upacara_atiw_076",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "A. Baru Meninggal"
@@ -1277,12 +1525,12 @@
     "soda",
     "uang_kepeng"
   ],
-  "char_start": 33004,
-  "char_end": 33610
+  "char_start": 34362,
+  "char_end": 34968
 }
 
 {
-  "id": "upacara_atiw_061",
+  "id": "upacara_atiw_077",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "B. Persiapan"
@@ -1312,12 +1560,12 @@
     "waja",
     "yeh_kumkuman"
   ],
-  "char_start": 33666,
-  "char_end": 34401
+  "char_start": 35024,
+  "char_end": 35759
 }
 
 {
-  "id": "upacara_atiw_062",
+  "id": "upacara_atiw_078",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "C. Tirta"
@@ -1336,12 +1584,12 @@
     "tirta_pemargi",
     "tirtha"
   ],
-  "char_start": 34425,
-  "char_end": 34651
+  "char_start": 35783,
+  "char_end": 36009
 }
 
 {
-  "id": "upacara_atiw_063",
+  "id": "upacara_atiw_079",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "D. Makarya Pepaga dan Slepa"
@@ -1355,12 +1603,12 @@
     "pepaga",
     "setra"
   ],
-  "char_start": 34715,
-  "char_end": 35193
+  "char_start": 36073,
+  "char_end": 36551
 }
 
 {
-  "id": "upacara_atiw_064",
+  "id": "upacara_atiw_080",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "E. Memandikan Jenazah"
@@ -1373,12 +1621,12 @@
     "pepaga",
     "pitra_yadnya"
   ],
-  "char_start": 35237,
-  "char_end": 35827
+  "char_start": 36595,
+  "char_end": 37185
 }
 
 {
-  "id": "upacara_atiw_065",
+  "id": "upacara_atiw_081",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "E. Memandikan Jenazah"
@@ -1398,12 +1646,12 @@
     "mesisig",
     "uang_kepeng"
   ],
-  "char_start": 35828,
-  "char_end": 37340
+  "char_start": 37186,
+  "char_end": 38698
 }
 
 {
-  "id": "upacara_atiw_066",
+  "id": "upacara_atiw_082",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "E. Memandikan Jenazah"
@@ -1435,12 +1683,12 @@
     "tirta_sanggah_kamulan",
     "tirtha"
   ],
-  "char_start": 37341,
-  "char_end": 38447
+  "char_start": 38699,
+  "char_end": 39805
 }
 
 {
-  "id": "upacara_atiw_067",
+  "id": "upacara_atiw_083",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "E. Memandikan Jenazah"
@@ -1463,12 +1711,12 @@
     "sodan",
     "tarpana"
   ],
-  "char_start": 38448,
-  "char_end": 39083
+  "char_start": 39806,
+  "char_end": 40441
 }
 
 {
-  "id": "upacara_atiw_068",
+  "id": "upacara_atiw_084",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "7. Dewasa Ngaben"
@@ -1478,24 +1726,24 @@
     "ngaben",
     "selatan"
   ],
-  "char_start": 39101,
-  "char_end": 39242
+  "char_start": 40459,
+  "char_end": 40600
 }
 
 {
-  "id": "upacara_atiw_069",
+  "id": "upacara_atiw_085",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "A. Berdasarkan Sasih"
   ],
   "text": "Dilihat dari pergeseran matahari, disebutkan ada tiga kategori, antara lain:",
   "entity_ids": [],
-  "char_start": 39264,
-  "char_end": 39340
+  "char_start": 40622,
+  "char_end": 40698
 }
 
 {
-  "id": "upacara_atiw_070",
+  "id": "upacara_atiw_086",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "A. Berdasarkan Sasih",
@@ -1517,12 +1765,12 @@
     "sasih_kadasa",
     "yama"
   ],
-  "char_start": 39355,
-  "char_end": 39829
+  "char_start": 40713,
+  "char_end": 41187
 }
 
 {
-  "id": "upacara_atiw_071",
+  "id": "upacara_atiw_087",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "A. Berdasarkan Sasih",
@@ -1540,12 +1788,12 @@
     "sasih_kapat",
     "selatan"
   ],
-  "char_start": 39843,
-  "char_end": 40211
+  "char_start": 41201,
+  "char_end": 41569
 }
 
 {
-  "id": "upacara_atiw_072",
+  "id": "upacara_atiw_088",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "A. Berdasarkan Sasih",
@@ -1565,6 +1813,7 @@
     "karo",
     "kasa",
     "katiga",
+    "mamukur_dan_upacara_sebangsa",
     "manusa_yadnya",
     "ngaben",
     "ngerorasin",
@@ -1575,12 +1824,12 @@
     "sasih_karo",
     "selatan"
   ],
-  "char_start": 40227,
-  "char_end": 41476
+  "char_start": 41585,
+  "char_end": 42834
 }
 
 {
-  "id": "upacara_atiw_073",
+  "id": "upacara_atiw_089",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "A. Berdasarkan Sasih",
@@ -1613,12 +1862,12 @@
     "wayang",
     "wuku_kuningan"
   ],
-  "char_start": 41477,
-  "char_end": 42147
+  "char_start": 42835,
+  "char_end": 43505
 }
 
 {
-  "id": "upacara_atiw_074",
+  "id": "upacara_atiw_090",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "B. Berdasarkan Wuku dan Wewaran"
@@ -1630,12 +1879,12 @@
     "wuku",
     "wuku_ingkel_wong"
   ],
-  "char_start": 42180,
-  "char_end": 42290
+  "char_start": 43538,
+  "char_end": 43648
 }
 
 {
-  "id": "upacara_atiw_075",
+  "id": "upacara_atiw_091",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "B. Berdasarkan Wuku dan Wewaran",
@@ -1655,12 +1904,12 @@
     "wewaran",
     "wuku_ingkel_wong"
   ],
-  "char_start": 42306,
-  "char_end": 42856
+  "char_start": 43664,
+  "char_end": 44214
 }
 
 {
-  "id": "upacara_atiw_076",
+  "id": "upacara_atiw_092",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "B. Berdasarkan Wuku dan Wewaran",
@@ -1700,12 +1949,12 @@
     "wuku",
     "wuku_kuningan"
   ],
-  "char_start": 42911,
-  "char_end": 44016
+  "char_start": 44269,
+  "char_end": 45374
 }
 
 {
-  "id": "upacara_atiw_077",
+  "id": "upacara_atiw_093",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "8. Pelaksanaan Ngaben"
@@ -1731,12 +1980,12 @@
     "tilem",
     "tirtha"
   ],
-  "char_start": 44039,
-  "char_end": 45280
+  "char_start": 45397,
+  "char_end": 46638
 }
 
 {
-  "id": "upacara_atiw_078",
+  "id": "upacara_atiw_094",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "8. Pelaksanaan Ngaben"
@@ -1751,12 +2000,12 @@
     "pandita",
     "sorga"
   ],
-  "char_start": 45302,
-  "char_end": 45799
+  "char_start": 46660,
+  "char_end": 47157
 }
 
 {
-  "id": "upacara_atiw_079",
+  "id": "upacara_atiw_095",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "9. Nganyut"
@@ -1771,12 +2020,12 @@
     "puspa_asti",
     "sesenden"
   ],
-  "char_start": 45811,
-  "char_end": 46759
+  "char_start": 47169,
+  "char_end": 48117
 }
 
 {
-  "id": "upacara_atiw_080",
+  "id": "upacara_atiw_096",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "10. Beberapa Mantra Saat Ngeringkes"
@@ -1793,12 +2042,12 @@
     "swaha",
     "waja"
   ],
-  "char_start": 46838,
-  "char_end": 47978
+  "char_start": 48196,
+  "char_end": 49336
 }
 
 {
-  "id": "upacara_atiw_081",
+  "id": "upacara_atiw_097",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "10. Beberapa Mantra Saat Ngeringkes"
@@ -1808,12 +2057,12 @@
     "pasek",
     "sang_hyang"
   ],
-  "char_start": 47979,
-  "char_end": 48311
+  "char_start": 49337,
+  "char_end": 49669
 }
 
 {
-  "id": "upacara_atiw_082",
+  "id": "upacara_atiw_098",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "11. Tabel Makna Simbolis Eteh-eteh Layon"
@@ -1823,24 +2072,24 @@
     "eteh_eteh",
     "layon"
   ],
-  "char_start": 48353,
-  "char_end": 48475
+  "char_start": 49711,
+  "char_end": 49833
 }
 
 {
-  "id": "upacara_atiw_083",
+  "id": "upacara_atiw_099",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bagian Tubuh"
   ],
   "text": "Sarana",
   "entity_ids": [],
-  "char_start": 48490,
-  "char_end": 48496
+  "char_start": 49848,
+  "char_end": 49854
 }
 
 {
-  "id": "upacara_atiw_084",
+  "id": "upacara_atiw_100",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Makna Simbolis"
@@ -1854,12 +2103,12 @@
     "kacip_melati",
     "waja"
   ],
-  "char_start": 48514,
-  "char_end": 48991
+  "char_start": 49872,
+  "char_end": 50349
 }
 
 {
-  "id": "upacara_atiw_085",
+  "id": "upacara_atiw_101",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "12. Upakara Ngaben"
@@ -1871,12 +2120,12 @@
     "sawa",
     "yama"
   ],
-  "char_start": 49048,
-  "char_end": 49142
+  "char_start": 50406,
+  "char_end": 50500
 }
 
 {
-  "id": "upacara_atiw_086",
+  "id": "upacara_atiw_102",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Palet I — Sorohan Banten Pengeresikan/Pabersihan"
@@ -1909,12 +2158,12 @@
     "tatebasan",
     "tumpeng"
   ],
-  "char_start": 49228,
-  "char_end": 50094
+  "char_start": 50586,
+  "char_end": 51452
 }
 
 {
-  "id": "upacara_atiw_087",
+  "id": "upacara_atiw_103",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Palet V — Sorohan Banten Pemerasan"
@@ -1933,12 +2182,12 @@
     "sulinggih",
     "tumpeng"
   ],
-  "char_start": 50313,
-  "char_end": 50615
+  "char_start": 51671,
+  "char_end": 51973
 }
 
 {
-  "id": "upacara_atiw_088",
+  "id": "upacara_atiw_104",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Palet V — Sorohan Banten Pemerasan",
@@ -1950,12 +2199,12 @@
     "tirta_penyeeb",
     "tirtha"
   ],
-  "char_start": 50667,
-  "char_end": 50774
+  "char_start": 52025,
+  "char_end": 52132
 }
 
 {
-  "id": "upacara_atiw_089",
+  "id": "upacara_atiw_105",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Palet V — Sorohan Banten Pemerasan",
@@ -1967,12 +2216,12 @@
     "caru_pengelambuk",
     "caru_siap_brumbun"
   ],
-  "char_start": 50839,
-  "char_end": 50897
+  "char_start": 52197,
+  "char_end": 52255
 }
 
 {
-  "id": "upacara_atiw_090",
+  "id": "upacara_atiw_106",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Palet I — Sorohan Banten Pengeresikan/Pabersihan"
@@ -1994,6 +2243,7 @@
     "nasi_angkeb",
     "nyuh_gading",
     "pasucian",
+    "penebusan",
     "peras",
     "prayascita",
     "rantasan",
@@ -2007,12 +2257,12 @@
     "tatebasan",
     "tumpeng"
   ],
-  "char_start": 50976,
-  "char_end": 52086
+  "char_start": 52334,
+  "char_end": 53444
 }
 
 {
-  "id": "upacara_atiw_091",
+  "id": "upacara_atiw_107",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Palet I — Sorohan Banten Pengeresikan/Pabersihan"
@@ -2031,12 +2281,12 @@
     "sodan",
     "tunon"
   ],
-  "char_start": 52290,
-  "char_end": 52627
+  "char_start": 53648,
+  "char_end": 53985
 }
 
 {
-  "id": "upacara_atiw_092",
+  "id": "upacara_atiw_108",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Palet IX — Sorohan Banten Penyanggra"
@@ -2060,12 +2310,12 @@
     "setra",
     "sulinggih"
   ],
-  "char_start": 52707,
-  "char_end": 53332
+  "char_start": 54065,
+  "char_end": 54690
 }
 
 {
-  "id": "upacara_atiw_093",
+  "id": "upacara_atiw_109",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Palet IX — Sorohan Banten Penyanggra",
@@ -2094,12 +2344,12 @@
     "tumpeng",
     "upasaksi"
   ],
-  "char_start": 53418,
-  "char_end": 53916
+  "char_start": 54776,
+  "char_end": 55274
 }
 
 {
-  "id": "upacara_atiw_094",
+  "id": "upacara_atiw_110",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Palet IX — Sorohan Banten Penyanggra",
@@ -2132,12 +2382,12 @@
     "tirtha",
     "tumpeng"
   ],
-  "char_start": 54036,
-  "char_end": 55002
+  "char_start": 55394,
+  "char_end": 56360
 }
 
 {
-  "id": "upacara_atiw_095",
+  "id": "upacara_atiw_111",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Palet I — Sorohan Banten Pengeresikan"
@@ -2168,12 +2418,12 @@
     "tatebasan",
     "tumpeng"
   ],
-  "char_start": 55139,
-  "char_end": 56260
+  "char_start": 56497,
+  "char_end": 57618
 }
 
 {
-  "id": "upacara_atiw_096",
+  "id": "upacara_atiw_112",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Palet I — Sorohan Banten Pengeresikan"
@@ -2201,12 +2451,12 @@
     "tahenan",
     "tumpeng"
   ],
-  "char_start": 56464,
-  "char_end": 57002
+  "char_start": 57822,
+  "char_end": 58360
 }
 
 {
-  "id": "upacara_atiw_097",
+  "id": "upacara_atiw_113",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Palet VIII — Sorohan Banten Mamutru"
@@ -2227,12 +2477,12 @@
     "sekah",
     "sorohan"
   ],
-  "char_start": 57126,
-  "char_end": 57615
+  "char_start": 58484,
+  "char_end": 58973
 }
 
 {
-  "id": "upacara_atiw_098",
+  "id": "upacara_atiw_114",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Palet XI — Eteh-eteh Ngesdeng Sekah"
@@ -2246,12 +2496,12 @@
     "sekah",
     "sesenden"
   ],
-  "char_start": 57743,
-  "char_end": 57986
+  "char_start": 59101,
+  "char_end": 59344
 }
 
 {
-  "id": "upacara_atiw_099",
+  "id": "upacara_atiw_115",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Palet XII — Sorohan Banten Penyanggra"
@@ -2274,12 +2524,12 @@
     "tahenan",
     "tirtha"
   ],
-  "char_start": 58067,
-  "char_end": 58546
+  "char_start": 59425,
+  "char_end": 59904
 }
 
 {
-  "id": "upacara_atiw_100",
+  "id": "upacara_atiw_116",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "13. Ngereka"
@@ -2289,12 +2539,12 @@
     "abu",
     "jenazah"
   ],
-  "char_start": 58594,
-  "char_end": 58678
+  "char_start": 59952,
+  "char_end": 60036
 }
 
 {
-  "id": "upacara_atiw_101",
+  "id": "upacara_atiw_117",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "A. Puspa Asti"
@@ -2305,12 +2555,12 @@
     "puspa_asti",
     "sesenden"
   ],
-  "char_start": 58693,
-  "char_end": 58917
+  "char_start": 60051,
+  "char_end": 60275
 }
 
 {
-  "id": "upacara_atiw_102",
+  "id": "upacara_atiw_118",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "B. Ngereka Galih"
@@ -2322,12 +2572,12 @@
     "manusia",
     "puspa_asti"
   ],
-  "char_start": 58935,
-  "char_end": 59204
+  "char_start": 60293,
+  "char_end": 60562
 }
 
 {
-  "id": "upacara_atiw_103",
+  "id": "upacara_atiw_119",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Jumlah Kwangen"
@@ -2341,12 +2591,12 @@
     "sulinggih",
     "tandu"
   ],
-  "char_start": 59235,
-  "char_end": 60094
+  "char_start": 60593,
+  "char_end": 61452
 }
 
 {
-  "id": "upacara_atiw_104",
+  "id": "upacara_atiw_120",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mengapa Sawa (Mayat) Dibakar"
@@ -2365,34 +2615,34 @@
     "sawa",
     "yadnya"
   ],
-  "char_start": 60194,
-  "char_end": 61312
+  "char_start": 61552,
+  "char_end": 62670
 }
 
 {
-  "id": "upacara_atiw_105",
+  "id": "upacara_atiw_121",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mengapa Sawa (Mayat) Dibakar"
   ],
-  "text": "Begitu pulalah istilah Pitra Yadnya. Sebagai istilah, Pitra Yadnya memiliki arti tersendiri, yakni upacara keagamaan yang diadakan untuk menyelenggarakan atau nyangaskara jenazah atau roh keluarga yang meninggal dengan pelbagai sajen dan alat-alat upakara sebagai sarananya. Demikianlah kurang lebih artinya dengan ditekankan secara kesusilaan supaya pihak penyelenggara bisa memandang, bahwa pengadaan berbagai sarana itu bukanlah pengorbanan suci yang merupakan swadharma (kewajiban) pribadinya semata-mata. Tegasnya, Pitra Yadnya sebagai istilah keagamaan Hindu di Bali, sasarannya cukup luas, yakni tidak hanya bagi roh orangtua atau leluhur, melainkan untuk segenap roh keluarga yang meninggal. Namun ada pula maknanya yang sempit, yakni ia hanya bermaksud pengorbanan dalam bentuk upacara-upakara yang tidak merangkum pengorbanan dalam wujud lainnya. Pitra Yadnya terdiri dari beberapa jenis yang pelaksanaannya ber-Bhinneka. Mengapa? Hal itu disebabkan oleh kedatangan Agama Hindu ke Bali tidak hanya sekali saja, melainkan bergelombang-gelombang dalam jarak puluhan bahkan ratusan tahun. Apalagi wilayah yang dituju dan menjadi basis penyebaran tiap-tiap fase, berbeda-beda, sehingga warisannya yang tertinggal sampai sekarang masih menampakkan ke-Bhinekaan dalam pulau yang sempit ini.",
+  "text": "Begitu pulalah istilah Pitra Yadnya. Sebagai istilah, Pitra Yadnya memiliki arti tersendiri, yakni upacara keagamaan yang diadakan untuk menyelenggarakan atau nyangaskara jenazah atau roh keluarga yang meninggal dengan berbagai sajen dan alat-alat upakara sebagai sarananya. Demikianlah kurang lebih artinya dengan ditekankan secara kesusilaan supaya pihak penyelenggara bisa memandang, bahwa pengadaan berbagai sarana itu bukanlah pengorbanan suci yang merupakan swadharma (kewajiban) pribadinya semata-mata. Tegasnya, Pitra Yadnya sebagai istilah keagamaan Hindu di Bali, sasarannya cukup luas, yakni tidak hanya bagi roh orangtua atau leluhur, melainkan untuk segenap roh keluarga yang meninggal. Namun ada pula maknanya yang sempit, yakni ia hanya bermaksud pengorbanan dalam bentuk upacara-upakara yang tidak merangkum pengorbanan dalam wujud lainnya. Pitra Yadnya terdiri dari beberapa jenis yang pelaksanaannya ber-Bhinneka. Mengapa? Hal itu disebabkan oleh kedatangan Agama Hindu ke Bali tidak hanya sekali saja, melainkan bergelombang-gelombang dalam jarak puluhan bahkan ratusan tahun. Apalagi wilayah yang dituju dan menjadi basis penyebaran tiap-tiap fase, berbeda-beda, sehingga warisannya yang tertinggal sampai sekarang masih menampakkan ke-Bhinekaan dalam pulau yang sempit ini.",
   "entity_ids": [
     "banten",
+    "berbagai_sajen_dan_alat_alat_upakara",
     "hindu",
     "jenazah",
     "orangtua",
-    "pelbagai_sajen_dan_alat_alat_upakara",
     "pengorbanan_suci",
     "pitra_yadnya",
     "swadharma",
     "wilayah"
   ],
-  "char_start": 61313,
-  "char_end": 62607
+  "char_start": 62671,
+  "char_end": 63965
 }
 
 {
-  "id": "upacara_atiw_106",
+  "id": "upacara_atiw_122",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mengapa Sawa (Mayat) Dibakar"
@@ -2403,12 +2653,12 @@
     "hyang",
     "pitra_yadnya"
   ],
-  "char_start": 62608,
-  "char_end": 63766
+  "char_start": 63966,
+  "char_end": 65124
 }
 
 {
-  "id": "upacara_atiw_107",
+  "id": "upacara_atiw_123",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mengapa Sawa (Mayat) Dibakar"
@@ -2421,12 +2671,12 @@
     "sredaning_manah",
     "swadharma"
   ],
-  "char_start": 63767,
-  "char_end": 64911
+  "char_start": 65125,
+  "char_end": 66269
 }
 
 {
-  "id": "upacara_atiw_108",
+  "id": "upacara_atiw_124",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mengapa Sawa (Mayat) Dibakar"
@@ -2437,12 +2687,12 @@
     "orangtua",
     "swadharma"
   ],
-  "char_start": 64912,
-  "char_end": 66103
+  "char_start": 66270,
+  "char_end": 67461
 }
 
 {
-  "id": "upacara_atiw_109",
+  "id": "upacara_atiw_125",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mengapa Sawa (Mayat) Dibakar"
@@ -2454,12 +2704,12 @@
     "rasa",
     "sthula_sarira"
   ],
-  "char_start": 66104,
-  "char_end": 67369
+  "char_start": 67462,
+  "char_end": 68727
 }
 
 {
-  "id": "upacara_atiw_110",
+  "id": "upacara_atiw_126",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mengapa Sawa (Mayat) Dibakar"
@@ -2474,17 +2724,18 @@
     "jenazah",
     "manusia",
     "pancamahabutha",
+    "pihak_berhutang",
     "pratiwi",
     "sawa",
     "sthula_sarira",
     "teja"
   ],
-  "char_start": 67370,
-  "char_end": 68559
+  "char_start": 68728,
+  "char_end": 69917
 }
 
 {
-  "id": "upacara_atiw_111",
+  "id": "upacara_atiw_127",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mengapa Sawa (Mayat) Dibakar"
@@ -2500,12 +2751,12 @@
     "sthula_sarira",
     "swadharma"
   ],
-  "char_start": 68560,
-  "char_end": 69773
+  "char_start": 69918,
+  "char_end": 71131
 }
 
 {
-  "id": "upacara_atiw_112",
+  "id": "upacara_atiw_128",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mengapa Sawa (Mayat) Dibakar"
@@ -2519,12 +2770,12 @@
     "rasa",
     "sawa"
   ],
-  "char_start": 69774,
-  "char_end": 70981
+  "char_start": 71132,
+  "char_end": 72339
 }
 
 {
-  "id": "upacara_atiw_113",
+  "id": "upacara_atiw_129",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mengapa Sawa (Mayat) Dibakar"
@@ -2534,12 +2785,12 @@
     "banten",
     "pitra_yadnya"
   ],
-  "char_start": 70982,
-  "char_end": 71326
+  "char_start": 72340,
+  "char_end": 72684
 }
 
 {
-  "id": "upacara_atiw_114",
+  "id": "upacara_atiw_130",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Usia Membedakan Jenis Upacara"
@@ -2549,12 +2800,12 @@
     "banten",
     "pitra_yadnya"
   ],
-  "char_start": 71405,
-  "char_end": 72017
+  "char_start": 72763,
+  "char_end": 73375
 }
 
 {
-  "id": "upacara_atiw_115",
+  "id": "upacara_atiw_131",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Sebelum Kepus Pungsed"
@@ -2570,12 +2821,12 @@
     "manusia",
     "sesajen"
   ],
-  "char_start": 72044,
-  "char_end": 73212
+  "char_start": 73402,
+  "char_end": 74570
 }
 
 {
-  "id": "upacara_atiw_116",
+  "id": "upacara_atiw_132",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Sebelum Kepus Pungsed"
@@ -2594,12 +2845,12 @@
     "sesajen",
     "tirtha"
   ],
-  "char_start": 73213,
-  "char_end": 74328
+  "char_start": 74571,
+  "char_end": 75686
 }
 
 {
-  "id": "upacara_atiw_117",
+  "id": "upacara_atiw_133",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Sebelum Kepus Pungsed"
@@ -2612,12 +2863,12 @@
     "jenazah_bayi",
     "pitra_yadnya"
   ],
-  "char_start": 74329,
-  "char_end": 74675
+  "char_start": 75687,
+  "char_end": 76033
 }
 
 {
-  "id": "upacara_atiw_118",
+  "id": "upacara_atiw_134",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Sesudah Kepus Pungsed"
@@ -2636,12 +2887,12 @@
     "sedahan_setra",
     "sesajen"
   ],
-  "char_start": 74710,
-  "char_end": 75843
+  "char_start": 76068,
+  "char_end": 77201
 }
 
 {
-  "id": "upacara_atiw_119",
+  "id": "upacara_atiw_135",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Sesudah Kepus Pungsed"
@@ -2655,12 +2906,12 @@
     "purnama",
     "tilem"
   ],
-  "char_start": 75844,
-  "char_end": 77067
+  "char_start": 77202,
+  "char_end": 78425
 }
 
 {
-  "id": "upacara_atiw_120",
+  "id": "upacara_atiw_136",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Sesudah Kepus Pungsed"
@@ -2672,12 +2923,12 @@
     "manusia",
     "tekep_guungan"
   ],
-  "char_start": 77068,
-  "char_end": 78227
+  "char_start": 78426,
+  "char_end": 79585
 }
 
 {
-  "id": "upacara_atiw_121",
+  "id": "upacara_atiw_137",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Sesudah Kepus Pungsed"
@@ -2696,12 +2947,12 @@
     "tirtha",
     "tulung"
   ],
-  "char_start": 78228,
-  "char_end": 79371
+  "char_start": 79586,
+  "char_end": 80729
 }
 
 {
-  "id": "upacara_atiw_122",
+  "id": "upacara_atiw_138",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Sesudah Kepus Pungsed"
@@ -2727,12 +2978,12 @@
     "tirtha_panglepas_rare",
     "uang_kepeng"
   ],
-  "char_start": 79372,
-  "char_end": 80576
+  "char_start": 80730,
+  "char_end": 81934
 }
 
 {
-  "id": "upacara_atiw_123",
+  "id": "upacara_atiw_139",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Sesudah Kepus Pungsed"
@@ -2742,6 +2993,7 @@
     "abu",
     "klungah",
     "lontar",
+    "mamukur_dan_upacara_sebangsa",
     "ngelungah",
     "ngerorasin",
     "nyuh_gading",
@@ -2759,12 +3011,12 @@
     "tirta_pangentas",
     "tirtha"
   ],
-  "char_start": 80577,
-  "char_end": 81743
+  "char_start": 81935,
+  "char_end": 83101
 }
 
 {
-  "id": "upacara_atiw_124",
+  "id": "upacara_atiw_140",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Sesudah Kepus Pungsed"
@@ -2778,12 +3030,12 @@
     "sawa",
     "sthula_sarira"
   ],
-  "char_start": 81744,
-  "char_end": 82158
+  "char_start": 83102,
+  "char_end": 83516
 }
 
 {
-  "id": "upacara_atiw_125",
+  "id": "upacara_atiw_141",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Setelah Gigi Tanggal dan Seterusnya"
@@ -2799,12 +3051,12 @@
     "subha_asubha_karma",
     "tetebasan"
   ],
-  "char_start": 82235,
-  "char_end": 83368
+  "char_start": 83593,
+  "char_end": 84726
 }
 
 {
-  "id": "upacara_atiw_126",
+  "id": "upacara_atiw_142",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Setelah Gigi Tanggal dan Seterusnya"
@@ -2820,12 +3072,12 @@
     "sawa",
     "tetebasan"
   ],
-  "char_start": 83369,
-  "char_end": 83906
+  "char_start": 84727,
+  "char_end": 85264
 }
 
 {
-  "id": "upacara_atiw_127",
+  "id": "upacara_atiw_143",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mreteka Sawa"
@@ -2840,12 +3092,12 @@
     "pitra_yadnya",
     "sawa"
   ],
-  "char_start": 83936,
-  "char_end": 85072
+  "char_start": 85294,
+  "char_end": 86430
 }
 
 {
-  "id": "upacara_atiw_128",
+  "id": "upacara_atiw_144",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Sawa Dibakar"
@@ -2868,12 +3120,12 @@
     "sekala",
     "unsur_elemen_atau_mahabutha"
   ],
-  "char_start": 85094,
-  "char_end": 86364
+  "char_start": 86452,
+  "char_end": 87722
 }
 
 {
-  "id": "upacara_atiw_129",
+  "id": "upacara_atiw_145",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Sawa Dibakar"
@@ -2885,12 +3137,12 @@
     "ngaben",
     "tuhan"
   ],
-  "char_start": 86365,
-  "char_end": 86977
+  "char_start": 87723,
+  "char_end": 88335
 }
 
 {
-  "id": "upacara_atiw_130",
+  "id": "upacara_atiw_146",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Dua Tahap Mreteka Sawa"
@@ -2907,12 +3159,12 @@
     "punjung",
     "sawa"
   ],
-  "char_start": 87011,
-  "char_end": 88310
+  "char_start": 88369,
+  "char_end": 89668
 }
 
 {
-  "id": "upacara_atiw_131",
+  "id": "upacara_atiw_147",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Dua Tahap Mreteka Sawa"
@@ -2930,12 +3182,12 @@
     "pangringkesan",
     "sawa"
   ],
-  "char_start": 88311,
-  "char_end": 89505
+  "char_start": 89669,
+  "char_end": 90863
 }
 
 {
-  "id": "upacara_atiw_132",
+  "id": "upacara_atiw_148",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Dua Tahap Mreteka Sawa"
@@ -2953,31 +3205,30 @@
     "pepaga",
     "tandu"
   ],
-  "char_start": 89506,
-  "char_end": 90725
+  "char_start": 90864,
+  "char_end": 92083
 }
 
 {
-  "id": "upacara_atiw_133",
+  "id": "upacara_atiw_149",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Dua Tahap Mreteka Sawa"
   ],
   "text": "Jenazah ditelentangkan di atas pembungkus itu, serta mulailah diberi berbagai sarana simbolik pangringkesan, antara lain sesisir pisang selaku kalang bahu. Empat jari kaki, tangan kanan-kiri diikat benang dengan sesamanya. Pada mata, alis, telinga, tiap-tiap ruas tulang, persendian, aurat dan sebagainya, diletakkan beraneka jenis sarana, termasuk cincin permata yang dimasukkan ke dalam mulut jenazah. Hal ini diyakini, bahwa cincin yang disebut monmon itu merupakan sarana untuk meredam bau di kala terjadi pembusukan. Tentu saja dalam tahap ini, tidak boleh dilupakan memercikkan Tirtha Pangringkesan. Maka tibalah saatnya kain pangringkesan digulungkan ke tubuh jenazah. Cara menggulung diatur sedemikian rupa, sehingga tepi kain datang dari arah tangan kanan jenazah (bagi pria) dan sebaliknya bagi wanita. Ujung kain di atas kepala dan di bawah ujung kaki dibuat simpul prucut. Kemudian sekujur tubuhnya, dililit dengan benang atau pita kain putih. Pangringkes luar dibuat dengan tikar. Cara menggulung dan pembuatan simpul tikar di kedua ujung, mirip dengan kain putih yang digunakan sebelumnya.",
   "entity_ids": [
-    "berbagai_sarana_simbolik_pangringkesan",
     "jenazah",
     "kain_putih",
     "monmon",
     "pangringkesan",
     "tirtha"
   ],
-  "char_start": 90726,
-  "char_end": 91829
+  "char_start": 92084,
+  "char_end": 93187
 }
 
 {
-  "id": "upacara_atiw_134",
+  "id": "upacara_atiw_150",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Dua Tahap Mreteka Sawa"
@@ -2999,12 +3250,12 @@
     "tali_ktekung",
     "tumpang_salu"
   ],
-  "char_start": 91830,
-  "char_end": 93017
+  "char_start": 93188,
+  "char_end": 94375
 }
 
 {
-  "id": "upacara_atiw_135",
+  "id": "upacara_atiw_151",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Dua Tahap Mreteka Sawa"
@@ -3020,12 +3271,12 @@
     "pangringkesan",
     "punjung"
   ],
-  "char_start": 93018,
-  "char_end": 94193
+  "char_start": 94376,
+  "char_end": 95551
 }
 
 {
-  "id": "upacara_atiw_136",
+  "id": "upacara_atiw_152",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Dua Tahap Mreteka Sawa"
@@ -3039,12 +3290,12 @@
     "sawa",
     "sembah_bhakti"
   ],
-  "char_start": 94194,
-  "char_end": 95341
+  "char_start": 95552,
+  "char_end": 96699
 }
 
 {
-  "id": "upacara_atiw_137",
+  "id": "upacara_atiw_153",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Dua Tahap Mreteka Sawa"
@@ -3056,12 +3307,12 @@
     "mendiang",
     "umbi_gadung"
   ],
-  "char_start": 95342,
-  "char_end": 96484
+  "char_start": 96700,
+  "char_end": 97842
 }
 
 {
-  "id": "upacara_atiw_138",
+  "id": "upacara_atiw_154",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Dua Tahap Mreteka Sawa"
@@ -3083,12 +3334,12 @@
     "tilem",
     "wilayah"
   ],
-  "char_start": 96485,
-  "char_end": 97665
+  "char_start": 97843,
+  "char_end": 99023
 }
 
 {
-  "id": "upacara_atiw_139",
+  "id": "upacara_atiw_155",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Dua Tahap Mreteka Sawa"
@@ -3102,19 +3353,19 @@
     "formalin",
     "mendiang",
     "pangringkesan",
-    "sarana_permohonan_kepada_sanghyang_agni",
+    "sanghyang_agni",
     "sawa",
     "sesajen",
     "sesajen_dan_punjung",
     "tumpang_salu",
     "wilayah"
   ],
-  "char_start": 97666,
-  "char_end": 98923
+  "char_start": 99024,
+  "char_end": 100281
 }
 
 {
-  "id": "upacara_atiw_140",
+  "id": "upacara_atiw_156",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Dua Tahap Mreteka Sawa"
@@ -3138,12 +3389,12 @@
     "sesajen",
     "tilem"
   ],
-  "char_start": 98924,
-  "char_end": 99730
+  "char_start": 100282,
+  "char_end": 101088
 }
 
 {
-  "id": "upacara_atiw_141",
+  "id": "upacara_atiw_157",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Menitip Sawa dan Upacaranya"
@@ -3159,12 +3410,12 @@
     "swadharma",
     "yama"
   ],
-  "char_start": 99816,
-  "char_end": 101021
+  "char_start": 101174,
+  "char_end": 102379
 }
 
 {
-  "id": "upacara_atiw_142",
+  "id": "upacara_atiw_158",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Menitip Sawa dan Upacaranya"
@@ -3182,12 +3433,12 @@
     "swadharma",
     "yadnya"
   ],
-  "char_start": 101022,
-  "char_end": 102176
+  "char_start": 102380,
+  "char_end": 103534
 }
 
 {
-  "id": "upacara_atiw_143",
+  "id": "upacara_atiw_159",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Menitip Sawa dan Upacaranya"
@@ -3202,12 +3453,12 @@
     "rasa",
     "sawa"
   ],
-  "char_start": 102177,
-  "char_end": 103357
+  "char_start": 103535,
+  "char_end": 104715
 }
 
 {
-  "id": "upacara_atiw_144",
+  "id": "upacara_atiw_160",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Menitip Sawa dan Upacaranya"
@@ -3234,12 +3485,12 @@
     "setra",
     "sulinggih"
   ],
-  "char_start": 103358,
-  "char_end": 104493
+  "char_start": 104716,
+  "char_end": 105851
 }
 
 {
-  "id": "upacara_atiw_145",
+  "id": "upacara_atiw_161",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Menitip Sawa dan Upacaranya"
@@ -3250,8 +3501,8 @@
     "jun_pere",
     "manusia",
     "mendiang",
+    "ngaben",
     "pabersihan",
-    "pangabenan",
     "pura",
     "sawa",
     "sesaji",
@@ -3259,12 +3510,12 @@
     "tirta_panglukatan",
     "tirtha"
   ],
-  "char_start": 104494,
-  "char_end": 105677
+  "char_start": 105852,
+  "char_end": 107035
 }
 
 {
-  "id": "upacara_atiw_146",
+  "id": "upacara_atiw_162",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Menitip Sawa dan Upacaranya"
@@ -3284,12 +3535,12 @@
     "tirtha",
     "walantaga"
   ],
-  "char_start": 105678,
-  "char_end": 106825
+  "char_start": 107036,
+  "char_end": 108183
 }
 
 {
-  "id": "upacara_atiw_147",
+  "id": "upacara_atiw_163",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Menitip Sawa dan Upacaranya"
@@ -3312,12 +3563,12 @@
     "tirtha",
     "yeh_panembak"
   ],
-  "char_start": 106826,
-  "char_end": 107944
+  "char_start": 108184,
+  "char_end": 109302
 }
 
 {
-  "id": "upacara_atiw_148",
+  "id": "upacara_atiw_164",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Menitip Sawa dan Upacaranya"
@@ -3338,12 +3589,12 @@
     "tirta_pangentas",
     "tirtha"
   ],
-  "char_start": 107945,
-  "char_end": 109133
+  "char_start": 109303,
+  "char_end": 110491
 }
 
 {
-  "id": "upacara_atiw_149",
+  "id": "upacara_atiw_165",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Menitip Sawa dan Upacaranya"
@@ -3360,12 +3611,12 @@
     "sawa",
     "sesaji"
   ],
-  "char_start": 109134,
-  "char_end": 110295
+  "char_start": 110492,
+  "char_end": 111653
 }
 
 {
-  "id": "upacara_atiw_150",
+  "id": "upacara_atiw_166",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Menitip Sawa dan Upacaranya"
@@ -3379,12 +3630,12 @@
     "pitra",
     "sanggah"
   ],
-  "char_start": 110296,
-  "char_end": 110843
+  "char_start": 111654,
+  "char_end": 112201
 }
 
 {
-  "id": "upacara_atiw_151",
+  "id": "upacara_atiw_167",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Pitra Yadnya"
@@ -3402,12 +3653,12 @@
     "pitra_yadnya",
     "sawa"
   ],
-  "char_start": 110937,
-  "char_end": 112169
+  "char_start": 112295,
+  "char_end": 113527
 }
 
 {
-  "id": "upacara_atiw_152",
+  "id": "upacara_atiw_168",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Pitra Yadnya"
@@ -3422,12 +3673,12 @@
     "sesajen",
     "yadnya"
   ],
-  "char_start": 112170,
-  "char_end": 113312
+  "char_start": 113528,
+  "char_end": 114670
 }
 
 {
-  "id": "upacara_atiw_153",
+  "id": "upacara_atiw_169",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Pitra Yadnya"
@@ -3442,12 +3693,12 @@
     "utama",
     "yadnya"
   ],
-  "char_start": 113313,
-  "char_end": 114435
+  "char_start": 114671,
+  "char_end": 115793
 }
 
 {
-  "id": "upacara_atiw_154",
+  "id": "upacara_atiw_170",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Pitra Yadnya"
@@ -3460,12 +3711,12 @@
     "swadharma",
     "yadnya"
   ],
-  "char_start": 114436,
-  "char_end": 115576
+  "char_start": 115794,
+  "char_end": 116934
 }
 
 {
-  "id": "upacara_atiw_155",
+  "id": "upacara_atiw_171",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Pitra Yadnya"
@@ -3479,12 +3730,12 @@
     "uang_kepeng",
     "yadnya"
   ],
-  "char_start": 115577,
-  "char_end": 116762
+  "char_start": 116935,
+  "char_end": 118120
 }
 
 {
-  "id": "upacara_atiw_156",
+  "id": "upacara_atiw_172",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Pitra Yadnya"
@@ -3498,12 +3749,12 @@
     "tirtha",
     "yadnya"
   ],
-  "char_start": 116763,
-  "char_end": 117891
+  "char_start": 118121,
+  "char_end": 119249
 }
 
 {
-  "id": "upacara_atiw_157",
+  "id": "upacara_atiw_173",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Pitra Yadnya"
@@ -3514,12 +3765,12 @@
     "punia",
     "sasana_kawikon"
   ],
-  "char_start": 117892,
-  "char_end": 119052
+  "char_start": 119250,
+  "char_end": 120410
 }
 
 {
-  "id": "upacara_atiw_158",
+  "id": "upacara_atiw_174",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Pitra Yadnya"
@@ -3538,12 +3789,12 @@
     "weda_pengastawa",
     "yadnya"
   ],
-  "char_start": 119053,
-  "char_end": 120242
+  "char_start": 120411,
+  "char_end": 121600
 }
 
 {
-  "id": "upacara_atiw_159",
+  "id": "upacara_atiw_175",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Pitra Yadnya"
@@ -3565,12 +3816,12 @@
     "tirtha",
     "weda"
   ],
-  "char_start": 120243,
-  "char_end": 121411
+  "char_start": 121601,
+  "char_end": 122769
 }
 
 {
-  "id": "upacara_atiw_160",
+  "id": "upacara_atiw_176",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Jenis dan Arti Upakara"
@@ -3585,12 +3836,12 @@
     "sesajen",
     "yadnya"
   ],
-  "char_start": 121483,
-  "char_end": 122718
+  "char_start": 122841,
+  "char_end": 124076
 }
 
 {
-  "id": "upacara_atiw_161",
+  "id": "upacara_atiw_177",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Jenis dan Arti Upakara"
@@ -3605,12 +3856,12 @@
     "sesajen",
     "yadnya"
   ],
-  "char_start": 122719,
-  "char_end": 123831
+  "char_start": 124077,
+  "char_end": 125189
 }
 
 {
-  "id": "upacara_atiw_162",
+  "id": "upacara_atiw_178",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Jenis dan Arti Upakara"
@@ -3621,12 +3872,12 @@
     "pangabenan",
     "sesajen"
   ],
-  "char_start": 123832,
-  "char_end": 124122
+  "char_start": 125190,
+  "char_end": 125480
 }
 
 {
-  "id": "upacara_atiw_163",
+  "id": "upacara_atiw_179",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Yang Sederhana dan yang Mewah"
@@ -3637,12 +3888,12 @@
     "pangabenan",
     "yadnya"
   ],
-  "char_start": 124161,
-  "char_end": 124582
+  "char_start": 125519,
+  "char_end": 125940
 }
 
 {
-  "id": "upacara_atiw_164",
+  "id": "upacara_atiw_180",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Yama Purwana Tatwa"
@@ -3658,12 +3909,12 @@
     "sawa",
     "yama"
   ],
-  "char_start": 124606,
-  "char_end": 125790
+  "char_start": 125964,
+  "char_end": 127148
 }
 
 {
-  "id": "upacara_atiw_165",
+  "id": "upacara_atiw_181",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Yama Purwana Tatwa"
@@ -3677,12 +3928,12 @@
     "yadnya",
     "yama"
   ],
-  "char_start": 125791,
-  "char_end": 126949
+  "char_start": 127149,
+  "char_end": 128307
 }
 
 {
-  "id": "upacara_atiw_166",
+  "id": "upacara_atiw_182",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Yama Purwana Tatwa"
@@ -3700,12 +3951,12 @@
     "sawa",
     "yama"
   ],
-  "char_start": 126950,
-  "char_end": 128195
+  "char_start": 128308,
+  "char_end": 129553
 }
 
 {
-  "id": "upacara_atiw_167",
+  "id": "upacara_atiw_183",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Yama Purwana Tatwa"
@@ -3728,12 +3979,12 @@
     "walantaga",
     "yeh_panembak"
   ],
-  "char_start": 128196,
-  "char_end": 129377
+  "char_start": 129554,
+  "char_end": 130735
 }
 
 {
-  "id": "upacara_atiw_168",
+  "id": "upacara_atiw_184",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Yama Purwana Tatwa"
@@ -3756,12 +4007,12 @@
     "visnu",
     "yadnya"
   ],
-  "char_start": 129378,
-  "char_end": 130511
+  "char_start": 130736,
+  "char_end": 131869
 }
 
 {
-  "id": "upacara_atiw_169",
+  "id": "upacara_atiw_185",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Yama Purwana Tatwa"
@@ -3783,12 +4034,12 @@
     "sesenden",
     "tirtha"
   ],
-  "char_start": 130512,
-  "char_end": 131255
+  "char_start": 131870,
+  "char_end": 132613
 }
 
 {
-  "id": "upacara_atiw_170",
+  "id": "upacara_atiw_186",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Nywasta atau Recadana"
@@ -3806,12 +4057,12 @@
     "swasta",
     "tulang_belulang"
   ],
-  "char_start": 131317,
-  "char_end": 132472
+  "char_start": 132675,
+  "char_end": 133830
 }
 
 {
-  "id": "upacara_atiw_171",
+  "id": "upacara_atiw_187",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Nywasta atau Recadana"
@@ -3841,12 +4092,12 @@
     "wangsuh_pada",
     "wayang"
   ],
-  "char_start": 132473,
-  "char_end": 133630
+  "char_start": 133831,
+  "char_end": 134988
 }
 
 {
-  "id": "upacara_atiw_172",
+  "id": "upacara_atiw_188",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Nywasta atau Recadana"
@@ -3871,12 +4122,12 @@
     "tirtha",
     "upih"
   ],
-  "char_start": 133631,
-  "char_end": 134744
+  "char_start": 134989,
+  "char_end": 136102
 }
 
 {
-  "id": "upacara_atiw_173",
+  "id": "upacara_atiw_189",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Nywasta atau Recadana"
@@ -3902,12 +4153,12 @@
     "tirta_pangentas",
     "walantaga"
   ],
-  "char_start": 134745,
-  "char_end": 135875
+  "char_start": 136103,
+  "char_end": 137233
 }
 
 {
-  "id": "upacara_atiw_174",
+  "id": "upacara_atiw_190",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Nywasta atau Recadana"
@@ -3916,12 +4167,12 @@
   "entity_ids": [
     "ngaben"
   ],
-  "char_start": 135876,
-  "char_end": 136019
+  "char_start": 137234,
+  "char_end": 137377
 }
 
 {
-  "id": "upacara_atiw_175",
+  "id": "upacara_atiw_191",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Sawa Wedana"
@@ -3943,12 +4194,12 @@
     "utama",
     "yama"
   ],
-  "char_start": 136058,
-  "char_end": 137316
+  "char_start": 137416,
+  "char_end": 138674
 }
 
 {
-  "id": "upacara_atiw_176",
+  "id": "upacara_atiw_192",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Sawa Wedana"
@@ -3963,12 +4214,12 @@
     "sawa_asli",
     "sawa_wedana"
   ],
-  "char_start": 137317,
-  "char_end": 138483
+  "char_start": 138675,
+  "char_end": 139841
 }
 
 {
-  "id": "upacara_atiw_177",
+  "id": "upacara_atiw_193",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Sawa Wedana"
@@ -3987,12 +4238,12 @@
     "setra_tempat_jasad_mendiang",
     "upih"
   ],
-  "char_start": 138484,
-  "char_end": 139649
+  "char_start": 139842,
+  "char_end": 141007
 }
 
 {
-  "id": "upacara_atiw_178",
+  "id": "upacara_atiw_194",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Sawa Wedana"
@@ -4006,8 +4257,8 @@
     "kuburan",
     "mendiang",
     "muput",
+    "ngaben",
     "ngulapin",
-    "pangabenan",
     "pengawak",
     "perlambang",
     "pura_dalem",
@@ -4017,12 +4268,12 @@
     "sulinggih",
     "tirtha"
   ],
-  "char_start": 139650,
-  "char_end": 140823
+  "char_start": 141008,
+  "char_end": 142181
 }
 
 {
-  "id": "upacara_atiw_179",
+  "id": "upacara_atiw_195",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Sawa Wedana"
@@ -4042,12 +4293,12 @@
     "sawa_asli",
     "tumpang_salu"
   ],
-  "char_start": 140824,
-  "char_end": 142028
+  "char_start": 142182,
+  "char_end": 143386
 }
 
 {
-  "id": "upacara_atiw_180",
+  "id": "upacara_atiw_196",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Pabersihan atau Pasucian"
@@ -4057,18 +4308,18 @@
     "bale_bale",
     "formalin",
     "masesalin",
+    "ngaben",
     "ngulapin",
     "pabersihan",
-    "pangabenan",
     "pasucian",
     "sawa"
   ],
-  "char_start": 142080,
-  "char_end": 143318
+  "char_start": 143438,
+  "char_end": 144676
 }
 
 {
-  "id": "upacara_atiw_181",
+  "id": "upacara_atiw_197",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Pabersihan atau Pasucian"
@@ -4097,12 +4348,12 @@
     "uang_kepeng",
     "visnu"
   ],
-  "char_start": 143319,
-  "char_end": 144481
+  "char_start": 144677,
+  "char_end": 145839
 }
 
 {
-  "id": "upacara_atiw_182",
+  "id": "upacara_atiw_198",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Pabersihan atau Pasucian"
@@ -4117,12 +4368,12 @@
     "setra",
     "tumpang_salu"
   ],
-  "char_start": 144482,
-  "char_end": 144920
+  "char_start": 145840,
+  "char_end": 146278
 }
 
 {
-  "id": "upacara_atiw_183",
+  "id": "upacara_atiw_199",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Manah Tirtha Ening"
@@ -4136,12 +4387,12 @@
     "tirtha_ening",
     "wayang"
   ],
-  "char_start": 144956,
-  "char_end": 146119
+  "char_start": 146314,
+  "char_end": 147477
 }
 
 {
-  "id": "upacara_atiw_184",
+  "id": "upacara_atiw_200",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Manah Tirtha Ening"
@@ -4164,12 +4415,12 @@
     "tirta_ening",
     "tirtha_ening"
   ],
-  "char_start": 146120,
-  "char_end": 147233
+  "char_start": 147478,
+  "char_end": 148591
 }
 
 {
-  "id": "upacara_atiw_185",
+  "id": "upacara_atiw_201",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Manah Tirtha Ening"
@@ -4187,12 +4438,12 @@
     "teja",
     "tirtha_tarpana"
   ],
-  "char_start": 147234,
-  "char_end": 148352
+  "char_start": 148592,
+  "char_end": 149710
 }
 
 {
-  "id": "upacara_atiw_186",
+  "id": "upacara_atiw_202",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Manah Tirtha Ening"
@@ -4201,12 +4452,12 @@
   "entity_ids": [
     "akasa"
   ],
-  "char_start": 148353,
-  "char_end": 148516
+  "char_start": 149711,
+  "char_end": 149874
 }
 
 {
-  "id": "upacara_atiw_187",
+  "id": "upacara_atiw_203",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mlaspas Kajang"
@@ -4225,8 +4476,8 @@
     "manusia",
     "mlaspas",
     "mlaspas_kajang",
+    "ngaben",
     "pabersihan",
-    "pangabenan",
     "perak",
     "plengkungan_sawa",
     "segenap_keturunan_mendiang",
@@ -4234,12 +4485,12 @@
     "uang_kepeng",
     "ukur"
   ],
-  "char_start": 148549,
-  "char_end": 149663
+  "char_start": 149907,
+  "char_end": 151021
 }
 
 {
-  "id": "upacara_atiw_188",
+  "id": "upacara_atiw_204",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mlaspas Kajang"
@@ -4264,12 +4515,12 @@
     "ukur",
     "weda"
   ],
-  "char_start": 149664,
-  "char_end": 150862
+  "char_start": 151022,
+  "char_end": 152220
 }
 
 {
-  "id": "upacara_atiw_189",
+  "id": "upacara_atiw_205",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mlaspas Kajang"
@@ -4286,12 +4537,12 @@
     "panugrahan_dalem",
     "sawa"
   ],
-  "char_start": 150863,
-  "char_end": 152043
+  "char_start": 152221,
+  "char_end": 153401
 }
 
 {
-  "id": "upacara_atiw_190",
+  "id": "upacara_atiw_206",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mlaspas Kajang"
@@ -4303,12 +4554,12 @@
     "panugrahan_dalem",
     "patirtan"
   ],
-  "char_start": 152044,
-  "char_end": 153208
+  "char_start": 153402,
+  "char_end": 154566
 }
 
 {
-  "id": "upacara_atiw_191",
+  "id": "upacara_atiw_207",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mlaspas Kajang"
@@ -4331,12 +4582,12 @@
     "sawa",
     "sok_cegceg"
   ],
-  "char_start": 153209,
-  "char_end": 154360
+  "char_start": 154567,
+  "char_end": 155718
 }
 
 {
-  "id": "upacara_atiw_192",
+  "id": "upacara_atiw_208",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mlaspas Kajang"
@@ -4357,12 +4608,12 @@
     "pisang_jati",
     "sang_jati"
   ],
-  "char_start": 154361,
-  "char_end": 155500
+  "char_start": 155719,
+  "char_end": 156858
 }
 
 {
-  "id": "upacara_atiw_193",
+  "id": "upacara_atiw_209",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mlaspas Kajang"
@@ -4380,12 +4631,12 @@
     "sok_cegceg",
     "utpeti"
   ],
-  "char_start": 155501,
-  "char_end": 156664
+  "char_start": 156859,
+  "char_end": 158022
 }
 
 {
-  "id": "upacara_atiw_194",
+  "id": "upacara_atiw_210",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mlaspas Kajang"
@@ -4414,12 +4665,12 @@
     "setra",
     "sok_cegceg"
   ],
-  "char_start": 156665,
-  "char_end": 157829
+  "char_start": 158023,
+  "char_end": 159187
 }
 
 {
-  "id": "upacara_atiw_195",
+  "id": "upacara_atiw_211",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mlaspas Kajang"
@@ -4440,12 +4691,12 @@
     "setra",
     "tirtha"
   ],
-  "char_start": 157830,
-  "char_end": 159006
+  "char_start": 159188,
+  "char_end": 160364
 }
 
 {
-  "id": "upacara_atiw_196",
+  "id": "upacara_atiw_212",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mlaspas Kajang"
@@ -4472,12 +4723,12 @@
     "tirta_panglukatan",
     "tri_sakti"
   ],
-  "char_start": 159007,
-  "char_end": 159879
+  "char_start": 160365,
+  "char_end": 161237
 }
 
 {
-  "id": "upacara_atiw_197",
+  "id": "upacara_atiw_213",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Paguntingan dan Upadesa"
@@ -4501,12 +4752,12 @@
     "sulinggih",
     "walaka"
   ],
-  "char_start": 159957,
-  "char_end": 161114
+  "char_start": 161315,
+  "char_end": 162472
 }
 
 {
-  "id": "upacara_atiw_198",
+  "id": "upacara_atiw_214",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Paguntingan dan Upadesa"
@@ -4524,12 +4775,12 @@
     "upadesa",
     "walaka"
   ],
-  "char_start": 161115,
-  "char_end": 162250
+  "char_start": 162473,
+  "char_end": 163608
 }
 
 {
-  "id": "upacara_atiw_199",
+  "id": "upacara_atiw_215",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Paguntingan dan Upadesa"
@@ -4545,12 +4796,12 @@
     "ruang_paturon_di_samping_jenazah",
     "upadesa"
   ],
-  "char_start": 162251,
-  "char_end": 163044
+  "char_start": 163609,
+  "char_end": 164402
 }
 
 {
-  "id": "upacara_atiw_200",
+  "id": "upacara_atiw_216",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Tarpana dan Muspa"
@@ -4570,12 +4821,12 @@
     "tarpana",
     "tirtha_ening"
   ],
-  "char_start": 163084,
-  "char_end": 164279
+  "char_start": 164442,
+  "char_end": 165637
 }
 
 {
-  "id": "upacara_atiw_201",
+  "id": "upacara_atiw_217",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Tarpana dan Muspa"
@@ -4596,12 +4847,12 @@
     "weda",
     "yadnya"
   ],
-  "char_start": 164280,
-  "char_end": 165394
+  "char_start": 165638,
+  "char_end": 166752
 }
 
 {
-  "id": "upacara_atiw_202",
+  "id": "upacara_atiw_218",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Tarpana dan Muspa"
@@ -4619,12 +4870,12 @@
     "swadharma",
     "uang_kepeng"
   ],
-  "char_start": 165395,
-  "char_end": 166567
+  "char_start": 166753,
+  "char_end": 167925
 }
 
 {
-  "id": "upacara_atiw_203",
+  "id": "upacara_atiw_219",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Tarpana dan Muspa"
@@ -4638,12 +4889,12 @@
     "satu_dua_perhiasan_pusaka",
     "swadharma"
   ],
-  "char_start": 166568,
-  "char_end": 167711
+  "char_start": 167926,
+  "char_end": 169069
 }
 
 {
-  "id": "upacara_atiw_204",
+  "id": "upacara_atiw_220",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Tarpana dan Muspa"
@@ -4658,15 +4909,16 @@
     "pamerasan",
     "pamuspaan",
     "panebusan",
+    "penebusan",
     "sembah_bhakti",
     "upacara_panebusan"
   ],
-  "char_start": 167712,
-  "char_end": 168890
+  "char_start": 169070,
+  "char_end": 170248
 }
 
 {
-  "id": "upacara_atiw_205",
+  "id": "upacara_atiw_221",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Tarpana dan Muspa"
@@ -4683,18 +4935,19 @@
     "nista",
     "panebusan",
     "pangabenan",
+    "penebusan",
     "prajuru",
     "tukelan",
     "uang_kepeng",
     "ukur",
     "upacara_panebusan"
   ],
-  "char_start": 168891,
-  "char_end": 170164
+  "char_start": 170249,
+  "char_end": 171522
 }
 
 {
-  "id": "upacara_atiw_206",
+  "id": "upacara_atiw_222",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Tarpana dan Muspa"
@@ -4711,12 +4964,12 @@
     "pitra",
     "sradha"
   ],
-  "char_start": 170165,
-  "char_end": 171386
+  "char_start": 171523,
+  "char_end": 172744
 }
 
 {
-  "id": "upacara_atiw_207",
+  "id": "upacara_atiw_223",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Tarpana dan Muspa"
@@ -4734,12 +4987,12 @@
     "pitra_yadnya",
     "rasa"
   ],
-  "char_start": 171387,
-  "char_end": 172534
+  "char_start": 172745,
+  "char_end": 173892
 }
 
 {
-  "id": "upacara_atiw_208",
+  "id": "upacara_atiw_224",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Tarpana dan Muspa"
@@ -4757,12 +5010,12 @@
     "sang_hyang_atma",
     "sangaskara"
   ],
-  "char_start": 172535,
-  "char_end": 173649
+  "char_start": 173893,
+  "char_end": 175007
 }
 
 {
-  "id": "upacara_atiw_209",
+  "id": "upacara_atiw_225",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Tarpana dan Muspa"
@@ -4779,12 +5032,12 @@
     "sesajen",
     "sulinggih"
   ],
-  "char_start": 173650,
-  "char_end": 174849
+  "char_start": 175008,
+  "char_end": 176207
 }
 
 {
-  "id": "upacara_atiw_210",
+  "id": "upacara_atiw_226",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Tarpana dan Muspa"
@@ -4796,15 +5049,16 @@
     "lontar",
     "mamutru",
     "ngaben",
+    "penebusan",
     "pitra",
     "upanisad"
   ],
-  "char_start": 174850,
-  "char_end": 175690
+  "char_start": 176208,
+  "char_end": 177048
 }
 
 {
-  "id": "upacara_atiw_211",
+  "id": "upacara_atiw_227",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Yeh Panembak"
@@ -4818,12 +5072,12 @@
     "tirtha",
     "yeh_panembak"
   ],
-  "char_start": 175776,
-  "char_end": 176923
+  "char_start": 177134,
+  "char_end": 178281
 }
 
 {
-  "id": "upacara_atiw_212",
+  "id": "upacara_atiw_228",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Yeh Panembak"
@@ -4840,12 +5094,12 @@
     "surya",
     "yeh_panembak"
   ],
-  "char_start": 176924,
-  "char_end": 178055
+  "char_start": 178282,
+  "char_end": 179413
 }
 
 {
-  "id": "upacara_atiw_213",
+  "id": "upacara_atiw_229",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Yeh Panembak"
@@ -4856,12 +5110,12 @@
     "mendiang",
     "yeh_panembak"
   ],
-  "char_start": 178056,
-  "char_end": 178492
+  "char_start": 179414,
+  "char_end": 179850
 }
 
 {
-  "id": "upacara_atiw_214",
+  "id": "upacara_atiw_230",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Pamuspan dan Saji Tarpana"
@@ -4869,18 +5123,18 @@
   "text": "Mungkin Anda bertanya-tanya mengapa Pamuspan (pemberian sembah) dan Saji Tarpana kembali diketengahkan? Memang Pamuspan dan Saji Tarpana telah diketengahkan dalam pembahasan terdahulu. Namun dua topik itu kembali kita ketengahkan, karena dua acara itu sendiri memang dapat dan sering diulang. Lebih-lebih kalau upacara Pabersihan dilakukan dua atau tiga hari menjelang pangabenan. Suatu misal, Pabersihan dilangsungkan pada hari Senin dan pangabenan digelar hari Kamis tiga hari kemudian. Lalu, pada Selasa dan Rabunya? Secara formal, ia dinamakan Pangembang atau hari yang luang, bagaikan tidak ada upacara pokok pelik yang dilakukan. Kedua hari tersebut bisa digunakan untuk acara perjamuan. Namun, betapapun kosongnya, karena arwah mendiang masih merupakan makhluk dengan lingga/suksma sarira selaku jasadnya, maka \"santapan\" baginya tak dapat ditiadakan. Demikianlah, setiap hari arak-arakan pencarian Tirtha Ening untuk Tarpana, menyembahnya keluarga atau keturunan, serta dihaturkannya Saji Tarpana dilakukan berulang kali. Lebih-lebih mending punya keluarga yang cukup besar, maka biasanya orang merasa kian sreg, bila semakin sering dapat mengadakan kedua acara ini.",
   "entity_ids": [
     "mendiang",
+    "ngaben",
     "pabersihan",
-    "pangabenan",
     "suksma_sarira",
     "tarpana",
     "tirtha_ening"
   ],
-  "char_start": 178533,
-  "char_end": 179707
+  "char_start": 179891,
+  "char_end": 181065
 }
 
 {
-  "id": "upacara_atiw_215",
+  "id": "upacara_atiw_231",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Pamuspan dan Saji Tarpana"
@@ -4893,12 +5147,12 @@
     "wayang",
     "yadnya"
   ],
-  "char_start": 179708,
-  "char_end": 180817
+  "char_start": 181066,
+  "char_end": 182175
 }
 
 {
-  "id": "upacara_atiw_216",
+  "id": "upacara_atiw_232",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Pamuspan dan Saji Tarpana"
@@ -4913,6 +5167,7 @@
     "jenazah",
     "lontar",
     "masesalin",
+    "ngaben",
     "pabersihan",
     "pangabenan",
     "perak",
@@ -4928,12 +5183,12 @@
     "tirtha",
     "yama"
   ],
-  "char_start": 180818,
-  "char_end": 181963
+  "char_start": 182176,
+  "char_end": 183321
 }
 
 {
-  "id": "upacara_atiw_217",
+  "id": "upacara_atiw_233",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Pamuspan dan Saji Tarpana"
@@ -4945,20 +5200,20 @@
     "kaki_jenazah",
     "klungah",
     "lante",
+    "ngaben",
     "nyuh_gading",
-    "pangabenan",
     "sawa_prateka",
     "sawa_wedana",
     "sesenden",
     "sumpe",
     "tabunan"
   ],
-  "char_start": 181964,
-  "char_end": 183094
+  "char_start": 183322,
+  "char_end": 184452
 }
 
 {
-  "id": "upacara_atiw_218",
+  "id": "upacara_atiw_234",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Pamuspan dan Saji Tarpana"
@@ -4971,9 +5226,10 @@
     "jenazah",
     "lamak",
     "lis",
+    "ngaben",
     "pamerasan",
-    "pangabenan",
     "pekir",
+    "penebusan",
     "pering",
     "perlambang",
     "purusa_pradana",
@@ -4982,12 +5238,12 @@
     "sawa_wedana",
     "tabunan"
   ],
-  "char_start": 183095,
-  "char_end": 184224
+  "char_start": 184453,
+  "char_end": 185582
 }
 
 {
-  "id": "upacara_atiw_219",
+  "id": "upacara_atiw_235",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Menara Pengusung Jenazah"
@@ -5002,12 +5258,12 @@
     "padmasana",
     "pitra_yadnya"
   ],
-  "char_start": 184291,
-  "char_end": 185497
+  "char_start": 185649,
+  "char_end": 186855
 }
 
 {
-  "id": "upacara_atiw_220",
+  "id": "upacara_atiw_236",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Menara Pengusung Jenazah"
@@ -5015,21 +5271,21 @@
   "text": "Artinya boleh dan penting dibuat serta digunakan, tetapi bukanlah essensial. Artinya lagi, tanpa bade atau wadah pun upacara Pitra Yadnya pangabenan sudah bisa disebut sah. Bade adalah bangunan untuk sawa. Bahan dan ketentuan ukurannya sangat khusus. Artinya, arsitektur benda ini sangat berbeda dengan pola arsitektur bangunan untuk manusia yang masih hidup, lebih-lebih dengan yang untuk para dewa. Selain itu bade menunjukkan status sosial seseorang dalam masyarakat. Lebih-lebih pada zaman Kerajaan Gelgel dan Klungkung abad XV-XVII. Bade jenis apa yang boleh dan wajar dipakai oleh seseorang, ditentukan berdasarkan statusnya dalam tata kemasyarakatan pada zaman itu. Makin tinggi status sosial atau kedudukan seseorang dalam masyarakat, makin \"hebat\" pula jenis bade yang boleh digunakan. Jadi ketentuan itu sekaligus berarti anugerah. Tetapi aturan ini bukan dikeluarkan oleh sang pendeta selaku Sang Adi Guru Loka atau Guru Pangajian sebagai penuntun umat dalam kehidupan beragama. Bukan! Melainkan ketentuan itu dikeluarkan oleh raja selaku Guru Wisesa. Tetapi anugrah itu ingin dan lanjut diwarisi oleh keturunannya, walaupun sang anak cucu tak mewarisi fungsi leluhurnya.",
   "entity_ids": [
     "bade",
-    "bangunan_untuk_sawa",
     "dewa",
     "guru_pangajian",
     "guru_wisesa",
     "manusia",
-    "pangabenan",
+    "ngaben",
     "pitra_yadnya",
-    "sang_adi_guru_loka"
+    "sang_adi_guru_loka",
+    "sawa"
   ],
-  "char_start": 185498,
-  "char_end": 186680
+  "char_start": 186856,
+  "char_end": 188038
 }
 
 {
-  "id": "upacara_atiw_221",
+  "id": "upacara_atiw_237",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Menara Pengusung Jenazah"
@@ -5048,12 +5304,12 @@
     "sang_adi_guru_loka",
     "usungan"
   ],
-  "char_start": 186681,
-  "char_end": 187835
+  "char_start": 188039,
+  "char_end": 189193
 }
 
 {
-  "id": "upacara_atiw_222",
+  "id": "upacara_atiw_238",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Menara Pengusung Jenazah"
@@ -5061,7 +5317,6 @@
   "text": "Wadah dipakai oleh sesuatu warga (clan). Bertingkat berapa boleh membuat wadah, hal itu tergantung pada anugerah raja sebagaimana yang tercantum dalam babad. Sebelum melanjutkan uraian tentang kelengkapan upacara lainnya, kiranya masih perlu diuraikan lebih jauh tentang menara pengusung jenazah (padmasana, bade dan wadah) tadi. Orang mungkin bertanya, bukankah wujud arsitektur ketiga benda tadi mirip benar dengan bangunan yang terdapat dalam pura? Misalnya bade hampir sama dengan meru. Apalagi padmasana, baik dalam wujud maupun namanya, sama dengan pelinggih selaku pemujaan Ida Sang Hyang Widhi. Selintas, orang awam akan menyangka bahwa bade sama saja dengan meru. Tetapi sebenarnya, secara mistik religius - juga terlihat dalam kenyataan bangunan untuk sawa sangat lain dengan bangunan untuk dewa, terutama dalam bentuk dan ukurannya. Lihatlah! Dasar sebuah meru atau padmasana dalam pura - artinya yang untuk dewa - bentuknya pasti persegi empat bujur-sangkar. Panjang dan lebarnya sama, serta bertiang pokok hanya empat buah. Tetapi bade atau padmasana bagi sawa? Tentulah segi empat panjang.",
   "entity_ids": [
     "bade",
-    "bangunan_untuk_sawa",
     "dewa",
     "jenazah",
     "meru",
@@ -5071,12 +5326,12 @@
     "sang_hyang",
     "sawa"
   ],
-  "char_start": 187836,
-  "char_end": 188939
+  "char_start": 189194,
+  "char_end": 190297
 }
 
 {
-  "id": "upacara_atiw_223",
+  "id": "upacara_atiw_239",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Menara Pengusung Jenazah"
@@ -5094,12 +5349,12 @@
     "sudut_atap_bade",
     "tingkatan_bade_atau_wadah"
   ],
-  "char_start": 188940,
-  "char_end": 190054
+  "char_start": 190298,
+  "char_end": 191412
 }
 
 {
-  "id": "upacara_atiw_224",
+  "id": "upacara_atiw_240",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Menara Pengusung Jenazah"
@@ -5116,12 +5371,12 @@
     "patulangan",
     "pengganti_tingkat_bade_atau_wadah"
   ],
-  "char_start": 190055,
-  "char_end": 191358
+  "char_start": 191413,
+  "char_end": 192716
 }
 
 {
-  "id": "upacara_atiw_225",
+  "id": "upacara_atiw_241",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Menara Pengusung Jenazah"
@@ -5132,16 +5387,17 @@
     "gajah_mina",
     "hindu",
     "ksatria",
+    "lembu",
     "naga_kahang",
     "patulangan",
     "shiwa"
   ],
-  "char_start": 191359,
-  "char_end": 192474
+  "char_start": 192717,
+  "char_end": 193832
 }
 
 {
-  "id": "upacara_atiw_226",
+  "id": "upacara_atiw_242",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Menara Pengusung Jenazah"
@@ -5150,18 +5406,19 @@
   "entity_ids": [
     "bawisiati",
     "gadarba",
-    "pangabenan",
+    "lembu",
+    "ngaben",
     "patulangan",
     "singa",
     "sulinggih",
     "tirta_pangentas"
   ],
-  "char_start": 192475,
-  "char_end": 193631
+  "char_start": 193833,
+  "char_end": 194989
 }
 
 {
-  "id": "upacara_atiw_227",
+  "id": "upacara_atiw_243",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Menara Pengusung Jenazah"
@@ -5172,12 +5429,12 @@
     "nguyeg",
     "setra"
   ],
-  "char_start": 193632,
-  "char_end": 194050
+  "char_start": 194990,
+  "char_end": 195408
 }
 
 {
-  "id": "upacara_atiw_228",
+  "id": "upacara_atiw_244",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Naga Banda"
@@ -5188,12 +5445,12 @@
     "naga_banda",
     "ngaben"
   ],
-  "char_start": 194112,
-  "char_end": 195226
+  "char_start": 195470,
+  "char_end": 196584
 }
 
 {
-  "id": "upacara_atiw_229",
+  "id": "upacara_atiw_245",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Naga Banda"
@@ -5208,12 +5465,12 @@
     "perlambang",
     "sulinggih"
   ],
-  "char_start": 195227,
-  "char_end": 196398
+  "char_start": 196585,
+  "char_end": 197756
 }
 
 {
-  "id": "upacara_atiw_230",
+  "id": "upacara_atiw_246",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Naga Banda"
@@ -5223,12 +5480,12 @@
     "naga_banda",
     "peranda_buddha"
   ],
-  "char_start": 196399,
-  "char_end": 197513
+  "char_start": 197757,
+  "char_end": 198871
 }
 
 {
-  "id": "upacara_atiw_231",
+  "id": "upacara_atiw_247",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Naga Banda"
@@ -5236,7 +5493,7 @@
   "text": "Dalam Buddha dharma sekte itu sudah populer disebut Hinayana atau Theravada (kendaraan kecil) di satu pihak, dengan Mahayana (kendaraan besar) pada pihak lain. Hinayana atau Theravada menitikberatkan ajarannya, bahwa bisa tidaknya seseorang membebaskan diri dari penderitaan, sepenuhnya tergantung dan menjadi tanggung jawab perorangan. Setiap orang (kendaraan kecil) harus berusaha mencapai hal itu. Pengikut Buddha Dharma lainnya, menekankan ajarannya, bahwa setelah seseorang mampu mencapai tingkat kebebasan tertentu (budhi satwa), mempunyai pula swadharma untuk membantu membebaskan masyarakat (bhuana agung) dari penderitaan. Kelompok ini, karena swadharma kemasyarakatannya itu, dinamai paksa Mahayana (kendaraan besar), kerana bertugas \"memuat\" (\"mengangkut\") masyarakat manusia ke alam sana. Jelas, Buddha Dharma paksa kedua inilah yang telah luluh dalam Agama Hindu yang kita peluk di Bali ini. Berdasarkan pengertian inilah, seorang Peranda Buddha dinilai wajar memakai Naga Banda pada Palebonnya. Buddha Dharma jenis yang lain? Tentu saja tidak punya peranda dan tidak punya tradisi ikut berperanserta dengan Peranda Shiwa dalam pelaksanaan upacara agama kita.",
   "entity_ids": [
     "hindu",
-    "kelompok_ini",
+    "kelompok_paksa_mahayana",
     "manusia",
     "naga_banda_pada_palebonnya",
     "peranda",
@@ -5244,12 +5501,12 @@
     "peranda_shiwa",
     "swadharma"
   ],
-  "char_start": 197514,
-  "char_end": 198686
+  "char_start": 198872,
+  "char_end": 200044
 }
 
 {
-  "id": "upacara_atiw_232",
+  "id": "upacara_atiw_248",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Naga Banda"
@@ -5265,12 +5522,12 @@
     "shiwa",
     "swadharma"
   ],
-  "char_start": 198687,
-  "char_end": 199828
+  "char_start": 200045,
+  "char_end": 201186
 }
 
 {
-  "id": "upacara_atiw_233",
+  "id": "upacara_atiw_249",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Naga Banda"
@@ -5282,12 +5539,12 @@
     "pamrajan",
     "peranda_buddha"
   ],
-  "char_start": 199829,
-  "char_end": 200959
+  "char_start": 201187,
+  "char_end": 202317
 }
 
 {
-  "id": "upacara_atiw_234",
+  "id": "upacara_atiw_250",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Naga Banda"
@@ -5298,12 +5555,12 @@
     "peranda",
     "peranda_buddha"
   ],
-  "char_start": 200960,
-  "char_end": 202081
+  "char_start": 202318,
+  "char_end": 203439
 }
 
 {
-  "id": "upacara_atiw_235",
+  "id": "upacara_atiw_251",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Naga Banda"
@@ -5321,12 +5578,12 @@
     "sawa",
     "sorga"
   ],
-  "char_start": 202082,
-  "char_end": 203219
+  "char_start": 203440,
+  "char_end": 204577
 }
 
 {
-  "id": "upacara_atiw_236",
+  "id": "upacara_atiw_252",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Naga Banda"
@@ -5345,12 +5602,12 @@
     "sang_hyang",
     "tunon"
   ],
-  "char_start": 203220,
-  "char_end": 204012
+  "char_start": 204578,
+  "char_end": 205370
 }
 
 {
-  "id": "upacara_atiw_237",
+  "id": "upacara_atiw_253",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bale Salunglung"
@@ -5371,17 +5628,17 @@
     "kuburan",
     "manah",
     "mendiang",
-    "pangabenan",
+    "ngaben",
     "panguryagan",
     "pisang_jati",
     "rong"
   ],
-  "char_start": 204071,
-  "char_end": 205267
+  "char_start": 205429,
+  "char_end": 206625
 }
 
 {
-  "id": "upacara_atiw_238",
+  "id": "upacara_atiw_254",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bale Salunglung"
@@ -5400,12 +5657,12 @@
     "pitraloka",
     "wilayah"
   ],
-  "char_start": 205268,
-  "char_end": 206108
+  "char_start": 206626,
+  "char_end": 207466
 }
 
 {
-  "id": "upacara_atiw_239",
+  "id": "upacara_atiw_255",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bale Pamuunan"
@@ -5418,17 +5675,18 @@
     "bale_salunglung",
     "bhuta",
     "jenazah",
+    "lembu",
     "mendiang",
     "patulangan",
     "pitraloka",
     "setra"
   ],
-  "char_start": 206135,
-  "char_end": 207333
+  "char_start": 207493,
+  "char_end": 208691
 }
 
 {
-  "id": "upacara_atiw_240",
+  "id": "upacara_atiw_256",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bale Pamuunan"
@@ -5440,12 +5698,12 @@
     "ngaben",
     "sawa_wedana"
   ],
-  "char_start": 207334,
-  "char_end": 207729
+  "char_start": 208692,
+  "char_end": 209087
 }
 
 {
-  "id": "upacara_atiw_241",
+  "id": "upacara_atiw_257",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Ngangkid Galih"
@@ -5459,18 +5717,18 @@
     "kuburan",
     "langse",
     "mendiang",
+    "ngaben",
     "ngangkid",
     "ngulapin",
     "pabersihan",
-    "pangabenan",
     "tulang_belulang"
   ],
-  "char_start": 207753,
-  "char_end": 208888
+  "char_start": 209111,
+  "char_end": 210246
 }
 
 {
-  "id": "upacara_atiw_242",
+  "id": "upacara_atiw_258",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Ngangkid Galih"
@@ -5485,15 +5743,14 @@
     "ngaben",
     "ngangkid",
     "ngulapin",
-    "pangabenan",
     "setra"
   ],
-  "char_start": 208889,
-  "char_end": 209997
+  "char_start": 210247,
+  "char_end": 211355
 }
 
 {
-  "id": "upacara_atiw_243",
+  "id": "upacara_atiw_259",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Ngangkid Galih"
@@ -5502,17 +5759,18 @@
   "entity_ids": [
     "bade",
     "jenazah",
-    "pangabenan",
+    "lembu",
+    "ngaben",
     "pura",
     "rasa",
     "sawa"
   ],
-  "char_start": 209998,
-  "char_end": 210290
+  "char_start": 211356,
+  "char_end": 211648
 }
 
 {
-  "id": "upacara_atiw_244",
+  "id": "upacara_atiw_260",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Klimaks Upacara"
@@ -5521,19 +5779,19 @@
   "entity_ids": [
     "kuburan",
     "mrajan",
-    "pangabenan",
+    "ngaben",
     "sawa_prateka",
     "sawa_wedana",
     "setra",
     "sok_cegceg",
     "tirta_pangentas"
   ],
-  "char_start": 210321,
-  "char_end": 210698
+  "char_start": 211679,
+  "char_end": 212056
 }
 
 {
-  "id": "upacara_atiw_245",
+  "id": "upacara_atiw_261",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Tirtha Jotan"
@@ -5541,19 +5799,19 @@
   "text": "Di samping sejumlah tirtha dari beberapa kahyangan dan Tirtha Pangentas, pihak yang beryadnya sering pula menerima Tirtha Pangentas Jotan dari keluarga sampingan. Apa artinya ini? Besar kemungkinan bahwa mendiang yang diaben mempunyai banyak keponakan, cucu-cucu dan sebagainya yang merupakan keluarga sampingan (bukan keluarga satu Sidikara/saling sembah). Atau keluarga sampingan yang timbul oleh perkawinan saudara perempuan atau anak wanita mendiang. Namun keluarga bersangkutan (sang keponakan, sang cucu dan sebagainya) oleh tata aturan kemasyarakatan Bali dinilai tidak wajar memberikan sembahnya kepada mendiang. Kurang lebih seminggu menjelang pangabenan, pihak yang beryadnya biasanya mengirim Pamerasan kepada keponakan atau cucu-cucu sampingan tadi. Pamerasan adalah sejumlah uang kepeng yang dibungkus dengan daun \"dapdap\", diikat benang tridatu. Ia bernilai mistik religius. Pamerasan merupakan sarana pemberitahuan akan adanya pangabenan untuk mendiang, serta selaku tanda, bahwa keluarga mendiang tidak lupa akan adanya ikatan keluarga. Keluarga sampingan yang menerima Pamerasan itu, kecuali sangat berhalangan, mempunyai kewajiban moral untuk memberikan balasan positif atas tanda ingat yang sangat berbobot itu.",
   "entity_ids": [
     "mendiang",
+    "ngaben",
     "pamerasan",
-    "pangabenan",
     "sang_cucu",
     "tirta_pangentas",
     "tirtha",
     "uang_kepeng"
   ],
-  "char_start": 210718,
-  "char_end": 211948
+  "char_start": 212076,
+  "char_end": 213306
 }
 
 {
-  "id": "upacara_atiw_246",
+  "id": "upacara_atiw_262",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Tirtha Jotan"
@@ -5562,18 +5820,18 @@
   "entity_ids": [
     "mendiang",
     "muput",
-    "pangabenan",
+    "ngaben",
     "sang_cucu",
     "tirta_pangentas",
     "tirtha",
     "walantaga"
   ],
-  "char_start": 211949,
-  "char_end": 212490
+  "char_start": 213307,
+  "char_end": 213848
 }
 
 {
-  "id": "upacara_atiw_247",
+  "id": "upacara_atiw_263",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Nyikut Karang"
@@ -5596,12 +5854,12 @@
     "tunon",
     "wilayah"
   ],
-  "char_start": 212513,
-  "char_end": 213771
+  "char_start": 213871,
+  "char_end": 215129
 }
 
 {
-  "id": "upacara_atiw_248",
+  "id": "upacara_atiw_264",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Nyikut Karang"
@@ -5613,12 +5871,12 @@
     "sawa",
     "setra"
   ],
-  "char_start": 213772,
-  "char_end": 214925
+  "char_start": 215130,
+  "char_end": 216283
 }
 
 {
-  "id": "upacara_atiw_249",
+  "id": "upacara_atiw_265",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Nyikut Karang"
@@ -5636,12 +5894,12 @@
     "segehan_agung",
     "uang_kepeng"
   ],
-  "char_start": 214926,
-  "char_end": 216027
+  "char_start": 216284,
+  "char_end": 217385
 }
 
 {
-  "id": "upacara_atiw_250",
+  "id": "upacara_atiw_266",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Nyikut Karang"
@@ -5651,12 +5909,12 @@
     "banjar",
     "layudan"
   ],
-  "char_start": 216028,
-  "char_end": 217137
+  "char_start": 217386,
+  "char_end": 218495
 }
 
 {
-  "id": "upacara_atiw_251",
+  "id": "upacara_atiw_267",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Nyikut Karang"
@@ -5665,12 +5923,12 @@
   "entity_ids": [
     "mendiang"
   ],
-  "char_start": 217138,
-  "char_end": 217326
+  "char_start": 218496,
+  "char_end": 218684
 }
 
 {
-  "id": "upacara_atiw_252",
+  "id": "upacara_atiw_268",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mlaspas Bade"
@@ -5683,19 +5941,19 @@
     "mendiang",
     "mlaspas",
     "mlaspas_bade",
-    "pangabenan",
+    "ngaben",
     "sesajen",
     "sulinggih",
     "tirta_pangentas",
     "tirtha",
     "undagi"
   ],
-  "char_start": 217362,
-  "char_end": 218492
+  "char_start": 218720,
+  "char_end": 219850
 }
 
 {
-  "id": "upacara_atiw_253",
+  "id": "upacara_atiw_269",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Mlaspas Bade"
@@ -5709,12 +5967,12 @@
     "pepaga",
     "sesajen"
   ],
-  "char_start": 218493,
-  "char_end": 219005
+  "char_start": 219851,
+  "char_end": 220363
 }
 
 {
-  "id": "upacara_atiw_254",
+  "id": "upacara_atiw_270",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Tata Pemberangkatan"
@@ -5729,17 +5987,17 @@
     "kajang",
     "lancingan",
     "mendiang",
-    "pangabenan",
+    "ngaben",
     "pengawak",
     "rurub",
     "sambungan"
   ],
-  "char_start": 219036,
-  "char_end": 220151
+  "char_start": 220394,
+  "char_end": 221509
 }
 
 {
-  "id": "upacara_atiw_255",
+  "id": "upacara_atiw_271",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Tata Pemberangkatan"
@@ -5758,12 +6016,12 @@
     "uang_kepeng",
     "ubes_ubes"
   ],
-  "char_start": 220152,
-  "char_end": 221408
+  "char_start": 221510,
+  "char_end": 222766
 }
 
 {
-  "id": "upacara_atiw_256",
+  "id": "upacara_atiw_272",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Tata Pemberangkatan"
@@ -5774,18 +6032,19 @@
     "bale_pamuunan",
     "dewa",
     "jenazah",
+    "lembu",
     "manuk_dewata",
     "mendiang",
     "setra",
     "surga",
     "yadnya"
   ],
-  "char_start": 221409,
-  "char_end": 222572
+  "char_start": 222767,
+  "char_end": 223930
 }
 
 {
-  "id": "upacara_atiw_257",
+  "id": "upacara_atiw_273",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Tata Pemberangkatan"
@@ -5804,12 +6063,12 @@
     "purusa",
     "setra"
   ],
-  "char_start": 222573,
-  "char_end": 223741
+  "char_start": 223931,
+  "char_end": 225099
 }
 
 {
-  "id": "upacara_atiw_258",
+  "id": "upacara_atiw_274",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Tata Pemberangkatan"
@@ -5823,18 +6082,19 @@
     "dewa_yadnya",
     "iber_iber",
     "krama",
+    "lembu",
     "pancamahabutha",
     "pradaksina",
     "pura",
     "sawa",
     "yadnya"
   ],
-  "char_start": 223742,
-  "char_end": 224969
+  "char_start": 225100,
+  "char_end": 226327
 }
 
 {
-  "id": "upacara_atiw_259",
+  "id": "upacara_atiw_275",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Tata Pemberangkatan"
@@ -5846,15 +6106,16 @@
     "iber_iber",
     "jenazah",
     "kajang",
+    "lembu",
     "mendiang",
     "pengawak"
   ],
-  "char_start": 224970,
-  "char_end": 226094
+  "char_start": 226328,
+  "char_end": 227452
 }
 
 {
-  "id": "upacara_atiw_260",
+  "id": "upacara_atiw_276",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Tata Pemberangkatan"
@@ -5864,12 +6125,12 @@
     "iber_iber",
     "mendiang"
   ],
-  "char_start": 226095,
-  "char_end": 226488
+  "char_start": 227453,
+  "char_end": 227846
 }
 
 {
-  "id": "upacara_atiw_261",
+  "id": "upacara_atiw_277",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Acara-acara di Tunon"
@@ -5878,6 +6139,7 @@
   "entity_ids": [
     "api_utik",
     "jenazah",
+    "lembu",
     "mendiang",
     "pabersihan",
     "pangentas",
@@ -5887,12 +6149,12 @@
     "tirtha",
     "yeh_panembak"
   ],
-  "char_start": 226544,
-  "char_end": 227739
+  "char_start": 227902,
+  "char_end": 229097
 }
 
 {
-  "id": "upacara_atiw_262",
+  "id": "upacara_atiw_278",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Acara-acara di Tunon"
@@ -5905,18 +6167,19 @@
     "banten",
     "hyang_agni",
     "kain_putih",
+    "lembu",
     "manusia",
     "pancaroba",
     "panguryagan",
     "pisang_jati",
     "tulang_belulang"
   ],
-  "char_start": 227740,
-  "char_end": 228899
+  "char_start": 229098,
+  "char_end": 230257
 }
 
 {
-  "id": "upacara_atiw_263",
+  "id": "upacara_atiw_279",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Acara-acara di Tunon"
@@ -5931,12 +6194,12 @@
     "nyuh_gading",
     "sesenden"
   ],
-  "char_start": 228900,
-  "char_end": 230159
+  "char_start": 230258,
+  "char_end": 231517
 }
 
 {
-  "id": "upacara_atiw_264",
+  "id": "upacara_atiw_280",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Acara-acara di Tunon"
@@ -5958,12 +6221,12 @@
     "tarpana",
     "visnu"
   ],
-  "char_start": 230160,
-  "char_end": 231266
+  "char_start": 231518,
+  "char_end": 232624
 }
 
 {
-  "id": "upacara_atiw_265",
+  "id": "upacara_atiw_281",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Acara-acara di Tunon"
@@ -5971,16 +6234,17 @@
   "text": "Acara lanjutan yang seyogyanya segera disusul menurut jangka waktunya masing-masing, juga tak kurang mengandung makna dan arti yang menarik dan perlu diketahui umat. Dari semua uraian terdahulu, maka jelaslah bahwa Pangabenan terdiri dari berbagai jenis, masing-masing mempunyai nama sendiri-sendiri. Perbedaan jenis pengabenan itu tampak nyata dari banyak macamnya upakara serta sesajen yang digunakan. Dan memang perbedaan upakara dan sesajen itulah yang merupakan pangkal timbulnya jenis dan nama pengabenan itu masing-masing. Untuk memantapkan ingatan kita, rupanya tak ada ruginya bila kita ulang membahas upakara dan sesajen untuk Sawa Wedana selaku pangkal tolak, yang bila dikurangi bagian demi bagian, menjadilah suatu pengabenan lain dengan nama sendiri-sendiri pula.",
   "entity_ids": [
     "banten",
+    "ngaben",
     "pangabenan",
     "sawa_wedana",
     "sesajen"
   ],
-  "char_start": 231267,
-  "char_end": 232044
+  "char_start": 232625,
+  "char_end": 233402
 }
 
 {
-  "id": "upacara_atiw_266",
+  "id": "upacara_atiw_282",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Sawa Wedana"
@@ -5991,18 +6255,18 @@
     "banten",
     "hyang",
     "jenazah",
-    "pangabenan",
+    "ngaben",
     "pengawak",
     "sawa",
     "sawa_wedana",
     "sesajen"
   ],
-  "char_start": 232081,
-  "char_end": 232782
+  "char_start": 233439,
+  "char_end": 234140
 }
 
 {
-  "id": "upacara_atiw_267",
+  "id": "upacara_atiw_283",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Sawa Prateka"
@@ -6012,7 +6276,7 @@
     "banten",
     "jenazah",
     "mendiang",
-    "pangabenan",
+    "ngaben",
     "pengawak",
     "pering",
     "pranawa",
@@ -6022,12 +6286,12 @@
     "sawa_wedana",
     "sumpe"
   ],
-  "char_start": 232808,
-  "char_end": 233910
+  "char_start": 234166,
+  "char_end": 235268
 }
 
 {
-  "id": "upacara_atiw_268",
+  "id": "upacara_atiw_284",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Sawa Prateka"
@@ -6038,19 +6302,19 @@
     "banten_teben",
     "jenazah",
     "mendiang",
+    "ngaben",
     "pamuspaan",
-    "pangabenan",
     "pangabenan_pranawa",
     "pisang_jati",
     "sawa",
     "swasta"
   ],
-  "char_start": 233911,
-  "char_end": 234464
+  "char_start": 235269,
+  "char_end": 235822
 }
 
 {
-  "id": "upacara_atiw_269",
+  "id": "upacara_atiw_285",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Supta Pranawa"
@@ -6061,8 +6325,8 @@
     "banten_teben",
     "lontar",
     "mendiang",
+    "ngaben",
     "pamuspaan",
-    "pangabenan",
     "pangabenan_jenis_pranawa",
     "pangabenan_pranawa",
     "pranawa",
@@ -6071,12 +6335,12 @@
     "swasta",
     "yama"
   ],
-  "char_start": 234491,
-  "char_end": 235313
+  "char_start": 235849,
+  "char_end": 236671
 }
 
 {
-  "id": "upacara_atiw_270",
+  "id": "upacara_atiw_286",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Atma Wedana"
@@ -6088,31 +6352,30 @@
     "ngaben",
     "ngerorasin",
     "nista",
-    "pangabenan",
     "pitra_yadnya",
     "pitra_yadnya_tahap_kedua",
     "sawa",
     "tirtha",
     "uang_kepeng"
   ],
-  "char_start": 235336,
-  "char_end": 236458
+  "char_start": 236694,
+  "char_end": 237816
 }
 
 {
-  "id": "upacara_atiw_271",
+  "id": "upacara_atiw_287",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Atma Wedana"
   ],
   "text": "Biarpun begitu, adanya perbedaan ini rupanya tetap penting, supaya umat kita dapat mengambil yang paling serasi dengan kedudukan dan keadaan dirinya masing-masing. Bukankah secara sosiologis, kedudukan dan keadaan umat memang berbeda satu dengan lainnya?",
   "entity_ids": [],
-  "char_start": 236459,
-  "char_end": 236713
+  "char_start": 237817,
+  "char_end": 238071
 }
 
 {
-  "id": "upacara_atiw_272",
+  "id": "upacara_atiw_288",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Tujuan Sawa Wedana"
@@ -6135,12 +6398,12 @@
     "wadag",
     "yadnya"
   ],
-  "char_start": 236741,
-  "char_end": 237951
+  "char_start": 238099,
+  "char_end": 239309
 }
 
 {
-  "id": "upacara_atiw_273",
+  "id": "upacara_atiw_289",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Tujuan Sawa Wedana"
@@ -6167,12 +6430,12 @@
     "wilayah",
     "yadnya"
   ],
-  "char_start": 237952,
-  "char_end": 239116
+  "char_start": 239310,
+  "char_end": 240474
 }
 
 {
-  "id": "upacara_atiw_274",
+  "id": "upacara_atiw_290",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Tujuan Sawa Wedana"
@@ -6198,12 +6461,12 @@
     "sekah",
     "suksmasarira"
   ],
-  "char_start": 239117,
-  "char_end": 240228
+  "char_start": 240475,
+  "char_end": 241586
 }
 
 {
-  "id": "upacara_atiw_275",
+  "id": "upacara_atiw_291",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Tujuan Sawa Wedana"
@@ -6217,12 +6480,12 @@
     "mendiang",
     "ngerorasin"
   ],
-  "char_start": 240229,
-  "char_end": 240687
+  "char_start": 241587,
+  "char_end": 242045
 }
 
 {
-  "id": "upacara_atiw_276",
+  "id": "upacara_atiw_292",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Jenis-jenis Atma Wedana"
@@ -6235,12 +6498,12 @@
     "pitra",
     "tirtha_pangentas_atiwa_tiwa"
   ],
-  "char_start": 240728,
-  "char_end": 241867
+  "char_start": 242086,
+  "char_end": 243225
 }
 
 {
-  "id": "upacara_atiw_277",
+  "id": "upacara_atiw_293",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Jenis-jenis Atma Wedana"
@@ -6253,17 +6516,17 @@
     "dasendria",
     "manah",
     "nama_resmi_upacara_penyucian_pitra",
+    "ngaben",
     "ngerorasin",
     "ngroras",
-    "pangabenan",
     "rajendria"
   ],
-  "char_start": 241868,
-  "char_end": 243047
+  "char_start": 243226,
+  "char_end": 244405
 }
 
 {
-  "id": "upacara_atiw_278",
+  "id": "upacara_atiw_294",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Jenis-jenis Atma Wedana"
@@ -6277,12 +6540,12 @@
     "ngerorasin",
     "ngroras"
   ],
-  "char_start": 243048,
-  "char_end": 244276
+  "char_start": 244406,
+  "char_end": 245634
 }
 
 {
-  "id": "upacara_atiw_279",
+  "id": "upacara_atiw_295",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Jenis-jenis Atma Wedana"
@@ -6304,12 +6567,12 @@
     "sarira",
     "tilem"
   ],
-  "char_start": 244277,
-  "char_end": 245517
+  "char_start": 245635,
+  "char_end": 246875
 }
 
 {
-  "id": "upacara_atiw_280",
+  "id": "upacara_atiw_296",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Jenis-jenis Atma Wedana"
@@ -6321,12 +6584,12 @@
     "ngerorasin",
     "ngroras"
   ],
-  "char_start": 245518,
-  "char_end": 246696
+  "char_start": 246876,
+  "char_end": 248054
 }
 
 {
-  "id": "upacara_atiw_281",
+  "id": "upacara_atiw_297",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Jenis-jenis Atma Wedana"
@@ -6338,22 +6601,22 @@
     "bhatari",
     "jenazah",
     "mendiang",
+    "ngaben",
     "ngangsen",
     "ngerorasin",
     "pamarisuda",
     "pamrajan_rong_tiga",
-    "pangabenan",
     "pangenteg_linggih",
     "pelangkiran",
     "pitra",
     "pitraloka"
   ],
-  "char_start": 246697,
-  "char_end": 247961
+  "char_start": 248055,
+  "char_end": 249319
 }
 
 {
-  "id": "upacara_atiw_282",
+  "id": "upacara_atiw_298",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Jenis-jenis Atma Wedana"
@@ -6373,12 +6636,12 @@
     "sekah_kangsen",
     "tirtha"
   ],
-  "char_start": 247962,
-  "char_end": 249097
+  "char_start": 249320,
+  "char_end": 250455
 }
 
 {
-  "id": "upacara_atiw_283",
+  "id": "upacara_atiw_299",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Jenis-jenis Atma Wedana"
@@ -6396,12 +6659,12 @@
     "suksmasarira",
     "tirtha"
   ],
-  "char_start": 249098,
-  "char_end": 250234
+  "char_start": 250456,
+  "char_end": 251592
 }
 
 {
-  "id": "upacara_atiw_284",
+  "id": "upacara_atiw_300",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Jenis-jenis Atma Wedana"
@@ -6423,12 +6686,12 @@
     "tirtha",
     "yadnya"
   ],
-  "char_start": 250235,
-  "char_end": 251437
+  "char_start": 251593,
+  "char_end": 252795
 }
 
 {
-  "id": "upacara_atiw_285",
+  "id": "upacara_atiw_301",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Jenis-jenis Atma Wedana"
@@ -6447,12 +6710,12 @@
     "puspa_asti",
     "sekah_kangsen"
   ],
-  "char_start": 251438,
-  "char_end": 252550
+  "char_start": 252796,
+  "char_end": 253908
 }
 
 {
-  "id": "upacara_atiw_286",
+  "id": "upacara_atiw_302",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Jenis-jenis Atma Wedana"
@@ -6468,12 +6731,12 @@
     "sanggar_surya",
     "sesajen"
   ],
-  "char_start": 252551,
-  "char_end": 253671
+  "char_start": 253909,
+  "char_end": 255029
 }
 
 {
-  "id": "upacara_atiw_287",
+  "id": "upacara_atiw_303",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Jenis-jenis Atma Wedana"
@@ -6491,12 +6754,12 @@
     "sekah",
     "yadnya"
   ],
-  "char_start": 253672,
-  "char_end": 254915
+  "char_start": 255030,
+  "char_end": 256273
 }
 
 {
-  "id": "upacara_atiw_288",
+  "id": "upacara_atiw_304",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Nilai Daun Beringin"
@@ -6507,8 +6770,8 @@
     "hindu",
     "jenazah",
     "mendiang",
+    "ngaben",
     "ngerorasin",
-    "pangabenan",
     "pengawak",
     "perlambang",
     "pitra",
@@ -6517,12 +6780,12 @@
     "suksma_sarira",
     "yadnya"
   ],
-  "char_start": 254998,
-  "char_end": 256179
+  "char_start": 256356,
+  "char_end": 257537
 }
 
 {
-  "id": "upacara_atiw_289",
+  "id": "upacara_atiw_305",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Nilai Daun Beringin"
@@ -6536,12 +6799,12 @@
     "sekah",
     "tirtha"
   ],
-  "char_start": 256180,
-  "char_end": 257314
+  "char_start": 257538,
+  "char_end": 258672
 }
 
 {
-  "id": "upacara_atiw_290",
+  "id": "upacara_atiw_306",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Nilai Daun Beringin"
@@ -6558,24 +6821,24 @@
     "pitra",
     "suksmasarira"
   ],
-  "char_start": 257315,
-  "char_end": 258452
+  "char_start": 258673,
+  "char_end": 259810
 }
 
 {
-  "id": "upacara_atiw_291",
+  "id": "upacara_atiw_307",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Nilai Daun Beringin"
   ],
   "text": "Pertemuan \"lingga\" dengan \"yoni\" pun demikian, bukan?",
   "entity_ids": [],
-  "char_start": 258453,
-  "char_end": 258506
+  "char_start": 259811,
+  "char_end": 259864
 }
 
 {
-  "id": "upacara_atiw_292",
+  "id": "upacara_atiw_308",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Jalannya Upacara"
@@ -6586,12 +6849,12 @@
     "pura",
     "sekah"
   ],
-  "char_start": 258542,
-  "char_end": 259686
+  "char_start": 259900,
+  "char_end": 261044
 }
 
 {
-  "id": "upacara_atiw_293",
+  "id": "upacara_atiw_309",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Jalannya Upacara"
@@ -6604,12 +6867,12 @@
     "payadnyan",
     "sekah"
   ],
-  "char_start": 259687,
-  "char_end": 260808
+  "char_start": 261045,
+  "char_end": 262166
 }
 
 {
-  "id": "upacara_atiw_294",
+  "id": "upacara_atiw_310",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Jalannya Upacara"
@@ -6619,12 +6882,12 @@
     "balai_pawedan",
     "sulinggih"
   ],
-  "char_start": 260809,
-  "char_end": 261134
+  "char_start": 262167,
+  "char_end": 262492
 }
 
 {
-  "id": "upacara_atiw_295",
+  "id": "upacara_atiw_311",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Ngajum dan Pangutpetian"
@@ -6643,12 +6906,12 @@
     "sulinggih",
     "utpeti"
   ],
-  "char_start": 261173,
-  "char_end": 262395
+  "char_start": 262531,
+  "char_end": 263753
 }
 
 {
-  "id": "upacara_atiw_296",
+  "id": "upacara_atiw_312",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Ngajum dan Pangutpetian"
@@ -6672,12 +6935,12 @@
     "suksmasarira",
     "upanisad"
   ],
-  "char_start": 262396,
-  "char_end": 263662
+  "char_start": 263754,
+  "char_end": 265020
 }
 
 {
-  "id": "upacara_atiw_297",
+  "id": "upacara_atiw_313",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Ngajum dan Pangutpetian"
@@ -6689,6 +6952,7 @@
     "bhatara",
     "bukur",
     "dewaloka",
+    "mamukur_dan_upacara_sebangsa",
     "mendiang",
     "ngerorasin",
     "nirjana",
@@ -6699,12 +6963,12 @@
     "usungan",
     "utpeti"
   ],
-  "char_start": 263663,
-  "char_end": 264828
+  "char_start": 265021,
+  "char_end": 266186
 }
 
 {
-  "id": "upacara_atiw_298",
+  "id": "upacara_atiw_314",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Ngajum dan Pangutpetian"
@@ -6723,17 +6987,17 @@
     "padmasana",
     "pitra",
     "sanggar_surya_baligia",
-    "sejenis_sangge",
+    "sangge",
     "sekah",
     "usungan",
     "utpeti"
   ],
-  "char_start": 264829,
-  "char_end": 265931
+  "char_start": 266187,
+  "char_end": 267289
 }
 
 {
-  "id": "upacara_atiw_299",
+  "id": "upacara_atiw_315",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Ngajum dan Pangutpetian"
@@ -6763,12 +7027,12 @@
     "uang_kepeng",
     "usungan"
   ],
-  "char_start": 265932,
-  "char_end": 267163
+  "char_start": 267290,
+  "char_end": 268521
 }
 
 {
-  "id": "upacara_atiw_300",
+  "id": "upacara_atiw_316",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Ngajum dan Pangutpetian"
@@ -6778,6 +7042,7 @@
     "alat_upakara",
     "balai_pawedan",
     "bukur",
+    "lembu",
     "mapradaksina",
     "ngerorasin",
     "pawedan",
@@ -6790,12 +7055,12 @@
     "tirtha",
     "yadnya"
   ],
-  "char_start": 267164,
-  "char_end": 268333
+  "char_start": 268522,
+  "char_end": 269691
 }
 
 {
-  "id": "upacara_atiw_301",
+  "id": "upacara_atiw_317",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Ngajum dan Pangutpetian"
@@ -6806,6 +7071,7 @@
     "atma",
     "dewaloka",
     "hyang",
+    "lembu",
     "mapulang_lingga",
     "mendiang",
     "pawedan",
@@ -6818,12 +7084,12 @@
     "shiwa_dewa_loka",
     "tirtha"
   ],
-  "char_start": 268334,
-  "char_end": 269439
+  "char_start": 269692,
+  "char_end": 270797
 }
 
 {
-  "id": "upacara_atiw_302",
+  "id": "upacara_atiw_318",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Ngajum dan Pangutpetian"
@@ -6832,6 +7098,7 @@
   "entity_ids": [
     "brahma",
     "hyang",
+    "lembu",
     "manusia",
     "mapulang_lingga",
     "ngerorasin",
@@ -6845,12 +7112,12 @@
     "shiwa",
     "visnu"
   ],
-  "char_start": 269440,
-  "char_end": 270541
+  "char_start": 270798,
+  "char_end": 271899
 }
 
 {
-  "id": "upacara_atiw_303",
+  "id": "upacara_atiw_319",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Ngajum dan Pangutpetian"
@@ -6861,12 +7128,12 @@
     "sekah",
     "yadnya"
   ],
-  "char_start": 270542,
-  "char_end": 271180
+  "char_start": 271900,
+  "char_end": 272538
 }
 
 {
-  "id": "upacara_atiw_304",
+  "id": "upacara_atiw_320",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Linggih dan Midergita"
@@ -6882,12 +7149,12 @@
     "sesaji",
     "sulinggih"
   ],
-  "char_start": 271251,
-  "char_end": 272357
+  "char_start": 272609,
+  "char_end": 273715
 }
 
 {
-  "id": "upacara_atiw_305",
+  "id": "upacara_atiw_321",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Linggih dan Midergita"
@@ -6900,12 +7167,12 @@
     "sulinggih",
     "yadnya"
   ],
-  "char_start": 272358,
-  "char_end": 272811
+  "char_start": 273716,
+  "char_end": 274169
 }
 
 {
-  "id": "upacara_atiw_306",
+  "id": "upacara_atiw_322",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Upacara Tambahan"
@@ -6923,24 +7190,24 @@
     "sulinggih",
     "yadnya"
   ],
-  "char_start": 272835,
-  "char_end": 274074
+  "char_start": 274193,
+  "char_end": 275432
 }
 
 {
-  "id": "upacara_atiw_307",
+  "id": "upacara_atiw_323",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Upacara Tambahan"
   ],
   "text": "Tentu saja untuk sekadar sirih-pinang, rokok dan minuman boleh disuguhkan sejak para tamu berdatangan. Demikian seyogyanya, sesuai dengan tata nilai susila agama yang perlu ditegakkan sebaik-baiknya. Namun hati saya bertanya-tanya, adakah ketentuan ini masih ditaati?",
   "entity_ids": [],
-  "char_start": 274075,
-  "char_end": 274342
+  "char_start": 275433,
+  "char_end": 275700
 }
 
 {
-  "id": "upacara_atiw_308",
+  "id": "upacara_atiw_324",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Terpana"
@@ -6952,17 +7219,17 @@
     "mamutru",
     "manah_tirtha_ening",
     "mendiang",
-    "pangabenan",
+    "ngaben",
     "pitara_menggunakan_tirtha_ening",
     "puspa_lingga",
     "tarpana"
   ],
-  "char_start": 274368,
-  "char_end": 275490
+  "char_start": 275726,
+  "char_end": 276848
 }
 
 {
-  "id": "upacara_atiw_309",
+  "id": "upacara_atiw_325",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Terpana"
@@ -6971,8 +7238,8 @@
   "entity_ids": [
     "ayaban_sesayut",
     "baligia",
+    "mamukur_dan_upacara_sebangsa",
     "mendiang",
-    "ngerorasin",
     "ngroras",
     "payadnyan",
     "pradaksina",
@@ -6981,12 +7248,12 @@
     "tarpana",
     "wayang"
   ],
-  "char_start": 275491,
-  "char_end": 276663
+  "char_start": 276849,
+  "char_end": 278021
 }
 
 {
-  "id": "upacara_atiw_310",
+  "id": "upacara_atiw_326",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Terpana"
@@ -7003,12 +7270,12 @@
     "tirtha",
     "upacara_saji_tarpana"
   ],
-  "char_start": 276664,
-  "char_end": 277780
+  "char_start": 278022,
+  "char_end": 279138
 }
 
 {
-  "id": "upacara_atiw_311",
+  "id": "upacara_atiw_327",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Terpana"
@@ -7024,12 +7291,12 @@
     "tirtha",
     "utpeti"
   ],
-  "char_start": 277781,
-  "char_end": 278982
+  "char_start": 279139,
+  "char_end": 280340
 }
 
 {
-  "id": "upacara_atiw_312",
+  "id": "upacara_atiw_328",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Terpana"
@@ -7040,8 +7307,8 @@
     "bhatara",
     "bhatari",
     "dewaloka",
+    "mamukur_dan_upacara_sebangsa",
     "mendiang",
-    "ngerorasin",
     "pancaroba",
     "pitra",
     "pitraloka",
@@ -7050,12 +7317,12 @@
     "suksma_sarira",
     "wilayah"
   ],
-  "char_start": 278983,
-  "char_end": 280164
+  "char_start": 280341,
+  "char_end": 281522
 }
 
 {
-  "id": "upacara_atiw_313",
+  "id": "upacara_atiw_329",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Terpana"
@@ -7075,12 +7342,12 @@
     "sang_hyang_atma",
     "sanggar_surya"
   ],
-  "char_start": 280165,
-  "char_end": 281318
+  "char_start": 281523,
+  "char_end": 282676
 }
 
 {
-  "id": "upacara_atiw_314",
+  "id": "upacara_atiw_330",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Terpana"
@@ -7110,12 +7377,12 @@
     "sesenden",
     "teja"
   ],
-  "char_start": 281319,
-  "char_end": 282434
+  "char_start": 282677,
+  "char_end": 283792
 }
 
 {
-  "id": "upacara_atiw_315",
+  "id": "upacara_atiw_331",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Terpana"
@@ -7141,12 +7408,12 @@
     "suku_tunggal_abu",
     "yadnya"
   ],
-  "char_start": 282435,
-  "char_end": 283782
+  "char_start": 283793,
+  "char_end": 285140
 }
 
 {
-  "id": "upacara_atiw_316",
+  "id": "upacara_atiw_332",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Terpana"
@@ -7165,12 +7432,12 @@
     "sanggah",
     "yadnya"
   ],
-  "char_start": 283783,
-  "char_end": 285080
+  "char_start": 285141,
+  "char_end": 286438
 }
 
 {
-  "id": "upacara_atiw_317",
+  "id": "upacara_atiw_333",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Terpana"
@@ -7190,12 +7457,12 @@
     "tuhan",
     "yadnya"
   ],
-  "char_start": 285081,
-  "char_end": 286223
+  "char_start": 286439,
+  "char_end": 287581
 }
 
 {
-  "id": "upacara_atiw_318",
+  "id": "upacara_atiw_334",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Terpana"
@@ -7220,12 +7487,12 @@
     "sulinggih",
     "yadnya"
   ],
-  "char_start": 286224,
-  "char_end": 287458
+  "char_start": 287582,
+  "char_end": 288816
 }
 
 {
-  "id": "upacara_atiw_319",
+  "id": "upacara_atiw_335",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Terpana"
@@ -7249,12 +7516,12 @@
     "purusa",
     "yadnya"
   ],
-  "char_start": 287459,
-  "char_end": 288641
+  "char_start": 288817,
+  "char_end": 289999
 }
 
 {
-  "id": "upacara_atiw_320",
+  "id": "upacara_atiw_336",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Terpana"
@@ -7267,12 +7534,12 @@
     "punia",
     "purusa_pradana"
   ],
-  "char_start": 288642,
-  "char_end": 289761
+  "char_start": 290000,
+  "char_end": 291119
 }
 
 {
-  "id": "upacara_atiw_321",
+  "id": "upacara_atiw_337",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Saji Terpana"
@@ -7284,6 +7551,7 @@
     "bhatari",
     "daksina_tapakan",
     "dewa_yadnya",
+    "mamukur_dan_upacara_sebangsa",
     "ngajar_ajar",
     "ngerorasin",
     "nyegara_gunung",
@@ -7295,24 +7563,24 @@
     "selatan",
     "sodan"
   ],
-  "char_start": 289762,
-  "char_end": 290792
+  "char_start": 291120,
+  "char_end": 292150
 }
 
 {
-  "id": "upacara_atiw_322",
+  "id": "upacara_atiw_338",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "TUNTUNAN PRAKTIS  NYIRAMANG  LAYON"
   ],
   "text": "________________",
   "entity_ids": [],
-  "char_start": 290906,
-  "char_end": 290922
+  "char_start": 292264,
+  "char_end": 292280
 }
 
 {
-  "id": "upacara_atiw_323",
+  "id": "upacara_atiw_339",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "KATA PENGANTAR"
@@ -7324,12 +7592,12 @@
     "nyiramang_layon",
     "weda"
   ],
-  "char_start": 290940,
-  "char_end": 292142
+  "char_start": 292298,
+  "char_end": 293500
 }
 
 {
-  "id": "upacara_atiw_324",
+  "id": "upacara_atiw_340",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "KATA PENGANTAR"
@@ -7339,24 +7607,24 @@
     "hyang_widhi_wasa",
     "rasa"
   ],
-  "char_start": 292143,
-  "char_end": 293286
+  "char_start": 293501,
+  "char_end": 294644
 }
 
 {
-  "id": "upacara_atiw_325",
+  "id": "upacara_atiw_341",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "KATA PENGANTAR"
   ],
   "text": "Untuk itu saran dan kritik dari Bapak dan Ibu serta para pembaca yang budiman sangat diharapkan demi kesempurnaan buku ini. Akhirnya penulis mohon maaf atas segala kekurangan serta kejanggalan-kejanggalan dalam buku ini. Om Shantih, Shantih, Shantih Om.",
   "entity_ids": [],
-  "char_start": 293287,
-  "char_end": 293540
+  "char_start": 294645,
+  "char_end": 294898
 }
 
 {
-  "id": "upacara_atiw_326",
+  "id": "upacara_atiw_342",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Denpasar, 05 Juni 2011"
@@ -7365,12 +7633,12 @@
   "entity_ids": [
     "gria"
   ],
-  "char_start": 293582,
-  "char_end": 293728
+  "char_start": 294940,
+  "char_end": 295086
 }
 
 {
-  "id": "upacara_atiw_327",
+  "id": "upacara_atiw_343",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PENDAHULUAN"
@@ -7381,14 +7649,14 @@
     "hindu",
     "karma",
     "manusia",
-    "moksha"
+    "moksa"
   ],
-  "char_start": 293749,
-  "char_end": 294852
+  "char_start": 295107,
+  "char_end": 296210
 }
 
 {
-  "id": "upacara_atiw_328",
+  "id": "upacara_atiw_344",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PENDAHULUAN"
@@ -7398,19 +7666,19 @@
     "badan",
     "hindu",
     "jenazah",
-    "moksha",
+    "moksa",
     "numitis",
     "nyiramang_layon",
     "pitra_yadnya",
     "upacara_nyiramang_layon",
     "wadag"
   ],
-  "char_start": 294853,
-  "char_end": 295977
+  "char_start": 296211,
+  "char_end": 297335
 }
 
 {
-  "id": "upacara_atiw_329",
+  "id": "upacara_atiw_345",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PENDAHULUAN"
@@ -7420,12 +7688,12 @@
     "eteh_eteh",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 295978,
-  "char_end": 296863
+  "char_start": 297336,
+  "char_end": 298221
 }
 
 {
-  "id": "upacara_atiw_330",
+  "id": "upacara_atiw_346",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "ORANG YANG BARU MENINGGAL (WAWU LAMPUS)"
@@ -7441,12 +7709,12 @@
     "utpeti",
     "wawu_lampus"
   ],
-  "char_start": 296923,
-  "char_end": 298049
+  "char_start": 298281,
+  "char_end": 299407
 }
 
 {
-  "id": "upacara_atiw_331",
+  "id": "upacara_atiw_347",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "ORANG YANG BARU MENINGGAL (WAWU LAMPUS)"
@@ -7458,12 +7726,12 @@
     "rasa",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 298050,
-  "char_end": 299172
+  "char_start": 299408,
+  "char_end": 300530
 }
 
 {
-  "id": "upacara_atiw_332",
+  "id": "upacara_atiw_348",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "ORANG YANG BARU MENINGGAL (WAWU LAMPUS)"
@@ -7477,12 +7745,12 @@
     "upacara_nyiramang_layon",
     "wawu_lampus"
   ],
-  "char_start": 299173,
-  "char_end": 300285
+  "char_start": 300531,
+  "char_end": 301643
 }
 
 {
-  "id": "upacara_atiw_333",
+  "id": "upacara_atiw_349",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "ORANG YANG BARU MENINGGAL (WAWU LAMPUS)"
@@ -7497,12 +7765,12 @@
     "lengan_jenazah",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 300286,
-  "char_end": 301541
+  "char_start": 301644,
+  "char_end": 302899
 }
 
 {
-  "id": "upacara_atiw_334",
+  "id": "upacara_atiw_350",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "ORANG YANG BARU MENINGGAL (WAWU LAMPUS)"
@@ -7522,12 +7790,12 @@
     "suksma_sarira",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 301542,
-  "char_end": 302845
+  "char_start": 302900,
+  "char_end": 304203
 }
 
 {
-  "id": "upacara_atiw_335",
+  "id": "upacara_atiw_351",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "ORANG YANG BARU MENINGGAL (WAWU LAMPUS)"
@@ -7541,12 +7809,12 @@
     "upacara_nyiramang_layon",
     "wawu_lampus"
   ],
-  "char_start": 302846,
-  "char_end": 303332
+  "char_start": 304204,
+  "char_end": 304690
 }
 
 {
-  "id": "upacara_atiw_336",
+  "id": "upacara_atiw_352",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "BEBERAPA PERSIAPAN NYIRAMANG LAYON"
@@ -7556,12 +7824,12 @@
     "atma",
     "hyang"
   ],
-  "char_start": 303389,
-  "char_end": 304444
+  "char_start": 304747,
+  "char_end": 305802
 }
 
 {
-  "id": "upacara_atiw_337",
+  "id": "upacara_atiw_353",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bahan-bahan yang Harus Dipersiapkan"
@@ -7585,12 +7853,12 @@
     "sawa",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 304483,
-  "char_end": 305760
+  "char_start": 305841,
+  "char_end": 307118
 }
 
 {
-  "id": "upacara_atiw_338",
+  "id": "upacara_atiw_354",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bahan-bahan yang Harus Dipersiapkan"
@@ -7609,12 +7877,12 @@
     "sinom",
     "takir"
   ],
-  "char_start": 305761,
-  "char_end": 306965
+  "char_start": 307119,
+  "char_end": 308323
 }
 
 {
-  "id": "upacara_atiw_339",
+  "id": "upacara_atiw_355",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bahan-bahan yang Harus Dipersiapkan"
@@ -7631,12 +7899,12 @@
     "takir",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 306966,
-  "char_end": 308077
+  "char_start": 308324,
+  "char_end": 309435
 }
 
 {
-  "id": "upacara_atiw_340",
+  "id": "upacara_atiw_356",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bahan-bahan yang Harus Dipersiapkan"
@@ -7654,12 +7922,12 @@
     "pabersihan",
     "takir"
   ],
-  "char_start": 308078,
-  "char_end": 309269
+  "char_start": 309436,
+  "char_end": 310627
 }
 
 {
-  "id": "upacara_atiw_341",
+  "id": "upacara_atiw_357",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bahan-bahan yang Harus Dipersiapkan"
@@ -7683,12 +7951,12 @@
     "uang_kepeng",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 309270,
-  "char_end": 310441
+  "char_start": 310628,
+  "char_end": 311799
 }
 
 {
-  "id": "upacara_atiw_342",
+  "id": "upacara_atiw_358",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bahan-bahan yang Harus Dipersiapkan"
@@ -7706,12 +7974,12 @@
     "pebaktian",
     "uang_kepeng"
   ],
-  "char_start": 310442,
-  "char_end": 311781
+  "char_start": 311800,
+  "char_end": 313139
 }
 
 {
-  "id": "upacara_atiw_343",
+  "id": "upacara_atiw_359",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bahan-bahan yang Harus Dipersiapkan"
@@ -7734,12 +8002,12 @@
     "uang_kepeng",
     "uang_kepeng_asli"
   ],
-  "char_start": 311782,
-  "char_end": 312917
+  "char_start": 313140,
+  "char_end": 314275
 }
 
 {
-  "id": "upacara_atiw_344",
+  "id": "upacara_atiw_360",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bahan-bahan yang Harus Dipersiapkan"
@@ -7761,12 +8029,12 @@
     "takir",
     "uang_kepeng"
   ],
-  "char_start": 312918,
-  "char_end": 314021
+  "char_start": 314276,
+  "char_end": 315379
 }
 
 {
-  "id": "upacara_atiw_345",
+  "id": "upacara_atiw_361",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bahan-bahan yang Harus Dipersiapkan"
@@ -7783,12 +8051,12 @@
     "pisau_pengutik",
     "upacara_ngelelet"
   ],
-  "char_start": 314022,
-  "char_end": 315275
+  "char_start": 315380,
+  "char_end": 316633
 }
 
 {
-  "id": "upacara_atiw_346",
+  "id": "upacara_atiw_362",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bahan-bahan yang Harus Dipersiapkan"
@@ -7807,12 +8075,12 @@
     "tukelan",
     "upacara_ngelelet"
   ],
-  "char_start": 315276,
-  "char_end": 316462
+  "char_start": 316634,
+  "char_end": 317820
 }
 
 {
-  "id": "upacara_atiw_347",
+  "id": "upacara_atiw_363",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bahan-bahan yang Harus Dipersiapkan"
@@ -7836,12 +8104,12 @@
     "umbi_gadung",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 316463,
-  "char_end": 317839
+  "char_start": 317821,
+  "char_end": 319197
 }
 
 {
-  "id": "upacara_atiw_348",
+  "id": "upacara_atiw_364",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bahan-bahan yang Harus Dipersiapkan"
@@ -7868,12 +8136,12 @@
     "upacara_ngelelet",
     "upacara_pabresihan_mati"
   ],
-  "char_start": 317840,
-  "char_end": 319008
+  "char_start": 319198,
+  "char_end": 320366
 }
 
 {
-  "id": "upacara_atiw_349",
+  "id": "upacara_atiw_365",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bahan-bahan yang Harus Dipersiapkan"
@@ -7890,12 +8158,12 @@
     "udeng",
     "umpal"
   ],
-  "char_start": 319009,
-  "char_end": 320136
+  "char_start": 320367,
+  "char_end": 321494
 }
 
 {
-  "id": "upacara_atiw_350",
+  "id": "upacara_atiw_366",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bahan-bahan yang Harus Dipersiapkan"
@@ -7915,12 +8183,12 @@
     "udeng",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 320137,
-  "char_end": 321298
+  "char_start": 321495,
+  "char_end": 322656
 }
 
 {
-  "id": "upacara_atiw_351",
+  "id": "upacara_atiw_367",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bahan-bahan yang Harus Dipersiapkan"
@@ -7936,12 +8204,12 @@
     "tirta_panglukatan",
     "tirtha"
   ],
-  "char_start": 321299,
-  "char_end": 321644
+  "char_start": 322657,
+  "char_end": 323002
 }
 
 {
-  "id": "upacara_atiw_352",
+  "id": "upacara_atiw_368",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bahan-bahan yang Harus Dipersiapkan",
@@ -7957,12 +8225,12 @@
     "tirtha",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 321838,
-  "char_end": 323055
+  "char_start": 323196,
+  "char_end": 324413
 }
 
 {
-  "id": "upacara_atiw_353",
+  "id": "upacara_atiw_369",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bahan-bahan yang Harus Dipersiapkan",
@@ -7983,12 +8251,12 @@
     "uang_kepeng",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 323056,
-  "char_end": 324501
+  "char_start": 324414,
+  "char_end": 325859
 }
 
 {
-  "id": "upacara_atiw_354",
+  "id": "upacara_atiw_370",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bahan-bahan yang Harus Dipersiapkan",
@@ -8003,12 +8271,12 @@
     "sanggah",
     "tattwa"
   ],
-  "char_start": 324502,
-  "char_end": 325691
+  "char_start": 325860,
+  "char_end": 327049
 }
 
 {
-  "id": "upacara_atiw_355",
+  "id": "upacara_atiw_371",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bahan-bahan yang Harus Dipersiapkan",
@@ -8019,12 +8287,12 @@
     "hindu",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 325692,
-  "char_end": 326287
+  "char_start": 327050,
+  "char_end": 327645
 }
 
 {
-  "id": "upacara_atiw_356",
+  "id": "upacara_atiw_372",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PADA SAAT NYIRAMANG LAYON"
@@ -8036,12 +8304,12 @@
     "nyiramang_layon",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 326345,
-  "char_end": 327196
+  "char_start": 327703,
+  "char_end": 328554
 }
 
 {
-  "id": "upacara_atiw_357",
+  "id": "upacara_atiw_373",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "2. Pabersihan Hidup"
@@ -8056,12 +8324,12 @@
     "sembah_bhakti",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 327221,
-  "char_end": 327963
+  "char_start": 328579,
+  "char_end": 329321
 }
 
 {
-  "id": "upacara_atiw_358",
+  "id": "upacara_atiw_374",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "B. Etika Upacara Nyiramang Layon"
@@ -8077,12 +8345,12 @@
     "tempat_persemayaman_jenazah",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 328001,
-  "char_end": 329287
+  "char_start": 329359,
+  "char_end": 330645
 }
 
 {
-  "id": "upacara_atiw_359",
+  "id": "upacara_atiw_375",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "B. Etika Upacara Nyiramang Layon"
@@ -8096,12 +8364,12 @@
     "pepaga",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 329288,
-  "char_end": 330424
+  "char_start": 330646,
+  "char_end": 331782
 }
 
 {
-  "id": "upacara_atiw_360",
+  "id": "upacara_atiw_376",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "B. Etika Upacara Nyiramang Layon"
@@ -8117,12 +8385,12 @@
     "sulinggih",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 330425,
-  "char_end": 331581
+  "char_start": 331783,
+  "char_end": 332939
 }
 
 {
-  "id": "upacara_atiw_361",
+  "id": "upacara_atiw_377",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "B. Etika Upacara Nyiramang Layon"
@@ -8137,12 +8405,12 @@
     "siwa",
     "tuhan"
   ],
-  "char_start": 331582,
-  "char_end": 332835
+  "char_start": 332940,
+  "char_end": 334193
 }
 
 {
-  "id": "upacara_atiw_362",
+  "id": "upacara_atiw_378",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "B. Etika Upacara Nyiramang Layon"
@@ -8155,24 +8423,24 @@
     "pepaga",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 332836,
-  "char_end": 333945
+  "char_start": 334194,
+  "char_end": 335303
 }
 
 {
-  "id": "upacara_atiw_363",
+  "id": "upacara_atiw_379",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "B. Etika Upacara Nyiramang Layon"
   ],
   "text": "Inilah sebagian kecil etika-etika yang tanpa disadari sering dilanggar, oleh sebab itu etika tersebut perlu di lestarikan kembali. Sehingga konsep \"Ulu - Teben\" tetap lestari dan dapat diwariskan pada anak cucu kita di kemudian hari. Apabila konsep \"Ulu-Teben\" ini lestari maka salah satu ajaran Tata Susila (Etika) dan Budhi Pekerti yang luhur bisa dihidupkan kembali. Timbulnya masalah-masalah sosial kemasyarakatan serta kriminal belakangan ini, tidak lepas dari hilangnya nilai-nilai Etika dan Budhi Pekerti sehingga memerosotkan moral masyarakat, akibat banyaknya pelanggaran etika.\n________________",
   "entity_ids": [],
-  "char_start": 333946,
-  "char_end": 334550
+  "char_start": 335304,
+  "char_end": 335908
 }
 
 {
-  "id": "upacara_atiw_364",
+  "id": "upacara_atiw_380",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "(MENURUNKAN JENAZAH)"
@@ -8191,12 +8459,12 @@
     "upacara_nyiramang_layon",
     "yadnya"
   ],
-  "char_start": 334616,
-  "char_end": 336005
+  "char_start": 335974,
+  "char_end": 337363
 }
 
 {
-  "id": "upacara_atiw_365",
+  "id": "upacara_atiw_381",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "(MENURUNKAN JENAZAH)"
@@ -8217,12 +8485,12 @@
     "upacara_nyiramang_layon",
     "usungan"
   ],
-  "char_start": 336006,
-  "char_end": 337149
+  "char_start": 337364,
+  "char_end": 338507
 }
 
 {
-  "id": "upacara_atiw_366",
+  "id": "upacara_atiw_382",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "(MENURUNKAN JENAZAH)"
@@ -8244,12 +8512,12 @@
     "uang_kepeng",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 337150,
-  "char_end": 338448
+  "char_start": 338508,
+  "char_end": 339806
 }
 
 {
-  "id": "upacara_atiw_367",
+  "id": "upacara_atiw_383",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "(MENURUNKAN JENAZAH)"
@@ -8263,12 +8531,12 @@
     "pepaga",
     "tempat_penusangan"
   ],
-  "char_start": 338449,
-  "char_end": 339697
+  "char_start": 339807,
+  "char_end": 341055
 }
 
 {
-  "id": "upacara_atiw_368",
+  "id": "upacara_atiw_384",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "(MENURUNKAN JENAZAH)"
@@ -8283,12 +8551,12 @@
     "kepala_jenazah",
     "pepaga"
   ],
-  "char_start": 339698,
-  "char_end": 340833
+  "char_start": 341056,
+  "char_end": 342191
 }
 
 {
-  "id": "upacara_atiw_369",
+  "id": "upacara_atiw_385",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "(MENURUNKAN JENAZAH)"
@@ -8302,12 +8570,12 @@
     "pepaga",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 340834,
-  "char_end": 341434
+  "char_start": 342192,
+  "char_end": 342792
 }
 
 {
-  "id": "upacara_atiw_370",
+  "id": "upacara_atiw_386",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN HIDUP"
@@ -8321,12 +8589,12 @@
     "pepaga",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 341480,
-  "char_end": 342634
+  "char_start": 342838,
+  "char_end": 343992
 }
 
 {
-  "id": "upacara_atiw_371",
+  "id": "upacara_atiw_387",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN HIDUP"
@@ -8338,12 +8606,12 @@
     "pabersihan_mati",
     "umbi_gadung"
   ],
-  "char_start": 342635,
-  "char_end": 343876
+  "char_start": 343993,
+  "char_end": 345234
 }
 
 {
-  "id": "upacara_atiw_372",
+  "id": "upacara_atiw_388",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN HIDUP"
@@ -8358,12 +8626,12 @@
     "siwa",
     "umbi_gadung"
   ],
-  "char_start": 343877,
-  "char_end": 345071
+  "char_start": 345235,
+  "char_end": 346429
 }
 
 {
-  "id": "upacara_atiw_373",
+  "id": "upacara_atiw_389",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN HIDUP"
@@ -8373,12 +8641,12 @@
     "badan",
     "hindu"
   ],
-  "char_start": 345072,
-  "char_end": 346232
+  "char_start": 346430,
+  "char_end": 347590
 }
 
 {
-  "id": "upacara_atiw_374",
+  "id": "upacara_atiw_390",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN HIDUP"
@@ -8388,12 +8656,12 @@
     "jenazah",
     "layon"
   ],
-  "char_start": 346233,
-  "char_end": 346368
+  "char_start": 347591,
+  "char_end": 347726
 }
 
 {
-  "id": "upacara_atiw_375",
+  "id": "upacara_atiw_391",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bala Ugu"
@@ -8406,12 +8674,12 @@
     "sasih",
     "ugu"
   ],
-  "char_start": 346398,
-  "char_end": 347189
+  "char_start": 347756,
+  "char_end": 348547
 }
 
 {
-  "id": "upacara_atiw_376",
+  "id": "upacara_atiw_392",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bala Ugu",
@@ -8428,12 +8696,12 @@
     "setra",
     "sisig"
   ],
-  "char_start": 347234,
-  "char_end": 348390
+  "char_start": 348592,
+  "char_end": 349748
 }
 
 {
-  "id": "upacara_atiw_377",
+  "id": "upacara_atiw_393",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bala Ugu",
@@ -8450,12 +8718,12 @@
     "pabersihan_hidup",
     "setra"
   ],
-  "char_start": 348391,
-  "char_end": 349584
+  "char_start": 349749,
+  "char_end": 350942
 }
 
 {
-  "id": "upacara_atiw_378",
+  "id": "upacara_atiw_394",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bala Ugu",
@@ -8466,17 +8734,18 @@
     "air_kumkuman",
     "badan",
     "jenazah",
+    "kain_kering",
     "mewastra",
     "pabersihan_hidup",
     "saput",
     "udeng"
   ],
-  "char_start": 349585,
-  "char_end": 350832
+  "char_start": 350943,
+  "char_end": 352190
 }
 
 {
-  "id": "upacara_atiw_379",
+  "id": "upacara_atiw_395",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bala Ugu",
@@ -8484,12 +8753,12 @@
   ],
   "text": "Untuk laki-laki cara mengenakan pakaian pada tepi kain yang berada di kanan ditaruh di atas dengan membuat variasi lipatan yang disebut kancut. Maksud tepi kain yang di kanan berada di atas adalah, sesuai dengan tradisi kuno, bahwa seorang laki-laki bila sedang berjalan ia akan memegang ujung kain kancutnya (nenteng kancut) selalu dengan tangan kiri. Apabila ia nenteng kancut sambil berjalan walaupun ada angin besar, maka pakaiannya tidak akan terbuka (tersingkap) karena telah terlindung. Di samping itu, seorang suami pada jaman dulu dikatakan setia dengan istrinya, maka ia akan mengikatkan ujung kainnya dengan ujung kain si istri, dan si istri harus berada di sebelah kiri sang suami, sehingga kainnya tidak akan tersingkap serta si istri mudah dilindungi oleh suami.\nb. Untuk wanita, sebelum mengenakan kain terlebih dahulu dikenakan kain lapis dalam yang disebut \"tapih\", sebagai pengganti celana dalam (dulu wanita maupun laki-laki tidak menggunakan celana dalam). Setelah itu barulah dikenakan kain, dengan lipatan kain yang di kiri berada di atas (kebalikan dari lipatan kain untuk laki-laki seperti yang telah disebutkan di atas) disamping itu untuk kain wanita dilengkapi dengan sabuk.\n2.",
   "entity_ids": [],
-  "char_start": 350833,
-  "char_end": 352037
+  "char_start": 352191,
+  "char_end": 353395
 }
 
 {
-  "id": "upacara_atiw_380",
+  "id": "upacara_atiw_396",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bala Ugu",
@@ -8505,12 +8774,12 @@
     "udeng",
     "umpal"
   ],
-  "char_start": 352038,
-  "char_end": 353164
+  "char_start": 353396,
+  "char_end": 354522
 }
 
 {
-  "id": "upacara_atiw_381",
+  "id": "upacara_atiw_397",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bala Ugu",
@@ -8526,12 +8795,12 @@
     "pura",
     "takir"
   ],
-  "char_start": 353165,
-  "char_end": 354453
+  "char_start": 354523,
+  "char_end": 355811
 }
 
 {
-  "id": "upacara_atiw_382",
+  "id": "upacara_atiw_398",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bala Ugu",
@@ -8544,12 +8813,12 @@
     "sanghyang",
     "sembah_bhakti"
   ],
-  "char_start": 354454,
-  "char_end": 355666
+  "char_start": 355812,
+  "char_end": 357024
 }
 
 {
-  "id": "upacara_atiw_383",
+  "id": "upacara_atiw_399",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bala Ugu",
@@ -8565,12 +8834,12 @@
     "sanghyang",
     "tuhan"
   ],
-  "char_start": 355667,
-  "char_end": 356810
+  "char_start": 357025,
+  "char_end": 358168
 }
 
 {
-  "id": "upacara_atiw_384",
+  "id": "upacara_atiw_400",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bala Ugu",
@@ -8585,12 +8854,12 @@
     "pepaga",
     "uang_kepeng"
   ],
-  "char_start": 356811,
-  "char_end": 357941
+  "char_start": 358169,
+  "char_end": 359299
 }
 
 {
-  "id": "upacara_atiw_385",
+  "id": "upacara_atiw_401",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "Bala Ugu",
@@ -8604,12 +8873,12 @@
     "rasa",
     "sembah_bhakti"
   ],
-  "char_start": 357942,
-  "char_end": 359082
+  "char_start": 359300,
+  "char_end": 360440
 }
 
 {
-  "id": "upacara_atiw_386",
+  "id": "upacara_atiw_402",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "SEMBAH BHAKTI"
@@ -8627,12 +8896,12 @@
     "sorga",
     "tirta_panglukatan"
   ],
-  "char_start": 359179,
-  "char_end": 360390
+  "char_start": 360537,
+  "char_end": 361748
 }
 
 {
-  "id": "upacara_atiw_387",
+  "id": "upacara_atiw_403",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "SEMBAH BHAKTI"
@@ -8645,12 +8914,12 @@
     "numitis",
     "sorga"
   ],
-  "char_start": 360391,
-  "char_end": 361623
+  "char_start": 361749,
+  "char_end": 362981
 }
 
 {
-  "id": "upacara_atiw_388",
+  "id": "upacara_atiw_404",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "SEMBAH BHAKTI"
@@ -8672,12 +8941,12 @@
     "tirta_panglukatan",
     "upasaksi"
   ],
-  "char_start": 361624,
-  "char_end": 362742
+  "char_start": 362982,
+  "char_end": 364100
 }
 
 {
-  "id": "upacara_atiw_389",
+  "id": "upacara_atiw_405",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "SEMBAH BHAKTI"
@@ -8695,12 +8964,12 @@
     "tuhan",
     "upasaksi"
   ],
-  "char_start": 362743,
-  "char_end": 364100
+  "char_start": 364101,
+  "char_end": 365458
 }
 
 {
-  "id": "upacara_atiw_390",
+  "id": "upacara_atiw_406",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "SEMBAH BHAKTI"
@@ -8715,12 +8984,12 @@
     "sembah_bhakti",
     "tangan_jenazah_layon"
   ],
-  "char_start": 364101,
-  "char_end": 365416
+  "char_start": 365459,
+  "char_end": 366774
 }
 
 {
-  "id": "upacara_atiw_391",
+  "id": "upacara_atiw_407",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "SEMBAH BHAKTI"
@@ -8735,12 +9004,12 @@
     "tirtha",
     "upacara_ngelelet"
   ],
-  "char_start": 365417,
-  "char_end": 365775
+  "char_start": 366775,
+  "char_end": 367133
 }
 
 {
-  "id": "upacara_atiw_392",
+  "id": "upacara_atiw_408",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -8763,12 +9032,12 @@
     "upacara_ngelelet",
     "waja"
   ],
-  "char_start": 365840,
-  "char_end": 367145
+  "char_start": 367198,
+  "char_end": 368503
 }
 
 {
-  "id": "upacara_atiw_393",
+  "id": "upacara_atiw_409",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -8788,12 +9057,12 @@
     "setra",
     "udeng"
   ],
-  "char_start": 367146,
-  "char_end": 368306
+  "char_start": 368504,
+  "char_end": 369664
 }
 
 {
-  "id": "upacara_atiw_394",
+  "id": "upacara_atiw_410",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -8809,12 +9078,12 @@
     "pabersihan_hidup",
     "pabersihan_mati"
   ],
-  "char_start": 368307,
-  "char_end": 369454
+  "char_start": 369665,
+  "char_end": 370812
 }
 
 {
-  "id": "upacara_atiw_395",
+  "id": "upacara_atiw_411",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -8836,12 +9105,12 @@
     "pengerikan_kuku",
     "pengerikan_kuku_mutlak"
   ],
-  "char_start": 369455,
-  "char_end": 370635
+  "char_start": 370813,
+  "char_end": 371993
 }
 
 {
-  "id": "upacara_atiw_396",
+  "id": "upacara_atiw_412",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -8857,12 +9126,12 @@
     "numitis",
     "pengerikan_kuku"
   ],
-  "char_start": 370636,
-  "char_end": 371949
+  "char_start": 371994,
+  "char_end": 373307
 }
 
 {
-  "id": "upacara_atiw_397",
+  "id": "upacara_atiw_413",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -8885,12 +9154,12 @@
     "tali_benang_tukelan",
     "wadag"
   ],
-  "char_start": 371950,
-  "char_end": 373347
+  "char_start": 373308,
+  "char_end": 374705
 }
 
 {
-  "id": "upacara_atiw_398",
+  "id": "upacara_atiw_414",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -8901,6 +9170,7 @@
     "badan",
     "hyang",
     "jenazah",
+    "kain_kering",
     "lampus",
     "numitis",
     "pepaga",
@@ -8908,12 +9178,12 @@
     "umbi_gadung",
     "umbi_sikapa_sekapa"
   ],
-  "char_start": 373348,
-  "char_end": 374456
+  "char_start": 374706,
+  "char_end": 375814
 }
 
 {
-  "id": "upacara_atiw_399",
+  "id": "upacara_atiw_415",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -8929,16 +9199,15 @@
     "numitis",
     "pabersihan_hidup",
     "saput",
-    "tali_saput",
     "udeng",
     "umpal"
   ],
-  "char_start": 374457,
-  "char_end": 375562
+  "char_start": 375815,
+  "char_end": 376920
 }
 
 {
-  "id": "upacara_atiw_400",
+  "id": "upacara_atiw_416",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -8952,12 +9221,12 @@
     "pabersihan_mati",
     "paes_gedubang"
   ],
-  "char_start": 375563,
-  "char_end": 376728
+  "char_start": 376921,
+  "char_end": 378086
 }
 
 {
-  "id": "upacara_atiw_401",
+  "id": "upacara_atiw_417",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -8974,12 +9243,12 @@
     "sang_hyang",
     "smara"
   ],
-  "char_start": 376729,
-  "char_end": 377878
+  "char_start": 378087,
+  "char_end": 379236
 }
 
 {
-  "id": "upacara_atiw_402",
+  "id": "upacara_atiw_418",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -8998,12 +9267,12 @@
     "tirtha_amertha",
     "uang_kepeng"
   ],
-  "char_start": 377879,
-  "char_end": 379443
+  "char_start": 379237,
+  "char_end": 380801
 }
 
 {
-  "id": "upacara_atiw_403",
+  "id": "upacara_atiw_419",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -9017,12 +9286,12 @@
     "pabersihan_hidup",
     "uang_kepeng"
   ],
-  "char_start": 379444,
-  "char_end": 380650
+  "char_start": 380802,
+  "char_end": 382008
 }
 
 {
-  "id": "upacara_atiw_404",
+  "id": "upacara_atiw_420",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -9038,12 +9307,12 @@
     "lampus",
     "numitis"
   ],
-  "char_start": 380651,
-  "char_end": 381763
+  "char_start": 382009,
+  "char_end": 383121
 }
 
 {
-  "id": "upacara_atiw_405",
+  "id": "upacara_atiw_421",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -9059,12 +9328,12 @@
     "pecahan_kaca",
     "sang_hyang"
   ],
-  "char_start": 381764,
-  "char_end": 383067
+  "char_start": 383122,
+  "char_end": 384425
 }
 
 {
-  "id": "upacara_atiw_406",
+  "id": "upacara_atiw_422",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -9082,12 +9351,12 @@
     "sang_hyang",
     "tuhan"
   ],
-  "char_start": 383068,
-  "char_end": 384197
+  "char_start": 384426,
+  "char_end": 385555
 }
 
 {
-  "id": "upacara_atiw_407",
+  "id": "upacara_atiw_423",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -9106,12 +9375,12 @@
     "sang_hyang",
     "waja"
   ],
-  "char_start": 384198,
-  "char_end": 385535
+  "char_start": 385556,
+  "char_end": 386893
 }
 
 {
-  "id": "upacara_atiw_408",
+  "id": "upacara_atiw_424",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -9124,12 +9393,12 @@
     "malem",
     "numitis"
   ],
-  "char_start": 385536,
-  "char_end": 386717
+  "char_start": 386894,
+  "char_end": 388075
 }
 
 {
-  "id": "upacara_atiw_409",
+  "id": "upacara_atiw_425",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -9148,12 +9417,12 @@
     "parem",
     "sang_hyang"
   ],
-  "char_start": 386718,
-  "char_end": 387918
+  "char_start": 388076,
+  "char_end": 389276
 }
 
 {
-  "id": "upacara_atiw_410",
+  "id": "upacara_atiw_426",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -9170,12 +9439,12 @@
     "numitis",
     "rasa"
   ],
-  "char_start": 387919,
-  "char_end": 389123
+  "char_start": 389277,
+  "char_end": 390481
 }
 
 {
-  "id": "upacara_atiw_411",
+  "id": "upacara_atiw_427",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -9197,12 +9466,12 @@
     "pabersihan_mati",
     "penggunaan_wewangian"
   ],
-  "char_start": 389124,
-  "char_end": 390233
+  "char_start": 390482,
+  "char_end": 391591
 }
 
 {
-  "id": "upacara_atiw_412",
+  "id": "upacara_atiw_428",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -9217,12 +9486,12 @@
     "manusia",
     "numitis"
   ],
-  "char_start": 390234,
-  "char_end": 391344
+  "char_start": 391592,
+  "char_end": 392702
 }
 
 {
-  "id": "upacara_atiw_413",
+  "id": "upacara_atiw_429",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -9241,12 +9510,12 @@
     "tembaga",
     "uang_kepeng"
   ],
-  "char_start": 391345,
-  "char_end": 392462
+  "char_start": 392703,
+  "char_end": 393820
 }
 
 {
-  "id": "upacara_atiw_414",
+  "id": "upacara_atiw_430",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -9269,12 +9538,12 @@
     "pabersihan_mati",
     "pangringkesan"
   ],
-  "char_start": 392463,
-  "char_end": 393668
+  "char_start": 393821,
+  "char_end": 395026
 }
 
 {
-  "id": "upacara_atiw_415",
+  "id": "upacara_atiw_431",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "PABERSIHAN MATI (NGELELET)"
@@ -9287,12 +9556,12 @@
     "jenazah",
     "pisau_pengutik"
   ],
-  "char_start": 393669,
-  "char_end": 394073
+  "char_start": 395027,
+  "char_end": 395431
 }
 
 {
-  "id": "upacara_atiw_416",
+  "id": "upacara_atiw_432",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "NGERINGKES"
@@ -9314,12 +9583,12 @@
     "tirtha",
     "tirtha_pangringkes"
   ],
-  "char_start": 394241,
-  "char_end": 395401
+  "char_start": 395599,
+  "char_end": 396759
 }
 
 {
-  "id": "upacara_atiw_417",
+  "id": "upacara_atiw_433",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "NGERINGKES"
@@ -9332,12 +9601,12 @@
     "pangringkesan",
     "tali_benang_tukelan"
   ],
-  "char_start": 395402,
-  "char_end": 396621
+  "char_start": 396760,
+  "char_end": 397979
 }
 
 {
-  "id": "upacara_atiw_418",
+  "id": "upacara_atiw_434",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "NGERINGKES"
@@ -9354,12 +9623,12 @@
     "pangringkesan",
     "rurub_sinom"
   ],
-  "char_start": 396622,
-  "char_end": 397948
+  "char_start": 397980,
+  "char_end": 399306
 }
 
 {
-  "id": "upacara_atiw_419",
+  "id": "upacara_atiw_435",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "NGERINGKES"
@@ -9378,12 +9647,12 @@
     "pepaga",
     "tempat_persemayaman_jenazah"
   ],
-  "char_start": 397949,
-  "char_end": 399058
+  "char_start": 399307,
+  "char_end": 400416
 }
 
 {
-  "id": "upacara_atiw_420",
+  "id": "upacara_atiw_436",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "NGERINGKES"
@@ -9398,12 +9667,12 @@
     "pangringkesan",
     "rurub_sinom"
   ],
-  "char_start": 399059,
-  "char_end": 400383
+  "char_start": 400417,
+  "char_end": 401741
 }
 
 {
-  "id": "upacara_atiw_421",
+  "id": "upacara_atiw_437",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "NGERINGKES"
@@ -9417,12 +9686,12 @@
     "banjar",
     "galar"
   ],
-  "char_start": 400384,
-  "char_end": 401568
+  "char_start": 401742,
+  "char_end": 402926
 }
 
 {
-  "id": "upacara_atiw_422",
+  "id": "upacara_atiw_438",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "NGERINGKES"
@@ -9436,12 +9705,12 @@
     "galar",
     "jenazah"
   ],
-  "char_start": 401569,
-  "char_end": 402814
+  "char_start": 402927,
+  "char_end": 404172
 }
 
 {
-  "id": "upacara_atiw_423",
+  "id": "upacara_atiw_439",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "NGERINGKES"
@@ -9454,12 +9723,12 @@
     "merajan",
     "pura"
   ],
-  "char_start": 402815,
-  "char_end": 403928
+  "char_start": 404173,
+  "char_end": 405286
 }
 
 {
-  "id": "upacara_atiw_424",
+  "id": "upacara_atiw_440",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "NGERINGKES"
@@ -9475,12 +9744,12 @@
     "nyekeh",
     "upacara_mesulub"
   ],
-  "char_start": 403929,
-  "char_end": 405230
+  "char_start": 405287,
+  "char_end": 406588
 }
 
 {
-  "id": "upacara_atiw_425",
+  "id": "upacara_atiw_441",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "NGERINGKES"
@@ -9488,16 +9757,15 @@
   "text": "Upacara Mesulub hanyalah merupakan suatu kepercayaan setempat (kepercayaan lokal) yang telah diwarisi turun temurun dari sejak jaman dulu di daerah atau Desa setempat. Adapun makna dari \"Upacara Meselub\" adalah agar \"kekuatan\" orang yang meninggal menurun kepada keluarga yang \"Nyulubin\" tersebut, atau setidaknya \"kekuatan\" tersebut masih tetap berada pada diri keluarga yang di tinggalkan. Disamping itu \"Upacara Mesulub\" adalah merupakan konsep \"Satya\" atau kesetiaan. Yang artinya bahwa keluarga itu telah menyatakan diri untuk setia kepada seluruh keluarganya baik dalam keadaan senang maupun dalam keadaan kesusahan, dan akan tetap setia baik hidup maupun mati. Tanda kesetiaan ini ditandai dengan melakukan terobosan (Mesulub) di bawah jenazah keluarga. Di dalam \"Upacara Mesulub\", semua keluarga dari yang meninggal, khususnya yang patut menyembah (orang yang lebih tua dari yang meninggal tidak diperkenankan ikut, begitu juga wanita hamil, wanita sedang menyusui), mereka akan berjalan membungkuk di bawah Pepaga/Asagan. Namun apabila di bawah Pepaga tidak memungkinkan untuk di terobos karena sempit, maka Pepaga yang ada jenazahnya akan diangkat lebih tinggi agar memudahkan melakukan Upacara Mesulub.",
   "entity_ids": [
     "jenazah",
-    "kepercayaan_setempat",
     "pepaga",
     "upacara_mesulub"
   ],
-  "char_start": 405231,
-  "char_end": 406444
+  "char_start": 406589,
+  "char_end": 407802
 }
 
 {
-  "id": "upacara_atiw_426",
+  "id": "upacara_atiw_442",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "NGERINGKES"
@@ -9509,12 +9777,12 @@
     "upacara_mesulub",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 406445,
-  "char_end": 407718
+  "char_start": 407803,
+  "char_end": 409076
 }
 
 {
-  "id": "upacara_atiw_427",
+  "id": "upacara_atiw_443",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "NGERINGKES"
@@ -9523,12 +9791,12 @@
   "entity_ids": [
     "jenazah"
   ],
-  "char_start": 407719,
-  "char_end": 408876
+  "char_start": 409077,
+  "char_end": 410234
 }
 
 {
-  "id": "upacara_atiw_428",
+  "id": "upacara_atiw_444",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "NGERINGKES"
@@ -9542,12 +9810,12 @@
     "pabersihan",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 408877,
-  "char_end": 409481
+  "char_start": 410235,
+  "char_end": 410839
 }
 
 {
-  "id": "upacara_atiw_429",
+  "id": "upacara_atiw_445",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "NGERINGKES",
@@ -9568,12 +9836,12 @@
     "tirtha_pabersihan",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 409582,
-  "char_end": 410914
+  "char_start": 410940,
+  "char_end": 412272
 }
 
 {
-  "id": "upacara_atiw_430",
+  "id": "upacara_atiw_446",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "NGERINGKES",
@@ -9585,12 +9853,12 @@
     "sanghyang",
     "tirtha"
   ],
-  "char_start": 410915,
-  "char_end": 411219
+  "char_start": 412273,
+  "char_end": 412577
 }
 
 {
-  "id": "upacara_atiw_431",
+  "id": "upacara_atiw_447",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "MEMUNJUNG ATAU MESAJI"
@@ -9612,12 +9880,12 @@
     "punjung",
     "soda"
   ],
-  "char_start": 411256,
-  "char_end": 412524
+  "char_start": 412614,
+  "char_end": 413882
 }
 
 {
-  "id": "upacara_atiw_432",
+  "id": "upacara_atiw_448",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "MEMUNJUNG ATAU MESAJI"
@@ -9631,12 +9899,12 @@
     "pepaga",
     "setra"
   ],
-  "char_start": 412525,
-  "char_end": 413641
+  "char_start": 413883,
+  "char_end": 414999
 }
 
 {
-  "id": "upacara_atiw_433",
+  "id": "upacara_atiw_449",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "MEMUNJUNG ATAU MESAJI"
@@ -9653,12 +9921,12 @@
     "sulinggih",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 413642,
-  "char_end": 414102
+  "char_start": 415000,
+  "char_end": 415460
 }
 
 {
-  "id": "upacara_atiw_434",
+  "id": "upacara_atiw_450",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "RINGKASAN, SIMPULAN DAN PENUTUP"
@@ -9667,12 +9935,12 @@
   "entity_ids": [
     "nyiramang_layon"
   ],
-  "char_start": 414156,
-  "char_end": 414205
+  "char_start": 415514,
+  "char_end": 415563
 }
 
 {
-  "id": "upacara_atiw_435",
+  "id": "upacara_atiw_451",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "1. Membersihkan Kepala dan Muka",
@@ -9683,12 +9951,12 @@
     "hyang",
     "klesa"
   ],
-  "char_start": 414280,
-  "char_end": 414501
+  "char_start": 415638,
+  "char_end": 415859
 }
 
 {
-  "id": "upacara_atiw_436",
+  "id": "upacara_atiw_452",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "1. Membersihkan Kepala dan Muka",
@@ -9702,12 +9970,12 @@
     "kawangen",
     "mewastra"
   ],
-  "char_start": 414563,
-  "char_end": 415552
+  "char_start": 415921,
+  "char_end": 416910
 }
 
 {
-  "id": "upacara_atiw_437",
+  "id": "upacara_atiw_453",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "B. SEMBAH BHAKTI"
@@ -9734,12 +10002,12 @@
     "tuhan",
     "visnu"
   ],
-  "char_start": 415580,
-  "char_end": 416710
+  "char_start": 416938,
+  "char_end": 418068
 }
 
 {
-  "id": "upacara_atiw_438",
+  "id": "upacara_atiw_454",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "B. SEMBAH BHAKTI"
@@ -9756,12 +10024,12 @@
     "setelah_upacara_sembah_bhakti",
     "tirtha"
   ],
-  "char_start": 416711,
-  "char_end": 417356
+  "char_start": 418069,
+  "char_end": 418714
 }
 
 {
-  "id": "upacara_atiw_439",
+  "id": "upacara_atiw_455",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "C. PABERSIHAN MATI (NGELELET)"
@@ -9774,6 +10042,7 @@
     "hyang",
     "itik_itik",
     "jenazah",
+    "kain_kering",
     "kerik_kuku",
     "lampus",
     "pabersihan_mati",
@@ -9782,12 +10051,12 @@
     "umbi_gadung",
     "umbi_sikapa_sekapa"
   ],
-  "char_start": 417404,
-  "char_end": 418645
+  "char_start": 418762,
+  "char_end": 420003
 }
 
 {
-  "id": "upacara_atiw_440",
+  "id": "upacara_atiw_456",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "C. PABERSIHAN MATI (NGELELET)"
@@ -9801,12 +10070,12 @@
     "pabersihan_hidup",
     "pabersihan_mati"
   ],
-  "char_start": 418646,
-  "char_end": 419204
+  "char_start": 420004,
+  "char_end": 420562
 }
 
 {
-  "id": "upacara_atiw_441",
+  "id": "upacara_atiw_457",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "7. Angkeb Sarira (penutup kemaluan)"
@@ -9827,12 +10096,12 @@
     "smara",
     "uang_kepeng"
   ],
-  "char_start": 419265,
-  "char_end": 420360
+  "char_start": 420623,
+  "char_end": 421718
 }
 
 {
-  "id": "upacara_atiw_442",
+  "id": "upacara_atiw_458",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "12. Pusuh Menuh (Kuncup Kembang Melati) pada Hidung"
@@ -9843,12 +10112,12 @@
     "lampus",
     "sang_hyang"
   ],
-  "char_start": 420437,
-  "char_end": 420692
+  "char_start": 421795,
+  "char_end": 422050
 }
 
 {
-  "id": "upacara_atiw_443",
+  "id": "upacara_atiw_459",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "13. Menaruh lempengan waja (baja) atau besi pada gigi"
@@ -9866,12 +10135,12 @@
     "rasa",
     "sang_hyang"
   ],
-  "char_start": 420751,
-  "char_end": 421851
+  "char_start": 422109,
+  "char_end": 423209
 }
 
 {
-  "id": "upacara_atiw_444",
+  "id": "upacara_atiw_460",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "13. Menaruh lempengan waja (baja) atau besi pada gigi"
@@ -9890,12 +10159,12 @@
     "pangringkesan",
     "uang_kepeng"
   ],
-  "char_start": 421852,
-  "char_end": 423022
+  "char_start": 423210,
+  "char_end": 424380
 }
 
 {
-  "id": "upacara_atiw_445",
+  "id": "upacara_atiw_461",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "D. NGERINGKES"
@@ -9918,12 +10187,12 @@
     "tirtha",
     "tirtha_pangringkes"
   ],
-  "char_start": 423064,
-  "char_end": 424255
+  "char_start": 424422,
+  "char_end": 425613
 }
 
 {
-  "id": "upacara_atiw_446",
+  "id": "upacara_atiw_462",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "ACARA SELESAI"
@@ -9938,12 +10207,12 @@
     "tattwa",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 424282,
-  "char_end": 425429
+  "char_start": 425640,
+  "char_end": 426787
 }
 
 {
-  "id": "upacara_atiw_447",
+  "id": "upacara_atiw_463",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "ACARA SELESAI"
@@ -9955,24 +10224,24 @@
     "leteh",
     "upacara_nyiramang_layon"
   ],
-  "char_start": 425430,
-  "char_end": 426519
+  "char_start": 426788,
+  "char_end": 427877
 }
 
 {
-  "id": "upacara_atiw_448",
+  "id": "upacara_atiw_464",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "FUNGSI TIRTHA PENGENTAS DALAM UPACARA NGABEN"
   ],
   "text": "________________",
   "entity_ids": [],
-  "char_start": 426583,
-  "char_end": 426599
+  "char_start": 427941,
+  "char_end": 427957
 }
 
 {
-  "id": "upacara_atiw_449",
+  "id": "upacara_atiw_465",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "FUNGSI TIRTHA PENGENTAS DALAM UPACARA NGABEN",
@@ -9995,12 +10264,12 @@
     "tirtha",
     "uang_kepeng"
   ],
-  "char_start": 426627,
-  "char_end": 427350
+  "char_start": 427985,
+  "char_end": 428708
 }
 
 {
-  "id": "upacara_atiw_450",
+  "id": "upacara_atiw_466",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "FUNGSI TIRTHA PENGENTAS DALAM UPACARA NGABEN",
@@ -10016,12 +10285,12 @@
     "tirta_panglukatan",
     "tirtha_pabersihan"
   ],
-  "char_start": 427374,
-  "char_end": 427833
+  "char_start": 428732,
+  "char_end": 429191
 }
 
 {
-  "id": "upacara_atiw_451",
+  "id": "upacara_atiw_467",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "FUNGSI TIRTHA PENGENTAS DALAM UPACARA NGABEN",
@@ -10037,12 +10306,12 @@
     "tirtha",
     "tirtha_ening"
   ],
-  "char_start": 427852,
-  "char_end": 428677
+  "char_start": 429210,
+  "char_end": 430035
 }
 
 {
-  "id": "upacara_atiw_452",
+  "id": "upacara_atiw_468",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "FUNGSI TIRTHA PENGENTAS DALAM UPACARA NGABEN",
@@ -10061,12 +10330,12 @@
     "tumpang_salu",
     "upacara_pengabenan"
   ],
-  "char_start": 428698,
-  "char_end": 429711
+  "char_start": 430056,
+  "char_end": 431069
 }
 
 {
-  "id": "upacara_atiw_453",
+  "id": "upacara_atiw_469",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "FUNGSI TIRTHA PENGENTAS DALAM UPACARA NGABEN",
@@ -10079,12 +10348,12 @@
     "tirtha",
     "tirtha_penembak"
   ],
-  "char_start": 429737,
-  "char_end": 431027
+  "char_start": 431095,
+  "char_end": 432385
 }
 
 {
-  "id": "upacara_atiw_454",
+  "id": "upacara_atiw_470",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "FUNGSI TIRTHA PENGENTAS DALAM UPACARA NGABEN",
@@ -10100,12 +10369,12 @@
     "tirtha",
     "tirtha_penembak"
   ],
-  "char_start": 431028,
-  "char_end": 432152
+  "char_start": 432386,
+  "char_end": 433510
 }
 
 {
-  "id": "upacara_atiw_455",
+  "id": "upacara_atiw_471",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "FUNGSI TIRTHA PENGENTAS DALAM UPACARA NGABEN",
@@ -10115,12 +10384,12 @@
   "entity_ids": [
     "tirtha_penembak"
   ],
-  "char_start": 432153,
-  "char_end": 432347
+  "char_start": 433511,
+  "char_end": 433705
 }
 
 {
-  "id": "upacara_atiw_456",
+  "id": "upacara_atiw_472",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "FUNGSI TIRTHA PENGENTAS DALAM UPACARA NGABEN",
@@ -10136,12 +10405,12 @@
     "tirtha",
     "tirtha_kawitan"
   ],
-  "char_start": 432368,
-  "char_end": 432885
+  "char_start": 433726,
+  "char_end": 434243
 }
 
 {
-  "id": "upacara_atiw_457",
+  "id": "upacara_atiw_473",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "FUNGSI TIRTHA PENGENTAS DALAM UPACARA NGABEN",
@@ -10165,12 +10434,12 @@
     "tirtha_kahyangan_tiga",
     "utpeti"
   ],
-  "char_start": 432913,
-  "char_end": 433796
+  "char_start": 434271,
+  "char_end": 435154
 }
 
 {
-  "id": "upacara_atiw_458",
+  "id": "upacara_atiw_474",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "FUNGSI TIRTHA PENGENTAS DALAM UPACARA NGABEN",
@@ -10194,12 +10463,12 @@
     "upacara_pengabenan",
     "upacara_pengaskaran"
   ],
-  "char_start": 433819,
-  "char_end": 435012
+  "char_start": 435177,
+  "char_end": 436370
 }
 
 {
-  "id": "upacara_atiw_459",
+  "id": "upacara_atiw_475",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "TIRTHA PANGENTAS SEBAGAI PENYUCIAN ROH",
@@ -10217,12 +10486,12 @@
     "tirtha",
     "upacara_pengabenan"
   ],
-  "char_start": 435122,
-  "char_end": 436275
+  "char_start": 436480,
+  "char_end": 437633
 }
 
 {
-  "id": "upacara_atiw_460",
+  "id": "upacara_atiw_476",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "TIRTHA PANGENTAS SEBAGAI PENYUCIAN ROH",
@@ -10239,12 +10508,12 @@
     "pripih_emas",
     "tembaga"
   ],
-  "char_start": 436276,
-  "char_end": 436760
+  "char_start": 437634,
+  "char_end": 438118
 }
 
 {
-  "id": "upacara_atiw_461",
+  "id": "upacara_atiw_477",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "16. Ulantaga"
@@ -10259,12 +10528,12 @@
     "sodan",
     "tembaga"
   ],
-  "char_start": 436778,
-  "char_end": 436974
+  "char_start": 438136,
+  "char_end": 438332
 }
 
 {
-  "id": "upacara_atiw_462",
+  "id": "upacara_atiw_478",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "7. Soroan"
@@ -10278,12 +10547,12 @@
     "tirta_pangentas",
     "upacara_pengabenan"
   ],
-  "char_start": 436997,
-  "char_end": 437436
+  "char_start": 438355,
+  "char_end": 438794
 }
 
 {
-  "id": "upacara_atiw_463",
+  "id": "upacara_atiw_479",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "7. Soroan",
@@ -10299,12 +10568,12 @@
     "tirta_pangentas",
     "tirtha"
   ],
-  "char_start": 437489,
-  "char_end": 438595
+  "char_start": 438847,
+  "char_end": 439953
 }
 
 {
-  "id": "upacara_atiw_464",
+  "id": "upacara_atiw_480",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "7. Soroan",
@@ -10324,12 +10593,12 @@
     "tuhan",
     "upacara_mapulang_lingga"
   ],
-  "char_start": 438596,
-  "char_end": 439757
+  "char_start": 439954,
+  "char_end": 441115
 }
 
 {
-  "id": "upacara_atiw_465",
+  "id": "upacara_atiw_481",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "7. Soroan",
@@ -10347,12 +10616,12 @@
     "sulinggih",
     "tirta_pangentas"
   ],
-  "char_start": 439758,
-  "char_end": 440894
+  "char_start": 441116,
+  "char_end": 442252
 }
 
 {
-  "id": "upacara_atiw_466",
+  "id": "upacara_atiw_482",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "7. Soroan",
@@ -10366,12 +10635,12 @@
     "sulinggih",
     "tirta_pangentas"
   ],
-  "char_start": 440895,
-  "char_end": 441168
+  "char_start": 442253,
+  "char_end": 442526
 }
 
 {
-  "id": "upacara_atiw_467",
+  "id": "upacara_atiw_483",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "7. Soroan",
@@ -10389,12 +10658,12 @@
     "tirtha",
     "tirtha_gangga"
   ],
-  "char_start": 441218,
-  "char_end": 442499
+  "char_start": 442576,
+  "char_end": 443857
 }
 
 {
-  "id": "upacara_atiw_468",
+  "id": "upacara_atiw_484",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "7. Soroan",
@@ -10415,12 +10684,12 @@
     "sulinggih",
     "tattwa"
   ],
-  "char_start": 442500,
-  "char_end": 443701
+  "char_start": 443858,
+  "char_end": 445059
 }
 
 {
-  "id": "upacara_atiw_469",
+  "id": "upacara_atiw_485",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "7. Soroan",
@@ -10445,12 +10714,12 @@
     "tirta_pangentas",
     "tirtha"
   ],
-  "char_start": 443702,
-  "char_end": 444968
+  "char_start": 445060,
+  "char_end": 446326
 }
 
 {
-  "id": "upacara_atiw_470",
+  "id": "upacara_atiw_486",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "7. Soroan",
@@ -10474,12 +10743,12 @@
     "tirtha_gangga",
     "utpeti"
   ],
-  "char_start": 444969,
-  "char_end": 446270
+  "char_start": 446327,
+  "char_end": 447628
 }
 
 {
-  "id": "upacara_atiw_471",
+  "id": "upacara_atiw_487",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "7. Soroan",
@@ -10500,12 +10769,12 @@
     "tirtha",
     "ulantaga"
   ],
-  "char_start": 446271,
-  "char_end": 447450
+  "char_start": 447629,
+  "char_end": 448808
 }
 
 {
-  "id": "upacara_atiw_472",
+  "id": "upacara_atiw_488",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "7. Soroan",
@@ -10538,12 +10807,12 @@
     "visnu",
     "yama"
   ],
-  "char_start": 447451,
-  "char_end": 448642
+  "char_start": 448809,
+  "char_end": 450000
 }
 
 {
-  "id": "upacara_atiw_473",
+  "id": "upacara_atiw_489",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "7. Soroan",
@@ -10564,12 +10833,12 @@
     "tirtha",
     "tirtha_gangga"
   ],
-  "char_start": 448643,
-  "char_end": 449787
+  "char_start": 450001,
+  "char_end": 451145
 }
 
 {
-  "id": "upacara_atiw_474",
+  "id": "upacara_atiw_490",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "7. Soroan",
@@ -10587,12 +10856,12 @@
     "tirta_pangentas",
     "utpati"
   ],
-  "char_start": 449788,
-  "char_end": 450914
+  "char_start": 451146,
+  "char_end": 452272
 }
 
 {
-  "id": "upacara_atiw_475",
+  "id": "upacara_atiw_491",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "7. Soroan",
@@ -10610,12 +10879,12 @@
     "tirtha",
     "upacara_pengabenan"
   ],
-  "char_start": 451074,
-  "char_end": 452274
+  "char_start": 452432,
+  "char_end": 453632
 }
 
 {
-  "id": "upacara_atiw_476",
+  "id": "upacara_atiw_492",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "7. Soroan",
@@ -10637,12 +10906,12 @@
     "tirtha_pabersihan",
     "tirtha_penembak"
   ],
-  "char_start": 452275,
-  "char_end": 453090
+  "char_start": 453633,
+  "char_end": 454448
 }
 
 {
-  "id": "upacara_atiw_477",
+  "id": "upacara_atiw_493",
   "doc": "Upacara Atiwa-Tiwa",
   "section_path": [
     "7. Soroan",
@@ -10665,6 +10934,6 @@
     "tirtha",
     "upacara_pengabenan"
   ],
-  "char_start": 453137,
-  "char_end": 454220
+  "char_start": 454495,
+  "char_end": 455578
 }

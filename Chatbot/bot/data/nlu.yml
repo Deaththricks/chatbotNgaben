@@ -1,46 +1,5 @@
 version: "3.1"
-
 nlu:
-- lookup: tipe
-  examples: |
-    - sarana ritual
-    - sarana upacara
-    - perlengkapan ritual
-    - peralatan ritual
-    - istilah umum ritual
-    - tahapan upacara
-    - tahap upacara
-    - prosesi
-    - konsep filosofis
-    - filosofi
-    - bangunan ritual
-    - tempat ritual
-    - entitas keagamaan
-    - dewa
-    - tokoh
-    - ritual kematian
-    - jenis ngaben
-    - tirtha
-    - tirta
-    - tirtha suci
-    - air suci
-    - konsep hukum adat
-    - hukum adat
-    - awig-awig
-    - naskah suci
-    - lontar
-
-- synonym: tirtha
-  examples: |
-    - tirta
-    - tirtha suci
-    - air suci
-
-- synonym: bade
-  examples: |
-    - wadah
-    - wadhah
-
 - intent: sapa
   examples: |
     - halo
@@ -65,7 +24,7 @@ nlu:
     - ada orang?
     - mulai
     - saya ingin belajar istilah ngaben
-
+    - hey
 - intent: pamit
   examples: |
     - dah
@@ -86,7 +45,6 @@ nlu:
     - terima kasih infonya
     - sip, membantu sekali
     - keluar
-
 - intent: bot_challenge
   examples: |
     - kamu bot ya?
@@ -103,7 +61,6 @@ nlu:
     - kamu pakai AI?
     - jawabanmu bisa dipercaya tidak?
     - kamu dibuat oleh siapa?
-
 - intent: out_of_scope
   examples: |
     - berapa harga upacara ngaben
@@ -126,7 +83,6 @@ nlu:
     - nilai tukar rupiah hari ini
     - kapan hari raya nyepi tahun depan
     - siapa nama bupati gianyar
-
 - intent: tanya_definisi
   examples: |
     - apa itu [ngaben](istilah)
@@ -169,7 +125,7 @@ nlu:
     - pengertian [bale](istilah) apa
     - deskripsikan [ngulapin](istilah)
     - [abu](istilah) dalam ngaben itu apa
-
+    - apa itu [ngaben][{"entity": "istilah"}, {"entity": "istilah"}]?
 - intent: tanya_klasifikasi
   examples: |
     - [ngaben](istilah) termasuk apa
@@ -196,7 +152,6 @@ nlu:
     - [sulinggih](istilah) itu tergolong sebagai apa
     - kategori dari [kawangen](istilah) apa
     - [prasawya](istilah) itu konsep atau tahapan
-
 - intent: tanya_jenis
   examples: |
     - apa saja jenis [ngaben](istilah)
@@ -221,7 +176,7 @@ nlu:
     - kalau [ngaben](istilah) punya banyak varian, tolong rincikan
     - anak turunan dari [bade](istilah) apa
     - apa saja yang termasuk [tirtha](istilah)
-
+    - apa saja [jenis ngaben](tipe)[ngaben][{"entity": "istilah"}, {"entity": "istilah"}]?
 - intent: tanya_fungsi
   examples: |
     - [bade](istilah) dipakai untuk apa
@@ -244,7 +199,6 @@ nlu:
     - [banten](istilah) gunanya untuk apa
     - kenapa pakai [bade](istilah), untuk apa
     - [ngulapin](istilah) untuk apa
-
 - intent: tanya_bahan
   examples: |
     - [pripih emas](istilah) terbuat dari apa
@@ -265,7 +219,12 @@ nlu:
     - [abu](istilah) berasal dari apa
     - [sekah](istilah) terbuat dari bahan apa
     - komposisi [tirtha](istilah) apa
-
+    - apa saja keperluan [ngaben](istilah)
+    - apa saja kebutuhan [ngaben](istilah)
+    - keperluan [ngaben](istilah) apa saja
+    - kebutuhan untuk [ngaben](istilah) apa saja
+    - apa saja yang dibutuhkan untuk [ngaben](istilah)
+    - apa saja yang diperlukan untuk [ngaben](istilah)
 - intent: tanya_lokasi
   examples: |
     - di mana [sekah](istilah) diletakkan
@@ -285,7 +244,12 @@ nlu:
     - [pripih emas](istilah) diletakkan di bagian mana
     - arah [nganyut](istilah) ke mana
     - [daksina](istilah) diletakkan di mana
-
+    - di mana [jenazah](istilah) dibakar
+    - dimana [sawa](istilah) dibakar
+    - apakah [jenazah](istilah) boleh dibakar di setra
+    - apakah [jenazah](istilah) harus dibakar di krematorium
+    - [ngaben](istilah) dilakukan di krematorium atau di setra
+    - tempat pembakaran [jenazah](istilah) di mana
 - intent: tanya_waktu
   examples: |
     - kapan [ngaben](istilah) dilakukan
@@ -303,7 +267,6 @@ nlu:
     - bulan apa [ngaben](istilah) biasa dilaksanakan
     - kapan [ngulapin](istilah) dilakukan
     - [mamukur](istilah) dilaksanakan kapan
-
 - intent: tanya_pelaku
   examples: |
     - siapa yang melakukan [ngaben](istilah)
@@ -320,7 +283,6 @@ nlu:
     - [ngaben](istilah) dilakukan oleh keluarga atau banjar
     - siapa yang menuntun [atma](istilah)
     - pihak mana yang mengurus [petulangan](istilah)
-
 - intent: tanya_simbol
   examples: |
     - [nganyut](istilah) melambangkan apa
@@ -337,7 +299,6 @@ nlu:
     - apa yang disimbolkan [lembu](istilah) dalam ngaben
     - [moksha](istilah) itu melambangkan apa
     - [atma](istilah) dalam ngaben menjadi apa
-
 - intent: tanya_alasan
   examples: |
     - kenapa tidak boleh menangis saat [ngaben](istilah)
@@ -354,7 +315,17 @@ nlu:
     - apa alasan di balik [ngerorasin](istilah)
     - kenapa keluarga harus ikhlas saat ngaben
     - mengapa abu dilarung ke laut
-
+    - kenapa [ngaben](istilah) dilakukan
+    - mengapa [nganyut](istilah) dilakukan
+    - kenapa [ngerorasin](istilah) dilaksanakan
+    - kenapa [ngaben](istilah) itu dilakukan
+    - apa alasan [ngaben](istilah) dilaksanakan
+    - kenapa upacara [mamukur](istilah) dilakukan
+    - apa yang terjadi jika [ngaben](istilah) tidak dilaksanakan
+    - apa akibatnya jika [sawa](istilah) tidak diaben
+    - apa yang terjadi jika [jenazah](istilah) tidak diaben
+    - bagaimana jika [ngaben](istilah) tidak dilakukan
+    - apa akibatnya kalau [nganyut](istilah) tidak dilaksanakan
 - intent: tanya_relasi
   examples: |
     - ceritakan lebih lanjut soal [ngaben](istilah)
@@ -373,7 +344,6 @@ nlu:
     - beri tahu detail lengkap [kajang](istilah)
     - apa kaitan [sekah](istilah) dengan [bukur](istilah)
     - bagaimana [pitra](istilah) berhubungan dengan [atma](istilah)
-
 - intent: daftar_istilah
   examples: |
     - sebutkan [tahapan upacara](tipe) ngaben
@@ -395,7 +365,6 @@ nlu:
     - ada [bangunan ritual](tipe) apa saja
     - berikan daftar [konsep filosofis](tipe)
     - semua [ritual kematian](tipe) yang tercatat
-
 - intent: bandingkan_istilah
   examples: |
     - apa beda [bade](istilah) dan [wadah](istilah2)
@@ -414,7 +383,6 @@ nlu:
     - [pitra yadnya](istilah) vs [ngaben](istilah2)
     - selisih makna [mamukur](istilah) dan [ngerorasin](istilah2)
     - [ngaben](istilah) dan [ngelungah](istilah2) beda di mana
-
 - intent: cari_istilah
   examples: |
     - cari istilah [tirtha](tipe)
@@ -431,7 +399,6 @@ nlu:
     - cari istilah bertema api
     - istilah dengan kata "sekah"
     - tampilkan istilah yang mirip "tirta"
-
 - intent: minta_acak
   examples: |
     - kasih istilah acak
@@ -446,3 +413,40 @@ nlu:
     - pilihkan istilah untuk aku pelajari
     - surprise me
     - istilah apa saja terserah kamu
+- synonym: tirtha
+  examples: |
+    - tirta
+    - tirtha suci
+    - air suci
+- synonym: bade
+  examples: |
+    - wadah
+    - wadhah
+- lookup: tipe
+  examples: |
+    - sarana ritual
+    - sarana upacara
+    - perlengkapan ritual
+    - peralatan ritual
+    - istilah umum ritual
+    - tahapan upacara
+    - tahap upacara
+    - prosesi
+    - konsep filosofis
+    - filosofi
+    - bangunan ritual
+    - tempat ritual
+    - entitas keagamaan
+    - dewa
+    - tokoh
+    - ritual kematian
+    - jenis ngaben
+    - tirtha
+    - tirta
+    - tirtha suci
+    - air suci
+    - konsep hukum adat
+    - hukum adat
+    - awig-awig
+    - naskah suci
+    - lontar

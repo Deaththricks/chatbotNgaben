@@ -1,31 +1,28 @@
 version: '3.1'
-
 intents:
-- sapa
-- pamit
-- bot_challenge
-- out_of_scope
-- tanya_definisi
-- tanya_klasifikasi
-- tanya_jenis
-- tanya_fungsi
-- tanya_bahan
-- tanya_lokasi
-- tanya_waktu
-- tanya_pelaku
-- tanya_simbol
-- tanya_alasan
-- tanya_relasi
-- daftar_istilah
 - bandingkan_istilah
+- bot_challenge
 - cari_istilah
+- daftar_istilah
 - minta_acak
-
+- out_of_scope
+- pamit
+- sapa
+- tanya_alasan
+- tanya_bahan
+- tanya_definisi
+- tanya_fungsi
+- tanya_jenis
+- tanya_klasifikasi
+- tanya_lokasi
+- tanya_pelaku
+- tanya_relasi
+- tanya_simbol
+- tanya_waktu
 entities:
 - istilah
-- istilah2
 - tipe
-
+- istilah2
 slots:
   istilah:
     type: text
@@ -45,11 +42,11 @@ slots:
     mappings:
     - type: from_entity
       entity: tipe
-
 actions:
 - action_definisi
-- action_klasifikasi
+- utter_sapa
 - action_jenis
+- action_klasifikasi
 - action_atribut
 - action_alasan
 - action_relasi
@@ -58,11 +55,10 @@ actions:
 - action_cari
 - action_acak
 - action_default_fallback
-
 responses:
   utter_sapa:
   - text: |-
-      Om Swastiastu 🙏 Saya asisten istilah upacara Ngaben (kremasi Bali). Yang bisa saya bantu:
+      Om Swastiastu, Saya asisten istilah upacara Ngaben (kremasi Bali). Yang bisa saya bantu:
       • arti istilah — "apa itu tirtha pangentas"
       • klasifikasi — "ngaben termasuk apa"
       • jenis/bagian — "apa saja jenis ngaben"
@@ -73,16 +69,15 @@ responses:
       • perbandingan — "apa beda bade dan wadah"
       • pencarian — "cari istilah tirtha"
   - text: |-
-      Om Swastiastu 🙏 Saya bot glosarium Ngaben. Tanyakan arti, jenis, fungsi, lokasi, waktu,
+      Om Swastiastu, Saya bot glosarium Ngaben. Tanyakan arti, jenis, fungsi, lokasi, waktu,
       pelaku, makna, atau hubungan sebuah istilah — atau minta "istilah acak" untuk mulai.
   utter_pamit:
-  - text: Om Santih Santih Santih 🙏 Semoga bermanfaat.
-  - text: Matur suksma 🙏 Semoga membantu. Om Santih Santih Santih.
+  - text: Om Santih Santih Santih, Semoga bermanfaat.
+  - text: Matur suksma, Semoga membantu. Om Santih Santih Santih.
   utter_iamabot:
   - text: Saya bot glosarium istilah Ngaben. Jawaban saya berasal dari basis pengetahuan (knowledge graph) terminologi upacara Ngaben — bukan opini pribadi, dan bisa ada bagian yang belum lengkap.
   utter_out_of_scope:
   - text: Maaf, saya hanya menjawab seputar istilah dalam upacara Ngaben — arti, klasifikasi, jenis, fungsi, bahan, lokasi, waktu, pelaku, makna, hubungan, atau daftar istilah. Coba, misalnya, "apa itu bade".
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

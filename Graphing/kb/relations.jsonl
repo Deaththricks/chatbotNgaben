@@ -19,7 +19,7 @@
   "predicate": "MELAMBANGKAN",
   "object_id": "pelepasan_terakhir_menuju_moksha",
   "object_name": "pelepasan terakhir menuju moksha",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "nganyut melambangkan pelepasan terakhir menuju moksha",
   "raw_relation": "MELAMBANGKAN",
   "provenance": {
@@ -34,7 +34,7 @@
   "predicate": "MENDAPAT_PENGARUH_DARI",
   "object_id": "tradisi_hindu_majapahit",
   "object_name": "tradisi hindu-majapahit",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "bali dataran mendapat pengaruh dari tradisi hindu-majapahit",
   "raw_relation": "MENDAPAT_PENGARUH_DARI",
   "provenance": {
@@ -49,7 +49,7 @@
   "predicate": "TIDAK_MENJAMIN",
   "object_id": "sorga",
   "object_name": "sorga",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "banten tidak menjamin sorga",
   "raw_relation": "TIDAK_MENJAMIN",
   "provenance": {
@@ -124,7 +124,7 @@
   "predicate": "BERANGKAT_KE",
   "object_id": "setra",
   "object_name": "setra",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "jenazah berangkat ke setra",
   "raw_relation": "BERANGKAT_KE",
   "provenance": {
@@ -149,13 +149,13 @@
 }
 
 {
-  "subject_id": "pabasmian",
-  "subject_name": "pabasmian",
+  "subject_id": "upacara_palebon_ngaben",
+  "subject_name": "upacara_palebon_ngaben",
   "predicate": "DIAWALI_DENGAN",
   "object_id": "caru_pengelambuk",
   "object_name": "caru pengelambuk",
-  "confidence": "MED",
-  "nl": "pabasmian diawali dengan caru pengelambuk",
+  "confidence": "HIGH",
+  "nl": "upacara_palebon_ngaben diawali dengan caru pengelambuk",
   "raw_relation": "DIAWALI_DENGAN",
   "provenance": {
     "sentence_id": 217,
@@ -164,13 +164,13 @@
 }
 
 {
-  "subject_id": "pabasmian",
-  "subject_name": "pabasmian",
+  "subject_id": "upacara_palebon_ngaben",
+  "subject_name": "upacara_palebon_ngaben",
   "predicate": "DIAWALI_DENGAN",
   "object_id": "upacara_ngaskara",
   "object_name": "upacara ngaskara",
-  "confidence": "MED",
-  "nl": "pabasmian diawali dengan upacara ngaskara",
+  "confidence": "HIGH",
+  "nl": "upacara_palebon_ngaben diawali dengan upacara ngaskara",
   "raw_relation": "DIAWALI_DENGAN",
   "provenance": {
     "sentence_id": 217,
@@ -214,7 +214,7 @@
   "predicate": "DIADAKAN_DI",
   "object_id": "pura_dalem",
   "object_name": "pura dalem",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "ngerorasin diadakan di pura dalem",
   "raw_relation": "DIADAKAN_DI",
   "provenance": {
@@ -244,7 +244,7 @@
   "predicate": "DIAMBIL_DARI",
   "object_id": "kuburan",
   "object_name": "kuburan",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "tulang belulang diambil dari kuburan",
   "raw_relation": "DIAMBIL_DARI",
   "provenance": {
@@ -299,28 +299,13 @@
 }
 
 {
-  "subject_id": "atiwa_tiwa",
-  "subject_name": "atiwa-tiwa",
-  "predicate": "ADALAH",
-  "object_id": "swasta",
-  "object_name": "swasta",
-  "confidence": "HIGH",
-  "nl": "atiwa-tiwa adalah swasta",
-  "raw_relation": "ADALAH",
-  "provenance": {
-    "sentence_id": 271,
-    "context_sentence": "adapun atiwa-tiwa yang tergolong dalam ngaben svasta adalah raçadana atau tirta yadnya pranawa, yakni sawa diganti dengan simbol tirtha (toyo çarira), sedangkan tata pelaksanaannya sama dengan atiwa-tiwa asti vedana — mulai dari matur piuning ke pura dalem, pembakaran, hingga nganyut, dan dilanjutkan dengan upacara sebagaimana mestinya hingga upacara ngelinggihang dewa hyang."
-  }
-}
-
-{
-  "subject_id": "atiwa_tiwa",
-  "subject_name": "atiwa-tiwa",
+  "subject_id": "ngaben_svasta",
+  "subject_name": "ngaben svasta",
   "predicate": "BAGIAN_DARI",
-  "object_id": "ngaben_svasta",
-  "object_name": "ngaben svasta",
+  "object_id": "atiwa_tiwa",
+  "object_name": "atiwa-tiwa",
   "confidence": "MED",
-  "nl": "atiwa-tiwa adalah bagian dari ngaben svasta",
+  "nl": "ngaben svasta adalah bagian dari atiwa-tiwa",
   "raw_relation": "BAGIAN_DARI",
   "provenance": {
     "sentence_id": 271,
@@ -334,7 +319,7 @@
   "predicate": "SAMA_DENGAN",
   "object_id": "atiwa_tiwa_asti_vedana",
   "object_name": "atiwa-tiwa asti vedana",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "raçadana sama dengan atiwa-tiwa asti vedana",
   "raw_relation": "SAMA_DENGAN",
   "provenance": {
@@ -361,10 +346,25 @@
 {
   "subject_id": "swasta",
   "subject_name": "swasta",
+  "predicate": "ADALAH",
+  "object_id": "atiwa_tiwa",
+  "object_name": "atiwa-tiwa",
+  "confidence": "HIGH",
+  "nl": "swasta adalah atiwa-tiwa",
+  "raw_relation": "ADALAH",
+  "provenance": {
+    "sentence_id": 271,
+    "context_sentence": "adapun atiwa-tiwa yang tergolong dalam ngaben svasta adalah raçadana atau tirta yadnya pranawa, yakni sawa diganti dengan simbol tirtha (toyo çarira), sedangkan tata pelaksanaannya sama dengan atiwa-tiwa asti vedana — mulai dari matur piuning ke pura dalem, pembakaran, hingga nganyut, dan dilanjutkan dengan upacara sebagaimana mestinya hingga upacara ngelinggihang dewa hyang."
+  }
+}
+
+{
+  "subject_id": "swasta",
+  "subject_name": "swasta",
   "predicate": "SAMA_DENGAN",
   "object_id": "atiwa_tiwa_asti_vedana",
   "object_name": "atiwa-tiwa asti vedana",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "swasta sama dengan atiwa-tiwa asti vedana",
   "raw_relation": "SAMA_DENGAN",
   "provenance": {
@@ -394,7 +394,7 @@
   "predicate": "BERUPA",
   "object_id": "angkeb_baga_purus",
   "object_name": "angkeb baga/purus",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "eteh-eteh berupa angkeb baga/purus",
   "raw_relation": "BERUPA",
   "provenance": {
@@ -409,7 +409,7 @@
   "predicate": "BERUPA",
   "object_id": "angkeb_rai",
   "object_name": "angkeb rai",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "eteh-eteh berupa angkeb rai",
   "raw_relation": "BERUPA",
   "provenance": {
@@ -424,7 +424,7 @@
   "predicate": "BERUPA",
   "object_id": "kain_putih_untuk_saput",
   "object_name": "kain putih untuk saput",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "eteh-eteh berupa kain putih untuk saput",
   "raw_relation": "BERUPA",
   "provenance": {
@@ -439,7 +439,7 @@
   "predicate": "BERUPA",
   "object_id": "kawangen",
   "object_name": "kawangen",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "eteh-eteh berupa kawangen",
   "raw_relation": "BERUPA",
   "provenance": {
@@ -454,7 +454,7 @@
   "predicate": "BERUPA",
   "object_id": "leluwur",
   "object_name": "leluwur",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "eteh-eteh berupa leluwur",
   "raw_relation": "BERUPA",
   "provenance": {
@@ -469,7 +469,7 @@
   "predicate": "BERUPA",
   "object_id": "samsam",
   "object_name": "samsam",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "eteh-eteh berupa samsam",
   "raw_relation": "BERUPA",
   "provenance": {
@@ -484,7 +484,7 @@
   "predicate": "BERUPA",
   "object_id": "udeng",
   "object_name": "udeng",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "eteh-eteh berupa udeng",
   "raw_relation": "BERUPA",
   "provenance": {
@@ -499,7 +499,7 @@
   "predicate": "DIMOHONKAN_DARI",
   "object_id": "sulinggih_griya",
   "object_name": "sulinggih/griya",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "eteh-eteh dimohonkan dari sulinggih/griya",
   "raw_relation": "DIMOHONKAN_DARI",
   "provenance": {
@@ -529,7 +529,7 @@
   "predicate": "BERUPA",
   "object_id": "kain_putih",
   "object_name": "kain putih",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "leluwur berupa kain putih",
   "raw_relation": "BERUPA",
   "provenance": {
@@ -559,7 +559,7 @@
   "predicate": "DILAKUKAN_SEBELUM",
   "object_id": "jenazah_diusung_ke_tempat_pemandian",
   "object_name": "jenazah diusung ke tempat pemandian",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "nanginin dilakukan sebelum jenazah diusung ke tempat pemandian",
   "raw_relation": "DILAKUKAN_SEBELUM",
   "provenance": {
@@ -634,7 +634,7 @@
   "predicate": "DIBASMI_OLEH",
   "object_id": "sang_hyang_birawi",
   "object_name": "sang hyang birawi",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "jenazah dibasmi oleh sang hyang birawi",
   "raw_relation": "DIBASMI_OLEH",
   "provenance": {
@@ -664,7 +664,7 @@
   "predicate": "ADALAH",
   "object_id": "sasih_utama_untuk_pitra_yadnya",
   "object_name": "sasih utama untuk pitra yadnya",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "sasih karo adalah sasih utama untuk pitra yadnya",
   "raw_relation": "ADALAH",
   "provenance": {
@@ -679,7 +679,7 @@
   "predicate": "DIKENAL_SEBAGAI",
   "object_id": "dewasa_madya",
   "object_name": "dewasa madya",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "sasih kaenem dikenal sebagai dewasa madya",
   "raw_relation": "DIKENAL_SEBAGAI",
   "provenance": {
@@ -694,7 +694,7 @@
   "predicate": "DIKENAL_SEBAGAI",
   "object_id": "dewasa_madya",
   "object_name": "dewasa madya",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "sasih kapitu dikenal sebagai dewasa madya",
   "raw_relation": "DIKENAL_SEBAGAI",
   "provenance": {
@@ -814,7 +814,7 @@
   "predicate": "DIHANCURKAN_DI",
   "object_id": "sesenden",
   "object_name": "sesenden",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "puspa asti dihancurkan di sesenden",
   "raw_relation": "DIHANCURKAN_DI",
   "provenance": {
@@ -829,7 +829,7 @@
   "predicate": "DIPIMPIN_OLEH",
   "object_id": "sulinggih",
   "object_name": "sulinggih",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "persembahyangan dipimpin oleh sulinggih",
   "raw_relation": "DIPIMPIN_OLEH",
   "provenance": {
@@ -889,7 +889,7 @@
   "predicate": "ADALAH",
   "object_id": "yadnya",
   "object_name": "yadnya",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "dua kata adalah yadnya",
   "raw_relation": "ADALAH",
   "provenance": {
@@ -902,14 +902,29 @@
   "subject_id": "pitra_yadnya",
   "subject_name": "pitra yadnya",
   "predicate": "MENGGUNAKAN",
-  "object_id": "pelbagai_sajen_dan_alat_alat_upakara",
-  "object_name": "pelbagai sajen dan alat-alat upakara",
-  "confidence": "LOW",
-  "nl": "pitra yadnya menggunakan pelbagai sajen dan alat-alat upakara",
+  "object_id": "berbagai_sajen_dan_alat_alat_upakara",
+  "object_name": "berbagai sajen dan alat-alat upakara",
+  "confidence": "HIGH",
+  "nl": "pitra yadnya menggunakan berbagai sajen dan alat-alat upakara",
   "raw_relation": "MENGGUNAKAN",
   "provenance": {
     "sentence_id": 797,
-    "context_sentence": "sebagai istilah, pitra yadnya memiliki arti tersendiri, yakni upacara keagamaan yang diadakan untuk menyelenggarakan atau nyangaskara jenazah atau roh keluarga yang meninggal dengan pelbagai sajen dan alat-alat upakara sebagai sarananya."
+    "context_sentence": "sebagai istilah, pitra yadnya memiliki arti tersendiri, yakni upacara keagamaan yang diadakan untuk menyelenggarakan atau nyangaskara jenazah atau roh keluarga yang meninggal dengan berbagai sajen dan alat-alat upakara sebagai sarananya."
+  }
+}
+
+{
+  "subject_id": "manusia",
+  "subject_name": "manusia",
+  "predicate": "DINILAI_SEBAGAI",
+  "object_id": "pihak_berhutang",
+  "object_name": "pihak berhutang",
+  "confidence": "HIGH",
+  "nl": "manusia dinilai sebagai pihak berhutang",
+  "raw_relation": "DINILAI_SEBAGAI",
+  "provenance": {
+    "sentence_id": 851,
+    "context_sentence": "jelasnya, semasih pancamahabutha berwujud tubuh manusia termasuk setelah meninggal selaku sawa (jenazah), manusia \"pemakai\" lima unsur zat itu dinilai selaku pihak berhutang."
   }
 }
 
@@ -934,7 +949,7 @@
   "predicate": "DIBUNGKUS_DENGAN",
   "object_id": "kain_putih",
   "object_name": "kain putih",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "jenazah bayi dibungkus dengan kain putih",
   "raw_relation": "DIBUNGKUS_DENGAN",
   "provenance": {
@@ -949,9 +964,24 @@
   "predicate": "ADALAH",
   "object_id": "balai_balai_khusus_pemandian_jenazah",
   "object_name": "balai-balai khusus pemandian jenazah",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "pepaga adalah balai-balai khusus pemandian jenazah",
   "raw_relation": "ADALAH",
+  "provenance": {
+    "sentence_id": 957,
+    "context_sentence": "pertama-tama jenazah bayi tersebut dimandikan dengan air biasa di atas dusa (balai-balai khusus pemandian jenazah) di natar rumah."
+  }
+}
+
+{
+  "subject_id": "jenazah_bayi",
+  "subject_name": "jenazah bayi",
+  "predicate": "DIMANDIKAN_DI_ATAS",
+  "object_id": "pepaga",
+  "object_name": "pepaga",
+  "confidence": "HIGH",
+  "nl": "jenazah bayi dimandikan di atas pepaga",
+  "raw_relation": "DIMANDIKAN_DI_ATAS",
   "provenance": {
     "sentence_id": 957,
     "context_sentence": "pertama-tama jenazah bayi tersebut dimandikan dengan air biasa di atas dusa (balai-balai khusus pemandian jenazah) di natar rumah."
@@ -1039,7 +1069,7 @@
   "predicate": "DISUGUHKAN",
   "object_id": "sesaji_sederhana",
   "object_name": "sesaji sederhana",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "abu disuguhkan sesaji sederhana",
   "raw_relation": "DISUGUHKAN",
   "provenance": {
@@ -1054,7 +1084,7 @@
   "predicate": "DIPERCIKKAN_SEBELUM",
   "object_id": "tirta_pangentas",
   "object_name": "tirta pangentas",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "tirtha dari pamrajan/kahyangan tiga/prajapati dipercikkan sebelum tirta pangentas",
   "raw_relation": "DIPERCIKKAN_SEBELUM",
   "provenance": {
@@ -1069,7 +1099,7 @@
   "predicate": "BERTUJUAN_UNTUK",
   "object_id": "memusnahkan_segenap_jasad_sawa_sehalus_halusnya",
   "object_name": "memusnahkan segenap jasad sawa sehalus-halusnya",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "ngaben bertujuan untuk memusnahkan segenap jasad sawa sehalus-halusnya",
   "raw_relation": "BERTUJUAN_UNTUK",
   "provenance": {
@@ -1084,7 +1114,7 @@
   "predicate": "BERUBAH_MENJADI",
   "object_id": "unsur_elemen_atau_mahabutha",
   "object_name": "unsur, elemen atau mahabutha",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "sawa berubah menjadi unsur, elemen atau mahabutha",
   "raw_relation": "BERUBAH_MENJADI",
   "provenance": {
@@ -1159,7 +1189,7 @@
   "predicate": "DIKENAL_SEBAGAI",
   "object_id": "leluhur_langit_langit_tandu",
   "object_name": "leluhur langit-langit tandu",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "kain putih dikenal sebagai leluhur langit-langit tandu",
   "raw_relation": "DISEBUT",
   "provenance": {
@@ -1174,7 +1204,7 @@
   "predicate": "DIPASANG_DI_ATAS",
   "object_id": "pepaga",
   "object_name": "pepaga",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "kain putih dipasang di atas pepaga",
   "raw_relation": "DIPASANG_DI_ATAS",
   "provenance": {
@@ -1189,7 +1219,7 @@
   "predicate": "DIPINDAHKAN_KE",
   "object_id": "pepaga",
   "object_name": "pepaga",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "jenazah dipindahkan ke pepaga",
   "raw_relation": "DIPINDAHKAN_KE",
   "provenance": {
@@ -1204,27 +1234,12 @@
   "predicate": "DIBUKA",
   "object_id": "setelah_jenazah_dipindahkan_ke_pepaga",
   "object_name": "setelah jenazah dipindahkan ke pepaga",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "kain penutup dibuka setelah jenazah dipindahkan ke pepaga",
   "raw_relation": "DIBUKA",
   "provenance": {
     "sentence_id": 1060,
     "context_sentence": "setelah jenazah dipindahkan dari rumah adat ke pepaga, kain penutup dibuka."
-  }
-}
-
-{
-  "subject_id": "jenazah",
-  "subject_name": "jenazah",
-  "predicate": "DIBERI",
-  "object_id": "berbagai_sarana_simbolik_pangringkesan",
-  "object_name": "berbagai sarana simbolik pangringkesan",
-  "confidence": "MED",
-  "nl": "jenazah diberi berbagai sarana simbolik pangringkesan",
-  "raw_relation": "DIBERI",
-  "provenance": {
-    "sentence_id": 1066,
-    "context_sentence": "jenazah ditelentangkan di atas pembungkus itu, serta mulailah diberi berbagai sarana simbolik pangringkesan, antara lain sesisir pisang selaku kalang bahu."
   }
 }
 
@@ -1304,27 +1319,12 @@
 }
 
 {
-  "subject_id": "damar_kurung",
-  "subject_name": "damar kurung",
-  "predicate": "ADALAH",
-  "object_id": "sarana_permohonan_kepada_sanghyang_agni",
-  "object_name": "sarana permohonan kepada sanghyang agni",
-  "confidence": "MED",
-  "nl": "damar kurung adalah sarana permohonan kepada sanghyang agni",
-  "raw_relation": "ADALAH",
-  "provenance": {
-    "sentence_id": 1136,
-    "context_sentence": "damar kurung itu merupakan sarana permohonan kepada sanghyang agni, agar keletehan yang dipancarkan sawa mendiang diblokir terbatas, yakni hanya sebatas tanah pekarangan keluarga mendiang saja."
-  }
-}
-
-{
   "subject_id": "sawa_dititip",
   "subject_name": "sawa dititip",
   "predicate": "MENUNGGU",
   "object_id": "rezeki_untuk_menggelar_ngaben",
   "object_name": "rezeki untuk menggelar ngaben",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "sawa dititip menunggu rezeki untuk menggelar ngaben",
   "raw_relation": "MENUNGGU",
   "provenance": {
@@ -1369,7 +1369,7 @@
   "predicate": "MENGGUNAKAN",
   "object_id": "tirtha_pabersihan",
   "object_name": "tirtha pabersihan",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "upacara ngaben titip menggunakan tirtha pabersihan",
   "raw_relation": "MEMPERGUNAKAN",
   "provenance": {
@@ -1384,7 +1384,7 @@
   "predicate": "MENGGUNAKAN",
   "object_id": "tirta_panglukatan",
   "object_name": "tirta panglukatan",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "upacara ngaben titip menggunakan tirta panglukatan",
   "raw_relation": "MEMPERGUNAKAN",
   "provenance": {
@@ -1426,6 +1426,21 @@
 {
   "subject_id": "sawa",
   "subject_name": "sawa",
+  "predicate": "DILETAKKAN_DI",
+  "object_id": "para_para_tempat_pembakaran",
+  "object_name": "para-para tempat pembakaran",
+  "confidence": "HIGH",
+  "nl": "sawa diletakkan di para-para tempat pembakaran",
+  "raw_relation": "DILETAKKAN_DI",
+  "provenance": {
+    "sentence_id": 1215,
+    "context_sentence": "setelah tiba di setra, sawa diletakkan di atas lubang tempat penguburan atau di atas para-para tempat pembakarannya nanti."
+  }
+}
+
+{
+  "subject_id": "sawa",
+  "subject_name": "sawa",
   "predicate": "DISIRAM_DENGAN",
   "object_id": "yeh_panembak",
   "object_name": "yeh panembak",
@@ -1444,7 +1459,7 @@
   "predicate": "DITANAM_ATAU_DIBAKAR_BERSAMA",
   "object_id": "semua_alat_pangringkesan",
   "object_name": "semua alat pangringkesan",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "sawa ditanam atau dibakar bersama semua alat pangringkesan",
   "raw_relation": "DITANAM_ATAU_DIBAKAR_BERSAMA",
   "provenance": {
@@ -1594,7 +1609,7 @@
   "predicate": "DIBAWA_KE",
   "object_id": "setra",
   "object_name": "setra",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "semua sarana dibawa ke setra",
   "raw_relation": "DIBAWA_KE",
   "provenance": {
@@ -1609,7 +1624,7 @@
   "predicate": "DIPERCIKI_DENGAN",
   "object_id": "berbagai_jenis_tirtha",
   "object_name": "berbagai jenis tirtha",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "sawa diperciki dengan berbagai jenis tirtha",
   "raw_relation": "DIPERCIKI_DENGAN",
   "provenance": {
@@ -1654,7 +1669,7 @@
   "predicate": "DISUCIKAN_DENGAN",
   "object_id": "tirta_panglukatan",
   "object_name": "tirta panglukatan",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "banten disucikan dengan tirta panglukatan",
   "raw_relation": "DISUCIKAN_DENGAN",
   "provenance": {
@@ -1684,7 +1699,7 @@
   "predicate": "MELIPUTI",
   "object_id": "diuskamaligi",
   "object_name": "diuskamaligi",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "sesajen meliputi diuskamaligi",
   "raw_relation": "MELIPUTI",
   "provenance": {
@@ -1699,7 +1714,7 @@
   "predicate": "MELIPUTI",
   "object_id": "nasi_angkeb",
   "object_name": "nasi angkeb",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "sesajen meliputi nasi angkeb",
   "raw_relation": "MELIPUTI",
   "provenance": {
@@ -1714,7 +1729,7 @@
   "predicate": "DIPERSATUKAN_DENGAN",
   "object_id": "isi_pengawak",
   "object_name": "isi pengawak",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "tirtha pangentas dan isinya dipersatukan dengan isi pengawak",
   "raw_relation": "DIPERSATUKAN_DENGAN",
   "provenance": {
@@ -1729,7 +1744,7 @@
   "predicate": "MENJADI",
   "object_id": "abu",
   "object_name": "abu",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "sawa menjadi abu",
   "raw_relation": "MENJADI",
   "provenance": {
@@ -1759,7 +1774,7 @@
   "predicate": "BERPAMITAN_KEPADA",
   "object_id": "hyang_prajapati",
   "object_name": "hyang prajapati",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "mendiang berpamitan kepada hyang prajapati",
   "raw_relation": "BERPAMITAN_KEPADA",
   "provenance": {
@@ -1774,7 +1789,7 @@
   "predicate": "BERPAMITAN_KEPADA",
   "object_id": "pura_dalem",
   "object_name": "pura dalem",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "mendiang berpamitan kepada pura dalem",
   "raw_relation": "BERPAMITAN_KEPADA",
   "provenance": {
@@ -1789,7 +1804,7 @@
   "predicate": "BERPAMITAN_KEPADA",
   "object_id": "sedahan_setra",
   "object_name": "sedahan setra",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "mendiang berpamitan kepada sedahan setra",
   "raw_relation": "BERPAMITAN_KEPADA",
   "provenance": {
@@ -1804,7 +1819,7 @@
   "predicate": "MELAKUKAN",
   "object_id": "muspa_pamitan",
   "object_name": "muspa pamitan",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "mendiang melakukan muspa pamitan",
   "raw_relation": "MELAKUKAN",
   "provenance": {
@@ -1819,7 +1834,7 @@
   "predicate": "SAMA_DENGAN",
   "object_id": "sawa_asli",
   "object_name": "sawa asli",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "pengawak sama dengan sawa asli",
   "raw_relation": "DIPERLAKUKAN_SAMA_DENGAN",
   "provenance": {
@@ -1834,7 +1849,7 @@
   "predicate": "DIBARINGKAN_DI",
   "object_id": "tumpang_salu",
   "object_name": "tumpang salu",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "sawa dibaringkan di tumpang salu",
   "raw_relation": "DIBARINGKAN_DI",
   "provenance": {
@@ -1849,7 +1864,7 @@
   "predicate": "DIKURUNG_DENGAN",
   "object_id": "paplengkungan",
   "object_name": "paplengkungan",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "sawa dikurung dengan paplengkungan",
   "raw_relation": "DIKURUNG_DENGAN",
   "provenance": {
@@ -1864,7 +1879,7 @@
   "predicate": "DILAKUKAN_OLEH",
   "object_id": "ida_sang_sadaka",
   "object_name": "ida sang sadaka",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "tarpana dilakukan oleh ida sang sadaka",
   "raw_relation": "DILAKUKAN_OLEH",
   "provenance": {
@@ -1909,7 +1924,7 @@
   "predicate": "BERADA_DI",
   "object_id": "plengkungan_sawa",
   "object_name": "plengkungan sawa",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "kajang berada di plengkungan sawa",
   "raw_relation": "BERADA_DI",
   "provenance": {
@@ -1939,7 +1954,7 @@
   "predicate": "ADALAH",
   "object_id": "kain_putih_panjangnya_puluhan_meter",
   "object_name": "kain putih panjangnya puluhan meter",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "lancingan adalah kain putih panjangnya puluhan meter",
   "raw_relation": "ADALAH",
   "provenance": {
@@ -1954,7 +1969,7 @@
   "predicate": "DIBAWA_KE",
   "object_id": "setra_tempat_pembakaran",
   "object_name": "setra tempat pembakaran",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "jenazah dibawa ke setra tempat pembakaran",
   "raw_relation": "DIBAWA_KE",
   "provenance": {
@@ -1969,7 +1984,7 @@
   "predicate": "DIJUNJUNG_OLEH",
   "object_id": "segenap_keturunan_mendiang",
   "object_name": "segenap keturunan mendiang",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "lancingan kajang dijunjung oleh segenap keturunan mendiang",
   "raw_relation": "DIJUNJUNG_OLEH",
   "provenance": {
@@ -2074,7 +2089,7 @@
   "predicate": "BERADA_DI",
   "object_id": "ruang_paturon_di_samping_jenazah",
   "object_name": "ruang paturon di samping jenazah",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "adegan berada di ruang paturon di samping jenazah",
   "raw_relation": "BERADA_DI",
   "provenance": {
@@ -2149,7 +2164,7 @@
   "predicate": "MERUPAKAN_PERUBAHAN_DARI",
   "object_id": "pitra",
   "object_name": "pitra",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "mamutru merupakan perubahan dari pitra",
   "raw_relation": "MERUPAKAN_PERUBAHAN_DARI",
   "provenance": {
@@ -2164,7 +2179,7 @@
   "predicate": "MEMILIKI_JENIS",
   "object_id": "putru_saji",
   "object_name": "putru saji",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "lontar putru memiliki jenis putru saji",
   "raw_relation": "MEMILIKI_JENIS",
   "provenance": {
@@ -2179,7 +2194,7 @@
   "predicate": "MEMILIKI_JENIS",
   "object_id": "putru_sangaskara",
   "object_name": "putru sangaskara",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "lontar putru memiliki jenis putru sangaskara",
   "raw_relation": "MEMILIKI_JENIS",
   "provenance": {
@@ -2207,10 +2222,10 @@
   "subject_id": "yeh_panembak",
   "subject_name": "yeh panembak",
   "predicate": "DIGUNAKAN_PADA",
-  "object_id": "pangabenan",
-  "object_name": "pangabenan",
-  "confidence": "MED",
-  "nl": "yeh panembak digunakan pada pangabenan",
+  "object_id": "ngaben",
+  "object_name": "ngaben",
+  "confidence": "HIGH",
+  "nl": "yeh panembak digunakan pada ngaben",
   "raw_relation": "DIGUNAKAN_PADA",
   "provenance": {
     "sentence_id": 1898,
@@ -2237,10 +2252,10 @@
   "subject_id": "recadana_atau_swasta_geni",
   "subject_name": "recadana atau swasta geni",
   "predicate": "MELENGKAPI",
-  "object_id": "pangabenan",
-  "object_name": "pangabenan",
-  "confidence": "MED",
-  "nl": "recadana atau swasta geni melengkapi pangabenan",
+  "object_id": "ngaben",
+  "object_name": "ngaben",
+  "confidence": "HIGH",
+  "nl": "recadana atau swasta geni melengkapi ngaben",
   "raw_relation": "MELENGKAPI",
   "provenance": {
     "sentence_id": 1931,
@@ -2254,7 +2269,7 @@
   "predicate": "DILETAKKAN_PADA",
   "object_id": "banten_teben",
   "object_name": "banten teben",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "pering diletakkan pada banten teben",
   "raw_relation": "DILETAKKAN_PADA",
   "provenance": {
@@ -2269,8 +2284,23 @@
   "predicate": "DILETAKKAN_PADA",
   "object_id": "pamerasan",
   "object_name": "pamerasan",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "pering diletakkan pada pamerasan",
+  "raw_relation": "DILETAKKAN_PADA",
+  "provenance": {
+    "sentence_id": 1963,
+    "context_sentence": "pering dibuat berpasang-pasangan sebagai perlambang purusa-pradana dan diletakkan selaku penambah bobot, nilai dan asri bagaikan mahkotanya pada sajen untuk surya, penebusan, pamerasan, banten teben dan sebagainya."
+  }
+}
+
+{
+  "subject_id": "pering",
+  "subject_name": "pering",
+  "predicate": "DILETAKKAN_PADA",
+  "object_id": "penebusan",
+  "object_name": "penebusan",
+  "confidence": "HIGH",
+  "nl": "pering diletakkan pada penebusan",
   "raw_relation": "DILETAKKAN_PADA",
   "provenance": {
     "sentence_id": 1963,
@@ -2284,7 +2314,7 @@
   "predicate": "DILETAKKAN_PADA",
   "object_id": "sajen_untuk_surya",
   "object_name": "sajen untuk surya",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "pering diletakkan pada sajen untuk surya",
   "raw_relation": "DILETAKKAN_PADA",
   "provenance": {
@@ -2299,27 +2329,12 @@
   "predicate": "MELAMBANGKAN",
   "object_id": "purusa_pradana",
   "object_name": "purusa-pradana",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "pering melambangkan purusa-pradana",
   "raw_relation": "MELAMBANGKAN",
   "provenance": {
     "sentence_id": 1963,
     "context_sentence": "pering dibuat berpasang-pasangan sebagai perlambang purusa-pradana dan diletakkan selaku penambah bobot, nilai dan asri bagaikan mahkotanya pada sajen untuk surya, penebusan, pamerasan, banten teben dan sebagainya."
-  }
-}
-
-{
-  "subject_id": "bade",
-  "subject_name": "bade",
-  "predicate": "ADALAH",
-  "object_id": "bangunan_untuk_sawa",
-  "object_name": "bangunan untuk sawa",
-  "confidence": "MED",
-  "nl": "bade adalah bangunan untuk sawa",
-  "raw_relation": "ADALAH",
-  "provenance": {
-    "sentence_id": 1982,
-    "context_sentence": "bade adalah bangunan untuk sawa."
   }
 }
 
@@ -2344,7 +2359,7 @@
   "predicate": "DIGANTUNGKAN_DI",
   "object_id": "masing_masing_tingkatan_bade_atau_wadah",
   "object_name": "masing-masing tingkatan bade atau wadah",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "mangle digantungkan di masing-masing tingkatan bade atau wadah",
   "raw_relation": "DIGANTUNGKAN_DI",
   "provenance": {
@@ -2389,7 +2404,7 @@
   "predicate": "BERGANTUNG_PADA",
   "object_id": "tingkatan_bade_atau_wadah",
   "object_name": "tingkatan bade atau wadah",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "mangle bergantung pada tingkatan bade atau wadah",
   "raw_relation": "BERGANTUNG_PADA",
   "provenance": {
@@ -2404,7 +2419,7 @@
   "predicate": "ADALAH",
   "object_id": "pengganti_tingkat_bade_atau_wadah",
   "object_name": "pengganti tingkat bade atau wadah",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "mangle adalah pengganti tingkat bade atau wadah",
   "raw_relation": "ADALAH",
   "provenance": {
@@ -2419,7 +2434,7 @@
   "predicate": "DITURUNKAN_DI",
   "object_id": "kuburan",
   "object_name": "kuburan",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "jenazah diturunkan di kuburan",
   "raw_relation": "DITURUNKAN_DI",
   "provenance": {
@@ -2479,7 +2494,7 @@
   "predicate": "DIGUNAKAN_DALAM",
   "object_id": "upacara_palebon_ngaben",
   "object_name": "upacara palebon ngaben",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "naga banda digunakan dalam upacara palebon ngaben",
   "raw_relation": "DIGUNAKAN_DALAM",
   "provenance": {
@@ -2494,7 +2509,7 @@
   "predicate": "MEMAKAI",
   "object_id": "naga_banda_pada_palebonnya",
   "object_name": "naga banda pada palebonnya",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "peranda buddha memakai naga banda pada palebonnya",
   "raw_relation": "MEMAKAI",
   "provenance": {
@@ -2509,7 +2524,7 @@
   "predicate": "BERDAMPINGAN_DENGAN",
   "object_id": "jenazah",
   "object_name": "jenazah",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "naga banda berdampingan dengan jenazah",
   "raw_relation": "BERDAMPINGAN_DENGAN",
   "provenance": {
@@ -2554,7 +2569,7 @@
   "predicate": "TERTANAM_TITIP_DI",
   "object_id": "setra",
   "object_name": "setra",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "jenazah tertanam titip di setra",
   "raw_relation": "TERTANAM_TITIP_DI",
   "provenance": {
@@ -2584,7 +2599,7 @@
   "predicate": "MEMOHON",
   "object_id": "tirtha",
   "object_name": "tirtha",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "sang cucu memohon tirtha",
   "raw_relation": "MEMOHON",
   "provenance": {
@@ -2609,27 +2624,12 @@
 }
 
 {
-  "subject_id": "kajang",
-  "subject_name": "kajang",
-  "predicate": "MELAMBANGKAN",
-  "object_id": "tanda_hormat_bakti_kepada_mendiang",
-  "object_name": "tanda hormat bakti kepada mendiang",
-  "confidence": "MED",
-  "nl": "kajang melambangkan tanda hormat bakti kepada mendiang",
-  "raw_relation": "MELAMBANGKAN",
-  "provenance": {
-    "sentence_id": 2336,
-    "context_sentence": "kajang yang hanya beberapa asta panjangnya, diberilah sambungan (\"lancingan\") kain putih dua atau 30 meter lagi, hingga puluhan anggota keluarga dapat berbaris menjunjungnya keluar dari rumah menuju tempat bade, selaku tanda hormat baktinya kepada mendiang."
-  }
-}
-
-{
   "subject_id": "sambungan",
   "subject_name": "sambungan",
   "predicate": "ADALAH",
   "object_id": "lancingan",
   "object_name": "lancingan",
-  "confidence": "MED",
+  "confidence": "LOW",
   "nl": "sambungan adalah lancingan",
   "raw_relation": "ADALAH",
   "provenance": {
@@ -2669,6 +2669,21 @@
 }
 
 {
+  "subject_id": "bale_pamuunan",
+  "subject_name": "bale pamuunan",
+  "predicate": "DIHUNI",
+  "object_id": "lembu",
+  "object_name": "lembu",
+  "confidence": "HIGH",
+  "nl": "bale pamuunan dihuni lembu",
+  "raw_relation": "DIHUNI",
+  "provenance": {
+    "sentence_id": 2363,
+    "context_sentence": "bale pamuunan yang telah dihuni lembu, dikelilingi pula sebanyak tiga kali oleh bade dengan jenazahnya."
+  }
+}
+
+{
   "subject_id": "bade",
   "subject_name": "bade",
   "predicate": "BERPUTAR_DENGAN",
@@ -2689,7 +2704,7 @@
   "predicate": "BERSEMAYAM_DI",
   "object_id": "pura_dan_pamrajan_panyiwiannya",
   "object_name": "pura dan pamrajan panyiwiannya",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "bhatara-bhatari bersemayam di pura dan pamrajan panyiwiannya",
   "raw_relation": "BERSEMAYAM_DI",
   "provenance": {
@@ -2704,7 +2719,7 @@
   "predicate": "MENGHATURKAN",
   "object_id": "sembah_bakti_pamitan_kepada_bhatara_bhatari",
   "object_name": "sembah bakti pamitan kepada bhatara-bhatari",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "puspa asti menghaturkan sembah bakti pamitan kepada bhatara-bhatari",
   "raw_relation": "MENGHATURKAN",
   "provenance": {
@@ -2749,7 +2764,7 @@
   "predicate": "BERTUJUAN_MENYUCIKAN",
   "object_id": "badan_halus_mendiang",
   "object_name": "badan halus mendiang",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "sawa wedana bertujuan menyucikan badan halus mendiang",
   "raw_relation": "BERTUJUAN_MENYUCIKAN",
   "provenance": {
@@ -2764,7 +2779,7 @@
   "predicate": "BERBEDA_DENGAN",
   "object_id": "ngaben_dalam_hal_sifat_sebel",
   "object_name": "ngaben dalam hal sifat sebel",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "ngerorasin berbeda dengan ngaben dalam hal sifat sebel",
   "raw_relation": "BERBEDA_DENGAN",
   "provenance": {
@@ -2779,7 +2794,7 @@
   "predicate": "ADALAH",
   "object_id": "nama_resmi_upacara_penyucian_pitra",
   "object_name": "nama resmi upacara penyucian pitra",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "ngerorasin adalah nama resmi upacara penyucian pitra",
   "raw_relation": "ADALAH",
   "provenance": {
@@ -2794,7 +2809,7 @@
   "predicate": "DIKENAL_SEBAGAI",
   "object_id": "sekah_kangsen",
   "object_name": "sekah kangsen",
-  "confidence": "MED",
+  "confidence": "LOW",
   "nl": "perlambang dikenal sebagai sekah kangsen",
   "raw_relation": "DIKENAL_SEBAGAI",
   "provenance": {
@@ -2839,7 +2854,7 @@
   "predicate": "DIPERSILAKAN_MASUK_KE",
   "object_id": "sekah_kangsen",
   "object_name": "sekah kangsen",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "pitra dipersilakan masuk ke sekah kangsen",
   "raw_relation": "DIPERSILAKAN_MASUK_KE",
   "provenance": {
@@ -2854,7 +2869,7 @@
   "predicate": "MENERIMA",
   "object_id": "sembah_bhakti_serta_ayaban_sajen",
   "object_name": "sembah bhakti serta ayaban sajen",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "pitra menerima sembah bhakti serta ayaban sajen",
   "raw_relation": "MENERIMA",
   "provenance": {
@@ -2944,7 +2959,7 @@
   "predicate": "LAHIR_DALAM_WUJUD",
   "object_id": "sekah",
   "object_name": "sekah",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "mendiang lahir dalam wujud sekah",
   "raw_relation": "LAHIR_DALAM_WUJUD",
   "provenance": {
@@ -2989,24 +3004,9 @@
   "predicate": "DIPERSILAKAN_UNTUK",
   "object_id": "utpeti",
   "object_name": "utpeti",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "bhatara dipersilakan untuk utpeti",
   "raw_relation": "DIPERSILAKAN_UNTUK",
-  "provenance": {
-    "sentence_id": 2777,
-    "context_sentence": "dalam hal ini bhatara yang dimohon selaku \"lingga\" (demikian namanya) dipendak (disongsong) secara khusus, serta dipersilakan untuk utpeti (masuk dan menghuni) pada puspalingga (sejenis sangge) selaku badan suksmanya."
-  }
-}
-
-{
-  "subject_id": "puspa_lingga",
-  "subject_name": "puspa lingga",
-  "predicate": "ADALAH",
-  "object_id": "sejenis_sangge",
-  "object_name": "sejenis sangge",
-  "confidence": "MED",
-  "nl": "puspa lingga adalah sejenis sangge",
-  "raw_relation": "ADALAH",
   "provenance": {
     "sentence_id": 2777,
     "context_sentence": "dalam hal ini bhatara yang dimohon selaku \"lingga\" (demikian namanya) dipendak (disongsong) secara khusus, serta dipersilakan untuk utpeti (masuk dan menghuni) pada puspalingga (sejenis sangge) selaku badan suksmanya."
@@ -3019,7 +3019,7 @@
   "predicate": "BERPERAN_SEBAGAI",
   "object_id": "badan_suksma_bhatara",
   "object_name": "badan suksma bhatara",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "puspa lingga berperan sebagai badan suksma bhatara",
   "raw_relation": "BERPERAN_SEBAGAI",
   "provenance": {
@@ -3064,7 +3064,7 @@
   "predicate": "ADALAH",
   "object_id": "tempat_ngajum_serta_mengutpeti_sekah",
   "object_name": "tempat ngajum serta mengutpeti sekah",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "pawedan adalah tempat ngajum serta mengutpeti sekah",
   "raw_relation": "JUGA_ADALAH",
   "provenance": {
@@ -3079,7 +3079,7 @@
   "predicate": "ADALAH",
   "object_id": "tempat_sang_sulinggih_dalam_memuja",
   "object_name": "tempat sang sulinggih dalam memuja",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "pawedan adalah tempat sang sulinggih dalam memuja",
   "raw_relation": "ADALAH",
   "provenance": {
@@ -3094,24 +3094,9 @@
   "predicate": "ADALAH",
   "object_id": "shiwa_dewa_loka",
   "object_name": "shiwa (dewa) loka",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "pawedan tempat memuja adalah shiwa (dewa) loka",
   "raw_relation": "MERUPAKAN",
-  "provenance": {
-    "sentence_id": 2810,
-    "context_sentence": "mengingat hyang shiwa atau hyang adi buddha meresap ke dalam diri sang pendeta, maka pawedan tempatnya memuja, bukanlah sekadar bernilai \"madyapada\" saja, melainkan secara religius merupakan pula \"shiwa (dewa) loka.\""
-  }
-}
-
-{
-  "subject_id": "shiwa",
-  "subject_name": "shiwa",
-  "predicate": "ADALAH",
-  "object_id": "dewa_loka",
-  "object_name": "dewa loka",
-  "confidence": "MED",
-  "nl": "shiwa adalah dewa loka",
-  "raw_relation": "ADALAH",
   "provenance": {
     "sentence_id": 2810,
     "context_sentence": "mengingat hyang shiwa atau hyang adi buddha meresap ke dalam diri sang pendeta, maka pawedan tempatnya memuja, bukanlah sekadar bernilai \"madyapada\" saja, melainkan secara religius merupakan pula \"shiwa (dewa) loka.\""
@@ -3169,24 +3154,9 @@
   "predicate": "DIGILING_DI_ATAS",
   "object_id": "sesenden",
   "object_name": "sesenden",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "abu digiling di atas sesenden",
   "raw_relation": "DIGILING_DI_ATAS",
-  "provenance": {
-    "sentence_id": 2947,
-    "context_sentence": "kemudian abu itu diuyeg (digiling) selumat-lumatnya di atas sesenden (dulang tanah)."
-  }
-}
-
-{
-  "subject_id": "sesenden",
-  "subject_name": "sesenden",
-  "predicate": "ADALAH",
-  "object_id": "dulang",
-  "object_name": "dulang",
-  "confidence": "HIGH",
-  "nl": "sesenden adalah dulang",
-  "raw_relation": "ADALAH",
   "provenance": {
     "sentence_id": 2947,
     "context_sentence": "kemudian abu itu diuyeg (digiling) selumat-lumatnya di atas sesenden (dulang tanah)."
@@ -3269,12 +3239,27 @@
 }
 
 {
+  "subject_id": "pitra",
+  "subject_name": "pitra",
+  "predicate": "MENERIMA",
+  "object_id": "dua_buah_daksina_tapakan_dibuat_untuknya",
+  "object_name": "dua buah daksina tapakan dibuat untuknya",
+  "confidence": "HIGH",
+  "nl": "pitra menerima dua buah daksina tapakan dibuat untuknya",
+  "raw_relation": "MENERIMA",
+  "provenance": {
+    "sentence_id": 2986,
+    "context_sentence": "berapapun banyaknya pitra yang diupacarai patileman sepanjang mereka masih tergolong sekeluarga tunggalan pamrajan, baginya hanya dibuat maksimal dua buah daksina tapakan saja, masing-masing untuk bhatara dan bhatari."
+  }
+}
+
+{
   "subject_id": "ngerorasin",
   "subject_name": "ngerorasin",
   "predicate": "DAPAT_SELESAI_SECARA",
   "object_id": "tuntas_berkat_punia",
   "object_name": "tuntas berkat punia",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "ngerorasin dapat selesai secara tuntas berkat punia",
   "raw_relation": "DAPAT_SELESAI_SECARA",
   "provenance": {
@@ -3289,7 +3274,7 @@
   "predicate": "DITARUHKAN_DI_SAMPING",
   "object_id": "jenazah",
   "object_name": "jenazah",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "punjung ditaruhkan di samping jenazah",
   "raw_relation": "DITARUHKAN_DI_SAMPING",
   "provenance": {
@@ -3304,7 +3289,7 @@
   "predicate": "DIGUNAKAN_SAAT",
   "object_id": "upacara_nyiramang_layon",
   "object_name": "upacara nyiramang layon",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "daun dapdap digunakan saat upacara nyiramang layon",
   "raw_relation": "DIGUNAKAN_SAAT",
   "provenance": {
@@ -3394,7 +3379,7 @@
   "predicate": "DIISI_DENGAN",
   "object_id": "uang_kepeng",
   "object_name": "uang kepeng",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "kwangen setiap gulungan diisi dengan uang kepeng",
   "raw_relation": "DIISI_DENGAN",
   "provenance": {
@@ -3409,7 +3394,7 @@
   "predicate": "DITABURKAN_DI",
   "object_id": "setiap_persimpangan_jalan_menuju_setra",
   "object_name": "setiap persimpangan jalan menuju setra",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "sekar ura ditaburkan di setiap persimpangan jalan menuju setra",
   "raw_relation": "DITABURKAN_DI",
   "provenance": {
@@ -3439,7 +3424,7 @@
   "predicate": "DILETAKKAN_DI",
   "object_id": "gigi_jenazah",
   "object_name": "gigi jenazah",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "pecahan besi baja diletakkan di gigi jenazah",
   "raw_relation": "DITARUH_DI",
   "provenance": {
@@ -3454,7 +3439,7 @@
   "predicate": "DILETAKKAN_DI",
   "object_id": "kedua_mata_jenazah",
   "object_name": "kedua mata jenazah",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "pecahan kaca diletakkan di kedua mata jenazah",
   "raw_relation": "DITARUH_DI",
   "provenance": {
@@ -3469,7 +3454,7 @@
   "predicate": "DISEMBURKAN_PADA",
   "object_id": "hulu_hati_jenazah",
   "object_name": "hulu hati jenazah",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "anget-angetan disemburkan pada hulu hati jenazah",
   "raw_relation": "DISEMBURKAN_PADA",
   "provenance": {
@@ -3484,7 +3469,7 @@
   "predicate": "DISEMBURKAN_SAAT",
   "object_id": "upacara_ngelelet",
   "object_name": "upacara ngelelet",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "anget-angetan disemburkan saat upacara ngelelet",
   "raw_relation": "DISEMBURKAN_SAAT",
   "provenance": {
@@ -3514,7 +3499,7 @@
   "predicate": "ADALAH",
   "object_id": "pabersihan_mati",
   "object_name": "pabersihan mati",
-  "confidence": "MED",
+  "confidence": "LOW",
   "nl": "upacara pabresihan mati adalah pabersihan mati",
   "raw_relation": "ADALAH",
   "provenance": {
@@ -3664,7 +3649,7 @@
   "predicate": "DILARANG",
   "object_id": "tergesa_gesa_memandikan_jenazah",
   "object_name": "tergesa-gesa memandikan jenazah",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "keluarga/masyarakat dilarang tergesa-gesa memandikan jenazah",
   "raw_relation": "DILARANG",
   "provenance": {
@@ -3679,7 +3664,7 @@
   "predicate": "DIKENAL_SEBAGAI",
   "object_id": "pepaga",
   "object_name": "pepaga",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "bale-bale tempat memandikan mayat dikenal sebagai pepaga",
   "raw_relation": "DIKENAL_SEBAGAI",
   "provenance": {
@@ -3694,7 +3679,7 @@
   "predicate": "DIKENAL_SEBAGAI",
   "object_id": "pepaga",
   "object_name": "pepaga",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "bale-bale tempat memandikan mayat dikenal sebagai pepaga",
   "raw_relation": "DIKENAL_SEBAGAI",
   "provenance": {
@@ -3709,7 +3694,7 @@
   "predicate": "MEMBUAT",
   "object_id": "bale_bale_tempat_memandikan_mayat",
   "object_name": "bale-bale tempat memandikan mayat",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "krama masyarakat banjar membuat bale-bale tempat memandikan mayat",
   "raw_relation": "MEMBUAT",
   "provenance": {
@@ -3739,7 +3724,7 @@
   "predicate": "DIKENAL_SEBAGAI",
   "object_id": "bale_penusangan_istilah_denpasar",
   "object_name": "bale penusangan istilah denpasar",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "pepaga dikenal sebagai bale penusangan istilah denpasar",
   "raw_relation": "DIKENAL_SEBAGAI",
   "provenance": {
@@ -3754,7 +3739,7 @@
   "predicate": "ADALAH",
   "object_id": "semacam_dipan_atau_bale_darurat",
   "object_name": "semacam dipan atau bale darurat",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "pepaga adalah semacam dipan atau bale darurat",
   "raw_relation": "ADALAH",
   "provenance": {
@@ -3814,7 +3799,7 @@
   "predicate": "DIAMBIL_DARI",
   "object_id": "balai_tempat_jenazah_disemayamkan",
   "object_name": "balai tempat jenazah disemayamkan",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "jenazah diambil dari balai tempat jenazah disemayamkan",
   "raw_relation": "DIAMBIL_DARI",
   "provenance": {
@@ -3844,7 +3829,7 @@
   "predicate": "DILETAKKAN_DI",
   "object_id": "bale_semanggen",
   "object_name": "bale semanggen",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "tempat persemayaman jenazah diletakkan di bale semanggen",
   "raw_relation": "DITEMPATKAN_DI",
   "provenance": {
@@ -3859,7 +3844,7 @@
   "predicate": "BERUPA",
   "object_id": "pepaga",
   "object_name": "pepaga",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "tempat penusangan berupa pepaga",
   "raw_relation": "BERUPA",
   "provenance": {
@@ -3874,7 +3859,7 @@
   "predicate": "DIPAKAI_UNTUK",
   "object_id": "nyiramang_layon",
   "object_name": "nyiramang layon",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "tempat penusangan dipakai untuk nyiramang layon",
   "raw_relation": "DIPAKAI_UNTUK",
   "provenance": {
@@ -3889,7 +3874,7 @@
   "predicate": "DIDUDUKKAN_DULU_SEBELUM",
   "object_id": "tidur_tertelentang_di_pepaga_asagan",
   "object_name": "tidur tertelentang di pepaga/asagan",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "jenazah didudukkan dulu sebelum tidur tertelentang di pepaga/asagan",
   "raw_relation": "DIDUDUKKAN_DULU_SEBELUM",
   "provenance": {
@@ -3919,7 +3904,7 @@
   "predicate": "DIMASUKKAN_MELALUI",
   "object_id": "teben_pepaga_asagan",
   "object_name": "teben pepaga/asagan",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "jenazah dimasukkan melalui teben pepaga/asagan",
   "raw_relation": "DIMASUKKAN_MELALUI",
   "provenance": {
@@ -3949,7 +3934,7 @@
   "predicate": "DITEMPELKAN_DI",
   "object_id": "gigi_jenazah_istilah_umum_ritual",
   "object_name": "gigi jenazah istilah_umum_ritual",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "lekesan ditempelkan di gigi jenazah istilah_umum_ritual",
   "raw_relation": "DITEMPELKAN_DI",
   "provenance": {
@@ -3979,7 +3964,7 @@
   "predicate": "DIISI_DENGAN",
   "object_id": "kawangen_di_tangan",
   "object_name": "kawangen di tangan",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "jenazah diisi dengan kawangen di tangan",
   "raw_relation": "DIISI_DENGAN",
   "provenance": {
@@ -3994,7 +3979,7 @@
   "predicate": "DIPERCIKI_DAN_DIMINUMKAN",
   "object_id": "tirtha",
   "object_name": "tirtha",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "jenazah diperciki dan diminumkan tirtha",
   "raw_relation": "DIPERCIKI_DAN_DIMINUMKAN",
   "provenance": {
@@ -4009,7 +3994,7 @@
   "predicate": "BERASAL_DARI",
   "object_id": "bhetara_hyang_guru",
   "object_name": "bhetara hyang guru",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "tirtha berasal dari bhetara hyang guru",
   "raw_relation": "BERASAL_DARI",
   "provenance": {
@@ -4039,7 +4024,7 @@
   "predicate": "TIDAK_BOLEH_DILAKUKAN_SAAT",
   "object_id": "pabersihan_hidup",
   "object_name": "pabersihan hidup",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "pengerikan kuku tidak boleh dilakukan saat pabersihan hidup",
   "raw_relation": "TIDAK_BOLEH_DILAKUKAN_SAAT",
   "provenance": {
@@ -4054,7 +4039,7 @@
   "predicate": "DILAKUKAN_SAAT",
   "object_id": "upacara_melelet_pabersihan_mati",
   "object_name": "upacara \"melelet\" pabersihan mati",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "pengerikan kuku mutlak dilakukan saat upacara \"melelet\" pabersihan mati",
   "raw_relation": "DILAKUKAN_SAAT",
   "provenance": {
@@ -4069,7 +4054,7 @@
   "predicate": "ADALAH",
   "object_id": "simbol_dewi_sri",
   "object_name": "simbol dewi sri",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "anggapan ani-ani atau ketam adalah simbol dewi sri",
   "raw_relation": "ADALAH",
   "provenance": {
@@ -4099,7 +4084,7 @@
   "predicate": "DIIKAT_DENGAN",
   "object_id": "tali_benang_tukelan",
   "object_name": "tali benang tukelan",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "jempol jari kaki diikat dengan tali benang tukelan",
   "raw_relation": "DIIKAT_DENGAN",
   "provenance": {
@@ -4124,27 +4109,12 @@
 }
 
 {
-  "subject_id": "umpal",
-  "subject_name": "umpal",
-  "predicate": "ADALAH",
-  "object_id": "tali_saput",
-  "object_name": "tali saput",
-  "confidence": "LOW",
-  "nl": "umpal adalah tali saput",
-  "raw_relation": "ADALAH",
-  "provenance": {
-    "sentence_id": 3623,
-    "context_sentence": "mewastra (berpakaian): setelah semuanya kering maka jenazah kenakan pakaian putih-putih, antara lain pakaian atau kain bawahnya berwarna putih, saput serta umpal (tali saput) juga berwarna putih dan udeng untuk laki-lakipun berwarna putih."
-  }
-}
-
-{
   "subject_id": "dewa_wishnu",
   "subject_name": "dewa wishnu",
   "predicate": "MENDAPATKAN",
   "object_id": "tirtha_amertha",
   "object_name": "tirtha amertha",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "dewa wishnu mendapatkan tirtha amertha",
   "raw_relation": "MENDAPATKAN",
   "provenance": {
@@ -4159,7 +4129,7 @@
   "predicate": "BERTUJUAN_AGAR",
   "object_id": "tubuh_jenazah_kelak_berbau_harum",
   "object_name": "tubuh jenazah kelak berbau harum",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "penggunaan wewangian bertujuan agar tubuh jenazah kelak berbau harum",
   "raw_relation": "BERTUJUAN_AGAR",
   "provenance": {
@@ -4174,7 +4144,7 @@
   "predicate": "DIMASUKKAN_KE_DALAM",
   "object_id": "lubang_uang_kepeng",
   "object_name": "lubang uang kepeng",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "gulungan sirih dimasukkan ke dalam lubang uang kepeng",
   "raw_relation": "DIMASUKKAN_KE",
   "provenance": {
@@ -4234,7 +4204,7 @@
   "predicate": "BERDEWA",
   "object_id": "dewa_iswara",
   "object_name": "dewa iswara",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "perak berdewa dewa iswara",
   "raw_relation": "BERDEWA",
   "provenance": {
@@ -4249,7 +4219,7 @@
   "predicate": "BERADA_DI",
   "object_id": "selatan",
   "object_name": "selatan",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "tembaga berada di selatan",
   "raw_relation": "BERADA_DI",
   "provenance": {
@@ -4264,7 +4234,7 @@
   "predicate": "BERDEWA",
   "object_id": "dewa_brahma",
   "object_name": "dewa brahma",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "tembaga berdewa dewa brahma",
   "raw_relation": "BERDEWA",
   "provenance": {
@@ -4279,7 +4249,7 @@
   "predicate": "BERDEWA",
   "object_id": "dewa_mahadewa",
   "object_name": "dewa mahadewa",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "emas berdewa dewa mahadewa",
   "raw_relation": "BERDEWA",
   "provenance": {
@@ -4294,7 +4264,7 @@
   "predicate": "BERDEWA",
   "object_id": "dewa_wishnu",
   "object_name": "dewa wishnu",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "besi berdewa dewa wishnu",
   "raw_relation": "BERDEWA",
   "provenance": {
@@ -4309,7 +4279,7 @@
   "predicate": "BERDEWA",
   "object_id": "dewa_siwa",
   "object_name": "dewa siwa",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "logam campuran berdewa dewa siwa",
   "raw_relation": "BERDEWA",
   "provenance": {
@@ -4324,7 +4294,7 @@
   "predicate": "DILETAKKAN_DI",
   "object_id": "lengan_jenazah",
   "object_name": "lengan jenazah",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "besi paku diletakkan di lengan jenazah",
   "raw_relation": "DITARUH_DI",
   "provenance": {
@@ -4339,7 +4309,7 @@
   "predicate": "DILETAKKAN_DI",
   "object_id": "lengan_jenazah",
   "object_name": "lengan jenazah",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "jarum jaum diletakkan di lengan jenazah",
   "raw_relation": "DITARUH_DI",
   "provenance": {
@@ -4354,7 +4324,7 @@
   "predicate": "DIPECAHKAN",
   "object_id": "setelah_tirtha_dipercikkan",
   "object_name": "setelah tirtha dipercikkan",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "priuk tempat tirtha pangringkes dipecahkan setelah tirtha dipercikkan",
   "raw_relation": "DIPECAHKAN",
   "provenance": {
@@ -4379,12 +4349,27 @@
 }
 
 {
+  "subject_id": "jenazah",
+  "subject_name": "jenazah",
+  "predicate": "DITUTUPI_DENGAN",
+  "object_id": "kain_putih_panjang_kira_kira_2_sampai_2_5_meter",
+  "object_name": "kain putih panjang kira-kira 2 sampai 2,5 meter",
+  "confidence": "HIGH",
+  "nl": "jenazah ditutupi dengan kain putih panjang kira-kira 2 sampai 2,5 meter",
+  "raw_relation": "DITUTUPI_DENGAN",
+  "provenance": {
+    "sentence_id": 3799,
+    "context_sentence": "selesai membungkus (ngeringkes), maka jenazah ditutupi dengan selembar kain putih yang panjangnya kira-kira dua sampai dua setengah meter, sedangkan di atas kain tersebut diisi rurub sinom sebanyak lima buah."
+  }
+}
+
+{
   "subject_id": "kain_penutup_jenazah",
   "subject_name": "kain penutup jenazah",
   "predicate": "DIISI_DENGAN",
   "object_id": "rurub_sinom",
   "object_name": "rurub sinom",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "kain penutup jenazah diisi dengan rurub sinom",
   "raw_relation": "DIISI_DENGAN",
   "provenance": {
@@ -4399,7 +4384,7 @@
   "predicate": "TERBUAT_DARI",
   "object_id": "blangsah",
   "object_name": "blangsah",
-  "confidence": "MED",
+  "confidence": "LOW",
   "nl": "hiasan terbuat dari blangsah",
   "raw_relation": "TERBUAT_DARI",
   "provenance": {
@@ -4429,7 +4414,7 @@
   "predicate": "DIKENAL_SEBAGAI",
   "object_id": "galar",
   "object_name": "galar",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "bilahan-bilahan bambu ante dikenal sebagai galar",
   "raw_relation": "DIKENAL_SEBAGAI",
   "provenance": {
@@ -4444,7 +4429,7 @@
   "predicate": "DILETAKKAN_DI",
   "object_id": "pura_atau_merajan",
   "object_name": "pura atau merajan",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "bale-bale diletakkan di pura atau merajan",
   "raw_relation": "DILETAKKAN_DI",
   "provenance": {
@@ -4504,12 +4489,27 @@
   "predicate": "DIKUMPULKAN",
   "object_id": "setelah_upacara_sembah_bhakti",
   "object_name": "setelah upacara sembah bhakti",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "kawangen dikumpulkan setelah upacara sembah bhakti",
   "raw_relation": "DIKUMPULKAN",
   "provenance": {
     "sentence_id": 3963,
     "context_sentence": "setelah selesai upacara sembah bhakti ini, semua kawangen yang tadi dipakai sembahyang dikumpulkan dan ditaruh di samping jenazah."
+  }
+}
+
+{
+  "subject_id": "jenazah",
+  "subject_name": "jenazah",
+  "predicate": "DIKERINGKAN_DENGAN",
+  "object_id": "kain_kering",
+  "object_name": "kain kering",
+  "confidence": "HIGH",
+  "nl": "jenazah dikeringkan dengan kain kering",
+  "raw_relation": "DIKERINGKAN_DENGAN",
+  "provenance": {
+    "sentence_id": 3977,
+    "context_sentence": "umbi sikapa / sekapa (umbi gadung): jenazah disabuni (digosok) dengan umbi sikapa/sekapa, kemudian dibilas dengan air dan dikeringkan dengan kain kering."
   }
 }
 
@@ -4549,7 +4549,7 @@
   "predicate": "DIBUAT_OLEH",
   "object_id": "sulinggih",
   "object_name": "sulinggih",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "tirtha pabersihan dibuat oleh sulinggih",
   "raw_relation": "DIBUAT_OLEH",
   "provenance": {
@@ -4564,7 +4564,7 @@
   "predicate": "TIDAK_MEMAKAI",
   "object_id": "samsam_tidak_seperti_tirtha_panglukatan",
   "object_name": "samsam tidak seperti tirtha panglukatan",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "tirtha pabersihan tidak memakai samsam tidak seperti tirtha panglukatan",
   "raw_relation": "TIDAK_MEMAKAI",
   "provenance": {
@@ -4579,7 +4579,7 @@
   "predicate": "TANPA",
   "object_id": "kalung_benang_dengan_uang_kepeng",
   "object_name": "kalung benang dengan uang kepeng",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "tirtha pabersihan periuknya tanpa kalung benang dengan uang kepeng",
   "raw_relation": "TANPA",
   "provenance": {
@@ -4594,7 +4594,7 @@
   "predicate": "DAPAT_MENCAPAI",
   "object_id": "alam_sorga_dengan_tenang",
   "object_name": "alam sorga dengan tenang",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "roh atau atman dapat mencapai alam sorga dengan tenang",
   "raw_relation": "DAPAT_MENCAPAI",
   "provenance": {
@@ -4609,7 +4609,7 @@
   "predicate": "DIBUAT_SAAT",
   "object_id": "upacara_pengaskaran",
   "object_name": "upacara pengaskaran",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "tirtha pemanah dibuat saat upacara pengaskaran",
   "raw_relation": "DIBUAT_SAAT",
   "provenance": {
@@ -4654,7 +4654,7 @@
   "predicate": "DIMOHONKAN_OLEH",
   "object_id": "pemangku_kawitan_setempat",
   "object_name": "pemangku kawitan setempat",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "tirtha dimohonkan oleh pemangku kawitan setempat",
   "raw_relation": "DIMOHONKAN_OLEH",
   "provenance": {
@@ -4729,7 +4729,7 @@
   "predicate": "DIMOHONKAN_OLEH",
   "object_id": "pemangku",
   "object_name": "pemangku",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "tirtha dimohonkan oleh pemangku",
   "raw_relation": "DIMOHONKAN_OLEH",
   "provenance": {
@@ -4774,7 +4774,7 @@
   "predicate": "DILAKUKAN_DENGAN",
   "object_id": "mengucurkan_tirtha_amertha_dalam_diri",
   "object_name": "mengucurkan tirtha amertha dalam diri",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "amrethi karana dilakukan dengan mengucurkan tirtha amertha dalam diri",
   "raw_relation": "DILAKUKAN_DENGAN",
   "provenance": {
@@ -4789,7 +4789,7 @@
   "predicate": "DIMANTRAI_OLEH",
   "object_id": "ida_sang_sulinggih_sebelum_dimasukkan",
   "object_name": "ida sang sulinggih sebelum dimasukkan",
-  "confidence": "LOW",
+  "confidence": "HIGH",
   "nl": "sarana-sarana tersebut dimantrai oleh ida sang sulinggih sebelum dimasukkan",
   "raw_relation": "DIMANTRAI_OLEH",
   "provenance": {
@@ -4804,7 +4804,7 @@
   "predicate": "BERASAL_DARI",
   "object_id": "pretiwi",
   "object_name": "pretiwi",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "ganda berasal dari pretiwi",
   "raw_relation": "BERASAL_DARI",
   "provenance": {
@@ -4819,7 +4819,7 @@
   "predicate": "KEMBALI_KE",
   "object_id": "pretiwi",
   "object_name": "pretiwi",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "ganda kembali ke pretiwi",
   "raw_relation": "KEMBALI_KE",
   "provenance": {
@@ -4834,26 +4834,11 @@
   "predicate": "BERASAL_DARI",
   "object_id": "apah",
   "object_name": "apah",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "rasa berasal dari apah",
   "raw_relation": "BERASAL_DARI",
   "provenance": {
     "sentence_id": 4301,
     "context_sentence": "apah sangkaning rasa."
-  }
-}
-
-{
-  "subject_id": "pelebur_unsur_karma_wasana",
-  "subject_name": "pelebur unsur karma wasana",
-  "predicate": "DIKENAL_SEBAGAI",
-  "object_id": "ngentas_atma",
-  "object_name": "ngentas atma",
-  "confidence": "LOW",
-  "nl": "pelebur unsur karma wasana dikenal sebagai ngentas atma",
-  "raw_relation": "DIKENAL_SEBAGAI",
-  "provenance": {
-    "sentence_id": 4340,
-    "context_sentence": "tirtha pangentas secara filosofis adalah berfungsi sebagai pelebur unsur karma wasana yang mengikat roh atau atman, yang disebut \"ngentas\" atma atau ulub roh."
   }
 }

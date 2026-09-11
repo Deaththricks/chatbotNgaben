@@ -1,90 +1,5 @@
 {
   "kind": "low_confidence_edge",
-  "key": "104|bali dataran|tradisi hindu-majapahit",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "bali dataran",
-  "predicate": "MENDAPAT_PENGARUH_DARI",
-  "raw_relation": "MENDAPAT_PENGARUH_DARI",
-  "object": "tradisi hindu-majapahit",
-  "rendered": "bali dataran mendapat pengaruh dari tradisi hindu-majapahit",
-  "source_sentence": "bali aga vs bali dataran: terdapat perbedaan mendasar antara masyarakat pegunungan ( bali aga ) yang mempertahankan tradisi asli kuno (seperti di trunyan) dengan masyarakat bali dataran yang mendapat pengaruh kuat dari tradisi hindu-majapahit pasca jatuhnya kerajaan di jawa.",
-  "sentence_id": 104,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "271|raçadana|atiwa-tiwa asti vedana",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "raçadana",
-  "predicate": "SAMA_DENGAN",
-  "raw_relation": "SAMA_DENGAN",
-  "object": "atiwa-tiwa asti vedana",
-  "rendered": "raçadana sama dengan atiwa-tiwa asti vedana",
-  "source_sentence": "adapun atiwa-tiwa yang tergolong dalam ngaben svasta adalah raçadana atau tirta yadnya pranawa, yakni sawa diganti dengan simbol tirtha (toyo çarira), sedangkan tata pelaksanaannya sama dengan atiwa-tiwa asti vedana — mulai dari matur piuning ke pura dalem, pembakaran, hingga nganyut, dan dilanjutkan dengan upacara sebagaimana mestinya hingga upacara ngelinggihang dewa hyang.",
-  "sentence_id": 271,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "399|sasih karo|sasih utama untuk pitra yadnya",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "sasih karo",
-  "predicate": "ADALAH",
-  "raw_relation": "ADALAH",
-  "object": "sasih utama untuk pitra yadnya",
-  "rendered": "sasih karo adalah sasih utama untuk pitra yadnya",
-  "source_sentence": "dengan demikian, dapat disimpulkan bahwa sasih yang baik untuk melaksanakan pitra yadnya, khususnya ngaben, adalah kasa, karo, dan katiga, dengan yang utama pada sasih karo.",
-  "sentence_id": 399,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "400|sasih kaenem|dewasa madya",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "sasih kaenem",
-  "predicate": "DIKENAL_SEBAGAI",
-  "raw_relation": "DIKENAL_SEBAGAI",
-  "object": "dewasa madya",
-  "rendered": "sasih kaenem dikenal sebagai dewasa madya",
-  "source_sentence": "sasih kaenem dan kapitu disebut dewasa madya.",
-  "sentence_id": 400,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "400|sasih kapitu|dewasa madya",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "sasih kapitu",
-  "predicate": "DIKENAL_SEBAGAI",
-  "raw_relation": "DIKENAL_SEBAGAI",
-  "object": "dewasa madya",
-  "rendered": "sasih kapitu dikenal sebagai dewasa madya",
-  "source_sentence": "sasih kaenem dan kapitu disebut dewasa madya.",
-  "sentence_id": 400,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
   "key": "411|wuku kuningan|sasih kapitu",
   "reasons": [
     "neither endpoint resolves to a known entity"
@@ -119,23 +34,6 @@
 
 {
   "kind": "low_confidence_edge",
-  "key": "797|pitra yadnya|pelbagai sajen dan alat-alat upakara",
-  "reasons": [
-    "object follows 'dengan' in source, unexpected for MENGGUNAKAN"
-  ],
-  "subject": "pitra yadnya",
-  "predicate": "MENGGUNAKAN",
-  "raw_relation": "MENGGUNAKAN",
-  "object": "pelbagai sajen dan alat-alat upakara",
-  "rendered": "pitra yadnya menggunakan pelbagai sajen dan alat-alat upakara",
-  "source_sentence": "sebagai istilah, pitra yadnya memiliki arti tersendiri, yakni upacara keagamaan yang diadakan untuk menyelenggarakan atau nyangaskara jenazah atau roh keluarga yang meninggal dengan pelbagai sajen dan alat-alat upakara sebagai sarananya.",
-  "sentence_id": 797,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
   "key": "958|jenazah bayi|air kumkuman",
   "reasons": [
     "neither endpoint resolves to a known entity"
@@ -147,23 +45,6 @@
   "rendered": "jenazah bayi disiram dengan air kumkuman",
   "source_sentence": "setelah bersih, jenazah bayi tersebut dimandikan dengan air kumkuman (air yang diberi serbuk cendana dan kembang serba harum).",
   "sentence_id": 958,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "1060|kain penutup|setelah jenazah dipindahkan ke pepaga",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "kain penutup",
-  "predicate": "DIBUKA",
-  "raw_relation": "DIBUKA",
-  "object": "setelah jenazah dipindahkan ke pepaga",
-  "rendered": "kain penutup dibuka setelah jenazah dipindahkan ke pepaga",
-  "source_sentence": "setelah jenazah dipindahkan dari rumah adat ke pepaga, kain penutup dibuka.",
-  "sentence_id": 1060,
   "decision": "",
   "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
 }
@@ -204,544 +85,68 @@
 
 {
   "kind": "low_confidence_edge",
-  "key": "1169|sawa dititip|rezeki untuk menggelar ngaben",
+  "key": "2336|sambungan|lancingan",
   "reasons": [
-    "neither endpoint resolves to a known entity"
+    "decomposed sub-relation with an unresolved endpoint"
   ],
-  "subject": "sawa dititip",
-  "predicate": "MENUNGGU",
-  "raw_relation": "MENUNGGU",
-  "object": "rezeki untuk menggelar ngaben",
-  "rendered": "sawa dititip menunggu rezeki untuk menggelar ngaben",
-  "source_sentence": "sawa itu ditanam atau dibakar dengan status dititip sebelum ada rezeki, yang datangnya entah kapan untuk, menggelar upacara ngaben beberapa bulan atau bahkan beberapa tahun kemudian.",
-  "sentence_id": 1169,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "1477|tirtha pangentas dan isinya|isi pengawak",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "tirtha pangentas dan isinya",
-  "predicate": "DIPERSATUKAN_DENGAN",
-  "raw_relation": "DIPERSATUKAN_DENGAN",
-  "object": "isi pengawak",
-  "rendered": "tirtha pangentas dan isinya dipersatukan dengan isi pengawak",
-  "source_sentence": "dalam hal ini, tirtha pangentas merupakan siratan terakhir, serta semua isinya (daun alang-alang, walantaga, kekitir, pripih dan sebagainya), dipersatukan dengan isi pengawak.",
-  "sentence_id": 1477,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "1603|lancingan kajang|segenap keturunan mendiang",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "lancingan kajang",
-  "predicate": "DIJUNJUNG_OLEH",
-  "raw_relation": "DIJUNJUNG_OLEH",
-  "object": "segenap keturunan mendiang",
-  "rendered": "lancingan kajang dijunjung oleh segenap keturunan mendiang",
-  "source_sentence": "di kala jenazah diangkut ke setra tempat pembakaran, lancingan kajang ini dijunjung dengan khidmat oleh segenap keturunan mendiang, sehingga membentuk barisan panjang.",
-  "sentence_id": 1603,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "2117|peranda buddha|naga banda pada palebonnya",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "peranda buddha",
-  "predicate": "MEMAKAI",
-  "raw_relation": "MEMAKAI",
-  "object": "naga banda pada palebonnya",
-  "rendered": "peranda buddha memakai naga banda pada palebonnya",
-  "source_sentence": "berdasarkan pengertian inilah, seorang peranda buddha dinilai wajar memakai naga banda pada palebonnya.",
-  "sentence_id": 2117,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "2448|bhatara-bhatari|pura dan pamrajan panyiwiannya",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "bhatara-bhatari",
-  "predicate": "BERSEMAYAM_DI",
-  "raw_relation": "BERSEMAYAM_DI",
-  "object": "pura dan pamrajan panyiwiannya",
-  "rendered": "bhatara-bhatari bersemayam di pura dan pamrajan panyiwiannya",
-  "source_sentence": "suku tunggal yang telah dinilai selaku \"pribadi\" mendiang, dipangku dan diajak menghaturkan sembah bakti pamitan (dilakukan dari tempat itu saja) kepada semua bhatara-bhatari yang \"bersemayam\" di semua pura dan pamrajan panyiwiannya.",
-  "sentence_id": 2448,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "2803|pawedan|tempat ngajum serta mengutpeti sekah",
-  "reasons": [
-    "object follows 'sebagai' in source, unexpected for ADALAH"
-  ],
-  "subject": "pawedan",
-  "predicate": "ADALAH",
-  "raw_relation": "JUGA_ADALAH",
-  "object": "tempat ngajum serta mengutpeti sekah",
-  "rendered": "pawedan adalah tempat ngajum serta mengutpeti sekah",
-  "source_sentence": "pawedan di samping sebagai tempat ngajum serta mengutpeti sekah, juga terutama merupakan tempat sang sulinggih dalam memuja bagi segenap upacara atma wedana ini.",
-  "sentence_id": 2803,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "2810|pawedan tempat memuja|shiwa (dewa) loka",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "pawedan tempat memuja",
-  "predicate": "ADALAH",
-  "raw_relation": "MERUPAKAN",
-  "object": "shiwa (dewa) loka",
-  "rendered": "pawedan tempat memuja adalah shiwa (dewa) loka",
-  "source_sentence": "mengingat hyang shiwa atau hyang adi buddha meresap ke dalam diri sang pendeta, maka pawedan tempatnya memuja, bukanlah sekadar bernilai \"madyapada\" saja, melainkan secara religius merupakan pula \"shiwa (dewa) loka.\"",
-  "sentence_id": 2810,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "3154|pecahan besi baja|gigi jenazah",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "pecahan besi baja",
-  "predicate": "DILETAKKAN_DI",
-  "raw_relation": "DITARUH_DI",
-  "object": "gigi jenazah",
-  "rendered": "pecahan besi baja diletakkan di gigi jenazah",
-  "source_sentence": "pecahan kaca dan pecahan besi baja, juga ditaruh di atas takir, karena pecahan kaca akan ditaruh di kedua mata dan pecahan besi baja ditaruh di gigi jenazah.",
-  "sentence_id": 3154,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "3296|keluarga/masyarakat|tergesa-gesa memandikan jenazah",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "keluarga/masyarakat",
-  "predicate": "DILARANG",
-  "raw_relation": "DILARANG",
-  "object": "tergesa-gesa memandikan jenazah",
-  "rendered": "keluarga/masyarakat dilarang tergesa-gesa memandikan jenazah",
-  "source_sentence": "ketika jenazah sudah berada di atas pepaga/asagan, masyarakat atau keluarga tidak boleh kesusu (tergesa-gesa) untuk memandikannya.",
-  "sentence_id": 3296,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "3330|krama masyarakat banjar|bale-bale tempat memandikan mayat",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "krama masyarakat banjar",
-  "predicate": "MEMBUAT",
-  "raw_relation": "MEMBUAT",
-  "object": "bale-bale tempat memandikan mayat",
-  "rendered": "krama masyarakat banjar membuat bale-bale tempat memandikan mayat",
-  "source_sentence": "sebelum upacara nyiramang layon dilaksanakan, maka krama (masyarakat banjar) akan membuat bale-bale tempat memandikan mayat yang disebut pepaga atau asagan.",
-  "sentence_id": 3330,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "3584|pengerikan kuku mutlak|upacara \"melelet\" pabersihan mati",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "pengerikan kuku mutlak",
-  "predicate": "DILAKUKAN_SAAT",
-  "raw_relation": "DILAKUKAN_SAAT",
-  "object": "upacara \"melelet\" pabersihan mati",
-  "rendered": "pengerikan kuku mutlak dilakukan saat upacara \"melelet\" pabersihan mati",
-  "source_sentence": "pengerikan kuku mutlak dilakukan pada waktu upacara \"melelet\" (pabersihan mati), dan tidak boleh dilakukan pada saat \"pabersihan hidup\" yang telah dilaksanakan sebelumnya.",
-  "sentence_id": 3584,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "3591|anggapan ani-ani atau ketam|simbol dewi sri",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "anggapan ani-ani atau ketam",
+  "subject": "sambungan",
   "predicate": "ADALAH",
   "raw_relation": "ADALAH",
-  "object": "simbol dewi sri",
-  "rendered": "anggapan ani-ani atau ketam adalah simbol dewi sri",
-  "source_sentence": "anggapan (ani-ani atau ketam) adalah simbol dari dewi sri, yaitu lambang kesuburan, yang mana nantinya diharapkan wanita yang akan \"numitis\" memiliki kesuburan untuk dapat melahirkan.",
-  "sentence_id": 3591,
+  "object": "lancingan",
+  "rendered": "sambungan adalah lancingan",
+  "source_sentence": "kajang yang hanya beberapa asta panjangnya, diberilah sambungan (\"lancingan\") kain putih dua atau 30 meter lagi, hingga puluhan anggota keluarga dapat berbaris menjunjungnya keluar dari rumah menuju tempat bade, selaku tanda hormat baktinya kepada mendiang.",
+  "sentence_id": 2336,
   "decision": "",
   "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
 }
 
 {
   "kind": "low_confidence_edge",
-  "key": "3604|jempol jari kaki|tali benang tukelan",
+  "key": "2612|perlambang|sekah kangsen",
   "reasons": [
-    "neither endpoint resolves to a known entity"
+    "decomposed sub-relation with an unresolved endpoint"
   ],
-  "subject": "jempol jari kaki",
-  "predicate": "DIIKAT_DENGAN",
-  "raw_relation": "DIIKAT_DENGAN",
-  "object": "tali benang tukelan",
-  "rendered": "jempol jari kaki diikat dengan tali benang tukelan",
-  "source_sentence": "itik-itik, setelah kesepuluh kuku tangan dan kuku kaki dikerik serta penggunaan babelonyoh dilaksanakan, dan telah dibersihkan dengan air, maka kedua jempol jari-jari tangan (ibu jari) diikat jadi satu dengan seutas tali benang tukelan (benang tenun bali) berwarna putih, begitu juga kedua jempol jari kaki diikat jadi satu dengan seutas tali benang tukelan.",
-  "sentence_id": 3604,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "3623|umpal|tali saput",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "umpal",
-  "predicate": "ADALAH",
-  "raw_relation": "ADALAH",
-  "object": "tali saput",
-  "rendered": "umpal adalah tali saput",
-  "source_sentence": "mewastra (berpakaian): setelah semuanya kering maka jenazah kenakan pakaian putih-putih, antara lain pakaian atau kain bawahnya berwarna putih, saput serta umpal (tali saput) juga berwarna putih dan udeng untuk laki-lakipun berwarna putih.",
-  "sentence_id": 3623,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "3651|dewa wishnu|tirtha amertha",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "dewa wishnu",
-  "predicate": "MENDAPATKAN",
-  "raw_relation": "MENDAPATKAN",
-  "object": "tirtha amertha",
-  "rendered": "dewa wishnu mendapatkan tirtha amertha",
-  "source_sentence": "kembali pada makna pada penggunaan sesisir buah pisang kayu untuk bantal, yang dihubungkan dengan kitab purana yang menceriterakan ketika dewa wishnu selesai pengaduk lautan susu untuk mendapatkan tirtha amertha, maka beliau tidur di atas samudra, dialasi dan dipayungi oleh seekor naga (ular cobra) yang berkepala banyak (perhatikan bulir-bulir pisang pada satu sisir, kelihatan seperti kepala ular yang menyembul), sehingga terhindar dari marabahaya dan kepanasan.",
-  "sentence_id": 3651,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "3728|penggunaan wewangian|tubuh jenazah kelak berbau harum",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "penggunaan wewangian",
-  "predicate": "BERTUJUAN_AGAR",
-  "raw_relation": "BERTUJUAN_AGAR",
-  "object": "tubuh jenazah kelak berbau harum",
-  "rendered": "penggunaan wewangian bertujuan agar tubuh jenazah kelak berbau harum",
-  "source_sentence": "adapun makna penggunaan wewangian adalah agar kelak jika numitis lagi selalu mendapat pujian keharuman dalam setiap tingkah lakunya, di samping tersebut tubuhnya agar kelak berbau harum.",
-  "sentence_id": 3728,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "3734|gulungan sirih|lubang uang kepeng",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "gulungan sirih",
-  "predicate": "DIMASUKKAN_KE_DALAM",
-  "raw_relation": "DIMASUKKAN_KE",
-  "object": "lubang uang kepeng",
-  "rendered": "gulungan sirih dimasukkan ke dalam lubang uang kepeng",
-  "source_sentence": "kawangen jeriji adalah sebuah kojong yang dibuat dari daun pisang dan di dalamnya berisi lima buah gulungan \"base\" (daun sirih), setiap satu gulung daun sirih diikat dengan benang putih, kemudian gulungan sirih dimasukkan ke dalam lubang uang kepeng sampai sepanjang setengah gulungan sirih tersebut.",
-  "sentence_id": 3734,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "3755|perak|dewa iswara",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "perak",
-  "predicate": "BERDEWA",
-  "raw_relation": "BERDEWA",
-  "object": "dewa iswara",
-  "rendered": "perak berdewa dewa iswara",
-  "source_sentence": "uang kepeng yang asli diyakini mengandung lima unsur logam yang terdiri dari : (1) perak (putih), tempatnya di timur, dewanya adalah dewa iswara.",
-  "sentence_id": 3755,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "3756|tembaga|selatan",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "tembaga",
-  "predicate": "BERADA_DI",
-  "raw_relation": "BERADA_DI",
-  "object": "selatan",
-  "rendered": "tembaga berada di selatan",
-  "source_sentence": "(2) tembaga (merah), tempatnya di selatan, dewanya adalah dewa brahma.",
-  "sentence_id": 3756,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "3756|tembaga|dewa brahma",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "tembaga",
-  "predicate": "BERDEWA",
-  "raw_relation": "BERDEWA",
-  "object": "dewa brahma",
-  "rendered": "tembaga berdewa dewa brahma",
-  "source_sentence": "(2) tembaga (merah), tempatnya di selatan, dewanya adalah dewa brahma.",
-  "sentence_id": 3756,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "3757|emas|dewa mahadewa",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "emas",
-  "predicate": "BERDEWA",
-  "raw_relation": "BERDEWA",
-  "object": "dewa mahadewa",
-  "rendered": "emas berdewa dewa mahadewa",
-  "source_sentence": "(3) emas (kuning), tempatnya di barat, dewanya adalah dewa mahadewa.",
-  "sentence_id": 3757,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "3758|besi|dewa wishnu",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "besi",
-  "predicate": "BERDEWA",
-  "raw_relation": "BERDEWA",
-  "object": "dewa wishnu",
-  "rendered": "besi berdewa dewa wishnu",
-  "source_sentence": "(4) besi (hitam), tempatnya di utara, dewanya adalah dewa wishnu, dan (5) logam campuran (manca warna), tempatnya di tengah-tengah, dewanya adalah dewa siwa.",
-  "sentence_id": 3758,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "3758|logam campuran|dewa siwa",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "logam campuran",
-  "predicate": "BERDEWA",
-  "raw_relation": "BERDEWA",
-  "object": "dewa siwa",
-  "rendered": "logam campuran berdewa dewa siwa",
-  "source_sentence": "(4) besi (hitam), tempatnya di utara, dewanya adalah dewa wishnu, dan (5) logam campuran (manca warna), tempatnya di tengah-tengah, dewanya adalah dewa siwa.",
-  "sentence_id": 3758,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "3760|besi paku|lengan jenazah",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "besi paku",
-  "predicate": "DILETAKKAN_DI",
-  "raw_relation": "DITARUH_DI",
-  "object": "lengan jenazah",
-  "rendered": "besi paku diletakkan di lengan jenazah",
-  "source_sentence": "a di beberapa tempat atau desa, pada akhir acara \"melelet\" sebelum jenazah digulung atau sebelum \"pangringkesan\", ada yang menaruhkan jarum (jaum) dan besi paku pada lengan jenazah.",
-  "sentence_id": 3760,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "3760|jarum jaum|lengan jenazah",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "jarum jaum",
-  "predicate": "DILETAKKAN_DI",
-  "raw_relation": "DITARUH_DI",
-  "object": "lengan jenazah",
-  "rendered": "jarum jaum diletakkan di lengan jenazah",
-  "source_sentence": "a di beberapa tempat atau desa, pada akhir acara \"melelet\" sebelum jenazah digulung atau sebelum \"pangringkesan\", ada yang menaruhkan jarum (jaum) dan besi paku pada lengan jenazah.",
-  "sentence_id": 3760,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "3783|priuk tempat tirtha pangringkes|setelah tirtha dipercikkan",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "priuk tempat tirtha pangringkes",
-  "predicate": "DIPECAHKAN",
-  "raw_relation": "DIPECAHKAN",
-  "object": "setelah tirtha dipercikkan",
-  "rendered": "priuk tempat tirtha pangringkes dipecahkan setelah tirtha dipercikkan",
-  "source_sentence": "ketiga, tirtha tersebut dipercikkan ke semua badan hingga ke kaki jenazah, setelah itu priuk tempat tirtha pangringkes tersebut dipecahkan dan dibuang di kolong bawah pepaga atau asagan.",
-  "sentence_id": 3783,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "4065|tirtha pabersihan periuknya|kalung benang dengan uang kepeng",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "tirtha pabersihan periuknya",
-  "predicate": "TANPA",
-  "raw_relation": "TANPA",
-  "object": "kalung benang dengan uang kepeng",
-  "rendered": "tirtha pabersihan periuknya tanpa kalung benang dengan uang kepeng",
-  "source_sentence": "tirtha pabersihan ini juga dibuat oleh ida sang sulinggih, yang pada akhekatnya tidak jauh berbeda dengan tirtha panglukatan, namun ada sedikit perbedaan yaitu dalam sarananya tidak memakai \"samsam\" serta puja yang dipakai berbeda dengan puja pada tirtha panglukatan, dan periuknya tanpa kalung benang dengan uang kepeng.",
-  "sentence_id": 4065,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "4074|roh atau atman|alam sorga dengan tenang",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "roh atau atman",
-  "predicate": "DAPAT_MENCAPAI",
-  "raw_relation": "DAPAT_MENCAPAI",
-  "object": "alam sorga dengan tenang",
-  "rendered": "roh atau atman dapat mencapai alam sorga dengan tenang",
-  "source_sentence": "tirtha ening berfungsi sebagai symbol dari pikiran dan perasaan sang yajamana (orang yang punya upacara), sehingga roh atau atman yang di upacarai tidak mengalami kegoncangan, sehingga dapat mencapai alam sorga dengan tenang.",
-  "sentence_id": 4074,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "4079|tirtha pemanah|upacara pengaskaran",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "tirtha pemanah",
-  "predicate": "DIBUAT_SAAT",
-  "raw_relation": "DIBUAT_SAAT",
-  "object": "upacara pengaskaran",
-  "rendered": "tirtha pemanah dibuat saat upacara pengaskaran",
-  "source_sentence": "tirtha pemanah berbeda dengan tirtha-tirtha yang telah disebut diatas, karena tirtha pemanah seperti telah disebutkan diatas dibuat tepat pada waktu upacara \"pengaskaran\", sedangkan tirtha tersebut dibuat langsung oleh ida sang sulinggih.",
-  "sentence_id": 4079,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "4212|amrethi karana|mengucurkan tirtha amertha dalam diri",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "amrethi karana",
-  "predicate": "DILAKUKAN_DENGAN",
-  "raw_relation": "DILAKUKAN_DENGAN",
-  "object": "mengucurkan tirtha amertha dalam diri",
-  "rendered": "amrethi karana dilakukan dengan mengucurkan tirtha amertha dalam diri",
-  "source_sentence": "setelah itu dilakukan amrethi karana, yaitu mengucurkan tirtha amertha dalam diri sehingga abu abu kekototan musnah dan badan mulai bersinar bagaikan matahari.",
-  "sentence_id": 4212,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "4273|sarana-sarana tersebut|ida sang sulinggih sebelum dimasukkan",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "sarana-sarana tersebut",
-  "predicate": "DIMANTRAI_OLEH",
-  "raw_relation": "DIMANTRAI_OLEH",
-  "object": "ida sang sulinggih sebelum dimasukkan",
-  "rendered": "sarana-sarana tersebut dimantrai oleh ida sang sulinggih sebelum dimasukkan",
-  "source_sentence": "setelah itu padang lepas dimasukan ke dalam periuk tadi, dan selanjutnya sarana-sarana yang lainnya juga seperti biji padi (jijih), pripih emas, recadana, ulantaga, kalpika juga dimasukkan kedalam periuk tadi yang sebelumnya terlebih dulu masing-masing sarana tersebut dimantrai oleh ida sang sulinggih.",
-  "sentence_id": 4273,
-  "decision": "",
-  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
-}
-
-{
-  "kind": "low_confidence_edge",
-  "key": "4340|pelebur unsur karma wasana|ngentas atma",
-  "reasons": [
-    "neither endpoint resolves to a known entity"
-  ],
-  "subject": "pelebur unsur karma wasana",
+  "subject": "perlambang",
   "predicate": "DIKENAL_SEBAGAI",
   "raw_relation": "DIKENAL_SEBAGAI",
-  "object": "ngentas atma",
-  "rendered": "pelebur unsur karma wasana dikenal sebagai ngentas atma",
-  "source_sentence": "tirtha pangentas secara filosofis adalah berfungsi sebagai pelebur unsur karma wasana yang mengikat roh atau atman, yang disebut \"ngentas\" atma atau ulub roh.",
-  "sentence_id": 4340,
+  "object": "sekah kangsen",
+  "rendered": "perlambang dikenal sebagai sekah kangsen",
+  "source_sentence": "pitra mendiang, yang merupakan sasaran upacara dibuatkan perlambang yang disebut sekah kangsen.",
+  "sentence_id": 2612,
+  "decision": "",
+  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
+}
+
+{
+  "kind": "low_confidence_edge",
+  "key": "3195|upacara pabresihan mati|ngelelet",
+  "reasons": [
+    "decomposed sub-relation with an unresolved endpoint"
+  ],
+  "subject": "upacara pabresihan mati",
+  "predicate": "ADALAH",
+  "raw_relation": "ADALAH",
+  "object": "ngelelet",
+  "rendered": "upacara pabresihan mati adalah pabersihan mati",
+  "source_sentence": "yaitu sebuah banten pamegat yang nantinya dipergunakan pada waktu acara maktining layon setelah upacara pabresihan hidup, namun sebelum upacara pabresihan mati (ngelelet).",
+  "sentence_id": 3195,
+  "decision": "",
+  "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
+}
+
+{
+  "kind": "low_confidence_edge",
+  "key": "3800|hiasan|blangsah",
+  "reasons": [
+    "decomposed sub-relation with an unresolved endpoint"
+  ],
+  "subject": "hiasan",
+  "predicate": "TERBUAT_DARI",
+  "raw_relation": "TERBUAT_DARI",
+  "object": "blangsah",
+  "rendered": "hiasan terbuat dari blangsah",
+  "source_sentence": "rurub sinom adalah hiasan yang terbuat dari blangsah (bunga pinang yang belum mekar) dijarit bersama daun kelapa muda (busung), dengan panjang kira-kira 40 sampai 45 sentimeter.",
+  "sentence_id": 3800,
   "decision": "",
   "decision_hint": "accept | reject | fix: <subject> | <PREDICATE> | <object>"
 }
@@ -751,10 +156,10 @@
   "reasons": [
     "surface string looks like a sentence fragment, not an entity name"
   ],
-  "name": "berbagai sarana simbolik pangringkesan",
-  "type": "TAHAPAN_UPACARA",
+  "name": "dua buah daksina tapakan dibuat untuknya",
+  "type": "SARANA_RITUAL",
   "source_strings": [
-    "berbagai sarana simbolik pangringkesan"
+    "dua buah daksina tapakan dibuat untuknya"
   ],
   "decision": ""
 }
@@ -768,6 +173,19 @@
   "type": "AGAMA",
   "source_strings": [
     "istilah umat hindu"
+  ],
+  "decision": ""
+}
+
+{
+  "kind": "fragment_entity",
+  "reasons": [
+    "surface string looks like a sentence fragment, not an entity name"
+  ],
+  "name": "kain putih panjang kira-kira 2 sampai 2,5 meter",
+  "type": "SARANA_RITUAL",
+  "source_strings": [
+    "kain putih panjang kira-kira 2 sampai 2,5 meter"
   ],
   "decision": ""
 }

@@ -110,8 +110,36 @@ def _human_type(labels: List[str]) -> str:
 
 
 def _entities(tracker: Tracker, names=("istilah", "istilah2")) -> List[str]:
-    return [e["value"] for e in tracker.latest_message.get("entities", [])
-            if e.get("entity") in names and e.get("value")]
+    text = _text(tracker)
+    raw = [e for e in tracker.latest_message.get("entities", [])
+           if e.get("entity") in names and e.get("value")]
+    with_span = [e for e in raw if e.get("start") is not None and e.get("end") is not None]
+    without_span = [e for e in raw if e not in with_span]
+
+    # RegexEntityExtractor and DIETClassifier can both tag the same mention, and
+    # DIETClassifier can even split one multi-word term across adjacent single-word
+    # spans (e.g. "ngaben" + "svasta" instead of one "ngaben svasta" entity). Merge
+    # overlapping AND whitespace-adjacent same-type spans into one cluster, then take
+    # the merged text straight from the original message so a truncated/split regex
+    # or DIET match never wins over the correct full-length term.
+    clusters: List[Dict[str, int]] = []
+    for e in sorted(with_span, key=lambda e: e["start"]):
+        s, en = e["start"], e["end"]
+        merged = False
+        for c in clusters:
+            overlaps = s < c["end"] and en > c["start"]
+            adjacent = s >= c["end"] and text[c["end"]:s].strip() == ""
+            if overlaps or adjacent:
+                c["start"] = min(c["start"], s)
+                c["end"] = max(c["end"], en)
+                merged = True
+                break
+        if not merged:
+            clusters.append({"start": s, "end": en})
+
+    values = [text[c["start"]:c["end"]] for c in sorted(clusters, key=lambda c: c["start"])]
+    values += [e["value"] for e in without_span]
+    return values
 
 
 def _terms(tracker: Tracker) -> List[str]:
@@ -186,9 +214,25 @@ def _ask_term(dispatcher) -> List:
     return []
 
 
-def _one(tracker, dispatcher):
-    """Resolve exactly one term from the message; return (match, r) or (None, None)."""
-    terms = _terms(tracker) or ([_text(tracker)] if _text(tracker) else [])
+def _one(tracker, dispatcher, use_slot_fallback: bool = True):
+    """Resolve exactly one term from the message; return (match, r) or (None, None).
+
+    use_slot_fallback=True lets a bare follow-up ("dimana?") reuse the term named in
+    the previous turn (the `istilah` slot). Set it False for "apa itu X"-style intents,
+    where the user is always naming a term this turn -- silently falling back to an
+    unrelated earlier slot there produced answers about the wrong term entirely when
+    the entity extractor failed to recognize an unknown/misspelled word.
+    """
+    ents = _entities(tracker)
+    if ents:
+        terms = ents
+    elif use_slot_fallback and tracker.get_slot("istilah"):
+        terms = [tracker.get_slot("istilah")]
+    else:
+        # No entity was tagged this turn -- peel the question wrapper ("apa itu X" ->
+        # "x") so a not-found message shows the term itself, not the whole sentence.
+        cleaned = resolver.clean_query(_text(tracker))
+        terms = [cleaned] if cleaned else []
     if not terms:
         _ask_term(dispatcher)
         return None, None
@@ -209,7 +253,7 @@ class ActionDefinisi(Action):
         return "action_definisi"
 
     def run(self, dispatcher, tracker, domain) -> List[Dict[Text, Any]]:
-        m, r = _one(tracker, dispatcher)
+        m, r = _one(tracker, dispatcher, use_slot_fallback=False)
         if not m:
             return []
         _say(dispatcher, self._card(r, m), tracker)
@@ -218,24 +262,24 @@ class ActionDefinisi(Action):
     @staticmethod
     def _card(r: Dict[str, Any], match) -> str:
         name = r["name"]
-        parts = [f"🙏 *{name}* — {_human_type(r.get('labels') or [])}"]
+        parts = [f"*{name}* — {_human_type(r.get('labels') or [])}"]
 
         definition = content.best_definition(match.id, r.get("definition"))
         if definition:
-            parts.append(f"\n\n📖 {definition}")
+            parts.append(f"\n\n{definition}")
         else:
-            parts.append("\n\n📖 Belum ada definisi ringkas untuk istilah ini; berikut yang tercatat:")
+            parts.append("\n\nBelum ada definisi ringkas untuk istilah ini; berikut yang tercatat:")
 
         parents = [p for p in (r.get("parents") or []) if p] or (
             [match.entity["broader"]] if match.entity.get("broader") else [])
         if parents:
-            parts.append(f"\n🔰 Termasuk / bagian dari: {', '.join(parents)}")
+            parts.append(f"\nTermasuk / bagian dari: {', '.join(parents)}")
 
         children = [c for c in (r.get("children") or []) if c]
         if children:
             shown = ", ".join(children[:8])
             more = f" (+{len(children) - 8} lainnya)" if len(children) > 8 else ""
-            parts.append(f"\n🌿 Jenis/bentuk yang tercatat: {shown}{more}")
+            parts.append(f"\nJenis/bentuk yang tercatat: {shown}{more}")
 
         attrs = _render_attributes(name, r.get("props") or {}, limit=5)
         facts = content.facts_for(match.id, limit=6)
@@ -250,12 +294,12 @@ class ActionDefinisi(Action):
         faqs = content.faq_for(match.id)
         if faqs:
             q = faqs[0]
-            parts.append(f"\n\n❓ {q.get('question','').strip()}\n   {q.get('answer','').strip()}")
+            parts.append(f"\n\n{q.get('question','').strip()}\n   {q.get('answer','').strip()}")
 
         alias_src = r.get("aliases") or match.entity.get("aliases") or []
         aliases = [a for a in alias_src if a and a.lower() != name.lower()]
         if aliases:
-            parts.append(f"\n\n🔁 Dikenal juga sebagai: {', '.join(aliases[:6])}")
+            parts.append(f"\n\nDikenal juga sebagai: {', '.join(aliases[:6])}")
 
         parts.append(_fuzzy_note(match))
         parts.append("\n\n_Sumber: Knowledge Graph Ngaben_")
@@ -268,12 +312,12 @@ class ActionKlasifikasi(Action):
         return "action_klasifikasi"
 
     def run(self, dispatcher, tracker, domain) -> List[Dict[Text, Any]]:
-        m, r = _one(tracker, dispatcher)
+        m, r = _one(tracker, dispatcher, use_slot_fallback=False)
         if not m:
             return []
         name = r.get("name", m.name)
         tipe = _human_type(r.get("labels") or [])
-        parts = [f"🔰 *{name}* tergolong *{tipe}* di basis data Ngaben."]
+        parts = [f"*{name}* tergolong *{tipe}* di basis data Ngaben."]
         parents = [p for p in (r.get("parents") or []) if p]
         if parents:
             parts.append(f"\nTermasuk jenis / bagian dari: {', '.join(parents)}.")
@@ -313,9 +357,9 @@ class ActionJenis(Action):
         if children:
             shown = ", ".join(children[:12])
             more = f" (+{len(children) - 12} lagi)" if len(children) > 12 else ""
-            msg = f"🌿 Jenis / bentuk *{name}* yang tercatat: {shown}{more}."
+            msg = f"Jenis / bentuk *{name}* yang tercatat: {shown}{more}."
         elif fam_facts:
-            msg = f"🌿 Yang tercatat tentang bagian/jenis *{name}*:\n" + "\n".join(f"• {f}" for f in fam_facts[:6])
+            msg = f"Yang tercatat tentang bagian/jenis *{name}*:\n" + "\n".join(f"• {f}" for f in fam_facts[:6])
         else:
             tipe = _human_type(r.get("labels") or [])
             peers = [e["name"] for e in resolver.list_type(tipe) if e["id"] != m.id][:12]
@@ -350,7 +394,7 @@ class ActionAtribut(Action):
 
         label = _FAMILY_LABEL.get(family, family)
         if lines:
-            body = f"📌 *{name}* — {label}:\n" + "\n".join(f"• {x}" for x in lines[:7])
+            body = f"*{name}* — {label}:\n" + "\n".join(f"• {x}" for x in lines[:7])
         else:
             body = f"{_FAMILY_EMPTY.get(family)} untuk *{name}*."
             generic = content.facts_for(m.id, limit=4)
@@ -379,7 +423,7 @@ class ActionRelasi(Action):
 
         if len(matches) >= 2:
             a, b = matches[0], matches[1]
-            lines = [f"🔗 *{a.name}* & *{b.name}*"]
+            lines = [f"*{a.name}* & *{b.name}*"]
             link = neo4j_conn.query(
                 """MATCH (x:Node {id:$a})-[r]-(y:Node {id:$b})
                    WHERE coalesce(r.confidence,'') <> 'LOW'
@@ -407,7 +451,7 @@ class ActionRelasi(Action):
         m = matches[0]
         r = _fetch(m)
         name = r.get("name", m.name)
-        lines = [f"🔎 Yang tercatat tentang *{name}*:"]
+        lines = [f"Yang tercatat tentang *{name}*:"]
         seen: List[str] = []
         for line in _render_attributes(name, r.get("props") or {}, limit=8) + content.facts_for(m.id, limit=12):
             if line not in seen:
@@ -416,7 +460,7 @@ class ActionRelasi(Action):
         faqs = content.faq_for(m.id)
         if faqs:
             q = faqs[0]
-            lines.append(f"\n\n❓ {q.get('question','').strip()}\n   {q.get('answer','').strip()}")
+            lines.append(f"\n\n{q.get('question','').strip()}\n   {q.get('answer','').strip()}")
         if len(lines) == 1:
             lines.append("\nBelum ada relasi atau atribut yang tercatat.")
         lines.append("\n\n_Sumber: Knowledge Graph Ngaben_")
@@ -430,24 +474,24 @@ class ActionAlasan(Action):
         return "action_alasan"
 
     def run(self, dispatcher, tracker, domain) -> List[Dict[Text, Any]]:
-        hits = content.faq_search(_text(tracker), k=2)
         terms = _terms(tracker)
-        if not hits and terms:
-            m = resolver.resolve(terms[0])
-            if m:
-                hits = content.faq_for(m.id)[:2]
+        m = resolver.resolve(terms[0]) if terms else None
+        # Prefer FAQs curated for the actual resolved term over a free-text keyword
+        # search across ALL faqs -- the latter often surfaces a tangentially-worded
+        # but unrelated FAQ just from shared common words (e.g. "ngaben", "saat").
+        hits = content.faq_for(m.id)[:2] if m else []
+        if not hits:
+            hits = content.faq_search(_text(tracker), k=2)
         if hits:
-            blocks = [f"❓ {h.get('question','').strip()}\n{h.get('answer','').strip()}" for h in hits]
+            blocks = [f"{h.get('question','').strip()}\n{h.get('answer','').strip()}" for h in hits]
             _say(dispatcher, "\n\n".join(blocks), tracker, smooth=True)
             return []
-        if terms:
-            m = resolver.resolve(terms[0])
-            if m:
-                facts = content.facts_for(m.id, limit=6)
-                if facts:
-                    _say(dispatcher, f"Yang tercatat tentang *{m.name}*:\n"
-                         + "\n".join(f"• {f}" for f in facts), tracker, smooth=True)
-                    return []
+        if m:
+            facts = content.facts_for(m.id, limit=6)
+            if facts:
+                _say(dispatcher, f"Yang tercatat tentang *{m.name}*:\n"
+                     + "\n".join(f"• {f}" for f in facts), tracker, smooth=True)
+                return []
         dispatcher.utter_message(
             text="Saya belum punya penjelasan 'mengapa' untuk hal itu di basis data. "
                  "Coba tanyakan artinya, misalnya \"apa itu nganyut\"."
@@ -480,7 +524,7 @@ class ActionDaftarIstilah(Action):
         shown = names[:20]
         more = f"\n… dan {len(names) - 20} istilah lain (tanyakan satu per satu untuk detail)." if len(names) > 20 else ""
         dispatcher.utter_message(
-            text=f"📋 Istilah bertipe *{tipe}* ({len(names)} total):\n" + ", ".join(shown) + more
+            text=f"Istilah bertipe *{tipe}* ({len(names)} total):\n" + ", ".join(shown) + more
         )
         return []
 
@@ -491,22 +535,29 @@ class ActionBandingkan(Action):
         return "action_bandingkan"
 
     def run(self, dispatcher, tracker, domain) -> List[Dict[Text, Any]]:
+        raw_terms = [t for t in _terms(tracker) if t]
         matches = list(resolver.resolve_many(_text(tracker), limit=2))
         if len(matches) < 2:
-            for t in _terms(tracker):
+            for t in raw_terms:
                 mm = resolver.resolve(t)
                 if mm:
                     matches.append(mm)
         uniq: Dict[str, Any] = {}
         for mm in matches:
             uniq.setdefault(mm.id, mm)
+        if len(uniq) == 1 and len(raw_terms) >= 2:
+            mm = next(iter(uniq.values()))
+            dispatcher.utter_message(
+                text=f'*{raw_terms[0]}* dan *{raw_terms[1]}* sebenarnya istilah yang sama: keduanya merujuk ke *{mm.name}*.'
+            )
+            return []
         matches = list(uniq.values())
         if len(matches) < 2:
             dispatcher.utter_message(text='Sebutkan dua istilah, misalnya "apa beda bade dan wadah".')
             return []
         a, b = matches[0], matches[1]
         ra, rb = _fetch(a), _fetch(b)
-        out = [f"⚖️ *{a.name}* vs *{b.name}*"]
+        out = [f"*{a.name}* vs *{b.name}*"]
         for mm, rr in ((a, ra), (b, rb)):
             tipe = _human_type(rr.get("labels") or [])
             deff = content.best_definition(mm.id, rr.get("definition")) or "—"
@@ -544,7 +595,7 @@ class ActionCari(Action):
             return []
         names = [h["name"] for h in hits]
         dispatcher.utter_message(
-            text=f"🔍 {len(names)} istilah yang cocok:\n" + ", ".join(names[:15])
+            text=f"{len(names)} istilah yang cocok:\n" + ", ".join(names[:15])
             + '\n\nTanyakan salah satunya, mis. "apa itu ' + names[0] + '".'
         )
         return []
@@ -560,7 +611,7 @@ class ActionAcak(Action):
 
         class _M:
             id = e["id"]; name = e["name"]; via = "exact"; entity = e
-        _say(dispatcher, "🎲 Istilah acak:\n\n" + ActionDefinisi._card(_fetch(_M()), _M()), tracker)
+        _say(dispatcher, "Istilah acak:\n\n" + ActionDefinisi._card(_fetch(_M()), _M()), tracker)
         return []
 
 

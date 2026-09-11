@@ -162,9 +162,12 @@ class Resolver:
         if canon is None and s not in self.keep_distinct:
             stripped = self._strip(s)
             if stripped != s:
-                hit = self._base_lookup(stripped)
-                if hit:
-                    canon, method = hit[0], hit[1] + "+strip"
+                if stripped in self.force_merge:
+                    canon, method = self.force_merge[stripped], "force-merge+strip"
+                else:
+                    hit = self._base_lookup(stripped)
+                    if hit:
+                        canon, method = hit[0], hit[1] + "+strip"
         if canon is None:
             canon, method = s, "unresolved"
 
@@ -351,9 +354,20 @@ def build_passages(resolver, extra_terms=()):
                          re.IGNORECASE)
     for i, p in enumerate(passages):
         p_id = f"{slug(p['doc'])[:12]}_{i:03d}"
-        found = set()
-        for m in term_re.finditer(p["text"].lower()):
-            found.add(resolver.resolve(m.group(1))[0])
+        if p.get("kind") == "glossary":
+            # A glossary line's own definition prose often names OTHER real KB terms
+            # (e.g. Ngaben's definition mentions "atiwa-tiwa", "pancamahabutha", "sawa").
+            # Scanning the whole passage text like an ordinary narrative passage would
+            # wrongly tag -- and later surface -- this definition onto every term it
+            # happens to mention. Link it only to the ONE entity it actually defines.
+            found = {resolver.resolve(p["term"])[0]}
+        elif p.get("kind") == "faq":
+            # Only the question determines what a FAQ is "about" -- the answer text
+            # often mentions other terms in passing (e.g. "...oleh Sulinggih tetap
+            # dijalankan...") without the FAQ being about them.
+            found = {resolver.resolve(m.group(1))[0] for m in term_re.finditer(p["question"].lower())}
+        else:
+            found = {resolver.resolve(m.group(1))[0] for m in term_re.finditer(p["text"].lower())}
         rec = {"id": p_id, "doc": p["doc"], "section_path": p["section_path"]}
         if p.get("kind"):
             rec["kind"] = p["kind"]
@@ -509,9 +523,17 @@ def main():
                     {"value": val, "sentence_id": r["sentence_id"]})
 
     # glossary + broader definitions win / fill
+    #
+    # Resolve each glossary term through the same Resolver (force_merge/alias-aware)
+    # used everywhere else, instead of string-matching the entity's post-merge name or
+    # an arbitrary single source string against the glossary's raw (pre-merge) spelling
+    # -- e.g. a "Panca Maha Bhuta:" glossary line needs to land on the merged
+    # "pancamahabutha" entity, which plain string comparison never matched.
+    glossary_by_id: dict[str, str] = {}
+    for term, dfn in glossary_defs.items():
+        glossary_by_id.setdefault(resolver.resolve(term)[0], dfn)
     for e in ent.values():
-        g = glossary_defs.get(e["name"].lower()) or glossary_defs.get(
-            next(iter(e["source_strings"]), ""))
+        g = glossary_by_id.get(e["id"])
         if g:
             e["definition"], e["definition_source"] = g, "glossary"
 
