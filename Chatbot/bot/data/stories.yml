@@ -1,97 +1,23 @@
 version: "3.1"
 
 stories:
-  - story: sapa lalu definisi
+  - story: sapa lalu tanya detail
     steps:
       - intent: sapa
       - action: utter_sapa
-      - intent: tanya_definisi
-      - action: action_definisi
+      - intent: ask_ngaben_detail
+      - action: action_graph_rag
 
-  - story: definisi lalu klasifikasi lalu jenis
+  - story: percakapan detail beruntun
     steps:
-      - intent: tanya_definisi
-      - action: action_definisi
-      - intent: tanya_klasifikasi
-      - action: action_klasifikasi
-      - intent: tanya_jenis
-      - action: action_jenis
+      - intent: ask_ngaben_detail
+      - action: action_graph_rag
+      - intent: ask_ngaben_detail
+      - action: action_graph_rag
 
-  - story: definisi lalu fungsi lalu bahan lalu lokasi
+  - story: tanya detail lalu pamit
     steps:
-      - intent: tanya_definisi
-      - action: action_definisi
-      - intent: tanya_fungsi
-      - action: action_atribut
-      - intent: tanya_bahan
-      - action: action_atribut
-      - intent: tanya_lokasi
-      - action: action_atribut
-
-  - story: waktu lalu pelaku lalu simbol
-    steps:
-      - intent: tanya_waktu
-      - action: action_atribut
-      - intent: tanya_pelaku
-      - action: action_atribut
-      - intent: tanya_simbol
-      - action: action_atribut
-
-  - story: alasan lalu definisi
-    steps:
-      - intent: tanya_alasan
-      - action: action_alasan
-      - intent: tanya_definisi
-      - action: action_definisi
-
-  - story: acak lalu definisi lalu bandingkan
-    steps:
-      - intent: minta_acak
-      - action: action_acak
-      - intent: tanya_definisi
-      - action: action_definisi
-      - intent: bandingkan_istilah
-      - action: action_bandingkan
-
-  - story: cari lalu daftar lalu definisi
-    steps:
-      - intent: cari_istilah
-      - action: action_cari
-      - intent: daftar_istilah
-      - action: action_daftar_istilah
-      - intent: tanya_definisi
-      - action: action_definisi
-
-  - story: relasi lalu pamit
-    steps:
-      - intent: tanya_relasi
-      - action: action_relasi
+      - intent: ask_ngaben_detail
+      - action: action_graph_rag
       - intent: pamit
       - action: utter_pamit
-
-  - story: out of scope lalu kembali ke topik
-    steps:
-      - intent: out_of_scope
-      - action: utter_out_of_scope
-      - intent: tanya_definisi
-      - action: action_definisi
-
-  - story: interactive_story_1
-    steps:
-      - intent: sapa
-      - action: utter_sapa
-      - intent: tanya_definisi
-        entities:
-          - istilah: ngaben
-      - slot_was_set:
-          - istilah: ngaben
-      - action: action_definisi
-      - intent: tanya_jenis
-        entities:
-          - istilah: ngaben
-          - tipe: jenis ngaben
-      - slot_was_set:
-          - istilah: ngaben
-      - slot_was_set:
-          - tipe: jenis ngaben
-      - action: action_jenis

@@ -1,83 +1,38 @@
 version: '3.1'
+
 intents:
-- bandingkan_istilah
-- bot_challenge
-- cari_istilah
-- daftar_istilah
-- minta_acak
-- out_of_scope
-- pamit
-- sapa
-- tanya_alasan
-- tanya_bahan
-- tanya_definisi
-- tanya_fungsi
-- tanya_jenis
-- tanya_klasifikasi
-- tanya_lokasi
-- tanya_pelaku
-- tanya_relasi
-- tanya_simbol
-- tanya_waktu
-entities:
-- istilah
-- tipe
-- istilah2
+  - sapa
+  - pamit
+  - bot_challenge
+  - out_of_scope
+  - ask_ngaben_detail
+  - nlu_fallback
+
 slots:
-  istilah:
+  current_entity:
     type: text
     influence_conversation: false
     mappings:
-    - type: from_entity
-      entity: istilah
-  istilah2:
-    type: text
-    influence_conversation: false
-    mappings:
-    - type: from_entity
-      entity: istilah2
-  tipe:
-    type: text
-    influence_conversation: false
-    mappings:
-    - type: from_entity
-      entity: tipe
+      - type: custom
+
 actions:
-- action_definisi
-- utter_sapa
-- action_jenis
-- action_klasifikasi
-- action_atribut
-- action_alasan
-- action_relasi
-- action_daftar_istilah
-- action_bandingkan
-- action_cari
-- action_acak
-- action_default_fallback
+  - utter_sapa
+  - utter_pamit
+  - utter_iamabot
+  - utter_out_of_scope
+  - action_graph_rag
+  - action_llm_fallback
+
 responses:
   utter_sapa:
-  - text: |-
-      Om Swastiastu, Saya asisten istilah upacara Ngaben (kremasi Bali). Yang bisa saya bantu:
-      • arti istilah — "apa itu tirtha pangentas"
-      • klasifikasi — "ngaben termasuk apa"
-      • jenis/bagian — "apa saja jenis ngaben"
-      • fungsi/bahan/lokasi/waktu/pelaku — "bade dipakai untuk apa", "pripih terbuat dari apa", "di mana sekah diletakkan"
-      • makna simbolis — "nganyut melambangkan apa"
-      • hubungan — "hubungan sekah dan pitra"
-      • daftar per kategori — "sebutkan tahapan upacara ngaben"
-      • perbandingan — "apa beda bade dan wadah"
-      • pencarian — "cari istilah tirtha"
-  - text: |-
-      Om Swastiastu, Saya bot glosarium Ngaben. Tanyakan arti, jenis, fungsi, lokasi, waktu,
-      pelaku, makna, atau hubungan sebuah istilah — atau minta "istilah acak" untuk mulai.
+    - text: "Om Swastiastu, Saya asisten istilah upacara Ngaben berbasis AI. Silakan tanyakan istilah, tahapan, atau makna yang ingin Anda ketahui."
   utter_pamit:
-  - text: Om Santih Santih Santih, Semoga bermanfaat.
-  - text: Matur suksma, Semoga membantu. Om Santih Santih Santih.
+    - text: "Om Santih Santih Santih, Semoga bermanfaat."
   utter_iamabot:
-  - text: Saya bot glosarium istilah Ngaben. Jawaban saya berasal dari basis pengetahuan (knowledge graph) terminologi upacara Ngaben — bukan opini pribadi, dan bisa ada bagian yang belum lengkap.
+    - text: "Saya bot glosarium istilah Ngaben. Jawaban saya disintesis langsung dari basis pengetahuan terminologi upacara Ngaben (GraphRAG)."
   utter_out_of_scope:
-  - text: Maaf, saya hanya menjawab seputar istilah dalam upacara Ngaben — arti, klasifikasi, jenis, fungsi, bahan, lokasi, waktu, pelaku, makna, hubungan, atau daftar istilah. Coba, misalnya, "apa itu bade".
+    - text: "Maaf, saya hanya melayani pertanyaan seputar upacara Ngaben dan terminologinya."
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
