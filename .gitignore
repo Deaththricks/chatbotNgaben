@@ -18,3 +18,14 @@ rasa_bot/
 # senior's reference example 
 Graphing/chatbot-budaya-bali/
 Graphing/chatbot-budaya-bali.zip
+
+# tools for claude
+
+conersation.md
+PROJECT_CONTEXT.md
+HOW_IT_WORKS.md
+Graphing/Misc/
+Graphing/kb/
+Graphing/audit_tooling/
+Graphing/_archive/
+Graphing/KG_IMG/

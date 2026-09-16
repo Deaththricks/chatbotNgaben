@@ -14,6 +14,11 @@ slots:
     influence_conversation: false
     mappings:
       - type: custom
+  entity_history:
+    type: list
+    influence_conversation: false
+    mappings:
+      - type: custom
 
 actions:
   - utter_sapa

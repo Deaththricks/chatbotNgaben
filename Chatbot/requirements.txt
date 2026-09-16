@@ -13,5 +13,7 @@ neo4j==5.14.0
 rapidfuzz>=3.0
 python-dotenv>=1.0
 
-# LLM rephrasing layer (Stage 6) — optional at runtime (needs GROQ_API_KEY)
-groq>=0.11
+# LLM layer (coreference resolution + answer synthesis) — Qwen 2.5 via a local
+# Ollama server, replacing the earlier Groq rephrase step (see PROJECT_CONTEXT.md).
+langchain-core>=1.6
+langchain-ollama>=1.1

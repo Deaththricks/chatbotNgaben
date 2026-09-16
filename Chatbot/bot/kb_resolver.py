@@ -148,14 +148,22 @@ class KbResolver:
                 return Match(_id, self.by_id[_id]["name"], "strip", 100.0, self.by_id[_id])
 
         # 4. fuzzy
-        hit = process.extractOne(raw, self._choices, scorer=fuzz.WRatio)
         # WRatio's partial-matching component can score a short, unrelated string
         # deceptively high against a much longer candidate (e.g. "ether" vs "kain
-        # putih panjangnya puluhan meter" scores 80). Plain fuzz.ratio compares the
-        # full strings and isn't fooled by that -- require it too as a sanity floor.
-        if hit and hit[1] >= fuzzy_threshold and fuzz.ratio(raw, hit[0]) >= 60:
-            _id = self.surface[hit[0]]
-            return Match(_id, self.by_id[_id]["name"], "fuzzy", float(hit[1]), self.by_id[_id])
+        # putih panjangnya puluhan meter" scores 80) -- plain fuzz.ratio compares
+        # the full strings and isn't fooled by that, so it's required too as a
+        # sanity floor. Checking only the single best WRatio hit (extractOne) can
+        # pick a longer phrase that beats the real match on WRatio's partial
+        # component yet fails the ratio floor, even when a shorter, correct
+        # candidate elsewhere in the list would have passed both -- e.g. "tirte"
+        # -> "tirta yadnya pranawa" wins WRatio=80 over plain "tirtha"'s
+        # WRatio=73, but only "tirtha" clears the ratio floor. Check the top few
+        # WRatio candidates and take the first that also clears the ratio floor,
+        # instead of only ever checking the single top-ranked one.
+        for cand, score, _ in process.extract(raw, self._choices, scorer=fuzz.WRatio, limit=5):
+            if score >= fuzzy_threshold and fuzz.ratio(raw, cand) >= 60:
+                _id = self.surface[cand]
+                return Match(_id, self.by_id[_id]["name"], "fuzzy", float(score), self.by_id[_id])
 
         return None
 
