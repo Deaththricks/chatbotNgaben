@@ -140,12 +140,22 @@ class KbResolver:
             if _id in self.by_id and _id not in self.excluded_ids:
                 return Match(_id, self.by_id[_id]["name"], "force_merge", 100.0, self.by_id[_id])
 
-        # 3. modifier-strip retry (never for keep_distinct surface forms)
+        # 3. modifier-strip retry (never for keep_distinct surface forms). Retries
+        # through the same two tiers as steps 1-2 above, not just the alias table --
+        # e.g. "unsur unsur panca maha butha" strips down to "panca maha butha",
+        # which only resolves via force_merge, not the surface/alias table; without
+        # this the strip was computed but silently discarded on a force_merge-only
+        # target.
         if raw not in self.keep_distinct:
             stripped = self._strip_modifiers(raw)
-            if stripped and stripped != raw and stripped in self.surface:
-                _id = self.surface[stripped]
-                return Match(_id, self.by_id[_id]["name"], "strip", 100.0, self.by_id[_id])
+            if stripped and stripped != raw:
+                if stripped in self.surface:
+                    _id = self.surface[stripped]
+                    return Match(_id, self.by_id[_id]["name"], "strip", 100.0, self.by_id[_id])
+                if stripped in self.force_merge:
+                    _id = self.force_merge[stripped]
+                    if _id in self.by_id and _id not in self.excluded_ids:
+                        return Match(_id, self.by_id[_id]["name"], "strip", 100.0, self.by_id[_id])
 
         # 4. fuzzy
         # WRatio's partial-matching component can score a short, unrelated string
@@ -173,6 +183,24 @@ class KbResolver:
         Splits on common Indonesian conjunctions, resolves each side, dedups by id.
         """
         raw = self.clean_query(text)
+
+        # A compact "X/Y"-style compound entity name (e.g. "Sulinggih/Griya",
+        # "Slepa/Peti") must stay one term even if the user adds spaces around the
+        # slash -- try the whole phrase (slash-spacing collapsed) as a single
+        # match before treating "/" as an "X or Y" separator below, which would
+        # otherwise fragment it (e.g. "sulinggih / griya" -> the wrong entities
+        # "sulinggih" + a fuzzy hit for "griya" instead of "sulinggih_griya").
+        # Only accept an exact/alias/force_merge/strip whole-phrase match here, not
+        # "fuzzy" -- a longer 3+ term phrase (e.g. "sulinggih/griya dan tirtha")
+        # can otherwise score a deceptively high WRatio against a shorter
+        # candidate (the same hazard noted in resolve()'s fuzzy step above) and
+        # wrongly swallow the whole phrase as one match, silently dropping the
+        # other term(s) a real "X dan Y" split should have caught.
+        collapsed = re.sub(r"\s*/\s*", "/", raw)
+        whole = self.resolve(collapsed, fuzzy_threshold=fuzzy_threshold)
+        if whole and whole.via != "fuzzy":
+            return [whole]
+
         parts = re.split(r"\s+(?:dan|vs\.?|versus|atau|dengan|,|&|/|\bsama\b)\s+", raw)
         out: list[Match] = []
         seen: set[str] = set()

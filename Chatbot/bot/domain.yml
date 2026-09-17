@@ -25,6 +25,7 @@ actions:
   - utter_pamit
   - utter_iamabot
   - utter_out_of_scope
+  - utter_default
   - action_graph_rag
   - action_llm_fallback
 
@@ -37,6 +38,11 @@ responses:
     - text: "Saya bot glosarium istilah Ngaben. Jawaban saya disintesis langsung dari basis pengetahuan terminologi upacara Ngaben (GraphRAG)."
   utter_out_of_scope:
     - text: "Maaf, saya hanya melayani pertanyaan seputar upacara Ngaben dan terminologinya."
+  # config.yml's RulePolicy core_fallback_action_name is action_default_fallback,
+  # which utters this response -- without it, that fallback path (distinct from
+  # the NLU-level nlu_fallback intent) sent the user nothing at all.
+  utter_default:
+    - text: "Maaf, saya kurang memahami maksud Anda. Bisa dijelaskan dengan kalimat lain?"
 
 session_config:
   session_expiration_time: 60

@@ -21,6 +21,13 @@ nlu:
     - berapa harga upacara ngaben
     - cuaca hari ini
     - resep lawar bali
+    - siapa presiden indonesia
+    - jam berapa sekarang
+    - berikan aku resep nasi goreng
+    - apa itu machine learning
+    - ceritakan lelucon
+    - berapa harga tiket pesawat ke bali
+    - apa itu python programming
 - intent: ask_ngaben_detail
   examples: |
     - apa itu ngaben
@@ -42,3 +49,13 @@ nlu:
     - terbuat dari apa itu
     - maksudnya gimana
     - panca maha butha itu apa
+    - apa itu upacara ngaskara
+    - apa itu daksina tapakan
+    - apa itu tirtha kawitan
+    - apa itu wuku kuningan
+    - apa itu caru pengelambuk
+    - apa itu sorohan
+    - akasa itu apa
+    - apa itu bali dataran
+    - apa itu upacara ngerorasin
+    - apa itu sasih kaenem

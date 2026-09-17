@@ -1,6 +1,7 @@
 """Custom actions for the GraphRAG Ngaben bot using Neo4j and Qwen via Ollama."""
 import os
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Text, Optional
@@ -21,6 +22,7 @@ load_dotenv(find_dotenv())
 _BOT_DIR = Path(__file__).resolve().parent
 _REFUSAL_LOG_PATH = _BOT_DIR / "llm_refusal_log.jsonl"
 _UNRESOLVED_LOG_PATH = _BOT_DIR / "unresolved_log.jsonl"
+_NEO4J_ERROR_LOG_PATH = _BOT_DIR / "neo4j_error_log.jsonl"
 
 NEO4J_URI = os.getenv("NEO4J_URI", "neo4j://127.0.0.1:7687")
 NEO4J_USER = os.getenv("NEO4J_USER", "neo4j")
@@ -40,6 +42,12 @@ class Neo4jConnection:
                 return [r.data() for r in session.run(cypher, params or {})]
         except Exception as e:
             print(f"Neo4j Error: {e}")
+            # A console print is easy to miss on a long-running action server --
+            # log it durably too, the same way LLM refusals/fabrications and
+            # unresolved terms already are, so a Neo4j outage is discoverable
+            # after the fact instead of silently degrading every answer's
+            # relationships to empty with no trace.
+            _log_jsonl(_NEO4J_ERROR_LOG_PATH, {"kind": "neo4j_query_error", "error": str(e)})
             return []
 
     def close(self) -> None:
@@ -86,6 +94,7 @@ RETURN n.id AS id,
        collect(DISTINCT {
          relation: type(r),
          target: m.name,
+         target_id: m.id,
          target_labels: labels(m)
        })[..25] AS relationships
 """
@@ -100,6 +109,65 @@ _REFUSAL_SIGNALS = (
     "tidak disebutkan dalam data",
     "tidak ditemukan dalam data",
 )
+
+# Meta/instruction words the extraction LLM has echoed back as if they were a
+# term to look up (observed in conersation.md: a bare "jelaskan" follow-up
+# produced raw_terms ["jelaskan", "unsur unsur panca maha butha"]). These carry
+# no entity meaning on their own.
+_META_TERMS = frozenset({
+    "jelaskan", "jelaskanlah", "sebutkan", "coba", "tolong", "terangkan",
+    "terangkanlah", "ceritakan", "jabarkan", "uraikan",
+})
+
+# Words too generic/frequent across every answer to count as evidence of
+# grounding either way. Includes discourse/connector words a small LLM reaches
+# for in ANY elaboration regardless of correctness (terdiri, disebut,
+# pembentuk, filosofis, pemahaman, kehidupan, ...) -- confirmed these, not
+# invented nouns, were what pushed a factually correct, fully graph-grounded
+# answer about pancamahabutha's five elements over the fabrication threshold.
+_STOPWORDS_ID = frozenset("""
+yang untuk dalam adalah dengan atau dari pada juga akan telah tidak dapat
+seperti karena namun sebagai serta secara sebelum sesudah setelah hingga
+mereka semua salah satu bagian proses upacara ngaben ini itu tersebut para
+kepada oleh maupun berbagai memiliki menjadi digunakan dipakai berupa jenis
+konteks terdiri disebut dinyatakan menyatakan pembentuk filosofis pemahaman
+kehidupan diberikan merupakan berdasarkan berkaitan berhubungan menggambarkan
+menunjukkan termasuk beberapa bentuk dasar tentang sesuatu sehingga meskipun
+yaitu
+""".split())
+
+_WORD_RE = re.compile(r"[a-zA-Zç]+")
+
+
+def _content_words(text: Optional[Text], min_len: int = 5) -> set:
+    return {
+        w for w in _WORD_RE.findall((text or "").lower())
+        if len(w) >= min_len and w not in _STOPWORDS_ID
+    }
+
+
+def _context_vocabulary(enriched: List[Dict[str, Any]]) -> set:
+    vocab: set = set()
+    for e in enriched:
+        vocab |= _content_words(e.get("name"))
+        vocab |= _content_words(e.get("definition"))
+        for fact in e.get("facts") or []:
+            vocab |= _content_words(fact)
+        for rel in e.get("relationships") or []:
+            vocab |= _content_words(rel.get("target"))
+            vocab |= _content_words(rel.get("target_definition"))
+    return vocab
+
+
+def _grounded(word: str, vocab: set, prefix_len: int = 5) -> bool:
+    """A word counts as grounded if it (or an Indonesian-affix root, approximated
+    by a shared prefix) appears in the context vocabulary handed to the LLM."""
+    if word in vocab:
+        return True
+    if len(word) < prefix_len:
+        return False
+    prefix = word[:prefix_len]
+    return any(v.startswith(prefix) for v in vocab)
 
 
 def _log_jsonl(path: Path, record: Dict[str, Any]) -> None:
@@ -135,6 +203,15 @@ def _log_refusal(user_msg: str, enriched: List[Dict[str, Any]], llm_answer: str)
     })
 
 
+def _log_fabrication(user_msg: str, enriched: List[Dict[str, Any]], llm_answer: str) -> None:
+    _log_jsonl(_REFUSAL_LOG_PATH, {
+        "kind": "llm_fabrication_override",
+        "user_msg": user_msg,
+        "entities": [e["id"] for e in enriched],
+        "llm_answer": llm_answer,
+    })
+
+
 def _has_grounding(enriched: List[Dict[str, Any]]) -> bool:
     return any(
         e.get("definition") not in (None, "", "Tidak ada definisi langsung") or e.get("facts")
@@ -145,6 +222,30 @@ def _has_grounding(enriched: List[Dict[str, Any]]) -> bool:
 def _has_refusal_signal(answer: Text) -> bool:
     low = answer.lower()
     return any(sig in low for sig in _REFUSAL_SIGNALS)
+
+
+def _has_fabrication_signal(answer: Text, enriched: List[Dict[str, Any]]) -> bool:
+    """Flags answers that introduce substantial vocabulary absent from the KB
+    context handed to the LLM -- observed directly in conersation.md (the
+    "ngaben svasta symbolism" turn, where Qwen invented flowers/jewelry/clothing/
+    food/personal items that appear nowhere in the actual tirtha/toyo-çarira
+    facts it was given). Same shape as _has_refusal_signal: a deterministic,
+    Python-side check backstopping an LLM instruction (synth_sys_prompt rule 3)
+    a small local model doesn't reliably follow on its own."""
+    answer_words = _content_words(answer)
+    if len(answer_words) < 4:
+        return False  # too short to judge reliably either way
+    vocab = _context_vocabulary(enriched)
+    if not vocab:
+        return False
+    ungrounded = [w for w in answer_words if not _grounded(w, vocab)]
+    # 0.6 was too aggressive: a factually correct, fully graph-grounded answer
+    # about pancamahabutha's five elements measured ~0.61 purely from ordinary
+    # discourse connectors ("mengacu", "merujuk", "mencakup", "dikelompokkan",
+    # ...), while the real invented-symbolism case measured ~0.9. 0.75 keeps a
+    # comfortable margin below the real fabrication while no longer punishing
+    # normal elaboration.
+    return len(ungrounded) / len(answer_words) > 0.75
 
 
 def _deterministic_answer(enriched: List[Dict[str, Any]]) -> str:
@@ -170,6 +271,7 @@ def _extract_and_resolve(
     tracker: Tracker,
     user_msg: Text,
     entity_history: List[str],
+    current_entity: Optional[str] = None,
     announce_miss: bool = True,
 ) -> "tuple[List[Dict[str, Any]], List[str], List[str]]":
     """Steps 1-3: LLM term extraction -> kb_resolver -> Neo4j + curated-content
@@ -203,6 +305,9 @@ def _extract_and_resolve(
     Entities discussed so far this session, most recently discussed last:
     {entities_block}
 
+    Topic being discussed right now, if the current input uses a pronoun or
+    ellipsis with no other candidate in the entities list above: {current_entity or "(tidak ada)"}
+
     Task:
     - Pull out the term(s) the user is asking about right now, as close to their
       original wording as possible. Do NOT try to fix spelling or guess the
@@ -212,11 +317,32 @@ def _extract_and_resolve(
       term(s) it refers to, using the recent conversation and the entities list above.
     - If the current input clearly introduces a brand new term unrelated to the
       history, ignore the history and just return that new term.
+    - If the current input already names its own complete subject (it is not just
+      a bare pronoun, ellipsis, or instruction verb), return ONLY that subject --
+      do not also add older terms from history just because the topic is related.
+    - A vague add-on like "dan apa istilah lainnya" / "dan yang lain-lain" ("and
+      what other terms") has no specific referent -- it does NOT mean "also
+      return an unrelated term from the entities list above". If nothing in the
+      current input or the entities list clearly answers "what other term", drop
+      that add-on and return only the term(s) the input clearly names.
+    - Never include the user's own instruction verb (e.g. "jelaskan", "sebutkan",
+      "coba", "tolong") as one of the returned terms -- only the actual subject
+      matter being asked about.
     - Return ONLY a comma-separated list of the term(s), lowercase, no extra text,
       no punctuation.
     """
-    resolved_text = llm.invoke([HumanMessage(content=resolve_prompt)]).content.strip().lower()
-    raw_terms = [t.strip() for t in resolved_text.split(",") if t.strip()]
+    try:
+        resolved_text = llm.invoke([HumanMessage(content=resolve_prompt)]).content.strip().lower()
+        raw_terms = [t.strip() for t in resolved_text.split(",") if t.strip()]
+        # Deterministic backstop for the instruction above -- see _META_TERMS.
+        raw_terms = [t for t in raw_terms if t not in _META_TERMS]
+    except Exception as e:
+        # Ollama down/unreachable/timed out -- degrade instead of crashing the
+        # action (every intent path runs through this function). No
+        # coreference/ellipsis handling in this mode, but kb_resolver can still
+        # match a self-contained question directly off the raw message.
+        print(f"LLM term-extraction error: {e}")
+        raw_terms = [user_msg.strip().lower()] if user_msg.strip() else []
 
     if not raw_terms:
         if announce_miss:
@@ -278,12 +404,32 @@ def _extract_and_resolve(
         row = graph_rows.get(m.id, {"id": m.id, "name": m.name, "graph_definition": None,
                                       "labels": [], "relationships": []})
         definition = content.best_definition(m.id, row.get("graph_definition"))
+        # _GRAPH_QUERY's OPTIONAL MATCH + collect(DISTINCT {...}) is a known Cypher
+        # gotcha: a node with zero matching relationships still yields one
+        # {relation: null, target: null, target_labels: null} entry instead of an
+        # empty list (confirmed live -- every :Isolated node, ~93/476 entities,
+        # returns this). Drop it here rather than feed null junk into the LLM context.
+        relationships = [r for r in row.get("relationships", []) if r.get("relation")]
+        # For the is-a spine specifically, a bare child name is not enough context
+        # to answer "what does each part mean" -- the LLM otherwise has to guess
+        # from its own background knowledge and can mix up e.g. which Panca Maha
+        # Bhuta element is which classical meaning. Pull each child's own
+        # definition in (glossary/facts-backed, no extra Neo4j round trip) so the
+        # answer is actually grounded in this KB's text, not the model's memory.
+        # Capped -- a hub entity with many children shouldn't blow up the prompt.
+        n_child_defs = 0
+        for r in relationships:
+            if r.get("relation") == "TERMASUK_JENIS" and r.get("target_id") and n_child_defs < 8:
+                child_def = content.best_definition(r["target_id"])
+                if child_def:
+                    r["target_definition"] = child_def
+                    n_child_defs += 1
         enriched.append({
             "id": m.id,
             "name": row.get("name") or m.name,
             "definition": definition or "Tidak ada definisi langsung",
             "labels": row.get("labels", []),
-            "relationships": row.get("relationships", []),
+            "relationships": relationships,
             "facts": content.facts_for(m.id),
         })
 
@@ -311,7 +457,7 @@ def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]]) -> str:
     RULES:
     1. Use the provided Neo4j Graph Data context to answer the user's question.
     2. Explain terms clearly using the 'definition', 'facts', and 'relationships' provided in the JSON.
-    3. You may synthesize and connect relationships logically, but DO NOT invent or fabricate external facts, lore, or definitions that are missing from the context.
+    3. You may synthesize and connect relationships logically, but DO NOT invent or fabricate external facts, lore, examples, or definitions that are missing from the context. This includes NEVER listing example items, categories, or sub-types (e.g. "seperti bunga, perhiasan, pakaian, ...") unless those exact items appear in the given 'definition' or 'facts'.
     4. If an entity in the JSON has a non-empty 'definition' or non-empty 'facts', you MUST use it to answer -- never claim that information about it is missing.
     5. Only if the provided data lacks the answer entirely (every relevant entity has no definition and no facts), reply: "Maaf, informasi detail mengenai hal tersebut belum tercatat di basis data."
     6. Answer in natural, fluid Indonesian.
@@ -319,14 +465,25 @@ def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]]) -> str:
 
     synth_user_prompt = f"User Question: {user_msg}\nGraph Data:\n{raw_context}"
 
-    answer = llm.invoke([
-        SystemMessage(content=synth_sys_prompt),
-        HumanMessage(content=synth_user_prompt)
-    ]).content
+    try:
+        answer = llm.invoke([
+            SystemMessage(content=synth_sys_prompt),
+            HumanMessage(content=synth_user_prompt)
+        ]).content
+    except Exception as e:
+        # Ollama down/unreachable/timed out -- fall back to the pure-Python
+        # answer instead of crashing the action and leaving the user with no
+        # reply at all.
+        print(f"LLM synthesis error: {e}")
+        return _deterministic_answer(enriched)
 
-    if _has_grounding(enriched) and _has_refusal_signal(answer):
-        _log_refusal(user_msg, enriched, answer)
-        answer = _deterministic_answer(enriched)
+    if _has_grounding(enriched):
+        if _has_refusal_signal(answer):
+            _log_refusal(user_msg, enriched, answer)
+            answer = _deterministic_answer(enriched)
+        elif _has_fabrication_signal(answer, enriched):
+            _log_fabrication(user_msg, enriched, answer)
+            answer = _deterministic_answer(enriched)
 
     return answer
 
@@ -341,7 +498,8 @@ class ActionGraphRAG(Action):
         entity_history: List[str] = tracker.get_slot("entity_history") or []
 
         enriched, unresolved, found_names = _extract_and_resolve(
-            dispatcher, tracker, user_msg, entity_history, announce_miss=True
+            dispatcher, tracker, user_msg, entity_history,
+            current_entity=current_entity, announce_miss=True
         )
         if not enriched:
             # Don't clear history/current_entity -- a failed extraction/resolution
@@ -377,7 +535,8 @@ class ActionLLMFallback(Action):
         # free-form answer on a genuine resolution miss, and leave memory
         # untouched in that case, same as a failed ActionGraphRAG turn.
         enriched, unresolved, found_names = _extract_and_resolve(
-            dispatcher, tracker, user_msg, entity_history, announce_miss=False
+            dispatcher, tracker, user_msg, entity_history,
+            current_entity=current_entity, announce_miss=False
         )
         if enriched:
             answer = _synthesize(user_msg, enriched)
@@ -390,9 +549,18 @@ class ActionLLMFallback(Action):
             ]
 
         fallback_prompt = f"""
-        You are an assistant for Balinese Ngaben. A user asked: "{user_msg}".
-        Answer conversationally in Indonesian. If the question is weird, provide a safe, general answer about Ngaben.
+        You are an assistant for Balinese Ngaben. A user asked: "{user_msg}", but no
+        matching term was found in the knowledge base for this question.
+        Answer briefly and conversationally in Indonesian. Do NOT state specific
+        ritual details, names, or steps as if they were confirmed facts from the
+        Ngaben knowledge base -- you have no KB context for this question. If you
+        are not sure, say plainly that this detail is not recorded in the
+        knowledge base rather than guessing.
         """
-        answer = llm.invoke([HumanMessage(content=fallback_prompt)]).content
+        try:
+            answer = llm.invoke([HumanMessage(content=fallback_prompt)]).content
+        except Exception as e:
+            print(f"LLM fallback error: {e}")
+            answer = "Maaf, saya sedang mengalami gangguan teknis. Silakan coba lagi sebentar lagi."
         dispatcher.utter_message(text=answer)
         return []
