@@ -50,15 +50,21 @@ Graphing/Misc/
 # review artifacts) are real source, not scratch, and were never meant to be
 # unversioned (found 2026-09-18 while fixing the ngaben-tier KB gap -- entity_resolution.json
 # is the only record of every KB curation decision CLAUDE.md documents, e.g. the
-# Panca Maha Bhuta broader_overrides fix). Only build_kb.py's own generated
-# outputs are ignored below, matching its docstring's "Outputs (this folder)" list.
-Graphing/kb/entities.json
-Graphing/kb/relations.jsonl
-Graphing/kb/facts.jsonl
-Graphing/kb/passages.jsonl
+# Panca Maha Bhuta broader_overrides fix).
+#
+# Of build_kb.py's generated outputs, only the ones nothing at runtime actually
+# reads stay ignored here -- pure reports/docs, safe to always regenerate
+# (2026-09-21 audit: confirmed via grep, only referenced in a comment, never
+# loaded by code):
 Graphing/kb/glossary.md
 Graphing/kb/review_queue.jsonl
 Graphing/kb/build_report.txt
+# entities.json/relations.jsonl (read directly by Graphing/Neo4/load_ngaben_to_neo4j.py)
+# and facts.jsonl/passages.jsonl (read directly by Chatbot/bot/kb_content.py, at bot
+# runtime, not just at Neo4j-load time) are NOT ignored -- a fresh clone needs them to
+# actually run the loader/bot without first re-running build_kb.py, and they're the
+# tangible output of 8 batches of graph-fix curation, worth keeping as a checked-in
+# snapshot rather than relying purely on regeneration.
 Graphing/audit_tooling/
 Graphing/_archive/
 Graphing/KG_IMG/
