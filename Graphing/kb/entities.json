@@ -1369,6 +1369,12 @@
     "definition_source": "glossary",
     "broader": null,
     "attributes": {
+      "CONTOH": [
+        {
+          "value": "Trunyan (desa pegunungan yang mempertahankan tradisi asli kuno)",
+          "sentence_id": 104
+        }
+      ],
       "MEMPERTAHANKAN": [
         {
           "value": "tradisi asli kuno",
@@ -6401,14 +6407,26 @@
     "name": "ngangsen",
     "type": "RITUAL_KEMATIAN",
     "aliases": [],
-    "definition": "upacara penyucian sementara bagi sang pitra",
-    "definition_source": "relation:S2604",
-    "broader": null,
+    "definition": "Upacara darurat/sementara (\"titipan\") yang menggantikan Atma Wedana (Ngroras) yang sesungguhnya, diadakan bila dalam 42 hari setelah Ngaben, Atma Wedana yang sesungguhnya belum juga mungkin dilaksanakan; disebut juga \"Ngroras jenis Kangsen\". Pitra yang diupacarai Ngangsen belum berubah kedudukannya (masih pitra, dipuja di pelangkiran, belum berstatus bhatara/bhatari di pamrajan Rong Tiga) -- upacara penyucian sementara ini bertujuan agar suksmasarira pitra tidak lagi dilekati bekas-bekas badan kasar, sekaligus \"pangenteg linggih\" (menstabilkan kedudukan) Sang Pitara di Pitraloka, hingga Atma Wedana yang sesungguhnya baru dapat diadakan, mungkin lima atau sepuluh tahun kemudian",
+    "definition_source": "relation:S900051",
+    "broader": "ngerorasin",
     "attributes": {
       "BERTUJUAN_UNTUK": [
         {
           "value": "agar suksmasarira pitra tidak lagi dilekati bekas-bekas badan kasar",
           "sentence_id": 2604
+        }
+      ],
+      "DIADAKAN_JIKA": [
+        {
+          "value": "dalam 42 hari setelah Ngaben, upacara Atma Wedana (Ngroras) yang sesungguhnya belum mungkin dilaksanakan",
+          "sentence_id": 900054
+        }
+      ],
+      "DILAKSANAKAN": [
+        {
+          "value": "selalu tepat pada hari ke-12 setelah pangabenan",
+          "sentence_id": 900053
         }
       ]
     },
@@ -6540,16 +6558,40 @@
     "definition_source": "glossary",
     "broader": null,
     "attributes": {
+      "BERARTI_HARFIAH": [
+        {
+          "value": "\"melambaikan tangan\" sebagai isyarat memanggil seseorang -- maknanya memanggil/mengundang kembali roh mendiang yang sawanya telah ditanam atau dibakar titip, agar hadir menerima upacara Ngaben; upacara ini juga dinamakan Ngwangun (harfiah: membangunkan) atau Ngeplugin (karena salah satu unsurnya berwujud suara \"keplug\" dari pukulan gulungan upih ke tanah)",
+          "sentence_id": 900047
+        }
+      ],
       "BERPERAN_SEBAGAI": [
         {
           "value": "nama upacara",
           "sentence_id": 1504
         }
       ],
+      "DIIKUTI_OLEH": [
+        {
+          "value": "upacara Pabersihan (juga disebut Pasucian), diadakan tiga, dua, atau sehari menjelang hari Pangabenan",
+          "sentence_id": 900050
+        }
+      ],
+      "DILAKSANAKAN": [
+        {
+          "value": "pada hari baik (dewasa ayu), biasanya 2-4 hari menjelang pengabenan",
+          "sentence_id": 900049
+        }
+      ],
       "MEMILIKI": [
         {
           "value": "makna yang mirip dengan itu pula",
           "sentence_id": 1504
+        }
+      ],
+      "SYARAT": [
+        {
+          "value": "hanya diadakan bila di antara yang diaben ada mendiang yang sawanya telah ditanam atau dibakar titip terlebih dahulu (tidak dilakukan bila sawa masih ada di rumah)",
+          "sentence_id": 900048
         }
       ]
     },
@@ -7743,7 +7785,7 @@
     "aliases": [],
     "definition": "Sesajen kecil yang dihaturkan kepada jenazah sebagai bagian dari rangkaian upacara Ngulapin, yakni ritual memanggil kembali roh ke tempat atau wujud mendiang.",
     "definition_source": "glossary",
-    "broader": null,
+    "broader": "ngulapin",
     "attributes": {},
     "mention_passages": [
       "laporan_komp_234",
@@ -11411,7 +11453,7 @@
       "upacara_atiw_812"
     ],
     "resolve_method": "concept-map",
-    "n_source_strings": 1
+    "n_source_strings": 2
   },
   {
     "id": "tirta_panglukatan",
@@ -12163,8 +12205,8 @@
     "name": "upacara mapulang lingga",
     "type": "ISTILAH_UMUM_RITUAL",
     "aliases": [],
-    "definition": "ngelinggihang lingga dalam diri",
-    "definition_source": "relation:S4175",
+    "definition": "Upaya \"melinggihkan\" atau memasukkan Ida Sang Hyang Widhi (diundang sebagai Sang Hyang Shiwa oleh pendeta Shiwa, atau Sang Hyang Adi Buddha oleh pendeta Buddha) ke dalam diri seorang Sulinggih (Pandita), sehingga sinar suci Beliau meresapi air yang dipuja hingga menjadi tirtha; secara harfiah berarti \"Ngelinggihang Lingga\" dalam diri, yaitu Tuhan atau Brahman di-stanakan/ditempatkan dalam diri sendiri -- disebut juga \"Maprelingga\". Tidak sembarang Sulinggih boleh membuat Tirtha Pangentas: hanya Ida Sang Sulinggih yang sudah melaksanakan upacara Mapulang Lingga inilah yang berwenang membuatnya",
+    "definition_source": "relation:S900044",
     "broader": null,
     "attributes": {},
     "mention_passages": [
@@ -12176,13 +12218,13 @@
   },
   {
     "id": "upacara_mesulub",
-    "name": "upacara_mesulub",
+    "name": "upacara mesulub",
     "type": "RITUAL_KEMATIAN",
     "aliases": [
       "kepercayaan setempat"
     ],
-    "definition": "kepercayaan setempat yang telah diwarisi turun temurun sejak jaman dulu di daerah atau desa setempat",
-    "definition_source": "relation:S3860",
+    "definition": "Suatu tradisi di beberapa desa di Bali berupa upacara berjalan (menerobos) membungkuk di bawah jenazah yang telah selesai menjalani Upacara Ngeringkes (Pangringkesan/pembungkusan jenazah); dilakukan oleh keluarga mendiang yang patut menyembah (orang yang lebih tua dari yang meninggal, wanita hamil, dan wanita menyusui tidak diikutkan) dengan menerobos di bawah jenazah (di Pepaga/Asagan) bolak-balik sebanyak tiga kali. Maknanya adalah konsep \"Satya\" (kesetiaan): keluarga menyatakan kesetiaan kepada mendiang baik dalam keadaan senang maupun susah, baik semasa hidup maupun setelah mati, dengan harapan \"kekuatan\" orang yang meninggal menurun atau tetap berada pada keluarga yang \"nyulubin\". Merupakan kepercayaan/tradisi setempat yang diwariskan turun-temurun, tidak seragam di semua desa/daerah",
+    "definition_source": "relation:S900042",
     "broader": null,
     "attributes": {},
     "mention_passages": [

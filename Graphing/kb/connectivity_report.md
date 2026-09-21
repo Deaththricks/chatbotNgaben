@@ -1,15 +1,16 @@
 # Connectivity audit report
 
-Source: relation_results_ngaben.normalized.json (981 rows), entities.json (496 entities)
+Source: relation_results_ngaben.normalized.json (1000 rows), entities.json (496 entities)
 
 Read the module docstring before acting on anything here -- every
 line is a candidate, not a verdict.
 
-## Mixed ENTITY/LITERAL sibling groups (22)
+## Mixed ENTITY/LITERAL sibling groups (23)
 
 Same sentence+subject+relation, some siblings already ENTITY, some
 still LITERAL -- the LITERAL ones are invisible to the bot/graph.
 
+- S124 `bali dataran` -MENGGUNAKAN-> ENTITY: ['bade', 'patulangan'] | LITERAL: ['sarana mewah']
 - S265 `tegteg` -DILETAKKAN_DI-> ENTITY: ['tumpang salu'] | LITERAL: ['bungkusan tulang belulang']
 - S271 `tirta yadnya pranawa` -ADALAH-> ENTITY: ['atiwa-tiwa'] | LITERAL: ['istilah lain untuk raçadana dalam kategori ngaben svasta, yaitu ngaben yang sawanya diganti dengan simbol tirtha (toyo çarira) karena jenazah tidak dapat ditemukan, dengan tata pelaksanaan yang sama dengan atiwa-tiwa asti vedana']
 - S354 `pepaga` -TERBUAT_DARI-> ENTITY: ['hitungan galar', 'hitungan galir', 'hitungan galur', 'hitungan likah', 'hitungan wangke', 'hitungan wangkong'] | LITERAL: ['bambu']
@@ -53,7 +54,7 @@ word / abstract quality / descriptive clause (correctly stays LITERAL).
 - S3237 `lekesan` -BERISI-> ['tembakau']
 - S3816 `ante` -TERBUAT_DARI-> ['bilahan-bilahan bambu']
 
-## Isolated nodes: 33 total, 16 with a definition self-reference
+## Isolated nodes: 28 total, 14 with a definition self-reference
 
 Isolated = zero relations.jsonl edges in either direction (same
 definition Neo4/load_ngaben_to_neo4j.py's :Isolated tag uses). Of these,
@@ -65,10 +66,8 @@ expected outcome (see docstring), not a sign this pass missed something.
 - `amrethi_karana`: tirtha amertha->tirtha_amertha, atma wedana->ngerorasin, tirtha->tirtha
 - `arjuna`: tirtha penembak->tirtha_penembak, tirtha->tirtha
 - `asti_wedana`: tulang belulang->tulang_belulang, kuburan->kuburan
-- `bali_aga`: bali dataran->bali_dataran, wilayah->wilayah
 - `isi_pengawak`: tirtha pangentas->tirta_pangentas, perlambang->perlambang, pengawak->pengawak, tirtha->tirtha
 - `kelompok_paksa_mahayana`: peranda buddha->peranda_buddha, naga banda->naga_banda, swadharma->swadharma, manusia->manusia
-- `ngulapin`: pengulapan->pengulapan
 - `niskala`: mapegat->mapegat, pandita->pandita, pralina->pralina
 - `payadnyan`: manusia->manusia
 - `peranda_shiwa`: peranda buddha->peranda_buddha, utama->utama

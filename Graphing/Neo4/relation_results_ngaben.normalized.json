@@ -11811,5 +11811,252 @@
     "object_label": null,
     "object_type": "LITERAL",
     "source": "manual_addition+kg_graph_fix_batchH"
+  },
+
+  {
+    "sentence_id": 900042,
+    "context_sentence": "Di beberapa Desa di daerah Bali, ada yang memiliki suatu tradisi \"Upacara Mesulub\" yaitu suatu upacara berjalan (melakukan terobosan) di bawah jenazah, dan dilaksanakan ketika jenazah sudah selesai melaksanakan Upacara Ngeringkes (membungkus jenazah). Adapun makna dari \"Upacara Meselub\" adalah agar \"kekuatan\" orang yang meninggal menurun kepada keluarga yang \"Nyulubin\" tersebut, atau setidaknya \"kekuatan\" tersebut masih tetap berada pada diri keluarga yang di tinggalkan. Disamping itu \"Upacara Mesulub\" adalah merupakan konsep \"Satya\" atau kesetiaan. Di dalam \"Upacara Mesulub\", semua keluarga dari yang meninggal, khususnya yang patut menyembah (orang yang lebih tua dari yang meninggal tidak diperkenankan ikut, begitu juga wanita hamil, wanita sedang menyusui), mereka akan berjalan membungkuk di bawah Pepaga/Asagan. Dalam Upacara Mesulub, keluarga yang melakukan akan menerobos di bawah jenazah bolak-balik sebanyak tiga kali (3 X). [ngaben-merge-cleaned.txt lines 3680-3684, section 'B. Penjelasan tentang Upacara Mesulub'; real pipeline S3860/S3862 each only captured a short generic fragment of this same paragraph ('kepercayaan setempat yang diwariskan turun temurun' / bare 'konsep satya (kesetiaan)') as competing ADALAH literals for the same subject -- this row supersedes both (longer, so it wins under build_kb.py's longest-ADALAH-literal rule) with the actual term-specific content: what the ritual physically consists of, who performs it, and its full stated meaning. conersation.md item #11]",
+    "subject": "upacara mesulub",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Suatu tradisi di beberapa desa di Bali berupa upacara berjalan (menerobos) membungkuk di bawah jenazah yang telah selesai menjalani Upacara Ngeringkes (Pangringkesan/pembungkusan jenazah); dilakukan oleh keluarga mendiang yang patut menyembah (orang yang lebih tua dari yang meninggal, wanita hamil, dan wanita menyusui tidak diikutkan) dengan menerobos di bawah jenazah (di Pepaga/Asagan) bolak-balik sebanyak tiga kali. Maknanya adalah konsep \"Satya\" (kesetiaan): keluarga menyatakan kesetiaan kepada mendiang baik dalam keadaan senang maupun susah, baik semasa hidup maupun setelah mati, dengan harapan \"kekuatan\" orang yang meninggal menurun atau tetap berada pada keluarga yang \"nyulubin\". Merupakan kepercayaan/tradisi setempat yang diwariskan turun-temurun, tidak seragam di semua desa/daerah",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchI"
+  },
+
+  {
+    "sentence_id": 900043,
+    "context_sentence": "Di beberapa Desa di daerah Bali, ada yang memiliki suatu tradisi \"Upacara Mesulub\" yaitu suatu upacara berjalan (melakukan terobosan) di bawah jenazah, dan dilaksanakan ketika jenazah sudah selesai melaksanakan Upacara Ngeringkes (membungkus jenazah). [ngaben-merge-cleaned.txt line 3681; 'Upacara Ngeringkes' is the same wrapping-stage concept as the pre-existing 'pangringkes' entity (see entity_resolution.json's Batch A note, out-of-band S900007: 'Tahap dalam rangkaian Ngaben berupa upacara membungkus/menggulung jenazah (disebut juga Upacara Pangringkesan)') -- this lead sentence was never separately assigned a pipeline sentence_id (S3860 only captured the following sentence). conersation.md item #11]",
+    "subject": "upacara mesulub",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "DILAKSANAKAN_SETELAH",
+    "raw_relation": "DILAKSANAKAN_SETELAH",
+    "object": "pangringkes",
+    "object_label": "TAHAPAN_UPACARA",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchI"
+  },
+
+  {
+    "sentence_id": 900044,
+    "context_sentence": "Mula-mula \"diundanglah\" Sang Hyang Shiwa (oleh pendeta Shiwa) atau Sang Hyang Adi Buddha (oleh pendeta Buddha) guna masuk meresap ke dalam diri beliau. Upaya memasukkan Dat Hyang Widhi ke dalam diri sang pendeta itu disebut Mapulang Lingga... Dalam pembuatan Tirtha Pangentas inipun memiliki persyaratan tertentu, yaitu tidak sembarang Sulinggih boleh membuat Tirtha Pangentas. Karena yang boleh membuat Tirtha Pangentas hanyalah Ida Sang Sulinggih yang sudah melaksanakan upacara \"Mapulang Lingga\" atau \"Maprelingga\". Karena Upacara Mapulang Lingga artinya \"Ngelinggihang Lingga\" dalam diri, atau dengan kata lain, bahwa Tuhan atau Brahman di-Stanakan atau ditempatkan dalam diri sendiri. [ngaben-merge-cleaned.txt line 2506 (Pawedan/tirtha-making passage) + line 4121 (Tirtha Pangentas prerequisites passage, whose final sentence is real pipeline S4175); the real pipeline row only captured half of S4175's own sentence as a truncated BERARTI literal ('ngelinggihang lingga dalam diri'), dropping both the 'Tuhan/Brahman di-stanakan' clause and all of the surrounding term-specific context (who performs it, on whom, and why) -- this row supersedes it (longer, wins under build_kb.py's longest-ADALAH/BERARTI-literal rule). conersation.md item #11]",
+    "subject": "upacara mapulang lingga",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Upaya \"melinggihkan\" atau memasukkan Ida Sang Hyang Widhi (diundang sebagai Sang Hyang Shiwa oleh pendeta Shiwa, atau Sang Hyang Adi Buddha oleh pendeta Buddha) ke dalam diri seorang Sulinggih (Pandita), sehingga sinar suci Beliau meresapi air yang dipuja hingga menjadi tirtha; secara harfiah berarti \"Ngelinggihang Lingga\" dalam diri, yaitu Tuhan atau Brahman di-stanakan/ditempatkan dalam diri sendiri -- disebut juga \"Maprelingga\". Tidak sembarang Sulinggih boleh membuat Tirtha Pangentas: hanya Ida Sang Sulinggih yang sudah melaksanakan upacara Mapulang Lingga inilah yang berwenang membuatnya",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchI"
+  },
+
+  {
+    "sentence_id": 900045,
+    "context_sentence": "Dalam pembuatan Tirtha Pangentas inipun memiliki persyaratan tertentu, yaitu tidak sembarang Sulinggih boleh membuat Tirtha Pangentas. Karena yang boleh membuat Tirtha Pangentas hanyalah Ida Sang Sulinggih yang sudah melaksanakan upacara \"Mapulang Lingga\" atau \"Maprelingga\". [ngaben-merge-cleaned.txt line 4121, same paragraph as real pipeline S4175 (its final sentence) -- these two lead-in sentences stating the actual prerequisite were never separately assigned a pipeline sentence_id. conersation.md item #11]",
+    "subject": "tirta pangentas",
+    "subject_label": "TIRTHA_SUCI",
+    "relation": "MENSYARATKAN",
+    "raw_relation": "MENSYARATKAN",
+    "object": "upacara mapulang lingga",
+    "object_label": "ISTILAH_UMUM_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchI"
+  },
+
+  {
+    "sentence_id": 900046,
+    "context_sentence": "Mula-mula \"diundanglah\" Sang Hyang Shiwa (oleh pendeta Shiwa) atau Sang Hyang Adi Buddha (oleh pendeta Buddha) guna masuk meresap ke dalam diri beliau. Upaya memasukkan Dat Hyang Widhi ke dalam diri sang pendeta itu disebut Mapulang Lingga. [ngaben-merge-cleaned.txt line 2506, section describing the Pawedan tirtha-making procedure performed by 'sang pendeta'/sulinggih; never assigned a pipeline sentence_id. conersation.md item #11]",
+    "subject": "sulinggih",
+    "subject_label": "ENTITAS_KEAGAMAAN",
+    "relation": "MELAKSANAKAN",
+    "raw_relation": "MELAKSANAKAN",
+    "object": "upacara mapulang lingga",
+    "object_label": "ISTILAH_UMUM_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchI"
+  },
+
+  {
+    "sentence_id": 104,
+    "context_sentence": "bali aga vs bali dataran: terdapat perbedaan mendasar antara masyarakat pegunungan ( bali aga ) yang mempertahankan tradisi asli kuno (seperti di trunyan) dengan masyarakat bali dataran yang mendapat pengaruh kuat dari tradisi hindu-majapahit pasca jatuhnya kerajaan di jawa. [same real sentence already used above for bali_aga's MEMPERTAHANKAN and bali_dataran's MENDAPAT_PENGARUH_DARI edges -- its explicit contrast ('...yang mempertahankan tradisi asli kuno... DENGAN masyarakat Bali Dataran yang mendapat pengaruh kuat dari tradisi Hindu-Majapahit') supports the complementary edge from the Bali Aga side: kept its own tradition, i.e. was NOT influenced. conersation.md item #22]",
+    "subject": "bali aga",
+    "subject_label": "Place",
+    "relation": "TIDAK_TERPENGARUH",
+    "raw_relation": "TIDAK_TERPENGARUH",
+    "object": "tradisi hindu-majapahit",
+    "object_label": "AGAMA",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchI"
+  },
+
+  {
+    "sentence_id": 104,
+    "context_sentence": "bali aga vs bali dataran: terdapat perbedaan mendasar antara masyarakat pegunungan ( bali aga ) yang mempertahankan tradisi asli kuno (seperti di trunyan) dengan masyarakat bali dataran yang mendapat pengaruh kuat dari tradisi hindu-majapahit pasca jatuhnya kerajaan di jawa. [same real sentence as above; '(seperti di Trunyan)' names the one specific place the source gives as an example Bali Aga community. conersation.md item #22]",
+    "subject": "bali aga",
+    "subject_label": "Place",
+    "relation": "CONTOH",
+    "raw_relation": "CONTOH",
+    "object": "Trunyan (desa pegunungan yang mempertahankan tradisi asli kuno)",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchI"
+  },
+
+  {
+    "sentence_id": 104,
+    "context_sentence": "bali aga vs bali dataran: terdapat perbedaan mendasar antara masyarakat pegunungan ( bali aga ) yang mempertahankan tradisi asli kuno (seperti di trunyan) dengan masyarakat bali dataran yang mendapat pengaruh kuat dari tradisi hindu-majapahit pasca jatuhnya kerajaan di jawa. [same real sentence as above; its own heading ('Bali Aga vs Bali Dataran') and bali_aga's own Glosarium definition ('adat istiadat yang berbeda dari mayoritas masyarakat Bali dataran', ngaben-merge-cleaned.txt line 315) both frame these as a contrastive pair. conersation.md item #22]",
+    "subject": "bali aga",
+    "subject_label": "Place",
+    "relation": "BERBEDA_DENGAN",
+    "raw_relation": "BERBEDA_DENGAN",
+    "object": "bali dataran",
+    "object_label": "Place",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchI"
+  },
+
+  {
+    "sentence_id": 124,
+    "context_sentence": "bali dataran menggunakan sarana mewah (bade/petulangan) pengaruh majapahit, sedangkan bali aga lebih menonjolkan tradisi asli yang terkadang tidak menggunakan pembakaran fisik secara masif. [same real sentence already used above for bali_aga's MENONJOLKAN/TIDAK_MENGGUNAKAN attributes and bali_dataran's generic 'sarana mewah' LITERAL attribute -- this row and the next promote that generic literal into the two specific ENTITY edges the parenthetical '(bade/petulangan)' actually names, same LITERAL-to-ENTITY promotion pattern as Batch E's hyang_agni/damar_kurung case. conersation.md item #22]",
+    "subject": "bali dataran",
+    "subject_label": "Place",
+    "relation": "MENGGUNAKAN",
+    "raw_relation": "MENGGUNAKAN",
+    "object": "bade",
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchI"
+  },
+
+  {
+    "sentence_id": 124,
+    "context_sentence": "bali dataran menggunakan sarana mewah (bade/petulangan) pengaruh majapahit, sedangkan bali aga lebih menonjolkan tradisi asli yang terkadang tidak menggunakan pembakaran fisik secara masif. [same real sentence as above; 'petulangan' is the source's own spelling of patulangan, already force_merge'd onto the existing patulangan entity. conersation.md item #22]",
+    "subject": "bali dataran",
+    "subject_label": "Place",
+    "relation": "MENGGUNAKAN",
+    "raw_relation": "MENGGUNAKAN",
+    "object": "patulangan",
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchI"
+  },
+
+  {
+    "sentence_id": 900047,
+    "context_sentence": "Bertalian dengan itu, maka pembicaraan tentang Ngaben jenis Sawa Wedana ini akan diawali dengan upacara Ngulapin, Ngwangun, atau Ngeplugin yang tentunya hanya berlaku kalau sawa asli telah tiada, termasuk bagi yang telah ditanam titip. Secara harfiah ngulapin berarti \"melambaikan tangan\" sebagai isyarat memanggil seseorang. Selaku nama upacara, ngulapin juga mempunyai makna yang mirip dengan itu pula. Yakni, memanggil roh mendiang yang sawanya telah ditanam atau bakar titip terlebih dulu, atau sawa tidak ditemukan sebab-sebab lain. Upacara ini dinamakan juga Ngwangun (yang secara harfiah berarti membangunkan)... Dinamakan pula Ngeplugin, karena salah satu unsur dari upacara tersebut berwujud suara \"keplug,\" yang ditimbulkan dari pukulan sebuah gulungan upih (kelopak pelepah pinang) ke tanah, selaku sarana membangunkan serta memanggil roh mendiang. [ngaben-merge-cleaned.txt lines 1534-1537, section on Sawa Wedana's opening rites; never assigned a pipeline sentence_id -- real pipeline S1504 (already this entity's existing 'nama upacara'/'makna yang mirip dengan itu pula' attributes) only captured a bare cross-reference fragment of this same passage. Recorded as a non-ADALAH attribute rather than a competing ADALAH/BERARTI definition candidate: ngulapin already has a real Glosarium bullet (ngaben-merge-cleaned.txt line 347), which always overrides a relation-sourced definition in build_kb.py regardless of length, so an ADALAH row here would be a no-op. conersation.md item #44]",
+    "subject": "ngulapin",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "BERARTI_HARFIAH",
+    "raw_relation": "BERARTI_HARFIAH",
+    "object": "\"melambaikan tangan\" sebagai isyarat memanggil seseorang -- maknanya memanggil/mengundang kembali roh mendiang yang sawanya telah ditanam atau dibakar titip, agar hadir menerima upacara Ngaben; upacara ini juga dinamakan Ngwangun (harfiah: membangunkan) atau Ngeplugin (karena salah satu unsurnya berwujud suara \"keplug\" dari pukulan gulungan upih ke tanah)",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchI"
+  },
+
+  {
+    "sentence_id": 900048,
+    "context_sentence": "Dengan demikian jelaslah kiranya, bahwa upacara Ngulapin hanya diadakan kalau (di antara) yang diaben ada yang terdiri dari mendiang yang telah ditanam atau bakar titip terlebih dahulu. Tentu saja Ngulapin tidaklah dilakukan dalam hal sawa yang bersangkutan masih ada di rumah, baik yang baru meninggal beberapa hari maupun melalui upacara Nyekeh terlebih dahulu. [ngaben-merge-cleaned.txt line 1540; never assigned a pipeline sentence_id. conersation.md item #44]",
+    "subject": "ngulapin",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "SYARAT",
+    "raw_relation": "SYARAT",
+    "object": "hanya diadakan bila di antara yang diaben ada mendiang yang sawanya telah ditanam atau dibakar titip terlebih dahulu (tidak dilakukan bila sawa masih ada di rumah)",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchI"
+  },
+
+  {
+    "sentence_id": 900049,
+    "context_sentence": "Untuk melakukan ngulapin, dewasa ayu (hari baik) harus dicari pula. Biasanya, ngulapin dilakukan 2 - 4 hari menjelang pengabenan. [ngaben-merge-cleaned.txt line 1543; never assigned a pipeline sentence_id. conersation.md item #44]",
+    "subject": "ngulapin",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "DILAKSANAKAN",
+    "raw_relation": "DILAKSANAKAN",
+    "object": "pada hari baik (dewasa ayu), biasanya 2-4 hari menjelang pengabenan",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchI"
+  },
+
+  {
+    "sentence_id": 900050,
+    "context_sentence": "Setelah Ngulapin, tiga, dua atau sehari menjelang hari Pangabenan, diadakanlah suatu upacara yang disebut Pabersihan atau sering pula disebut Pasucian. [ngaben-merge-cleaned.txt line 1563; never assigned a pipeline sentence_id. Kept as a LITERAL rather than an edge to the existing 'pabersihan_mati' entity -- that entity's own definition (Batch C) is specifically the Ngelelet/nail-scraping stage performed right after death during Nyiramang Layon, whereas this 'Pabersihan/Pasucian' is a later, separate re-preparation held 1-3 days before the actual cremation for the titip/Sawa-Wedana case; without clearer corpus evidence they are the same referent, linking them by id risks a wrong edge. conersation.md item #44]",
+    "subject": "ngulapin",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "DIIKUTI_OLEH",
+    "raw_relation": "DIIKUTI_OLEH",
+    "object": "upacara Pabersihan (juga disebut Pasucian), diadakan tiga, dua, atau sehari menjelang hari Pangabenan",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchI"
+  },
+
+  {
+    "sentence_id": 900051,
+    "context_sentence": "Jika dalam mengupacarai jenazah, ada jalan darurat berupa tanam atau bakar-titip (jika belum bisa melangsungkan Ngaben) maka dalam Atma Wedana pun mengenal jalan darurat itu. Jika dalam jangka waktu 42 hari setelah Ngaben, belum mungkin diadakan upacara Atma Wedana, maka diadakanlah upacara darurat selaku pengganti, bernama Ngangsen atau melaksanakan upacara Ngroras jenis Kangsen... Terlepas apakah dugaan tentang kata itu benar, yang jelas upacara Ngangsen memang benar-benar berupa satu upacara Atma Wedana \"titipan\". Artinya, pitra seseorang yang telah diaben, lalu diupacarai Ngangsen sebagai upacara lanjutannya, belumlah berubah kedudukannya. Yang diupacarai masih tetap selaku pitra, serta dipuja di pelangkiran rumah adat, bukan dari pamrajan Rong Tiga, karena dia belum berstatus bhatara atau bhatari. [ngaben-merge-cleaned.txt lines 2345-2354, section 'Ngangsen'; never assigned a pipeline sentence_id -- real pipeline S2604 only captured the much narrower 'upacara penyucian sementara bagi Sang Pitra' sentence (already this entity's existing thin definition), dropping Ngangsen's identity as an emergency/provisional substitute for the real Atma Wedana (Ngroras). This row supersedes it (longer, wins under build_kb.py's longest-ADALAH-literal rule). conersation.md item #48]",
+    "subject": "ngangsen",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Upacara darurat/sementara (\"titipan\") yang menggantikan Atma Wedana (Ngroras) yang sesungguhnya, diadakan bila dalam 42 hari setelah Ngaben, Atma Wedana yang sesungguhnya belum juga mungkin dilaksanakan; disebut juga \"Ngroras jenis Kangsen\". Pitra yang diupacarai Ngangsen belum berubah kedudukannya (masih pitra, dipuja di pelangkiran, belum berstatus bhatara/bhatari di pamrajan Rong Tiga) -- upacara penyucian sementara ini bertujuan agar suksmasarira pitra tidak lagi dilekati bekas-bekas badan kasar, sekaligus \"pangenteg linggih\" (menstabilkan kedudukan) Sang Pitara di Pitraloka, hingga Atma Wedana yang sesungguhnya baru dapat diadakan, mungkin lima atau sepuluh tahun kemudian",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchI"
+  },
+
+  {
+    "sentence_id": 900052,
+    "context_sentence": "Ngangsen, selalu dilakukan tepat pada hari ke-12 setelah pangabenan. [ngaben-merge-cleaned.txt line 2360; never assigned a pipeline sentence_id, falls between real pipeline S2604 and S2612. conersation.md item #48]",
+    "subject": "ngangsen",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "DILAKUKAN_SETELAH",
+    "raw_relation": "DILAKUKAN_SETELAH",
+    "object": "pangabenan",
+    "object_label": "RITUAL_KEMATIAN",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchI"
+  },
+
+  {
+    "sentence_id": 900053,
+    "context_sentence": "Ngangsen, selalu dilakukan tepat pada hari ke-12 setelah pangabenan. [same real corpus sentence as the row above, ngaben-merge-cleaned.txt line 2360, recorded here as the exact-timing attribute alongside the ENTITY edge above. conersation.md item #48]",
+    "subject": "ngangsen",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "DILAKSANAKAN",
+    "raw_relation": "DILAKSANAKAN",
+    "object": "selalu tepat pada hari ke-12 setelah pangabenan",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchI"
+  },
+
+  {
+    "sentence_id": 900054,
+    "context_sentence": "Jika dalam mengupacarai jenazah, ada jalan darurat berupa tanam atau bakar-titip (jika belum bisa melangsungkan Ngaben) maka dalam Atma Wedana pun mengenal jalan darurat itu. Jika dalam jangka waktu 42 hari setelah Ngaben, belum mungkin diadakan upacara Atma Wedana, maka diadakanlah upacara darurat selaku pengganti, bernama Ngangsen. [ngaben-merge-cleaned.txt line 2348; never assigned a pipeline sentence_id. conersation.md item #48]",
+    "subject": "ngangsen",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "DIADAKAN_JIKA",
+    "raw_relation": "DIADAKAN_JIKA",
+    "object": "dalam 42 hari setelah Ngaben, upacara Atma Wedana (Ngroras) yang sesungguhnya belum mungkin dilaksanakan",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchI"
+  },
+
+  {
+    "sentence_id": 2612,
+    "context_sentence": "pitra mendiang, yang merupakan sasaran upacara dibuatkan perlambang yang disebut sekah kangsen. [same real sentence already used above for the 'perlambang DIKENAL_SEBAGAI sekah kangsen' / 'pitra mendiang DIBUATKAN perlambang' rows -- its lead-in question in the source text ('Lalu bagaimana upacara Ngangsennya?', ngaben-merge-cleaned.txt line 2363) makes explicit this passage is specifically about Ngangsen's own procedure; this row makes that link a real graph edge instead of only being inferable from adjacent text. conersation.md item #48]",
+    "subject": "ngangsen",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "MENGGUNAKAN",
+    "raw_relation": "MENGGUNAKAN",
+    "object": "sekah kangsen",
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchI"
   }
 ]

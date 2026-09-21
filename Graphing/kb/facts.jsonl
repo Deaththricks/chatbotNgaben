@@ -4155,3 +4155,102 @@
   "source_sentence": "Seperti contoh misalnya, di suatu desa pengerikan kuku bagi jenazah laki-laki digunakan \"arit gobed\" (sabit untuk menyabit rumput)... Sedangkan untuk kuku jenazah wanita digunakan \"anggapan\" (ani-ani atau ketam) yaitu alat untuk memotong padi. [ngaben-merge-cleaned.txt line 3377; the two tools are the male/female counterpart implements for the identical ritual step (pengerikan kuku during Pabersihan Mati/Ngelelet), confirmed again at line 2866: 'Kedua alat ini digunakan untuk membersihkan kuku jenazah. Anggapan (anai-anai) untuk membersihkan kuku jenazah wanita, sedangkan Arit Gobed untuk mayat laki-laki']",
   "sentence_id": 900040
 }
+
+{
+  "id": "f900043_upacara_me_pangringke",
+  "text": "upacara mesulub dilaksanakan setelah pangringkes.",
+  "subject_id": "upacara_mesulub",
+  "predicate": "DILAKSANAKAN_SETELAH",
+  "object_id": "pangringkes",
+  "confidence": "HIGH",
+  "source_sentence": "Di beberapa Desa di daerah Bali, ada yang memiliki suatu tradisi \"Upacara Mesulub\" yaitu suatu upacara berjalan (melakukan terobosan) di bawah jenazah, dan dilaksanakan ketika jenazah sudah selesai melaksanakan Upacara Ngeringkes (membungkus jenazah). [ngaben-merge-cleaned.txt line 3681; 'Upacara Ngeringkes' is the same wrapping-stage concept as the pre-existing 'pangringkes' entity (see entity_resolution.json's Batch A note, out-of-band S900007: 'Tahap dalam rangkaian Ngaben berupa upacara membungkus/menggulung jenazah (disebut juga Upacara Pangringkesan)') -- this lead sentence was never separately assigned a pipeline sentence_id (S3860 only captured the following sentence). conersation.md item #11]",
+  "sentence_id": 900043
+}
+
+{
+  "id": "f900045_tirta_pang_upacara_ma",
+  "text": "tirta pangentas mensyaratkan upacara mapulang lingga.",
+  "subject_id": "tirta_pangentas",
+  "predicate": "MENSYARATKAN",
+  "object_id": "upacara_mapulang_lingga",
+  "confidence": "HIGH",
+  "source_sentence": "Dalam pembuatan Tirtha Pangentas inipun memiliki persyaratan tertentu, yaitu tidak sembarang Sulinggih boleh membuat Tirtha Pangentas. Karena yang boleh membuat Tirtha Pangentas hanyalah Ida Sang Sulinggih yang sudah melaksanakan upacara \"Mapulang Lingga\" atau \"Maprelingga\". [ngaben-merge-cleaned.txt line 4121, same paragraph as real pipeline S4175 (its final sentence) -- these two lead-in sentences stating the actual prerequisite were never separately assigned a pipeline sentence_id. conersation.md item #11]",
+  "sentence_id": 900045
+}
+
+{
+  "id": "f900046_sulinggih_upacara_ma",
+  "text": "sulinggih melaksanakan upacara mapulang lingga.",
+  "subject_id": "sulinggih",
+  "predicate": "MELAKSANAKAN",
+  "object_id": "upacara_mapulang_lingga",
+  "confidence": "HIGH",
+  "source_sentence": "Mula-mula \"diundanglah\" Sang Hyang Shiwa (oleh pendeta Shiwa) atau Sang Hyang Adi Buddha (oleh pendeta Buddha) guna masuk meresap ke dalam diri beliau. Upaya memasukkan Dat Hyang Widhi ke dalam diri sang pendeta itu disebut Mapulang Lingga. [ngaben-merge-cleaned.txt line 2506, section describing the Pawedan tirtha-making procedure performed by 'sang pendeta'/sulinggih; never assigned a pipeline sentence_id. conersation.md item #11]",
+  "sentence_id": 900046
+}
+
+{
+  "id": "f104_bali_aga_tradisi_hi",
+  "text": "bali aga tidak terpengaruh tradisi hindu-majapahit.",
+  "subject_id": "bali_aga",
+  "predicate": "TIDAK_TERPENGARUH",
+  "object_id": "tradisi_hindu_majapahit",
+  "confidence": "HIGH",
+  "source_sentence": "bali aga vs bali dataran: terdapat perbedaan mendasar antara masyarakat pegunungan ( bali aga ) yang mempertahankan tradisi asli kuno (seperti di trunyan) dengan masyarakat bali dataran yang mendapat pengaruh kuat dari tradisi hindu-majapahit pasca jatuhnya kerajaan di jawa. [same real sentence already used above for bali_aga's MEMPERTAHANKAN and bali_dataran's MENDAPAT_PENGARUH_DARI edges -- its explicit contrast ('...yang mempertahankan tradisi asli kuno... DENGAN masyarakat Bali Dataran yang mendapat pengaruh kuat dari tradisi Hindu-Majapahit') supports the complementary edge from the Bali Aga side: kept its own tradition, i.e. was NOT influenced. conersation.md item #22]",
+  "sentence_id": 104
+}
+
+{
+  "id": "f104_bali_aga_bali_datar",
+  "text": "bali aga berbeda dengan bali dataran.",
+  "subject_id": "bali_aga",
+  "predicate": "BERBEDA_DENGAN",
+  "object_id": "bali_dataran",
+  "confidence": "HIGH",
+  "source_sentence": "bali aga vs bali dataran: terdapat perbedaan mendasar antara masyarakat pegunungan ( bali aga ) yang mempertahankan tradisi asli kuno (seperti di trunyan) dengan masyarakat bali dataran yang mendapat pengaruh kuat dari tradisi hindu-majapahit pasca jatuhnya kerajaan di jawa. [same real sentence as above; its own heading ('Bali Aga vs Bali Dataran') and bali_aga's own Glosarium definition ('adat istiadat yang berbeda dari mayoritas masyarakat Bali dataran', ngaben-merge-cleaned.txt line 315) both frame these as a contrastive pair. conersation.md item #22]",
+  "sentence_id": 104
+}
+
+{
+  "id": "f124_bali_datar_bade",
+  "text": "bali dataran menggunakan bade.",
+  "subject_id": "bali_dataran",
+  "predicate": "MENGGUNAKAN",
+  "object_id": "bade",
+  "confidence": "HIGH",
+  "source_sentence": "bali dataran menggunakan sarana mewah (bade/petulangan) pengaruh majapahit, sedangkan bali aga lebih menonjolkan tradisi asli yang terkadang tidak menggunakan pembakaran fisik secara masif. [same real sentence already used above for bali_aga's MENONJOLKAN/TIDAK_MENGGUNAKAN attributes and bali_dataran's generic 'sarana mewah' LITERAL attribute -- this row and the next promote that generic literal into the two specific ENTITY edges the parenthetical '(bade/petulangan)' actually names, same LITERAL-to-ENTITY promotion pattern as Batch E's hyang_agni/damar_kurung case. conersation.md item #22]",
+  "sentence_id": 124
+}
+
+{
+  "id": "f124_bali_datar_patulangan",
+  "text": "bali dataran menggunakan patulangan.",
+  "subject_id": "bali_dataran",
+  "predicate": "MENGGUNAKAN",
+  "object_id": "patulangan",
+  "confidence": "HIGH",
+  "source_sentence": "bali dataran menggunakan sarana mewah (bade/petulangan) pengaruh majapahit, sedangkan bali aga lebih menonjolkan tradisi asli yang terkadang tidak menggunakan pembakaran fisik secara masif. [same real sentence as above; 'petulangan' is the source's own spelling of patulangan, already force_merge'd onto the existing patulangan entity. conersation.md item #22]",
+  "sentence_id": 124
+}
+
+{
+  "id": "f900052_ngangsen_ngaben",
+  "text": "ngangsen dilakukan setelah ngaben.",
+  "subject_id": "ngangsen",
+  "predicate": "DILAKUKAN_SETELAH",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "Ngangsen, selalu dilakukan tepat pada hari ke-12 setelah pangabenan. [ngaben-merge-cleaned.txt line 2360; never assigned a pipeline sentence_id, falls between real pipeline S2604 and S2612. conersation.md item #48]",
+  "sentence_id": 900052
+}
+
+{
+  "id": "f2612_ngangsen_sekah_kang",
+  "text": "ngangsen menggunakan sekah kangsen.",
+  "subject_id": "ngangsen",
+  "predicate": "MENGGUNAKAN",
+  "object_id": "sekah_kangsen",
+  "confidence": "HIGH",
+  "source_sentence": "pitra mendiang, yang merupakan sasaran upacara dibuatkan perlambang yang disebut sekah kangsen. [same real sentence already used above for the 'perlambang DIKENAL_SEBAGAI sekah kangsen' / 'pitra mendiang DIBUATKAN perlambang' rows -- its lead-in question in the source text ('Lalu bagaimana upacara Ngangsennya?', ngaben-merge-cleaned.txt line 2363) makes explicit this passage is specifically about Ngangsen's own procedure; this row makes that link a real graph edge instead of only being inferable from adjacent text. conersation.md item #48]",
+  "sentence_id": 2612
+}
