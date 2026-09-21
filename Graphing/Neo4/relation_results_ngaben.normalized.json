@@ -739,9 +739,9 @@
     "relation": "TERDIRI_DARI",
     "raw_relation": "TERDIRI_DARI",
     "object": "beras kuning",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 219,
@@ -751,9 +751,9 @@
     "relation": "TERDIRI_DARI",
     "raw_relation": "TERDIRI_DARI",
     "object": "daun temen",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 219,
@@ -811,8 +811,8 @@
     "relation": "DIKUBUR_DENGAN",
     "raw_relation": "DIKUBUR_DENGAN",
     "object": "tata cara penguburan biasa",
-    "object_label": "TAHAPAN_UPACARA",
-    "object_type": "ENTITY",
+    "object_label": null,
+    "object_type": "LITERAL",
     "source": "dependency_rule"
   },
   {
@@ -1135,9 +1135,9 @@
     "relation": "BERUPA",
     "raw_relation": "BERUPA",
     "object": "bunga",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "manual_addition"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_connectivity_fix"
   },
   {
     "sentence_id": 344,
@@ -1146,10 +1146,10 @@
     "subject_label": "SARANA_RITUAL",
     "relation": "BERUPA",
     "raw_relation": "BERUPA",
-    "object": "kain kuning untuk saput atau selendang",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "manual_addition"
+    "object": "kain kuning untuk saput/selendang",
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_connectivity_fix"
   },
   {
     "sentence_id": 344,
@@ -1158,10 +1158,10 @@
     "subject_label": "SARANA_RITUAL",
     "relation": "BERUPA",
     "raw_relation": "BERUPA",
-    "object": "kain putih untuk bantal berisi pis bolong 11 kepeng",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object": "kain putih untuk bantal",
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 344,
@@ -1183,9 +1183,9 @@
     "relation": "BERUPA",
     "raw_relation": "BERUPA",
     "object": "kamben",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "manual_addition"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_connectivity_fix"
   },
   {
     "sentence_id": 344,
@@ -1219,9 +1219,9 @@
     "relation": "BERUPA",
     "raw_relation": "BERUPA",
     "object": "pangulungan",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "manual_addition"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_connectivity_fix"
   },
   {
     "sentence_id": 344,
@@ -1230,10 +1230,10 @@
     "subject_label": "SARANA_RITUAL",
     "relation": "BERUPA",
     "raw_relation": "BERUPA",
-    "object": "rantasan kain putih kuning dan kain anyar",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "manual_addition"
+    "object": "rantasan kain putih-kuning",
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_connectivity_fix"
   },
   {
     "sentence_id": 344,
@@ -1243,9 +1243,9 @@
     "relation": "BERUPA",
     "raw_relation": "BERUPA",
     "object": "sabuk",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "manual_addition"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_connectivity_fix"
   },
   {
     "sentence_id": 344,
@@ -1267,9 +1267,9 @@
     "relation": "BERUPA",
     "raw_relation": "BERUPA",
     "object": "tapih",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "manual_addition"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_connectivity_fix"
   },
   {
     "sentence_id": 344,
@@ -1279,9 +1279,9 @@
     "relation": "BERUPA",
     "raw_relation": "BERUPA",
     "object": "tatindih",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "manual_addition"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_connectivity_fix"
   },
   {
     "sentence_id": 344,
@@ -1339,9 +1339,9 @@
     "relation": "TERBUAT_DARI",
     "raw_relation": "TERBUAT_DARI",
     "object": "hitungan galir",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 354,
@@ -1351,9 +1351,9 @@
     "relation": "TERBUAT_DARI",
     "raw_relation": "TERBUAT_DARI",
     "object": "hitungan galur",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 354,
@@ -1363,9 +1363,9 @@
     "relation": "TERBUAT_DARI",
     "raw_relation": "TERBUAT_DARI",
     "object": "hitungan likah",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 354,
@@ -1375,9 +1375,9 @@
     "relation": "TERBUAT_DARI",
     "raw_relation": "TERBUAT_DARI",
     "object": "hitungan wangke",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 354,
@@ -1387,9 +1387,9 @@
     "relation": "TERBUAT_DARI",
     "raw_relation": "TERBUAT_DARI",
     "object": "hitungan wangkong",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 358,
@@ -2407,9 +2407,9 @@
     "relation": "BERFUNGSI_SEBAGAI",
     "raw_relation": "BERFUNGSI_SEBAGAI",
     "object": "balai-balai alas ngringkes",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "manual_edit"
+    "object_label": "ISTILAH_UMUM_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_edit+kg_connectivity_fix"
   },
   {
     "sentence_id": 1058,
@@ -3247,8 +3247,8 @@
     "relation": "BERDASARKAN",
     "raw_relation": "BERDASARKAN",
     "object": "penuh sredaning citta",
-    "object_label": "KONSEP_FILOSOFIS",
-    "object_type": "ENTITY",
+    "object_label": null,
+    "object_type": "LITERAL",
     "source": "dependency_rule"
   },
   {
@@ -3415,9 +3415,9 @@
     "relation": "TERBUAT_DARI",
     "raw_relation": "TERBUAT_DARI",
     "object": "daun rontal",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "manual_addition"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_connectivity_fix2"
   },
   {
     "sentence_id": 1465,
@@ -3463,9 +3463,9 @@
     "relation": "BERISI",
     "raw_relation": "BERISI",
     "object": "sembilan batang kayu cendana",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "manual_addition"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_connectivity_fix2"
   },
   {
     "sentence_id": 1465,
@@ -4219,9 +4219,9 @@
     "relation": "TERBUAT_DARI",
     "raw_relation": "TERBUAT_DARI",
     "object": "kulit telur ayam berminyak kelapa",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "manual_addition"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_connectivity_fix2"
   },
   {
     "sentence_id": 1647,
@@ -4315,9 +4315,9 @@
     "relation": "TERBUAT_DARI",
     "raw_relation": "TERBUAT_DARI",
     "object": "rontal dilapisi kertas emas",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "manual_addition"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_connectivity_fix2"
   },
   {
     "sentence_id": 1699,
@@ -5287,9 +5287,9 @@
     "relation": "BERBENTUK",
     "raw_relation": "BERBENTUK",
     "object": "gadarba",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 2056,
@@ -5299,9 +5299,9 @@
     "relation": "BERBENTUK",
     "raw_relation": "BERBENTUK",
     "object": "macan",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 2056,
@@ -5827,9 +5827,9 @@
     "relation": "DIBERI",
     "raw_relation": "DIBERI",
     "object": "sambungan",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 2336,
@@ -6379,8 +6379,8 @@
     "relation": "ADALAH",
     "raw_relation": "ADALAH",
     "object": "nama resmi upacara penyucian pitra",
-    "object_label": "KONSEP_FILOSOFIS",
-    "object_type": "ENTITY",
+    "object_label": null,
+    "object_type": "LITERAL",
     "source": "manual_edit"
   },
   {
@@ -7219,9 +7219,9 @@
     "relation": "MEMBERIKAN",
     "raw_relation": "MEMBERIKAN",
     "object": "panjaya-jaya",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 2894,
@@ -7855,9 +7855,9 @@
     "relation": "BERISI",
     "raw_relation": "BERISI",
     "object": "lima buah lembaran-lembaran daun sirih",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix2"
   },
   {
     "sentence_id": 3142,
@@ -7927,9 +7927,9 @@
     "relation": "TERBUAT_DARI",
     "raw_relation": "TERBUAT_DARI",
     "object": "arang pembakaran jaja gina",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "manual_edit"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_edit+kg_connectivity_fix2"
   },
   {
     "sentence_id": 3153,
@@ -7939,9 +7939,9 @@
     "relation": "TERBUAT_DARI",
     "raw_relation": "TERBUAT_DARI",
     "object": "arang pembakaran jaja uli",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix2"
   },
   {
     "sentence_id": 3154,
@@ -8059,9 +8059,9 @@
     "relation": "TERDIRI_DARI",
     "raw_relation": "TERDIRI_DARI",
     "object": "benang tatebus",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 3196,
@@ -8071,9 +8071,9 @@
     "relation": "TERDIRI_DARI",
     "raw_relation": "TERDIRI_DARI",
     "object": "bersihan payasan",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 3196,
@@ -8083,9 +8083,9 @@
     "relation": "TERDIRI_DARI",
     "raw_relation": "TERDIRI_DARI",
     "object": "coblong",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 3196,
@@ -8107,9 +8107,9 @@
     "relation": "TERDIRI_DARI",
     "raw_relation": "TERDIRI_DARI",
     "object": "gelar sanga",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 3196,
@@ -8131,9 +8131,9 @@
     "relation": "TERDIRI_DARI",
     "raw_relation": "TERDIRI_DARI",
     "object": "padma",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 3196,
@@ -8143,9 +8143,9 @@
     "relation": "TERDIRI_DARI",
     "raw_relation": "TERDIRI_DARI",
     "object": "raka-raka",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 3196,
@@ -8155,9 +8155,9 @@
     "relation": "TERDIRI_DARI",
     "raw_relation": "TERDIRI_DARI",
     "object": "rangkadan",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 3196,
@@ -8167,9 +8167,9 @@
     "relation": "TERDIRI_DARI",
     "raw_relation": "TERDIRI_DARI",
     "object": "sampian pusung",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 3196,
@@ -8227,9 +8227,9 @@
     "relation": "TERDIRI_DARI",
     "raw_relation": "TERDIRI_DARI",
     "object": "tipat",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 3221,
@@ -8467,9 +8467,9 @@
     "relation": "TERDIRI_DARI",
     "raw_relation": "TERDIRI_DARI",
     "object": "bilah-bilah bambu sebanyak 9 buah",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "manual_addition"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_connectivity_fix2"
   },
   {
     "sentence_id": 3339,
@@ -9150,10 +9150,10 @@
     "subject_label": "SARANA_RITUAL",
     "relation": "TERBUAT_DARI",
     "raw_relation": "TERBUAT_DARI",
-    "object": "uang kepeng (pipis bolong) sebanyak 250 biji",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "manual_addition"
+    "object": "uang kepeng sebanyak 250 biji",
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_connectivity_fix2"
   },
   {
     "sentence_id": 3656,
@@ -9307,9 +9307,9 @@
     "relation": "TERBUAT_DARI",
     "raw_relation": "TERBUAT_DARI",
     "object": "daun pisang",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "object_decomposition"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "object_decomposition+kg_connectivity_fix2"
   },
   {
     "sentence_id": 3734,
@@ -9318,10 +9318,10 @@
     "subject_label": null,
     "relation": "BERISI",
     "raw_relation": "BERISI",
-    "object": "lima buah gulungan base daun sirih",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "manual_addition"
+    "object": "gulungan sirih",
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_connectivity_fix2"
   },
   {
     "sentence_id": 3742,
@@ -9355,9 +9355,9 @@
     "relation": "BERISI",
     "raw_relation": "BERISI",
     "object": "bunga tunjung putih",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 3747,
@@ -9415,9 +9415,9 @@
     "relation": "BERISI",
     "raw_relation": "BERISI",
     "object": "pusuh bunga cempaka kuning",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 3753,
@@ -9654,10 +9654,10 @@
     "subject_label": "ISTILAH_UMUM_RITUAL",
     "relation": "DITUTUPI_DENGAN",
     "raw_relation": "DITUTUPI_DENGAN",
-    "object": "kain putih panjang kira-kira 2 sampai 2,5 meter",
+    "object": "kain putih panjang",
     "object_label": "SARANA_RITUAL",
     "object_type": "ENTITY",
-    "source": "manual_addition"
+    "source": "manual_addition+kg_connectivity_fix3"
   },
   {
     "sentence_id": 3799,
@@ -9703,9 +9703,9 @@
     "relation": "TERBUAT_DARI",
     "raw_relation": "TERBUAT_DARI",
     "object": "daun kelapa muda busung",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "manual_addition"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_connectivity_fix"
   },
   {
     "sentence_id": 3800,
@@ -10063,9 +10063,9 @@
     "relation": "DIPAKAI_UNTUK",
     "raw_relation": "DIPAKAI_UNTUK",
     "object": "ngalukat",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "dependency_rule"
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "dependency_rule+kg_connectivity_fix"
   },
   {
     "sentence_id": 4065,
@@ -10375,9 +10375,9 @@
     "relation": "BERFUNGSI_SEBAGAI",
     "raw_relation": "BERFUNGSI_SEBAGAI",
     "object": "sthiti",
-    "object_label": null,
-    "object_type": "LITERAL",
-    "source": "manual_addition"
+    "object_label": "KONSEP_FILOSOFIS",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_connectivity_fix"
   },
   {
     "sentence_id": 4112,
@@ -10846,5 +10846,970 @@
     "object_label": null,
     "object_type": "LITERAL",
     "source": "manual_edit"
+  },
+  {
+    "sentence_id": 1407,
+    "context_sentence": "ngaben cara yama purwana tatwa selalu dilakukan dengan sawa, artinya benar-benar sasarannya adalah jenazah secara nyata.",
+    "subject": "ngaben cara yama purwana tatwa",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "DILAKUKAN_DENGAN",
+    "raw_relation": "DILAKUKAN_DENGAN",
+    "object": "sawa",
+    "object_label": "ISTILAH_UMUM_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+source_audit_reconciliation"
+  },
+  {
+    "sentence_id": 1439,
+    "context_sentence": "abu tulang kepala, tangan, punggung, dada, bokong, paha, dan kaki digiling lumat-lumat serta dibentuk menjadi sukutunggal (sebuah wujud perlambang badan).",
+    "subject": "abu",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIBENTUK_MENJADI",
+    "raw_relation": "DIBENTUK_MENJADI",
+    "object": "sukutunggal",
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+source_audit_reconciliation"
+  },
+  {
+    "sentence_id": 1717,
+    "context_sentence": "adegan, adalah alat upakara, tempat atma mendiang didudukkan.",
+    "subject": "adegan",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "alat upakara",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+source_audit_reconciliation"
+  },
+  {
+    "sentence_id": 3977,
+    "context_sentence": "jenazah disabuni (digosok) dengan umbi sikapa/sekapa, kemudian dibilas dengan air dan dikeringkan dengan kain kering.",
+    "subject": "jenazah",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIBILAS_DENGAN",
+    "raw_relation": "DIBILAS_DENGAN",
+    "object": "air",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+source_audit_reconciliation"
+  },
+  {
+    "sentence_id": 4074,
+    "context_sentence": "tirtha ening berfungsi sebagai simbol pikiran dan perasaan sang yajamana, sehingga roh atau atman yang diupacarai tidak mengalami kegoncangan, sehingga dapat mencapai alam sorga dengan tenang.",
+    "subject": "roh atau atman",
+    "subject_label": null,
+    "relation": "TIDAK_MENGALAMI",
+    "raw_relation": "TIDAK_MENGALAMI",
+    "object": "kegoncangan",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+source_audit_reconciliation"
+  },
+  {
+    "sentence_id": 4338,
+    "context_sentence": "roh atau atman tersebut kedudukannya menjadi terangkat, yaitu dari roh yang tingkatannya masih preta, menjadi pitara.",
+    "subject": "roh atau atman",
+    "subject_label": null,
+    "relation": "NAIK_KEDUDUKAN_DARI",
+    "raw_relation": "NAIK_KEDUDUKAN_DARI",
+    "object": "preta menjadi pitara",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+source_audit_reconciliation"
+  },
+  {
+    "sentence_id": 900001,
+    "context_sentence": "Wuku Kuningan dikenal luas sebagai wuku tempat jatuhnya Hari Raya Kuningan sepuluh hari setelah Galungan.",
+    "subject": "wuku kuningan",
+    "subject_label": "KONSEP_HUKUM_ADAT",
+    "relation": "SEPULUH_HARI_SETELAH",
+    "raw_relation": "SEPULUH_HARI_SETELAH",
+    "object": "galungan",
+    "object_label": "ISTILAH_UMUM_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_connectivity_fix3"
+  },
+  {
+    "sentence_id": 900002,
+    "context_sentence": "Sasih adalah bulan dalam sistem penanggalan (wariga/kalender) tradisional Bali, yang menentukan waktu pelaksanaan berbagai upacara termasuk Pitra Yadnya.",
+    "subject": "sasih",
+    "subject_label": "KONSEP_HUKUM_ADAT",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "bulan dalam sistem penanggalan tradisional Bali",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_connectivity_fix3"
+  },
+  {
+    "sentence_id": 1275,
+    "context_sentence": "Bahwa umat boleh memilih satu di antara tiga jalan pokok yang ditempuh, yakni nista, madya, utama. Dalam bahasa Indonesia, istilah ini kurang lebih berarti \"kecil\", \"menengah\" dan \"besar.\"",
+    "subject": "nista",
+    "subject_label": "KONSEP_HUKUM_ADAT",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Salah satu dari tiga jalan pokok tingkatan upacara Ngaben (nista, madya, utama); dalam bahasa Indonesia kurang lebih berarti \"kecil\", yaitu tingkatan dengan jumlah sesajen dan upakara paling sedikit dibandingkan madya dan utama.",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+tingkatan_ngaben_fix"
+  },
+  {
+    "sentence_id": 1275,
+    "context_sentence": "Bahwa umat boleh memilih satu di antara tiga jalan pokok yang ditempuh, yakni nista, madya, utama. Dalam bahasa Indonesia, istilah ini kurang lebih berarti \"kecil\", \"menengah\" dan \"besar.\"",
+    "subject": "madya",
+    "subject_label": "KONSEP_HUKUM_ADAT",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Salah satu dari tiga jalan pokok tingkatan upacara Ngaben (nista, madya, utama); dalam bahasa Indonesia kurang lebih berarti \"menengah\", yaitu tingkatan dengan jumlah sesajen dan upakara lebih banyak daripada nista namun lebih sedikit daripada utama.",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+tingkatan_ngaben_fix"
+  },
+  {
+    "sentence_id": 1275,
+    "context_sentence": "Bahwa umat boleh memilih satu di antara tiga jalan pokok yang ditempuh, yakni nista, madya, utama. Dalam bahasa Indonesia, istilah ini kurang lebih berarti \"kecil\", \"menengah\" dan \"besar.\"",
+    "subject": "utama",
+    "subject_label": "KONSEP_HUKUM_ADAT",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Salah satu dari tiga jalan pokok tingkatan upacara Ngaben (nista, madya, utama); dalam bahasa Indonesia kurang lebih berarti \"besar\", yaitu tingkatan dengan jumlah sesajen dan upakara paling banyak dibandingkan nista dan madya.",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+tingkatan_ngaben_fix"
+  },
+  {
+    "sentence_id": 1278,
+    "context_sentence": "Jadi dalam kelompok nista ada jenis nistaning nista, madyaning nista dan utamaning nista.",
+    "subject": "nistaning nista",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Salah satu dari tiga sub-tingkatan dalam kelompok nista, hasil pembagian tingkatan upacara Ngaben menjadi 3x3 (sembilan) jenis jalan; merupakan sub-tingkatan terendah di dalam kelompok nista itu sendiri.",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+tingkatan_ngaben_fix"
+  },
+  {
+    "sentence_id": 1278,
+    "context_sentence": "Jadi dalam kelompok nista ada jenis nistaning nista, madyaning nista dan utamaning nista.",
+    "subject": "madyaning nista",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Salah satu dari tiga sub-tingkatan dalam kelompok nista, hasil pembagian tingkatan upacara Ngaben menjadi 3x3 (sembilan) jenis jalan; merupakan sub-tingkatan menengah di dalam kelompok nista.",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+tingkatan_ngaben_fix"
+  },
+  {
+    "sentence_id": 1278,
+    "context_sentence": "Jadi dalam kelompok nista ada jenis nistaning nista, madyaning nista dan utamaning nista.",
+    "subject": "utamaning nista",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Salah satu dari tiga sub-tingkatan dalam kelompok nista, hasil pembagian tingkatan upacara Ngaben menjadi 3x3 (sembilan) jenis jalan; merupakan sub-tingkatan tertinggi di dalam kelompok nista.",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+tingkatan_ngaben_fix"
+  },
+  {
+    "sentence_id": 1279,
+    "context_sentence": "Begitu pula pada kelompok madya, mempunyai nistaning madya, madyaning madya dan utamaning madya.",
+    "subject": "nistaning madya",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Salah satu dari tiga sub-tingkatan dalam kelompok madya, hasil pembagian tingkatan upacara Ngaben menjadi 3x3 (sembilan) jenis jalan; merupakan sub-tingkatan terendah di dalam kelompok madya (tingkatan menengah).",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+tingkatan_ngaben_fix"
+  },
+  {
+    "sentence_id": 1279,
+    "context_sentence": "Begitu pula pada kelompok madya, mempunyai nistaning madya, madyaning madya dan utamaning madya.",
+    "subject": "madyaning madya",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Salah satu dari tiga sub-tingkatan dalam kelompok madya, hasil pembagian tingkatan upacara Ngaben menjadi 3x3 (sembilan) jenis jalan; merupakan sub-tingkatan menengah di dalam kelompok madya itu sendiri.",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+tingkatan_ngaben_fix"
+  },
+  {
+    "sentence_id": 1279,
+    "context_sentence": "Begitu pula pada kelompok madya, mempunyai nistaning madya, madyaning madya dan utamaning madya.",
+    "subject": "utamaning madya",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Salah satu dari tiga sub-tingkatan dalam kelompok madya, hasil pembagian tingkatan upacara Ngaben menjadi 3x3 (sembilan) jenis jalan; merupakan sub-tingkatan tertinggi di dalam kelompok madya.",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+tingkatan_ngaben_fix"
+  },
+  {
+    "sentence_id": 1280,
+    "context_sentence": "Begitu pulalah bagi kelompok utama ada nistaning utama, madyaning utama dan utamaning utama.",
+    "subject": "nistaning utama",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Salah satu dari tiga sub-tingkatan dalam kelompok utama, hasil pembagian tingkatan upacara Ngaben menjadi 3x3 (sembilan) jenis jalan; merupakan sub-tingkatan terendah di dalam kelompok utama (tingkatan besar).",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+tingkatan_ngaben_fix"
+  },
+  {
+    "sentence_id": 1280,
+    "context_sentence": "Begitu pulalah bagi kelompok utama ada nistaning utama, madyaning utama dan utamaning utama.",
+    "subject": "madyaning utama",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Salah satu dari tiga sub-tingkatan dalam kelompok utama, hasil pembagian tingkatan upacara Ngaben menjadi 3x3 (sembilan) jenis jalan; merupakan sub-tingkatan menengah di dalam kelompok utama.",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+tingkatan_ngaben_fix"
+  },
+  {
+    "sentence_id": 1280,
+    "context_sentence": "Begitu pulalah bagi kelompok utama ada nistaning utama, madyaning utama dan utamaning utama.",
+    "subject": "utamaning utama",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Salah satu dari tiga sub-tingkatan dalam kelompok utama, hasil pembagian tingkatan upacara Ngaben menjadi 3x3 (sembilan) jenis jalan; merupakan sub-tingkatan tertinggi di dalam kelompok utama, dan upacara Ngaben pada tingkat ini biasa dinilai sebagai Sawa Wedana, upacara Ngaben yang terbesar.",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+tingkatan_ngaben_fix"
+  },
+  {
+    "sentence_id": 1490,
+    "context_sentence": "Inilah upacara Ngaben yang terbesar : Sawa Wedana. Dan ini pulalah upacara yang biasa dinilai utamaning utama.",
+    "subject": "utamaning utama",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "DIKENAL_SEBAGAI",
+    "raw_relation": "DIKENAL_SEBAGAI",
+    "object": "sawa wedana",
+    "object_label": null,
+    "object_type": "ENTITY",
+    "source": "manual_addition+tingkatan_ngaben_fix"
+  },
+  {
+    "sentence_id": 197,
+    "context_sentence": "ngaben berdasarkan tingkatan upacara",
+    "subject": "tingkatan ngaben",
+    "subject_label": "KONSEP_HUKUM_ADAT",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Istilah lain untuk tingkatan upacara (nista, madya, utama) yang menjadi dasar penentuan besar-kecilnya banten, upakara, dan punia dalam upacara Ngaben.",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+tingkatan_ngaben_fix"
+  },
+  {
+    "sentence_id": 3756,
+    "context_sentence": "(2) tembaga (merah), tempatnya di selatan, dewanya adalah dewa brahma.",
+    "subject": "selatan",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "arah mata angin",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition"
+  },
+  {
+    "sentence_id": 1556,
+    "context_sentence": "panca datu ini mempunyai daya mistik-religius, untuk memohon kepada hyang widhi dalam manifestasi sebagai panca dewata (içwara, brahma, mahadewa, wisnu dan siwa) yang mengatur bhuwana agung ini, supaya unsur jasad dari mendiang kembali dengan baik ke dalam lingkungan bhuwana agung, dengan tidak menyebabkan letehnya alam raya-nya ini.",
+    "subject": "panca dewata",
+    "subject_label": "KONSEP_FILOSOFIS",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Lima manifestasi Hyang Widhi yang mengatur Bhuwana Agung, yaitu Iswara, Brahma, Mahadewa, Wisnu, dan Siwa; dalam konteks Ngaben, restu Panca Dewata dimohonkan melalui sarana Panca Datu agar unsur jasad mendiang dapat kembali dengan baik ke dalam lingkungan Bhuwana Agung",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchA"
+  },
+  {
+    "sentence_id": 1609,
+    "context_sentence": "moksa adalah menjadi satunya jiwa/atma dengan paratma/brahman, serta kembalinya pula unsur badan manusia ke asalnya yakni badannya bhuwana agung (pancamahabutha).",
+    "subject": "bhuwana agung",
+    "subject_label": "KONSEP_FILOSOFIS",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Alam semesta besar (makrokosmos) dalam ajaran Hindu Bali, disebut juga Pancamahabutha, asal unsur badan manusia; dalam konteks Ngaben, unsur jasad mendiang dituntaskan kembali menyatu dengan Bhuwana Agung sebagai bagian dari pencapaian moksa",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchA"
+  },
+  {
+    "sentence_id": 900003,
+    "context_sentence": "Bhuwana Alit: Bhuwana alit adalah konsep filosofis Hindu Bali tentang manusia sebagai alam semesta kecil (mikrokosmos), pasangan dari bhuwana agung (alam semesta besar/makrokosmos). [Glosarium, ngaben-merge-cleaned.txt; never assigned a pipeline sentence_id, out-of-band id per the S900001/S900002 convention established in Batch G]",
+    "subject": "bhuwana alit",
+    "subject_label": "KONSEP_FILOSOFIS",
+    "relation": "PASANGAN_DARI",
+    "raw_relation": "PASANGAN_DARI",
+    "object": "bhuwana agung",
+    "object_label": "KONSEP_FILOSOFIS",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchA"
+  },
+  {
+    "sentence_id": 900004,
+    "context_sentence": "Lingga Sarira Pitara: Lingga sarira (sukshma sarira) adalah salah satu dari tiga badan yang menyusun diri manusia menurut ajaran Hindu (Tri Sarira), yakni badan halus/astral yang tersusun dari unsur-unsur seperti bayu (angin) dan akasa (ether/ruang) dan tetap ada setelah badan kasar (stula sarira) mati. [Glosarium, ngaben-merge-cleaned.txt; never assigned a pipeline sentence_id]",
+    "subject": "tri sarira",
+    "subject_label": "KONSEP_FILOSOFIS",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Konsep dalam ajaran Hindu Bali tentang tiga badan (sarira) yang menyusun diri manusia; salah satunya, lingga sarira atau suksma sarira, adalah badan halus/astral yang tersusun dari unsur-unsur seperti bayu (angin) dan akasa (ruang) dan tetap ada setelah badan kasar (stula sarira) mati",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchA"
+  },
+  {
+    "sentence_id": 900005,
+    "context_sentence": "Lingga sarira (sukshma sarira) adalah salah satu dari tiga badan yang menyusun diri manusia menurut ajaran Hindu (Tri Sarira), yakni badan halus/astral yang tersusun dari unsur-unsur seperti bayu (angin) dan akasa (ether/ruang) dan tetap ada setelah badan kasar (stula sarira) mati. Suksma Sarira, walaupun sangat halus, adalah materi juga adanya. Setelah ditinggal oleh Sang Atma, materi ini tetap melekat pada material Puspa Lingga (daun beringin dan sebagainya). Jadi merupakan benda sisa yang kosong (tanpa atma) namun penuh dengan sisa-sisa Karmaphala mendiang. Benda sisa inilah yang akan dibakar serta dibuang ke laut pada saatnya nanti. [first sentence = real pipeline S2914; rest is the same paragraph in ngaben-merge-cleaned.txt, never separately picked up by the extractor]",
+    "subject": "suksma sarira",
+    "subject_label": "KONSEP_FILOSOFIS",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Badan halus/astral (disebut juga lingga sarira) yang menjadi salah satu dari tiga badan (Tri Sarira) penyusun diri manusia; walaupun sangat halus, suksma sarira tetap merupakan materi, dan setelah ditinggalkan sang atma menjadi benda sisa yang penuh dengan sisa-sisa karmaphala mendiang, yang akan dibakar serta dibuang ke laut",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchA"
+  },
+  {
+    "sentence_id": 900006,
+    "context_sentence": "Tujuan pokok dari Ngaben adalah melepaskan dan selanjutnya membersihkan atau menyucikan atma dari ikatan Panca Maha Bhuta yang disebut Sthula Sarira. Sthula Sarira ini berwujud sepuluh alat indrya. Lima alat indrya, dalam Lontar Tattwa Jnana disebut Panca Budhindrya atau Panca Jnanendrya, yaitu: mata (caksvindrya), hidung (ghranendrya), telinga (srotendrya), lidah (jihvendrya), dan kulit (tvagindrya). Sedangkan lima indrya lainnya, dalam Lontar Tattwa Jnana disebut Panca Karmendrya, yaitu: kaki (padendrya), tangan (panindrya), mulut (vagindrya), dubur (pavindrya), dan kemaluan (upathendrya). Kesepuluh indrya inilah yang membangun jasmani manusia, sehingga saat meninggal, sepuluh indrya ini tidak berfungsi lagi. [section '5. Makna dan Tujuan Ngaben', ngaben-merge-cleaned.txt; never assigned a pipeline sentence_id]",
+    "subject": "sthula sarira",
+    "subject_label": "KONSEP_FILOSOFIS",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Ikatan Panca Maha Bhuta pada diri manusia yang menjadi sasaran pelepasan dan penyucian atma dalam Ngaben; berwujud sepuluh alat indrya -- lima indrya penerima (Panca Budhindrya/Panca Jnanendrya: mata, hidung, telinga, lidah, kulit) dan lima indrya penggerak (Panca Karmendrya: kaki, tangan, mulut, dubur, kemaluan) -- yang membangun jasmani manusia dan berhenti berfungsi saat meninggal",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchA"
+  },
+  {
+    "sentence_id": 4338,
+    "context_sentence": "tirtha pangentas secara filosofis adalah sebagai alat sangaskara atau penyucian kepada roh atau atman orang yang telah meninggal dunia, sehingga roh atau atman tersebut kedudukannya menjadi terangkat, yaitu dari roh yang tingkatannya masih preta (atman yang disebut antah karana sarira yang masih terikat suksma sarira/sifat keduniawian) menjadi pitara, sehingga bisa memasuki alam bwah loka yaitu sebagai tumpuan untuk menuju ke alam swah loka.",
+    "subject": "antah karana sarira",
+    "subject_label": "KONSEP_FILOSOFIS",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Sebutan untuk atman pada tingkatan preta yang masih terikat suksma sarira/sifat keduniawian, sebelum kedudukannya terangkat menjadi pitara sehingga dapat memasuki alam Bwah Loka menuju alam Swah Loka",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchA"
+  },
+  {
+    "sentence_id": 900007,
+    "context_sentence": "Setelah pelaksanaan eteh-eteh \"Pabersihan Mati\" atau \"Melelet\" selesai dilaksanakan, maka mulailah dilakukan persiapan untuk melaksanakan \"Upacara Pangringkesan\" atau upacara membungkus/menggulung jenazah. [appears twice verbatim in ngaben-merge-cleaned.txt, e.g. near 'Setelah eteh-eteh Ngelelet (Pabersihan Mati) selesai dilaksanakan, maka dilanjutkan dengan memercikkan Tirtha Pangringkes'; never assigned a pipeline sentence_id]",
+    "subject": "pangringkes",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Tahap dalam rangkaian Ngaben berupa upacara membungkus/menggulung jenazah (disebut juga Upacara Pangringkesan), dilaksanakan setelah eteh-eteh Pabersihan Mati (Ngelelet/Melelet) selesai",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchA"
+  },
+  {
+    "sentence_id": 900008,
+    "context_sentence": "Pandita (disebut juga Sulinggih) adalah gelar umum bagi rohaniwan Hindu Bali yang telah disucikan melalui upacara madiksa/mawinten sehingga berwenang memuja Ida Sang Hyang Widhi Wasa, membuat tirtha (air suci), dan memimpin berbagai upacara Panca Yadnya. [Glosarium, ngaben-merge-cleaned.txt line 284; never assigned a pipeline sentence_id, out-of-band id per the S900001/S900002 convention, continued from Batch A's 900003-900007]",
+    "subject": "pandita",
+    "subject_label": "ENTITAS_KEAGAMAAN",
+    "relation": "SAMA_DENGAN",
+    "raw_relation": "SAMA_DENGAN",
+    "object": "sulinggih",
+    "object_label": "ENTITAS_KEAGAMAAN",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchB"
+  },
+  {
+    "sentence_id": 900009,
+    "context_sentence": "Ida Sang Sadaka: Sebutan hormat untuk pendeta (sulinggih) yang memuja dan memimpin upacara, misalnya melakukan pujastawa serta \"memanah\" pada acara Tarpana, atau menggunting Adegan mendiang. [Glosarium, ngaben-merge-cleaned.txt line 140; never assigned a pipeline sentence_id, out-of-band id per the S900001/S900002 convention]",
+    "subject": "ida sang sadaka",
+    "subject_label": "ENTITAS_KEAGAMAAN",
+    "relation": "SEBUTAN_UNTUK",
+    "raw_relation": "SEBUTAN_UNTUK",
+    "object": "sulinggih",
+    "object_label": "ENTITAS_KEAGAMAAN",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchB"
+  },
+  {
+    "sentence_id": 4121,
+    "context_sentence": "oleh sebab itu tirtha pangentas dibuat di gria ida sang sulinggih atau dirumah atau ditempat upacara pengabenan dilaksanakan yaitu saat upacara pengaskaran yang kebetulan dilaksanakan bertepatan pada hari puncak pengabenan dilaksanakan.",
+    "subject": "gria",
+    "subject_label": "BANGUNAN_RITUAL",
+    "relation": "KEDIAMAN_DARI",
+    "raw_relation": "KEDIAMAN_DARI",
+    "object": "sulinggih",
+    "object_label": "ENTITAS_KEAGAMAAN",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchB"
+  },
+  {
+    "sentence_id": 900010,
+    "context_sentence": "Setelah daun beringin dipetik, esok harinya, pagi-pagi benar sang sulinggih diiringi para putranya, naik ke Balai Pawedan untuk membentuk sekah lengkap dengan \"pipil\" (tiket nama) mendiang. [ngaben-merge-cleaned.txt line 2461, corroborated by the Balai Pawedan glossary entry at line 107 ('Bangunan tempat sulinggih memuja dan membentuk sekah lengkap dengan pipil...'); never assigned a pipeline sentence_id, out-of-band id per the S900001/S900002 convention]",
+    "subject": "balai pawedan",
+    "subject_label": "BANGUNAN_RITUAL",
+    "relation": "TEMPAT_MEMUJA",
+    "raw_relation": "TEMPAT_MEMUJA",
+    "object": "sulinggih",
+    "object_label": "ENTITAS_KEAGAMAAN",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchB"
+  },
+  {
+    "sentence_id": 2843,
+    "context_sentence": "sementara itu sang sulinggih, tukang banten dan tamu terhormat dan tamu khusus lainnya, dihaturkan santapan istimewa.",
+    "subject": "santapan istimewa",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIPERSEMBAHKAN_KEPADA",
+    "raw_relation": "DIPERSEMBAHKAN_KEPADA",
+    "object": "sulinggih",
+    "object_label": "ENTITAS_KEAGAMAAN",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchB"
+  },
+
+  {
+    "sentence_id": 271,
+    "context_sentence": "adapun atiwa-tiwa yang tergolong dalam ngaben svasta adalah raçadana atau tirta yadnya pranawa, yakni sawa diganti dengan simbol tirtha (toyo çarira), sedangkan tata pelaksanaannya sama dengan atiwa-tiwa asti vedana — mulai dari matur piuning ke pura dalem, pembakaran, hingga nganyut, dan dilanjutkan dengan upacara sebagaimana mestinya hingga upacara ngelinggihang dewa hyang.",
+    "subject": "raçadana",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "SAMA_DENGAN",
+    "raw_relation": "SAMA_DENGAN",
+    "object": "tirta yadnya pranawa",
+    "object_label": "RITUAL_KEMATIAN",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchCF"
+  },
+
+  {
+    "sentence_id": 271,
+    "context_sentence": "adapun atiwa-tiwa yang tergolong dalam ngaben svasta adalah raçadana atau tirta yadnya pranawa, yakni sawa diganti dengan simbol tirtha (toyo çarira), sedangkan tata pelaksanaannya sama dengan atiwa-tiwa asti vedana — mulai dari matur piuning ke pura dalem, pembakaran, hingga nganyut, dan dilanjutkan dengan upacara sebagaimana mestinya hingga upacara ngelinggihang dewa hyang.",
+    "subject": "tirta yadnya pranawa",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "istilah lain untuk raçadana dalam kategori ngaben svasta, yaitu ngaben yang sawanya diganti dengan simbol tirtha (toyo çarira) karena jenazah tidak dapat ditemukan, dengan tata pelaksanaan yang sama dengan atiwa-tiwa asti vedana",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchCF"
+  },
+
+  {
+    "sentence_id": 271,
+    "context_sentence": "adapun atiwa-tiwa yang tergolong dalam ngaben svasta adalah raçadana atau tirta yadnya pranawa, yakni sawa diganti dengan simbol tirtha (toyo çarira), sedangkan tata pelaksanaannya sama dengan atiwa-tiwa asti vedana — mulai dari matur piuning ke pura dalem, pembakaran, hingga nganyut, dan dilanjutkan dengan upacara sebagaimana mestinya hingga upacara ngelinggihang dewa hyang.",
+    "subject": "ngaben svasta",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "TATA_PELAKSANAAN_SAMA_DENGAN",
+    "raw_relation": "TATA_PELAKSANAAN_SAMA_DENGAN",
+    "object": "atiwa-tiwa asti vedana",
+    "object_label": "RITUAL_KEMATIAN",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchCF"
+  },
+
+  {
+    "sentence_id": 271,
+    "context_sentence": "adapun atiwa-tiwa yang tergolong dalam ngaben svasta adalah raçadana atau tirta yadnya pranawa, yakni sawa diganti dengan simbol tirtha (toyo çarira), sedangkan tata pelaksanaannya sama dengan atiwa-tiwa asti vedana — mulai dari matur piuning ke pura dalem, pembakaran, hingga nganyut, dan dilanjutkan dengan upacara sebagaimana mestinya hingga upacara ngelinggihang dewa hyang.",
+    "subject": "toyo çarira",
+    "subject_label": "TIRTHA_SUCI",
+    "relation": "MENGGANTIKAN",
+    "raw_relation": "MENGGANTIKAN",
+    "object": "sawa",
+    "object_label": "ISTILAH_UMUM_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchCF"
+  },
+
+  {
+    "sentence_id": 900011,
+    "context_sentence": "Recadana atau Swasta Geni: Nama lain untuk Ngaben Svasta (Nywasta/Swastagni), yaitu jenis upacara Pitra Yadnya yang dilaksanakan tanpa keberadaan jenazah karena jasadnya tidak dapat ditemukan kembali atau telah lama terkubur jauh dari jangkauan. [Glosarium, ngaben-merge-cleaned.txt line 201; never assigned a pipeline sentence_id, out-of-band id per the S900001/S900002 convention -- next available after Batch B's S900010]",
+    "subject": "swasta",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "SAMA_DENGAN",
+    "raw_relation": "SAMA_DENGAN",
+    "object": "ngaben svasta",
+    "object_label": "RITUAL_KEMATIAN",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchCF"
+  },
+
+  {
+    "sentence_id": 900012,
+    "context_sentence": "Bale Banjar adalah balai pertemuan milik banjar (perkumpulan warga adat setempat) yang biasa digunakan sebagai tempat berembuk warga, dan dalam konteks upacara kematian juga dapat menjadi tempat menaruh sarana seperti Bale Salunglung. [Glosarium, ngaben-merge-cleaned.txt line 260; same sentence already used as Bale Banjar's own definition; never assigned a pipeline sentence_id, out-of-band id per the S900001/S900002 convention -- next available after Batch C+F's S900011]",
+    "subject": "bale banjar",
+    "subject_label": "BANGUNAN_RITUAL",
+    "relation": "MILIK_DARI",
+    "raw_relation": "MILIK_DARI",
+    "object": "banjar",
+    "object_label": "STRUKTUR_SOSIAL_ADAT",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchD"
+  },
+
+  {
+    "sentence_id": 900013,
+    "context_sentence": "Krama (masyarakat) banjar adalah warga suatu banjar, yaitu unit organisasi sosial-adat terkecil di Bali yang mengatur kehidupan bermasyarakat dan gotong royong warganya. Dalam konteks Ngaben, krama masyarakat banjar turut membantu pelaksanaan upacara, di antaranya membuat bale-bale sebagai tempat memandikan jenazah. [Glosarium, ngaben-merge-cleaned.txt line 332; same sentence already used as Krama Masyarakat Banjar's own definition; never assigned a pipeline sentence_id, out-of-band id per convention]",
+    "subject": "krama masyarakat banjar",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "WARGA_DARI",
+    "raw_relation": "WARGA_DARI",
+    "object": "banjar",
+    "object_label": "STRUKTUR_SOSIAL_ADAT",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchD"
+  },
+
+  {
+    "sentence_id": 900014,
+    "context_sentence": "Apa lagi bila dikaitkan dengan adanya bantuan krama (anggota) banjar adat dengan patus (rasa patuh atau kebersamaan) kegotongroyongan. [ngaben-merge-cleaned.txt line 1259, the sentence immediately preceding real pipeline S1160 ('Patus yang benar-benar merupakan bantuan gratis, selaku perwujudan rasa kebersamaan yang ada di dada krama'), which already sources Gotong Royong's own BERPERAN_SEBAGAI attribute; this sentence itself never got a pipeline sentence_id, out-of-band id per convention]",
+    "subject": "gotong royong",
+    "subject_label": "STRUKTUR_SOSIAL_ADAT",
+    "relation": "DILAKUKAN_OLEH",
+    "raw_relation": "DILAKUKAN_OLEH",
+    "object": "krama masyarakat banjar",
+    "object_label": "ISTILAH_UMUM_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchD"
+  },
+
+  {
+    "sentence_id": 900015,
+    "context_sentence": "Sebelum upacara Nyiramang Layon dilaksanakan, maka krama (masyarakat banjar) akan membuat bale-bale tempat memandikan mayat yang disebut Pepaga atau Asagan. ... Setelah waktu untuk upacara Nyiramang Layon dimulai, maka para krama atau keluarga yang meninggal akan mengambil jenazah, dari balai tempat jenazah itu disemayamkan (bagi umat Hindu di Bali yang memiliki tatanan rumah stil Bali, tempat persemayaman jenazah ditempatkan di Bale Semanggen). [combines two real pipeline sentences from the same Nyiramang Layon preparation passage, ngaben-merge-cleaned.txt lines 3053 and 3062 -- S3330 (krama masyarakat banjar builds the bathing facility 'sebelum' the ceremony) and S3339 (krama atau keluarga retrieves the jenazah once it 'setelah ... dimulai'), separated only by an intervening Pepaga/Asagan-naming aside (lines 3056-3059); combined per the same same-paragraph-context convention as S900005]",
+    "subject": "krama masyarakat banjar",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "MENDAHULUI",
+    "raw_relation": "MENDAHULUI",
+    "object": "krama atau keluarga",
+    "object_label": "STRUKTUR_SOSIAL_ADAT",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchD"
+  },
+
+  {
+    "sentence_id": 1136,
+    "context_sentence": "damar kurung itu merupakan sarana permohonan kepada sanghyang agni, agar keletehan yang dipancarkan sawa mendiang diblokir terbatas, yakni hanya sebatas tanah pekarangan keluarga mendiang saja. [Batch E, conersation.md item #23: real pipeline S1136, already used for damar_kurung's own ADALAH definition and its BERTUJUAN_AGAR attribute -- this new row promotes the 'sanghyang agni' mention in that same sentence from bare definition text into a real ENTITY edge, same LITERAL-mentions-a-known-entity pattern as the mixed-sibling groups]",
+    "subject": "damar kurung",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DITUJUKAN_UNTUK",
+    "raw_relation": "DITUJUKAN_UNTUK",
+    "object": "sanghyang agni",
+    "object_label": "ISTILAH_UMUM_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 1609,
+    "context_sentence": "moksa adalah menjadi satunya jiwa/atma dengan paratma/brahman, serta kembalinya pula unsur badan manusia ke asalnya yakni badannya bhuwana agung (pancamahabutha). [Batch E, conersation.md item #41: real pipeline S1609, already used for both moksa's and bhuwana_agung's own ADALAH definitions (Batch A) -- this new row makes the 'kembali ke asalnya bhuwana agung' relationship the sentence already states a real graph edge, not just shared definition text]",
+    "subject": "moksa",
+    "subject_label": "KONSEP_FILOSOFIS",
+    "relation": "KEMBALI_KE",
+    "raw_relation": "KEMBALI_KE",
+    "object": "bhuwana agung",
+    "object_label": "KONSEP_FILOSOFIS",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 2558,
+    "context_sentence": "ngroras, menurut aksaranya, berasal dari kata \"roras\" (bilangan 12). [Batch E, conersation.md item #32: real pipeline S2558, already the source of ngerorasin's own BERASAL_DARI attribute -- but that existing row's object is LITERAL ('kata roras' text), so kata_roras stayed an isolated entity despite the exact same sentence naming it; this new row promotes it to an ENTITY edge, same LITERAL-to-ENTITY promotion as the hyang_agni/damar_kurung case above]",
+    "subject": "ngroras",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "BERASAL_DARI",
+    "raw_relation": "BERASAL_DARI",
+    "object": "kata roras",
+    "object_label": "ISTILAH_UMUM_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 4128,
+    "context_sentence": "sebab tirtha pangentas memiliki fungsi utama sebagai sarana untuk \"ngentas\"... sedangkan upacara pengabenan adalah merupakan upacara penyucikan roh atau atman (purusa) orang-orang yang telah meninggal agar terlepas dari ikatan panca mahabhuta (prakerti) sehingga lebih mudah dapat menuju ke alam dewa (swah loka). [Batch E, conersation.md item #3: real pipeline S4128, already the source of upacara_pengabenan's own ADALAH definition, which describes the identical purification/return-to-Pancamahabhuta purpose Ngaben's own definition states -- 'upacara pengabenan' is a fuller-named restatement of the same ceremony, not a distinct sub-stage, so connected via SAMA_DENGAN rather than broader_overrides]",
+    "subject": "upacara pengabenan",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "SAMA_DENGAN",
+    "raw_relation": "SAMA_DENGAN",
+    "object": "ngaben",
+    "object_label": "RITUAL_KEMATIAN",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 58,
+    "context_sentence": "nganyut: melarung abu ke sungai atau laut sebagai simbol pelepasan terakhir menuju moksha. [Batch E, conersation.md item #42: real pipeline S58, already the source of nganyut's own BERUPA attribute ('pelarungan abu ke sungai atau laut', LITERAL) and of abu's own DIHANYUTKAN_KE edges to laut/sungai -- this new row gives the missing forward edge from nganyut to abu itself (the self-loop this sentence also produced was already rejected in Batch G)]",
+    "subject": "nganyut",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "MELARUNGKAN",
+    "raw_relation": "MELARUNGKAN",
+    "object": "abu",
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 1430,
+    "context_sentence": "beras catur adalah lambang kekuatan panca dewata selaku manifestasi hyang widhi yang mengelola alam semesta (bhuwana agung). [Batch E bonus, flagged by Batch A: real pipeline S1430, already the source of beras_catur's own ADALAH definition, which names panca_dewata and bhuwana_agung directly now that both hub entities exist (Batch A) -- this row adds the specific MELAMBANGKAN edge the definition text supports (beras_catur symbolizes Panca Dewata's power); no edge added from beras_catur to bhuwana_agung, since the sentence frames that relationship as panca_dewata's (mengelola alam semesta bhuwana agung), not beras_catur's own]",
+    "subject": "beras catur",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "MELAMBANGKAN",
+    "raw_relation": "MELAMBANGKAN",
+    "object": "panca dewata",
+    "object_label": "KONSEP_FILOSOFIS",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 900016,
+    "context_sentence": "Undagi: Undagi adalah sebutan bagi arsitek atau tukang bangunan tradisional Bali yang ahli merancang dan membangun struktur sesuai pakem adat (seperti asta kosala-kosali), tidak terbatas pada bangunan tempat tinggal maupun tempat suci. Dalam konteks Ngaben, undagi adalah pembuat bade yang terlibat dalam persiapan sarana upacara. [Glosarium, ngaben-merge-cleaned.txt line 379; same sentence already used as Undagi's own definition; never assigned a pipeline sentence_id, out-of-band id per the S900001 convention -- next available after Batch D's S900015]",
+    "subject": "undagi",
+    "subject_label": "STRUKTUR_SOSIAL_ADAT",
+    "relation": "MEMBUAT",
+    "raw_relation": "MEMBUAT",
+    "object": "bade",
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 900017,
+    "context_sentence": "Ayaban: Ayaban adalah istilah untuk persembahan atau penghaturan sesajen (seperti tumpeng, saji, atau sesayut) kepada Bhatara, atma, maupun leluhur, yang menjadi bagian penting dari hampir setiap tahapan upacara Pitra Yadnya/Ngaben. [Glosarium, ngaben-merge-cleaned.txt line 258; same sentence already used as Ayaban's own definition; out-of-band id per convention]",
+    "subject": "ayaban",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "BERUPA",
+    "raw_relation": "BERUPA",
+    "object": "sesajen",
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 900018,
+    "context_sentence": "Ayaban Upakara Diuskamaligi: Ayaban upakara diuskamaligi adalah salah satu tahapan upacara Ngaben yang bertujuan agar leteh (kotoran spiritual) yang melekat pada sawa (jenazah) tidak memancar keluar dan tidak menular kepada yang lain. [Glosarium, ngaben-merge-cleaned.txt line 312; same sentence already used as Ayaban Upakara Diuskamaligi's own definition; near-dup with 'diuskamaligi' checked (item #18) -- distinct scope (Ngaben-specific ceremonial stage vs. the reusable purification item itself), kept as two entities linked by this edge rather than merged; out-of-band id per convention]",
+    "subject": "ayaban upakara diuskamaligi",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "MENGGUNAKAN",
+    "raw_relation": "MENGGUNAKAN",
+    "object": "diuskamaligi",
+    "object_label": "TAHAPAN_UPACARA",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 900019,
+    "context_sentence": "Hiasan: Hiasan adalah unsur dekoratif yang dipasang pada sarana upacara seperti Bade, Wadah, atau Adegan -- misalnya kapas warna-warni, topeng Boma, atau perhiasan emas seperti cincin dan gelang -- sebagai pelengkap keindahan sekaligus nilai sakral sarana tersebut. [Glosarium, ngaben-merge-cleaned.txt line 269; same sentence already used as Hiasan's own definition; out-of-band id per convention]",
+    "subject": "hiasan",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIPASANG_PADA",
+    "raw_relation": "DIPASANG_PADA",
+    "object": "bade",
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 900020,
+    "context_sentence": "Jempol Jari Kaki: Kedua ibu jari kaki jenazah, yang diikat menyatu dengan kedua ibu jari tangan menggunakan tali benang tukelan, dibentuk seperti angka delapan (disebut itik-itik), sebagai bagian dari rangkaian upacara Pabersihan Mati. [Glosarium, ngaben-merge-cleaned.txt line 400; same sentence already used as Jempol Jari Kaki's own definition and as the source for its broader_overrides link to jenazah (item #28) -- this row adds the second, equally-supported connection ('disebut itik-itik') the item's own uncertainty asked about; out-of-band id per convention]",
+    "subject": "jempol jari kaki",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DIKENAL_SEBAGAI",
+    "raw_relation": "DIKENAL_SEBAGAI",
+    "object": "itik-itik",
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 900021,
+    "context_sentence": "Santapan Istimewa: Hidangan khusus (disebut juga Bawa) yang dihaturkan kepada sulinggih, tukang banten, serta tamu terhormat dalam upacara seperti Patileman/Ngroras, disajikan di atas dulang sebagai bentuk penghormatan. [Glosarium, ngaben-merge-cleaned.txt line 296; same sentence already used as Santapan Istimewa's own definition and its existing DIPERSEMBAHKAN_KEPADA->sulinggih edge (Batch B); this row adds the item #32 edge to ngerorasin ('Patileman'/'Ngroras' are both existing aliases of the ngerorasin entity); out-of-band id per convention]",
+    "subject": "santapan istimewa",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DILAKUKAN_SAAT",
+    "raw_relation": "DILAKUKAN_SAAT",
+    "object": "ngerorasin",
+    "object_label": "TAHAPAN_UPACARA",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 900022,
+    "context_sentence": "Upacara Saji Tarpana: Upacara menghaturkan sajen istimewa (Saji) kepada roh mendiang yang \"bercermin\" pada Tirtha Ening, diiringi sembah bhakti keluarga; merupakan salah satu klimaks dalam rangkaian upacara Atma Wedana/Patileman. [Glosarium, ngaben-merge-cleaned.txt line 307; same sentence already used as Upacara Saji Tarpana's own definition; near-dup with 'tarpana' checked (item #35) -- tarpana is the general Hindu libation-to-ancestors practice performed by the pendeta, upacara_saji_tarpana is the specific named Ngroras/Patileman ceremony combining a Saji food-offering with that libation; distinct scope, kept as two entities, not merged; out-of-band id per convention]",
+    "subject": "upacara saji tarpana",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "MENGGUNAKAN",
+    "raw_relation": "MENGGUNAKAN",
+    "object": "sesaji",
+    "object_label": "SARANA_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 900023,
+    "context_sentence": "Pihak Berhutang: Sebutan bagi manusia dalam ajaran Hindu Bali, yang dinilai berhutang kepada Pancamahabhuta karena tubuhnya (stula sarira) tersusun dari pinjaman lima unsur zat tersebut, baik semasih hidup maupun setelah menjadi sawa, sehingga kelak wajib dilunasi atau dikembalikan. [Glosarium, ngaben-merge-cleaned.txt line 188; same sentence already used as Pihak Berhutang's own definition; confirms Batch A's note on this item's corpus support; out-of-band id per convention]",
+    "subject": "pihak berhutang",
+    "subject_label": "KONSEP_FILOSOFIS",
+    "relation": "BERHUTANG_KEPADA",
+    "raw_relation": "BERHUTANG_KEPADA",
+    "object": "pancamahabutha",
+    "object_label": "KONSEP_FILOSOFIS",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 900024,
+    "context_sentence": "Masekeh: Keadaan jenazah yang telah dibaringkan (disimpan/nyekeh) di rumah adat sekurang-kurangnya satu bulan serta telah melewati Purnama dan Tilem, sebelum diupacarai ngaben. [Glosarium, ngaben-merge-cleaned.txt line 166; same sentence already used as Masekeh's own definition -- its own parenthetical ('disimpan/nyekeh') names the nyekeh_sawa process directly; out-of-band id per convention]",
+    "subject": "nyekeh sawa",
+    "subject_label": "RITUAL_KEMATIAN",
+    "relation": "MENGHASILKAN",
+    "raw_relation": "MENGHASILKAN",
+    "object": "masekeh",
+    "object_label": "RITUAL_KEMATIAN",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 900025,
+    "context_sentence": "Orangtua: Orangtua (ayah dan ibu) adalah makna harfiah dari kata \"pitra\" dalam istilah Pitra Yadnya, yaitu pengorbanan suci yang dilandasi hati tulus ikhlas yang terutama ditujukan kepada orangtua dan leluhur yang telah meninggal. [Glosarium, ngaben-merge-cleaned.txt line 281; same sentence already used as Orangtua's own definition; out-of-band id per convention]",
+    "subject": "orangtua",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "SAMA_DENGAN",
+    "raw_relation": "SAMA_DENGAN",
+    "object": "pitra",
+    "object_label": "KONSEP_FILOSOFIS",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 900026,
+    "context_sentence": "Panebusan: Upacara \"menebus\" yang digelar setelah upacara Pamerasan; kemegahannya biasanya sebanding dengan tinggi-rendahnya kedudukan/jabatan mendiang semasa hidup, dan turut memengaruhi kedudukan Sang Pitara di alam sana. [Glosarium, ngaben-merge-cleaned.txt line 174; same sentence already used as Panebusan's own definition; near-dup with 'penebusan' checked (item #46) -- penebusan (line 175) describes a distinct ceremony (atonement for mendiang's shortcomings toward the community, attended by prajuru desa/pendeta/guru tiga), different content from panebusan's own definition, so kept separate, not merged; out-of-band id per convention]",
+    "subject": "panebusan",
+    "subject_label": "TAHAPAN_UPACARA",
+    "relation": "SETELAH",
+    "raw_relation": "SETELAH",
+    "object": "pamerasan",
+    "object_label": "TAHAPAN_UPACARA",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 900027,
+    "context_sentence": "Panguryagan: Panguryagan adalah alat upakara dalam Ngaben yang beralaskan tembong (nyiru bertabing tinggi) dan berisi bermacam-macam ramuan. [Glosarium, ngaben-merge-cleaned.txt line 352; same sentence already used as Panguryagan's own definition; out-of-band id per convention]",
+    "subject": "panguryagan",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "BAGIAN_DARI",
+    "raw_relation": "BAGIAN_DARI",
+    "object": "ngaben",
+    "object_label": "RITUAL_KEMATIAN",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 900028,
+    "context_sentence": "Alat-alat upakara itu, yakni Adegan (wujud atma-mendiang), semua Peringnya upakara (yang bagaikan tajuk mahkotanya sajen), Angenan (lambang manah), Pisang Jati (egonya mendiang), Kajang dan Panguryagan (tanda bhakti kepada guru). [ngaben-merge-cleaned.txt line 2033; body text, never assigned a pipeline sentence_id -- item #47's request for panguryagan's attribute content beyond the generic 'bermacam-macam ramuan' (S1657, already a LITERAL attribute); the corpus never itemizes the specific ramuan ingredients anywhere else found, so this symbolic-meaning fact is added instead and the ingredient-list request is flagged as thin/unavailable in the corpus, not forced; out-of-band id per convention]",
+    "subject": "panguryagan",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "MELAMBANGKAN",
+    "raw_relation": "MELAMBANGKAN",
+    "object": "bhakti kepada guru",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 900029,
+    "context_sentence": "Penggunaan Wewangian: Pengolesan atau penyemprotan minyak wangi (wewangian), termasuk minyak dari kembang rampe dan boreh miik (bubuk cendana), pada tubuh jenazah saat memandikannya, bertujuan agar bau busuk hilang dan tubuh jenazah kelak berbau harum. [Glosarium, ngaben-merge-cleaned.txt line 404; same sentence already used as Penggunaan Wewangian's own definition ('saat memandikannya') -- connected to the existing 'nyiramang_layon' entity (the memandikan-jenazah process) rather than bare jenazah, per the item's own stated preference; out-of-band id per convention]",
+    "subject": "penggunaan wewangian",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "DILAKUKAN_SAAT",
+    "raw_relation": "DILAKUKAN_SAAT",
+    "object": "nyiramang layon",
+    "object_label": "TAHAPAN_UPACARA",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 900030,
+    "context_sentence": "Pengorbanan Suci: Persembahan atau korban yang dihaturkan dengan tulus ikhlas kehadapan Ida Sang Hyang Widhi Wasa sebagai wujud bhakti (yadnya) dalam rangkaian upacara Atiwa-tiwa/Ngaben. [Glosarium, ngaben-merge-cleaned.txt line 286; same sentence already used as Pengorbanan Suci's own definition ('sebagai wujud bhakti (yadnya)' -- its content is a near-synonym of yadnya's own definition 'Korban suci atau persembahan tulus ikhlas'); out-of-band id per convention]",
+    "subject": "pengorbanan suci",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "SAMA_DENGAN",
+    "raw_relation": "SAMA_DENGAN",
+    "object": "yadnya",
+    "object_label": "KONSEP_FILOSOFIS",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchE"
+  },
+
+  {
+    "sentence_id": 900031,
+    "context_sentence": "Dilanjutkan dengan Ngili Atma, yaitu menuntun Sang Atma dalam diri Sang Pandita (Ida Sang Sulinggih), karena badan akan dibersihkan... Setelah itu dilakukan Amrethi Karana, yaitu mengucurkan Tirtha Amertha dalam diri sehingga abu abu kekototan musnah dan badan mulai bersinar bagaikan matahari... Kemudian dilanjutkan dengan Udhakanjali, yaitu mewujudkan Dewa Siwa didalam diri Ida Sang Sulinggih itu sendiri. [ngaben-merge-cleaned.txt lines 4137-4158, section 'd. Tatacara Pembuatan Tirtha Pangentas' (the Ngargha Tirtha/Pengargan self-purification sequence performed by Ida Sang Sulinggih before he may create Tirtha Pangentas); real pipeline S4212 extracted this clause's bare 'badan' as its own subject, losing the referent established earlier in the same passage -- see review_decisions.json's batchH note (4212|badan|matahari rejected) for why the subject is corrected via a fresh row here instead of a review_decisions.json 'fix:' (which has no effect on a LITERAL-object row)]",
+    "subject": "sulinggih",
+    "subject_label": "ENTITAS_KEAGAMAAN",
+    "relation": "BERSINAR_BAGAIKAN",
+    "raw_relation": "BERSINAR_BAGAIKAN",
+    "object": "matahari",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchH"
+  },
+
+  {
+    "sentence_id": 900032,
+    "context_sentence": "Dalam Buddha dharma sekte itu sudah populer disebut Hinayana atau Theravada (kendaraan kecil) di satu pihak, dengan Mahayana (kendaraan besar) pada pihak lain. Hinayana atau Theravada menitikberatkan ajarannya, bahwa bisa tidaknya seseorang membebaskan diri dari penderitaan, sepenuhnya tergantung dan menjadi tanggung jawab perorangan. Pengikut Buddha Dharma lainnya, menekankan ajarannya, bahwa setelah seseorang mampu mencapai tingkat kebebasan tertentu (budhi satwa), mempunyai pula swadharma untuk membantu membebaskan masyarakat (bhuana agung) dari penderitaan. Kelompok ini, karena swadharma kemasyarakatannya itu, dinamai paksa Mahayana (kendaraan besar), kerana bertugas \"memuat\" (\"mengangkut\") masyarakat manusia ke alam sana. Jelas, Buddha Dharma paksa kedua inilah yang telah luluh dalam Agama Hindu yang kita peluk di Bali ini. [ngaben-merge-cleaned.txt lines 1987-1993; real pipeline S2115 only captured a truncated fragment ('paksa mahayana kendaraan besar') of this passage as its ADALAH literal, attached to the pronoun-headed surface 'kelompok ini' -- superseded here by this longer, corpus-grounded definition attached to the properly-named surface 'kelompok paksa mahayana' (build_kb.py keeps the longest ADALAH/BERARTI literal as the definition, so this one wins automatically; no bad_definition_sentences edit needed)]",
+    "subject": "kelompok paksa mahayana",
+    "subject_label": "ISTILAH_UMUM_RITUAL",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Sekte (paksa) dalam ajaran Buddha Dharma yang disebut Mahayana ('kendaraan besar'): setelah mencapai tingkat kebebasan tertentu (budhi satwa), pengikutnya memiliki swadharma kemasyarakatan untuk turut membebaskan masyarakat (bhuana agung) dari penderitaan, karena bertugas 'mengangkut' masyarakat manusia ke alam sana -- berbeda dengan Hinayana/Theravada ('kendaraan kecil') yang menekankan pembebasan diri secara perorangan; sekte inilah yang berbaur dalam ajaran Hindu di Bali, sehingga seorang Peranda Buddha dinilai wajar memakai Naga Banda pada upacara Palebonnya",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchH"
+  },
+
+  {
+    "sentence_id": 900033,
+    "context_sentence": "Kanoroyang: Sanksi terberat berupa pemberhentian keanggotaan desa adat. Pelanggar kehilangan hak total atas fasilitas desa, termasuk larangan mengubur atau mengabenkan jenazah di setra desa setempat. [Glosarium, 'Aturan, Ketentuan, dan Pantangan', ngaben-merge-cleaned.txt line 61; real pipeline S92 only captured the first clause as an ADALAH literal, and is superseded unconditionally by the shorter competing Glosarium bullet at line 76 ('Sanksi pemecatan dari keanggotaan desa adat') anyway -- build_kb.py's glossary_by_id always wins over a relation-based definition regardless of length, and the corpus itself has two same-term Glosarium bullets (same 'no Glosarium-collision-preference lever' gap flagged in earlier batches, out of scope for this attributes-only item); this row captures the second clause as an attribute instead of competing for the definition slot]",
+    "subject": "kanoroyang",
+    "subject_label": "KONSEP_HUKUM_ADAT",
+    "relation": "MENGAKIBATKAN",
+    "raw_relation": "MENGAKIBATKAN",
+    "object": "kehilangan hak total atas fasilitas desa adat",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchH"
+  },
+
+  {
+    "sentence_id": 900034,
+    "context_sentence": "Kanoroyang: Sanksi terberat berupa pemberhentian keanggotaan desa adat. Pelanggar kehilangan hak total atas fasilitas desa, termasuk larangan mengubur atau mengabenkan jenazah di setra desa setempat. [Glosarium, 'Aturan, Ketentuan, dan Pantangan', ngaben-merge-cleaned.txt line 61]",
+    "subject": "kanoroyang",
+    "subject_label": "KONSEP_HUKUM_ADAT",
+    "relation": "MELARANG",
+    "raw_relation": "MELARANG",
+    "object": "setra",
+    "object_label": "BANGUNAN_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchH"
+  },
+
+  {
+    "sentence_id": 900035,
+    "context_sentence": "Terdapat dialektika antara tradisi komunal dengan tuntutan kehidupan urban yang pragmatis. Kasus di Desa Adat Pangkung Karung, Tabanan, menunjukkan bagaimana konflik sosial (sanksi Kanoroyang akibat penolakan pemekaran desa) memaksa warga yang terbuang untuk menggunakan krematorium karena dilarang menggunakan setra desa. [ngaben-merge-cleaned.txt line 63, section '9. Dinamika Kontemporer: Pergeseran ke Krematorium'; never assigned a pipeline sentence_id]",
+    "subject": "kanoroyang",
+    "subject_label": "KONSEP_HUKUM_ADAT",
+    "relation": "DIJATUHKAN_KARENA",
+    "raw_relation": "DIJATUHKAN_KARENA",
+    "object": "penolakan terhadap pemekaran desa adat (kasus Desa Adat Pangkung Karung, Tabanan)",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchH"
+  },
+
+  {
+    "sentence_id": 900036,
+    "context_sentence": "Inilah upacara Ngaben yang terbesar: Sawa Wedana... Sebagaimana telah disinggung dan sesuai dengan ucap pustaka agama, bahwa sesuatu upacara keagamaan barulah mempunyai nilai dan bobot, bila sang meyadnya melaksanakannya dengan sredaning manah, yakni hati yang mantap dan mulus. Manah yang sredah itu pula ditentukan oleh standar kedudukan seseorang di masyarakat, termasuk kemampuan sosial ekonominya. Demi memberikan alternatif kepada masing-masing umat sesuai dengan standar kehidupan tersebutlah maka para maha rsi yang bijaksana, menyusun pelbagai jenis upacara yang beraneka dalam hal besar kecilnya upakara dan sesajen. [ngaben-merge-cleaned.txt lines 1522-1528; the clause '...termasuk kemampuan sosial ekonominya' = real pipeline S1493, already used as this entity's BAGIAN_DARI attribute (standar kedudukan seseorang di masyarakat) -- this row adds the surrounding paragraph as the entity's own definition, never separately assigned a pipeline sentence_id]",
+    "subject": "kemampuan sosial ekonomi",
+    "subject_label": null,
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Standar kedudukan seseorang di masyarakat dari segi kemapanan ekonomi, yang bersama kedudukan sosialnya menjadi salah satu faktor penentu jenis dan skala upacara pengabenan yang dapat dilaksanakan suatu keluarga -- para maha rsi menyusun berbagai jenjang upacara (berbeda besar-kecil upakara dan sesajennya) agar setiap umat punya pilihan sesuai kemampuannya",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchH"
+  },
+
+  {
+    "sentence_id": 900037,
+    "context_sentence": "Demikian pulalah dalam pengabenan. Sawa Wedana dapat memberikan wibawa dan kemegahan semantap-mantapnya. Saking besarnya, upacara ini merupakan pilihan bagi keluarga puri, geria, jero dan mereka yang martabat sosialnya wajar untuk itu, baik karena ekonominya mapan, maupun karena faktor historis. [ngaben-merge-cleaned.txt lines 1525/1528; connects the paragraph's 'kemampuan sosial ekonomi' factor to its own named example, Sawa Wedana, the grandest Ngaben tier -- never assigned a single pipeline sentence_id spanning both clauses]",
+    "subject": "kemampuan sosial ekonomi",
+    "subject_label": null,
+    "relation": "MENENTUKAN",
+    "raw_relation": "MENENTUKAN",
+    "object": "sawa wedana",
+    "object_label": "RITUAL_KEMATIAN",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchH"
+  },
+
+  {
+    "sentence_id": 900038,
+    "context_sentence": "Demi memberikan alternatif kepada masing-masing umat sesuai dengan standar kehidupan tersebutlah maka para maha rsi yang bijaksana, menyusun pelbagai jenis upacara yang beraneka dalam hal besar kecilnya upakara dan sesajen. Besar kecil yang memberikan perbedaan wibawa sesuatu upacara. [ngaben-merge-cleaned.txt line 1528]",
+    "subject": "kemampuan sosial ekonomi",
+    "subject_label": null,
+    "relation": "MEMPENGARUHI",
+    "raw_relation": "MEMPENGARUHI",
+    "object": "besar kecilnya upakara dan sesajen dalam pengabenan",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchH"
+  },
+
+  {
+    "sentence_id": 900039,
+    "context_sentence": "Perlu diketahui bahwa alat untuk pengerikan atau pembersihan kuku di beberapa tempat di Bali, memiliki beragam peralatan yang berbeda, sesuai dengan dresta atau kebiasaan setempat. Seperti contoh misalnya, di suatu desa pengerikan kuku bagi jenazah laki-laki digunakan \"arit gobed\" (sabit untuk menyabit rumput). Arit Gobed adalah simbol dari Rare Angon yaitu lambang keperkasaan seorang laki-laki. [ngaben-merge-cleaned.txt line 3377; combines real pipeline S3155 ('sabit kecil untuk memotong rumput') and S3589 ('simbol rare angon' / 'keperkasaan seorang laki-laki') with the connecting ritual-use clause from this fuller passage, never separately assigned a pipeline sentence_id -- build_kb.py keeps the longest ADALAH/BERARTI literal as the definition, so this supersedes S3155's bare 'sabit kecil untuk memotong rumput' automatically]",
+    "subject": "arit gobed",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Sabit kecil yang biasa digunakan untuk menyabit rumput; dalam upacara Ngaben (saat Pabersihan Mati/Ngelelet) digunakan untuk mengerik/membersihkan kuku jenazah laki-laki, dan merupakan simbol dari Rare Angon, lambang keperkasaan seorang laki-laki",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchH"
+  },
+
+  {
+    "sentence_id": 900040,
+    "context_sentence": "Seperti contoh misalnya, di suatu desa pengerikan kuku bagi jenazah laki-laki digunakan \"arit gobed\" (sabit untuk menyabit rumput)... Sedangkan untuk kuku jenazah wanita digunakan \"anggapan\" (ani-ani atau ketam) yaitu alat untuk memotong padi. [ngaben-merge-cleaned.txt line 3377; the two tools are the male/female counterpart implements for the identical ritual step (pengerikan kuku during Pabersihan Mati/Ngelelet), confirmed again at line 2866: 'Kedua alat ini digunakan untuk membersihkan kuku jenazah. Anggapan (anai-anai) untuk membersihkan kuku jenazah wanita, sedangkan Arit Gobed untuk mayat laki-laki']",
+    "subject": "arit gobed",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "PASANGAN_DARI",
+    "raw_relation": "PASANGAN_DARI",
+    "object": "anggapan ani-ani atau ketam",
+    "object_label": "ISTILAH_UMUM_RITUAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+kg_graph_fix_batchH"
+  },
+
+  {
+    "sentence_id": 900041,
+    "context_sentence": "Perlu ditegaskan, sesuai dengan opini masyarakat, bila mendiang di masa hidupnya memegang jabatan, maka dalam pengabenan upacara Panebusan merupakan sesuatu yang mutlak atau paling tidak dianggap sangat penting. [real pipeline S1823; its own ADALAH row only captured the truncated fragment 'sesuatu yang mutlak dalam pengabenan', dropping the conditional clause that makes the fact meaningful -- this row keeps the full sentence as the definition instead (longer, so it wins under build_kb.py's longest-ADALAH-literal rule; no Glosarium bullet exists for this surface, so no glossary override competes); connected to 'ngaben' via entity_resolution.json's broader_overrides]",
+    "subject": "upacara panebusan",
+    "subject_label": null,
+    "relation": "ADALAH",
+    "raw_relation": "ADALAH",
+    "object": "Sesuatu yang dianggap mutlak (wajib), atau setidaknya sangat penting, dilaksanakan dalam upacara pengabenan apabila mendiang semasa hidupnya memegang suatu jabatan atau kedudukan di masyarakat",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+kg_graph_fix_batchH"
   }
 ]

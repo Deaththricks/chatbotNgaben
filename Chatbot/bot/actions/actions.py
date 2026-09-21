@@ -119,6 +119,13 @@ _META_TERMS = frozenset({
     "terangkanlah", "ceritakan", "jabarkan", "uraikan",
 })
 
+# Predicates whose object is a standalone child concept worth pulling its own
+# definition in for (same "parent decomposes into these things" shape as
+# TERMASUK_JENIS) -- see the comment at the enrichment loop in
+# _extract_and_resolve for how this was found (eteh-eteh sawa's BERUPA-linked
+# parts each had a real definition that was never being fetched).
+_CHILD_DEF_PREDICATES = frozenset({"TERMASUK_JENIS", "BERUPA", "TERDIRI_DARI"})
+
 # Words too generic/frequent across every answer to count as evidence of
 # grounding either way. Includes discourse/connector words a small LLM reaches
 # for in ANY elaboration regardless of correctness (terdiri, disebut,
@@ -212,6 +219,15 @@ def _log_fabrication(user_msg: str, enriched: List[Dict[str, Any]], llm_answer: 
     })
 
 
+def _log_undefined_target_fabrication(user_msg: str, enriched: List[Dict[str, Any]], llm_answer: str) -> None:
+    _log_jsonl(_REFUSAL_LOG_PATH, {
+        "kind": "llm_undefined_target_fabrication_override",
+        "user_msg": user_msg,
+        "entities": [e["id"] for e in enriched],
+        "llm_answer": llm_answer,
+    })
+
+
 def _has_grounding(enriched: List[Dict[str, Any]]) -> bool:
     return any(
         e.get("definition") not in (None, "", "Tidak ada definisi langsung") or e.get("facts")
@@ -248,6 +264,84 @@ def _has_fabrication_signal(answer: Text, enriched: List[Dict[str, Any]]) -> boo
     return len(ungrounded) / len(answer_words) > 0.75
 
 
+_SENT_SPLIT_RE = re.compile(r"(?<=[.!?])\s+")
+
+
+def _undefined_target_names(enriched: List[Dict[str, Any]]) -> set:
+    """Relationship targets mentioned in context with no 'target_definition' of
+    their own (i.e. not in _CHILD_DEF_PREDICATES, or capped out) -- a bare name
+    with nothing else about it. Confirmed live: "pering" -> banten_teben via
+    DILETAKKAN_PADA carries no target_definition (banten_teben HAS a real one,
+    "sajen yang diletakkan dekat lantai/kaki jenazah", it's just not fetched for
+    a location predicate), and the LLM filled the gap by inventing "keranjang
+    besar yang berisi berbagai bahan ritual" -- a location relation, not a
+    composition one, so widening _CHILD_DEF_PREDICATES to cover it would be the
+    wrong fix (and would do this for every location/time/actor relation in
+    every answer); catching the invented description after the fact is more
+    targeted. Same for "lembu" via bale_pamuunan's DIHUNI."""
+    names = set()
+    for e in enriched:
+        for r in e.get("relationships") or []:
+            t = r.get("target")
+            if t and not r.get("target_definition"):
+                names.add(t.strip())
+    return names
+
+
+def _has_undefined_target_elaboration(answer: Text, enriched: List[Dict[str, Any]]) -> bool:
+    """True if a sentence mentioning a bare (definition-less) relationship
+    target also attaches descriptive content not grounded anywhere else in
+    context -- e.g. "banten teben, yang merupakan keranjang besar..." when
+    nothing in the given context ever mentions a basket. Lower threshold (0.5)
+    than _has_fabrication_signal's whole-answer 0.75: a short invented clause
+    like this gets diluted below 0.75 by the rest of an otherwise well-grounded
+    answer, which is exactly why it wasn't already caught."""
+    bare_names = _undefined_target_names(enriched)
+    if not bare_names:
+        return False
+    vocab = _context_vocabulary(enriched)
+    for sent in _SENT_SPLIT_RE.split(answer):
+        low = sent.lower()
+        mentioned = [n for n in bare_names if n.lower() in low]
+        if not mentioned:
+            continue
+        name_words: set = set()
+        for n in mentioned:
+            name_words |= _content_words(n)
+        descriptive = _content_words(sent) - name_words
+        if len(descriptive) < 3:
+            continue  # too short to judge -- a bare mention isn't elaboration
+        ungrounded = [w for w in descriptive if not _grounded(w, vocab)]
+        if len(ungrounded) / len(descriptive) > 0.5:
+            return True
+    return False
+
+
+def _last_bot_utterance(tracker: Tracker) -> Optional[Text]:
+    for e in reversed(tracker.events):
+        if e.get("event") == "bot" and e.get("text"):
+            return e.get("text")
+    return None
+
+
+def _is_near_repeat(answer: Text, previous: Optional[Text], threshold: float = 0.7) -> bool:
+    """True if `answer` shares most of its content vocabulary with the bot's own
+    immediately preceding utterance -- observed directly in conersation.md: four
+    different phrasings of "how is banten pamegat used" ("digunakan untuk apa",
+    "tapi digunakan bagaimana?", "digunakan bagaimana?", "jelaskan") all got back
+    near-verbatim-identical paragraphs that never actually answered "how", because
+    the KB only has "when" facts for it and nothing flagged that the answer wasn't
+    new. Same shape as the refusal/fabrication guards: a deterministic backstop
+    for something the small local model doesn't reliably self-detect."""
+    if not previous:
+        return False
+    a = _content_words(answer)
+    b = _content_words(previous)
+    if len(a) < 4 or len(b) < 4:
+        return False
+    return len(a & b) / len(a | b) >= threshold
+
+
 def _deterministic_answer(enriched: List[Dict[str, Any]]) -> str:
     """Fallback answer built straight from `enriched` -- pure Python, so it can't
     itself hedge or refuse the way a small local LLM sometimes does."""
@@ -257,7 +351,16 @@ def _deterministic_answer(enriched: List[Dict[str, Any]]) -> str:
         definition = e.get("definition")
         facts = e.get("facts") or []
         if definition and definition != "Tidak ada definisi langsung":
-            sentence = f"{name} adalah {definition.rstrip('.')}."
+            def_text = definition.rstrip(".")
+            # kb_content.definition_facts() renders ADALAH/MERUPAKAN facts as
+            # "{Subject} adalah {Object}", so `definition` is often already a
+            # full "{name} adalah ..." sentence -- prepending "{name} adalah "
+            # unconditionally doubles it (observed: "soda adalah Soda adalah
+            # salah satu jenis banten..." in conersation.md).
+            if def_text.lower().startswith(f"{name}".lower()):
+                sentence = f"{def_text}."
+            else:
+                sentence = f"{name} adalah {def_text}."
         else:
             sentence = f"{name}:"
         if facts:
@@ -315,6 +418,11 @@ def _extract_and_resolve(
     - If the current input uses a pronoun or ellipsis ("itu", "ini", "yang tadi",
       "yang pertama", "yang kedua", "keduanya", etc.), replace it with the actual
       term(s) it refers to, using the recent conversation and the entities list above.
+    - A generic collective reference with no specific noun of its own ("setiap
+      barang", "semua itu", "masing-masing", "setiap hal tersebut", "setiap
+      bagiannya") is NOT itself a term to look up -- it means "every part of
+      the thing we were just discussing". Return the topic being discussed
+      right now (below) instead of the literal collective phrase.
     - If the current input clearly introduces a brand new term unrelated to the
       history, ignore the history and just return that new term.
     - If the current input already names its own complete subject (it is not just
@@ -410,16 +518,26 @@ def _extract_and_resolve(
         # empty list (confirmed live -- every :Isolated node, ~93/476 entities,
         # returns this). Drop it here rather than feed null junk into the LLM context.
         relationships = [r for r in row.get("relationships", []) if r.get("relation")]
-        # For the is-a spine specifically, a bare child name is not enough context
-        # to answer "what does each part mean" -- the LLM otherwise has to guess
-        # from its own background knowledge and can mix up e.g. which Panca Maha
-        # Bhuta element is which classical meaning. Pull each child's own
-        # definition in (glossary/facts-backed, no extra Neo4j round trip) so the
-        # answer is actually grounded in this KB's text, not the model's memory.
-        # Capped -- a hub entity with many children shouldn't blow up the prompt.
+        # For the is-a/part-of spine specifically, a bare child name is not enough
+        # context to answer "what does each part mean" -- the LLM otherwise has to
+        # guess from its own background knowledge and can mix up e.g. which Panca
+        # Maha Bhuta element is which classical meaning, or (confirmed live: eteh
+        # eteh sawa's 7 BERUPA-linked items -- leluwur, samsam, udeng, etc. --
+        # each already have a specific, correct KB definition, e.g. samsam's is
+        # "dipakai sebagai unsur pembuatan Tirtha Panglukatan...", but nothing
+        # ever fetched it here since only TERMASUK_JENIS was checked) invent
+        # identical generic filler for every child instead. BERUPA/TERDIRI_DARI
+        # are the same "parent decomposes into standalone child concepts" shape
+        # as TERMASUK_JENIS in this KB (see kb_content.PREDICATE_FAMILIES's
+        # "bahan" family) -- not the full family, just the two whose object is
+        # normally a linkable concept worth its own definition, rather than a
+        # raw material/substance. Pull each child's own definition in
+        # (glossary/facts-backed, no extra Neo4j round trip) so the answer is
+        # actually grounded in this KB's text, not the model's memory. Capped --
+        # a hub entity with many children shouldn't blow up the prompt.
         n_child_defs = 0
         for r in relationships:
-            if r.get("relation") == "TERMASUK_JENIS" and r.get("target_id") and n_child_defs < 8:
+            if r.get("relation") in _CHILD_DEF_PREDICATES and r.get("target_id") and n_child_defs < 8:
                 child_def = content.best_definition(r["target_id"])
                 if child_def:
                     r["target_definition"] = child_def
@@ -444,7 +562,7 @@ def _extract_and_resolve(
     return enriched, unresolved, found_names
 
 
-def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]]) -> str:
+def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]], tracker: Optional[Tracker] = None) -> str:
     """Step 4: synthesize a natural Indonesian answer from `enriched`, with a
     deterministic guard against the local LLM refusing/hedging on context it was
     actually given (observed directly in conersation.md for terms that HAD
@@ -457,10 +575,12 @@ def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]]) -> str:
     RULES:
     1. Use the provided Neo4j Graph Data context to answer the user's question.
     2. Explain terms clearly using the 'definition', 'facts', and 'relationships' provided in the JSON.
-    3. You may synthesize and connect relationships logically, but DO NOT invent or fabricate external facts, lore, examples, or definitions that are missing from the context. This includes NEVER listing example items, categories, or sub-types (e.g. "seperti bunga, perhiasan, pakaian, ...") unless those exact items appear in the given 'definition' or 'facts'.
+    3. You may synthesize and connect relationships logically, but DO NOT invent or fabricate external facts, lore, examples, or definitions that are missing from the context. This includes NEVER listing example items, categories, or sub-types (e.g. "seperti bunga, perhiasan, pakaian, ...") unless those exact items appear in the given 'definition' or 'facts'. This also applies per relationship target: if a 'relationships' entry has no 'target_definition', do NOT invent a description, symbolism, or function for it (e.g. do not claim it "symbolizes protection" or "is a cloth that covers the corpse") -- just name it, or say its meaning is not recorded.
     4. If an entity in the JSON has a non-empty 'definition' or non-empty 'facts', you MUST use it to answer -- never claim that information about it is missing.
     5. Only if the provided data lacks the answer entirely (every relevant entity has no definition and no facts), reply: "Maaf, informasi detail mengenai hal tersebut belum tercatat di basis data."
     6. Answer in natural, fluid Indonesian.
+    7. If the user asks to explain "setiap"/"masing-masing"/"semua" (each/every) item of something, and 'relationships' contains entries with their own 'target_definition', give each such entry its own short explanation using that 'target_definition' -- not one vague summary covering several at once. For an entry with no 'target_definition', follow rule 3 (name only, no invented description).
+    8. If the user asks about one specific aspect of something (e.g. HOW it is used/works, not just when or where), and the available 'definition'/'facts' only cover a different aspect, give what IS available but explicitly say the specific aspect asked about is not detailed in the available data -- do not restate the same available facts as if they directly answered the question.
     """
 
     synth_user_prompt = f"User Question: {user_msg}\nGraph Data:\n{raw_context}"
@@ -484,6 +604,15 @@ def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]]) -> str:
         elif _has_fabrication_signal(answer, enriched):
             _log_fabrication(user_msg, enriched, answer)
             answer = _deterministic_answer(enriched)
+        elif _has_undefined_target_elaboration(answer, enriched):
+            _log_undefined_target_fabrication(user_msg, enriched, answer)
+            answer = _deterministic_answer(enriched)
+
+    if tracker is not None and _is_near_repeat(answer, _last_bot_utterance(tracker)):
+        answer += (
+            " (Ini sama dengan penjelasan saya sebelumnya -- informasi yang lebih "
+            "rinci mengenai hal ini belum tercatat di basis data.)"
+        )
 
     return answer
 
@@ -506,7 +635,7 @@ class ActionGraphRAG(Action):
             # this turn shouldn't erase what was successfully established earlier.
             return []
 
-        answer = _synthesize(user_msg, enriched)
+        answer = _synthesize(user_msg, enriched, tracker)
         dispatcher.utter_message(text=answer)
 
         updated_history = entity_history + [n for n in found_names if n not in entity_history]
@@ -539,7 +668,7 @@ class ActionLLMFallback(Action):
             current_entity=current_entity, announce_miss=False
         )
         if enriched:
-            answer = _synthesize(user_msg, enriched)
+            answer = _synthesize(user_msg, enriched, tracker)
             dispatcher.utter_message(text=answer)
             updated_history = entity_history + [n for n in found_names if n not in entity_history]
             updated_history = updated_history[-6:]
