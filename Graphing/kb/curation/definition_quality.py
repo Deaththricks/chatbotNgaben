@@ -4,10 +4,12 @@ A router, not a filter: it flags a definition for human review, it never
 silently applies or drops content. Consistent with the KB's existing
 HIGH/MED/LOW confidence-then-review-queue philosophy (see README.md).
 
-Used by definitions_to_review.py (Graphing/Neo4/definitions.json -> a new
-glossary_draft_review batch / definition_review_queue.jsonl) and by
-audit_existing_definitions.py (retroactive pass over entities.json's own
-populated definitions).
+Used by build_glossary_review_master.py to gate Graphing/kb/tuning/definitions.json's
+candidate definitions before they're offered up in glossary_review_master.md. An
+earlier importer, definitions_to_review.py, was superseded by
+build_glossary_review_master.py and deleted 2026-09-22; a planned
+audit_existing_definitions.py (a retroactive pass over entities.json's own populated
+definitions) was never actually built.
 """
 from __future__ import annotations
 

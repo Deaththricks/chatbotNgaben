@@ -124,7 +124,19 @@ _META_TERMS = frozenset({
 # TERMASUK_JENIS) -- see the comment at the enrichment loop in
 # _extract_and_resolve for how this was found (eteh-eteh sawa's BERUPA-linked
 # parts each had a real definition that was never being fetched).
-_CHILD_DEF_PREDICATES = frozenset({"TERMASUK_JENIS", "BERUPA", "TERDIRI_DARI"})
+# BAGIAN_DARI added 2026-09-23: the 2026-09-23 KB semantics-fix pass (how_it_works.md
+# §2.10) moved several entities (mapegat, tarpana, pabersihan_mati, ...) off a false
+# TERMASUK_JENIS "type of ngaben" edge onto a correct BAGIAN_DARI "stage of ngaben"
+# one -- but without this, none of those get a target_definition either, so any true
+# elaboration about them (e.g. answering "apa saja tahapan dalam ngaben") reads as an
+# undefined-target fabrication and gets discarded by _has_undefined_target_elaboration
+# below, even though it's completely correct. Confirmed live via llm_refusal_log.jsonl:
+# 7+ correct answers about ngaben/sekah/pamerasan/mlaspas_kajang thrown away this way
+# in one test session before this fix. DILETAKKAN_PADA/DILETAKKAN_DI and other
+# location/time/actor predicates are deliberately still excluded -- same reasoning as
+# the docstring below (widening those specifically causes a different, already-
+# rejected problem, per the banten_teben case).
+_CHILD_DEF_PREDICATES = frozenset({"TERMASUK_JENIS", "BERUPA", "TERDIRI_DARI", "BAGIAN_DARI"})
 
 # Words too generic/frequent across every answer to count as evidence of
 # grounding either way. Includes discourse/connector words a small LLM reaches
@@ -236,8 +248,19 @@ def _has_grounding(enriched: List[Dict[str, Any]]) -> bool:
 
 
 def _has_refusal_signal(answer: Text) -> bool:
+    """True if a refusal phrase is present AND it's basically the whole answer,
+    not an honest one-line caveat inside an otherwise substantial one. 2026-09-23:
+    used to fire on ANY occurrence, discarding real, mostly-correct, multi-fact
+    answers (bhuta_kala, tirtha_pangentas) purely because they honestly flagged
+    one remaining sub-detail as not recorded -- replacing them with the flat
+    deterministic template, which is a WORSE answer (less complete, often about
+    the wrong facet entirely) than what was discarded. Confirmed live via
+    llm_refusal_log.jsonl. A short answer that's essentially just the refusal
+    (few content words) is still caught -- that's a real "nothing to say" case."""
     low = answer.lower()
-    return any(sig in low for sig in _REFUSAL_SIGNALS)
+    if not any(sig in low for sig in _REFUSAL_SIGNALS):
+        return False
+    return len(_content_words(answer)) < 12
 
 
 def _has_fabrication_signal(answer: Text, enriched: List[Dict[str, Any]]) -> bool:
@@ -264,7 +287,18 @@ def _has_fabrication_signal(answer: Text, enriched: List[Dict[str, Any]]) -> boo
     return len(ungrounded) / len(answer_words) > 0.75
 
 
-_SENT_SPLIT_RE = re.compile(r"(?<=[.!?])\s+")
+_SENT_SPLIT_RE = re.compile(r"(?<=[.!?])\s+|\n+")
+# also split on newlines (2026-09-23): a numbered/bulleted list has no
+# period between items ("1. X\n2. Y\n...\n\nSetiap jenis..."), so the old
+# period-only split treated the whole list-plus-wrapup as ONE "sentence" --
+# confirmed live (llm_refusal_log.jsonl): a correct 9-item TERMASUK_JENIS
+# listing for ngaben got discarded because its one-line wrap-up sentence
+# ("Setiap jenis ngaben tersebut merupakan varian atau metode...") is full of
+# generic Indonesian discourse words no KB definition would ever contain,
+# diluted across the whole multi-line block instead of judged on its own --
+# same false-positive shape _has_fabrication_signal's 0.6->0.75 threshold
+# raise already fixed once for the whole-answer check, just never applied
+# here since this check works per-sentence, not per-answer.
 
 
 def _undefined_target_names(enriched: List[Dict[str, Any]]) -> set:
@@ -292,10 +326,20 @@ def _has_undefined_target_elaboration(answer: Text, enriched: List[Dict[str, Any
     """True if a sentence mentioning a bare (definition-less) relationship
     target also attaches descriptive content not grounded anywhere else in
     context -- e.g. "banten teben, yang merupakan keranjang besar..." when
-    nothing in the given context ever mentions a basket. Lower threshold (0.5)
+    nothing in the given context ever mentions a basket. Lower threshold
     than _has_fabrication_signal's whole-answer 0.75: a short invented clause
     like this gets diluted below 0.75 by the rest of an otherwise well-grounded
-    answer, which is exactly why it wasn't already caught."""
+    answer, which is exactly why it wasn't already caught.
+
+    Threshold raised 0.5 -> 0.65 and min-descriptive-words 3 -> 4, 2026-09-23:
+    after _SENT_SPLIT_RE started splitting on newlines (so a numbered/bulleted
+    list is judged item-by-item, not as one blob), 0.5 was still catching short,
+    individually-true sentences whose few non-name words happened to be ordinary
+    hedges/connectors absent from the narrow KB vocabulary ("mungkin memiliki
+    simbolisme", "sebagai sarana ritual") -- confirmed live on otherwise-correct
+    bade/naga_banda and pamerasan answers. 0.65 stays well clear of the
+    banten_teben case (~1.0 ungrounded, a wholly invented clause) while no
+    longer punishing a couple of ordinary filler words next to a real name."""
     bare_names = _undefined_target_names(enriched)
     if not bare_names:
         return False
@@ -309,10 +353,10 @@ def _has_undefined_target_elaboration(answer: Text, enriched: List[Dict[str, Any
         for n in mentioned:
             name_words |= _content_words(n)
         descriptive = _content_words(sent) - name_words
-        if len(descriptive) < 3:
+        if len(descriptive) < 4:
             continue  # too short to judge -- a bare mention isn't elaboration
         ungrounded = [w for w in descriptive if not _grounded(w, vocab)]
-        if len(ungrounded) / len(descriptive) > 0.5:
+        if len(ungrounded) / len(descriptive) > 0.65:
             return True
     return False
 
@@ -534,10 +578,16 @@ def _extract_and_resolve(
         # raw material/substance. Pull each child's own definition in
         # (glossary/facts-backed, no extra Neo4j round trip) so the answer is
         # actually grounded in this KB's text, not the model's memory. Capped --
-        # a hub entity with many children shouldn't blow up the prompt.
+        # a hub entity with many children shouldn't blow up the prompt. Raised
+        # 8 -> 16 2026-09-23: ngaben alone now has 8 real TERMASUK_JENIS children
+        # plus 5 real BAGIAN_DARI ones (the semantics-fix pass above), so the old
+        # cap of 8 was already exhausted by TERMASUK_JENIS alone, leaving every
+        # BAGIAN_DARI child uncovered regardless of the predicate-set fix above.
+        # 16 comfortably covers current hub entities with room to grow; qwen2.5's
+        # 32k context has plenty of headroom for this many short definitions.
         n_child_defs = 0
         for r in relationships:
-            if r.get("relation") in _CHILD_DEF_PREDICATES and r.get("target_id") and n_child_defs < 8:
+            if r.get("relation") in _CHILD_DEF_PREDICATES and r.get("target_id") and n_child_defs < 16:
                 child_def = content.best_definition(r["target_id"])
                 if child_def:
                     r["target_definition"] = child_def

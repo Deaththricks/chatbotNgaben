@@ -1,6 +1,6 @@
 """Resolve a user's free-text wording to a canonical KB entity id.
 
-Mirrors the resolution pipeline documented in Graphing/kb/METHODOLOGY.md and the
+Mirrors the resolution pipeline documented in Graphing/kb/methodology.md and the
 `fuzzy_match_*` helpers in the reference bot, but Python-side (the graph does not
 store aliases in a queryable way).
 
@@ -59,10 +59,10 @@ class Match:
 class KbResolver:
     def __init__(self, kb_dir: Path = _KB_DIR):
         self.kb_dir = kb_dir
-        ents = json.loads((kb_dir / "entities.json").read_text(encoding="utf-8"))
+        ents = json.loads((kb_dir / "output" / "entities.json").read_text(encoding="utf-8"))
         self.by_id: dict[str, dict] = {e["id"]: e for e in ents}
 
-        res = json.loads((kb_dir / "entity_resolution.json").read_text(encoding="utf-8"))
+        res = json.loads((kb_dir / "tuning" / "entity_resolution.json").read_text(encoding="utf-8"))
         self.force_merge: dict[str, str] = {
             _norm(k): v for k, v in res.get("force_merge", {}).items()
             if not k.startswith("_")

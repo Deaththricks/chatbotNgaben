@@ -17,7 +17,7 @@ KB build itself:
      just turned into flat attribute strings on the subject.
   2. The same pattern with NO surviving ENTITY sibling (all-LITERAL groups) --
      invisible to pattern 1's contrast signal, needs its own scan.
-  3. A KB-wide source-text audit (Graphing/audit_tooling/reaudit_20260907/)
+  3. A KB-wide source-text audit (Graphing/auditTooling/reaudit20260907/)
      had already found ~60 more under-extracted relations by reading the raw
      corpus; most were applied over time but a residual few were not -- that
      reconciliation was done by hand this pass, cross-referencing the 8 chunk
@@ -60,8 +60,8 @@ entities / build a meaningless hub, or wrongly merge two distinct concepts).
 Run this, read report.md, decide case by case -- same process used
 2026-09-18, just without re-deriving the scan logic from scratch each time.
 
-Run (from Graphing/kb/):  python audit_connectivity.py
-Reads:  ../Neo4/relation_results_ngaben.normalized.json, ./entities.json
+Run (from Graphing/kb/curation/):  python audit_connectivity.py
+Reads:  ../../neo4/relation_results_ngaben.normalized.json, ../output/entities.json
 Writes: ./connectivity_report.md
 """
 import difflib
@@ -71,9 +71,9 @@ from collections import defaultdict
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-REL_JSON = HERE.parent / "Neo4" / "relation_results_ngaben.normalized.json"
-ENTITIES = HERE / "entities.json"
-RELATIONS_JSONL = HERE / "relations.jsonl"
+REL_JSON = HERE.parent.parent / "neo4" / "relation_results_ngaben.normalized.json"
+ENTITIES = HERE.parent / "output" / "entities.json"
+RELATIONS_JSONL = HERE.parent / "output" / "relations.jsonl"
 OUT = HERE / "connectivity_report.md"
 
 # Predicates whose object is normally a standalone concept worth its own

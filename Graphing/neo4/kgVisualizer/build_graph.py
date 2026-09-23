@@ -9,9 +9,10 @@ Two sources:
       node property, label from *_label, edgeless -> isolated).
 
   python build_graph.py --source kb
-      from ../../kb/entities.json + ../../kb/relations.jsonl -- the canonical,
-      entity-resolved knowledge base. Edges carry a confidence (HIGH/MED/LOW,
-      shown as opacity); 'broader' links are drawn as TERMASUK_JENIS (IS-A).
+      from ../../kb/output/entities.json + ../../kb/output/relations.jsonl --
+      the canonical, entity-resolved knowledge base. Edges carry a confidence
+      (HIGH/MED/LOW, shown as opacity); 'broader' links are drawn as
+      TERMASUK_JENIS (IS-A).
 
   python build_graph.py <path.json>      (explicit normalized-format file)
 
@@ -28,7 +29,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 DEFAULT_INPUT = HERE.parent / "relation_results_ngaben.normalized.json"
-KB_DIR = HERE.parent.parent / "kb"
+KB_DIR = HERE.parent.parent / "kb" / "output"
 OUTPUT = HERE / "graph_data.js"
 
 KEEP_ONLY_CLEAN = True   # same switch as the Neo4j loader
@@ -128,7 +129,7 @@ def _read_jsonl(path):
 
 
 def build_from_kb():
-    """Graph from the canonical KB (kb/entities.json + kb/relations.jsonl)."""
+    """Graph from the canonical KB (kb/output/entities.json + kb/output/relations.jsonl)."""
     ents = json.loads((KB_DIR / "entities.json").read_text(encoding="utf-8"))
     rels = _read_jsonl(KB_DIR / "relations.jsonl")
     ent_ids = {e["id"] for e in ents}
@@ -179,7 +180,7 @@ def build_from_kb():
     for n in nodes:
         type_counts[n["type"]] += 1
     meta = {
-        "input": "kb/entities.json + kb/relations.jsonl",
+        "input": "kb/output/entities.json + kb/output/relations.jsonl",
         "rows_total": len(rels), "rows_kept": len(rels),
         "node_count": len(nodes), "edge_count": len(edges),
         "isolated_count": sum(1 for n in nodes if n["isolated"]),

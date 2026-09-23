@@ -45,7 +45,7 @@ user in their own PowerShell window**, not through Claude's Bash/PowerShell tool
 Neo4j KB pipeline (from `Graphing/`):
 
 ```
-python Neo4/load_ngaben_to_neo4j.py --source kb   # loads Graphing/kb/entities.json + relations.jsonl
+python neo4/load_ngaben_to_neo4j.py --source kb   # loads Graphing/kb/output/entities.json + relations.jsonl
 ```
 
 Requires `NEO4J_URI`/`NEO4J_USER`/`NEO4J_PASSWORD` in `.env` (repo root; copy from `.env.example`).
@@ -62,7 +62,7 @@ Requires `NEO4J_URI`/`NEO4J_USER`/`NEO4J_PASSWORD` in `.env` (repo root; copy fr
   real answers: `ollama pull qwen2.5`, then `ollama serve` (or leave the desktop app running).
   If Ollama is unreachable, calls are caught and the bot degrades to a plain templated answer
   (or a fixed "gangguan teknis" message on the free-form fallback path) instead of crashing —
-  see `requirements.txt`'s comment and `HOW_IT_WORKS.md` §3.5 for exactly where each guard is.
+  see `requirements.txt`'s comment and `how_it_works.md` §3.5 for exactly where each guard is.
 - **Broad questions can 503 with `Service Unavailable` instead of answering.** A question that
   resolves to a hub entity with several `TERMASUK_JENIS` children (e.g. "eteh-eteh sawa dan semua
   hal yang membentuknya") pulls each child's own definition into the synthesis context
@@ -152,7 +152,7 @@ Key modules in `Chatbot/bot/`:
   a single LLM-driven pipeline now handles all question shapes.
 - `kb_resolver.py` — resolution order: exact name/alias -> `entity_resolution.json` force_merge ->
   modifier-strip retry (itself retrying both the alias table and force_merge) -> rapidfuzz
-  (WRatio, threshold ~70-80). Mirrors `Graphing/kb/METHODOLOGY.md` but done Python-side because
+  (WRatio, threshold ~70-80). Mirrors `Graphing/kb/methodology.md` but done Python-side because
   the graph doesn't store aliases queryably.
 - `kb_content.py` — read-only loader for `facts.jsonl` / `passages.jsonl` / `relation_phrases.json`;
   the graph stays authoritative for structure, this module only supplies phrasing and the two
@@ -166,26 +166,34 @@ Key modules in `Chatbot/bot/`:
 **Confidence filtering:** `relations.jsonl` / graph edges carry `confidence` (HIGH/MED/LOW); the
 bot and `facts.jsonl` only use non-LOW edges (`WHERE r.confidence <> 'LOW'` / already filtered at
 KB-build time) — LOW-confidence relation extraction is ~25% wrong and sits in
-`Graphing/kb/review_queue.jsonl` for human review, not surfaced to users.
+`Graphing/kb/output/review_queue.jsonl` for human review, not surfaced to users.
 
 ## Regenerating the KB (`Graphing/kb/`)
 
-`Graphing/kb/build_kb.py` reads (never writes) upstream extraction/data files plus
-`entity_resolution.json` and `relation_phrases.json`, and produces `entities.json`,
-`facts.jsonl`, `relations.jsonl`, `passages.jsonl`, `glossary.md`, `review_queue.jsonl`,
-`build_report.txt`. See `Graphing/kb/README.md` for the full recipe and `METHODOLOGY.md` for the
-entity-resolution/confidence rules. After rebuilding the KB, re-run
-`Neo4/load_ngaben_to_neo4j.py --source kb` to refresh the graph the bot queries.
+As of 2026-09-22, `Graphing/kb/` is split into `output/` (everything `build_kb.py` generates:
+`entities.json`, `relations.jsonl`, `facts.jsonl`, `passages.jsonl`, `glossary.md`,
+`review_queue.jsonl`, `build_report.txt`), `tuning/` (hand-authored curation knobs:
+`entity_resolution.json`, `relation_phrases.json`, `review_decisions.json`, `definitions.json`),
+and `curation/` (the review/audit tooling: `apply_review.py`, `audit_connectivity.py`,
+`build_glossary_review_master.py`, `definition_quality.py`, and their `.md` reports) — done
+because the flat folder had become hard to read with all of these mixed together. `build_kb.py`
+itself, `README.md`, and `methodology.md` stay at `Graphing/kb/` root.
+
+`Graphing/kb/build_kb.py` (run from `Graphing/kb/`) reads (never writes) upstream extraction/data
+files plus `tuning/entity_resolution.json` and `tuning/relation_phrases.json`, and produces the
+`output/` files listed above. See `Graphing/kb/README.md` for the full recipe and `methodology.md`
+for the entity-resolution/confidence rules. After rebuilding the KB, re-run
+`neo4/load_ngaben_to_neo4j.py --source kb` to refresh the graph the bot queries.
 
 Two curated-JSON knobs worth knowing about when the graph is missing a connection or shows a
-nonsense one (see `HOW_IT_WORKS.md` §2.5-2.6 for the full mechanics and worked examples):
+nonsense one (see `how_it_works.md` §2.5-2.6 for the full mechanics and worked examples):
 - `entity_resolution.json`'s **`broader_overrides`** — manual is-a/part-of links for cases the
   automatic multi-word-head heuristic can't derive (it only spots a parent when a multi-word
   surface's *leading* word is the parent's name, never a trailing one, and never for
   single-word children at all). Used to fix e.g. Panca Maha Bhuta's five elements and a batch
   of jenazah/tirtha/galar/kawangen items that referenced an existing graphed concept in their
   own definition text but were never linked to it (92 -> 63 `:Isolated` nodes, 2026-09-17 audit).
-- `Graphing/kb/review_decisions.json` — per-triple `accept` / `reject` / `fix: S | P | O`
+- `Graphing/kb/tuning/review_decisions.json` — per-triple `accept` / `reject` / `fix: S | P | O`
   decisions keyed by `"<sentence_id>|<raw subject>|<raw object>"`, consulted by `build_kb.py`
   at **both** the entity-creation loop and the relation-scoring loop (a 2026-09-17 fix — it used
   to only gate relation writing, so a `reject`ed triple's object could still get created as a
@@ -210,22 +218,114 @@ and never reaches `entities.json` at all even after the `object_type` fix — ch
 that threshold was safe first (no: 2 of the pre-existing fragments are genuine garbage clauses a
 higher threshold would readmit), so the fix is shortening the specific name instead (to its
 core identity, or to a shorter form the corpus's own text already uses elsewhere), not touching
-the shared filter. `Graphing/kb/audit_connectivity.py` (new, read-only, run from `Graphing/kb/`)
-scans for this pattern — mixed `ENTITY`/`LITERAL` sibling groups, all-`LITERAL` compositional
-groups (same issue with no surviving `ENTITY` sibling to signal it), and isolated nodes whose own
-definition names another known entity (candidate `broader_overrides` targets, e.g. how the
-09-18 pass found 9 `sasih_*` (calendar month) entities each independently saying "a month in the
-Balinese calendar" with no `sasih` parent entity to link to — same shape as Panca Maha Bhuta,
-just never noticed). It writes `connectivity_report.md`, a list of candidates for review, same
-spirit as `review_queue.jsonl` — every finding still needs a judgment call (generic word vs.
-specific term worth its own entity), not blind auto-apply.
+the shared filter. `Graphing/kb/curation/audit_connectivity.py` (new, read-only, run from
+`Graphing/kb/curation/`) scans for this pattern — mixed `ENTITY`/`LITERAL` sibling groups,
+all-`LITERAL` compositional groups (same issue with no surviving `ENTITY` sibling to signal it),
+and isolated nodes whose own definition names another known entity (candidate `broader_overrides`
+targets, e.g. how the 09-18 pass found 9 `sasih_*` (calendar month) entities each independently
+saying "a month in the Balinese calendar" with no `sasih` parent entity to link to — same shape
+as Panca Maha Bhuta, just never noticed). It writes `curation/connectivity_report.md`, a list of
+candidates for review, same spirit as `output/review_queue.jsonl` — every finding still needs a
+judgment call (generic word vs. specific term worth its own entity), not blind auto-apply.
+
+**The 2026-09-23 semantics audit: TERMASUK_JENIS (is-a) vs. stage-of/used-in/represents.**
+User-reported bug: the graph showed `mapegat` (a numbered step, 4 of 8, in the Ngaben
+sequence — `ngaben-merge-cleaned.txt` line 32) as `TERMASUK_JENIS ngaben` ("a type of
+Ngaben"), which is false — it's a stage *within* Ngaben, not a variant *of* it.
+Root cause: `Neo4/load_ngaben_to_neo4j.py` renders **every** entity's `broader` field as
+`TERMASUK_JENIS` unconditionally, with no way to say "this parent link is stage-of/
+used-in/represents, not is-a" — and `entity_resolution.json`'s `broader_overrides` had,
+over several prior sessions, been used for exactly that dual purpose despite the
+section's own docstring calling itself "is-a/part-of links." Audited all 47 cross-type
+`broader` edges (same-type edges, e.g. SARANA_RITUAL→SARANA_RITUAL, are lower-risk by
+construction and were *not* audited) plus all 397 live relations on identity predicates
+(ADALAH/SAMA_DENGAN/DIKENAL_SEBAGAI/BERARTI), cross-checked against
+`ngaben-merge-cleaned.txt` and, where the corpus didn't settle it (Panca Dewata vs. Nawa
+Sanga membership), the open web. Found and fixed:
+- **19 stage-of/used-in/represents entities mislabeled as TERMASUK_JENIS** (mapegat,
+  tarpana, pabersihan_mati, ayaban_upakara_diuskamaligi, mlaspas_kajang, matur_piuning,
+  daun_intaran, malem, saput, sekah, kalpika, padang_lepas, pramakusa, pengulapan,
+  boreh, balai_balai_bade, bangbang_rare, pangenteg_linggih, ngerorasin). Fix: a new
+  **`broader_suppress`** list in `entity_resolution.json` (checked last in
+  `Resolver.resolve()`, wins over both the heuristic and `broader_overrides` — the one
+  `build_kb.py` code change this pass made) nulls the false `broader` pointer; 18 of
+  the 19 get an explicit typed relation instead (BAGIAN_DARI/DILETAKKAN_DI/
+  DILETAKKAN_PADA/MELAMBANGKAN/DIMASUKKAN_KE_DALAM/DIGUNAKAN_SAAT/DILAKUKAN_SAAT, as
+  fits — out-of-band S900057-900075, `relation_results_ngaben.normalized.json`, tag
+  `manual_addition+kg_semantic_fix`); `ngerorasin` gets no replacement (its old
+  `broader`, "atma," was a plain heuristic mis-hit its own definition never supports —
+  it already has other real edges, so it doesn't regress to isolated).
+- **4 wrong-parent `broader_overrides`** repointed: `sawa_wedana`→ngaben (not sawa —
+  corpus line 1191 literally says "Ngaben jenis Sawa Wedana"), `bhuta_yadnya`/
+  `pitra_yadnya`→panca_yadnya (not bhuta/pitra — each is "one of the five Panca
+  Yadnya" per its own definition, same shape `dewa_yadnya` already used), `tirta_
+  pengeringkes`→tirtha (not pangringkes — a holy water isn't "a type of" a ceremony
+  stage).
+- **2 garbage entities deleted** via `review_decisions.json` `reject` on their source
+  rows: `dua_kata` (a meta-linguistic "Pitra Yadnya terdiri dari dua kata" remark about
+  the *term's* word-count, mis-extracted as if "dua kata" were a real entity equal to
+  both "pitra" and "yadnya") and `samsam_tidak_seperti_tirtha_panglukatan` (a negated
+  comparison clause mangled into a fake entity name — same failure class as
+  `flag.txt`'s known negation bug).
+- **6 more identity-predicate fixes**, incl. one bad prior decision caught and
+  reverted: a pre-existing `review_decisions.json` `"fix:"` had overwritten an
+  already-correct `tirtha TERBUAT_DARI klungah` (matches S971: "tirtha tersebut dibuat
+  dari klungah") into a false `tirtha BERARTI klungah` ("tirtha means klungah") —
+  removed, letting the original correct extraction stand. Also rejected `mendiang
+  ADALAH pemangku` (S1738 lists pemangku as one example of a past occupation, not an
+  identity), `pamerasan ADALAH sejumlah uang kepeng` (S2256 is the corpus's *other*,
+  explicitly-disclaimed sense of the polysemous word "Pamerasan" — see open item
+  below), `adegan ADALAH atma` (entity resolution had collapsed "tempat atma mendiang"
+  down to bare "atma," turning "adegan is the vessel for the soul" into "adegan is the
+  soul"); fixed `pitra_yadnya ADALAH upacara_ngelungah` into the correct-direction
+  `upacara_ngelungah TERMASUK_JENIS pitra_yadnya` (S971: "jenis ini dinamakan pula
+  nglungah" — Ngelungah is a type of Pitra Yadnya, not identical to the whole
+  category).
+
+**Verified against the live Neo4j graph, not just the generated files** (549→547
+entities, 397→409 relations after the fixes): direct Cypher query confirmed
+`mapegat` now edges `BAGIAN_DARI`→`ngaben`, not `TERMASUK_JENIS`.
+
+**Two open items from this pass, deliberately not resolved (judgment calls for the
+project owner):**
+- `bhuta` went isolated (64→65 isolated nodes) as a direct, expected side effect of
+  removing the false `bhuta_yadnya→bhuta` edge — that edge was `bhuta`'s only
+  connection in the whole graph. Not a regression; a real, pre-existing gap the wrong
+  edge was masking. Needs its own connectivity work (separate corpus research), not
+  folded into this pass.
+- `pamerasan` conflates two distinct corpus senses into one entity — an adoption/
+  family-notice offering item (uang kepeng wrapped in dapdap leaf) vs. a stage within
+  the Pabersihan sequence — because entity resolution merges by string match with no
+  sense-disambiguation. The offering-sense fact was rejected (removed) rather than the
+  entity being split into two; splitting means new ids, re-sorting every existing
+  mention/attribute on `pamerasan` by which sense it belongs to, and possibly touching
+  `kb_resolver.py`'s alias table and `Chatbot/bot/kb_content.py` — real content-
+  modeling call with bot-facing blast radius, left for a dedicated pass.
+
+**Not audited this pass** (scope note for whoever continues): the other 142 same-type
+`broader` edges, and the ~370 `relations.jsonl` edges on non-identity predicates
+(BERADA_DI/TERBUAT_DARI/MENGGUNAKAN/DILETAKKAN_DI/etc.) — could still hold undiscovered
+subject/predicate/object errors of the same general kind `flag.txt` already tracks for
+the rule-based extractor.
+
+**Also computed this pass, not a fix but worth recording:** a corpus-traceability ratio
+across the (then-)397 live relations, joining each back to its raw extraction row's
+`source` tag — **~91% (361/397) trace to one identifiable, quoted corpus sentence;
+~8% (32/397) are curator-authored bridging facts** not tied to a single sentence
+(synthetic `sentence_id` ≥ 900000, spot-checked for plausibility, not individually
+corpus-verified); ~1% ambiguous in the join. At the entity-definition level, 514/549
+(93.6%) trace directly to corpus text (435 from the corpus's own glossary section
+verbatim, 79 auto-derived from one specific extracted sentence); 35 (6.4%) have no
+definition at all (mostly sentence-fragment surface strings that slipped
+`looks_fragment()`'s filter — cleanup candidates, not fixed this pass).
 
 Relation-extraction quality auditing (rule-based extractor, ~1 edge in 4 wrong) is tracked via
-`Graphing/audit_tooling/` and `Graphing/Misc/relation_audit_report.md` /
-`RELATION_AUDIT_RUNBOOK.md` — `Graphing/flag.txt` is the hand-audited rubric of known failure
+`Graphing/auditTooling/` — `Graphing/misc/flag.txt` is the hand-audited rubric of known failure
 modes (wrong subject/object, nonsense triples, source-text bleed, wrong relation label, dropped
 coordinate members, under-extraction) that any further audit pass should follow.
-`Graphing/audit_tooling/reaudit_20260907/CONSOLIDATED.md` (+ 8 per-chunk reports) is a full
+(`Graphing/misc/relation_audit_report.md` and `RELATION_AUDIT_RUNBOOK.md`, the earlier iteration
+tracker this superseded, were fully consumed and deleted 2026-09-22.)
+`Graphing/auditTooling/reaudit20260907/consolidated.md` (+ 8 per-chunk reports) is a full
 source-text re-audit that found ~60 more under-extracted relations across the whole corpus by
 reading the raw text directly; the 2026-09-18 pass cross-referenced every one of its FIX/ADD items
 against current data — most had already landed as `manual_addition`/`manual_override` triples over

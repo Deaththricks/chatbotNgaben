@@ -28,6 +28,12 @@ nlu:
     - ceritakan lelucon
     - berapa harga tiket pesawat ke bali
     - apa itu python programming
+    - bagaimana cara membuat kue coklat
+    - bagaimana cara membuat nasi goreng
+    - bagaimana cara memperbaiki motor
+    - siapa pemenang piala dunia terakhir
+    - rekomendasikan film bagus
+    - berapa jarak jakarta ke bali
 - intent: ask_ngaben_detail
   examples: |
     - apa itu ngaben

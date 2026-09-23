@@ -17,7 +17,7 @@ rasa_bot/
 
 # Bot runtime logs -- written by the live action server on every turn
 # (llm_refusal_log.jsonl / unresolved_log.jsonl / neo4j_error_log.jsonl, see
-# HOW_IT_WORKS.md's logging table), not source code. These were committed
+# how_it_works.md's logging table), not source code. These were committed
 # early on by accident and keep changing on every bot run -- see the note at
 # the bottom of this file about untracking them.
 Chatbot/bot/actions/*_log.jsonl
@@ -42,44 +42,49 @@ Graphing/chatbot-budaya-bali.zip
 
 conersation.md
 PROJECT_CONTEXT.md
-HOW_IT_WORKS.md
-Graphing/Misc/
-# Graphing/kb/ itself is NOT ignored -- build_kb.py and its hand-authored tuning/
-# review files (entity_resolution.json, relation_phrases.json, review_decisions.json,
-# README.md, METHODOLOGY.md, the audit/review .py scripts, and their .md/.jsonl
-# review artifacts) are real source, not scratch, and were never meant to be
-# unversioned (found 2026-09-18 while fixing the ngaben-tier KB gap -- entity_resolution.json
-# is the only record of every KB curation decision CLAUDE.md documents, e.g. the
-# Panca Maha Bhuta broader_overrides fix).
+how_it_works.md
+Graphing/misc/
+# Graphing/kb/ itself is NOT ignored -- build_kb.py, kb/tuning/'s hand-authored
+# files (entity_resolution.json, relation_phrases.json, review_decisions.json,
+# definitions.json), kb/curation/'s audit/review .py scripts (and their .md/.jsonl
+# artifacts), and README.md/methodology.md are real source, not scratch, and were
+# never meant to be unversioned (found 2026-09-18 while fixing the ngaben-tier KB
+# gap -- entity_resolution.json is the only record of every KB curation decision
+# CLAUDE.md documents, e.g. the Panca Maha Bhuta broader_overrides fix). kb/'s
+# output/, tuning/, curation/ split dates from 2026-09-22 (the flat kb/ folder
+# had become hard to read with build scripts, tuning config, and generated
+# artifacts all sitting side by side).
 #
-# Of build_kb.py's generated outputs, only the ones nothing at runtime actually
-# reads stay ignored here -- pure reports/docs, safe to always regenerate
-# (2026-09-21 audit: confirmed via grep, only referenced in a comment, never
-# loaded by code):
-Graphing/kb/glossary.md
-Graphing/kb/review_queue.jsonl
-Graphing/kb/build_report.txt
-# entities.json/relations.jsonl (read directly by Graphing/Neo4/load_ngaben_to_neo4j.py)
+# Of build_kb.py's generated outputs (kb/output/), only the ones nothing at
+# runtime actually reads stay ignored here -- pure reports/docs, safe to always
+# regenerate (2026-09-21 audit: confirmed via grep, only referenced in a
+# comment, never loaded by code):
+Graphing/kb/output/glossary.md
+Graphing/kb/output/review_queue.jsonl
+Graphing/kb/output/build_report.txt
+# entities.json/relations.jsonl (read directly by Graphing/neo4/load_ngaben_to_neo4j.py)
 # and facts.jsonl/passages.jsonl (read directly by Chatbot/bot/kb_content.py, at bot
 # runtime, not just at Neo4j-load time) are NOT ignored -- a fresh clone needs them to
 # actually run the loader/bot without first re-running build_kb.py, and they're the
 # tangible output of 8 batches of graph-fix curation, worth keeping as a checked-in
 # snapshot rather than relying purely on regeneration.
-Graphing/audit_tooling/
+Graphing/auditTooling/
 Graphing/_archive/
-Graphing/KG_IMG/
+Graphing/kgImg/
 
 # NOTE (2026-09-17 gitignore audit, resolved 2026-09-18): a .gitignore entry only
 # stops FUTURE adds -- it never removes a file git is already tracking on its own.
 # This previously flagged 6 files that were committed despite being covered by a
 # pattern above; all 6 are now resolved (approved as part of a broader 2026-09-18
 # cleanup pass, not done silently):
-#   - `conersation.md` and 4 files under `Graphing/Misc/` (relation_audit_report.md,
+#   - `conersation.md` and 4 files under `Graphing/misc/` (relation_audit_report.md,
 #     RELATION_AUDIT_RUNBOOK.md, flag.txt, knowledge-graph-cleanup-plan.md) --
 #     untracked via `git rm --cached` (kept on disk; still gitignored going forward).
+#     (Of those 4, only flag.txt is still on disk as of 2026-09-22 -- the other 3
+#     were fully consumed/superseded and deleted outright in that day's cleanup pass.)
 #   - `Chatbot/bot/actions/llm_refusal_log.jsonl` / `unresolved_log.jsonl` (bot
 #     runtime logs, regenerated every run) -- same, untracked via `git rm --cached`.
 #   - `Chatbot/bot/tests/test_stories.yml` (tested an intent taxonomy the bot no
-#     longer has, per HOW_IT_WORKS.md §6/§7) -- deleted outright, not just untracked;
-#     the bot currently has no automated test coverage as a result (see HOW_IT_WORKS.md
+#     longer has, per how_it_works.md §6/§7) -- deleted outright, not just untracked;
+#     the bot currently has no automated test coverage as a result (see how_it_works.md
 #     §6 for the standing follow-up work this leaves).

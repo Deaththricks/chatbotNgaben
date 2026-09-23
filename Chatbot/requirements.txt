@@ -15,8 +15,8 @@ python-dotenv>=1.0
 
 # LLM layer (coreference resolution + answer synthesis) — Qwen 2.5 via a local
 # Ollama server. (An earlier Groq-based rephrase-only layer, Chatbot/bot/llm/, was
-# fully superseded by this and deleted 2026-09-18 — see PROJECT_CONTEXT.md and
-# HOW_IT_WORKS.md §8.2 for the history, if you're wondering why this comment
+# fully superseded by this and deleted 2026-09-18 — see how_it_works.md §8.2 for
+# the history, if you're wondering why this comment
 # mentions Groq at all.)
 # These two packages only give Python a way to TALK to Ollama over HTTP — they do
 # NOT install Ollama itself or the model. Ollama is a separate, non-pip program

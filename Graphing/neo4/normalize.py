@@ -37,7 +37,7 @@ from collections import Counter, defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
-DEFAULT_IN = os.path.join(HERE, "..", "Results", "Final", "relation_results_ngaben",
+DEFAULT_IN = os.path.join(HERE, "..", "results", "final", "relationResultsNgaben",
                           "relation_results_ngaben.json")
 DEFAULT_OUT = os.path.join(HERE, "relation_results_ngaben.normalized.json")
 DEFAULT_REPORT = os.path.join(HERE, "normalize_report.txt")

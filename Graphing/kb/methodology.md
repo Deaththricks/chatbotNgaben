@@ -8,7 +8,7 @@ answer from — accurately, with citations — not a perfect graph.
 ```
   corpus (ngaben-merge-cleaned.txt)
         │
-        │  Stanza NLP notebook  (Knowledge Processing.ipynb — run separately)
+        │  Stanza NLP notebook  (knowledge_processing.ipynb — run separately)
         │    NER  ->  coreference  ->  dependency parse  ->  relation extraction
         ▼
   relation_results_ngaben.json          774 raw (subject, relation, object) rows

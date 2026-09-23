@@ -1,10 +1,15 @@
 {
+  "809|pitra yadnya dataran rendah|hasil penyempurnaan terakhir dang hyang dwijendra": "reject",
+  "809|pitra yadnya dataran rendah|hasil penyempurnaan terakhir empu lutuk": "reject",
+  "809|pitra yadnya dataran rendah|hasil penyempurnaan terakhir yang ening sira empu kuturan": "reject",
+  "_pitra_yadnya_dataran_rendah_note_2026_09_23": "S809's real sentence ('...pitra yadnya yang dilakukan di dataran rendah inilah yang rupanya merupakan hasil penyempurnaan terakhir dari yang ening sira empu kuturan, dang hyang dwijendra, empu lutuk...') is a geographic/historical remark -- lowland Pitra Yadnya practice, refined by three named historical priests -- not a definition of a distinct ceremony. The extractor turned the relative clause into a fake proper-noun entity 'pitra yadnya dataran rendah' and split the 3-person list into 3 ungrammatical ADALAH fragments (missing 'dari' each time), one of which then got auto-picked as the entity's 'definition'. Confirmed live: the bot hallucinated differently-wrong content for this entity on two separate real user questions (borrowed pitra_yadnya_tahap_kedua's Atma Wedana text once, upacara_ngelungah's infant-death text the next time) -- the garbled definition gave the LLM nothing real to say, so it improvised from a sibling each time. Rejecting drops the entity entirely; the historical footnote (the three priests' names) wasn't preserved elsewhere -- deliberate scope call, not an oversight, since it isn't load-bearing for any real bot answer.",
+  "3142|kawangen|lima buah lembaran-lembaran daun sirih": "fix: kawangen jeriji | BERISI | lima buah lembaran-lembaran daun sirih",
   "258|tegteg|pura dalem": "fix: tegteg | BERADA_DI | pura dalem",
   "376|jenazah|setra": "fix: jenazah | BERADA_DI | setra",
   "411|wuku kuningan|sasih kasa": "accept",
   "559|sorohan banten|ajeng sulinggih": "accept",
   "631|banten panebusan|rateng saha salaran sejangkep": "fix: banten panebusan | MEMILIKI | rateng saha salaran sejangkep",
-  "971|tirtha|klungah": "fix: tirtha | BERARTI | klungah",
+  "971|pitra yadnya|ngelungah": "fix: ngelungah | TERMASUK_JENIS | pitra yadnya",
   "972|sawa anak|pitra yadnya nglungah": "fix: sawa anak | DIKENAI | pitra yadnya nglungah",
   "1219|sawa|alat pangringkesan": "fix: sawa | DISERTAI | alat pangringkesan",
   "1226|sawa|mata umat hindu": "fix: sawa | BERARTI | leteh",
@@ -21,6 +26,7 @@
   "2337|jenazah /pengawak|balai-balai bade": "accept",
   "2337|kajang|jenazah": "fix: kajang | DIGUNAKAN_UNTUK | jenazah",
   "2477|pangabenan pranawa|jenazah": "reject",
+  "2455|pangabenan jenis masing-masing|nama sendiri-sendiri": "reject",
   "2623|sekah kangsen|tirtha": "accept",
   "2651|atma wedana|mendiang": "fix: ngerorasin | DIPERSEMBAHKAN_KEPADA | mendiang",
   "2794|sekah|pawedan": "reject",
@@ -53,7 +59,6 @@
   "4109|tirtha kahyangan tiga|pura puseh": "fix: tirtha kahyangan tiga | BERADA_DI | pura puseh",
   "4121|tirtha pangentas|gria ida": "fix: tirtha pangentas | BERADA_DI | gria",
   "2520|atma wedana|ngaben dalam hal sifat sebel": "reject",
-
   "58|nganyut|pelepasan terakhir menuju moksha": "reject",
   "399|sasih karo|sasih utama untuk pitra yadnya": "reject",
   "957|dusa|balai-balai khusus pemandian jenazah": "reject",
@@ -72,15 +77,25 @@
   "3591|anggapan ani-ani atau ketam|simbol dewi sri": "reject",
   "3734|gulungan sirih|lubang uang kepeng": "reject",
   "4212|amrethi karana|mengucurkan tirtha amertha dalam diri": "reject",
-
   "785|pitra yadnya|istilah umat hindu": "reject",
   "2986|pitra|dua buah daksina tapakan dibuat untuknya": "fix: pitra | MENERIMA | daksina tapakan",
-
   "3195|upacara pabresihan mati|ngelelet": "reject",
-
   "271|raçadana|atiwa-tiwa asti vedana": "fix: raçadana | SAMA_DENGAN | swasta",
   "271|tirta yadnya pranawa|atiwa-tiwa asti vedana": "fix: tirta yadnya pranawa | SAMA_DENGAN | swasta",
-
   "_batchH_note": "Batch H (2026-09-21, conersation.md item #19, id 'badan'). S4212's raw sentence ('...sehingga abu abu kekototan musnah dan badan mulai bersinar bagaikan matahari') sits inside ngaben-merge-cleaned.txt's 'd. Tatacara Pembuatan Tirtha Pangentas' / Pengargan self-purification sequence (lines 4133-4159): steps a-g describe Ida Sang Sulinggih purifying his OWN body while preparing to create Tirtha Pangentas (explicitly named at line 4143 'dalam diri Sang Pandita (Ida Sang Sulinggih), karena badan akan dibersihkan' and again at line 4158 'didalam diri Ida Sang Sulinggih itu sendiri') -- not 'sang pitara' as a separate, unrelated Glosarium blurb for 'Amrethi Karana' (line 98) frames a different occurrence of the same named ritual step. The bare 'badan' the extractor grabbed as this triple's subject is genuinely the wrong referent (confirms the plan's hypothesis) -- but review_decisions.json's 'fix:' syntax has NO effect on a LITERAL-object row: build_kb.py's entity-aggregation loop (where LITERAL attributes like this one are built) only ever checks `decisions.get(key) == \"reject\"`, and never parses/applies a 'fix: subj | PRED | obj' string at all -- that parsing only exists in the later relation-scoring loop, which is skipped entirely for object_type LITERAL rows (see `if r[\"object_type\"] != \"ENTITY\": continue`). This is a real, previously-undocumented toolchain gap (same class as the Batch C+F 'no Glosarium-preference lever' finding) -- 'fix:' only works for ENTITY-typed edges. Worked around here the way Batch C/F's ENTITY-typed wrong-subject fixes did it structurally anyway: 'reject' the bad triple below, and add a fresh manual_addition row (out-of-band S900031, relation_results_ngaben.normalized.json) with the corrected subject 'sulinggih'.",
-  "4212|badan|matahari": "reject"
+  "4212|badan|matahari": "reject",
+  "411|wuku kuningan|sasih kapitu": "accept",
+  "788|dua kata|pitra": "reject",
+  "788|dua kata|yadnya": "reject",
+  "4065|tirtha pabersihan|samsam tidak seperti tirtha panglukatan": "reject",
+  "1738|mendiang|pemangku": "reject",
+  "2256|pamerasan|sejumlah uang kepeng": "reject",
+  "1717|adegan|tempat atma mendiang": "reject",
+  "_semantics_fix_note_2026_09_23": "user-reported audit pass (mapegat wrongly TERMASUK_JENIS ngaben) widened into a full identity-predicate (ADALAH/SAMA_DENGAN/DIKENAL_SEBAGAI/BERARTI) sweep of all 397 live relations, cross-checked against ngaben-merge-cleaned.txt. Corrections made: '788|dua kata|pitra' was wrongly 'accept'ed previously -- S788 is a meta-linguistic remark ('Pitra Yadnya terdiri dari dua kata, yakni pitra dan yadnya') about the TERM's word-count, not a fact about an entity named 'dua kata'; rejecting both its ADALAH rows drops the fabricated entity entirely (the row's own TERDIRI_DARI/LITERAL sibling stays, it was already correct). '971|tirtha|klungah' was a prior 'fix:' that overwrote an already-correct dependency_rule row (tirtha TERBUAT_DARI klungah, matching S971 'karena tirtha tersebut dibuat dari klungah') into a false one ('tirtha means klungah') -- removed, letting the original stand; replaced with a fix for S971's OTHER row (pitra_yadnya ADALAH ngelungah, also wrong -- Ngelungah is one variant of Pitra Yadnya, not identical to the whole category -- S971 itself says 'jenis ini dinamakan pula nglungah', jenis = type) into the correct-direction is-a claim. '4065|tirtha pabersihan|samsam...': the object is a mis-parsed negated clause ('tidak memakai samsam ... tidak seperti tirtha panglukatan') turned into a fake compound entity name -- same class as flag.txt's known negation-extraction failure. '1738|mendiang|pemangku': S1738 lists 'pemangku' as one EXAMPLE of a possible past occupation ('kalau mendiang ... punya kedudukan tertentu, seorang pemangku, pejabat, sastrawan...'), not an identity. '2256|pamerasan|sejumlah uang kepeng': S2256 is the corpus's OTHER, explicitly-disclaimed sense of the polysemous term 'Pamerasan' (line 1391: 'Tapi Pamerasan yang dimaksudkan kali ini bukan itu') -- the graphed pamerasan entity follows the Pabersihan-stage sense (its own definition_source is S2258, family-bond ceremony), so the uang-kepeng sense doesn't belong on it. '1717|adegan|tempat atma mendiang': entity resolution collapsed this object down to bare 'atma', turning 'adegan is the VESSEL for the soul' into 'adegan IS the soul' -- rejected the ENTITY row, kept the row's own LITERAL sibling ('adegan ADALAH alat upakara', already correct, non-entity).",
+  "958|jenazah bayi|air kumkuman": "accept",
+  "1082|sajen kecil|pengulapan": "accept",
+  "1133|sawa|tumpang salu": "accept",
+  "2336|sambungan|lancingan": "accept",
+  "2612|perlambang|sekah kangsen": "fix: pitra mendiang | BERWUJUD | sekah kangsen",
+  "3800|hiasan|blangsah": "accept"
 }

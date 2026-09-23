@@ -4,11 +4,13 @@ a single canonical knowledge base that can feed either a graph database or a
 vector-RAG store.
 
 Inputs (read-only, not modified):
-  ../Neo4/relation_results_ngaben.normalized.json   (output of Neo4/normalize.py)
-  ../Data/ngaben-merge-cleaned.txt                  (the source report)
-  ../Data/ngaben-dictionary.json                    (term -> type gazetteer)
-  ../Data/normalization-ngaben.json                 (concept-level merge map)
-  ../Neo4/node_aliases.json                         (spelling-variant map)
+  ../neo4/relation_results_ngaben.normalized.json   (output of neo4/normalize.py)
+  ../data/ngaben-merge-cleaned.txt                  (the source report)
+  ../data/ngaben-glossary.txt                       (manually-authored glossary,
+                                                      split out of the report 2026-09-22)
+  ../data/ngaben-dictionary.json                    (term -> type gazetteer)
+  ../data/normalization-ngaben.json                 (concept-level merge map)
+  ../neo4/node_aliases.json                         (spelling-variant map)
   ./entity_resolution.json                          (tuning)
   ./relation_phrases.json                           (triple -> sentence templates)
 
@@ -38,14 +40,16 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 
-REL_JSON   = ROOT / "Neo4" / "relation_results_ngaben.normalized.json"
-DECISIONS  = HERE / "review_decisions.json"   # written by apply_review.py
-SOURCE_TXT = ROOT / "Data" / "ngaben-merge-cleaned.txt"
-GAZETTEER  = ROOT / "Data" / "ngaben-dictionary.json"
-CONCEPTMAP = ROOT / "Data" / "normalization-ngaben.json"
-ALIASES    = ROOT / "Neo4" / "node_aliases.json"
-RESOLUTION = HERE / "entity_resolution.json"
-PHRASES    = HERE / "relation_phrases.json"
+REL_JSON   = ROOT / "neo4" / "relation_results_ngaben.normalized.json"
+DECISIONS  = HERE / "tuning" / "review_decisions.json"   # written by apply_review.py
+SOURCE_TXT = ROOT / "data" / "ngaben-merge-cleaned.txt"
+GLOSSARY_TXT = ROOT / "data" / "ngaben-glossary.txt"   # manually-authored "* Term:  Definition." lines, split out of SOURCE_TXT 2026-09-22
+GAZETTEER  = ROOT / "data" / "ngaben-dictionary.json"
+CONCEPTMAP = ROOT / "data" / "normalization-ngaben.json"
+ALIASES    = ROOT / "neo4" / "node_aliases.json"
+RESOLUTION = HERE / "tuning" / "entity_resolution.json"
+PHRASES    = HERE / "tuning" / "relation_phrases.json"
+OUT_DIR    = HERE / "output"
 
 CHUNK_TARGET = 1100   # chars; a passage chunk aims for this, never crosses a heading
 CHUNK_MAX    = 1600
@@ -130,6 +134,15 @@ class Resolver:
         self.broader_overrides = {k.lower().strip(): v.lower().strip()
                                   for k, v in cfg.get("broader_overrides", {}).items()
                                   if not k.startswith("_")}
+        # ids whose broader link (heuristic- or override-derived) is a stage-of
+        # / used-in / represents relation, not a real is-a -- TERMASUK_JENIS
+        # would misstate it (e.g. "mapegat is a type of ngaben" when mapegat is
+        # step 4 of 8 in the ngaben sequence). Wins over both the heuristic and
+        # broader_overrides. The correct relation, if any, is instead added as
+        # an explicit typed edge (BAGIAN_DARI/DILETAKKAN_DI/etc.) in the raw
+        # extraction data -- 2026-09-23 semantics audit.
+        self.broader_suppress = {s.lower().strip()
+                                 for s in cfg.get("broader_suppress", [])}
         # Sentence ids whose BERARTI/ADALAH relation is a known mis-attribution
         # (wrong subject) rather than just weak -- see entity_resolution.json's
         # _bad_definition_note. Never accepted as a definition candidate below.
@@ -145,7 +158,13 @@ class Resolver:
             toks = toks[1:]
         while len(toks) > 1 and toks[0] in self.strip_mods:
             toks = toks[1:]
-        while len(toks) > 1 and toks[-1] in self.strip_mods:
+        # trailing side mirrors the leading digit-check too (2026-09-23 fix)
+        # -- a TRAILING count ("... sebanyak 9 buah", "... sebanyak 250 biji")
+        # used to stop this loop dead on the bare number itself, since only
+        # the leading side ever checked for a digit token; "sebanyak" then
+        # never got a chance to strip because the number was still in the way.
+        while len(toks) > 1 and (toks[-1] in self.strip_mods
+                                 or re.fullmatch(r"\d[\d.,/-]*", toks[-1])):
             toks = toks[:-1]
         # a second pass: "5 biji uang kepeng" -> (num) -> "biji uang kepeng"
         # -> (mod) -> "uang kepeng"; also handles "... N buah" tails.
@@ -212,6 +231,11 @@ class Resolver:
         # entity_resolution.json's broader_overrides. Wins over the heuristic.
         if canon in self.broader_overrides:
             broader = self.broader_overrides[canon]
+
+        # stage-of / used-in / represents -- not a real is-a, suppress the
+        # TERMASUK_JENIS claim entirely regardless of where broader came from.
+        if canon in self.broader_suppress:
+            broader = None
 
         ent_id = slug(canon)
         result = (ent_id, canon, method, slug(broader) if broader else None,
@@ -300,13 +324,20 @@ def build_passages(resolver, extra_terms=()):
         offs.append(o)
         o += len(ln) + 1
 
+    gloss_raw = GLOSSARY_TXT.read_text(encoding="utf-8")
+    gloss_lines = gloss_raw.split("\n")
+    gloss_offs, go = [], 0
+    for ln in gloss_lines:
+        gloss_offs.append(go)
+        go += len(ln) + 1
+
     doc = "Laporan Komprehensif Ngaben"
     path = []                       # current [heading, subheading]
     sec_lines = []                  # (text, offset) buffer for current section
     passages = []
     glossary_defs = {}
     faqs = []
-    in_glossary = in_faq = False
+    in_faq = False
 
     def flush():
         if not sec_lines:
@@ -318,6 +349,23 @@ def build_passages(resolver, extra_terms=()):
                              "text": text, "char_start": cs, "char_end": ce})
         sec_lines.clear()
 
+    def load_glossary():
+        # GLOSSARY_TXT holds the "* Term:  Definition." lines that used to sit
+        # inline in SOURCE_TXT's "11. Glosarium" section (split out 2026-09-22
+        # so the raw corpus stays narrative-only). `doc`/section_path/id shape
+        # stay identical to the old inline-parsed passages -- only char_start/
+        # char_end change, since they now index into GLOSSARY_TXT instead.
+        for ln, off in zip(gloss_lines, gloss_offs):
+            m = GLOSS_LINE.match(ln)
+            if not m:
+                continue
+            term, dfn = m.group(1).strip().lower(), m.group(2).strip()
+            glossary_defs[term] = dfn
+            passages.append({"doc": doc, "section_path": ["11. Glosarium"],
+                             "kind": "glossary", "term": term,
+                             "text": f"{m.group(1).strip()}: {dfn}",
+                             "char_start": off, "char_end": off + len(ln)})
+
     for ln, off in zip(lines, offs):
         t = ln.strip()
         if not t:
@@ -326,29 +374,15 @@ def build_passages(resolver, extra_terms=()):
             flush()
             doc = "Upacara Atiwa-Tiwa"
             path = []
-            in_glossary = in_faq = False
+            in_faq = False
             continue
 
         low = t.lower()
-        if re.match(r"^\s*11\.\s*glosarium", low):
-            flush(); path = ["11. Glosarium"]; in_glossary, in_faq = True, False
-            continue
         if re.match(r"^\s*12\.\s*pertanyaan", low):
-            flush(); path = ["12. FAQ"]; in_glossary, in_faq = False, True
+            flush(); load_glossary(); path = ["12. FAQ"]; in_faq = True
             continue
         if re.match(r"^\s*13\.\s*ringkasan", low):
-            flush(); path = ["13. Ringkasan"]; in_glossary = in_faq = False
-            continue
-
-        if in_glossary:
-            m = GLOSS_LINE.match(ln)
-            if m:
-                term, dfn = m.group(1).strip().lower(), m.group(2).strip()
-                glossary_defs[term] = dfn
-                passages.append({"doc": doc, "section_path": ["11. Glosarium"],
-                                 "kind": "glossary", "term": term,
-                                 "text": f"{m.group(1).strip()}: {dfn}",
-                                 "char_start": off, "char_end": off + len(ln)})
+            flush(); path = ["13. Ringkasan"]; in_faq = False
             continue
 
         if in_faq:
@@ -775,12 +809,13 @@ def main():
             ent_out.append(rec)
 
     # ---- write ----------------------------------------------------------
-    (HERE / "entities.json").write_text(
+    OUT_DIR.mkdir(exist_ok=True)
+    (OUT_DIR / "entities.json").write_text(
         json.dumps(ent_out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    dump_jsonl(HERE / "relations.jsonl", relations)
-    dump_jsonl(HERE / "facts.jsonl", facts)
-    dump_jsonl(HERE / "passages.jsonl", passages)
-    dump_jsonl(HERE / "review_queue.jsonl", review)
+    dump_jsonl(OUT_DIR / "relations.jsonl", relations)
+    dump_jsonl(OUT_DIR / "facts.jsonl", facts)
+    dump_jsonl(OUT_DIR / "passages.jsonl", passages)
+    dump_jsonl(OUT_DIR / "review_queue.jsonl", review)
     write_glossary(ent_out, relations)
     write_report(rows, ent_out, passages, relations, facts, review, resolver,
                  len(fragment_ents))
@@ -820,7 +855,7 @@ def write_glossary(ent_out, relations):
             for edge in out_edges.get(e["id"], []):
                 lines.append(f"- {edge}")
             lines.append("")
-    (HERE / "glossary.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (OUT_DIR / "glossary.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def write_report(rows, ent_out, passages, relations, facts, review, resolver,
@@ -867,7 +902,7 @@ def write_report(rows, ent_out, passages, relations, facts, review, resolver,
     for e in ent_out:
         if e["resolve_method"] == "unresolved":
             a(f"  {e['name']!r:40} type={e['type']}  aliases={e['aliases']}")
-    (HERE / "build_report.txt").write_text("\n".join(L) + "\n", encoding="utf-8")
+    (OUT_DIR / "build_report.txt").write_text("\n".join(L) + "\n", encoding="utf-8")
     print("\n".join(L))
 
 

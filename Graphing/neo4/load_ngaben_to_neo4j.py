@@ -142,14 +142,14 @@ def load(tx_data):
 
 
 def load_kb():
-    """Load the canonical KB (../kb/entities.json + relations.jsonl) instead.
+    """Load the canonical KB (../kb/output/entities.json + relations.jsonl) instead.
 
     node label = entity type; base label :Node; edgeless -> :Isolated.
     'broader' -> (a)-[:TERMASUK_JENIS]->(b).  relation edges carry
     {confidence, raw_relation, sentence_id} as properties -- filter a clean
     view with  WHERE r.confidence <> 'LOW'.
     """
-    kb = Path(__file__).resolve().parent.parent / "kb"
+    kb = Path(__file__).resolve().parent.parent / "kb" / "output"
     ents = json.loads((kb / "entities.json").read_text(encoding="utf-8"))
     rels = [json.loads(b) for b in
             (kb / "relations.jsonl").read_text(encoding="utf-8").split("\n\n") if b.strip()]

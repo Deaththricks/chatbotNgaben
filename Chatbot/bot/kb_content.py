@@ -80,7 +80,7 @@ class KbContent:
     def __init__(self, kb_dir: Path = _KB_DIR) -> None:
         self.kb_dir = kb_dir
 
-        phrases = json.loads((kb_dir / "relation_phrases.json").read_text(encoding="utf-8"))
+        phrases = json.loads((kb_dir / "tuning" / "relation_phrases.json").read_text(encoding="utf-8"))
         self.templates: Dict[str, str] = {
             k: v["template"] for k, v in phrases.items() if not k.startswith("_")
         }
@@ -88,7 +88,7 @@ class KbContent:
         self.facts_by_subj: Dict[str, List[dict]] = {}
         self.facts_by_obj: Dict[str, List[dict]] = {}
         self.all_facts: List[dict] = []
-        for f in _loadl(kb_dir / "facts.jsonl"):
+        for f in _loadl(kb_dir / "output" / "facts.jsonl"):
             self.all_facts.append(f)
             self.facts_by_subj.setdefault(f["subject_id"], []).append(f)
             self.facts_by_obj.setdefault(f["object_id"], []).append(f)
@@ -96,7 +96,7 @@ class KbContent:
         self.faq_by_ent: Dict[str, List[dict]] = {}
         self.glossary_by_ent: Dict[str, List[dict]] = {}
         self.all_faq: List[dict] = []
-        for p in _loadl(kb_dir / "passages.jsonl"):
+        for p in _loadl(kb_dir / "output" / "passages.jsonl"):
             kind = p.get("kind")
             if kind == "faq":
                 self.all_faq.append(p)

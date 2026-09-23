@@ -1,6 +1,6 @@
 # Connectivity audit report
 
-Source: relation_results_ngaben.normalized.json (1000 rows), entities.json (496 entities)
+Source: relation_results_ngaben.normalized.json (1020 rows), entities.json (547 entities)
 
 Read the module docstring before acting on anything here -- every
 line is a candidate, not a verdict.
@@ -14,7 +14,7 @@ still LITERAL -- the LITERAL ones are invisible to the bot/graph.
 - S265 `tegteg` -DILETAKKAN_DI-> ENTITY: ['tumpang salu'] | LITERAL: ['bungkusan tulang belulang']
 - S271 `tirta yadnya pranawa` -ADALAH-> ENTITY: ['atiwa-tiwa'] | LITERAL: ['istilah lain untuk raçadana dalam kategori ngaben svasta, yaitu ngaben yang sawanya diganti dengan simbol tirtha (toyo çarira) karena jenazah tidak dapat ditemukan, dengan tata pelaksanaan yang sama dengan atiwa-tiwa asti vedana']
 - S354 `pepaga` -TERBUAT_DARI-> ENTITY: ['hitungan galar', 'hitungan galir', 'hitungan galur', 'hitungan likah', 'hitungan wangke', 'hitungan wangkong'] | LITERAL: ['bambu']
-- S1465 `jun pere` -BERISI-> ENTITY: ['sembilan batang kayu cendana'] | LITERAL: ['54 atau 108 lembar daun alang-alang', 'air']
+- S1465 `jun pere` -BERISI-> ENTITY: ['alang-alang', 'sembilan batang kayu cendana'] | LITERAL: ['air']
 - S1468 `upakara` -DISUCIKAN_DENGAN-> ENTITY: ['tirtha panglukatan'] | LITERAL: ['sajen']
 - S1474 `sesajen` -MELIPUTI-> ENTITY: ['diuskamaligi', 'nasi angkeb'] | LITERAL: ['saji']
 - S1717 `adegan` -ADALAH-> ENTITY: ['tempat atma mendiang'] | LITERAL: ['alat upakara']
@@ -54,7 +54,7 @@ word / abstract quality / descriptive clause (correctly stays LITERAL).
 - S3237 `lekesan` -BERISI-> ['tembakau']
 - S3816 `ante` -TERBUAT_DARI-> ['bilahan-bilahan bambu']
 
-## Isolated nodes: 28 total, 14 with a definition self-reference
+## Isolated nodes: 65 total, 52 with a definition self-reference
 
 Isolated = zero relations.jsonl edges in either direction (same
 definition Neo4/load_ngaben_to_neo4j.py's :Isolated tag uses). Of these,
@@ -64,19 +64,57 @@ targets. The rest of the isolated set had NO such hit; that's a normal,
 expected outcome (see docstring), not a sign this pass missed something.
 
 - `amrethi_karana`: tirtha amertha->tirtha_amertha, atma wedana->ngerorasin, tirtha->tirtha
-- `arjuna`: tirtha penembak->tirtha_penembak, tirtha->tirtha
+- `api_takep`: hyang agni->hyang_agni, upasaksi->upasaksi, pepaga->pepaga
+- `arjuna`: tirtha penembak->tirtha_penembak, ksatria->ksatria, tirtha->tirtha
 - `asti_wedana`: tulang belulang->tulang_belulang, kuburan->kuburan
-- `isi_pengawak`: tirtha pangentas->tirta_pangentas, perlambang->perlambang, pengawak->pengawak, tirtha->tirtha
+- `bhuta`: bhuta yadnya->bhuta_yadnya
+- `boma`: adegan->adegan, hiasan->hiasan, wadah->bade, pura->pura
+- `brahman`: pepaga->pepaga, moksa->moksa
+- `bubur_pirata`: nasi angkeb->nasi_angkeb, sesajen->sesajen
+- `bwah_loka`: swah loka->swah_loka, manusia->manusia
+- `cuntaka`: bhuwana alit->bhuwana_alit, manusia->manusia
+- `dadia`: pamrajan->pamrajan
+- `daksinayana`: bhuta yadnya->bhuta_yadnya, dewasa madya->dewasa_madya, pitra yadnya->pitra_yadnya, sasih kaenem->sasih_kaenem, selatan->selatan, bhuta->bhuta, madya->madya, sasih->sasih
+- `dasa_mala`: pabersihan mati->pabersihan_mati, pengerikan kuku->pengerikan_kuku, pabersihan->pabersihan, numitis->numitis
+- `formalin`: tabunan->tabunan
+- `guru_tiga`: penebusan->penebusan, prajuru->prajuru
+- `ilih`: bayu->bayu
+- `indrayana`: bhuta yadnya->bhuta_yadnya, dewa yadnya->dewa_yadnya, sasih kapat->sasih_kapat, selatan->selatan, lontar->lontar, bhuta->bhuta, sasih->sasih
 - `kelompok_paksa_mahayana`: peranda buddha->peranda_buddha, naga banda->naga_banda, swadharma->swadharma, manusia->manusia
+- `kikir`: kuncup teratai->kuncup_teratai
+- `kuncup_teratai`: bunga teratai->bunga_teratai, bunga->bunga, kikir->kikir
+- `leteh`: diuskamaligi->diuskamaligi, upakara->banten
+- `madiksa`: panca yadnya->panca_yadnya, sulinggih->sulinggih, pandita->pandita, tirtha->tirtha
+- `ngajum`: pawedan->pawedan, sangge->sangge, sekah->sekah
+- `ngelinggihang`: upacara mapulang lingga->upacara_mapulang_lingga, sulinggih->sulinggih, brahman->brahman, tuhan->tuhan
+- `nguyeg`: pancamahabutha->pancamahabutha, akasa->akasa, bhuta->bhuta, bayu->bayu, teja->teja
 - `niskala`: mapegat->mapegat, pandita->pandita, pralina->pralina
+- `numitis`: pengerikan kuku->pengerikan_kuku, lengan jenazah->lengan_jenazah, dasa mala->dasa_mala, besi->besi
+- `nyiru`: alat upakara->alat_upakara, panguryagan->panguryagan, upakara->banten
 - `payadnyan`: manusia->manusia
+- `pelangkiran`: pamrajan rong tiga->pamrajan_rong_tiga, atma wedana->ngerorasin, ngangsen->ngangsen, pamrajan->pamrajan, bhatari->bhatari
+- `pengutangan`: caru pengelambuk->caru_pengelambuk, upacara ngaskara->upacara_ngaskara, bale gede->bale_gede, pelebon->upacara_palebon_ngaben, usungan->usungan, setra->setra, bale->bale
 - `peranda_shiwa`: peranda buddha->peranda_buddha, utama->utama
+- `perlambang`: adegan dan pengawak->adegan, pengawak->pengawak
 - `pisang_jati`: upakara->banten, daksina->daksina
+- `pitraloka`: badan halus mendiang->badan_halus_mendiang, pangenteg linggih->pangenteg_linggih, bale salunglung->bale_salunglung, atma wedana->ngerorasin, ngangsen->ngangsen, bale->bale
+- `piuning`: sedahan setra->sedahan_setra, ngelungah->upacara_ngelungah, ngulapin->ngulapin, kuburan->kuburan, niskala->niskala, setra->setra
+- `prajuru`: guru tiga->guru_tiga, penebusan->penebusan
 - `punia`: purusa-pradana->purusa_pradana
+- `purnama`: masekeh->masekeh, tilem->tilem
 - `raja_bali`: pangabenan->ngaben, bade->bade
-- `sambungan_kain_putih`: kain putih->kain_putih, kajang->kajang, bade->bade
 - `satu_dua_perhiasan_pusaka`: perlambang->perlambang, pamerasan->pamerasan, swadharma->swadharma, upakara->banten
+- `sukra`: wuku kuningan->wuku_kuningan
 - `sumpe`: sawa wedana->sawa_wedana, pangabenan->ngaben
+- `swah_loka`: upacara pengabenan->upacara_pengabenan, manusia->manusia, bhuta->bhuta
+- `tabunan`: formalin->formalin
+- `tilem`: masekeh->masekeh, purnama->purnama
+- `tuhan`: upacara mapulang lingga->upacara_mapulang_lingga, sulinggih->sulinggih, bhatari->bhatari, brahman->brahman
+- `ukur`: manusia->manusia, wadah->bade, lembu->lembu, singa->singa
+- `upasaksi`: hyang agni->hyang_agni, api takep->api_takep, pepaga->pepaga
+- `uttarayana`: pitra yadnya->pitra_yadnya, sasih kadasa->sasih_kadasa, sasih->sasih
+- `wawu_lampus`: nyiramang layon->nyiramang_layon, kain putih->kain_putih, layon->layon
+- `yama_purwana_tattwa`: ngaben cara yama purwana tatwa->ngaben_cara_yama_purwana_tatwa, lontar->lontar
 
 ## Self-loops (0)
 
@@ -89,26 +127,24 @@ mis-resolution, not a real reflexive fact.
 An edge or broader-pointer whose endpoint id isn't in entities.json.
 
 
-## Near-duplicate ids (57)
+## Near-duplicate ids (53)
 
 Spelling-similarity candidates for force_merge or a SAMA_DENGAN edge --
 read both entities before deciding; a shared root word alone (e.g. the
 sasih_* family) is not by itself evidence of duplication.
 
+- `brahman` ~ `brahmana` (ratio=0.93)
 - `hitungan_galar` ~ `hitungan_galir` (ratio=0.93)
 - `hitungan_galar` ~ `hitungan_galur` (ratio=0.93)
 - `hitungan_galir` ~ `hitungan_galur` (ratio=0.93)
-- `mapradaksina` ~ `pradaksina` (ratio=0.91)
 - `sasih_kadasa` ~ `sasih_kasa` (ratio=0.91)
-- `upacara_ngaskara` ~ `upacara_pengaskaran` (ratio=0.91)
 - `arang_pembakaran_jaja_gina` ~ `arang_pembakaran_jaja_uli` (ratio=0.9)
-- `panebusan` ~ `penebusan` (ratio=0.89)
+- `bwah_loka` ~ `swah_loka` (ratio=0.89)
 - `hitungan_wangke` ~ `hitungan_wangkong` (ratio=0.88)
 - `sasih_kapat` ~ `sasih_kapitu` (ratio=0.87)
 - `sasih_kasa` ~ `sasih_kasanga` (ratio=0.87)
 - `bhatara` ~ `bhatari` (ratio=0.86)
 - `sasih_kapat` ~ `sasih_kasa` (ratio=0.86)
-- `gulungan_daun_sirih` ~ `gulungan_sirih` (ratio=0.85)
 - `pura_kahyangan_tiga` ~ `tirtha_kahyangan_tiga` (ratio=0.85)
 - `kain_putih_untuk_bantal` ~ `kain_putih_untuk_saput` (ratio=0.84)
 - `daksina` ~ `pradaksina` (ratio=0.82)
@@ -119,7 +155,6 @@ sasih_* family) is not by itself evidence of duplication.
 - `pengerikan_kuku` ~ `pengerikan_kuku_mutlak` (ratio=0.81)
 - `suku_tunggal_abu` ~ `sukutunggal` (ratio=0.81)
 - `uang_kepeng` ~ `uang_kepeng_asli` (ratio=0.81)
-- `upacara_pengabenan` ~ `upacara_pengaskaran` (ratio=0.81)
 - `dewa_iswara` ~ `dewa_siwa` (ratio=0.8)
 - `isi_pengawak` ~ `pengawak` (ratio=0.8)
 - `jenazah_bayi` ~ `jenazah_bibir` (ratio=0.8)
@@ -148,7 +183,6 @@ sasih_* family) is not by itself evidence of duplication.
 - `utamaning_madya` ~ `utamaning_utama` (ratio=0.8)
 - `utamaning_nista` ~ `utamaning_utama` (ratio=0.8)
 - `hitungan_galir` ~ `hitungan_likah` (ratio=0.79)
-- `nyiramang_layon` ~ `upacara_nyiramang_layon` (ratio=0.79)
 - `pitra_yadnya_dataran_rendah` ~ `pitra_yadnya_tahap_kedua` (ratio=0.78)
 - `sasih_kadasa` ~ `sasih_kapat` (ratio=0.78)
 - `sasih_kapat` ~ `sasih_katiga` (ratio=0.78)

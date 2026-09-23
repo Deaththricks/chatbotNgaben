@@ -16,7 +16,7 @@ BOT_DIR = Path(__file__).resolve().parent.parent
 KB_DIR = (BOT_DIR / os.getenv("KB_DIR", "../../Graphing/kb")).resolve()
 OUT = BOT_DIR / "data" / "lookup_istilah.yml"
 
-ents = json.loads((KB_DIR / "entities.json").read_text(encoding="utf-8"))
+ents = json.loads((KB_DIR / "output" / "entities.json").read_text(encoding="utf-8"))
 
 names = set()
 for e in ents:

@@ -659,6 +659,17 @@
 }
 
 {
+  "id": "f411_wuku_kunin_sasih_kapi",
+  "text": "wuku kuningan berada di sasih kapitu.",
+  "subject_id": "wuku_kuningan",
+  "predicate": "BERADA_DI",
+  "object_id": "sasih_kapitu",
+  "confidence": "MED",
+  "source_sentence": "● wuku kuningan ada pada sasih kasa dan kapitu.",
+  "sentence_id": 411
+}
+
+{
   "id": "f411_wuku_kunin_sasih_kasa",
   "text": "wuku kuningan berada di sasih kasa.",
   "subject_id": "wuku_kuningan",
@@ -758,17 +769,6 @@
 }
 
 {
-  "id": "f788_dua_kata_yadnya",
-  "text": "dua kata adalah yadnya.",
-  "subject_id": "dua_kata",
-  "predicate": "ADALAH",
-  "object_id": "yadnya",
-  "confidence": "HIGH",
-  "source_sentence": "pitra yadnya terdiri dari dua kata, yakni \"pitra\" dan \"yadnya\".",
-  "sentence_id": 788
-}
-
-{
   "id": "f797_pitra_yadn_berbagai_s",
   "text": "pitra yadnya menggunakan berbagai sajen dan alat-alat upakara.",
   "subject_id": "pitra_yadnya",
@@ -824,6 +824,17 @@
 }
 
 {
+  "id": "f958_jenazah_ba_air_kumkum",
+  "text": "jenazah bayi disiram dengan air kumkuman.",
+  "subject_id": "jenazah_bayi",
+  "predicate": "DISIRAM_DENGAN",
+  "object_id": "air_kumkuman",
+  "confidence": "MED",
+  "source_sentence": "setelah bersih, jenazah bayi tersebut dimandikan dengan air kumkuman (air yang diberi serbuk cendana dan kembang serba harum).",
+  "sentence_id": 958
+}
+
+{
   "id": "f961_sawa_kain_putih",
   "text": "sawa dibungkus dengan kain putih.",
   "subject_id": "sawa",
@@ -846,11 +857,11 @@
 }
 
 {
-  "id": "f971_pitra_yadn_upacara_ng",
-  "text": "pitra yadnya adalah upacara ngelungah.",
-  "subject_id": "pitra_yadnya",
-  "predicate": "ADALAH",
-  "object_id": "upacara_ngelungah",
+  "id": "f971_upacara_ng_pitra_yadn",
+  "text": "upacara ngelungah termasuk jenis pitra yadnya.",
+  "subject_id": "upacara_ngelungah",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "pitra_yadnya",
   "confidence": "HIGH",
   "source_sentence": "karena tirtha tersebut dibuat dari klungah, maka pitra yadnya jenis ini dinamakan pula nglungah.",
   "sentence_id": 971
@@ -858,11 +869,11 @@
 
 {
   "id": "f971_tirtha_klungah",
-  "text": "tirtha berarti klungah.",
+  "text": "tirtha terbuat dari klungah.",
   "subject_id": "tirtha",
-  "predicate": "BERARTI",
+  "predicate": "TERBUAT_DARI",
   "object_id": "klungah",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "source_sentence": "karena tirtha tersebut dibuat dari klungah, maka pitra yadnya jenis ini dinamakan pula nglungah.",
   "sentence_id": 971
 }
@@ -1000,6 +1011,17 @@
 }
 
 {
+  "id": "f1082_sajen_keci_pengulapan",
+  "text": "sajen kecil dikenal sebagai pengulapan.",
+  "subject_id": "sajen_kecil",
+  "predicate": "DIKENAL_SEBAGAI",
+  "object_id": "pengulapan",
+  "confidence": "MED",
+  "source_sentence": "jenazah yang masih tetap di atas pepaga itu, kemudian dikenakan baju serta disuguhi sajen kecil yang disebut pengulapan.",
+  "sentence_id": 1082
+}
+
+{
   "id": "f1082_sajen_keci_jenazah",
   "text": "sajen kecil dipersembahkan kepada jenazah.",
   "subject_id": "sajen_kecil",
@@ -1019,6 +1041,17 @@
   "confidence": "HIGH",
   "source_sentence": "jenazah bisa disebut masekeh, bila telah berada minimal satu bulan, pernah dilewati bulan purnama dan tilem, serta upacaranya sudah memenuhi syarat.",
   "sentence_id": 1123
+}
+
+{
+  "id": "f1133_sawa_tumpang_sa",
+  "text": "sawa dinaikkan ke tumpang salu.",
+  "subject_id": "sawa",
+  "predicate": "DINAIKKAN_KE",
+  "object_id": "tumpang_salu",
+  "confidence": "MED",
+  "source_sentence": "setelah selesai ngringkes, sawa dinaikkan di tumpang salu di rumah adat.",
+  "sentence_id": 1133
 }
 
 {
@@ -1275,11 +1308,22 @@
 }
 
 {
-  "id": "f1465_jun_pere_sembilan_b",
-  "text": "jun pere berisi sembilan batang kayu cendana.",
+  "id": "f1465_jun_pere_alang_alan",
+  "text": "jun pere berisi alang-alang.",
   "subject_id": "jun_pere",
   "predicate": "BERISI",
-  "object_id": "sembilan_batang_kayu_cendana",
+  "object_id": "alang_alang",
+  "confidence": "HIGH",
+  "source_sentence": "pengawak terdiri dari sebuah jun pere (periuk tanah yang kecil/masih merah) berisikan air, 54 atau 108 lembar daun alang-alang serta sembilan batang kayu cendana kecil-kecil (sebesar batang korek api).",
+  "sentence_id": 1465
+}
+
+{
+  "id": "f1465_jun_pere_kayu_cenda",
+  "text": "jun pere berisi kayu cendana.",
+  "subject_id": "jun_pere",
+  "predicate": "BERISI",
+  "object_id": "kayu_cendana",
   "confidence": "HIGH",
   "source_sentence": "pengawak terdiri dari sebuah jun pere (periuk tanah yang kecil/masih merah) berisikan air, 54 atau 108 lembar daun alang-alang serta sembilan batang kayu cendana kecil-kecil (sebesar batang korek api).",
   "sentence_id": 1465
@@ -1572,17 +1616,6 @@
 }
 
 {
-  "id": "f1717_adegan_atma",
-  "text": "adegan adalah atma.",
-  "subject_id": "adegan",
-  "predicate": "ADALAH",
-  "object_id": "atma",
-  "confidence": "HIGH",
-  "source_sentence": "adegan, adalah alat upakara, tempat atma mendiang \"didudukkan\".",
-  "sentence_id": 1717
-}
-
-{
   "id": "f1732_upadesa_upanisad",
   "text": "upadesa dikenal sebagai upanisad.",
   "subject_id": "upadesa",
@@ -1591,17 +1624,6 @@
   "confidence": "HIGH",
   "source_sentence": "upadesa yang dalam masyarakat kita lebih dikenal dengan nama upanisad, menurut para ahli memang berarti \"bisikan dang guru\" kepada sisia atau juga berarti \"tatwa pengarahan hidup.\" tentang acara yang pelik ini, satu hal perlu kita catat, bahwa",
   "sentence_id": 1732
-}
-
-{
-  "id": "f1738_mendiang_pemangku",
-  "text": "mendiang adalah pemangku.",
-  "subject_id": "mendiang",
-  "predicate": "ADALAH",
-  "object_id": "pemangku",
-  "confidence": "HIGH",
-  "source_sentence": "kalau mendiang semasa hidupnya punya kedudukan tertentu (seorang pemangku, pejabat, sastrawan dan sebagainya), dengan rendah hati mundurlah ida bagus atau ida ayu kita.",
-  "sentence_id": 1738
 }
 
 {
@@ -1649,9 +1671,9 @@
 }
 
 {
-  "id": "f1845_panebusan_kedudukan_",
-  "text": "panebusan mempengaruhi kedudukan pitara.",
-  "subject_id": "panebusan",
+  "id": "f1845_penebusan_kedudukan_",
+  "text": "penebusan mempengaruhi kedudukan pitara.",
+  "subject_id": "penebusan",
   "predicate": "MEMPENGARUHI",
   "object_id": "kedudukan_pitara",
   "confidence": "MED",
@@ -1946,17 +1968,6 @@
 }
 
 {
-  "id": "f2256_pamerasan_uang_kepen",
-  "text": "pamerasan adalah uang kepeng.",
-  "subject_id": "pamerasan",
-  "predicate": "ADALAH",
-  "object_id": "uang_kepeng",
-  "confidence": "HIGH",
-  "source_sentence": "pamerasan adalah sejumlah uang kepeng yang dibungkus dengan daun \"dapdap\", diikat benang tridatu.",
-  "sentence_id": 2256
-}
-
-{
   "id": "f2262_sang_cucu_tirtha",
   "text": "sang cucu memohon tirtha.",
   "subject_id": "sang_cucu",
@@ -1984,6 +1995,17 @@
   "subject_id": "kajang",
   "predicate": "DIBERI",
   "object_id": "sambungan",
+  "confidence": "MED",
+  "source_sentence": "kajang yang hanya beberapa asta panjangnya, diberilah sambungan (\"lancingan\") kain putih dua atau 30 meter lagi, hingga puluhan anggota keluarga dapat berbaris menjunjungnya keluar dari rumah menuju tempat bade, selaku tanda hormat baktinya kepada mendiang.",
+  "sentence_id": 2336
+}
+
+{
+  "id": "f2336_sambungan_lancingan",
+  "text": "sambungan adalah lancingan.",
+  "subject_id": "sambungan",
+  "predicate": "ADALAH",
+  "object_id": "lancingan",
   "confidence": "MED",
   "source_sentence": "kajang yang hanya beberapa asta panjangnya, diberilah sambungan (\"lancingan\") kain putih dua atau 30 meter lagi, hingga puluhan anggota keluarga dapat berbaris menjunjungnya keluar dari rumah menuju tempat bade, selaku tanda hormat baktinya kepada mendiang.",
   "sentence_id": 2336
@@ -2086,6 +2108,17 @@
   "confidence": "HIGH",
   "source_sentence": "sawa wedana digelar dengan tujuan menyucikan (wedana) roh, arwah atau badan halus mendiang, supaya menjadi atma yang tanpa badan sama sekali.",
   "sentence_id": 2502
+}
+
+{
+  "id": "f2612_pitra_sekah_kang",
+  "text": "pitra berwujud sekah kangsen.",
+  "subject_id": "pitra",
+  "predicate": "BERWUJUD",
+  "object_id": "sekah_kangsen",
+  "confidence": "HIGH",
+  "source_sentence": "pitra mendiang, yang merupakan sasaran upacara dibuatkan perlambang yang disebut sekah kangsen.",
+  "sentence_id": 2612
 }
 
 {
@@ -2331,11 +2364,11 @@
 }
 
 {
-  "id": "f2951_suku_tungg_mapradaksi",
-  "text": "suku tunggal abu diusung mapradaksina.",
+  "id": "f2951_suku_tungg_pradaksina",
+  "text": "suku tunggal abu diusung pradaksina.",
   "subject_id": "suku_tunggal_abu",
   "predicate": "DIUSUNG",
-  "object_id": "mapradaksina",
+  "object_id": "pradaksina",
   "confidence": "MED",
   "source_sentence": "berikutnya suku tunggal abu itu diarak mapradaksina, selaku lambang diresapkannya sinar suci hyang widhi, hingga meningkatlah status dan kesucian abu tersebut, dari bekas benda badan linggasarira, menjadi mahabutha yang suci.",
   "sentence_id": 2951
@@ -2419,11 +2452,11 @@
 }
 
 {
-  "id": "f3118_daun_dapda_upacara_ny",
-  "text": "daun dapdap digunakan saat upacara nyiramang layon.",
+  "id": "f3118_daun_dapda_nyiramang_",
+  "text": "daun dapdap digunakan saat nyiramang layon.",
   "subject_id": "daun_dapdap",
   "predicate": "DIGUNAKAN_SAAT",
-  "object_id": "upacara_nyiramang_layon",
+  "object_id": "nyiramang_layon",
   "confidence": "HIGH",
   "source_sentence": "daun dapdap, daun dapdap ini dihaluskan dan diisi air sedikit, kemudian ditaruh di atas takir, gunanya adalah untuk sampo pencuci rambut (keramas) bagi jenazah ketika upacara nyiramang layon.",
   "sentence_id": 3118
@@ -2452,11 +2485,11 @@
 }
 
 {
-  "id": "f3134_lekesan_gulungan_s",
-  "text": "lekesan dimasukkan ke dalam gulungan sirih.",
+  "id": "f3134_lekesan_gulungan_d",
+  "text": "lekesan dimasukkan ke dalam gulungan daun sirih.",
   "subject_id": "lekesan",
   "predicate": "DIMASUKKAN_KE_DALAM",
-  "object_id": "gulungan_sirih",
+  "object_id": "gulungan_daun_sirih",
   "confidence": "MED",
   "source_sentence": "lekesan (daun sirih yang digulung) diikat dengan benang putih, kemudian dimasukkan ke lubang satu uang kepeng (pipis bolong), lalu di ujung atasnya diisi bawang putih yang sudah dikupas dan ditusuk dengan lidi.",
   "sentence_id": 3134
@@ -2474,12 +2507,12 @@
 }
 
 {
-  "id": "f3142_kawangen_lima_buah_",
-  "text": "kawangen berisi lima buah lembaran-lembaran daun sirih.",
-  "subject_id": "kawangen",
+  "id": "f3142_kawangen_j_lembaran_d",
+  "text": "kawangen jeriji berisi lembaran daun sirih.",
+  "subject_id": "kawangen_jeriji",
   "predicate": "BERISI",
-  "object_id": "lima_buah_lembaran_lembaran_daun_sirih",
-  "confidence": "MED",
+  "object_id": "lembaran_daun_sirih",
+  "confidence": "HIGH",
   "source_sentence": "empat buah kawangen jeriji, seperti telah disebutkan di atas bahwa setiap kwangen berisi lima buah lembaran-lembaran daun sirih yang digulung, diikat dengan tali benang dan setiap gulungan diisi uang kepeng, sedangkan di ujungnya diisi bawang putih sebagai lambang kuku, untuk ditaruh di tiap-tiap jari tangan dan kaki jenazah.",
   "sentence_id": 3142
 }
@@ -2881,11 +2914,11 @@
 }
 
 {
-  "id": "f3333_galar_bilah_bila",
-  "text": "galar terdiri dari bilah-bilah bambu sebanyak 9 buah.",
+  "id": "f3333_galar_bilah_bamb",
+  "text": "galar terdiri dari bilah bambu galar.",
   "subject_id": "galar",
   "predicate": "TERDIRI_DARI",
-  "object_id": "bilah_bilah_bambu_sebanyak_9_buah",
+  "object_id": "bilah_bambu_galar",
   "confidence": "HIGH",
   "source_sentence": "bale ini terbuat dari bambu dan galar nya juga terdiri dari bilah-bilah bambu berjumlah sebanyak 9 (sembilan) buah.",
   "sentence_id": 3333
@@ -3124,10 +3157,10 @@
 
 {
   "id": "f3654_gegaleng_uang_kepen",
-  "text": "gegaleng terbuat dari uang kepeng sebanyak 250 biji.",
+  "text": "gegaleng terbuat dari uang kepeng.",
   "subject_id": "gegaleng",
   "predicate": "TERBUAT_DARI",
-  "object_id": "uang_kepeng_sebanyak_250_biji",
+  "object_id": "uang_kepeng",
   "confidence": "HIGH",
   "source_sentence": "gegaleng ini dibuat dari uang kepeng (pipis bolong) sebanyak 250 biji serta beberapa potongan-potongan dahan kayu dapdap yang dibungkus dengan kain putih.",
   "sentence_id": 3654
@@ -3156,11 +3189,11 @@
 }
 
 {
-  "id": "f3734_kojong_gulungan_s",
-  "text": "kojong berisi gulungan sirih.",
+  "id": "f3734_kojong_gulungan_d",
+  "text": "kojong berisi gulungan daun sirih.",
   "subject_id": "kojong",
   "predicate": "BERISI",
-  "object_id": "gulungan_sirih",
+  "object_id": "gulungan_daun_sirih",
   "confidence": "HIGH",
   "source_sentence": "kawangen jeriji adalah sebuah kojong yang dibuat dari daun pisang dan di dalamnya berisi lima buah gulungan \"base\" (daun sirih), setiap satu gulung daun sirih diikat dengan benang putih, kemudian gulungan sirih dimasukkan ke dalam lubang uang kepeng sampai sepanjang setengah gulungan sirih tersebut.",
   "sentence_id": 3734
@@ -3354,6 +3387,17 @@
 }
 
 {
+  "id": "f3800_hiasan_blangsah",
+  "text": "hiasan terbuat dari blangsah.",
+  "subject_id": "hiasan",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "blangsah",
+  "confidence": "MED",
+  "source_sentence": "rurub sinom adalah hiasan yang terbuat dari blangsah (bunga pinang yang belum mekar) dijarit bersama daun kelapa muda (busung), dengan panjang kira-kira 40 sampai 45 sentimeter.",
+  "sentence_id": 3800
+}
+
+{
   "id": "f3800_hiasan_daun_kelap",
   "text": "hiasan terbuat dari daun kelapa muda busung.",
   "subject_id": "hiasan",
@@ -3497,17 +3541,6 @@
 }
 
 {
-  "id": "f4065_tirtha_pab_samsam_tid",
-  "text": "tirtha pabersihan tidak memakai samsam tidak seperti tirtha panglukatan.",
-  "subject_id": "tirtha_pabersihan",
-  "predicate": "TIDAK_MEMAKAI",
-  "object_id": "samsam_tidak_seperti_tirtha_panglukatan",
-  "confidence": "HIGH",
-  "source_sentence": "tirtha pabersihan ini juga dibuat oleh ida sang sulinggih, yang pada akhekatnya tidak jauh berbeda dengan tirtha panglukatan, namun ada sedikit perbedaan yaitu dalam sarananya tidak memakai \"samsam\" serta puja yang dipakai berbeda dengan puja pada tirtha panglukatan, dan periuknya tanpa kalung benang dengan uang kepeng.",
-  "sentence_id": 4065
-}
-
-{
   "id": "f4065_tirtha_pab_kalung_ben",
   "text": "tirtha pabersihan tanpa kalung benang dengan uang kepeng.",
   "subject_id": "tirtha_pabersihan",
@@ -3530,11 +3563,11 @@
 }
 
 {
-  "id": "f4079_tirtha_pem_upacara_pe",
-  "text": "tirtha pemanah dibuat saat upacara pengaskaran.",
+  "id": "f4079_tirtha_pem_upacara_ng",
+  "text": "tirtha pemanah dibuat saat upacara ngaskara.",
   "subject_id": "tirtha_pemanah",
   "predicate": "DIBUAT_SAAT",
-  "object_id": "upacara_pengaskaran",
+  "object_id": "upacara_ngaskara",
   "confidence": "HIGH",
   "source_sentence": "tirtha pemanah berbeda dengan tirtha-tirtha yang telah disebut diatas, karena tirtha pemanah seperti telah disebutkan diatas dibuat tepat pada waktu upacara \"pengaskaran\", sedangkan tirtha tersebut dibuat langsung oleh ida sang sulinggih.",
   "sentence_id": 4079
@@ -4080,9 +4113,9 @@
 }
 
 {
-  "id": "f900026_panebusan_pamerasan",
-  "text": "panebusan dilakukan setelah pamerasan.",
-  "subject_id": "panebusan",
+  "id": "f900026_penebusan_pamerasan",
+  "text": "penebusan dilakukan setelah pamerasan.",
+  "subject_id": "penebusan",
   "predicate": "SETELAH",
   "object_id": "pamerasan",
   "confidence": "HIGH",
@@ -4253,4 +4286,224 @@
   "confidence": "HIGH",
   "source_sentence": "pitra mendiang, yang merupakan sasaran upacara dibuatkan perlambang yang disebut sekah kangsen. [same real sentence already used above for the 'perlambang DIKENAL_SEBAGAI sekah kangsen' / 'pitra mendiang DIBUATKAN perlambang' rows -- its lead-in question in the source text ('Lalu bagaimana upacara Ngangsennya?', ngaben-merge-cleaned.txt line 2363) makes explicit this passage is specifically about Ngangsen's own procedure; this row makes that link a real graph edge instead of only being inferable from adjacent text. conersation.md item #48]",
   "sentence_id": 2612
+}
+
+{
+  "id": "f900055_upacara_pa_ngaben",
+  "text": "upacara palebon ngaben sama dengan ngaben.",
+  "subject_id": "upacara_palebon_ngaben",
+  "predicate": "SAMA_DENGAN",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "\"Palebon\" adalah istilah lain untuk upacara pembakaran jenazah (ngaben) dalam Hindu Bali, umumnya dipakai sebagai penyebutan yang lebih halus atau untuk kalangan tertentu seperti bangsawan/ksatria. [ngaben-glossary.txt, Upacara Palebon Ngaben entry -- user-approved 2026-09-23 connectivity fix, same SAMA_DENGAN treatment already applied to upacara_pengabenan/ngaben at S4128]",
+  "sentence_id": 900055
+}
+
+{
+  "id": "f900057_mapegat_ngaben",
+  "text": "mapegat adalah bagian dari ngaben.",
+  "subject_id": "mapegat",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "Mapegat: ritual pemutusan hubungan duniawi, tahap 4 dari 8 dalam rangkaian upacara Ngaben. [ngaben-merge-cleaned.txt baris 32; audit semantik 2026-09-23 -- sebelumnya salah tercatat sebagai TERMASUK_JENIS ngaben]",
+  "sentence_id": 900057
+}
+
+{
+  "id": "f900058_tarpana_ngaben",
+  "text": "tarpana adalah bagian dari ngaben.",
+  "subject_id": "tarpana",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "Dalam konteks Ngaben, tarpana dilakukan oleh ida sang sadaka sebagai bagian dari rangkaian upacara. [entitas pra-ada, definisi glosarium; audit semantik 2026-09-23]",
+  "sentence_id": 900058
+}
+
+{
+  "id": "f900059_pabersihan_ngaben",
+  "text": "pabersihan mati adalah bagian dari ngaben.",
+  "subject_id": "pabersihan_mati",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "Pabersihan Mati (Ngelelet): rangkaian upacara pembersihan jenazah setelah kematian, salah satu tahap dalam Ngaben. [entitas pra-ada, definisi glosarium; audit semantik 2026-09-23]",
+  "sentence_id": 900059
+}
+
+{
+  "id": "f900060_ayaban_upa_ngaben",
+  "text": "ayaban upakara diuskamaligi adalah bagian dari ngaben.",
+  "subject_id": "ayaban_upakara_diuskamaligi",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "Ayaban upakara diuskamaligi adalah salah satu tahapan upacara Ngaben. [ngaben-merge-cleaned.txt baris 312; audit semantik 2026-09-23]",
+  "sentence_id": 900060
+}
+
+{
+  "id": "f900061_mlaspas_ka_ngaben",
+  "text": "mlaspas kajang adalah bagian dari ngaben.",
+  "subject_id": "mlaspas_kajang",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "Mlaspas Kajang: upacara penyucian atas Kajang sebelum digunakan, dilaksanakan sebelum Upacara Ngaskara yang mengawali rangkaian Pelebon/Pabersihan dalam Ngaben. [entitas pra-ada, definisi glosarium; audit semantik 2026-09-23]",
+  "sentence_id": 900061
+}
+
+{
+  "id": "f900062_matur_piun_atiwa_tiwa",
+  "text": "matur piuning adalah bagian dari atiwa-tiwa asti vedana.",
+  "subject_id": "matur_piuning",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "atiwa_tiwa_asti_vedana",
+  "confidence": "HIGH",
+  "source_sentence": "Matur Piuning: tahap awal dalam rangkaian upacara Atiwa-tiwa Asti Vedana, sebelum pembakaran dan nganyut. [entitas pra-ada, definisi glosarium; audit semantik 2026-09-23]",
+  "sentence_id": 900062
+}
+
+{
+  "id": "f900063_daun_intar_jenazah",
+  "text": "daun intaran diletakkan di jenazah.",
+  "subject_id": "daun_intaran",
+  "predicate": "DILETAKKAN_DI",
+  "object_id": "jenazah",
+  "confidence": "HIGH",
+  "source_sentence": "Dua lembar daun intaran diletakkan pada kedua alis jenazah saat upacara mabersih mati (ngelelet). [entitas pra-ada, definisi glosarium; audit semantik 2026-09-23]",
+  "sentence_id": 900063
+}
+
+{
+  "id": "f900064_malem_jenazah",
+  "text": "malem diletakkan di jenazah.",
+  "subject_id": "malem",
+  "predicate": "DILETAKKAN_DI",
+  "object_id": "jenazah",
+  "confidence": "HIGH",
+  "source_sentence": "Malem digunakan untuk ditaruh pada kedua lubang telinga jenazah saat upacara ngelelet. [entitas pra-ada, definisi glosarium; audit semantik 2026-09-23]",
+  "sentence_id": 900064
+}
+
+{
+  "id": "f900065_saput_jenazah",
+  "text": "saput diletakkan pada jenazah.",
+  "subject_id": "saput",
+  "predicate": "DILETAKKAN_PADA",
+  "object_id": "jenazah",
+  "confidence": "HIGH",
+  "source_sentence": "Dalam Ngaben, saput dipakaikan pada jenazah baik saat Pabersihan Hidup maupun Pabersihan Mati. [entitas pra-ada, definisi glosarium; audit semantik 2026-09-23]",
+  "sentence_id": 900065
+}
+
+{
+  "id": "f900066_sekah_mendiang",
+  "text": "sekah melambangkan mendiang.",
+  "subject_id": "sekah",
+  "predicate": "MELAMBANGKAN",
+  "object_id": "mendiang",
+  "confidence": "HIGH",
+  "source_sentence": "Sekah adalah perlambang atau wujud simbolis mendiang dalam Ngaben. [entitas pra-ada, definisi glosarium; audit semantik 2026-09-23]",
+  "sentence_id": 900066
+}
+
+{
+  "id": "f900067_kalpika_tirtha",
+  "text": "kalpika dimasukkan ke dalam tirtha.",
+  "subject_id": "kalpika",
+  "predicate": "DIMASUKKAN_KE_DALAM",
+  "object_id": "tirtha",
+  "confidence": "HIGH",
+  "source_sentence": "Kalpika, salah satu sarana kecil, dimasukkan ke dalam periuk berisi Tirtha bersama Pripih Emas, Jijih, Recadana, dan Ulantaga. [entitas pra-ada, definisi glosarium; audit semantik 2026-09-23]",
+  "sentence_id": 900067
+}
+
+{
+  "id": "f900068_padang_lep_tirtha",
+  "text": "padang lepas dimasukkan ke dalam tirtha.",
+  "subject_id": "padang_lepas",
+  "predicate": "DIMASUKKAN_KE_DALAM",
+  "object_id": "tirtha",
+  "confidence": "HIGH",
+  "source_sentence": "Padang lepas dimantrai oleh Ida Sang Sulinggih dan dimasukkan ke dalam periuk Tirtha bersama sarana lain. [entitas pra-ada, definisi glosarium; audit semantik 2026-09-23]",
+  "sentence_id": 900068
+}
+
+{
+  "id": "f900069_pramakusa_tirtha",
+  "text": "pramakusa dimasukkan ke dalam tirtha.",
+  "subject_id": "pramakusa",
+  "predicate": "DIMASUKKAN_KE_DALAM",
+  "object_id": "tirtha",
+  "confidence": "HIGH",
+  "source_sentence": "Pramakusa dimantrai oleh Ida Sang Sulinggih dan dimasukkan ke dalam periuk berisi Tirtha. [entitas pra-ada, definisi glosarium; audit semantik 2026-09-23]",
+  "sentence_id": 900069
+}
+
+{
+  "id": "f900070_pengulapan_ngulapin",
+  "text": "pengulapan adalah bagian dari ngulapin.",
+  "subject_id": "pengulapan",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "ngulapin",
+  "confidence": "HIGH",
+  "source_sentence": "Sesajen kecil yang dihaturkan kepada jenazah sebagai bagian dari rangkaian upacara Ngulapin. [ngaben-merge-cleaned.txt baris 287; audit semantik 2026-09-23]",
+  "sentence_id": 900070
+}
+
+{
+  "id": "f900071_boreh_nyiramang_",
+  "text": "boreh digunakan saat nyiramang layon.",
+  "subject_id": "boreh",
+  "predicate": "DIGUNAKAN_SAAT",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "Boreh dioleskan pada tubuh jenazah saat memandikannya (Nyiramang Layon). [entitas pra-ada, definisi glosarium; audit semantik 2026-09-23]",
+  "sentence_id": 900071
+}
+
+{
+  "id": "f900072_balai_bala_bade",
+  "text": "balai-balai bade adalah bagian dari bade.",
+  "subject_id": "balai_balai_bade",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "bade",
+  "confidence": "HIGH",
+  "source_sentence": "Balai-balai Bade: bagian dari Bade (menara/usungan jenazah) tempat jenazah diletakkan selama prosesi diarak menuju setra. [entitas pra-ada, definisi glosarium; audit semantik 2026-09-23 -- target sebelumnya salah tertaut ke bale_bale]",
+  "sentence_id": 900072
+}
+
+{
+  "id": "f900073_bangbang_r_upacara_ng",
+  "text": "bangbang rare adalah bagian dari upacara ngelungah.",
+  "subject_id": "bangbang_rare",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "upacara_ngelungah",
+  "confidence": "HIGH",
+  "source_sentence": "Bangbang Rare: tempat pemakaman khusus untuk bayi/anak pada Upacara Ngelungah. [entitas pra-ada, definisi glosarium; audit semantik 2026-09-23]",
+  "sentence_id": 900073
+}
+
+{
+  "id": "f900074_pangenteg__ngangsen",
+  "text": "pangenteg linggih dilakukan saat ngangsen.",
+  "subject_id": "pangenteg_linggih",
+  "predicate": "DILAKUKAN_SAAT",
+  "object_id": "ngangsen",
+  "confidence": "HIGH",
+  "source_sentence": "Pangenteg Linggih: tindakan ritual (bukan upacara mandiri) dilakukan misalnya dalam Ngangsen untuk mengukuhkan kedudukan Sang Pitara di Pitraloka. [entitas pra-ada, definisi glosarium; audit semantik 2026-09-23]",
+  "sentence_id": 900074
+}
+
+{
+  "id": "f900076_sawa_prate_ngaben",
+  "text": "sawa prateka termasuk jenis ngaben.",
+  "subject_id": "sawa_prateka",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "Namun bagi pangabenan Sawa Wedana dan Sawa Prateka, akan terlihat pula beberapa kesibukan upacara berikut ini. [ngaben-merge-cleaned.txt baris 1741, sama kategori dengan Sawa Wedana -- lihat baris 1191 'Ngaben jenis Sawa Wedana']",
+  "sentence_id": 900076
 }

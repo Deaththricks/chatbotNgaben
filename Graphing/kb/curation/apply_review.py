@@ -2,25 +2,25 @@
 apply_review.py -- fold human decisions from review_queue.jsonl into a
 persistent review_decisions.json that build_kb.py honours on its next run.
 
-Workflow:
-  1. python build_kb.py            -> writes review_queue.jsonl (blank decisions)
-  2. edit review_queue.jsonl       -> set each record's "decision" to one of:
+Workflow (from Graphing/kb/ unless noted):
+  1. python build_kb.py                 -> writes output/review_queue.jsonl (blank decisions)
+  2. edit output/review_queue.jsonl     -> set each record's "decision" to one of:
         accept                     keep the edge (bumped to MED/HIGH)
         reject                     drop the edge entirely
         fix: <subj> | <PRED> | <obj>   replace the triple, then keep it
-  3. python apply_review.py        -> merges those into review_decisions.json
-  4. python build_kb.py            -> rebuilds; decided edges are applied,
-                                      review_queue.jsonl shrinks
+  3. python curation/apply_review.py    -> merges those into tuning/review_decisions.json
+  4. python build_kb.py                 -> rebuilds; decided edges are applied,
+                                           output/review_queue.jsonl shrinks
 
-review_decisions.json is the source of truth and is safe to hand-edit or commit.
+tuning/review_decisions.json is the source of truth and is safe to hand-edit or commit.
 """
 
 import json
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-QUEUE = HERE / "review_queue.jsonl"
-STORE = HERE / "review_decisions.json"
+QUEUE = HERE.parent / "output" / "review_queue.jsonl"
+STORE = HERE.parent / "tuning" / "review_decisions.json"
 
 VALID_PREFIXES = ("accept", "reject", "fix:")
 

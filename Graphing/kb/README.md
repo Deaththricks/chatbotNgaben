@@ -4,19 +4,33 @@ A cleaned, entity-resolved knowledge base built from the Ngaben relation-extract
 pipeline **plus** the source report. Designed to feed either a vector-RAG chatbot
 or a graph database — the retrieval stack is not fixed yet.
 
+## Layout
+
+```
+kb/
+  build_kb.py, README.md, methodology.md   -- the build script + docs (this folder's root)
+  output/     -- everything build_kb.py generates (see Files below)
+  tuning/     -- hand-authored curation knobs build_kb.py reads
+  curation/   -- review/audit tooling (not part of the build itself)
+```
+
+Split into these three subfolders 2026-09-22 — the flat folder had become hard to
+read with build scripts, tuning config, and generated artifacts all mixed together.
+
 ## Build
 
 ```
-python ../Neo4/normalize.py     # row-level cleanup  -> relation_results_ngaben.normalized.json
-python build_kb.py              # this folder        -> the files below
+python ../neo4/normalize.py     # row-level cleanup  -> relation_results_ngaben.normalized.json
+python build_kb.py              # this folder        -> output/ (see Files below)
 ```
 
-`build_kb.py` reads (never writes) `../Neo4/relation_results_ngaben.normalized.json`,
-`../Data/ngaben-merge-cleaned.txt`, `../Data/ngaben-dictionary.json`,
-`../Data/normalization-ngaben.json`, `../Neo4/node_aliases.json`, and the two
-tuning files in this folder (`entity_resolution.json`, `relation_phrases.json`).
+`build_kb.py` reads (never writes) `../neo4/relation_results_ngaben.normalized.json`,
+`../data/ngaben-merge-cleaned.txt`, `../data/ngaben-glossary.txt` (the manually-authored
+glossary, split out of the report 2026-09-22), `../data/ngaben-dictionary.json`,
+`../data/normalization-ngaben.json`, `../neo4/node_aliases.json`, and the two
+tuning files in `tuning/` (`entity_resolution.json`, `relation_phrases.json`).
 
-## Files
+## Files (all in `output/`)
 
 | file | what it is | for a chatbot |
 |---|---|---|
@@ -25,33 +39,35 @@ tuning files in this folder (`entity_resolution.json`, `relation_phrases.json`).
 | `facts.jsonl` | HIGH+MED confidence relations rendered as Indonesian sentences, each with `source_sentence` | secondary RAG corpus — short atomic facts with citations |
 | `relations.jsonl` | every entity->entity edge (incl. LOW), structured, with `confidence`, `nl`, provenance | load into a graph DB; filter by `confidence` |
 | `glossary.md` | human-readable entities grouped by type | review / documentation |
-| `review_queue.jsonl` | LOW-confidence edges + fragment entities, each with a blank `decision` field | human adjudication — see `apply_review.py` |
+| `review_queue.jsonl` | LOW-confidence edges + fragment entities, each with a blank `decision` field | human adjudication — see `curation/apply_review.py` |
 | `build_report.txt` | counts, type breakdown, every unresolved entity, every LOW reason | what to fix next |
 
 ## Recipe A — vector RAG
 
-1. Embed `passages.jsonl[].text` (primary) and `facts.jsonl[].text` (secondary).
-   Store `id`, `section_path` / `source_sentence`, `entity_ids` as metadata.
+1. Embed `output/passages.jsonl[].text` (primary) and `output/facts.jsonl[].text`
+   (secondary). Store `id`, `section_path` / `source_sentence`, `entity_ids` as metadata.
 2. On a query, retrieve top-k from both; prefer passages, use facts to pin
    specifics.
-3. Optionally expand the query with entity aliases from `entities.json`
+3. Optionally expand the query with entity aliases from `output/entities.json`
    (`name` + `aliases`) so "mamukur" also matches "ngerorasin".
-4. Cite `passages.char_start/char_end` back into `../Data/ngaben-merge-cleaned.txt`,
-   or quote `facts.source_sentence`.
+4. Cite `passages.char_start/char_end` back into `../data/ngaben-merge-cleaned.txt`
+   for `section_path`-based passages, or `../data/ngaben-glossary.txt` for
+   `kind: "glossary"` passages (split into its own file 2026-09-22 — see
+   `build_kb.py`'s `GLOSSARY_TXT`), or quote `facts.source_sentence`.
 
 ## Recipe B — knowledge graph
 
 ```
-python ../Neo4/load_ngaben_to_neo4j.py --source kb
+python ../neo4/load_ngaben_to_neo4j.py --source kb
 ```
 
-loads `entities.json` as nodes (label = `type`, `broader` as `:TERMASUK_JENIS`)
-and `relations.jsonl` as edges (`confidence` is a property; filter
+loads `output/entities.json` as nodes (label = `type`, `broader` as `:TERMASUK_JENIS`)
+and `output/relations.jsonl` as edges (`confidence` is a property; filter
 `WHERE r.confidence <> 'LOW'` for a clean view). Or view it in the browser:
 
 ```
-python ../Neo4/kg_visualizer/build_graph.py --source kb
-# then open ../Neo4/kg_visualizer/index.html
+python ../neo4/kgVisualizer/build_graph.py --source kb
+# then open ../neo4/kgVisualizer/index.html
 ```
 
 ## Confidence
@@ -61,11 +77,11 @@ python ../Neo4/kg_visualizer/build_graph.py --source kb
 - **MED** — one endpoint unresolved, or a vaguer predicate (`MEMILIKI`,
   `DIKENAI`). Spot-check before relying on it.
 - **LOW** — unresolved endpoints, `LAINNYA`, or a preposition/provenance
-  mismatch. Not in `facts.jsonl`; sits in `review_queue.jsonl`.
+  mismatch. Not in `facts.jsonl`; sits in `output/review_queue.jsonl`.
 
 ## Known limits
 
 The relation extractor is dependency-rule based and gets ~1 edge in 4 wrong
 (direction or predicate). The confidence layer + review queue contain that; it
 is not fixed at source. `passages.jsonl` is verbatim source text and has no
-such problem — it is the reliable layer. See `METHODOLOGY.md`.
+such problem — it is the reliable layer. See `methodology.md`.
