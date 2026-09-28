@@ -8,29 +8,34 @@ nlu:
     - 7 biji uang kepeng
     - 9 biji uang kepeng
     - abu
-    - abu abu kekototan kekotoran
     - abu seluruhnya
     - abu suku tunggal
     - abu tulang
     - acara maktining layon
     - adegan
     - adegan dan pengawak
+    - agni pralina
+    - air
     - air kumkuman
     - akasa
     - alam sorga dengan tenang
+    - alang-alang
     - alat upakara
     - amrethi karana
     - angenan
     - anget-angetan
     - anggapan
     - anggapan ani-ani atau ketam
+    - angkeb baga purus
     - angkeb baga/purus
     - angkeb rai
     - antah karana sarira
     - ante
     - apah
+    - api takep
     - arang pembakaran jaja gina
     - arang pembakaran jaja uli
+    - ardhanareswari
     - arit gobed
     - arjuna
     - asagan
@@ -54,7 +59,6 @@ nlu:
     - badan halus mendiang roh/arwah
     - badan suksma bhatara
     - bade
-    - bade dan lembu
     - balai pawedan
     - balai tempat jenazah disemayamkan
     - balai-balai
@@ -66,19 +70,20 @@ nlu:
     - bale banjar
     - bale gede
     - bale pamuunan
-    - bale penusangan istilah denpasar
     - bale salunglung
     - bale semanggen
     - bale tempat jenazah
     - bale-bale
     - bale-bale tempat memandikan mayat
-    - bale-bale/dipan
     - bali aga
     - bali dataran
+    - bambu
+    - bangbang rare
     - banjar
     - bantal kapuk
     - banten
-    - banten bebangkit atau pulagembal
+    - banten bebangkit
+    - banten byakawonan
     - banten pamegat
     - banten teben
     - bayu
@@ -86,31 +91,52 @@ nlu:
     - beras catur
     - beras kuning
     - berbagai jenis tirtha
-    - berbagai sajen dan alat-alat upakara
     - bersihan payasan
     - besi
     - besi paku
+    - bhaksa bhuwana
     - bhatara
+    - bhatara dalem
     - bhatara-bhatari
     - bhatari
     - bhetara hyang guru
+    - bhur loka
+    - bhuta
+    - bhuta kala
+    - bhuta yadnya
     - bhuwana agung
     - bhuwana alit
+    - bilah bambu galar
     - bilah-bilah bambu sebanyak 9 buah
     - bilahan-bilahan bambu ante
     - blangsah
+    - boma
+    - boreh
+    - brahman
+    - brahmana
+    - buah-buahan
+    - bubur pirata
     - bukur
     - bunga
+    - bunga teratai
     - bunga tunjung putih
+    - bwah loka
+    - caksvindrya
     - canang sari
     - cara prasawya
+    - caru
     - caru pengelambuk
+    - catur wangsa
     - cili
     - coblong
+    - cuntaka
     - dada jenazah
+    - dadia
     - daksina
     - daksina tapakan
+    - daksinayana
     - damar kurung
+    - dasa mala
     - daun dapdap
     - daun intaran
     - daun kelapa muda busung
@@ -119,14 +145,18 @@ nlu:
     - daun rontal
     - daun temen
     - dewa brahma
+    - dewa hyang
     - dewa iswara
     - dewa mahadewa
     - dewa siwa
+    - dewa surya
     - dewa wishnu
+    - dewa yadnya
     - dewaloka
     - dewasa madya
+    - dewi durga
+    - dewi sri
     - diuskamaligi
-    - dua kata
     - dulang
     - dulang atau meja kecil
     - dusa
@@ -144,12 +174,15 @@ nlu:
     - gegaleng
     - gegaleng kepala
     - gelar sanga
+    - ghranendrya
     - gigi jenazah
     - gigi jenazah istilah_umum_ritual
     - gotong royong
     - gria
     - gulungan daun sirih
     - gulungan sirih
+    - gupura
+    - guru tiga
     - hiasan
     - hitungan galar
     - hitungan galir
@@ -163,27 +196,27 @@ nlu:
     - ida bhatara kumara
     - ida sang sadaka
     - ida sang sulinggih
-    - ida sang sulinggih sebelum dimasukkan
+    - ilih
+    - indrayana
     - isi pengawak
     - itik-itik
+    - jajan
     - jarum jaum
     - jempol jari kaki
     - jenazah
     - jenazah /pengawak
-    - jenazah atau simbolik
     - jenazah bayi
     - jenazah bibir
-    - jenazah ditutup kain putih
-    - jenazah diusung ke tempat pemandian
     - jenazah mendiang
     - jenazah raja bali
     - jenazah seseorang
-    - jenis atma wedana masing-masing
+    - jihvendrya
     - jijih biji padi
     - jumlah galar
     - jun pere
     - kain bawah
     - kain kering
+    - kain kuning untuk saput
     - kain kuning untuk saput/selendang
     - kain penutup
     - kain penutup jenazah
@@ -192,7 +225,7 @@ nlu:
     - kain putih untuk bantal
     - kain putih untuk saput
     - kajang
-    - kajang atau kakerebsari
+    - kakawin
     - kaki jenazah
     - kalpika
     - kalung benang dengan uang kepeng
@@ -204,70 +237,97 @@ nlu:
     - kawangen di samping jenazah
     - kawangen di tangan
     - kawangen jeriji
+    - kayu cendana
     - kedua mata jenazah
-    - kedua pura
     - kedudukan pitara
+    - kekitir
     - kelompok paksa mahayana
-    - keluarga/masyarakat
     - kemampuan sosial ekonomi
     - kembang rampai
     - kepala jenazah
     - kepercayaan setempat
+    - keris
     - kesuna bawang putih
+    - ketekan guling
+    - kidung
+    - kikir
+    - kimburu
+    - kleda
     - klungah
+    - klungah nyuh gading
     - klungah nyuh gading/suku tunggal
     - kojong
     - kojong kawangen jeriji
-    - krama atau keluarga
+    - kopi
     - krama masyarakat banjar
+    - ksatria
     - kuburan
+    - kuhaka
+    - kulit telur ayam
     - kulit telur ayam berminyak kelapa
-    - kwangen setiap gulungan
+    - kuncup teratai
+    - kutila
     - lancingan
     - lancingan kajang
     - langse
     - lante bambu
     - layon
+    - leja
     - lekesan
     - leluhur langit-langit tandu
     - leluwur
+    - lembaran daun sirih
     - lembu
     - lengan jenazah
+    - leteh
     - lima buah lembaran-lembaran daun sirih
     - lingga sarira pitara
     - lis amuan-amuan
     - lis bale gading
     - logam campuran
     - lontar
+    - lontar jnanasiddhanta
+    - lontar lokha tattwa
+    - lontar pretekaning wong mati
+    - lontar purwa gama
     - lontar putru
+    - lontar sundarigama
+    - lontar tattwa jnana
+    - lontar wrehaspati tattwa
+    - lontar yadnya prakerti
     - lubang satu uang kepeng
     - lubang tempat penguburan
     - macan
+    - madiksa
     - madya
     - madyaning madya
     - madyaning nista
     - madyaning utama
+    - mahabharata
     - mahabutha
     - malamasa
     - malebuang
     - malem
-    - malem di atas takir
+    - mamukur
     - mamukur dan upacara sebangsa
     - mamutru
     - manah
     - manah mendiang
     - manah tirtha ening
     - mangle
+    - manusa yadnya
     - manusia
     - mapegat
-    - mapradaksina
     - masekeh
-    - masyarakat setempat
+    - matur piuning
+    - megata
     - mendiang
     - mendiang dalam wujud sekah
-    - mendiang keponakan, cucu-cucu
     - merajan kawitan
     - merajan pusat
+    - metraya
+    - minuman
+    - mlaspas kajang
     - moksa
     - mreteka sawa
     - muspa pamitan
@@ -275,72 +335,97 @@ nlu:
     - naga banda pada palebonnya
     - naga kahang
     - nanginin
+    - nasi
     - nasi angkeb
+    - nawa dewata
     - ngaben
     - ngaben cara yama purwana tatwa
     - ngaben massal
+    - ngaben numandang mantri
     - ngaben svasta
     - ngajar-ajar
+    - ngajum
     - ngalukat
     - ngangkid
     - ngangkid galih
     - ngangsen
     - nganyut
+    - ngawit pengaksaran
+    - ngelinggihang
     - ngelungah
     - ngerorasin
     - ngroras
     - ngulapin
+    - nguyeg
     - niskala
     - nista
     - nistaning madya
     - nistaning nista
     - nistaning utama
+    - nuduk galih
+    - numitis
+    - nyegara gunung
     - nyekeh
     - nyekeh sawa
     - nyikut karang
     - nyiramang layon
+    - nyiramin
+    - nyiru
     - nywasta
     - orangtua
+    - pabasmian
     - pabersihan
     - pabersihan hidup
     - pabersihan mati
     - padang lepas
+    - padendrya
     - padma
     - paes gedubang
+    - paguntingan
+    - paksa hinayana
+    - paksa mahayana
+    - palebon
     - pamerasan
     - pamrajan
+    - pamrajan rong tiga
+    - panca budhindrya
     - panca datu
     - panca dewata
+    - panca karmendrya
+    - panca yadnya
     - pancamahabutha
+    - pandawa
+    - pande
     - pandita
-    - pandita selaku pemuka agama
     - panebusan
     - pangabenan
-    - pangabenan jenis masing-masing
     - pangabenan jenis pranawa
     - pangabenan pranawa
+    - pangenteg linggih
     - pangringkes
     - pangulungan
     - panguryagan
+    - panindrya
     - panjaya-jaya
     - paplengkungan
     - paplengkungan jenazah
     - para-para tempat pembakaran
+    - pasek
     - patileman
     - patulangan
     - patus
+    - pavindrya
     - pawedan
-    - pawedan tempat memuja
+    - pawukon
     - payadnyan
     - pecahan besi baja
     - pecahan kaca
+    - pelangkiran
     - pelebon
-    - pelebur unsur karma wasana
     - pemakaian umbi sikapa/sekapa
     - pemangku
     - pemangku kawitan setempat
     - penebusan
-    - pengabenan tanpa tirtha pangentas
     - pengawak
     - pengerikan kuku
     - pengerikan kuku mutlak
@@ -348,6 +433,7 @@ nlu:
     - penggunaan wewangian
     - pengorbanan suci
     - pengulapan
+    - pengutangan
     - pepaga
     - pepaga atau asagan
     - pepaga/asagan
@@ -356,61 +442,65 @@ nlu:
     - peranda shiwa
     - perbandingan kepala lembu
     - perbandingan kepala singa
+    - perhiasan pusaka
     - pering
     - perlambang
     - persembahyangan
+    - persimpangan jalan
+    - perwujudan sredaning cita
     - pihak berhutang
     - pisang jati
-    - pitara menggunakan tirtha ening
     - pitra
-    - pitra dalam ngangsen
     - pitra mendiang
     - pitra yadnya
-    - pitra yadnya dataran rendah
-    - pitra yadnya tahap kedua
+    - pitraloka
     - plengkungan sawa
+    - potong gigi
     - pradaksina
+    - prajuru
     - pralina
     - pramakusa
     - pranawa
     - prasawya
+    - preta
     - pretiwi
     - pripih emas
     - priuk tempat tirtha pangringkes
     - punia
-    - punia besar-kecilnya
     - punjung
     - pura
-    - pura atau merajan
     - pura dalem
-    - pura dan pamrajan panyiwiannya
     - pura desa
     - pura kahyangan tiga
     - pura mrajapti
     - pura puseh
+    - purnama
     - purusa-pradana
     - puspa asti
     - puspa lingga
     - pusuh bunga cempaka kuning
     - putru saji
     - putru sangaskara
+    - ragastri
     - raja bali
     - raka-raka
     - rangkadan
     - rantasan kain putih-kuning
+    - rare angon
     - rasa
     - raçadana
-    - recadana
-    - recadana atau swasta geni
-    - rezeki untuk menggelar ngaben
     - roh atau atman
+    - rokok
     - rontal dilapisi kertas emas
+    - roras
+    - rsi bisma
+    - rsi yadnya
     - ruang bale semanggen
-    - ruang paturon di samping jenazah
     - rurub sinom
     - rurub sinom sebanyak lima buah
     - sabuk
     - sajen kecil
+    - sajen surya
     - sajen untuk surya
     - saka roras
     - sambungan
@@ -418,78 +508,74 @@ nlu:
     - sampian pusung
     - samping jenazah
     - samsam
-    - samsam tidak seperti tirtha panglukatan
-    - sang cucu
     - sang hyang birawi
-    - sangaskara, samskara, atau panyangaskara
+    - sangaskara
     - sanggah urip
+    - sanggar surya
     - sanggar surya baligia
     - sangge
     - sanghyang agni
     - santapan istimewa
     - saput
     - sarana mewah
-    - sarana-sarana tersebut
     - sasap
     - sasih
+    - sasih asada
+    - sasih dyestha
     - sasih kadasa
     - sasih kaenem
+    - sasih kalima
     - sasih kapat
     - sasih kapitu
     - sasih karo
     - sasih kasa
     - sasih kasanga
     - sasih katiga
+    - sasih kawulu
     - sasih paruwak tahuk
-    - satu dua perhiasan pusaka
     - sawa
-    - sawa asli
     - sawa baru
     - sawa dititip
+    - sawa prateka
     - sawa utuh
     - sawa wedana
     - sebuah setra
     - sedahan setra
-    - segenap keturunan mendiang
-    - sejumlah uang kepeng
+    - segehan
     - sekah
     - sekah abin
     - sekah kangsen
+    - sekah kurung
     - sekah sangge
     - sekar ura
-    - sekeluarga tunggalan pamrajan
+    - sekte paksa surya
     - selatan
-    - sembah bhakti serta ayaban sajen
     - sembilan batang kayu cendana
-    - semua alat pangringkesan
-    - semua sarana
     - sesajen
-    - sesajen dan alat upakara
-    - sesajen dan punjung
     - sesaji
-    - sesaji sederhana
     - sesenden
-    - setelah jenazah dipindahkan ke pepaga
-    - setelah tirtha dipercikkan
-    - setelah upacara sembah bhakti
     - setiap persimpangan jalan menuju setra
     - setra
     - setra tempat jasad mendiang
     - setra tempat pembakaran
     - shiwa
+    - shiwa loka
     - simbol tirtha
     - singa
     - sisig
+    - slepa
     - slepa/peti
     - soda
     - sorga
     - sorohan
     - sorohan kecil
+    - sredaning cita
+    - srotendrya
     - sthiti
     - sthula sarira
+    - sukra
     - suksma sarira
     - suku tunggal
-    - suku tunggal abu
     - sukutunggal
     - sulinggih
     - sulinggih utawi pinandita
@@ -497,26 +583,31 @@ nlu:
     - sumpe
     - supta pranawa
     - swadharma
+    - swah loka
     - swasta
+    - tabunan
     - takir
     - tali benang tukelan
     - tali ktekung
+    - tali penyalin
+    - tandri
     - tandu
+    - tangan jenazah
     - tangan jenazah/layon
     - tapih
     - tarpana
-    - tarpana dan muspa
     - tatindih
+    - teben pepaga
     - teben pepaga/asagan
     - tegteg
     - teja
     - tembaga
-    - tempat atma mendiang
+    - tembakau
     - tempat pamrajan
     - tempat penusangan
     - tempat persemayaman jenazah
-    - tergesa-gesa memandikan jenazah
-    - tidur tertelentang di pepaga/asagan
+    - tilem
+    - tingkatan bade
     - tingkatan bade atau wadah
     - tingkatan ngaben
     - tingkatan upacara
@@ -528,11 +619,13 @@ nlu:
     - tirtha
     - tirtha amertha
     - tirtha ening
+    - tirtha gangga
     - tirtha kahyangan tiga
     - tirtha kawitan
     - tirtha lainnya
     - tirtha pabersihan
     - tirtha pabersihan periuknya
+    - tirtha pamlaspas
     - tirtha pangentas
     - tirtha pangentas atiwa-tiwa
     - tirtha panglukatan
@@ -541,17 +634,25 @@ nlu:
     - toya penembak
     - toyo çarira
     - tradisi hindu-majapahit
+    - tri aksara
+    - tri kona
+    - tri loka
     - tri sarira
-    - tubuh jenazah kelak berbau harum
+    - trimurti
+    - tuhan
     - tulang belulang
     - tumpang salu
-    - tuntas berkat punia
+    - tumpek
+    - tumpeng
+    - tvagindrya
     - uang kepeng
     - uang kepeng asli
     - uang kepeng sebanyak 250 biji
     - udeng
     - udeng untuk laki-laki
+    - ukur
     - ulantaga
+    - umbi sikapa
     - umbi sikapa/sekapa
     - umpal
     - undagi
@@ -563,28 +664,38 @@ nlu:
     - upacara ngelelet
     - upacara ngelungah
     - upacara nyiramang layon
+    - upacara palebon ngaben
     - upacara panebusan
-    - upacara pengabenan
     - upacara pengaskaran
     - upacara saji tarpana
-    - upacara_palebon_ngaben
     - upadesa
     - upakara
     - upanisad
+    - upasaksi
+    - upathendrya
     - usungan
     - utama
     - utamaning madya
     - utamaning nista
     - utamaning utama
     - utpeti
+    - uttarayana
     - uye
+    - vagindrya
     - wadah
     - waja
     - wang kepeng/bolong
+    - wangsa
+    - wangsa sudra jadma
+    - wariga
+    - wawu lampus
     - wayang
+    - weda
     - weda pengastawa
-    - wilayah
+    - wesia
     - wujud sawa
+    - wuku
     - wuku kuningan
     - yadnya
+    - yama purwana tattwa
     - yeh panembak

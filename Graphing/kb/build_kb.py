@@ -34,6 +34,7 @@ Run:  python build_kb.py
 import json
 import re
 import sys
+import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -49,6 +50,7 @@ CONCEPTMAP = ROOT / "data" / "normalization-ngaben.json"
 ALIASES    = ROOT / "neo4" / "node_aliases.json"
 RESOLUTION = HERE / "tuning" / "entity_resolution.json"
 PHRASES    = HERE / "tuning" / "relation_phrases.json"
+WEB_SOURCES = HERE / "tuning" / "definition_sources.json"   # glossary term -> "web: <url>" provenance
 OUT_DIR    = HERE / "output"
 
 CHUNK_TARGET = 1100   # chars; a passage chunk aims for this, never crosses a heading
@@ -93,6 +95,9 @@ def dump_jsonl(path, records):
 
 
 def slug(s):
+    # transliterate first (ç -> c, é -> e, ...) -- a bare [^a-z0-9] strip turned
+    # "raçadana" into the id "ra_adana" (2026-09-24)
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode("ascii")
     return re.sub(r"[^a-z0-9]+", "_", s.lower()).strip("_") or "x"
 
 
@@ -568,19 +573,32 @@ def main():
         # mangled into a fake entity) still gets created via get_ent() and
         # keeps its automatic broader-link side effect, even though the
         # relation itself never makes it into relations.jsonl.
-        if decisions.get(f"{r['sentence_id']}|{r['subject']}|{r['object']}") == "reject":
+        decision = decisions.get(f"{r['sentence_id']}|{r['subject']}|{r['object']}", "")
+        if decision == "reject":
             continue
-        se = get_ent(r["subject"])
+        # a "fix:" must also redirect entity creation (2026-09-24) -- otherwise
+        # the original, wrong subject/object string (e.g. "pura atau merajan",
+        # fixed to "pura") still gets minted as a phantom entity here even
+        # though the relation loop below writes the corrected edge.
+        # ... and for a LITERAL row its predicate/value too: the attribute is written
+        # here, not in the relation loop (2026-09-25: "ngroras BERASAL_DARI kata roras",
+        # fixed to SEBUTAN_BERASAL_DARI, still became "atma wedana berasal dari kata roras")
+        subj, pred, obj = r["subject"], r["relation"], r["object"]
+        if decision.startswith("fix:"):
+            parts = [p.strip() for p in decision[4:].split("|")]
+            if len(parts) == 3:
+                subj, pred, obj = parts
+        se = get_ent(subj)
         if r.get("subject_label"):
             se["labels"][r["subject_label"]] += 1
 
         if r["object_type"] == "ENTITY":
-            oe = get_ent(r["object"])
+            oe = get_ent(obj)
             if r.get("object_label"):
                 oe["labels"][r["object_label"]] += 1
         else:                                   # LITERAL
-            val = r["object"].strip()
-            if r["relation"] in ("BERARTI", "ADALAH"):
+            val = obj.strip()
+            if pred in ("BERARTI", "ADALAH"):
                 sid = f"S{r['sentence_id']}"
                 # definition candidate: keep the longest that reads like a
                 # definition (a glossary hit still overrides this later), unless
@@ -593,7 +611,7 @@ def main():
             elif weak_literal(val):
                 dropped_literals += 1
             else:
-                se["attributes"][r["relation"]].append(
+                se["attributes"][pred].append(
                     {"value": val, "sentence_id": r["sentence_id"]})
 
     # glossary + broader definitions win / fill
@@ -609,16 +627,21 @@ def main():
     # definition to and was silently dropped, with no warning and no trace in
     # entities.json at all. get_ent() is the exact same entity-creation path
     # relation-extraction rows use, so reuse it here instead of losing the term.
-    glossary_by_id: dict[str, str] = {}
+    # A glossary line written from web sources (the corpus doesn't explain the
+    # term) is tagged in definition_sources.json so it stays reviewable apart
+    # from corpus-sourced definitions (2026-09-24).
+    web_src = load_json(WEB_SOURCES) if WEB_SOURCES.exists() else {}
+    glossary_by_id: dict[str, tuple] = {}
     for term, dfn in glossary_defs.items():
         eid = resolver.resolve(term)[0]
         if eid not in ent:
             get_ent(term)
-        glossary_by_id.setdefault(eid, dfn)
+        src = f"glossary ({web_src[term]})" if web_src.get(term) else "glossary"
+        glossary_by_id.setdefault(eid, (dfn, src))
     for e in ent.values():
         g = glossary_by_id.get(e["id"])
         if g:
-            e["definition"], e["definition_source"] = g, "glossary"
+            e["definition"], e["definition_source"] = g
 
     # types
     for e in ent.values():

@@ -4,7 +4,8 @@ Mirrors the resolution pipeline documented in Graphing/kb/methodology.md and the
 `fuzzy_match_*` helpers in the reference bot, but Python-side (the graph does not
 store aliases in a queryable way).
 
-Order: exact (name/alias) -> force_merge -> modifier-strip retry -> rapidfuzz.
+Order: exact (name/alias) -> force_merge -> modifier-strip retry -> orthographic
+key -> token-checked rapidfuzz.
 """
 from __future__ import annotations
 
@@ -12,12 +13,14 @@ import json
 import os
 import random
 import re
+import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional
 
 from dotenv import find_dotenv, load_dotenv
 from rapidfuzz import fuzz, process
+from rapidfuzz.distance import Levenshtein
 
 load_dotenv(find_dotenv())
 
@@ -31,7 +34,8 @@ _WS = re.compile(r"\s+")
 # and silently leaves the rest ("itu", "arti dari", "sih", ...) stuck on the front of
 # the term (e.g. "apa itu depa" -> "itu depa" instead of "depa").
 _QUESTION_LEAD = re.compile(
-    r"^(apa itu|apa yang dimaksud( dengan)?|apa arti( dari| kata)?|apa sih|"
+    r"^(apa itu|apa yang dimaksud( dengan)?|apa arti kata dasar( dari)?|arti kata dasar( dari)?|"
+    r"kata dasar( dari)?|apa arti( dari| kata)?|apa sih|"
     r"apa maksud(nya)?|apa(kah)?|arti|artinya|makna|maksud(nya)?|definisi|"
     r"tolong jelaskan|jelaskan|sebutkan|kasih tahu|coba jelaskan|mau tahu( arti)?)\s+",
     re.IGNORECASE,
@@ -45,6 +49,60 @@ _QUESTION_TAIL = re.compile(
 
 def _norm(s: str) -> str:
     return _WS.sub(" ", (s or "").strip().lower()).strip(" ?.!,")
+
+
+# Romanized Balinese/Sanskrit terms are spelled several ways in the corpus and by
+# users (bhuta/butha/buta, tirtha/tirta, citta/cita, bhuwana/bhuana, ç/s). The
+# orthographic key collapses those so a spelling variant resolves exactly instead
+# of falling through to fuzzy matching, which is where the wrong-entity hits came
+# from (2026-09-24: "butha kala" -> nothing, "bhuta kala" -> bhuta).
+_ASPIRATES = (("bh", "b"), ("dh", "d"), ("th", "t"), ("sh", "s"), ("kh", "k"),
+              ("gh", "g"), ("ph", "p"), ("jh", "j"), ("ch", "c"))
+
+
+def _ortho_token(s: str) -> str:
+    s = s.lower().replace("ç", "s")
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode("ascii")
+    s = re.sub(r"[^a-z0-9]", "", s)
+    for a, b in _ASPIRATES:
+        s = s.replace(a, b)
+    s = s.replace("uwa", "ua")
+    return re.sub(r"(.)\1+", r"\1", s)
+
+
+def _ortho_key(s: str) -> str:
+    return "".join(_ortho_token(t) for t in re.split(r"[\s\-/]+", s or ""))
+
+
+# Indonesian affixes a user may tack onto a known term ("sodaan", "pitranya").
+_SUFFIXES = ("nya", "an", "kan", "i")
+# Head words that only say what kind of thing a term is -- a query may carry them
+# without the entity name doing so ("upacara pamerasan" -> pamerasan) and vice versa.
+_HEAD_WORDS = {"upacara", "prosesi", "ritual", "acara", "istilah", "konsep", "kata",
+               "sarana", "banten"}
+# Aspect words a query may wrap around a term ("kelengkapan sodaan", "unsur tri
+# sarira", "fungsi kawangen") -- ignored on the query side only.
+_ASPECT_WORDS = {"kelengkapan", "kelengkapannya", "unsur", "unsurnya", "bagian",
+                 "bagiannya", "fungsi", "fungsinya", "makna", "maknanya", "arti",
+                 "artinya", "isi", "isinya", "jenis", "jenisnya", "tahapan", "tahapannya",
+                 "simbol", "lambang", "tujuan", "tujuannya", "asal", "asalnya"}
+
+
+def _token_match(a: str, b: str) -> bool:
+    oa, ob = _ortho_token(a), _ortho_token(b)
+    if oa == ob:
+        return True
+    for suf in _SUFFIXES:
+        if len(ob) >= 4 and oa == ob + suf:
+            return True
+        if len(oa) >= 4 and ob == oa + suf:
+            return True
+    # one-edit typos on any token ("wah"/"bwah", "citra"/"cita"); a looser ratio
+    # only on longer tokens -- "pandawa"/"pranawa" (2 edits, ratio 86) and
+    # "surya"/"sukra" are different words, not typos.
+    if min(len(oa), len(ob)) >= 3 and Levenshtein.distance(oa, ob) <= 1:
+        return True
+    return min(len(oa), len(ob)) >= 6 and fuzz.ratio(oa, ob) >= 88
 
 
 @dataclass
@@ -63,10 +121,6 @@ class KbResolver:
         self.by_id: dict[str, dict] = {e["id"]: e for e in ents}
 
         res = json.loads((kb_dir / "tuning" / "entity_resolution.json").read_text(encoding="utf-8"))
-        self.force_merge: dict[str, str] = {
-            _norm(k): v for k, v in res.get("force_merge", {}).items()
-            if not k.startswith("_")
-        }
         self.strip_modifiers: list[str] = [w.lower() for w in res.get("strip_modifiers", [])]
         self.keep_distinct: set[str] = {_norm(w) for w in res.get("keep_distinct", [])}
         # Generic/ambiguous entities (see entity_resolution.json's _exclude_note) that
@@ -88,7 +142,33 @@ class KbResolver:
                     self.surface[key] = e["id"]
                     self.alias_surface.add(key)
 
+        # force_merge values are canonical entity *names* (build_kb.py's contract).
+        # This used to look them up as ids, so every multi-word target ("naga
+        # banda", "upacara ngelungah", ... 43 of 93) silently never resolved here.
+        self.force_merge: dict[str, str] = {}
+        for k, v in res.get("force_merge", {}).items():
+            if k.startswith("_"):
+                continue
+            _id = self.surface.get(_norm(v)) or (v if v in self.by_id else None)
+            if _id and _id not in excluded_ids:
+                self.force_merge[_norm(k)] = _id
+
+        # orthographic key -> id; a key shared by two different entities is
+        # ambiguous and never resolves through this tier.
+        self.ortho: dict[str, Optional[str]] = {}
+        for key, _id in list(self.surface.items()) + list(self.force_merge.items()):
+            ok = _ortho_key(key)
+            if ok in self.ortho and self.ortho[ok] != _id:
+                self.ortho[ok] = None
+            else:
+                self.ortho.setdefault(ok, _id)
+
         self._choices = list(self.surface.keys())
+        # fuzzy candidates are also drawn by orthographic key, so heavy spelling
+        # variation ("ssoddaan", "butha") still reaches the token check below
+        self._ortho_choices: dict[str, str] = {}
+        for key in self._choices:
+            self._ortho_choices.setdefault(_ortho_key(key), key)
 
         # type -> [entity dict], for "daftar istilah" answers
         self.by_type: dict[str, list[dict]] = {}
@@ -137,8 +217,7 @@ class KbResolver:
         # 2. force_merge
         if raw in self.force_merge:
             _id = self.force_merge[raw]
-            if _id in self.by_id and _id not in self.excluded_ids:
-                return Match(_id, self.by_id[_id]["name"], "force_merge", 100.0, self.by_id[_id])
+            return Match(_id, self.by_id[_id]["name"], "force_merge", 100.0, self.by_id[_id])
 
         # 3. modifier-strip retry (never for keep_distinct surface forms). Retries
         # through the same two tiers as steps 1-2 above, not just the alias table --
@@ -154,28 +233,48 @@ class KbResolver:
                     return Match(_id, self.by_id[_id]["name"], "strip", 100.0, self.by_id[_id])
                 if stripped in self.force_merge:
                     _id = self.force_merge[stripped]
-                    if _id in self.by_id and _id not in self.excluded_ids:
-                        return Match(_id, self.by_id[_id]["name"], "strip", 100.0, self.by_id[_id])
+                    return Match(_id, self.by_id[_id]["name"], "strip", 100.0, self.by_id[_id])
 
-        # 4. fuzzy
-        # WRatio's partial-matching component can score a short, unrelated string
-        # deceptively high against a much longer candidate (e.g. "ether" vs "kain
-        # putih panjangnya puluhan meter" scores 80) -- plain fuzz.ratio compares
-        # the full strings and isn't fooled by that, so it's required too as a
-        # sanity floor. Checking only the single best WRatio hit (extractOne) can
-        # pick a longer phrase that beats the real match on WRatio's partial
-        # component yet fails the ratio floor, even when a shorter, correct
-        # candidate elsewhere in the list would have passed both -- e.g. "tirte"
-        # -> "tirta yadnya pranawa" wins WRatio=80 over plain "tirtha"'s
-        # WRatio=73, but only "tirtha" clears the ratio floor. Check the top few
-        # WRatio candidates and take the first that also clears the ratio floor,
-        # instead of only ever checking the single top-ranked one.
-        for cand, score, _ in process.extract(raw, self._choices, scorer=fuzz.WRatio, limit=5):
-            if score >= fuzzy_threshold and fuzz.ratio(raw, cand) >= 60:
-                _id = self.surface[cand]
-                return Match(_id, self.by_id[_id]["name"], "fuzzy", float(score), self.by_id[_id])
+        # 4. orthographic key (spelling variants: butha/bhuta, tirta/tirtha, ...),
+        # on the raw form and on the modifier-stripped form.
+        for form in (raw, self._strip_modifiers(raw)):
+            _id = self.ortho.get(_ortho_key(form))
+            if _id:
+                return Match(_id, self.by_id[_id]["name"], "ortho", 100.0, self.by_id[_id])
+
+        # 5. fuzzy, token-checked. A string-level score alone produced confident
+        # wrong answers (2026-09-24): "surya" -> sukra, "sangaskara" ->
+        # putru_sangaskara, "bhuta kala" -> bhuta, "panca budhindrya" ->
+        # panca_datu, "upacara palebon" -> nyiramang_layon, "ida sang hyang widhi
+        # wasa" -> ida_sang_sadaka. A candidate now only counts when every
+        # content token on each side has a close counterpart on the other side
+        # (typos and spelling variants still pass: "perhiasasn", "budhaindrya",
+        # "sredaning citra", "sodaan") -- an extra or a missing word is a
+        # different thing, not a typo.
+        cands = {c: s for c, s, _ in process.extract(raw, self._choices, scorer=fuzz.WRatio, limit=10)}
+        for okey, s, _ in process.extract(_ortho_key(raw), list(self._ortho_choices), scorer=fuzz.WRatio, limit=10):
+            c = self._ortho_choices[okey]
+            cands[c] = max(cands.get(c, 0), s)
+        best = None
+        for cand, score in cands.items():
+            if score < fuzzy_threshold - 8 or not self._tokens_cover(raw, cand):
+                continue
+            if best is None or score > best[1]:
+                best = (cand, score)
+        if best:
+            _id = self.surface[best[0]]
+            return Match(_id, self.by_id[_id]["name"], "fuzzy", float(best[1]), self.by_id[_id])
 
         return None
+
+    def _tokens_cover(self, query: str, cand: str) -> bool:
+        skip = set(self.strip_modifiers) | _HEAD_WORDS
+        q = [t for t in re.split(r"[\s\-/]+", query) if t and t not in skip | _ASPECT_WORDS]
+        c = [t for t in re.split(r"[\s\-/]+", cand) if t and t not in skip]
+        if not q or not c:
+            return False
+        return (all(any(_token_match(a, b) for b in c) for a in q)
+                and all(any(_token_match(b, a) for a in q) for b in c))
 
     def resolve_many(self, text: str, limit: int = 2, fuzzy_threshold: int = 80) -> list[Match]:
         """Resolve every distinct term mentioned in a phrase (for 'beda X dan Y').

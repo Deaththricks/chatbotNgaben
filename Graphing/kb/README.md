@@ -22,6 +22,7 @@ read with build scripts, tuning config, and generated artifacts all mixed togeth
 ```
 python ../neo4/normalize.py     # row-level cleanup  -> relation_results_ngaben.normalized.json
 python build_kb.py              # this folder        -> output/ (see Files below)
+cd curation && ..\..\..\Chatbot\rasa_bot\Scripts\python.exe kb_lint.py   # quality gate: must exit 0 (see CLAUDE.md "Quality gates")
 ```
 
 `build_kb.py` reads (never writes) `../neo4/relation_results_ngaben.normalized.json`,

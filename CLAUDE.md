@@ -62,7 +62,7 @@ Requires `NEO4J_URI`/`NEO4J_USER`/`NEO4J_PASSWORD` in `.env` (repo root; copy fr
   real answers: `ollama pull qwen2.5`, then `ollama serve` (or leave the desktop app running).
   If Ollama is unreachable, calls are caught and the bot degrades to a plain templated answer
   (or a fixed "gangguan teknis" message on the free-form fallback path) instead of crashing —
-  see `requirements.txt`'s comment and `how_it_works.md` §3.5 for exactly where each guard is.
+  see `requirements.txt`'s comment and `how_it_works.md` §3.10 for exactly where each guard is.
 - **Broad questions can 503 with `Service Unavailable` instead of answering.** A question that
   resolves to a hub entity with several `TERMASUK_JENIS` children (e.g. "eteh-eteh sawa dan semua
   hal yang membentuknya") pulls each child's own definition into the synthesis context
@@ -107,36 +107,76 @@ user utterance (Indonesian)
        Step 1: Qwen2.5 via Ollama (ChatOllama) turns the utterance + recent turns +
                entity_history into a comma-separated term list (coreference/ellipsis-aware,
                does NOT guess spelling)
-       Step 2: kb_resolver.py resolves each term to a canonical KB id
-       Step 3: Cypher query against Neo4j (non-LOW-confidence edges) + kb_content.py
-               (facts.jsonl / passages.jsonl glossary+faq) enrichment -- for a
-               _CHILD_DEF_PREDICATES relationship (TERMASUK_JENIS is-a/broader,
-               or BERUPA/TERDIRI_DARI "consists of" -- same "parent decomposes
-               into standalone child concepts" shape) specifically, each child's
-               own definition is pulled in too (capped at 8), so a hub concept like
-               "pancamahabutha" or "eteh-eteh sawa" grounds what each of its
-               elements actually means instead of the LLM guessing from
-               background knowledge
-       Step 4: Qwen2.5 synthesizes the final Indonesian answer from that JSON context
-               (synth_sys_prompt forbids inventing facts/examples not in the context) ->
-               a deterministic Python-built answer (_deterministic_answer) overrides the
-               LLM's output if it detects any of: a refusal signal, a fabrication signal
-               (answer vocabulary not traceable to the given context -- see
-               _has_fabrication_signal), an undefined-target elaboration (a sentence
-               describing a relationship target that has no target_definition of its
-               own -- e.g. inventing "banten teben adalah keranjang besar..." when
-               banten_teben was only ever a bare relationship target in that turn's
-               context -- see _has_undefined_target_elaboration; lower per-sentence
-               threshold than the whole-answer fabrication check, since a short
-               invented clause gets diluted below that check's 0.75 by the rest of an
-               otherwise-grounded answer), or a near-verbatim repeat of the bot's own
-               immediately preceding turn (_is_near_repeat -- appends a note that no
-               further detail is recorded instead of silently re-serving the same
-               paragraph under a new phrasing of the question). All four guards exist
-               because a small local model doesn't reliably follow the prompt's
-               "don't invent"/"don't refuse grounded content"/"say so if you don't
-               have this specific detail" rules on its own -- see conersation.md for
-               the transcripts that motivated each one
+       Step 2: kb_resolver.py resolves each term to a canonical KB id, after two
+               deterministic backstops on the LLM's term: _peel_aspect_words ("warna
+               besi" -> "besi"; not in strip_modifiers, which build_kb.py shares) and
+               _widen_to_named_term (user said "kawangen jeriji", history-biased LLM
+               returned "kawangen" -> use the longer exact name the user typed). When
+               the message itself names 2+ terms (resolve_many), a term the LLM carried
+               over from the history is dropped -- "apa itu sawa dan apa hubungannya
+               dengan jenazah" after a turn about bade came back with bade (2026-09-25)
+       Step 3: Cypher query against Neo4j (non-LOW-confidence edges, WITH direction) +
+               kb_content.py enrichment. Each edge is handed to the LLM as a directed
+               Indonesian sentence (relation_phrases.json templates via KbContent.render),
+               never as a bare {relation, target} pair -- the undirected pair let the
+               model invert edges ("canang sari dilengkapi soda"). Kind/part/member
+               edges (_CHILD_DEF_PREDICATES) are ordered first (cap 40 edges) and the
+               child's own definition is attached -- only when the other node IS the
+               child. The cap of 24 child definitions per prompt (_CHILD_DEF_CAP) is
+               applied in _llm_context AFTER aspect filtering: capping earlier, in
+               Cypher order, left asti wedana undefined once ngaben gained its 8 stages
+               and the model merged it into sawa wedana (2026-09-25).
+               A question aspect ("sebutan lain" / "jenis" / "tahapan")
+               narrows the edges to the matching kinds (_ASPECT_PREDICATES); a word-
+               meaning question ("arti kata", "kata dasar") gets definitions only, plus
+               the compound formed by the resolved words. A relation question about 2+
+               terms ("apa hubungan X dengan Y", "X tanpa Y", _RELATION_Q_RE) keeps only
+               the edges that link them -- or, if none do, the edges to a node they
+               share; if nothing at all links them, every edge stays (_link_filter) --
+               plus prompt rule 18, only when it did filter: with every edge of both
+               terms the model padded the answer ("sawa ... disertai kakawin ... di
+               galar", 2026-09-25).
+               Text-only attributes (LITERAL facts: "besi berwarna hitam", "kawangen
+               melambangkan ...") are NOT in the graph query; KbContent reads them from
+               entities.json and they are added as `facts` ONLY when the question asks
+               their aspect (makna / letak / waktu / pelaku / ciri / fungsi / cara,
+               _ASPECT_FAMILIES -> kb_content.PREDICATE_FAMILIES). A plain "apa itu X"
+               never gets them (2026-09-24).
+       Step 4: Qwen2.5 synthesizes the final Indonesian answer. Deterministic guards:
+               refusal signal and fabrication signal -> _deterministic_answer
+               (DEFINITIONS ONLY since 2026-09-24 -- it used to dump every fact, which is
+               where "pitra berwujud sekah kangsen. pitra menerima ..." came from); a
+               named set (Panca/Tri/Catur... -- _NUMERAL_SET_RE) gets its missing members
+               appended; "X adalah sebutan lain untuk Y" when asked by a real synonym
+               (also when the extraction LLM misspelled it and it resolved by
+               orthographic key -- "nggerorasin"; X is the user's own spelling,
+               _user_spelling) -- and the synthesis prompt's question is rewritten to
+               the canonical name
+               (asked "lingga sarira", the model wrote "lingga sarira termasuk salah satu
+               jenis suksma sarira" even when told they are one thing, 2026-09-25);
+               the near-repeat note only for a follow-up that doesn't re-name the term.
+               Question-shape rules 12-18 are appended only for their shape (word
+               meaning, composition, aspect facts, stages, types, comparison,
+               relation). A plain "apa itu X" has no rule for how much to add after
+               the definition, so Qwen flips between "definition + a few stages / other
+               names" and a bare definition when a hub's edges change ("apa itu
+               ngaben" after batch10). Two prompt rules for a closing summary were
+               tried 2026-09-25 and reverted: the model still left ngaben bare and
+               invented structure elsewhere ("besi: jenisnya perak, tembaga, emas"). Phrases that refer to the prompt itself ("yang terdapat dalam
+               konteks tersebut", "seperti yang tercantum dalam konteks") are cut from
+               every answer by _strip_meta_phrases -- rule 6 alone did not stop the 7B
+               model (2026-09-25).
+               KNOWN OPEN (2026-09-25): Qwen 7B still misreads stage-list questions
+               whose context is correct -- "tahapan atma wedana" lists its types,
+               "tahapan ngaben" numbers mlaspas kajang / gives nguyeg an invented
+               ordinal. Proposed fix (building "apa saja jenis/tahapan X" answers from
+               the graph without the LLM) is parked until the project owner's senior
+               decides. ("ngangsen menggantikan ngerorasin" was a KB fault, not the
+               model's: the corpus uses Ngroras/Ngerorasin as Atma Wedana's everyday
+               name, and the KB had them as two nodes -- merged 2026-09-25.)
+               _has_undefined_target_elaboration was REMOVED 2026-09-24: the refusal log
+               showed it discarding ~30 correct answers; its premise (undefined edge
+               targets) is closed at the KB level by kb_lint's closure check instead.
   -> response
 ```
 
@@ -151,15 +191,18 @@ Key modules in `Chatbot/bot/`:
   There is no longer one action class per intent family (definisi/klasifikasi/atribut/etc.) —
   a single LLM-driven pipeline now handles all question shapes.
 - `kb_resolver.py` — resolution order: exact name/alias -> `entity_resolution.json` force_merge ->
-  modifier-strip retry (itself retrying both the alias table and force_merge) -> rapidfuzz
-  (WRatio, threshold ~70-80). Mirrors `Graphing/kb/methodology.md` but done Python-side because
-  the graph doesn't store aliases queryably.
-- `kb_content.py` — read-only loader for `facts.jsonl` / `passages.jsonl` / `relation_phrases.json`;
-  the graph stays authoritative for structure, this module only supplies phrasing and the two
-  hand-written passage kinds (`faq`, `glossary`). Its `PREDICATE_FAMILIES` /
-  `facts_in_family` / `render_attr` / `faq_search`, and `kb_resolver.py`'s `list_type` / `search`,
-  are currently unused by `actions.py` (dormant, not deleted — a more targeted per-intent
-  breakdown could reuse them later).
+  modifier-strip retry -> orthographic key (bh/b, th/t, dh/d, ç/s, doubled letters, spaces:
+  butha=bhuta, tirta=tirtha, citta=cita) -> token-checked fuzzy (every content token on each side
+  must have a 1-edit / ratio>=88 counterpart; an extra or missing word is a different thing --
+  this killed surya->sukra, sangaskara->putru_sangaskara, bhuta kala->bhuta, pandawa->pranawa).
+  **force_merge values are canonical entity NAMES** (build_kb.py's contract); the bot used to
+  treat them as ids, which silently broke 43 of 93 merges until 2026-09-24.
+- `kb_content.py` — read-only loader for `facts.jsonl` / `passages.jsonl` / `relation_phrases.json`
+  and the entities' text-only `attributes`; the graph stays authoritative for structure, this
+  module supplies phrasing, the two hand-written passage kinds (`faq`, `glossary`), and
+  `attribute_sentences()`. `PREDICATE_FAMILIES` (question aspect -> edge/attribute predicates) is
+  shared by `actions.py` (aspect filtering) and `kb_lint.py` (check 11). `facts_in_family` /
+  `faq_search`, and `kb_resolver.py`'s `list_type` / `search`, are unused (dormant, not deleted).
 - `KB_DIR` (`.env`, default `../../Graphing/kb`) points both `kb_resolver.py` and `kb_content.py`
   at the same KB build — keep it in sync with whatever `Graphing/kb/build_kb.py` last produced.
 
@@ -167,6 +210,54 @@ Key modules in `Chatbot/bot/`:
 bot and `facts.jsonl` only use non-LOW edges (`WHERE r.confidence <> 'LOW'` / already filtered at
 KB-build time) — LOW-confidence relation extraction is ~25% wrong and sits in
 `Graphing/kb/output/review_queue.jsonl` for human review, not surfaced to users.
+
+## Quality gates — run these before calling any KB/bot change done (2026-09-24)
+
+Past passes fixed the examples the user reported and proved "done" with counts that could not
+see the rest of the bug class, so the same classes kept coming back (see `conersation.md`). Two
+gates now make "done" mean the class is closed:
+
+- **`Graphing/kb/curation/kb_lint.py`** (run from `Graphing/kb/curation/` with the bot venv:
+  `..\..\..\Chatbot\rasa_bot\Scripts\python.exe kb_lint.py`) — exit 0 required. Blocking checks:
+  name hygiene, definitions (none missing, no one-clause fragments), isolated nodes, **term
+  closure** (every capitalized term inside any definition resolves non-fuzzily -- "every term
+  the bot can say, it can explain"), numeral-set groups have members, every TERMASUK_JENIS pair
+  is plain "<parent> <qualifier>" or reviewed, no self-loops, **composition** (what a node is
+  made of / contains / comes with is an edge to a defined node -- never only a LITERAL text
+  property, which the bot cannot see: soda's nasi/minuman/buah-buahan/jajan sat there unseen),
+  **attributes** (check 11: every LITERAL attribute's predicate is in a
+  `kb_content.PREDICATE_FAMILIES` aspect, so the bot can show it, and its value is not junk --
+  no deictic "tersebut/itu/ini/beliau/nya", no vague head "beberapa/berbagai/tertentu", no
+  one-word value after MEMILIKI/MEMPEROLEH/...), **stages** (check 12: BAGIAN_DARI into a
+  ritual/stage node means "a stage of" to the bot, so a tool or building there is
+  DIGUNAKAN_DALAM -- panguryagan was listed as a Ngaben stage), **genus** (check 13: the term a
+  definition files its entity under -- "X adalah [nama sebuah] <genus> ..." -- is linked to it
+  when that term is itself an entity; yama purwana tattwa "adalah nama sebuah lontar" had no
+  link to lontar, and 54 more like it were linked or waived 2026-09-25), force_merge targets are real
+  names, `exclude_from_resolution` empty (trash gets fixed, never hidden). Judgment calls live in
+  `tuning/lint_waivers.json` with a reason each -- add there, never re-litigate.
+- **`Chatbot/bot/regression/run_regression.py`** — `--tier A` (resolver, plus a fallback check:
+  no turn's forbidden pattern may match the definitions the deterministic fallback would say --
+  "Satu dua perhiasan pusaka" only surfaced when Ollama was down; seconds) and
+  `--tier B` (real `ActionGraphRAG` vs live Neo4j + Ollama, ~4 min, writes `transcript.md`).
+  Check `curl http://127.0.0.1:11434/api/tags` first: a Tier B run with Ollama down prints
+  `WinError 10061` per turn and its results mean nothing. (`regression/` is gitignored.)
+  **Every question the user reports goes into `regression/questions.json`.** Keyword checks are
+  weak: read the whole Tier B transcript before reporting anything as fixed.
+
+Definitions written from web sources (corpus silent) are tagged in
+`tuning/definition_sources.json` and show up as `definition_source: "glossary (web: ...)"`.
+Edits to the rows file must not reuse a (subject, relation, object) already present as a LITERAL
+row -- that silently keeps the new ENTITY edge out (build_kb.py's `fix:` now redirects entity
+creation too, so a fixed triple no longer mints a phantom node from its old wording, and since
+2026-09-25 a LITERAL row's attribute predicate/value as well -- a fixed "ngroras BERASAL_DARI kata
+roras" used to stay an attribute "atma wedana berasal dari kata roras").
+Web-sourced definitions are listed in `tuning/definition_sources.json`; the user approved the
+first 25 on 2026-09-25 (its `_approved` note) -- entries added later still need their review.
+The reverse also bites: a `review_decisions.json` key (`sentence_id|subject|object`) has no
+object_type, so `reject`ing a LITERAL row also drops an ENTITY row sharing that key (this once
+removed `ngerorasin BERASAL_DARI roras`). Check the key against ENTITY rows before rejecting,
+and diff `relations.jsonl` before/after any batch of rejects.
 
 ## Regenerating the KB (`Graphing/kb/`)
 

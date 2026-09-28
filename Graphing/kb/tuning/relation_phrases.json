@@ -3,6 +3,7 @@
 
   "ADALAH":               { "template": "{s} adalah {o}",                    "ok_prep": [] },
   "BAGIAN_DARI":          { "template": "{s} adalah bagian dari {o}",        "ok_prep": ["dari", "bagian"] },
+  "TERMASUK_JENIS":       { "template": "{s} termasuk salah satu jenis {o}", "ok_prep": [] },
   "BERADA_DI":            { "template": "{s} berada di {o}",                  "ok_prep": ["di", "ke", "pada", "dalam"] },
   "BERARTI":              { "template": "{s} berarti {o}",                    "ok_prep": [] },
   "BERTUJUAN_UNTUK":      { "template": "{s} bertujuan untuk {o}",           "ok_prep": ["untuk"] },
@@ -63,5 +64,15 @@
   "DIIKAT_DENGAN":        { "template": "{s} diikat dengan {o}",             "ok_prep": ["dengan"] },
   "DIGULUNG_DENGAN":      { "template": "{s} digulung dengan {o}",           "ok_prep": ["dengan"] },
   "DISIRAM_DENGAN":       { "template": "{s} disiram dengan {o}",            "ok_prep": ["dengan"] },
-  "DIALASI_DENGAN":       { "template": "{s} dialasi dengan {o}",            "ok_prep": ["dengan"] }
+  "DIALASI_DENGAN":       { "template": "{s} dialasi dengan {o}",            "ok_prep": ["dengan"] },
+
+  "_comment_attributes": "text-only attribute predicates whose mechanical '{s} <pred words> {o}' reading is ungrammatical; kb_content.attribute_sentences renders them for the bot",
+  "BERARTI_HARFIAH":      { "template": "{s} secara harfiah berarti {o}",   "ok_prep": [] },
+  "SYARAT":               { "template": "syarat {s}: {o}",                   "ok_prep": [] },
+  "CONTOH":               { "template": "contoh {s}: {o}",                   "ok_prep": [] },
+  "MEMILIKI_TINGKAT":     { "template": "{s} bertingkat {o}",                "ok_prep": [] },
+  "MENINGKAT_STATUS":     { "template": "{s} meningkat status dan kesuciannya {o}", "ok_prep": [] },
+  "DIHIAS_SEOLAH_OLAH":   { "template": "{s} dihias seolah-olah {o}",        "ok_prep": [] },
+  "SEBUTAN_HALUS_UNTUK":  { "template": "{s} adalah sebutan halus untuk {o}", "ok_prep": ["untuk"] },
+  "SEBUTAN_BERASAL_DARI": { "template": "salah satu sebutan {s} berasal dari {o}", "ok_prep": ["dari"] }
 }

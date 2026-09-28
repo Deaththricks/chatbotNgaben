@@ -1,11 +1,13 @@
 """Read-only access to the richer KB layers that are *not* in the graph in a
 convenient shape: pre-rendered fact sentences, curated FAQ / glossary passages,
-the predicate -> Indonesian sentence templates, and predicate families used to
-answer targeted questions (fungsi / bahan / lokasi / waktu / pelaku / simbol).
+text-only entity attributes, the predicate -> Indonesian sentence templates, and
+the predicate families that say which question aspect (makna / letak / waktu /
+fungsi / ...) each edge or attribute answers.
 
 The Neo4j graph stays the source of truth for structure (definition, type,
-broader spine, attributes, relation edges). This module only adds nicer phrasing
-and the two hand-written passage kinds (`faq`, `glossary`).
+broader spine, relation edges). This module adds phrasing, the two hand-written
+passage kinds (`faq`, `glossary`), and the attributes (LITERAL facts) read from
+entities.json, which the graph query does not return.
 
 Files live in KB_DIR (.env) or ../../Graphing/kb by default -- same as kb_resolver.
 """
@@ -27,42 +29,85 @@ _KB_DIR = (_BOT_DIR / os.getenv("KB_DIR", "../../Graphing/kb")).resolve()
 
 _CONF_RANK = {"HIGH": 0, "MED": 1, "LOW": 2}
 
-# predicate -> which targeted question it answers. A predicate may appear twice.
+# Question aspect -> the predicates (edges AND text-only attributes) that answer it.
+# A predicate may sit in more than one family. actions.py maps question wording to a
+# family and shows only that family's edges/attributes; kb_lint (check 11) requires
+# every attribute predicate to be in some family -- an unmapped one could never be
+# shown. "cara" (how / what happens) is the broadest and is used only when no other
+# aspect matches; "asal_kata" serves word-meaning questions.
 PREDICATE_FAMILIES: Dict[str, set] = {
-    "fungsi": {
-        "DIPAKAI_UNTUK", "DIGUNAKAN_UNTUK", "DIGUNAKAN_PADA", "DIGUNAKAN_DALAM",
-        "BERFUNGSI_SEBAGAI", "BERPERAN_SEBAGAI", "BERTUJUAN_UNTUK", "BERTUJUAN_AGAR",
-        "BERTUJUAN_MENYUCIKAN", "DITUJUKAN_UNTUK", "MEWAJIBKAN", "MENGHILANGKAN",
-        "MENGHASILKAN", "MENJAMIN", "TIDAK_MENJAMIN", "DIMOHON", "MEMOHON",
+    "sebutan_lain": {"SAMA_DENGAN", "DIKENAL_SEBAGAI", "ADALAH", "SEBUTAN_HALUS_UNTUK"},
+    "jenis": {"TERMASUK_JENIS", "CONTOH"},
+    "tahapan": {
+        "BAGIAN_DARI", "SEBELUM", "SETELAH", "DILAKUKAN_SEBELUM", "DILAKUKAN_SETELAH",
+        "DILAKUKAN_MENJELANG", "DIIKUTI_OLEH",
     },
-    "bahan": {
-        "TERBUAT_DARI", "TERDIRI_DARI", "BERUPA", "BERWUJUD", "BERBENTUK", "BERISI",
-        "DIISI_DENGAN", "BERUNSUR", "DIBUNGKUS_DENGAN", "DIIKAT_DENGAN",
-        "DIGULUNG_DENGAN", "DIALASI_DENGAN", "DIALASI", "MEMAKAI", "MENGGUNAKAN",
-        "DIBERI", "DILENGKAPI", "DISERTAI", "MELIPUTI", "BERASAL_DARI", "DIAMBIL_DARI",
+    "komposisi": {
+        "BERUPA", "TERDIRI_DARI", "BERISI", "DIISI_DENGAN", "DIISI", "BERUNSUR", "MELIPUTI",
+        "DILENGKAPI", "TERBUAT_DARI", "DISERTAI", "DIBUNGKUS_DENGAN", "TERMASUK_JENIS",
+        "BAGIAN_DARI", "DISISIPI", "MENGANDUNG",
+    },
+    "asal_kata": {"BERASAL_DARI_KATA", "BERARTI_HARFIAH", "BERASAL_DARI", "SEBUTAN_BERASAL_DARI"},
+    "simbol": {
+        "MELAMBANGKAN", "MENYIMBOLKAN", "BERMAKNA", "BERARTI", "BERARTI_HARFIAH",
+        "BERAKAR_PADA", "BERDASARKAN", "MENUNJUKKAN", "MEWUJUDKAN",
+        "MERUPAKAN_PERWUJUDAN_DARI", "DIPERLAKUKAN_SEPERTI", "DIANGGAP_SEBAGAI",
+        "BERSINAR_BAGAIKAN",
     },
     "lokasi": {
-        "DILETAKKAN_DI", "DILETAKKAN_PADA", "BERADA_DI", "DILAKUKAN_DI", "DIBUAT_DI",
-        "DIADAKAN_DI", "DIHANYUTKAN_KE", "DIBAWA_KE", "DINAIKKAN_KE", "DIPINDAHKAN_KE",
-        "DITURUNKAN_DI", "DIGANTUNGKAN_DI", "DITABURKAN_DI", "DIBARINGKAN_DI",
-        "BERSEMAYAM_DI", "BERSTANA_DI", "BERTAHTA", "MENUJU", "BERANGKAT_KE", "KEMBALI_KE",
-        "DITARUHKAN_DI_SAMPING", "DITEMPELKAN_DI", "DIPASANG_DI_ATAS",
+        "DILETAKKAN_DI", "DILETAKKAN_PADA", "DILETAKKAN_DI_ATAS", "DILETAKKAN_MELINTANG_DI",
+        "BERADA_DI", "DILAKUKAN_DI", "DIBUAT_DI", "DIADAKAN_DI", "DIHANYUTKAN_KE", "DIBAWA_KE",
+        "DINAIKKAN_KE", "DIPINDAHKAN_KE", "DIPINDAHKAN_DARI", "DITURUNKAN_DI",
+        "DIGANTUNGKAN_DI", "DITABURKAN_DI", "DIBARINGKAN_DI", "DIBARINGKAN_DENGAN",
+        "BERSEMAYAM_DI", "BERSTANA_DI", "BERTAHTA", "DISEMAYAMKAN_DI", "MENUJU",
+        "BERANGKAT_KE", "KEMBALI_KE", "DITARUHKAN_DI_SAMPING", "DITEMPELKAN_DI",
+        "DIPASANG_DI_ATAS", "DIPASANG_PADA", "BERALASKAN", "DIALASI", "DIALASI_DENGAN",
+        "DIMANDIKAN_DI", "DIMANDIKAN_DI_ATAS", "DIMASUKKAN_KE_DALAM", "DIMASUKKAN_MELALUI",
+        "DIMOHONKAN_DI", "DIPERCIKKAN_PADA", "DIUSUNG_KE", "TIDUR_DI", "BERSELONJOR_KE",
+        "MEMBELAKANGI", "DITELENTANGKAN_DI", "DITARUH_PADA_PEPAGA", "DAPAT_MEMASUKI",
     },
     "waktu": {
         "DILAKUKAN_SAAT", "DIGUNAKAN_SAAT", "DIBUAT_SAAT", "DISEMBURKAN_SAAT",
-        "MENJELANG", "SEBELUM", "SETELAH", "DILAKUKAN_SEBELUM", "DILAKUKAN_SETELAH",
-        "DIPERCIKKAN_SEBELUM", "TIDAK_BOLEH_DILAKUKAN_SAAT", "DILAKUKAN_MENJELANG",
+        "DINYALAKAN_SAAT", "MENJELANG", "SEBELUM", "SETELAH", "DILAKUKAN_SEBELUM",
+        "DILAKUKAN_SETELAH", "DIPERCIKKAN_SEBELUM", "TIDAK_BOLEH_DILAKUKAN_SAAT",
+        "DILAKUKAN_MENJELANG", "DILAKSANAKAN", "DILAKUKAN", "DIADAKAN_JIKA",
+        "DILAKUKAN_DALAM_HAL", "SYARAT", "DIGUNAKAN_SEBELUM", "DIBONGKAR_SETELAH",
+        "DIBUNGKUS_SETELAH",
     },
     "pelaku": {
         "DILAKUKAN_OLEH", "DIPIMPIN_OLEH", "DIMOHONKAN_OLEH", "DIJUNJUNG_OLEH",
         "DIBUAT_OLEH", "DIMANTRAI_OLEH", "DIBASMI_OLEH", "DIUSUNG", "DIJUNJUNG",
         "DIAJAK_BERKOMUNIKASI_OLEH", "MENDAPAT_PENGARUH_DARI", "DIMOHON_DARI",
-        "DIMOHONKAN_DARI",
+        "DIMOHONKAN_DARI", "DIAMBIL_OLEH", "DIPANGKU_OLEH", "DILAKUKAN_ANTARA",
     },
-    "simbol": {
-        "MELAMBANGKAN", "MENYIMBOLKAN", "MENUNJUKKAN", "BERARTI", "BERMAKNA",
-        "DIPERLAKUKAN_SEPERTI", "DIKENAL_SEBAGAI", "SAMA_DENGAN", "MENJADI",
-        "BERUBAH_MENJADI", "MERUPAKAN_PERUBAHAN_DARI", "LAHIR_DALAM_WUJUD",
+    "fungsi": {
+        "DIPAKAI_UNTUK", "DIGUNAKAN_UNTUK", "DIGUNAKAN_PADA", "DIGUNAKAN_DALAM",
+        "BERFUNGSI_SEBAGAI", "BERFUNGSI_UNTUK", "BERPERAN_SEBAGAI", "BERTUJUAN_UNTUK",
+        "BERTUJUAN_AGAR", "BERTUJUAN_POKOK", "BERTUJUAN_MENYUCIKAN", "DITUJUKAN_UNTUK",
+        "MEWAJIBKAN", "MENGHILANGKAN", "MENGHASILKAN", "MENJAMIN", "TIDAK_MENJAMIN",
+        "DIMOHON", "MEMOHON", "DIGUNAKAN_DENGAN_HARAPAN", "MENENTUKAN", "MEMPENGARUHI",
+        "MENJAGA", "MEMUPUK", "MEMUNGKINKAN", "MENGAKIBATKAN", "DIJATUHKAN_KARENA",
+        "BERTUGAS_MENGANGKUT", "DIPERSEMBAHKAN_KEPADA", "MELEBUR",
+        "DIPAKAI_UNTUK_MEMOHON_RESTU", "MEMBERIKAN",
+    },
+    "ciri": {
+        "BERWARNA", "MEMILIKI_TINGKAT", "BERUKURAN_PANJANG", "SEPANJANG", "BERBENTUK",
+        "DIBUAT_BERBENTUK", "BERWUJUD", "MEMILIKI", "DIGUNAKAN_SEBANYAK", "MEMPERTAHANKAN",
+        "TIDAK_MENGGUNAKAN", "BERVARIASI_DALAM", "SEBANDING_DENGAN", "MENYEBARKAN",
+        "HARUS_DIRASAKAN_SEBAGAI", "DISESUAIKAN_DENGAN", "MENJADI_STANDAR", "MEMBERIKAN",
+    },
+    "cara": {
+        "DILAKUKAN_DENGAN", "DIIKAT", "DIIKAT_DENGAN", "DIBUNGKUS", "DIGULUNG_DENGAN",
+        "DIBERI", "DIPAKAIKAN", "DITUTUP_DENGAN", "DIHIAS_SEOLAH_OLAH", "HARUS_DIBIARKAN",
+        "MEMAKAI", "DIBERSIHKAN_DARI", "DIBERSIHKAN_DENGAN", "DIGANTI_DENGAN",
+        "DITARUH_DENGAN", "DITARUH_PADA_PEPAGA", "DIBARINGKAN_DENGAN", "DIMANTRAI",
+        "DIPULUNG", "DISUCIKAN_DENGAN", "DISIRAM_DENGAN", "DIKERINGKAN_DENGAN",
+        "DIKELILINGI_OLEH", "DIBAWA_MENGHADAP", "MELAKUKAN", "DIJADIKAN", "DIBONGKAR",
+        "DIAMBIL_DARI", "MENGELUPASI", "MENGGUNAKAN", "DITERIMA_SEBAGAI", "BERUBAH_WUJUD",
+        "BERUBAH_MENJADI", "MENJADI", "MENINGKAT_STATUS", "NAIK_KEDUDUKAN_DARI",
+        "NAIK_KEDUDUKAN_MENJADI", "MENINGKAT_KEDUDUKAN_MENJADI", "MUSNAH_MELALUI",
+        "DIPERCIKKAN", "MEMANAH", "MENEMPATKAN_DIRI", "MENYERAHKAN", "DILETAKKAN_DENGAN",
+        "DILINDUNGI_DENGAN", "DICABUT_DENGAN", "DIANGGAP_SEBAGAI", "DIPERLAKUKAN_SEPERTI",
     },
 }
 
@@ -93,6 +138,19 @@ class KbContent:
             self.facts_by_subj.setdefault(f["subject_id"], []).append(f)
             self.facts_by_obj.setdefault(f["object_id"], []).append(f)
 
+        # canonical definitions as build_kb.py resolved them (glossary, or a curated
+        # row). best_definition() used to consult only the glossary passages, so a
+        # child node whose definition came from a curated row (e.g. sawa_prateka)
+        # reached the LLM with no target_definition at all.
+        ents = json.loads((kb_dir / "output" / "entities.json").read_text(encoding="utf-8"))
+        self.entity_def: Dict[str, str] = {e["id"]: e["definition"] for e in ents if e.get("definition")}
+        self.entity_name: Dict[str, str] = {e["id"]: e["name"] for e in ents}
+        # text-only facts (LITERAL rows): {id: {PREDICATE: [value, ...]}}
+        self.attributes: Dict[str, Dict[str, List[str]]] = {
+            e["id"]: {p: [a["value"] for a in vals] for p, vals in e["attributes"].items()}
+            for e in ents if e.get("attributes")
+        }
+
         self.faq_by_ent: Dict[str, List[dict]] = {}
         self.glossary_by_ent: Dict[str, List[dict]] = {}
         self.all_faq: List[dict] = []
@@ -116,6 +174,13 @@ class KbContent:
 
     def render_attr(self, predicate: str, subj: str, value: str) -> str:
         return self.render(predicate, subj, value)
+
+    def attribute_sentences(self, entity_id: str, predicates: set) -> List[str]:
+        """The entity's text-only facts whose predicate is in `predicates`, as sentences."""
+        name = self.entity_name.get(entity_id, entity_id)
+        return [self.render_attr(p, name, v)
+                for p, vals in self.attributes.get(entity_id, {}).items() if p in predicates
+                for v in vals]
 
     # -- facts -------------------------------------------------------------
     def _dedup_sorted(self, rows: List[dict]) -> List[dict]:
@@ -181,7 +246,8 @@ class KbContent:
         return text.split(":", 1)[1].strip() if ":" in text else text.strip()
 
     def best_definition(self, entity_id: str, graph_definition: Optional[str] = None) -> Optional[str]:
-        return graph_definition or self.glossary_for(entity_id) or self.definition_facts(entity_id)
+        return (graph_definition or self.entity_def.get(entity_id) or self.glossary_for(entity_id)
+                or self.definition_facts(entity_id))
 
 
 _CONTENT: Optional[KbContent] = None
