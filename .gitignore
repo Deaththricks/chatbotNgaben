@@ -34,9 +34,9 @@ Thumbs.db
 # local-only scripts
 sync-to-shared-repo.ps1
 
-# senior's reference example
-Graphing/chatbot-budaya-bali/
-Graphing/chatbot-budaya-bali.zip
+# senior's reference example (tourism/POI bot NLU, DIET-annotated -- not our
+# architecture; RegexEntityExtractor + LLM extraction, see CLAUDE.md)
+Chatbot/bot/archive/
 
 # other subteams' bots (metatah/otonan/pawiwahan) -- sparse-checked-out reference
 # copy from https://github.com/mangeejjin/chatbot-project-madya-2026, own nested

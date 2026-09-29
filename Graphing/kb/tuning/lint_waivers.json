@@ -104,7 +104,8 @@
     "kimburu>dasa_mala": "one of the ten Dasa Mala (PHDI list; corpus names only the set)",
     "ngangsen>atma_wedana": "\"Ngroras jenis Kangsen\": an emergency Atma Wedana (corpus 2005, 2040)",
     "tirta_yadnya_pranawa>ngaben_svasta": "\"atiwa-tiwa yang tergolong dalam Ngaben Svasta adalah ... Tirta Yadnya Pranawa\" (corpus 150)",
-    "yama_purwana_tattwa>lontar": "\"Yama Purwana Tatwa adalah nama lontar ...\" (corpus 1096)"
+    "yama_purwana_tattwa>lontar": "\"Yama Purwana Tatwa adalah nama lontar ...\" (corpus 1096)",
+    "tirtha_betara_hyang>tirtha": "jenis tirtha (seperti tirtha kawitan), bukan bagian dari tirtha"
   },
   "closure": {
     "adharma": "general Hindu concept used once in galungan's definition; outside Ngaben terminology",
@@ -163,7 +164,8 @@
     "dewi parwati": "Siwa's consort named inside ardhanareswari's definition",
     "kliwon": "calendar day name (pancawara) inside tumpek's definition",
     "saniscara": "Balinese weekday name (Saturday) inside tumpek's definition",
-    "sabtu": "Indonesian weekday name (Saturday)"
+    "sabtu": "Indonesian weekday name (Saturday)",
+    "dalem sagening": "nama raja Bali dalam sejarah aturan punia wajib (harga tirtha), bukan istilah ritual"
   },
   "genus": {
     "sawa>jenazah": "pending the user's sawa/jenazah decision (conersation.md item 8: report only)",
@@ -182,6 +184,11 @@
     "kain_bawah>kain_penutup": "generic 'kain penutup <body part>'; the kain penutup node is the one cloth used while moving the body to the pepaga",
     "lancingan_kajang>kain_putih": "variant of lancingan (its broader), which is linked to kain putih",
     "yeh_panembak>tirtha": "its definition says it is NOT tirtha; linked to air instead",
-    "daksina_tapakan>banten": "a kind of daksina (its broader), which is a kind of banten"
+    "daksina_tapakan>banten": "a kind of daksina (its broader), which is a kind of banten",
+    "coblong>wadah": "'wadah' di sini bermakna umum tempat/bejana, bukan wadah usungan jenazah (entitas wadah)",
+    "kojong>wadah": "'wadah' di sini bermakna umum tempat/bejana, bukan wadah usungan jenazah (entitas wadah)",
+    "macan>wadah": "'wadah' di sini bermakna umum tempat/bejana, bukan wadah usungan jenazah (entitas wadah)",
+    "slepa>wadah": "'wadah' di sini bermakna umum tempat/bejana, bukan wadah usungan jenazah (entitas wadah)",
+    "takir>wadah": "'wadah' di sini bermakna umum tempat/bejana, bukan wadah usungan jenazah (entitas wadah)"
   }
 }

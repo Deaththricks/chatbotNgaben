@@ -74,5 +74,11 @@
   "MENINGKAT_STATUS":     { "template": "{s} meningkat status dan kesuciannya {o}", "ok_prep": [] },
   "DIHIAS_SEOLAH_OLAH":   { "template": "{s} dihias seolah-olah {o}",        "ok_prep": [] },
   "SEBUTAN_HALUS_UNTUK":  { "template": "{s} adalah sebutan halus untuk {o}", "ok_prep": ["untuk"] },
-  "SEBUTAN_BERASAL_DARI": { "template": "salah satu sebutan {s} berasal dari {o}", "ok_prep": ["dari"] }
+  "SEBUTAN_BERASAL_DARI": { "template": "salah satu sebutan {s} berasal dari {o}", "ok_prep": ["dari"] },
+  "DIGUNAKAN_DALAM": { "template": "{s} digunakan dalam {o}", "ok_prep": ["dalam", "pada"] },
+  "DIPERLUKAN_UNTUK_MEMBUAT": { "template": "{s} diperlukan untuk membuat {o}", "ok_prep": [] },
+  "MENENTUKAN_WAKTU": { "template": "{s} menentukan waktu pelaksanaan {o}", "ok_prep": [] },
+  "BERLAKU_UNTUK": { "template": "{s} berlaku untuk {o}", "ok_prep": ["untuk"] },
+  "DIHINDARI_UNTUK": { "template": "{s} dihindari untuk {o}", "ok_prep": ["untuk"] },
+  "DIJADIKAN": { "template": "{s} dijadikan {o}", "ok_prep": [] }
 }

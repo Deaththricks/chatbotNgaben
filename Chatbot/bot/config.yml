@@ -11,10 +11,10 @@ pipeline:
     analyzer: char_wb
     min_ngram: 1
     max_ngram: 4
-  - name: RegexEntityExtractor
-    case_sensitive: false
-    use_lookup_tables: true
-    use_regexes: true
+  # RegexEntityExtractor removed 2026-09-29: with no entity annotated in nlu.yml it had
+  # no patterns ("has not been trained properly yet" warning on every run) and never
+  # extracted anything -- terms come from the LLM + kb_resolver in actions.py.
+  # lookup_istilah.yml still feeds RegexFeaturizer above.
   - name: DIETClassifier
     epochs: 160
     constrain_similarities: true

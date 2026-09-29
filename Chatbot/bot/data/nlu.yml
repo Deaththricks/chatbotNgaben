@@ -6,19 +6,27 @@ nlu:
     - hai
     - om swastiastu
     - selamat pagi
+    - selamat siang
+    - permisi
 - intent: pamit
   examples: |
     - dah
     - sampai jumpa
     - terima kasih
     - matur suksma
+    - makasih ya
+    - sudah cukup, terima kasih
 - intent: bot_challenge
   examples: |
     - kamu bot ya?
     - apakah saya bicara dengan robot?
+    - kamu manusia atau mesin?
 - intent: out_of_scope
+  # Off-topic only. Question words ("bagaimana", "berapa", "kapan") are in both
+  # intents on purpose: with every "bagaimana ..." example here and none in
+  # ask_ngaben_detail, "bagaimana proses ngaben" was classified out_of_scope
+  # (conersation.md 2026-09-29).
   examples: |
-    - berapa harga upacara ngaben
     - cuaca hari ini
     - resep lawar bali
     - siapa presiden indonesia
@@ -34,6 +42,12 @@ nlu:
     - siapa pemenang piala dunia terakhir
     - rekomendasikan film bagus
     - berapa jarak jakarta ke bali
+    - kapan pertandingan sepak bola berikutnya
+    - bagaimana cara belajar bahasa inggris
+    - rekomendasi hotel murah di kuta
+    - berapa kurs dolar hari ini
+    - bagaimana cara install windows
+    - apa hasil pemilu kemarin
 - intent: ask_ngaben_detail
   examples: |
     - apa itu ngaben
@@ -65,3 +79,35 @@ nlu:
     - apa itu bali dataran
     - apa itu upacara ngerorasin
     - apa itu sasih kaenem
+    - bagaimana proses ngaben
+    - bagaimana alur prosesi ngaben pada umumnya
+    - bagaimana cara nyiramang layon
+    - bagaimana tata cara nganyut
+    - bagaimana urutan upacara atma wedana
+    - bagaimana jenazah dibungkus saat pangringkes
+    - bagaimana cara membuat tirtha pangentas
+    - bagaimana hubungan sasih dengan ngaben
+    - berapa tingkat bade untuk raja
+    - berapa harga upacara ngaben
+    - kenapa tirtha ada harganya
+    - berapa uang kepeng dalam gegaleng
+    - kapan ngaben boleh dilaksanakan
+    - hari baik apa yang cocok untuk ngaben
+    - sasih apa yang baik untuk pitra yadnya
+    - kenapa sasih malamasa harus dihindari
+    - apakah bade boleh dipakai masyarakat umum
+    - apakah ngaben harus dilakukan dalam tujuh hari
+    - apakah hal tersebut tidak boleh
+    - bolehkah ngaben dilakukan pada sasih kadasa
+    - apa saja sarana upacara yang digunakan untuk ngaben
+    - apa saja sarananya
+    - hanya itu sarananya?
+    - banten apa saja yang dipakai saat pabersihan mati
+    - sarana apa yang dipakai untuk nyiramang layon
+    - apa peran tirtha dalam pengabenan
+    - apa makna banten
+    - apa itu nglungah
+    - kenapa bade ada yang bertingkat 11
+    - apa itu wangsa dan apa hubungannya dengan ngaben
+    - jadi, kenapa tidak boleh?
+    - kenapa itu harus dihindari?

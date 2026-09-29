@@ -6,7 +6,7 @@
   "3142|kawangen|lima buah lembaran-lembaran daun sirih": "fix: kawangen jeriji | BERISI | lima buah lembaran-lembaran daun sirih",
   "258|tegteg|pura dalem": "fix: tegteg | BERADA_DI | pura dalem",
   "376|jenazah|setra": "fix: jenazah | BERADA_DI | setra",
-  "411|wuku kuningan|sasih kasa": "accept",
+  "411|wuku kuningan|sasih kasa": "reject",
   "559|sorohan banten|ajeng sulinggih": "accept",
   "631|banten panebusan|rateng saha salaran sejangkep": "fix: banten panebusan | MEMILIKI | rateng saha salaran sejangkep",
   "971|pitra yadnya|ngelungah": "fix: upacara ngelungah | TERMASUK_JENIS | ngaben",
@@ -84,7 +84,7 @@
   "271|tirta yadnya pranawa|atiwa-tiwa asti vedana": "reject",
   "_batchH_note": "Batch H (2026-09-21, conersation.md item #19, id 'badan'). S4212's raw sentence ('...sehingga abu abu kekototan musnah dan badan mulai bersinar bagaikan matahari') sits inside ngaben-merge-cleaned.txt's 'd. Tatacara Pembuatan Tirtha Pangentas' / Pengargan self-purification sequence (lines 4133-4159): steps a-g describe Ida Sang Sulinggih purifying his OWN body while preparing to create Tirtha Pangentas (explicitly named at line 4143 'dalam diri Sang Pandita (Ida Sang Sulinggih), karena badan akan dibersihkan' and again at line 4158 'didalam diri Ida Sang Sulinggih itu sendiri') -- not 'sang pitara' as a separate, unrelated Glosarium blurb for 'Amrethi Karana' (line 98) frames a different occurrence of the same named ritual step. The bare 'badan' the extractor grabbed as this triple's subject is genuinely the wrong referent (confirms the plan's hypothesis) -- but review_decisions.json's 'fix:' syntax has NO effect on a LITERAL-object row: build_kb.py's entity-aggregation loop (where LITERAL attributes like this one are built) only ever checks `decisions.get(key) == \"reject\"`, and never parses/applies a 'fix: subj | PRED | obj' string at all -- that parsing only exists in the later relation-scoring loop, which is skipped entirely for object_type LITERAL rows (see `if r[\"object_type\"] != \"ENTITY\": continue`). This is a real, previously-undocumented toolchain gap (same class as the Batch C+F 'no Glosarium-preference lever' finding) -- 'fix:' only works for ENTITY-typed edges. Worked around here the way Batch C/F's ENTITY-typed wrong-subject fixes did it structurally anyway: 'reject' the bad triple below, and add a fresh manual_addition row (out-of-band S900031, relation_results_ngaben.normalized.json) with the corrected subject 'sulinggih'.",
   "4212|badan|matahari": "reject",
-  "411|wuku kuningan|sasih kapitu": "accept",
+  "411|wuku kuningan|sasih kapitu": "reject",
   "788|dua kata|pitra": "reject",
   "788|dua kata|yadnya": "reject",
   "4065|tirtha pabersihan|samsam tidak seperti tirtha panglukatan": "reject",
@@ -347,5 +347,10 @@
   "246|ngerorasin|pura dalem": "reject",
   "2558|ngroras|kata roras": "fix: ngroras | SEBUTAN_BERASAL_DARI | kata roras",
   "2480|supta pranawa|pangabenan jenis pranawa": "fix: supta pranawa | TERMASUK_JENIS | pangabenan jenis pranawa",
-  "1931|recadana atau swasta geni|pangabenan": "reject"
+  "1931|recadana atau swasta geni|pangabenan": "reject",
+  "1776|upakara|uang kepeng": "reject",
+  "1776|uang kepeng|daun dapdap": "reject",
+  "1776|uang kepeng|benang tridatu merah, hitam dan putih": "reject",
+  "124|bali dataran|sarana mewah": "reject",
+  "124|sarana mewah|bade/petulangan": "reject"
 }

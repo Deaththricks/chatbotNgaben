@@ -88,7 +88,23 @@ _ASPECT_WORDS = {"kelengkapan", "kelengkapannya", "unsur", "unsurnya", "bagian",
                  "simbol", "lambang", "tujuan", "tujuannya", "asal", "asalnya"}
 
 
-def _token_match(a: str, b: str) -> bool:
+_VOWELS = frozenset("aeiou")
+
+
+def _vowel_edit(a: str, b: str) -> bool:
+    """True if a and b differ by exactly one vowel (substituted, inserted or dropped)."""
+    ops = list(Levenshtein.editops(a, b))
+    if len(ops) != 1:
+        return False
+    op = ops[0]
+    if op.tag == "replace":
+        return a[op.src_pos] in _VOWELS and b[op.dest_pos] in _VOWELS
+    if op.tag == "delete":
+        return a[op.src_pos] in _VOWELS
+    return b[op.dest_pos] in _VOWELS
+
+
+def _token_match(a: str, b: str, anchored: bool = True) -> bool:
     oa, ob = _ortho_token(a), _ortho_token(b)
     if oa == ob:
         return True
@@ -97,19 +113,23 @@ def _token_match(a: str, b: str) -> bool:
             return True
         if len(oa) >= 4 and ob == oa + suf:
             return True
-    # one-edit typos on any token ("wah"/"bwah", "citra"/"cita"); a looser ratio
-    # only on longer tokens -- "pandawa"/"pranawa" (2 edits, ratio 86) and
-    # "surya"/"sukra" are different words, not typos.
-    if min(len(oa), len(ob)) >= 3 and Levenshtein.distance(oa, ob) <= 1:
-        return True
-    return min(len(oa), len(ob)) >= 6 and fuzz.ratio(oa, ob) >= 88
+    # One-edit typos: "wah loka"/"bwah loka", "sredaning citra"/"sredaning cita".
+    # A consonant slip on a short word only counts when another word of the phrase
+    # matched exactly (`anchored`): alone, peras/perak, sisir/sisig, sabun/sabuk,
+    # kosong/kojong, sekar/sekah are different words (2026-09-29). A vowel slip
+    # (nglungah/ngelungah, tirte/tirta) is a typo either way. "pandawa"/"pranawa"
+    # (2 edits) and "surya"/"sukra" never match.
+    short = min(len(oa), len(ob))
+    if short >= 3 and Levenshtein.distance(oa, ob) <= 1:
+        return anchored or short >= 8 or _vowel_edit(oa, ob)
+    return short >= 6 and fuzz.ratio(oa, ob) >= 88 and (anchored or short >= 8)
 
 
 @dataclass
 class Match:
     id: str
     name: str
-    via: str          # "exact" | "alias" | "force_merge" | "strip" | "fuzzy"
+    via: str          # "exact" | "alias" | "force_merge" | "strip" | "ortho" | "typo" | "fuzzy"
     score: float      # 0-100 (100 for non-fuzzy)
     entity: dict
 
@@ -162,6 +182,10 @@ class KbResolver:
                 self.ortho[ok] = None
             else:
                 self.ortho.setdefault(ok, _id)
+
+        # long keys for the whole-key one-edit tier ("pancahmaha butha" -> pancamahabutha:
+        # the extra letter sits across a word boundary the token check cannot see)
+        self._long_keys = [k for k, v in self.ortho.items() if v and len(k) >= 9]
 
         self._choices = list(self.surface.keys())
         # fuzzy candidates are also drawn by orthographic key, so heavy spelling
@@ -242,6 +266,24 @@ class KbResolver:
             if _id:
                 return Match(_id, self.by_id[_id]["name"], "ortho", 100.0, self.by_id[_id])
 
+        # 4a. a possessive "-nya" on a known name ("harganya" -> harga): fuzzy matching
+        # never sees force_merge keys, so "kenapa tirtha ada harganya" missed harga tirtha
+        if raw.endswith("nya") and len(raw) >= 6:
+            base = raw[:-3]
+            _id = self.surface.get(base) or self.force_merge.get(base)
+            if _id:
+                return Match(_id, self.by_id[_id]["name"], "strip", 100.0, self.by_id[_id])
+
+        # 4b. one edit on the whole orthographic key of a long name, if it is unique.
+        # "typo", not "ortho": the bot must not call a misspelling "sebutan lain".
+        key = _ortho_key(raw)
+        if len(key) >= 10:
+            hits = {self.ortho[k] for k in self._long_keys
+                    if abs(len(k) - len(key)) <= 1 and Levenshtein.distance(k, key) <= 1}
+            if len(hits) == 1:
+                _id = hits.pop()
+                return Match(_id, self.by_id[_id]["name"], "typo", 100.0, self.by_id[_id])
+
         # 5. fuzzy, token-checked. A string-level score alone produced confident
         # wrong answers (2026-09-24): "surya" -> sukra, "sangaskara" ->
         # putru_sangaskara, "bhuta kala" -> bhuta, "panca budhindrya" ->
@@ -273,8 +315,9 @@ class KbResolver:
         c = [t for t in re.split(r"[\s\-/]+", cand) if t and t not in skip]
         if not q or not c:
             return False
-        return (all(any(_token_match(a, b) for b in c) for a in q)
-                and all(any(_token_match(b, a) for a in q) for b in c))
+        anchored = len(q) >= 2 and any(_ortho_token(a) == _ortho_token(b) for a in q for b in c)
+        return (all(any(_token_match(a, b, anchored) for b in c) for a in q)
+                and all(any(_token_match(b, a, anchored) for a in q) for b in c))
 
     def resolve_many(self, text: str, limit: int = 2, fuzzy_threshold: int = 80) -> list[Match]:
         """Resolve every distinct term mentioned in a phrase (for 'beda X dan Y').
@@ -372,7 +415,8 @@ class KbResolver:
         pool = pool or candidates
         return random.choice(pool)
 
-    def suggest(self, text: str, k: int = 3, threshold: int = 60) -> list[str]:
+    # 60 offered "tandri, undagi, panca budhindrya" for "dihindari" (2026-09-29)
+    def suggest(self, text: str, k: int = 3, threshold: int = 75) -> list[str]:
         raw = self.clean_query(text)
         if not raw:
             return []

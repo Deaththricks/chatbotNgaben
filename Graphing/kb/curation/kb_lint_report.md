@@ -1,6 +1,6 @@
 # KB lint report
 
-entities 577, live relations 696
+entities 607, live relations 866
 
 **BLOCKING violations: 0**
 
@@ -21,9 +21,10 @@ entities 577, live relations 696
 
 # Warnings (non-blocking)
 
-## long_definition (3)
+## long_definition (4)
 
 - `atma_wedana` -- 936 chars
+- `dewasa_ngaben` -- 1108 chars
 - `pamerasan` -- 756 chars
 - `upacara_mesulub` -- 799 chars
 

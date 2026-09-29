@@ -9,8 +9,6 @@ Two coupled subprojects that together build a **Rasa chatbot answering questions
 
 - **`Graphing/`** — an offline NLP/KB pipeline over a Ngaben source corpus: NER + dependency-rule
   relation extraction -> a curated knowledge base (`Graphing/kb/`) -> loaded into Neo4j.
-  `Graphing/chatbot-budaya-bali/` is a senior colleague's unrelated reference bot — ignored, and
-  excluded via `.gitignore`; do not build on it.
 - **`Chatbot/bot/`** — the Rasa Open Source 3.6.x project (NLU + rules + custom actions) that
   queries the Neo4j graph and the KB's curated layers to answer in Indonesian.
 
@@ -100,7 +98,8 @@ used only as a quality guard:
 
 ```
 user utterance (Indonesian)
-  -> Rasa NLU (DIET + RegexEntityExtractor over lookup_istilah.yml)
+  -> Rasa NLU (DIET; lookup_istilah.yml only feeds RegexFeaturizer -- RegexEntityExtractor was
+     removed 2026-09-29: no entity was annotated, so it never extracted anything)
   -> intent (sapa / pamit / bot_challenge / out_of_scope / ask_ngaben_detail / nlu_fallback)
   -> RulePolicy -> ActionGraphRAG (ask_ngaben_detail) or ActionLLMFallback (nlu_fallback)
        [both in Chatbot/bot/actions/actions.py, sharing _extract_and_resolve()]
@@ -111,10 +110,18 @@ user utterance (Indonesian)
                deterministic backstops on the LLM's term: _peel_aspect_words ("warna
                besi" -> "besi"; not in strip_modifiers, which build_kb.py shares) and
                _widen_to_named_term (user said "kawangen jeriji", history-biased LLM
-               returned "kawangen" -> use the longer exact name the user typed). When
-               the message itself names 2+ terms (resolve_many), a term the LLM carried
-               over from the history is dropped -- "apa itu sawa dan apa hubungannya
-               dengan jenazah" after a turn about bade came back with bade (2026-09-25)
+               returned "kawangen" -> use the longer exact name the user typed). The
+               terms the message itself names are found deterministically too
+               (_mentioned_terms: n-gram scan, exact before fuzzy, a class word before its
+               member dropped -- "sasih malamasa" is malamasa) and always added; when the
+               message names any term, a term the LLM carried over from the history is
+               dropped -- except for a one-term relation/comparison question ("apa
+               hubungannya dengan jenazah" after sawa). Until 2026-09-29 this only held for
+               2+ named terms, so "apa itu nglungah" after ngaben answered both, and the
+               LLM even swapped "nglungah" for "ngaben". The message's own terms come first,
+               and current_entity is the first of them (it was the LAST found name, i.e.
+               the carried-over one). A pronoun follow-up whose terms all miss ("kenapa itu
+               harus dihindari?" -> "dihindari") falls back to current_entity.
        Step 3: Cypher query against Neo4j (non-LOW-confidence edges, WITH direction) +
                kb_content.py enrichment. Each edge is handed to the LLM as a directed
                Indonesian sentence (relation_phrases.json templates via KbContent.render),
@@ -142,7 +149,25 @@ user utterance (Indonesian)
                their aspect (makna / letak / waktu / pelaku / ciri / fungsi / cara,
                _ASPECT_FAMILIES -> kb_content.PREDICATE_FAMILIES). A plain "apa itu X"
                never gets them (2026-09-24).
-       Step 4: Qwen2.5 synthesizes the final Indonesian answer. Deterministic guards:
+       Step 4: Qwen2.5 synthesizes the final Indonesian answer. The client sets
+               num_ctx (LLM_NUM_CTX, default 12288) and the context is compact JSON trimmed
+               to _PROMPT_CHAR_BUDGET (_fit_context), with the question repeated after it:
+               with Ollama's default 4096 a ngaben-sized prompt was cut to its first 4 +
+               last ~2046 tokens (prompt_eval_count 2050) and every such turn came back as
+               the same English "Based on the information provided ... Ngaben" block
+               (2026-09-29). An English or empty answer is retried once, then replaced. A
+               refusal is overridden only for a plain "apa itu X"; for a why/whether/when
+               question it is kept, with X's first definition sentence added (replacing a
+               correct "belum tercatat" with a definition answered something else). The
+               "sarana" aspect ("apa saja sarana/upakara ...") lists what the term and its
+               stages (BAGIAN_DARI*1..2) use, grouped per stage (_stage_sarana_facts).
+               Also 2026-09-29: the Cypher edge cap is 200 (40 cut palebon off ngaben once
+               it had 49 edges); a why-question gets rule 21 (no invented reason); a lone
+               English word (-tion/-ious/-ness..., "propitious") triggers the same retry;
+               prompt field names (target_definition, ...) are cut; "X termasuk salah satu
+               jenis Y" is rewritten to "adalah bagian dari Y" when the graph says X is a
+               stage of Y, not a kind (_fix_kind_claims).
+               Deterministic guards:
                refusal signal and fabrication signal -> _deterministic_answer
                (DEFINITIONS ONLY since 2026-09-24 -- it used to dump every fact, which is
                where "pitra berwujud sekah kangsen. pitra menerima ..." came from); a
@@ -242,6 +267,9 @@ gates now make "done" mean the class is closed:
   `--tier B` (real `ActionGraphRAG` vs live Neo4j + Ollama, ~4 min, writes `transcript.md`).
   Check `curl http://127.0.0.1:11434/api/tags` first: a Tier B run with Ollama down prints
   `WinError 10061` per turn and its results mean nothing. (`regression/` is gitignored.)
+  `--tier N [--model x.tar.gz]` checks `nlu_probes` intents with a trained model -- Tier B calls
+  the action directly, so "bagaimana proses ngaben" -> out_of_scope (every "bagaimana" example
+  was out_of_scope in nlu.yml) was invisible to it until 2026-09-29.
   **Every question the user reports goes into `regression/questions.json`.** Keyword checks are
   weak: read the whole Tier B transcript before reporting anything as fixed.
 
@@ -253,7 +281,22 @@ creation too, so a fixed triple no longer mints a phantom node from its old word
 2026-09-25 a LITERAL row's attribute predicate/value as well -- a fixed "ngroras BERASAL_DARI kata
 roras" used to stay an attribute "atma wedana berasal dari kata roras").
 Web-sourced definitions are listed in `tuning/definition_sources.json`; the user approved the
-first 25 on 2026-09-25 (its `_approved` note) -- entries added later still need their review.
+first 25 on 2026-09-25 (its `_approved` note) -- entries added later still need their review
+(2026-09-29 added 7: banten pejati / peras / suci / prayascita, tatebasan durmanggala, tepung
+tawar, and the rewritten banten byakawonan -- the corpus only names these in its banten tables).
+
+**2026-09-29 curation (conersation.md + sarana coverage):** nyiramin merged into nyiramang layon
+(one ceremony, two disconnected nodes; pabersihan hidup/mati are its stages); `wadah` is its own
+entity (usungan without badawang nala, md 4531-4548) -- a tuning `force_merge "wadah": "wadah"`
+overrides data/normalization-ngaben.json's wadah -> Bade; `sarana mewah` is no longer a bade alias;
+sasih definitions no longer claim a sasih "bertepatan dengan Wuku X" (a misreading of the
+paruwak-tahuk Tumpek list, md 1035-1051) and asada/dyestha say "sasih mati"; pabersihan hidup is
+the first bathing of the corpse, not a rite "semasa masih hidup". New: dewasa ngaben (hari baik,
+md 963-1158), harga tirtha (md 2991-3080), ~30 sarana items with DIGUNAKAN_DALAM <stage> /
+DIPERLUKAN_UNTUK_MEMBUAT tirta pangentas edges (Graphing/kb/curation/sarana_coverage_report.md).
+The apply script's rows use source `manual_addition+sarana_coverage_2026_09_29`; like every
+manual row they live only in relation_results_ngaben.normalized.json, so re-running
+`neo4/normalize.py` would drop them.
 The reverse also bites: a `review_decisions.json` key (`sentence_id|subject|object`) has no
 object_type, so `reject`ing a LITERAL row also drops an ENTITY row sharing that key (this once
 removed `ngerorasin BERASAL_DARI roras`). Check the key against ENTITY rows before rejecting,

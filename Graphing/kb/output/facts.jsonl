@@ -637,28 +637,6 @@
 }
 
 {
-  "id": "f411_wuku_kunin_sasih_kapi",
-  "text": "wuku kuningan berada di sasih kapitu.",
-  "subject_id": "wuku_kuningan",
-  "predicate": "BERADA_DI",
-  "object_id": "sasih_kapitu",
-  "confidence": "MED",
-  "source_sentence": "● wuku kuningan ada pada sasih kasa dan kapitu.",
-  "sentence_id": 411
-}
-
-{
-  "id": "f411_wuku_kunin_sasih_kasa",
-  "text": "wuku kuningan berada di sasih kasa.",
-  "subject_id": "wuku_kuningan",
-  "predicate": "BERADA_DI",
-  "object_id": "sasih_kasa",
-  "confidence": "MED",
-  "source_sentence": "● wuku kuningan ada pada sasih kasa dan kapitu.",
-  "sentence_id": 411
-}
-
-{
   "id": "f413_uye_sasih_kasa",
   "text": "uye berada di sasih kasanga.",
   "subject_id": "uye",
@@ -1525,28 +1503,6 @@
   "confidence": "HIGH",
   "source_sentence": "upadesa yang dalam masyarakat kita lebih dikenal dengan nama upanisad, menurut para ahli memang berarti \"bisikan dang guru\" kepada sisia atau juga berarti \"tatwa pengarahan hidup.\" tentang acara yang pelik ini, satu hal perlu kita catat, bahwa",
   "sentence_id": 1732
-}
-
-{
-  "id": "f1776_uang_kepen_daun_dapda",
-  "text": "uang kepeng dibungkus dengan daun dapdap.",
-  "subject_id": "uang_kepeng",
-  "predicate": "DIBUNGKUS_DENGAN",
-  "object_id": "daun_dapdap",
-  "confidence": "HIGH",
-  "source_sentence": "upakara itu berupa uang kepeng yang dibungkus dengan daun dapdap dan diikat dengan benang tridatu (merah, hitam dan putih).",
-  "sentence_id": 1776
-}
-
-{
-  "id": "f1776_banten_uang_kepen",
-  "text": "banten berupa uang kepeng.",
-  "subject_id": "banten",
-  "predicate": "BERUPA",
-  "object_id": "uang_kepeng",
-  "confidence": "MED",
-  "source_sentence": "upakara itu berupa uang kepeng yang dibungkus dengan daun dapdap dan diikat dengan benang tridatu (merah, hitam dan putih).",
-  "sentence_id": 1776
 }
 
 {
@@ -6918,9 +6874,9 @@
 }
 
 {
-  "id": "f900359_nyiramin_ngaben",
-  "text": "nyiramin adalah bagian dari ngaben.",
-  "subject_id": "nyiramin",
+  "id": "f900359_nyiramang__ngaben",
+  "text": "nyiramang layon adalah bagian dari ngaben.",
+  "subject_id": "nyiramang_layon",
   "predicate": "BAGIAN_DARI",
   "object_id": "ngaben",
   "confidence": "HIGH",
@@ -6995,20 +6951,20 @@
 }
 
 {
-  "id": "f900366_ngulapin_nyiramin",
-  "text": "ngulapin diikuti oleh nyiramin.",
+  "id": "f900366_ngulapin_nyiramang_",
+  "text": "ngulapin diikuti oleh nyiramang layon.",
   "subject_id": "ngulapin",
   "predicate": "DIIKUTI_OLEH",
-  "object_id": "nyiramin",
+  "object_id": "nyiramang_layon",
   "confidence": "HIGH",
   "source_sentence": "[ngaben-merge-cleaned.txt baris 29-36] urutan tahapan pelaksanaan Ngaben",
   "sentence_id": 900366
 }
 
 {
-  "id": "f900367_nyiramin_pangringke",
-  "text": "nyiramin diikuti oleh pangringkes.",
-  "subject_id": "nyiramin",
+  "id": "f900367_nyiramang__pangringke",
+  "text": "nyiramang layon diikuti oleh pangringkes.",
+  "subject_id": "nyiramang_layon",
   "predicate": "DIIKUTI_OLEH",
   "object_id": "pangringkes",
   "confidence": "HIGH",
@@ -7652,4 +7608,1918 @@
   "confidence": "HIGH",
   "source_sentence": "[glosarium puspa asti] Puspa asti adalah abu tulang jenazah yang diambil dengan sumpit/sepit dari sisa pembakaran, lalu dihancurkan/ditumbuk pada sebuah sesenden; puspa asti diletakka",
   "sentence_id": 900425
+}
+
+{
+  "id": "f900426_banten_pej_ngaben",
+  "text": "banten pejati digunakan dalam ngaben.",
+  "subject_id": "banten_pejati",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900426
+}
+
+{
+  "id": "f900427_banten_pej_sangaskara",
+  "text": "banten pejati digunakan dalam sangaskara.",
+  "subject_id": "banten_pejati",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900427
+}
+
+{
+  "id": "f900428_banten_pej_ngulapin",
+  "text": "banten pejati digunakan dalam ngulapin.",
+  "subject_id": "banten_pejati",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngulapin",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900428
+}
+
+{
+  "id": "f900429_banten_pej_upacara_ng",
+  "text": "banten pejati digunakan dalam upacara ngelungah.",
+  "subject_id": "banten_pejati",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "upacara_ngelungah",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900429
+}
+
+{
+  "id": "f900430_banten_pej_pabasmian",
+  "text": "banten pejati digunakan dalam pabasmian.",
+  "subject_id": "banten_pejati",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900430
+}
+
+{
+  "id": "f900431_banten_pej_atma_wedan",
+  "text": "banten pejati digunakan dalam atma wedana.",
+  "subject_id": "banten_pejati",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900431
+}
+
+{
+  "id": "f900432_banten_per_ngaben",
+  "text": "banten peras digunakan dalam ngaben.",
+  "subject_id": "banten_peras",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900432
+}
+
+{
+  "id": "f900433_banten_per_sangaskara",
+  "text": "banten peras digunakan dalam sangaskara.",
+  "subject_id": "banten_peras",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900433
+}
+
+{
+  "id": "f900434_banten_per_mlaspas_ka",
+  "text": "banten peras digunakan dalam mlaspas kajang.",
+  "subject_id": "banten_peras",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "mlaspas_kajang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900434
+}
+
+{
+  "id": "f900435_banten_per_upacara_ng",
+  "text": "banten peras digunakan dalam upacara ngelungah.",
+  "subject_id": "banten_peras",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "upacara_ngelungah",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900435
+}
+
+{
+  "id": "f900436_banten_suc_ngaben",
+  "text": "banten suci digunakan dalam ngaben.",
+  "subject_id": "banten_suci",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900436
+}
+
+{
+  "id": "f900437_banten_suc_sangaskara",
+  "text": "banten suci digunakan dalam sangaskara.",
+  "subject_id": "banten_suci",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900437
+}
+
+{
+  "id": "f900438_banten_suc_mlaspas_ka",
+  "text": "banten suci digunakan dalam mlaspas kajang.",
+  "subject_id": "banten_suci",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "mlaspas_kajang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900438
+}
+
+{
+  "id": "f900439_banten_suc_pamerasan",
+  "text": "banten suci digunakan dalam pamerasan.",
+  "subject_id": "banten_suci",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pamerasan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900439
+}
+
+{
+  "id": "f900440_banten_suc_atma_wedan",
+  "text": "banten suci digunakan dalam atma wedana.",
+  "subject_id": "banten_suci",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900440
+}
+
+{
+  "id": "f900441_banten_pra_ngaben",
+  "text": "banten prayascita digunakan dalam ngaben.",
+  "subject_id": "banten_prayascita",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900441
+}
+
+{
+  "id": "f900442_banten_pra_sangaskara",
+  "text": "banten prayascita digunakan dalam sangaskara.",
+  "subject_id": "banten_prayascita",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900442
+}
+
+{
+  "id": "f900443_banten_pra_pabasmian",
+  "text": "banten prayascita digunakan dalam pabasmian.",
+  "subject_id": "banten_prayascita",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900443
+}
+
+{
+  "id": "f900444_banten_pra_ngulapin",
+  "text": "banten prayascita digunakan dalam ngulapin.",
+  "subject_id": "banten_prayascita",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngulapin",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900444
+}
+
+{
+  "id": "f900445_banten_pra_atma_wedan",
+  "text": "banten prayascita digunakan dalam atma wedana.",
+  "subject_id": "banten_prayascita",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900445
+}
+
+{
+  "id": "f900446_tatebasan__ngaben",
+  "text": "tatebasan durmanggala digunakan dalam ngaben.",
+  "subject_id": "tatebasan_durmanggala",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900446
+}
+
+{
+  "id": "f900447_tatebasan__sangaskara",
+  "text": "tatebasan durmanggala digunakan dalam sangaskara.",
+  "subject_id": "tatebasan_durmanggala",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900447
+}
+
+{
+  "id": "f900448_tatebasan__pabasmian",
+  "text": "tatebasan durmanggala digunakan dalam pabasmian.",
+  "subject_id": "tatebasan_durmanggala",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900448
+}
+
+{
+  "id": "f900449_tatebasan__ngulapin",
+  "text": "tatebasan durmanggala digunakan dalam ngulapin.",
+  "subject_id": "tatebasan_durmanggala",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngulapin",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900449
+}
+
+{
+  "id": "f900450_tatebasan__atma_wedan",
+  "text": "tatebasan durmanggala digunakan dalam atma wedana.",
+  "subject_id": "tatebasan_durmanggala",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900450
+}
+
+{
+  "id": "f900451_banten_bya_ngaben",
+  "text": "banten byakawonan digunakan dalam ngaben.",
+  "subject_id": "banten_byakawonan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900451
+}
+
+{
+  "id": "f900452_banten_bya_nyiramang_",
+  "text": "banten byakawonan digunakan dalam nyiramang layon.",
+  "subject_id": "banten_byakawonan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900452
+}
+
+{
+  "id": "f900453_banten_bya_sangaskara",
+  "text": "banten byakawonan digunakan dalam sangaskara.",
+  "subject_id": "banten_byakawonan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900453
+}
+
+{
+  "id": "f900454_banten_bya_pabasmian",
+  "text": "banten byakawonan digunakan dalam pabasmian.",
+  "subject_id": "banten_byakawonan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900454
+}
+
+{
+  "id": "f900455_banten_bya_ngulapin",
+  "text": "banten byakawonan digunakan dalam ngulapin.",
+  "subject_id": "banten_byakawonan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngulapin",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900455
+}
+
+{
+  "id": "f900456_banten_bya_atma_wedan",
+  "text": "banten byakawonan digunakan dalam atma wedana.",
+  "subject_id": "banten_byakawonan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900456
+}
+
+{
+  "id": "f900457_lis_bale_g_ngaben",
+  "text": "lis bale gading digunakan dalam ngaben.",
+  "subject_id": "lis_bale_gading",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900457
+}
+
+{
+  "id": "f900458_lis_bale_g_nyiramang_",
+  "text": "lis bale gading digunakan dalam nyiramang layon.",
+  "subject_id": "lis_bale_gading",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900458
+}
+
+{
+  "id": "f900459_lis_bale_g_sangaskara",
+  "text": "lis bale gading digunakan dalam sangaskara.",
+  "subject_id": "lis_bale_gading",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900459
+}
+
+{
+  "id": "f900460_lis_bale_g_pabasmian",
+  "text": "lis bale gading digunakan dalam pabasmian.",
+  "subject_id": "lis_bale_gading",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900460
+}
+
+{
+  "id": "f900461_daksina_ngaben",
+  "text": "daksina digunakan dalam ngaben.",
+  "subject_id": "daksina",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900461
+}
+
+{
+  "id": "f900462_daksina_sangaskara",
+  "text": "daksina digunakan dalam sangaskara.",
+  "subject_id": "daksina",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900462
+}
+
+{
+  "id": "f900463_daksina_mlaspas_ka",
+  "text": "daksina digunakan dalam mlaspas kajang.",
+  "subject_id": "daksina",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "mlaspas_kajang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900463
+}
+
+{
+  "id": "f900464_daksina_upacara_ng",
+  "text": "daksina digunakan dalam upacara ngelungah.",
+  "subject_id": "daksina",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "upacara_ngelungah",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900464
+}
+
+{
+  "id": "f900465_daksina_atma_wedan",
+  "text": "daksina digunakan dalam atma wedana.",
+  "subject_id": "daksina",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900465
+}
+
+{
+  "id": "f900466_tumpeng_sangaskara",
+  "text": "tumpeng digunakan dalam sangaskara.",
+  "subject_id": "tumpeng",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900466
+}
+
+{
+  "id": "f900467_tumpeng_mlaspas_ka",
+  "text": "tumpeng digunakan dalam mlaspas kajang.",
+  "subject_id": "tumpeng",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "mlaspas_kajang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900467
+}
+
+{
+  "id": "f900468_tumpeng_pamerasan",
+  "text": "tumpeng digunakan dalam pamerasan.",
+  "subject_id": "tumpeng",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pamerasan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900468
+}
+
+{
+  "id": "f900469_tumpeng_atma_wedan",
+  "text": "tumpeng digunakan dalam atma wedana.",
+  "subject_id": "tumpeng",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900469
+}
+
+{
+  "id": "f900470_tipat_sangaskara",
+  "text": "tipat digunakan dalam sangaskara.",
+  "subject_id": "tipat",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900470
+}
+
+{
+  "id": "f900471_soda_sangaskara",
+  "text": "soda digunakan dalam sangaskara.",
+  "subject_id": "soda",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900471
+}
+
+{
+  "id": "f900472_sorohan_pamerasan",
+  "text": "sorohan digunakan dalam pamerasan.",
+  "subject_id": "sorohan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pamerasan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900472
+}
+
+{
+  "id": "f900473_pengulapan_sangaskara",
+  "text": "pengulapan digunakan dalam sangaskara.",
+  "subject_id": "pengulapan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900473
+}
+
+{
+  "id": "f900474_pengulapan_pabasmian",
+  "text": "pengulapan digunakan dalam pabasmian.",
+  "subject_id": "pengulapan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900474
+}
+
+{
+  "id": "f900475_gelar_sang_sangaskara",
+  "text": "gelar sanga digunakan dalam sangaskara.",
+  "subject_id": "gelar_sanga",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900475
+}
+
+{
+  "id": "f900476_gelar_sang_pabasmian",
+  "text": "gelar sanga digunakan dalam pabasmian.",
+  "subject_id": "gelar_sanga",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900476
+}
+
+{
+  "id": "f900477_bubur_pira_sangaskara",
+  "text": "bubur pirata digunakan dalam sangaskara.",
+  "subject_id": "bubur_pirata",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900477
+}
+
+{
+  "id": "f900478_bubur_pira_pabasmian",
+  "text": "bubur pirata digunakan dalam pabasmian.",
+  "subject_id": "bubur_pirata",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900478
+}
+
+{
+  "id": "f900479_nasi_angke_sangaskara",
+  "text": "nasi angkeb digunakan dalam sangaskara.",
+  "subject_id": "nasi_angkeb",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900479
+}
+
+{
+  "id": "f900480_nasi_angke_pabasmian",
+  "text": "nasi angkeb digunakan dalam pabasmian.",
+  "subject_id": "nasi_angkeb",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900480
+}
+
+{
+  "id": "f900481_sekar_ura_sangaskara",
+  "text": "sekar ura digunakan dalam sangaskara.",
+  "subject_id": "sekar_ura",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900481
+}
+
+{
+  "id": "f900482_sekar_ura_mlaspas_ka",
+  "text": "sekar ura digunakan dalam mlaspas kajang.",
+  "subject_id": "sekar_ura",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "mlaspas_kajang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900482
+}
+
+{
+  "id": "f900483_adegan_sangaskara",
+  "text": "adegan digunakan dalam sangaskara.",
+  "subject_id": "adegan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900483
+}
+
+{
+  "id": "f900484_rurub_sino_mlaspas_ka",
+  "text": "rurub sinom digunakan dalam mlaspas kajang.",
+  "subject_id": "rurub_sinom",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "mlaspas_kajang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900484
+}
+
+{
+  "id": "f900485_rurub_sino_pangringke",
+  "text": "rurub sinom digunakan dalam pangringkes.",
+  "subject_id": "rurub_sinom",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pangringkes",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900485
+}
+
+{
+  "id": "f900486_punjung_pabasmian",
+  "text": "punjung digunakan dalam pabasmian.",
+  "subject_id": "punjung",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900486
+}
+
+{
+  "id": "f900487_kawangen_mlaspas_ka",
+  "text": "kawangen digunakan dalam mlaspas kajang.",
+  "subject_id": "kawangen",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "mlaspas_kajang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900487
+}
+
+{
+  "id": "f900488_kawangen_pabersihan",
+  "text": "kawangen digunakan dalam pabersihan mati.",
+  "subject_id": "kawangen",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900488
+}
+
+{
+  "id": "f900489_kawangen_muspa_pami",
+  "text": "kawangen digunakan dalam muspa pamitan.",
+  "subject_id": "kawangen",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "muspa_pamitan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900489
+}
+
+{
+  "id": "f900490_klungah_ny_nganyut",
+  "text": "klungah nyuh gading digunakan dalam nganyut.",
+  "subject_id": "klungah_nyuh_gading",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nganyut",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900490
+}
+
+{
+  "id": "f900491_klungah_ny_pabasmian",
+  "text": "klungah nyuh gading digunakan dalam pabasmian.",
+  "subject_id": "klungah_nyuh_gading",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900491
+}
+
+{
+  "id": "f900492_tirtha_pen_sangaskara",
+  "text": "tirtha penembak digunakan dalam sangaskara.",
+  "subject_id": "tirtha_penembak",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900492
+}
+
+{
+  "id": "f900493_rantasan_nyiramang_",
+  "text": "rantasan digunakan dalam nyiramang layon.",
+  "subject_id": "rantasan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900493
+}
+
+{
+  "id": "f900494_rantasan_pabasmian",
+  "text": "rantasan digunakan dalam pabasmian.",
+  "subject_id": "rantasan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900494
+}
+
+{
+  "id": "f900495_rantasan_atma_wedan",
+  "text": "rantasan digunakan dalam atma wedana.",
+  "subject_id": "rantasan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900495
+}
+
+{
+  "id": "f900496_tepung_taw_atma_wedan",
+  "text": "tepung tawar digunakan dalam atma wedana.",
+  "subject_id": "tepung_tawar",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900496
+}
+
+{
+  "id": "f900497_wadah_ngaben",
+  "text": "wadah digunakan dalam ngaben.",
+  "subject_id": "wadah",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900497
+}
+
+{
+  "id": "f900498_babelonyoh_pabersihan",
+  "text": "babelonyoh digunakan dalam pabersihan mati.",
+  "subject_id": "babelonyoh",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900498
+}
+
+{
+  "id": "f900499_itik_itik_pabersihan",
+  "text": "itik-itik digunakan dalam pabersihan mati.",
+  "subject_id": "itik_itik",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900499
+}
+
+{
+  "id": "f900500_umbi_sikap_pabersihan",
+  "text": "umbi sikapa digunakan dalam pabersihan mati.",
+  "subject_id": "umbi_sikapa",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900500
+}
+
+{
+  "id": "f900501_daun_pisan_pabersihan",
+  "text": "daun pisang saba digunakan dalam pabersihan mati.",
+  "subject_id": "daun_pisang_saba",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900501
+}
+
+{
+  "id": "f900502_gegaleng_pabersihan",
+  "text": "gegaleng digunakan dalam pabersihan mati.",
+  "subject_id": "gegaleng",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900502
+}
+
+{
+  "id": "f900503_daun_intar_pabersihan",
+  "text": "daun intaran digunakan dalam pabersihan mati.",
+  "subject_id": "daun_intaran",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900503
+}
+
+{
+  "id": "f900504_pecahan_ka_pabersihan",
+  "text": "pecahan kaca digunakan dalam pabersihan mati.",
+  "subject_id": "pecahan_kaca",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900504
+}
+
+{
+  "id": "f900505_pecahan_be_pabersihan",
+  "text": "pecahan besi baja digunakan dalam pabersihan mati.",
+  "subject_id": "pecahan_besi_baja",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900505
+}
+
+{
+  "id": "f900506_malem_pabersihan",
+  "text": "malem digunakan dalam pabersihan mati.",
+  "subject_id": "malem",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900506
+}
+
+{
+  "id": "f900507_anget_ange_pabersihan",
+  "text": "anget-angetan digunakan dalam pabersihan mati.",
+  "subject_id": "anget_angetan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900507
+}
+
+{
+  "id": "f900508_kawangen_j_pabersihan",
+  "text": "kawangen jeriji digunakan dalam pabersihan mati.",
+  "subject_id": "kawangen_jeriji",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900508
+}
+
+{
+  "id": "f900509_angkeb_bag_pabersihan",
+  "text": "angkeb baga purus digunakan dalam pabersihan mati.",
+  "subject_id": "angkeb_baga_purus",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900509
+}
+
+{
+  "id": "f900510_paes_gedub_pabersihan",
+  "text": "paes gedubang digunakan dalam pabersihan mati.",
+  "subject_id": "paes_gedubang",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900510
+}
+
+{
+  "id": "f900511_anggapan_pabersihan",
+  "text": "anggapan digunakan dalam pabersihan mati.",
+  "subject_id": "anggapan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900511
+}
+
+{
+  "id": "f900512_arit_gobed_pabersihan",
+  "text": "arit gobed digunakan dalam pabersihan mati.",
+  "subject_id": "arit_gobed",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900512
+}
+
+{
+  "id": "f900513_telur_ayam_pabersihan",
+  "text": "telur ayam digunakan dalam pabersihan mati.",
+  "subject_id": "telur_ayam",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900513
+}
+
+{
+  "id": "f900514_pisang_kay_pabersihan",
+  "text": "pisang kayu digunakan dalam pabersihan mati.",
+  "subject_id": "pisang_kayu",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900514
+}
+
+{
+  "id": "f900515_bunga_tele_pabersihan",
+  "text": "bunga teleng digunakan dalam pabersihan mati.",
+  "subject_id": "bunga_teleng",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900515
+}
+
+{
+  "id": "f900516_kuncup_mel_pabersihan",
+  "text": "kuncup melati digunakan dalam pabersihan mati.",
+  "subject_id": "kuncup_melati",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900516
+}
+
+{
+  "id": "f900517_don_delem__pabersihan",
+  "text": "don delem-delem digunakan dalam pabersihan mati.",
+  "subject_id": "don_delem_delem",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900517
+}
+
+{
+  "id": "f900518_daun_teron_pabersihan",
+  "text": "daun terong polo digunakan dalam pabersihan mati.",
+  "subject_id": "daun_terong_polo",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900518
+}
+
+{
+  "id": "f900519_daun_terat_pabersihan",
+  "text": "daun teratai digunakan dalam pabersihan mati.",
+  "subject_id": "daun_teratai",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900519
+}
+
+{
+  "id": "f900520_tali_benan_pabersihan",
+  "text": "tali benang tukelan digunakan dalam pabersihan mati.",
+  "subject_id": "tali_benang_tukelan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900520
+}
+
+{
+  "id": "f900521_tali_benan_pangringke",
+  "text": "tali benang tukelan digunakan dalam pangringkes.",
+  "subject_id": "tali_benang_tukelan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pangringkes",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900521
+}
+
+{
+  "id": "f900522_saput_pabersihan",
+  "text": "saput digunakan dalam pabersihan hidup.",
+  "subject_id": "saput",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_hidup",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900522
+}
+
+{
+  "id": "f900523_saput_pabersihan",
+  "text": "saput digunakan dalam pabersihan mati.",
+  "subject_id": "saput",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900523
+}
+
+{
+  "id": "f900524_udeng_pabersihan",
+  "text": "udeng digunakan dalam pabersihan hidup.",
+  "subject_id": "udeng",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_hidup",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900524
+}
+
+{
+  "id": "f900525_udeng_pabersihan",
+  "text": "udeng digunakan dalam pabersihan mati.",
+  "subject_id": "udeng",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900525
+}
+
+{
+  "id": "f900526_kamben_pabersihan",
+  "text": "kamben digunakan dalam pabersihan hidup.",
+  "subject_id": "kamben",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_hidup",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900526
+}
+
+{
+  "id": "f900527_kamben_pabersihan",
+  "text": "kamben digunakan dalam pabersihan mati.",
+  "subject_id": "kamben",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900527
+}
+
+{
+  "id": "f900528_tapih_pabersihan",
+  "text": "tapih digunakan dalam pabersihan hidup.",
+  "subject_id": "tapih",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_hidup",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900528
+}
+
+{
+  "id": "f900529_sabuk_pabersihan",
+  "text": "sabuk digunakan dalam pabersihan hidup.",
+  "subject_id": "sabuk",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_hidup",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900529
+}
+
+{
+  "id": "f900530_bunga_pabersihan",
+  "text": "bunga digunakan dalam pabersihan hidup.",
+  "subject_id": "bunga",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_hidup",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900530
+}
+
+{
+  "id": "f900531_cermin_kec_pabersihan",
+  "text": "cermin kecil digunakan dalam pabersihan hidup.",
+  "subject_id": "cermin_kecil",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_hidup",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900531
+}
+
+{
+  "id": "f900532_minyak_wan_nyiramang_",
+  "text": "minyak wangi digunakan dalam nyiramang layon.",
+  "subject_id": "minyak_wangi",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900532
+}
+
+{
+  "id": "f900533_minyak_wan_pabersihan",
+  "text": "minyak wangi digunakan dalam pabersihan mati.",
+  "subject_id": "minyak_wangi",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900533
+}
+
+{
+  "id": "f900534_pepaga_nyiramang_",
+  "text": "pepaga digunakan dalam nyiramang layon.",
+  "subject_id": "pepaga",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900534
+}
+
+{
+  "id": "f900535_air_kumkum_nyiramang_",
+  "text": "air kumkuman digunakan dalam nyiramang layon.",
+  "subject_id": "air_kumkuman",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900535
+}
+
+{
+  "id": "f900536_kayu_cenda_nyiramang_",
+  "text": "kayu cendana digunakan dalam nyiramang layon.",
+  "subject_id": "kayu_cendana",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900536
+}
+
+{
+  "id": "f900537_sisig_nyiramang_",
+  "text": "sisig digunakan dalam nyiramang layon.",
+  "subject_id": "sisig",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900537
+}
+
+{
+  "id": "f900538_api_takep_nyiramang_",
+  "text": "api takep digunakan dalam nyiramang layon.",
+  "subject_id": "api_takep",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900538
+}
+
+{
+  "id": "f900539_uang_kepen_nyiramang_",
+  "text": "uang kepeng digunakan dalam nyiramang layon.",
+  "subject_id": "uang_kepeng",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900539
+}
+
+{
+  "id": "f900540_daun_kelap_nyiramang_",
+  "text": "daun kelapa muda busung digunakan dalam nyiramang layon.",
+  "subject_id": "daun_kelapa_muda_busung",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900540
+}
+
+{
+  "id": "f900541_tirta_pang_nyiramang_",
+  "text": "tirta panglukatan digunakan dalam nyiramang layon.",
+  "subject_id": "tirta_panglukatan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900541
+}
+
+{
+  "id": "f900542_tirtha_pab_nyiramang_",
+  "text": "tirtha pabersihan digunakan dalam nyiramang layon.",
+  "subject_id": "tirtha_pabersihan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900542
+}
+
+{
+  "id": "f900543_tirta_peng_nyiramang_",
+  "text": "tirta pengeringkes digunakan dalam nyiramang layon.",
+  "subject_id": "tirta_pengeringkes",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900543
+}
+
+{
+  "id": "f900544_kuncup_ter_nyiramang_",
+  "text": "kuncup teratai digunakan dalam nyiramang layon.",
+  "subject_id": "kuncup_teratai",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900544
+}
+
+{
+  "id": "f900545_daun_kemba_nyiramang_",
+  "text": "daun kembang sepatu digunakan dalam nyiramang layon.",
+  "subject_id": "daun_kembang_sepatu",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900545
+}
+
+{
+  "id": "f900546_base_nyiramang_",
+  "text": "base digunakan dalam nyiramang layon.",
+  "subject_id": "base",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900546
+}
+
+{
+  "id": "f900547_suwah_peta_nyiramang_",
+  "text": "suwah petat digunakan dalam nyiramang layon.",
+  "subject_id": "suwah_petat",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900547
+}
+
+{
+  "id": "f900548_tirtha_bet_nyiramang_",
+  "text": "tirtha betara hyang digunakan dalam nyiramang layon.",
+  "subject_id": "tirtha_betara_hyang",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900548
+}
+
+{
+  "id": "f900549_kain_kasa_pangringke",
+  "text": "kain kasa digunakan dalam pangringkes.",
+  "subject_id": "kain_kasa",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pangringkes",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900549
+}
+
+{
+  "id": "f900550_tikeh_plas_pangringke",
+  "text": "tikeh plasa digunakan dalam pangringkes.",
+  "subject_id": "tikeh_plasa",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pangringkes",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900550
+}
+
+{
+  "id": "f900551_tikeh_plas_nyiramang_",
+  "text": "tikeh plasa digunakan dalam nyiramang layon.",
+  "subject_id": "tikeh_plasa",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900551
+}
+
+{
+  "id": "f900552_tali_penya_pangringke",
+  "text": "tali penyalin digunakan dalam pangringkes.",
+  "subject_id": "tali_penyalin",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pangringkes",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900552
+}
+
+{
+  "id": "f900553_lante_bamb_pangringke",
+  "text": "lante bambu digunakan dalam pangringkes.",
+  "subject_id": "lante_bambu",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pangringkes",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md: tetandingan / eteh-eteh upacara",
+  "sentence_id": 900553
+}
+
+{
+  "id": "f900554_periuk_tirta_pang",
+  "text": "periuk diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "periuk",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10297-10361: sarana dan prasarana pembuatan Tirtha Pangentas",
+  "sentence_id": 900554
+}
+
+{
+  "id": "f900555_jun_pere_tirta_pang",
+  "text": "jun pere diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "jun_pere",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10297-10361: sarana dan prasarana pembuatan Tirtha Pangentas",
+  "sentence_id": 900555
+}
+
+{
+  "id": "f900556_pripih_ema_tirta_pang",
+  "text": "pripih emas diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "pripih_emas",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10297-10361: sarana dan prasarana pembuatan Tirtha Pangentas",
+  "sentence_id": 900556
+}
+
+{
+  "id": "f900557_pripih_per_tirta_pang",
+  "text": "pripih perak diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "pripih_perak",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10297-10361: sarana dan prasarana pembuatan Tirtha Pangentas",
+  "sentence_id": 900557
+}
+
+{
+  "id": "f900558_pripih_tem_tirta_pang",
+  "text": "pripih tembaga diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "pripih_tembaga",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10297-10361: sarana dan prasarana pembuatan Tirtha Pangentas",
+  "sentence_id": 900558
+}
+
+{
+  "id": "f900559_pripih_cen_tirta_pang",
+  "text": "pripih cendana diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "pripih_cendana",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10297-10361: sarana dan prasarana pembuatan Tirtha Pangentas",
+  "sentence_id": 900559
+}
+
+{
+  "id": "f900560_mirah_tirta_pang",
+  "text": "mirah diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "mirah",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10297-10361: sarana dan prasarana pembuatan Tirtha Pangentas",
+  "sentence_id": 900560
+}
+
+{
+  "id": "f900561_jijih_biji_tirta_pang",
+  "text": "jijih biji padi diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "jijih_biji_padi",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10297-10361: sarana dan prasarana pembuatan Tirtha Pangentas",
+  "sentence_id": 900561
+}
+
+{
+  "id": "f900562_daun_dapda_tirta_pang",
+  "text": "daun dapdap diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "daun_dapdap",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10297-10361: sarana dan prasarana pembuatan Tirtha Pangentas",
+  "sentence_id": 900562
+}
+
+{
+  "id": "f900563_alang_alan_tirta_pang",
+  "text": "alang-alang diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "alang_alang",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10297-10361: sarana dan prasarana pembuatan Tirtha Pangentas",
+  "sentence_id": 900563
+}
+
+{
+  "id": "f900564_padang_lep_tirta_pang",
+  "text": "padang lepas diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "padang_lepas",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10297-10361: sarana dan prasarana pembuatan Tirtha Pangentas",
+  "sentence_id": 900564
+}
+
+{
+  "id": "f900565_ulantaga_tirta_pang",
+  "text": "ulantaga diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "ulantaga",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10297-10361: sarana dan prasarana pembuatan Tirtha Pangentas",
+  "sentence_id": 900565
+}
+
+{
+  "id": "f900566_daksina_tirta_pang",
+  "text": "daksina diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "daksina",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10297-10361: sarana dan prasarana pembuatan Tirtha Pangentas",
+  "sentence_id": 900566
+}
+
+{
+  "id": "f900567_pedagingan_tirta_pang",
+  "text": "pedagingan diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "pedagingan",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10297-10361: sarana dan prasarana pembuatan Tirtha Pangentas",
+  "sentence_id": 900567
+}
+
+{
+  "id": "f900568_soda_tirta_pang",
+  "text": "soda diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "soda",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10297-10361: sarana dan prasarana pembuatan Tirtha Pangentas",
+  "sentence_id": 900568
+}
+
+{
+  "id": "f900569_sorohan_tirta_pang",
+  "text": "sorohan diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "sorohan",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10297-10361: sarana dan prasarana pembuatan Tirtha Pangentas",
+  "sentence_id": 900569
+}
+
+{
+  "id": "f900570_banten_suc_tirta_pang",
+  "text": "banten suci diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "banten_suci",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10297-10361: sarana dan prasarana pembuatan Tirtha Pangentas",
+  "sentence_id": 900570
+}
+
+{
+  "id": "f900571_banten_per_tirta_pang",
+  "text": "banten peras diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "banten_peras",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10297-10361: sarana dan prasarana pembuatan Tirtha Pangentas",
+  "sentence_id": 900571
+}
+
+{
+  "id": "f900572_pabersihan_nyiramang_",
+  "text": "pabersihan hidup adalah bagian dari nyiramang layon.",
+  "subject_id": "pabersihan_hidup",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 7582-7592: tingkatan upacara Nyiramang Layon",
+  "sentence_id": 900572
+}
+
+{
+  "id": "f900573_pabersihan_nyiramang_",
+  "text": "pabersihan mati adalah bagian dari nyiramang layon.",
+  "subject_id": "pabersihan_mati",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 7582-7592: tingkatan upacara Nyiramang Layon",
+  "sentence_id": 900573
+}
+
+{
+  "id": "f900574_pedagingan_pripih_ema",
+  "text": "pedagingan berupa pripih emas.",
+  "subject_id": "pedagingan",
+  "predicate": "BERUPA",
+  "object_id": "pripih_emas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10343",
+  "sentence_id": 900574
+}
+
+{
+  "id": "f900575_pedagingan_pripih_per",
+  "text": "pedagingan berupa pripih perak.",
+  "subject_id": "pedagingan",
+  "predicate": "BERUPA",
+  "object_id": "pripih_perak",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10343",
+  "sentence_id": 900575
+}
+
+{
+  "id": "f900576_pedagingan_pripih_tem",
+  "text": "pedagingan berupa pripih tembaga.",
+  "subject_id": "pedagingan",
+  "predicate": "BERUPA",
+  "object_id": "pripih_tembaga",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10343",
+  "sentence_id": 900576
+}
+
+{
+  "id": "f900577_pedagingan_mirah",
+  "text": "pedagingan berupa mirah.",
+  "subject_id": "pedagingan",
+  "predicate": "BERUPA",
+  "object_id": "mirah",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 10343",
+  "sentence_id": 900577
+}
+
+{
+  "id": "f900578_banten_pej_daksina",
+  "text": "banten pejati terdiri dari daksina.",
+  "subject_id": "banten_pejati",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "daksina",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] web: banten pejati",
+  "sentence_id": 900578
+}
+
+{
+  "id": "f900579_banten_pej_banten_per",
+  "text": "banten pejati terdiri dari banten peras.",
+  "subject_id": "banten_pejati",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "banten_peras",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] web: banten pejati",
+  "sentence_id": 900579
+}
+
+{
+  "id": "f900580_banten_pej_soda",
+  "text": "banten pejati terdiri dari soda.",
+  "subject_id": "banten_pejati",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "soda",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] web: banten pejati (ajuman/soda)",
+  "sentence_id": 900580
+}
+
+{
+  "id": "f900581_banten_pej_tipat",
+  "text": "banten pejati terdiri dari tipat.",
+  "subject_id": "banten_pejati",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "tipat",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] web: banten pejati (tipat kelanan)",
+  "sentence_id": 900581
+}
+
+{
+  "id": "f900582_banten_pej_segehan",
+  "text": "banten pejati terdiri dari segehan.",
+  "subject_id": "banten_pejati",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "segehan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] web: banten pejati",
+  "sentence_id": 900582
+}
+
+{
+  "id": "f900583_tatebasan__banten",
+  "text": "tatebasan durmanggala termasuk salah satu jenis banten.",
+  "subject_id": "tatebasan_durmanggala",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] web: tatebasan durmanggala",
+  "sentence_id": 900583
+}
+
+{
+  "id": "f900584_tirtha_bet_tirtha",
+  "text": "tirtha betara hyang termasuk salah satu jenis tirtha.",
+  "subject_id": "tirtha_betara_hyang",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "tirtha",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 7447",
+  "sentence_id": 900584
+}
+
+{
+  "id": "f900585_wadah_usungan",
+  "text": "wadah termasuk salah satu jenis usungan.",
+  "subject_id": "wadah",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "usungan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 4545",
+  "sentence_id": 900585
+}
+
+{
+  "id": "f900586_dewasa_nga_ngaben",
+  "text": "dewasa ngaben menentukan waktu pelaksanaan ngaben.",
+  "subject_id": "dewasa_ngaben",
+  "predicate": "MENENTUKAN_WAKTU",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 963-1158",
+  "sentence_id": 900586
+}
+
+{
+  "id": "f900587_dewasa_nga_sasih",
+  "text": "dewasa ngaben dilakukan berdasarkan sasih.",
+  "subject_id": "dewasa_ngaben",
+  "predicate": "BERDASARKAN",
+  "object_id": "sasih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 969",
+  "sentence_id": 900587
+}
+
+{
+  "id": "f900588_dewasa_nga_pawukon",
+  "text": "dewasa ngaben dilakukan berdasarkan pawukon.",
+  "subject_id": "dewasa_ngaben",
+  "predicate": "BERDASARKAN",
+  "object_id": "pawukon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 1057",
+  "sentence_id": 900588
+}
+
+{
+  "id": "f900589_harga_tirt_punia",
+  "text": "harga tirtha termasuk salah satu jenis punia.",
+  "subject_id": "harga_tirtha",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "punia",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 3056-3066",
+  "sentence_id": 900589
+}
+
+{
+  "id": "f900590_harga_tirt_tirtha",
+  "text": "harga tirtha berlaku untuk tirtha.",
+  "subject_id": "harga_tirtha",
+  "predicate": "BERLAKU_UNTUK",
+  "object_id": "tirtha",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 2994-3080",
+  "sentence_id": 900590
+}
+
+{
+  "id": "f900591_malamasa_ngaben",
+  "text": "malamasa dihindari untuk ngaben.",
+  "subject_id": "malamasa",
+  "predicate": "DIHINDARI_UNTUK",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 1035-1036",
+  "sentence_id": 900591
+}
+
+{
+  "id": "f900592_sasih_paru_ngaben",
+  "text": "sasih paruwak tahuk dihindari untuk ngaben.",
+  "subject_id": "sasih_paruwak_tahuk",
+  "predicate": "DIHINDARI_UNTUK",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 1035-1036",
+  "sentence_id": 900592
+}
+
+{
+  "id": "f900593_base_paes_gedub",
+  "text": "base dijadikan paes gedubang.",
+  "subject_id": "base",
+  "predicate": "DIJADIKAN",
+  "object_id": "paes_gedubang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 7145-7154",
+  "sentence_id": 900593
+}
+
+{
+  "id": "f900594_base_lekesan",
+  "text": "base dijadikan lekesan.",
+  "subject_id": "base",
+  "predicate": "DIJADIKAN",
+  "object_id": "lekesan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] md 7158-7165",
+  "sentence_id": 900594
+}
+
+{
+  "id": "f900595_jun_pere_periuk",
+  "text": "jun pere termasuk salah satu jenis periuk.",
+  "subject_id": "jun_pere",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "periuk",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] jun pere adalah periuk tanah (md 10305)",
+  "sentence_id": 900595
+}
+
+{
+  "id": "f900596_priuk_temp_periuk",
+  "text": "priuk tempat tirtha pangringkes termasuk salah satu jenis periuk.",
+  "subject_id": "priuk_tempat_tirtha_pangringkes",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "periuk",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] priuk tempat tirtha pangringkes adalah periuk",
+  "sentence_id": 900596
+}
+
+{
+  "id": "f900597_gulungan_d_base",
+  "text": "gulungan daun sirih terbuat dari base.",
+  "subject_id": "gulungan_daun_sirih",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "base",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] gulungan daun sirih (md 9088-9096)",
+  "sentence_id": 900597
+}
+
+{
+  "id": "f900598_lembaran_d_base",
+  "text": "lembaran daun sirih terbuat dari base.",
+  "subject_id": "lembaran_daun_sirih",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "base",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] lembaran daun sirih (md 7187-7191)",
+  "sentence_id": 900598
+}
+
+{
+  "id": "f900599_kain_kasa_kain_putih",
+  "text": "kain kasa termasuk salah satu jenis kain putih.",
+  "subject_id": "kain_kasa",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "kain_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-29] kain kasa (kain putih), md 7407",
+  "sentence_id": 900599
 }
