@@ -2,7 +2,13 @@
 normalize.py  --  clean the Ngaben relation-extraction output before loading it into Neo4j.
 
 Reads the pipeline output (messy) and writes a cleaned copy plus a full change report.
-Deterministic and safe to re-run. Does NOT touch the notebook or the pipeline.
+Deterministic. Does NOT touch the notebook or the pipeline.
+
+NOT safe to re-run onto the default output any more: since 2026-09-17 every manual KB
+fix (about 600 rows by 2026-09-30, and hand edits of others) was added straight to
+relation_results_ngaben.normalized.json, and a fresh run would drop them all. The script
+therefore refuses to overwrite an output that holds rows this run would not produce;
+--force overwrites anyway (only if those rows are saved elsewhere).
 
 What it does (in order):
   1. Merge spelling / morphology variants of entity names into one node
@@ -25,7 +31,8 @@ Usage:
     python normalize.py --in <path> --out <path> --report <path>
 
 Then:
-    python load_ngaben_to_neo4j.py        # now reads the .normalized.json, wipes + reloads
+    python ../kb/build_kb.py              # the KB reads the .normalized.json
+    python load_ngaben_to_neo4j.py        # wipes + reloads Neo4j from the KB
     # ...and re-export the SVG from Neo4j Browser.
 """
 
@@ -44,7 +51,7 @@ DEFAULT_REPORT = os.path.join(HERE, "normalize_report.txt")
 
 ALIASES_PATH = os.path.join(HERE, "node_aliases.json")
 RELMAP_PATH = os.path.join(HERE, "relation_map.json")
-GAZETTEER_PATH = os.path.join(HERE, "..", "Data", "ngaben-dictionary.json")
+GAZETTEER_PATH = os.path.join(HERE, "..", "data", "ngaben-dictionary.json")
 
 # --- tunables -------------------------------------------------------------------
 # the natural-language predicate set the relation_map.json rules collapse to.
@@ -192,6 +199,8 @@ def main():
     ap.add_argument("--in", dest="inp", default=DEFAULT_IN)
     ap.add_argument("--out", dest="out", default=DEFAULT_OUT)
     ap.add_argument("--report", dest="report", default=DEFAULT_REPORT)
+    ap.add_argument("--force", action="store_true",
+                    help="overwrite --out even if it holds rows this run does not produce")
     args = ap.parse_args()
 
     data = load_json(args.inp)
@@ -411,6 +420,19 @@ def main():
         "object_type": d["object_type"],
         "source": d["source"],
     } for d in data]
+
+    if os.path.exists(args.out) and not args.force:
+        def key(d):
+            return (str(d.get("sentence_id")), d.get("subject"), d.get("relation"), d.get("object"),
+                    d.get("object_type"))
+        new_keys = {key(d) for d in records}
+        lost = [d for d in load_json(args.out) if key(d) not in new_keys]
+        if lost:
+            by_source = Counter(str(d.get("source")) for d in lost)
+            raise SystemExit(
+                f"REFUSING to overwrite {args.out}: {len(lost)} of its rows would be lost "
+                f"(by source: {dict(by_source.most_common(6))}). They are manual KB fixes that "
+                f"exist only in that file. Write elsewhere with --out, or pass --force.")
 
     with open(args.out, "w", encoding="utf-8") as fh:
         json.dump(records, fh, ensure_ascii=False, indent=2)

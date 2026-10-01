@@ -526,7 +526,9 @@ def phrase_spec(pred, phrases):
 def main():
     rows = load_json(REL_JSON)
     resolver = Resolver()
-    phrases = {k: v for k, v in load_json(PHRASES).items() if not k.startswith("_")}
+    phrases_all = load_json(PHRASES)
+    phrases = {k: v for k, v in phrases_all.items() if not k.startswith("_")}
+    variant_tpl = phrases_all.get("_variant", {})
 
     decisions = load_json(DECISIONS) if DECISIONS.exists() else {}
 
@@ -756,6 +758,12 @@ def main():
 
         tmpl = spec.get("template", "{s} " + pred.lower() + " {o}")
         nl = tmpl.format(s=s_name, o=o_name)
+        # a regional variant ("di Bangli ditambah ...") is never stated as the main version
+        variant = r.get("variant")
+        if variant:
+            nl = variant_tpl[variant["op"]].format(nl=nl, s=s_name, o=o_name,
+                                                   region=variant["region"],
+                                                   replaces=variant.get("replaces", ""))
 
         rel = {
             "subject_id": s_id, "subject_name": s_name,
@@ -767,6 +775,8 @@ def main():
             "provenance": {"sentence_id": r["sentence_id"],
                            "context_sentence": r.get("context_sentence", "")},
         }
+        if variant:
+            rel["variant"] = variant
         relations.append(rel)
 
         if conf in ("HIGH", "MED"):
@@ -777,6 +787,7 @@ def main():
                 "confidence": conf,
                 "source_sentence": r.get("context_sentence", ""),
                 "sentence_id": r["sentence_id"],
+                **({"variant": variant} if variant else {}),
             })
         else:
             review.append({

@@ -24,9 +24,11 @@ python-dotenv>=1.0
 # model it will serve must be pulled once before the bot can answer anything:
 #   ollama pull qwen2.5
 #   ollama serve        # or just leave the Ollama desktop app running
-# actions.py calls this local server on every single turn with no offline mode —
-# if Ollama isn't reachable, the bot degrades to a plain templated answer (or, for
-# the free-form fallback path, a fixed "gangguan teknis" message) instead of
-# crashing, but it never gets a real LLM-written response until Ollama is back.
+# actions.py calls this local server on every answered turn (the answer itself; the
+# term-extraction call only when the message needs it) with no offline mode -- if
+# Ollama isn't reachable or times out (LLM_TIMEOUT), the bot degrades to a plain
+# definition-based answer (or, for the free-form fallback path, a fixed "gangguan
+# teknis" message) instead of crashing, until Ollama is back.
+# client_kwargs={"timeout": ...} on ChatOllama needs langchain-ollama >= 1.1.
 langchain-core>=1.6
 langchain-ollama>=1.1

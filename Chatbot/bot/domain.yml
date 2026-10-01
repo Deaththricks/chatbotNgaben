@@ -28,6 +28,7 @@ actions:
   - utter_default
   - action_graph_rag
   - action_llm_fallback
+  - action_out_of_scope
 
 responses:
   utter_sapa:

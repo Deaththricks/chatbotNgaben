@@ -813,12 +813,12 @@
 }
 
 {
-  "id": "f971_tirtha_klungah",
-  "text": "tirtha terbuat dari klungah.",
-  "subject_id": "tirtha",
-  "predicate": "TERBUAT_DARI",
+  "id": "f971_upacara_ng_klungah",
+  "text": "upacara ngelungah menggunakan klungah.",
+  "subject_id": "upacara_ngelungah",
+  "predicate": "MENGGUNAKAN",
   "object_id": "klungah",
-  "confidence": "HIGH",
+  "confidence": "MED",
   "source_sentence": "karena tirtha tersebut dibuat dari klungah, maka pitra yadnya jenis ini dinamakan pula nglungah.",
   "sentence_id": 971
 }
@@ -2265,17 +2265,6 @@
 }
 
 {
-  "id": "f3134_lekesan_gulungan_d",
-  "text": "lekesan dimasukkan ke dalam gulungan daun sirih.",
-  "subject_id": "lekesan",
-  "predicate": "DIMASUKKAN_KE_DALAM",
-  "object_id": "gulungan_daun_sirih",
-  "confidence": "MED",
-  "source_sentence": "lekesan (daun sirih yang digulung) diikat dengan benang putih, kemudian dimasukkan ke lubang satu uang kepeng (pipis bolong), lalu di ujung atasnya diisi bawang putih yang sudah dikupas dan ditusuk dengan lidi.",
-  "sentence_id": 3134
-}
-
-{
   "id": "f3141_kawangen_uang_kepen",
   "text": "kawangen diisi dengan uang kepeng.",
   "subject_id": "kawangen",
@@ -2804,9 +2793,9 @@
 }
 
 {
-  "id": "f3559_waja_panca_datu",
-  "text": "waja adalah bagian dari panca datu.",
-  "subject_id": "waja",
+  "id": "f3559_besi_panca_datu",
+  "text": "besi adalah bagian dari panca datu.",
+  "subject_id": "besi",
   "predicate": "BAGIAN_DARI",
   "object_id": "panca_datu",
   "confidence": "HIGH",
@@ -4058,33 +4047,33 @@
 }
 
 {
-  "id": "f900067_kalpika_tirtha",
-  "text": "kalpika dimasukkan ke dalam tirtha.",
+  "id": "f900067_kalpika_tirta_pang",
+  "text": "kalpika dimasukkan ke dalam tirta pangentas.",
   "subject_id": "kalpika",
   "predicate": "DIMASUKKAN_KE_DALAM",
-  "object_id": "tirtha",
+  "object_id": "tirta_pangentas",
   "confidence": "HIGH",
   "source_sentence": "Kalpika, salah satu sarana kecil, dimasukkan ke dalam periuk berisi Tirtha bersama Pripih Emas, Jijih, Recadana, dan Ulantaga. [entitas pra-ada, definisi glosarium; audit semantik 2026-09-23]",
   "sentence_id": 900067
 }
 
 {
-  "id": "f900068_padang_lep_tirtha",
-  "text": "padang lepas dimasukkan ke dalam tirtha.",
+  "id": "f900068_padang_lep_tirta_pang",
+  "text": "padang lepas dimasukkan ke dalam tirta pangentas.",
   "subject_id": "padang_lepas",
   "predicate": "DIMASUKKAN_KE_DALAM",
-  "object_id": "tirtha",
+  "object_id": "tirta_pangentas",
   "confidence": "HIGH",
   "source_sentence": "Padang lepas dimantrai oleh Ida Sang Sulinggih dan dimasukkan ke dalam periuk Tirtha bersama sarana lain. [entitas pra-ada, definisi glosarium; audit semantik 2026-09-23]",
   "sentence_id": 900068
 }
 
 {
-  "id": "f900069_pramakusa_tirtha",
-  "text": "pramakusa dimasukkan ke dalam tirtha.",
+  "id": "f900069_pramakusa_tirta_pang",
+  "text": "pramakusa dimasukkan ke dalam tirta pangentas.",
   "subject_id": "pramakusa",
   "predicate": "DIMASUKKAN_KE_DALAM",
-  "object_id": "tirtha",
+  "object_id": "tirta_pangentas",
   "confidence": "HIGH",
   "source_sentence": "Pramakusa dimantrai oleh Ida Sang Sulinggih dan dimasukkan ke dalam periuk berisi Tirtha. [entitas pra-ada, definisi glosarium; audit semantik 2026-09-23]",
   "sentence_id": 900069
@@ -5364,17 +5353,6 @@
   "confidence": "HIGH",
   "source_sentence": "[ngaben-merge-cleaned.txt baris 3902] ...Biji Padi (Jijih), Pripih Emas, Recadana, Ulantaga, Kalpika juga dimasukkan kedalam Periuk tadi",
   "sentence_id": 900189
-}
-
-{
-  "id": "f900190_ante_galar",
-  "text": "ante diikat pada galar.",
-  "subject_id": "ante",
-  "predicate": "DIIKAT_PADA",
-  "object_id": "galar",
-  "confidence": "HIGH",
-  "source_sentence": "[glosarium Ante] rangka atau ikatan dari bilah-bilah bambu (galar)... diikat dengan tali rotan",
-  "sentence_id": 900190
 }
 
 {
@@ -9427,7 +9405,7 @@
 
 {
   "id": "f900591_malamasa_ngaben",
-  "text": "malamasa dihindari untuk ngaben.",
+  "text": "malamasa dihindari (tidak boleh dipakai) untuk ngaben.",
   "subject_id": "malamasa",
   "predicate": "DIHINDARI_UNTUK",
   "object_id": "ngaben",
@@ -9438,7 +9416,7 @@
 
 {
   "id": "f900592_sasih_paru_ngaben",
-  "text": "sasih paruwak tahuk dihindari untuk ngaben.",
+  "text": "sasih paruwak tahuk dihindari (tidak boleh dipakai) untuk ngaben.",
   "subject_id": "sasih_paruwak_tahuk",
   "predicate": "DIHINDARI_UNTUK",
   "object_id": "ngaben",
@@ -9522,4 +9500,4944 @@
   "confidence": "HIGH",
   "source_sentence": "[kurasi sarana 2026-09-29] kain kasa (kain putih), md 7407",
   "sentence_id": 900599
+}
+
+{
+  "id": "f900600_puspa_asti_klungah_ny",
+  "text": "puspa asti terdiri dari klungah nyuh gading.",
+  "subject_id": "puspa_asti",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "klungah_nyuh_gading",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L551: Setelah hancur/halus, dimasukkan ke kelapa gading yang telah di kasturi dan diwujudkan menjadi Puspa Asti.",
+  "sentence_id": 900600
+}
+
+{
+  "id": "f900601_tegteg_kayu_cenda",
+  "text": "tegteg terbuat dari kayu cendana.",
+  "subject_id": "tegteg",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kayu_cendana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L146: Diawali dengan membuat tegteg berupa bentuk manusia terbuat dari kayu cendana, atau cukup berupa Daksina Pengawak yang dihiasi sedemikian rupa dan diberi gambar orang sesuai jenis kelamin serta pipil nama sebagai perwuju",
+  "sentence_id": 900601
+}
+
+{
+  "id": "f900602_pepaga_sasap",
+  "text": "pepaga dilengkapi sasap.",
+  "subject_id": "pepaga",
+  "predicate": "DILENGKAPI",
+  "object_id": "sasap",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2716: Ditiap-tiap sudut pepaga/asagan ditancapkan tiang bambu kurang lebih satu meter di atas pepaga, digunakan untuk mengikatkan selembar kain putih, membentang di atas pepaga yang disebut \"leluhur\", sedangkan keempat peganga",
+  "sentence_id": 900602
+}
+
+{
+  "id": "f900603_pepaga_daun_dapda",
+  "text": "pepaga dilengkapi daun dapdap.",
+  "subject_id": "pepaga",
+  "predicate": "DILENGKAPI",
+  "object_id": "daun_dapdap",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2716: Ditiap-tiap sudut pepaga/asagan ditancapkan tiang bambu kurang lebih satu meter di atas pepaga, digunakan untuk mengikatkan selembar kain putih, membentang di atas pepaga yang disebut \"leluhur\", sedangkan keempat peganga",
+  "sentence_id": 900603
+}
+
+{
+  "id": "f900604_pepaga_uang_kepen",
+  "text": "pepaga dilengkapi uang kepeng.",
+  "subject_id": "pepaga",
+  "predicate": "DILENGKAPI",
+  "object_id": "uang_kepeng",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2716: Ditiap-tiap sudut pepaga/asagan ditancapkan tiang bambu kurang lebih satu meter di atas pepaga, digunakan untuk mengikatkan selembar kain putih, membentang di atas pepaga yang disebut \"leluhur\", sedangkan keempat peganga",
+  "sentence_id": 900604
+}
+
+{
+  "id": "f900605_daksina_ge_banten_pej",
+  "text": "daksina gede berisi banten pejati.",
+  "subject_id": "daksina_gede",
+  "predicate": "BERISI",
+  "object_id": "banten_pejati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L498: Banten angen mapurwa daksina (daksina gede berisi pejati lan suci asoroh).",
+  "sentence_id": 900605
+}
+
+{
+  "id": "f900606_daksina_ge_banten_suc",
+  "text": "daksina gede berisi banten suci.",
+  "subject_id": "daksina_gede",
+  "predicate": "BERISI",
+  "object_id": "banten_suci",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L498: Banten angen mapurwa daksina (daksina gede berisi pejati lan suci asoroh).",
+  "sentence_id": 900606
+}
+
+{
+  "id": "f900607_pengawak_alang_alan",
+  "text": "pengawak terdiri dari alang-alang.",
+  "subject_id": "pengawak",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "alang_alang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1161: Pengawak terdiri dari sebuah jun pere (periuk tanah yang kecil/masih merah) berisikan air, 54 atau 108 lembar daun alang-alang serta sembilan batang kayu cendana kecil-kecil (sebesar batang korek api).",
+  "sentence_id": 900607
+}
+
+{
+  "id": "f900608_pengawak_kayu_cenda",
+  "text": "pengawak terdiri dari kayu cendana.",
+  "subject_id": "pengawak",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "kayu_cendana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1161: Pengawak terdiri dari sebuah jun pere (periuk tanah yang kecil/masih merah) berisikan air, 54 atau 108 lembar daun alang-alang serta sembilan batang kayu cendana kecil-kecil (sebesar batang korek api).",
+  "sentence_id": 900608
+}
+
+{
+  "id": "f900609_tirtha_pan_ulantaga",
+  "text": "tirtha pangentas atiwa-tiwa dilengkapi ulantaga.",
+  "subject_id": "tirtha_pangentas_atiwa_tiwa",
+  "predicate": "DILENGKAPI",
+  "object_id": "ulantaga",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1125: Tirtha terakhir yang disiratkan yakni Tirtha Pangentas Atiwa-tiwa/pengabenan, yakni tirtha yang dilengkapi Walantaga dengan Kakitirnya.",
+  "sentence_id": 900609
+}
+
+{
+  "id": "f900610_tirtha_pan_kekitir",
+  "text": "tirtha pangentas atiwa-tiwa dilengkapi kekitir.",
+  "subject_id": "tirtha_pangentas_atiwa_tiwa",
+  "predicate": "DILENGKAPI",
+  "object_id": "kekitir",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1125: Tirtha terakhir yang disiratkan yakni Tirtha Pangentas Atiwa-tiwa/pengabenan, yakni tirtha yang dilengkapi Walantaga dengan Kakitirnya.",
+  "sentence_id": 900610
+}
+
+{
+  "id": "f900611_sukutungga_abu",
+  "text": "sukutunggal berisi abu.",
+  "subject_id": "sukutunggal",
+  "predicate": "BERISI",
+  "object_id": "abu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1173: Kemudian, abu itu dimasukkan ke dalam klungah nyuh gading yang dikasturi dan disukutunggalkan.",
+  "sentence_id": 900611
+}
+
+{
+  "id": "f900612_sukutungga_klungah_ny",
+  "text": "sukutunggal terbuat dari klungah nyuh gading.",
+  "subject_id": "sukutunggal",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "klungah_nyuh_gading",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1876: Gilingan arang yang telah lumat tersebut langsung dimasukkan ke dalam sebuah klungah nyuh gading (kelapa muda kuning yang airnya telah dikeluarkan), diberi bentuk badan sekitar seasta (sekitar 40 cm) tingginya, dibungkus",
+  "sentence_id": 900612
+}
+
+{
+  "id": "f900613_sukutungga_kain_putih",
+  "text": "sukutunggal dibungkus dengan kain putih.",
+  "subject_id": "sukutunggal",
+  "predicate": "DIBUNGKUS_DENGAN",
+  "object_id": "kain_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1876: Gilingan arang yang telah lumat tersebut langsung dimasukkan ke dalam sebuah klungah nyuh gading (kelapa muda kuning yang airnya telah dikeluarkan), diberi bentuk badan sekitar seasta (sekitar 40 cm) tingginya, dibungkus",
+  "sentence_id": 900613
+}
+
+{
+  "id": "f900614_awak_awaka_kayu_cenda",
+  "text": "awak-awakaning sawa terbuat dari kayu cendana.",
+  "subject_id": "awak_awakaning_sawa",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kayu_cendana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1200: Untuk itu sebuah adegan yang sudah disisipkan sebuah awak-awakaning sawa yang terbuat dari sebilah papan cendana atau majagau tipis, diarak menuju setra tempat jasad mendiang ditanam atau bakar titip.",
+  "sentence_id": 900614
+}
+
+{
+  "id": "f900615_adegan_awak_awaka",
+  "text": "adegan disisipi awak-awakaning sawa.",
+  "subject_id": "adegan",
+  "predicate": "DISISIPI",
+  "object_id": "awak_awakaning_sawa",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1200: Untuk itu sebuah adegan yang sudah disisipkan sebuah awak-awakaning sawa yang terbuat dari sebilah papan cendana atau majagau tipis, diarak menuju setra tempat jasad mendiang ditanam atau bakar titip.",
+  "sentence_id": 900615
+}
+
+{
+  "id": "f900616_awak_awaka_ngulapin",
+  "text": "awak-awakaning sawa digunakan dalam ngulapin.",
+  "subject_id": "awak_awakaning_sawa",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngulapin",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1200: Untuk melakukan ngulapin, dewasa ayu (hari baik) harus dicari pula.",
+  "sentence_id": 900616
+}
+
+{
+  "id": "f900617_kajang_kain_putih",
+  "text": "kajang terbuat dari kain putih.",
+  "subject_id": "kajang",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kain_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1268: Bagian dari upacara Pabersihan selanjutnya, adalah Mlaspas Kajang.",
+  "sentence_id": 900617
+}
+
+{
+  "id": "f900618_ukur_uang_kepen",
+  "text": "ukur terbuat dari uang kepeng.",
+  "subject_id": "ukur",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "uang_kepeng",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1268: Pada kajang diletakkan pula sebuah ukur, yakni uang kepeng atau lempengan logam (emas/perak) yang dirangkai dengan benang, yang bentuknya bagaikan tubuh manusia.",
+  "sentence_id": 900618
+}
+
+{
+  "id": "f900619_ukur_kajang",
+  "text": "ukur diletakkan pada kajang.",
+  "subject_id": "ukur",
+  "predicate": "DILETAKKAN_PADA",
+  "object_id": "kajang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1268: Pada kajang diletakkan pula sebuah ukur, yakni uang kepeng atau lempengan logam (emas/perak) yang dirangkai dengan benang, yang bentuknya bagaikan tubuh manusia.",
+  "sentence_id": 900619
+}
+
+{
+  "id": "f900620_angenan_minyak_kel",
+  "text": "angenan berisi minyak kelapa.",
+  "subject_id": "angenan",
+  "predicate": "BERISI",
+  "object_id": "minyak_kelapa",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1301: Angenan, merupakan sebuah pelita kecil terbuat dari kulit telur ayam berminyak kelapa.",
+  "sentence_id": 900620
+}
+
+{
+  "id": "f900621_karawista_alang_alan",
+  "text": "karawista terbuat dari alang-alang.",
+  "subject_id": "karawista",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "alang_alang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1340: Sebagai ciri telah disangaskara maka sang pendeta melekatkan sebuah karawista (simpul yang dibuat dari empat helai daun alang-alang) pada setiap alat upakara bersangkutan, terutama pada Adegan.",
+  "sentence_id": 900621
+}
+
+{
+  "id": "f900622_karawista_sangaskara",
+  "text": "karawista digunakan dalam sangaskara.",
+  "subject_id": "karawista",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1340: Sebagai ciri telah disangaskara maka sang pendeta melekatkan sebuah karawista (simpul yang dibuat dari empat helai daun alang-alang) pada setiap alat upakara bersangkutan, terutama pada Adegan.",
+  "sentence_id": 900622
+}
+
+{
+  "id": "f900623_upakara_pa_uang_kepen",
+  "text": "upakara pamerasan terdiri dari uang kepeng.",
+  "subject_id": "upakara_pamerasan",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "uang_kepeng",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1750: Pamerasan adalah sejumlah uang kepeng yang dibungkus dengan daun \"dapdap\", diikat benang tridatu.",
+  "sentence_id": 900623
+}
+
+{
+  "id": "f900624_upakara_pa_daun_dapda",
+  "text": "upakara pamerasan dibungkus dengan daun dapdap.",
+  "subject_id": "upakara_pamerasan",
+  "predicate": "DIBUNGKUS_DENGAN",
+  "object_id": "daun_dapdap",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1750: Pamerasan adalah sejumlah uang kepeng yang dibungkus dengan daun \"dapdap\", diikat benang tridatu.",
+  "sentence_id": 900624
+}
+
+{
+  "id": "f900625_upakara_pa_benang_tri",
+  "text": "upakara pamerasan diikat dengan benang tridatu.",
+  "subject_id": "upakara_pamerasan",
+  "predicate": "DIIKAT_DENGAN",
+  "object_id": "benang_tridatu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1750: Pamerasan adalah sejumlah uang kepeng yang dibungkus dengan daun \"dapdap\", diikat benang tridatu.",
+  "sentence_id": 900625
+}
+
+{
+  "id": "f900626_upakara_pa_ngaben",
+  "text": "upakara pamerasan digunakan dalam ngaben.",
+  "subject_id": "upakara_pamerasan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1750: Kurang lebih seminggu menjelang pangabenan, pihak yang beryadnya biasanya mengirim Pamerasan kepada keponakan atau cucu-cucu sampingan tadi.",
+  "sentence_id": 900626
+}
+
+{
+  "id": "f900627_banten_beb_pamerasan",
+  "text": "banten bebangkit digunakan dalam pamerasan.",
+  "subject_id": "banten_bebangkit",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pamerasan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1397: Sarana upacara ini, adalah seperangkat sajen, biasanya dengan sebuah Bebangkit sebagai pokoknya.",
+  "sentence_id": 900627
+}
+
+{
+  "id": "f900628_jukung_pamerasan",
+  "text": "jukung digunakan dalam pamerasan.",
+  "subject_id": "jukung",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pamerasan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1397: Selain itu ada pertanda khas bagaikan inti upakara ini, yakni sebuah jukung kecil yang terbuat dari seludang kelapa.",
+  "sentence_id": 900628
+}
+
+{
+  "id": "f900629_jukung_seludang_k",
+  "text": "jukung terbuat dari seludang kelapa.",
+  "subject_id": "jukung",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "seludang_kelapa",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1397: Selain itu ada pertanda khas bagaikan inti upakara ini, yakni sebuah jukung kecil yang terbuat dari seludang kelapa.",
+  "sentence_id": 900629
+}
+
+{
+  "id": "f900630_jarum_pamerasan",
+  "text": "jarum digunakan dalam pamerasan.",
+  "subject_id": "jarum",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pamerasan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1400: Selain jukung, ada juga sebatang jarum yang biasa dipakai untuk menjahit.",
+  "sentence_id": 900630
+}
+
+{
+  "id": "f900631_pipil_pamerasan",
+  "text": "pipil dilengkapkan pada pamerasan.",
+  "subject_id": "pipil",
+  "predicate": "DILENGKAPKAN_PADA",
+  "object_id": "pamerasan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1406: Di samping itu juga dilengkapi selembar \"pipil\" tanah atau tanda pemilikan lainnya.",
+  "sentence_id": 900631
+}
+
+{
+  "id": "f900632_pripih_ema_daun_dapda",
+  "text": "pripih emas dibungkus dengan daun dapdap.",
+  "subject_id": "pripih_emas",
+  "predicate": "DIBUNGKUS_DENGAN",
+  "object_id": "daun_dapdap",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1520: Pada Sawa Wedana digunakanlah lima jenis pripih logam (perak, tembaga, emas, besi dan permata) yang dibungkus dengan daun dapdap kurang lebih selebar tiga jari yang disumbat kan pada mulut jenazah saat masesalin (pergant",
+  "sentence_id": 900632
+}
+
+{
+  "id": "f900633_pripih_per_daun_dapda",
+  "text": "pripih perak dibungkus dengan daun dapdap.",
+  "subject_id": "pripih_perak",
+  "predicate": "DIBUNGKUS_DENGAN",
+  "object_id": "daun_dapdap",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1520: Pada Sawa Wedana digunakanlah lima jenis pripih logam (perak, tembaga, emas, besi dan permata) yang dibungkus dengan daun dapdap kurang lebih selebar tiga jari yang disumbat kan pada mulut jenazah saat masesalin (pergant",
+  "sentence_id": 900633
+}
+
+{
+  "id": "f900634_pripih_tem_daun_dapda",
+  "text": "pripih tembaga dibungkus dengan daun dapdap.",
+  "subject_id": "pripih_tembaga",
+  "predicate": "DIBUNGKUS_DENGAN",
+  "object_id": "daun_dapdap",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1520: Pada Sawa Wedana digunakanlah lima jenis pripih logam (perak, tembaga, emas, besi dan permata) yang dibungkus dengan daun dapdap kurang lebih selebar tiga jari yang disumbat kan pada mulut jenazah saat masesalin (pergant",
+  "sentence_id": 900634
+}
+
+{
+  "id": "f900635_mangle_daun_ronta",
+  "text": "mangle terbuat dari daun rontal.",
+  "subject_id": "mangle",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "daun_rontal",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1590: Nah, sekarang mari kita uraikan tentang mangle.",
+  "sentence_id": 900635
+}
+
+{
+  "id": "f900636_mangle_tipat",
+  "text": "mangle terdiri dari tipat.",
+  "subject_id": "mangle",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "tipat",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1590: Nah, sekarang mari kita uraikan tentang mangle.",
+  "sentence_id": 900636
+}
+
+{
+  "id": "f900637_sekah_daun_berin",
+  "text": "sekah terbuat dari daun beringin.",
+  "subject_id": "sekah",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "daun_beringin",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2020: Pitra mendiang, yang merupakan sasaran upacara dibuatkan perlambang yang disebut Sekah Kangsen.",
+  "sentence_id": 900637
+}
+
+{
+  "id": "f900638_sekah_klatkat",
+  "text": "sekah terbuat dari klatkat.",
+  "subject_id": "sekah",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "klatkat",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2020: Pitra mendiang, yang merupakan sasaran upacara dibuatkan perlambang yang disebut Sekah Kangsen.",
+  "sentence_id": 900638
+}
+
+{
+  "id": "f900639_sekah_kain_putih",
+  "text": "sekah dibungkus dengan kain putih.",
+  "subject_id": "sekah",
+  "predicate": "DIBUNGKUS_DENGAN",
+  "object_id": "kain_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2020: Pitra mendiang, yang merupakan sasaran upacara dibuatkan perlambang yang disebut Sekah Kangsen.",
+  "sentence_id": 900639
+}
+
+{
+  "id": "f900640_sekah_bunga_ratn",
+  "text": "sekah terbuat dari bunga ratna putih.",
+  "subject_id": "sekah",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "bunga_ratna_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2076: Bentuk sekah ini seperti sebuah patung yang bahan pokoknya dari daun beringin.",
+  "sentence_id": 900640
+}
+
+{
+  "id": "f900641_daun_berin_atma_wedan",
+  "text": "daun beringin digunakan dalam atma wedana.",
+  "subject_id": "daun_beringin",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L452: Rikalaning jaga ngawentenang karya penyekahan, patut karyanin dengan upacara Nganget Don Bingin.",
+  "sentence_id": 900641
+}
+
+{
+  "id": "f900642_panca_datu_mirah",
+  "text": "panca datu terdiri dari mirah.",
+  "subject_id": "panca_datu",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "mirah",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2151: Bermula diletakkanlah lima jenis logam (Pancadatu) pada natar Payadnyan, masing-masing diiringi seperangkat sajen kecil pada setiap tempat menurut arahnya.",
+  "sentence_id": 900642
+}
+
+{
+  "id": "f900643_tulup_atma_wedan",
+  "text": "tulup digunakan dalam atma wedana.",
+  "subject_id": "tulup",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2151: Lalu semua Sekah termasuk Sangge diturunkan dari Pawedan.",
+  "sentence_id": 900643
+}
+
+{
+  "id": "f900644_tulup_benang_tri",
+  "text": "tulup dilengkapi benang tridatu.",
+  "subject_id": "tulup",
+  "predicate": "DILENGKAPI",
+  "object_id": "benang_tridatu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2151: Sekah dan Sangge itu dijunjung beriring kemudian diarak, dipayungi, dilengkapi pula dengan \"tulup\" (sumpitan) selaku pelopor yang dirangkai dengan \"benang tridatu\" (warna tiga) sebagai penuntunnya.",
+  "sentence_id": 900644
+}
+
+{
+  "id": "f900645_ketipat_ba_tipat",
+  "text": "ketipat bantal terdiri dari tipat.",
+  "subject_id": "ketipat_bantal",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "tipat",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2314: Yang terpokok adalah Ketipat Bantal (ketupat dan kue ketan yang dibungkus dengan janur) hingga upacara ini pun dijuluki ngaturang ketipat bantal.",
+  "sentence_id": 900645
+}
+
+{
+  "id": "f900646_ketipat_ba_daun_kelap",
+  "text": "ketipat bantal dibungkus dengan daun kelapa muda busung.",
+  "subject_id": "ketipat_bantal",
+  "predicate": "DIBUNGKUS_DENGAN",
+  "object_id": "daun_kelapa_muda_busung",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2314: Yang terpokok adalah Ketipat Bantal (ketupat dan kue ketan yang dibungkus dengan janur) hingga upacara ini pun dijuluki ngaturang ketipat bantal.",
+  "sentence_id": 900646
+}
+
+{
+  "id": "f900647_ketipat_ba_nyegara_gu",
+  "text": "ketipat bantal digunakan dalam nyegara gunung.",
+  "subject_id": "ketipat_bantal",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyegara_gunung",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2314: Yang terpokok adalah Ketipat Bantal (ketupat dan kue ketan yang dibungkus dengan janur) hingga upacara ini pun dijuluki ngaturang ketipat bantal.",
+  "sentence_id": 900647
+}
+
+{
+  "id": "f900648_paes_gedub_kapur_siri",
+  "text": "paes gedubang terbuat dari kapur sirih.",
+  "subject_id": "paes_gedubang",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kapur_sirih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2492: Paes Gedubang, yaitu daun sirih lengkap dengan isinya seperti pamor (kapur sirih), gambir, buah pinang serta dikunyah, maka ampas dan airnya yang berwarna merah inilah disebut Paes Gedubang.",
+  "sentence_id": 900648
+}
+
+{
+  "id": "f900649_paes_gedub_gambir",
+  "text": "paes gedubang terbuat dari gambir.",
+  "subject_id": "paes_gedubang",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "gambir",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2492: Paes Gedubang, yaitu daun sirih lengkap dengan isinya seperti pamor (kapur sirih), gambir, buah pinang serta dikunyah, maka ampas dan airnya yang berwarna merah inilah disebut Paes Gedubang.",
+  "sentence_id": 900649
+}
+
+{
+  "id": "f900650_paes_gedub_pinang",
+  "text": "paes gedubang terbuat dari pinang.",
+  "subject_id": "paes_gedubang",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "pinang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2492: Paes Gedubang, yaitu daun sirih lengkap dengan isinya seperti pamor (kapur sirih), gambir, buah pinang serta dikunyah, maka ampas dan airnya yang berwarna merah inilah disebut Paes Gedubang.",
+  "sentence_id": 900650
+}
+
+{
+  "id": "f900651_kawangen_j_lekesan",
+  "text": "kawangen jeriji terdiri dari lekesan.",
+  "subject_id": "kawangen_jeriji",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "lekesan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2493: Jumlah lekesan ini dibuat sebanyak 20 biji dan tiap-tiap 5 (lima) biji dimasukkan dalam sebuah kojong yang dibuat dari daun pisang, sehingga menjadi Kawangen, yang disebut dengan Kawangen Jeriji sebanyak 4 (empat) buah.",
+  "sentence_id": 900651
+}
+
+{
+  "id": "f900652_kawangen_j_uang_kepen",
+  "text": "kawangen jeriji terdiri dari uang kepeng.",
+  "subject_id": "kawangen_jeriji",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "uang_kepeng",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3229: Kawangen Jeriji adalah sebuah kojong yang dibuat dari daun pisang dan di dalamnya berisi lima buah gulungan \"base\" (daun sirih), Setiap satu gulung daun sirih diikat dengan benang putih, kemudian gulungan sirih dimasukka",
+  "sentence_id": 900652
+}
+
+{
+  "id": "f900653_kawangen_j_daun_pisan",
+  "text": "kawangen jeriji terbuat dari daun pisang.",
+  "subject_id": "kawangen_jeriji",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "daun_pisang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3229: Kawangen Jeriji adalah sebuah kojong yang dibuat dari daun pisang dan di dalamnya berisi lima buah gulungan \"base\" (daun sirih), Setiap satu gulung daun sirih diikat dengan benang putih, kemudian gulungan sirih dimasukka",
+  "sentence_id": 900653
+}
+
+{
+  "id": "f900654_uang_kepen_perak",
+  "text": "uang kepeng mengandung perak.",
+  "subject_id": "uang_kepeng",
+  "predicate": "MENGANDUNG",
+  "object_id": "perak",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3245: Uang kepeng yang asli diyakini mengandung lima unsur logam yang terdiri dari : (1) Perak (putih), tempatnya di Timur, dewanya adalah Dewa Iswara.",
+  "sentence_id": 900654
+}
+
+{
+  "id": "f900655_uang_kepen_tembaga",
+  "text": "uang kepeng mengandung tembaga.",
+  "subject_id": "uang_kepeng",
+  "predicate": "MENGANDUNG",
+  "object_id": "tembaga",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3245: Uang kepeng tersebut merupakan simbol dari kekuatan Panca Datu, yaitu lambang kehidupan dan kekuatan lima Dewa-Dewa yang berada dalam kelima penjuru mata angin.",
+  "sentence_id": 900655
+}
+
+{
+  "id": "f900656_uang_kepen_emas",
+  "text": "uang kepeng mengandung emas.",
+  "subject_id": "uang_kepeng",
+  "predicate": "MENGANDUNG",
+  "object_id": "emas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3245: Uang kepeng tersebut merupakan simbol dari kekuatan Panca Datu, yaitu lambang kehidupan dan kekuatan lima Dewa-Dewa yang berada dalam kelima penjuru mata angin.",
+  "sentence_id": 900656
+}
+
+{
+  "id": "f900657_uang_kepen_besi",
+  "text": "uang kepeng mengandung besi.",
+  "subject_id": "uang_kepeng",
+  "predicate": "MENGANDUNG",
+  "object_id": "besi",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3245: Uang kepeng tersebut merupakan simbol dari kekuatan Panca Datu, yaitu lambang kehidupan dan kekuatan lima Dewa-Dewa yang berada dalam kelima penjuru mata angin.",
+  "sentence_id": 900657
+}
+
+{
+  "id": "f900658_uang_kepen_logam_camp",
+  "text": "uang kepeng mengandung logam campuran.",
+  "subject_id": "uang_kepeng",
+  "predicate": "MENGANDUNG",
+  "object_id": "logam_campuran",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3245: Uang kepeng tersebut merupakan simbol dari kekuatan Panca Datu, yaitu lambang kehidupan dan kekuatan lima Dewa-Dewa yang berada dalam kelima penjuru mata angin.",
+  "sentence_id": 900658
+}
+
+{
+  "id": "f900659_gegaleng_kayu_dapda",
+  "text": "gegaleng terdiri dari kayu dapdap.",
+  "subject_id": "gegaleng",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "kayu_dapdap",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3118: Gegaleng ini dibuat dari uang kepeng (pipis bolong) sebanyak 250 biji serta beberapa potongan-potongan dahan kayu dapdap yang dibungkus dengan kain putih.",
+  "sentence_id": 900659
+}
+
+{
+  "id": "f900660_air_kumkum_kayu_cenda",
+  "text": "air kumkuman terbuat dari kayu cendana.",
+  "subject_id": "air_kumkuman",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kayu_cendana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2514: Candana, cendana ini digosok sebanyak-banyaknya karena gosokan air cendana kemudian dicampur dengan bunga-bunga yang disebut dengan \"Air Kumkuman\" ini akan digunakan untuk memandikan jenazah, karena air cendana juga berf",
+  "sentence_id": 900660
+}
+
+{
+  "id": "f900661_air_kumkum_bunga",
+  "text": "air kumkuman terbuat dari bunga.",
+  "subject_id": "air_kumkuman",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "bunga",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2514: Candana, cendana ini digosok sebanyak-banyaknya karena gosokan air cendana kemudian dicampur dengan bunga-bunga yang disebut dengan \"Air Kumkuman\" ini akan digunakan untuk memandikan jenazah, karena air cendana juga berf",
+  "sentence_id": 900661
+}
+
+{
+  "id": "f900662_anget_ange_cengkeh",
+  "text": "anget-angetan terdiri dari cengkeh.",
+  "subject_id": "anget_angetan",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "cengkeh",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3206: Pada hulu hati jenazah diisi \"bebek\" atau boreh anget-angetan (parem) Bebek dari anget-angetan terdiri dari katik cengkeh (bunga cengkeh), jebugarum, masuwi, sampar wantu, dan kunir.",
+  "sentence_id": 900662
+}
+
+{
+  "id": "f900663_anget_ange_jebugarum",
+  "text": "anget-angetan terdiri dari jebugarum.",
+  "subject_id": "anget_angetan",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "jebugarum",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3206: Pada hulu hati jenazah diisi \"bebek\" atau boreh anget-angetan (parem) Bebek dari anget-angetan terdiri dari katik cengkeh (bunga cengkeh), jebugarum, masuwi, sampar wantu, dan kunir.",
+  "sentence_id": 900663
+}
+
+{
+  "id": "f900664_anget_ange_mesui",
+  "text": "anget-angetan terdiri dari mesui.",
+  "subject_id": "anget_angetan",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "mesui",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3206: Bebek (anget-angetan) atau rempah-rempah: Setelah semua yang berada di area kepala (seduwuran ceking) selesai diupacarai (meeteh-eteh), maka dilanjutkan melakukan eteh-eteh (upacara) pada \"Hulu Hati\" (dada) jenazah.",
+  "sentence_id": 900664
+}
+
+{
+  "id": "f900665_anget_ange_sampar_wan",
+  "text": "anget-angetan terdiri dari sampar wantu.",
+  "subject_id": "anget_angetan",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "sampar_wantu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3206: Pada hulu hati jenazah diisi \"bebek\" atau boreh anget-angetan (parem) Bebek dari anget-angetan terdiri dari katik cengkeh (bunga cengkeh), jebugarum, masuwi, sampar wantu, dan kunir.",
+  "sentence_id": 900665
+}
+
+{
+  "id": "f900666_anget_ange_kunyit",
+  "text": "anget-angetan terdiri dari kunyit.",
+  "subject_id": "anget_angetan",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "kunyit",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3206: Bebek (anget-angetan) atau rempah-rempah: Setelah semua yang berada di area kepala (seduwuran ceking) selesai diupacarai (meeteh-eteh), maka dilanjutkan melakukan eteh-eteh (upacara) pada \"Hulu Hati\" (dada) jenazah.",
+  "sentence_id": 900666
+}
+
+{
+  "id": "f900667_babelonyoh_beras",
+  "text": "babelonyoh terbuat dari beras.",
+  "subject_id": "babelonyoh",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "beras",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3031: Setelah pakaian yang ada pada jenazah dibuka, lalu badannya diurapi atau dibedaki dengan \"Babelonyoh\" (beras basah yang dihaluskan diisi kunir), sebagai pangganti sabun agar nantinya jenazah akan kelihatan bersih dan seg",
+  "sentence_id": 900667
+}
+
+{
+  "id": "f900668_babelonyoh_kunyit",
+  "text": "babelonyoh terbuat dari kunyit.",
+  "subject_id": "babelonyoh",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kunyit",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3031: Setelah pakaian yang ada pada jenazah dibuka, lalu badannya diurapi atau dibedaki dengan \"Babelonyoh\" (beras basah yang dihaluskan diisi kunir), sebagai pangganti sabun agar nantinya jenazah akan kelihatan bersih dan seg",
+  "sentence_id": 900668
+}
+
+{
+  "id": "f900669_boreh_kayu_cenda",
+  "text": "boreh terbuat dari kayu cendana.",
+  "subject_id": "boreh",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kayu_cendana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3218: Wewangian: Setelah semua tatanan eteh-eteh tersebut selesai dilaksanakan maka seluruh badan jenazah diolesi dengan wewangian yang biasanya terbuat dari serbuk cendana diisi sedikit air, yang biasa disebut \"Boreh Miik\", s",
+  "sentence_id": 900669
+}
+
+{
+  "id": "f900670_suwah_peta_bambu",
+  "text": "suwah petat terbuat dari bambu.",
+  "subject_id": "suwah_petat",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "bambu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2556: Suwah Petat (Sisir dibuat dari bambu atau kayu), yang akan digunakan untuk menyisir jenazah pada permulaan upacara Nyiramang Layon.",
+  "sentence_id": 900670
+}
+
+{
+  "id": "f900671_asem_buah_belim",
+  "text": "asem terbuat dari buah belimbing.",
+  "subject_id": "asem",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "buah_belimbing",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2562: Asem yang dibuat dari irisan buah blimbing yang agak muda, ditaruh di atas takir dan disatukan dengan banten pabersihan.",
+  "sentence_id": 900671
+}
+
+{
+  "id": "f900672_asem_nyiramang_",
+  "text": "asem digunakan dalam nyiramang layon.",
+  "subject_id": "asem",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2562: Asem yang dibuat dari irisan buah blimbing yang agak muda, ditaruh di atas takir dan disatukan dengan banten pabersihan.",
+  "sentence_id": 900672
+}
+
+{
+  "id": "f900673_tabunan_celebongke",
+  "text": "tabunan diletakkan di celebongkekan.",
+  "subject_id": "tabunan",
+  "predicate": "DILETAKKAN_DI",
+  "object_id": "celebongkekan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2580: Api tersebut akan ditempatkan pada sebuah tempat yang terbuat dari bekas tempurung kelapa muda (celebongkekan) dan ditancapkan kayu dap-dap pada tempurung kelapa tersebut untuk pegangan, sedangkan api tersebut disebut \"A",
+  "sentence_id": 900673
+}
+
+{
+  "id": "f900674_celebongke_kayu_dapda",
+  "text": "celebongkekan dilengkapi kayu dapdap.",
+  "subject_id": "celebongkekan",
+  "predicate": "DILENGKAPI",
+  "object_id": "kayu_dapdap",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2580: Api tersebut akan ditempatkan pada sebuah tempat yang terbuat dari bekas tempurung kelapa muda (celebongkekan) dan ditancapkan kayu dap-dap pada tempurung kelapa tersebut untuk pegangan, sedangkan api tersebut disebut \"A",
+  "sentence_id": 900674
+}
+
+{
+  "id": "f900675_pedangal_kayu_dapda",
+  "text": "pedangal terbuat dari kayu dapdap.",
+  "subject_id": "pedangal",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kayu_dapdap",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2899: * Keempat: Setelah siap, Sangging kemudian menaruh pedangal yang dibuat dari kayu dapdap pada bibir jenazah (sebagai simbolis bahwa gigi telah disangga dengan pedangal).",
+  "sentence_id": 900675
+}
+
+{
+  "id": "f900676_pedangal_nyiramang_",
+  "text": "pedangal digunakan dalam nyiramang layon.",
+  "subject_id": "pedangal",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2899: * Keempat: Setelah siap, Sangging kemudian menaruh pedangal yang dibuat dari kayu dapdap pada bibir jenazah (sebagai simbolis bahwa gigi telah disangga dengan pedangal).",
+  "sentence_id": 900676
+}
+
+{
+  "id": "f900677_tebu_pedangal",
+  "text": "tebu menggantikan pedangal.",
+  "subject_id": "tebu",
+  "predicate": "MENGGANTIKAN",
+  "object_id": "pedangal",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2908: * Ketujuh: kemudian pedangal yang terbuat dari kayu dapdap diganti dengan tebu.",
+  "sentence_id": 900677
+}
+
+{
+  "id": "f900678_tebu_nyiramang_",
+  "text": "tebu digunakan dalam nyiramang layon.",
+  "subject_id": "tebu",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2908: * Ketujuh: kemudian pedangal yang terbuat dari kayu dapdap diganti dengan tebu.",
+  "sentence_id": 900678
+}
+
+{
+  "id": "f900679_tebu_nguyeg",
+  "text": "tebu digunakan dalam nguyeg.",
+  "subject_id": "tebu",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nguyeg",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L536: Tebu satugel untuk nguyeg saha sidu ental.",
+  "sentence_id": 900679
+}
+
+{
+  "id": "f900680_rurub_sino_blangsah",
+  "text": "rurub sinom terbuat dari blangsah.",
+  "subject_id": "rurub_sinom",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "blangsah",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3285: Rurub Sinom adalah hiasan yang terbuat dari Blangsah (bunga pinang yang belum mekar) dijarit bersama daun kelapa muda (busung), dengan panjang kira-kira 40 sampai 45 sentimeter.",
+  "sentence_id": 900680
+}
+
+{
+  "id": "f900681_rurub_sino_daun_kelap",
+  "text": "rurub sinom terbuat dari daun kelapa muda busung.",
+  "subject_id": "rurub_sinom",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "daun_kelapa_muda_busung",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3285: Rurub Sinom adalah hiasan yang terbuat dari Blangsah (bunga pinang yang belum mekar) dijarit bersama daun kelapa muda (busung), dengan panjang kira-kira 40 sampai 45 sentimeter.",
+  "sentence_id": 900681
+}
+
+{
+  "id": "f900682_samsam_daun_dapda",
+  "text": "samsam terdiri dari daun dapdap.",
+  "subject_id": "samsam",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "daun_dapdap",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3679: Adapun ciri khas Tirtha Panglukatan, terlihat pada tempat dan sarana Tirtha Panglukatan seperti prasarana periuk yang lehernya dikalungi benang yang berisi uang kepeng, serta sarana bantennya berisi \"samsam\" yaitu potong",
+  "sentence_id": 900682
+}
+
+{
+  "id": "f900683_samsam_daun_temen",
+  "text": "samsam terdiri dari daun temen.",
+  "subject_id": "samsam",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "daun_temen",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3679: Adapun ciri khas Tirtha Panglukatan, terlihat pada tempat dan sarana Tirtha Panglukatan seperti prasarana periuk yang lehernya dikalungi benang yang berisi uang kepeng, serta sarana bantennya berisi \"samsam\" yaitu potong",
+  "sentence_id": 900683
+}
+
+{
+  "id": "f900684_samsam_pandan_aru",
+  "text": "samsam terdiri dari pandan arum.",
+  "subject_id": "samsam",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "pandan_arum",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3679: Adapun ciri khas Tirtha Panglukatan, terlihat pada tempat dan sarana Tirtha Panglukatan seperti prasarana periuk yang lehernya dikalungi benang yang berisi uang kepeng, serta sarana bantennya berisi \"samsam\" yaitu potong",
+  "sentence_id": 900684
+}
+
+{
+  "id": "f900685_samsam_beras_kuni",
+  "text": "samsam terdiri dari beras kuning.",
+  "subject_id": "samsam",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "beras_kuning",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3679: Adapun ciri khas Tirtha Panglukatan, terlihat pada tempat dan sarana Tirtha Panglukatan seperti prasarana periuk yang lehernya dikalungi benang yang berisi uang kepeng, serta sarana bantennya berisi \"samsam\" yaitu potong",
+  "sentence_id": 900685
+}
+
+{
+  "id": "f900686_samsam_bunga_jepu",
+  "text": "samsam terdiri dari bunga jepun.",
+  "subject_id": "samsam",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "bunga_jepun",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3679: Adapun ciri khas Tirtha Panglukatan, terlihat pada tempat dan sarana Tirtha Panglukatan seperti prasarana periuk yang lehernya dikalungi benang yang berisi uang kepeng, serta sarana bantennya berisi \"samsam\" yaitu potong",
+  "sentence_id": 900686
+}
+
+{
+  "id": "f900687_samsam_tirta_pang",
+  "text": "samsam diperlukan untuk membuat tirta panglukatan.",
+  "subject_id": "samsam",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_panglukatan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3679: Adapun ciri khas Tirtha Panglukatan, terlihat pada tempat dan sarana Tirtha Panglukatan seperti prasarana periuk yang lehernya dikalungi benang yang berisi uang kepeng, serta sarana bantennya berisi \"samsam\" yaitu potong",
+  "sentence_id": 900687
+}
+
+{
+  "id": "f900688_kalung_ben_tirta_pang",
+  "text": "kalung benang dengan uang kepeng diperlukan untuk membuat tirta panglukatan.",
+  "subject_id": "kalung_benang_dengan_uang_kepeng",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_panglukatan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3679: Adapun ciri khas Tirtha Panglukatan, terlihat pada tempat dan sarana Tirtha Panglukatan seperti prasarana periuk yang lehernya dikalungi benang yang berisi uang kepeng, serta sarana bantennya berisi \"samsam\" yaitu potong",
+  "sentence_id": 900688
+}
+
+{
+  "id": "f900689_periuk_tirtha_pem",
+  "text": "periuk diperlukan untuk membuat tirtha pemanah.",
+  "subject_id": "periuk",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirtha_pemanah",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3691: Dalam pembuatan Tirtha Pemanah tersebut Ida Sang Sulinggih akan memanah air dalam periuk sebanyak tiga kali.",
+  "sentence_id": 900689
+}
+
+{
+  "id": "f900690_bunga_tirtha_pem",
+  "text": "bunga diperlukan untuk membuat tirtha pemanah.",
+  "subject_id": "bunga",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirtha_pemanah",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3691: Tirtha Pemanah adalah Tirtha yang dibuat pada hari \"Pabersihan\" atau juga disebut hari \"Pengaskaran\" yang biasanya bersamaan dengan upacara \"Pamrasan\".",
+  "sentence_id": 900690
+}
+
+{
+  "id": "f900691_panah_tirtha_pem",
+  "text": "panah diperlukan untuk membuat tirtha pemanah.",
+  "subject_id": "panah",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirtha_pemanah",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3691: Tirtha Pemanah adalah Tirtha yang dibuat pada hari \"Pabersihan\" atau juga disebut hari \"Pengaskaran\" yang biasanya bersamaan dengan upacara \"Pamrasan\".",
+  "sentence_id": 900691
+}
+
+{
+  "id": "f900692_kalpika_tirtha_pem",
+  "text": "kalpika diperlukan untuk membuat tirtha pemanah.",
+  "subject_id": "kalpika",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirtha_pemanah",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3691: Tirtha Pemanah adalah Tirtha yang dibuat pada hari \"Pabersihan\" atau juga disebut hari \"Pengaskaran\" yang biasanya bersamaan dengan upacara \"Pamrasan\".",
+  "sentence_id": 900692
+}
+
+{
+  "id": "f900693_periuk_tirtha_pen",
+  "text": "periuk diperlukan untuk membuat tirtha penembak.",
+  "subject_id": "periuk",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirtha_penembak",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3700: Demikian juga halnya dengan Tirtha Penembak, adalah Tirtha yang harus dicari dengan cara ksatria, sehingga Tirtha tersebut harus dicari dan diambil pada waktu malam hari sendirian tanpa ada yang mengantar.",
+  "sentence_id": 900693
+}
+
+{
+  "id": "f900694_kawangen_pusuh_bung",
+  "text": "kawangen berisi pusuh bunga cempaka putih.",
+  "subject_id": "kawangen",
+  "predicate": "BERISI",
+  "object_id": "pusuh_bunga_cempaka_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3241: Di kedua siku tangan, diisi masing-masing sebuah Kawangen yang berisi 5 biji uang kepeng dan Pusuh Bunga Cempaka Putih.",
+  "sentence_id": 900694
+}
+
+{
+  "id": "f900695_kayu_dapda_nguyeg",
+  "text": "kayu dapdap digunakan dalam nguyeg.",
+  "subject_id": "kayu_dapdap",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nguyeg",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1873: Alat penggilingnya dibuat dari potongan cabang dapdap.",
+  "sentence_id": 900695
+}
+
+{
+  "id": "f900696_kayu_dapda_ngulapin",
+  "text": "kayu dapdap digunakan dalam ngulapin.",
+  "subject_id": "kayu_dapdap",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngulapin",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L450: 9.",
+  "sentence_id": 900696
+}
+
+{
+  "id": "f900697_bunga_jepu_nyiramang_",
+  "text": "bunga jepun digunakan dalam nyiramang layon.",
+  "subject_id": "bunga_jepun",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2462: Bunga, untuk berhias: bermacam-macam bunga, seperti bunga cempaka, bunga sandat (kenanga), bunga jepun (kamboja), bunga tunjung (teratai), bunga yang dibuat dari emas atau yang imitasi, bunga mawar, bunga pucuk rejuna (k",
+  "sentence_id": 900697
+}
+
+{
+  "id": "f900698_bubur_liwe_beras",
+  "text": "bubur liwet terbuat dari beras.",
+  "subject_id": "bubur_liwet",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "beras",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L528: Beras, madu, susu, berem, arak.",
+  "sentence_id": 900698
+}
+
+{
+  "id": "f900699_bubur_liwe_madu",
+  "text": "bubur liwet terbuat dari madu.",
+  "subject_id": "bubur_liwet",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "madu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L528: Beras, madu, susu, berem, arak.",
+  "sentence_id": 900699
+}
+
+{
+  "id": "f900700_bubur_liwe_susu",
+  "text": "bubur liwet terbuat dari susu.",
+  "subject_id": "bubur_liwet",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "susu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L528: Beras, madu, susu, berem, arak.",
+  "sentence_id": 900700
+}
+
+{
+  "id": "f900701_bubur_liwe_berem",
+  "text": "bubur liwet terbuat dari berem.",
+  "subject_id": "bubur_liwet",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "berem",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L528: Beras, madu, susu, berem, arak.",
+  "sentence_id": 900701
+}
+
+{
+  "id": "f900702_bubur_liwe_arak",
+  "text": "bubur liwet terbuat dari arak.",
+  "subject_id": "bubur_liwet",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "arak",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L528: Beras, madu, susu, berem, arak.",
+  "sentence_id": 900702
+}
+
+{
+  "id": "f900703_bubur_liwe_toya_anyar",
+  "text": "bubur liwet terbuat dari toya anyar.",
+  "subject_id": "bubur_liwet",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "toya_anyar",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L527: Payuk berisi toya anyar.",
+  "sentence_id": 900703
+}
+
+{
+  "id": "f900704_bubur_liwe_baem_warak",
+  "text": "bubur liwet terbuat dari baem-warak.",
+  "subject_id": "bubur_liwet",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "baem_warak",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2269: Sesuai dengan namanya (Ngliwet) acara ini benar-benar berwujud nyata yakni membuat bubur (liwet) beras, yang dicampur sekadarnya dengan \"baem-warak\" (serbuk darah badak yang telah mengental).",
+  "sentence_id": 900704
+}
+
+{
+  "id": "f900705_bubur_liwe_atma_wedan",
+  "text": "bubur liwet digunakan dalam atma wedana.",
+  "subject_id": "bubur_liwet",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2269: Sesuai dengan namanya (Ngliwet) acara ini benar-benar berwujud nyata yakni membuat bubur (liwet) beras, yang dicampur sekadarnya dengan \"baem-warak\" (serbuk darah badak yang telah mengental).",
+  "sentence_id": 900705
+}
+
+{
+  "id": "f900706_periuk_toya_anyar",
+  "text": "periuk berisi toya anyar.",
+  "subject_id": "periuk",
+  "predicate": "BERISI",
+  "object_id": "toya_anyar",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L527: Payuk berisi toya anyar.",
+  "sentence_id": 900706
+}
+
+{
+  "id": "f900707_bokoran_kain_kasa",
+  "text": "bokoran berisi kain kasa.",
+  "subject_id": "bokoran",
+  "predicate": "BERISI",
+  "object_id": "kain_kasa",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L458: Eteh-etehnya: tiying gading angen ngalap/nganget don bingin; klasa/tikeh pandan berisi kasa; bokoran berisi kasa dua lembar putih kuning; tiyuk/lemat sudhamala; tatopong, genjer-genjer, kulambi, umbul-umbul tiga sampir, ",
+  "sentence_id": 900707
+}
+
+{
+  "id": "f900708_bokoran_lungke_lun",
+  "text": "bokoran berisi lungke-lungke.",
+  "subject_id": "bokoran",
+  "predicate": "BERISI",
+  "object_id": "lungke_lungke",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L539: Bokoran berisi lungke-lungke.",
+  "sentence_id": 900708
+}
+
+{
+  "id": "f900709_bokoran_atma_wedan",
+  "text": "bokoran digunakan dalam atma wedana.",
+  "subject_id": "bokoran",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L458: Eteh-etehnya: tiying gading angen ngalap/nganget don bingin; klasa/tikeh pandan berisi kasa; bokoran berisi kasa dua lembar putih kuning; tiyuk/lemat sudhamala; tatopong, genjer-genjer, kulambi, umbul-umbul tiga sampir, ",
+  "sentence_id": 900709
+}
+
+{
+  "id": "f900710_sidu_ental_atma_wedan",
+  "text": "sidu ental digunakan dalam atma wedana.",
+  "subject_id": "sidu_ental",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L536: Tebu satugel untuk nguyeg saha sidu ental.",
+  "sentence_id": 900710
+}
+
+{
+  "id": "f900711_kamben_sek_atma_wedan",
+  "text": "kamben sekah digunakan dalam atma wedana.",
+  "subject_id": "kamben_sekah",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L538: Kamben sekah saha sekar sejangkepnya.",
+  "sentence_id": 900711
+}
+
+{
+  "id": "f900712_lungke_lun_atma_wedan",
+  "text": "lungke-lungke digunakan dalam atma wedana.",
+  "subject_id": "lungke_lungke",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L539: Bokoran berisi lungke-lungke.",
+  "sentence_id": 900712
+}
+
+{
+  "id": "f900713_klasa_kain_kasa",
+  "text": "klasa berisi kain kasa.",
+  "subject_id": "klasa",
+  "predicate": "BERISI",
+  "object_id": "kain_kasa",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L458: Eteh-etehnya: tiying gading angen ngalap/nganget don bingin; klasa/tikeh pandan berisi kasa; bokoran berisi kasa dua lembar putih kuning; tiyuk/lemat sudhamala; tatopong, genjer-genjer, kulambi, umbul-umbul tiga sampir, ",
+  "sentence_id": 900713
+}
+
+{
+  "id": "f900714_klasa_atma_wedan",
+  "text": "klasa digunakan dalam atma wedana.",
+  "subject_id": "klasa",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L458: Eteh-etehnya: tiying gading angen ngalap/nganget don bingin; klasa/tikeh pandan berisi kasa; bokoran berisi kasa dua lembar putih kuning; tiyuk/lemat sudhamala; tatopong, genjer-genjer, kulambi, umbul-umbul tiga sampir, ",
+  "sentence_id": 900714
+}
+
+{
+  "id": "f900715_klasa_pabasmian",
+  "text": "klasa digunakan dalam pabasmian.",
+  "subject_id": "klasa",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L421: Pasucian, rurub sinom, klasa/tikeh.",
+  "sentence_id": 900715
+}
+
+{
+  "id": "f900716_tiying_gad_atma_wedan",
+  "text": "tiying gading digunakan dalam atma wedana.",
+  "subject_id": "tiying_gading",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L458: Eteh-etehnya: tiying gading angen ngalap/nganget don bingin; klasa/tikeh pandan berisi kasa; bokoran berisi kasa dua lembar putih kuning; tiyuk/lemat sudhamala; tatopong, genjer-genjer, kulambi, umbul-umbul tiga sampir, ",
+  "sentence_id": 900716
+}
+
+{
+  "id": "f900717_lemat_sudh_atma_wedan",
+  "text": "lemat sudhamala digunakan dalam atma wedana.",
+  "subject_id": "lemat_sudhamala",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L458: Eteh-etehnya: tiying gading angen ngalap/nganget don bingin; klasa/tikeh pandan berisi kasa; bokoran berisi kasa dua lembar putih kuning; tiyuk/lemat sudhamala; tatopong, genjer-genjer, kulambi, umbul-umbul tiga sampir, ",
+  "sentence_id": 900717
+}
+
+{
+  "id": "f900718_umbul_umbu_atma_wedan",
+  "text": "umbul-umbul digunakan dalam atma wedana.",
+  "subject_id": "umbul_umbul",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L458: Eteh-etehnya: tiying gading angen ngalap/nganget don bingin; klasa/tikeh pandan berisi kasa; bokoran berisi kasa dua lembar putih kuning; tiyuk/lemat sudhamala; tatopong, genjer-genjer, kulambi, umbul-umbul tiga sampir, ",
+  "sentence_id": 900718
+}
+
+{
+  "id": "f900719_tatopong_atma_wedan",
+  "text": "tatopong digunakan dalam atma wedana.",
+  "subject_id": "tatopong",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L458: Eteh-etehnya: tiying gading angen ngalap/nganget don bingin; klasa/tikeh pandan berisi kasa; bokoran berisi kasa dua lembar putih kuning; tiyuk/lemat sudhamala; tatopong, genjer-genjer, kulambi, umbul-umbul tiga sampir, ",
+  "sentence_id": 900719
+}
+
+{
+  "id": "f900720_genjer_gen_atma_wedan",
+  "text": "genjer-genjer digunakan dalam atma wedana.",
+  "subject_id": "genjer_genjer",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L458: Eteh-etehnya: tiying gading angen ngalap/nganget don bingin; klasa/tikeh pandan berisi kasa; bokoran berisi kasa dua lembar putih kuning; tiyuk/lemat sudhamala; tatopong, genjer-genjer, kulambi, umbul-umbul tiga sampir, ",
+  "sentence_id": 900720
+}
+
+{
+  "id": "f900721_kulambi_atma_wedan",
+  "text": "kulambi digunakan dalam atma wedana.",
+  "subject_id": "kulambi",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L458: Eteh-etehnya: tiying gading angen ngalap/nganget don bingin; klasa/tikeh pandan berisi kasa; bokoran berisi kasa dua lembar putih kuning; tiyuk/lemat sudhamala; tatopong, genjer-genjer, kulambi, umbul-umbul tiga sampir, ",
+  "sentence_id": 900721
+}
+
+{
+  "id": "f900722_lis_daun_kelap",
+  "text": "lis terbuat dari daun kelapa muda busung.",
+  "subject_id": "lis",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "daun_kelapa_muda_busung",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1534: Alat upakara ini berwujud Lis (benda yang bahannya dari janur).",
+  "sentence_id": 900722
+}
+
+{
+  "id": "f900723_kekitir_tirta_pang",
+  "text": "kekitir diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "kekitir",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1167: Dalam hal ini, Tirtha Pangentas merupakan siratan terakhir, serta semua isinya (daun alang-alang, walantaga, kekitir, pripih dan sebagainya), dipersatukan dengan isi pengawak.",
+  "sentence_id": 900723
+}
+
+{
+  "id": "f900724_karawista_tirta_pang",
+  "text": "karawista diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "karawista",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3745: 12.",
+  "sentence_id": 900724
+}
+
+{
+  "id": "f900725_balung_bal_tirta_pang",
+  "text": "balung-balung diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "balung_balung",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3741: Balung-balung.",
+  "sentence_id": 900725
+}
+
+{
+  "id": "f900726_bijaratus_tirta_pang",
+  "text": "bijaratus diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "bijaratus",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3744: Bijaratus.",
+  "sentence_id": 900726
+}
+
+{
+  "id": "f900727_kelepikan__tirta_pang",
+  "text": "kelepikan jepun diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "kelepikan_jepun",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3746: Kelepikan Jepun.",
+  "sentence_id": 900727
+}
+
+{
+  "id": "f900728_recedana_tirta_pang",
+  "text": "recedana diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "recedana",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3750: Recedana.",
+  "sentence_id": 900728
+}
+
+{
+  "id": "f900729_daksina_ge_tirta_pang",
+  "text": "daksina gede diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "daksina_gede",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3754: Daksina gede sarwa kutus.",
+  "sentence_id": 900729
+}
+
+{
+  "id": "f900730_bayuhan_tirta_pang",
+  "text": "bayuhan diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "bayuhan",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3761: Bayuhan.",
+  "sentence_id": 900730
+}
+
+{
+  "id": "f900731_lis_tirta_pang",
+  "text": "lis diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "lis",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3762: Lis.",
+  "sentence_id": 900731
+}
+
+{
+  "id": "f900732_karangan_tirta_pang",
+  "text": "karangan diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "karangan",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3763: Karangan.",
+  "sentence_id": 900732
+}
+
+{
+  "id": "f900733_nasi_sokan_tirta_pang",
+  "text": "nasi sokan diperlukan untuk membuat tirta pangentas.",
+  "subject_id": "nasi_sokan",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3764: Nasi sokan..",
+  "sentence_id": 900733
+}
+
+{
+  "id": "f900734_banten_per_tirtha_kaw",
+  "text": "banten peras diperlukan untuk membuat tirtha kawitan.",
+  "subject_id": "banten_peras",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirtha_kawitan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3705: Tirtha Kawitan ini dapat dimohon dari Merajan Kawitan atau Merajan Pusat dari orang yang meninggal.",
+  "sentence_id": 900734
+}
+
+{
+  "id": "f900735_soda_tirtha_kaw",
+  "text": "soda diperlukan untuk membuat tirtha kawitan.",
+  "subject_id": "soda",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirtha_kawitan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3705: Tirtha Kawitan ini dapat dimohon dari Merajan Kawitan atau Merajan Pusat dari orang yang meninggal.",
+  "sentence_id": 900735
+}
+
+{
+  "id": "f900736_daksina_tirtha_kaw",
+  "text": "daksina diperlukan untuk membuat tirtha kawitan.",
+  "subject_id": "daksina",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirtha_kawitan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3705: Tirtha ini akan dimohonkan oleh Pemangku Kawitan setempat, dimana terlebih dulu dipersiapkan sarana dan prasarana berupa Pras, ajuman, daksina, suci serta rayunan dan kadang-kadang ditambah pajegan.",
+  "sentence_id": 900736
+}
+
+{
+  "id": "f900737_banten_suc_tirtha_kaw",
+  "text": "banten suci diperlukan untuk membuat tirtha kawitan.",
+  "subject_id": "banten_suci",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirtha_kawitan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3705: Tirtha ini akan dimohonkan oleh Pemangku Kawitan setempat, dimana terlebih dulu dipersiapkan sarana dan prasarana berupa Pras, ajuman, daksina, suci serta rayunan dan kadang-kadang ditambah pajegan.",
+  "sentence_id": 900737
+}
+
+{
+  "id": "f900738_rayunan_tirtha_kaw",
+  "text": "rayunan diperlukan untuk membuat tirtha kawitan.",
+  "subject_id": "rayunan",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirtha_kawitan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3705: Tirtha ini akan dimohonkan oleh Pemangku Kawitan setempat, dimana terlebih dulu dipersiapkan sarana dan prasarana berupa Pras, ajuman, daksina, suci serta rayunan dan kadang-kadang ditambah pajegan.",
+  "sentence_id": 900738
+}
+
+{
+  "id": "f900739_pajegan_tirtha_kaw",
+  "text": "pajegan diperlukan untuk membuat tirtha kawitan.",
+  "subject_id": "pajegan",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirtha_kawitan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3705: Tirtha ini akan dimohonkan oleh Pemangku Kawitan setempat, dimana terlebih dulu dipersiapkan sarana dan prasarana berupa Pras, ajuman, daksina, suci serta rayunan dan kadang-kadang ditambah pajegan.",
+  "sentence_id": 900739
+}
+
+{
+  "id": "f900740_banten_per_tirtha_kah",
+  "text": "banten peras diperlukan untuk membuat tirtha kahyangan tiga.",
+  "subject_id": "banten_peras",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirtha_kahyangan_tiga",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3709: Tirtha Kahyangan Tiga ini dapat dimohon dari Pura Desa, Pura Puseh, Pura Dalem, Pura Mrajapti, karena dalam upacara Ngaben belumlah lengkap tanpa Tirtha Kahyangan Tiga dimana tempat orang yang meninggal itu berada.",
+  "sentence_id": 900740
+}
+
+{
+  "id": "f900741_soda_tirtha_kah",
+  "text": "soda diperlukan untuk membuat tirtha kahyangan tiga.",
+  "subject_id": "soda",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirtha_kahyangan_tiga",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3709: Tirtha Kahyangan Tiga ini dapat dimohon dari Pura Desa, Pura Puseh, Pura Dalem, Pura Mrajapti, karena dalam upacara Ngaben belumlah lengkap tanpa Tirtha Kahyangan Tiga dimana tempat orang yang meninggal itu berada.",
+  "sentence_id": 900741
+}
+
+{
+  "id": "f900742_daksina_tirtha_kah",
+  "text": "daksina diperlukan untuk membuat tirtha kahyangan tiga.",
+  "subject_id": "daksina",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirtha_kahyangan_tiga",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3709: Tirtha ini akan dimohonkan oleh Pemangku Kahyangan Tiga setempat, dimana terlebih dulu dipersiapkan sarana dan prasarana berupa Pras, ajuman, daksina, suci serta rayunan dan kadang-kadang ditambah pajegan.",
+  "sentence_id": 900742
+}
+
+{
+  "id": "f900743_banten_suc_tirtha_kah",
+  "text": "banten suci diperlukan untuk membuat tirtha kahyangan tiga.",
+  "subject_id": "banten_suci",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirtha_kahyangan_tiga",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3709: Tirtha ini akan dimohonkan oleh Pemangku Kahyangan Tiga setempat, dimana terlebih dulu dipersiapkan sarana dan prasarana berupa Pras, ajuman, daksina, suci serta rayunan dan kadang-kadang ditambah pajegan.",
+  "sentence_id": 900743
+}
+
+{
+  "id": "f900744_rayunan_tirtha_kah",
+  "text": "rayunan diperlukan untuk membuat tirtha kahyangan tiga.",
+  "subject_id": "rayunan",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirtha_kahyangan_tiga",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3709: Tirtha ini akan dimohonkan oleh Pemangku Kahyangan Tiga setempat, dimana terlebih dulu dipersiapkan sarana dan prasarana berupa Pras, ajuman, daksina, suci serta rayunan dan kadang-kadang ditambah pajegan.",
+  "sentence_id": 900744
+}
+
+{
+  "id": "f900745_pajegan_tirtha_kah",
+  "text": "pajegan diperlukan untuk membuat tirtha kahyangan tiga.",
+  "subject_id": "pajegan",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirtha_kahyangan_tiga",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3709: Tirtha ini akan dimohonkan oleh Pemangku Kahyangan Tiga setempat, dimana terlebih dulu dipersiapkan sarana dan prasarana berupa Pras, ajuman, daksina, suci serta rayunan dan kadang-kadang ditambah pajegan.",
+  "sentence_id": 900745
+}
+
+{
+  "id": "f900746_ketipat_ke_tipat",
+  "text": "ketipat kelanan termasuk salah satu jenis tipat.",
+  "subject_id": "ketipat_kelanan",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "tipat",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L351: Ketipat kelanan.",
+  "sentence_id": 900746
+}
+
+{
+  "id": "f900747_jaja_banta_jajan",
+  "text": "jaja bantal termasuk salah satu jenis jajan.",
+  "subject_id": "jaja_bantal",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "jajan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L373: Banten sorohan, jaja bantal, jaja pasung, sate, tipat sirikan masing-masing telung dasa telu.",
+  "sentence_id": 900747
+}
+
+{
+  "id": "f900748_jaja_pasun_jajan",
+  "text": "jaja pasung termasuk salah satu jenis jajan.",
+  "subject_id": "jaja_pasung",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "jajan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L373: Banten sorohan, jaja bantal, jaja pasung, sate, tipat sirikan masing-masing telung dasa telu.",
+  "sentence_id": 900748
+}
+
+{
+  "id": "f900749_pras_penga_banten_per",
+  "text": "pras pengambyan termasuk salah satu jenis banten peras.",
+  "subject_id": "pras_pengambyan",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten_peras",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L478: Banten pras pengambyan.",
+  "sentence_id": 900749
+}
+
+{
+  "id": "f900750_pras_arepa_banten_per",
+  "text": "pras arepan termasuk salah satu jenis banten peras.",
+  "subject_id": "pras_arepan",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten_peras",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L507: Pras arepan.",
+  "sentence_id": 900750
+}
+
+{
+  "id": "f900751_sesayut_pe_ayaban_ses",
+  "text": "sesayut pengideran termasuk salah satu jenis ayaban sesayut.",
+  "subject_id": "sesayut_pengideran",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "ayaban_sesayut",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L505: Banten sesayut pengideran limang soroh.",
+  "sentence_id": 900751
+}
+
+{
+  "id": "f900752_arak_minuman",
+  "text": "arak termasuk salah satu jenis minuman.",
+  "subject_id": "arak",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "minuman",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L528: Beras, madu, susu, berem, arak.",
+  "sentence_id": 900752
+}
+
+{
+  "id": "f900753_berem_minuman",
+  "text": "berem termasuk salah satu jenis minuman.",
+  "subject_id": "berem",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "minuman",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L528: Beras, madu, susu, berem, arak.",
+  "sentence_id": 900753
+}
+
+{
+  "id": "f900754_beras_kuni_beras",
+  "text": "beras kuning termasuk salah satu jenis beras.",
+  "subject_id": "beras_kuning",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "beras",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2532: Beras, yang sudah direndam kemudian digiling halus ditambah kunir sedikit agar berwarna kuning.",
+  "sentence_id": 900754
+}
+
+{
+  "id": "f900755_beras_catu_beras",
+  "text": "beras catur terdiri dari beras.",
+  "subject_id": "beras_catur",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "beras",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900755
+}
+
+{
+  "id": "f900756_nasi_beras",
+  "text": "nasi terbuat dari beras.",
+  "subject_id": "nasi",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "beras",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900756
+}
+
+{
+  "id": "f900757_bunga_ratn_bunga",
+  "text": "bunga ratna putih termasuk salah satu jenis bunga.",
+  "subject_id": "bunga_ratna_putih",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "bunga",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2076: Selain daun beringin, juga digunakan bunga ratna putih dan lain-lain yang dirangkai demikian rupa.",
+  "sentence_id": 900757
+}
+
+{
+  "id": "f900758_jarum_jaum_jarum",
+  "text": "jarum jaum termasuk salah satu jenis jarum.",
+  "subject_id": "jarum_jaum",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "jarum",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900758
+}
+
+{
+  "id": "f900759_lis_alat_upaka",
+  "text": "lis termasuk salah satu jenis alat upakara.",
+  "subject_id": "lis",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "alat_upakara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L1534: Alat upakara ini berwujud Lis (benda yang bahannya dari janur).",
+  "sentence_id": 900759
+}
+
+{
+  "id": "f900760_nasi_sokan_nasi",
+  "text": "nasi sokan termasuk salah satu jenis nasi.",
+  "subject_id": "nasi_sokan",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "nasi",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L3764: Nasi sokan..",
+  "sentence_id": 900760
+}
+
+{
+  "id": "f900761_segehan_ma_segehan",
+  "text": "segehan manca warna termasuk salah satu jenis segehan.",
+  "subject_id": "segehan_manca_warna",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "segehan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L430: Segehan manca warna asoroh.",
+  "sentence_id": 900761
+}
+
+{
+  "id": "f900762_tiying_gad_bambu",
+  "text": "tiying gading termasuk salah satu jenis bambu.",
+  "subject_id": "tiying_gading",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "bambu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L458: Eteh-etehnya: tiying gading angen ngalap/nganget don bingin; klasa/tikeh pandan berisi kasa; bokoran berisi kasa dua lembar putih kuning; tiyuk/lemat sudhamala; tatopong, genjer-genjer, kulambi, umbul-umbul tiga sampir, ",
+  "sentence_id": 900762
+}
+
+{
+  "id": "f900763_toya_anyar_air",
+  "text": "toya anyar termasuk salah satu jenis air.",
+  "subject_id": "toya_anyar",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "air",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L415: Bulan pane aisiki, toya anyar, klunggah nyuh gading.",
+  "sentence_id": 900763
+}
+
+{
+  "id": "f900764_tatebasan__banten",
+  "text": "tatebasan pasupati termasuk salah satu jenis banten.",
+  "subject_id": "tatebasan_pasupati",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900764
+}
+
+{
+  "id": "f900765_tatebasan__banten",
+  "text": "tatebasan ardhanareswari termasuk salah satu jenis banten.",
+  "subject_id": "tatebasan_ardhanareswari",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900765
+}
+
+{
+  "id": "f900766_tatebasan__banten",
+  "text": "tatebasan sidhakarya termasuk salah satu jenis banten.",
+  "subject_id": "tatebasan_sidhakarya",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900766
+}
+
+{
+  "id": "f900767_catursari_banten",
+  "text": "catursari termasuk salah satu jenis banten.",
+  "subject_id": "catursari",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900767
+}
+
+{
+  "id": "f900768_padudusan__banten",
+  "text": "padudusan alit termasuk salah satu jenis banten.",
+  "subject_id": "padudusan_alit",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900768
+}
+
+{
+  "id": "f900769_banten_pag_banten",
+  "text": "banten pagnian termasuk salah satu jenis banten.",
+  "subject_id": "banten_pagnian",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900769
+}
+
+{
+  "id": "f900770_tahenan_banten",
+  "text": "tahenan termasuk salah satu jenis banten.",
+  "subject_id": "tahenan",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900770
+}
+
+{
+  "id": "f900771_kaklenting_banten",
+  "text": "kaklentingan termasuk salah satu jenis banten.",
+  "subject_id": "kaklentingan",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900771
+}
+
+{
+  "id": "f900772_rayunan_banten",
+  "text": "rayunan termasuk salah satu jenis banten.",
+  "subject_id": "rayunan",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900772
+}
+
+{
+  "id": "f900773_pajegan_banten",
+  "text": "pajegan termasuk salah satu jenis banten.",
+  "subject_id": "pajegan",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900773
+}
+
+{
+  "id": "f900774_pemanisan_banten",
+  "text": "pemanisan termasuk salah satu jenis banten.",
+  "subject_id": "pemanisan",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900774
+}
+
+{
+  "id": "f900775_banten_pen_banten",
+  "text": "banten penyumpit areng termasuk salah satu jenis banten.",
+  "subject_id": "banten_penyumpit_areng",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900775
+}
+
+{
+  "id": "f900776_banten_pas_banten",
+  "text": "banten pasucian termasuk salah satu jenis banten.",
+  "subject_id": "banten_pasucian",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900776
+}
+
+{
+  "id": "f900777_banten_pen_banten",
+  "text": "banten penebusan termasuk salah satu jenis banten.",
+  "subject_id": "banten_penebusan",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900777
+}
+
+{
+  "id": "f900778_salaran_banten",
+  "text": "salaran termasuk salah satu jenis banten.",
+  "subject_id": "salaran",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900778
+}
+
+{
+  "id": "f900779_banten_pem_banten",
+  "text": "banten pemelaspas termasuk salah satu jenis banten.",
+  "subject_id": "banten_pemelaspas",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900779
+}
+
+{
+  "id": "f900780_banten_pan_banten",
+  "text": "banten panjang ilang termasuk salah satu jenis banten.",
+  "subject_id": "banten_panjang_ilang",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900780
+}
+
+{
+  "id": "f900781_banten_pen_banten",
+  "text": "banten pengadang-adang termasuk salah satu jenis banten.",
+  "subject_id": "banten_pengadang_adang",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900781
+}
+
+{
+  "id": "f900782_banten_saj_banten",
+  "text": "banten saji termasuk salah satu jenis banten.",
+  "subject_id": "banten_saji",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900782
+}
+
+{
+  "id": "f900783_banten_pap_banten",
+  "text": "banten papendakan termasuk salah satu jenis banten.",
+  "subject_id": "banten_papendakan",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900783
+}
+
+{
+  "id": "f900784_banten_dew_banten",
+  "text": "banten dewa dewi termasuk salah satu jenis banten.",
+  "subject_id": "banten_dewa_dewi",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900784
+}
+
+{
+  "id": "f900785_bayuhan_banten",
+  "text": "bayuhan termasuk salah satu jenis banten.",
+  "subject_id": "bayuhan",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900785
+}
+
+{
+  "id": "f900786_karangan_banten",
+  "text": "karangan termasuk salah satu jenis banten.",
+  "subject_id": "karangan",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900786
+}
+
+{
+  "id": "f900787_ketipat_ke_sangaskara",
+  "text": "ketipat kelanan digunakan dalam sangaskara.",
+  "subject_id": "ketipat_kelanan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900787
+}
+
+{
+  "id": "f900788_ayaban_sangaskara",
+  "text": "ayaban digunakan dalam sangaskara.",
+  "subject_id": "ayaban",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900788
+}
+
+{
+  "id": "f900789_banten_saj_sangaskara",
+  "text": "banten saji digunakan dalam sangaskara.",
+  "subject_id": "banten_saji",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900789
+}
+
+{
+  "id": "f900790_banten_pan_sangaskara",
+  "text": "banten panjang ilang digunakan dalam sangaskara.",
+  "subject_id": "banten_panjang_ilang",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900790
+}
+
+{
+  "id": "f900791_banten_pen_sangaskara",
+  "text": "banten pengadang-adang digunakan dalam sangaskara.",
+  "subject_id": "banten_pengadang_adang",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900791
+}
+
+{
+  "id": "f900792_diuskamali_sangaskara",
+  "text": "diuskamaligi digunakan dalam sangaskara.",
+  "subject_id": "diuskamaligi",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900792
+}
+
+{
+  "id": "f900793_daksina_ge_sangaskara",
+  "text": "daksina gede digunakan dalam sangaskara.",
+  "subject_id": "daksina_gede",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900793
+}
+
+{
+  "id": "f900794_pemanisan_sangaskara",
+  "text": "pemanisan digunakan dalam sangaskara.",
+  "subject_id": "pemanisan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900794
+}
+
+{
+  "id": "f900795_tirta_pang_sangaskara",
+  "text": "tirta pangentas digunakan dalam sangaskara.",
+  "subject_id": "tirta_pangentas",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900795
+}
+
+{
+  "id": "f900796_tirta_peny_sangaskara",
+  "text": "tirta penyeeb digunakan dalam sangaskara.",
+  "subject_id": "tirta_penyeeb",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900796
+}
+
+{
+  "id": "f900797_tirta_peme_sangaskara",
+  "text": "tirta pemerelina digunakan dalam sangaskara.",
+  "subject_id": "tirta_pemerelina",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900797
+}
+
+{
+  "id": "f900798_geni_pamra_sangaskara",
+  "text": "geni pamralinan digunakan dalam sangaskara.",
+  "subject_id": "geni_pamralinan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900798
+}
+
+{
+  "id": "f900799_caru_penge_sangaskara",
+  "text": "caru pengelambuk digunakan dalam sangaskara.",
+  "subject_id": "caru_pengelambuk",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sangaskara",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900799
+}
+
+{
+  "id": "f900800_daksina_ge_mlaspas_ka",
+  "text": "daksina gede digunakan dalam mlaspas kajang.",
+  "subject_id": "daksina_gede",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "mlaspas_kajang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900800
+}
+
+{
+  "id": "f900801_banten_pem_mlaspas_ka",
+  "text": "banten pemelaspas digunakan dalam mlaspas kajang.",
+  "subject_id": "banten_pemelaspas",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "mlaspas_kajang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900801
+}
+
+{
+  "id": "f900802_tatebasan__mlaspas_ka",
+  "text": "tatebasan pasupati digunakan dalam mlaspas kajang.",
+  "subject_id": "tatebasan_pasupati",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "mlaspas_kajang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900802
+}
+
+{
+  "id": "f900803_jaja_banta_pamerasan",
+  "text": "jaja bantal digunakan dalam pamerasan.",
+  "subject_id": "jaja_bantal",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pamerasan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900803
+}
+
+{
+  "id": "f900804_jaja_pasun_pamerasan",
+  "text": "jaja pasung digunakan dalam pamerasan.",
+  "subject_id": "jaja_pasung",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pamerasan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900804
+}
+
+{
+  "id": "f900805_tipat_pamerasan",
+  "text": "tipat digunakan dalam pamerasan.",
+  "subject_id": "tipat",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pamerasan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900805
+}
+
+{
+  "id": "f900806_banten_pam_pamerasan",
+  "text": "banten pamegat digunakan dalam pamerasan.",
+  "subject_id": "banten_pamegat",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pamerasan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900806
+}
+
+{
+  "id": "f900807_banten_suc_pabasmian",
+  "text": "banten suci digunakan dalam pabasmian.",
+  "subject_id": "banten_suci",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900807
+}
+
+{
+  "id": "f900808_banten_per_pabasmian",
+  "text": "banten peras digunakan dalam pabasmian.",
+  "subject_id": "banten_peras",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900808
+}
+
+{
+  "id": "f900809_banten_pen_pabasmian",
+  "text": "banten penebusan digunakan dalam pabasmian.",
+  "subject_id": "banten_penebusan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900809
+}
+
+{
+  "id": "f900810_daksina_ge_pabasmian",
+  "text": "daksina gede digunakan dalam pabasmian.",
+  "subject_id": "daksina_gede",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900810
+}
+
+{
+  "id": "f900811_salaran_pabasmian",
+  "text": "salaran digunakan dalam pabasmian.",
+  "subject_id": "salaran",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900811
+}
+
+{
+  "id": "f900812_tumpeng_pabasmian",
+  "text": "tumpeng digunakan dalam pabasmian.",
+  "subject_id": "tumpeng",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900812
+}
+
+{
+  "id": "f900813_banten_saj_pabasmian",
+  "text": "banten saji digunakan dalam pabasmian.",
+  "subject_id": "banten_saji",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900813
+}
+
+{
+  "id": "f900814_banten_pan_pabasmian",
+  "text": "banten panjang ilang digunakan dalam pabasmian.",
+  "subject_id": "banten_panjang_ilang",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900814
+}
+
+{
+  "id": "f900815_banten_pen_pabasmian",
+  "text": "banten pengadang-adang digunakan dalam pabasmian.",
+  "subject_id": "banten_pengadang_adang",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900815
+}
+
+{
+  "id": "f900816_diuskamali_pabasmian",
+  "text": "diuskamaligi digunakan dalam pabasmian.",
+  "subject_id": "diuskamaligi",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900816
+}
+
+{
+  "id": "f900817_banten_pas_pabasmian",
+  "text": "banten pasucian digunakan dalam pabasmian.",
+  "subject_id": "banten_pasucian",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900817
+}
+
+{
+  "id": "f900818_banten_pen_pabasmian",
+  "text": "banten penyumpit areng digunakan dalam pabasmian.",
+  "subject_id": "banten_penyumpit_areng",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900818
+}
+
+{
+  "id": "f900819_bulan_pane_pabasmian",
+  "text": "bulan pane digunakan dalam pabasmian.",
+  "subject_id": "bulan_pane",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900819
+}
+
+{
+  "id": "f900820_toya_anyar_pabasmian",
+  "text": "toya anyar digunakan dalam pabasmian.",
+  "subject_id": "toya_anyar",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900820
+}
+
+{
+  "id": "f900821_kain_kasa_pabasmian",
+  "text": "kain kasa digunakan dalam pabasmian.",
+  "subject_id": "kain_kasa",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900821
+}
+
+{
+  "id": "f900822_daun_pisan_pabasmian",
+  "text": "daun pisang digunakan dalam pabasmian.",
+  "subject_id": "daun_pisang",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900822
+}
+
+{
+  "id": "f900823_kawangen_pabasmian",
+  "text": "kawangen digunakan dalam pabasmian.",
+  "subject_id": "kawangen",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900823
+}
+
+{
+  "id": "f900824_rurub_sino_pabasmian",
+  "text": "rurub sinom digunakan dalam pabasmian.",
+  "subject_id": "rurub_sinom",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900824
+}
+
+{
+  "id": "f900825_sesenden_pabasmian",
+  "text": "sesenden digunakan dalam pabasmian.",
+  "subject_id": "sesenden",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900825
+}
+
+{
+  "id": "f900826_kayu_dapda_pabasmian",
+  "text": "kayu dapdap digunakan dalam pabasmian.",
+  "subject_id": "kayu_dapdap",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900826
+}
+
+{
+  "id": "f900827_tebu_pabasmian",
+  "text": "tebu digunakan dalam pabasmian.",
+  "subject_id": "tebu",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900827
+}
+
+{
+  "id": "f900828_banten_pej_nganyut",
+  "text": "banten pejati digunakan dalam nganyut.",
+  "subject_id": "banten_pejati",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nganyut",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900828
+}
+
+{
+  "id": "f900829_banten_suc_nganyut",
+  "text": "banten suci digunakan dalam nganyut.",
+  "subject_id": "banten_suci",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nganyut",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900829
+}
+
+{
+  "id": "f900830_soda_nganyut",
+  "text": "soda digunakan dalam nganyut.",
+  "subject_id": "soda",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nganyut",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900830
+}
+
+{
+  "id": "f900831_punjung_nganyut",
+  "text": "punjung digunakan dalam nganyut.",
+  "subject_id": "punjung",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nganyut",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900831
+}
+
+{
+  "id": "f900832_segehan_ma_nganyut",
+  "text": "segehan manca warna digunakan dalam nganyut.",
+  "subject_id": "segehan_manca_warna",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nganyut",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900832
+}
+
+{
+  "id": "f900833_banten_suc_ngulapin",
+  "text": "banten suci digunakan dalam ngulapin.",
+  "subject_id": "banten_suci",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngulapin",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900833
+}
+
+{
+  "id": "f900834_tumpeng_ngulapin",
+  "text": "tumpeng digunakan dalam ngulapin.",
+  "subject_id": "tumpeng",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngulapin",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900834
+}
+
+{
+  "id": "f900835_banten_pen_ngulapin",
+  "text": "banten penebusan digunakan dalam ngulapin.",
+  "subject_id": "banten_penebusan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngulapin",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900835
+}
+
+{
+  "id": "f900836_salaran_ngulapin",
+  "text": "salaran digunakan dalam ngulapin.",
+  "subject_id": "salaran",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngulapin",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900836
+}
+
+{
+  "id": "f900837_gelar_sang_ngulapin",
+  "text": "gelar sanga digunakan dalam ngulapin.",
+  "subject_id": "gelar_sanga",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngulapin",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900837
+}
+
+{
+  "id": "f900838_canang_oyo_ngulapin",
+  "text": "canang oyodan digunakan dalam ngulapin.",
+  "subject_id": "canang_oyodan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngulapin",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900838
+}
+
+{
+  "id": "f900839_rantasan_ngulapin",
+  "text": "rantasan digunakan dalam ngulapin.",
+  "subject_id": "rantasan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngulapin",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900839
+}
+
+{
+  "id": "f900840_banten_pas_ngulapin",
+  "text": "banten pasucian digunakan dalam ngulapin.",
+  "subject_id": "banten_pasucian",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngulapin",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900840
+}
+
+{
+  "id": "f900841_penastan_ngulapin",
+  "text": "penastan digunakan dalam ngulapin.",
+  "subject_id": "penastan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngulapin",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900841
+}
+
+{
+  "id": "f900842_cecepan_ngulapin",
+  "text": "cecepan digunakan dalam ngulapin.",
+  "subject_id": "cecepan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngulapin",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900842
+}
+
+{
+  "id": "f900843_kawangen_ngulapin",
+  "text": "kawangen digunakan dalam ngulapin.",
+  "subject_id": "kawangen",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngulapin",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900843
+}
+
+{
+  "id": "f900844_pengulapan_atma_wedan",
+  "text": "pengulapan digunakan dalam atma wedana.",
+  "subject_id": "pengulapan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900844
+}
+
+{
+  "id": "f900845_banten_pap_atma_wedan",
+  "text": "banten papendakan digunakan dalam atma wedana.",
+  "subject_id": "banten_papendakan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900845
+}
+
+{
+  "id": "f900846_canang_oyo_atma_wedan",
+  "text": "canang oyodan digunakan dalam atma wedana.",
+  "subject_id": "canang_oyodan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900846
+}
+
+{
+  "id": "f900847_canang_tam_atma_wedan",
+  "text": "canang tambur digunakan dalam atma wedana.",
+  "subject_id": "canang_tambur",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900847
+}
+
+{
+  "id": "f900848_lis_bale_g_atma_wedan",
+  "text": "lis bale gading digunakan dalam atma wedana.",
+  "subject_id": "lis_bale_gading",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900848
+}
+
+{
+  "id": "f900849_padudusan__atma_wedan",
+  "text": "padudusan alit digunakan dalam atma wedana.",
+  "subject_id": "padudusan_alit",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900849
+}
+
+{
+  "id": "f900850_catursari_atma_wedan",
+  "text": "catursari digunakan dalam atma wedana.",
+  "subject_id": "catursari",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900850
+}
+
+{
+  "id": "f900851_daksina_ge_atma_wedan",
+  "text": "daksina gede digunakan dalam atma wedana.",
+  "subject_id": "daksina_gede",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900851
+}
+
+{
+  "id": "f900852_pras_penga_atma_wedan",
+  "text": "pras pengambyan digunakan dalam atma wedana.",
+  "subject_id": "pras_pengambyan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900852
+}
+
+{
+  "id": "f900853_banten_dew_atma_wedan",
+  "text": "banten dewa dewi digunakan dalam atma wedana.",
+  "subject_id": "banten_dewa_dewi",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900853
+}
+
+{
+  "id": "f900854_tatebasan__atma_wedan",
+  "text": "tatebasan ardhanareswari digunakan dalam atma wedana.",
+  "subject_id": "tatebasan_ardhanareswari",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900854
+}
+
+{
+  "id": "f900855_tatebasan__atma_wedan",
+  "text": "tatebasan sidhakarya digunakan dalam atma wedana.",
+  "subject_id": "tatebasan_sidhakarya",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900855
+}
+
+{
+  "id": "f900856_daksina_li_atma_wedan",
+  "text": "daksina lingga digunakan dalam atma wedana.",
+  "subject_id": "daksina_lingga",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900856
+}
+
+{
+  "id": "f900857_gelar_sang_atma_wedan",
+  "text": "gelar sanga digunakan dalam atma wedana.",
+  "subject_id": "gelar_sanga",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900857
+}
+
+{
+  "id": "f900858_banten_pag_atma_wedan",
+  "text": "banten pagnian digunakan dalam atma wedana.",
+  "subject_id": "banten_pagnian",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900858
+}
+
+{
+  "id": "f900859_banten_saj_atma_wedan",
+  "text": "banten saji digunakan dalam atma wedana.",
+  "subject_id": "banten_saji",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900859
+}
+
+{
+  "id": "f900860_sesayut_pe_atma_wedan",
+  "text": "sesayut pengideran digunakan dalam atma wedana.",
+  "subject_id": "sesayut_pengideran",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900860
+}
+
+{
+  "id": "f900861_adegan_atma_wedan",
+  "text": "adegan digunakan dalam atma wedana.",
+  "subject_id": "adegan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900861
+}
+
+{
+  "id": "f900862_puspa_ling_atma_wedan",
+  "text": "puspa lingga digunakan dalam atma wedana.",
+  "subject_id": "puspa_lingga",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900862
+}
+
+{
+  "id": "f900863_pras_arepa_atma_wedan",
+  "text": "pras arepan digunakan dalam atma wedana.",
+  "subject_id": "pras_arepan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900863
+}
+
+{
+  "id": "f900864_tahenan_atma_wedan",
+  "text": "tahenan digunakan dalam atma wedana.",
+  "subject_id": "tahenan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900864
+}
+
+{
+  "id": "f900865_kaklenting_atma_wedan",
+  "text": "kaklentingan digunakan dalam atma wedana.",
+  "subject_id": "kaklentingan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900865
+}
+
+{
+  "id": "f900866_banten_pas_atma_wedan",
+  "text": "banten pasucian digunakan dalam atma wedana.",
+  "subject_id": "banten_pasucian",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900866
+}
+
+{
+  "id": "f900867_diuskamali_atma_wedan",
+  "text": "diuskamaligi digunakan dalam atma wedana.",
+  "subject_id": "diuskamaligi",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900867
+}
+
+{
+  "id": "f900868_banten_per_atma_wedan",
+  "text": "banten peras digunakan dalam atma wedana.",
+  "subject_id": "banten_peras",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900868
+}
+
+{
+  "id": "f900869_pemanisan_atma_wedan",
+  "text": "pemanisan digunakan dalam atma wedana.",
+  "subject_id": "pemanisan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900869
+}
+
+{
+  "id": "f900870_periuk_atma_wedan",
+  "text": "periuk digunakan dalam atma wedana.",
+  "subject_id": "periuk",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900870
+}
+
+{
+  "id": "f900871_toya_anyar_atma_wedan",
+  "text": "toya anyar digunakan dalam atma wedana.",
+  "subject_id": "toya_anyar",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900871
+}
+
+{
+  "id": "f900872_sesenden_atma_wedan",
+  "text": "sesenden digunakan dalam atma wedana.",
+  "subject_id": "sesenden",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900872
+}
+
+{
+  "id": "f900873_tebu_atma_wedan",
+  "text": "tebu digunakan dalam atma wedana.",
+  "subject_id": "tebu",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900873
+}
+
+{
+  "id": "f900874_klungah_ny_atma_wedan",
+  "text": "klungah nyuh gading digunakan dalam atma wedana.",
+  "subject_id": "klungah_nyuh_gading",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900874
+}
+
+{
+  "id": "f900875_babelonyoh_atma_wedan",
+  "text": "babelonyoh digunakan dalam atma wedana.",
+  "subject_id": "babelonyoh",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900875
+}
+
+{
+  "id": "f900876_rayunan_atma_wedan",
+  "text": "rayunan digunakan dalam atma wedana.",
+  "subject_id": "rayunan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900876
+}
+
+{
+  "id": "f900877_banten_pej_mamutru",
+  "text": "banten pejati digunakan dalam mamutru.",
+  "subject_id": "banten_pejati",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "mamutru",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900877
+}
+
+{
+  "id": "f900878_banten_suc_mamutru",
+  "text": "banten suci digunakan dalam mamutru.",
+  "subject_id": "banten_suci",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "mamutru",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900878
+}
+
+{
+  "id": "f900879_banten_per_mamutru",
+  "text": "banten peras digunakan dalam mamutru.",
+  "subject_id": "banten_peras",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "mamutru",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900879
+}
+
+{
+  "id": "f900880_pemanisan_mamutru",
+  "text": "pemanisan digunakan dalam mamutru.",
+  "subject_id": "pemanisan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "mamutru",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah",
+  "sentence_id": 900880
+}
+
+{
+  "id": "f900881_tikeh_plas_klasa",
+  "text": "tikeh plasa termasuk salah satu jenis klasa.",
+  "subject_id": "tikeh_plasa",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "klasa",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2437: Tikeh Plasa (Tikar daun pandan yang halus); klasa = tikar (L136, L278, L421)",
+  "sentence_id": 900881
+}
+
+{
+  "id": "f900882_segau_atma_wedan",
+  "text": "segau digunakan dalam atma wedana.",
+  "subject_id": "segau",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2031: Penyucian mendiang juga dilakukan dengan sarana tepung tawar, toya anyar, segau, lis dan alat lainnya, terutama tirtha dari sang pendeta.",
+  "sentence_id": 900882
+}
+
+{
+  "id": "f900883_lis_atma_wedan",
+  "text": "lis digunakan dalam atma wedana.",
+  "subject_id": "lis",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2031: Penyucian mendiang juga dilakukan dengan sarana tepung tawar, toya anyar, segau, lis dan alat lainnya, terutama tirtha dari sang pendeta.",
+  "sentence_id": 900883
+}
+
+{
+  "id": "f900884_pisau_peng_pabersihan",
+  "text": "pisau pengutik digunakan dalam pabersihan mati.",
+  "subject_id": "pisau_pengutik",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan_mati",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2523: Di beberapa tempat atau Desa mereka tidak menggunakan Anggapan atau Arit tetapi menggunakan dua macam pisau yaitu \"Pisau Pengutik\" untuk membersihkan kuku jenazah laki-laki, dan \"Pisau Kecil Biasa\" untuk membersihkan kuk",
+  "sentence_id": 900884
+}
+
+{
+  "id": "f900885_pisau_peng_anggapan",
+  "text": "pisau pengutik menggantikan anggapan.",
+  "subject_id": "pisau_pengutik",
+  "predicate": "MENGGANTIKAN",
+  "object_id": "anggapan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2523: Di beberapa tempat atau Desa mereka tidak menggunakan Anggapan atau Arit tetapi menggunakan dua macam pisau yaitu \"Pisau Pengutik\" untuk membersihkan kuku jenazah laki-laki, dan \"Pisau Kecil Biasa\" untuk membersihkan kuk",
+  "sentence_id": 900885
+}
+
+{
+  "id": "f900886_pisau_peng_arit_gobed",
+  "text": "pisau pengutik menggantikan arit gobed.",
+  "subject_id": "pisau_pengutik",
+  "predicate": "MENGGANTIKAN",
+  "object_id": "arit_gobed",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L2523: Anggapan (anai-anai atau ketam), adalah sebuah pisau khusus yang digunakan untuk memotong padi pada masa lalu, sedangkan Arit Gobed adalah sabit kecil untuk memotong rumput.",
+  "sentence_id": 900886
+}
+
+{
+  "id": "f900887_patulangan_menjangan",
+  "text": "patulangan berbentuk menjangan.",
+  "subject_id": "patulangan",
+  "predicate": "BERBENTUK",
+  "object_id": "menjangan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L47: * Menjangan:  Digunakan oleh golongan Aria.",
+  "sentence_id": 900887
+}
+
+{
+  "id": "f900888_canang_mer_upacara_ng",
+  "text": "canang meraka digunakan dalam upacara ngelungah.",
+  "subject_id": "canang_meraka",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "upacara_ngelungah",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L171: Piuning ke Pura Dalem, dengan banten: canang meraka, daksina, tipat kelanan, telur bekasem, segehan putih kuning.",
+  "sentence_id": 900888
+}
+
+{
+  "id": "f900889_ketipat_ke_upacara_ng",
+  "text": "ketipat kelanan digunakan dalam upacara ngelungah.",
+  "subject_id": "ketipat_kelanan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "upacara_ngelungah",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L171: Piuning ke Pura Dalem, dengan banten: canang meraka, daksina, tipat kelanan, telur bekasem, segehan putih kuning.",
+  "sentence_id": 900889
+}
+
+{
+  "id": "f900890_telur_beka_upacara_ng",
+  "text": "telur bekasem digunakan dalam upacara ngelungah.",
+  "subject_id": "telur_bekasem",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "upacara_ngelungah",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L171: Piuning ke Pura Dalem, dengan banten: canang meraka, daksina, tipat kelanan, telur bekasem, segehan putih kuning.",
+  "sentence_id": 900890
+}
+
+{
+  "id": "f900891_sorohan_upacara_ng",
+  "text": "sorohan digunakan dalam upacara ngelungah.",
+  "subject_id": "sorohan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "upacara_ngelungah",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L174: Piuning di Bangbang Rare, dengan banten: sorohan pengambeyan, pengulapan, peras, daksina, kelungah nyuh gading disurat Omkara.",
+  "sentence_id": 900891
+}
+
+{
+  "id": "f900892_pengulapan_upacara_ng",
+  "text": "pengulapan digunakan dalam upacara ngelungah.",
+  "subject_id": "pengulapan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "upacara_ngelungah",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L174: Piuning di Bangbang Rare, dengan banten: sorohan pengambeyan, pengulapan, peras, daksina, kelungah nyuh gading disurat Omkara.",
+  "sentence_id": 900892
+}
+
+{
+  "id": "f900893_klungah_ny_upacara_ng",
+  "text": "klungah nyuh gading digunakan dalam upacara ngelungah.",
+  "subject_id": "klungah_nyuh_gading",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "upacara_ngelungah",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L174: Piuning di Bangbang Rare, dengan banten: sorohan pengambeyan, pengulapan, peras, daksina, kelungah nyuh gading disurat Omkara.",
+  "sentence_id": 900893
+}
+
+{
+  "id": "f900894_canang_mer_banten",
+  "text": "canang meraka termasuk salah satu jenis banten.",
+  "subject_id": "canang_meraka",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "banten",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L171: Piuning ke Pura Dalem, dengan banten: canang meraka, daksina, tipat kelanan, telur bekasem, segehan putih kuning.",
+  "sentence_id": 900894
+}
+
+{
+  "id": "f900895_telur_beka_telur_ayam",
+  "text": "telur bekasem termasuk salah satu jenis telur ayam.",
+  "subject_id": "telur_bekasem",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "telur_ayam",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana 2026-09-30] L171: Piuning ke Pura Dalem, dengan banten: canang meraka, daksina, tipat kelanan, telur bekasem, segehan putih kuning.",
+  "sentence_id": 900895
+}
+
+{
+  "id": "f900897_pabersihan_ngaben",
+  "text": "pabersihan adalah bagian dari ngaben.",
+  "subject_id": "pabersihan",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "ngaben",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L1391/L1220: Namun ia (Pamerasan) adalah salah satu dari bagian upacara Pabersihan dalam pengabenan. / Setelah Ngulapin, tiga, dua atau sehari menjelang hari Pangabenan, diadakanlah suatu upacara yang disebut Pabersihan atau sering pula disebut Pasucian.",
+  "sentence_id": 900897
+}
+
+{
+  "id": "f900898_sekah_kang_daun_berin",
+  "text": "sekah kangsen terbuat dari daun beringin.",
+  "subject_id": "sekah_kangsen",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "daun_beringin",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L2020: Benda sakral itu (Sekah Kangsen) dibuat dari daun beringin sebagai bahan pokok, dirangkai sedemikian rupa dengan \"klatkat\" (anyaman bilah-bilah bambu halus) sebagai kerangkanya. Kemudian benda itu dibungkus kain putih.",
+  "sentence_id": 900898
+}
+
+{
+  "id": "f900899_sekah_kang_klatkat",
+  "text": "sekah kangsen terbuat dari klatkat.",
+  "subject_id": "sekah_kangsen",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "klatkat",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L2020: Benda sakral itu (Sekah Kangsen) dibuat dari daun beringin sebagai bahan pokok, dirangkai sedemikian rupa dengan \"klatkat\" (anyaman bilah-bilah bambu halus) sebagai kerangkanya. Kemudian benda itu dibungkus kain putih.",
+  "sentence_id": 900899
+}
+
+{
+  "id": "f900900_sekah_kang_kain_putih",
+  "text": "sekah kangsen dibungkus dengan kain putih.",
+  "subject_id": "sekah_kangsen",
+  "predicate": "DIBUNGKUS_DENGAN",
+  "object_id": "kain_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L2020: Benda sakral itu (Sekah Kangsen) dibuat dari daun beringin sebagai bahan pokok, dirangkai sedemikian rupa dengan \"klatkat\" (anyaman bilah-bilah bambu halus) sebagai kerangkanya. Kemudian benda itu dibungkus kain putih.",
+  "sentence_id": 900900
+}
+
+{
+  "id": "f900901_bade_kayu",
+  "text": "bade terbuat dari kayu.",
+  "subject_id": "bade",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kayu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L1795: Dua sarana upacara itu (Bade dan lembu) tidak lagi hanya sekadar himpunan kayu, bambu, kain, kertas, kapas dan lain-lain sebagai barang mati.",
+  "sentence_id": 900901
+}
+
+{
+  "id": "f900902_bade_bambu",
+  "text": "bade terbuat dari bambu.",
+  "subject_id": "bade",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "bambu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L1795: Dua sarana upacara itu (Bade dan lembu) tidak lagi hanya sekadar himpunan kayu, bambu, kain, kertas, kapas dan lain-lain sebagai barang mati.",
+  "sentence_id": 900902
+}
+
+{
+  "id": "f900903_bade_kain",
+  "text": "bade terbuat dari kain.",
+  "subject_id": "bade",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kain",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L1795: Dua sarana upacara itu (Bade dan lembu) tidak lagi hanya sekadar himpunan kayu, bambu, kain, kertas, kapas dan lain-lain sebagai barang mati.",
+  "sentence_id": 900903
+}
+
+{
+  "id": "f900904_bade_kertas",
+  "text": "bade terbuat dari kertas.",
+  "subject_id": "bade",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kertas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L1795: Dua sarana upacara itu (Bade dan lembu) tidak lagi hanya sekadar himpunan kayu, bambu, kain, kertas, kapas dan lain-lain sebagai barang mati.",
+  "sentence_id": 900904
+}
+
+{
+  "id": "f900905_bade_kapas",
+  "text": "bade terbuat dari kapas.",
+  "subject_id": "bade",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kapas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L1795: Dua sarana upacara itu (Bade dan lembu) tidak lagi hanya sekadar himpunan kayu, bambu, kain, kertas, kapas dan lain-lain sebagai barang mati.",
+  "sentence_id": 900905
+}
+
+{
+  "id": "f900906_lembu_kayu",
+  "text": "lembu terbuat dari kayu.",
+  "subject_id": "lembu",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kayu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L1795: Dua sarana upacara itu (Bade dan lembu) tidak lagi hanya sekadar himpunan kayu, bambu, kain, kertas, kapas dan lain-lain sebagai barang mati.",
+  "sentence_id": 900906
+}
+
+{
+  "id": "f900907_lembu_bambu",
+  "text": "lembu terbuat dari bambu.",
+  "subject_id": "lembu",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "bambu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L1795: Dua sarana upacara itu (Bade dan lembu) tidak lagi hanya sekadar himpunan kayu, bambu, kain, kertas, kapas dan lain-lain sebagai barang mati.",
+  "sentence_id": 900907
+}
+
+{
+  "id": "f900908_lembu_kain",
+  "text": "lembu terbuat dari kain.",
+  "subject_id": "lembu",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kain",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L1795: Dua sarana upacara itu (Bade dan lembu) tidak lagi hanya sekadar himpunan kayu, bambu, kain, kertas, kapas dan lain-lain sebagai barang mati.",
+  "sentence_id": 900908
+}
+
+{
+  "id": "f900909_lembu_kertas",
+  "text": "lembu terbuat dari kertas.",
+  "subject_id": "lembu",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kertas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L1795: Dua sarana upacara itu (Bade dan lembu) tidak lagi hanya sekadar himpunan kayu, bambu, kain, kertas, kapas dan lain-lain sebagai barang mati.",
+  "sentence_id": 900909
+}
+
+{
+  "id": "f900910_lembu_kapas",
+  "text": "lembu terbuat dari kapas.",
+  "subject_id": "lembu",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kapas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L1795: Dua sarana upacara itu (Bade dan lembu) tidak lagi hanya sekadar himpunan kayu, bambu, kain, kertas, kapas dan lain-lain sebagai barang mati.",
+  "sentence_id": 900910
+}
+
+{
+  "id": "f900911_puspa_ling_daun_berin",
+  "text": "puspa lingga terbuat dari daun beringin.",
+  "subject_id": "puspa_lingga",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "daun_beringin",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L2251: Setelah ditinggal oleh Sang Atma, materi ini tetap melekat pada material Puspa Lingga (daun beringin dan sebagainya).",
+  "sentence_id": 900911
+}
+
+{
+  "id": "f900912_adegan_rontal_dil",
+  "text": "adegan terbuat dari rontal dilapisi kertas emas.",
+  "subject_id": "adegan",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "rontal_dilapisi_kertas_emas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L1322: Adegan ini berwujud cili terbuat dari rontal dilapisi kertas emas.",
+  "sentence_id": 900912
+}
+
+{
+  "id": "f900913_adegan_pangkon",
+  "text": "adegan dialasi pangkon.",
+  "subject_id": "adegan",
+  "predicate": "DIALASI",
+  "object_id": "pangkon",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L1158: Adegan yaitu suatu bentuk alat upakara yang terbuat dari daun rontal, beralaskan bakul kecil atau pangkon (paso kecil agak tinggi dari tanah atau perak).",
+  "sentence_id": 900913
+}
+
+{
+  "id": "f900914_panah_bambu",
+  "text": "panah terbuat dari bambu.",
+  "subject_id": "panah",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "bambu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L1247: Berbarengan dengan itu diarak pula sebuah panah yang terbuat dari sebilah bambu dengan busur berukuran sekitar 50 cm.",
+  "sentence_id": 900914
+}
+
+{
+  "id": "f900915_kekitir_kertas",
+  "text": "kekitir terbuat dari kertas.",
+  "subject_id": "kekitir",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kertas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L949: ... kekitir dan walantaga, yakni berkas kertas bersurat khusus, yang berisi bendera kecil bertangkai lidi.",
+  "sentence_id": 900915
+}
+
+{
+  "id": "f900916_ulantaga_kertas",
+  "text": "ulantaga terbuat dari kertas.",
+  "subject_id": "ulantaga",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kertas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L949: ... kekitir dan walantaga, yakni berkas kertas bersurat khusus, yang berisi bendera kecil bertangkai lidi.",
+  "sentence_id": 900916
+}
+
+{
+  "id": "f900917_sekah_bambu",
+  "text": "sekah terbuat dari bambu.",
+  "subject_id": "sekah",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "bambu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi live crosscheck 2026-10-01] L2076: Agar dapat berdiri tegak, digunakanlah sebuah \"sumbu\" atau \"poros\" dari buluh kuning setinggi dua jengkal sebagai kerangkanya (sekah).",
+  "sentence_id": 900917
+}
+
+{
+  "id": "f900918_adegan_kertas",
+  "text": "adegan terbuat dari kertas.",
+  "subject_id": "adegan",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kertas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1158: Muka adegan berbentuk cili (kipas), ditempeli kertas serta diisi prerai dari papan cendana tipis yang dilukis muka wayang pria atau wanita sesuai dengan jenis kelamin mendiang.",
+  "sentence_id": 900918
+}
+
+{
+  "id": "f900919_adegan_prerai",
+  "text": "adegan diisi dengan prerai.",
+  "subject_id": "adegan",
+  "predicate": "DIISI_DENGAN",
+  "object_id": "prerai",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1158: Muka adegan berbentuk cili (kipas), ditempeli kertas serta diisi prerai dari papan cendana tipis yang dilukis muka wayang pria atau wanita sesuai dengan jenis kelamin mendiang.",
+  "sentence_id": 900919
+}
+
+{
+  "id": "f900920_prerai_kayu_cenda",
+  "text": "prerai terbuat dari kayu cendana.",
+  "subject_id": "prerai",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kayu_cendana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1158: Muka adegan berbentuk cili (kipas), ditempeli kertas serta diisi prerai dari papan cendana tipis yang dilukis muka wayang pria atau wanita sesuai dengan jenis kelamin mendiang.",
+  "sentence_id": 900920
+}
+
+{
+  "id": "f900921_rontal_dil_daun_ronta",
+  "text": "rontal dilapisi kertas emas terbuat dari daun rontal.",
+  "subject_id": "rontal_dilapisi_kertas_emas",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "daun_rontal",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1322: Adegan ini berwujud cili terbuat dari rontal dilapisi kertas emas.",
+  "sentence_id": 900921
+}
+
+{
+  "id": "f900922_rontal_dil_kertas_ema",
+  "text": "rontal dilapisi kertas emas terbuat dari kertas emas.",
+  "subject_id": "rontal_dilapisi_kertas_emas",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kertas_emas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1322: Adegan ini berwujud cili terbuat dari rontal dilapisi kertas emas.",
+  "sentence_id": 900922
+}
+
+{
+  "id": "f900923_adegan_perhiasan_",
+  "text": "adegan dihias dengan perhiasan pusaka.",
+  "subject_id": "adegan",
+  "predicate": "DIHIAS_DENGAN",
+  "object_id": "perhiasan_pusaka",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1322: Bahkan cincin, gelang dan perhiasan emas lainnya dilekatkan padanya.",
+  "sentence_id": 900923
+}
+
+{
+  "id": "f900924_air_kumkum_air",
+  "text": "air kumkuman terbuat dari air.",
+  "subject_id": "air_kumkuman",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "air",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L759: Setelah bersih, jenazah bayi tersebut dimandikan dengan air kumkuman (air yang diberi serbuk cendana dan kembang serba harum).",
+  "sentence_id": 900924
+}
+
+{
+  "id": "f900925_air_kumkum_kayu_cenda",
+  "text": "air kumkuman berisi kayu cendana.",
+  "subject_id": "air_kumkuman",
+  "predicate": "BERISI",
+  "object_id": "kayu_cendana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L759: Setelah bersih, jenazah bayi tersebut dimandikan dengan air kumkuman (air yang diberi serbuk cendana dan kembang serba harum).",
+  "sentence_id": 900925
+}
+
+{
+  "id": "f900926_angenan_kayu",
+  "text": "angenan dilengkapi kayu.",
+  "subject_id": "angenan",
+  "predicate": "DILENGKAPI",
+  "object_id": "kayu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1301: Ditopang dengan setangkai kayu kecil artistik, ditanam pada \"pot buah kelapa\" yang dikupas halus-halus.",
+  "sentence_id": 900926
+}
+
+{
+  "id": "f900927_angenan_kelapa",
+  "text": "angenan dilengkapi kelapa.",
+  "subject_id": "angenan",
+  "predicate": "DILENGKAPI",
+  "object_id": "kelapa",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1301: Ditopang dengan setangkai kayu kecil artistik, ditanam pada \"pot buah kelapa\" yang dikupas halus-halus.",
+  "sentence_id": 900927
+}
+
+{
+  "id": "f900928_angkeb_bag_kain_hitam",
+  "text": "angkeb baga purus terbuat dari kain hitam.",
+  "subject_id": "angkeb_baga_purus",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kain_hitam",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2550: Secarik kain hitam, sebesar telapak tangan yang akan ditulisi aksara suci oleh Ida Sang Sulinggih yang nantinya akan digunakan untuk menutup kelamin (angkeb sarira) bersamaan dengan paes gedubang.",
+  "sentence_id": 900928
+}
+
+{
+  "id": "f900929_angkeb_bag_paes_gedub",
+  "text": "angkeb baga purus diisi dengan paes gedubang.",
+  "subject_id": "angkeb_baga_purus",
+  "predicate": "DIISI_DENGAN",
+  "object_id": "paes_gedubang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L3088: maka terlebih dulu kemaluan jenazah akan ditutup dengan secarik kain sebesar telapak tangan berwarna hitam yang berisi tulisan huruf UNG (ᬉᬂ ) untuk laki-laki, atau huruf MANG(ᬫᬂ) untuk wanita, yang mana sebelumnya kain tersebut diisi dengan \"Paes Gedubang\" (ampas dari kunyahan sirih lengkap dengan kapur, pinang, gambir sehingga berwarna merah) dan ditutupkan pada kemaluan, kain ini disebut \"Angke",
+  "sentence_id": 900929
+}
+
+{
+  "id": "f900930_angkeb_bag_kain_putih",
+  "text": "variasi (menurut daftar eteh-eteh sawa): angkeb baga purus memakai kain putih sebagai pengganti kain hitam.",
+  "subject_id": "angkeb_baga_purus",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kain_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L197: Eteh-eteh sawa, berupa kain putih untuk saput, kamben, tapih, sabuk, udeng, pangulungan, angkeb rai, angkeb baga/purus, leluwur, dan tatindih (biasanya dimohonkan dari sulinggih/griya); kain putih untuk bantal berisi pis bolong 11 kepeng; kain kuning untuk saput atau selendang; rantasan kain putih kuning dan kain anyar; serta samsam, bunga, dan kwangen.",
+  "sentence_id": 900930,
+  "variant": {
+    "region": "menurut daftar eteh-eteh sawa",
+    "op": "ganti",
+    "replaces": "kain hitam",
+    "source": "korpus L197"
+  }
+}
+
+{
+  "id": "f900931_angkeb_bag_daun_teron",
+  "text": "variasi (untuk jenazah laki-laki): angkeb baga purus dilengkapi daun terong polo (sebagai tambahan).",
+  "subject_id": "angkeb_baga_purus",
+  "predicate": "DILENGKAPI",
+  "object_id": "daun_terong_polo",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L3088: Biasanya ketika menutup kemaluan laki-laki dilengkapi dengan menambahkan \"Don Tuwung Polo\" atau daun terong bola.",
+  "sentence_id": 900931,
+  "variant": {
+    "region": "untuk jenazah laki-laki",
+    "op": "tambah",
+    "source": "korpus L3088"
+  }
+}
+
+{
+  "id": "f900932_angkeb_bag_daun_terat",
+  "text": "variasi (untuk jenazah perempuan): angkeb baga purus dilengkapi daun teratai (sebagai tambahan).",
+  "subject_id": "angkeb_baga_purus",
+  "predicate": "DILENGKAPI",
+  "object_id": "daun_teratai",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L3088: Sedangkan untuk penutup kemaluan wanita ditambahkan dengan \"Don Tunjung\" atau daun teratai.",
+  "sentence_id": 900932,
+  "variant": {
+    "region": "untuk jenazah perempuan",
+    "op": "tambah",
+    "source": "korpus L3088"
+  }
+}
+
+{
+  "id": "f900933_angkeb_rai_kain_putih",
+  "text": "angkeb rai terbuat dari kain putih.",
+  "subject_id": "angkeb_rai",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kain_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L197: Eteh-eteh sawa, berupa kain putih untuk saput, kamben, tapih, sabuk, udeng, pangulungan, angkeb rai, angkeb baga/purus, leluwur, dan tatindih (biasanya dimohonkan dari sulinggih/griya); kain putih untuk bantal berisi pis bolong 11 kepeng; kain kuning untuk saput atau selendang; rantasan kain putih kuning dan kain anyar; serta samsam, bunga, dan kwangen.",
+  "sentence_id": 900933
+}
+
+{
+  "id": "f900934_saput_kain_putih",
+  "text": "saput terbuat dari kain putih.",
+  "subject_id": "saput",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kain_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L197: Eteh-eteh sawa, berupa kain putih untuk saput, kamben, tapih, sabuk, udeng, pangulungan, angkeb rai, angkeb baga/purus, leluwur, dan tatindih (biasanya dimohonkan dari sulinggih/griya); kain putih untuk bantal berisi pis bolong 11 kepeng; kain kuning untuk saput atau selendang; rantasan kain putih kuning dan kain anyar; serta samsam, bunga, dan kwangen.",
+  "sentence_id": 900934
+}
+
+{
+  "id": "f900935_kamben_kain_putih",
+  "text": "kamben terbuat dari kain putih.",
+  "subject_id": "kamben",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kain_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L197: Eteh-eteh sawa, berupa kain putih untuk saput, kamben, tapih, sabuk, udeng, pangulungan, angkeb rai, angkeb baga/purus, leluwur, dan tatindih (biasanya dimohonkan dari sulinggih/griya); kain putih untuk bantal berisi pis bolong 11 kepeng; kain kuning untuk saput atau selendang; rantasan kain putih kuning dan kain anyar; serta samsam, bunga, dan kwangen.",
+  "sentence_id": 900935
+}
+
+{
+  "id": "f900936_tapih_kain_putih",
+  "text": "tapih terbuat dari kain putih.",
+  "subject_id": "tapih",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kain_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L197: Eteh-eteh sawa, berupa kain putih untuk saput, kamben, tapih, sabuk, udeng, pangulungan, angkeb rai, angkeb baga/purus, leluwur, dan tatindih (biasanya dimohonkan dari sulinggih/griya); kain putih untuk bantal berisi pis bolong 11 kepeng; kain kuning untuk saput atau selendang; rantasan kain putih kuning dan kain anyar; serta samsam, bunga, dan kwangen.",
+  "sentence_id": 900936
+}
+
+{
+  "id": "f900937_sabuk_kain_putih",
+  "text": "sabuk terbuat dari kain putih.",
+  "subject_id": "sabuk",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kain_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L197: Eteh-eteh sawa, berupa kain putih untuk saput, kamben, tapih, sabuk, udeng, pangulungan, angkeb rai, angkeb baga/purus, leluwur, dan tatindih (biasanya dimohonkan dari sulinggih/griya); kain putih untuk bantal berisi pis bolong 11 kepeng; kain kuning untuk saput atau selendang; rantasan kain putih kuning dan kain anyar; serta samsam, bunga, dan kwangen.",
+  "sentence_id": 900937
+}
+
+{
+  "id": "f900938_udeng_kain_putih",
+  "text": "udeng terbuat dari kain putih.",
+  "subject_id": "udeng",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kain_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L197: Eteh-eteh sawa, berupa kain putih untuk saput, kamben, tapih, sabuk, udeng, pangulungan, angkeb rai, angkeb baga/purus, leluwur, dan tatindih (biasanya dimohonkan dari sulinggih/griya); kain putih untuk bantal berisi pis bolong 11 kepeng; kain kuning untuk saput atau selendang; rantasan kain putih kuning dan kain anyar; serta samsam, bunga, dan kwangen.",
+  "sentence_id": 900938
+}
+
+{
+  "id": "f900939_pangulunga_kain_putih",
+  "text": "pangulungan terbuat dari kain putih.",
+  "subject_id": "pangulungan",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kain_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L197: Eteh-eteh sawa, berupa kain putih untuk saput, kamben, tapih, sabuk, udeng, pangulungan, angkeb rai, angkeb baga/purus, leluwur, dan tatindih (biasanya dimohonkan dari sulinggih/griya); kain putih untuk bantal berisi pis bolong 11 kepeng; kain kuning untuk saput atau selendang; rantasan kain putih kuning dan kain anyar; serta samsam, bunga, dan kwangen.",
+  "sentence_id": 900939
+}
+
+{
+  "id": "f900940_leluwur_kain_putih",
+  "text": "leluwur terbuat dari kain putih.",
+  "subject_id": "leluwur",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kain_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L197: Eteh-eteh sawa, berupa kain putih untuk saput, kamben, tapih, sabuk, udeng, pangulungan, angkeb rai, angkeb baga/purus, leluwur, dan tatindih (biasanya dimohonkan dari sulinggih/griya); kain putih untuk bantal berisi pis bolong 11 kepeng; kain kuning untuk saput atau selendang; rantasan kain putih kuning dan kain anyar; serta samsam, bunga, dan kwangen.",
+  "sentence_id": 900940
+}
+
+{
+  "id": "f900941_tatindih_kain_putih",
+  "text": "tatindih terbuat dari kain putih.",
+  "subject_id": "tatindih",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kain_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L197: Eteh-eteh sawa, berupa kain putih untuk saput, kamben, tapih, sabuk, udeng, pangulungan, angkeb rai, angkeb baga/purus, leluwur, dan tatindih (biasanya dimohonkan dari sulinggih/griya); kain putih untuk bantal berisi pis bolong 11 kepeng; kain kuning untuk saput atau selendang; rantasan kain putih kuning dan kain anyar; serta samsam, bunga, dan kwangen.",
+  "sentence_id": 900941
+}
+
+{
+  "id": "f900942_ante_galar",
+  "text": "ante terbuat dari galar.",
+  "subject_id": "ante",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "galar",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L3302: Adapun \"Ante\" yang digunakan untuk \"Ngeringkes\" adalah terbuat dari bilahan-bilahan bambu yang disebut dengan \"Galar\".",
+  "sentence_id": 900942
+}
+
+{
+  "id": "f900943_ante_tali_kteku",
+  "text": "variasi (masa kini, karena rotan sukar dicari): ante memakai tali ktekung sebagai pengganti tali penyalin.",
+  "subject_id": "ante",
+  "predicate": "DIIKAT_DENGAN",
+  "object_id": "tali_ktekung",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L3305: Namun mengingat masa sekarang untuk mencari rotan agak sukar dan mahal, maka tali pengikatnya juga bisa diganti dengan tali bambu.",
+  "sentence_id": 900943,
+  "variant": {
+    "region": "masa kini, karena rotan sukar dicari",
+    "op": "ganti",
+    "replaces": "tali penyalin",
+    "source": "korpus L3305"
+  }
+}
+
+{
+  "id": "f900944_galar_bambu",
+  "text": "galar terbuat dari bambu.",
+  "subject_id": "galar",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "bambu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L3302: Adapun \"Ante\" yang digunakan untuk \"Ngeringkes\" adalah terbuat dari bilahan-bilahan bambu yang disebut dengan \"Galar\".",
+  "sentence_id": 900944
+}
+
+{
+  "id": "f900945_bilah_bamb_bambu",
+  "text": "bilah bambu galar terbuat dari bambu.",
+  "subject_id": "bilah_bambu_galar",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "bambu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2716: Bale ini terbuat dari bambu dan galar nya juga terdiri dari bilah-bilah bambu berjumlah sebanyak 9 (sembilan) buah.",
+  "sentence_id": 900945
+}
+
+{
+  "id": "f900946_tali_penya_rotan",
+  "text": "tali penyalin terbuat dari rotan.",
+  "subject_id": "tali_penyalin",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "rotan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2595: Tali Penyalin (tali rotan), digunakan untuk mengikat jenazah setelah upacara Ngeringkes, tali rotan ini juga digunakan untuk mengikat \"ante\" yang terbuat dari bambu untuk mengikat jenazah.",
+  "sentence_id": 900946
+}
+
+{
+  "id": "f900947_tali_kteku_bambu",
+  "text": "tali ktekung terbuat dari bambu.",
+  "subject_id": "tali_ktekung",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "bambu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L855: Lalu setiap jarak sekitar 0,15 meter diikatkan dengan tali bambu sepanjang tubuh.",
+  "sentence_id": 900947
+}
+
+{
+  "id": "f900948_sumpe_rotan",
+  "text": "sumpe terbuat dari rotan.",
+  "subject_id": "sumpe",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "rotan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1232: Artinya, peti ini dibuat tanpa memakai paku, melainkan hanya diikat dengan tiga utas sumpe (anyaman rotan).",
+  "sentence_id": 900948
+}
+
+{
+  "id": "f900949_slepa_sumpe",
+  "text": "slepa diikat dengan sumpe.",
+  "subject_id": "slepa",
+  "predicate": "DIIKAT_DENGAN",
+  "object_id": "sumpe",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1232: Artinya, peti ini dibuat tanpa memakai paku, melainkan hanya diikat dengan tiga utas sumpe (anyaman rotan).",
+  "sentence_id": 900949
+}
+
+{
+  "id": "f900950_klatkat_bambu",
+  "text": "klatkat terbuat dari bambu.",
+  "subject_id": "klatkat",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "bambu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2020: Benda sakral itu dibuat dari daun beringin sebagai bahan pokok, dirangkai sedemikian rupa dengan \"klatkat\" (anyaman bilah-bilah bambu halus) sebagai kerangkanya.",
+  "sentence_id": 900950
+}
+
+{
+  "id": "f900951_lante_bamb_bambu",
+  "text": "lante bambu terbuat dari bambu.",
+  "subject_id": "lante_bambu",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "bambu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L214: Selanjutnya dipasang itik-itik pada ibu jari tangan dan kaki, jenazah digulung dengan tikar dan kain yang telah dirajah, diakhiri dengan lante dari bambu, lalu dimasukkan ke dalam slepa/peti dan ditempatkan pada Bale Gede/Sakaroras atau tempat yang disiapkan, dengan posisi kepala ke utara atau ke timur.",
+  "sentence_id": 900951
+}
+
+{
+  "id": "f900952_bade_boma",
+  "text": "bade dihias dengan boma.",
+  "subject_id": "bade",
+  "predicate": "DIHIAS_DENGAN",
+  "object_id": "boma",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1572: Selain itu dihiasi pula dengan Boma (topeng raksasa) dan hiasan kapas lima warna.",
+  "sentence_id": 900952
+}
+
+{
+  "id": "f900953_bade_kapas",
+  "text": "bade dihias dengan kapas.",
+  "subject_id": "bade",
+  "predicate": "DIHIAS_DENGAN",
+  "object_id": "kapas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1572: Selain itu dihiasi pula dengan Boma (topeng raksasa) dan hiasan kapas lima warna.",
+  "sentence_id": 900953
+}
+
+{
+  "id": "f900954_bade_mangle",
+  "text": "bade dihias dengan mangle.",
+  "subject_id": "bade",
+  "predicate": "DIHIAS_DENGAN",
+  "object_id": "mangle",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1593: Menjelang pemberangkatan ke setra, mangle digantungkan pada tiap sudut atap bade atau wadah di masing-masing tingkatan.",
+  "sentence_id": 900954
+}
+
+{
+  "id": "f900955_wadah_boma",
+  "text": "wadah dihias dengan boma.",
+  "subject_id": "wadah",
+  "predicate": "DIHIAS_DENGAN",
+  "object_id": "boma",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1578: Adapun wadah adalah usungan yang tanpa badawang mungkin bertingkat memakai hiasan Boma dan warna kapas terbatas.",
+  "sentence_id": 900955
+}
+
+{
+  "id": "f900956_wadah_kapas",
+  "text": "wadah dihias dengan kapas.",
+  "subject_id": "wadah",
+  "predicate": "DIHIAS_DENGAN",
+  "object_id": "kapas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1578: Adapun wadah adalah usungan yang tanpa badawang mungkin bertingkat memakai hiasan Boma dan warna kapas terbatas.",
+  "sentence_id": 900956
+}
+
+{
+  "id": "f900957_wadah_mangle",
+  "text": "wadah dihias dengan mangle.",
+  "subject_id": "wadah",
+  "predicate": "DIHIAS_DENGAN",
+  "object_id": "mangle",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1593: Menjelang pemberangkatan ke setra, mangle digantungkan pada tiap sudut atap bade atau wadah di masing-masing tingkatan.",
+  "sentence_id": 900957
+}
+
+{
+  "id": "f900958_mangle_kapas",
+  "text": "mangle dihias dengan kapas.",
+  "subject_id": "mangle",
+  "predicate": "DIHIAS_DENGAN",
+  "object_id": "kapas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1590: Setiap untaiannya terdiri dari tiga - lima - tujuh - sembilan atau 11 butir ketupat, dihias dengan kapas berwarna-warni serta kertas emas segala.",
+  "sentence_id": 900958
+}
+
+{
+  "id": "f900959_mangle_kertas_ema",
+  "text": "mangle dihias dengan kertas emas.",
+  "subject_id": "mangle",
+  "predicate": "DIHIAS_DENGAN",
+  "object_id": "kertas_emas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1590: Setiap untaiannya terdiri dari tiga - lima - tujuh - sembilan atau 11 butir ketupat, dihias dengan kapas berwarna-warni serta kertas emas segala.",
+  "sentence_id": 900959
+}
+
+{
+  "id": "f900960_bale_pamuu_bambu",
+  "text": "bale pamuunan terbuat dari bambu.",
+  "subject_id": "bale_pamuunan",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "bambu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1705: Jumlah tiangnya empat dari batang bambu.",
+  "sentence_id": 900960
+}
+
+{
+  "id": "f900961_bale_pamuu_kertas",
+  "text": "bale pamuunan terbuat dari kertas.",
+  "subject_id": "bale_pamuunan",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kertas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1705: Atapnya Pun dibuat dari kertas, sehingga bila terbakar tak mencurahkan bara yang berarti.",
+  "sentence_id": 900961
+}
+
+{
+  "id": "f900962_bale_pamuu_daun_enau",
+  "text": "variasi (pilihan lain menurut sumber): bale pamuunan memakai daun enau sebagai pengganti kertas.",
+  "subject_id": "bale_pamuunan",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "daun_enau",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1705: Atau bisa pula dibuat dari janur enau yang sulit terbakar.",
+  "sentence_id": 900962,
+  "variant": {
+    "region": "pilihan lain menurut sumber",
+    "op": "ganti",
+    "replaces": "kertas",
+    "source": "korpus L1705"
+  }
+}
+
+{
+  "id": "f900963_bale_salun_alang_alan",
+  "text": "bale salunglung terbuat dari alang-alang.",
+  "subject_id": "bale_salunglung",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "alang_alang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1687: Memakai atap alang-alang, semua ruangnya dinamakan rong (balai-balai).",
+  "sentence_id": 900963
+}
+
+{
+  "id": "f900964_pepaga_bilah_bamb",
+  "text": "pepaga terbuat dari bilah bambu galar.",
+  "subject_id": "pepaga",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "bilah_bambu_galar",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2716: Bale ini terbuat dari bambu dan galar nya juga terdiri dari bilah-bilah bambu berjumlah sebanyak 9 (sembilan) buah.",
+  "sentence_id": 900964
+}
+
+{
+  "id": "f900965_pepaga_leluhur_la",
+  "text": "pepaga dilengkapi leluhur langit-langit tandu.",
+  "subject_id": "pepaga",
+  "predicate": "DILENGKAPI",
+  "object_id": "leluhur_langit_langit_tandu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L846: Di atas pepaga itu dipasang secarik kain putih selaku \"leluhur\" atau langit-langit tandu tersebut.",
+  "sentence_id": 900965
+}
+
+{
+  "id": "f900966_pepaga_daun_pisan",
+  "text": "pepaga dialasi dengan daun pisang saba.",
+  "subject_id": "pepaga",
+  "predicate": "DIALASI_DENGAN",
+  "object_id": "daun_pisang_saba",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L846: Di balai-balai bambu itu, digelar daun pisang saba (pisang kepok) yang berfungsi sebagai tikar alas jenazah.",
+  "sentence_id": 900966
+}
+
+{
+  "id": "f900967_pepaga_klasa",
+  "text": "pepaga dialasi dengan klasa.",
+  "subject_id": "pepaga",
+  "predicate": "DIALASI_DENGAN",
+  "object_id": "klasa",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2716: Setelah diikat atau dipaku, kemudian diisi tikar yang dijepit dengan bambu atau diikat dengan tali.",
+  "sentence_id": 900967
+}
+
+{
+  "id": "f900968_leluhur_la_kain_putih",
+  "text": "leluhur langit-langit tandu terbuat dari kain putih.",
+  "subject_id": "leluhur_langit_langit_tandu",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kain_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2589: Kain Kasa (kain Putih), kain ini akan digunakan untuk membungkus (menggulung) jenazah setelah upacara Nyiramang Layon selesai, kain kasa putih ini biasanya diperlukan tiga lembar yang panjangnya hampir dua meter agar mudah membungkus/menggulung jenazah.",
+  "sentence_id": 900968
+}
+
+{
+  "id": "f900969_beras_catu_beras_kuni",
+  "text": "beras catur terdiri dari beras kuning.",
+  "subject_id": "beras_catur",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "beras_kuning",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1128: Kemudian di dada sawa diletakkan sebuah daksina dan beras catur (empat jenis beras: putih, merah, kuning dan hitam) masing-masing menurut arahnya.",
+  "sentence_id": 900969
+}
+
+{
+  "id": "f900970_beras_catu_beras_puti",
+  "text": "beras catur terdiri dari beras putih.",
+  "subject_id": "beras_catur",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "beras_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1128: Kemudian di dada sawa diletakkan sebuah daksina dan beras catur (empat jenis beras: putih, merah, kuning dan hitam) masing-masing menurut arahnya.",
+  "sentence_id": 900970
+}
+
+{
+  "id": "f900971_beras_catu_beras_mera",
+  "text": "beras catur terdiri dari beras merah.",
+  "subject_id": "beras_catur",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "beras_merah",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1128: Kemudian di dada sawa diletakkan sebuah daksina dan beras catur (empat jenis beras: putih, merah, kuning dan hitam) masing-masing menurut arahnya.",
+  "sentence_id": 900971
+}
+
+{
+  "id": "f900972_beras_catu_beras_hita",
+  "text": "beras catur terdiri dari beras hitam.",
+  "subject_id": "beras_catur",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "beras_hitam",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1128: Kemudian di dada sawa diletakkan sebuah daksina dan beras catur (empat jenis beras: putih, merah, kuning dan hitam) masing-masing menurut arahnya.",
+  "sentence_id": 900972
+}
+
+{
+  "id": "f900973_boreh_air",
+  "text": "boreh diisi dengan air.",
+  "subject_id": "boreh",
+  "predicate": "DIISI_DENGAN",
+  "object_id": "air",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2538: Di samping itu juga perlu disiapkan boreh miik yaitu bubuk cendana yang diisi air.",
+  "sentence_id": 900973
+}
+
+{
+  "id": "f900974_gegaleng_kayu_dapda",
+  "text": "gegaleng terbuat dari kayu dapdap.",
+  "subject_id": "gegaleng",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kayu_dapdap",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L3118: Gegaleng ini dibuat dari uang kepeng (pipis bolong) sebanyak 250 biji serta beberapa potongan-potongan dahan kayu dapdap yang dibungkus dengan kain putih.",
+  "sentence_id": 900974
+}
+
+{
+  "id": "f900975_gegaleng_pisang_kay",
+  "text": "variasi (sebagian desa): gegaleng memakai pisang kayu sebagai pengganti uang kepeng.",
+  "subject_id": "gegaleng",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "pisang_kayu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2574: Sesisir Buah Pisang Kayu, pisang kayu ini akan digunakan sebagai bantal (gegaleng) jenazah, ketika upacara ngelelet dilaksanakan.",
+  "sentence_id": 900975,
+  "variant": {
+    "region": "sebagian desa",
+    "op": "ganti",
+    "replaces": "uang kepeng",
+    "source": "korpus L2574"
+  }
+}
+
+{
+  "id": "f900976_itik_itik_tali_benan",
+  "text": "itik-itik terbuat dari tali benang tukelan.",
+  "subject_id": "itik_itik",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "tali_benang_tukelan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2547: Benang tukelan berwarna putih, benang ini diperlukan agak banyak dan yang agak panjang, karena nantinya digunakan sebagai \"itik-itik\" yaitu tali untuk pengikat antara kedua jempol kaki dan kedua jempol tangan, dengan cara mengikatnya berbentuk angka delapan (8) romawi.",
+  "sentence_id": 900976
+}
+
+{
+  "id": "f900977_jun_pere_tanah_liat",
+  "text": "jun pere terbuat dari tanah liat.",
+  "subject_id": "jun_pere",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "tanah_liat",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1161: Pengawak terdiri dari sebuah jun pere (periuk tanah yang kecil/masih merah) berisikan air, 54 atau 108 lembar daun alang-alang serta sembilan batang kayu cendana kecil-kecil (sebesar batang korek api).",
+  "sentence_id": 900977
+}
+
+{
+  "id": "f900978_pangkon_tanah_liat",
+  "text": "pangkon terbuat dari tanah liat.",
+  "subject_id": "pangkon",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "tanah_liat",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1158: Adegan yaitu suatu bentuk alat upakara yang terbuat dari daun rontal, beralaskan bakul kecil atau pangkon (paso kecil agak tinggi dari tanah atau perak).",
+  "sentence_id": 900978
+}
+
+{
+  "id": "f900979_pangkon_perak",
+  "text": "variasi (pilihan lain menurut sumber): pangkon memakai perak sebagai pengganti tanah liat.",
+  "subject_id": "pangkon",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "perak",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1158: Adegan yaitu suatu bentuk alat upakara yang terbuat dari daun rontal, beralaskan bakul kecil atau pangkon (paso kecil agak tinggi dari tanah atau perak).",
+  "sentence_id": 900979,
+  "variant": {
+    "region": "pilihan lain menurut sumber",
+    "op": "ganti",
+    "replaces": "tanah liat",
+    "source": "korpus L1158"
+  }
+}
+
+{
+  "id": "f900980_kajang_daun_ronta",
+  "text": "kajang dihias dengan daun rontal.",
+  "subject_id": "kajang",
+  "predicate": "DIHIAS_DENGAN",
+  "object_id": "daun_rontal",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1268: Selanjutnya dihias pula dengan anyaman rontal dan lain-lain.",
+  "sentence_id": 900980
+}
+
+{
+  "id": "f900981_ketipat_ba_kue_ketan",
+  "text": "ketipat bantal terdiri dari kue ketan.",
+  "subject_id": "ketipat_bantal",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "kue_ketan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2314: Yang terpokok adalah Ketipat Bantal (ketupat dan kue ketan yang dibungkus dengan janur) hingga upacara ini pun dijuluki ngaturang ketipat bantal.",
+  "sentence_id": 900981
+}
+
+{
+  "id": "f900982_kojong_daun_pisan",
+  "text": "kojong terbuat dari daun pisang.",
+  "subject_id": "kojong",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "daun_pisang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2493: Jumlah lekesan ini dibuat sebanyak 20 biji dan tiap-tiap 5 (lima) biji dimasukkan dalam sebuah kojong yang dibuat dari daun pisang, sehingga menjadi Kawangen, yang disebut dengan Kawangen Jeriji sebanyak 4 (empat) buah.",
+  "sentence_id": 900982
+}
+
+{
+  "id": "f900983_langse_kain",
+  "text": "langse terbuat dari kain.",
+  "subject_id": "langse",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kain",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2425: Sementara itu jenazah yang telah diletakkan seperti posisi orang sedang tidur, perlu dilindungi dengan menutup bale-bale tempat dimana jenazah itu di semayamkan dengan \"langse\" atau kain yang berbentuk korden.",
+  "sentence_id": 900983
+}
+
+{
+  "id": "f900984_lekesan_base",
+  "text": "lekesan terbuat dari base.",
+  "subject_id": "lekesan",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "base",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2493: Lekesan (daun sirih yang digulung) diikat dengan benang putih, kemudian dimasukkan ke lubang satu uang kepeng (pipis bolong), lalu di ujung atasnya diisi bawang putih yang sudah dikupas dan ditusuk dengan lidi.",
+  "sentence_id": 900984
+}
+
+{
+  "id": "f900985_lekesan_benang",
+  "text": "lekesan diikat dengan benang.",
+  "subject_id": "lekesan",
+  "predicate": "DIIKAT_DENGAN",
+  "object_id": "benang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2493: Lekesan (daun sirih yang digulung) diikat dengan benang putih, kemudian dimasukkan ke lubang satu uang kepeng (pipis bolong), lalu di ujung atasnya diisi bawang putih yang sudah dikupas dan ditusuk dengan lidi.",
+  "sentence_id": 900985
+}
+
+{
+  "id": "f900986_lekesan_uang_kepen",
+  "text": "lekesan dilengkapi uang kepeng.",
+  "subject_id": "lekesan",
+  "predicate": "DILENGKAPI",
+  "object_id": "uang_kepeng",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2493: Lekesan (daun sirih yang digulung) diikat dengan benang putih, kemudian dimasukkan ke lubang satu uang kepeng (pipis bolong), lalu di ujung atasnya diisi bawang putih yang sudah dikupas dan ditusuk dengan lidi.",
+  "sentence_id": 900986
+}
+
+{
+  "id": "f900987_lekesan_lidi",
+  "text": "lekesan dilengkapi lidi.",
+  "subject_id": "lekesan",
+  "predicate": "DILENGKAPI",
+  "object_id": "lidi",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2493: Lekesan (daun sirih yang digulung) diikat dengan benang putih, kemudian dimasukkan ke lubang satu uang kepeng (pipis bolong), lalu di ujung atasnya diisi bawang putih yang sudah dikupas dan ditusuk dengan lidi.",
+  "sentence_id": 900987
+}
+
+{
+  "id": "f900988_kawangen_j_benang",
+  "text": "kawangen jeriji diikat dengan benang.",
+  "subject_id": "kawangen_jeriji",
+  "predicate": "DIIKAT_DENGAN",
+  "object_id": "benang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2505: Empat Buah Kawangen Jeriji, seperti telah disebutkan di atas bahwa setiap Kwangen berisi lima buah lembaran-lembaran daun sirih yang digulung, diikat dengan tali benang dan setiap gulungan diisi uang kepeng, sedangkan di ujungnya diisi bawang putih sebagai lambang kuku, untuk ditaruh di tiap-tiap jari tangan dan kaki jenazah.",
+  "sentence_id": 900988
+}
+
+{
+  "id": "f900989_paes_gedub_base",
+  "text": "paes gedubang terbuat dari base.",
+  "subject_id": "paes_gedubang",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "base",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2492: Paes Gedubang, yaitu daun sirih lengkap dengan isinya seperti pamor (kapur sirih), gambir, buah pinang serta dikunyah, maka ampas dan airnya yang berwarna merah inilah disebut Paes Gedubang.",
+  "sentence_id": 900989
+}
+
+{
+  "id": "f900990_upakara_pa_uang_kepen",
+  "text": "upakara pamerasan terbuat dari uang kepeng.",
+  "subject_id": "upakara_pamerasan",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "uang_kepeng",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1388: Upakara itu berupa uang kepeng yang dibungkus dengan daun dapdap dan diikat dengan benang tridatu (merah, hitam dan putih).",
+  "sentence_id": 900990
+}
+
+{
+  "id": "f900991_upakara_pa_banten_beb",
+  "text": "upakara pamerasan dilengkapi banten bebangkit.",
+  "subject_id": "upakara_pamerasan",
+  "predicate": "DILENGKAPI",
+  "object_id": "banten_bebangkit",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1397: Sarana upacara ini, adalah seperangkat sajen, biasanya dengan sebuah Bebangkit sebagai pokoknya.",
+  "sentence_id": 900991
+}
+
+{
+  "id": "f900992_upakara_pa_jukung",
+  "text": "upakara pamerasan dilengkapi jukung.",
+  "subject_id": "upakara_pamerasan",
+  "predicate": "DILENGKAPI",
+  "object_id": "jukung",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1397: Selain itu ada pertanda khas bagaikan inti upakara ini, yakni sebuah jukung kecil yang terbuat dari seludang kelapa.",
+  "sentence_id": 900992
+}
+
+{
+  "id": "f900993_upakara_pa_jarum",
+  "text": "upakara pamerasan dilengkapi jarum.",
+  "subject_id": "upakara_pamerasan",
+  "predicate": "DILENGKAPI",
+  "object_id": "jarum",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1400: Selain jukung, ada juga sebatang jarum yang biasa dipakai untuk menjahit.",
+  "sentence_id": 900993
+}
+
+{
+  "id": "f900994_upakara_pa_perhiasan_",
+  "text": "upakara pamerasan dilengkapi perhiasan pusaka.",
+  "subject_id": "upakara_pamerasan",
+  "predicate": "DILENGKAPI",
+  "object_id": "perhiasan_pusaka",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1403: Upakara ini juga dilengkapi keris (bila ada) dan satu dua perhiasan pusaka (cincin dan sebagainya).",
+  "sentence_id": 900994
+}
+
+{
+  "id": "f900995_upakara_pa_pipil",
+  "text": "upakara pamerasan dilengkapi pipil.",
+  "subject_id": "upakara_pamerasan",
+  "predicate": "DILENGKAPI",
+  "object_id": "pipil",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1406: Di samping itu juga dilengkapi selembar \"pipil\" tanah atau tanda pemilikan lainnya.",
+  "sentence_id": 900995
+}
+
+{
+  "id": "f900996_upakara_pa_keris",
+  "text": "variasi (bila ada): upakara pamerasan dilengkapi keris (sebagai tambahan).",
+  "subject_id": "upakara_pamerasan",
+  "predicate": "DILENGKAPI",
+  "object_id": "keris",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1403: Upakara ini juga dilengkapi keris (bila ada) dan satu dua perhiasan pusaka (cincin dan sebagainya).",
+  "sentence_id": 900996,
+  "variant": {
+    "region": "bila ada",
+    "op": "tambah",
+    "source": "korpus L1403"
+  }
+}
+
+{
+  "id": "f900997_panah_bunga",
+  "text": "panah dilengkapi bunga.",
+  "subject_id": "panah",
+  "predicate": "DILENGKAPI",
+  "object_id": "bunga",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1247: Pada ujung panah itu tersisip sekuntum bunga yang harum.",
+  "sentence_id": 900997
+}
+
+{
+  "id": "f900998_panca_datu_emas",
+  "text": "panca datu terdiri dari emas.",
+  "subject_id": "panca_datu",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "emas",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1235: Tidak lain kumpulan lima jenis lempengan logam perak, tembaga, emas, besi (uang kepeng) dan sebuah permata.",
+  "sentence_id": 900998
+}
+
+{
+  "id": "f900999_panca_datu_perak",
+  "text": "panca datu terdiri dari perak.",
+  "subject_id": "panca_datu",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "perak",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1235: Tidak lain kumpulan lima jenis lempengan logam perak, tembaga, emas, besi (uang kepeng) dan sebuah permata.",
+  "sentence_id": 900999
+}
+
+{
+  "id": "f901000_panca_datu_tembaga",
+  "text": "panca datu terdiri dari tembaga.",
+  "subject_id": "panca_datu",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "tembaga",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1235: Tidak lain kumpulan lima jenis lempengan logam perak, tembaga, emas, besi (uang kepeng) dan sebuah permata.",
+  "sentence_id": 901000
+}
+
+{
+  "id": "f901001_pangringke_klasa",
+  "text": "pangringkes terdiri dari klasa.",
+  "subject_id": "pangringkes",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "klasa",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L852: Kemudian jenazah diangkat seperlunya untuk meluluskan masuknya tikar dan kain putih pangringkes yang dibentang di bawah jasad tersebut.",
+  "sentence_id": 901001
+}
+
+{
+  "id": "f901002_pangringke_kain_putih",
+  "text": "pangringkes terdiri dari kain putih.",
+  "subject_id": "pangringkes",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "kain_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L852: Kemudian jenazah diangkat seperlunya untuk meluluskan masuknya tikar dan kain putih pangringkes yang dibentang di bawah jasad tersebut.",
+  "sentence_id": 901002
+}
+
+{
+  "id": "f901003_pangringke_lante_bamb",
+  "text": "pangringkes dilengkapi lante bambu.",
+  "subject_id": "pangringkes",
+  "predicate": "DILENGKAPI",
+  "object_id": "lante_bambu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1910: Jadi lihatlah, Sawa Wedana akan berubah menjadi Sawa Prateka, bila upakara/sajennya dikurangi unsur pancadatu/patrang, pering pada sajen-sajennya, peti dan sumpe (melainkan tetap dengan Pangringkes dengan lantenya) dan kepala kerbau selaku teteh-tabunannya.",
+  "sentence_id": 901003
+}
+
+{
+  "id": "f901004_banten_pen_banten_beb",
+  "text": "banten penebusan dilengkapi banten bebangkit.",
+  "subject_id": "banten_penebusan",
+  "predicate": "DILENGKAPI",
+  "object_id": "banten_bebangkit",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1421: Ini pun menggunakan pula sajen Bebangkit selaku dasarnya, serta diletakkan berdekatan dengan Pamerasan tadi.",
+  "sentence_id": 901004
+}
+
+{
+  "id": "f901005_banten_pen_uang_kepen",
+  "text": "banten penebusan berisi uang kepeng.",
+  "subject_id": "banten_penebusan",
+  "predicate": "BERISI",
+  "object_id": "uang_kepeng",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1421: Unsur inti itu adalah, uang kepeng dalam hitungan ribu, beras dengan ceeng (alat ukur dari tempurung) benang dalam tukelan (gulungan) kelapa, telur dan kemiri dalam hitungan butir, ayam dan itik dengan ekor sebagai kesatuan bilangan.",
+  "sentence_id": 901005
+}
+
+{
+  "id": "f901006_banten_pen_beras",
+  "text": "banten penebusan berisi beras.",
+  "subject_id": "banten_penebusan",
+  "predicate": "BERISI",
+  "object_id": "beras",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1421: Unsur inti itu adalah, uang kepeng dalam hitungan ribu, beras dengan ceeng (alat ukur dari tempurung) benang dalam tukelan (gulungan) kelapa, telur dan kemiri dalam hitungan butir, ayam dan itik dengan ekor sebagai kesatuan bilangan.",
+  "sentence_id": 901006
+}
+
+{
+  "id": "f901007_banten_pen_benang",
+  "text": "banten penebusan berisi benang.",
+  "subject_id": "banten_penebusan",
+  "predicate": "BERISI",
+  "object_id": "benang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1421: Unsur inti itu adalah, uang kepeng dalam hitungan ribu, beras dengan ceeng (alat ukur dari tempurung) benang dalam tukelan (gulungan) kelapa, telur dan kemiri dalam hitungan butir, ayam dan itik dengan ekor sebagai kesatuan bilangan.",
+  "sentence_id": 901007
+}
+
+{
+  "id": "f901008_banten_pen_kelapa",
+  "text": "banten penebusan berisi kelapa.",
+  "subject_id": "banten_penebusan",
+  "predicate": "BERISI",
+  "object_id": "kelapa",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1421: Unsur inti itu adalah, uang kepeng dalam hitungan ribu, beras dengan ceeng (alat ukur dari tempurung) benang dalam tukelan (gulungan) kelapa, telur dan kemiri dalam hitungan butir, ayam dan itik dengan ekor sebagai kesatuan bilangan.",
+  "sentence_id": 901008
+}
+
+{
+  "id": "f901009_banten_pen_telur_ayam",
+  "text": "banten penebusan berisi telur ayam.",
+  "subject_id": "banten_penebusan",
+  "predicate": "BERISI",
+  "object_id": "telur_ayam",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1421: Unsur inti itu adalah, uang kepeng dalam hitungan ribu, beras dengan ceeng (alat ukur dari tempurung) benang dalam tukelan (gulungan) kelapa, telur dan kemiri dalam hitungan butir, ayam dan itik dengan ekor sebagai kesatuan bilangan.",
+  "sentence_id": 901009
+}
+
+{
+  "id": "f901010_banten_pen_kemiri",
+  "text": "banten penebusan berisi kemiri.",
+  "subject_id": "banten_penebusan",
+  "predicate": "BERISI",
+  "object_id": "kemiri",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1421: Unsur inti itu adalah, uang kepeng dalam hitungan ribu, beras dengan ceeng (alat ukur dari tempurung) benang dalam tukelan (gulungan) kelapa, telur dan kemiri dalam hitungan butir, ayam dan itik dengan ekor sebagai kesatuan bilangan.",
+  "sentence_id": 901010
+}
+
+{
+  "id": "f901011_banten_pen_ayam",
+  "text": "banten penebusan berisi ayam.",
+  "subject_id": "banten_penebusan",
+  "predicate": "BERISI",
+  "object_id": "ayam",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1421: Unsur inti itu adalah, uang kepeng dalam hitungan ribu, beras dengan ceeng (alat ukur dari tempurung) benang dalam tukelan (gulungan) kelapa, telur dan kemiri dalam hitungan butir, ayam dan itik dengan ekor sebagai kesatuan bilangan.",
+  "sentence_id": 901011
+}
+
+{
+  "id": "f901012_banten_pen_itik",
+  "text": "banten penebusan berisi itik.",
+  "subject_id": "banten_penebusan",
+  "predicate": "BERISI",
+  "object_id": "itik",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1421: Unsur inti itu adalah, uang kepeng dalam hitungan ribu, beras dengan ceeng (alat ukur dari tempurung) benang dalam tukelan (gulungan) kelapa, telur dan kemiri dalam hitungan butir, ayam dan itik dengan ekor sebagai kesatuan bilangan.",
+  "sentence_id": 901012
+}
+
+{
+  "id": "f901013_pengawak_kayu_cenda",
+  "text": "variasi (pada ngaben sawa wedana): pengawak memakai kayu cendana sebagai pengganti jun pere.",
+  "subject_id": "pengawak",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kayu_cendana",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1212: Namun semuanya dengan wujud yang sangat mini, sebanding dengan ukuran sawa yang diwujudkan dengan pengawak yang terbuat dari papan cendana atau majagau tipis itu.",
+  "sentence_id": 901013,
+  "variant": {
+    "region": "pada ngaben sawa wedana",
+    "op": "ganti",
+    "replaces": "jun pere",
+    "source": "korpus L1212"
+  }
+}
+
+{
+  "id": "f901014_awak_awaka_kayu_majag",
+  "text": "variasi (pilihan lain menurut sumber): awak-awakaning sawa memakai kayu majagau sebagai pengganti kayu cendana.",
+  "subject_id": "awak_awakaning_sawa",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kayu_majagau",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1200: Untuk itu sebuah adegan yang sudah disisipkan sebuah awak-awakaning sawa yang terbuat dari sebilah papan cendana atau majagau tipis, diarak menuju setra tempat jasad mendiang ditanam atau bakar titip.",
+  "sentence_id": 901014,
+  "variant": {
+    "region": "pilihan lain menurut sumber",
+    "op": "ganti",
+    "replaces": "kayu cendana",
+    "source": "korpus L1200"
+  }
+}
+
+{
+  "id": "f901015_punjung_lauk_pauk",
+  "text": "punjung terdiri dari lauk pauk.",
+  "subject_id": "punjung",
+  "predicate": "TERDIRI_DARI",
+  "object_id": "lauk_pauk",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L828: Punjung yakni nasi dengan lauk pauk sebagaimana bentuk penganan orang hidup diletakkan di sebelah kanan jenazah dan mendiang \"dipersilakan menikmati\" hidangan itu.",
+  "sentence_id": 901015
+}
+
+{
+  "id": "f901016_sekah_pipil",
+  "text": "sekah dilengkapi pipil.",
+  "subject_id": "sekah",
+  "predicate": "DILENGKAPI",
+  "object_id": "pipil",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2118: Setelah daun beringin dipetik, esok harinya, pagi-pagi benar sang sulinggih diiringi para putranya, naik ke Balai Pawedan untuk membentuk sekah lengkap dengan \"pipil\" (tiket nama) mendiang.",
+  "sentence_id": 901016
+}
+
+{
+  "id": "f901017_slepa_kain_putih",
+  "text": "slepa dibungkus dengan kain putih.",
+  "subject_id": "slepa",
+  "predicate": "DIBUNGKUS_DENGAN",
+  "object_id": "kain_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L215: Peti secara keseluruhan ditutup dengan kain putih sebanyak tujuh lembar, diakhiri dengan untaian sekar sinom dan kain kajang.",
+  "sentence_id": 901017
+}
+
+{
+  "id": "f901018_slepa_rurub_sino",
+  "text": "slepa dihias dengan rurub sinom.",
+  "subject_id": "slepa",
+  "predicate": "DIHIAS_DENGAN",
+  "object_id": "rurub_sinom",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L215: Peti secara keseluruhan ditutup dengan kain putih sebanyak tujuh lembar, diakhiri dengan untaian sekar sinom dan kain kajang.",
+  "sentence_id": 901018
+}
+
+{
+  "id": "f901019_suwah_peta_kayu",
+  "text": "variasi (pilihan lain menurut sumber): suwah petat memakai kayu sebagai pengganti bambu.",
+  "subject_id": "suwah_petat",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kayu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2556: Suwah Petat (Sisir dibuat dari bambu atau kayu), yang akan digunakan untuk menyisir jenazah pada permulaan upacara Nyiramang Layon.",
+  "sentence_id": 901019,
+  "variant": {
+    "region": "pilihan lain menurut sumber",
+    "op": "ganti",
+    "replaces": "bambu",
+    "source": "korpus L2556"
+  }
+}
+
+{
+  "id": "f901020_tabunan_sekam",
+  "text": "tabunan terbuat dari sekam.",
+  "subject_id": "tabunan",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "sekam",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1525: Di dekat Banten Teben (sajen yang ada dekat kaki jenazah) terdapatlah sebuah tabunan, yakni bara yang disekap dengan sekam dalam paso.",
+  "sentence_id": 901020
+}
+
+{
+  "id": "f901021_tabunan_klungah_ny",
+  "text": "variasi (pada ngaben sawa prateka (sebagai penindih)): tabunan dilengkapi klungah nyuh gading (sebagai tambahan).",
+  "subject_id": "tabunan",
+  "predicate": "DILENGKAPI",
+  "object_id": "klungah_nyuh_gading",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1528: Pada pangabenan Sawa Prateka, yang dipakai menindih adalah barang lain, misalnya hanya sebuah klungah nyuh gading saja.",
+  "sentence_id": 901021,
+  "variant": {
+    "region": "pada ngaben sawa prateka (sebagai penindih)",
+    "op": "tambah",
+    "source": "korpus L1528"
+  }
+}
+
+{
+  "id": "f901022_takir_daun_pisan",
+  "text": "takir terbuat dari daun pisang.",
+  "subject_id": "takir",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "daun_pisang",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2453: Don Intaran (daun Intaran), daun ini dilepaskan satu persatu dan ditaruh di atas tempat yang terbuat dari daun pisang yang disebut \"Takir\".",
+  "sentence_id": 901022
+}
+
+{
+  "id": "f901023_tikeh_plas_daun_panda",
+  "text": "tikeh plasa terbuat dari daun pandan.",
+  "subject_id": "tikeh_plasa",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "daun_pandan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2592: Tikeh Plasa (Tikar daun pandan yang halus).",
+  "sentence_id": 901023
+}
+
+{
+  "id": "f901024_cili_daun_ronta",
+  "text": "cili terbuat dari daun rontal.",
+  "subject_id": "cili",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "daun_rontal",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1250: Namun, kotak itupun dihias indah pula dengan gambaran cili (bentuk orang dari rontal) selaku mukanya.",
+  "sentence_id": 901024
+}
+
+{
+  "id": "f901025_ilih_bambu",
+  "text": "ilih terbuat dari bambu.",
+  "subject_id": "ilih",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "bambu",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1250: Selain panah, juga diarak sebuah ilih, yakni kipas khusus dari anyaman bambu yang diberi gambar wayang Anoman atau garuda.",
+  "sentence_id": 901025
+}
+
+{
+  "id": "f901026_api_takep_sabut_kela",
+  "text": "api takep terbuat dari sabut kelapa.",
+  "subject_id": "api_takep",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "sabut_kelapa",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2580: Api Takep, yaitu bara api yang ditaruh di atas sabut kelapa dan ditutup dengan sabut kelapa juga, tetapi dengan cara menyilang sehingga berbentuk \"swastika\" atau \"tapak dara\".",
+  "sentence_id": 901026
+}
+
+{
+  "id": "f901027_bubur_liwe_baem_warak",
+  "text": "bubur liwet berisi baem-warak.",
+  "subject_id": "bubur_liwet",
+  "predicate": "BERISI",
+  "object_id": "baem_warak",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2269: Sesuai dengan namanya (Ngliwet) acara ini benar-benar berwujud nyata yakni membuat bubur (liwet) beras, yang dicampur sekadarnya dengan \"baem-warak\" (serbuk darah badak yang telah mengental).",
+  "sentence_id": 901027
+}
+
+{
+  "id": "f901028_daksina_uang_kepen",
+  "text": "daksina dilengkapi uang kepeng.",
+  "subject_id": "daksina",
+  "predicate": "DILENGKAPI",
+  "object_id": "uang_kepeng",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L165: Artinya: Upacara mageseng, setibanya di setra, diperciki tirta pangentas seperti biasa, didahului dengan daksina disertai wang 225 kepeng dan beras bija catur warna beralaskan tembekur, lalu dibakar.",
+  "sentence_id": 901028
+}
+
+{
+  "id": "f901029_tirtha_air",
+  "text": "tirtha terbuat dari air.",
+  "subject_id": "tirtha",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "air",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L2163: Setelah itu sang pendeta memancarkan sinar suci-Nya untuk meresapi air yang dipuja, hingga berubahlah hakikat air itu menjadi tirtha yang suci, serta dapat menyucikan sajen dan alat-alat upakara lainnya.",
+  "sentence_id": 901029
+}
+
+{
+  "id": "f901030_tirtha_eni_air",
+  "text": "tirtha ening terbuat dari air.",
+  "subject_id": "tirtha_ening",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "air",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L3687: Untuk mendapat Tirtha tempat mata air yang disucikan, atau tempat khusus untuk mendapatkan Tirtha Ening yang dibeberapa tempat disebut \"Belong\" atau \"Pura Belong\".",
+  "sentence_id": 901030
+}
+
+{
+  "id": "f901031_tirtha_pem_air",
+  "text": "tirtha pemanah terbuat dari air.",
+  "subject_id": "tirtha_pemanah",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "air",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L3691: Tirtha ini dibuat dengan menggunakan sarana dan prasarana seperti periuk berisi air, bunga dan sebuah panah yang pada ujung panah tersebut disi \"kalpika\".",
+  "sentence_id": 901031
+}
+
+{
+  "id": "f901032_tirtha_pen_air",
+  "text": "tirtha penembak terbuat dari air.",
+  "subject_id": "tirtha_penembak",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "air",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L3700: Air ini diambil di tempat yang dikeramatkan misalnya di air kelebutan, pancoran, campuhan, dan dilaksanakan oleh anak laki tertua dari orang yang diupacarakan, kalau tidak ada anak laki pertama, boleh anak laki yang lain, tetapi tidak boleh dilimpahkan kepada orang lain.",
+  "sentence_id": 901032
+}
+
+{
+  "id": "f901033_yeh_panemb_air",
+  "text": "yeh panembak terbuat dari air.",
+  "subject_id": "yeh_panembak",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "air",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1481: Sepasang jun kecil (tempat air yang bahannya dari tanah liat) yang telah siap dengan kayu pikulannya serta tali lidi janur selaku gantungannya, dipikul oleh pencari air itu.",
+  "sentence_id": 901033
+}
+
+{
+  "id": "f901034_periuk_tirta_pang",
+  "text": "periuk diperlukan untuk membuat tirta panglukatan.",
+  "subject_id": "periuk",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_panglukatan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L3679: Adapun ciri khas Tirtha Panglukatan, terlihat pada tempat dan sarana Tirtha Panglukatan seperti prasarana periuk yang lehernya dikalungi benang yang berisi uang kepeng, serta sarana bantennya berisi \"samsam\" yaitu potongan-potongan daun dapdap, daun temen, yang diramu dengan potongan-potongan pandan arum, beras kuning dan potongan bunga-bungaan seperti potongan bunga kamboja.",
+  "sentence_id": 901034
+}
+
+{
+  "id": "f901035_periuk_tirtha_pab",
+  "text": "periuk diperlukan untuk membuat tirtha pabersihan.",
+  "subject_id": "periuk",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirtha_pabersihan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L3683: Tirtha Pabersihan ini juga dibuat oleh Ida Sang Sulinggih, yang pada akhekatnya tidak jauh berbeda dengan Tirtha Panglukatan, namun ada sedikit perbedaan yaitu dalam sarananya tidak memakai \"samsam\" serta puja yang dipakai berbeda dengan puja pada Tirtha Panglukatan, dan periuknya tanpa kalung benang dengan uang kepeng.",
+  "sentence_id": 901035
+}
+
+{
+  "id": "f901036_tirtha_kaw_pajegan",
+  "text": "variasi (kadang-kadang): tirtha kawitan dilengkapi pajegan (sebagai tambahan).",
+  "subject_id": "tirtha_kawitan",
+  "predicate": "DILENGKAPI",
+  "object_id": "pajegan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L3705: Tirtha ini akan dimohonkan oleh Pemangku Kawitan setempat, dimana terlebih dulu dipersiapkan sarana dan prasarana berupa Pras, ajuman, daksina, suci serta rayunan dan kadang-kadang ditambah pajegan.",
+  "sentence_id": 901036,
+  "variant": {
+    "region": "kadang-kadang",
+    "op": "tambah",
+    "source": "korpus L3705"
+  }
+}
+
+{
+  "id": "f901037_tirtha_kah_pajegan",
+  "text": "variasi (kadang-kadang): tirtha kahyangan tiga dilengkapi pajegan (sebagai tambahan).",
+  "subject_id": "tirtha_kahyangan_tiga",
+  "predicate": "DILENGKAPI",
+  "object_id": "pajegan",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L3709: Tirtha ini akan dimohonkan oleh Pemangku Kahyangan Tiga setempat, dimana terlebih dulu dipersiapkan sarana dan prasarana berupa Pras, ajuman, daksina, suci serta rayunan dan kadang-kadang ditambah pajegan.",
+  "sentence_id": 901037,
+  "variant": {
+    "region": "kadang-kadang",
+    "op": "tambah",
+    "source": "korpus L3709"
+  }
+}
+
+{
+  "id": "f901038_sesenden_tanah_liat",
+  "text": "sesenden terbuat dari tanah liat.",
+  "subject_id": "sesenden",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "tanah_liat",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1873: Bila alat itu tidak ada, bisa diganti dengan sesenden (dulang tanah tempat melumat).",
+  "sentence_id": 901038
+}
+
+{
+  "id": "f901039_panguryaga_nyiru",
+  "text": "panguryagan dialasi dengan nyiru.",
+  "subject_id": "panguryagan",
+  "predicate": "DIALASI_DENGAN",
+  "object_id": "nyiru",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1307: Sedangkan Panguryagan adalah alat upakara yang beralaskan tembong (nyiru yang tabingnya tinggi), berisi bermacam-macam ramuan.",
+  "sentence_id": 901039
+}
+
+{
+  "id": "f901040_sambungan_kain_putih",
+  "text": "sambungan terbuat dari kain putih.",
+  "subject_id": "sambungan",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "kain_putih",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1810: Kajang yang hanya beberapa asta panjangnya, diberilah sambungan (\"lancingan\") kain putih dua atau 30 meter lagi, hingga puluhan anggota keluarga dapat berbaris menjunjungnya keluar dari rumah menuju tempat Bade, selaku tanda hormat baktinya kepada mendiang.",
+  "sentence_id": 901040
+}
+
+{
+  "id": "f901041_pisang_jat_bakul",
+  "text": "pisang jati terbuat dari bakul.",
+  "subject_id": "pisang_jati",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "bakul",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1304: Kemudian Pisang Jati, adalah sebuah upakara yang berbadankan bakul-kecil (bagaikan daksina).",
+  "sentence_id": 901041
+}
+
+{
+  "id": "f901042_pisang_jat_tunas_pisa",
+  "text": "pisang jati dilengkapi tunas pisang saba.",
+  "subject_id": "pisang_jati",
+  "predicate": "DILENGKAPI",
+  "object_id": "tunas_pisang_saba",
+  "confidence": "HIGH",
+  "source_sentence": "[kurasi sarana tree 2026-10-01] L1304: Di situ terdapat pula sebatang tunas pisang saba (pisang kepok) sepanjang 36 cm.",
+  "sentence_id": 901042
 }

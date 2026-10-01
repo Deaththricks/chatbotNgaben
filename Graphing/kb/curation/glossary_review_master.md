@@ -1,5 +1,11 @@
 # Glossary Review — Master List
 
+> **Snapshot of 2026-09-23 (with its review marks) -- not regenerated since, on purpose.** Many
+> definitions have changed after it (09-24 to 09-30 curation passes; 547 entities then, 709 now), so the
+> text below can differ from the live one. The live definitions are the `* Term:  Definition.`
+> lines in `Graphing/data/ngaben-glossary.txt`. A fresh copy (without these marks) comes from
+> `python curation/build_glossary_review_master.py`.
+
 **Status:** these definitions are already live in `Graphing/data/ngaben-glossary.txt` and `entities.json` — this file is a markup copy for you to flag corrections, not a pending queue. If you check/annotate something here, the actual fix has to be made in `Graphing/data/ngaben-glossary.txt` directly (find the matching `* Term:  Definition.` line), then rebuild (`python build_kb.py` from `Graphing/kb/`) and reload Neo4j.
 
 **2026-09-23 update:** 4 of the original 46 turned out to be "quantity baked into the entity name" mistakes (e.g. defining "five pieces of betel leaf" as if it were its own term) -- flagged by the user, re-audited against the raw source text, and fixed:

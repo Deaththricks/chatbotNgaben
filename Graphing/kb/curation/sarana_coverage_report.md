@@ -1,5 +1,38 @@
 # Sarana upacara / offering coverage: corpus vs KG (2026-09-29)
 
+## Status after the 2026-09-30 detail pass
+
+Rows: source `manual_addition+sarana_detail_2026_09_30` (sentence ids 900600-900881), each quoting
+its corpus line; definitions in `data/ngaben-glossary.txt`, from the corpus only (an item the
+corpus only names gets a definition that says so -- no web source had these names).
+
+- **Composition:** every "terbuat dari / berisi / terdiri dari / dibungkus / dilengkapi" statement
+  about a sarana in the corpus (259 candidate sentences read) is an edge: e.g. anget-angetan
+  (cengkeh, jebugarum, mesui, sampar wantu, kunyit), sekah (daun beringin, klatkat, bunga ratna
+  putih, kain putih), kawangen jeriji, paes gedubang, samsam, pengawak, sukutunggal, ukur, kajang,
+  ketipat bantal, bubur liwet, uang kepeng (its five metals).
+- **Tetandingan (L338-547):** each banten is linked `DIGUNAKAN_DALAM` its ceremony: pengaskaran ->
+  sangaskara, pemelaspas kajang -> mlaspas kajang, pemerasan -> pamerasan, tunon -> pabasmian,
+  penganyutan -> nganyut, ngulapin, ngerorasin/penyekahan -> atma wedana, mamutru.
+- **Tirta:** the rest of the tirta pangentas list (kekitir, karawista, balung-balung, bijaratus,
+  kelepikan jepun, recedana, daksina gede, bayuhan, lis, karangan, nasi sokan); tirtha pemanah,
+  penembak, panglukatan, kawitan and kahyangan tiga sarana.
+- **Nodes fixed:** the pamerasan *offering* (uang kepeng in daun dapdap, L1388/L1750) is now its
+  own node `upakara pamerasan`, apart from the Pabersihan ceremony `pamerasan`; the force_merge
+  "lubang (satu) uang kepeng" -> gulungan daun sirih (the lekesan went "into itself") now names
+  uang kepeng; `ante DIIKAT_PADA galar` rejected (ante is made of galar slats); diuskamaligi typed
+  SARANA_RITUAL (it is an upakara).
+- **Not added, on purpose:** caru (ayam brumbun, pekeludan) and segehan-as-ritual stay rituals;
+  the penyanggra offerings for musicians and helpers (banten gambelan, sekehe santi, nuwur pakuluh,
+  panuwur sulinggih); plain food/household words in the lists (sate, keren/kompor, daun plasa);
+  utik.
+- **Also added (part 2):** segau (L2031, atma wedana), pisau pengutik / temutik (L2523, replaces
+  anggapan or arit gobed), menjangan (L47, patulangan shape), canang meraka and telur bekasem
+  (L171-174, upacara ngelungah piuning; with daksina, ketipat kelanan, sorohan, pengulapan,
+  banten peras, klungah nyuh gading), papegatan as a spelling of banten pamegat.
+- **Open:** `sangaskara` (pengaskaran) is not `BAGIAN_DARI ngaben`, so its ~30 tetandingan banten
+  are missing from "apa saja sarana ngaben"; adding the stage touches the parked stage-list question.
+
 ## Status after the 2026-09-29 fix (same 198 curated terms)
 
 | | before | after |

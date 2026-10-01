@@ -11,7 +11,6 @@ from __future__ import annotations
 
 import json
 import os
-import random
 import re
 import unicodedata
 from dataclasses import dataclass
@@ -104,7 +103,11 @@ def _vowel_edit(a: str, b: str) -> bool:
     return b[op.dest_pos] in _VOWELS
 
 
-def _token_match(a: str, b: str, anchored: bool = True) -> bool:
+def _token_match(a: str, b: str, anchored: bool = True, common: bool = False, named: bool = False) -> bool:
+    """Symmetric. The flags describe the user's word: `common`, an everyday Indonesian
+    word, matches only as written (plus a suffix), never through an edit; `named`, a word
+    of some KB name, is a real word too -- only a vowel slip (spelling variant) may change
+    it: "kahang" (naga kahang) is not kajang, "tunjung" not punjung (2026-10-01)."""
     oa, ob = _ortho_token(a), _ortho_token(b)
     if oa == ob:
         return True
@@ -113,16 +116,36 @@ def _token_match(a: str, b: str, anchored: bool = True) -> bool:
             return True
         if len(oa) >= 4 and ob == oa + suf:
             return True
-    # One-edit typos: "wah loka"/"bwah loka", "sredaning citra"/"sredaning cita".
-    # A consonant slip on a short word only counts when another word of the phrase
-    # matched exactly (`anchored`): alone, peras/perak, sisir/sisig, sabun/sabuk,
-    # kosong/kojong, sekar/sekah are different words (2026-09-29). A vowel slip
+    # "kalangan" is not a typo of karangan, nor "bayi" of bayu (live crosscheck 2026-09-30)
+    if common:
+        return False
+    # One-edit typos: "wah loka"/"bwah loka", "sredaning citra"/"sredaning cita",
+    # "sulinggi"/"sulinggih". A consonant slip on a word under 6 letters only counts when
+    # another word of the phrase matched exactly (`anchored`): alone, peras/perak,
+    # sisir/sisig, sabun/sabuk, sekar/sekah are different words (2026-09-29). A vowel slip
     # (nglungah/ngelungah, tirte/tirta) is a typo either way. "pandawa"/"pranawa"
     # (2 edits) and "surya"/"sukra" never match.
     short = min(len(oa), len(ob))
     if short >= 3 and Levenshtein.distance(oa, ob) <= 1:
-        return anchored or short >= 8 or _vowel_edit(oa, ob)
-    return short >= 6 and fuzz.ratio(oa, ob) >= 88 and (anchored or short >= 8)
+        if named:
+            return _vowel_edit(oa, ob)
+        return anchored or short >= 6 or _vowel_edit(oa, ob)
+    return not named and short >= 6 and fuzz.ratio(oa, ob) >= 88 and (anchored or short >= 8)
+
+
+# Everyday Indonesian words (lowercase tokens seen 3+ times in a general Indonesian NER
+# corpus of ~600k tokens). Read only; the file is shared with the Graphing pipeline.
+_COMMON_WORDS_FILE = _KB_DIR.parent / "data" / "20k_mdee_gazz.txt"
+
+
+def _load_common_words(path: Path = _COMMON_WORDS_FILE, min_count: int = 3) -> frozenset:
+    counts: dict[str, int] = {}
+    with path.open(encoding="utf-8") as f:
+        for line in f:
+            tok = line.split(maxsplit=1)[0] if line.strip() else ""
+            if tok.isalpha() and tok.islower():
+                counts[tok] = counts.get(tok, 0) + 1
+    return frozenset(w for w, c in counts.items() if c >= min_count)
 
 
 @dataclass
@@ -187,19 +210,17 @@ class KbResolver:
         # the extra letter sits across a word boundary the token check cannot see)
         self._long_keys = [k for k, v in self.ortho.items() if v and len(k) >= 9]
 
+        # a common word that is itself a KB name token ("air", "kain") still matches as
+        # written; the set only stops it from matching another name through an edit
+        self.common_words = _load_common_words()
+        self.name_tokens = {_ortho_token(t) for s in self.surface for t in re.split(r"[\s\-/]+", s) if t}
+
         self._choices = list(self.surface.keys())
         # fuzzy candidates are also drawn by orthographic key, so heavy spelling
         # variation ("ssoddaan", "butha") still reaches the token check below
         self._ortho_choices: dict[str, str] = {}
         for key in self._choices:
             self._ortho_choices.setdefault(_ortho_key(key), key)
-
-        # type -> [entity dict], for "daftar istilah" answers
-        self.by_type: dict[str, list[dict]] = {}
-        for e in ents:
-            if e["id"] in excluded_ids:
-                continue
-            self.by_type.setdefault((e.get("type") or "").upper(), []).append(e)
 
     # -- helpers ---------------------------------------------------------------
     def _strip_modifiers(self, s: str) -> str:
@@ -277,7 +298,7 @@ class KbResolver:
         # 4b. one edit on the whole orthographic key of a long name, if it is unique.
         # "typo", not "ortho": the bot must not call a misspelling "sebutan lain".
         key = _ortho_key(raw)
-        if len(key) >= 10:
+        if len(key) >= 10 and raw not in self.common_words:
             hits = {self.ortho[k] for k in self._long_keys
                     if abs(len(k) - len(key)) <= 1 and Levenshtein.distance(k, key) <= 1}
             if len(hits) == 1:
@@ -316,8 +337,10 @@ class KbResolver:
         if not q or not c:
             return False
         anchored = len(q) >= 2 and any(_ortho_token(a) == _ortho_token(b) for a in q for b in c)
-        return (all(any(_token_match(a, b, anchored) for b in c) for a in q)
-                and all(any(_token_match(b, a, anchored) for a in q) for b in c))
+        common, named = self.common_words, self.name_tokens
+        flags = {a: (a in common, _ortho_token(a) in named) for a in q}
+        return (all(any(_token_match(a, b, anchored, *flags[a]) for b in c) for a in q)
+                and all(any(_token_match(a, b, anchored, *flags[a]) for a in q) for b in c))
 
     def resolve_many(self, text: str, limit: int = 2, fuzzy_threshold: int = 80) -> list[Match]:
         """Resolve every distinct term mentioned in a phrase (for 'beda X dan Y').
@@ -357,63 +380,6 @@ class KbResolver:
             if len(out) >= limit:
                 break
         return out
-
-    def list_type(self, tipe: str) -> list[dict]:
-        """Entities of a KB type. `tipe` is a human phrase ('tahapan upacara')."""
-        key = re.sub(r"\s+", "_", _norm(tipe)).upper()
-        aliases = {
-            "SARANA": "SARANA_RITUAL", "SARANA_RITUAL": "SARANA_RITUAL",
-            "PERLENGKAPAN": "SARANA_RITUAL", "PERALATAN": "SARANA_RITUAL",
-            "ISTILAH": "ISTILAH_UMUM_RITUAL", "ISTILAH_UMUM": "ISTILAH_UMUM_RITUAL",
-            "ISTILAH_UMUM_RITUAL": "ISTILAH_UMUM_RITUAL",
-            "TAHAPAN": "TAHAPAN_UPACARA", "TAHAP": "TAHAPAN_UPACARA",
-            "TAHAPAN_UPACARA": "TAHAPAN_UPACARA", "PROSESI": "TAHAPAN_UPACARA",
-            "KONSEP": "KONSEP_FILOSOFIS", "KONSEP_FILOSOFIS": "KONSEP_FILOSOFIS",
-            "FILOSOFI": "KONSEP_FILOSOFIS", "FILSAFAT": "KONSEP_FILOSOFIS",
-            "BANGUNAN": "BANGUNAN_RITUAL", "BANGUNAN_RITUAL": "BANGUNAN_RITUAL",
-            "TEMPAT": "BANGUNAN_RITUAL",
-            "ENTITAS_KEAGAMAAN": "ENTITAS_KEAGAMAAN", "DEWA": "ENTITAS_KEAGAMAAN",
-            "TOKOH": "ENTITAS_KEAGAMAAN",
-            "RITUAL_KEMATIAN": "RITUAL_KEMATIAN", "RITUAL": "RITUAL_KEMATIAN",
-            "UPACARA": "RITUAL_KEMATIAN", "JENIS_NGABEN": "RITUAL_KEMATIAN",
-            "TIRTHA": "TIRTHA_SUCI", "TIRTHA_SUCI": "TIRTHA_SUCI",
-            "AIR_SUCI": "TIRTHA_SUCI", "TIRTA": "TIRTHA_SUCI",
-            "HUKUM_ADAT": "KONSEP_HUKUM_ADAT", "KONSEP_HUKUM_ADAT": "KONSEP_HUKUM_ADAT",
-            "ADAT": "KONSEP_HUKUM_ADAT", "AWIG_AWIG": "KONSEP_HUKUM_ADAT",
-            "NASKAH": "NASKAH_SUCI", "NASKAH_SUCI": "NASKAH_SUCI", "LONTAR": "NASKAH_SUCI",
-        }
-        canon = aliases.get(key, key)
-        return list(self.by_type.get(canon, []))
-
-    def search(self, query: str, k: int = 12) -> list[dict]:
-        """Free-text search over names + aliases (substring, then fuzzy)."""
-        q = _norm(query)
-        q = re.sub(r"^(cari|carikan|temukan|daftar|sebutkan|istilah|kata|apa saja)\s+", "", q).strip()
-        q = re.sub(r"\b(yang|tentang|soal|terkait|mengandung|berhubungan dengan|berkaitan dengan|di ngaben|dalam ngaben)\b", " ", q).strip()
-        q = re.sub(r"\s+", " ", q).strip(" ?.!,")
-        if not q:
-            return []
-        out: list[dict] = []
-        seen: set[str] = set()
-        for surface, _id in self.surface.items():
-            if q in surface and _id not in seen:
-                seen.add(_id)
-                out.append(self.by_id[_id])
-        if len(out) < k:
-            for name, score, _ in process.extract(q, self._choices, scorer=fuzz.WRatio, limit=k * 2):
-                if score < 72:
-                    continue
-                _id = self.surface[name]
-                if _id not in seen:
-                    seen.add(_id)
-                    out.append(self.by_id[_id])
-        return out[:k]
-
-    def random_entity(self, with_definition: bool = True) -> dict:
-        candidates = [e for e in self.by_id.values() if e["id"] not in self.excluded_ids]
-        pool = [e for e in candidates if e.get("definition")] if with_definition else None
-        pool = pool or candidates
-        return random.choice(pool)
 
     # 60 offered "tandri, undagi, panca budhindrya" for "dihindari" (2026-09-29)
     def suggest(self, text: str, k: int = 3, threshold: int = 75) -> list[str]:

@@ -16,10 +16,12 @@ rules:
       - intent: bot_challenge
       - action: utter_iamabot
 
+  # action_out_of_scope still answers a message that names a KB term outright
+  # (a misfiled Ngaben question), else utters utter_out_of_scope
   - rule: out of scope
     steps:
       - intent: out_of_scope
-      - action: utter_out_of_scope
+      - action: action_out_of_scope
 
   - rule: tanya detail ngaben
     steps:

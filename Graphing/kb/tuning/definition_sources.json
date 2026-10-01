@@ -36,7 +36,7 @@
   "kutila": "web: http://phdi.parisada.or.id/artikel.php?id=dasa-mala (I Wayan Ritiaksa, Warta Hindu Dharma No. 520, April 2010)",
   "bhaksa bhuwana": "web: http://phdi.parisada.or.id/artikel.php?id=dasa-mala (I Wayan Ritiaksa, Warta Hindu Dharma No. 520, April 2010)",
   "kimburu": "web: http://phdi.parisada.or.id/artikel.php?id=dasa-mala (I Wayan Ritiaksa, Warta Hindu Dharma No. 520, April 2010)",
-  "_approved": "The user reviewed and approved all 25 web-sourced definitions on 2026-09-25 (conersation.md), and the 7 added 2026-09-29 (banten pejati, banten peras, banten suci, banten prayascita, tatebasan durmanggala, tepung tawar, banten byakawonan) on 2026-09-29. Entries added later are not covered by those reviews.",
+  "_approved": "The user reviewed and approved all 25 web-sourced definitions on 2026-09-25 (conersation.md), and the 7 added 2026-09-29 (banten pejati, banten peras, banten suci, banten prayascita, tatebasan durmanggala, tepung tawar, banten byakawonan) on 2026-09-29. The user approved bade's web part (the 'lazimnya' wording) on 2026-10-01. Other entries added later are not covered by those reviews.",
   "banten pejati": "web: https://www.detik.com/bali/budaya/d-6084502/mengenal-banten-pejati-wujud-kesungguhan-umat-hindu-di-bali ; https://disbud.bulelengkab.go.id/informasi/detail/artikel/80_arti-dan-makna-banten-pejati",
   "banten peras": "web: https://tetandinganbanten.blogspot.com/2021/01/makna-canang-sari-daksina-peras-pejati.html ; https://wanakertawangi.wordpress.com/2016/09/15/makna-canang-sari-daksina-peras-pejati-ajuman-sesayut/",
   "banten suci": "web: https://baliexpress.jawapos.com/balinese/674702660/jarang-diketahui-mengenal-banten-suci-upakara-suci-dalam-tradisi-hindu-bali-yang-penuh-makna-dan-nilai-tattwa-tinggi",
@@ -44,5 +44,7 @@
   "tatebasan durmanggala": "web: https://baliexpress.jawapos.com/balinese/671138326/ini-makna-prayascita-dan-alasan-digandeng-dengan-tebasan-durmanggala ; https://hindualukta.blogspot.com/2018/08/pengertian-makna-dan-fungsi-banten.html",
   "tepung tawar": "web: https://baliexpress.jawapos.com/balinese/671130887/fungsi-tepung-tawar-penetralisir-dasa-mala-dan-penolak-bala",
   "banten byakawonan": "web: https://saivaya.blogspot.com/2020/02/makna-fungsi-dan-cara-menjalankan.html ; https://ngurahtirta.wordpress.com/2017/07/20/makna-tattwa-beberapa-banten-ii-banten-prayascita-dan-byakala/",
-  "bade": "corpus md 4531-4548; web for 'masyarakat umum memakai wadah': https://baliexpress.jawapos.com/balinese/671135613/ini-dia-simbolisasi-dan-makna-wadah-bade-dan-lembu-pada-acara-ngaben-umat-hindu-di-bali"
+  "bade": "corpus md 4531-4548; web for 'masyarakat umum memakai wadah': https://baliexpress.jawapos.com/balinese/671135613/ini-dia-simbolisasi-dan-makna-wadah-bade-dan-lembu-pada-acara-ngaben-umat-hindu-di-bali -- reworded 2026-10-01 as usual practice ('lazimnya'; the source says wadah is 'biasanya' used by people without caste), two sentences each with its own subject; approved by the user 2026-10-01",
+  "daksina": "corpus for its Ngaben use; web for the container and contents (kelapa, beras, telur, uang kepeng ...): https://www.detik.com/bali/budaya/d-6086234/mengenal-daksina-yang-sarat-simbol-kehidupan-menurut-hindu-bali",
+  "daksina tapakan": "corpus for its Ngaben use; web for the container and contents (kelapa, beras, telur, uang kepeng ...): https://www.detik.com/bali/budaya/d-6086234/mengenal-daksina-yang-sarat-simbol-kehidupan-menurut-hindu-bali"
 }

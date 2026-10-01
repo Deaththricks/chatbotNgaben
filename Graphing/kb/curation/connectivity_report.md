@@ -1,6 +1,6 @@
 # Connectivity audit report
 
-Source: relation_results_ngaben.normalized.json (1216 rows), entities.json (545 entities)
+Source: relation_results_ngaben.normalized.json (1859 rows), entities.json (713 entities)
 
 Read the module docstring before acting on anything here -- every
 line is a candidate, not a verdict.
@@ -75,7 +75,7 @@ mis-resolution, not a real reflexive fact.
 An edge or broader-pointer whose endpoint id isn't in entities.json.
 
 
-## Near-duplicate ids (69)
+## Near-duplicate ids (88)
 
 Spelling-similarity candidates for force_merge or a SAMA_DENGAN edge --
 read both entities before deciding; a shared root word alone (e.g. the
@@ -97,24 +97,36 @@ sasih_* family) is not by itself evidence of duplication.
 - `lengan_jenazah` ~ `tangan_jenazah` (ratio=0.86)
 - `paksa_hinayana` ~ `paksa_mahayana` (ratio=0.86)
 - `pandawa` ~ `pranawa` (ratio=0.86)
+- `pusuh_bunga_cempaka_kuning` ~ `pusuh_bunga_cempaka_putih` (ratio=0.86)
 - `sasih_asada` ~ `sasih_kasa` (ratio=0.86)
 - `sasih_kapat` ~ `sasih_kasa` (ratio=0.86)
+- `banten_pasucian` ~ `banten_suci` (ratio=0.85)
 - `pura_kahyangan_tiga` ~ `tirtha_kahyangan_tiga` (ratio=0.85)
 - `kain_kuning_untuk_saput` ~ `kain_putih_untuk_saput` (ratio=0.84)
 - `kain_putih_untuk_bantal` ~ `kain_putih_untuk_saput` (ratio=0.84)
 - `shiwa_loka` ~ `swah_loka` (ratio=0.84)
+- `banten_pagnian` ~ `banten_pasucian` (ratio=0.83)
 - `sasih_asada` ~ `sasih_kasanga` (ratio=0.83)
 - `sasih_kalima` ~ `sasih_katiga` (ratio=0.83)
 - `asti_wedana` ~ `atma_wedana` (ratio=0.82)
 - `atma_wedana` ~ `sawa_wedana` (ratio=0.82)
+- `banten_saji` ~ `banten_suci` (ratio=0.82)
 - `daksina` ~ `pradaksina` (ratio=0.82)
+- `daun_dapdap` ~ `kayu_dapdap` (ratio=0.82)
 - `pamerasan` ~ `pamrajan` (ratio=0.82)
 - `panca_datu` ~ `panca_dewata` (ratio=0.82)
 - `sasih_kalima` ~ `sasih_kasa` (ratio=0.82)
 - `sasih_kasa` ~ `sasih_katiga` (ratio=0.82)
+- `agni_pralina` ~ `geni_pamralinan` (ratio=0.81)
+- `banten_pamegat` ~ `banten_pejati` (ratio=0.81)
+- `banten_pasucian` ~ `banten_prayascita` (ratio=0.81)
 - `daun_pisang` ~ `daun_pisang_saba` (ratio=0.81)
+- `kuncup_melati` ~ `kuncup_teratai` (ratio=0.81)
 - `pengerikan_kuku` ~ `pengerikan_kuku_mutlak` (ratio=0.81)
 - `uang_kepeng` ~ `uang_kepeng_asli` (ratio=0.81)
+- `akasa` ~ `klasa` (ratio=0.8)
+- `banten_pejati` ~ `banten_peras` (ratio=0.8)
+- `bunga_teratai` ~ `daun_teratai` (ratio=0.8)
 - `caksvindrya` ~ `pavindrya` (ratio=0.8)
 - `daksinayana` ~ `paksa_hinayana` (ratio=0.8)
 - `isi_pengawak` ~ `pengawak` (ratio=0.8)
@@ -125,6 +137,7 @@ sasih_* family) is not by itself evidence of duplication.
 - `madyaning_nista` ~ `madyaning_utama` (ratio=0.8)
 - `madyaning_nista` ~ `utamaning_nista` (ratio=0.8)
 - `madyaning_utama` ~ `utamaning_utama` (ratio=0.8)
+- `manah` ~ `panah` (ratio=0.8)
 - `manah_tirtha_ening` ~ `tirtha_ening` (ratio=0.8)
 - `manusa_yadnya` ~ `panca_yadnya` (ratio=0.8)
 - `nistaning_madya` ~ `nistaning_utama` (ratio=0.8)
@@ -137,15 +150,21 @@ sasih_* family) is not by itself evidence of duplication.
 - `payadnyan` ~ `yadnya` (ratio=0.8)
 - `perbandingan_kepala_lembu` ~ `perbandingan_kepala_singa` (ratio=0.8)
 - `pranawa` ~ `prasawya` (ratio=0.8)
+- `pripih_emas` ~ `pripih_tembaga` (ratio=0.8)
 - `sasih_kadasa` ~ `sasih_kasanga` (ratio=0.8)
 - `sasih_karo` ~ `sasih_kasa` (ratio=0.8)
 - `sasih_kasanga` ~ `sasih_katiga` (ratio=0.8)
 - `sekah_kangsen` ~ `sekah_sangge` (ratio=0.8)
+- `tembaga` ~ `tembakau` (ratio=0.8)
 - `tri_aksara` ~ `tri_sarira` (ratio=0.8)
 - `utamaning_madya` ~ `utamaning_utama` (ratio=0.8)
 - `utamaning_nista` ~ `utamaning_utama` (ratio=0.8)
+- `banten_pagnian` ~ `banten_pamegat` (ratio=0.79)
+- `benang_tatebus` ~ `benang_tridatu` (ratio=0.79)
 - `hitungan_galir` ~ `hitungan_likah` (ratio=0.79)
+- `tirta_penyeeb` ~ `tirtha_penembak` (ratio=0.79)
 - `nawa_dewata` ~ `panca_dewata` (ratio=0.78)
+- `pripih_emas` ~ `pripih_perak` (ratio=0.78)
 - `sasih_asada` ~ `sasih_kadasa` (ratio=0.78)
 - `sasih_kadasa` ~ `sasih_kapat` (ratio=0.78)
 - `sasih_kalima` ~ `sasih_kapat` (ratio=0.78)

@@ -65,6 +65,7 @@
   "DIGULUNG_DENGAN":      { "template": "{s} digulung dengan {o}",           "ok_prep": ["dengan"] },
   "DISIRAM_DENGAN":       { "template": "{s} disiram dengan {o}",            "ok_prep": ["dengan"] },
   "DIALASI_DENGAN":       { "template": "{s} dialasi dengan {o}",            "ok_prep": ["dengan"] },
+  "DIHIAS_DENGAN":        { "template": "{s} dihias dengan {o}",             "ok_prep": ["dengan"] },
 
   "_comment_attributes": "text-only attribute predicates whose mechanical '{s} <pred words> {o}' reading is ungrammatical; kb_content.attribute_sentences renders them for the bot",
   "BERARTI_HARFIAH":      { "template": "{s} secara harfiah berarti {o}",   "ok_prep": [] },
@@ -79,6 +80,13 @@
   "DIPERLUKAN_UNTUK_MEMBUAT": { "template": "{s} diperlukan untuk membuat {o}", "ok_prep": [] },
   "MENENTUKAN_WAKTU": { "template": "{s} menentukan waktu pelaksanaan {o}", "ok_prep": [] },
   "BERLAKU_UNTUK": { "template": "{s} berlaku untuk {o}", "ok_prep": ["untuk"] },
-  "DIHINDARI_UNTUK": { "template": "{s} dihindari untuk {o}", "ok_prep": ["untuk"] },
-  "DIJADIKAN": { "template": "{s} dijadikan {o}", "ok_prep": [] }
+  "DIHINDARI_UNTUK": { "template": "{s} dihindari (tidak boleh dipakai) untuk {o}", "ok_prep": ["untuk"] },
+  "DIJADIKAN": { "template": "{s} dijadikan {o}", "ok_prep": [] },
+
+  "_variant": {
+    "_comment": "a regional/variant row (normalized row field \"variant\": {region, op, source[, replaces]}) is rendered with these instead of its bare template, so the bot never states a variant as the main version. {nl} = the row's plain sentence; used by build_kb.py and kb_content.KbContent.render_variant",
+    "tambah": "variasi ({region}): {nl} (sebagai tambahan)",
+    "tanpa":  "variasi ({region}): {s} tidak memakai {o}",
+    "ganti":  "variasi ({region}): {s} memakai {o} sebagai pengganti {replaces}"
+  }
 }

@@ -352,5 +352,13 @@
   "1776|uang kepeng|daun dapdap": "reject",
   "1776|uang kepeng|benang tridatu merah, hitam dan putih": "reject",
   "124|bali dataran|sarana mewah": "reject",
-  "124|sarana mewah|bade/petulangan": "reject"
+  "124|sarana mewah|bade/petulangan": "reject",
+  "900190|ante|galar": "reject",
+  "3134|lekesan|lubang satu uang kepeng": "reject",
+  "_lekesan_uang_kepeng_note_2026_10_01": "S3134 read 'lekesan dimasukkan ke lubang uang kepeng' as lekesan DIMASUKKAN_KE_DALAM uang kepeng, a part->whole composition edge: the composition tree then had uang kepeng made of lekesan and a lekesan > uang kepeng > lekesan cycle (kb_lint comp_cycles). sid 900986 records it whole -> part: lekesan DILENGKAPI uang kepeng.",
+  "900067|kalpika|tirtha": "fix: kalpika | DIMASUKKAN_KE_DALAM | tirta pangentas",
+  "900068|padang lepas|tirtha": "fix: padang lepas | DIMASUKKAN_KE_DALAM | tirta pangentas",
+  "900069|pramakusa|tirtha": "fix: pramakusa | DIMASUKKAN_KE_DALAM | tirta pangentas",
+  "971|tirtha|klungah": "fix: ngelungah | MENGGUNAKAN | klungah",
+  "_generic_tirtha_note_2026_10_01": "Kind inheritance (composition tree) showed every kind of tirtha as made of klungah, kalpika, padang lepas and pramakusa: those edges sat on the generic 'tirtha' node but come from specific contexts -- S900067-69 are the periuk of the Tirtha Pangentas making (L3890-3902), S971 is the tirtha of the nglungah rite ('karena tirtha tersebut dibuat dari klungah, maka pitra yadnya jenis ini dinamakan pula nglungah'). Redirected to tirta pangentas / ngelungah."
 }

@@ -1,7 +1,14 @@
 """
 Load Ngaben relation-extraction results into Neo4j.
 
-What it does:
+    python load_ngaben_to_neo4j.py              # the KB the chatbot reads (= --source kb)
+    python load_ngaben_to_neo4j.py --source raw # old name-keyed view, see below
+
+--source kb loads ../kb/output (see load_kb). --source raw loads the normalized
+relation rows directly, as described next -- its nodes have no `id`, so the chatbot
+finds nothing in that graph; it is only a raw-extraction view.
+
+What --source raw does:
   - ENTITY-target relations  -> a line (relationship) between two dots (nodes)
   - LITERAL-target relations -> a value stored as a property ON the subject dot
                                 (kept as a list, so multiple literals of the same
@@ -141,19 +148,59 @@ def load(tx_data):
           f"{sum(len(v) for d in literals.values() for v in d.values())} literal values")
 
 
+_CONF_RANK = {"HIGH": 0, "MED": 1, "LOW": 2}
+
+
 def load_kb():
-    """Load the canonical KB (../kb/output/entities.json + relations.jsonl) instead.
+    """Load the canonical KB (../kb/output/entities.json + relations.jsonl) -- the graph
+    the chatbot queries.
 
     node label = entity type; base label :Node; edgeless -> :Isolated.
     'broader' -> (a)-[:TERMASUK_JENIS]->(b).  relation edges carry
     {confidence, raw_relation, sentence_id} as properties -- filter a clean
-    view with  WHERE r.confidence <> 'LOW'.
+    view with  WHERE r.confidence <> 'LOW'. A regional-variant row also sets
+    {variant_region, variant_op, variant_source, variant_replaces}.
+
+    A (subject, predicate, object) that occurs more than once becomes one edge with the
+    BEST confidence among its rows, a main-version row beating a variant row. It used to
+    be MERGE + SET per row, so the last row won: a LOW duplicate loaded last would have
+    hidden a HIGH edge from the bot.
+    Writes are batched with UNWIND (one query per label / relation type, not per row).
     """
     kb = Path(__file__).resolve().parent.parent / "kb" / "output"
     ents = json.loads((kb / "entities.json").read_text(encoding="utf-8"))
     rels = [json.loads(b) for b in
             (kb / "relations.jsonl").read_text(encoding="utf-8").split("\n\n") if b.strip()]
     ids = {e["id"] for e in ents}
+
+    nodes_by_label = defaultdict(list)
+    for e in ents:
+        props = {"id": e["id"], "name": e["name"]}
+        if e.get("definition"):
+            props["definition"] = e["definition"]
+        if e.get("aliases"):
+            props["aliases"] = e["aliases"]
+        for rel, items in e.get("attributes", {}).items():
+            props[rel] = [it["value"] for it in items]
+        nodes_by_label[clean_ident(e.get("type") or "Entity")].append({"id": e["id"], "props": props})
+
+    spine = [{"a": e["id"], "b": e["broader"]} for e in ents if e.get("broader") in ids]
+
+    best = {}
+    for r in rels:
+        if r["subject_id"] not in ids or r["object_id"] not in ids:
+            continue
+        key = (r["subject_id"], clean_ident(r["predicate"]), r["object_id"])
+        rank = (_CONF_RANK.get(r["confidence"], 3), "variant" in r)
+        if key not in best or rank < (_CONF_RANK.get(best[key]["confidence"], 3), "variant" in best[key]):
+            best[key] = r
+    edges_by_type = defaultdict(list)
+    for (s, rt, o), r in best.items():
+        v = r.get("variant") or {}
+        edges_by_type[rt].append({"s": s, "o": o, "c": r["confidence"], "rr": r.get("raw_relation"),
+                                  "sid": r["provenance"]["sentence_id"],
+                                  "vr": v.get("region"), "vo": v.get("op"), "vs": v.get("source"),
+                                  "vx": v.get("replaces")})
 
     driver = GraphDatabase.driver(URI, auth=(USER, PASSWORD))
     with driver.session() as session:
@@ -162,48 +209,42 @@ def load_kb():
             print("wiped existing graph")
         session.run("CREATE CONSTRAINT IF NOT EXISTS FOR (n:Node) REQUIRE n.id IS UNIQUE")
 
-        for e in ents:
-            lbl = clean_ident(e.get("type") or "Entity")
-            props = {"id": e["id"], "name": e["name"]}
-            if e.get("definition"):
-                props["definition"] = e["definition"]
-            if e.get("aliases"):
-                props["aliases"] = e["aliases"]
-            for rel, items in e.get("attributes", {}).items():
-                props[rel] = [it["value"] for it in items]
-            session.run(f"MERGE (n:Node:{lbl} {{id: $id}}) SET n += $props",
-                        id=e["id"], props=props)
+        for lbl, rows in nodes_by_label.items():
+            session.run(f"UNWIND $rows AS row MERGE (n:Node:{lbl} {{id: row.id}}) SET n += row.props",
+                        rows=rows)
 
-        for e in ents:
-            if e.get("broader") in ids:
-                session.run("MATCH (a:Node {id:$a}) MATCH (b:Node {id:$b}) "
-                            "MERGE (a)-[:TERMASUK_JENIS]->(b)", a=e["id"], b=e["broader"])
+        session.run("UNWIND $rows AS row MATCH (a:Node {id: row.a}) MATCH (b:Node {id: row.b}) "
+                    "MERGE (a)-[:TERMASUK_JENIS]->(b)", rows=spine)
 
-        n_edges = 0
-        for r in rels:
-            if r["subject_id"] not in ids or r["object_id"] not in ids:
-                continue
-            rt = clean_ident(r["predicate"])
-            session.run(
-                f"MATCH (a:Node {{id:$s}}) MATCH (b:Node {{id:$o}}) "
-                f"MERGE (a)-[x:{rt}]->(b) "
-                f"SET x.confidence=$c, x.raw_relation=$rr, x.sentence_id=$sid",
-                s=r["subject_id"], o=r["object_id"], c=r["confidence"],
-                rr=r.get("raw_relation"), sid=r["provenance"]["sentence_id"])
-            n_edges += 1
+        for rt, rows in edges_by_type.items():
+            session.run(f"UNWIND $rows AS row MATCH (a:Node {{id: row.s}}) MATCH (b:Node {{id: row.o}}) "
+                        f"MERGE (a)-[x:{rt}]->(b) "
+                        f"SET x.confidence = row.c, x.raw_relation = row.rr, x.sentence_id = row.sid, "
+                        f"x.variant_region = row.vr, x.variant_op = row.vo, x.variant_source = row.vs, "
+                        f"x.variant_replaces = row.vx",
+                        rows=rows)
+        n_edges = sum(len(v) for v in edges_by_type.values())
 
         if TAG_ISOLATED:
             res = session.run("MATCH (n:Node) WHERE NOT (n)--() SET n:Isolated "
                               "RETURN count(n) AS c")
             print(f"tagged {res.single()['c']} isolated nodes as :Isolated")
     driver.close()
-    print(f"done (kb): {len(ents)} nodes, {n_edges} relation edges + broader spine")
+    print(f"done (kb): {len(ents)} nodes, {n_edges} relation edges + {len(spine)} broader links")
 
 
 if __name__ == "__main__":
-    if "--source" in sys.argv and "kb" in sys.argv:
+    # --source kb (the default) loads the KB the chatbot reads. --source raw is the old
+    # name-keyed load of relation_results_ngaben.normalized.json: its nodes have no `id`,
+    # so after it every bot query finds nothing. It used to be the default -- running the
+    # script without arguments silently broke the bot (2026-09-30).
+    source = sys.argv[sys.argv.index("--source") + 1] if "--source" in sys.argv[:-1] else "kb"
+    if source == "kb":
         load_kb()
-    else:
+    elif source == "raw":
+        print("WARNING: --source raw builds a graph the chatbot cannot query (no node ids).")
         with open(JSON_PATH, encoding="utf-8") as f:
             data = json.load(f)
         load(build(data))
+    else:
+        sys.exit(f"unknown --source {source!r} (use kb or raw)")

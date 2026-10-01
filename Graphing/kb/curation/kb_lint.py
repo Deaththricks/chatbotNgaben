@@ -23,7 +23,9 @@ Checks (BLOCKING -- each must be fixed or waived with a reason):
                 (fuzzy does NOT count) -- "every term the bot can say is a term
                 the bot can explain"
   5 groups      a numeral-set name (tri/catur/panca/... + noun) has >= 2 linked
-                members; "salah satu ... <X>" in a definition implies a link to X
+                members and no more members than its numeral ("panca datu" had 7:
+                waja is besi, and two corpus versions name a different fifth item);
+                "salah satu ... <X>" in a definition implies a link to X
   6 broader     every TERMASUK_JENIS (is-a) pair is either the plain "<parent>
                 <qualifier>" naming shape with matching types, or reviewed
   7 edges       no self-loops
@@ -48,6 +50,24 @@ Checks (BLOCKING -- each must be fixed or waived with a reason):
                 when that head term is itself an entity -- yama purwana tattwa
                 "adalah nama sebuah lontar" had no link to lontar.
                 Waiver key: "<entity_id>><genus_id>"
+  14 edge_aspects  every live edge predicate is in a kb_content.PREDICATE_FAMILIES
+                question aspect -- an aspect question drops every edge outside its
+                family, so an unmapped predicate is never shown for one: all 18
+                DIPERLUKAN_UNTUK_MEMBUAT ingredients of tirta pangentas were dropped
+                from "apa saja bahan untuk membuat tirta pangentas" (2026-09-30).
+                Waiver key: "<PREDICATE>"
+  15 comp_cycles  no composition cycle: following "made of / contains" parts
+                (kb_content.composition_parts) never returns to the start item.
+                Waiver key: the cycle's ids joined by ">"
+  16 comp_leaves  every composite sarana / tirtha / building breaks down to raw
+                materials (tuning/raw_materials.json; a kind of a raw item is raw): each
+                one that is not raw has >= 1 part or is a kind of an item that has
+                (its tree shows the parent's parts), every part outside those types is
+                raw, a raw item has no parts, and every raw id exists. Waiver key: "<entity_id>" with
+                "no corpus or web source found" when nothing describes it.
+  17 variants   every regional-variant row has a region, an op with a template
+                (tambah / tanpa / ganti), a source, and "replaces" for ganti.
+                Waiver key: "<sentence_id>|<subject_id>|<object_id>"
 
 WARN (listed for review, never blocks): "Dalam konteks Ngaben" boilerplate,
 duplicate edges, very long definitions.
@@ -79,11 +99,11 @@ WAIVERS = KB / "tuning" / "lint_waivers.json"
 OUT = HERE / "kb_lint_report.md"
 
 sys.path.insert(0, str(KB.parent.parent / "Chatbot" / "bot"))
-from kb_content import PREDICATE_FAMILIES  # noqa: E402
+from kb_content import COMPOSITE_TYPES, PREDICATE_FAMILIES, KbContent  # noqa: E402
 from kb_resolver import KbResolver  # noqa: E402
 
-NUMERAL_PREFIXES = {"eka", "dwi", "tri", "catur", "panca", "sad", "sapta", "asta",
-                    "nawa", "dasa"}
+NUMERAL_PREFIXES = {"eka": 1, "dwi": 2, "tri": 3, "catur": 4, "panca": 5, "sad": 6, "sapta": 7,
+                    "asta": 8, "nawa": 9, "dasa": 10}
 JOIN_WORDS = re.compile(r"\b(atau|dan|serta|untuk|dengan|di|ke|istilah|kata)\b")
 FRAGMENT_WORDS = re.compile(
     r"\b(tersebut|sebelum|sesudah|setelah|semua|setiap|segenap|berbagai|kelak|"
@@ -242,15 +262,20 @@ def main():
 
     # 5 groups ----------------------------------------------------------------
     def member_count(eid):
-        n = len(children.get(eid, []))
-        n += sum(1 for r in out_by.get(eid, []) if r["predicate"] in MEMBER_OUT)
-        n += sum(1 for r in in_by.get(eid, []) if r["predicate"] in MEMBER_IN)
-        return n
+        # distinct members: besi is both a broader child of panca datu and BAGIAN_DARI it
+        ids = set(children.get(eid, []))
+        ids |= {r["object_id"] for r in out_by.get(eid, []) if r["predicate"] in MEMBER_OUT}
+        ids |= {r["subject_id"] for r in in_by.get(eid, []) if r["predicate"] in MEMBER_IN}
+        return len(ids)
 
     for e in ents:
         toks = e["name"].split()
         if len(toks) >= 2 and toks[0] in NUMERAL_PREFIXES and member_count(e["id"]) < 2:
             add("groups", e["id"], f"numeral-set name {e['name']!r} has {member_count(e['id'])} linked member(s)")
+        # more members than the numeral says: the bot then lists seven items for "panca"
+        elif len(toks) >= 2 and toks[0] in NUMERAL_PREFIXES and member_count(e["id"]) > NUMERAL_PREFIXES[toks[0]]:
+            add("groups", f"{e['id']}>{NUMERAL_PREFIXES[toks[0]]}",
+                f"numeral-set name {e['name']!r} has {member_count(e['id'])} linked members, more than {NUMERAL_PREFIXES[toks[0]]}")
     for e in ents:
         d = e.get("definition") or ""
         # only a real membership claim: "salah satu dari [up to 3 words] <Group>"
@@ -367,6 +392,78 @@ def main():
             add("genus", f"{e['id']}>{hit.id}",
                 f"definition files {e['name']!r} under {' '.join(words[:k])!r} ({hit.id}) but they are not linked")
 
+    # 14 edge aspects -----------------------------------------------------------
+    # check 11 covered attribute predicates only; 97 edge predicates (DIPERLUKAN_UNTUK_
+    # MEMBUAT, DIJELASKAN_DALAM, BERDEWA, ...) were in no family until 2026-09-30.
+    unmapped = defaultdict(list)
+    for r in rels:
+        if r["predicate"] not in ASPECT_PREDICATES:
+            unmapped[r["predicate"]].append(r)
+    for pred, rs in sorted(unmapped.items()):
+        ex = rs[0]
+        add("edge_aspects", pred, f"{len(rs)} edge(s) in no question aspect, e.g. "
+            f"{ex['subject_name']!r} {pred} {ex['object_name']!r} -- dropped from every aspect question")
+
+    # 15-16 composition tree ----------------------------------------------------
+    # "X terbuat dari apa" answers with a tree down to raw materials (2026-10-01): every
+    # composite item must reach them, with no cycle.
+    kbc = KbContent(KB)
+    raw = kbc.raw_materials
+    for rid in sorted(raw - set(by_id)):
+        add("comp_leaves", rid, "listed in raw_materials.json but no such entity")
+    for e in ents:
+        eid = e["id"]
+        if e.get("type") not in COMPOSITE_TYPES:
+            continue
+        parts = kbc.composition_parts(eid)
+        if kbc.is_raw(eid):
+            if parts and eid in raw:
+                add("comp_leaves", eid, f"raw material with parts: {[p['id'] for p in parts][:5]}")
+            continue
+        if not parts and not kbc.inherited_parts(eid)[1]:
+            add("comp_leaves", eid, f"{e['name']!r} ({e['type']}) is neither raw nor broken down into parts "
+                "(nor a kind of an item that is)")
+        for p in parts:
+            if kbc.entity_type.get(p["id"]) not in COMPOSITE_TYPES and not kbc.is_raw(p["id"]):
+                add("comp_leaves", p["id"], f"part of {e['name']!r} but not a sarana/tirtha/building "
+                    f"({kbc.entity_type.get(p['id'])}) and not raw")
+    # cycles: DFS over main-version and variant parts alike
+    color, cycles = {}, set()
+
+    def dfs(u, stack):
+        color[u] = 1
+        stack.append(u)
+        for p in kbc.composition_parts(u):
+            v = p["id"]
+            if color.get(v) == 1:
+                cyc = stack[stack.index(v):]
+                i = cyc.index(min(cyc))
+                cycles.add(tuple(cyc[i:] + cyc[:i]))
+            elif v not in color:
+                dfs(v, stack)
+        stack.pop()
+        color[u] = 2
+
+    for e in ents:
+        if e["id"] not in color:
+            dfs(e["id"], [])
+    for cyc in sorted(cycles):
+        add("comp_cycles", ">".join(cyc), "composition cycle: " + " > ".join(cyc + (cyc[0],)))
+
+    # 17 variants ---------------------------------------------------------------
+    for r in rels:
+        v = r.get("variant")
+        if v is None:
+            continue
+        key = f"{r['provenance']['sentence_id']}|{r['subject_id']}|{r['object_id']}"
+        missing = [k for k in ("region", "op", "source") if not str(v.get(k) or "").strip()]
+        if v.get("op") not in kbc.variant_templates:
+            missing.append(f"op {v.get('op')!r} has no template")
+        if v.get("op") == "ganti" and not str(v.get("replaces") or "").strip():
+            missing.append("replaces")
+        if missing:
+            add("variants", key, f"variant row missing {', '.join(missing)}")
+
     # 8 config ----------------------------------------------------------------
     names = {e["name"] for e in ents}
     for k, v in cfg.get("force_merge", {}).items():
@@ -387,7 +484,8 @@ def main():
 
     # report ------------------------------------------------------------------
     order = ["names", "definitions", "isolated", "closure", "groups", "broader",
-             "edges", "composition", "attributes", "stages", "genus", "config", "resolver", "waivers"]
+             "edges", "composition", "attributes", "stages", "genus", "edge_aspects", "comp_cycles",
+             "comp_leaves", "variants", "config", "resolver", "waivers"]
     total = sum(len(v) for v in viol.values())
     L = ["# KB lint report", "",
          f"entities {len(ents)}, live relations {len(rels)}", "",
