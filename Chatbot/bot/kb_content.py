@@ -67,6 +67,8 @@ PREDICATE_FAMILIES: Dict[str, set] = {
         "BERARTI_MENYATU_DENGAN", "BERDEWA", "BERHUTANG_KEPADA", "BERKAITAN_DENGAN",
         "DINILAI_SEBAGAI", "LAHIR_DALAM_WUJUD", "MANIFESTASI_DARI", "MERUPAKAN_WUJUD_DARI",
         "PASANGAN_DARI", "SAKTI_DARI", "MENGEMBALIKAN_UNSUR_KE",
+        # literal-only links promoted to edges (2026-10-02)
+        "DISERTAI_KEMBALINYA_UNSUR_BADAN_KE", "MERUPAKAN_TAHAP_MENCAPAI", "MENUNJUKKAN_JALAN_ATMA_KE",
     },
     "lokasi": {
         "DILETAKKAN_DI", "DILETAKKAN_PADA", "DILETAKKAN_DI_ATAS", "DILETAKKAN_MELINTANG_DI",
@@ -128,6 +130,8 @@ PREDICATE_FAMILIES: Dict[str, set] = {
         "DIPERUNTUKKAN_BAGI", "MELARANG", "MEMBATASI", "MENCEGAH", "MENGANGKAT",
         "MENGEMBALIKAN_UNSUR_KE", "MENGGANTIKAN", "MENJADI_ALAS", "MENSTANAKAN",
         "MENYERAHTERIMAKAN",
+        # "ngaben merupakan salah satu tahap untuk mencapai moksa" (2026-10-02)
+        "MERUPAKAN_TAHAP_MENCAPAI",
     },
     "ciri": {
         "BERWARNA", "MEMILIKI_TINGKAT", "BERUKURAN_PANJANG", "SEPANJANG", "BERBENTUK",
@@ -138,6 +142,8 @@ PREDICATE_FAMILIES: Dict[str, set] = {
         "BERBEDA_DENGAN", "BERGANTUNG_PADA", "BERLAKU_UNTUK", "BERLAWANAN_DENGAN",
         "DILAKUKAN_TANPA", "MENGANUT", "MILIK_DARI", "TANPA", "TIDAK_MEMILIKI", "TIDAK_TERPENGARUH",
         "WARGA_DARI",
+        # "kakawin ditulis dalam bahasa kawi" (2026-10-02)
+        "DITULIS_DALAM",
     },
     # which text (lontar) describes the term ("dijelaskan dalam lontar apa")
     "sumber": {"DIJELASKAN_DALAM", "MERINCI"},
@@ -163,6 +169,8 @@ PREDICATE_FAMILIES: Dict[str, set] = {
         "DITAHBISKAN_MELALUI", "DITENTUKAN_OLEH", "DITUTUPI_DENGAN", "DIUSUNG_SECARA",
         "LAHIR_DALAM_WUJUD", "MELARUNGKAN", "MEMPEROLEH", "MENDAPATKAN", "MENERIMA", "MENJALANI",
         "MERUPAKAN_PERUBAHAN_DARI", "TATA_PELAKSANAAN_SAMA_DENGAN",
+        # how a baby's body is handled by age (2026-10-02)
+        "DIUPACARAI_DENGAN", "DIUPACARAI_DENGAN_CARA",
     },
 }
 
@@ -307,6 +315,20 @@ class KbContent:
                     return parent, parts
             frontier = set().union(*(self.kind_parents.get(x, set()) for x in frontier)) if frontier else set()
         return None, []
+
+    def inherited_part_sentences(self, entity_id: str) -> List[str]:
+        """inherited_parts() as sentences, each saying where the parts come from:
+        "gajah mina (sebagai jenis patulangan) terbuat dari kayu"."""
+        parent, parts = self.inherited_parts(entity_id)
+        if not parent:
+            return []
+        whole = f"{self.entity_name.get(entity_id, entity_id)} (sebagai jenis {self.entity_name.get(parent, parent)})"
+        out = []
+        for p in parts:
+            part = self.entity_name.get(p["id"], p["id"])
+            s, o = (part, whole) if p["predicate"] in PART_IS_SUBJECT else (whole, part)
+            out.append(self.render_variant(p["predicate"], s, o, p["variant"]))
+        return out
 
     def composition_tree(self, entity_id: str, depth: int = 4) -> dict:
         """{id, name, raw, inherited_from, parts: [{predicate, variant, node}], cut} down to

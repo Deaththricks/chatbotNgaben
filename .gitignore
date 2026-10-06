@@ -51,16 +51,25 @@ how_it_works.md
 RASA-DEVIATIONS.md
 Graphing/misc/
 Chatbot/bot/regression/
-# Graphing/kb/ itself is NOT ignored -- build_kb.py, kb/tuning/'s hand-authored
-# files (entity_resolution.json, relation_phrases.json, review_decisions.json,
-# definition_sources.json, lint_waivers.json, definitions.json), kb/curation/'s audit/review .py scripts (and their .md/.jsonl
-# artifacts), and README.md/methodology.md are real source, not scratch, and were
-# never meant to be unversioned (found 2026-09-18 while fixing the ngaben-tier KB
-# gap -- entity_resolution.json is the only record of every KB curation decision
-# CLAUDE.md documents, e.g. the Panca Maha Bhuta broader_overrides fix). kb/'s
-# output/, tuning/, curation/ split dates from 2026-09-22 (the flat kb/ folder
-# had become hard to read with build scripts, tuning config, and generated
-# artifacts all sitting side by side).
+# Lightweight repo (2026-10-02, the user's OK): what is not needed to RUN the bot stays on
+# disk but is not versioned, so a fresh clone holds the bot, the built KB, the Neo4j loader
+# and what training needs (see README.md). Kept tracked on purpose: kb/tuning/ (hand-made
+# decisions; the resolver and kb_content read three of its files), kb/output/'s four KB
+# files, neo4/relation_results_ngaben.normalized.json (every hand-made KB fix -- the KB's
+# real source), and the notebook, Graphing/results/ and Graphing/data/ (the user's senior
+# reads them; data/20k_mdee_gazz.txt is also read by the resolver at runtime).
+# Untracked with `git rm --cached`, so the next "push to shared repo" drops them there too.
+# The KB build/check tooling below therefore exists only on this machine.
+CLAUDE.md
+Graphing/kb/build_kb.py
+Graphing/kb/curation/
+Graphing/kb/README.md
+Graphing/kb/methodology.md
+Graphing/neo4/normalize.py
+Graphing/neo4/normalize_report.txt
+Graphing/neo4/relation_map.json
+Graphing/neo4/node_aliases.json
+Graphing/neo4/kgVisualizer/
 #
 # Of build_kb.py's generated outputs (kb/output/), only the ones nothing at
 # runtime actually reads stay ignored here -- pure reports/docs, safe to always

@@ -116,6 +116,11 @@ def _token_match(a: str, b: str, anchored: bool = True, common: bool = False, na
             return True
         if len(oa) >= 4 and ob == oa + suf:
             return True
+    # a Balinese "-ang" verb in its colloquial Indonesian "-in" form: "nyiramin layon" is
+    # nyiramang layon (Tier B 2026-10-02), "malebuin" malebuang
+    for x, y in ((oa, ob), (ob, oa)):
+        if x.endswith("ang") and len(x) >= 8 and y == x[:-3] + "in":
+            return True
     # "kalangan" is not a typo of karangan, nor "bayi" of bayu (live crosscheck 2026-09-30)
     if common:
         return False
@@ -138,6 +143,13 @@ def _token_match(a: str, b: str, anchored: bool = True, common: bool = False, na
 _COMMON_WORDS_FILE = _KB_DIR.parent / "data" / "20k_mdee_gazz.txt"
 
 
+# Question words are everyday words too, but that formal corpus lacks the informal ones:
+# "kenapa" went through the typo rule to kelapa (Tier B 2026-10-02, "hari apa yang harus
+# dihindari untuk ngaben dan kenapa?").
+_QUESTION_WORDS = frozenset({"apa", "apakah", "siapa", "kapan", "kenapa", "mengapa", "bagaimana",
+                             "gimana", "dimana", "kemana", "darimana", "mana", "berapa", "bilamana"})
+
+
 def _load_common_words(path: Path = _COMMON_WORDS_FILE, min_count: int = 3) -> frozenset:
     counts: dict[str, int] = {}
     with path.open(encoding="utf-8") as f:
@@ -145,7 +157,7 @@ def _load_common_words(path: Path = _COMMON_WORDS_FILE, min_count: int = 3) -> f
             tok = line.split(maxsplit=1)[0] if line.strip() else ""
             if tok.isalpha() and tok.islower():
                 counts[tok] = counts.get(tok, 0) + 1
-    return frozenset(w for w, c in counts.items() if c >= min_count)
+    return frozenset(w for w, c in counts.items() if c >= min_count) | _QUESTION_WORDS
 
 
 @dataclass
@@ -208,7 +220,7 @@ class KbResolver:
 
         # long keys for the whole-key one-edit tier ("pancahmaha butha" -> pancamahabutha:
         # the extra letter sits across a word boundary the token check cannot see)
-        self._long_keys = [k for k, v in self.ortho.items() if v and len(k) >= 9]
+        self._long_keys = [k for k, v in self.ortho.items() if v and len(k) >= 8]
 
         # a common word that is itself a KB name token ("air", "kain") still matches as
         # written; the set only stops it from matching another name through an edit
@@ -297,10 +309,14 @@ class KbResolver:
 
         # 4b. one edit on the whole orthographic key of a long name, if it is unique.
         # "typo", not "ortho": the bot must not call a misspelling "sebutan lain".
+        # From 9 letters: "pegabenan" (pengabenan, a force_merge key the fuzzy tier never
+        # sees) got "Mungkin maksud Anda: ngaben, benang?" (2026-10-02)
+        # A 9-letter word must also keep both ends ("petilasan" is no patulangan).
         key = _ortho_key(raw)
-        if len(key) >= 10 and raw not in self.common_words:
+        if len(key) >= 9 and raw not in self.common_words:
             hits = {self.ortho[k] for k in self._long_keys
-                    if abs(len(k) - len(key)) <= 1 and Levenshtein.distance(k, key) <= 1}
+                    if abs(len(k) - len(key)) <= 1 and Levenshtein.distance(k, key) <= 1
+                    and (len(key) >= 10 or (k[:2] == key[:2] and k[-2:] == key[-2:]))}
             if len(hits) == 1:
                 _id = hits.pop()
                 return Match(_id, self.by_id[_id]["name"], "typo", 100.0, self.by_id[_id])

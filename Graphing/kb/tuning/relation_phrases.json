@@ -83,6 +83,12 @@
   "DIHINDARI_UNTUK": { "template": "{s} dihindari (tidak boleh dipakai) untuk {o}", "ok_prep": ["untuk"] },
   "DIJADIKAN": { "template": "{s} dijadikan {o}", "ok_prep": [] },
 
+  "_comment_moksa": "2026-10-02: the moksa edges said 'moksa kembali ke bhuwana agung' / 'moksa berarti menyatu dengan brahman', and the bot wrote 'atma kembali ke asalnya, yakni bhuwana agung'. Each now names whose return / union it is.",
+  "BERARTI_MENYATU_DENGAN": { "template": "{s} berarti bersatunya jiwa (atma) dengan {o}", "ok_prep": [] },
+  "DISERTAI_KEMBALINYA_UNSUR_BADAN_KE": { "template": "{s} disertai kembalinya unsur badan manusia ke asalnya, yaitu {o}", "ok_prep": [] },
+  "MERUPAKAN_TAHAP_MENCAPAI": { "template": "{s} merupakan salah satu tahap untuk mencapai {o}", "ok_prep": [] },
+  "MENUNJUKKAN_JALAN_ATMA_KE": { "template": "{s} melambangkan penunjuk jalan bagi roh (atman) untuk kembali ke asalnya, yaitu {o}", "ok_prep": [] },
+
   "_variant": {
     "_comment": "a regional/variant row (normalized row field \"variant\": {region, op, source[, replaces]}) is rendered with these instead of its bare template, so the bot never states a variant as the main version. {nl} = the row's plain sentence; used by build_kb.py and kb_content.KbContent.render_variant",
     "tambah": "variasi ({region}): {nl} (sebagai tambahan)",

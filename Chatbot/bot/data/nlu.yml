@@ -16,6 +16,11 @@ nlu:
     - matur suksma
     - makasih ya
     - sudah cukup, terima kasih
+    - thanks
+    - thank you
+    - makasih
+    - terimakasih banyak
+    - oke makasih
 - intent: bot_challenge
   examples: |
     - kamu bot ya?
@@ -48,6 +53,10 @@ nlu:
     - berapa kurs dolar hari ini
     - bagaimana cara install windows
     - apa hasil pemilu kemarin
+    - jika x=2, berapa hasil dari 2x+x^2
+    - berapa 15 dikali 8
+    - hitung 125 dibagi 5
+    - siapa itu pewdiepie
 - intent: ask_ngaben_detail
   examples: |
     - apa itu ngaben

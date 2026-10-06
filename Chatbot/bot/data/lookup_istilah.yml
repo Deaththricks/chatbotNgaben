@@ -31,6 +31,7 @@ nlu:
     - angkeb rai
     - antah karana sarira
     - ante
+    - anugerah raja
     - apah
     - api takep
     - arak
@@ -39,7 +40,6 @@ nlu:
     - ardhanareswari
     - arit gobed
     - arjuna
-    - asagan
     - asem
     - asti wedana
     - atas bukur
@@ -57,15 +57,19 @@ nlu:
     - ayaban
     - ayaban sesayut
     - ayaban upakara diuskamaligi
+    - ayam
     - babelonyoh
     - badan halus mendiang
     - badan halus mendiang roh/arwah
     - badan suksma bhatara
+    - badawang nala
     - bade
     - baem-warak
+    - bahasa kawi
+    - baja
+    - bakul
     - balai pawedan
     - balai tempat jenazah disemayamkan
-    - balai-balai
     - balai-balai alas ngringkes
     - balai-balai bade
     - balai-balai tempat jenazah
@@ -106,13 +110,19 @@ nlu:
     - banten suci
     - banten teben
     - base
+    - batang pisang
     - bayu
     - bayuhan
+    - benang
     - benang tatebus
     - benang tridatu
     - beras
     - beras catur
+    - beras hitam
+    - beras ketan
     - beras kuning
+    - beras merah
+    - beras putih
     - berbagai jenis tirtha
     - berem
     - bersihan payasan
@@ -131,6 +141,7 @@ nlu:
     - bhuwana agung
     - bhuwana alit
     - bijaratus
+    - biji-bijian
     - bilah bambu galar
     - bilah-bilah bambu sebanyak 9 buah
     - bilahan-bilahan bambu ante
@@ -166,6 +177,7 @@ nlu:
     - cecepan
     - celebongkekan
     - cengkeh
+    - ceper
     - cermin kecil
     - cili
     - coblong
@@ -181,9 +193,11 @@ nlu:
     - dasa mala
     - daun beringin
     - daun dapdap
+    - daun enau
     - daun intaran
     - daun kelapa muda busung
     - daun kembang sepatu
+    - daun pandan
     - daun pisang
     - daun pisang saba
     - daun rontal
@@ -222,6 +236,7 @@ nlu:
     - galungan
     - gambir
     - ganda
+    - garam
     - gedarba
     - gegaleng
     - gegaleng kepala
@@ -233,8 +248,9 @@ nlu:
     - gigi jenazah istilah_umum_ritual
     - gotong royong
     - gria
+    - gula
+    - gula merah
     - gulungan daun sirih
-    - gulungan sirih
     - gupura
     - guru tiga
     - harga tirtha
@@ -251,9 +267,11 @@ nlu:
     - ida bhatara kumara
     - ida sang sadaka
     - ida sang sulinggih
+    - ijuk
     - ilih
     - indrayana
     - isi pengawak
+    - itik
     - itik-itik
     - jaja bantal
     - jaja pasung
@@ -274,16 +292,19 @@ nlu:
     - jukung
     - jumlah galar
     - jun pere
+    - kacang
+    - kacang hijau
     - kain
     - kain bawah
+    - kain hitam
     - kain kasa
     - kain kering
+    - kain kuning
     - kain kuning untuk saput
     - kain kuning untuk saput/selendang
     - kain penutup
     - kain penutup jenazah
     - kain putih
-    - kain putih panjang
     - kain putih untuk bantal
     - kain putih untuk saput
     - kajang
@@ -300,46 +321,59 @@ nlu:
     - karangan
     - karawista
     - karma wasana
+    - karton
     - kata roras
     - kawangen
     - kawangen di samping jenazah
-    - kawangen di tangan
     - kawangen jeriji
+    - kawat
     - kayu
     - kayu cendana
     - kayu dapdap
+    - kayu majagau
     - kedua mata jenazah
     - kedudukan pitara
+    - kekeran desa
+    - kekeran jagat
     - kekitir
+    - kelapa
     - kelepikan jepun
     - kelompok paksa mahayana
     - kemampuan sosial ekonomi
     - kembang rampai
+    - kemiri
     - kepala jenazah
     - kepercayaan setempat
+    - keraras
     - keris
     - kertas
+    - kertas emas
     - kesuna bawang putih
     - ketekan guling
     - ketipat bantal
     - ketipat kelanan
+    - ketipat lingga
+    - ketupat bagia
+    - ketupat daun rontal
     - kidung
     - kikir
     - kimburu
     - klasa
     - klatkat
     - kleda
+    - kliwon
     - klungah
     - klungah nyuh gading
     - klungah nyuh gading/suku tunggal
     - kojong
-    - kojong kawangen jeriji
     - kopi
     - krama masyarakat banjar
     - ksatria
     - kuburan
+    - kue ketan
     - kuhaka
     - kulambi
+    - kulit peras
     - kulit telur ayam
     - kulit telur ayam berminyak kelapa
     - kuncup melati
@@ -347,9 +381,9 @@ nlu:
     - kunyit
     - kutila
     - lancingan
-    - lancingan kajang
     - langse
     - lante bambu
+    - lauk pauk
     - layon
     - leja
     - lekesan
@@ -360,11 +394,13 @@ nlu:
     - lembu
     - lengan jenazah
     - leteh
+    - lidi
     - lima buah lembaran-lembaran daun sirih
     - lingga sarira pitara
     - lis
     - lis amuan-amuan
     - lis bale gading
+    - logam
     - logam campuran
     - lontar
     - lontar jnanasiddhanta
@@ -376,7 +412,6 @@ nlu:
     - lontar tattwa jnana
     - lontar wrehaspati tattwa
     - lontar yadnya prakerti
-    - lubang satu uang kepeng
     - lubang tempat penguburan
     - lungke-lungke
     - macan
@@ -401,7 +436,9 @@ nlu:
     - manusa yadnya
     - manusia
     - mapegat
+    - mapendem
     - masekeh
+    - mata angin
     - matur piuning
     - megata
     - mendiang
@@ -486,7 +523,9 @@ nlu:
     - panca karmendrya
     - panca yadnya
     - pancamahabutha
+    - pancawara
     - pandan arum
+    - pandan berduri
     - pandawa
     - pande
     - pandita
@@ -550,6 +589,7 @@ nlu:
     - pihak berhutang
     - pinang
     - pipil
+    - pisang
     - pisang jati
     - pisang kayu
     - pisau pengutik
@@ -558,6 +598,7 @@ nlu:
     - pitra yadnya
     - pitraloka
     - plengkungan sawa
+    - porosan
     - potong gigi
     - pradaksina
     - prajuru
@@ -567,6 +608,7 @@ nlu:
     - pras arepan
     - pras pengambyan
     - prasawya
+    - prerai
     - preta
     - pretiwi
     - pripih cendana
@@ -606,12 +648,13 @@ nlu:
     - rokok
     - rontal dilapisi kertas emas
     - roras
+    - rotan
     - rsi bisma
     - rsi yadnya
     - ruang bale semanggen
     - rurub sinom
-    - rurub sinom sebanyak lima buah
     - sabuk
+    - sabut kelapa
     - sajen kecil
     - sajen surya
     - sajen untuk surya
@@ -620,6 +663,7 @@ nlu:
     - sambungan
     - sambungan kain putih
     - sampar wantu
+    - sampian
     - sampian pusung
     - samping jenazah
     - samsam
@@ -663,6 +707,7 @@ nlu:
     - sekah kangsen
     - sekah kurung
     - sekah sangge
+    - sekam
     - sekar ura
     - sekte paksa surya
     - selatan
@@ -709,9 +754,11 @@ nlu:
     - tabunan
     - tahenan
     - takir
+    - tali
     - tali benang tukelan
     - tali ktekung
     - tali penyalin
+    - tanah liat
     - tandri
     - tandu
     - tangan jenazah
@@ -729,6 +776,7 @@ nlu:
     - tebu
     - tegteg
     - teja
+    - telur
     - telur ayam
     - telur bekasem
     - tembaga
@@ -736,6 +784,7 @@ nlu:
     - tempat pamrajan
     - tempat penusangan
     - tempat persemayaman jenazah
+    - tepung ketan
     - tepung tawar
     - tikeh plasa
     - tilem
@@ -782,6 +831,7 @@ nlu:
     - tumpang salu
     - tumpek
     - tumpeng
+    - tunas pisang saba
     - tvagindrya
     - uang kepeng
     - uang kepeng asli
@@ -813,6 +863,7 @@ nlu:
     - upanisad
     - upasaksi
     - upathendrya
+    - upih
     - usungan
     - utama
     - utamaning madya
