@@ -659,6 +659,15 @@ jenis tahapan hubungan tujuan peran fungsi sarana acara cara proses siapa kapan 
 mana umum masyarakat cocok melaksanakan dilaksanakan hal digunakan dipakai
 """.split())
 
+# Cardinal numbers, digit -> Indonesian word. A number is a quantifier/modifier, not a
+# term the KB is missing: "bade tingkat 9" and "bade tingkat sembilan" must behave the same.
+# The digit form is never tokenized as a >=4-letter leftover word, so the spelled-out form
+# is dropped from the leftover list too (below); and a makna/why question maps either form to
+# the number word so the relevant tier definition is kept (_synthesize, meaning_words).
+_NUMBER_WORDS = {"1": "satu", "2": "dua", "3": "tiga", "4": "empat", "5": "lima", "6": "enam", "7": "tujuh",
+                 "8": "delapan", "9": "sembilan", "10": "sepuluh", "11": "sebelas", "12": "duabelas"}
+_NUMBER_WORD_SET = frozenset(_NUMBER_WORDS.values())
+
 
 def _scan_terms(user_msg: Text, resolver) -> "tuple[list, List[str], List[bool]]":
     """The n-gram scan behind _mentioned_terms: (start, end, Match, phrase) in message
@@ -744,8 +753,12 @@ def _mentioned_terms(user_msg: Text, resolver) -> "tuple[List[tuple], List[str]]
     not look at the history at all. A fuzzy hit counts only on long words.
 
     Also returns the message's leftover words: the ones no found term covers and that
-    are not question / connector words or a question aspect ("diletakkan",
-    "melambangkan"). With none left, the message is fully explained by its terms."""
+    are not question / connector words, a question aspect ("diletakkan", "melambangkan")
+    or a spelled-out number. With none left, the message is fully explained by its terms.
+    A number word is excluded for the same reason a digit is (a digit is never a >=4-letter
+    token): "bade tingkat sembilan" named its subject in full just as "bade tingkat 9" did,
+    so both skip the extraction LLM instead of the word form alone treating "sembilan" as an
+    unexplained term and taking a different, worse path (conersation.md 2026-10-05)."""
     found, toks, used = _scan_terms(user_msg, resolver)
     lone_skip = (_STOPWORDS_ID - {"ngaben"}) | _ASPECT_WORDS | _META_TERMS
     # a class word right before its member names the member, not a second term:
@@ -774,6 +787,7 @@ def _mentioned_terms(user_msg: Text, resolver) -> "tuple[List[tuple], List[str]]
             out.append((m, phrase))
     leftover = [t for t, u in zip(toks, used)
                 if not u and len(t) >= 4 and t not in _SCAN_SKIP and t not in lone_skip
+                and t not in _NUMBER_WORD_SET
                 and not any(p.search(t) for p in _ASPECT_WORD_RES)]
     return out, leftover
 
@@ -1325,8 +1339,6 @@ _CONTENTS_Q_RE = re.compile(r"dilengkapi|kelengkapan|\bisi(nya)?\b|berisi|terbua
 _MEMBERS_Q_RE = re.compile(r"\bunsur|terdiri", re.I)
 # "jelaskan isi banten peras satu per satu" wants each part explained (rule 9)
 _EXPLAIN_EACH_RE = re.compile(r"\bjelaskan\b|\bsetiap\b|\btiap\b|\bmasing-masing\b|\bsatu per satu\b", re.I)
-_NUMBER_WORDS = {"1": "satu", "2": "dua", "3": "tiga", "4": "empat", "5": "lima", "6": "enam", "7": "tujuh",
-                 "8": "delapan", "9": "sembilan", "10": "sepuluh", "11": "sebelas", "12": "duabelas"}
 # "karena": jenazah bayi's tiers each say why ("karena ia masih dinilai suci murni"), yet "kenapa
 # jenazah bayi tidak boleh dibakar?" opened with "Maaf, alasannya belum tercatat" (Tier B 2026-10-05)
 _MEANING_IN_DEF_RE = re.compile(r"\b(?:melambangkan|menggambarkan|bermakna|maknanya|menyimbolkan|"
