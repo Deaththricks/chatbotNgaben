@@ -106,6 +106,8 @@ PREDICATE_FAMILIES: Dict[str, set] = {
         "MENGGUNAKAN", "MEMAKAI",
         # added 2026-09-30
         "DIPERLUKAN_UNTUK_MEMBUAT", "DILENGKAPKAN_PADA",
+        # "ngaben dianggap belum dilaksanakan tanpa tirta pangentas" (2026-10-12)
+        "DIANGGAP_BELUM_DILAKSANAKAN_TANPA",
     },
     "pelaku": {
         "DILAKUKAN_OLEH", "DIPIMPIN_OLEH", "DIMOHONKAN_OLEH", "DIJUNJUNG_OLEH",
@@ -115,6 +117,8 @@ PREDICATE_FAMILIES: Dict[str, set] = {
         # added 2026-09-30
         "DIBERIKAN_OLEH", "DIGUNAKAN_OLEH", "DIPERUNTUKKAN_BAGI", "DITENTUKAN_OLEH", "HADIR_DALAM",
         "MELAKSANAKAN", "MEMBUAT",
+        # "tirta pangentas hanya dapat dibuat oleh sulinggih" (2026-10-12)
+        "HANYA_DAPAT_DIBUAT_OLEH",
     },
     "fungsi": {
         "DIPAKAI_UNTUK", "DIGUNAKAN_UNTUK", "DIGUNAKAN_PADA", "DIGUNAKAN_DALAM",

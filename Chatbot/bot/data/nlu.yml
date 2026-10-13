@@ -57,7 +57,18 @@ nlu:
     - berapa 15 dikali 8
     - hitung 125 dibagi 5
     - siapa itu pewdiepie
+- intent: digidaw
+  examples: |
+    - digidaw
+    - Digidaw
+    - DIGIDAW
+    - digidaw!
+    - digidaww
+    - digidaw digidaw
 - intent: ask_ngaben_detail
+  # The short "apakah <term>" forms (apakah sekah, apakah itu lembu, ...): with only the
+  # three longer "apakah ..." examples, "apakah bade" went to bot_challenge ("apakah saya
+  # bicara dengan robot?") on some training runs (2026-10-08).
   examples: |
     - apa itu ngaben
     - jelaskan tentang tirtha pangentas
@@ -107,6 +118,10 @@ nlu:
     - apakah bade boleh dipakai masyarakat umum
     - apakah ngaben harus dilakukan dalam tujuh hari
     - apakah hal tersebut tidak boleh
+    - apakah sekah
+    - apakah itu lembu
+    - apakah tirtha pangentas itu
+    - apakah ngaben wajib
     - bolehkah ngaben dilakukan pada sasih kadasa
     - apa saja sarana upacara yang digunakan untuk ngaben
     - apa saja sarananya

@@ -103,11 +103,15 @@ def _vowel_edit(a: str, b: str) -> bool:
     return b[op.dest_pos] in _VOWELS
 
 
-def _token_match(a: str, b: str, anchored: bool = True, common: bool = False, named: bool = False) -> bool:
+def _token_match(a: str, b: str, anchored: bool = True, common: bool = False, named: bool = False,
+                 kbword: bool = False) -> bool:
     """Symmetric. The flags describe the user's word: `common`, an everyday Indonesian
     word, matches only as written (plus a suffix), never through an edit; `named`, a word
     of some KB name, is a real word too -- only a vowel slip (spelling variant) may change
-    it: "kahang" (naga kahang) is not kajang, "tunjung" not punjung (2026-10-01)."""
+    it: "kahang" (naga kahang) is not kajang, "tunjung" not punjung (2026-10-01).
+    `kbword`, a word the KB's own text uses (KbResolver.kb_words), is as strict unless another
+    word of the phrase matched exactly: alone, "tumpang" is no tumpeng nor "hidung" kidung;
+    beside "sredaning", "citra" is the user's slip for sredaning cita."""
     oa, ob = _ortho_token(a), _ortho_token(b)
     if oa == ob:
         return True
@@ -122,7 +126,7 @@ def _token_match(a: str, b: str, anchored: bool = True, common: bool = False, na
         if x.endswith("ang") and len(x) >= 8 and y == x[:-3] + "in":
             return True
     # "kalangan" is not a typo of karangan, nor "bayi" of bayu (live crosscheck 2026-09-30)
-    if common:
+    if common or kbword and not anchored:
         return False
     # One-edit typos: "wah loka"/"bwah loka", "sredaning citra"/"sredaning cita",
     # "sulinggi"/"sulinggih". A consonant slip on a word under 6 letters only counts when
@@ -226,6 +230,18 @@ class KbResolver:
         # written; the set only stops it from matching another name through an edit
         self.common_words = _load_common_words()
         self.name_tokens = {_ortho_token(t) for s in self.surface for t in re.split(r"[\s\-/]+", s) if t}
+        # Words the KB's own definitions use (2+ times, 5+ letters) are real words of this domain,
+        # like everyday ones: as written only, never through an edit. The everyday list is a formal
+        # Indonesian corpus and lacks them, so "tumpang" (bade's tiers) went to tumpeng, a rice
+        # cone (2026-10-07 batch); of 674 such words 15 resolved alone to another term that way --
+        # hidung -> kidung, gulungan -> galungan, pinggang -> pinang, kolong -> kojong, kipas -> kapas.
+        kb_counts: dict[str, int] = {}
+        for e in ents:
+            for w in re.findall(r"[a-zA-Z]+", e.get("definition") or ""):
+                if len(w) >= 5:
+                    o = _ortho_token(w)
+                    kb_counts[o] = kb_counts.get(o, 0) + 1
+        self.kb_words = frozenset(w for w, n in kb_counts.items() if n >= 2)
 
         self._choices = list(self.surface.keys())
         # fuzzy candidates are also drawn by orthographic key, so heavy spelling
@@ -314,12 +330,15 @@ class KbResolver:
         # A 9-letter word must also keep both ends ("petilasan" is no patulangan).
         key = _ortho_key(raw)
         if len(key) >= 9 and raw not in self.common_words:
-            hits = {self.ortho[k] for k in self._long_keys
-                    if abs(len(k) - len(key)) <= 1 and Levenshtein.distance(k, key) <= 1
-                    and (len(key) >= 10 or (k[:2] == key[:2] and k[-2:] == key[-2:]))}
+            hits: dict[str, str] = {}
+            for k in self._long_keys:
+                if (abs(len(k) - len(key)) <= 1 and Levenshtein.distance(k, key) <= 1
+                        and (len(key) >= 10 or (k[:2] == key[:2] and k[-2:] == key[-2:]))):
+                    hits.setdefault(self.ortho[k], k)
             if len(hits) == 1:
-                _id = hits.pop()
-                return Match(_id, self.by_id[_id]["name"], "typo", 100.0, self.by_id[_id])
+                _id, k = next(iter(hits.items()))
+                if not self._edit_in_common_word(raw, key, k):
+                    return Match(_id, self.by_id[_id]["name"], "typo", 100.0, self.by_id[_id])
 
         # 5. fuzzy, token-checked. A string-level score alone produced confident
         # wrong answers (2026-09-24): "surya" -> sukra, "sangaskara" ->
@@ -346,15 +365,54 @@ class KbResolver:
 
         return None
 
+    def _edit_in_common_word(self, raw: str, key: str, k: str) -> bool:
+        """The whole-key typo tier's one edit falls inside an everyday word of the query, and no
+        rare word anchors the phrase: the phrase-level check above only asks whether the whole
+        phrase is common, so "kepada jenazah" became kepala jenazah, the corpse's head (2026-10-07
+        batch) -- both words everyday. Beside a word only that name has, the everyday word is the
+        user's slip: "sredaning citra" is sredaning cita. An edit at a word boundary counts only
+        when both words it touches are everyday ones."""
+        spans, pos = [], 0
+        toks = [t for t in re.split(r"[\s\-/]+", raw) if t]
+        for t in toks:
+            o = _ortho_token(t)
+            spans.append((pos, pos + len(o), t))
+            pos += len(o)
+        for op in Levenshtein.editops(key, k):
+            p = op.src_pos
+            touching = [t for a, b, t in spans if a <= p < b or (op.tag == "insert" and p == b)]
+            if (touching and all(t in self.common_words for t in touching)
+                    and all(t in self.common_words for t in toks if t not in touching)):
+                return True
+        return False
+
+    @staticmethod
+    def _content_tokens(s: str, skip: set) -> list[str]:
+        """The words of `s` that say what it is. A reduplicated word ("para-para", "balung-balung")
+        is one lexical word, kept even when its half is a modifier: split on the hyphen, "para"
+        was dropped as the plural marker, so "para-para tempat pembakaran" reduced to
+        "pembakaran" and took every "upacara pembakaran jenazah" (2026-10-07 batch). A
+        reduplicated modifier written whole ("unsur-unsur", "masing-masing") is still skipped."""
+        out = []
+        for w in re.split(r"[\s/]+", s):
+            if not w or w in skip:
+                continue
+            parts = [p for p in w.split("-") if p]
+            if len(parts) == 2 and parts[0] == parts[1]:
+                out.append(parts[0])
+            else:
+                out.extend(p for p in parts if p not in skip)
+        return out
+
     def _tokens_cover(self, query: str, cand: str) -> bool:
         skip = set(self.strip_modifiers) | _HEAD_WORDS
-        q = [t for t in re.split(r"[\s\-/]+", query) if t and t not in skip | _ASPECT_WORDS]
-        c = [t for t in re.split(r"[\s\-/]+", cand) if t and t not in skip]
+        q = self._content_tokens(query, skip | _ASPECT_WORDS)
+        c = self._content_tokens(cand, skip)
         if not q or not c:
             return False
         anchored = len(q) >= 2 and any(_ortho_token(a) == _ortho_token(b) for a in q for b in c)
-        common, named = self.common_words, self.name_tokens
-        flags = {a: (a in common, _ortho_token(a) in named) for a in q}
+        common, named, kb = self.common_words, self.name_tokens, self.kb_words
+        flags = {a: (a in common, _ortho_token(a) in named, _ortho_token(a) in kb) for a in q}
         return (all(any(_token_match(a, b, anchored, *flags[a]) for b in c) for a in q)
                 and all(any(_token_match(a, b, anchored, *flags[a]) for a in q) for b in c))
 

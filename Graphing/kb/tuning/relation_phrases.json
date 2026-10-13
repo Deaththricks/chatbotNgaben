@@ -89,6 +89,10 @@
   "MERUPAKAN_TAHAP_MENCAPAI": { "template": "{s} merupakan salah satu tahap untuk mencapai {o}", "ok_prep": [] },
   "MENUNJUKKAN_JALAN_ATMA_KE": { "template": "{s} melambangkan penunjuk jalan bagi roh (atman) untuk kembali ke asalnya, yaitu {o}", "ok_prep": [] },
 
+  "_comment_tirta_pangentas": "2026-10-12: 'hanya dapat dibuat oleh seorang Sulinggih' (corpus L3713) and 'tanpa Tirtha Pangentas maka Pengabenan itu dianggap belum dilaksanakan' (L3987) were text in tirta pangentas's definition only, so 'kalau di desa cuma ada pemangku dan gak ada sulinggih, ngabennya tetep bisa jalan gak?' never reached them. The templates keep 'hanya' and 'dianggap belum dilaksanakan', which a bare DIBUAT_OLEH / MENSYARATKAN would lose.",
+  "HANYA_DAPAT_DIBUAT_OLEH": { "template": "{s} hanya dapat dibuat oleh {o}", "ok_prep": ["oleh"] },
+  "DIANGGAP_BELUM_DILAKSANAKAN_TANPA": { "template": "{s} dianggap belum dilaksanakan tanpa {o}", "ok_prep": ["tanpa"] },
+
   "_variant": {
     "_comment": "a regional/variant row (normalized row field \"variant\": {region, op, source[, replaces]}) is rendered with these instead of its bare template, so the bot never states a variant as the main version. {nl} = the row's plain sentence; used by build_kb.py and kb_content.KbContent.render_variant",
     "tambah": "variasi ({region}): {nl} (sebagai tambahan)",

@@ -8,7 +8,8 @@ and phrases the answer with a local LLM (Qwen 2.5 via Ollama).
 
 - **Python 3.10** (Rasa 3.6 does not run on 3.11) and [uv](https://docs.astral.sh/uv/)
 - **Neo4j 5** (Desktop or server) listening on `neo4j://127.0.0.1:7687`
-- **Ollama** (https://ollama.com) with the `qwen2.5` model
+- **Ollama** (https://ollama.com) with the `qwen2.5` model (answers) and the `bge-m3` model
+  (finds a term the question describes without naming it)
 
 ## Setup (once)
 
@@ -26,9 +27,13 @@ cd ..
 # 2. Settings: copy the example and fill in your Neo4j password
 copy .env.example .env
 
-# 3. The LLM
+# 3. The LLM and the embedding model
 ollama pull qwen2.5
+ollama pull bge-m3
 ```
+
+The chat model is the `LLM_MODEL` setting in `.env` (default `qwen2.5`). Changing it is one line,
+but the answer checks were tuned on qwen2.5: run the regression suite before trusting another model.
 
 **Three small patches inside the environment (Windows).** Without them the bot cannot load its
 model, or answers to broad questions time out:
@@ -68,14 +73,18 @@ Keep Neo4j and Ollama running, then open two PowerShell windows in `Chatbot\bot`
 ..\rasa_bot\Scripts\rasa.exe shell
 ```
 
-Try `apa itu ngaben`, `apa saja tahapan dalam ngaben`, `mangle terbuat dari apa`.
+Try `apa itu ngaben`, `apa saja tahapan dalam ngaben`, `mangle terbuat dari apa`,
+`keluargaku meninggal pas merantau jauh, masih bisa diaben gak?`.
 If Ollama is down the bot still answers, from the stored definitions only.
+The first start after a knowledge-base change embeds every entry (about 2 minutes on the CPU, in
+the background; `..\rasa_bot\Scripts\python.exe kb_semantic.py` does it ahead of time). Until then
+questions that describe a term without naming it are answered as before.
 
 ## What is in this repo
 
 | Path | What it is |
 |---|---|
-| `Chatbot/bot/` | the Rasa project: NLU data, rules, domain, and the custom actions (`actions/actions.py`) with the term resolver (`kb_resolver.py`) and KB reader (`kb_content.py`) |
+| `Chatbot/bot/` | the Rasa project: NLU data, rules, domain, and the custom actions (`actions/actions.py`) with the term resolver (`kb_resolver.py`), KB reader (`kb_content.py`) and meaning search (`kb_semantic.py`) |
 | `Chatbot/requirements.txt`, `overrides.txt` | Python dependencies |
 | `Graphing/kb/output/` | the built knowledge base the bot and the loader read (entities, relations, facts, passages) |
 | `Graphing/kb/tuning/` | hand-made KB settings and decisions (name merges, sentence templates, raw materials, ...) |

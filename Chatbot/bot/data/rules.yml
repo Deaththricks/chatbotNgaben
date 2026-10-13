@@ -16,6 +16,11 @@ rules:
       - intent: bot_challenge
       - action: utter_iamabot
 
+  - rule: digidaw
+    steps:
+      - intent: digidaw
+      - action: utter_digidaw
+
   # action_out_of_scope still answers a message that names a KB term outright
   # (a misfiled Ngaben question), else utters utter_out_of_scope
   - rule: out of scope

@@ -25131,3 +25131,78 @@
     "context_sentence": "[kurasi percakapan 2026-10-02] L3245: ... lima Dewa-Dewa yang berada dalam kelima penjuru mata angin. ... (2) Tembaga (merah), tempatnya di Selatan, dewanya adalah Dewa Brahma."
   }
 }
+
+{
+  "subject_id": "sasih_paruwak_tahuk",
+  "subject_name": "sasih paruwak tahuk",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "alaning_dewasa",
+  "object_name": "alaning dewasa",
+  "confidence": "HIGH",
+  "nl": "sasih paruwak tahuk termasuk salah satu jenis alaning dewasa",
+  "raw_relation": "TERMASUK_JENIS",
+  "provenance": {
+    "sentence_id": 901419,
+    "context_sentence": "[web conversation 2026-10-07] http://madesuliartini.blogspot.com/2014/01/kajian-wariga-dalam-lontar-aji.html : \"Inilah alanya (buruknya) hari: wuku tidak mempunyai guru, sasih yang tidak mempunyai tumpek, bulan yang tidak mempunyai sirah ...\" -- sasih paruwak tahuk is the sasih in which no Tumpek falls (corpus L231-237)"
+  }
+}
+
+{
+  "subject_id": "ngaben",
+  "subject_name": "ngaben",
+  "predicate": "DIPIMPIN_OLEH",
+  "object_id": "sulinggih",
+  "object_name": "sulinggih",
+  "confidence": "HIGH",
+  "nl": "ngaben dipimpin oleh sulinggih",
+  "raw_relation": "DIPIMPIN_OLEH",
+  "provenance": {
+    "sentence_id": 901420,
+    "context_sentence": "Dalam upacara Ngaben ini dipuput oleh pandita dan juga dibarengi dengan pembacaan sloka suci, yang sering disebut Mamutru. (corpus L271; pandita = sulinggih, merged 2026-10-05) -- 'siapa yang memimpin ngaben' found no leader edge and was answered with 'Sang Hyang Birawa' (2026-10-08 batch)"
+  }
+}
+
+{
+  "subject_id": "atma_wedana",
+  "subject_name": "atma wedana",
+  "predicate": "DILAKUKAN_SETELAH",
+  "object_id": "ngaben",
+  "object_name": "ngaben",
+  "confidence": "HIGH",
+  "nl": "atma wedana dilakukan setelah ngaben",
+  "raw_relation": "DILAKUKAN_SETELAH",
+  "provenance": {
+    "sentence_id": 901421,
+    "context_sentence": "Atma Wedana boleh dikatakan Pitra Yadnya tahap kedua. Hal ini mengandung pengertian, bahwa dalam pelaksanaannya haruslah ditempuh secara beruntun. Artinya Atma Wedana ini barulah boleh diselenggarakan kalau sudah melakukan upacara Ngaben, sebagai tahap yang pertama. (corpus L1942; also L1006) -- 'setelah ngaben selesai upacara lanjutan apa' found only ngangsen's order edge and answered 'nguyeg' (2026-10-08 batch)"
+  }
+}
+
+{
+  "subject_id": "tirta_pangentas",
+  "subject_name": "tirta pangentas",
+  "predicate": "HANYA_DAPAT_DIBUAT_OLEH",
+  "object_id": "sulinggih",
+  "object_name": "sulinggih",
+  "confidence": "HIGH",
+  "nl": "tirta pangentas hanya dapat dibuat oleh sulinggih",
+  "raw_relation": "HANYA_DAPAT_DIBUAT_OLEH",
+  "provenance": {
+    "sentence_id": 901422,
+    "context_sentence": "Tirtha Pangentas hanya dapat dibuat oleh seorang Sulinggih (Pandita) yang sudah melaksanakan upacara Mapulang Lingga, karena Tirtha ini merupakan Gangga yang turun ke dunia. (corpus L3713; pandita = sulinggih, merged 2026-10-05) -- text in tirta pangentas's definition only, so 'kalau di desa cuma ada pemangku dan gak ada sulinggih, ngabennya tetep bisa jalan gak?' never reached it (reasoning test 2026-10-12)"
+  }
+}
+
+{
+  "subject_id": "ngaben",
+  "subject_name": "ngaben",
+  "predicate": "DIANGGAP_BELUM_DILAKSANAKAN_TANPA",
+  "object_id": "tirta_pangentas",
+  "object_name": "tirta pangentas",
+  "confidence": "HIGH",
+  "nl": "ngaben dianggap belum dilaksanakan tanpa tirta pangentas",
+  "raw_relation": "DIANGGAP_BELUM_DILAKSANAKAN_TANPA",
+  "provenance": {
+    "sentence_id": 901423,
+    "context_sentence": "Seperti telah disebutkan diatas bahwa Tirtha Pangentas merupakan Tirtha yang terpenting dalam upacara Pengabenan, karena tanpa Tirtha Pangentas maka Pengabenan itu dianggap belum dilaksanakan. (corpus L3987; the LITERAL row of sentence 4336 'pengabenan tanpa tirtha pangentas -> belum dilaksanakan' never became an edge)"
+  }
+}
