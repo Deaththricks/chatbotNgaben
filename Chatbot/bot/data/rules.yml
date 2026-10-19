@@ -28,9 +28,77 @@ rules:
       - intent: out_of_scope
       - action: action_out_of_scope
 
-  - rule: tanya detail ngaben
+  # simple questions: a template answer from the KB, no LLM (a question the template cannot take
+  # goes on to action_graph_rag inside the action)
+  - rule: tanya definisi
     steps:
-      - intent: ask_ngaben_detail
+      - intent: tanya_definisi
+      - action: action_jawab_template
+
+  - rule: tanya makna
+    steps:
+      - intent: tanya_makna
+      - action: action_jawab_template
+
+  - rule: tanya fungsi
+    steps:
+      - intent: tanya_fungsi
+      - action: action_jawab_template
+
+  - rule: tanya jenis
+    steps:
+      - intent: tanya_jenis
+      - action: action_jawab_template
+
+  - rule: tanya tahapan
+    steps:
+      - intent: tanya_tahapan
+      - action: action_jawab_template
+
+  - rule: tanya komponen
+    steps:
+      - intent: tanya_komponen
+      - action: action_jawab_template
+
+  - rule: tanya sarana
+    steps:
+      - intent: tanya_sarana
+      - action: action_jawab_template
+
+  - rule: tanya lokasi
+    steps:
+      - intent: tanya_lokasi
+      - action: action_jawab_template
+
+  - rule: tanya waktu
+    steps:
+      - intent: tanya_waktu
+      - action: action_jawab_template
+
+  - rule: tanya pelaku
+    steps:
+      - intent: tanya_pelaku
+      - action: action_jawab_template
+
+  - rule: tanya sebutan lain
+    steps:
+      - intent: tanya_sebutan_lain
+      - action: action_jawab_template
+
+  - rule: tanya asal kata
+    steps:
+      - intent: tanya_asal_kata
+      - action: action_jawab_template
+
+  - rule: tanya bagian dari
+    steps:
+      - intent: tanya_bagian_dari
+      - action: action_jawab_template
+
+  # everything else: the LLM pipeline (its code answers first, then Qwen on Groq)
+  - rule: tanya kompleks
+    steps:
+      - intent: tanya_kompleks
       - action: action_graph_rag
 
   - rule: fallback nlu

@@ -2,8 +2,10 @@
 # pin on that package, including Rasa 3.6.1's own.
 # Rasa pins pyyaml==5.4.1, which no longer builds.
 pyyaml>=6.0.1
-# langchain-core >= 1.6 (answers via Ollama) needs pydantic 2 and a newer packaging than Rasa 3.6.1
-# allows (pydantic<1.10.10, packaging<21); without these two the install stops with "No solution
-# found". These are the versions the working venv runs (checked 2026-10-12, Tier B passing).
+# The versions the working venv runs, above Rasa 3.6.1's pins (pydantic<1.10.10, packaging<21).
+# They were needed by langchain-core (answers via Ollama, until 2026-10-13); nothing needs them now
+# -- without them the install resolves to pydantic 1.10.9 / packaging 20.9 -- but every regression
+# run was made on these, so a fresh install gets the same. Drop both only after Tier B passes on a
+# fresh venv without them.
 pydantic==2.13.5
 packaging==21.3

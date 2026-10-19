@@ -69,8 +69,12 @@ PREDICATE_FAMILIES: Dict[str, set] = {
         "PASANGAN_DARI", "SAKTI_DARI", "MENGEMBALIKAN_UNSUR_KE",
         # literal-only links promoted to edges (2026-10-02)
         "DISERTAI_KEMBALINYA_UNSUR_BADAN_KE", "MERUPAKAN_TAHAP_MENCAPAI", "MENUNJUKKAN_JALAN_ATMA_KE",
+        # "ngaben adalah kewajiban suci (swadharma)", corpus L650/L653/L680 (NLU sweep 2026-10-19)
+        "MERUPAKAN_KEWAJIBAN",
     },
     "lokasi": {
+        # "bangbang rare menjadi tempat pemakaman khusus bayi pada upacara ngelungah" (2026-10-19)
+        "MENJADI_TEMPAT_PEMAKAMAN_PADA",
         "DILETAKKAN_DI", "DILETAKKAN_PADA", "DILETAKKAN_DI_ATAS", "DILETAKKAN_MELINTANG_DI",
         "BERADA_DI", "DILAKUKAN_DI", "DIBUAT_DI", "DIADAKAN_DI", "DIHANYUTKAN_KE", "DIBAWA_KE",
         "DINAIKKAN_KE", "DIPINDAHKAN_KE", "DIPINDAHKAN_DARI", "DITURUNKAN_DI",
@@ -99,6 +103,9 @@ PREDICATE_FAMILIES: Dict[str, set] = {
         "DIHINDARI_UNTUK", "DIHITUNG_BERDASARKAN", "DILAKSANAKAN_BERSAMA", "DILAKSANAKAN_SETELAH",
         "DIPLASPAS_BERSAMA", "DIPUJA_PADA", "MENSYARATKAN", "MERUPAKAN_HARI_PELAKSANAAN",
         "SEPULUH_HARI_SETELAH",
+        # the one order predicate missing here (2026-10-14): "kapan nyiramang layon" lost "ngulapin
+        # diikuti oleh nyiramang layon" and "... diikuti oleh pangringkes"
+        "DIIKUTI_OLEH",
     },
     # the offerings / equipment a ceremony or stage uses (sarana upacara)
     "sarana": {
@@ -112,7 +119,7 @@ PREDICATE_FAMILIES: Dict[str, set] = {
     "pelaku": {
         "DILAKUKAN_OLEH", "DIPIMPIN_OLEH", "DIMOHONKAN_OLEH", "DIJUNJUNG_OLEH",
         "DIBUAT_OLEH", "DIMANTRAI_OLEH", "DIBASMI_OLEH", "DIUSUNG", "DIJUNJUNG",
-        "DIAJAK_BERKOMUNIKASI_OLEH", "MENDAPAT_PENGARUH_DARI", "DIMOHON_DARI",
+        "DIAJAK_BERKOMUNIKASI_OLEH", "DIMOHON_DARI",
         "DIMOHONKAN_DARI", "DIAMBIL_OLEH", "DIPANGKU_OLEH", "DILAKUKAN_ANTARA",
         # added 2026-09-30
         "DIBERIKAN_OLEH", "DIGUNAKAN_OLEH", "DIPERUNTUKKAN_BAGI", "DITENTUKAN_OLEH", "HADIR_DALAM",
@@ -136,6 +143,9 @@ PREDICATE_FAMILIES: Dict[str, set] = {
         "MENYERAHTERIMAKAN",
         # "ngaben merupakan salah satu tahap untuk mencapai moksa" (2026-10-02)
         "MERUPAKAN_TAHAP_MENCAPAI",
+        # "ngaben adalah kewajiban suci (swadharma)": "apakah ngaben wajib" got "Ya" argued from tirta
+        # pangentas, the only rule in its context (NLU sweep 2026-10-19)
+        "MERUPAKAN_KEWAJIBAN",
     },
     "ciri": {
         "BERWARNA", "MEMILIKI_TINGKAT", "BERUKURAN_PANJANG", "SEPANJANG", "BERBENTUK",
@@ -146,6 +156,9 @@ PREDICATE_FAMILIES: Dict[str, set] = {
         "BERBEDA_DENGAN", "BERGANTUNG_PADA", "BERLAKU_UNTUK", "BERLAWANAN_DENGAN",
         "DILAKUKAN_TANPA", "MENGANUT", "MILIK_DARI", "TANPA", "TIDAK_MEMILIKI", "TIDAK_TERPENGARUH",
         "WARGA_DARI",
+        # influenced by: a trait, not a doer -- in pelaku it answered "Bali Dataran dilakukan oleh siapa" with
+        # "Bali dataran mendapat pengaruh dari tradisi hindu-majapahit" (NLU sweep 2026-10-19)
+        "MENDAPAT_PENGARUH_DARI",
         # "kakawin ditulis dalam bahasa kawi" (2026-10-02)
         "DITULIS_DALAM",
     },
@@ -308,14 +321,16 @@ class KbContent:
 
     def inherited_parts(self, entity_id: str) -> tuple:
         """(parent_id, parts) of the nearest kind-parent that has parts, for an item with none of
-        its own: tirtha pamlaspas is a kind of tirtha, which is made of air. (None, []) if none."""
+        its own: tirtha pamlaspas is a kind of tirtha, which is made of air. (None, []) if none.
+        Not a parent that has the item among its own parts: those are the item's siblings -- pura
+        desa, a kind and a part of pura kahyangan tiga, was "made of" pura puseh and pura dalem."""
         if self.composition_parts(entity_id) or self.is_raw(entity_id):
             return None, []
         frontier = set(self.kind_parents.get(entity_id, set()))
         for _ in range(3):
             for parent in sorted(frontier):
                 parts = self.composition_parts(parent)
-                if parts:
+                if parts and all(p["id"] != entity_id for p in parts):
                     return parent, parts
             frontier = set().union(*(self.kind_parents.get(x, set()) for x in frontier)) if frontier else set()
         return None, []

@@ -29,21 +29,6 @@
 }
 
 {
-  "subject_id": "banten",
-  "subject_name": "banten",
-  "predicate": "TIDAK_MENJAMIN",
-  "object_id": "sorga",
-  "object_name": "sorga",
-  "confidence": "HIGH",
-  "nl": "banten tidak menjamin sorga",
-  "raw_relation": "TIDAK_MENJAMIN",
-  "provenance": {
-    "sentence_id": 133,
-    "context_sentence": "sebab bukan upakara yang besar dan megah yang menjamin manusia saat meninggalnya kelak akan secara otomatis mendapatkan sorga (amoring acintya), akan tetapi karma wasananyalah yang akan menuntun dan menentukan kelak di kemudian hari saat meninggalnya."
-  }
-}
-
-{
   "subject_id": "ngaben",
   "subject_name": "ngaben",
   "predicate": "BERDASARKAN",
@@ -92,10 +77,10 @@
   "subject_id": "layon",
   "subject_name": "layon",
   "predicate": "DILETAKKAN_DI",
-  "object_id": "saka_roras",
-  "object_name": "saka roras",
+  "object_id": "bale_gede",
+  "object_name": "bale gede",
   "confidence": "HIGH",
-  "nl": "layon diletakkan di saka roras",
+  "nl": "layon diletakkan di bale gede",
   "raw_relation": "DILETAKKAN_DI",
   "provenance": {
     "sentence_id": 215,
@@ -307,21 +292,6 @@
   "confidence": "MED",
   "nl": "raçadana sama dengan ngaben svasta",
   "raw_relation": "SAMA_DENGAN",
-  "provenance": {
-    "sentence_id": 271,
-    "context_sentence": "adapun atiwa-tiwa yang tergolong dalam ngaben svasta adalah raçadana atau tirta yadnya pranawa, yakni sawa diganti dengan simbol tirtha (toyo çarira), sedangkan tata pelaksanaannya sama dengan atiwa-tiwa asti vedana — mulai dari matur piuning ke pura dalem, pembakaran, hingga nganyut, dan dilanjutkan dengan upacara sebagaimana mestinya hingga upacara ngelinggihang dewa hyang."
-  }
-}
-
-{
-  "subject_id": "sawa",
-  "subject_name": "sawa",
-  "predicate": "DIGANTI_DENGAN",
-  "object_id": "simbol_tirtha",
-  "object_name": "simbol tirtha",
-  "confidence": "MED",
-  "nl": "sawa diganti dengan simbol tirtha",
-  "raw_relation": "DIGANTI_DENGAN",
   "provenance": {
     "sentence_id": 271,
     "context_sentence": "adapun atiwa-tiwa yang tergolong dalam ngaben svasta adalah raçadana atau tirta yadnya pranawa, yakni sawa diganti dengan simbol tirtha (toyo çarira), sedangkan tata pelaksanaannya sama dengan atiwa-tiwa asti vedana — mulai dari matur piuning ke pura dalem, pembakaran, hingga nganyut, dan dilanjutkan dengan upacara sebagaimana mestinya hingga upacara ngelinggihang dewa hyang."
@@ -619,7 +589,7 @@
   "predicate": "DIHITUNG_BERDASARKAN",
   "object_id": "hitungan_galar",
   "object_name": "hitungan galar",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "pepaga dihitung berdasarkan hitungan galar",
   "raw_relation": "TERBUAT_DARI",
   "provenance": {
@@ -634,7 +604,7 @@
   "predicate": "DIHITUNG_BERDASARKAN",
   "object_id": "hitungan_galir",
   "object_name": "hitungan galir",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "pepaga dihitung berdasarkan hitungan galir",
   "raw_relation": "TERBUAT_DARI",
   "provenance": {
@@ -649,7 +619,7 @@
   "predicate": "DIHITUNG_BERDASARKAN",
   "object_id": "hitungan_galur",
   "object_name": "hitungan galur",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "pepaga dihitung berdasarkan hitungan galur",
   "raw_relation": "TERBUAT_DARI",
   "provenance": {
@@ -664,7 +634,7 @@
   "predicate": "DIHITUNG_BERDASARKAN",
   "object_id": "hitungan_likah",
   "object_name": "hitungan likah",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "pepaga dihitung berdasarkan hitungan likah",
   "raw_relation": "TERBUAT_DARI",
   "provenance": {
@@ -679,7 +649,7 @@
   "predicate": "DIHITUNG_BERDASARKAN",
   "object_id": "hitungan_wangke",
   "object_name": "hitungan wangke",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "pepaga dihitung berdasarkan hitungan wangke",
   "raw_relation": "TERBUAT_DARI",
   "provenance": {
@@ -694,7 +664,7 @@
   "predicate": "DIHITUNG_BERDASARKAN",
   "object_id": "hitungan_wangkong",
   "object_name": "hitungan wangkong",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "pepaga dihitung berdasarkan hitungan wangkong",
   "raw_relation": "TERBUAT_DARI",
   "provenance": {
@@ -929,21 +899,6 @@
 }
 
 {
-  "subject_id": "banten",
-  "subject_name": "banten",
-  "predicate": "DIPERSEMBAHKAN_KEPADA",
-  "object_id": "sulinggih_utawi_pinandita",
-  "object_name": "sulinggih utawi pinandita",
-  "confidence": "MED",
-  "nl": "banten dipersembahkan kepada sulinggih utawi pinandita",
-  "raw_relation": "DIPERSEMBAHKAN_KEPADA",
-  "provenance": {
-    "sentence_id": 633,
-    "context_sentence": "banten pengajeng sulinggih utawi pinandita."
-  }
-}
-
-{
   "subject_id": "puspa_asti",
   "subject_name": "puspa asti",
   "predicate": "DIHANCURKAN_DI",
@@ -1075,21 +1030,6 @@
   "provenance": {
     "sentence_id": 961,
     "context_sentence": "sawa itu kemudian dibungkus dengan kain putih dan diikat dengan benang leleson, dibelit sebelas kali dari hulu ke kaki."
-  }
-}
-
-{
-  "subject_id": "tirtha",
-  "subject_name": "tirtha",
-  "predicate": "DIMOHON_DARI",
-  "object_id": "sulinggih",
-  "object_name": "sulinggih",
-  "confidence": "HIGH",
-  "nl": "tirtha dimohon dari sulinggih",
-  "raw_relation": "DIMOHON_DARI",
-  "provenance": {
-    "sentence_id": 970,
-    "context_sentence": "tentu saja tirtha tersebut dimohon dari seorang sulinggih menurut tata cara betapa mestinya."
   }
 }
 
@@ -1229,36 +1169,6 @@
 }
 
 {
-  "subject_id": "kain_putih",
-  "subject_name": "kain putih",
-  "predicate": "DIKENAL_SEBAGAI",
-  "object_id": "leluhur_langit_langit_tandu",
-  "object_name": "leluhur langit-langit tandu",
-  "confidence": "HIGH",
-  "nl": "kain putih dikenal sebagai leluhur langit-langit tandu",
-  "raw_relation": "DISEBUT",
-  "provenance": {
-    "sentence_id": 1058,
-    "context_sentence": "di atas pepaga itu dipasang secarik kain putih selaku \"leluhur\" atau langit-langit tandu tersebut."
-  }
-}
-
-{
-  "subject_id": "kain_putih",
-  "subject_name": "kain putih",
-  "predicate": "DIPASANG_DI_ATAS",
-  "object_id": "pepaga",
-  "object_name": "pepaga",
-  "confidence": "HIGH",
-  "nl": "kain putih dipasang di atas pepaga",
-  "raw_relation": "DIPASANG_DI_ATAS",
-  "provenance": {
-    "sentence_id": 1058,
-    "context_sentence": "di atas pepaga itu dipasang secarik kain putih selaku \"leluhur\" atau langit-langit tandu tersebut."
-  }
-}
-
-{
   "subject_id": "jenazah",
   "subject_name": "jenazah",
   "predicate": "DIPINDAHKAN_KE",
@@ -1300,21 +1210,6 @@
   "provenance": {
     "sentence_id": 1082,
     "context_sentence": "jenazah yang masih tetap di atas pepaga itu, kemudian dikenakan baju serta disuguhi sajen kecil yang disebut pengulapan."
-  }
-}
-
-{
-  "subject_id": "jenazah",
-  "subject_name": "jenazah",
-  "predicate": "DIKENAL_SEBAGAI",
-  "object_id": "masekeh",
-  "object_name": "masekeh",
-  "confidence": "HIGH",
-  "nl": "jenazah dikenal sebagai masekeh",
-  "raw_relation": "DIKENAL_SEBAGAI",
-  "provenance": {
-    "sentence_id": 1123,
-    "context_sentence": "jenazah bisa disebut masekeh, bila telah berada minimal satu bulan, pernah dilewati bulan purnama dan tilem, serta upacaranya sudah memenuhi syarat."
   }
 }
 
@@ -1429,7 +1324,7 @@
   "predicate": "DILETAKKAN_DI",
   "object_id": "lubang_tempat_penguburan",
   "object_name": "lubang tempat penguburan",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "sawa diletakkan di lubang tempat penguburan",
   "raw_relation": "DILETAKKAN_DI",
   "provenance": {
@@ -1559,13 +1454,13 @@
 }
 
 {
-  "subject_id": "ngaben",
-  "subject_name": "ngaben",
+  "subject_id": "ngaben_cara_yama_purwana_tatwa",
+  "subject_name": "ngaben cara yama purwana tatwa",
   "predicate": "MENSYARATKAN",
   "object_id": "sawa",
   "object_name": "sawa",
   "confidence": "MED",
-  "nl": "ngaben mensyaratkan sawa",
+  "nl": "ngaben cara yama purwana tatwa mensyaratkan sawa",
   "raw_relation": "DITUJUKAN_UNTUK",
   "provenance": {
     "sentence_id": 1409,
@@ -1756,11 +1651,11 @@
 {
   "subject_id": "adegan",
   "subject_name": "adegan",
-  "predicate": "DIUSUNG",
+  "predicate": "DIBAWA_KE",
   "object_id": "setra",
   "object_name": "setra",
-  "confidence": "MED",
-  "nl": "adegan diusung setra",
+  "confidence": "HIGH",
+  "nl": "adegan dibawa ke setra",
   "raw_relation": "DIUSUNG",
   "provenance": {
     "sentence_id": 1514,
@@ -2129,13 +2024,13 @@
 }
 
 {
-  "subject_id": "lontar",
-  "subject_name": "lontar",
+  "subject_id": "lontar_putru",
+  "subject_name": "lontar putru",
   "predicate": "MERINCI",
   "object_id": "pitra",
   "object_name": "pitra",
-  "confidence": "MED",
-  "nl": "lontar merinci pitra",
+  "confidence": "HIGH",
+  "nl": "lontar putru merinci pitra",
   "raw_relation": "MERINCI",
   "provenance": {
     "sentence_id": 1854,
@@ -2731,11 +2626,11 @@
 {
   "subject_id": "sekah_sangge",
   "subject_name": "sekah sangge",
-  "predicate": "BAGIAN_DARI",
+  "predicate": "TERMASUK_JENIS",
   "object_id": "sekah",
   "object_name": "sekah",
   "confidence": "MED",
-  "nl": "sekah sangge adalah bagian dari sekah",
+  "nl": "sekah sangge termasuk salah satu jenis sekah",
   "raw_relation": "JENIS_DARI",
   "provenance": {
     "sentence_id": 2748,
@@ -2836,11 +2731,11 @@
 {
   "subject_id": "sekah_sangge",
   "subject_name": "sekah sangge",
-  "predicate": "BAGIAN_DARI",
+  "predicate": "TERMASUK_JENIS",
   "object_id": "sekah",
   "object_name": "sekah",
   "confidence": "HIGH",
-  "nl": "sekah sangge adalah bagian dari sekah",
+  "nl": "sekah sangge termasuk salah satu jenis sekah",
   "raw_relation": "JENIS_DARI",
   "provenance": {
     "sentence_id": 2794,
@@ -3554,21 +3449,6 @@
 }
 
 {
-  "subject_id": "bale",
-  "subject_name": "bale",
-  "predicate": "TERBUAT_DARI",
-  "object_id": "galar",
-  "object_name": "galar",
-  "confidence": "HIGH",
-  "nl": "bale terbuat dari galar",
-  "raw_relation": "TERBUAT_DARI",
-  "provenance": {
-    "sentence_id": 3333,
-    "context_sentence": "bale ini terbuat dari bambu dan galar nya juga terdiri dari bilah-bilah bambu berjumlah sebanyak 9 (sembilan) buah."
-  }
-}
-
-{
   "subject_id": "galar",
   "subject_name": "galar",
   "predicate": "TERDIRI_DARI",
@@ -3724,7 +3604,7 @@
   "predicate": "DILETAKKAN_DI",
   "object_id": "tangan_jenazah",
   "object_name": "tangan jenazah",
-  "confidence": "MED",
+  "confidence": "HIGH",
   "nl": "kawangen diletakkan di tangan jenazah",
   "raw_relation": "DIISI_DENGAN",
   "provenance": {
@@ -3737,10 +3617,10 @@
   "subject_id": "jenazah",
   "subject_name": "jenazah",
   "predicate": "DIPERCIKI_DAN_DIMINUMKAN",
-  "object_id": "tirtha",
-  "object_name": "tirtha",
-  "confidence": "HIGH",
-  "nl": "jenazah diperciki dan diminumkan tirtha",
+  "object_id": "tirtha_betara_hyang",
+  "object_name": "tirtha betara hyang",
+  "confidence": "MED",
+  "nl": "jenazah diperciki dan diminumkan tirtha betara hyang",
   "raw_relation": "DIPERCIKI_DAN_DIMINUMKAN",
   "provenance": {
     "sentence_id": 3547,
@@ -3749,13 +3629,13 @@
 }
 
 {
-  "subject_id": "tirtha",
-  "subject_name": "tirtha",
+  "subject_id": "tirtha_betara_hyang",
+  "subject_name": "tirtha betara hyang",
   "predicate": "BERASAL_DARI",
   "object_id": "bhetara_hyang_guru",
   "object_name": "bhetara hyang guru",
-  "confidence": "HIGH",
-  "nl": "tirtha berasal dari bhetara hyang guru",
+  "confidence": "MED",
+  "nl": "tirtha betara hyang berasal dari bhetara hyang guru",
   "raw_relation": "BERASAL_DARI",
   "provenance": {
     "sentence_id": 3547,
@@ -3902,21 +3782,6 @@
   "subject_id": "kawangen",
   "subject_name": "kawangen",
   "predicate": "BERISI",
-  "object_id": "bunga_tunjung_putih",
-  "object_name": "bunga tunjung putih",
-  "confidence": "MED",
-  "nl": "kawangen berisi bunga tunjung putih",
-  "raw_relation": "BERISI",
-  "provenance": {
-    "sentence_id": 3747,
-    "context_sentence": "di hulu hati, diisi sebuah kawangen yang berisi 9 biji uang kepeng dan bunga tunjung putih."
-  }
-}
-
-{
-  "subject_id": "kawangen",
-  "subject_name": "kawangen",
-  "predicate": "BERISI",
   "object_id": "uang_kepeng",
   "object_name": "uang kepeng",
   "confidence": "MED",
@@ -3936,21 +3801,6 @@
   "object_name": "uang kepeng",
   "confidence": "MED",
   "nl": "kawangen berisi uang kepeng",
-  "raw_relation": "BERISI",
-  "provenance": {
-    "sentence_id": 3753,
-    "context_sentence": "di kedua lutut kaki, diisi masing-masing kawangen yang berisi 5 biji uang kepeng dan pusuh bunga cempaka kuning."
-  }
-}
-
-{
-  "subject_id": "kawangen",
-  "subject_name": "kawangen",
-  "predicate": "BERISI",
-  "object_id": "pusuh_bunga_cempaka_kuning",
-  "object_name": "pusuh bunga cempaka kuning",
-  "confidence": "MED",
-  "nl": "kawangen berisi pusuh bunga cempaka kuning",
   "raw_relation": "BERISI",
   "provenance": {
     "sentence_id": 3753,
@@ -4139,21 +3989,6 @@
 }
 
 {
-  "subject_id": "bale_bale",
-  "subject_name": "bale-bale",
-  "predicate": "DILETAKKAN_DI",
-  "object_id": "pura",
-  "object_name": "pura",
-  "confidence": "HIGH",
-  "nl": "bale-bale diletakkan di pura",
-  "raw_relation": "DILETAKKAN_DI",
-  "provenance": {
-    "sentence_id": 3845,
-    "context_sentence": "cekur, kata \"cekur\" artinya bertembang, maka \"galar\" yang ketekannya jatuh pada \"cekur\", maka bale-bale tersebut sangat baik ditaruh di pura atau di merajan, karena diharapkan kepada setiap yang menduduki bale-bale tersebut timbul keinginannya untuk bertembang seperti makidung atau makekawin, yang sesuai dengan tempatnya di tempat suci."
-  }
-}
-
-{
   "subject_id": "jenazah",
   "subject_name": "jenazah",
   "predicate": "BERADA_DI",
@@ -4214,13 +4049,13 @@
 }
 
 {
-  "subject_id": "tirtha",
-  "subject_name": "tirtha",
+  "subject_id": "tirta_panglukatan",
+  "subject_name": "tirta panglukatan",
   "predicate": "DIPAKAI_UNTUK",
   "object_id": "adegan",
   "object_name": "adegan",
   "confidence": "HIGH",
-  "nl": "tirtha dipakai untuk adegan",
+  "nl": "tirta panglukatan dipakai untuk adegan",
   "raw_relation": "DIPAKAI_UNTUK",
   "provenance": {
     "sentence_id": 4062,
@@ -4229,13 +4064,13 @@
 }
 
 {
-  "subject_id": "tirtha",
-  "subject_name": "tirtha",
+  "subject_id": "tirta_panglukatan",
+  "subject_name": "tirta panglukatan",
   "predicate": "DIPAKAI_UNTUK",
   "object_id": "banten",
   "object_name": "banten",
   "confidence": "HIGH",
-  "nl": "tirtha dipakai untuk banten",
+  "nl": "tirta panglukatan dipakai untuk banten",
   "raw_relation": "DIPAKAI_UNTUK",
   "provenance": {
     "sentence_id": 4062,
@@ -4244,13 +4079,13 @@
 }
 
 {
-  "subject_id": "tirtha",
-  "subject_name": "tirtha",
+  "subject_id": "tirta_panglukatan",
+  "subject_name": "tirta panglukatan",
   "predicate": "DIPAKAI_UNTUK",
   "object_id": "ngalukat",
   "object_name": "ngalukat",
   "confidence": "HIGH",
-  "nl": "tirtha dipakai untuk ngalukat",
+  "nl": "tirta panglukatan dipakai untuk ngalukat",
   "raw_relation": "DIPAKAI_UNTUK",
   "provenance": {
     "sentence_id": 4062,
@@ -4349,13 +4184,13 @@
 }
 
 {
-  "subject_id": "tirtha",
-  "subject_name": "tirtha",
+  "subject_id": "tirtha_kawitan",
+  "subject_name": "tirtha kawitan",
   "predicate": "DIMOHONKAN_OLEH",
   "object_id": "pemangku_kawitan_setempat",
   "object_name": "pemangku kawitan setempat",
-  "confidence": "HIGH",
-  "nl": "tirtha dimohonkan oleh pemangku kawitan setempat",
+  "confidence": "MED",
+  "nl": "tirtha kawitan dimohonkan oleh pemangku kawitan setempat",
   "raw_relation": "DIMOHONKAN_OLEH",
   "provenance": {
     "sentence_id": 4105,
@@ -4424,13 +4259,13 @@
 }
 
 {
-  "subject_id": "tirtha",
-  "subject_name": "tirtha",
+  "subject_id": "tirtha_kahyangan_tiga",
+  "subject_name": "tirtha kahyangan tiga",
   "predicate": "DIMOHONKAN_OLEH",
   "object_id": "pemangku",
   "object_name": "pemangku",
   "confidence": "HIGH",
-  "nl": "tirtha dimohonkan oleh pemangku",
+  "nl": "tirtha kahyangan tiga dimohonkan oleh pemangku",
   "raw_relation": "DIMOHONKAN_OLEH",
   "provenance": {
     "sentence_id": 4110,
@@ -4441,11 +4276,11 @@
 {
   "subject_id": "pura_kahyangan_tiga",
   "subject_name": "pura kahyangan tiga",
-  "predicate": "BERFUNGSI_SEBAGAI",
+  "predicate": "BERKAITAN_DENGAN",
   "object_id": "pralina",
   "object_name": "pralina",
   "confidence": "HIGH",
-  "nl": "pura kahyangan tiga berfungsi sebagai pralina",
+  "nl": "pura kahyangan tiga berkaitan dengan pralina",
   "raw_relation": "BERFUNGSI_SEBAGAI",
   "provenance": {
     "sentence_id": 4112,
@@ -4456,11 +4291,11 @@
 {
   "subject_id": "pura_kahyangan_tiga",
   "subject_name": "pura kahyangan tiga",
-  "predicate": "BERFUNGSI_SEBAGAI",
+  "predicate": "BERKAITAN_DENGAN",
   "object_id": "sthiti",
   "object_name": "sthiti",
-  "confidence": "HIGH",
-  "nl": "pura kahyangan tiga berfungsi sebagai sthiti",
+  "confidence": "MED",
+  "nl": "pura kahyangan tiga berkaitan dengan sthiti",
   "raw_relation": "BERFUNGSI_SEBAGAI",
   "provenance": {
     "sentence_id": 4112,
@@ -4471,11 +4306,11 @@
 {
   "subject_id": "pura_kahyangan_tiga",
   "subject_name": "pura kahyangan tiga",
-  "predicate": "BERFUNGSI_SEBAGAI",
+  "predicate": "BERKAITAN_DENGAN",
   "object_id": "utpeti",
   "object_name": "utpeti",
-  "confidence": "HIGH",
-  "nl": "pura kahyangan tiga berfungsi sebagai utpeti",
+  "confidence": "MED",
+  "nl": "pura kahyangan tiga berkaitan dengan utpeti",
   "raw_relation": "BERFUNGSI_SEBAGAI",
   "provenance": {
     "sentence_id": 4112,
@@ -5476,15 +5311,15 @@
 {
   "subject_id": "bangbang_rare",
   "subject_name": "bangbang rare",
-  "predicate": "DIGUNAKAN_DALAM",
+  "predicate": "MENJADI_TEMPAT_PEMAKAMAN_PADA",
   "object_id": "upacara_ngelungah",
   "object_name": "upacara ngelungah",
   "confidence": "HIGH",
-  "nl": "bangbang rare digunakan dalam upacara ngelungah",
-  "raw_relation": "DIGUNAKAN_DALAM",
+  "nl": "bangbang rare menjadi tempat pemakaman khusus bayi pada upacara ngelungah",
+  "raw_relation": "MENJADI_TEMPAT_PEMAKAMAN_PADA",
   "provenance": {
     "sentence_id": 900073,
-    "context_sentence": "Bangbang Rare: tempat pemakaman khusus untuk bayi/anak pada Upacara Ngelungah. [entitas pra-ada, definisi glosarium; audit semantik 2026-09-23]"
+    "context_sentence": "Bangbang Rare: tempat pemakaman khusus untuk bayi/anak pada Upacara Ngelungah. [entitas pra-ada, definisi glosarium; audit semantik 2026-09-23] [2026-10-19: was DIGUNAKAN_DALAM -- a place, not a sarana: 'bahan upacara ngelungah apa saja' listed it as a material]"
   }
 }
 
@@ -7079,13 +6914,13 @@
 }
 
 {
-  "subject_id": "pranawa",
-  "subject_name": "pranawa",
+  "subject_id": "pangabenan_jenis_pranawa",
+  "subject_name": "pangabenan jenis pranawa",
   "predicate": "DILAKUKAN_TANPA",
   "object_id": "sawa",
   "object_name": "sawa",
   "confidence": "HIGH",
-  "nl": "pranawa dilakukan tanpa sawa",
+  "nl": "pangabenan jenis pranawa dilakukan tanpa sawa",
   "raw_relation": "DILAKUKAN_TANPA",
   "provenance": {
     "sentence_id": 900184,
@@ -7667,10 +7502,10 @@
   "subject_id": "wariga",
   "subject_name": "wariga",
   "predicate": "MENENTUKAN",
-  "object_id": "dewasa_madya",
-  "object_name": "dewasa madya",
-  "confidence": "HIGH",
-  "nl": "wariga menentukan dewasa madya",
+  "object_id": "dewasa_ngaben",
+  "object_name": "dewasa ngaben",
+  "confidence": "MED",
+  "nl": "wariga menentukan dewasa ngaben",
   "raw_relation": "MENENTUKAN",
   "provenance": {
     "sentence_id": 900224,
@@ -9149,13 +8984,13 @@
 }
 
 {
-  "subject_id": "tirtha",
-  "subject_name": "tirtha",
+  "subject_id": "tirtha_betara_hyang",
+  "subject_name": "tirtha betara hyang",
   "predicate": "DIMOHONKAN_DI",
   "object_id": "pamrajan",
   "object_name": "pamrajan",
-  "confidence": "HIGH",
-  "nl": "tirtha dimohonkan di pamrajan",
+  "confidence": "MED",
+  "nl": "tirtha betara hyang dimohonkan di pamrajan",
   "raw_relation": "DIMOHONKAN_DI",
   "provenance": {
     "sentence_id": 900323,
@@ -9959,13 +9794,13 @@
 }
 
 {
-  "subject_id": "saka_roras",
-  "subject_name": "saka roras",
+  "subject_id": "bale_gede",
+  "subject_name": "bale gede",
   "predicate": "TERMASUK_JENIS",
   "object_id": "bale",
   "object_name": "bale",
   "confidence": "HIGH",
-  "nl": "saka roras termasuk salah satu jenis bale",
+  "nl": "bale gede termasuk salah satu jenis bale",
   "raw_relation": "TERMASUK_JENIS",
   "provenance": {
     "sentence_id": 900409,
@@ -14234,21 +14069,6 @@
 }
 
 {
-  "subject_id": "kawangen",
-  "subject_name": "kawangen",
-  "predicate": "BERISI",
-  "object_id": "pusuh_bunga_cempaka_putih",
-  "object_name": "pusuh bunga cempaka putih",
-  "confidence": "HIGH",
-  "nl": "kawangen berisi pusuh bunga cempaka putih",
-  "raw_relation": "BERISI",
-  "provenance": {
-    "sentence_id": 900694,
-    "context_sentence": "[kurasi sarana 2026-09-30] L3241: Di kedua siku tangan, diisi masing-masing sebuah Kawangen yang berisi 5 biji uang kepeng dan Pusuh Bunga Cempaka Putih."
-  }
-}
-
-{
   "subject_id": "kayu_dapdap",
   "subject_name": "kayu dapdap",
   "predicate": "DIGUNAKAN_DALAM",
@@ -16949,21 +16769,6 @@
 }
 
 {
-  "subject_id": "babelonyoh",
-  "subject_name": "babelonyoh",
-  "predicate": "DIGUNAKAN_DALAM",
-  "object_id": "atma_wedana",
-  "object_name": "atma wedana",
-  "confidence": "HIGH",
-  "nl": "babelonyoh digunakan dalam atma wedana",
-  "raw_relation": "DIGUNAKAN_DALAM",
-  "provenance": {
-    "sentence_id": 900875,
-    "context_sentence": "[kurasi sarana 2026-09-30] tetandingan upakara Ngaben (L338-547) / definisi istilah"
-  }
-}
-
-{
   "subject_id": "rayunan",
   "subject_name": "rayunan",
   "predicate": "DIGUNAKAN_DALAM",
@@ -18300,10 +18105,10 @@
   "subject_id": "pepaga",
   "subject_name": "pepaga",
   "predicate": "DILENGKAPI",
-  "object_id": "leluhur_langit_langit_tandu",
-  "object_name": "leluhur langit-langit tandu",
+  "object_id": "leluwur",
+  "object_name": "leluwur",
   "confidence": "HIGH",
-  "nl": "pepaga dilengkapi leluhur langit-langit tandu",
+  "nl": "pepaga dilengkapi leluwur",
   "raw_relation": "DILENGKAPI",
   "provenance": {
     "sentence_id": 900965,
@@ -18342,13 +18147,13 @@
 }
 
 {
-  "subject_id": "leluhur_langit_langit_tandu",
-  "subject_name": "leluhur langit-langit tandu",
+  "subject_id": "leluwur",
+  "subject_name": "leluwur",
   "predicate": "TERBUAT_DARI",
   "object_id": "kain_putih",
   "object_name": "kain putih",
   "confidence": "HIGH",
-  "nl": "leluhur langit-langit tandu terbuat dari kain putih",
+  "nl": "leluwur terbuat dari kain putih",
   "raw_relation": "TERBUAT_DARI",
   "provenance": {
     "sentence_id": 900968,
@@ -22233,48 +22038,6 @@
 }
 
 {
-  "subject_id": "dulang",
-  "subject_name": "dulang",
-  "predicate": "TERBUAT_DARI",
-  "object_id": "bambu",
-  "object_name": "bambu",
-  "confidence": "HIGH",
-  "nl": "variasi (sebagian perajin): dulang memakai bambu sebagai pengganti kayu",
-  "raw_relation": "TERBUAT_DARI",
-  "provenance": {
-    "sentence_id": 901226,
-    "context_sentence": "[web sarana 2026-10-02] https://bali.antaranews.com/berita/311646/geliat-kerajinan-dulang-berbahan-fiber-di-kabupaten-gianyar-bali : \"Dulang biasanya terbuat dari kayu, bambu, rotan, atau kuningan.\""
-  },
-  "variant": {
-    "region": "sebagian perajin",
-    "op": "ganti",
-    "replaces": "kayu",
-    "source": "https://bali.antaranews.com/berita/311646/geliat-kerajinan-dulang-berbahan-fiber-di-kabupaten-gianyar-bali"
-  }
-}
-
-{
-  "subject_id": "dulang",
-  "subject_name": "dulang",
-  "predicate": "TERBUAT_DARI",
-  "object_id": "rotan",
-  "object_name": "rotan",
-  "confidence": "HIGH",
-  "nl": "variasi (sebagian perajin): dulang memakai rotan sebagai pengganti kayu",
-  "raw_relation": "TERBUAT_DARI",
-  "provenance": {
-    "sentence_id": 901227,
-    "context_sentence": "[web sarana 2026-10-02] https://bali.antaranews.com/berita/311646/geliat-kerajinan-dulang-berbahan-fiber-di-kabupaten-gianyar-bali : \"Dulang biasanya terbuat dari kayu, bambu, rotan, atau kuningan.\""
-  },
-  "variant": {
-    "region": "sebagian perajin",
-    "op": "ganti",
-    "replaces": "kayu",
-    "source": "https://bali.antaranews.com/berita/311646/geliat-kerajinan-dulang-berbahan-fiber-di-kabupaten-gianyar-bali"
-  }
-}
-
-{
   "subject_id": "gelar_sanga",
   "subject_name": "gelar sanga",
   "predicate": "BERISI",
@@ -25204,5 +24967,2204 @@
   "provenance": {
     "sentence_id": 901423,
     "context_sentence": "Seperti telah disebutkan diatas bahwa Tirtha Pangentas merupakan Tirtha yang terpenting dalam upacara Pengabenan, karena tanpa Tirtha Pangentas maka Pengabenan itu dianggap belum dilaksanakan. (corpus L3987; the LITERAL row of sentence 4336 'pengabenan tanpa tirtha pangentas -> belum dilaksanakan' never became an edge)"
+  }
+}
+
+{
+  "subject_id": "patulangan",
+  "subject_name": "patulangan",
+  "predicate": "BERBENTUK",
+  "object_id": "lembu",
+  "object_name": "lembu",
+  "confidence": "HIGH",
+  "nl": "patulangan berbentuk lembu",
+  "raw_relation": "BERBENTUK",
+  "provenance": {
+    "sentence_id": 901424,
+    "context_sentence": "Demikianlah ada para ahli yang berhipotesa bahwa wujud Patulangan menunjukkan kecenderungan bekas sekte tersebut. Misalnya, keluarga-keluarga yang dalam pangabenannya bertradisi menggunakan Patulangan berwujud lembu, membuktikan bahwa leluhur keluarga bersangkutan berasal dari pemeluk Sekte Shiwa, baik apapun juga jenis warganya (Brahmana, Ksatria dsb). Patulangan yang berbentuk Naga Kahang dan Gajah Mina (yakni binatang yang biasa hidup di air), adalah pertanda bahwa mereka merupakan keturunan dari orang yang condong pada paksa Wesnawa. Sedang Patulangan yang berbentuk macan, singa, gadarba (beruang) dan binatang buas lainnya adalah ciri paksa Brahmanisme. (corpus L1611; lembu had no link to patulangan or any rite) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "angenan",
+  "subject_name": "angenan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sawa_wedana",
+  "object_name": "sawa wedana",
+  "confidence": "HIGH",
+  "nl": "angenan digunakan dalam sawa wedana",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901425,
+    "context_sentence": "Pada ngaben jenis Sawa Wedana ini, bersamaan dengan Angenan, Damar Kurung pun ikut dinyalakan. (corpus L1319) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "angenan",
+  "subject_name": "angenan",
+  "predicate": "DIPLASPAS_BERSAMA",
+  "object_id": "kajang",
+  "object_name": "kajang",
+  "confidence": "HIGH",
+  "nl": "angenan diplaspas bersama kajang",
+  "raw_relation": "DIPLASPAS_BERSAMA",
+  "provenance": {
+    "sentence_id": 901426,
+    "context_sentence": "Demikianlah setelah selesai dipuja pada pamlaspasan dengan penuh khidmat, kajang itu diletakkan di atas paplengkungan jenazah, sebagaimana telah disinggung di depan. Bersamaan dengan mlaspas dan peletakan kajang, diplaspas pulalah alat-alat upakara yang diberi nama Angenan, Pisang Jati, Panguryagan, Sok Cegceg, Damar Kurung dan Adegan. (corpus L1298) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "eteh_eteh",
+  "subject_name": "eteh-eteh",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "object_name": "nyiramang layon",
+  "confidence": "HIGH",
+  "nl": "eteh-eteh digunakan dalam nyiramang layon",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901427,
+    "context_sentence": "Sebelum memandikan jenazah, ada beberapa hal yang perlu dipersiapkan: ... Eteh-eteh sawa, berupa kain putih untuk saput, kamben, tapih, sabuk, udeng, pangulungan, angkeb rai, angkeb baga/purus, leluwur, dan tatindih (biasanya dimohonkan dari sulinggih/griya); kain putih untuk bantal berisi pis bolong 11 kepeng; kain kuning untuk saput atau selendang; rantasan kain putih kuning dan kain anyar; serta samsam, bunga, dan kwangen. (corpus L195, L197; listed under 'Sebelum memandikan jenazah ... dipersiapkan') -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "eteh_eteh",
+  "subject_name": "eteh-eteh",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pangringkes",
+  "object_name": "pangringkes",
+  "confidence": "HIGH",
+  "nl": "eteh-eteh digunakan dalam pangringkes",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901428,
+    "context_sentence": "Dalam pelaksanaan pengeringkesan, saat meletakkan eteh-eteh layon sesuai peruntukannya, disertai dengan pengucapan mantra sebagai berikut: (corpus L281) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "ante",
+  "subject_name": "ante",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pangringkes",
+  "object_name": "pangringkes",
+  "confidence": "HIGH",
+  "nl": "ante digunakan dalam pangringkes",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901429,
+    "context_sentence": "Bambu, persiapan bambu ini sangat penting karena akan banyak kegunaannya misalnya untuk membuat pepaga/asagan (bale-bale) untuk tempat penyiraman layon, membuat tali dan ante (bagi yang menggunakan ante, atau untuk mayat yang diaben Ngewangun. Ante digunakan untuk ngeringkes jenazah (sawa), Namun di beberapa tempat khususnya di Denpasar penggunaan Ante ini sudah jarang ditemukan, kecuali upacara Ngaben Ngewangun. (corpus L2447) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "bale_pamuunan",
+  "subject_name": "bale pamuunan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "object_name": "pabasmian",
+  "confidence": "HIGH",
+  "nl": "bale pamuunan digunakan dalam pabasmian",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901430,
+    "context_sentence": "Bentuk Bale Pamuunan benar-benar lucu. (corpus L1705; ditancapkan pada empat sudut tempat pembakaran) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "bale_salunglung",
+  "subject_name": "bale salunglung",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "object_name": "pabasmian",
+  "confidence": "HIGH",
+  "nl": "bale salunglung digunakan dalam pabasmian",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901431,
+    "context_sentence": "Tampaknya pada Bale Salunglung tidak dilakukan upacara dan tidak diberi upakara apapun juga. Tetapi pada waktu pembakaran (bahkan sejak jenazah tiba di kuburan) alat-alat upakara tertentu dihimpun pada Bale Salunglung. (corpus L1690) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "banten_teben",
+  "subject_name": "banten teben",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "tarpana",
+  "object_name": "tarpana",
+  "confidence": "HIGH",
+  "nl": "banten teben digunakan dalam tarpana",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901432,
+    "context_sentence": "Saji Tarpana termasuk pengayaban Banten Teben tersebut, diiringi sembah bhakti (muspa) segenap keluarga. (corpus L1376; section 'Saji Tarpana dan Muspa' (L1367)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "banten_teben",
+  "subject_name": "banten teben",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pangabenan_jenis_pranawa",
+  "object_name": "pangabenan jenis pranawa",
+  "confidence": "HIGH",
+  "nl": "banten teben digunakan dalam pangabenan jenis pranawa",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901433,
+    "context_sentence": "Upakara dan jenis sajennya sangat sederhana hampir sama dengan Swasta Gni, namun dengan tambahan Pisang Jati, banten Teben dan pamuspaan sederhana. (corpus L1919; section 'Pranawa' (L1913)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "pisang_jati",
+  "subject_name": "pisang jati",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pangabenan_jenis_pranawa",
+  "object_name": "pangabenan jenis pranawa",
+  "confidence": "HIGH",
+  "nl": "pisang jati digunakan dalam pangabenan jenis pranawa",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901434,
+    "context_sentence": "Upakara dan jenis sajennya sangat sederhana hampir sama dengan Swasta Gni, namun dengan tambahan Pisang Jati, banten Teben dan pamuspaan sederhana. (corpus L1919; section 'Pranawa' (L1913)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "pisang_jati",
+  "subject_name": "pisang jati",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sawa_wedana",
+  "object_name": "sawa wedana",
+  "confidence": "HIGH",
+  "nl": "pisang jati digunakan dalam sawa wedana",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901435,
+    "context_sentence": "Kajang, Angenan, Pisang Jati, Panguryagan dan lain-lain terutama Adegan, telah siap pakai karena telah hidup dan suci secara religius oleh upacara Pamlaspas. (corpus L1334; section 'Sawa Wedana' (L1179)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "beras_catur",
+  "subject_name": "beras catur",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben_cara_yama_purwana_tatwa",
+  "object_name": "ngaben cara yama purwana tatwa",
+  "confidence": "HIGH",
+  "nl": "beras catur digunakan dalam ngaben cara yama purwana tatwa",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901436,
+    "context_sentence": "Kemudian di dada sawa diletakkan sebuah daksina dan beras catur (empat jenis beras: putih, merah, kuning dan hitam) masing-masing menurut arahnya. Beras catur adalah lambang kekuatan Panca Dewata selaku manifestasi Hyang Widhi yang mengelola alam semesta (bhuwana agung). (corpus L1128; section 'Yama Purwana Tatwa' (L1093)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "para_para_tempat_pembakaran",
+  "subject_name": "para-para tempat pembakaran",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben_cara_yama_purwana_tatwa",
+  "object_name": "ngaben cara yama purwana tatwa",
+  "confidence": "HIGH",
+  "nl": "para-para tempat pembakaran digunakan dalam ngaben cara yama purwana tatwa",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901437,
+    "context_sentence": "Setibanya di setra, dibaringkanlah sawa itu di atas para-para pembakaran. Pangringkes dibuka hingga tubuh sawa tampak, kemudian disiram dengan toya penembak. Kemudian secara formal sawa diberi pakaian selengkapnya. (corpus L1122; section 'Yama Purwana Tatwa' (L1093)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "para_para_tempat_pembakaran",
+  "subject_name": "para-para tempat pembakaran",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "upacara_ngaben_titip",
+  "object_name": "upacara ngaben titip",
+  "confidence": "HIGH",
+  "nl": "para-para tempat pembakaran digunakan dalam upacara ngaben titip",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901438,
+    "context_sentence": "Setelah tiba di setra, sawa diletakkan di atas lubang tempat penguburan atau di atas para-para tempat pembakarannya nanti. (corpus L964; section 'Menitip Sawa dan Upacaranya' (L907)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "lubang_tempat_penguburan",
+  "subject_name": "lubang tempat penguburan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "upacara_ngaben_titip",
+  "object_name": "upacara ngaben titip",
+  "confidence": "HIGH",
+  "nl": "lubang tempat penguburan digunakan dalam upacara ngaben titip",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901439,
+    "context_sentence": "Setelah tiba di setra, sawa diletakkan di atas lubang tempat penguburan atau di atas para-para tempat pembakarannya nanti. (corpus L964; section 'Menitip Sawa dan Upacaranya' (L907)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "tirtha_pangentas_atiwa_tiwa",
+  "subject_name": "tirtha pangentas atiwa-tiwa",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben_cara_yama_purwana_tatwa",
+  "object_name": "ngaben cara yama purwana tatwa",
+  "confidence": "HIGH",
+  "nl": "tirtha pangentas atiwa-tiwa digunakan dalam ngaben cara yama purwana tatwa",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901440,
+    "context_sentence": "Tirtha terakhir yang disiratkan yakni Tirtha Pangentas Atiwa-tiwa/pengabenan, yakni tirtha yang dilengkapi Walantaga dengan Kakitirnya. (corpus L1125; section 'Yama Purwana Tatwa' (L1093)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "celebongkekan",
+  "subject_name": "celebongkekan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben",
+  "object_name": "ngaben",
+  "confidence": "HIGH",
+  "nl": "celebongkekan digunakan dalam ngaben",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901441,
+    "context_sentence": "Api tersebut akan ditempatkan pada sebuah tempat yang terbuat dari bekas tempurung kelapa muda (celebongkekan) dan ditancapkan kayu dap-dap pada tempurung kelapa tersebut untuk pegangan, sedangkan api tersebut disebut \"Api Tabunan\" yang harus dibawa paling di muka dari iringan jenazah ke setra.. (corpus L2580) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "bukur",
+  "subject_name": "bukur",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "mamukur",
+  "object_name": "mamukur",
+  "confidence": "HIGH",
+  "nl": "bukur digunakan dalam mamukur",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901442,
+    "context_sentence": "Demikianlah sangge, yang hanya digunakan dalam Patileman tingkat Mamukur dan Sekah Kurung saja. Dalam upacara Memukur digunakanlah menara usungan yang bernama Bukur, untuk mengarak abu mendiang nanti di kala menghanyutkan ke laut. Tentu saja jenis sajen Mamukur lebih mewah dari pada yang Sekah Kurung. (corpus L2136) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "cili",
+  "subject_name": "cili",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "adegan",
+  "object_name": "adegan",
+  "confidence": "HIGH",
+  "nl": "cili adalah bagian dari adegan",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901443,
+    "context_sentence": "Adegan yaitu suatu bentuk alat upakara yang terbuat dari daun rontal, beralaskan bakul kecil atau pangkon (paso kecil agak tinggi dari tanah atau perak). Muka adegan berbentuk cili (kipas), ditempeli kertas serta diisi prerai dari papan cendana tipis yang dilukis muka wayang pria atau wanita sesuai dengan jenis kelamin mendiang. Di dalam adegan ini, atma atau roh mendiang dipersilakan untuk bertahta. (corpus L1158; muka adegan berbentuk cili) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "ilih",
+  "subject_name": "ilih",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "manah_tirtha_ening",
+  "object_name": "manah tirtha ening",
+  "confidence": "HIGH",
+  "nl": "ilih digunakan dalam manah tirtha ening",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901444,
+    "context_sentence": "Selain panah, juga diarak sebuah ilih, yakni kipas khusus dari anyaman bambu yang diberi gambar wayang Anoman atau garuda. (corpus L1250; section 'Manah Tirtha Ening' (L1241)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "kakawin",
+  "subject_name": "kakawin",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben_svasta",
+  "object_name": "ngaben svasta",
+  "confidence": "HIGH",
+  "nl": "kakawin digunakan dalam ngaben svasta",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901445,
+    "context_sentence": "Sawa ini dibakar dengan khusuknya, diiringi dengan kakawin yang khas dengan penuh bhakti, hingga hangus jadi abu seluruhnya. (corpus L1170; section 'Nywasta atau Recadana' (L1140)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "kakawin",
+  "subject_name": "kakawin",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sawa_wedana",
+  "object_name": "sawa wedana",
+  "confidence": "HIGH",
+  "nl": "kakawin digunakan dalam sawa wedana",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901446,
+    "context_sentence": "Mereka mengalunkan kidung atau kakawin dengan nada syahdu. (corpus L1271; section 'Sawa Wedana' (L1179)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "kidung",
+  "subject_name": "kidung",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "object_name": "nyiramang layon",
+  "confidence": "HIGH",
+  "nl": "kidung digunakan dalam nyiramang layon",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901447,
+    "context_sentence": "Sebelum jenazah diusung ke tempat pemandian, terlebih dahulu diadakan upacara Nanginin, yaitu membangunkan almarhum seperti halnya membangunkan orang yang sedang tidur, dengan memanggil namanya dan mengucapkan kata-kata dengan lemah lembut serta memberitahukan untuk segera dimandikan — lebih baik lagi disertai kekidungan yang berhubungan dengan Kidung Pitra Yadnya. (corpus L210) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "kidung",
+  "subject_name": "kidung",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sawa_wedana",
+  "object_name": "sawa wedana",
+  "confidence": "HIGH",
+  "nl": "kidung digunakan dalam sawa wedana",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901448,
+    "context_sentence": "Mereka mengalunkan kidung atau kakawin dengan nada syahdu. (corpus L1271; section 'Sawa Wedana' (L1179)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "ngangkid",
+  "subject_name": "ngangkid",
+  "predicate": "DILAKUKAN_DI",
+  "object_id": "kuburan",
+  "object_name": "kuburan",
+  "confidence": "HIGH",
+  "nl": "ngangkid dilakukan di kuburan",
+  "raw_relation": "DILAKUKAN_DI",
+  "provenance": {
+    "sentence_id": 901449,
+    "context_sentence": "Bila telah siap dilakukan upacara, maka kuburan dibongkar dan diambil tulang belulangnya. (corpus L145) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "panca_datu",
+  "subject_name": "panca datu",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabersihan",
+  "object_name": "pabersihan",
+  "confidence": "HIGH",
+  "nl": "panca datu digunakan dalam pabersihan",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901450,
+    "context_sentence": "Di samping sarana upakara yang lain, pada saat masesalin ini disisipkan sebuah bungkusan kecil berisi Panca Datu ke mulut sawa. Apa Panca Datu itu? Panca Datu ini mempunyai daya mistik-religius, untuk memohon kepada Hyang Widhi dalam manifestasi sebagai Panca Dewata (Içwara, Brahma, Mahadewa, Wisnu dan Siwa) yang mengatur Bhuwana Agung ini, supaya unsur jasad dari mendiang kembali dengan baik ke dalam lingkungan Bhuwana Agung, dengan tidak menyebabkan letehnya alam raya-Nya ini. (corpus L1235; section 'Pabersihan atau Pasucian' (L1217)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "pengawak",
+  "subject_name": "pengawak",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben_svasta",
+  "object_name": "ngaben svasta",
+  "confidence": "HIGH",
+  "nl": "pengawak digunakan dalam ngaben svasta",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901451,
+    "context_sentence": "Di samping itu, disiapkan pula dua buah alat upakara yang paling penting yaitu, sebuah adegan dan sebuah pengawak. ... Adapun pengawak atau disebut juga awak-awakaning sawa yakni suatu \"badan\" sebagai pengganti jasadnya mendiang. Pengawak terdiri dari sebuah jun pere (periuk tanah yang kecil/masih merah) berisikan air, 54 atau 108 lembar daun alang-alang serta sembilan batang kayu cendana kecil-kecil (sebesar batang korek api). (corpus L1155, L1161; section 'Nywasta atau Recadana' (L1140)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "pengawak",
+  "subject_name": "pengawak",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben",
+  "object_name": "ngaben",
+  "confidence": "HIGH",
+  "nl": "pengawak digunakan dalam ngaben",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901452,
+    "context_sentence": "Jadi bila dilihat dari wujud sasarannya, upacara Ngaben ada dua jenis, yakni yang masawa atau mawatang alias ada jenazahnya secara nyata, dan ada yang menggunakan pengawak dengan memakai suatu benda sebagai lambang badan. (corpus L1009) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "ngulapin",
+  "subject_name": "ngulapin",
+  "predicate": "DILAKUKAN_DI",
+  "object_id": "pura_mrajapti",
+  "object_name": "pura mrajapti",
+  "confidence": "HIGH",
+  "nl": "ngulapin dilakukan di pura mrajapti",
+  "raw_relation": "DILAKUKAN_DI",
+  "provenance": {
+    "sentence_id": 901453,
+    "context_sentence": "Dilanjutkan dengan upacara Ngulapin di Pura Merajapati. (corpus L148) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "puspa_asti",
+  "subject_name": "puspa asti",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nganyut",
+  "object_name": "nganyut",
+  "confidence": "HIGH",
+  "nl": "puspa asti digunakan dalam nganyut",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901454,
+    "context_sentence": "Upacara ini dilakukan setelah semua hasil pembakaran mayat dikumpulkan dan dibentuk menjadi Puspa Asti. (corpus L273; section '9. Nganyut' (L272)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "simbol_tirtha",
+  "subject_name": "simbol tirtha",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "tirta_yadnya_pranawa",
+  "object_name": "tirta yadnya pranawa",
+  "confidence": "HIGH",
+  "nl": "simbol tirtha digunakan dalam tirta yadnya pranawa",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901455,
+    "context_sentence": "Adapun atiwa-tiwa yang tergolong dalam Ngaben Svasta adalah Raçadana atau Tirta Yadnya Pranawa, yakni sawa diganti dengan simbol tirtha (toyo çarira), sedangkan tata pelaksanaannya sama dengan atiwa-tiwa Asti Vedana — mulai dari matur piuning ke Pura Dalem, pembakaran, hingga nganyut, dan dilanjutkan dengan upacara sebagaimana mestinya hingga upacara Ngelinggihang Dewa Hyang. (corpus L155) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "tabunan",
+  "subject_name": "tabunan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sawa_wedana",
+  "object_name": "sawa wedana",
+  "confidence": "HIGH",
+  "nl": "tabunan digunakan dalam sawa wedana",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901456,
+    "context_sentence": "Di dekat Banten Teben (sajen yang ada dekat kaki jenazah) terdapatlah sebuah tabunan, yakni bara yang disekap dengan sekam dalam paso. Tabunan, tentu saja perlu ditindih supaya apinya tidak menyala bila ditiup angin. Pada pangabenan Sawa Wedana, kepala kerbaulah yang digunakan sebagai penindih. (corpus L1525) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "takir",
+  "subject_name": "takir",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "object_name": "nyiramang layon",
+  "confidence": "HIGH",
+  "nl": "takir digunakan dalam nyiramang layon",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901457,
+    "context_sentence": "Daun Dapdap, daun dapdap ini dihaluskan dan diisi air sedikit, kemudian ditaruh di atas takir, gunanya adalah untuk sampo pencuci rambut (keramas) bagi jenazah ketika upacara Nyiramang Layon. (corpus L2468) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "tandu",
+  "subject_name": "tandu",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben",
+  "object_name": "ngaben",
+  "confidence": "HIGH",
+  "nl": "tandu digunakan dalam ngaben",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901458,
+    "context_sentence": "Angenan, Adegan, Pisang-jati, Panguryagan, dan lain-lain dapat dan biasa dijunjung atau dipangku di atas tandu oleh putra-putri remaja keluarga bersangkutan. (corpus L1810; section 'Tata Pemberangkatan' (L1804)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "tumpang_salu",
+  "subject_name": "tumpang salu",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyekeh",
+  "object_name": "nyekeh",
+  "confidence": "HIGH",
+  "nl": "tumpang salu digunakan dalam nyekeh",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901459,
+    "context_sentence": "Setelah selesai ngringkes, sawa dinaikkan di tumpang salu di rumah adat. (corpus L900) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "tumpang_salu",
+  "subject_name": "tumpang salu",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "asti_wedana",
+  "object_name": "asti wedana",
+  "confidence": "HIGH",
+  "nl": "tumpang salu digunakan dalam asti wedana",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901460,
+    "context_sentence": "Tegteg diletakkan di atas bungkusan tulang belulang tersebut, lalu diupacarai sebagaimana layaknya sawa utuh, selanjutnya tegteg ditempatkan di Tumpang Salu. (corpus L151; section 'B. Asti Vedana' (L144)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "kajang",
+  "subject_name": "kajang",
+  "predicate": "DILENGKAPI",
+  "object_id": "ukur",
+  "object_name": "ukur",
+  "confidence": "HIGH",
+  "nl": "kajang dilengkapi ukur",
+  "raw_relation": "DILENGKAPI",
+  "provenance": {
+    "sentence_id": 901461,
+    "context_sentence": "Bagian dari upacara Pabersihan selanjutnya, adalah Mlaspas Kajang. Kajang atau Kakerebsari adalah nama sebuah alat upakara yang pelik dalam Pangabenan ini. Pada kajang diletakkan pula sebuah ukur, yakni uang kepeng atau lempengan logam (emas/perak) yang dirangkai dengan benang, yang bentuknya bagaikan tubuh manusia. (corpus L1268) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "bale_gede",
+  "subject_name": "bale gede",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pangringkes",
+  "object_name": "pangringkes",
+  "confidence": "HIGH",
+  "nl": "bale gede digunakan dalam pangringkes",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901462,
+    "context_sentence": "Setelah upacara Nyiraman, layon digulung dengan kain putih selanjutnya diletakkan di Bale Gede / Saka Roras atau tempat yang diperuntukkan untuk itu. ... Selanjutnya dipasang itik-itik pada ibu jari tangan dan kaki, jenazah digulung dengan tikar dan kain yang telah dirajah, diakhiri dengan lante dari bambu, lalu dimasukkan ke dalam slepa/peti dan ditempatkan pada Bale Gede/Sakaroras atau tempat yang disiapkan, dengan posisi kepala ke utara atau ke timur. (corpus L128, L214; saka roras merged into bale gede the same day) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "prasawya",
+  "subject_name": "prasawya",
+  "predicate": "DILAKUKAN_DI",
+  "object_id": "persimpangan_jalan",
+  "object_name": "persimpangan jalan",
+  "confidence": "HIGH",
+  "nl": "prasawya dilakukan di persimpangan jalan",
+  "raw_relation": "DILAKUKAN_DI",
+  "provenance": {
+    "sentence_id": 901463,
+    "context_sentence": "Pada tiap persimpangan jalan dilakukan pemutaran atau mesirig sebanyak tiga kali berlawanan arah jarum jam (prasawya), sebagai simbol perpisahan antara yang akan dipelebon dengan desa pakraman. (corpus L131) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "tirtha_ening",
+  "subject_name": "tirtha ening",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "manah_tirtha_ening",
+  "object_name": "manah tirtha ening",
+  "confidence": "HIGH",
+  "nl": "tirtha ening digunakan dalam manah tirtha ening",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901464,
+    "context_sentence": "Itulah antara lain yang dibawa dalam acara memanah Tirtha Ening, yang dilakukan pada awal dari hari Pabersihan. (corpus L1253) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "tirtha_gangga",
+  "subject_name": "tirtha gangga",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirta_pangentas",
+  "object_name": "tirta pangentas",
+  "confidence": "HIGH",
+  "nl": "tirtha gangga diperlukan untuk membuat tirta pangentas",
+  "raw_relation": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "provenance": {
+    "sentence_id": 901465,
+    "context_sentence": "Dengan dilaksanakannya Patanganan atau Mudra tersebut maka Ida Sang Sulinggih telah selesai membuat Tirtha Pangentas, Demikianlah urutan-urutan pembuatan Tirtha Pangentas yang dasarnya adalah dari Tirtha Gangga yang terlebih dulu di turunkan (di argha) oleh Ida Sang Sulinggih. (corpus L3962) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "tirtha_kahyangan_tiga",
+  "subject_name": "tirtha kahyangan tiga",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben",
+  "object_name": "ngaben",
+  "confidence": "HIGH",
+  "nl": "tirtha kahyangan tiga digunakan dalam ngaben",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901466,
+    "context_sentence": "Tirtha Kahyangan Tiga ini dapat dimohon dari Pura Desa, Pura Puseh, Pura Dalem, Pura Mrajapti, karena dalam upacara Ngaben belumlah lengkap tanpa Tirtha Kahyangan Tiga dimana tempat orang yang meninggal itu berada. (corpus L3709) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "tirtha_kawitan",
+  "subject_name": "tirtha kawitan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben",
+  "object_name": "ngaben",
+  "confidence": "HIGH",
+  "nl": "tirtha kawitan digunakan dalam ngaben",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901467,
+    "context_sentence": "Tirtha Kawitan ini dapat dimohon dari Merajan Kawitan atau Merajan Pusat dari orang yang meninggal. (corpus L3705; chapter 'FUNGSI TIRTHA PENGENTAS DALAM UPACARA NGABEN' (L3672)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "daksina_tapakan",
+  "subject_name": "daksina tapakan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "object_name": "atma wedana",
+  "confidence": "HIGH",
+  "nl": "daksina tapakan digunakan dalam atma wedana",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901468,
+    "context_sentence": "Yakni, bukan saja dari orang (keluarga atau banjar dan sebagainya), melainkan pula Bhatara Bhatari yang semula diupacarai Patileman ikut disertakan menjadi subjek mamedek ke Pamrajan Sang Sulinggih serta ke pura bersangkutan. Untuk itu, baginya dibuatlah Daksina Tapakan (selaku dan simbolnya). Berapapun banyaknya Pitra yang diupacarai Patileman sepanjang mereka masih tergolong sekeluarga tunggalan pamrajan, baginya hanya dibuat maksimal dua buah Daksina Tapakan saja, masing-masing untuk Bhatara dan Bhatari. (corpus L2308; Patileman = Atma Wedana) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "daksina_tapakan",
+  "subject_name": "daksina tapakan",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngajar_ajar",
+  "object_name": "ngajar-ajar",
+  "confidence": "HIGH",
+  "nl": "daksina tapakan digunakan dalam ngajar-ajar",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901469,
+    "context_sentence": "Demikianlah, sekembali dari Ngajar-ajar serta Nyegara Gunung ini, Daksina Tapakan dibakar di natar Pamrajan. Dan dengan ini berakhirlah sudah Ngajar-ajar dan Nyagara Gunung selaku penutupan dari upacara Patileman, Atma Wedana, Mamukur atau Nyekah. (corpus L2323; section 'Ngajar-ajar' (L2293)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "sajen_surya",
+  "subject_name": "sajen surya",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngaben",
+  "object_name": "ngaben",
+  "confidence": "HIGH",
+  "nl": "sajen surya digunakan dalam ngaben",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901470,
+    "context_sentence": "Pering dibuat berpasang-pasangan sebagai perlambang purusa-pradana dan diletakkan selaku penambah bobot, nilai dan asri bagaikan mahkotanya pada sajen untuk Surya, Penebusan, Pamerasan, Banten Teben dan sebagainya. (corpus L1537) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "sanggar_surya_baligia",
+  "subject_name": "sanggar surya baligia",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "atma_wedana",
+  "object_name": "atma wedana",
+  "confidence": "HIGH",
+  "nl": "sanggar surya baligia digunakan dalam atma wedana",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901471,
+    "context_sentence": "Tentu saja sajen-sajen pada upacara jenis ini jauh lebih banyak serta lebih tinggi kualitasnya dibanding dengan Atma Wedana macam terdahulu. Sanggar Surya Baligia mempunyai tiga buah ruang, dengan segala akibat lanjutannya. (corpus L2142; section 'Ngajum dan Pangutpetian' (L2115)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "langse",
+  "subject_name": "langse",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyekeh",
+  "object_name": "nyekeh",
+  "confidence": "HIGH",
+  "nl": "langse digunakan dalam nyekeh",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901472,
+    "context_sentence": "Kemudian langse kembali ditutup untuk mengurung jenazah seperti semula. (corpus L864) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "sekah_abin",
+  "subject_name": "sekah abin",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "tarpana",
+  "object_name": "tarpana",
+  "confidence": "HIGH",
+  "nl": "sekah abin digunakan dalam tarpana",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901473,
+    "context_sentence": "Tentu saja sebuah banten Bebangkit atau Pulagembal selaku dasarnya, serta sebuah Sekah Abin sebagai ciri khususnya. Sebagaimana namanya, Sekah Abin ini dipangku (abin = dipangku) oleh yang menggelar yadnya di kala ia menghaturkan sembah bhakti. (corpus L1379; section 'Saji Tarpana dan Muspa' (L1367)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "banten_pamegat",
+  "subject_name": "banten pamegat",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "acara_maktining_layon",
+  "object_name": "acara maktining layon",
+  "confidence": "HIGH",
+  "nl": "banten pamegat digunakan dalam acara maktining layon",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901474,
+    "context_sentence": "Yaitu sebuah banten pamegat yang nantinya dipergunakan pada waktu acara maktining layon setelah upacara Pabresihan Hidup, namun sebelum upacara Pabresihan Mati (ngelelet). (corpus L2577) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "benang_tridatu",
+  "subject_name": "benang tridatu",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "mapegat",
+  "object_name": "mapegat",
+  "confidence": "HIGH",
+  "nl": "benang tridatu digunakan dalam mapegat",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901475,
+    "context_sentence": "Sajen yang berintikan sebuah Segehan Agung lengkap dengan sebuah lentera kecil, rentangan benang tridatu di antara dua batang cabang dapdap yang dipancangkan, siap menanti. (corpus L1780; section 'Mapepegat' (L1777)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "uang_kepeng",
+  "subject_name": "uang kepeng",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "mapegat",
+  "object_name": "mapegat",
+  "confidence": "HIGH",
+  "nl": "uang kepeng digunakan dalam mapegat",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901476,
+    "context_sentence": "Pada benang tersebut tertusuk dan digantungkan sejumlah uang kepeng. (corpus L1780; section 'Mapepegat' (L1777)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "kayu_dapdap",
+  "subject_name": "kayu dapdap",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "mapegat",
+  "object_name": "mapegat",
+  "confidence": "HIGH",
+  "nl": "kayu dapdap digunakan dalam mapegat",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901477,
+    "context_sentence": "Sebuah lagi upacara yang biasa dilakukan menjelang sawa diantar ke tempat pembakaran, yakni Mapepegat. Upacara yang bermakna perpisahan ini, dilakukan di depan bale adat, pada natar yang akan dilalui oleh sawa bersangkutan pada pemberangkatannya nanti. Sajen yang berintikan sebuah Segehan Agung lengkap dengan sebuah lentera kecil, rentangan benang tridatu di antara dua batang cabang dapdap yang di (corpus L1780; dua batang cabang dapdap; section 'Mapepegat' (L1777)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "acara_maktining_layon",
+  "subject_name": "acara maktining layon",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "nyiramang_layon",
+  "object_name": "nyiramang layon",
+  "confidence": "HIGH",
+  "nl": "acara maktining layon adalah bagian dari nyiramang layon",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901478,
+    "context_sentence": "Yaitu sebuah banten pamegat yang nantinya dipergunakan pada waktu acara maktining layon setelah upacara Pabresihan Hidup, namun sebelum upacara Pabresihan Mati (ngelelet). (corpus L2577; between pabersihan hidup and pabersihan mati, both stages of nyiramang layon) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "acara_maktining_layon",
+  "subject_name": "acara maktining layon",
+  "predicate": "DILAKUKAN_SETELAH",
+  "object_id": "pabersihan_hidup",
+  "object_name": "pabersihan hidup",
+  "confidence": "HIGH",
+  "nl": "acara maktining layon dilakukan setelah pabersihan hidup",
+  "raw_relation": "DILAKUKAN_SETELAH",
+  "provenance": {
+    "sentence_id": 901479,
+    "context_sentence": "Yaitu sebuah banten pamegat yang nantinya dipergunakan pada waktu acara maktining layon setelah upacara Pabresihan Hidup, namun sebelum upacara Pabresihan Mati (ngelelet). (corpus L2577) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "mamutru",
+  "subject_name": "mamutru",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "pabersihan",
+  "object_name": "pabersihan",
+  "confidence": "HIGH",
+  "nl": "mamutru adalah bagian dari pabersihan",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901480,
+    "context_sentence": "Ada lagi sebuah acara yang dilakukan pada hari Pabersihan, yaitu Mamutru. Mamutru tentu saja asal katanya \"putru\" dan merupakan perubahan dari kata \"pitra\". (corpus L1448) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "paguntingan",
+  "subject_name": "paguntingan",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "pabersihan",
+  "object_name": "pabersihan",
+  "confidence": "HIGH",
+  "nl": "paguntingan adalah bagian dari pabersihan",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901481,
+    "context_sentence": "Paguntingan dan Upadesa ... Begitulah setelah Paguntingan dan Upadesa, berakhirnya, kembalilah Adegan didudukkan pada ruang paturon di samping jenazah. (corpus L1343, L1364; section 'Paguntingan dan Upadesa' inside 'Pabersihan atau Pasucian' (L1217)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "upadesa",
+  "subject_name": "upadesa",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "pabersihan",
+  "object_name": "pabersihan",
+  "confidence": "HIGH",
+  "nl": "upadesa adalah bagian dari pabersihan",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901482,
+    "context_sentence": "Berangkaian dengan acara Paguntingan, diteruskanlah dengan acara Upadesa. Dengan Pujastawa selaku pengantarnya, terutama dengan kemampuan jnyananya yang suci, sang pendeta pun memberikan Upadesa (\"pawisik wara warah\") atau amanat petunjuk jalan kepada atma mendiang, betapa seyogyanya dia membawa diri di alam lain itu. (corpus L1355; section 'Paguntingan dan Upadesa' inside 'Pabersihan atau Pasucian' (L1217)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "penebusan",
+  "subject_name": "penebusan",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "pabersihan",
+  "object_name": "pabersihan",
+  "confidence": "HIGH",
+  "nl": "penebusan adalah bagian dari pabersihan",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901483,
+    "context_sentence": "Menyambung upacara Pamerasan maka di gelarlah upacara Panebusan. (corpus L1415; section 'Panebusan'; Pamerasan, which it follows, is part of Pabersihan) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "pengerikan_kuku",
+  "subject_name": "pengerikan kuku",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "pabersihan_mati",
+  "object_name": "pabersihan mati",
+  "confidence": "HIGH",
+  "nl": "pengerikan kuku adalah bagian dari pabersihan mati",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901484,
+    "context_sentence": "Pengerikan kuku mutlak dilakukan pada waktu upacara \"Melelet\" (Pabersihan Mati), dan tidak boleh dilakukan pada saat \"Pabersihan Hidup\" yang telah dilaksanakan sebelumnya. (corpus L3033) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "nanginin",
+  "subject_name": "nanginin",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "nyiramang_layon",
+  "object_name": "nyiramang layon",
+  "confidence": "HIGH",
+  "nl": "nanginin adalah bagian dari nyiramang layon",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901485,
+    "context_sentence": "Sebelum jenazah diusung ke tempat pemandian, terlebih dahulu diadakan upacara Nanginin, yaitu membangunkan almarhum seperti halnya membangunkan orang yang sedang tidur, dengan memanggil namanya dan mengucapkan kata-kata dengan lemah lembut serta memberitahukan untuk segera dimandikan — lebih baik lagi disertai kekidungan yang berhubungan dengan Kidung Pitra Yadnya. (corpus L210; step 1 of 'E. Memandikan Jenazah' (L208)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "pengutangan",
+  "subject_name": "pengutangan",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "ngaben",
+  "object_name": "ngaben",
+  "confidence": "HIGH",
+  "nl": "pengutangan adalah bagian dari ngaben",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901486,
+    "context_sentence": "Biasanya dewasa untuk Nyiramang Layon maupun upacara Pengutangan (membawa jenazah ke Setra) akan dilaksanakan setelah mendapat persetujuan dari Jro Bendesa Adat atau Jro Klian Adat. (corpus L2710) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "persembahyangan",
+  "subject_name": "persembahyangan",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "ngaben",
+  "object_name": "ngaben",
+  "confidence": "HIGH",
+  "nl": "persembahyangan adalah bagian dari ngaben",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901487,
+    "context_sentence": "Berakhir diadakan persembahyangan dan mapegat. (corpus L107) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "upacara_mesulub",
+  "subject_name": "upacara mesulub",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "ngaben",
+  "object_name": "ngaben",
+  "confidence": "HIGH",
+  "nl": "upacara mesulub adalah bagian dari ngaben",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901488,
+    "context_sentence": "Di beberapa Desa di daerah Bali, ada yang memiliki suatu tradisi \"Upacara Mesulub\" yaitu suatu upacara berjalan (melakukan terobosan) di bawah jenazah, dan dilaksanakan ketika jenazah sudah selesai melaksanakan Upacara Ngeringkes (membungkus jenazah). Upacara Mesulub hanyalah merupakan suatu kepercayaan setempat (kepercayaan lokal) yang telah diwarisi turun temurun dari sejak jaman dulu di daerah atau Desa setempat. Disamping itu \"Upacara Mesulub\" adalah merupakan konsep \"Satya\" atau kesetiaan. (corpus L3338) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "wawu_lampus",
+  "subject_name": "wawu lampus",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "ngaben",
+  "object_name": "ngaben",
+  "confidence": "HIGH",
+  "nl": "wawu lampus adalah bagian dari ngaben",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901489,
+    "context_sentence": "Secara umum, apabila orang baru saja meninggal dunia (Wawu Lampus), baik itu meninggal di Rumah sakit maupun di rumah sendiri, maka akan diadakan pembersihan atau memandikan jenazah tersebut. (corpus L2422) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "ngajum",
+  "subject_name": "ngajum",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "atma_wedana",
+  "object_name": "atma wedana",
+  "confidence": "HIGH",
+  "nl": "ngajum adalah bagian dari atma wedana",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901490,
+    "context_sentence": "Dilihat dari segi waktu pelaksanaan — mengingat kemampuan serta waktu yang tersedia, dan untuk meminimalisasi dana serta keberadaan waktu bagi para penyelenggara — maka upacara pengabenan setelah pembakaran jenazah dilanjutkan dengan nganyut tanpa jeda waktu, dilakukan mapegat mangening-ngening, mecaru, ngerorasin, nyepuh, dilaksanakan penyekahan dengan diawali upacara Nganget Don Bingin, ngajum sekah sebagaimana mestinya, pralina (kageseng), selanjutnya kembali ngelinggihang puspalingga dan terakhir nganyut; setelah itu barulah diadakan upacara meajar-ajar serta ngelinggihan Dewa Hyang. (corpus L179) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "ngelinggihang",
+  "subject_name": "ngelinggihang",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "atma_wedana",
+  "object_name": "atma wedana",
+  "confidence": "HIGH",
+  "nl": "ngelinggihang adalah bagian dari atma wedana",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901491,
+    "context_sentence": "Dilihat dari segi waktu pelaksanaan — mengingat kemampuan serta waktu yang tersedia, dan untuk meminimalisasi dana serta keberadaan waktu bagi para penyelenggara — maka upacara pengabenan setelah pembakaran jenazah dilanjutkan dengan nganyut tanpa jeda waktu, dilakukan mapegat mangening-ngening, mecaru, ngerorasin, nyepuh, dilaksanakan penyekahan dengan diawali upacara Nganget Don Bingin, ngajum sekah sebagaimana mestinya, pralina (kageseng), selanjutnya kembali ngelinggihang puspalingga dan terakhir nganyut; setelah itu barulah diadakan upacara meajar-ajar serta ngelinggihan Dewa Hyang. (corpus L179; ngelinggihang puspalingga) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "upacara_saji_tarpana",
+  "subject_name": "upacara saji tarpana",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "atma_wedana",
+  "object_name": "atma wedana",
+  "confidence": "HIGH",
+  "nl": "upacara saji tarpana adalah bagian dari atma wedana",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901492,
+    "context_sentence": "Dari segi kemeriahan, Pralina kalah dengan upacara Saji Tarpana. (corpus L2242; section 'Saji Terpana' (L2212) of the Atma Wedana chapter) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "ngajar_ajar",
+  "subject_name": "ngajar-ajar",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "pitra_yadnya",
+  "object_name": "pitra yadnya",
+  "confidence": "HIGH",
+  "nl": "ngajar-ajar adalah bagian dari pitra yadnya",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901493,
+    "context_sentence": "Upacara Pitra Yadnya terdiri pula dari tingkatan Nista, Madya, dan Uttama; demikian juga halnya pengabenan, seperti telah disinggung di depan. (corpus L179; held after the atma wedana rites) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "nyekeh",
+  "subject_name": "nyekeh",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "pitra_yadnya",
+  "object_name": "pitra yadnya",
+  "confidence": "HIGH",
+  "nl": "nyekeh adalah bagian dari pitra yadnya",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901494,
+    "context_sentence": "Nyekeh atau malelet atau sering pula disebut masimpen ini, biasanya ditempuh dalam melakukan upacara pitra yadnya terhadap seorang raja, keluarganya atau seorang pendeta. Nyekeh berarti jenazah dibaringkan di rumah adat dalam jangka waktu agak lama hingga tiba jatuhnya hari H untuk ngaben sesuai dewasa yang dipilih. Membiarkan jenazah berbaring berlama-lama tanpa diberi upacara nyekeh, merupakan pelanggaran hukum adat. (corpus L891) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "nyekeh",
+  "subject_name": "nyekeh",
+  "predicate": "DILAKUKAN_SETELAH",
+  "object_id": "pangringkes",
+  "object_name": "pangringkes",
+  "confidence": "HIGH",
+  "nl": "nyekeh dilakukan setelah pangringkes",
+  "raw_relation": "DILAKUKAN_SETELAH",
+  "provenance": {
+    "sentence_id": 901495,
+    "context_sentence": "Setelah pangringkesan, upacara selanjutnya bisa nyekeh atau malelet, dikubur atau dibakar titip, atau langsung diaben secara tuntas. (corpus L888) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "mapendem",
+  "subject_name": "mapendem",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "pitra_yadnya",
+  "object_name": "pitra yadnya",
+  "confidence": "HIGH",
+  "nl": "mapendem adalah bagian dari pitra yadnya",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901496,
+    "context_sentence": "Kecuali Pitra Yadnya — baik yang mependem maupun mageseng seperti tersebut di atas — yang dilakukan terhadap orang dewasa, maka terhadap sawa anak-anak juga disebut Pitra Yadnya, karena yang diupacarai adalah juga arwah. ... Anak/bayi yang berumur kurang dari tigang sasih dilakukan dengan cara mapendem saja dengan upacara secukupnya, yaitu banten pejati untuk di Merajapati sebagai permakluman serta dilengkapi banten lainnya sesuai desa kala patra; kemudian bila diadakan upacara atiwa-tiwa, hal ini disebut Ngelunggah. (corpus L167, L169) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "upacara_ngaben_titip",
+  "subject_name": "upacara ngaben titip",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "pitra_yadnya",
+  "object_name": "pitra yadnya",
+  "confidence": "HIGH",
+  "nl": "upacara ngaben titip adalah bagian dari pitra yadnya",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901497,
+    "context_sentence": "Setelah pangringkesan, upacara selanjutnya bisa nyekeh atau malelet, dikubur atau dibakar titip, atau langsung diaben secara tuntas. (corpus L888; dikubur atau dibakar titip) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "slepa",
+  "subject_name": "slepa",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pangringkes",
+  "object_name": "pangringkes",
+  "confidence": "HIGH",
+  "nl": "slepa digunakan dalam pangringkes",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901498,
+    "context_sentence": "Selanjutnya dipasang itik-itik pada ibu jari tangan dan kaki, jenazah digulung dengan tikar dan kain yang telah dirajah, diakhiri dengan lante dari bambu, lalu dimasukkan ke dalam slepa/peti dan ditempatkan pada Bale Gede/Sakaroras atau tempat yang disiapkan, dengan posisi kepala ke utara atau ke timur. (corpus L214; the wrapped body goes into the slepa; section 'E. Memandikan Jenazah' (L208)) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "bale_semanggen",
+  "subject_name": "bale semanggen",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "object_name": "nyiramang layon",
+  "confidence": "HIGH",
+  "nl": "bale semanggen digunakan dalam nyiramang layon",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901499,
+    "context_sentence": "Sebelum membicarakan tentang teknis pelaksanaan upacara Nyiramang Layon, terlebih dulu kita akan membicarakan tentang Etika yang patut diperhatikan. Seperti halnya pada upacara Nyiramang misalnya: bagaimana membawa jenazah dari Bale Semanggen atau balai tempat persemayaman jenazah menuju ke tempat pepaga/asagan dimana layon/jenazah akan di mandikan, begitu juga apakah kakinya yang duluan (didepan), atau kepalanya yang duluan? Begitu juga ketika memasuki tempat Nyiramang Layon (pepaga/asagan), apakah boleh jenazah itu ditaruh dari samping atau harus dari \"tebenan\" (dari barat)? ... Ketika menggotong jenazah dari Pepaga/Asagan menuju ke Bale Semanggen (balai-balai tempat persemayaman jenazah), harus mengikuti aturan yaitu: jenazah dikeluarkan mulai dari kakinya terlebih dulu, melalui Pepaga/Asagan di bagian Teben, lalu diusung ke Bale Semanggen dengan kaki jenazah berada di muka. Sesampai di tempat persemayaman (Bale Semanggen) maka kepala jenazah dimasukkan terlebih dulu ke balai-balai, seperti apa yang dilakukan pada upacara terdahulu. (corpus L2669, L3286) -- plan #12 closure 2026-10-13"
+  }
+}
+
+{
+  "subject_id": "mantra",
+  "subject_name": "mantra",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pangringkes",
+  "object_name": "pangringkes",
+  "confidence": "HIGH",
+  "nl": "mantra digunakan dalam pangringkes",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901500,
+    "context_sentence": "Beberapa Mantra Saat Ngeringkes ... Dalam pelaksanaan pengeringkesan, saat meletakkan eteh-eteh layon sesuai peruntukannya, disertai dengan pengucapan mantra sebagai berikut: (corpus L280, L281; section '10. Beberapa Mantra Saat Ngeringkes') -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "krematorium",
+  "subject_name": "krematorium",
+  "predicate": "DIGUNAKAN_UNTUK",
+  "object_id": "ngaben",
+  "object_name": "ngaben",
+  "confidence": "HIGH",
+  "nl": "krematorium digunakan untuk ngaben",
+  "raw_relation": "DIGUNAKAN_UNTUK",
+  "provenance": {
+    "sentence_id": 901501,
+    "context_sentence": "Mengapa memilih krematorium dibandingkan kuburan tradisional? ... Apakah Ngaben di krematorium sah secara agama? (corpus L74, L75; FAQ of section 12) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "ngereka",
+  "subject_name": "ngereka",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "ngaben",
+  "object_name": "ngaben",
+  "confidence": "HIGH",
+  "nl": "ngereka adalah bagian dari ngaben",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901502,
+    "context_sentence": "Ngereka ... Ngereka dilakukan setelah jenazah hangus menjadi abu, dengan urutan sebagai berikut: (corpus L548, L549; item 13 of the ngaben procedure) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "ngereka",
+  "subject_name": "ngereka",
+  "predicate": "DILAKUKAN_SETELAH",
+  "object_id": "pabasmian",
+  "object_name": "pabasmian",
+  "confidence": "HIGH",
+  "nl": "ngereka dilakukan setelah pabasmian",
+  "raw_relation": "DILAKUKAN_SETELAH",
+  "provenance": {
+    "sentence_id": 901503,
+    "context_sentence": "Ngereka dilakukan setelah jenazah hangus menjadi abu, dengan urutan sebagai berikut: (corpus L549) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "kawangen",
+  "subject_name": "kawangen",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngereka",
+  "object_name": "ngereka",
+  "confidence": "HIGH",
+  "nl": "kawangen digunakan dalam ngereka",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901504,
+    "context_sentence": "Yaitu sisa pembakaran mayat berupa tulang/galih/abu (di luar bagian untuk Puspa Asti), yang dipungut dan dibersihkan, kemudian dibentuk seperti wujud manusia di atas sehelai tikar yang dilapisi kain sesuai peruntukannya, dilengkapi beberapa kwangen sebagai berikut: (corpus L553) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "puspa_asti",
+  "subject_name": "puspa asti",
+  "predicate": "DIBUAT_SAAT",
+  "object_id": "ngereka",
+  "object_name": "ngereka",
+  "confidence": "HIGH",
+  "nl": "puspa asti dibuat saat ngereka",
+  "raw_relation": "DIBUAT_SAAT",
+  "provenance": {
+    "sentence_id": 901505,
+    "context_sentence": "Puspa Asti ... Puspa Asti adalah abu yang diambil dengan mempergunakan sumpit/sepit, lalu dihancurkan/ditumbuk pada sebuah sesenden. Setelah hancur/halus, dimasukkan ke kelapa gading yang telah di kasturi dan diwujudkan menjadi Puspa Asti. (corpus L550, L551) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "kain_putih",
+  "subject_name": "kain putih",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngereka",
+  "object_name": "ngereka",
+  "confidence": "HIGH",
+  "nl": "kain putih digunakan dalam ngereka",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901506,
+    "context_sentence": "Di atas tikar, selembar kain putih dibentangkan juga. (corpus L1864) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "klasa",
+  "subject_name": "klasa",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngereka",
+  "object_name": "ngereka",
+  "confidence": "HIGH",
+  "nl": "klasa digunakan dalam ngereka",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901507,
+    "context_sentence": "Yaitu sisa pembakaran mayat berupa tulang/galih/abu (di luar bagian untuk Puspa Asti), yang dipungut dan dibersihkan, kemudian dibentuk seperti wujud manusia di atas sehelai tikar yang dilapisi kain sesuai peruntukannya, dilengkapi beberapa kwangen sebagai berikut: ... Setelah semuanya musnah menjadi arang, api pun disiram serta pekerjaan berikutnya dilanjutkan. Agak di sebelah hulu dari tempat pembakaran, tikar pun digelar. Di atas tikar, selembar kain putih dibentangkan juga. Di atas kain ini acara ngreka-galih pun dimulai. Arang tulang kepala, dada, punggung, lengan, bokong, paha dan kaki, sama-sama diambil dan diatur menurut tata letak bagaikan susunan keran (corpus L553, L1864; the corpus says tikar; klasa is the tikar node) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "ngliwet",
+  "subject_name": "ngliwet",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "atma_wedana",
+  "object_name": "atma wedana",
+  "confidence": "HIGH",
+  "nl": "ngliwet adalah bagian dari atma wedana",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901508,
+    "context_sentence": "Ngliwet ... Namanya Ngliwet. (corpus L2263, L2266; section 'Ngliwet' of atma wedana) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "ngliwet",
+  "subject_name": "ngliwet",
+  "predicate": "DILAKUKAN_SETELAH",
+  "object_id": "pralina",
+  "object_name": "pralina",
+  "confidence": "HIGH",
+  "nl": "ngliwet dilakukan setelah pralina",
+  "raw_relation": "DILAKUKAN_SETELAH",
+  "provenance": {
+    "sentence_id": 901509,
+    "context_sentence": "Berurutan dengan Amariaran dan Pralina, menyusullah satu acara yang sangat singkat. Namanya Ngliwet. (corpus L2266) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "ngliwet",
+  "subject_name": "ngliwet",
+  "predicate": "DILAKUKAN_DI",
+  "object_id": "sanggar_surya",
+  "object_name": "sanggar surya",
+  "confidence": "HIGH",
+  "nl": "ngliwet dilakukan di sanggar surya",
+  "raw_relation": "DILAKUKAN_DI",
+  "provenance": {
+    "sentence_id": 901510,
+    "context_sentence": "Namanya Ngliwet. Ia dilakukan di depan Sanggar Surya, dengan sebuah tungku dan periuk tanah, yang kedua-duanya serba kecil. (corpus L2266) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "periuk",
+  "subject_name": "periuk",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "ngliwet",
+  "object_name": "ngliwet",
+  "confidence": "HIGH",
+  "nl": "periuk digunakan dalam ngliwet",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901511,
+    "context_sentence": "Namanya Ngliwet. Ia dilakukan di depan Sanggar Surya, dengan sebuah tungku dan periuk tanah, yang kedua-duanya serba kecil. (corpus L2266) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "bubur_liwet",
+  "subject_name": "bubur liwet",
+  "predicate": "DIBUAT_SAAT",
+  "object_id": "ngliwet",
+  "object_name": "ngliwet",
+  "confidence": "HIGH",
+  "nl": "bubur liwet dibuat saat ngliwet",
+  "raw_relation": "DIBUAT_SAAT",
+  "provenance": {
+    "sentence_id": 901512,
+    "context_sentence": "Sesuai dengan namanya (Ngliwet) acara ini benar-benar berwujud nyata yakni membuat bubur (liwet) beras, yang dicampur sekadarnya dengan \"baem-warak\" (serbuk darah badak yang telah mengental). (corpus L2269) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "nganget_don_bingin",
+  "subject_name": "nganget don bingin",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "atma_wedana",
+  "object_name": "atma wedana",
+  "confidence": "HIGH",
+  "nl": "nganget don bingin adalah bagian dari atma wedana",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901513,
+    "context_sentence": "Banten Ngerorasin, Nyekah, Mamukur (\"Nyekah Kurung\") ... Rikalaning jaga ngawentenang karya penyekahan, patut karyanin dengan upacara Nganget Don Bingin. (corpus L451, L452; section 'Banten Ngerorasin, Nyekah, Mamukur') -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "nganget_don_bingin",
+  "subject_name": "nganget don bingin",
+  "predicate": "DIIKUTI_OLEH",
+  "object_id": "ngajum",
+  "object_name": "ngajum",
+  "confidence": "HIGH",
+  "nl": "nganget don bingin diikuti oleh ngajum",
+  "raw_relation": "DIIKUTI_OLEH",
+  "provenance": {
+    "sentence_id": 901514,
+    "context_sentence": "Dilihat dari segi waktu pelaksanaan — mengingat kemampuan serta waktu yang tersedia, dan untuk meminimalisasi dana serta keberadaan waktu bagi para penyelenggara — maka upacara pengabenan setelah pembakaran jenazah dilanjutkan dengan nganyut tanpa jeda waktu, dilakukan mapegat mangening-ngening, mecaru, ngerorasin, nyepuh, dilaksanakan penyekahan dengan diawali upacara Nganget Don Bingin, ngajum sekah sebagaimana mestinya, pralina (kageseng), selanjutnya kembali ngelinggihang puspalingga dan terakhir nganyut; setelah itu barulah diadakan upacara meajar-ajar serta ngelinggihan Dewa Hyang. (corpus L179) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "tatopong",
+  "subject_name": "tatopong",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nganget_don_bingin",
+  "object_name": "nganget don bingin",
+  "confidence": "HIGH",
+  "nl": "tatopong digunakan dalam nganget don bingin",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901515,
+    "context_sentence": "Eteh-etehnya: tiying gading angen ngalap/nganget don bingin; klasa/tikeh pandan berisi kasa; bokoran berisi kasa dua lembar putih kuning; tiyuk/lemat sudhamala; tatopong, genjer-genjer, kulambi, umbul-umbul tiga sampir, dan lainnya menurut dewa mawacara. (corpus L458) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "genjer_genjer",
+  "subject_name": "genjer-genjer",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nganget_don_bingin",
+  "object_name": "nganget don bingin",
+  "confidence": "HIGH",
+  "nl": "genjer-genjer digunakan dalam nganget don bingin",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901516,
+    "context_sentence": "Eteh-etehnya: tiying gading angen ngalap/nganget don bingin; klasa/tikeh pandan berisi kasa; bokoran berisi kasa dua lembar putih kuning; tiyuk/lemat sudhamala; tatopong, genjer-genjer, kulambi, umbul-umbul tiga sampir, dan lainnya menurut dewa mawacara. (corpus L458) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "tiying_gading",
+  "subject_name": "tiying gading",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nganget_don_bingin",
+  "object_name": "nganget don bingin",
+  "confidence": "HIGH",
+  "nl": "tiying gading digunakan dalam nganget don bingin",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901517,
+    "context_sentence": "Eteh-etehnya: tiying gading angen ngalap/nganget don bingin; klasa/tikeh pandan berisi kasa; bokoran berisi kasa dua lembar putih kuning; tiyuk/lemat sudhamala; tatopong, genjer-genjer, kulambi, umbul-umbul tiga sampir, dan lainnya menurut dewa mawacara. (corpus L458) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "iber_iber",
+  "subject_name": "iber-iber",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pabasmian",
+  "object_name": "pabasmian",
+  "confidence": "HIGH",
+  "nl": "iber-iber digunakan dalam pabasmian",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901518,
+    "context_sentence": "Iber-iber ... Memang namanya pun adalah Iber-iber yang berarti atau berakarkan kata \"iber\" (terbang). (corpus L1840, L1849; section 'Iber-iber') -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "iber_iber",
+  "subject_name": "iber-iber",
+  "predicate": "BERISI",
+  "object_id": "ayam",
+  "object_name": "ayam",
+  "confidence": "HIGH",
+  "nl": "iber-iber berisi ayam",
+  "raw_relation": "BERISI",
+  "provenance": {
+    "sentence_id": 901519,
+    "context_sentence": "Dua atau tiga ekor ayam kecil-kecil atau burung perkutut, yang seketika dilempar hingga lepas berterbangan. Memang namanya pun adalah Iber-iber yang berarti atau berakarkan kata \"iber\" (terbang). Bila yang dilepas itu berupa ayam, maka para hadirin pun berebutan. (corpus L1849) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "iber_iber",
+  "subject_name": "iber-iber",
+  "predicate": "DIGANTUNGKAN_DI",
+  "object_id": "balai_balai_bade",
+  "object_name": "balai-balai bade",
+  "confidence": "HIGH",
+  "nl": "iber-iber digantungkan di balai-balai bade",
+  "raw_relation": "DIGANTUNGKAN_DI",
+  "provenance": {
+    "sentence_id": 901520,
+    "context_sentence": "Biasanya pada saat itu, dari bawah balai-balai Bade ditarik sebuah keranjang kecil sederhana, yang semula memang telah tergantung di sana. Memang namanya pun adalah Iber-iber yang berarti atau berakarkan kata \"iber\" (terbang). (corpus L1849) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "potong_gigi",
+  "subject_name": "potong gigi",
+  "predicate": "DILAKUKAN_OLEH",
+  "object_id": "sangging",
+  "object_name": "sangging",
+  "confidence": "HIGH",
+  "nl": "potong gigi dilakukan oleh sangging",
+  "raw_relation": "DILAKUKAN_OLEH",
+  "provenance": {
+    "sentence_id": 901521,
+    "context_sentence": "Sedangkan apabila ada upacara Potong Gigi bagi orang yang meninggal, maka diperlukan uang kepeng yang jumlahnya 200 kepeng (Pipis Satakan) sebanyak dua ikat, karena nantinya digunakan untuk gelang bagi Sangging (orang yang melaksanakan pemotongan gigi) sang jenazah ... Padi satu cekal, untuk pijakan Sangging atau orang yang melaksanakan atau menyelesaikan upacara Potong Gigi jenazah tersebut (biasanya yang harus melakukan adalah orang tua laki dari almarhum). (corpus L2511, L2616) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "ngaben",
+  "subject_name": "ngaben",
+  "predicate": "DISESUAIKAN_DENGAN",
+  "object_id": "desa_mawacara",
+  "object_name": "desa mawacara",
+  "confidence": "HIGH",
+  "nl": "ngaben disesuaikan dengan desa mawacara",
+  "raw_relation": "DISESUAIKAN_DENGAN",
+  "provenance": {
+    "sentence_id": 901522,
+    "context_sentence": "Atau adanya dresta di suatu daerah yang masih melakukan penguburan jenazah sebagai prosesi Ngaben. ... Pemercikan tirta dilakukan dengan urutan: tirta Sanggah Kamulan almarhum; tirta Merajan Dadia; tirta Kawitan; tirta Kahyangan Tiga; tirta lainnya yang diperlukan menurut desa mawacara; dan tirta pemargi dari pandita. (corpus L114, L214) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "karma_phala",
+  "subject_name": "karma phala",
+  "predicate": "BERKAITAN_DENGAN",
+  "object_id": "karma_wasana",
+  "object_name": "karma wasana",
+  "confidence": "HIGH",
+  "nl": "karma phala berkaitan dengan karma wasana",
+  "raw_relation": "BERKAITAN_DENGAN",
+  "provenance": {
+    "sentence_id": 901523,
+    "context_sentence": "Apakah tentang karmaphala atau karma wasana yang harus diterimanya, apakah tentang nasihat mengenai petunjuk jalan di alam sana, cara melakukan pendekatan kepada semua makhluk yang menghadang dalam perjalanan dan sebagainya. (corpus L1469) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "karma_phala",
+  "subject_name": "karma phala",
+  "predicate": "BERKAITAN_DENGAN",
+  "object_id": "kama_bang",
+  "object_name": "kama bang",
+  "confidence": "HIGH",
+  "nl": "karma phala berkaitan dengan kama bang",
+  "raw_relation": "BERKAITAN_DENGAN",
+  "provenance": {
+    "sentence_id": 901524,
+    "context_sentence": "Kaum arif bijaksana menjelaskan, bahwa karma phala tetap berlaku konsekuen. Dalam hubungan ini, perlu diingat bahwa antara orangtua dengan anak atau keturunan, ada \"pertalian unsur diri pribadi.\" Pada diri sang anak berbibitkan kama bang dan kama putih yang berasal dari orangtua. Dengan demikian, karma phala orangtua atau leluhur (dalam batas tertentu) dapat diwariskan kepada keturunannya. (corpus L1433) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "karma_phala",
+  "subject_name": "karma phala",
+  "predicate": "BERKAITAN_DENGAN",
+  "object_id": "kama_putih",
+  "object_name": "kama putih",
+  "confidence": "HIGH",
+  "nl": "karma phala berkaitan dengan kama putih",
+  "raw_relation": "BERKAITAN_DENGAN",
+  "provenance": {
+    "sentence_id": 901525,
+    "context_sentence": "Kaum arif bijaksana menjelaskan, bahwa karma phala tetap berlaku konsekuen. Dalam hubungan ini, perlu diingat bahwa antara orangtua dengan anak atau keturunan, ada \"pertalian unsur diri pribadi.\" Pada diri sang anak berbibitkan kama bang dan kama putih yang berasal dari orangtua. Dengan demikian, karma phala orangtua atau leluhur (dalam batas tertentu) dapat diwariskan kepada keturunannya. (corpus L1433) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "kama_bang",
+  "subject_name": "kama bang",
+  "predicate": "BERASAL_DARI",
+  "object_id": "orangtua",
+  "object_name": "orangtua",
+  "confidence": "HIGH",
+  "nl": "kama bang berasal dari orangtua",
+  "raw_relation": "BERASAL_DARI",
+  "provenance": {
+    "sentence_id": 901526,
+    "context_sentence": "Dalam hubungan ini, perlu diingat bahwa antara orangtua dengan anak atau keturunan, ada \"pertalian unsur diri pribadi.\" Pada diri sang anak berbibitkan kama bang dan kama putih yang berasal dari orangtua. Dengan demikian, karma phala orangtua atau leluhur (dalam batas tertentu) dapat diwariskan kepada keturunannya. ... Kita berhutang kepada ayah, karena kama putihnya (sperma), dan kita berhutang kepada ibu karena kama bangnya (ovum). (corpus L1433, L659) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "kama_putih",
+  "subject_name": "kama putih",
+  "predicate": "BERASAL_DARI",
+  "object_id": "orangtua",
+  "object_name": "orangtua",
+  "confidence": "HIGH",
+  "nl": "kama putih berasal dari orangtua",
+  "raw_relation": "BERASAL_DARI",
+  "provenance": {
+    "sentence_id": 901527,
+    "context_sentence": "Dalam hubungan ini, perlu diingat bahwa antara orangtua dengan anak atau keturunan, ada \"pertalian unsur diri pribadi.\" Pada diri sang anak berbibitkan kama bang dan kama putih yang berasal dari orangtua. Dengan demikian, karma phala orangtua atau leluhur (dalam batas tertentu) dapat diwariskan kepada keturunannya. ... Kita berhutang kepada ayah, karena kama putihnya (sperma), dan kita berhutang kepada ibu karena kama bangnya (ovum). (corpus L1433, L659) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "mlaspas",
+  "subject_name": "mlaspas",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "pabersihan",
+  "object_name": "pabersihan",
+  "confidence": "HIGH",
+  "nl": "mlaspas adalah bagian dari pabersihan",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901528,
+    "context_sentence": "Bagian dari upacara Pabersihan selanjutnya, adalah Mlaspas Kajang. ... Bersamaan dengan mlaspas dan peletakan kajang, diplaspas pulalah alat-alat upakara yang diberi nama Angenan, Pisang Jati, Panguryagan, Sok Cegceg, Damar Kurung dan Adegan. (corpus L1268, L1298; mlaspas of the kajang, 'Bagian dari upacara Pabersihan') -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "mlaspas",
+  "subject_name": "mlaspas",
+  "predicate": "DIPIMPIN_OLEH",
+  "object_id": "sulinggih",
+  "object_name": "sulinggih",
+  "confidence": "HIGH",
+  "nl": "mlaspas dipimpin oleh sulinggih",
+  "raw_relation": "DIPIMPIN_OLEH",
+  "provenance": {
+    "sentence_id": 901529,
+    "context_sentence": "Perlu diingat, bahwa saat mlaspas, kajang itu diletakkan di depan pendeta yang memujanya. (corpus L1274; 'pendeta yang memujanya'; pandita is merged into sulinggih) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "tirtha_pamlaspas",
+  "subject_name": "tirtha pamlaspas",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "mlaspas",
+  "object_name": "mlaspas",
+  "confidence": "HIGH",
+  "nl": "tirtha pamlaspas digunakan dalam mlaspas",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901530,
+    "context_sentence": "Namun dengan sesajen dan Tirtha Pamlaspas, dua benda itu menjadi bhawa (makhluk/bhuwana yang hidup)\" bernama Bade dan lembu. (corpus L1795) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "sang_hyang_yama",
+  "subject_name": "sang hyang yama",
+  "predicate": "DIJELASKAN_DALAM",
+  "object_id": "yama_purwana_tattwa",
+  "object_name": "yama purwana tattwa",
+  "confidence": "HIGH",
+  "nl": "sang hyang yama dijelaskan dalam yama purwana tattwa",
+  "raw_relation": "DIJELASKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901531,
+    "context_sentence": "Dalam penyelenggaraan Ngaben Svasta ini, Lontar Yama Purana Tattwa menyebutkan sebagai berikut: ... \"Iki pawarah Sang Hyang Yama, maka sidhaning tingkahing angupakara sawning wang mati bener, mageseng ugi presidha mulih maring Bhatara Brahma, Yadyapitan pabya, Swasta ring Sang Hyang Agni presiddha manggih ayu Sang Hyang Atma.\" (corpus L160, L161) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "sembah_bhakti",
+  "subject_name": "sembah bhakti",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "upacara_saji_tarpana",
+  "object_name": "upacara saji tarpana",
+  "confidence": "HIGH",
+  "nl": "sembah bhakti adalah bagian dari upacara saji tarpana",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901532,
+    "context_sentence": "Saji Tarpana termasuk pengayaban Banten Teben tersebut, diiringi sembah bhakti (muspa) segenap keluarga. (corpus L1376; section 'Saji Tarpana dan Muspa') -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "sembah_bhakti",
+  "subject_name": "sembah bhakti",
+  "predicate": "DIPIMPIN_OLEH",
+  "object_id": "pemangku",
+  "object_name": "pemangku",
+  "confidence": "HIGH",
+  "nl": "sembah bhakti dipimpin oleh pemangku",
+  "raw_relation": "DIPIMPIN_OLEH",
+  "provenance": {
+    "sentence_id": 901533,
+    "context_sentence": "Setelah tahapan upacara tersebut selesai, maka barulah upacara Pebaktian (Sembah Bhakti) dilakukan, yang mana sebelumnya para keluarga telah siap dengan sarana persembahyangan seperti bunga, kawangen dan dupa. Pada upacara Sembah Bhakti ini sebaiknya ada yang memimpin, misalnya Jro Mangku atau Pinandita, dan pada saat ini juga perlu dilantumkan tembang seperti di bawah ini: (corpus L2969; 'Jro Mangku atau Pinandita') -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "dupa",
+  "subject_name": "dupa",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sembah_bhakti",
+  "object_name": "sembah bhakti",
+  "confidence": "HIGH",
+  "nl": "dupa digunakan dalam sembah bhakti",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901534,
+    "context_sentence": "Setelah tahapan upacara tersebut selesai, maka barulah upacara Pebaktian (Sembah Bhakti) dilakukan, yang mana sebelumnya para keluarga telah siap dengan sarana persembahyangan seperti bunga, kawangen dan dupa. Pada upacara Sembah Bhakti ini sebaiknya ada yang memimpin, misalnya Jro Mangku atau Pinandita, dan pada saat ini juga perlu dilantumkan tembang seperti di bawah ini: (corpus L2969) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "kawangen",
+  "subject_name": "kawangen",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sembah_bhakti",
+  "object_name": "sembah bhakti",
+  "confidence": "HIGH",
+  "nl": "kawangen digunakan dalam sembah bhakti",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901535,
+    "context_sentence": "Setelah tahapan upacara tersebut selesai, maka barulah upacara Pebaktian (Sembah Bhakti) dilakukan, yang mana sebelumnya para keluarga telah siap dengan sarana persembahyangan seperti bunga, kawangen dan dupa. Pada upacara Sembah Bhakti ini sebaiknya ada yang memimpin, misalnya Jro Mangku atau Pinandita, dan pada saat ini juga perlu dilantumkan tembang seperti di bawah ini: (corpus L2969) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "pripih",
+  "subject_name": "pripih",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "sawa_wedana",
+  "object_name": "sawa wedana",
+  "confidence": "HIGH",
+  "nl": "pripih digunakan dalam sawa wedana",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 901536,
+    "context_sentence": "Pada Sawa Wedana digunakanlah lima jenis pripih logam (perak, tembaga, emas, besi dan permata) yang dibungkus dengan daun dapdap kurang lebih selebar tiga jari yang disumbat kan pada mulut jenazah saat masesalin (pergantian bungkusan) semalam menjelang Pabersihan. (corpus L1520) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "pripih",
+  "subject_name": "pripih",
+  "predicate": "DIBUNGKUS_DENGAN",
+  "object_id": "daun_dapdap",
+  "object_name": "daun dapdap",
+  "confidence": "HIGH",
+  "nl": "pripih dibungkus dengan daun dapdap",
+  "raw_relation": "DIBUNGKUS_DENGAN",
+  "provenance": {
+    "sentence_id": 901537,
+    "context_sentence": "Pada Sawa Wedana digunakanlah lima jenis pripih logam (perak, tembaga, emas, besi dan permata) yang dibungkus dengan daun dapdap kurang lebih selebar tiga jari yang disumbat kan pada mulut jenazah saat masesalin (pergantian bungkusan) semalam menjelang Pabersihan. (corpus L1520) -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "umanis",
+  "subject_name": "umanis",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "pancawara",
+  "object_name": "pancawara",
+  "confidence": "HIGH",
+  "nl": "umanis adalah bagian dari pancawara",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901538,
+    "context_sentence": "[web terms 2026-10-14] https://en.wikipedia.org/wiki/Pawukon_calendar : \"The days of the Pancawara (five-day week) are Paing, Pon, Wage, Keliwon, Umanis.\""
+  }
+}
+
+{
+  "subject_id": "paing",
+  "subject_name": "paing",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "pancawara",
+  "object_name": "pancawara",
+  "confidence": "HIGH",
+  "nl": "paing adalah bagian dari pancawara",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901539,
+    "context_sentence": "[web terms 2026-10-14] https://en.wikipedia.org/wiki/Pawukon_calendar : \"The days of the Pancawara (five-day week) are Paing, Pon, Wage, Keliwon, Umanis.\""
+  }
+}
+
+{
+  "subject_id": "pon",
+  "subject_name": "pon",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "pancawara",
+  "object_name": "pancawara",
+  "confidence": "HIGH",
+  "nl": "pon adalah bagian dari pancawara",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901540,
+    "context_sentence": "[web terms 2026-10-14] https://en.wikipedia.org/wiki/Pawukon_calendar : \"The days of the Pancawara (five-day week) are Paing, Pon, Wage, Keliwon, Umanis.\""
+  }
+}
+
+{
+  "subject_id": "wage",
+  "subject_name": "wage",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "pancawara",
+  "object_name": "pancawara",
+  "confidence": "HIGH",
+  "nl": "wage adalah bagian dari pancawara",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901541,
+    "context_sentence": "[web terms 2026-10-14] https://en.wikipedia.org/wiki/Pawukon_calendar : \"The days of the Pancawara (five-day week) are Paing, Pon, Wage, Keliwon, Umanis.\""
+  }
+}
+
+{
+  "subject_id": "sukra",
+  "subject_name": "sukra",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "saptawara",
+  "object_name": "saptawara",
+  "confidence": "HIGH",
+  "nl": "sukra adalah bagian dari saptawara",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901542,
+    "context_sentence": "[web terms 2026-10-14] https://en.wikipedia.org/wiki/Pawukon_calendar : \"The days of the Saptawara (seven-day week) are Redite, Soma, Anggara, Buda, Wraspati, Sukra, Saniscara.\""
+  }
+}
+
+{
+  "subject_id": "weda_pengastawa",
+  "subject_name": "weda pengastawa",
+  "predicate": "TERMASUK_JENIS",
+  "object_id": "mantra",
+  "object_name": "mantra",
+  "confidence": "HIGH",
+  "nl": "weda pengastawa termasuk salah satu jenis mantra",
+  "raw_relation": "TERMASUK_JENIS",
+  "provenance": {
+    "sentence_id": 901543,
+    "context_sentence": "Berapapun harganya, tirtha itu tetap punya nilai spiritual yang sama, karena dipuja dengan Weda Pengastawa yang sama. (corpus L1066; its glossary definition: 'Mantra atau pujian Weda yang dilantunkan untuk memuja ... tirtha') -- undefined-terms pass 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "kawangen",
+  "subject_name": "kawangen",
+  "predicate": "BERISI",
+  "object_id": "bunga",
+  "object_name": "bunga",
+  "confidence": "HIGH",
+  "nl": "kawangen berisi bunga",
+  "raw_relation": "BERISI",
+  "provenance": {
+    "sentence_id": 901544,
+    "context_sentence": "Di hulu hati, diisi sebuah Kawangen yang berisi 9 biji uang kepeng dan bunga tunjung putih. ... Di dada, diisi sebuah Kawangen yang berisi 7 biji uang kepeng dan bunga tunjung putih. ... Di kedua siku tangan, diisi masing-masing sebuah Kawangen yang berisi 5 biji uang kepeng dan Pusuh Bunga Cempaka Putih. ... Di kedua lutut kaki, diisi masing-masing Kawangen yang berisi 5 biji uang kepeng dan Pusuh Bunga Cempaka Kuning. (corpus L3239, L3240, L3241, L3242; each placed kawangen: uang kepeng and a flower) -- plan #12 breakdowns 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "kawangen",
+  "subject_name": "kawangen",
+  "predicate": "BERISI",
+  "object_id": "bunga_tunjung_putih",
+  "object_name": "bunga tunjung putih",
+  "confidence": "HIGH",
+  "nl": "variasi (kawangen di hulu hati dan dada jenazah): kawangen memakai bunga tunjung putih sebagai pengganti bunga",
+  "raw_relation": "BERISI",
+  "provenance": {
+    "sentence_id": 901545,
+    "context_sentence": "Di hulu hati, diisi sebuah Kawangen yang berisi 9 biji uang kepeng dan bunga tunjung putih. ... Di dada, diisi sebuah Kawangen yang berisi 7 biji uang kepeng dan bunga tunjung putih. (corpus L3239, L3240) -- plan #12 breakdowns 2026-10-14"
+  },
+  "variant": {
+    "region": "kawangen di hulu hati dan dada jenazah",
+    "op": "ganti",
+    "replaces": "bunga",
+    "source": "korpus L3239-3240"
+  }
+}
+
+{
+  "subject_id": "kawangen",
+  "subject_name": "kawangen",
+  "predicate": "BERISI",
+  "object_id": "pusuh_bunga_cempaka_putih",
+  "object_name": "pusuh bunga cempaka putih",
+  "confidence": "HIGH",
+  "nl": "variasi (kawangen di kedua siku tangan jenazah): kawangen memakai pusuh bunga cempaka putih sebagai pengganti bunga",
+  "raw_relation": "BERISI",
+  "provenance": {
+    "sentence_id": 901546,
+    "context_sentence": "Di kedua siku tangan, diisi masing-masing sebuah Kawangen yang berisi 5 biji uang kepeng dan Pusuh Bunga Cempaka Putih. (corpus L3241) -- plan #12 breakdowns 2026-10-14"
+  },
+  "variant": {
+    "region": "kawangen di kedua siku tangan jenazah",
+    "op": "ganti",
+    "replaces": "bunga",
+    "source": "korpus L3241"
+  }
+}
+
+{
+  "subject_id": "kawangen",
+  "subject_name": "kawangen",
+  "predicate": "BERISI",
+  "object_id": "pusuh_bunga_cempaka_kuning",
+  "object_name": "pusuh bunga cempaka kuning",
+  "confidence": "HIGH",
+  "nl": "variasi (kawangen di kedua lutut kaki jenazah): kawangen memakai pusuh bunga cempaka kuning sebagai pengganti bunga",
+  "raw_relation": "BERISI",
+  "provenance": {
+    "sentence_id": 901547,
+    "context_sentence": "Di kedua lutut kaki, diisi masing-masing Kawangen yang berisi 5 biji uang kepeng dan Pusuh Bunga Cempaka Kuning. (corpus L3242) -- plan #12 breakdowns 2026-10-14"
+  },
+  "variant": {
+    "region": "kawangen di kedua lutut kaki jenazah",
+    "op": "ganti",
+    "replaces": "bunga",
+    "source": "korpus L3242"
+  }
+}
+
+{
+  "subject_id": "panah",
+  "subject_name": "panah",
+  "predicate": "DILENGKAPI",
+  "object_id": "kalpika",
+  "object_name": "kalpika",
+  "confidence": "HIGH",
+  "nl": "variasi (panah untuk tirtha pemanah): panah memakai kalpika sebagai pengganti bunga",
+  "raw_relation": "DILENGKAPI",
+  "provenance": {
+    "sentence_id": 901548,
+    "context_sentence": "Tirtha ini dibuat dengan menggunakan sarana dan prasarana seperti periuk berisi air, bunga dan sebuah panah yang pada ujung panah tersebut disi \"kalpika\". (corpus L3691) -- plan #12 breakdowns 2026-10-14"
+  },
+  "variant": {
+    "region": "panah untuk tirtha pemanah",
+    "op": "ganti",
+    "replaces": "bunga",
+    "source": "korpus L3691"
+  }
+}
+
+{
+  "subject_id": "panah",
+  "subject_name": "panah",
+  "predicate": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "object_id": "tirtha_ening",
+  "object_name": "tirtha ening",
+  "confidence": "HIGH",
+  "nl": "panah diperlukan untuk membuat tirtha ening",
+  "raw_relation": "DIPERLUKAN_UNTUK_MEMBUAT",
+  "provenance": {
+    "sentence_id": 901549,
+    "context_sentence": "Tirtha Ening ini, dalam prosesnya agak sedikit berbeda. Atau dalam beberapa Desa tradisi mencari ini biasanya dilakukan dengan melakukan arak-arakan ke suatu Tirtha Ening ini disebut \"Ngening\". Untuk mendapat Tirtha tempat mata air yang disucikan, atau tempat khusus untuk mendapatkan Tirtha Ening yang dibeberapa tempat disebut \"Belong\" atau \"Pura Belong\". Cara pengambilan air itu, yaitu terlebih dulu air dipanah tiga kali dengan sebuah panah yang diujungnya diisi bunga, hal ini biasanya dilakukan oleh seorang Pemangku. Tirtha Ening berfungsi sebagai symbol dari pikiran dan perasaan sang Yajamana (orang yang punya upacara), sehingga Roh atau A... (corpus L3687; section 'c. Tirtha Ening') -- plan #12 breakdowns 2026-10-14"
+  }
+}
+
+{
+  "subject_id": "daksina",
+  "subject_name": "daksina",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "daun_kelapa",
+  "object_name": "daun kelapa",
+  "confidence": "HIGH",
+  "nl": "daksina terbuat dari daun kelapa",
+  "raw_relation": "TERBUAT_DARI",
+  "provenance": {
+    "sentence_id": 901550,
+    "context_sentence": "[web sarana 2026-10-14] https://www.detik.com/bali/budaya/d-6086234/mengenal-daksina-yang-sarat-simbol-kehidupan-menurut-hindu-bali : \"Secara fisik, daksina dibuat dengan daun kelapa yang bentuknya menyeryupai suatu wadah seperti bakul.\""
+  }
+}
+
+{
+  "subject_id": "daksina",
+  "subject_name": "daksina",
+  "predicate": "BERISI",
+  "object_id": "beras",
+  "object_name": "beras",
+  "confidence": "HIGH",
+  "nl": "daksina berisi beras",
+  "raw_relation": "BERISI",
+  "provenance": {
+    "sentence_id": 901551,
+    "context_sentence": "[web sarana 2026-10-14] https://www.detik.com/bali/budaya/d-6086234/mengenal-daksina-yang-sarat-simbol-kehidupan-menurut-hindu-bali : \"Daksina dilengkapi dengan isinya seperti beras, uang, kelapa, telur itik dan lain-lain.\""
+  }
+}
+
+{
+  "subject_id": "daksina",
+  "subject_name": "daksina",
+  "predicate": "BERISI",
+  "object_id": "kelapa",
+  "object_name": "kelapa",
+  "confidence": "HIGH",
+  "nl": "daksina berisi kelapa",
+  "raw_relation": "BERISI",
+  "provenance": {
+    "sentence_id": 901552,
+    "context_sentence": "[web sarana 2026-10-14] https://www.detik.com/bali/budaya/d-6086234/mengenal-daksina-yang-sarat-simbol-kehidupan-menurut-hindu-bali : \"Daksina dilengkapi dengan isinya seperti beras, uang, kelapa, telur itik dan lain-lain.\""
+  }
+}
+
+{
+  "subject_id": "daksina",
+  "subject_name": "daksina",
+  "predicate": "BERISI",
+  "object_id": "telur",
+  "object_name": "telur",
+  "confidence": "HIGH",
+  "nl": "daksina berisi telur",
+  "raw_relation": "BERISI",
+  "provenance": {
+    "sentence_id": 901553,
+    "context_sentence": "[web sarana 2026-10-14] https://www.detik.com/bali/budaya/d-6086234/mengenal-daksina-yang-sarat-simbol-kehidupan-menurut-hindu-bali : \"Daksina dilengkapi dengan isinya seperti beras, uang, kelapa, telur itik dan lain-lain.\""
+  }
+}
+
+{
+  "subject_id": "daksina",
+  "subject_name": "daksina",
+  "predicate": "BERISI",
+  "object_id": "porosan",
+  "object_name": "porosan",
+  "confidence": "HIGH",
+  "nl": "daksina berisi porosan",
+  "raw_relation": "BERISI",
+  "provenance": {
+    "sentence_id": 901554,
+    "context_sentence": "[web sarana 2026-10-14] https://www.detik.com/bali/budaya/d-6086234/mengenal-daksina-yang-sarat-simbol-kehidupan-menurut-hindu-bali : \"Sirih atau porosan adalah simbol Tri Murthi.\""
+  }
+}
+
+{
+  "subject_id": "daksina",
+  "subject_name": "daksina",
+  "predicate": "BERISI",
+  "object_id": "pisang",
+  "object_name": "pisang",
+  "confidence": "HIGH",
+  "nl": "daksina berisi pisang",
+  "raw_relation": "BERISI",
+  "provenance": {
+    "sentence_id": 901555,
+    "context_sentence": "[web sarana 2026-10-14] https://www.detik.com/bali/budaya/d-6086234/mengenal-daksina-yang-sarat-simbol-kehidupan-menurut-hindu-bali : \"Pisang/tebu/kojong simbol kehidupan saling menghormati\""
+  }
+}
+
+{
+  "subject_id": "daksina",
+  "subject_name": "daksina",
+  "predicate": "BERISI",
+  "object_id": "kemiri",
+  "object_name": "kemiri",
+  "confidence": "HIGH",
+  "nl": "daksina berisi kemiri",
+  "raw_relation": "BERISI",
+  "provenance": {
+    "sentence_id": 901556,
+    "context_sentence": "[web sarana 2026-10-14] https://www.detik.com/bali/budaya/d-6086234/mengenal-daksina-yang-sarat-simbol-kehidupan-menurut-hindu-bali : \"Buah kemiri dan buah pangi simbol Purusa dan Predana\""
+  }
+}
+
+{
+  "subject_id": "daksina",
+  "subject_name": "daksina",
+  "predicate": "BERISI",
+  "object_id": "pangi",
+  "object_name": "pangi",
+  "confidence": "HIGH",
+  "nl": "daksina berisi pangi",
+  "raw_relation": "BERISI",
+  "provenance": {
+    "sentence_id": 901557,
+    "context_sentence": "[web sarana 2026-10-14] https://www.detik.com/bali/budaya/d-6086234/mengenal-daksina-yang-sarat-simbol-kehidupan-menurut-hindu-bali : \"Buah kemiri dan buah pangi simbol Purusa dan Predana\""
+  }
+}
+
+{
+  "subject_id": "daksina",
+  "subject_name": "daksina",
+  "predicate": "DILENGKAPI",
+  "object_id": "tali_benang_tukelan",
+  "object_name": "tali benang tukelan",
+  "confidence": "HIGH",
+  "nl": "daksina dilengkapi tali benang tukelan",
+  "raw_relation": "DILENGKAPI",
+  "provenance": {
+    "sentence_id": 901558,
+    "context_sentence": "[web sarana 2026-10-14] https://www.detik.com/bali/budaya/d-6086234/mengenal-daksina-yang-sarat-simbol-kehidupan-menurut-hindu-bali : \"Benang tukelan sebagai alat pengikat.\""
+  }
+}
+
+{
+  "subject_id": "layon",
+  "subject_name": "layon",
+  "predicate": "SEBUTAN_HALUS_UNTUK",
+  "object_id": "jenazah",
+  "object_name": "jenazah",
+  "confidence": "HIGH",
+  "nl": "layon adalah sebutan halus untuk jenazah",
+  "raw_relation": "SEBUTAN_HALUS_UNTUK",
+  "provenance": {
+    "sentence_id": 901559,
+    "context_sentence": "Ketika mulai mencuci rambut dan mencuci muka serta poda waktu sedang memandikan Layon (jenazah) perlu diiringi dengan lagu antara lain: ... Setelah orang yang dituakan selesai mencuci rambut dan mencuci muka layon (jenazah), dan sambil menyisir rambut dan menghias, maka krama dan keluarga yang lain mulai membuka pakaian jenazah dengan urutan-urutan sebagai berikut: (corpus L2786, L2823; 'Layon (jenazah)'; refined (halus) as layon's own definition says) -- other names 2026-10-15"
+  }
+}
+
+{
+  "subject_id": "sawa",
+  "subject_name": "sawa",
+  "predicate": "SAMA_DENGAN",
+  "object_id": "jenazah",
+  "object_name": "jenazah",
+  "confidence": "HIGH",
+  "nl": "sawa sama dengan jenazah",
+  "raw_relation": "SAMA_DENGAN",
+  "provenance": {
+    "sentence_id": 901560,
+    "context_sentence": "Tikar ini akan digunakan untuk tikar pada Bale Pepaga/Asagan, serta akan digunakan untuk menggulung jenazah (sawa). Mengenai tikar penggulung Sawa/jenazah, kini banyak daerah atau desa-desa yang tidak menggunakan tikar lagi, hal ini untuk memudahkan memasukkan jenazah ke dalam peti. ... Secara harfiah kata \"sawa wedana\" berarti \"pembakaran\" atau \"penyucian\" (Wedana) jenazah (Sawa). (corpus L2592, L1894; 'jenazah (sawa)', 'Sawa/jenazah', 'jenazah (Sawa)') -- other names 2026-10-15"
+  }
+}
+
+{
+  "subject_id": "dewa_sambu",
+  "subject_name": "dewa sambu",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "nawa_dewata",
+  "object_name": "nawa dewata",
+  "confidence": "HIGH",
+  "nl": "dewa sambu adalah bagian dari nawa dewata",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901561,
+    "context_sentence": "[web nawa dewata 2026-10-15] https://en.wikipedia.org/wiki/Surya_Majapahit : \"The major gods in the center is arranged in eight cardinal points around Shiva in the center. ... Northeast: Sambhu\""
+  }
+}
+
+{
+  "subject_id": "dewa_rudra",
+  "subject_name": "dewa rudra",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "nawa_dewata",
+  "object_name": "nawa dewata",
+  "confidence": "HIGH",
+  "nl": "dewa rudra adalah bagian dari nawa dewata",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901562,
+    "context_sentence": "[web nawa dewata 2026-10-15] https://en.wikipedia.org/wiki/Surya_Majapahit : \"The major gods in the center is arranged in eight cardinal points around Shiva in the center. ... Southwest: Rudra\""
+  }
+}
+
+{
+  "subject_id": "dewa_maheswara",
+  "subject_name": "dewa maheswara",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "nawa_dewata",
+  "object_name": "nawa dewata",
+  "confidence": "HIGH",
+  "nl": "dewa maheswara adalah bagian dari nawa dewata",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901563,
+    "context_sentence": "[web nawa dewata 2026-10-15] https://en.wikipedia.org/wiki/Surya_Majapahit : \"The major gods in the center is arranged in eight cardinal points around Shiva in the center. ... Southeast: Mahesora\""
+  }
+}
+
+{
+  "subject_id": "dewa_sangkara",
+  "subject_name": "dewa sangkara",
+  "predicate": "BAGIAN_DARI",
+  "object_id": "nawa_dewata",
+  "object_name": "nawa dewata",
+  "confidence": "HIGH",
+  "nl": "dewa sangkara adalah bagian dari nawa dewata",
+  "raw_relation": "BAGIAN_DARI",
+  "provenance": {
+    "sentence_id": 901564,
+    "context_sentence": "[web nawa dewata 2026-10-15] https://en.wikipedia.org/wiki/Surya_Majapahit : \"The major gods in the center is arranged in eight cardinal points around Shiva in the center. ... Northwest: Sangkara/shankara\""
+  }
+}
+
+{
+  "subject_id": "uang_kepeng",
+  "subject_name": "uang kepeng",
+  "predicate": "MELAMBANGKAN",
+  "object_id": "panca_datu",
+  "object_name": "panca datu",
+  "confidence": "HIGH",
+  "nl": "uang kepeng melambangkan panca datu",
+  "raw_relation": "MELAMBANGKAN",
+  "provenance": {
+    "sentence_id": 901565,
+    "context_sentence": "Uang kepeng tersebut merupakan simbol dari kekuatan Panca Datu, yaitu lambang kehidupan dan kekuatan lima Dewa-Dewa yang berada dalam kelima penjuru mata angin. Uang kepeng yang asli diyakini mengandung lima unsur logam yang terdiri dari : (1) Perak (putih), tempatnya di Timur, dewanya adalah Dewa Iswara. (corpus L3245; 'Uang kepeng tersebut merupakan simbol dari kekuatan Panca Datu') -- Tier B 2026-10-15"
+  }
+}
+
+{
+  "subject_id": "ngaben",
+  "subject_name": "ngaben",
+  "predicate": "MERUPAKAN_KEWAJIBAN",
+  "object_id": "swadharma",
+  "object_name": "swadharma",
+  "confidence": "HIGH",
+  "nl": "ngaben adalah kewajiban suci (swadharma)",
+  "raw_relation": "MERUPAKAN_KEWAJIBAN",
+  "provenance": {
+    "sentence_id": 901566,
+    "context_sentence": "Inilah yang menjadi latar belakang adanya swadharma seorang anak untuk mengadakan Pitra Yadnya untuk orangtua atau leluhurnya. ... Bila orangtua meninggal, keturunannya lah yang wajib membantu membakar (membayari hutang) stula sarira orang tuanya hingga kembali menunggal dengan Pancamahabutha. (corpus L680; also L650 'Melakukan Pitra Yadnya adalah swadharma alias kewajiban', L653 'swadharma atau kewajiban yang mutlak, karena sudah merupakan utang') -- NLU sweep 2026-10-19"
+  }
+}
+
+{
+  "subject_id": "sangging",
+  "subject_name": "sangging",
+  "predicate": "MENGGUNAKAN",
+  "object_id": "padi",
+  "object_name": "padi",
+  "confidence": "HIGH",
+  "nl": "sangging menggunakan padi",
+  "raw_relation": "MENGGUNAKAN",
+  "provenance": {
+    "sentence_id": 901567,
+    "context_sentence": "1. Padi satu cekal, untuk pijakan Sangging atau orang yang melaksanakan atau menyelesaikan upacara Potong Gigi jenazah tersebut (corpus L2616; L2893 'Sangging ... akan berdiri dengan kedua kakinya menginjak padi yang telah disediakan') -- NLU sweep 2026-10-19"
+  }
+}
+
+{
+  "subject_id": "sangging",
+  "subject_name": "sangging",
+  "predicate": "MENGGUNAKAN",
+  "object_id": "uang_kepeng",
+  "object_name": "uang kepeng",
+  "confidence": "HIGH",
+  "nl": "sangging menggunakan uang kepeng",
+  "raw_relation": "MENGGUNAKAN",
+  "provenance": {
+    "sentence_id": 901568,
+    "context_sentence": "3. Dua Gantus Pipis Bolong Satakan (dua ikat uang kepeng masing-masing berisi 200 biji) yang akan dipakai gelang oleh Sangging atau orang yang melakukan upacara pemotongan gigi. (corpus L2622; L2896 'Sangging akan memakai gelang \"Pipis Bolong Satakan\" (uang kepeng sebanyak 200 biji ...) pada kedua tangannya') -- NLU sweep 2026-10-19"
   }
 }

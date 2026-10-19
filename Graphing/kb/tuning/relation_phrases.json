@@ -93,6 +93,12 @@
   "HANYA_DAPAT_DIBUAT_OLEH": { "template": "{s} hanya dapat dibuat oleh {o}", "ok_prep": ["oleh"] },
   "DIANGGAP_BELUM_DILAKSANAKAN_TANPA": { "template": "{s} dianggap belum dilaksanakan tanpa {o}", "ok_prep": ["tanpa"] },
 
+  "_comment_swadharma": "2026-10-19 (NLU sweep): corpus L650 'Melakukan Pitra Yadnya adalah swadharma alias kewajiban', L653 'swadharma atau kewajiban yang mutlak, karena sudah merupakan utang', L680 'keturunannya lah yang wajib membantu membakar (membayari hutang) stula sarira orang tuanya' were text in swadharma's and manusia's definitions only; 'apakah ngaben wajib' got 'Ya' argued from tirta pangentas.",
+  "_comment_swadharma_wording": "'adalah', not 'merupakan': the templates join a term's short facts that share their first word, and 'merupakan salah satu tahap untuk mencapai moksa dan kewajiban (swadharma)' read as a stage toward duty; an 'adalah' sentence stands alone.",
+  "MERUPAKAN_KEWAJIBAN": { "template": "{s} adalah kewajiban suci ({o})", "ok_prep": [] },
+  "_comment_bangbang_rare": "2026-10-19: bangbang rare was DIGUNAKAN_DALAM upacara ngelungah, so 'bahan upacara ngelungah apa saja' listed the burial place as a material; the glossary calls it 'tempat pemakaman khusus untuk bayi/anak pada Upacara Ngelungah'.",
+  "MENJADI_TEMPAT_PEMAKAMAN_PADA": { "template": "{s} menjadi tempat pemakaman khusus bayi pada {o}", "ok_prep": [] },
+
   "_variant": {
     "_comment": "a regional/variant row (normalized row field \"variant\": {region, op, source[, replaces]}) is rendered with these instead of its bare template, so the bot never states a variant as the main version. {nl} = the row's plain sentence; used by build_kb.py and kb_content.KbContent.render_variant",
     "tambah": "variasi ({region}): {nl} (sebagai tambahan)",

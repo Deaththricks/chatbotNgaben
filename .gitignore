@@ -125,8 +125,6 @@ scratch/
 # Batch questions runner & transcripts (each run's questions + answers in batch_runs/<run>/)
 Chatbot/bot/batch_ask.py
 Chatbot/bot/batch_runs/
-# Meaning-search index (kb_semantic.py): generated from the KB, rebuilt by itself when it changes
-Chatbot/bot/kb_embeddings*.npz
 questions.txt
 answers*.md
 
@@ -134,3 +132,4 @@ answers*.md
 question NLU sample*.yml
 question NLU sample.yml
 question NLU sample 2.yml
+NLU EX *.yml

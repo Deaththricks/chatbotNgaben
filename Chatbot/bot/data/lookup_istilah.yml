@@ -196,6 +196,7 @@ nlu:
     - daun dapdap
     - daun enau
     - daun intaran
+    - daun kelapa
     - daun kelapa muda busung
     - daun kembang sepatu
     - daun pandan
@@ -205,10 +206,15 @@ nlu:
     - daun temen
     - daun teratai
     - daun terong polo
+    - desa mawacara
     - dewa brahma
     - dewa hyang
     - dewa iswara
     - dewa mahadewa
+    - dewa maheswara
+    - dewa rudra
+    - dewa sambu
+    - dewa sangkara
     - dewa siwa
     - dewa surya
     - dewa wishnu
@@ -225,6 +231,7 @@ nlu:
     - don tuwung polo
     - dulang
     - dulang atau meja kecil
+    - dupa
     - dusa
     - emas
     - eteh-eteh
@@ -265,6 +272,7 @@ nlu:
     - hulu hati jenazah
     - hyang agni
     - hyang prajapati
+    - iber-iber
     - ida bhatara kumara
     - ida sang sadaka
     - ida sang sulinggih
@@ -314,6 +322,8 @@ nlu:
     - kaklentingan
     - kalpika
     - kalung benang dengan uang kepeng
+    - kama bang
+    - kama putih
     - kamben
     - kamben sekah
     - kanoroyang
@@ -321,6 +331,7 @@ nlu:
     - kapur sirih
     - karangan
     - karawista
+    - karma phala
     - karma wasana
     - karton
     - kata roras
@@ -369,6 +380,7 @@ nlu:
     - kojong
     - kopi
     - krama masyarakat banjar
+    - krematorium
     - ksatria
     - kuburan
     - kue ketan
@@ -434,6 +446,7 @@ nlu:
     - manah mendiang
     - manah tirtha ening
     - mangle
+    - mantra
     - manusa yadnya
     - manusia
     - mapegat
@@ -453,6 +466,7 @@ nlu:
     - minyak kelapa
     - minyak wangi
     - mirah
+    - mlaspas
     - mlaspas kajang
     - moksa
     - mreteka sawa
@@ -473,6 +487,7 @@ nlu:
     - ngajar-ajar
     - ngajum
     - ngalukat
+    - nganget don bingin
     - ngangkid
     - ngangkid galih
     - ngangsen
@@ -480,7 +495,9 @@ nlu:
     - ngawit pengaksaran
     - ngelinggihang
     - ngelungah
+    - ngereka
     - ngerorasin
+    - ngliwet
     - ngroras
     - ngulapin
     - nguyeg
@@ -510,6 +527,7 @@ nlu:
     - padudusan alit
     - paes gedubang
     - paguntingan
+    - paing
     - pajegan
     - paksa hinayana
     - paksa mahayana
@@ -535,6 +553,7 @@ nlu:
     - pangabenan jenis pranawa
     - pangabenan pranawa
     - pangenteg linggih
+    - pangi
     - pangkon
     - pangringkes
     - pangulungan
@@ -599,6 +618,7 @@ nlu:
     - pitra yadnya
     - pitraloka
     - plengkungan sawa
+    - pon
     - porosan
     - potong gigi
     - pradaksina
@@ -612,6 +632,7 @@ nlu:
     - prerai
     - preta
     - pretiwi
+    - pripih
     - pripih cendana
     - pripih emas
     - pripih perak
@@ -669,13 +690,16 @@ nlu:
     - samping jenazah
     - samsam
     - sang hyang birawi
+    - sang hyang yama
     - sangaskara
     - sanggah urip
     - sanggar surya
     - sanggar surya baligia
     - sangge
+    - sangging
     - sanghyang agni
     - santapan istimewa
+    - saptawara
     - saput
     - sasap
     - sasih
@@ -713,6 +737,7 @@ nlu:
     - sekte paksa surya
     - selatan
     - seludang kelapa
+    - sembah bhakti
     - sembilan batang kayu cendana
     - sesajen
     - sesaji
@@ -720,7 +745,6 @@ nlu:
     - sesenden
     - setiap persimpangan jalan menuju setra
     - setra
-    - setra tempat jasad mendiang
     - setra tempat pembakaran
     - shiwa
     - shiwa loka
@@ -743,7 +767,6 @@ nlu:
     - suku tunggal
     - sukutunggal
     - sulinggih
-    - sulinggih utawi pinandita
     - sulinggih/griya
     - sumpe
     - supta pranawa
@@ -826,6 +849,7 @@ nlu:
     - tri loka
     - tri sarira
     - trimurti
+    - triwara
     - tuhan
     - tulang belulang
     - tulup
@@ -841,6 +865,7 @@ nlu:
     - udeng untuk laki-laki
     - ukur
     - ulantaga
+    - umanis
     - umbi sikapa
     - umbi sikapa/sekapa
     - umbul-umbul
@@ -875,6 +900,7 @@ nlu:
     - uye
     - vagindrya
     - wadah
+    - wage
     - waja
     - wang kepeng/bolong
     - wangsa
@@ -885,6 +911,7 @@ nlu:
     - weda
     - weda pengastawa
     - wesia
+    - wewaran
     - wujud sawa
     - wuku
     - wuku kuningan

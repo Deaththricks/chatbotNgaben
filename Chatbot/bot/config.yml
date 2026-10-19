@@ -19,6 +19,10 @@ pipeline:
     epochs: 160
     constrain_similarities: true
     batch_size: [32, 64]
+    # Seeded 2026-10-14: unseeded, two retrains on identical data each misread two different Tier N
+    # probes of 83. The seed makes a retrain repeatable; it does not settle a near-tie message --
+    # more examples like it in scripts/gen_nlu.py do.
+    random_seed: 13
   # EntitySynonymMapper and ResponseSelector removed 2026-09-30: no entity is annotated
   # and there is no retrieval intent, so both trained on nothing.
   - name: FallbackClassifier
