@@ -1,5 +1,25 @@
 """Custom actions for the GraphRAG Ngaben bot: Neo4j + the curated KB, templates for simple
-questions, and Qwen on Groq for the rest."""
+questions, and Qwen on Groq for the rest.
+
+Map, in file order (helpers sit near their first user, so look a name up rather than a section):
+  the LLM call (_llm_invoke) and the graph (neo4j_conn)
+  shared helpers: the conversation, the logs, the refusal / fabrication / English checks, _deterministic_answer
+  steps 1-3, which terms the question is about: _mentioned_terms (the message's own words), then
+    _extract_and_resolve and its steps (_needs_extraction ... _enrich)
+  what the question asks: the *_Q_RE patterns, _aspect_families / _aspect_predicates (PREDICATE_FAMILIES)
+  the context the model gets: _class_filter, _stage_sarana_facts, _link_filter, _llm_context, _fit_context
+  answer checks (_drop_*, _fix_*, _complete_*, _trim_*, _strip_*) and code answers (_*_answer), interleaved
+  step 4, the answer: _synthesize and its steps (_read_question ... _closing_notes), then _tidy_answer
+  templates for simple questions: _template_route decides, _template_answer answers (_TEMPLATES)
+  the Rasa actions: ActionGraphRAG, ActionTemplateAnswer, ActionLLMFallback, ActionSapa, ActionOutOfScope
+
+Where to add:
+  a template: a _template_<aspect>(family, enriched, user_msg) function, listed in _TEMPLATES
+  a code answer (no LLM): a function returning the answer or None, in the chain in _code_answer
+  an answer check: a _drop_ / _fix_ / _complete_ function, called from _answer_checks at its place in the order
+    (batch_ask.py logs which checks changed an answer by those name prefixes)
+  a prompt rule: in _synthesis_rules, under the condition for its question shape"""
+from dataclasses import dataclass
 import functools
 import os
 import json
@@ -1492,6 +1512,18 @@ _SITUATION_TERMS = (
 )
 
 
+@dataclass
+class _Scan:
+    """What the message itself names, read once by _extract_and_resolve and shared by its steps."""
+    msg: Text
+    resolver: Any
+    mentioned: List[tuple]                    # (match, surface) of each term the message names (_mentioned_terms)
+    leftover: List[str]                       # the message's words no term explains
+    turns: List[str]                          # the recent user turns, this one last (recent_user_turns)
+    entity_history: List[str]
+    current_entity: Optional[str]
+
+
 def _extract_and_resolve(
     dispatcher: CollectingDispatcher,
     tracker: Tracker,
@@ -1512,14 +1544,19 @@ def _extract_and_resolve(
     message has already been dispatched in that case -- when False
     (ActionLLMFallback), the caller is expected to fall through to its own
     ungrounded answer instead.
+
+    The steps: scan the message's own terms (a name only partly known is a miss), the extraction LLM when the
+    words alone cannot give the terms (_needs_extraction, _extracted_terms), resolve its terms (_resolve_terms),
+    add the terms the message names or describes (_message_terms), drop what the history carried in
+    (_without_carried_terms), order them (_in_message_order), put the topic first (_topic_first), add the words of
+    a word-meaning question (_with_word_parts), then the graph and the curated content (_enrich) and the note on a
+    term not found (_note_missing_terms).
     """
     neo4j_conn.failed = False   # this turn's graph queries start clean (see Neo4jConnection)
     turns = recent_user_turns(tracker, limit=4)
-    prior_turns = turns[:-1] if len(turns) > 1 else []
-    history_block = "\n".join(f'- "{t}"' for t in prior_turns) or "(tidak ada)"
-    entities_block = ", ".join(entity_history) or "(tidak ada)"
     resolver = get_resolver()
     mentioned, leftover = _mentioned_terms(user_msg, resolver)
+    s = _Scan(user_msg, resolver, mentioned, leftover, turns, entity_history, current_entity)
     partial = _partial_name(user_msg, mentioned, resolver)
     if partial:
         suggestions = resolver.suggest(partial, k=3)
@@ -1530,6 +1567,70 @@ def _extract_and_resolve(
                       f"{', '.join(suggestions)}?") if suggestions else
                      f"Maaf, informasi mengenai '{partial}' belum tercatat di basis data.")
         return [], [partial], []
+    raw_terms = _extracted_terms(s) if allow_llm and _needs_extraction(s) else []
+
+    # Step 2: kb_resolver maps each free-text term to a canonical KB id --
+    # exact name/alias -> force_merge -> modifier-strip -> rapidfuzz.
+    # (No early return on an empty LLM list any more: the message's own terms
+    # (Step 2b) and the topic fallback below still apply.)
+    asked_as: Dict[str, str] = {}
+    typed_as: Dict[str, str] = {}
+    matches, unresolved = _resolve_terms(s, raw_terms, asked_as, typed_as)
+    own, replaced = _message_terms(s)
+    for m, surface in mentioned:
+        _note_spelling(s, m, surface, asked_as, typed_as)
+    matched_ids = {m.id for m in matches}
+    for m in own:
+        if m.id not in matched_ids:
+            matches.append(m)
+            matched_ids.add(m.id)
+    own_order = [m.id for m in own]
+    anaphor = _refers_back(s, own_order)
+    matches = _without_carried_terms(s, matches, own_order, anaphor, replaced)
+    matches = _in_message_order(s, matches, own, own_order)
+    matches = _topic_first(s, matches, own_order, anaphor)
+    matched_ids = {m.id for m in matches}   # before the cap: a word-meaning part counts these too
+    matches = matches[:4]
+    if _WORD_MEANING_RE.search(user_msg):
+        matches = _with_word_parts(s, matches, matched_ids)
+
+    if not matches:
+        suggestions = []
+        for term in unresolved:
+            suggestions.extend(resolver.suggest(term, k=3))
+        suggestions = list(dict.fromkeys(suggestions))  # dedupe, keep order
+        _log_unresolved(user_msg, unresolved, suggestions)
+        if announce_miss:
+            if not unresolved:
+                dispatcher.utter_message(text="Maaf, saya tidak menangkap istilah spesifik dari pertanyaan Anda.")
+            elif suggestions:
+                dispatcher.utter_message(
+                    text=f"Maaf, saya tidak menemukan '{', '.join(unresolved)}' di basis data. "
+                         f"Mungkin maksud Anda: {', '.join(suggestions)}?"
+                )
+            else:
+                dispatcher.utter_message(
+                    text=f"Maaf, informasi mengenai '{', '.join(unresolved)}' belum tercatat di basis data."
+                )
+        # Keep prior context intact for the next turn either way.
+        return [], unresolved, []
+
+    enriched = _enrich(matches, asked_as, typed_as)
+    if unresolved:
+        _note_missing_terms(dispatcher, s, enriched, unresolved, announce_miss)
+    found_names = [row["name"] for row in enriched]
+    return enriched, unresolved, found_names
+
+
+def _asks_a_question(user_msg: Text) -> bool:
+    """A question mark, a specific question word or an aspect word."""
+    return bool("?" in user_msg or _SPECIFIC_Q_RE.search(user_msg) or _aspect_families(user_msg))
+
+
+def _needs_extraction(s: _Scan) -> bool:
+    """Whether the extraction LLM runs: only for what the message's own words cannot give."""
+    user_msg, mentioned, leftover, resolver = s.msg, s.mentioned, s.leftover, s.resolver
+    prior_turns = s.turns[:-1] if len(s.turns) > 1 else []
     # The extraction LLM is for what the words alone cannot give: a pronoun or ellipsis
     # ("kenapa itu harus dihindari?"), a relation/comparison question whose second term
     # may come from the history, or a word the scan could not place. A message fully
@@ -1541,12 +1642,12 @@ def _extract_and_resolve(
     # call had nothing to resolve: 67 of the 1,864 NLU examples paid ~600 tokens each for "tidak menangkap
     # istilah", and "yang kedua" was then searched as a term ("Mungkin maksud Anda: kedua mata jenazah")
     # (LLM comparison 2026-10-20). A content word ("orang meninggal di bali dikremasi") still gets the call.
-    nothing_to_extract = (not mentioned and not prior_turns and not entity_history and not current_entity
+    nothing_to_extract = (not mentioned and not prior_turns and not s.entity_history and not s.current_entity
                           and not {w for w in _asked_specifics(user_msg, []) if not w.isdigit()
                                    and not {w, re.sub(r"nya$", "", w)} & (_ASPECT_WORDS | _POINTER_WORDS)})
     pointing = bool(_ANAPHOR_RE.search(resolver.clean_query(user_msg)))
     linking = bool(_RELATION_Q_RE.search(user_msg) or _COMPARE_Q_RE.search(user_msg))
-    asks = bool("?" in user_msg or _SPECIFIC_Q_RE.search(user_msg) or _aspect_families(user_msg))
+    asks = _asks_a_question(user_msg)
     # Nor for a message that names its term and whose other words are everyday ones, with nothing pointing back
     # and no relation or comparison: of 108 such calls in the recorded Qwen runs, one added a term the scan had
     # not found -- the whole of a part named with it ("berapa tingkat bade untuk raja": bade), which keeps the
@@ -1557,11 +1658,20 @@ def _extract_and_resolve(
         for m, surface in mentioned for f in get_content().facts_by_subj.get(m.id, []))
     only_everyday = all(_is_everyday_word(w, resolver) or w in _ASPECT_VOCAB for w in leftover)
     # and a follow-up that names nothing and says only an ellipsis verb ("kapan dilakukan?"): the topic answers it
-    bare_follow_up = (not mentioned and bool(current_entity) and not pointing and not linking and asks
+    bare_follow_up = (not mentioned and bool(s.current_entity) and not pointing and not linking and asks
                       and set(leftover) <= _ELLIPSIS_VERBS)
-    use_llm = allow_llm and not nothing_to_extract and not bare_follow_up and bool(
+    return not nothing_to_extract and not bare_follow_up and bool(
         not mentioned or (leftover and not (only_everyday and not names_whole)) or pointing or linking)
 
+
+def _extracted_terms(s: _Scan) -> List[str]:
+    """Step 1: the terms the extraction LLM finds, each grounded in the conversation; the raw message when the
+    call fails."""
+    user_msg, resolver, turns, entity_history, current_entity = (
+        s.msg, s.resolver, s.turns, s.entity_history, s.current_entity)
+    prior_turns = turns[:-1] if len(turns) > 1 else []
+    history_block = "\n".join(f'- "{t}"' for t in prior_turns) or "(tidak ada)"
+    entities_block = ", ".join(entity_history) or "(tidak ada)"
     # Step 1: LLM handles coreference + multi-term splitting. It no longer
     # guesses "correct" spelling -- that's kb_resolver's job (Step 2), which has
     # the real alias table, force-merges, and rapidfuzz, and won't silently
@@ -1611,19 +1721,18 @@ def _extract_and_resolve(
     """
     raw_terms: List[str] = []
     try:
-        if use_llm:
-            resolved_text = _llm_invoke([{"role": "user", "content": resolve_prompt}], "extract")[0].strip().lower()
-            raw_terms = [t.strip() for t in resolved_text.split(",") if t.strip()]
-            # Deterministic backstop for the instruction above -- see _META_TERMS.
-            raw_terms = [t for t in raw_terms if not _is_meta_term(t, resolver)]
-            # The extraction LLM sometimes returns a word nobody said ("apa saja
-            # unsurnya" -> "unsurlunya", conersation.md 2026-09-24). Keep a term only
-            # if one of its words is close to a word actually present in the
-            # conversation (or an entity already discussed) -- coreference
-            # substitutions pass, inventions don't.
-            said = set(re.findall(r"\w+", " ".join(
-                turns + entity_history + [current_entity or ""]).lower()))
-            raw_terms = [t for t in raw_terms if _term_is_grounded(t, said)]
+        resolved_text = _llm_invoke([{"role": "user", "content": resolve_prompt}], "extract")[0].strip().lower()
+        raw_terms = [t.strip() for t in resolved_text.split(",") if t.strip()]
+        # Deterministic backstop for the instruction above -- see _META_TERMS.
+        raw_terms = [t for t in raw_terms if not _is_meta_term(t, resolver)]
+        # The extraction LLM sometimes returns a word nobody said ("apa saja
+        # unsurnya" -> "unsurlunya", conersation.md 2026-09-24). Keep a term only
+        # if one of its words is close to a word actually present in the
+        # conversation (or an entity already discussed) -- coreference
+        # substitutions pass, inventions don't.
+        said = set(re.findall(r"\w+", " ".join(
+            turns + entity_history + [current_entity or ""]).lower()))
+        raw_terms = [t for t in raw_terms if _term_is_grounded(t, said)]
     except Exception as e:
         # LLM down/unreachable/timed out/rate-limited -- degrade instead of crashing the
         # action (every intent path runs through this function). No
@@ -1631,48 +1740,57 @@ def _extract_and_resolve(
         # match a self-contained question directly off the raw message.
         print(f"LLM term-extraction error: {e}")
         raw_terms = [user_msg.strip().lower()] if user_msg.strip() else []
+    return raw_terms
 
-    # Step 2: kb_resolver maps each free-text term to a canonical KB id --
-    # exact name/alias -> force_merge -> modifier-strip -> rapidfuzz.
-    # (No early return on an empty LLM list any more: the message's own terms
-    # (Step 2b) and the topic fallback below still apply.)
+
+def _note_spelling(s: _Scan, m, term: str, asked_as: Dict[str, str], typed_as: Dict[str, str]) -> None:
+    """How the user wrote a resolved term, when it is not the KB name: another name for it (asked_as) or a
+    misspelling (typed_as)."""
+    user_msg, resolver = s.msg, s.resolver
+    # a different name for the same concept ("samskara" -> sangaskara), not a typo.
+    # "ortho" too: the extraction LLM wrote "nggerorasin" for the user's
+    # "ngerorasin" (an alias of Atma Wedana), and the answer then called
+    # ngerorasin "a type of Atma Wedana" (2026-09-25)
+    t, n = term.lower(), m.name.lower()
+    if (m.via in ("alias", "force_merge", "ortho") and t not in n and n not in t
+            and _ortho_key(t) != _ortho_key(n)):
+        asked_as.setdefault(m.id, _user_spelling(term, user_msg, m.entity))
+    elif m.via != "exact" and t != n and t in user_msg.lower():
+        # the user's misspelling: the synthesis question uses the KB name instead,
+        # or the model repeats it ("Moksaa adalah ... Moksaa sama dengan moksa")
+        if m.via == "strip":
+            # only the name's own words are its spelling, not the modifiers the match stripped: "beda ngaben
+            # massal" was replaced whole, and "apa beda ngaben massal dan ngaben svasta" reached Qwen as "apa
+            # ngaben massal svasta" ("perbedaan pangringkes", "nama lain jenazah", "bade tingkat sembilan" lost
+            # their asked word too; the 12 evaluation categories, 2026-10-27)
+            core = " ".join(w for w in t.split() if w not in resolver.strip_modifiers)
+            if not core or core == n or core not in user_msg.lower():
+                return
+            term = core
+        typed_as.setdefault(m.id, term)
+
+
+def _resolve_terms(s: _Scan, raw_terms: List[str], asked_as: Dict[str, str],
+                   typed_as: Dict[str, str]) -> "tuple[list, List[str]]":
+    """The extracted terms resolved to KB entities (matches, each once) and the ones that did not resolve."""
     matches = []
     unresolved = []
-    asked_as: Dict[str, str] = {}
-    typed_as: Dict[str, str] = {}
-
-    def note_spelling(m, term: str) -> None:
-        # a different name for the same concept ("samskara" -> sangaskara), not a typo.
-        # "ortho" too: the extraction LLM wrote "nggerorasin" for the user's
-        # "ngerorasin" (an alias of Atma Wedana), and the answer then called
-        # ngerorasin "a type of Atma Wedana" (2026-09-25)
-        t, n = term.lower(), m.name.lower()
-        if (m.via in ("alias", "force_merge", "ortho") and t not in n and n not in t
-                and _ortho_key(t) != _ortho_key(n)):
-            asked_as.setdefault(m.id, _user_spelling(term, user_msg, m.entity))
-        elif m.via != "exact" and t != n and t in user_msg.lower():
-            # the user's misspelling: the synthesis question uses the KB name instead,
-            # or the model repeats it ("Moksaa adalah ... Moksaa sama dengan moksa")
-            if m.via == "strip":
-                # only the name's own words are its spelling, not the modifiers the match stripped: "beda ngaben
-                # massal" was replaced whole, and "apa beda ngaben massal dan ngaben svasta" reached Qwen as "apa
-                # ngaben massal svasta" ("perbedaan pangringkes", "nama lain jenazah", "bade tingkat sembilan" lost
-                # their asked word too; the 12 evaluation categories, 2026-10-27)
-                core = " ".join(w for w in t.split() if w not in resolver.strip_modifiers)
-                if not core or core == n or core not in user_msg.lower():
-                    return
-                term = core
-            typed_as.setdefault(m.id, term)
-
     for term in raw_terms:
-        term = _widen_to_named_term(_peel_aspect_words(term, resolver), user_msg, resolver)
-        m = resolver.resolve(term)
+        term = _widen_to_named_term(_peel_aspect_words(term, s.resolver), s.msg, s.resolver)
+        m = s.resolver.resolve(term)
         if m and m.id not in {x.id for x in matches}:
             matches.append(m)
-            note_spelling(m, term)
+            _note_spelling(s, m, term, asked_as, typed_as)
         elif not m:
             unresolved.append(term)
+    return matches, unresolved
 
+
+def _message_terms(s: _Scan) -> "tuple[list, set]":
+    """Step 2b: the terms the message names, then those it implies: the whole of a part named with it, a term it
+    describes, ngaben for a burned body, a described situation, dewasa ngaben for a day, the priced cards of a
+    price question, the ceremony levels. -> (terms, the ids a situation replaces)"""
+    user_msg, mentioned, leftover, resolver = s.msg, s.mentioned, s.leftover, s.resolver
     # Step 2b: the terms the message itself names -- a deterministic scan of its words
     # plus resolve_many()'s "X dan Y" split -- are added even when the extraction LLM
     # dropped or replaced them (e.g. "bade dan naga banda"; "... acara nglungah" -> ngaben).
@@ -1680,8 +1798,6 @@ def _extract_and_resolve(
     for m in [mm for mm, _ in mentioned] + resolver.resolve_many(user_msg, limit=4):
         if m.id not in {x.id for x in own}:
             own.append(m)
-    for m, surface in mentioned:
-        note_spelling(m, surface)
     # a part matched loosely from its whole's name and a qualifier is that part AND the whole: "bade
     # tingkat 11" is tingkatan bade (a part of bade) and the bade itself. "apakah wangsa sudra boleh
     # menggunakan bade tingkat 11?" lost bade -- and its usage norms -- once the extraction LLM stopped
@@ -1746,30 +1862,36 @@ def _extract_and_resolve(
         hit = resolver.resolve("tingkatan upacara")
         if hit:
             own.insert(0, hit)
-    matched_ids = {m.id for m in matches}
-    for m in own:
-        if m.id not in matched_ids:
-            matches.append(m)
-            matched_ids.add(m.id)
+    return own, replaced
+
+
+def _refers_back(s: _Scan, own_order: List[str]) -> bool:
+    """A pointing-back word (itu, tersebut, -nya ...), or no term named and only the topic's own card's words."""
+    # (clean_query peels "apa itu" but not "siapa itu", whose "itu" points at nothing)
+    anaphor = bool(_ANAPHOR_RE.search(re.sub(r"^\s*siapa\s+itu\b", "", s.resolver.clean_query(s.msg))))
+    # ... or quotes the topic's own card ("karunia seperti apa yang dimaksud?" after anugerah raja)
+    return anaphor or bool(not own_order and _quotes_topic(s.leftover, s.current_entity, s.resolver))
+
+
+def _without_carried_terms(s: _Scan, matches: list, own_order: List[str], anaphor: bool,
+                           replaced: set) -> list:
+    """The terms that belong to this question: not one the extraction LLM carried over from the history when
+    the message names its own, not one a situation replaces, not the generic lontar of a source question."""
+    user_msg, resolver = s.msg, s.resolver
     # A term the extraction LLM carried over from the history is not part of a question
     # that names its own term(s): "apa itu nglungah" after a turn about ngaben came back
     # as [ngaben, ngelungah], "apa itu tujuan ngaben" after moksa as [ngaben, moksa]
     # (2026-09-29). The one exception is a relation/comparison question that names only
     # one term -- "apa hubungannya dengan jenazah" after a turn about sawa needs sawa.
-    own_order = [m.id for m in own]
     needs_history = len(own_order) == 1 and bool(
         _RELATION_Q_RE.search(user_msg) or _COMPARE_Q_RE.search(user_msg))
-    # (clean_query peels "apa itu" but not "siapa itu", whose "itu" points at nothing)
-    anaphor = bool(_ANAPHOR_RE.search(re.sub(r"^\s*siapa\s+itu\b", "", resolver.clean_query(user_msg))))
-    # ... or quotes the topic's own card ("karunia seperti apa yang dimaksud?" after anugerah raja)
-    anaphor = anaphor or bool(not own_order and _quotes_topic(leftover, current_entity, resolver))
     # A message that names no term but has a word that is no everyday word ("thanks", "siapa
     # itu Pewdiepie", "apa itu bahasa kwai") asks about something the KB lacks. The extraction
     # LLM still returned the last topic, which the grounding check accepts (any word of the
     # history counts), so each was answered about jenazah / nyiramang layon (conersation.md
     # 2026-10-02). Without a word pointing back, only terms the message itself says count.
     unknown_word = (not own_order and not anaphor and not _ORDINAL_REF_RE.search(user_msg)
-                    and any(not _is_everyday_word(w, resolver) for w in leftover))
+                    and any(not _is_everyday_word(w, resolver) for w in s.leftover))
     if (own_order and not needs_history) or unknown_word:
         said = set(re.findall(r"\w+", user_msg.lower()))
         matches = [m for m in matches if m.id in own_order or any(
@@ -1780,18 +1902,29 @@ def _extract_and_resolve(
     # not a term (T94); the sources come from _source_facts
     if "sumber" in _aspect_families(user_msg) and len(matches) > 1:
         matches = [m for m in matches if m.id != "lontar"]
+    return matches
+
+
+def _in_message_order(s: _Scan, matches: list, own: list, own_order: List[str]) -> list:
+    """The message's own terms first, in its order, a class word after the term it belongs to."""
     # the message's own terms first, in its order: enriched[0] is the asked term
     matches.sort(key=lambda m: own_order.index(m.id) if m.id in own_order else len(own_order))
     # ... but a class another named term counts or is a kind of is that term's word, after it: "sebutkan semua dewa dan
     # arahnya dalam dewata nawa sanga" made the generic dewa card the topic once dewa had one (2026-10-28). Named terms
     # only: the price rule adds ngaben massal, a kind of ngaben, and "berapa biaya ngaben" lost ngaben itself to the cap
     # of four below (Tier B 2026-10-30)
-    named_ids = {m.id for m, _ in mentioned}
+    named_ids = {m.id for m, _ in s.mentioned}
     if len(named_ids) > 1:
-        sub = {m.id for t in own if t.id in named_ids for m, _ in _topic_class_words(mentioned, t, user_msg)}
+        sub = {m.id for t in own if t.id in named_ids for m, _ in _topic_class_words(s.mentioned, t, s.msg)}
         if sub:
             matches.sort(key=lambda m: m.id in sub)
+    return matches
 
+
+def _topic_first(s: _Scan, matches: list, own_order: List[str], anaphor: bool) -> list:
+    """The topic rule: the remembered topic first when the message points back at it."""
+    user_msg, mentioned, leftover, resolver, current_entity = (
+        s.msg, s.mentioned, s.leftover, s.resolver, s.current_entity)
     # A follow-up about the topic puts it first: one that names no term and points back or
     # says nothing else ("jadi, kenapa tidak boleh?" after a malamasa question went to
     # ngaben, a term the extraction LLM took from the history -- T30/T31), and one that
@@ -1803,7 +1936,8 @@ def _extract_and_resolve(
     off_card = ([x for x in mentioned if x not in _topic_class_words(mentioned, topic_now, user_msg)] if topic_now
                 else mentioned)
     if current_entity and not _ORDINAL_REF_RE.search(user_msg) and (
-            (not own_order and (anaphor or ((not leftover or set(leftover) <= _ELLIPSIS_VERBS) and asks)))
+            (not own_order and (anaphor or ((not leftover or set(leftover) <= _ELLIPSIS_VERBS)
+                                            and _asks_a_question(user_msg))))
             or (own_order and (_points_back(user_msg, off_card, resolver)
                                # every named term is the topic's class word, and "-nya" points back: "sebutkan semua
                                # arah dan dewa yang menguasainya" after nawa dewata. It needs a named term: a term found
@@ -1813,7 +1947,7 @@ def _extract_and_resolve(
         topic = resolver.resolve(current_entity)
         if own_order:
             # described by its link to the named term: the remembered term so linked, which may be older
-            topic = _linked_earlier_topic(user_msg, mentioned, own_order, current_entity, entity_history,
+            topic = _linked_earlier_topic(user_msg, mentioned, own_order, current_entity, s.entity_history,
                                           resolver) or topic
         if topic:
             matches = [topic] + [m for m in matches if m.id != topic.id]
@@ -1823,46 +1957,31 @@ def _extract_and_resolve(
                 hit = resolver.resolve("dewasa ngaben")
                 if hit:
                     matches.insert(1, hit)
-    matched_ids = {m.id for m in matches}
-    matches = matches[:4]
+    return matches
 
+
+def _with_word_parts(s: _Scan, matches: list, matched_ids: set) -> list:
+    """A word-meaning question: also each word of a multi-word term on its own."""
+    resolver = s.resolver
     # "arti kata (dasar) pitra yadnya": also look up each word of a multi-word
     # term on its own (exact/alias only -- a fuzzy hit on a single word is noise).
-    if _WORD_MEANING_RE.search(user_msg):
-        if len(matches) >= 2:
-            joined = resolver.resolve(" ".join(m.name for m in matches))
-            if joined and joined.via in ("exact", "alias") and joined.id not in matched_ids:
-                matches.append(joined)
-                matched_ids.add(joined.id)
-        for m in list(matches):
-            for word in m.name.split():
-                w = resolver.resolve(word)
-                if w and w.via in ("exact", "alias") and w.id not in matched_ids:
-                    matches.append(w)
-                    matched_ids.add(w.id)
-        matches = matches[:6]
+    if len(matches) >= 2:
+        joined = resolver.resolve(" ".join(m.name for m in matches))
+        if joined and joined.via in ("exact", "alias") and joined.id not in matched_ids:
+            matches.append(joined)
+            matched_ids.add(joined.id)
+    for m in list(matches):
+        for word in m.name.split():
+            w = resolver.resolve(word)
+            if w and w.via in ("exact", "alias") and w.id not in matched_ids:
+                matches.append(w)
+                matched_ids.add(w.id)
+    return matches[:6]
 
-    if not matches:
-        suggestions = []
-        for term in unresolved:
-            suggestions.extend(resolver.suggest(term, k=3))
-        suggestions = list(dict.fromkeys(suggestions))  # dedupe, keep order
-        _log_unresolved(user_msg, unresolved, suggestions)
-        if announce_miss:
-            if not unresolved:
-                dispatcher.utter_message(text="Maaf, saya tidak menangkap istilah spesifik dari pertanyaan Anda.")
-            elif suggestions:
-                dispatcher.utter_message(
-                    text=f"Maaf, saya tidak menemukan '{', '.join(unresolved)}' di basis data. "
-                         f"Mungkin maksud Anda: {', '.join(suggestions)}?"
-                )
-            else:
-                dispatcher.utter_message(
-                    text=f"Maaf, informasi mengenai '{', '.join(unresolved)}' belum tercatat di basis data."
-                )
-        # Keep prior context intact for the next turn either way.
-        return [], unresolved, []
 
+def _enrich(matches: list, asked_as: Dict[str, str], typed_as: Dict[str, str]) -> List[Dict[str, Any]]:
+    """Step 3: each resolved term as the pipeline uses it -- its graph edges as sentences, its definition and
+    facts from the curated KB, its other names and how the user wrote it."""
     # Step 3: fetch the resolved entities from the graph by exact id, then layer
     # the curated KB content on top -- glossary/fact-derived definitions for
     # entities whose graph node has no `definition` property, plus supporting
@@ -1944,45 +2063,47 @@ def _extract_and_resolve(
                         and not re.search(r"\s(?:dan|atau|serta)\s", a)
                         and not re.search(rf"(?<![\w-]){re.escape(m.name)}(?![\w-])", a, re.I)][:8],
         })
+    return enriched
 
-    if unresolved:
-        _log_unresolved(user_msg, unresolved, [])
-        # Only a missing second term of "hubungan/beda X dan Y" is worth a note -- the
-        # other misses are qualifiers the extraction LLM returned as terms ("angka 11",
-        # "masyarakat umum", "harganya"), and the note read as noise (2026-09-29).
-        # nor one everyday word ("giginya") or a phrase whose words were all found as terms
-        # ("sasih kliwon" -> sasih + kliwon), conersation.md 2026-10-02; "mata angin" (two
-        # everyday words, no term) still gets the note
-        found_words = {w for e in enriched for w in e["name"].lower().split()}
-        # "sasih kliwon" with sasih dropped as a wrong class word: the answer corrects it instead
-        misclassed = {f"{cs} {ts}".lower() for _, cs, _, ts in _misclassed_terms(user_msg, resolver)}
 
-        def composed_of_found(t: str) -> bool:
-            # a found term plus everyday words or other KB names: "tingkatan nista madya" (nista,
-            # madya and utama were all found) and "ngaben sawa wedana" got "tidak ditemukan"
-            # notes above complete answers (2026-10-07 batch). Without a found term in it the
-            # phrase is a miss: "mata angin" (two everyday words) still gets the note.
-            ws = re.findall(r"[\w-]+", t.lower())
-            if not any(w in found_words for w in ws):
-                return False
-            return all(w in found_words or _is_everyday_word(w, resolver)
-                       or getattr(resolver.resolve(w), "via", None) in ("exact", "alias") for w in ws)
-        typed = [t for t in unresolved if t.lower() in user_msg.lower()
-                 and not any(t.lower() in (e["name"].lower(), e.get("typed_as") or "") for e in enriched)
-                 and not (len(t.split()) == 1 and _is_everyday_word(t.lower(), resolver))
-                 and not composed_of_found(t)
-                 and t.lower() not in misclassed]
-        if typed and (_RELATION_Q_RE.search(user_msg) or _COMPARE_Q_RE.search(user_msg)):
-            # the synthesis model is told too, or it relates the missing term anyway
-            # ("Sasih kliwon adalah salah satu jenis pitra yadnya")
-            enriched[0]["missing_terms"] = typed
-            if announce_miss:
-                dispatcher.utter_message(
-                    text=f"(Catatan: '{', '.join(typed)}' tidak ditemukan, melanjutkan dengan yang lain.)"
-                )
+def _note_missing_terms(dispatcher: CollectingDispatcher, s: _Scan, enriched: List[Dict[str, Any]],
+                        unresolved: List[str], announce_miss: bool) -> None:
+    """Log the terms that did not resolve; a relation or comparison question missing one of its terms says so."""
+    user_msg, resolver = s.msg, s.resolver
+    _log_unresolved(user_msg, unresolved, [])
+    # Only a missing second term of "hubungan/beda X dan Y" is worth a note -- the
+    # other misses are qualifiers the extraction LLM returned as terms ("angka 11",
+    # "masyarakat umum", "harganya"), and the note read as noise (2026-09-29).
+    # nor one everyday word ("giginya") or a phrase whose words were all found as terms
+    # ("sasih kliwon" -> sasih + kliwon), conersation.md 2026-10-02; "mata angin" (two
+    # everyday words, no term) still gets the note
+    found_words = {w for e in enriched for w in e["name"].lower().split()}
+    # "sasih kliwon" with sasih dropped as a wrong class word: the answer corrects it instead
+    misclassed = {f"{cs} {ts}".lower() for _, cs, _, ts in _misclassed_terms(user_msg, resolver)}
 
-    found_names = [row["name"] for row in enriched]
-    return enriched, unresolved, found_names
+    def composed_of_found(t: str) -> bool:
+        # a found term plus everyday words or other KB names: "tingkatan nista madya" (nista,
+        # madya and utama were all found) and "ngaben sawa wedana" got "tidak ditemukan"
+        # notes above complete answers (2026-10-07 batch). Without a found term in it the
+        # phrase is a miss: "mata angin" (two everyday words) still gets the note.
+        ws = re.findall(r"[\w-]+", t.lower())
+        if not any(w in found_words for w in ws):
+            return False
+        return all(w in found_words or _is_everyday_word(w, resolver)
+                   or getattr(resolver.resolve(w), "via", None) in ("exact", "alias") for w in ws)
+    typed = [t for t in unresolved if t.lower() in user_msg.lower()
+             and not any(t.lower() in (e["name"].lower(), e.get("typed_as") or "") for e in enriched)
+             and not (len(t.split()) == 1 and _is_everyday_word(t.lower(), resolver))
+             and not composed_of_found(t)
+             and t.lower() not in misclassed]
+    if typed and (_RELATION_Q_RE.search(user_msg) or _COMPARE_Q_RE.search(user_msg)):
+        # the synthesis model is told too, or it relates the missing term anyway
+        # ("Sasih kliwon adalah salah satu jenis pitra yadnya")
+        enriched[0]["missing_terms"] = typed
+        if announce_miss:
+            dispatcher.utter_message(
+                text=f"(Catatan: '{', '.join(typed)}' tidak ditemukan, melanjutkan dengan yang lain.)"
+            )
 
 
 # Question aspect -> the family of edge AND text-only attribute predicates relevant to
@@ -5261,11 +5382,40 @@ def _collapse_name_words(synth_q: Text, enriched: List[Dict[str, Any]]) -> str:
     return synth_q
 
 
-def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]], tracker: Optional[Tracker] = None) -> str:
-    """Step 4: synthesize a natural Indonesian answer from `enriched`, with a
-    deterministic guard against the local LLM refusing/hedging on context it was
-    actually given (observed directly in conersation.md for terms that HAD
-    resolved successfully -- e.g. ngeroras, naga banda, tirte, panca maha butha)."""
+@dataclass
+class _Question:
+    """What _synthesize knows about the question, built once by _read_question and shared by its steps."""
+    msg: Text                                 # the user's message, "kelengkapan" read as sarana (_equipment_as_sarana)
+    enriched: List[Dict[str, Any]]            # the resolved terms, with their context filled in for this question
+    tracker: Optional[Tracker]
+    word_meaning: bool                        # "arti kata X"
+    consequence_q: bool                       # "kalau tidak ngaben ..."
+    families: List[str]                       # the asked aspect families (_aspect_families)
+    aspect_preds: Any                         # their predicates, None for no aspect
+    day_q: bool                               # a question about days (dewasa ngaben)
+    class_list: Any                           # (class name, term names) of a class list, else None
+    stages_q: bool
+    link_to: Any                              # the linking targets of a relation question (_link_filter)
+    contents_q: bool
+    keep_children: Any
+    overview: bool                            # a plain "apa itu X"
+    previous: Optional[Text]                  # the bot's last answer
+    follow_up: bool                           # a follow-up on the same term (rule 32)
+    context_items: List[Dict[str, Any]]       # the prompt's context entries
+    why_q: bool
+    has_reason: bool                          # a purpose / meaning fact exists (_strip_why_refusal may cut)
+    missing_aspects: List[str]                # asked aspects no fact covers (rule 23, _say_unrecorded)
+    composition_q: bool
+    synth_q: Text                             # the question with each term as the KB names it
+    corrections: List[Text]                   # "X bukan ... sasih" openings (_misclassed_terms)
+    about: Dict[str, Any]                     # the term an honest miss describes
+    raw_context: Text = ""                    # the compact JSON context, set by _synthesis_user_prompt
+
+
+def _read_question(user_msg: Text, enriched: List[Dict[str, Any]], tracker: Optional[Tracker]) -> Optional[_Question]:
+    """What the question asks and which context it gets: the aspect, its shape (why, consequence, days, stages,
+    class list, relation ...), the follow-up, the context entries, the question as the KB names its terms. Fills
+    the terms' aspect facts on the way. None when the graph is down (_outage_answer)."""
     # A word-meaning question is answered from definitions alone: with the edges
     # in context too, the small model kept listing them ("pitra berwujud sekah
     # kangsen, menerima daksina tapakan ...") instead of saying what the words mean.
@@ -5309,7 +5459,7 @@ def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]], tracker: Optiona
     if "sumber" in families:
         _source_facts(enriched)
     if neo4j_conn.failed:
-        return _outage_answer(enriched)
+        return None
     class_list = _class_filter(user_msg, enriched)
     if not class_list and "sarana" not in families:
         # computed only for the class filter, which did not apply
@@ -5366,7 +5516,70 @@ def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]], tracker: Optiona
     # uses definitions alone: the other terms' explanations would come back as roles there
     if not (contents_q or word_meaning or "sarana" in families):
         _add_related_terms(context_items, enriched)
+    # "emang kalok semisal nggak ngaben kenapa?" asks what follows, not why ngaben exists
+    why_q = bool(_WHY_Q_RE.search(user_msg)) and not consequence_q
+    # with a purpose/meaning fact in context the model still opened with "alasannya belum
+    # tercatat" (T39/T68/T74): that opening is cut by code (_strip_why_refusal), not forbidden
+    # here -- a rule saying "never say it is not recorded" made it invent reasons ("agar ...
+    # mendapatkan keberkahan yang maksimal", Tier B 2026-10-01)
+    # For a why-avoided question the definition's judgement IS the reason: "kenapa tidak boleh
+    # melakukan upacara pada sasih paruwak tahuk?" opened "Maaf, alasannya belum tercatat. Namun,
+    # ... termasuk dalam alaning dewasa (hari-hari buruk)" (2026-10-07 batch)
+    has_reason = _has_reason_facts(enriched) or (
+        why_q and bool(_WHY_AVOID_Q_RE.search(user_msg))
+        and any(_JUDGEMENT_RE.search(e.get("definition") or "") for e in enriched))
+    # "hari baik ngaben" got every sasih and wewaran rule in the definition's order: "content good,
+    # but clunky; it doesn't immediately make clear it has answered" (user, conersation.md 2026-10-07)
+    # (a why-question's missing reason is rule 21's)
+    missing_aspects = list(dict.fromkeys(
+        f for f in families if f in _ASPECT_LABELS and not (why_q and f in _OUTGOING_ONLY_FAMILIES)
+        and not class_list and enriched and not _aspect_present(f, enriched)))
+    # Ask the synthesis model about the canonical name. Shown "apa itu lingga sarira"
+    # beside an entry named "suksma sarira", it wrote "lingga sarira termasuk salah
+    # satu jenis suksma sarira" -- even when told the two are one thing (2026-09-25).
+    # The answer still opens with "<asked name> adalah sebutan lain untuk <name>" (below).
+    # A misspelling is replaced too, or the model repeats it (typed_as).
+    synth_q = user_msg
+    for e in enriched:
+        for surface in (e.get("asked_as"), e.get("typed_as")):
+            if surface:
+                # not inside a hyphenated word: "purusa dan pradana" became "purusa-pradana", then
+                # the typed "purusa" was replaced inside it -- "purusa-pradana-pradana" (2026-10-08)
+                synth_q = re.sub(r"(?<![\w-])" + re.escape(surface) + r"(?![\w-])", e["name"], synth_q, flags=re.I)
+    # "nyiramin layon" -> "nyiramang layon layon" (T88)
+    synth_q = re.sub(r"\b(\w+)(\s+\1\b)+", r"\1", synth_q, flags=re.I)
+    synth_q = _collapse_name_words(synth_q, enriched)
+    # "sasih kliwon" -> "kliwon": shown the user's wrong premise, the model went along with it
+    # ("Sasih kliwon adalah sasih kedua"). The answer opens with the term's own sentence saying
+    # it is no such class, when its definition has one.
+    corrections = []
+    for cls, cls_surf, term, term_surf in _misclassed_terms(user_msg, get_resolver()):
+        synth_q = re.sub(rf"\b{re.escape(cls_surf)}\s+{re.escape(term_surf)}\b", term_surf, synth_q, flags=re.I)
+        definition = get_content().entity_def.get(term.id) or ""
+        for s in re.split(r"(?<=[.;])\s+", definition):
+            if re.search(rf"\bbukan\b[^.;]*\b{re.escape(cls.name)}\b", s, re.I):
+                s = re.sub(r"^(?:jadi|maka),?\s+", "", s.strip(), flags=re.I).rstrip(";.")
+                corrections.append(f"{s[:1].upper()}{s[1:]}.")
+                break
+    composition_q = _composition_q(user_msg)
+    # the term an honest miss describes: a class list ("upakara apa saja yang digunakan dalam wayang") is
+    # about the term it scopes, not the class -- its miss described banten (NLU sweep 2026-10-19)
+    about = next((e for e in enriched if class_list and e["name"] in class_list[1]), enriched[0])
+    return _Question(
+        msg=user_msg, enriched=enriched, tracker=tracker, word_meaning=word_meaning, consequence_q=consequence_q,
+        families=families, aspect_preds=aspect_preds, day_q=day_q, class_list=class_list, stages_q=stages_q,
+        link_to=link_to, contents_q=contents_q, keep_children=keep_children, overview=overview, previous=previous,
+        follow_up=follow_up, context_items=context_items, why_q=why_q, has_reason=has_reason,
+        missing_aspects=missing_aspects, composition_q=composition_q, synth_q=synth_q, corrections=corrections,
+        about=about)
 
+
+def _synthesis_rules(q: _Question) -> str:
+    """The system prompt: the standing rules 1-11, then each rule for this question's shape (12-32)."""
+    user_msg, enriched, word_meaning, consequence_q = q.msg, q.enriched, q.word_meaning, q.consequence_q
+    day_q, class_list, stages_q, link_to = q.day_q, q.class_list, q.stages_q, q.link_to
+    keep_children, overview, previous, follow_up = q.keep_children, q.overview, q.previous, q.follow_up
+    why_q, missing_aspects, about = q.why_q, q.missing_aspects, q.about
     synth_sys_prompt = """
     You are a knowledgeable, factual assistant for the Balinese Ngaben ceremony.
 
@@ -5500,8 +5713,6 @@ def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]], tracker: Optiona
             "List the items of every 'Sarana yang digunakan dalam ...' fact, all of them: first the items "
             "used in the asked term itself, then one group per stage it names. Only name the items -- do "
             "not describe them and do not say where the information comes from.\n")
-    # "emang kalok semisal nggak ngaben kenapa?" asks what follows, not why ngaben exists
-    why_q = bool(_WHY_Q_RE.search(user_msg)) and not consequence_q
     if consequence_q:
         synth_sys_prompt += (
             "\n    30. The user asks what happens if something is NOT done or does not happen. Answer "
@@ -5512,16 +5723,6 @@ def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]], tracker: Optiona
             "Use only purposes and consequences the context states. Do not list its stages, kinds, "
             "sarana or levels. If the context states no purpose or consequence, reply: 'Maaf, "
             "akibatnya belum tercatat di basis data.'\n")
-    # with a purpose/meaning fact in context the model still opened with "alasannya belum
-    # tercatat" (T39/T68/T74): that opening is cut by code (_strip_why_refusal), not forbidden
-    # here -- a rule saying "never say it is not recorded" made it invent reasons ("agar ...
-    # mendapatkan keberkahan yang maksimal", Tier B 2026-10-01)
-    # For a why-avoided question the definition's judgement IS the reason: "kenapa tidak boleh
-    # melakukan upacara pada sasih paruwak tahuk?" opened "Maaf, alasannya belum tercatat. Namun,
-    # ... termasuk dalam alaning dewasa (hari-hari buruk)" (2026-10-07 batch)
-    has_reason = _has_reason_facts(enriched) or (
-        why_q and bool(_WHY_AVOID_Q_RE.search(user_msg))
-        and any(_JUDGEMENT_RE.search(e.get("definition") or "") for e in enriched))
     if why_q:
         # "kenapa angka 11 dipilih untuk bade raja?" got an invented reason ("angka 11 memiliki
         # arti khusus dan simbolis") the fabrication ratio did not catch (Tier B 2026-09-29);
@@ -5545,12 +5746,6 @@ def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]], tracker: Optiona
             "that definition lists. Something is avoided only where the definition says so (dihindari, "
             "tidak boleh, sasih mati); dewasa madya (kaenem, kapitu) is middling, not avoided. A reason "
             "for avoiding one comes only from that term's own definition or 'related_terms'.\n")
-    # "hari baik ngaben" got every sasih and wewaran rule in the definition's order: "content good,
-    # but clunky; it doesn't immediately make clear it has answered" (user, conersation.md 2026-10-07)
-    # (a why-question's missing reason is rule 21's)
-    missing_aspects = list(dict.fromkeys(
-        f for f in families if f in _ASPECT_LABELS and not (why_q and f in _OUTGOING_ONLY_FAMILIES)
-        and not class_list and enriched and not _aspect_present(f, enriched)))
     if missing_aspects:
         # "siapa yang melakukannya?" about pangringkes got "biasanya melibatkan keluarga dekat,
         # tetua desa ..." (T64); "apa tujuannya" an invented "sebelum dimasukkan ke dalam kubur" (T66)
@@ -5589,35 +5784,14 @@ def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]], tracker: Optiona
         synth_sys_prompt += (
             f"\n    20. The user also asked about: {', '.join(missing)}. It is NOT in the context: say in "
             "one sentence that it is not recorded, and never describe it or relate it to anything.\n")
+    return synth_sys_prompt
 
-    # Ask the synthesis model about the canonical name. Shown "apa itu lingga sarira"
-    # beside an entry named "suksma sarira", it wrote "lingga sarira termasuk salah
-    # satu jenis suksma sarira" -- even when told the two are one thing (2026-09-25).
-    # The answer still opens with "<asked name> adalah sebutan lain untuk <name>" (below).
-    # A misspelling is replaced too, or the model repeats it (typed_as).
-    synth_q = user_msg
-    for e in enriched:
-        for surface in (e.get("asked_as"), e.get("typed_as")):
-            if surface:
-                # not inside a hyphenated word: "purusa dan pradana" became "purusa-pradana", then
-                # the typed "purusa" was replaced inside it -- "purusa-pradana-pradana" (2026-10-08)
-                synth_q = re.sub(r"(?<![\w-])" + re.escape(surface) + r"(?![\w-])", e["name"], synth_q, flags=re.I)
-    # "nyiramin layon" -> "nyiramang layon layon" (T88)
-    synth_q = re.sub(r"\b(\w+)(\s+\1\b)+", r"\1", synth_q, flags=re.I)
-    synth_q = _collapse_name_words(synth_q, enriched)
-    # "sasih kliwon" -> "kliwon": shown the user's wrong premise, the model went along with it
-    # ("Sasih kliwon adalah sasih kedua"). The answer opens with the term's own sentence saying
-    # it is no such class, when its definition has one.
-    corrections = []
-    for cls, cls_surf, term, term_surf in _misclassed_terms(user_msg, get_resolver()):
-        synth_q = re.sub(rf"\b{re.escape(cls_surf)}\s+{re.escape(term_surf)}\b", term_surf, synth_q, flags=re.I)
-        definition = get_content().entity_def.get(term.id) or ""
-        for s in re.split(r"(?<=[.;])\s+", definition):
-            if re.search(rf"\bbukan\b[^.;]*\b{re.escape(cls.name)}\b", s, re.I):
-                s = re.sub(r"^(?:jadi|maka),?\s+", "", s.strip(), flags=re.I).rstrip(";.")
-                corrections.append(f"{s[:1].upper()}{s[1:]}.")
-                break
 
+def _synthesis_user_prompt(q: _Question, synth_sys_prompt: str) -> tuple:
+    """The user prompt: question, what it asks, the context fitted to the budget, the question again (and the
+    reasoning note of a whether-question). Sets q.raw_context. -> (prompt, reasoning note)"""
+    user_msg, enriched, families, contents_q = q.msg, q.enriched, q.families, q.contents_q
+    context_items, synth_q, raw_context = q.context_items, q.synth_q, q.raw_context
     # The question comes again after the context: it must survive any truncation, and
     # a small model follows the last instruction it read. With it, in plain words, what it asks
     # (rule 1): a follow-up names no term ("apa maknanya?").
@@ -5634,7 +5808,15 @@ def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]], tracker: Optiona
                          + f"Konteks:\n{raw_context}\n\n"
                          f"Jawab pertanyaan ini dalam bahasa Indonesia: {synth_q}"
                          + (f" (yang ditanyakan: {focus})" if focus else "") + reason_note)
-    cut_off = False
+    q.raw_context = raw_context
+    return synth_user_prompt, reason_note
+
+
+def _code_answer(q: _Question) -> Optional[str]:
+    """An answer code writes without the model, or None: a raw material, a stated rule / norm / reason / order /
+    day list ..., a contents miss, an aspect or class-list miss."""
+    user_msg, enriched, families, class_list = q.msg, q.enriched, q.families, q.class_list
+    follow_up, context_items, missing_aspects, composition_q = q.follow_up, q.context_items, q.missing_aspects, q.composition_q
     # "apa saja isi banten peras": nothing records its contents, and with rule 13 in the prompt
     # the model still listed "upacara pengaskaran, pemelaspas kajang ..." as its contents (Tier B
     # 2026-10-01) -- that miss is answered without the model
@@ -5642,22 +5824,6 @@ def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]], tracker: Optiona
         _contents_question(user_msg) and set(families) == {"komposisi"} and context_items
         and not context_items[0]["relationships"] and not context_items[0].get("facts")
         and not _CONTENTS_IN_DEF_RE.search(enriched[0].get("definition") or ""))
-
-    def ask(system: str, purpose: str = "synthesize") -> str:
-        nonlocal cut_off
-        text, cut_off = _llm_invoke([{"role": "system", "content": system},
-                                     {"role": "user", "content": synth_user_prompt}], purpose)
-        if not reason_note:
-            return text
-        answer = _after_reasoning(text)
-        if answer is None:
-            # no answer part after the reasoning: once more, plainly
-            plain = synth_user_prompt[:-len(reason_note)]
-            answer, cut_off = _llm_invoke([{"role": "system", "content": system},
-                                           {"role": "user", "content": plain}], "synthesize_plain")
-        return answer
-
-    composition_q = _composition_q(user_msg)
     if composition_q:
         raw_answer = _raw_material_answer(enriched)
         if raw_answer:
@@ -5683,26 +5849,44 @@ def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]], tracker: Optiona
                 else _code_miss(user_msg, enriched, families, missing_aspects))
         if miss:
             return _tidy_answer(miss)
-    try:
-        answer = ask(synth_sys_prompt)
-        english = _english_words(answer)
-        if _looks_english(answer) or english:
-            _log_fabrication(user_msg, enriched, answer, kind="llm_english_retry")
-            avoid = f", tanpa kata bahasa Inggris seperti {', '.join(english)}" if english else ""
-            answer = _swap_english(ask(synth_sys_prompt + f"\n    Tulis seluruh jawaban dalam bahasa Indonesia{avoid}.\n",
-                                       "synthesize_english_retry"))
-        if cut_off:
-            answer = _trim_cut_off(answer)
-    except Exception as e:
-        # LLM down/unreachable/timed out/rate-limited -- fall back to the pure-Python
-        # answer instead of crashing the action and leaving the user with no
-        # reply at all.
-        print(f"LLM synthesis error: {e}")
-        return _deterministic_answer(enriched)
+    return None
 
-    # the term an honest miss describes: a class list ("upakara apa saja yang digunakan dalam wayang") is
-    # about the term it scopes, not the class -- its miss described banten (NLU sweep 2026-10-19)
-    about = next((e for e in enriched if class_list and e["name"] in class_list[1]), enriched[0])
+
+def _llm_answer(q: _Question, synth_sys_prompt: str, synth_user_prompt: str, reason_note: str) -> str:
+    """The model's answer: asked again if it wrote English, cut to its last full sentence if cut off."""
+    user_msg, enriched = q.msg, q.enriched
+    cut_off = False
+    def ask(system: str, purpose: str = "synthesize") -> str:
+        nonlocal cut_off
+        text, cut_off = _llm_invoke([{"role": "system", "content": system},
+                                     {"role": "user", "content": synth_user_prompt}], purpose)
+        if not reason_note:
+            return text
+        answer = _after_reasoning(text)
+        if answer is None:
+            # no answer part after the reasoning: once more, plainly
+            plain = synth_user_prompt[:-len(reason_note)]
+            answer, cut_off = _llm_invoke([{"role": "system", "content": system},
+                                           {"role": "user", "content": plain}], "synthesize_plain")
+        return answer
+
+    answer = ask(synth_sys_prompt)
+    english = _english_words(answer)
+    if _looks_english(answer) or english:
+        _log_fabrication(user_msg, enriched, answer, kind="llm_english_retry")
+        avoid = f", tanpa kata bahasa Inggris seperti {', '.join(english)}" if english else ""
+        answer = _swap_english(ask(synth_sys_prompt + f"\n    Tulis seluruh jawaban dalam bahasa Indonesia{avoid}.\n",
+                                   "synthesize_english_retry"))
+    if cut_off:
+        answer = _trim_cut_off(answer)
+    return answer
+
+
+def _answer_overrides(q: _Question, answer: str) -> str:
+    """An empty or English reply, a refusal or a fabrication: the definitions, an honest miss, or the refusal
+    kept with what is recorded."""
+    user_msg, enriched, consequence_q, aspect_preds = q.msg, q.enriched, q.consequence_q, q.aspect_preds
+    overview, about, raw_context = q.overview, q.about, q.raw_context
     if not answer.strip() or _looks_english(answer):
         # an empty reply reached the user as silence
         _log_fabrication(user_msg, enriched, answer, kind="llm_empty_or_english_override")
@@ -5747,7 +5931,17 @@ def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]], tracker: Optiona
                 # honest miss, not by a definition that answers something else
                 answer = ("Maaf, informasi detail mengenai hal tersebut belum tercatat di basis data. "
                           f"Yang tercatat tentang {about['name']}: {known}")
+    return answer
 
+
+def _answer_checks(q: _Question, answer: str) -> str:
+    """The checks on the model's answer, in order: cut what the context does not support, complete what it left
+    out, put the asked thing first. Each says in its comment or name what it catches."""
+    user_msg, enriched, tracker, word_meaning = q.msg, q.enriched, q.tracker, q.word_meaning
+    consequence_q, families, aspect_preds, day_q = q.consequence_q, q.families, q.aspect_preds, q.day_q
+    class_list, stages_q, previous, follow_up = q.class_list, q.stages_q, q.previous, q.follow_up
+    why_q, has_reason, missing_aspects, composition_q = q.why_q, q.has_reason, q.missing_aspects, q.composition_q
+    synth_q, about, raw_context = q.synth_q, q.about, q.raw_context
     answer = _tidy_answer(answer)
     avoid_q = bool(_WHY_AVOID_Q_RE.search(user_msg))
     if why_q and has_reason and _why_about_term_only(user_msg, enriched, avoid_q):
@@ -5864,6 +6058,13 @@ def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]], tracker: Optiona
         answer = _name_missing("Maaf, informasi detail mengenai hal tersebut belum tercatat di basis data."
                                + (f" Yang tercatat tentang {about['name']}: {known}" if known else ""),
                                user_msg, enriched, families, class_list)
+    return answer
+
+
+def _closing_notes(q: _Question, answer: str) -> str:
+    """The corrections ("X bukan ... sasih"), the other-name note, or the "same as before" note."""
+    user_msg, enriched, tracker, corrections = q.msg, q.enriched, q.tracker, q.corrections
+    about = q.about
     for c in reversed(corrections):
         if _ortho_key(c) not in _ortho_key(answer):
             answer = f"{c} {answer}"
@@ -5890,6 +6091,35 @@ def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]], tracker: Optiona
         )
 
     return answer
+
+
+def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]], tracker: Optional[Tracker] = None) -> str:
+    """Step 4: synthesize a natural Indonesian answer from `enriched`, with a
+    deterministic guard against the local LLM refusing/hedging on context it was
+    actually given (observed directly in conersation.md for terms that HAD
+    resolved successfully -- e.g. ngeroras, naga banda, tirte, panca maha butha).
+
+    The steps: _read_question, _synthesis_rules + _synthesis_user_prompt, _code_answer (no model), _llm_answer,
+    _answer_overrides, _answer_checks, _closing_notes."""
+    q = _read_question(user_msg, enriched, tracker)
+    if q is None:
+        return _outage_answer(enriched)
+    synth_sys_prompt = _synthesis_rules(q)
+    synth_user_prompt, reason_note = _synthesis_user_prompt(q, synth_sys_prompt)
+    code = _code_answer(q)
+    if code is not None:
+        return code
+    try:
+        answer = _llm_answer(q, synth_sys_prompt, synth_user_prompt, reason_note)
+    except Exception as e:
+        # LLM down/unreachable/timed out/rate-limited -- fall back to the pure-Python
+        # answer instead of crashing the action and leaving the user with no
+        # reply at all.
+        print(f"LLM synthesis error: {e}")
+        return _deterministic_answer(enriched)
+    answer = _answer_overrides(q, answer)
+    answer = _answer_checks(q, answer)
+    return _closing_notes(q, answer)
 
 
 def _tidy_answer(answer: Text) -> Text:
@@ -6798,324 +7028,394 @@ def _asked_act(user_msg: Text) -> Optional[tuple]:
     return None
 
 
-def _template_answer(family: str, enriched: List[Dict[str, Any]], user_msg: Text = "") -> Optional[str]:
-    """The template answer for `family` about enriched[0], or None when this term's question
-    needs the pipeline after all."""
+def _template_definition(family: str, enriched: List[Dict[str, Any]], user_msg: Text) -> Optional[str]:
+    """The definition only (user, 2026-10-13)."""
+    return _deterministic_answer([dict(enriched[0], aspect_facts=[])]) or None
+
+
+def _template_aspect(family: str, enriched: List[Dict[str, Any]], user_msg: Text) -> Optional[str]:
+    """Meaning, purpose, place, time, doer or how: the definition's sentences and facts of that aspect, as one
+    paragraph; a ceremony with none of its own gives its stages'."""
+    e = enriched[0]
+    name = e["name"]
+    title = f"{name[:1].upper()}{name[1:]}"
+    rels = e.get("relationships") or []
     content = get_content()
+    found = _aspect_sentences(e, family)
+    act = _asked_act(user_msg) if family == "pelaku" else None
+    if found and act:
+        # the act the question names: "siapa yang membuat jenazah" got "Jenazah dibasmi oleh sang hyang birawi",
+        # "siapa yang membuat sekah" "Sekah diajak berkomunikasi oleh keluarga" (sheet Failed, 2026-10-27)
+        label, said = act
+        found = [s for s in found if said.search(s)]
+        if not found:
+            rites = [r["target"] for r in rels if r.get("relation") == "MEMBUAT" and not r.get("outgoing")
+                     and content.entity_type.get(r.get("target_id")) in _STAGE_TYPES]
+            return _template_miss(label, e) + (
+                f" {title} dibuat dalam {_join_names(rites)}." if rites and label == "pembuat" else "")
+    verb = _asked_place_verb(user_msg) if family == "lokasi" else None
+    if found and verb:
+        # the act the place question names: "jenazah disemayamkan di mana" listed every place the corpse is
+        # carried, laid and washed (the 12 evaluation categories, 2026-10-27)
+        found = [s for s in found if any(_root(w) == verb for w in _WORD_RE.findall(s.lower()))] or found
+    if found:
+        if family == "fungsi":
+            own = _sentences(_deterministic_answer([dict(e, aspect_facts=[])]))
+            if own and not any(f in own for f in found):
+                # with no definition sentence stating a purpose, what the thing is says what it is for:
+                # "apa peran wadah" got only "Wadah digunakan dalam ngaben", not that it is the usungan
+                # that carries the corpse; gegaleng, babelonyoh, bade the same (LLM comparison 2026-10-20);
+                # an edge that sentence already says goes ("... ritual penyucian untuk membersihkan diri ... dari
+                # ... leteh. Pabersihan hidup bertujuan membersihkan diri dari leteh.", 2026-10-28)
+                found = _distinct_sentences([own[0]] + found, e)
+            else:
+                # a definition sentence holding the purpose after what the term is says the purpose alone:
+                # "Ngaben adalah upacara pembakaran jenazah ..., bertujuan memusnahkan jasad sawa ..." opened
+                # "apa tujuan ngaben" as it opens "apa itu ngaben" (the 12 evaluation categories, 2026-10-27)
+                found = [_purpose_clause(s, name) for s in found]
+        if family == "lokasi" and not verb:
+            # a ceremony's own place and its stages' (_stage_aspect_sentences)
+            staged = [s for s in _stage_aspect_sentences(e, family) if s not in found]
+            if staged:
+                own_text = _as_paragraph(found, name)
+                return (f"Tempat tahapan {name} yang tercatat:\n" + "\n".join(f"- {s}" for s in staged)
+                        + f"\nSelain itu, {own_text[:1].lower()}{own_text[1:]}")
+        return _as_paragraph(found, name)
+    if family in _EDGES_FIRST_FAMILIES:
+        # a ceremony with no place / time / doer of its own: what its stages record. "di mana upacara
+        # ngaben biasanya dilaksanakan?" got "tempat ngaben belum tercatat", while pabasmian is "di
+        # setra" (Tier B 2026-10-13)
+        staged = _stage_aspect_sentences(e, family)
+        if staged:
+            head = (f"{_STAGE_FALLBACK_HEADS[family]} {name} secara keseluruhan tidak tercatat, tetapi "
+                    f"untuk tahapannya tercatat")
+            if len(staged) <= 3:
+                return f"{head} bahwa {_join_names([s[:1].lower() + s[1:].rstrip('.') for s in staged])}."
+            return f"{head}:\n" + "\n".join(f"- {s}" for s in staged)
+    return _template_miss(act[0] if act else _aspect_label(family, user_msg), e)
+
+
+def _template_kinds(family: str, enriched: List[Dict[str, Any]], user_msg: Text) -> Optional[str]:
+    """The numbered kinds with their gloss (names only past 12)."""
+    e = enriched[0]
+    eid, name = e["id"], e["name"]
+    rels = e.get("relationships") or []
+    content = get_content()
+    kinds = content.kinds_of(eid) + [r["target_id"] for r in rels
+                                     if r.get("relation") == "MEMILIKI_JENIS" and r.get("outgoing")]
+    kinds = [k for k in dict.fromkeys(kinds) if k in content.entity_name]
+    if not kinds:
+        # "apa saja sasih yang berbadankan kosong?" names no "jenis": its definition holds the list
+        # (sasih paruwak tahuk), and "jenis ... belum tercatat" answered a question nobody asked
+        if not _KINDS_Q_RE.search(user_msg):
+            return _deterministic_answer([dict(e, aspect_facts=[])]) or None
+        # a definition that divides it says its kinds: "Maaf, jenis yadnya belum tercatat" stood above "Yadnya
+        # dibagi menjadi lima (Panca Yadnya): Dewa Yadnya, ..." (sheet Failed, 2026-10-27)
+        divided = [s for s in _sentences(_deterministic_answer([dict(e, aspect_facts=[])]))
+                   if re.search(r"\b(?:dibagi|terbagi)\s+(?:menjadi|atas|dalam|ke)\b", s, re.I)]
+        if divided:
+            return " ".join(divided)
+        return _template_miss("jenis", e, whole=True)
+    count = _NUMBER_WORDS.get(str(len(kinds)), str(len(kinds))).replace("duabelas", "dua belas")
+    head = f"Ada {count} jenis {name} yang tercatat"
+    if len(kinds) > 12:
+        return f"{head}: {_join_names([content.entity_name[k] for k in kinds])}."
+    return f"{head}:\n" + "\n".join(f"{i}. {_list_item(k)}" for i, k in enumerate(kinds, 1))
+
+
+def _template_stages(family: str, enriched: List[Dict[str, Any]], user_msg: Text) -> Optional[str]:
+    """The stages in the source's order (or unnumbered), the first / last one, else how it is done."""
+    e = enriched[0]
+    eid, name = e["id"], e["name"]
+    content = get_content()
+    # the stage after or before this one (a misread "apa tahapan setelah X"): its order facts
+    if _NEXT_STAGE_RE.search(user_msg):
+        return _template_answer("waktu", enriched, user_msg)
+    stages = _stage_ids(e)
+    numbered = _numbered_stages(e)
+    one = re.search(r"\b(?:tahap\w*|upacara|acara|prosesi)\s+(pertama|awal|terakhir|akhir|penutup)\b"
+                    r"|\b(pertama|terakhir)\b[^.?!]*\btahap", user_msg, re.I)
+    if numbered and one and not re.search(r"dari awal (?:sampai|hingga)", user_msg, re.I):
+        # "tahap terakhir ngaben apa" got the whole list (the 12 evaluation categories, 2026-10-27). The last
+        # only when the stages run up to the count their definitions state ("dari delapan tahapan")
+        word = (one.group(1) or one.group(2)).lower()
+        first = word in ("pertama", "awal")
+        nums = sorted({n for n, _ in numbered})
+        total = _stated_stage_total([content.id_by_name.get(s.lower()) for _, s in numbered])
+        if first or not total or nums[-1] == total:
+            pick = nums[0] if first else nums[-1]
+            group = [s for n, s in numbered if n == pick]
+            ids = [content.id_by_name.get(s.lower()) or s for s in group]
+            lead = f"Tahap {'pertama' if first else 'terakhir'} {name} menurut sumber"
+            if len(group) == 1:
+                return f"{lead} adalah {group[0]}: {_gloss(ids[0])}"
+            return f"{lead} adalah {_join_names(group)}:\n" + "\n".join(f"- {_list_item(i)}" for i in ids)
+        return None
+    if numbered:
+        # stages the source gives one number go under it together: "2. Nyiramang layon, pabersihan
+        # mati, dan pangringkes:" with each below, not three items numbered 2
+        by_number: Dict[int, List[str]] = {}
+        for n, stage in numbered:
+            by_number.setdefault(n, []).append(stage)
+        lines = []
+        for n, group in by_number.items():
+            ids = [content.id_by_name.get(s.lower()) or s for s in group]
+            if len(group) == 1:
+                lines.append(f"{n}. {_list_item(ids[0])}")
+            else:
+                joined = _join_names(group)
+                lines.append(f"{n}. {joined[:1].upper()}{joined[1:]}:")
+                lines += [f"   - {_list_item(i)}" for i in ids]
+        shown = {stage.lower() for _, stage in numbered}
+        others = [content.entity_name[s] for s in stages if content.entity_name[s].lower() not in shown]
+        return (f"Menurut sumber, tahapan {name} secara berurutan adalah sebagai berikut:\n" + "\n".join(lines)
+                + (f"\nSelain itu, rangkaian {name} juga mencakup {_join_names(others)}." if others else ""))
+    # one recorded stage is no procedure: "bagaimana upacara ngelungah dilaksanakan" got only ngeluhurang bhatara
+    # kumara once that card existed (plan #19 batch 2); a how question goes on to the definition / the model
+    if stages and (len(stages) >= 2 or not (_HOW_RE.search(user_msg) and not re.search(r"\btahap", user_msg, re.I))):
+        return (f"Tahapan {name} yang tercatat (urutannya tidak disebutkan dalam sumber):\n"
+                + "\n".join(f"- {_list_item(s)}" for s in stages))
+    # how it is done as the definition and its text facts say it -- not its edges: "bagaimana upacara ngelungah
+    # dilaksanakan" got "Upacara ngelungah menggunakan klungah", "apa saja tahapan sangging" "Sangging menggunakan
+    # padi ...", "sebutkan tahapan pangringkes" its kain putih and klasa (sheet Failed, 2026-10-27)
+    how = _aspect_sentences(e, "cara", with_edges=False)
+    if how:
+        return _as_paragraph(how, name)
+    # a rite with no stage list is the model's to read from its definition; anything else is a miss (the free
+    # run of the 1,864 sent 59 "bagaimana alur kopi", "langkah-langkah cermin kecil" to Qwen with the how-words)
+    if content.entity_type.get(eid) in _STAGE_TYPES:
+        return None
+    return _template_miss("tahapan atau cara", e, whole=True)
+
+
+def _template_contents(family: str, enriched: List[Dict[str, Any]], user_msg: Text) -> Optional[str]:
+    """What it is made of or contains: raw material, set members, the composition breakdown, or a miss."""
     e = enriched[0]
     eid, name = e["id"], e["name"]
     title = f"{name[:1].upper()}{name[1:]}"
     rels = e.get("relationships") or []
-    if family == "":
-        # the definition only (user, 2026-10-13)
-        return _deterministic_answer([dict(e, aspect_facts=[])]) or None
-    if family in _ASPECT_TEMPLATE_FAMILIES:
-        found = _aspect_sentences(e, family)
-        act = _asked_act(user_msg) if family == "pelaku" else None
-        if found and act:
-            # the act the question names: "siapa yang membuat jenazah" got "Jenazah dibasmi oleh sang hyang birawi",
-            # "siapa yang membuat sekah" "Sekah diajak berkomunikasi oleh keluarga" (sheet Failed, 2026-10-27)
-            label, said = act
-            found = [s for s in found if said.search(s)]
-            if not found:
-                rites = [r["target"] for r in rels if r.get("relation") == "MEMBUAT" and not r.get("outgoing")
-                         and content.entity_type.get(r.get("target_id")) in _STAGE_TYPES]
-                return _template_miss(label, e) + (
-                    f" {title} dibuat dalam {_join_names(rites)}." if rites and label == "pembuat" else "")
-        verb = _asked_place_verb(user_msg) if family == "lokasi" else None
-        if found and verb:
-            # the act the place question names: "jenazah disemayamkan di mana" listed every place the corpse is
-            # carried, laid and washed (the 12 evaluation categories, 2026-10-27)
-            found = [s for s in found if any(_root(w) == verb for w in _WORD_RE.findall(s.lower()))] or found
-        if found:
-            if family == "fungsi":
-                own = _sentences(_deterministic_answer([dict(e, aspect_facts=[])]))
-                if own and not any(f in own for f in found):
-                    # with no definition sentence stating a purpose, what the thing is says what it is for:
-                    # "apa peran wadah" got only "Wadah digunakan dalam ngaben", not that it is the usungan
-                    # that carries the corpse; gegaleng, babelonyoh, bade the same (LLM comparison 2026-10-20);
-                    # an edge that sentence already says goes ("... ritual penyucian untuk membersihkan diri ... dari
-                    # ... leteh. Pabersihan hidup bertujuan membersihkan diri dari leteh.", 2026-10-28)
-                    found = _distinct_sentences([own[0]] + found, e)
-                else:
-                    # a definition sentence holding the purpose after what the term is says the purpose alone:
-                    # "Ngaben adalah upacara pembakaran jenazah ..., bertujuan memusnahkan jasad sawa ..." opened
-                    # "apa tujuan ngaben" as it opens "apa itu ngaben" (the 12 evaluation categories, 2026-10-27)
-                    found = [_purpose_clause(s, name) for s in found]
-            if family == "lokasi" and not verb:
-                # a ceremony's own place and its stages' (_stage_aspect_sentences)
-                staged = [s for s in _stage_aspect_sentences(e, family) if s not in found]
-                if staged:
-                    own_text = _as_paragraph(found, name)
-                    return (f"Tempat tahapan {name} yang tercatat:\n" + "\n".join(f"- {s}" for s in staged)
-                            + f"\nSelain itu, {own_text[:1].lower()}{own_text[1:]}")
-            return _as_paragraph(found, name)
-        if family in _EDGES_FIRST_FAMILIES:
-            # a ceremony with no place / time / doer of its own: what its stages record. "di mana upacara
-            # ngaben biasanya dilaksanakan?" got "tempat ngaben belum tercatat", while pabasmian is "di
-            # setra" (Tier B 2026-10-13)
-            staged = _stage_aspect_sentences(e, family)
-            if staged:
-                head = (f"{_STAGE_FALLBACK_HEADS[family]} {name} secara keseluruhan tidak tercatat, tetapi "
-                        f"untuk tahapannya tercatat")
-                if len(staged) <= 3:
-                    return f"{head} bahwa {_join_names([s[:1].lower() + s[1:].rstrip('.') for s in staged])}."
-                return f"{head}:\n" + "\n".join(f"- {s}" for s in staged)
-        return _template_miss(act[0] if act else _aspect_label(family, user_msg), e)
-    if family == "jenis":
-        kinds = content.kinds_of(eid) + [r["target_id"] for r in rels
-                                         if r.get("relation") == "MEMILIKI_JENIS" and r.get("outgoing")]
-        kinds = [k for k in dict.fromkeys(kinds) if k in content.entity_name]
-        if not kinds:
-            # "apa saja sasih yang berbadankan kosong?" names no "jenis": its definition holds the list
-            # (sasih paruwak tahuk), and "jenis ... belum tercatat" answered a question nobody asked
-            if not _KINDS_Q_RE.search(user_msg):
-                return _deterministic_answer([dict(e, aspect_facts=[])]) or None
-            # a definition that divides it says its kinds: "Maaf, jenis yadnya belum tercatat" stood above "Yadnya
-            # dibagi menjadi lima (Panca Yadnya): Dewa Yadnya, ..." (sheet Failed, 2026-10-27)
-            divided = [s for s in _sentences(_deterministic_answer([dict(e, aspect_facts=[])]))
-                       if re.search(r"\b(?:dibagi|terbagi)\s+(?:menjadi|atas|dalam|ke)\b", s, re.I)]
-            if divided:
-                return " ".join(divided)
-            return _template_miss("jenis", e, whole=True)
-        count = _NUMBER_WORDS.get(str(len(kinds)), str(len(kinds))).replace("duabelas", "dua belas")
-        head = f"Ada {count} jenis {name} yang tercatat"
-        if len(kinds) > 12:
-            return f"{head}: {_join_names([content.entity_name[k] for k in kinds])}."
-        return f"{head}:\n" + "\n".join(f"{i}. {_list_item(k)}" for i, k in enumerate(kinds, 1))
-    if family == "tahapan":
-        # the stage after or before this one (a misread "apa tahapan setelah X"): its order facts
-        if _NEXT_STAGE_RE.search(user_msg):
-            return _template_answer("waktu", enriched, user_msg)
-        stages = _stage_ids(e)
-        numbered = _numbered_stages(e)
-        one = re.search(r"\b(?:tahap\w*|upacara|acara|prosesi)\s+(pertama|awal|terakhir|akhir|penutup)\b"
-                        r"|\b(pertama|terakhir)\b[^.?!]*\btahap", user_msg, re.I)
-        if numbered and one and not re.search(r"dari awal (?:sampai|hingga)", user_msg, re.I):
-            # "tahap terakhir ngaben apa" got the whole list (the 12 evaluation categories, 2026-10-27). The last
-            # only when the stages run up to the count their definitions state ("dari delapan tahapan")
-            word = (one.group(1) or one.group(2)).lower()
-            first = word in ("pertama", "awal")
-            nums = sorted({n for n, _ in numbered})
-            total = _stated_stage_total([content.id_by_name.get(s.lower()) for _, s in numbered])
-            if first or not total or nums[-1] == total:
-                pick = nums[0] if first else nums[-1]
-                group = [s for n, s in numbered if n == pick]
-                ids = [content.id_by_name.get(s.lower()) or s for s in group]
-                lead = f"Tahap {'pertama' if first else 'terakhir'} {name} menurut sumber"
-                if len(group) == 1:
-                    return f"{lead} adalah {group[0]}: {_gloss(ids[0])}"
-                return f"{lead} adalah {_join_names(group)}:\n" + "\n".join(f"- {_list_item(i)}" for i in ids)
-            return None
-        if numbered:
-            # stages the source gives one number go under it together: "2. Nyiramang layon, pabersihan
-            # mati, dan pangringkes:" with each below, not three items numbered 2
-            by_number: Dict[int, List[str]] = {}
-            for n, stage in numbered:
-                by_number.setdefault(n, []).append(stage)
-            lines = []
-            for n, group in by_number.items():
-                ids = [content.id_by_name.get(s.lower()) or s for s in group]
-                if len(group) == 1:
-                    lines.append(f"{n}. {_list_item(ids[0])}")
-                else:
-                    joined = _join_names(group)
-                    lines.append(f"{n}. {joined[:1].upper()}{joined[1:]}:")
-                    lines += [f"   - {_list_item(i)}" for i in ids]
-            shown = {stage.lower() for _, stage in numbered}
-            others = [content.entity_name[s] for s in stages if content.entity_name[s].lower() not in shown]
-            return (f"Menurut sumber, tahapan {name} secara berurutan adalah sebagai berikut:\n" + "\n".join(lines)
-                    + (f"\nSelain itu, rangkaian {name} juga mencakup {_join_names(others)}." if others else ""))
-        # one recorded stage is no procedure: "bagaimana upacara ngelungah dilaksanakan" got only ngeluhurang bhatara
-        # kumara once that card existed (plan #19 batch 2); a how question goes on to the definition / the model
-        if stages and (len(stages) >= 2 or not (_HOW_RE.search(user_msg) and not re.search(r"\btahap", user_msg, re.I))):
-            return (f"Tahapan {name} yang tercatat (urutannya tidak disebutkan dalam sumber):\n"
-                    + "\n".join(f"- {_list_item(s)}" for s in stages))
-        # how it is done as the definition and its text facts say it -- not its edges: "bagaimana upacara ngelungah
-        # dilaksanakan" got "Upacara ngelungah menggunakan klungah", "apa saja tahapan sangging" "Sangging menggunakan
-        # padi ...", "sebutkan tahapan pangringkes" its kain putih and klasa (sheet Failed, 2026-10-27)
-        how = _aspect_sentences(e, "cara", with_edges=False)
-        if how:
-            return _as_paragraph(how, name)
-        # a rite with no stage list is the model's to read from its definition; anything else is a miss (the free
-        # run of the 1,864 sent 59 "bagaimana alur kopi", "langkah-langkah cermin kecil" to Qwen with the how-words)
-        if content.entity_type.get(eid) in _STAGE_TYPES:
-            return None
-        return _template_miss("tahapan atau cara", e, whole=True)
-    if family == "komposisi":
-        raw = _raw_material_answer([e])
-        if raw:
-            return raw
-        members = _set_members(e) if _NUMERAL_SET_RE.match(name) else []
-        if len(members) >= 2:
-            if not _EXPLAIN_EACH_RE.search(user_msg):
-                return f"{title} terdiri dari {_join_names(members)}."
-            # "jelaskan unsur unsur panca maha butha": each member with its own first sentence
-            return f"{title} terdiri dari:\n" + "\n".join(
-                f"- {_list_item(content.id_by_name.get(m.lower()) or m)}" for m in members)
-        breakdown = _composition_breakdown(eid)
-        if breakdown:
-            # a wrapping is not what it is made of: "isi pripih apa saja" got only "Pripih dibungkus daun dapdap",
-            # while its definition says "lempengan tipis dari logam (emas, perak, tembaga, besi), permata, atau kayu
-            # cendana" (sheet Failed, route audit 2026-10-27)
-            own = {r["relation"] for r in rels if r.get("outgoing")
-                   and r.get("relation") in PREDICATE_FAMILIES["komposisi"] - _KIND_PREDICATES}
-            if own and all(p.startswith("DIBUNGKUS") for p in own):
-                stated = [s for s in _sentences(_deterministic_answer([dict(e, aspect_facts=[])]))
-                          if _DEF_MAY_ANSWER["komposisi"].search(s)]
-                if stated:
-                    return f"{stated[0]} {breakdown}"
-            return breakdown
-        if content.entity_type.get(eid) not in COMPOSITE_TYPES:
-            # the "kelengkapan" of a ceremony, a stage or a person is the sarana it uses: as contents,
-            # "apa saja kelengkapan pangringkes" got "isi atau bahan pangringkes belum tercatat" (2026-10-19)
-            if _equipment_as_sarana(user_msg, enriched) != user_msg:
+    content = get_content()
+    raw = _raw_material_answer([e])
+    if raw:
+        return raw
+    members = _set_members(e) if _NUMERAL_SET_RE.match(name) else []
+    if len(members) >= 2:
+        if not _EXPLAIN_EACH_RE.search(user_msg):
+            return f"{title} terdiri dari {_join_names(members)}."
+        # "jelaskan unsur unsur panca maha butha": each member with its own first sentence
+        return f"{title} terdiri dari:\n" + "\n".join(
+            f"- {_list_item(content.id_by_name.get(m.lower()) or m)}" for m in members)
+    breakdown = _composition_breakdown(eid)
+    if breakdown:
+        # a wrapping is not what it is made of: "isi pripih apa saja" got only "Pripih dibungkus daun dapdap",
+        # while its definition says "lempengan tipis dari logam (emas, perak, tembaga, besi), permata, atau kayu
+        # cendana" (sheet Failed, route audit 2026-10-27)
+        own = {r["relation"] for r in rels if r.get("outgoing")
+               and r.get("relation") in PREDICATE_FAMILIES["komposisi"] - _KIND_PREDICATES}
+        if own and all(p.startswith("DIBUNGKUS") for p in own):
+            stated = [s for s in _sentences(_deterministic_answer([dict(e, aspect_facts=[])]))
+                      if _DEF_MAY_ANSWER["komposisi"].search(s)]
+            if stated:
+                return f"{stated[0]} {breakdown}"
+        return breakdown
+    if content.entity_type.get(eid) not in COMPOSITE_TYPES:
+        # the "kelengkapan" of a ceremony, a stage or a person is the sarana it uses: as contents,
+        # "apa saja kelengkapan pangringkes" got "isi atau bahan pangringkes belum tercatat" (2026-10-19)
+        if _equipment_as_sarana(user_msg, enriched) != user_msg:
+            return _template_answer("sarana", enriched, user_msg)
+        material = bool(_MATERIAL_Q_RE.search(user_msg) or re.search(
+            r"\bdilengkapi\b|\bdibutuhkan\s+untuk\s+membuat\b|\bada\s+di\s+dalam\b", user_msg, re.I))
+        # a rite's "isi / bahan / dilengkapi" are the sarana it uses: "bahan upacara ngelungah apa saja", "atma
+        # wedana dilengkapi apa", "isi pabersihan mati apa saja" went to Qwen, which listed them (route audit
+        # 2026-10-27; _code_miss leaves them to it for the same reason)
+        if material and content.entity_type.get(eid) in _STAGE_TYPES:
+            if _sarana_by_place([eid]).get(eid):
                 return _template_answer("sarana", enriched, user_msg)
-            material = bool(_MATERIAL_Q_RE.search(user_msg) or re.search(
-                r"\bdilengkapi\b|\bdibutuhkan\s+untuk\s+membuat\b|\bada\s+di\s+dalam\b", user_msg, re.I))
-            # a rite's "isi / bahan / dilengkapi" are the sarana it uses: "bahan upacara ngelungah apa saja", "atma
-            # wedana dilengkapi apa", "isi pabersihan mati apa saja" went to Qwen, which listed them (route audit
-            # 2026-10-27; _code_miss leaves them to it for the same reason)
-            if material and content.entity_type.get(eid) in _STAGE_TYPES:
-                if _sarana_by_place([eid]).get(eid):
-                    return _template_answer("sarana", enriched, user_msg)
-                return _template_miss("isi atau bahan", e)
-            # nor is a concept, a level or a person made of anything: a miss, not the LLM, which answered
-            # "nistaning madya dibuat dari apa" with the definition (NLU sweep 2026-10-19)
-            if material:
-                return _template_miss("isi atau bahan", e)
-            # the "unsur" of a concept or a ceremony: its members, kinds or stages -- the pipeline's
-            return None
-        stated = [s for s in _sentences(_definition_text(e)) if _CONTENTS_IN_DEF_RE.search(s)]
+            return _template_miss("isi atau bahan", e)
+        # nor is a concept, a level or a person made of anything: a miss, not the LLM, which answered
+        # "nistaning madya dibuat dari apa" with the definition (NLU sweep 2026-10-19)
+        if material:
+            return _template_miss("isi atau bahan", e)
+        # the "unsur" of a concept or a ceremony: its members, kinds or stages -- the pipeline's
+        return None
+    stated = [s for s in _sentences(_definition_text(e)) if _CONTENTS_IN_DEF_RE.search(s)]
+    if stated:
+        return " ".join(stated)
+    return _template_miss("isi atau bahan", e)
+
+
+def _template_sarana(family: str, enriched: List[Dict[str, Any]], user_msg: Text) -> Optional[str]:
+    """The sarana the term and each of its stages use."""
+    e = enriched[0]
+    eid, name = e["id"], e["name"]
+    title = f"{name[:1].upper()}{name[1:]}"
+    content = get_content()
+    places = _sarana_by_place([eid]).get(eid, [])
+    # what is needed to make or complete it: the sarana for a tirtha are what it is made with
+    # ("apa saja sarana untuk memohon tirtha kawitan": rayunan, pajegan, ..., Tier B 2026-10-13)
+    made_with = _distinct_sentences(_edge_sentences(
+        e, {"DIPERLUKAN_UNTUK_MEMBUAT", "DILENGKAPKAN_PADA"},
+        frozenset({"DIPERLUKAN_UNTUK_MEMBUAT", "DILENGKAPKAN_PADA"}), outgoing=False))
+    if not places and not made_with:
+        return _template_miss("sarana", e)
+    # what a person or a thing uses is said with it as subject: "Sangging menggunakan padi dan uang
+    # kepeng", not "Sarana yang digunakan dalam sangging adalah ..." (2026-10-19)
+    ritual = content.entity_type.get(eid) in _STAGE_TYPES
+    lines = [f"Sarana yang digunakan dalam {name} adalah {_join_names(items)}." if ritual
+             else f"{title} menggunakan {_join_names(items)}."
+             for pid, _, items in places if pid == eid]
+    stage_lines = [f"- {place[:1].upper()}{place[1:]}: {_join_names(items)}."
+                   for pid, place, items in places if pid != eid]
+    if stage_lines:
+        lines.append(("Sarana pada tiap tahapannya:" if lines else f"Sarana yang digunakan dalam tahapan {name}:")
+                     + "\n" + "\n".join(stage_lines))
+    return "\n".join(made_with + lines)
+
+
+def _template_other_names(family: str, enriched: List[Dict[str, Any]], user_msg: Text) -> Optional[str]:
+    """One list of its other names, the refined one apart."""
+    e = enriched[0]
+    name = e["name"]
+    title = f"{name[:1].upper()}{name[1:]}"
+    rels = e.get("relationships") or []
+    content = get_content()
+    # one list of the other names, the refined one apart: "Ngaben juga dikenal sebagai mreteka
+    # sawa, atiwa-tiwa, malebuang, dan pangabenan. Sebutan halusnya adalah palebon." -- not a
+    # sentence per relation ("Ngaben dikenal sebagai ... Ngaben sama dengan ...", 2026-10-15)
+    preds = PREDICATE_FAMILIES["sebutan_lain"] - {"ADALAH"}
+    names, refined, said = [], [], []
+    for r in rels:
+        pred, target = r.get("relation"), r.get("target")
+        if pred not in preds or not target or r.get("variant_op"):
+            continue
+        if pred != "SEBUTAN_HALUS_UNTUK":
+            names.append(target)
+        elif r.get("outgoing"):
+            said.append(content.render(pred, name, target))
+        else:
+            refined.append(target)
+    names += (e.get("aliases") or []) + _definition_other_names(e)
+
+    def key(n: Text) -> str:
+        # one name with or without its rite word: "upacara ngelelet, Ngelelet, dan Melelet" (2026-10-26)
+        return _ortho_key(re.sub(r"^(?:upacara|acara|prosesi|ritual)\s+", "", n.strip(), flags=re.I))
+
+    seen = {key(name)} | {key(n) for n in refined}
+    names = [n for n in names if not (key(n) in seen or seen.add(key(n)))]
+    found = [f"{title} juga dikenal sebagai {_join_names(names)}."] if names else []
+    if refined:
+        found.append(f"Sebutan halusnya adalah {_join_names(refined)}.")
+    found += _distinct_sentences(said, e)
+    return " ".join(found) if found else f"Maaf, sebutan lain untuk {name} belum tercatat di basis data."
+
+
+def _template_word_origin(family: str, enriched: List[Dict[str, Any]], user_msg: Text) -> Optional[str]:
+    """Word origin and literal meaning."""
+    e = enriched[0]
+    eid, name = e["id"], e["name"]
+    content = get_content()
+    # not where an element comes from: "asal-usul nama ganda" got "Ganda berasal dari pretiwi", "apa makna kata
+    # rasa" "Rasa berasal dari apah" (sheet Failed, 2026-10-27); a word's origin is BERASAL_DARI_KATA
+    preds = PREDICATE_FAMILIES["asal_kata"] - {"BERASAL_DARI"}
+    found = _edge_sentences(e, preds)
+    # the word it comes from, with what that word means: "istilah malamasa berasal dari mana" got only
+    # "Malamasa berasal dari kata mala." once that edge existed (plan #19 batch 2) -- the term's own sentence
+    # about the word ('Kata mala berarti "tidak baik": ...'), else the word's card
+    for r in e.get("relationships") or []:
+        if r.get("relation") == "BERASAL_DARI_KATA" and r.get("outgoing") and r.get("target"):
+            word = r["target"]
+            own = [s for s in _sentences(_definition_text(e))
+                   if re.search(rf'\bkata\s+"?{re.escape(word)}"?\s+berarti\b', s, re.I)]
+            gloss = _meaning_gloss(r.get("target_id"))
+            found += own[:1] or ([f'Kata "{word}" berarti {gloss}'] if gloss else [])
+    found = _distinct_sentences(content.attribute_sentences(eid, preds) + found, e)
+    # "arti kata pitra yadnya": each word of the name that is a KB term (_extract_and_resolve)
+    # 'Kata "pitra" berarti para pendahulu, ...' -- the colon only for a gloss that is itself a
+    # sentence about something else ("Bhuta Kala adalah ...")
+    words = [f'Kata "{w["name"]}"' + (": " if re.match(r"(?:\S+\s+){1,5}(?:adalah|merupakan)\s", g) else " berarti ")
+             + g for w in enriched[1:] if (g := _meaning_gloss(w["id"]))]
+    if not found and not words:
+        # the definition's own word meaning: "Maaf, arti kata lembu belum tercatat ... Yang tercatat: Lembu
+        # secara harfiah berarti sapi" contradicted itself (7 in the LLM comparison, 2026-10-20)
+        origin = _word_label(user_msg) == "asal kata"
+        # "Layon adalah sebutan halus ... untuk jenazah" says what the word means ("arti kata layon" got
+        # "Maaf, arti kata layon belum tercatat" above that sentence)
+        names_y = re.compile(rf"\s*{re.escape(name)}\s+(?:\([^)]*\)\s+)?adalah\s+sebutan\b[^.;]*\b(?:untuk|bagi)\b",
+                             re.I)
+        # where a word comes from: a language, "berasal dari kata", or what a word inside the name means ('Kata
+        # "mala" berarti "tidak baik"' for malamasa, '"Jun" ... berarti periuk' for jun pere) -- not what the whole
+        # name means: "asal-usul nama abu" got "Abu secara umum berarti sisa material ..." (route audit 2026-10-27)
+        def answers(s: Text) -> bool:
+            if origin:
+                return bool(_WORD_LANGUAGE_RE.search(s) or _names_word_of(s, name) or re.search(
+                    r"\b(?:berasal|diambil|diserap)\s+dari\s+(?:kata|bahasa)\b", s, re.I))
+            return bool(_word_meaning_sentence(s, name) or names_y.match(s))
+        stated = [s for s in _sentences(_definition_text(e)) if answers(s)]
         if stated:
             return " ".join(stated)
-        return _template_miss("isi atau bahan", e)
-    if family == "sarana":
-        places = _sarana_by_place([eid]).get(eid, [])
-        # what is needed to make or complete it: the sarana for a tirtha are what it is made with
-        # ("apa saja sarana untuk memohon tirtha kawitan": rayunan, pajegan, ..., Tier B 2026-10-13)
-        made_with = _distinct_sentences(_edge_sentences(
-            e, {"DIPERLUKAN_UNTUK_MEMBUAT", "DILENGKAPKAN_PADA"},
-            frozenset({"DIPERLUKAN_UNTUK_MEMBUAT", "DILENGKAPKAN_PADA"}), outgoing=False))
-        if not places and not made_with:
-            return _template_miss("sarana", e)
-        # what a person or a thing uses is said with it as subject: "Sangging menggunakan padi dan uang
-        # kepeng", not "Sarana yang digunakan dalam sangging adalah ..." (2026-10-19)
-        ritual = content.entity_type.get(eid) in _STAGE_TYPES
-        lines = [f"Sarana yang digunakan dalam {name} adalah {_join_names(items)}." if ritual
-                 else f"{title} menggunakan {_join_names(items)}."
-                 for pid, _, items in places if pid == eid]
-        stage_lines = [f"- {place[:1].upper()}{place[1:]}: {_join_names(items)}."
-                       for pid, place, items in places if pid != eid]
-        if stage_lines:
-            lines.append(("Sarana pada tiap tahapannya:" if lines else f"Sarana yang digunakan dalam tahapan {name}:")
-                         + "\n" + "\n".join(stage_lines))
-        return "\n".join(made_with + lines)
-    if family == "sebutan_lain":
-        # one list of the other names, the refined one apart: "Ngaben juga dikenal sebagai mreteka
-        # sawa, atiwa-tiwa, malebuang, dan pangabenan. Sebutan halusnya adalah palebon." -- not a
-        # sentence per relation ("Ngaben dikenal sebagai ... Ngaben sama dengan ...", 2026-10-15)
-        preds = PREDICATE_FAMILIES["sebutan_lain"] - {"ADALAH"}
-        names, refined, said = [], [], []
-        for r in rels:
-            pred, target = r.get("relation"), r.get("target")
-            if pred not in preds or not target or r.get("variant_op"):
-                continue
-            if pred != "SEBUTAN_HALUS_UNTUK":
-                names.append(target)
-            elif r.get("outgoing"):
-                said.append(content.render(pred, name, target))
-            else:
-                refined.append(target)
-        names += (e.get("aliases") or []) + _definition_other_names(e)
+        # (not for "secara harfiah", "arti harfiah", "kata dasar": what it names is no literal meaning nor root --
+        # 'Kata "cermin kecil" berarti cermin kecil ditaruh ...', free run of the 1,864, 2026-10-27)
+        if not origin and not re.search(r"harfiah|harafiah|kata\s+dasar|etimologi", user_msg, re.I):
+            # what the word means, as another definition says it ('kata "pitra" secara harfiah berarti orang tua',
+            # in pitra yadnya's), else what it names: "arti kata pitra" got "Maaf, arti kata pitra belum
+            # tercatat" above its own gloss (the 12 evaluation categories, 2026-10-27)
+            elsewhere = _word_meaning_elsewhere(name)
+            if elsewhere:
+                return elsewhere
+            gloss = _meaning_gloss(eid)
+            if gloss:
+                return f'Kata "{name}" berarti {gloss}'
+        return _template_miss(_word_label(user_msg), e)
+    lead = _first_sentence(_deterministic_answer([dict(e, aspect_facts=[])]))
+    tail = [f"Jadi, {lead}"] if words and lead else []
+    return "\n".join(words + found + tail)
 
-        def key(n: Text) -> str:
-            # one name with or without its rite word: "upacara ngelelet, Ngelelet, dan Melelet" (2026-10-26)
-            return _ortho_key(re.sub(r"^(?:upacara|acara|prosesi|ritual)\s+", "", n.strip(), flags=re.I))
 
-        seen = {key(name)} | {key(n) for n in refined}
-        names = [n for n in names if not (key(n) in seen or seen.add(key(n)))]
-        found = [f"{title} juga dikenal sebagai {_join_names(names)}."] if names else []
-        if refined:
-            found.append(f"Sebutan halusnya adalah {_join_names(refined)}.")
-        found += _distinct_sentences(said, e)
-        return " ".join(found) if found else f"Maaf, sebutan lain untuk {name} belum tercatat di basis data."
-    if family == "asal_kata":
-        # not where an element comes from: "asal-usul nama ganda" got "Ganda berasal dari pretiwi", "apa makna kata
-        # rasa" "Rasa berasal dari apah" (sheet Failed, 2026-10-27); a word's origin is BERASAL_DARI_KATA
-        preds = PREDICATE_FAMILIES["asal_kata"] - {"BERASAL_DARI"}
-        found = _edge_sentences(e, preds)
-        # the word it comes from, with what that word means: "istilah malamasa berasal dari mana" got only
-        # "Malamasa berasal dari kata mala." once that edge existed (plan #19 batch 2) -- the term's own sentence
-        # about the word ('Kata mala berarti "tidak baik": ...'), else the word's card
-        for r in e.get("relationships") or []:
-            if r.get("relation") == "BERASAL_DARI_KATA" and r.get("outgoing") and r.get("target"):
-                word = r["target"]
-                own = [s for s in _sentences(_definition_text(e))
-                       if re.search(rf'\bkata\s+"?{re.escape(word)}"?\s+berarti\b', s, re.I)]
-                gloss = _meaning_gloss(r.get("target_id"))
-                found += own[:1] or ([f'Kata "{word}" berarti {gloss}'] if gloss else [])
-        found = _distinct_sentences(content.attribute_sentences(eid, preds) + found, e)
-        # "arti kata pitra yadnya": each word of the name that is a KB term (_extract_and_resolve)
-        # 'Kata "pitra" berarti para pendahulu, ...' -- the colon only for a gloss that is itself a
-        # sentence about something else ("Bhuta Kala adalah ...")
-        words = [f'Kata "{w["name"]}"' + (": " if re.match(r"(?:\S+\s+){1,5}(?:adalah|merupakan)\s", g) else " berarti ")
-                 + g for w in enriched[1:] if (g := _meaning_gloss(w["id"]))]
-        if not found and not words:
-            # the definition's own word meaning: "Maaf, arti kata lembu belum tercatat ... Yang tercatat: Lembu
-            # secara harfiah berarti sapi" contradicted itself (7 in the LLM comparison, 2026-10-20)
-            origin = _word_label(user_msg) == "asal kata"
-            # "Layon adalah sebutan halus ... untuk jenazah" says what the word means ("arti kata layon" got
-            # "Maaf, arti kata layon belum tercatat" above that sentence)
-            names_y = re.compile(rf"\s*{re.escape(name)}\s+(?:\([^)]*\)\s+)?adalah\s+sebutan\b[^.;]*\b(?:untuk|bagi)\b",
-                                 re.I)
-            # where a word comes from: a language, "berasal dari kata", or what a word inside the name means ('Kata
-            # "mala" berarti "tidak baik"' for malamasa, '"Jun" ... berarti periuk' for jun pere) -- not what the whole
-            # name means: "asal-usul nama abu" got "Abu secara umum berarti sisa material ..." (route audit 2026-10-27)
-            def answers(s: Text) -> bool:
-                if origin:
-                    return bool(_WORD_LANGUAGE_RE.search(s) or _names_word_of(s, name) or re.search(
-                        r"\b(?:berasal|diambil|diserap)\s+dari\s+(?:kata|bahasa)\b", s, re.I))
-                return bool(_word_meaning_sentence(s, name) or names_y.match(s))
-            stated = [s for s in _sentences(_definition_text(e)) if answers(s)]
-            if stated:
-                return " ".join(stated)
-            # (not for "secara harfiah", "arti harfiah", "kata dasar": what it names is no literal meaning nor root --
-            # 'Kata "cermin kecil" berarti cermin kecil ditaruh ...', free run of the 1,864, 2026-10-27)
-            if not origin and not re.search(r"harfiah|harafiah|kata\s+dasar|etimologi", user_msg, re.I):
-                # what the word means, as another definition says it ('kata "pitra" secara harfiah berarti orang tua',
-                # in pitra yadnya's), else what it names: "arti kata pitra" got "Maaf, arti kata pitra belum
-                # tercatat" above its own gloss (the 12 evaluation categories, 2026-10-27)
-                elsewhere = _word_meaning_elsewhere(name)
-                if elsewhere:
-                    return elsewhere
-                gloss = _meaning_gloss(eid)
-                if gloss:
-                    return f'Kata "{name}" berarti {gloss}'
-            return _template_miss(_word_label(user_msg), e)
-        lead = _first_sentence(_deterministic_answer([dict(e, aspect_facts=[])]))
-        tail = [f"Jadi, {lead}"] if words and lead else []
-        return "\n".join(words + found + tail)
-    if family == "induk":
-        parents = [content.entity_name[p] for p in sorted(content.kind_parents.get(eid, ()))
-                   if p in content.entity_name]
-        found = [content.render("TERMASUK_JENIS", name, _join_names(parents))] if parents else []
-        # what it is a kind of is not where it is used: "babelonyoh termasuk kategori apa" got "Babelonyoh digunakan
-        # dalam pabersihan mati", "base jenis dari apa" "Base digunakan dalam nyiramang layon" (sheet Failed)
-        kind_q = bool(re.search(r"\bkategori\w*|\bjenis\b|\bgolongan\w*|\bkelompok\w*|\bklasifikasi\w*", user_msg, re.I)
-                      and not re.search(r"\bbagian\b|\bdigunakan\b|\bdipakai\b|\b(?:upacara|ritual|rangkaian|prosesi)"
-                                        r"\s+apa\b", user_msg, re.I))
-        # (what it is a part of stays: "pabersihan mati jenis dari apa" -- a stage of nyiramang layon)
-        rites = _edge_sentences(e, {"BAGIAN_DARI"} if kind_q else {"BAGIAN_DARI", "DIGUNAKAN_DALAM", "DIGUNAKAN_PADA"})
-        # which ceremony: the whole definition, where a term's use is often said after its first clause
-        # ("wangsa digunakan dalam upacara apa" -- "... dalam upacara Ngaben, wangsa seseorang turut
-        # menentukan bentuk petulangan" was cut off, NLU sweep 2026-10-19); "termasuk jenis apa" its opening
-        which_rite = bool(re.search(r"\b(?:upacara|ritual|rangkaian|prosesi)\s+apa\b", user_msg, re.I))
-        # a which-ceremony question with a ceremony recorded is answered by it alone ("Kayu cendana termasuk salah satu
-        # jenis kayu" above "digunakan dalam nyiramang layon" answered no part of it, canon sweep 2026-10-28)
-        found = _distinct_sentences((rites if which_rite and rites else found + rites), e)
-        return " ".join(found) if found else _template_miss("kelompok atau induk", e, whole=which_rite)
-    return None
+def _template_belongs_to(family: str, enriched: List[Dict[str, Any]], user_msg: Text) -> Optional[str]:
+    """What it belongs to: its kind parents, the rite it is a stage of, what it is used in."""
+    e = enriched[0]
+    eid, name = e["id"], e["name"]
+    content = get_content()
+    parents = [content.entity_name[p] for p in sorted(content.kind_parents.get(eid, ()))
+               if p in content.entity_name]
+    found = [content.render("TERMASUK_JENIS", name, _join_names(parents))] if parents else []
+    # what it is a kind of is not where it is used: "babelonyoh termasuk kategori apa" got "Babelonyoh digunakan
+    # dalam pabersihan mati", "base jenis dari apa" "Base digunakan dalam nyiramang layon" (sheet Failed)
+    kind_q = bool(re.search(r"\bkategori\w*|\bjenis\b|\bgolongan\w*|\bkelompok\w*|\bklasifikasi\w*", user_msg, re.I)
+                  and not re.search(r"\bbagian\b|\bdigunakan\b|\bdipakai\b|\b(?:upacara|ritual|rangkaian|prosesi)"
+                                    r"\s+apa\b", user_msg, re.I))
+    # (what it is a part of stays: "pabersihan mati jenis dari apa" -- a stage of nyiramang layon)
+    rites = _edge_sentences(e, {"BAGIAN_DARI"} if kind_q else {"BAGIAN_DARI", "DIGUNAKAN_DALAM", "DIGUNAKAN_PADA"})
+    # which ceremony: the whole definition, where a term's use is often said after its first clause
+    # ("wangsa digunakan dalam upacara apa" -- "... dalam upacara Ngaben, wangsa seseorang turut
+    # menentukan bentuk petulangan" was cut off, NLU sweep 2026-10-19); "termasuk jenis apa" its opening
+    which_rite = bool(re.search(r"\b(?:upacara|ritual|rangkaian|prosesi)\s+apa\b", user_msg, re.I))
+    # a which-ceremony question with a ceremony recorded is answered by it alone ("Kayu cendana termasuk salah satu
+    # jenis kayu" above "digunakan dalam nyiramang layon" answered no part of it, canon sweep 2026-10-28)
+    found = _distinct_sentences((rites if which_rite and rites else found + rites), e)
+    return " ".join(found) if found else _template_miss("kelompok atau induk", e, whole=which_rite)
+
+
+# the template of each aspect family (an aspect one, _template_aspect, for _ASPECT_TEMPLATE_FAMILIES)
+_TEMPLATES = {
+    "": _template_definition,
+    "jenis": _template_kinds,
+    "tahapan": _template_stages,
+    "komposisi": _template_contents,
+    "sarana": _template_sarana,
+    "sebutan_lain": _template_other_names,
+    "asal_kata": _template_word_origin,
+    "induk": _template_belongs_to,
+}
+
+
+def _template_answer(family: str, enriched: List[Dict[str, Any]], user_msg: Text = "") -> Optional[str]:
+    """The template answer for `family` about enriched[0], or None when this term's question
+    needs the pipeline after all. One function per family: _TEMPLATES, _template_aspect."""
+    if family in _ASPECT_TEMPLATE_FAMILIES:
+        return _template_aspect(family, enriched, user_msg)
+    template = _TEMPLATES.get(family)
+    return template(family, enriched, user_msg) if template else None
 
 
 def _names_kb_term(user_msg: Text) -> bool:
