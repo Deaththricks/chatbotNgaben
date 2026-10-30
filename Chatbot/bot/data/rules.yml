@@ -1,10 +1,11 @@
 version: "3.1"
 
 rules:
+  # action_sapa greets, or answers a Ngaben question NLU read as a greeting ("boleh foto saat ngaben?")
   - rule: sapa
     steps:
       - intent: sapa
-      - action: utter_sapa
+      - action: action_sapa
 
   - rule: pamit
     steps:

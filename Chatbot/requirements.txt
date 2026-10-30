@@ -22,6 +22,8 @@ python-dotenv>=1.0
 # questions are answered from templates with no call. If Groq is unreachable, rate-limited or
 # times out (LLM_TIMEOUT), the bot degrades to a plain definition-based answer (or, for the
 # free-form fallback path, a fixed "gangguan teknis" message) instead of crashing.
+# Qwen is the only model: the senior kept it after the 2026-10-20..23 comparison with Gemma and
+# Llama (2026-10-26), so the `openai` package that reached those two is gone.
 # (qwen2.5 on a local Ollama through langchain-ollama until 2026-10-13; an earlier Groq rephrase
 # layer, Chatbot/bot/llm/, was deleted 2026-09-18 -- how_it_works.md §8.2.)
 groq>=1.7

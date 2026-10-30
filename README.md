@@ -30,7 +30,8 @@ copy .env.example .env
 ```
 
 The chat model is the `LLM_MODEL` setting in `.env` (default `qwen/qwen3.8-27b`, a Groq preview
-model). Changing it is one line, but run the regression suite before trusting another model.
+model, kept after a comparison with Gemma and Llama in October 2026). Changing it is one line, but
+run the regression suite before trusting another model.
 
 **Three small patches inside the environment (Windows).** Without them the bot cannot load its
 model, or answers to broad questions time out:

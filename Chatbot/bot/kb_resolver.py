@@ -152,6 +152,15 @@ _COMMON_WORDS_FILE = _KB_DIR.parent / "data" / "20k_mdee_gazz.txt"
 # dihindari untuk ngaben dan kenapa?").
 _QUESTION_WORDS = frozenset({"apa", "apakah", "siapa", "kapan", "kenapa", "mengapa", "bagaimana",
                              "gimana", "dimana", "kemana", "darimana", "mana", "berapa", "bilamana"})
+# chat words of a question, which the formal corpus lacks: "kopi tuh apaan", "coba jelasin X dong", "kasih tau
+# dong X itu apa" read them as unknown words and went to the LLM instead of the definition template (15 such
+# questions of the 1,864 NLU examples, LLM comparison 2026-10-20)
+_CHAT_WORDS = frozenset({"apaan", "tuh", "sih", "dong", "deh", "jelasin", "jelasken", "kasih", "tau", "kasitau",
+                         "coba", "nih", "yah", "ya", "kak", "min",
+                         # everyday spellings: "kalau di desa cuma ada pemangku, ngabennya tetep bisa jalan gak?"
+                         # read cuma / tetep as rare words no rule could be about (#1861)
+                         "cuma", "tetep", "udah", "kalo", "pas", "gak", "nggak", "ngga", "enggak", "aja", "emang",
+                         "banget", "gitu", "gini", "bikin", "kayak", "abis", "sampe", "gimana", "dibuatin"})
 
 
 def _load_common_words(path: Path = _COMMON_WORDS_FILE, min_count: int = 3) -> frozenset:
@@ -161,7 +170,7 @@ def _load_common_words(path: Path = _COMMON_WORDS_FILE, min_count: int = 3) -> f
             tok = line.split(maxsplit=1)[0] if line.strip() else ""
             if tok.isalpha() and tok.islower():
                 counts[tok] = counts.get(tok, 0) + 1
-    return frozenset(w for w, c in counts.items() if c >= min_count) | _QUESTION_WORDS
+    return frozenset(w for w, c in counts.items() if c >= min_count) | _QUESTION_WORDS | _CHAT_WORDS
 
 
 @dataclass

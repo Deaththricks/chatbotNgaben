@@ -75,6 +75,8 @@ PREDICATE_FAMILIES: Dict[str, set] = {
     "lokasi": {
         # "bangbang rare menjadi tempat pemakaman khusus bayi pada upacara ngelungah" (2026-10-19)
         "MENJADI_TEMPAT_PEMAKAMAN_PADA",
+        # "ngaben dapat dilakukan di krematorium", "jenazah disemayamkan di bale semanggen" (route audit 2026-10-27)
+        "DAPAT_DILAKUKAN_DI", "DISEMAYAMKAN_DI",
         "DILETAKKAN_DI", "DILETAKKAN_PADA", "DILETAKKAN_DI_ATAS", "DILETAKKAN_MELINTANG_DI",
         "BERADA_DI", "DILAKUKAN_DI", "DIBUAT_DI", "DIADAKAN_DI", "DIHANYUTKAN_KE", "DIBAWA_KE",
         "DINAIKKAN_KE", "DIPINDAHKAN_KE", "DIPINDAHKAN_DARI", "DITURUNKAN_DI",
@@ -91,6 +93,8 @@ PREDICATE_FAMILIES: Dict[str, set] = {
         "DISTANAKAN_DI", "KEDIAMAN_DARI", "MENJADI_ALAS", "TEMPAT_MEMUJA", "TERTANAM_TITIP_DI",
         # where it is obtained from ("dari mana diperoleh"), added 2026-10-01
         "DIAMBIL_DARI", "DIMOHON_DARI", "DIMOHONKAN_DARI",
+        # "raja bali berpusat di gelgel" (Balinese terms, 2026-10-28)
+        "BERPUSAT_DI",
     },
     "waktu": {
         "DILAKUKAN_SAAT", "DIGUNAKAN_SAAT", "DIBUAT_SAAT", "DISEMBURKAN_SAAT",
@@ -126,6 +130,8 @@ PREDICATE_FAMILIES: Dict[str, set] = {
         "MELAKSANAKAN", "MEMBUAT",
         # "tirta pangentas hanya dapat dibuat oleh sulinggih" (2026-10-12)
         "HANYA_DAPAT_DIBUAT_OLEH",
+        # "puri dihuni oleh raja bali", "setra dimiliki oleh desa adat" (Balinese terms, 2026-10-28)
+        "DIHUNI_OLEH", "DIMILIKI_OLEH",
     },
     "fungsi": {
         "DIPAKAI_UNTUK", "DIGUNAKAN_UNTUK", "DIGUNAKAN_PADA", "DIGUNAKAN_DALAM",
@@ -146,8 +152,15 @@ PREDICATE_FAMILIES: Dict[str, set] = {
         # "ngaben adalah kewajiban suci (swadharma)": "apakah ngaben wajib" got "Ya" argued from tirta
         # pangentas, the only rule in its context (NLU sweep 2026-10-19)
         "MERUPAKAN_KEWAJIBAN",
+        # "pabersihan hidup bertujuan membersihkan diri dari leteh" (the user's definition, 2026-10-28)
+        "BERTUJUAN_MEMBERSIHKAN_DARI",
+        # "kanoroyang melarang pelanggarnya mengubur ... di setra desa" (canon audit 2026-10-28;
+        # MELARANG had read "kanoroyang melarang setra")
+        "MELARANG_PENGUBURAN_DI",
     },
     "ciri": {
+        # "sasih kaenem tergolong dewasa madya" (route audit 2026-10-27)
+        "TERGOLONG_SEBAGAI",
         "BERWARNA", "MEMILIKI_TINGKAT", "BERUKURAN_PANJANG", "SEPANJANG", "BERBENTUK",
         "DIBUAT_BERBENTUK", "BERWUJUD", "MEMILIKI", "DIGUNAKAN_SEBANYAK", "MEMPERTAHANKAN",
         "TIDAK_MENGGUNAKAN", "BERVARIASI_DALAM", "SEBANDING_DENGAN", "MENYEBARKAN",
@@ -181,7 +194,7 @@ PREDICATE_FAMILIES: Dict[str, set] = {
         "DIBENTUK_MENJADI", "DIDUKUNG_DENGAN", "DIGILING_DI_ATAS", "DIHALUSKAN_DENGAN",
         "DIHANCURKAN_DI", "DIHITUNG_BERDASARKAN", "DIIKAT_PADA", "DIKURUNG_DENGAN",
         "DILAKUKAN_SECARA", "DILAKUKAN_TANPA", "DIOLESKAN_DI", "DIPAKAIKAN_PADA", "DIPASANG",
-        "DIPERCIKI_DAN_DIMINUMKAN", "DIPERCIKI_DENGAN", "DIPLASPAS_BERSAMA", "DIPUJA",
+        "DIPERCIKI_DAN_DIMINUMKAN", "DIPERCIKI_DENGAN", "DIPLASPAS_BERSAMA", "DIPUJA", "DIPUJA_DENGAN",
         "DISABUNI_DENGAN", "DISAMBUNG_DENGAN", "DISEMBURKAN_PADA", "DISUGUHI",
         "DITAHBISKAN_MELALUI", "DITENTUKAN_OLEH", "DITUTUPI_DENGAN", "DIUSUNG_SECARA",
         "LAHIR_DALAM_WUJUD", "MELARUNGKAN", "MEMPEROLEH", "MENDAPATKAN", "MENERIMA", "MENJALANI",
