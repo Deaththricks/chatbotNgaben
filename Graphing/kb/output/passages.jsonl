@@ -723,12 +723,12 @@
   ],
   "kind": "glossary",
   "term": "uang kepeng",
-  "text": "Uang Kepeng: Uang kepeng adalah uang logam tradisional Bali berlubang tengah, dipakai sebagai sarana ritual. Dalam Ngaben, uang kepeng merupakan simbol kekuatan Panca Datu, yaitu lambang kehidupan dan kekuatan lima dewa yang berada di kelima penjuru mata angin; uang kepeng yang asli diyakini mengandung lima unsur logam: perak, tembaga, emas, besi, dan logam campuran.",
+  "text": "Uang Kepeng: Uang kepeng (disebut juga pipis bolong atau wang kepeng) adalah uang logam tradisional Bali berlubang tengah, dipakai sebagai sarana ritual. Dalam Ngaben, uang kepeng merupakan simbol kekuatan Panca Datu, yaitu lambang kehidupan dan kekuatan lima dewa yang berada di kelima penjuru mata angin; uang kepeng yang asli diyakini mengandung lima unsur logam: perak, tembaga, emas, besi, dan logam campuran.",
   "entity_ids": [
     "uang_kepeng"
   ],
   "char_start": 7388,
-  "char_end": 7760
+  "char_end": 7805
 }
 
 {
@@ -743,8 +743,8 @@
   "entity_ids": [
     "pabersihan"
   ],
-  "char_start": 7761,
-  "char_end": 8074
+  "char_start": 7806,
+  "char_end": 8119
 }
 
 {
@@ -759,8 +759,8 @@
   "entity_ids": [
     "acara_maktining_layon"
   ],
-  "char_start": 8075,
-  "char_end": 8279
+  "char_start": 8120,
+  "char_end": 8324
 }
 
 {
@@ -775,8 +775,8 @@
   "entity_ids": [
     "ante"
   ],
-  "char_start": 8280,
-  "char_end": 8463
+  "char_start": 8325,
+  "char_end": 8508
 }
 
 {
@@ -791,8 +791,8 @@
   "entity_ids": [
     "amrethi_karana"
   ],
-  "char_start": 8464,
-  "char_end": 8892
+  "char_start": 8509,
+  "char_end": 8937
 }
 
 {
@@ -807,8 +807,8 @@
   "entity_ids": [
     "ngarga_tirtha"
   ],
-  "char_start": 8893,
-  "char_end": 9558
+  "char_start": 8938,
+  "char_end": 9603
 }
 
 {
@@ -823,8 +823,8 @@
   "entity_ids": [
     "ngili_atma"
   ],
-  "char_start": 9559,
-  "char_end": 9815
+  "char_start": 9604,
+  "char_end": 9860
 }
 
 {
@@ -839,8 +839,8 @@
   "entity_ids": [
     "dagdhi_karana"
   ],
-  "char_start": 9816,
-  "char_end": 10164
+  "char_start": 9861,
+  "char_end": 10209
 }
 
 {
@@ -855,8 +855,8 @@
   "entity_ids": [
     "pademi"
   ],
-  "char_start": 10165,
-  "char_end": 10409
+  "char_start": 10210,
+  "char_end": 10454
 }
 
 {
@@ -871,8 +871,8 @@
   "entity_ids": [
     "siwi_karana"
   ],
-  "char_start": 10410,
-  "char_end": 10579
+  "char_start": 10455,
+  "char_end": 10624
 }
 
 {
@@ -887,8 +887,8 @@
   "entity_ids": [
     "udhakanjali"
   ],
-  "char_start": 10580,
-  "char_end": 10774
+  "char_start": 10625,
+  "char_end": 10819
 }
 
 {
@@ -903,8 +903,8 @@
   "entity_ids": [
     "nuntun_sanghyang_saptongkara_atma"
   ],
-  "char_start": 10775,
-  "char_end": 11161
+  "char_start": 10820,
+  "char_end": 11206
 }
 
 {
@@ -919,8 +919,8 @@
   "entity_ids": [
     "ngastawa_gangga"
   ],
-  "char_start": 11162,
-  "char_end": 11510
+  "char_start": 11207,
+  "char_end": 11555
 }
 
 {
@@ -935,8 +935,8 @@
   "entity_ids": [
     "anggapan"
   ],
-  "char_start": 11511,
-  "char_end": 11735
+  "char_start": 11556,
+  "char_end": 11780
 }
 
 {
@@ -951,8 +951,8 @@
   "entity_ids": [
     "angkeb_baga_purus"
   ],
-  "char_start": 11736,
-  "char_end": 11940
+  "char_start": 11781,
+  "char_end": 11985
 }
 
 {
@@ -967,8 +967,8 @@
   "entity_ids": [
     "angkeb_rai"
   ],
-  "char_start": 11941,
-  "char_end": 12113
+  "char_start": 11986,
+  "char_end": 12158
 }
 
 {
@@ -983,8 +983,8 @@
   "entity_ids": [
     "ayaban_sesayut"
   ],
-  "char_start": 12114,
-  "char_end": 12536
+  "char_start": 12159,
+  "char_end": 12581
 }
 
 {
@@ -999,8 +999,8 @@
   "entity_ids": [
     "babelonyoh"
   ],
-  "char_start": 12537,
-  "char_end": 12721
+  "char_start": 12582,
+  "char_end": 12766
 }
 
 {
@@ -1015,8 +1015,8 @@
   "entity_ids": [
     "badan_halus_mendiang"
   ],
-  "char_start": 12722,
-  "char_end": 12954
+  "char_start": 12767,
+  "char_end": 12999
 }
 
 {
@@ -1031,8 +1031,8 @@
   "entity_ids": [
     "badan_suksma_bhatara"
   ],
-  "char_start": 12955,
-  "char_end": 13118
+  "char_start": 13000,
+  "char_end": 13163
 }
 
 {
@@ -1047,8 +1047,8 @@
   "entity_ids": [
     "balai_balai_bade"
   ],
-  "char_start": 13119,
-  "char_end": 13243
+  "char_start": 13164,
+  "char_end": 13288
 }
 
 {
@@ -1063,8 +1063,8 @@
   "entity_ids": [
     "bale_adat"
   ],
-  "char_start": 13244,
-  "char_end": 13597
+  "char_start": 13289,
+  "char_end": 13642
 }
 
 {
@@ -1079,8 +1079,8 @@
   "entity_ids": [
     "bale_gede"
   ],
-  "char_start": 13598,
-  "char_end": 13953
+  "char_start": 13643,
+  "char_end": 13998
 }
 
 {
@@ -1095,8 +1095,8 @@
   "entity_ids": [
     "bale_semanggen"
   ],
-  "char_start": 13954,
-  "char_end": 14167
+  "char_start": 13999,
+  "char_end": 14212
 }
 
 {
@@ -1111,8 +1111,8 @@
   "entity_ids": [
     "banten_teben"
   ],
-  "char_start": 14168,
-  "char_end": 14499
+  "char_start": 14213,
+  "char_end": 14544
 }
 
 {
@@ -1127,8 +1127,8 @@
   "entity_ids": [
     "besi"
   ],
-  "char_start": 14500,
-  "char_end": 14848
+  "char_start": 14545,
+  "char_end": 14893
 }
 
 {
@@ -1143,8 +1143,8 @@
   "entity_ids": [
     "besi_paku"
   ],
-  "char_start": 14849,
-  "char_end": 15050
+  "char_start": 14894,
+  "char_end": 15095
 }
 
 {
@@ -1159,8 +1159,8 @@
   "entity_ids": [
     "bhatara_bhatari"
   ],
-  "char_start": 15051,
-  "char_end": 15267
+  "char_start": 15096,
+  "char_end": 15312
 }
 
 {
@@ -1175,8 +1175,8 @@
   "entity_ids": [
     "bhetara_hyang_guru"
   ],
-  "char_start": 15268,
-  "char_end": 15631
+  "char_start": 15313,
+  "char_end": 15676
 }
 
 {
@@ -1191,8 +1191,8 @@
   "entity_ids": [
     "bilahan_bilahan_bambu_ante"
   ],
-  "char_start": 15632,
-  "char_end": 15856
+  "char_start": 15677,
+  "char_end": 15901
 }
 
 {
@@ -1207,8 +1207,8 @@
   "entity_ids": [
     "bukur"
   ],
-  "char_start": 15857,
-  "char_end": 15993
+  "char_start": 15902,
+  "char_end": 16038
 }
 
 {
@@ -1223,8 +1223,8 @@
   "entity_ids": [
     "canang_sari"
   ],
-  "char_start": 15994,
-  "char_end": 16201
+  "char_start": 16039,
+  "char_end": 16246
 }
 
 {
@@ -1239,8 +1239,8 @@
   "entity_ids": [
     "caru_pengelambuk"
   ],
-  "char_start": 16202,
-  "char_end": 16401
+  "char_start": 16247,
+  "char_end": 16446
 }
 
 {
@@ -1255,8 +1255,8 @@
   "entity_ids": [
     "dewa_brahma"
   ],
-  "char_start": 16402,
-  "char_end": 16727
+  "char_start": 16447,
+  "char_end": 16772
 }
 
 {
@@ -1271,8 +1271,8 @@
   "entity_ids": [
     "dewa_iswara"
   ],
-  "char_start": 16728,
-  "char_end": 17049
+  "char_start": 16773,
+  "char_end": 17094
 }
 
 {
@@ -1287,8 +1287,8 @@
   "entity_ids": [
     "dewa_mahadewa"
   ],
-  "char_start": 17050,
-  "char_end": 17349
+  "char_start": 17095,
+  "char_end": 17394
 }
 
 {
@@ -1303,8 +1303,8 @@
   "entity_ids": [
     "dewa_maheswara"
   ],
-  "char_start": 17350,
-  "char_end": 17508
+  "char_start": 17395,
+  "char_end": 17553
 }
 
 {
@@ -1319,8 +1319,8 @@
   "entity_ids": [
     "dewa_rudra"
   ],
-  "char_start": 17509,
-  "char_end": 17939
+  "char_start": 17554,
+  "char_end": 17984
 }
 
 {
@@ -1335,8 +1335,8 @@
   "entity_ids": [
     "dewa_sambu"
   ],
-  "char_start": 17940,
-  "char_end": 18313
+  "char_start": 17985,
+  "char_end": 18358
 }
 
 {
@@ -1351,8 +1351,8 @@
   "entity_ids": [
     "dewa_sangkara"
   ],
-  "char_start": 18314,
-  "char_end": 18449
+  "char_start": 18359,
+  "char_end": 18494
 }
 
 {
@@ -1367,8 +1367,8 @@
   "entity_ids": [
     "dewa_wishnu"
   ],
-  "char_start": 18450,
-  "char_end": 18773
+  "char_start": 18495,
+  "char_end": 18818
 }
 
 {
@@ -1383,8 +1383,8 @@
   "entity_ids": [
     "dewaloka"
   ],
-  "char_start": 18774,
-  "char_end": 18904
+  "char_start": 18819,
+  "char_end": 18949
 }
 
 {
@@ -1399,8 +1399,8 @@
   "entity_ids": [
     "dewasa_madya"
   ],
-  "char_start": 18905,
-  "char_end": 19127
+  "char_start": 18950,
+  "char_end": 19172
 }
 
 {
@@ -1415,8 +1415,8 @@
   "entity_ids": [
     "diuskamaligi"
   ],
-  "char_start": 19128,
-  "char_end": 19361
+  "char_start": 19173,
+  "char_end": 19406
 }
 
 {
@@ -1431,8 +1431,8 @@
   "entity_ids": [
     "emas"
   ],
-  "char_start": 19362,
-  "char_end": 19573
+  "char_start": 19407,
+  "char_end": 19618
 }
 
 {
@@ -1447,8 +1447,8 @@
   "entity_ids": [
     "gajah_mina"
   ],
-  "char_start": 19574,
-  "char_end": 19713
+  "char_start": 19619,
+  "char_end": 19758
 }
 
 {
@@ -1463,8 +1463,8 @@
   "entity_ids": [
     "daksina_tapakan"
   ],
-  "char_start": 19714,
-  "char_end": 20221
+  "char_start": 19759,
+  "char_end": 20266
 }
 
 {
@@ -1479,8 +1479,8 @@
   "entity_ids": [
     "ganda"
   ],
-  "char_start": 20222,
-  "char_end": 20436
+  "char_start": 20267,
+  "char_end": 20481
 }
 
 {
@@ -1495,8 +1495,8 @@
   "entity_ids": [
     "gria"
   ],
-  "char_start": 20437,
-  "char_end": 20646
+  "char_start": 20482,
+  "char_end": 20691
 }
 
 {
@@ -1511,8 +1511,8 @@
   "entity_ids": [
     "hitungan_galar"
   ],
-  "char_start": 20647,
-  "char_end": 20874
+  "char_start": 20692,
+  "char_end": 20919
 }
 
 {
@@ -1527,8 +1527,8 @@
   "entity_ids": [
     "hyang_prajapati"
   ],
-  "char_start": 20875,
-  "char_end": 21339
+  "char_start": 20920,
+  "char_end": 21384
 }
 
 {
@@ -1543,8 +1543,8 @@
   "entity_ids": [
     "ida_bhatara_kumara"
   ],
-  "char_start": 21340,
-  "char_end": 21551
+  "char_start": 21385,
+  "char_end": 21596
 }
 
 {
@@ -1559,8 +1559,8 @@
   "entity_ids": [
     "ida_sang_sadaka"
   ],
-  "char_start": 21552,
-  "char_end": 21745
+  "char_start": 21597,
+  "char_end": 21790
 }
 
 {
@@ -1575,8 +1575,8 @@
   "entity_ids": [
     "isi_pengawak"
   ],
-  "char_start": 21746,
-  "char_end": 21985
+  "char_start": 21791,
+  "char_end": 22030
 }
 
 {
@@ -1591,8 +1591,8 @@
   "entity_ids": [
     "jarum_jaum"
   ],
-  "char_start": 21986,
-  "char_end": 22187
+  "char_start": 22031,
+  "char_end": 22232
 }
 
 {
@@ -1607,8 +1607,8 @@
   "entity_ids": [
     "jenazah_bayi"
   ],
-  "char_start": 22188,
-  "char_end": 23663
+  "char_start": 22233,
+  "char_end": 23708
 }
 
 {
@@ -1623,8 +1623,8 @@
   "entity_ids": [
     "jenazah_raja_bali"
   ],
-  "char_start": 23664,
-  "char_end": 23814
+  "char_start": 23709,
+  "char_end": 23859
 }
 
 {
@@ -1639,8 +1639,8 @@
   "entity_ids": [
     "kain_kering"
   ],
-  "char_start": 23815,
-  "char_end": 23966
+  "char_start": 23860,
+  "char_end": 24011
 }
 
 {
@@ -1655,8 +1655,8 @@
   "entity_ids": [
     "kain_penutup"
   ],
-  "char_start": 23967,
-  "char_end": 24159
+  "char_start": 24012,
+  "char_end": 24204
 }
 
 {
@@ -1671,8 +1671,8 @@
   "entity_ids": [
     "kain_penutup_jenazah"
   ],
-  "char_start": 24160,
-  "char_end": 24374
+  "char_start": 24205,
+  "char_end": 24419
 }
 
 {
@@ -1687,8 +1687,8 @@
   "entity_ids": [
     "kain_putih_untuk_saput"
   ],
-  "char_start": 24375,
-  "char_end": 24529
+  "char_start": 24420,
+  "char_end": 24574
 }
 
 {
@@ -1703,8 +1703,8 @@
   "entity_ids": [
     "kalung_benang_dengan_uang_kepeng"
   ],
-  "char_start": 24530,
-  "char_end": 24732
+  "char_start": 24575,
+  "char_end": 24777
 }
 
 {
@@ -1719,8 +1719,8 @@
   "entity_ids": [
     "kedudukan_pitara"
   ],
-  "char_start": 24733,
-  "char_end": 24913
+  "char_start": 24778,
+  "char_end": 24958
 }
 
 {
@@ -1735,8 +1735,8 @@
   "entity_ids": [
     "kembang_rampai"
   ],
-  "char_start": 24914,
-  "char_end": 25232
+  "char_start": 24959,
+  "char_end": 25277
 }
 
 {
@@ -1751,8 +1751,8 @@
   "entity_ids": [
     "klungah"
   ],
-  "char_start": 25233,
-  "char_end": 25382
+  "char_start": 25278,
+  "char_end": 25427
 }
 
 {
@@ -1767,8 +1767,8 @@
   "entity_ids": [
     "klungah_nyuh_gading"
   ],
-  "char_start": 25383,
-  "char_end": 25619
+  "char_start": 25428,
+  "char_end": 25664
 }
 
 {
@@ -1783,8 +1783,8 @@
   "entity_ids": [
     "lante_bambu"
   ],
-  "char_start": 25620,
-  "char_end": 25773
+  "char_start": 25665,
+  "char_end": 25818
 }
 
 {
@@ -1799,8 +1799,8 @@
   "entity_ids": [
     "leluwur"
   ],
-  "char_start": 25774,
-  "char_end": 25965
+  "char_start": 25819,
+  "char_end": 26010
 }
 
 {
@@ -1815,8 +1815,8 @@
   "entity_ids": [
     "suksma_sarira"
   ],
-  "char_start": 25966,
-  "char_end": 26562
+  "char_start": 26011,
+  "char_end": 26607
 }
 
 {
@@ -1831,8 +1831,8 @@
   "entity_ids": [
     "lis_amuan_amuan"
   ],
-  "char_start": 26563,
-  "char_end": 26753
+  "char_start": 26608,
+  "char_end": 26798
 }
 
 {
@@ -1847,8 +1847,8 @@
   "entity_ids": [
     "logam_campuran"
   ],
-  "char_start": 26754,
-  "char_end": 26909
+  "char_start": 26799,
+  "char_end": 26954
 }
 
 {
@@ -1863,8 +1863,8 @@
   "entity_ids": [
     "lontar_putru"
   ],
-  "char_start": 26910,
-  "char_end": 27122
+  "char_start": 26955,
+  "char_end": 27167
 }
 
 {
@@ -1879,8 +1879,8 @@
   "entity_ids": [
     "lubang_tempat_penguburan"
   ],
-  "char_start": 27123,
-  "char_end": 27308
+  "char_start": 27168,
+  "char_end": 27353
 }
 
 {
@@ -1895,8 +1895,8 @@
   "entity_ids": [
     "malebuang"
   ],
-  "char_start": 27309,
-  "char_end": 27448
+  "char_start": 27354,
+  "char_end": 27493
 }
 
 {
@@ -1911,8 +1911,8 @@
   "entity_ids": [
     "manah"
   ],
-  "char_start": 27449,
-  "char_end": 27628
+  "char_start": 27494,
+  "char_end": 27673
 }
 
 {
@@ -1927,8 +1927,8 @@
   "entity_ids": [
     "masekeh"
   ],
-  "char_start": 27629,
-  "char_end": 27808
+  "char_start": 27674,
+  "char_end": 27853
 }
 
 {
@@ -1943,8 +1943,8 @@
   "entity_ids": [
     "merajan_kawitan"
   ],
-  "char_start": 27809,
-  "char_end": 27943
+  "char_start": 27854,
+  "char_end": 27988
 }
 
 {
@@ -1959,8 +1959,8 @@
   "entity_ids": [
     "sawa_prateka"
   ],
-  "char_start": 27944,
-  "char_end": 28426
+  "char_start": 27989,
+  "char_end": 28471
 }
 
 {
@@ -1975,8 +1975,8 @@
   "entity_ids": [
     "merajan_pusat"
   ],
-  "char_start": 28427,
-  "char_end": 28524
+  "char_start": 28472,
+  "char_end": 28569
 }
 
 {
@@ -1991,8 +1991,8 @@
   "entity_ids": [
     "mreteka_sawa"
   ],
-  "char_start": 28525,
-  "char_end": 28673
+  "char_start": 28570,
+  "char_end": 28718
 }
 
 {
@@ -2007,8 +2007,8 @@
   "entity_ids": [
     "muspa_pamitan"
   ],
-  "char_start": 28674,
-  "char_end": 28866
+  "char_start": 28719,
+  "char_end": 28911
 }
 
 {
@@ -2023,8 +2023,8 @@
   "entity_ids": [
     "naga_kahang"
   ],
-  "char_start": 28867,
-  "char_end": 29062
+  "char_start": 28912,
+  "char_end": 29107
 }
 
 {
@@ -2039,8 +2039,8 @@
   "entity_ids": [
     "nasi_angkeb"
   ],
-  "char_start": 29063,
-  "char_end": 29224
+  "char_start": 29108,
+  "char_end": 29269
 }
 
 {
@@ -2055,8 +2055,8 @@
   "entity_ids": [
     "paes_gedubang"
   ],
-  "char_start": 29225,
-  "char_end": 29441
+  "char_start": 29270,
+  "char_end": 29486
 }
 
 {
@@ -2071,8 +2071,8 @@
   "entity_ids": [
     "penebusan"
   ],
-  "char_start": 29442,
-  "char_end": 29940
+  "char_start": 29487,
+  "char_end": 29985
 }
 
 {
@@ -2087,8 +2087,8 @@
   "entity_ids": [
     "pangabenan_jenis_pranawa"
   ],
-  "char_start": 29941,
-  "char_end": 30169
+  "char_start": 29986,
+  "char_end": 30214
 }
 
 {
@@ -2103,8 +2103,8 @@
   "entity_ids": [
     "paplengkungan"
   ],
-  "char_start": 30170,
-  "char_end": 30306
+  "char_start": 30215,
+  "char_end": 30351
 }
 
 {
@@ -2119,8 +2119,8 @@
   "entity_ids": [
     "para_para_tempat_pembakaran"
   ],
-  "char_start": 30307,
-  "char_end": 30480
+  "char_start": 30352,
+  "char_end": 30525
 }
 
 {
@@ -2135,8 +2135,8 @@
   "entity_ids": [
     "pecahan_besi_baja"
   ],
-  "char_start": 30481,
-  "char_end": 30645
+  "char_start": 30526,
+  "char_end": 30690
 }
 
 {
@@ -2151,8 +2151,8 @@
   "entity_ids": [
     "pecahan_kaca"
   ],
-  "char_start": 30646,
-  "char_end": 30794
+  "char_start": 30691,
+  "char_end": 30839
 }
 
 {
@@ -2167,8 +2167,8 @@
   "entity_ids": [
     "pemangku_kawitan_setempat"
   ],
-  "char_start": 30795,
-  "char_end": 31265
+  "char_start": 30840,
+  "char_end": 31310
 }
 
 {
@@ -2183,8 +2183,8 @@
   "entity_ids": [
     "pengerikan_kuku"
   ],
-  "char_start": 31266,
-  "char_end": 31647
+  "char_start": 31311,
+  "char_end": 31692
 }
 
 {
@@ -2199,8 +2199,8 @@
   "entity_ids": [
     "perak"
   ],
-  "char_start": 31648,
-  "char_end": 31884
+  "char_start": 31693,
+  "char_end": 31929
 }
 
 {
@@ -2215,8 +2215,8 @@
   "entity_ids": [
     "peranda_buddha"
   ],
-  "char_start": 31885,
-  "char_end": 32139
+  "char_start": 31930,
+  "char_end": 32184
 }
 
 {
@@ -2231,8 +2231,8 @@
   "entity_ids": [
     "persembahyangan"
   ],
-  "char_start": 32140,
-  "char_end": 32319
+  "char_start": 32185,
+  "char_end": 32364
 }
 
 {
@@ -2247,8 +2247,8 @@
   "entity_ids": [
     "pihak_berhutang"
   ],
-  "char_start": 32320,
-  "char_end": 32606
+  "char_start": 32365,
+  "char_end": 32651
 }
 
 {
@@ -2263,8 +2263,8 @@
   "entity_ids": [
     "atma_wedana"
   ],
-  "char_start": 32607,
-  "char_end": 33857
+  "char_start": 32652,
+  "char_end": 33902
 }
 
 {
@@ -2279,8 +2279,8 @@
   "entity_ids": [
     "plengkungan_sawa"
   ],
-  "char_start": 33858,
-  "char_end": 34022
+  "char_start": 33903,
+  "char_end": 34067
 }
 
 {
@@ -2295,8 +2295,8 @@
   "entity_ids": [
     "pretiwi"
   ],
-  "char_start": 34023,
-  "char_end": 34697
+  "char_start": 34068,
+  "char_end": 34742
 }
 
 {
@@ -2311,8 +2311,8 @@
   "entity_ids": [
     "priuk_tempat_tirtha_pangringkes"
   ],
-  "char_start": 34698,
-  "char_end": 34919
+  "char_start": 34743,
+  "char_end": 34964
 }
 
 {
@@ -2327,8 +2327,8 @@
   "entity_ids": [
     "pura_desa"
   ],
-  "char_start": 34920,
-  "char_end": 35330
+  "char_start": 34965,
+  "char_end": 35375
 }
 
 {
@@ -2343,8 +2343,8 @@
   "entity_ids": [
     "pura_mrajapti"
   ],
-  "char_start": 35331,
-  "char_end": 35798
+  "char_start": 35376,
+  "char_end": 35843
 }
 
 {
@@ -2359,8 +2359,8 @@
   "entity_ids": [
     "pura_puseh"
   ],
-  "char_start": 35799,
-  "char_end": 36235
+  "char_start": 35844,
+  "char_end": 36280
 }
 
 {
@@ -2375,8 +2375,8 @@
   "entity_ids": [
     "purusa_pradana"
   ],
-  "char_start": 36236,
-  "char_end": 36505
+  "char_start": 36281,
+  "char_end": 36550
 }
 
 {
@@ -2391,8 +2391,8 @@
   "entity_ids": [
     "putru_saji"
   ],
-  "char_start": 36506,
-  "char_end": 36636
+  "char_start": 36551,
+  "char_end": 36681
 }
 
 {
@@ -2407,8 +2407,8 @@
   "entity_ids": [
     "putru_sangaskara"
   ],
-  "char_start": 36637,
-  "char_end": 36764
+  "char_start": 36682,
+  "char_end": 36809
 }
 
 {
@@ -2423,8 +2423,8 @@
   "entity_ids": [
     "rasa"
   ],
-  "char_start": 36765,
-  "char_end": 36913
+  "char_start": 36810,
+  "char_end": 36958
 }
 
 {
@@ -2439,8 +2439,8 @@
   "entity_ids": [
     "racadana"
   ],
-  "char_start": 36914,
-  "char_end": 37335
+  "char_start": 36959,
+  "char_end": 37380
 }
 
 {
@@ -2455,8 +2455,8 @@
   "entity_ids": [
     "rurub_sinom"
   ],
-  "char_start": 37336,
-  "char_end": 37569
+  "char_start": 37381,
+  "char_end": 37614
 }
 
 {
@@ -2471,8 +2471,8 @@
   "entity_ids": [
     "samsam"
   ],
-  "char_start": 37570,
-  "char_end": 37748
+  "char_start": 37615,
+  "char_end": 37793
 }
 
 {
@@ -2487,8 +2487,8 @@
   "entity_ids": [
     "sang_hyang_birawi"
   ],
-  "char_start": 37749,
-  "char_end": 37939
+  "char_start": 37794,
+  "char_end": 37984
 }
 
 {
@@ -2503,8 +2503,8 @@
   "entity_ids": [
     "sanggah_urip"
   ],
-  "char_start": 37940,
-  "char_end": 38130
+  "char_start": 37985,
+  "char_end": 38175
 }
 
 {
@@ -2519,8 +2519,8 @@
   "entity_ids": [
     "sasap"
   ],
-  "char_start": 38131,
-  "char_end": 38330
+  "char_start": 38176,
+  "char_end": 38375
 }
 
 {
@@ -2535,8 +2535,8 @@
   "entity_ids": [
     "sasih_kadasa"
   ],
-  "char_start": 38331,
-  "char_end": 38727
+  "char_start": 38376,
+  "char_end": 38772
 }
 
 {
@@ -2551,8 +2551,8 @@
   "entity_ids": [
     "sasih_kapat"
   ],
-  "char_start": 38728,
-  "char_end": 38967
+  "char_start": 38773,
+  "char_end": 39012
 }
 
 {
@@ -2567,8 +2567,8 @@
   "entity_ids": [
     "sasih_kapitu"
   ],
-  "char_start": 38968,
-  "char_end": 39202
+  "char_start": 39013,
+  "char_end": 39247
 }
 
 {
@@ -2583,8 +2583,8 @@
   "entity_ids": [
     "sasih_kasa"
   ],
-  "char_start": 39203,
-  "char_end": 39378
+  "char_start": 39248,
+  "char_end": 39423
 }
 
 {
@@ -2599,8 +2599,8 @@
   "entity_ids": [
     "sasih_kasanga"
   ],
-  "char_start": 39379,
-  "char_end": 39478
+  "char_start": 39424,
+  "char_end": 39523
 }
 
 {
@@ -2615,8 +2615,8 @@
   "entity_ids": [
     "sasih_katiga"
   ],
-  "char_start": 39479,
-  "char_end": 39656
+  "char_start": 39524,
+  "char_end": 39701
 }
 
 {
@@ -2631,8 +2631,8 @@
   "entity_ids": [
     "sedahan_setra"
   ],
-  "char_start": 39657,
-  "char_end": 39882
+  "char_start": 39702,
+  "char_end": 39927
 }
 
 {
@@ -2647,8 +2647,8 @@
   "entity_ids": [
     "sekah_sangge"
   ],
-  "char_start": 39883,
-  "char_end": 40208
+  "char_start": 39928,
+  "char_end": 40253
 }
 
 {
@@ -2663,8 +2663,8 @@
   "entity_ids": [
     "sesaji"
   ],
-  "char_start": 40209,
-  "char_end": 40398
+  "char_start": 40254,
+  "char_end": 40443
 }
 
 {
@@ -2679,8 +2679,8 @@
   "entity_ids": [
     "shiwa_loka"
   ],
-  "char_start": 40399,
-  "char_end": 40674
+  "char_start": 40444,
+  "char_end": 40719
 }
 
 {
@@ -2695,8 +2695,8 @@
   "entity_ids": [
     "singa"
   ],
-  "char_start": 40675,
-  "char_end": 40834
+  "char_start": 40720,
+  "char_end": 40879
 }
 
 {
@@ -2711,8 +2711,8 @@
   "entity_ids": [
     "slepa"
   ],
-  "char_start": 40835,
-  "char_end": 41007
+  "char_start": 40880,
+  "char_end": 41052
 }
 
 {
@@ -2727,8 +2727,8 @@
   "entity_ids": [
     "sorga"
   ],
-  "char_start": 41008,
-  "char_end": 41233
+  "char_start": 41053,
+  "char_end": 41278
 }
 
 {
@@ -2743,8 +2743,8 @@
   "entity_ids": [
     "sorohan"
   ],
-  "char_start": 41234,
-  "char_end": 41516
+  "char_start": 41279,
+  "char_end": 41561
 }
 
 {
@@ -2759,8 +2759,8 @@
   "entity_ids": [
     "sorohan_kecil"
   ],
-  "char_start": 41517,
-  "char_end": 41679
+  "char_start": 41562,
+  "char_end": 41724
 }
 
 {
@@ -2775,8 +2775,8 @@
   "entity_ids": [
     "swadharma"
   ],
-  "char_start": 41680,
-  "char_end": 41871
+  "char_start": 41725,
+  "char_end": 41916
 }
 
 {
@@ -2791,8 +2791,8 @@
   "entity_ids": [
     "tali_benang_tukelan"
   ],
-  "char_start": 41872,
-  "char_end": 42087
+  "char_start": 41917,
+  "char_end": 42132
 }
 
 {
@@ -2807,8 +2807,8 @@
   "entity_ids": [
     "tandu"
   ],
-  "char_start": 42088,
-  "char_end": 42248
+  "char_start": 42133,
+  "char_end": 42293
 }
 
 {
@@ -2823,8 +2823,8 @@
   "entity_ids": [
     "teben_pepaga"
   ],
-  "char_start": 42249,
-  "char_end": 42407
+  "char_start": 42294,
+  "char_end": 42452
 }
 
 {
@@ -2839,8 +2839,8 @@
   "entity_ids": [
     "tembaga"
   ],
-  "char_start": 42408,
-  "char_end": 42631
+  "char_start": 42453,
+  "char_end": 42676
 }
 
 {
@@ -2855,8 +2855,8 @@
   "entity_ids": [
     "tempat_penusangan"
   ],
-  "char_start": 42632,
-  "char_end": 42759
+  "char_start": 42677,
+  "char_end": 42804
 }
 
 {
@@ -2871,8 +2871,8 @@
   "entity_ids": [
     "tempat_persemayaman_jenazah"
   ],
-  "char_start": 42760,
-  "char_end": 42936
+  "char_start": 42805,
+  "char_end": 42981
 }
 
 {
@@ -2887,8 +2887,8 @@
   "entity_ids": [
     "tingkatan_bade"
   ],
-  "char_start": 42937,
-  "char_end": 43894
+  "char_start": 42982,
+  "char_end": 43939
 }
 
 {
@@ -2903,8 +2903,8 @@
   "entity_ids": [
     "tingkatan_upacara"
   ],
-  "char_start": 43895,
-  "char_end": 44241
+  "char_start": 43940,
+  "char_end": 44286
 }
 
 {
@@ -2919,8 +2919,8 @@
   "entity_ids": [
     "tirta_pengeringkes"
   ],
-  "char_start": 44242,
-  "char_end": 44558
+  "char_start": 44287,
+  "char_end": 44603
 }
 
 {
@@ -2935,8 +2935,8 @@
   "entity_ids": [
     "tirtha_amertha"
   ],
-  "char_start": 44559,
-  "char_end": 44832
+  "char_start": 44604,
+  "char_end": 44877
 }
 
 {
@@ -2951,8 +2951,8 @@
   "entity_ids": [
     "tirtha_ening"
   ],
-  "char_start": 44833,
-  "char_end": 45044
+  "char_start": 44878,
+  "char_end": 45089
 }
 
 {
@@ -2967,8 +2967,8 @@
   "entity_ids": [
     "tirtha_kahyangan_tiga"
   ],
-  "char_start": 45045,
-  "char_end": 45551
+  "char_start": 45090,
+  "char_end": 45596
 }
 
 {
@@ -2983,8 +2983,8 @@
   "entity_ids": [
     "tirtha_kawitan"
   ],
-  "char_start": 45552,
-  "char_end": 45970
+  "char_start": 45597,
+  "char_end": 46015
 }
 
 {
@@ -2999,8 +2999,8 @@
   "entity_ids": [
     "tirtha_pabersihan"
   ],
-  "char_start": 45971,
-  "char_end": 46243
+  "char_start": 46016,
+  "char_end": 46288
 }
 
 {
@@ -3015,8 +3015,8 @@
   "entity_ids": [
     "tradisi_hindu_majapahit"
   ],
-  "char_start": 46244,
-  "char_end": 46454
+  "char_start": 46289,
+  "char_end": 46499
 }
 
 {
@@ -3031,8 +3031,8 @@
   "entity_ids": [
     "tulang_belulang"
   ],
-  "char_start": 46455,
-  "char_end": 46651
+  "char_start": 46500,
+  "char_end": 46696
 }
 
 {
@@ -3047,8 +3047,8 @@
   "entity_ids": [
     "tumpang_salu"
   ],
-  "char_start": 46652,
-  "char_end": 46813
+  "char_start": 46697,
+  "char_end": 46858
 }
 
 {
@@ -3063,8 +3063,8 @@
   "entity_ids": [
     "udeng"
   ],
-  "char_start": 46814,
-  "char_end": 46936
+  "char_start": 46859,
+  "char_end": 46981
 }
 
 {
@@ -3079,8 +3079,8 @@
   "entity_ids": [
     "umbi_sikapa"
   ],
-  "char_start": 46937,
-  "char_end": 47143
+  "char_start": 46982,
+  "char_end": 47188
 }
 
 {
@@ -3095,8 +3095,8 @@
   "entity_ids": [
     "upacara_ngaben_titip"
   ],
-  "char_start": 47144,
-  "char_end": 47392
+  "char_start": 47189,
+  "char_end": 47437
 }
 
 {
@@ -3111,8 +3111,8 @@
   "entity_ids": [
     "upanisad"
   ],
-  "char_start": 47393,
-  "char_end": 47831
+  "char_start": 47438,
+  "char_end": 47876
 }
 
 {
@@ -3127,8 +3127,8 @@
   "entity_ids": [
     "usungan"
   ],
-  "char_start": 47832,
-  "char_end": 47991
+  "char_start": 47877,
+  "char_end": 48036
 }
 
 {
@@ -3143,8 +3143,8 @@
   "entity_ids": [
     "weda_pengastawa"
   ],
-  "char_start": 47992,
-  "char_end": 48118
+  "char_start": 48037,
+  "char_end": 48163
 }
 
 {
@@ -3159,8 +3159,8 @@
   "entity_ids": [
     "arjuna"
   ],
-  "char_start": 48119,
-  "char_end": 48429
+  "char_start": 48164,
+  "char_end": 48474
 }
 
 {
@@ -3175,8 +3175,8 @@
   "entity_ids": [
     "atma_lingga"
   ],
-  "char_start": 48430,
-  "char_end": 48698
+  "char_start": 48475,
+  "char_end": 48743
 }
 
 {
@@ -3191,8 +3191,8 @@
   "entity_ids": [
     "atma_lingga_sarira"
   ],
-  "char_start": 48699,
-  "char_end": 48965
+  "char_start": 48744,
+  "char_end": 49010
 }
 
 {
@@ -3207,8 +3207,8 @@
   "entity_ids": [
     "ayaban"
   ],
-  "char_start": 48966,
-  "char_end": 49201
+  "char_start": 49011,
+  "char_end": 49246
 }
 
 {
@@ -3223,8 +3223,8 @@
   "entity_ids": [
     "bale_banjar"
   ],
-  "char_start": 49202,
-  "char_end": 49452
+  "char_start": 49247,
+  "char_end": 49497
 }
 
 {
@@ -3239,8 +3239,8 @@
   "entity_ids": [
     "bantal_kapuk"
   ],
-  "char_start": 49453,
-  "char_end": 49721
+  "char_start": 49498,
+  "char_end": 49766
 }
 
 {
@@ -3255,8 +3255,8 @@
   "entity_ids": [
     "daun_pisang_saba"
   ],
-  "char_start": 49722,
-  "char_end": 50030
+  "char_start": 49767,
+  "char_end": 50075
 }
 
 {
@@ -3271,8 +3271,8 @@
   "entity_ids": [
     "formalin"
   ],
-  "char_start": 50031,
-  "char_end": 50310
+  "char_start": 50076,
+  "char_end": 50355
 }
 
 {
@@ -3287,8 +3287,8 @@
   "entity_ids": [
     "gedarba"
   ],
-  "char_start": 50311,
-  "char_end": 50516
+  "char_start": 50356,
+  "char_end": 50561
 }
 
 {
@@ -3303,8 +3303,8 @@
   "entity_ids": [
     "ketekan_guling"
   ],
-  "char_start": 50517,
-  "char_end": 50809
+  "char_start": 50562,
+  "char_end": 50854
 }
 
 {
@@ -3319,8 +3319,8 @@
   "entity_ids": [
     "hiasan"
   ],
-  "char_start": 50810,
-  "char_end": 51078
+  "char_start": 50855,
+  "char_end": 51123
 }
 
 {
@@ -3335,8 +3335,8 @@
   "entity_ids": [
     "jijih_biji_padi"
   ],
-  "char_start": 51079,
-  "char_end": 51374
+  "char_start": 51124,
+  "char_end": 51419
 }
 
 {
@@ -3351,8 +3351,8 @@
   "entity_ids": [
     "jumlah_galar"
   ],
-  "char_start": 51375,
-  "char_end": 51620
+  "char_start": 51420,
+  "char_end": 51665
 }
 
 {
@@ -3367,8 +3367,8 @@
   "entity_ids": [
     "kain_bawah"
   ],
-  "char_start": 51621,
-  "char_end": 51833
+  "char_start": 51666,
+  "char_end": 51878
 }
 
 {
@@ -3383,8 +3383,8 @@
   "entity_ids": [
     "kalpika"
   ],
-  "char_start": 51834,
-  "char_end": 52099
+  "char_start": 51879,
+  "char_end": 52144
 }
 
 {
@@ -3399,8 +3399,8 @@
   "entity_ids": [
     "roras"
   ],
-  "char_start": 52100,
-  "char_end": 52342
+  "char_start": 52145,
+  "char_end": 52387
 }
 
 {
@@ -3415,8 +3415,8 @@
   "entity_ids": [
     "kawangen_jeriji"
   ],
-  "char_start": 52343,
-  "char_end": 52898
+  "char_start": 52388,
+  "char_end": 52943
 }
 
 {
@@ -3431,8 +3431,8 @@
   "entity_ids": [
     "kesuna_bawang_putih"
   ],
-  "char_start": 52899,
-  "char_end": 53143
+  "char_start": 52944,
+  "char_end": 53188
 }
 
 {
@@ -3447,8 +3447,8 @@
   "entity_ids": [
     "kojong"
   ],
-  "char_start": 53144,
-  "char_end": 53317
+  "char_start": 53189,
+  "char_end": 53362
 }
 
 {
@@ -3463,8 +3463,8 @@
   "entity_ids": [
     "mamukur"
   ],
-  "char_start": 53318,
-  "char_end": 53737
+  "char_start": 53363,
+  "char_end": 53782
 }
 
 {
@@ -3479,8 +3479,8 @@
   "entity_ids": [
     "orangtua"
   ],
-  "char_start": 53738,
-  "char_end": 53971
+  "char_start": 53783,
+  "char_end": 54016
 }
 
 {
@@ -3495,8 +3495,8 @@
   "entity_ids": [
     "pabersihan_mati"
   ],
-  "char_start": 53972,
-  "char_end": 54869
+  "char_start": 54017,
+  "char_end": 54914
 }
 
 {
@@ -3511,8 +3511,8 @@
   "entity_ids": [
     "padang_lepas"
   ],
-  "char_start": 54870,
-  "char_end": 55095
+  "char_start": 54915,
+  "char_end": 55140
 }
 
 {
@@ -3527,8 +3527,8 @@
   "entity_ids": [
     "pengorbanan_suci"
   ],
-  "char_start": 55096,
-  "char_end": 55285
+  "char_start": 55141,
+  "char_end": 55330
 }
 
 {
@@ -3543,8 +3543,8 @@
   "entity_ids": [
     "pengulapan"
   ],
-  "char_start": 55286,
-  "char_end": 55459
+  "char_start": 55331,
+  "char_end": 55504
 }
 
 {
@@ -3559,8 +3559,8 @@
   "entity_ids": [
     "peranda_shiwa"
   ],
-  "char_start": 55460,
-  "char_end": 55738
+  "char_start": 55505,
+  "char_end": 55783
 }
 
 {
@@ -3575,8 +3575,8 @@
   "entity_ids": [
     "perlambang"
   ],
-  "char_start": 55739,
-  "char_end": 55957
+  "char_start": 55784,
+  "char_end": 56002
 }
 
 {
@@ -3591,8 +3591,8 @@
   "entity_ids": [
     "pramakusa"
   ],
-  "char_start": 55958,
-  "char_end": 56196
+  "char_start": 56003,
+  "char_end": 56241
 }
 
 {
@@ -3607,8 +3607,8 @@
   "entity_ids": [
     "pripih_emas"
   ],
-  "char_start": 56197,
-  "char_end": 56419
+  "char_start": 56242,
+  "char_end": 56464
 }
 
 {
@@ -3623,8 +3623,8 @@
   "entity_ids": [
     "pura"
   ],
-  "char_start": 56420,
-  "char_end": 56656
+  "char_start": 56465,
+  "char_end": 56701
 }
 
 {
@@ -3639,8 +3639,8 @@
   "entity_ids": [
     "raja_bali"
   ],
-  "char_start": 56657,
-  "char_end": 56869
+  "char_start": 56702,
+  "char_end": 56914
 }
 
 {
@@ -3655,8 +3655,8 @@
   "entity_ids": [
     "santapan_istimewa"
   ],
-  "char_start": 56870,
-  "char_end": 57092
+  "char_start": 56915,
+  "char_end": 57137
 }
 
 {
@@ -3671,8 +3671,8 @@
   "entity_ids": [
     "saput"
   ],
-  "char_start": 57093,
-  "char_end": 57304
+  "char_start": 57138,
+  "char_end": 57349
 }
 
 {
@@ -3687,8 +3687,8 @@
   "entity_ids": [
     "shiwa"
   ],
-  "char_start": 57305,
-  "char_end": 57756
+  "char_start": 57350,
+  "char_end": 57801
 }
 
 {
@@ -3703,8 +3703,8 @@
   "entity_ids": [
     "sumpe"
   ],
-  "char_start": 57757,
-  "char_end": 57935
+  "char_start": 57802,
+  "char_end": 57980
 }
 
 {
@@ -3719,8 +3719,8 @@
   "entity_ids": [
     "tangan_jenazah"
   ],
-  "char_start": 57936,
-  "char_end": 58196
+  "char_start": 57981,
+  "char_end": 58241
 }
 
 {
@@ -3735,8 +3735,8 @@
   "entity_ids": [
     "tirtha_pangentas_atiwa_tiwa"
   ],
-  "char_start": 58197,
-  "char_end": 58443
+  "char_start": 58242,
+  "char_end": 58488
 }
 
 {
@@ -3751,8 +3751,8 @@
   "entity_ids": [
     "uang_kepeng_asli"
   ],
-  "char_start": 58444,
-  "char_end": 58690
+  "char_start": 58489,
+  "char_end": 58735
 }
 
 {
@@ -3767,8 +3767,8 @@
   "entity_ids": [
     "ulantaga"
   ],
-  "char_start": 58691,
-  "char_end": 58904
+  "char_start": 58736,
+  "char_end": 58949
 }
 
 {
@@ -3783,8 +3783,8 @@
   "entity_ids": [
     "umpal"
   ],
-  "char_start": 58905,
-  "char_end": 59062
+  "char_start": 58950,
+  "char_end": 59107
 }
 
 {
@@ -3799,8 +3799,8 @@
   "entity_ids": [
     "upacara_ngelungah"
   ],
-  "char_start": 59063,
-  "char_end": 59591
+  "char_start": 59108,
+  "char_end": 59636
 }
 
 {
@@ -3815,8 +3815,8 @@
   "entity_ids": [
     "upacara_saji_tarpana"
   ],
-  "char_start": 59592,
-  "char_end": 59824
+  "char_start": 59637,
+  "char_end": 59869
 }
 
 {
@@ -3831,8 +3831,8 @@
   "entity_ids": [
     "abu"
   ],
-  "char_start": 59825,
-  "char_end": 60167
+  "char_start": 59870,
+  "char_end": 60212
 }
 
 {
@@ -3847,8 +3847,8 @@
   "entity_ids": [
     "adegan"
   ],
-  "char_start": 60168,
-  "char_end": 60749
+  "char_start": 60213,
+  "char_end": 60794
 }
 
 {
@@ -3863,8 +3863,8 @@
   "entity_ids": [
     "angenan"
   ],
-  "char_start": 60750,
-  "char_end": 61045
+  "char_start": 60795,
+  "char_end": 61090
 }
 
 {
@@ -3879,8 +3879,8 @@
   "entity_ids": [
     "anget_angetan"
   ],
-  "char_start": 61046,
-  "char_end": 61204
+  "char_start": 61091,
+  "char_end": 61249
 }
 
 {
@@ -3895,8 +3895,8 @@
   "entity_ids": [
     "ayaban_upakara_diuskamaligi"
   ],
-  "char_start": 61205,
-  "char_end": 61442
+  "char_start": 61250,
+  "char_end": 61487
 }
 
 {
@@ -3911,8 +3911,8 @@
   "entity_ids": [
     "bale"
   ],
-  "char_start": 61443,
-  "char_end": 61838
+  "char_start": 61488,
+  "char_end": 61883
 }
 
 {
@@ -3927,8 +3927,8 @@
   "entity_ids": [
     "bale_bale"
   ],
-  "char_start": 61839,
-  "char_end": 62302
+  "char_start": 61884,
+  "char_end": 62347
 }
 
 {
@@ -3943,8 +3943,8 @@
   "entity_ids": [
     "bali_aga"
   ],
-  "char_start": 62303,
-  "char_end": 62691
+  "char_start": 62348,
+  "char_end": 62736
 }
 
 {
@@ -3959,8 +3959,8 @@
   "entity_ids": [
     "banten_bebangkit"
   ],
-  "char_start": 62692,
-  "char_end": 63074
+  "char_start": 62737,
+  "char_end": 63119
 }
 
 {
@@ -3975,8 +3975,8 @@
   "entity_ids": [
     "banten_pamegat"
   ],
-  "char_start": 63075,
-  "char_end": 63430
+  "char_start": 63120,
+  "char_end": 63475
 }
 
 {
@@ -3991,8 +3991,8 @@
   "entity_ids": [
     "bhatari"
   ],
-  "char_start": 63431,
-  "char_end": 63679
+  "char_start": 63476,
+  "char_end": 63724
 }
 
 {
@@ -4007,8 +4007,8 @@
   "entity_ids": [
     "bhuwana_alit"
   ],
-  "char_start": 63680,
-  "char_end": 64046
+  "char_start": 63725,
+  "char_end": 64091
 }
 
 {
@@ -4023,8 +4023,8 @@
   "entity_ids": [
     "cili"
   ],
-  "char_start": 64047,
-  "char_end": 64372
+  "char_start": 64092,
+  "char_end": 64417
 }
 
 {
@@ -4039,8 +4039,8 @@
   "entity_ids": [
     "daun_dapdap"
   ],
-  "char_start": 64373,
-  "char_end": 64683
+  "char_start": 64418,
+  "char_end": 64728
 }
 
 {
@@ -4055,8 +4055,8 @@
   "entity_ids": [
     "daun_intaran"
   ],
-  "char_start": 64684,
-  "char_end": 65019
+  "char_start": 64729,
+  "char_end": 65064
 }
 
 {
@@ -4071,8 +4071,8 @@
   "entity_ids": [
     "dulang"
   ],
-  "char_start": 65020,
-  "char_end": 65255
+  "char_start": 65065,
+  "char_end": 65300
 }
 
 {
@@ -4087,8 +4087,8 @@
   "entity_ids": [
     "eteh_eteh"
   ],
-  "char_start": 65256,
-  "char_end": 65743
+  "char_start": 65301,
+  "char_end": 65788
 }
 
 {
@@ -4103,8 +4103,8 @@
   "entity_ids": [
     "galar"
   ],
-  "char_start": 65744,
-  "char_end": 65941
+  "char_start": 65789,
+  "char_end": 65986
 }
 
 {
@@ -4119,8 +4119,8 @@
   "entity_ids": [
     "gotong_royong"
   ],
-  "char_start": 65942,
-  "char_end": 66251
+  "char_start": 65987,
+  "char_end": 66296
 }
 
 {
@@ -4135,8 +4135,8 @@
   "entity_ids": [
     "itik_itik"
   ],
-  "char_start": 66252,
-  "char_end": 66358
+  "char_start": 66297,
+  "char_end": 66403
 }
 
 {
@@ -4151,8 +4151,8 @@
   "entity_ids": [
     "jun_pere"
   ],
-  "char_start": 66359,
-  "char_end": 66655
+  "char_start": 66404,
+  "char_end": 66700
 }
 
 {
@@ -4167,8 +4167,8 @@
   "entity_ids": [
     "kajang"
   ],
-  "char_start": 66656,
-  "char_end": 67007
+  "char_start": 66701,
+  "char_end": 67052
 }
 
 {
@@ -4183,8 +4183,8 @@
   "entity_ids": [
     "karma_wasana"
   ],
-  "char_start": 67008,
-  "char_end": 67325
+  "char_start": 67053,
+  "char_end": 67370
 }
 
 {
@@ -4199,8 +4199,8 @@
   "entity_ids": [
     "kawangen"
   ],
-  "char_start": 67326,
-  "char_end": 68079
+  "char_start": 67371,
+  "char_end": 68124
 }
 
 {
@@ -4215,8 +4215,8 @@
   "entity_ids": [
     "krama_masyarakat_banjar"
   ],
-  "char_start": 68080,
-  "char_end": 68425
+  "char_start": 68125,
+  "char_end": 68470
 }
 
 {
@@ -4231,8 +4231,8 @@
   "entity_ids": [
     "kuburan"
   ],
-  "char_start": 68426,
-  "char_end": 68698
+  "char_start": 68471,
+  "char_end": 68743
 }
 
 {
@@ -4247,8 +4247,8 @@
   "entity_ids": [
     "lancingan"
   ],
-  "char_start": 68699,
-  "char_end": 69030
+  "char_start": 68744,
+  "char_end": 69075
 }
 
 {
@@ -4263,8 +4263,8 @@
   "entity_ids": [
     "layon"
   ],
-  "char_start": 69031,
-  "char_end": 69303
+  "char_start": 69076,
+  "char_end": 69348
 }
 
 {
@@ -4275,12 +4275,12 @@
   ],
   "kind": "glossary",
   "term": "lekesan",
-  "text": "Lekesan: Lekesan adalah sarana persembahyangan umum berupa gulungan daun sirih, biasa menjadi salah satu komponen kawangen dalam Hindu Bali. Dalam upacara Ngaben, lekesan dibuat dari daun sirih yang digulung berisi tembakau, diikat benang putih, diisi bawang putih di ujungnya, dan dimasukkan ke lubang satu keping uang kepeng, lalu ditempelkan pada gigi jenazah.",
+  "text": "Lekesan: Lekesan (disebut juga base gulung) adalah sarana persembahyangan umum berupa gulungan daun sirih, biasa menjadi salah satu komponen kawangen dalam Hindu Bali. Dalam upacara Ngaben, lekesan dibuat dari daun sirih yang digulung berisi tembakau, diikat benang putih, diisi bawang putih di ujungnya, dan dimasukkan ke lubang satu keping uang kepeng, lalu ditempelkan pada gigi jenazah.",
   "entity_ids": [
     "lekesan"
   ],
-  "char_start": 69304,
-  "char_end": 69670
+  "char_start": 69349,
+  "char_end": 69742
 }
 
 {
@@ -4295,8 +4295,8 @@
   "entity_ids": [
     "lembu"
   ],
-  "char_start": 69671,
-  "char_end": 70120
+  "char_start": 69743,
+  "char_end": 70192
 }
 
 {
@@ -4311,8 +4311,8 @@
   "entity_ids": [
     "lis_bale_gading"
   ],
-  "char_start": 70121,
-  "char_end": 70411
+  "char_start": 70193,
+  "char_end": 70483
 }
 
 {
@@ -4327,8 +4327,8 @@
   "entity_ids": [
     "lontar"
   ],
-  "char_start": 70412,
-  "char_end": 70707
+  "char_start": 70484,
+  "char_end": 70779
 }
 
 {
@@ -4343,8 +4343,8 @@
   "entity_ids": [
     "malem"
   ],
-  "char_start": 70708,
-  "char_end": 70919
+  "char_start": 70780,
+  "char_end": 70991
 }
 
 {
@@ -4359,8 +4359,8 @@
   "entity_ids": [
     "mamutru"
   ],
-  "char_start": 70920,
-  "char_end": 71069
+  "char_start": 70992,
+  "char_end": 71141
 }
 
 {
@@ -4375,8 +4375,8 @@
   "entity_ids": [
     "mangle"
   ],
-  "char_start": 71070,
-  "char_end": 71248
+  "char_start": 71142,
+  "char_end": 71320
 }
 
 {
@@ -4391,8 +4391,8 @@
   "entity_ids": [
     "mapegat"
   ],
-  "char_start": 71249,
-  "char_end": 71979
+  "char_start": 71321,
+  "char_end": 72051
 }
 
 {
@@ -4407,8 +4407,8 @@
   "entity_ids": [
     "nanginin"
   ],
-  "char_start": 71980,
-  "char_end": 72175
+  "char_start": 72052,
+  "char_end": 72247
 }
 
 {
@@ -4423,8 +4423,8 @@
   "entity_ids": [
     "ngajar_ajar"
   ],
-  "char_start": 72176,
-  "char_end": 72440
+  "char_start": 72248,
+  "char_end": 72512
 }
 
 {
@@ -4439,8 +4439,8 @@
   "entity_ids": [
     "nganyut"
   ],
-  "char_start": 72441,
-  "char_end": 72773
+  "char_start": 72513,
+  "char_end": 72845
 }
 
 {
@@ -4455,8 +4455,8 @@
   "entity_ids": [
     "ngulapin"
   ],
-  "char_start": 72774,
-  "char_end": 73196
+  "char_start": 72846,
+  "char_end": 73268
 }
 
 {
@@ -4471,8 +4471,8 @@
   "entity_ids": [
     "pabersihan_hidup"
   ],
-  "char_start": 73197,
-  "char_end": 74089
+  "char_start": 73269,
+  "char_end": 74161
 }
 
 {
@@ -4487,8 +4487,8 @@
   "entity_ids": [
     "pamrajan"
   ],
-  "char_start": 74090,
-  "char_end": 74392
+  "char_start": 74162,
+  "char_end": 74464
 }
 
 {
@@ -4503,8 +4503,8 @@
   "entity_ids": [
     "panca_datu"
   ],
-  "char_start": 74393,
-  "char_end": 75089
+  "char_start": 74465,
+  "char_end": 75161
 }
 
 {
@@ -4519,8 +4519,8 @@
   "entity_ids": [
     "panguryagan"
   ],
-  "char_start": 75090,
-  "char_end": 75233
+  "char_start": 75162,
+  "char_end": 75305
 }
 
 {
@@ -4535,8 +4535,8 @@
   "entity_ids": [
     "patulangan"
   ],
-  "char_start": 75234,
-  "char_end": 75479
+  "char_start": 75306,
+  "char_end": 75551
 }
 
 {
@@ -4551,8 +4551,8 @@
   "entity_ids": [
     "pawedan"
   ],
-  "char_start": 75480,
-  "char_end": 75939
+  "char_start": 75552,
+  "char_end": 76011
 }
 
 {
@@ -4567,8 +4567,8 @@
   "entity_ids": [
     "pemangku"
   ],
-  "char_start": 75940,
-  "char_end": 76438
+  "char_start": 76012,
+  "char_end": 76510
 }
 
 {
@@ -4583,8 +4583,8 @@
   "entity_ids": [
     "pengawak"
   ],
-  "char_start": 76439,
-  "char_end": 76614
+  "char_start": 76511,
+  "char_end": 76686
 }
 
 {
@@ -4599,8 +4599,8 @@
   "entity_ids": [
     "pering"
   ],
-  "char_start": 76615,
-  "char_end": 77328
+  "char_start": 76687,
+  "char_end": 77400
 }
 
 {
@@ -4615,8 +4615,8 @@
   "entity_ids": [
     "pradaksina"
   ],
-  "char_start": 77329,
-  "char_end": 77769
+  "char_start": 77401,
+  "char_end": 77841
 }
 
 {
@@ -4631,8 +4631,8 @@
   "entity_ids": [
     "punjung"
   ],
-  "char_start": 77770,
-  "char_end": 78062
+  "char_start": 77842,
+  "char_end": 78134
 }
 
 {
@@ -4647,8 +4647,8 @@
   "entity_ids": [
     "pura_dalem"
   ],
-  "char_start": 78063,
-  "char_end": 78439
+  "char_start": 78135,
+  "char_end": 78511
 }
 
 {
@@ -4663,8 +4663,8 @@
   "entity_ids": [
     "puspa_lingga"
   ],
-  "char_start": 78440,
-  "char_end": 78699
+  "char_start": 78512,
+  "char_end": 78771
 }
 
 {
@@ -4679,8 +4679,8 @@
   "entity_ids": [
     "sajen_kecil"
   ],
-  "char_start": 78700,
-  "char_end": 78943
+  "char_start": 78772,
+  "char_end": 79015
 }
 
 {
@@ -4695,8 +4695,8 @@
   "entity_ids": [
     "sanggar_surya_baligia"
   ],
-  "char_start": 78944,
-  "char_end": 79278
+  "char_start": 79016,
+  "char_end": 79350
 }
 
 {
@@ -4711,8 +4711,8 @@
   "entity_ids": [
     "sasih_karo"
   ],
-  "char_start": 79279,
-  "char_end": 79469
+  "char_start": 79351,
+  "char_end": 79541
 }
 
 {
@@ -4727,8 +4727,8 @@
   "entity_ids": [
     "sawa_dititip"
   ],
-  "char_start": 79470,
-  "char_end": 79630
+  "char_start": 79542,
+  "char_end": 79702
 }
 
 {
@@ -4743,8 +4743,8 @@
   "entity_ids": [
     "sekah"
   ],
-  "char_start": 79631,
-  "char_end": 79831
+  "char_start": 79703,
+  "char_end": 79903
 }
 
 {
@@ -4759,8 +4759,8 @@
   "entity_ids": [
     "sekah_abin"
   ],
-  "char_start": 79832,
-  "char_end": 79980
+  "char_start": 79904,
+  "char_end": 80052
 }
 
 {
@@ -4775,8 +4775,8 @@
   "entity_ids": [
     "sekah_kangsen"
   ],
-  "char_start": 79981,
-  "char_end": 80287
+  "char_start": 80053,
+  "char_end": 80359
 }
 
 {
@@ -4791,8 +4791,8 @@
   "entity_ids": [
     "sekar_ura"
   ],
-  "char_start": 80288,
-  "char_end": 80544
+  "char_start": 80360,
+  "char_end": 80616
 }
 
 {
@@ -4807,8 +4807,8 @@
   "entity_ids": [
     "sesajen"
   ],
-  "char_start": 80545,
-  "char_end": 80940
+  "char_start": 80617,
+  "char_end": 81012
 }
 
 {
@@ -4823,8 +4823,8 @@
   "entity_ids": [
     "sesenden"
   ],
-  "char_start": 80941,
-  "char_end": 81106
+  "char_start": 81013,
+  "char_end": 81178
 }
 
 {
@@ -4839,8 +4839,8 @@
   "entity_ids": [
     "simbol_tirtha"
   ],
-  "char_start": 81107,
-  "char_end": 81281
+  "char_start": 81179,
+  "char_end": 81353
 }
 
 {
@@ -4855,8 +4855,8 @@
   "entity_ids": [
     "sisig"
   ],
-  "char_start": 81282,
-  "char_end": 81466
+  "char_start": 81354,
+  "char_end": 81538
 }
 
 {
@@ -4871,8 +4871,8 @@
   "entity_ids": [
     "soda"
   ],
-  "char_start": 81467,
-  "char_end": 81831
+  "char_start": 81539,
+  "char_end": 81903
 }
 
 {
@@ -4887,8 +4887,8 @@
   "entity_ids": [
     "takir"
   ],
-  "char_start": 81832,
-  "char_end": 82100
+  "char_start": 81904,
+  "char_end": 82172
 }
 
 {
@@ -4903,8 +4903,8 @@
   "entity_ids": [
     "tarpana"
   ],
-  "char_start": 82101,
-  "char_end": 82428
+  "char_start": 82173,
+  "char_end": 82500
 }
 
 {
@@ -4919,8 +4919,8 @@
   "entity_ids": [
     "tegteg"
   ],
-  "char_start": 82429,
-  "char_end": 82685
+  "char_start": 82501,
+  "char_end": 82757
 }
 
 {
@@ -4935,8 +4935,8 @@
   "entity_ids": [
     "tirta_panglukatan"
   ],
-  "char_start": 82686,
-  "char_end": 82944
+  "char_start": 82758,
+  "char_end": 83016
 }
 
 {
@@ -4951,8 +4951,8 @@
   "entity_ids": [
     "undagi"
   ],
-  "char_start": 82945,
-  "char_end": 83349
+  "char_start": 83017,
+  "char_end": 83421
 }
 
 {
@@ -4967,8 +4967,8 @@
   "entity_ids": [
     "palebon"
   ],
-  "char_start": 83350,
-  "char_end": 83681
+  "char_start": 83422,
+  "char_end": 83753
 }
 
 {
@@ -4983,8 +4983,8 @@
   "entity_ids": [
     "akasa"
   ],
-  "char_start": 83682,
-  "char_end": 84306
+  "char_start": 83754,
+  "char_end": 84378
 }
 
 {
@@ -4999,8 +4999,8 @@
   "entity_ids": [
     "apah"
   ],
-  "char_start": 84307,
-  "char_end": 84812
+  "char_start": 84379,
+  "char_end": 84884
 }
 
 {
@@ -5015,8 +5015,8 @@
   "entity_ids": [
     "atiwa_tiwa"
   ],
-  "char_start": 84813,
-  "char_end": 85463
+  "char_start": 84885,
+  "char_end": 85535
 }
 
 {
@@ -5031,8 +5031,8 @@
   "entity_ids": [
     "bali_dataran"
   ],
-  "char_start": 85464,
-  "char_end": 86103
+  "char_start": 85536,
+  "char_end": 86175
 }
 
 {
@@ -5047,8 +5047,8 @@
   "entity_ids": [
     "bayu"
   ],
-  "char_start": 86104,
-  "char_end": 86642
+  "char_start": 86176,
+  "char_end": 86714
 }
 
 {
@@ -5063,8 +5063,8 @@
   "entity_ids": [
     "hyang_agni"
   ],
-  "char_start": 86643,
-  "char_end": 87262
+  "char_start": 86715,
+  "char_end": 87334
 }
 
 {
@@ -5079,8 +5079,8 @@
   "entity_ids": [
     "langse"
   ],
-  "char_start": 87263,
-  "char_end": 87755
+  "char_start": 87335,
+  "char_end": 87827
 }
 
 {
@@ -5095,8 +5095,8 @@
   "entity_ids": [
     "niskala"
   ],
-  "char_start": 87756,
-  "char_end": 88409
+  "char_start": 87828,
+  "char_end": 88481
 }
 
 {
@@ -5111,8 +5111,8 @@
   "entity_ids": [
     "perbandingan_kepala_lembu"
   ],
-  "char_start": 88410,
-  "char_end": 88947
+  "char_start": 88482,
+  "char_end": 89019
 }
 
 {
@@ -5127,8 +5127,8 @@
   "entity_ids": [
     "perbandingan_kepala_singa"
   ],
-  "char_start": 88948,
-  "char_end": 89481
+  "char_start": 89020,
+  "char_end": 89553
 }
 
 {
@@ -5143,8 +5143,8 @@
   "entity_ids": [
     "sasih_kaenem"
   ],
-  "char_start": 89482,
-  "char_end": 90067
+  "char_start": 89554,
+  "char_end": 90139
 }
 
 {
@@ -5159,8 +5159,8 @@
   "entity_ids": [
     "perhiasan_pusaka"
   ],
-  "char_start": 90068,
-  "char_end": 90434
+  "char_start": 90140,
+  "char_end": 90506
 }
 
 {
@@ -5175,8 +5175,8 @@
   "entity_ids": [
     "teja"
   ],
-  "char_start": 90435,
-  "char_end": 91009
+  "char_start": 90507,
+  "char_end": 91081
 }
 
 {
@@ -5191,8 +5191,8 @@
   "entity_ids": [
     "uye"
   ],
-  "char_start": 91010,
-  "char_end": 91421
+  "char_start": 91082,
+  "char_end": 91493
 }
 
 {
@@ -5207,8 +5207,8 @@
   "entity_ids": [
     "wayang"
   ],
-  "char_start": 91422,
-  "char_end": 91899
+  "char_start": 91494,
+  "char_end": 91971
 }
 
 {
@@ -5223,8 +5223,8 @@
   "entity_ids": [
     "wuku_kuningan"
   ],
-  "char_start": 91900,
-  "char_end": 92308
+  "char_start": 91972,
+  "char_end": 92380
 }
 
 {
@@ -5239,8 +5239,8 @@
   "entity_ids": [
     "dada_jenazah"
   ],
-  "char_start": 92309,
-  "char_end": 92573
+  "char_start": 92381,
+  "char_end": 92645
 }
 
 {
@@ -5255,8 +5255,8 @@
   "entity_ids": [
     "gigi_jenazah"
   ],
-  "char_start": 92574,
-  "char_end": 92894
+  "char_start": 92646,
+  "char_end": 92966
 }
 
 {
@@ -5271,8 +5271,8 @@
   "entity_ids": [
     "hulu_hati_jenazah"
   ],
-  "char_start": 92895,
-  "char_end": 93100
+  "char_start": 92967,
+  "char_end": 93172
 }
 
 {
@@ -5287,8 +5287,8 @@
   "entity_ids": [
     "jempol_jari_kaki"
   ],
-  "char_start": 93101,
-  "char_end": 93339
+  "char_start": 93173,
+  "char_end": 93411
 }
 
 {
@@ -5303,8 +5303,8 @@
   "entity_ids": [
     "kedua_mata_jenazah"
   ],
-  "char_start": 93340,
-  "char_end": 93521
+  "char_start": 93412,
+  "char_end": 93593
 }
 
 {
@@ -5319,8 +5319,8 @@
   "entity_ids": [
     "lengan_jenazah"
   ],
-  "char_start": 93522,
-  "char_end": 93763
+  "char_start": 93594,
+  "char_end": 93835
 }
 
 {
@@ -5335,8 +5335,8 @@
   "entity_ids": [
     "penggunaan_wewangian"
   ],
-  "char_start": 93764,
-  "char_end": 94019
+  "char_start": 93836,
+  "char_end": 94091
 }
 
 {
@@ -5351,8 +5351,8 @@
   "entity_ids": [
     "sajen_surya"
   ],
-  "char_start": 94020,
-  "char_end": 94284
+  "char_start": 94092,
+  "char_end": 94356
 }
 
 {
@@ -5367,8 +5367,8 @@
   "entity_ids": [
     "persimpangan_jalan"
   ],
-  "char_start": 94285,
-  "char_end": 94600
+  "char_start": 94357,
+  "char_end": 94672
 }
 
 {
@@ -5383,8 +5383,8 @@
   "entity_ids": [
     "bibir_jenazah"
   ],
-  "char_start": 94601,
-  "char_end": 94962
+  "char_start": 94673,
+  "char_end": 95034
 }
 
 {
@@ -5399,8 +5399,8 @@
   "entity_ids": [
     "kaki_jenazah"
   ],
-  "char_start": 94963,
-  "char_end": 95391
+  "char_start": 95035,
+  "char_end": 95463
 }
 
 {
@@ -5415,8 +5415,8 @@
   "entity_ids": [
     "kepala_jenazah"
   ],
-  "char_start": 95392,
-  "char_end": 95793
+  "char_start": 95464,
+  "char_end": 95865
 }
 
 {
@@ -5431,8 +5431,8 @@
   "entity_ids": [
     "arang_pembakaran_jaja_gina"
   ],
-  "char_start": 95794,
-  "char_end": 95974
+  "char_start": 95866,
+  "char_end": 96046
 }
 
 {
@@ -5447,8 +5447,8 @@
   "entity_ids": [
     "arang_pembakaran_jaja_uli"
   ],
-  "char_start": 95975,
-  "char_end": 96115
+  "char_start": 96047,
+  "char_end": 96187
 }
 
 {
@@ -5463,8 +5463,8 @@
   "entity_ids": [
     "balai_balai_alas_ngringkes"
   ],
-  "char_start": 96116,
-  "char_end": 96366
+  "char_start": 96188,
+  "char_end": 96438
 }
 
 {
@@ -5479,8 +5479,8 @@
   "entity_ids": [
     "benang_tatebus"
   ],
-  "char_start": 96367,
-  "char_end": 96567
+  "char_start": 96439,
+  "char_end": 96639
 }
 
 {
@@ -5495,8 +5495,8 @@
   "entity_ids": [
     "beras_kuning"
   ],
-  "char_start": 96568,
-  "char_end": 96695
+  "char_start": 96640,
+  "char_end": 96767
 }
 
 {
@@ -5511,8 +5511,8 @@
   "entity_ids": [
     "bersihan_payasan"
   ],
-  "char_start": 96696,
-  "char_end": 96798
+  "char_start": 96768,
+  "char_end": 96870
 }
 
 {
@@ -5527,8 +5527,8 @@
   "entity_ids": [
     "bilah_bambu_galar"
   ],
-  "char_start": 96799,
-  "char_end": 96944
+  "char_start": 96871,
+  "char_end": 97016
 }
 
 {
@@ -5543,8 +5543,8 @@
   "entity_ids": [
     "bunga"
   ],
-  "char_start": 96945,
-  "char_end": 97038
+  "char_start": 97017,
+  "char_end": 97110
 }
 
 {
@@ -5559,8 +5559,8 @@
   "entity_ids": [
     "bunga_tunjung_putih"
   ],
-  "char_start": 97039,
-  "char_end": 97278
+  "char_start": 97111,
+  "char_end": 97350
 }
 
 {
@@ -5575,8 +5575,8 @@
   "entity_ids": [
     "coblong"
   ],
-  "char_start": 97279,
-  "char_end": 97377
+  "char_start": 97351,
+  "char_end": 97449
 }
 
 {
@@ -5591,8 +5591,8 @@
   "entity_ids": [
     "daun_kelapa_muda_busung"
   ],
-  "char_start": 97378,
-  "char_end": 97605
+  "char_start": 97450,
+  "char_end": 97677
 }
 
 {
@@ -5607,8 +5607,8 @@
   "entity_ids": [
     "daun_pisang"
   ],
-  "char_start": 97606,
-  "char_end": 97719
+  "char_start": 97678,
+  "char_end": 97791
 }
 
 {
@@ -5623,8 +5623,8 @@
   "entity_ids": [
     "daun_rontal"
   ],
-  "char_start": 97720,
-  "char_end": 97830
+  "char_start": 97792,
+  "char_end": 97902
 }
 
 {
@@ -5639,8 +5639,8 @@
   "entity_ids": [
     "daun_temen"
   ],
-  "char_start": 97831,
-  "char_end": 97931
+  "char_start": 97903,
+  "char_end": 98003
 }
 
 {
@@ -5655,8 +5655,8 @@
   "entity_ids": [
     "galungan"
   ],
-  "char_start": 97932,
-  "char_end": 98164
+  "char_start": 98004,
+  "char_end": 98236
 }
 
 {
@@ -5671,8 +5671,8 @@
   "entity_ids": [
     "gelar_sanga"
   ],
-  "char_start": 98165,
-  "char_end": 98383
+  "char_start": 98237,
+  "char_end": 98455
 }
 
 {
@@ -5687,8 +5687,8 @@
   "entity_ids": [
     "hitungan_galir"
   ],
-  "char_start": 98384,
-  "char_end": 98673
+  "char_start": 98456,
+  "char_end": 98745
 }
 
 {
@@ -5703,8 +5703,8 @@
   "entity_ids": [
     "hitungan_galur"
   ],
-  "char_start": 98674,
-  "char_end": 98955
+  "char_start": 98746,
+  "char_end": 99027
 }
 
 {
@@ -5719,8 +5719,8 @@
   "entity_ids": [
     "hitungan_likah"
   ],
-  "char_start": 98956,
-  "char_end": 99241
+  "char_start": 99028,
+  "char_end": 99313
 }
 
 {
@@ -5735,8 +5735,8 @@
   "entity_ids": [
     "hitungan_wangke"
   ],
-  "char_start": 99242,
-  "char_end": 99504
+  "char_start": 99314,
+  "char_end": 99576
 }
 
 {
@@ -5751,8 +5751,8 @@
   "entity_ids": [
     "hitungan_wangkong"
   ],
-  "char_start": 99505,
-  "char_end": 99740
+  "char_start": 99577,
+  "char_end": 99812
 }
 
 {
@@ -5767,8 +5767,8 @@
   "entity_ids": [
     "kain_kuning_untuk_saput"
   ],
-  "char_start": 99741,
-  "char_end": 99861
+  "char_start": 99813,
+  "char_end": 99933
 }
 
 {
@@ -5783,8 +5783,8 @@
   "entity_ids": [
     "kain_putih_untuk_bantal"
   ],
-  "char_start": 99862,
-  "char_end": 99972
+  "char_start": 99934,
+  "char_end": 100044
 }
 
 {
@@ -5799,8 +5799,8 @@
   "entity_ids": [
     "kamben"
   ],
-  "char_start": 99973,
-  "char_end": 100081
+  "char_start": 100045,
+  "char_end": 100153
 }
 
 {
@@ -5815,8 +5815,8 @@
   "entity_ids": [
     "kulit_telur_ayam"
   ],
-  "char_start": 100082,
-  "char_end": 100201
+  "char_start": 100154,
+  "char_end": 100273
 }
 
 {
@@ -5831,8 +5831,8 @@
   "entity_ids": [
     "macan"
   ],
-  "char_start": 100202,
-  "char_end": 100319
+  "char_start": 100274,
+  "char_end": 100391
 }
 
 {
@@ -5847,8 +5847,8 @@
   "entity_ids": [
     "ngaben_cara_yama_purwana_tatwa"
   ],
-  "char_start": 100320,
-  "char_end": 100657
+  "char_start": 100392,
+  "char_end": 100729
 }
 
 {
@@ -5863,8 +5863,8 @@
   "entity_ids": [
     "padma"
   ],
-  "char_start": 100658,
-  "char_end": 100767
+  "char_start": 100730,
+  "char_end": 100839
 }
 
 {
@@ -5879,8 +5879,8 @@
   "entity_ids": [
     "pangulungan"
   ],
-  "char_start": 100768,
-  "char_end": 100937
+  "char_start": 100840,
+  "char_end": 101009
 }
 
 {
@@ -5895,8 +5895,8 @@
   "entity_ids": [
     "panjaya_jaya"
   ],
-  "char_start": 100938,
-  "char_end": 101227
+  "char_start": 101010,
+  "char_end": 101299
 }
 
 {
@@ -5911,8 +5911,8 @@
   "entity_ids": [
     "pusuh_bunga_cempaka_kuning"
   ],
-  "char_start": 101228,
-  "char_end": 101422
+  "char_start": 101300,
+  "char_end": 101494
 }
 
 {
@@ -5927,8 +5927,8 @@
   "entity_ids": [
     "raka_raka"
   ],
-  "char_start": 101423,
-  "char_end": 101601
+  "char_start": 101495,
+  "char_end": 101673
 }
 
 {
@@ -5943,8 +5943,8 @@
   "entity_ids": [
     "rangkadan"
   ],
-  "char_start": 101602,
-  "char_end": 101717
+  "char_start": 101674,
+  "char_end": 101789
 }
 
 {
@@ -5959,8 +5959,8 @@
   "entity_ids": [
     "rantasan_kain_putih_kuning"
   ],
-  "char_start": 101718,
-  "char_end": 101849
+  "char_start": 101790,
+  "char_end": 101921
 }
 
 {
@@ -5975,8 +5975,8 @@
   "entity_ids": [
     "rontal_dilapisi_kertas_emas"
   ],
-  "char_start": 101850,
-  "char_end": 101992
+  "char_start": 101922,
+  "char_end": 102064
 }
 
 {
@@ -5991,8 +5991,8 @@
   "entity_ids": [
     "sabuk"
   ],
-  "char_start": 101993,
-  "char_end": 102082
+  "char_start": 102065,
+  "char_end": 102154
 }
 
 {
@@ -6007,8 +6007,8 @@
   "entity_ids": [
     "sampian_pusung"
   ],
-  "char_start": 102083,
-  "char_end": 102285
+  "char_start": 102155,
+  "char_end": 102357
 }
 
 {
@@ -6023,8 +6023,8 @@
   "entity_ids": [
     "kayu_cendana"
   ],
-  "char_start": 102286,
-  "char_end": 102698
+  "char_start": 102358,
+  "char_end": 102770
 }
 
 {
@@ -6039,8 +6039,8 @@
   "entity_ids": [
     "sthiti"
   ],
-  "char_start": 102699,
-  "char_end": 102984
+  "char_start": 102771,
+  "char_end": 103056
 }
 
 {
@@ -6055,8 +6055,8 @@
   "entity_ids": [
     "sukutunggal"
   ],
-  "char_start": 102985,
-  "char_end": 103352
+  "char_start": 103057,
+  "char_end": 103424
 }
 
 {
@@ -6071,8 +6071,8 @@
   "entity_ids": [
     "tapih"
   ],
-  "char_start": 103353,
-  "char_end": 103448
+  "char_start": 103425,
+  "char_end": 103520
 }
 
 {
@@ -6087,8 +6087,8 @@
   "entity_ids": [
     "tatindih"
   ],
-  "char_start": 103449,
-  "char_end": 103626
+  "char_start": 103521,
+  "char_end": 103698
 }
 
 {
@@ -6103,8 +6103,8 @@
   "entity_ids": [
     "tipat"
   ],
-  "char_start": 103627,
-  "char_end": 103739
+  "char_start": 103699,
+  "char_end": 103811
 }
 
 {
@@ -6115,12 +6115,12 @@
   ],
   "kind": "glossary",
   "term": "gegaleng",
-  "text": "Gegaleng: Gegaleng berarti bantal; dalam Ngaben, gegaleng adalah bantal atau ganjalan kepala jenazah yang dibuat dari 250 keping uang kepeng dan potongan-potongan dahan kayu dapdap yang dibungkus kain putih, menggantikan bantal kapuk yang dipakai semasa hidup.",
+  "text": "Gegaleng: Gegaleng berarti bantal; dalam Ngaben, gegaleng adalah bantal atau ganjalan kepala jenazah yang dibuat dari 250 keping uang kepeng dan potongan-potongan dahan kayu dapdap yang dibungkus kain putih, menggantikan bantal kapuk yang dipakai semasa hidup. Karena menggantikan bantal kapuk yang dipakai pada Pabersihan Hidup, gegaleng juga disebut galeng pengerekan.",
   "entity_ids": [
     "gegaleng"
   ],
-  "char_start": 103740,
-  "char_end": 104003
+  "char_start": 103812,
+  "char_end": 104185
 }
 
 {
@@ -6135,8 +6135,8 @@
   "entity_ids": [
     "bhuta"
   ],
-  "char_start": 104004,
-  "char_end": 104433
+  "char_start": 104186,
+  "char_end": 104615
 }
 
 {
@@ -6151,8 +6151,8 @@
   "entity_ids": [
     "tuhan"
   ],
-  "char_start": 104434,
-  "char_end": 104822
+  "char_start": 104616,
+  "char_end": 105004
 }
 
 {
@@ -6167,8 +6167,8 @@
   "entity_ids": [
     "bhuta_yadnya"
   ],
-  "char_start": 104823,
-  "char_end": 105258
+  "char_start": 105005,
+  "char_end": 105440
 }
 
 {
@@ -6183,8 +6183,8 @@
   "entity_ids": [
     "dewa_yadnya"
   ],
-  "char_start": 105259,
-  "char_end": 105729
+  "char_start": 105441,
+  "char_end": 105911
 }
 
 {
@@ -6199,8 +6199,8 @@
   "entity_ids": [
     "madiksa"
   ],
-  "char_start": 105730,
-  "char_end": 106026
+  "char_start": 105912,
+  "char_end": 106208
 }
 
 {
@@ -6215,8 +6215,8 @@
   "entity_ids": [
     "panca_yadnya"
   ],
-  "char_start": 106027,
-  "char_end": 106473
+  "char_start": 106209,
+  "char_end": 106655
 }
 
 {
@@ -6231,8 +6231,8 @@
   "entity_ids": [
     "brahmana"
   ],
-  "char_start": 106474,
-  "char_end": 106738
+  "char_start": 106656,
+  "char_end": 106920
 }
 
 {
@@ -6247,8 +6247,8 @@
   "entity_ids": [
     "ksatria"
   ],
-  "char_start": 106739,
-  "char_end": 106980
+  "char_start": 106921,
+  "char_end": 107162
 }
 
 {
@@ -6263,8 +6263,8 @@
   "entity_ids": [
     "wangsa_sudra_jadma"
   ],
-  "char_start": 106981,
-  "char_end": 107315
+  "char_start": 107163,
+  "char_end": 107497
 }
 
 {
@@ -6279,8 +6279,8 @@
   "entity_ids": [
     "wesia"
   ],
-  "char_start": 107316,
-  "char_end": 107570
+  "char_start": 107498,
+  "char_end": 107752
 }
 
 {
@@ -6295,8 +6295,8 @@
   "entity_ids": [
     "wangsa"
   ],
-  "char_start": 107571,
-  "char_end": 107964
+  "char_start": 107753,
+  "char_end": 108146
 }
 
 {
@@ -6311,8 +6311,8 @@
   "entity_ids": [
     "pasek"
   ],
-  "char_start": 107965,
-  "char_end": 108194
+  "char_start": 108147,
+  "char_end": 108376
 }
 
 {
@@ -6327,8 +6327,8 @@
   "entity_ids": [
     "matur_piuning"
   ],
-  "char_start": 108195,
-  "char_end": 108607
+  "char_start": 108377,
+  "char_end": 108789
 }
 
 {
@@ -6343,8 +6343,8 @@
   "entity_ids": [
     "pengutangan"
   ],
-  "char_start": 108608,
-  "char_end": 108911
+  "char_start": 108790,
+  "char_end": 109093
 }
 
 {
@@ -6359,8 +6359,8 @@
   "entity_ids": [
     "ngajum"
   ],
-  "char_start": 108912,
-  "char_end": 109137
+  "char_start": 109094,
+  "char_end": 109319
 }
 
 {
@@ -6375,8 +6375,8 @@
   "entity_ids": [
     "nguyeg"
   ],
-  "char_start": 109138,
-  "char_end": 109663
+  "char_start": 109320,
+  "char_end": 109845
 }
 
 {
@@ -6391,8 +6391,8 @@
   "entity_ids": [
     "mlaspas_kajang"
   ],
-  "char_start": 109664,
-  "char_end": 109931
+  "char_start": 109846,
+  "char_end": 110113
 }
 
 {
@@ -6407,8 +6407,8 @@
   "entity_ids": [
     "ngelinggihang"
   ],
-  "char_start": 109932,
-  "char_end": 110288
+  "char_start": 110114,
+  "char_end": 110470
 }
 
 {
@@ -6423,8 +6423,8 @@
   "entity_ids": [
     "alaning_dewasa"
   ],
-  "char_start": 110289,
-  "char_end": 110624
+  "char_start": 110471,
+  "char_end": 110806
 }
 
 {
@@ -6439,8 +6439,8 @@
   "entity_ids": [
     "alang_alang"
   ],
-  "char_start": 110625,
-  "char_end": 110897
+  "char_start": 110807,
+  "char_end": 111079
 }
 
 {
@@ -6455,8 +6455,8 @@
   "entity_ids": [
     "bunga_teratai"
   ],
-  "char_start": 110898,
-  "char_end": 111197
+  "char_start": 111080,
+  "char_end": 111379
 }
 
 {
@@ -6471,8 +6471,8 @@
   "entity_ids": [
     "kekitir"
   ],
-  "char_start": 111198,
-  "char_end": 111445
+  "char_start": 111380,
+  "char_end": 111627
 }
 
 {
@@ -6487,8 +6487,8 @@
   "entity_ids": [
     "ukur"
   ],
-  "char_start": 111446,
-  "char_end": 111851
+  "char_start": 111628,
+  "char_end": 112033
 }
 
 {
@@ -6503,8 +6503,8 @@
   "entity_ids": [
     "tumpeng"
   ],
-  "char_start": 111852,
-  "char_end": 112059
+  "char_start": 112034,
+  "char_end": 112241
 }
 
 {
@@ -6519,8 +6519,8 @@
   "entity_ids": [
     "ilih"
   ],
-  "char_start": 112060,
-  "char_end": 112261
+  "char_start": 112242,
+  "char_end": 112443
 }
 
 {
@@ -6535,8 +6535,8 @@
   "entity_ids": [
     "tabunan"
   ],
-  "char_start": 112262,
-  "char_end": 112469
+  "char_start": 112444,
+  "char_end": 112651
 }
 
 {
@@ -6551,8 +6551,8 @@
   "entity_ids": [
     "boma"
   ],
-  "char_start": 112470,
-  "char_end": 112811
+  "char_start": 112652,
+  "char_end": 112993
 }
 
 {
@@ -6567,8 +6567,8 @@
   "entity_ids": [
     "api_takep"
   ],
-  "char_start": 112812,
-  "char_end": 113035
+  "char_start": 112994,
+  "char_end": 113217
 }
 
 {
@@ -6583,8 +6583,8 @@
   "entity_ids": [
     "kuncup_teratai"
   ],
-  "char_start": 113036,
-  "char_end": 113279
+  "char_start": 113218,
+  "char_end": 113461
 }
 
 {
@@ -6599,8 +6599,8 @@
   "entity_ids": [
     "kikir"
   ],
-  "char_start": 113280,
-  "char_end": 113548
+  "char_start": 113462,
+  "char_end": 113730
 }
 
 {
@@ -6615,8 +6615,8 @@
   "entity_ids": [
     "bubur_pirata"
   ],
-  "char_start": 113549,
-  "char_end": 113726
+  "char_start": 113731,
+  "char_end": 113908
 }
 
 {
@@ -6631,8 +6631,8 @@
   "entity_ids": [
     "nyiru"
   ],
-  "char_start": 113727,
-  "char_end": 113955
+  "char_start": 113909,
+  "char_end": 114137
 }
 
 {
@@ -6647,8 +6647,8 @@
   "entity_ids": [
     "boreh"
   ],
-  "char_start": 113956,
-  "char_end": 114199
+  "char_start": 114138,
+  "char_end": 114381
 }
 
 {
@@ -6663,8 +6663,8 @@
   "entity_ids": [
     "brahman"
   ],
-  "char_start": 114200,
-  "char_end": 114515
+  "char_start": 114382,
+  "char_end": 114697
 }
 
 {
@@ -6679,8 +6679,8 @@
   "entity_ids": [
     "numitis"
   ],
-  "char_start": 114516,
-  "char_end": 114854
+  "char_start": 114698,
+  "char_end": 115036
 }
 
 {
@@ -6695,8 +6695,8 @@
   "entity_ids": [
     "dasa_mala"
   ],
-  "char_start": 114855,
-  "char_end": 115303
+  "char_start": 115037,
+  "char_end": 115485
 }
 
 {
@@ -6711,8 +6711,8 @@
   "entity_ids": [
     "swah_loka"
   ],
-  "char_start": 115304,
-  "char_end": 115646
+  "char_start": 115486,
+  "char_end": 115828
 }
 
 {
@@ -6727,8 +6727,8 @@
   "entity_ids": [
     "pitraloka"
   ],
-  "char_start": 115647,
-  "char_end": 116031
+  "char_start": 115829,
+  "char_end": 116213
 }
 
 {
@@ -6743,8 +6743,8 @@
   "entity_ids": [
     "upasaksi"
   ],
-  "char_start": 116032,
-  "char_end": 116340
+  "char_start": 116214,
+  "char_end": 116522
 }
 
 {
@@ -6759,8 +6759,8 @@
   "entity_ids": [
     "bwah_loka"
   ],
-  "char_start": 116341,
-  "char_end": 116643
+  "char_start": 116523,
+  "char_end": 116825
 }
 
 {
@@ -6775,8 +6775,8 @@
   "entity_ids": [
     "pangenteg_linggih"
   ],
-  "char_start": 116644,
-  "char_end": 116932
+  "char_start": 116826,
+  "char_end": 117114
 }
 
 {
@@ -6791,8 +6791,8 @@
   "entity_ids": [
     "leteh"
   ],
-  "char_start": 116933,
-  "char_end": 117177
+  "char_start": 117115,
+  "char_end": 117359
 }
 
 {
@@ -6807,8 +6807,8 @@
   "entity_ids": [
     "daksinayana"
   ],
-  "char_start": 117178,
-  "char_end": 117570
+  "char_start": 117360,
+  "char_end": 117752
 }
 
 {
@@ -6823,8 +6823,8 @@
   "entity_ids": [
     "purnama"
   ],
-  "char_start": 117571,
-  "char_end": 117799
+  "char_start": 117753,
+  "char_end": 117981
 }
 
 {
@@ -6839,8 +6839,8 @@
   "entity_ids": [
     "tilem"
   ],
-  "char_start": 117800,
-  "char_end": 118020
+  "char_start": 117982,
+  "char_end": 118202
 }
 
 {
@@ -6855,8 +6855,8 @@
   "entity_ids": [
     "guru_tiga"
   ],
-  "char_start": 118021,
-  "char_end": 118330
+  "char_start": 118203,
+  "char_end": 118512
 }
 
 {
@@ -6871,8 +6871,8 @@
   "entity_ids": [
     "uttarayana"
   ],
-  "char_start": 118331,
-  "char_end": 118705
+  "char_start": 118513,
+  "char_end": 118887
 }
 
 {
@@ -6887,8 +6887,8 @@
   "entity_ids": [
     "indrayana"
   ],
-  "char_start": 118706,
-  "char_end": 119125
+  "char_start": 118888,
+  "char_end": 119307
 }
 
 {
@@ -6903,8 +6903,8 @@
   "entity_ids": [
     "sukra"
   ],
-  "char_start": 119126,
-  "char_end": 119379
+  "char_start": 119308,
+  "char_end": 119561
 }
 
 {
@@ -6919,8 +6919,8 @@
   "entity_ids": [
     "bangbang_rare"
   ],
-  "char_start": 119380,
-  "char_end": 119690
+  "char_start": 119562,
+  "char_end": 119872
 }
 
 {
@@ -6935,8 +6935,8 @@
   "entity_ids": [
     "pelangkiran"
   ],
-  "char_start": 119691,
-  "char_end": 120114
+  "char_start": 119873,
+  "char_end": 120296
 }
 
 {
@@ -6951,8 +6951,8 @@
   "entity_ids": [
     "pamrajan_rong_tiga"
   ],
-  "char_start": 120115,
-  "char_end": 120407
+  "char_start": 120297,
+  "char_end": 120589
 }
 
 {
@@ -6967,8 +6967,8 @@
   "entity_ids": [
     "yama_purwana_tattwa"
   ],
-  "char_start": 120408,
-  "char_end": 120793
+  "char_start": 120590,
+  "char_end": 120975
 }
 
 {
@@ -6983,8 +6983,8 @@
   "entity_ids": [
     "dadia"
   ],
-  "char_start": 120794,
-  "char_end": 120970
+  "char_start": 120976,
+  "char_end": 121152
 }
 
 {
@@ -6999,8 +6999,8 @@
   "entity_ids": [
     "prajuru"
   ],
-  "char_start": 120971,
-  "char_end": 121277
+  "char_start": 121153,
+  "char_end": 121459
 }
 
 {
@@ -7015,8 +7015,8 @@
   "entity_ids": [
     "tirtha_gangga"
   ],
-  "char_start": 121278,
-  "char_end": 121617
+  "char_start": 121460,
+  "char_end": 121799
 }
 
 {
@@ -7031,8 +7031,8 @@
   "entity_ids": [
     "wawu_lampus"
   ],
-  "char_start": 121618,
-  "char_end": 121937
+  "char_start": 121800,
+  "char_end": 122119
 }
 
 {
@@ -7047,8 +7047,8 @@
   "entity_ids": [
     "tri_sarira"
   ],
-  "char_start": 121938,
-  "char_end": 122423
+  "char_start": 122120,
+  "char_end": 122605
 }
 
 {
@@ -7063,8 +7063,8 @@
   "entity_ids": [
     "sthula_sarira"
   ],
-  "char_start": 122424,
-  "char_end": 122992
+  "char_start": 122606,
+  "char_end": 123174
 }
 
 {
@@ -7079,8 +7079,8 @@
   "entity_ids": [
     "antah_karana_sarira"
   ],
-  "char_start": 122993,
-  "char_end": 123469
+  "char_start": 123175,
+  "char_end": 123651
 }
 
 {
@@ -7095,8 +7095,8 @@
   "entity_ids": [
     "manusia"
   ],
-  "char_start": 123470,
-  "char_end": 123834
+  "char_start": 123652,
+  "char_end": 124016
 }
 
 {
@@ -7111,8 +7111,8 @@
   "entity_ids": [
     "panca_budhindrya"
   ],
-  "char_start": 123835,
-  "char_end": 124238
+  "char_start": 124017,
+  "char_end": 124420
 }
 
 {
@@ -7127,8 +7127,8 @@
   "entity_ids": [
     "panca_karmendrya"
   ],
-  "char_start": 124239,
-  "char_end": 124609
+  "char_start": 124421,
+  "char_end": 124791
 }
 
 {
@@ -7143,8 +7143,8 @@
   "entity_ids": [
     "caksvindrya"
   ],
-  "char_start": 124610,
-  "char_end": 124811
+  "char_start": 124792,
+  "char_end": 124993
 }
 
 {
@@ -7159,8 +7159,8 @@
   "entity_ids": [
     "ghranendrya"
   ],
-  "char_start": 124812,
-  "char_end": 125013
+  "char_start": 124994,
+  "char_end": 125195
 }
 
 {
@@ -7175,8 +7175,8 @@
   "entity_ids": [
     "srotendrya"
   ],
-  "char_start": 125014,
-  "char_end": 125216
+  "char_start": 125196,
+  "char_end": 125398
 }
 
 {
@@ -7191,8 +7191,8 @@
   "entity_ids": [
     "jihvendrya"
   ],
-  "char_start": 125217,
-  "char_end": 125414
+  "char_start": 125399,
+  "char_end": 125596
 }
 
 {
@@ -7207,8 +7207,8 @@
   "entity_ids": [
     "tvagindrya"
   ],
-  "char_start": 125415,
-  "char_end": 125610
+  "char_start": 125597,
+  "char_end": 125792
 }
 
 {
@@ -7223,8 +7223,8 @@
   "entity_ids": [
     "padendrya"
   ],
-  "char_start": 125611,
-  "char_end": 125822
+  "char_start": 125793,
+  "char_end": 126004
 }
 
 {
@@ -7239,8 +7239,8 @@
   "entity_ids": [
     "panindrya"
   ],
-  "char_start": 125823,
-  "char_end": 126048
+  "char_start": 126005,
+  "char_end": 126230
 }
 
 {
@@ -7255,8 +7255,8 @@
   "entity_ids": [
     "vagindrya"
   ],
-  "char_start": 126049,
-  "char_end": 126262
+  "char_start": 126231,
+  "char_end": 126444
 }
 
 {
@@ -7271,8 +7271,8 @@
   "entity_ids": [
     "pavindrya"
   ],
-  "char_start": 126263,
-  "char_end": 126477
+  "char_start": 126445,
+  "char_end": 126659
 }
 
 {
@@ -7287,8 +7287,8 @@
   "entity_ids": [
     "upathendrya"
   ],
-  "char_start": 126478,
-  "char_end": 126701
+  "char_start": 126660,
+  "char_end": 126883
 }
 
 {
@@ -7303,8 +7303,8 @@
   "entity_ids": [
     "bhuta_kala"
   ],
-  "char_start": 126702,
-  "char_end": 127180
+  "char_start": 126884,
+  "char_end": 127362
 }
 
 {
@@ -7319,8 +7319,8 @@
   "entity_ids": [
     "sangaskara"
   ],
-  "char_start": 127181,
-  "char_end": 127776
+  "char_start": 127363,
+  "char_end": 127958
 }
 
 {
@@ -7335,8 +7335,8 @@
   "entity_ids": [
     "pamerasan"
   ],
-  "char_start": 127777,
-  "char_end": 128547
+  "char_start": 127959,
+  "char_end": 128729
 }
 
 {
@@ -7351,8 +7351,8 @@
   "entity_ids": [
     "tri_loka"
   ],
-  "char_start": 128548,
-  "char_end": 128943
+  "char_start": 128730,
+  "char_end": 129125
 }
 
 {
@@ -7367,8 +7367,8 @@
   "entity_ids": [
     "bhur_loka"
   ],
-  "char_start": 128944,
-  "char_end": 129196
+  "char_start": 129126,
+  "char_end": 129378
 }
 
 {
@@ -7383,8 +7383,8 @@
   "entity_ids": [
     "sredaning_cita"
   ],
-  "char_start": 129197,
-  "char_end": 129876
+  "char_start": 129379,
+  "char_end": 130058
 }
 
 {
@@ -7399,8 +7399,8 @@
   "entity_ids": [
     "dewa_surya"
   ],
-  "char_start": 129877,
-  "char_end": 130245
+  "char_start": 130059,
+  "char_end": 130427
 }
 
 {
@@ -7415,8 +7415,8 @@
   "entity_ids": [
     "bade"
   ],
-  "char_start": 130246,
-  "char_end": 130952
+  "char_start": 130428,
+  "char_end": 131134
 }
 
 {
@@ -7431,8 +7431,8 @@
   "entity_ids": [
     "asti_wedana"
   ],
-  "char_start": 130953,
-  "char_end": 131332
+  "char_start": 131135,
+  "char_end": 131514
 }
 
 {
@@ -7447,8 +7447,8 @@
   "entity_ids": [
     "prasawya"
   ],
-  "char_start": 131333,
-  "char_end": 131694
+  "char_start": 131515,
+  "char_end": 131876
 }
 
 {
@@ -7463,8 +7463,8 @@
   "entity_ids": [
     "air_kumkuman"
   ],
-  "char_start": 131695,
-  "char_end": 131876
+  "char_start": 131877,
+  "char_end": 132058
 }
 
 {
@@ -7479,8 +7479,8 @@
   "entity_ids": [
     "bale_pamuunan"
   ],
-  "char_start": 131877,
-  "char_end": 132290
+  "char_start": 132059,
+  "char_end": 132472
 }
 
 {
@@ -7495,8 +7495,8 @@
   "entity_ids": [
     "bale_salunglung"
   ],
-  "char_start": 132291,
-  "char_end": 132620
+  "char_start": 132473,
+  "char_end": 132802
 }
 
 {
@@ -7507,12 +7507,12 @@
   ],
   "kind": "glossary",
   "term": "beras catur",
-  "text": "Beras Catur: Beras catur adalah empat jenis beras -- putih, merah, kuning, dan hitam -- yang diletakkan di dada sawa bersama daksina, masing-masing menurut arahnya. Beras catur melambangkan kekuatan Panca Dewata selaku manifestasi Hyang Widhi yang mengelola alam semesta (bhuwana agung): beras putih untuk Iswara (timur), beras merah untuk Brahma (selatan), beras kuning untuk Mahadewa, dan seterusnya menurut arahnya.",
+  "text": "Beras Catur: Beras catur adalah empat jenis beras -- putih, merah, kuning, dan hitam -- yang diletakkan di dada sawa bersama daksina, masing-masing menurut arahnya. Beras catur melambangkan kekuatan Panca Dewata selaku manifestasi Hyang Widhi yang mengelola alam semesta (bhuwana agung): beras putih untuk Iswara (timur), beras merah untuk Brahma (selatan), beras kuning untuk Mahadewa (barat), dan beras hitam untuk Wisnu (utara); gabungan segenap warnanya melambangkan kekuatan Siwa di tengah.",
   "entity_ids": [
     "beras_catur"
   ],
-  "char_start": 132621,
-  "char_end": 133042
+  "char_start": 132803,
+  "char_end": 133301
 }
 
 {
@@ -7527,8 +7527,8 @@
   "entity_ids": [
     "blangsah"
   ],
-  "char_start": 133043,
-  "char_end": 133195
+  "char_start": 133302,
+  "char_end": 133454
 }
 
 {
@@ -7543,8 +7543,8 @@
   "entity_ids": [
     "daksina"
   ],
-  "char_start": 133196,
-  "char_end": 133747
+  "char_start": 133455,
+  "char_end": 134006
 }
 
 {
@@ -7559,8 +7559,8 @@
   "entity_ids": [
     "damar_kurung"
   ],
-  "char_start": 133748,
-  "char_end": 134081
+  "char_start": 134007,
+  "char_end": 134340
 }
 
 {
@@ -7575,8 +7575,8 @@
   "entity_ids": [
     "malamasa"
   ],
-  "char_start": 134082,
-  "char_end": 134570
+  "char_start": 134341,
+  "char_end": 134829
 }
 
 {
@@ -7591,8 +7591,8 @@
   "entity_ids": [
     "manah_tirtha_ening"
   ],
-  "char_start": 134571,
-  "char_end": 134948
+  "char_start": 134830,
+  "char_end": 135207
 }
 
 {
@@ -7607,8 +7607,8 @@
   "entity_ids": [
     "moksa"
   ],
-  "char_start": 134949,
-  "char_end": 135158
+  "char_start": 135208,
+  "char_end": 135417
 }
 
 {
@@ -7623,8 +7623,8 @@
   "entity_ids": [
     "naga_banda"
   ],
-  "char_start": 135159,
-  "char_end": 135427
+  "char_start": 135418,
+  "char_end": 135686
 }
 
 {
@@ -7639,8 +7639,8 @@
   "entity_ids": [
     "ngaben_massal"
   ],
-  "char_start": 135428,
-  "char_end": 135589
+  "char_start": 135687,
+  "char_end": 135848
 }
 
 {
@@ -7655,8 +7655,8 @@
   "entity_ids": [
     "ngaben_svasta"
   ],
-  "char_start": 135590,
-  "char_end": 135970
+  "char_start": 135849,
+  "char_end": 136229
 }
 
 {
@@ -7671,8 +7671,8 @@
   "entity_ids": [
     "ngalukat"
   ],
-  "char_start": 135971,
-  "char_end": 136154
+  "char_start": 136230,
+  "char_end": 136413
 }
 
 {
@@ -7687,8 +7687,8 @@
   "entity_ids": [
     "ngangkid"
   ],
-  "char_start": 136155,
-  "char_end": 136445
+  "char_start": 136414,
+  "char_end": 136704
 }
 
 {
@@ -7703,8 +7703,8 @@
   "entity_ids": [
     "nyekeh"
   ],
-  "char_start": 136446,
-  "char_end": 136853
+  "char_start": 136705,
+  "char_end": 137112
 }
 
 {
@@ -7719,8 +7719,8 @@
   "entity_ids": [
     "nyikut_karang"
   ],
-  "char_start": 136854,
-  "char_end": 137128
+  "char_start": 137113,
+  "char_end": 137387
 }
 
 {
@@ -7735,8 +7735,8 @@
   "entity_ids": [
     "payadnyan"
   ],
-  "char_start": 137129,
-  "char_end": 137439
+  "char_start": 137388,
+  "char_end": 137698
 }
 
 {
@@ -7751,8 +7751,8 @@
   "entity_ids": [
     "pisang_jati"
   ],
-  "char_start": 137440,
-  "char_end": 137639
+  "char_start": 137699,
+  "char_end": 137898
 }
 
 {
@@ -7767,8 +7767,8 @@
   "entity_ids": [
     "pralina"
   ],
-  "char_start": 137640,
-  "char_end": 138064
+  "char_start": 137899,
+  "char_end": 138323
 }
 
 {
@@ -7783,8 +7783,8 @@
   "entity_ids": [
     "pranawa"
   ],
-  "char_start": 138065,
-  "char_end": 138487
+  "char_start": 138324,
+  "char_end": 138746
 }
 
 {
@@ -7799,8 +7799,8 @@
   "entity_ids": [
     "punia"
   ],
-  "char_start": 138488,
-  "char_end": 138852
+  "char_start": 138747,
+  "char_end": 139111
 }
 
 {
@@ -7815,8 +7815,8 @@
   "entity_ids": [
     "pura_kahyangan_tiga"
   ],
-  "char_start": 138853,
-  "char_end": 139231
+  "char_start": 139112,
+  "char_end": 139490
 }
 
 {
@@ -7831,8 +7831,8 @@
   "entity_ids": [
     "puspa_asti"
   ],
-  "char_start": 139232,
-  "char_end": 139481
+  "char_start": 139491,
+  "char_end": 139740
 }
 
 {
@@ -7847,8 +7847,8 @@
   "entity_ids": [
     "sasih_paruwak_tahuk"
   ],
-  "char_start": 139482,
-  "char_end": 140360
+  "char_start": 139741,
+  "char_end": 140619
 }
 
 {
@@ -7863,8 +7863,8 @@
   "entity_ids": [
     "sawa_wedana"
   ],
-  "char_start": 140361,
-  "char_end": 140679
+  "char_start": 140620,
+  "char_end": 140938
 }
 
 {
@@ -7879,8 +7879,8 @@
   "entity_ids": [
     "selatan"
   ],
-  "char_start": 140680,
-  "char_end": 140873
+  "char_start": 140939,
+  "char_end": 141132
 }
 
 {
@@ -7895,8 +7895,8 @@
   "entity_ids": [
     "supta_pranawa"
   ],
-  "char_start": 140874,
-  "char_end": 141106
+  "char_start": 141133,
+  "char_end": 141365
 }
 
 {
@@ -7911,8 +7911,8 @@
   "entity_ids": [
     "tali_ktekung"
   ],
-  "char_start": 141107,
-  "char_end": 141251
+  "char_start": 141366,
+  "char_end": 141510
 }
 
 {
@@ -7927,8 +7927,8 @@
   "entity_ids": [
     "tirta_pangentas"
   ],
-  "char_start": 141252,
-  "char_end": 141911
+  "char_start": 141511,
+  "char_end": 142170
 }
 
 {
@@ -7943,8 +7943,8 @@
   "entity_ids": [
     "tirta_yadnya_pranawa"
   ],
-  "char_start": 141912,
-  "char_end": 142180
+  "char_start": 142171,
+  "char_end": 142439
 }
 
 {
@@ -7959,8 +7959,8 @@
   "entity_ids": [
     "tirtha_pemanah"
   ],
-  "char_start": 142181,
-  "char_end": 142465
+  "char_start": 142440,
+  "char_end": 142724
 }
 
 {
@@ -7975,8 +7975,8 @@
   "entity_ids": [
     "tirtha_penembak"
   ],
-  "char_start": 142466,
-  "char_end": 142882
+  "char_start": 142725,
+  "char_end": 143141
 }
 
 {
@@ -7991,8 +7991,8 @@
   "entity_ids": [
     "upadesa"
   ],
-  "char_start": 142883,
-  "char_end": 143259
+  "char_start": 143142,
+  "char_end": 143518
 }
 
 {
@@ -8007,8 +8007,8 @@
   "entity_ids": [
     "utpeti"
   ],
-  "char_start": 143260,
-  "char_end": 143647
+  "char_start": 143519,
+  "char_end": 143906
 }
 
 {
@@ -8023,8 +8023,8 @@
   "entity_ids": [
     "yeh_panembak"
   ],
-  "char_start": 143648,
-  "char_end": 143966
+  "char_start": 143907,
+  "char_end": 144225
 }
 
 {
@@ -8039,8 +8039,8 @@
   "entity_ids": [
     "cuntaka"
   ],
-  "char_start": 143967,
-  "char_end": 144244
+  "char_start": 144226,
+  "char_end": 144503
 }
 
 {
@@ -8055,8 +8055,8 @@
   "entity_ids": [
     "tri_kona"
   ],
-  "char_start": 144245,
-  "char_end": 144520
+  "char_start": 144504,
+  "char_end": 144779
 }
 
 {
@@ -8071,8 +8071,8 @@
   "entity_ids": [
     "potong_gigi"
   ],
-  "char_start": 144521,
-  "char_end": 144903
+  "char_start": 144780,
+  "char_end": 145162
 }
 
 {
@@ -8087,8 +8087,8 @@
   "entity_ids": [
     "agni_pralina"
   ],
-  "char_start": 144904,
-  "char_end": 145267
+  "char_start": 145163,
+  "char_end": 145526
 }
 
 {
@@ -8103,8 +8103,8 @@
   "entity_ids": [
     "sekte_paksa_surya"
   ],
-  "char_start": 145268,
-  "char_end": 145533
+  "char_start": 145527,
+  "char_end": 145792
 }
 
 {
@@ -8119,8 +8119,8 @@
   "entity_ids": [
     "paguntingan"
   ],
-  "char_start": 145534,
-  "char_end": 145733
+  "char_start": 145793,
+  "char_end": 145992
 }
 
 {
@@ -8135,8 +8135,8 @@
   "entity_ids": [
     "paksa_mahayana"
   ],
-  "char_start": 145734,
-  "char_end": 146197
+  "char_start": 145993,
+  "char_end": 146456
 }
 
 {
@@ -8151,8 +8151,8 @@
   "entity_ids": [
     "paksa_hinayana"
   ],
-  "char_start": 146198,
-  "char_end": 146563
+  "char_start": 146457,
+  "char_end": 146822
 }
 
 {
@@ -8167,8 +8167,8 @@
   "entity_ids": [
     "trimurti"
   ],
-  "char_start": 146564,
-  "char_end": 146845
+  "char_start": 146823,
+  "char_end": 147104
 }
 
 {
@@ -8183,8 +8183,8 @@
   "entity_ids": [
     "nawa_dewata"
   ],
-  "char_start": 146846,
-  "char_end": 147502
+  "char_start": 147105,
+  "char_end": 147761
 }
 
 {
@@ -8199,8 +8199,8 @@
   "entity_ids": [
     "dewi_durga"
   ],
-  "char_start": 147503,
-  "char_end": 147723
+  "char_start": 147762,
+  "char_end": 147982
 }
 
 {
@@ -8215,8 +8215,8 @@
   "entity_ids": [
     "bhatara_dalem"
   ],
-  "char_start": 147724,
-  "char_end": 147987
+  "char_start": 147983,
+  "char_end": 148246
 }
 
 {
@@ -8231,8 +8231,8 @@
   "entity_ids": [
     "pawukon"
   ],
-  "char_start": 147988,
-  "char_end": 148266
+  "char_start": 148247,
+  "char_end": 148525
 }
 
 {
@@ -8247,8 +8247,8 @@
   "entity_ids": [
     "wuku"
   ],
-  "char_start": 148267,
-  "char_end": 148500
+  "char_start": 148526,
+  "char_end": 148759
 }
 
 {
@@ -8263,8 +8263,8 @@
   "entity_ids": [
     "tumpek"
   ],
-  "char_start": 148501,
-  "char_end": 148740
+  "char_start": 148760,
+  "char_end": 148999
 }
 
 {
@@ -8279,8 +8279,8 @@
   "entity_ids": [
     "wariga"
   ],
-  "char_start": 148741,
-  "char_end": 148974
+  "char_start": 149000,
+  "char_end": 149233
 }
 
 {
@@ -8295,8 +8295,8 @@
   "entity_ids": [
     "preta"
   ],
-  "char_start": 148975,
-  "char_end": 149253
+  "char_start": 149234,
+  "char_end": 149512
 }
 
 {
@@ -8311,8 +8311,8 @@
   "entity_ids": [
     "manusa_yadnya"
   ],
-  "char_start": 149254,
-  "char_end": 149513
+  "char_start": 149513,
+  "char_end": 149772
 }
 
 {
@@ -8327,8 +8327,8 @@
   "entity_ids": [
     "rsi_yadnya"
   ],
-  "char_start": 149514,
-  "char_end": 149722
+  "char_start": 149773,
+  "char_end": 149981
 }
 
 {
@@ -8343,8 +8343,8 @@
   "entity_ids": [
     "dewi_sri"
   ],
-  "char_start": 149723,
-  "char_end": 149987
+  "char_start": 149982,
+  "char_end": 150246
 }
 
 {
@@ -8359,8 +8359,8 @@
   "entity_ids": [
     "rare_angon"
   ],
-  "char_start": 149988,
-  "char_end": 150182
+  "char_start": 150247,
+  "char_end": 150441
 }
 
 {
@@ -8375,8 +8375,8 @@
   "entity_ids": [
     "ardhanareswari"
   ],
-  "char_start": 150183,
-  "char_end": 150425
+  "char_start": 150442,
+  "char_end": 150684
 }
 
 {
@@ -8391,8 +8391,8 @@
   "entity_ids": [
     "sanggar_surya"
   ],
-  "char_start": 150426,
-  "char_end": 150717
+  "char_start": 150685,
+  "char_end": 150976
 }
 
 {
@@ -8407,8 +8407,8 @@
   "entity_ids": [
     "gupura"
   ],
-  "char_start": 150718,
-  "char_end": 150933
+  "char_start": 150977,
+  "char_end": 151192
 }
 
 {
@@ -8423,8 +8423,8 @@
   "entity_ids": [
     "dewa_hyang"
   ],
-  "char_start": 150934,
-  "char_end": 151201
+  "char_start": 151193,
+  "char_end": 151460
 }
 
 {
@@ -8439,8 +8439,8 @@
   "entity_ids": [
     "tirtha_pamlaspas"
   ],
-  "char_start": 151202,
-  "char_end": 151457
+  "char_start": 151461,
+  "char_end": 151716
 }
 
 {
@@ -8455,8 +8455,8 @@
   "entity_ids": [
     "banten_byakawonan"
   ],
-  "char_start": 151458,
-  "char_end": 151988
+  "char_start": 151717,
+  "char_end": 152247
 }
 
 {
@@ -8471,8 +8471,8 @@
   "entity_ids": [
     "sekah_kurung"
   ],
-  "char_start": 151989,
-  "char_end": 152180
+  "char_start": 152248,
+  "char_end": 152439
 }
 
 {
@@ -8487,8 +8487,8 @@
   "entity_ids": [
     "pande"
   ],
-  "char_start": 152181,
-  "char_end": 152370
+  "char_start": 152440,
+  "char_end": 152629
 }
 
 {
@@ -8503,8 +8503,8 @@
   "entity_ids": [
     "mahabharata"
   ],
-  "char_start": 152371,
-  "char_end": 152582
+  "char_start": 152630,
+  "char_end": 152841
 }
 
 {
@@ -8519,8 +8519,8 @@
   "entity_ids": [
     "pandawa"
   ],
-  "char_start": 152583,
-  "char_end": 152706
+  "char_start": 152842,
+  "char_end": 152965
 }
 
 {
@@ -8535,8 +8535,8 @@
   "entity_ids": [
     "rsi_bisma"
   ],
-  "char_start": 152707,
-  "char_end": 152957
+  "char_start": 152966,
+  "char_end": 153216
 }
 
 {
@@ -8551,8 +8551,8 @@
   "entity_ids": [
     "lontar_tattwa_jnana"
   ],
-  "char_start": 152958,
-  "char_end": 153204
+  "char_start": 153217,
+  "char_end": 153463
 }
 
 {
@@ -8567,8 +8567,8 @@
   "entity_ids": [
     "lontar_yadnya_prakerti"
   ],
-  "char_start": 153205,
-  "char_end": 153423
+  "char_start": 153464,
+  "char_end": 153682
 }
 
 {
@@ -8583,8 +8583,8 @@
   "entity_ids": [
     "lontar_jnanasiddhanta"
   ],
-  "char_start": 153424,
-  "char_end": 153647
+  "char_start": 153683,
+  "char_end": 153906
 }
 
 {
@@ -8599,8 +8599,8 @@
   "entity_ids": [
     "tri_aksara"
   ],
-  "char_start": 153648,
-  "char_end": 153831
+  "char_start": 153907,
+  "char_end": 154090
 }
 
 {
@@ -8615,8 +8615,8 @@
   "entity_ids": [
     "weda"
   ],
-  "char_start": 153832,
-  "char_end": 154035
+  "char_start": 154091,
+  "char_end": 154294
 }
 
 {
@@ -8631,8 +8631,8 @@
   "entity_ids": [
     "tali_penyalin"
   ],
-  "char_start": 154036,
-  "char_end": 154180
+  "char_start": 154295,
+  "char_end": 154439
 }
 
 {
@@ -8647,8 +8647,8 @@
   "entity_ids": [
     "sasih_kalima"
   ],
-  "char_start": 154181,
-  "char_end": 154407
+  "char_start": 154440,
+  "char_end": 154666
 }
 
 {
@@ -8663,8 +8663,8 @@
   "entity_ids": [
     "sasih_kawulu"
   ],
-  "char_start": 154408,
-  "char_end": 154596
+  "char_start": 154667,
+  "char_end": 154855
 }
 
 {
@@ -8679,8 +8679,8 @@
   "entity_ids": [
     "sasih_dyestha"
   ],
-  "char_start": 154597,
-  "char_end": 154853
+  "char_start": 154856,
+  "char_end": 155112
 }
 
 {
@@ -8695,8 +8695,8 @@
   "entity_ids": [
     "sasih_asada"
   ],
-  "char_start": 154854,
-  "char_end": 155098
+  "char_start": 155113,
+  "char_end": 155357
 }
 
 {
@@ -8711,8 +8711,8 @@
   "entity_ids": [
     "catur_wangsa"
   ],
-  "char_start": 155099,
-  "char_end": 155416
+  "char_start": 155358,
+  "char_end": 155675
 }
 
 {
@@ -8727,8 +8727,8 @@
   "entity_ids": [
     "caru"
   ],
-  "char_start": 155417,
-  "char_end": 155690
+  "char_start": 155676,
+  "char_end": 155949
 }
 
 {
@@ -8743,8 +8743,8 @@
   "entity_ids": [
     "segehan"
   ],
-  "char_start": 155691,
-  "char_end": 155922
+  "char_start": 155950,
+  "char_end": 156181
 }
 
 {
@@ -8759,8 +8759,8 @@
   "entity_ids": [
     "nasi"
   ],
-  "char_start": 155923,
-  "char_end": 156108
+  "char_start": 156182,
+  "char_end": 156367
 }
 
 {
@@ -8775,8 +8775,8 @@
   "entity_ids": [
     "minuman"
   ],
-  "char_start": 156109,
-  "char_end": 156350
+  "char_start": 156368,
+  "char_end": 156609
 }
 
 {
@@ -8791,8 +8791,8 @@
   "entity_ids": [
     "buah_buahan"
   ],
-  "char_start": 156351,
-  "char_end": 156495
+  "char_start": 156610,
+  "char_end": 156754
 }
 
 {
@@ -8807,8 +8807,8 @@
   "entity_ids": [
     "jajan"
   ],
-  "char_start": 156496,
-  "char_end": 156612
+  "char_start": 156755,
+  "char_end": 156871
 }
 
 {
@@ -8823,8 +8823,8 @@
   "entity_ids": [
     "kopi"
   ],
-  "char_start": 156613,
-  "char_end": 156785
+  "char_start": 156872,
+  "char_end": 157044
 }
 
 {
@@ -8839,8 +8839,8 @@
   "entity_ids": [
     "rokok"
   ],
-  "char_start": 156786,
-  "char_end": 156888
+  "char_start": 157045,
+  "char_end": 157147
 }
 
 {
@@ -8855,8 +8855,8 @@
   "entity_ids": [
     "tembakau"
   ],
-  "char_start": 156889,
-  "char_end": 157017
+  "char_start": 157148,
+  "char_end": 157276
 }
 
 {
@@ -8871,8 +8871,8 @@
   "entity_ids": [
     "air"
   ],
-  "char_start": 157018,
-  "char_end": 157252
+  "char_start": 157277,
+  "char_end": 157511
 }
 
 {
@@ -8887,8 +8887,8 @@
   "entity_ids": [
     "bambu"
   ],
-  "char_start": 157253,
-  "char_end": 157437
+  "char_start": 157512,
+  "char_end": 157696
 }
 
 {
@@ -8903,8 +8903,8 @@
   "entity_ids": [
     "keris"
   ],
-  "char_start": 157438,
-  "char_end": 157732
+  "char_start": 157697,
+  "char_end": 157991
 }
 
 {
@@ -8919,8 +8919,8 @@
   "entity_ids": [
     "kidung"
   ],
-  "char_start": 157733,
-  "char_end": 157950
+  "char_start": 157992,
+  "char_end": 158209
 }
 
 {
@@ -8935,8 +8935,8 @@
   "entity_ids": [
     "kakawin"
   ],
-  "char_start": 157951,
-  "char_end": 158175
+  "char_start": 158210,
+  "char_end": 158434
 }
 
 {
@@ -8951,8 +8951,8 @@
   "entity_ids": [
     "pangringkes"
   ],
-  "char_start": 158176,
-  "char_end": 158596
+  "char_start": 158435,
+  "char_end": 158855
 }
 
 {
@@ -8967,8 +8967,8 @@
   "entity_ids": [
     "ngawit_pengaksaran"
   ],
-  "char_start": 158597,
-  "char_end": 158756
+  "char_start": 158856,
+  "char_end": 159015
 }
 
 {
@@ -8983,8 +8983,8 @@
   "entity_ids": [
     "pabasmian"
   ],
-  "char_start": 158757,
-  "char_end": 158968
+  "char_start": 159016,
+  "char_end": 159227
 }
 
 {
@@ -8999,8 +8999,8 @@
   "entity_ids": [
     "nuduk_galih"
   ],
-  "char_start": 158969,
-  "char_end": 159201
+  "char_start": 159228,
+  "char_end": 159460
 }
 
 {
@@ -9015,8 +9015,8 @@
   "entity_ids": [
     "nyegara_gunung"
   ],
-  "char_start": 159202,
-  "char_end": 159813
+  "char_start": 159461,
+  "char_end": 160072
 }
 
 {
@@ -9031,8 +9031,8 @@
   "entity_ids": [
     "ngaben_numandang_mantri"
   ],
-  "char_start": 159814,
-  "char_end": 160249
+  "char_start": 160073,
+  "char_end": 160508
 }
 
 {
@@ -9047,8 +9047,8 @@
   "entity_ids": [
     "lontar_sundarigama"
   ],
-  "char_start": 160250,
-  "char_end": 160512
+  "char_start": 160509,
+  "char_end": 160771
 }
 
 {
@@ -9063,8 +9063,8 @@
   "entity_ids": [
     "lontar_lokha_tattwa"
   ],
-  "char_start": 160513,
-  "char_end": 160709
+  "char_start": 160772,
+  "char_end": 160968
 }
 
 {
@@ -9079,8 +9079,8 @@
   "entity_ids": [
     "lontar_purwa_gama"
   ],
-  "char_start": 160710,
-  "char_end": 160978
+  "char_start": 160969,
+  "char_end": 161237
 }
 
 {
@@ -9095,8 +9095,8 @@
   "entity_ids": [
     "lontar_pretekaning_wong_mati"
   ],
-  "char_start": 160979,
-  "char_end": 161411
+  "char_start": 161238,
+  "char_end": 161670
 }
 
 {
@@ -9111,8 +9111,8 @@
   "entity_ids": [
     "lontar_wrehaspati_tattwa"
   ],
-  "char_start": 161412,
-  "char_end": 161743
+  "char_start": 161671,
+  "char_end": 162002
 }
 
 {
@@ -9127,8 +9127,8 @@
   "entity_ids": [
     "tandri"
   ],
-  "char_start": 161744,
-  "char_end": 161930
+  "char_start": 162003,
+  "char_end": 162189
 }
 
 {
@@ -9143,8 +9143,8 @@
   "entity_ids": [
     "kleda"
   ],
-  "char_start": 161931,
-  "char_end": 162087
+  "char_start": 162190,
+  "char_end": 162346
 }
 
 {
@@ -9159,8 +9159,8 @@
   "entity_ids": [
     "leja"
   ],
-  "char_start": 162088,
-  "char_end": 162252
+  "char_start": 162347,
+  "char_end": 162511
 }
 
 {
@@ -9175,8 +9175,8 @@
   "entity_ids": [
     "kuhaka"
   ],
-  "char_start": 162253,
-  "char_end": 162426
+  "char_start": 162512,
+  "char_end": 162685
 }
 
 {
@@ -9191,8 +9191,8 @@
   "entity_ids": [
     "metraya"
   ],
-  "char_start": 162427,
-  "char_end": 162583
+  "char_start": 162686,
+  "char_end": 162842
 }
 
 {
@@ -9207,8 +9207,8 @@
   "entity_ids": [
     "megata"
   ],
-  "char_start": 162584,
-  "char_end": 162742
+  "char_start": 162843,
+  "char_end": 163001
 }
 
 {
@@ -9223,8 +9223,8 @@
   "entity_ids": [
     "ragastri"
   ],
-  "char_start": 162743,
-  "char_end": 162949
+  "char_start": 163002,
+  "char_end": 163208
 }
 
 {
@@ -9239,8 +9239,8 @@
   "entity_ids": [
     "kutila"
   ],
-  "char_start": 162950,
-  "char_end": 163106
+  "char_start": 163209,
+  "char_end": 163365
 }
 
 {
@@ -9255,8 +9255,8 @@
   "entity_ids": [
     "bhaksa_bhuwana"
   ],
-  "char_start": 163107,
-  "char_end": 163285
+  "char_start": 163366,
+  "char_end": 163544
 }
 
 {
@@ -9271,8 +9271,8 @@
   "entity_ids": [
     "kimburu"
   ],
-  "char_start": 163286,
-  "char_end": 163448
+  "char_start": 163545,
+  "char_end": 163707
 }
 
 {
@@ -9287,8 +9287,8 @@
   "entity_ids": [
     "telur_ayam"
   ],
-  "char_start": 163449,
-  "char_end": 163776
+  "char_start": 163708,
+  "char_end": 164035
 }
 
 {
@@ -9303,8 +9303,8 @@
   "entity_ids": [
     "pisang_kayu"
   ],
-  "char_start": 163777,
-  "char_end": 164117
+  "char_start": 164036,
+  "char_end": 164376
 }
 
 {
@@ -9319,8 +9319,8 @@
   "entity_ids": [
     "bunga_teleng"
   ],
-  "char_start": 164118,
-  "char_end": 164423
+  "char_start": 164377,
+  "char_end": 164682
 }
 
 {
@@ -9335,8 +9335,8 @@
   "entity_ids": [
     "kuncup_melati"
   ],
-  "char_start": 164424,
-  "char_end": 164613
+  "char_start": 164683,
+  "char_end": 164872
 }
 
 {
@@ -9351,8 +9351,8 @@
   "entity_ids": [
     "don_delem_delem"
   ],
-  "char_start": 164614,
-  "char_end": 164902
+  "char_start": 164873,
+  "char_end": 165161
 }
 
 {
@@ -9367,8 +9367,8 @@
   "entity_ids": [
     "daun_terong_polo"
   ],
-  "char_start": 164903,
-  "char_end": 165121
+  "char_start": 165162,
+  "char_end": 165380
 }
 
 {
@@ -9383,8 +9383,8 @@
   "entity_ids": [
     "daun_teratai"
   ],
-  "char_start": 165122,
-  "char_end": 165251
+  "char_start": 165381,
+  "char_end": 165510
 }
 
 {
@@ -9399,8 +9399,8 @@
   "entity_ids": [
     "minyak_wangi"
   ],
-  "char_start": 165252,
-  "char_end": 165545
+  "char_start": 165511,
+  "char_end": 165804
 }
 
 {
@@ -9415,8 +9415,8 @@
   "entity_ids": [
     "daun_kembang_sepatu"
   ],
-  "char_start": 165546,
-  "char_end": 165817
+  "char_start": 165805,
+  "char_end": 166076
 }
 
 {
@@ -9427,12 +9427,12 @@
   ],
   "kind": "glossary",
   "term": "base",
-  "text": "Base: Base (daun sirih) dalam Nyiramang Layon dibuat menjadi dua bentuk: paes gedubang (sirih lengkap yang dikunyah hingga ampasnya berwarna merah) dan lekesan (sirih yang digulung), yang dirangkai menjadi kawangen jeriji.",
+  "text": "Base: Base (disebut juga daun sirih) adalah daun tanaman sirih yang dipakai sebagai sarana upacara. Dalam Nyiramang Layon, base dibuat menjadi dua bentuk: paes gedubang (sirih lengkap yang dikunyah hingga ampasnya berwarna merah) dan lekesan (sirih yang digulung), yang dirangkai menjadi kawangen jeriji.",
   "entity_ids": [
     "base"
   ],
-  "char_start": 165818,
-  "char_end": 166043
+  "char_start": 166077,
+  "char_end": 166384
 }
 
 {
@@ -9447,8 +9447,8 @@
   "entity_ids": [
     "kain_kasa"
   ],
-  "char_start": 166044,
-  "char_end": 166318
+  "char_start": 166385,
+  "char_end": 166659
 }
 
 {
@@ -9463,8 +9463,8 @@
   "entity_ids": [
     "tikeh_plasa"
   ],
-  "char_start": 166319,
-  "char_end": 166571
+  "char_start": 166660,
+  "char_end": 166912
 }
 
 {
@@ -9479,8 +9479,8 @@
   "entity_ids": [
     "suwah_petat"
   ],
-  "char_start": 166572,
-  "char_end": 166717
+  "char_start": 166913,
+  "char_end": 167058
 }
 
 {
@@ -9495,8 +9495,8 @@
   "entity_ids": [
     "cermin_kecil"
   ],
-  "char_start": 166718,
-  "char_end": 166865
+  "char_start": 167059,
+  "char_end": 167206
 }
 
 {
@@ -9511,8 +9511,8 @@
   "entity_ids": [
     "tirtha_betara_hyang"
   ],
-  "char_start": 166866,
-  "char_end": 167098
+  "char_start": 167207,
+  "char_end": 167439
 }
 
 {
@@ -9527,8 +9527,8 @@
   "entity_ids": [
     "rantasan"
   ],
-  "char_start": 167099,
-  "char_end": 167438
+  "char_start": 167440,
+  "char_end": 167779
 }
 
 {
@@ -9543,8 +9543,8 @@
   "entity_ids": [
     "periuk"
   ],
-  "char_start": 167439,
-  "char_end": 167726
+  "char_start": 167780,
+  "char_end": 168067
 }
 
 {
@@ -9559,8 +9559,8 @@
   "entity_ids": [
     "pripih_perak"
   ],
-  "char_start": 167727,
-  "char_end": 167909
+  "char_start": 168068,
+  "char_end": 168250
 }
 
 {
@@ -9575,8 +9575,8 @@
   "entity_ids": [
     "pripih_tembaga"
   ],
-  "char_start": 167910,
-  "char_end": 168096
+  "char_start": 168251,
+  "char_end": 168437
 }
 
 {
@@ -9591,8 +9591,8 @@
   "entity_ids": [
     "pripih_cendana"
   ],
-  "char_start": 168097,
-  "char_end": 168209
+  "char_start": 168438,
+  "char_end": 168550
 }
 
 {
@@ -9607,8 +9607,8 @@
   "entity_ids": [
     "mirah"
   ],
-  "char_start": 168210,
-  "char_end": 168376
+  "char_start": 168551,
+  "char_end": 168717
 }
 
 {
@@ -9623,8 +9623,8 @@
   "entity_ids": [
     "pedagingan"
   ],
-  "char_start": 168377,
-  "char_end": 168531
+  "char_start": 168718,
+  "char_end": 168872
 }
 
 {
@@ -9639,8 +9639,8 @@
   "entity_ids": [
     "banten_pejati"
   ],
-  "char_start": 168532,
-  "char_end": 168942
+  "char_start": 168873,
+  "char_end": 169283
 }
 
 {
@@ -9655,8 +9655,8 @@
   "entity_ids": [
     "banten_peras"
   ],
-  "char_start": 168943,
-  "char_end": 169271
+  "char_start": 169284,
+  "char_end": 169612
 }
 
 {
@@ -9671,8 +9671,8 @@
   "entity_ids": [
     "banten_suci"
   ],
-  "char_start": 169272,
-  "char_end": 169623
+  "char_start": 169613,
+  "char_end": 169964
 }
 
 {
@@ -9687,8 +9687,8 @@
   "entity_ids": [
     "banten_prayascita"
   ],
-  "char_start": 169624,
-  "char_end": 170064
+  "char_start": 169965,
+  "char_end": 170405
 }
 
 {
@@ -9703,8 +9703,8 @@
   "entity_ids": [
     "tatebasan_durmanggala"
   ],
-  "char_start": 170065,
-  "char_end": 170398
+  "char_start": 170406,
+  "char_end": 170739
 }
 
 {
@@ -9719,8 +9719,8 @@
   "entity_ids": [
     "tepung_tawar"
   ],
-  "char_start": 170399,
-  "char_end": 170773
+  "char_start": 170740,
+  "char_end": 171114
 }
 
 {
@@ -9735,8 +9735,8 @@
   "entity_ids": [
     "wadah"
   ],
-  "char_start": 170774,
-  "char_end": 171107
+  "char_start": 171115,
+  "char_end": 171448
 }
 
 {
@@ -9751,8 +9751,8 @@
   "entity_ids": [
     "dewasa_ngaben"
   ],
-  "char_start": 171108,
-  "char_end": 172234
+  "char_start": 171449,
+  "char_end": 172575
 }
 
 {
@@ -9767,8 +9767,8 @@
   "entity_ids": [
     "harga_tirtha"
   ],
-  "char_start": 172235,
-  "char_end": 173052
+  "char_start": 172576,
+  "char_end": 173393
 }
 
 {
@@ -9783,8 +9783,8 @@
   "entity_ids": [
     "daksina_gede"
   ],
-  "char_start": 173053,
-  "char_end": 173406
+  "char_start": 173394,
+  "char_end": 173747
 }
 
 {
@@ -9799,8 +9799,8 @@
   "entity_ids": [
     "awak_awakaning_sawa"
   ],
-  "char_start": 173407,
-  "char_end": 173649
+  "char_start": 173748,
+  "char_end": 173990
 }
 
 {
@@ -9815,8 +9815,8 @@
   "entity_ids": [
     "minyak_kelapa"
   ],
-  "char_start": 173650,
-  "char_end": 173835
+  "char_start": 173991,
+  "char_end": 174176
 }
 
 {
@@ -9831,8 +9831,8 @@
   "entity_ids": [
     "karawista"
   ],
-  "char_start": 173836,
-  "char_end": 174104
+  "char_start": 174177,
+  "char_end": 174445
 }
 
 {
@@ -9847,8 +9847,8 @@
   "entity_ids": [
     "upakara_pamerasan"
   ],
-  "char_start": 174105,
-  "char_end": 174492
+  "char_start": 174446,
+  "char_end": 174833
 }
 
 {
@@ -9863,8 +9863,8 @@
   "entity_ids": [
     "benang_tridatu"
   ],
-  "char_start": 174493,
-  "char_end": 174674
+  "char_start": 174834,
+  "char_end": 175015
 }
 
 {
@@ -9879,8 +9879,8 @@
   "entity_ids": [
     "jukung"
   ],
-  "char_start": 174675,
-  "char_end": 174854
+  "char_start": 175016,
+  "char_end": 175195
 }
 
 {
@@ -9895,8 +9895,8 @@
   "entity_ids": [
     "seludang_kelapa"
   ],
-  "char_start": 174855,
-  "char_end": 174995
+  "char_start": 175196,
+  "char_end": 175336
 }
 
 {
@@ -9911,8 +9911,8 @@
   "entity_ids": [
     "jarum"
   ],
-  "char_start": 174996,
-  "char_end": 175224
+  "char_start": 175337,
+  "char_end": 175565
 }
 
 {
@@ -9927,8 +9927,8 @@
   "entity_ids": [
     "pipil"
   ],
-  "char_start": 175225,
-  "char_end": 175418
+  "char_start": 175566,
+  "char_end": 175759
 }
 
 {
@@ -9943,8 +9943,8 @@
   "entity_ids": [
     "daun_beringin"
   ],
-  "char_start": 175419,
-  "char_end": 175634
+  "char_start": 175760,
+  "char_end": 175975
 }
 
 {
@@ -9959,8 +9959,8 @@
   "entity_ids": [
     "klatkat"
   ],
-  "char_start": 175635,
-  "char_end": 175722
+  "char_start": 175976,
+  "char_end": 176063
 }
 
 {
@@ -9975,8 +9975,8 @@
   "entity_ids": [
     "bunga_ratna_putih"
   ],
-  "char_start": 175723,
-  "char_end": 175833
+  "char_start": 176064,
+  "char_end": 176174
 }
 
 {
@@ -9991,8 +9991,8 @@
   "entity_ids": [
     "tulup"
   ],
-  "char_start": 175834,
-  "char_end": 175972
+  "char_start": 176175,
+  "char_end": 176313
 }
 
 {
@@ -10007,8 +10007,8 @@
   "entity_ids": [
     "ketipat_bantal"
   ],
-  "char_start": 175973,
-  "char_end": 176164
+  "char_start": 176314,
+  "char_end": 176505
 }
 
 {
@@ -10023,8 +10023,8 @@
   "entity_ids": [
     "kapur_sirih"
   ],
-  "char_start": 176165,
-  "char_end": 176270
+  "char_start": 176506,
+  "char_end": 176611
 }
 
 {
@@ -10039,8 +10039,8 @@
   "entity_ids": [
     "gambir"
   ],
-  "char_start": 176271,
-  "char_end": 176356
+  "char_start": 176612,
+  "char_end": 176697
 }
 
 {
@@ -10055,8 +10055,8 @@
   "entity_ids": [
     "pinang"
   ],
-  "char_start": 176357,
-  "char_end": 176474
+  "char_start": 176698,
+  "char_end": 176815
 }
 
 {
@@ -10071,8 +10071,8 @@
   "entity_ids": [
     "kayu_dapdap"
   ],
-  "char_start": 176475,
-  "char_end": 176717
+  "char_start": 176816,
+  "char_end": 177058
 }
 
 {
@@ -10087,8 +10087,8 @@
   "entity_ids": [
     "cengkeh"
   ],
-  "char_start": 176718,
-  "char_end": 176874
+  "char_start": 177059,
+  "char_end": 177215
 }
 
 {
@@ -10103,8 +10103,8 @@
   "entity_ids": [
     "jebugarum"
   ],
-  "char_start": 176875,
-  "char_end": 177032
+  "char_start": 177216,
+  "char_end": 177373
 }
 
 {
@@ -10119,8 +10119,8 @@
   "entity_ids": [
     "mesui"
   ],
-  "char_start": 177033,
-  "char_end": 177123
+  "char_start": 177374,
+  "char_end": 177464
 }
 
 {
@@ -10135,8 +10135,8 @@
   "entity_ids": [
     "sampar_wantu"
   ],
-  "char_start": 177124,
-  "char_end": 177287
+  "char_start": 177465,
+  "char_end": 177628
 }
 
 {
@@ -10151,8 +10151,8 @@
   "entity_ids": [
     "kunyit"
   ],
-  "char_start": 177288,
-  "char_end": 177492
+  "char_start": 177629,
+  "char_end": 177833
 }
 
 {
@@ -10167,8 +10167,8 @@
   "entity_ids": [
     "beras"
   ],
-  "char_start": 177493,
-  "char_end": 177625
+  "char_start": 177834,
+  "char_end": 177966
 }
 
 {
@@ -10183,8 +10183,8 @@
   "entity_ids": [
     "buah_belimbing"
   ],
-  "char_start": 177626,
-  "char_end": 177743
+  "char_start": 177967,
+  "char_end": 178084
 }
 
 {
@@ -10199,8 +10199,8 @@
   "entity_ids": [
     "asem"
   ],
-  "char_start": 177744,
-  "char_end": 177893
+  "char_start": 178085,
+  "char_end": 178234
 }
 
 {
@@ -10215,8 +10215,8 @@
   "entity_ids": [
     "celebongkekan"
   ],
-  "char_start": 177894,
-  "char_end": 178076
+  "char_start": 178235,
+  "char_end": 178417
 }
 
 {
@@ -10231,8 +10231,8 @@
   "entity_ids": [
     "pedangal"
   ],
-  "char_start": 178077,
-  "char_end": 178274
+  "char_start": 178418,
+  "char_end": 178615
 }
 
 {
@@ -10247,8 +10247,8 @@
   "entity_ids": [
     "tebu"
   ],
-  "char_start": 178275,
-  "char_end": 178423
+  "char_start": 178616,
+  "char_end": 178764
 }
 
 {
@@ -10263,8 +10263,8 @@
   "entity_ids": [
     "pandan_arum"
   ],
-  "char_start": 178424,
-  "char_end": 178531
+  "char_start": 178765,
+  "char_end": 178872
 }
 
 {
@@ -10279,8 +10279,8 @@
   "entity_ids": [
     "bunga_jepun"
   ],
-  "char_start": 178532,
-  "char_end": 178655
+  "char_start": 178873,
+  "char_end": 178996
 }
 
 {
@@ -10295,8 +10295,8 @@
   "entity_ids": [
     "panah"
   ],
-  "char_start": 178656,
-  "char_end": 178908
+  "char_start": 178997,
+  "char_end": 179249
 }
 
 {
@@ -10311,8 +10311,8 @@
   "entity_ids": [
     "pusuh_bunga_cempaka_putih"
   ],
-  "char_start": 178909,
-  "char_end": 179081
+  "char_start": 179250,
+  "char_end": 179422
 }
 
 {
@@ -10327,8 +10327,8 @@
   "entity_ids": [
     "ketipat_kelanan"
   ],
-  "char_start": 179082,
-  "char_end": 179269
+  "char_start": 179423,
+  "char_end": 179610
 }
 
 {
@@ -10343,8 +10343,8 @@
   "entity_ids": [
     "ketupat_daun_rontal"
   ],
-  "char_start": 179270,
-  "char_end": 179527
+  "char_start": 179611,
+  "char_end": 179868
 }
 
 {
@@ -10359,8 +10359,8 @@
   "entity_ids": [
     "ketipat_lingga"
   ],
-  "char_start": 179528,
-  "char_end": 179677
+  "char_start": 179869,
+  "char_end": 180018
 }
 
 {
@@ -10375,8 +10375,8 @@
   "entity_ids": [
     "banten_saji"
   ],
-  "char_start": 179678,
-  "char_end": 179910
+  "char_start": 180019,
+  "char_end": 180251
 }
 
 {
@@ -10391,8 +10391,8 @@
   "entity_ids": [
     "banten_panjang_ilang"
   ],
-  "char_start": 179911,
-  "char_end": 180114
+  "char_start": 180252,
+  "char_end": 180455
 }
 
 {
@@ -10407,8 +10407,8 @@
   "entity_ids": [
     "banten_pengadang_adang"
   ],
-  "char_start": 180115,
-  "char_end": 180290
+  "char_start": 180456,
+  "char_end": 180631
 }
 
 {
@@ -10423,8 +10423,8 @@
   "entity_ids": [
     "banten_pemelaspas"
   ],
-  "char_start": 180291,
-  "char_end": 180443
+  "char_start": 180632,
+  "char_end": 180784
 }
 
 {
@@ -10439,8 +10439,8 @@
   "entity_ids": [
     "tatebasan_pasupati"
   ],
-  "char_start": 180444,
-  "char_end": 180554
+  "char_start": 180785,
+  "char_end": 180895
 }
 
 {
@@ -10455,8 +10455,8 @@
   "entity_ids": [
     "jaja_bantal"
   ],
-  "char_start": 180555,
-  "char_end": 180689
+  "char_start": 180896,
+  "char_end": 181030
 }
 
 {
@@ -10471,8 +10471,8 @@
   "entity_ids": [
     "jaja_pasung"
   ],
-  "char_start": 180690,
-  "char_end": 180824
+  "char_start": 181031,
+  "char_end": 181165
 }
 
 {
@@ -10487,8 +10487,8 @@
   "entity_ids": [
     "pemanisan"
   ],
-  "char_start": 180825,
-  "char_end": 180965
+  "char_start": 181166,
+  "char_end": 181306
 }
 
 {
@@ -10503,8 +10503,8 @@
   "entity_ids": [
     "tirta_penyeeb"
   ],
-  "char_start": 180966,
-  "char_end": 181170
+  "char_start": 181307,
+  "char_end": 181511
 }
 
 {
@@ -10519,8 +10519,8 @@
   "entity_ids": [
     "tirta_pemerelina"
   ],
-  "char_start": 181171,
-  "char_end": 181371
+  "char_start": 181512,
+  "char_end": 181712
 }
 
 {
@@ -10535,8 +10535,8 @@
   "entity_ids": [
     "banten_penebusan"
   ],
-  "char_start": 181372,
-  "char_end": 181537
+  "char_start": 181713,
+  "char_end": 181878
 }
 
 {
@@ -10551,8 +10551,8 @@
   "entity_ids": [
     "salaran"
   ],
-  "char_start": 181538,
-  "char_end": 181669
+  "char_start": 181879,
+  "char_end": 182010
 }
 
 {
@@ -10567,8 +10567,8 @@
   "entity_ids": [
     "banten_pasucian"
   ],
-  "char_start": 181670,
-  "char_end": 181857
+  "char_start": 182011,
+  "char_end": 182198
 }
 
 {
@@ -10583,8 +10583,8 @@
   "entity_ids": [
     "banten_penyumpit_areng"
   ],
-  "char_start": 181858,
-  "char_end": 181967
+  "char_start": 182199,
+  "char_end": 182308
 }
 
 {
@@ -10599,8 +10599,8 @@
   "entity_ids": [
     "toya_anyar"
   ],
-  "char_start": 181968,
-  "char_end": 182152
+  "char_start": 182309,
+  "char_end": 182493
 }
 
 {
@@ -10615,8 +10615,8 @@
   "entity_ids": [
     "bulan_pane"
   ],
-  "char_start": 182153,
-  "char_end": 182359
+  "char_start": 182494,
+  "char_end": 182700
 }
 
 {
@@ -10631,8 +10631,8 @@
   "entity_ids": [
     "canang_oyodan"
   ],
-  "char_start": 182360,
-  "char_end": 182499
+  "char_start": 182701,
+  "char_end": 182840
 }
 
 {
@@ -10647,8 +10647,8 @@
   "entity_ids": [
     "canang_tambur"
   ],
-  "char_start": 182500,
-  "char_end": 182613
+  "char_start": 182841,
+  "char_end": 182954
 }
 
 {
@@ -10663,8 +10663,8 @@
   "entity_ids": [
     "penastan"
   ],
-  "char_start": 182614,
-  "char_end": 182742
+  "char_start": 182955,
+  "char_end": 183083
 }
 
 {
@@ -10679,8 +10679,8 @@
   "entity_ids": [
     "cecepan"
   ],
-  "char_start": 182743,
-  "char_end": 182869
+  "char_start": 183084,
+  "char_end": 183210
 }
 
 {
@@ -10695,8 +10695,8 @@
   "entity_ids": [
     "banten_papendakan"
   ],
-  "char_start": 182870,
-  "char_end": 183021
+  "char_start": 183211,
+  "char_end": 183362
 }
 
 {
@@ -10711,8 +10711,8 @@
   "entity_ids": [
     "catursari"
   ],
-  "char_start": 183022,
-  "char_end": 183216
+  "char_start": 183363,
+  "char_end": 183557
 }
 
 {
@@ -10727,8 +10727,8 @@
   "entity_ids": [
     "padudusan_alit"
   ],
-  "char_start": 183217,
-  "char_end": 183370
+  "char_start": 183558,
+  "char_end": 183711
 }
 
 {
@@ -10743,8 +10743,8 @@
   "entity_ids": [
     "pras_pengambyan"
   ],
-  "char_start": 183371,
-  "char_end": 183518
+  "char_start": 183712,
+  "char_end": 183859
 }
 
 {
@@ -10759,8 +10759,8 @@
   "entity_ids": [
     "pras_arepan"
   ],
-  "char_start": 183519,
-  "char_end": 183703
+  "char_start": 183860,
+  "char_end": 184044
 }
 
 {
@@ -10775,8 +10775,8 @@
   "entity_ids": [
     "banten_dewa_dewi"
   ],
-  "char_start": 183704,
-  "char_end": 183827
+  "char_start": 184045,
+  "char_end": 184168
 }
 
 {
@@ -10791,8 +10791,8 @@
   "entity_ids": [
     "tatebasan_ardhanareswari"
   ],
-  "char_start": 183828,
-  "char_end": 183977
+  "char_start": 184169,
+  "char_end": 184318
 }
 
 {
@@ -10807,8 +10807,8 @@
   "entity_ids": [
     "tatebasan_sidhakarya"
   ],
-  "char_start": 183978,
-  "char_end": 184119
+  "char_start": 184319,
+  "char_end": 184460
 }
 
 {
@@ -10823,8 +10823,8 @@
   "entity_ids": [
     "daksina_lingga"
   ],
-  "char_start": 184120,
-  "char_end": 184240
+  "char_start": 184461,
+  "char_end": 184581
 }
 
 {
@@ -10839,8 +10839,8 @@
   "entity_ids": [
     "banten_pagnian"
   ],
-  "char_start": 184241,
-  "char_end": 184359
+  "char_start": 184582,
+  "char_end": 184700
 }
 
 {
@@ -10855,8 +10855,8 @@
   "entity_ids": [
     "sesayut_pengideran"
   ],
-  "char_start": 184360,
-  "char_end": 184514
+  "char_start": 184701,
+  "char_end": 184855
 }
 
 {
@@ -10871,8 +10871,8 @@
   "entity_ids": [
     "tahenan"
   ],
-  "char_start": 184515,
-  "char_end": 184720
+  "char_start": 184856,
+  "char_end": 185061
 }
 
 {
@@ -10887,8 +10887,8 @@
   "entity_ids": [
     "kaklentingan"
   ],
-  "char_start": 184721,
-  "char_end": 184936
+  "char_start": 185062,
+  "char_end": 185277
 }
 
 {
@@ -10903,8 +10903,8 @@
   "entity_ids": [
     "rayunan"
   ],
-  "char_start": 184937,
-  "char_end": 185112
+  "char_start": 185278,
+  "char_end": 185453
 }
 
 {
@@ -10919,8 +10919,8 @@
   "entity_ids": [
     "pajegan"
   ],
-  "char_start": 185113,
-  "char_end": 185232
+  "char_start": 185454,
+  "char_end": 185573
 }
 
 {
@@ -10935,8 +10935,8 @@
   "entity_ids": [
     "bubur_liwet"
   ],
-  "char_start": 185233,
-  "char_end": 185459
+  "char_start": 185574,
+  "char_end": 185800
 }
 
 {
@@ -10951,8 +10951,8 @@
   "entity_ids": [
     "madu"
   ],
-  "char_start": 185460,
-  "char_end": 185563
+  "char_start": 185801,
+  "char_end": 185904
 }
 
 {
@@ -10967,8 +10967,8 @@
   "entity_ids": [
     "susu"
   ],
-  "char_start": 185564,
-  "char_end": 185667
+  "char_start": 185905,
+  "char_end": 186008
 }
 
 {
@@ -10983,8 +10983,8 @@
   "entity_ids": [
     "berem"
   ],
-  "char_start": 185668,
-  "char_end": 185796
+  "char_start": 186009,
+  "char_end": 186137
 }
 
 {
@@ -10999,8 +10999,8 @@
   "entity_ids": [
     "arak"
   ],
-  "char_start": 185797,
-  "char_end": 185915
+  "char_start": 186138,
+  "char_end": 186256
 }
 
 {
@@ -11015,8 +11015,8 @@
   "entity_ids": [
     "baem_warak"
   ],
-  "char_start": 185916,
-  "char_end": 186034
+  "char_start": 186257,
+  "char_end": 186375
 }
 
 {
@@ -11031,8 +11031,8 @@
   "entity_ids": [
     "lungke_lungke"
   ],
-  "char_start": 186035,
-  "char_end": 186248
+  "char_start": 186376,
+  "char_end": 186589
 }
 
 {
@@ -11047,8 +11047,8 @@
   "entity_ids": [
     "bokoran"
   ],
-  "char_start": 186249,
-  "char_end": 186426
+  "char_start": 186590,
+  "char_end": 186767
 }
 
 {
@@ -11063,8 +11063,8 @@
   "entity_ids": [
     "sidu_ental"
   ],
-  "char_start": 186427,
-  "char_end": 186554
+  "char_start": 186768,
+  "char_end": 186895
 }
 
 {
@@ -11079,8 +11079,8 @@
   "entity_ids": [
     "kamben_sekah"
   ],
-  "char_start": 186555,
-  "char_end": 186692
+  "char_start": 186896,
+  "char_end": 187033
 }
 
 {
@@ -11095,8 +11095,8 @@
   "entity_ids": [
     "klasa"
   ],
-  "char_start": 186693,
-  "char_end": 186907
+  "char_start": 187034,
+  "char_end": 187248
 }
 
 {
@@ -11111,8 +11111,8 @@
   "entity_ids": [
     "tiying_gading"
   ],
-  "char_start": 186908,
-  "char_end": 187186
+  "char_start": 187249,
+  "char_end": 187527
 }
 
 {
@@ -11127,8 +11127,8 @@
   "entity_ids": [
     "lemat_sudhamala"
   ],
-  "char_start": 187187,
-  "char_end": 187322
+  "char_start": 187528,
+  "char_end": 187663
 }
 
 {
@@ -11143,8 +11143,8 @@
   "entity_ids": [
     "umbul_umbul"
   ],
-  "char_start": 187323,
-  "char_end": 187462
+  "char_start": 187664,
+  "char_end": 187803
 }
 
 {
@@ -11159,8 +11159,8 @@
   "entity_ids": [
     "tatopong"
   ],
-  "char_start": 187463,
-  "char_end": 187596
+  "char_start": 187804,
+  "char_end": 187937
 }
 
 {
@@ -11175,8 +11175,8 @@
   "entity_ids": [
     "genjer_genjer"
   ],
-  "char_start": 187597,
-  "char_end": 187740
+  "char_start": 187938,
+  "char_end": 188081
 }
 
 {
@@ -11191,8 +11191,8 @@
   "entity_ids": [
     "kulambi"
   ],
-  "char_start": 187741,
-  "char_end": 187862
+  "char_start": 188082,
+  "char_end": 188203
 }
 
 {
@@ -11207,8 +11207,8 @@
   "entity_ids": [
     "balung_balung"
   ],
-  "char_start": 187863,
-  "char_end": 187973
+  "char_start": 188204,
+  "char_end": 188314
 }
 
 {
@@ -11223,8 +11223,8 @@
   "entity_ids": [
     "bijaratus"
   ],
-  "char_start": 187974,
-  "char_end": 188198
+  "char_start": 188315,
+  "char_end": 188539
 }
 
 {
@@ -11239,8 +11239,8 @@
   "entity_ids": [
     "kelepikan_jepun"
   ],
-  "char_start": 188199,
-  "char_end": 188400
+  "char_start": 188540,
+  "char_end": 188741
 }
 
 {
@@ -11255,8 +11255,8 @@
   "entity_ids": [
     "recedana"
   ],
-  "char_start": 188401,
-  "char_end": 188585
+  "char_start": 188742,
+  "char_end": 188926
 }
 
 {
@@ -11271,8 +11271,8 @@
   "entity_ids": [
     "bayuhan"
   ],
-  "char_start": 188586,
-  "char_end": 188708
+  "char_start": 188927,
+  "char_end": 189049
 }
 
 {
@@ -11287,8 +11287,8 @@
   "entity_ids": [
     "lis"
   ],
-  "char_start": 188709,
-  "char_end": 188840
+  "char_start": 189050,
+  "char_end": 189181
 }
 
 {
@@ -11303,8 +11303,8 @@
   "entity_ids": [
     "karangan"
   ],
-  "char_start": 188841,
-  "char_end": 188965
+  "char_start": 189182,
+  "char_end": 189306
 }
 
 {
@@ -11319,8 +11319,8 @@
   "entity_ids": [
     "nasi_sokan"
   ],
-  "char_start": 188966,
-  "char_end": 189058
+  "char_start": 189307,
+  "char_end": 189399
 }
 
 {
@@ -11335,8 +11335,8 @@
   "entity_ids": [
     "segehan_manca_warna"
   ],
-  "char_start": 189059,
-  "char_end": 189192
+  "char_start": 189400,
+  "char_end": 189533
 }
 
 {
@@ -11351,8 +11351,8 @@
   "entity_ids": [
     "segau"
   ],
-  "char_start": 189193,
-  "char_end": 189318
+  "char_start": 189534,
+  "char_end": 189659
 }
 
 {
@@ -11367,8 +11367,8 @@
   "entity_ids": [
     "pisau_pengutik"
   ],
-  "char_start": 189319,
-  "char_end": 189538
+  "char_start": 189660,
+  "char_end": 189879
 }
 
 {
@@ -11383,8 +11383,8 @@
   "entity_ids": [
     "menjangan"
   ],
-  "char_start": 189539,
-  "char_end": 189670
+  "char_start": 189880,
+  "char_end": 190011
 }
 
 {
@@ -11399,8 +11399,8 @@
   "entity_ids": [
     "canang_meraka"
   ],
-  "char_start": 189671,
-  "char_end": 189805
+  "char_start": 190012,
+  "char_end": 190146
 }
 
 {
@@ -11415,8 +11415,8 @@
   "entity_ids": [
     "telur_bekasem"
   ],
-  "char_start": 189806,
-  "char_end": 189918
+  "char_start": 190147,
+  "char_end": 190259
 }
 
 {
@@ -11431,8 +11431,8 @@
   "entity_ids": [
     "kayu"
   ],
-  "char_start": 189919,
-  "char_end": 190043
+  "char_start": 190260,
+  "char_end": 190384
 }
 
 {
@@ -11447,8 +11447,8 @@
   "entity_ids": [
     "kain"
   ],
-  "char_start": 190044,
-  "char_end": 190149
+  "char_start": 190385,
+  "char_end": 190490
 }
 
 {
@@ -11463,8 +11463,8 @@
   "entity_ids": [
     "kertas"
   ],
-  "char_start": 190150,
-  "char_end": 190330
+  "char_start": 190491,
+  "char_end": 190671
 }
 
 {
@@ -11479,8 +11479,8 @@
   "entity_ids": [
     "kapas"
   ],
-  "char_start": 190331,
-  "char_end": 190458
+  "char_start": 190672,
+  "char_end": 190799
 }
 
 {
@@ -11495,8 +11495,8 @@
   "entity_ids": [
     "pangkon"
   ],
-  "char_start": 190459,
-  "char_end": 190610
+  "char_start": 190800,
+  "char_end": 190951
 }
 
 {
@@ -11511,8 +11511,8 @@
   "entity_ids": [
     "prerai"
   ],
-  "char_start": 190611,
-  "char_end": 190762
+  "char_start": 190952,
+  "char_end": 191103
 }
 
 {
@@ -11527,8 +11527,8 @@
   "entity_ids": [
     "kertas_emas"
   ],
-  "char_start": 190763,
-  "char_end": 190949
+  "char_start": 191104,
+  "char_end": 191290
 }
 
 {
@@ -11543,8 +11543,8 @@
   "entity_ids": [
     "kelapa"
   ],
-  "char_start": 190950,
-  "char_end": 191131
+  "char_start": 191291,
+  "char_end": 191472
 }
 
 {
@@ -11559,8 +11559,8 @@
   "entity_ids": [
     "kain_hitam"
   ],
-  "char_start": 191132,
-  "char_end": 191341
+  "char_start": 191473,
+  "char_end": 191682
 }
 
 {
@@ -11575,8 +11575,8 @@
   "entity_ids": [
     "rotan"
   ],
-  "char_start": 191342,
-  "char_end": 191518
+  "char_start": 191683,
+  "char_end": 191859
 }
 
 {
@@ -11591,8 +11591,8 @@
   "entity_ids": [
     "daun_enau"
   ],
-  "char_start": 191519,
-  "char_end": 191687
+  "char_start": 191860,
+  "char_end": 192028
 }
 
 {
@@ -11607,8 +11607,8 @@
   "entity_ids": [
     "beras_putih"
   ],
-  "char_start": 191688,
-  "char_end": 191797
+  "char_start": 192029,
+  "char_end": 192138
 }
 
 {
@@ -11623,8 +11623,8 @@
   "entity_ids": [
     "beras_merah"
   ],
-  "char_start": 191798,
-  "char_end": 191907
+  "char_start": 192139,
+  "char_end": 192248
 }
 
 {
@@ -11639,8 +11639,8 @@
   "entity_ids": [
     "beras_hitam"
   ],
-  "char_start": 191908,
-  "char_end": 192017
+  "char_start": 192249,
+  "char_end": 192358
 }
 
 {
@@ -11655,8 +11655,8 @@
   "entity_ids": [
     "tanah_liat"
   ],
-  "char_start": 192018,
-  "char_end": 192159
+  "char_start": 192359,
+  "char_end": 192500
 }
 
 {
@@ -11671,8 +11671,8 @@
   "entity_ids": [
     "kue_ketan"
   ],
-  "char_start": 192160,
-  "char_end": 192265
+  "char_start": 192501,
+  "char_end": 192606
 }
 
 {
@@ -11687,8 +11687,8 @@
   "entity_ids": [
     "benang"
   ],
-  "char_start": 192266,
-  "char_end": 192499
+  "char_start": 192607,
+  "char_end": 192840
 }
 
 {
@@ -11703,8 +11703,8 @@
   "entity_ids": [
     "lidi"
   ],
-  "char_start": 192500,
-  "char_end": 192618
+  "char_start": 192841,
+  "char_end": 192959
 }
 
 {
@@ -11719,8 +11719,8 @@
   "entity_ids": [
     "kemiri"
   ],
-  "char_start": 192619,
-  "char_end": 192733
+  "char_start": 192960,
+  "char_end": 193074
 }
 
 {
@@ -11735,8 +11735,8 @@
   "entity_ids": [
     "pangi"
   ],
-  "char_start": 192734,
-  "char_end": 192880
+  "char_start": 193075,
+  "char_end": 193221
 }
 
 {
@@ -11751,8 +11751,8 @@
   "entity_ids": [
     "daun_kelapa"
   ],
-  "char_start": 192881,
-  "char_end": 193084
+  "char_start": 193222,
+  "char_end": 193425
 }
 
 {
@@ -11767,8 +11767,8 @@
   "entity_ids": [
     "ayam"
   ],
-  "char_start": 193085,
-  "char_end": 193405
+  "char_start": 193426,
+  "char_end": 193746
 }
 
 {
@@ -11783,8 +11783,8 @@
   "entity_ids": [
     "itik"
   ],
-  "char_start": 193406,
-  "char_end": 193607
+  "char_start": 193747,
+  "char_end": 193948
 }
 
 {
@@ -11799,8 +11799,8 @@
   "entity_ids": [
     "kayu_majagau"
   ],
-  "char_start": 193608,
-  "char_end": 193755
+  "char_start": 193949,
+  "char_end": 194096
 }
 
 {
@@ -11815,8 +11815,8 @@
   "entity_ids": [
     "lauk_pauk"
   ],
-  "char_start": 193756,
-  "char_end": 193863
+  "char_start": 194097,
+  "char_end": 194204
 }
 
 {
@@ -11831,8 +11831,8 @@
   "entity_ids": [
     "sekam"
   ],
-  "char_start": 193864,
-  "char_end": 193967
+  "char_start": 194205,
+  "char_end": 194308
 }
 
 {
@@ -11847,8 +11847,8 @@
   "entity_ids": [
     "daun_pandan"
   ],
-  "char_start": 193968,
-  "char_end": 194114
+  "char_start": 194309,
+  "char_end": 194455
 }
 
 {
@@ -11863,8 +11863,8 @@
   "entity_ids": [
     "sabut_kelapa"
   ],
-  "char_start": 194115,
-  "char_end": 194298
+  "char_start": 194456,
+  "char_end": 194639
 }
 
 {
@@ -11879,8 +11879,8 @@
   "entity_ids": [
     "bakul"
   ],
-  "char_start": 194299,
-  "char_end": 194459
+  "char_start": 194640,
+  "char_end": 194800
 }
 
 {
@@ -11895,8 +11895,8 @@
   "entity_ids": [
     "tunas_pisang_saba"
   ],
-  "char_start": 194460,
-  "char_end": 194638
+  "char_start": 194801,
+  "char_end": 194979
 }
 
 {
@@ -11911,8 +11911,8 @@
   "entity_ids": [
     "pandan_berduri"
   ],
-  "char_start": 194639,
-  "char_end": 194789
+  "char_start": 194980,
+  "char_end": 195130
 }
 
 {
@@ -11927,8 +11927,8 @@
   "entity_ids": [
     "upih"
   ],
-  "char_start": 194790,
-  "char_end": 194890
+  "char_start": 195131,
+  "char_end": 195231
 }
 
 {
@@ -11943,8 +11943,8 @@
   "entity_ids": [
     "ijuk"
   ],
-  "char_start": 194891,
-  "char_end": 195005
+  "char_start": 195232,
+  "char_end": 195346
 }
 
 {
@@ -11959,8 +11959,8 @@
   "entity_ids": [
     "karton"
   ],
-  "char_start": 195006,
-  "char_end": 195107
+  "char_start": 195347,
+  "char_end": 195448
 }
 
 {
@@ -11975,8 +11975,8 @@
   "entity_ids": [
     "kawat"
   ],
-  "char_start": 195108,
-  "char_end": 195271
+  "char_start": 195449,
+  "char_end": 195612
 }
 
 {
@@ -11991,8 +11991,8 @@
   "entity_ids": [
     "batang_pisang"
   ],
-  "char_start": 195272,
-  "char_end": 195392
+  "char_start": 195613,
+  "char_end": 195733
 }
 
 {
@@ -12007,8 +12007,8 @@
   "entity_ids": [
     "tali"
   ],
-  "char_start": 195393,
-  "char_end": 195482
+  "char_start": 195734,
+  "char_end": 195823
 }
 
 {
@@ -12023,8 +12023,8 @@
   "entity_ids": [
     "pisang"
   ],
-  "char_start": 195483,
-  "char_end": 195604
+  "char_start": 195824,
+  "char_end": 195945
 }
 
 {
@@ -12039,8 +12039,8 @@
   "entity_ids": [
     "telur"
   ],
-  "char_start": 195605,
-  "char_end": 195722
+  "char_start": 195946,
+  "char_end": 196063
 }
 
 {
@@ -12055,8 +12055,8 @@
   "entity_ids": [
     "garam"
   ],
-  "char_start": 195723,
-  "char_end": 195824
+  "char_start": 196064,
+  "char_end": 196165
 }
 
 {
@@ -12071,8 +12071,8 @@
   "entity_ids": [
     "gula"
   ],
-  "char_start": 195825,
-  "char_end": 195920
+  "char_start": 196166,
+  "char_end": 196261
 }
 
 {
@@ -12087,8 +12087,8 @@
   "entity_ids": [
     "gula_merah"
   ],
-  "char_start": 195921,
-  "char_end": 196035
+  "char_start": 196262,
+  "char_end": 196376
 }
 
 {
@@ -12103,8 +12103,8 @@
   "entity_ids": [
     "kacang"
   ],
-  "char_start": 196036,
-  "char_end": 196171
+  "char_start": 196377,
+  "char_end": 196512
 }
 
 {
@@ -12119,8 +12119,8 @@
   "entity_ids": [
     "kacang_hijau"
   ],
-  "char_start": 196172,
-  "char_end": 196273
+  "char_start": 196513,
+  "char_end": 196614
 }
 
 {
@@ -12135,8 +12135,8 @@
   "entity_ids": [
     "beras_ketan"
   ],
-  "char_start": 196274,
-  "char_end": 196393
+  "char_start": 196615,
+  "char_end": 196734
 }
 
 {
@@ -12151,8 +12151,8 @@
   "entity_ids": [
     "tepung_ketan"
   ],
-  "char_start": 196394,
-  "char_end": 196515
+  "char_start": 196735,
+  "char_end": 196856
 }
 
 {
@@ -12167,8 +12167,8 @@
   "entity_ids": [
     "baja"
   ],
-  "char_start": 196516,
-  "char_end": 196593
+  "char_start": 196857,
+  "char_end": 196934
 }
 
 {
@@ -12183,8 +12183,8 @@
   "entity_ids": [
     "logam"
   ],
-  "char_start": 196594,
-  "char_end": 196685
+  "char_start": 196935,
+  "char_end": 197026
 }
 
 {
@@ -12199,8 +12199,8 @@
   "entity_ids": [
     "biji_bijian"
   ],
-  "char_start": 196686,
-  "char_end": 196823
+  "char_start": 197027,
+  "char_end": 197164
 }
 
 {
@@ -12215,8 +12215,8 @@
   "entity_ids": [
     "keraras"
   ],
-  "char_start": 196824,
-  "char_end": 196924
+  "char_start": 197165,
+  "char_end": 197265
 }
 
 {
@@ -12231,8 +12231,8 @@
   "entity_ids": [
     "kain_kuning"
   ],
-  "char_start": 196925,
-  "char_end": 197049
+  "char_start": 197266,
+  "char_end": 197390
 }
 
 {
@@ -12247,8 +12247,8 @@
   "entity_ids": [
     "ceper"
   ],
-  "char_start": 197050,
-  "char_end": 197133
+  "char_start": 197391,
+  "char_end": 197474
 }
 
 {
@@ -12263,8 +12263,8 @@
   "entity_ids": [
     "sampian"
   ],
-  "char_start": 197134,
-  "char_end": 197309
+  "char_start": 197475,
+  "char_end": 197650
 }
 
 {
@@ -12279,8 +12279,8 @@
   "entity_ids": [
     "porosan"
   ],
-  "char_start": 197310,
-  "char_end": 197409
+  "char_start": 197651,
+  "char_end": 197750
 }
 
 {
@@ -12295,8 +12295,8 @@
   "entity_ids": [
     "kulit_peras"
   ],
-  "char_start": 197410,
-  "char_end": 197560
+  "char_start": 197751,
+  "char_end": 197901
 }
 
 {
@@ -12311,8 +12311,8 @@
   "entity_ids": [
     "badawang_nala"
   ],
-  "char_start": 197561,
-  "char_end": 198030
+  "char_start": 197902,
+  "char_end": 198371
 }
 
 {
@@ -12327,8 +12327,8 @@
   "entity_ids": [
     "mapendem"
   ],
-  "char_start": 198031,
-  "char_end": 198479
+  "char_start": 198372,
+  "char_end": 198820
 }
 
 {
@@ -12343,8 +12343,8 @@
   "entity_ids": [
     "anugerah_raja"
   ],
-  "char_start": 198480,
-  "char_end": 199556
+  "char_start": 198821,
+  "char_end": 199897
 }
 
 {
@@ -12359,8 +12359,8 @@
   "entity_ids": [
     "kekeran_desa"
   ],
-  "char_start": 199557,
-  "char_end": 199837
+  "char_start": 199898,
+  "char_end": 200178
 }
 
 {
@@ -12375,8 +12375,8 @@
   "entity_ids": [
     "kekeran_jagat"
   ],
-  "char_start": 199838,
-  "char_end": 200118
+  "char_start": 200179,
+  "char_end": 200459
 }
 
 {
@@ -12391,8 +12391,8 @@
   "entity_ids": [
     "mata_angin"
   ],
-  "char_start": 200119,
-  "char_end": 200653
+  "char_start": 200460,
+  "char_end": 200994
 }
 
 {
@@ -12407,8 +12407,8 @@
   "entity_ids": [
     "kliwon"
   ],
-  "char_start": 200654,
-  "char_end": 201050
+  "char_start": 200995,
+  "char_end": 201391
 }
 
 {
@@ -12423,8 +12423,8 @@
   "entity_ids": [
     "pancawara"
   ],
-  "char_start": 201051,
-  "char_end": 201298
+  "char_start": 201392,
+  "char_end": 201639
 }
 
 {
@@ -12439,8 +12439,8 @@
   "entity_ids": [
     "bahasa_kawi"
   ],
-  "char_start": 201299,
-  "char_end": 201812
+  "char_start": 201640,
+  "char_end": 202153
 }
 
 {
@@ -12455,8 +12455,8 @@
   "entity_ids": [
     "sasih"
   ],
-  "char_start": 201813,
-  "char_end": 202209
+  "char_start": 202154,
+  "char_end": 202550
 }
 
 {
@@ -12471,8 +12471,8 @@
   "entity_ids": [
     "mantra"
   ],
-  "char_start": 202210,
-  "char_end": 202527
+  "char_start": 202551,
+  "char_end": 202868
 }
 
 {
@@ -12487,8 +12487,8 @@
   "entity_ids": [
     "krematorium"
   ],
-  "char_start": 202528,
-  "char_end": 203191
+  "char_start": 202869,
+  "char_end": 203532
 }
 
 {
@@ -12503,8 +12503,8 @@
   "entity_ids": [
     "ngereka"
   ],
-  "char_start": 203192,
-  "char_end": 203652
+  "char_start": 203533,
+  "char_end": 203993
 }
 
 {
@@ -12519,8 +12519,8 @@
   "entity_ids": [
     "ngliwet"
   ],
-  "char_start": 203653,
-  "char_end": 204064
+  "char_start": 203994,
+  "char_end": 204405
 }
 
 {
@@ -12535,8 +12535,8 @@
   "entity_ids": [
     "nganget_don_bingin"
   ],
-  "char_start": 204065,
-  "char_end": 204581
+  "char_start": 204406,
+  "char_end": 204922
 }
 
 {
@@ -12551,8 +12551,8 @@
   "entity_ids": [
     "sembah_bhakti"
   ],
-  "char_start": 204582,
-  "char_end": 205277
+  "char_start": 204923,
+  "char_end": 205618
 }
 
 {
@@ -12567,8 +12567,8 @@
   "entity_ids": [
     "mlaspas"
   ],
-  "char_start": 205278,
-  "char_end": 205859
+  "char_start": 205619,
+  "char_end": 206200
 }
 
 {
@@ -12583,8 +12583,8 @@
   "entity_ids": [
     "iber_iber"
   ],
-  "char_start": 205860,
-  "char_end": 206333
+  "char_start": 206201,
+  "char_end": 206674
 }
 
 {
@@ -12599,8 +12599,8 @@
   "entity_ids": [
     "dupa"
   ],
-  "char_start": 206334,
-  "char_end": 206545
+  "char_start": 206675,
+  "char_end": 206886
 }
 
 {
@@ -12615,8 +12615,8 @@
   "entity_ids": [
     "pripih"
   ],
-  "char_start": 206546,
-  "char_end": 207028
+  "char_start": 206887,
+  "char_end": 207369
 }
 
 {
@@ -12631,8 +12631,8 @@
   "entity_ids": [
     "sangging"
   ],
-  "char_start": 207029,
-  "char_end": 207306
+  "char_start": 207370,
+  "char_end": 207647
 }
 
 {
@@ -12647,8 +12647,8 @@
   "entity_ids": [
     "padi"
   ],
-  "char_start": 207307,
-  "char_end": 207509
+  "char_start": 207648,
+  "char_end": 207850
 }
 
 {
@@ -12663,8 +12663,8 @@
   "entity_ids": [
     "desa_mawacara"
   ],
-  "char_start": 207510,
-  "char_end": 207844
+  "char_start": 207851,
+  "char_end": 208185
 }
 
 {
@@ -12679,8 +12679,8 @@
   "entity_ids": [
     "desa_kala_patra"
   ],
-  "char_start": 207845,
-  "char_end": 208761
+  "char_start": 208186,
+  "char_end": 209102
 }
 
 {
@@ -12695,8 +12695,8 @@
   "entity_ids": [
     "natah"
   ],
-  "char_start": 208762,
-  "char_end": 209014
+  "char_start": 209103,
+  "char_end": 209355
 }
 
 {
@@ -12711,8 +12711,8 @@
   "entity_ids": [
     "menangis"
   ],
-  "char_start": 209015,
-  "char_end": 209249
+  "char_start": 209356,
+  "char_end": 209590
 }
 
 {
@@ -12727,8 +12727,8 @@
   "entity_ids": [
     "karma_phala"
   ],
-  "char_start": 209250,
-  "char_end": 209819
+  "char_start": 209591,
+  "char_end": 210160
 }
 
 {
@@ -12743,8 +12743,8 @@
   "entity_ids": [
     "kama_bang"
   ],
-  "char_start": 209820,
-  "char_end": 210141
+  "char_start": 210161,
+  "char_end": 210482
 }
 
 {
@@ -12759,8 +12759,8 @@
   "entity_ids": [
     "kama_putih"
   ],
-  "char_start": 210142,
-  "char_end": 210462
+  "char_start": 210483,
+  "char_end": 210803
 }
 
 {
@@ -12775,8 +12775,8 @@
   "entity_ids": [
     "sang_hyang_yama"
   ],
-  "char_start": 210463,
-  "char_end": 210962
+  "char_start": 210804,
+  "char_end": 211303
 }
 
 {
@@ -12791,8 +12791,8 @@
   "entity_ids": [
     "wewaran"
   ],
-  "char_start": 210963,
-  "char_end": 211325
+  "char_start": 211304,
+  "char_end": 211666
 }
 
 {
@@ -12807,8 +12807,8 @@
   "entity_ids": [
     "triwara"
   ],
-  "char_start": 211326,
-  "char_end": 211450
+  "char_start": 211667,
+  "char_end": 211791
 }
 
 {
@@ -12823,8 +12823,8 @@
   "entity_ids": [
     "saptawara"
   ],
-  "char_start": 211451,
-  "char_end": 211712
+  "char_start": 211792,
+  "char_end": 212053
 }
 
 {
@@ -12839,8 +12839,8 @@
   "entity_ids": [
     "umanis"
   ],
-  "char_start": 211713,
-  "char_end": 211899
+  "char_start": 212054,
+  "char_end": 212240
 }
 
 {
@@ -12855,8 +12855,8 @@
   "entity_ids": [
     "paing"
   ],
-  "char_start": 211900,
-  "char_end": 212083
+  "char_start": 212241,
+  "char_end": 212424
 }
 
 {
@@ -12871,8 +12871,8 @@
   "entity_ids": [
     "pon"
   ],
-  "char_start": 212084,
-  "char_end": 212261
+  "char_start": 212425,
+  "char_end": 212602
 }
 
 {
@@ -12887,8 +12887,8 @@
   "entity_ids": [
     "wage"
   ],
-  "char_start": 212262,
-  "char_end": 212442
+  "char_start": 212603,
+  "char_end": 212783
 }
 
 {
@@ -12903,8 +12903,8 @@
   "entity_ids": [
     "babad"
   ],
-  "char_start": 212443,
-  "char_end": 213025
+  "char_start": 212784,
+  "char_end": 213366
 }
 
 {
@@ -12919,8 +12919,8 @@
   "entity_ids": [
     "palet"
   ],
-  "char_start": 213026,
-  "char_end": 213760
+  "char_start": 213367,
+  "char_end": 214101
 }
 
 {
@@ -12935,8 +12935,8 @@
   "entity_ids": [
     "tetandingan"
   ],
-  "char_start": 213761,
-  "char_end": 214220
+  "char_start": 214102,
+  "char_end": 214561
 }
 
 {
@@ -12951,8 +12951,8 @@
   "entity_ids": [
     "warga"
   ],
-  "char_start": 214221,
-  "char_end": 214830
+  "char_start": 214562,
+  "char_end": 215171
 }
 
 {
@@ -12967,8 +12967,8 @@
   "entity_ids": [
     "dewa"
   ],
-  "char_start": 214831,
-  "char_end": 215348
+  "char_start": 215172,
+  "char_end": 215689
 }
 
 {
@@ -12983,8 +12983,8 @@
   "entity_ids": [
     "kalender_bali"
   ],
-  "char_start": 215349,
-  "char_end": 215803
+  "char_start": 215690,
+  "char_end": 216144
 }
 
 {
@@ -12999,8 +12999,8 @@
   "entity_ids": [
     "desa_adat"
   ],
-  "char_start": 215804,
-  "char_end": 216445
+  "char_start": 216145,
+  "char_end": 216786
 }
 
 {
@@ -13015,8 +13015,8 @@
   "entity_ids": [
     "pelinggih"
   ],
-  "char_start": 216446,
-  "char_end": 216769
+  "char_start": 216787,
+  "char_end": 217110
 }
 
 {
@@ -13031,8 +13031,8 @@
   "entity_ids": [
     "padmasana"
   ],
-  "char_start": 216770,
-  "char_end": 217290
+  "char_start": 217111,
+  "char_end": 217631
 }
 
 {
@@ -13047,8 +13047,8 @@
   "entity_ids": [
     "padmasari"
   ],
-  "char_start": 217291,
-  "char_end": 217626
+  "char_start": 217632,
+  "char_end": 217967
 }
 
 {
@@ -13063,8 +13063,8 @@
   "entity_ids": [
     "puri"
   ],
-  "char_start": 217627,
-  "char_end": 218077
+  "char_start": 217968,
+  "char_end": 218418
 }
 
 {
@@ -13079,8 +13079,8 @@
   "entity_ids": [
     "odalan"
   ],
-  "char_start": 218078,
-  "char_end": 218644
+  "char_start": 218419,
+  "char_end": 218985
 }
 
 {
@@ -13095,8 +13095,8 @@
   "entity_ids": [
     "depa"
   ],
-  "char_start": 218645,
-  "char_end": 219075
+  "char_start": 218986,
+  "char_end": 219416
 }
 
 {
@@ -13111,8 +13111,8 @@
   "entity_ids": [
     "asta"
   ],
-  "char_start": 219076,
-  "char_end": 219357
+  "char_start": 219417,
+  "char_end": 219698
 }
 
 {
@@ -13127,8 +13127,8 @@
   "entity_ids": [
     "nyari"
   ],
-  "char_start": 219358,
-  "char_end": 219576
+  "char_start": 219699,
+  "char_end": 219917
 }
 
 {
@@ -13143,8 +13143,8 @@
   "entity_ids": [
     "abah_bangun"
   ],
-  "char_start": 219577,
-  "char_end": 219927
+  "char_start": 219918,
+  "char_end": 220268
 }
 
 {
@@ -13159,8 +13159,8 @@
   "entity_ids": [
     "asta_kosala_kosali"
   ],
-  "char_start": 219928,
-  "char_end": 220316
+  "char_start": 220269,
+  "char_end": 220657
 }
 
 {
@@ -13175,8 +13175,8 @@
   "entity_ids": [
     "teben"
   ],
-  "char_start": 220317,
-  "char_end": 220693
+  "char_start": 220658,
+  "char_end": 221034
 }
 
 {
@@ -13191,8 +13191,8 @@
   "entity_ids": [
     "luanan"
   ],
-  "char_start": 220694,
-  "char_end": 220978
+  "char_start": 221035,
+  "char_end": 221319
 }
 
 {
@@ -13207,8 +13207,8 @@
   "entity_ids": [
     "kaja"
   ],
-  "char_start": 220979,
-  "char_end": 221323
+  "char_start": 221320,
+  "char_end": 221664
 }
 
 {
@@ -13223,8 +13223,8 @@
   "entity_ids": [
     "kangin"
   ],
-  "char_start": 221324,
-  "char_end": 221552
+  "char_start": 221665,
+  "char_end": 221893
 }
 
 {
@@ -13239,8 +13239,8 @@
   "entity_ids": [
     "kauh"
   ],
-  "char_start": 221553,
-  "char_end": 221722
+  "char_start": 221894,
+  "char_end": 222063
 }
 
 {
@@ -13255,8 +13255,8 @@
   "entity_ids": [
     "kaja_kangin"
   ],
-  "char_start": 221723,
-  "char_end": 222079
+  "char_start": 222064,
+  "char_end": 222420
 }
 
 {
@@ -13271,8 +13271,8 @@
   "entity_ids": [
     "kelod_kauh"
   ],
-  "char_start": 222080,
-  "char_end": 222366
+  "char_start": 222421,
+  "char_end": 222707
 }
 
 {
@@ -13287,8 +13287,8 @@
   "entity_ids": [
     "gelgel"
   ],
-  "char_start": 222367,
-  "char_end": 222817
+  "char_start": 222708,
+  "char_end": 223158
 }
 
 {
@@ -13303,8 +13303,8 @@
   "entity_ids": [
     "klungkung"
   ],
-  "char_start": 222818,
-  "char_end": 223199
+  "char_start": 223159,
+  "char_end": 223540
 }
 
 {
@@ -13319,8 +13319,8 @@
   "entity_ids": [
     "dalem_sagening"
   ],
-  "char_start": 223200,
-  "char_end": 223637
+  "char_start": 223541,
+  "char_end": 223978
 }
 
 {
@@ -13335,8 +13335,8 @@
   "entity_ids": [
     "yajamana"
   ],
-  "char_start": 223638,
-  "char_end": 224075
+  "char_start": 223979,
+  "char_end": 224416
 }
 
 {
@@ -13351,8 +13351,8 @@
   "entity_ids": [
     "agama_hindu_bali"
   ],
-  "char_start": 224076,
-  "char_end": 224642
+  "char_start": 224417,
+  "char_end": 224983
 }
 
 {
@@ -13367,8 +13367,8 @@
   "entity_ids": [
     "bahasa_sanskerta"
   ],
-  "char_start": 224643,
-  "char_end": 225065
+  "char_start": 224984,
+  "char_end": 225406
 }
 
 {
@@ -13383,8 +13383,8 @@
   "entity_ids": [
     "pasah"
   ],
-  "char_start": 225066,
-  "char_end": 225259
+  "char_start": 225407,
+  "char_end": 225600
 }
 
 {
@@ -13399,8 +13399,8 @@
   "entity_ids": [
     "beteng"
   ],
-  "char_start": 225260,
-  "char_end": 225368
+  "char_start": 225601,
+  "char_end": 225709
 }
 
 {
@@ -13415,8 +13415,8 @@
   "entity_ids": [
     "kajeng"
   ],
-  "char_start": 225369,
-  "char_end": 225687
+  "char_start": 225710,
+  "char_end": 226028
 }
 
 {
@@ -13431,8 +13431,8 @@
   "entity_ids": [
     "landep"
   ],
-  "char_start": 225688,
-  "char_end": 225865
+  "char_start": 226029,
+  "char_end": 226206
 }
 
 {
@@ -13447,8 +13447,8 @@
   "entity_ids": [
     "ukir"
   ],
-  "char_start": 225866,
-  "char_end": 226041
+  "char_start": 226207,
+  "char_end": 226382
 }
 
 {
@@ -13463,8 +13463,8 @@
   "entity_ids": [
     "kelawu"
   ],
-  "char_start": 226042,
-  "char_end": 226269
+  "char_start": 226383,
+  "char_end": 226610
 }
 
 {
@@ -13479,8 +13479,8 @@
   "entity_ids": [
     "kalender_saka"
   ],
-  "char_start": 226270,
-  "char_end": 226749
+  "char_start": 226611,
+  "char_end": 227090
 }
 
 {
@@ -13495,8 +13495,8 @@
   "entity_ids": [
     "redite"
   ],
-  "char_start": 226750,
-  "char_end": 226955
+  "char_start": 227091,
+  "char_end": 227296
 }
 
 {
@@ -13511,8 +13511,8 @@
   "entity_ids": [
     "soma"
   ],
-  "char_start": 226956,
-  "char_end": 227174
+  "char_start": 227297,
+  "char_end": 227515
 }
 
 {
@@ -13527,8 +13527,8 @@
   "entity_ids": [
     "anggara"
   ],
-  "char_start": 227175,
-  "char_end": 227491
+  "char_start": 227516,
+  "char_end": 227832
 }
 
 {
@@ -13543,8 +13543,8 @@
   "entity_ids": [
     "buda"
   ],
-  "char_start": 227492,
-  "char_end": 227821
+  "char_start": 227833,
+  "char_end": 228162
 }
 
 {
@@ -13559,8 +13559,8 @@
   "entity_ids": [
     "wraspati"
   ],
-  "char_start": 227822,
-  "char_end": 228073
+  "char_start": 228163,
+  "char_end": 228414
 }
 
 {
@@ -13575,8 +13575,8 @@
   "entity_ids": [
     "saniscara"
   ],
-  "char_start": 228074,
-  "char_end": 228386
+  "char_start": 228415,
+  "char_end": 228727
 }
 
 {
@@ -13591,8 +13591,8 @@
   "entity_ids": [
     "ekawara"
   ],
-  "char_start": 228387,
-  "char_end": 228655
+  "char_start": 228728,
+  "char_end": 228996
 }
 
 {
@@ -13607,8 +13607,8 @@
   "entity_ids": [
     "dwiwara"
   ],
-  "char_start": 228656,
-  "char_end": 228921
+  "char_start": 228997,
+  "char_end": 229262
 }
 
 {
@@ -13623,8 +13623,8 @@
   "entity_ids": [
     "caturwara"
   ],
-  "char_start": 228922,
-  "char_end": 229195
+  "char_start": 229263,
+  "char_end": 229536
 }
 
 {
@@ -13639,8 +13639,8 @@
   "entity_ids": [
     "sadwara"
   ],
-  "char_start": 229196,
-  "char_end": 229463
+  "char_start": 229537,
+  "char_end": 229804
 }
 
 {
@@ -13655,8 +13655,8 @@
   "entity_ids": [
     "astawara"
   ],
-  "char_start": 229464,
-  "char_end": 229739
+  "char_start": 229805,
+  "char_end": 230080
 }
 
 {
@@ -13671,8 +13671,8 @@
   "entity_ids": [
     "sangawara"
   ],
-  "char_start": 229740,
-  "char_end": 230019
+  "char_start": 230081,
+  "char_end": 230360
 }
 
 {
@@ -13687,8 +13687,8 @@
   "entity_ids": [
     "dasawara"
   ],
-  "char_start": 230020,
-  "char_end": 230295
+  "char_start": 230361,
+  "char_end": 230636
 }
 
 {
@@ -13703,8 +13703,8 @@
   "entity_ids": [
     "kulantir"
   ],
-  "char_start": 230296,
-  "char_end": 230465
+  "char_start": 230637,
+  "char_end": 230806
 }
 
 {
@@ -13719,8 +13719,8 @@
   "entity_ids": [
     "gumbreg"
   ],
-  "char_start": 230466,
-  "char_end": 230641
+  "char_start": 230807,
+  "char_end": 230982
 }
 
 {
@@ -13735,8 +13735,8 @@
   "entity_ids": [
     "julungwangi"
   ],
-  "char_start": 230642,
-  "char_end": 230820
+  "char_start": 230983,
+  "char_end": 231161
 }
 
 {
@@ -13751,8 +13751,8 @@
   "entity_ids": [
     "pahang"
   ],
-  "char_start": 230821,
-  "char_end": 230994
+  "char_start": 231162,
+  "char_end": 231335
 }
 
 {
@@ -13767,8 +13767,8 @@
   "entity_ids": [
     "merakih"
   ],
-  "char_start": 230995,
-  "char_end": 231158
+  "char_start": 231336,
+  "char_end": 231499
 }
 
 {
@@ -13783,8 +13783,8 @@
   "entity_ids": [
     "medangkungan"
   ],
-  "char_start": 231159,
-  "char_end": 231336
+  "char_start": 231500,
+  "char_end": 231677
 }
 
 {
@@ -13799,8 +13799,8 @@
   "entity_ids": [
     "matal"
   ],
-  "char_start": 231337,
-  "char_end": 231494
+  "char_start": 231678,
+  "char_end": 231835
 }
 
 {
@@ -13815,8 +13815,8 @@
   "entity_ids": [
     "prangbakat"
   ],
-  "char_start": 231495,
-  "char_end": 231668
+  "char_start": 231836,
+  "char_end": 232009
 }
 
 {
@@ -13831,8 +13831,8 @@
   "entity_ids": [
     "ugu"
   ],
-  "char_start": 231669,
-  "char_end": 231833
+  "char_start": 232010,
+  "char_end": 232174
 }
 
 {
@@ -13847,8 +13847,8 @@
   "entity_ids": [
     "krulut"
   ],
-  "char_start": 231834,
-  "char_end": 232013
+  "char_start": 232175,
+  "char_end": 232354
 }
 
 {
@@ -13863,8 +13863,8 @@
   "entity_ids": [
     "dungulan"
   ],
-  "char_start": 232014,
-  "char_end": 232190
+  "char_start": 232355,
+  "char_end": 232531
 }
 
 {
@@ -13879,8 +13879,8 @@
   "entity_ids": [
     "gotongan"
   ],
-  "char_start": 232191,
-  "char_end": 232535
+  "char_start": 232532,
+  "char_end": 232876
 }
 
 {
@@ -13895,8 +13895,8 @@
   "entity_ids": [
     "semut_sedulur"
   ],
-  "char_start": 232536,
-  "char_end": 232875
+  "char_start": 232877,
+  "char_end": 233216
 }
 
 {
@@ -13911,8 +13911,8 @@
   "entity_ids": [
     "gagak_anungsang_pati"
   ],
-  "char_start": 232876,
-  "char_end": 233069
+  "char_start": 233217,
+  "char_end": 233410
 }
 
 {
@@ -13927,8 +13927,8 @@
   "entity_ids": [
     "purwani"
   ],
-  "char_start": 233070,
-  "char_end": 233349
+  "char_start": 233411,
+  "char_end": 233690
 }
 
 {
@@ -13943,8 +13943,8 @@
   "entity_ids": [
     "penanggal"
   ],
-  "char_start": 233350,
-  "char_end": 233573
+  "char_start": 233691,
+  "char_end": 233914
 }
 
 {
@@ -13959,8 +13959,8 @@
   "entity_ids": [
     "panglong"
   ],
-  "char_start": 233574,
-  "char_end": 233781
+  "char_start": 233915,
+  "char_end": 234122
 }
 
 {
@@ -13975,8 +13975,8 @@
   "entity_ids": [
     "ingkel_wong"
   ],
-  "char_start": 233782,
-  "char_end": 233986
+  "char_start": 234123,
+  "char_end": 234327
 }
 
 {
@@ -13991,8 +13991,8 @@
   "entity_ids": [
     "was_penganten"
   ],
-  "char_start": 233987,
-  "char_end": 234193
+  "char_start": 234328,
+  "char_end": 234534
 }
 
 {
@@ -14007,8 +14007,8 @@
   "entity_ids": [
     "ala_ayuning_dewasa"
   ],
-  "char_start": 234194,
-  "char_end": 234439
+  "char_start": 234535,
+  "char_end": 234780
 }
 
 {
@@ -14023,8 +14023,8 @@
   "entity_ids": [
     "piagam_campuhan"
   ],
-  "char_start": 234440,
-  "char_end": 234913
+  "char_start": 234781,
+  "char_end": 235254
 }
 
 {
@@ -14039,8 +14039,8 @@
   "entity_ids": [
     "buddha"
   ],
-  "char_start": 234914,
-  "char_end": 235218
+  "char_start": 235255,
+  "char_end": 235559
 }
 
 {
@@ -14055,8 +14055,8 @@
   "entity_ids": [
     "sad_ripu"
   ],
-  "char_start": 235219,
-  "char_end": 235549
+  "char_start": 235560,
+  "char_end": 235890
 }
 
 {
@@ -14071,8 +14071,8 @@
   "entity_ids": [
     "panca_sradha"
   ],
-  "char_start": 235550,
-  "char_end": 235902
+  "char_start": 235891,
+  "char_end": 236243
 }
 
 {
@@ -14087,8 +14087,8 @@
   "entity_ids": [
     "rwabhineda"
   ],
-  "char_start": 235903,
-  "char_end": 236220
+  "char_start": 236244,
+  "char_end": 236561
 }
 
 {
@@ -14103,8 +14103,8 @@
   "entity_ids": [
     "yamaloka"
   ],
-  "char_start": 236221,
-  "char_end": 236412
+  "char_start": 236562,
+  "char_end": 236753
 }
 
 {
@@ -14119,8 +14119,8 @@
   "entity_ids": [
     "saiva_siddhanta"
   ],
-  "char_start": 236413,
-  "char_end": 236641
+  "char_start": 236754,
+  "char_end": 236982
 }
 
 {
@@ -14135,8 +14135,8 @@
   "entity_ids": [
     "tattwa"
   ],
-  "char_start": 236642,
-  "char_end": 236879
+  "char_start": 236983,
+  "char_end": 237220
 }
 
 {
@@ -14151,8 +14151,8 @@
   "entity_ids": [
     "lingga"
   ],
-  "char_start": 236880,
-  "char_end": 237146
+  "char_start": 237221,
+  "char_end": 237487
 }
 
 {
@@ -14167,8 +14167,8 @@
   "entity_ids": [
     "hyang"
   ],
-  "char_start": 237147,
-  "char_end": 237451
+  "char_start": 237488,
+  "char_end": 237792
 }
 
 {
@@ -14183,8 +14183,8 @@
   "entity_ids": [
     "mala"
   ],
-  "char_start": 237452,
-  "char_end": 237656
+  "char_start": 237793,
+  "char_end": 237997
 }
 
 {
@@ -14199,8 +14199,8 @@
   "entity_ids": [
     "manca_warna"
   ],
-  "char_start": 237657,
-  "char_end": 237901
+  "char_start": 237998,
+  "char_end": 238242
 }
 
 {
@@ -14215,8 +14215,8 @@
   "entity_ids": [
     "budhi_satwa"
   ],
-  "char_start": 237902,
-  "char_end": 238162
+  "char_start": 238243,
+  "char_end": 238503
 }
 
 {
@@ -14231,8 +14231,8 @@
   "entity_ids": [
     "sloka"
   ],
-  "char_start": 238163,
-  "char_end": 238380
+  "char_start": 238504,
+  "char_end": 238721
 }
 
 {
@@ -14247,8 +14247,8 @@
   "entity_ids": [
     "sabda"
   ],
-  "char_start": 238381,
-  "char_end": 238600
+  "char_start": 238722,
+  "char_end": 238941
 }
 
 {
@@ -14263,8 +14263,8 @@
   "entity_ids": [
     "tattwatma"
   ],
-  "char_start": 238601,
-  "char_end": 238904
+  "char_start": 238942,
+  "char_end": 239245
 }
 
 {
@@ -14279,8 +14279,8 @@
   "entity_ids": [
     "pengempon"
   ],
-  "char_start": 238905,
-  "char_end": 239107
+  "char_start": 239246,
+  "char_end": 239448
 }
 
 {
@@ -14295,8 +14295,8 @@
   "entity_ids": [
     "pamaksan"
   ],
-  "char_start": 239108,
-  "char_end": 239423
+  "char_start": 239449,
+  "char_end": 239764
 }
 
 {
@@ -14311,8 +14311,8 @@
   "entity_ids": [
     "widyadhara_widyadhari"
   ],
-  "char_start": 239424,
-  "char_end": 239680
+  "char_start": 239765,
+  "char_end": 240021
 }
 
 {
@@ -14327,8 +14327,8 @@
   "entity_ids": [
     "dedari"
   ],
-  "char_start": 239681,
-  "char_end": 239865
+  "char_start": 240022,
+  "char_end": 240206
 }
 
 {
@@ -14343,8 +14343,8 @@
   "entity_ids": [
     "ekajati"
   ],
-  "char_start": 239866,
-  "char_end": 240320
+  "char_start": 240207,
+  "char_end": 240661
 }
 
 {
@@ -14359,8 +14359,8 @@
   "entity_ids": [
     "ngeseng_sekah"
   ],
-  "char_start": 240321,
-  "char_end": 240563
+  "char_start": 240662,
+  "char_end": 240904
 }
 
 {
@@ -14375,8 +14375,8 @@
   "entity_ids": [
     "pangilen"
   ],
-  "char_start": 240564,
-  "char_end": 240798
+  "char_start": 240905,
+  "char_end": 241139
 }
 
 {
@@ -14391,8 +14391,8 @@
   "entity_ids": [
     "nyepuh"
   ],
-  "char_start": 240799,
-  "char_end": 240989
+  "char_start": 241140,
+  "char_end": 241330
 }
 
 {
@@ -14407,8 +14407,8 @@
   "entity_ids": [
     "ngusaba"
   ],
-  "char_start": 240990,
-  "char_end": 241293
+  "char_start": 241331,
+  "char_end": 241634
 }
 
 {
@@ -14423,8 +14423,8 @@
   "entity_ids": [
     "ngenteg_linggih"
   ],
-  "char_start": 241294,
-  "char_end": 241676
+  "char_start": 241635,
+  "char_end": 242017
 }
 
 {
@@ -14439,8 +14439,8 @@
   "entity_ids": [
     "nedunan_layon"
   ],
-  "char_start": 241677,
-  "char_end": 241788
+  "char_start": 242018,
+  "char_end": 242129
 }
 
 {
@@ -14455,8 +14455,8 @@
   "entity_ids": [
     "ngadegan_sekah"
   ],
-  "char_start": 241789,
-  "char_end": 241997
+  "char_start": 242130,
+  "char_end": 242338
 }
 
 {
@@ -14471,8 +14471,8 @@
   "entity_ids": [
     "ngeluhurang_bhatara_kumara"
   ],
-  "char_start": 241998,
-  "char_end": 242236
+  "char_start": 242339,
+  "char_end": 242577
 }
 
 {
@@ -14487,8 +14487,8 @@
   "entity_ids": [
     "ngentas"
   ],
-  "char_start": 242237,
-  "char_end": 242488
+  "char_start": 242578,
+  "char_end": 242829
 }
 
 {
@@ -14503,8 +14503,8 @@
   "entity_ids": [
     "nyurat"
   ],
-  "char_start": 242489,
-  "char_end": 242717
+  "char_start": 242830,
+  "char_end": 243058
 }
 
 {
@@ -14519,8 +14519,8 @@
   "entity_ids": [
     "mageseng"
   ],
-  "char_start": 242718,
-  "char_end": 242868
+  "char_start": 243059,
+  "char_end": 243209
 }
 
 {
@@ -14535,8 +14535,8 @@
   "entity_ids": [
     "masesalin"
   ],
-  "char_start": 242869,
-  "char_end": 243118
+  "char_start": 243210,
+  "char_end": 243459
 }
 
 {
@@ -14551,8 +14551,8 @@
   "entity_ids": [
     "memunjung"
   ],
-  "char_start": 243119,
-  "char_end": 243325
+  "char_start": 243460,
+  "char_end": 243666
 }
 
 {
@@ -14567,8 +14567,8 @@
   "entity_ids": [
     "kama"
   ],
-  "char_start": 243326,
-  "char_end": 243550
+  "char_start": 243667,
+  "char_end": 243891
 }
 
 {
@@ -14583,8 +14583,8 @@
   "entity_ids": [
     "lobha"
   ],
-  "char_start": 243551,
-  "char_end": 243678
+  "char_start": 243892,
+  "char_end": 244019
 }
 
 {
@@ -14599,8 +14599,8 @@
   "entity_ids": [
     "krodha"
   ],
-  "char_start": 243679,
-  "char_end": 243791
+  "char_start": 244020,
+  "char_end": 244132
 }
 
 {
@@ -14615,8 +14615,8 @@
   "entity_ids": [
     "moha"
   ],
-  "char_start": 243792,
-  "char_end": 243926
+  "char_start": 244133,
+  "char_end": 244267
 }
 
 {
@@ -14631,8 +14631,8 @@
   "entity_ids": [
     "mada"
   ],
-  "char_start": 243927,
-  "char_end": 244035
+  "char_start": 244268,
+  "char_end": 244376
 }
 
 {
@@ -14647,8 +14647,8 @@
   "entity_ids": [
     "matsarya"
   ],
-  "char_start": 244036,
-  "char_end": 244163
+  "char_start": 244377,
+  "char_end": 244504
 }
 
 {
@@ -14663,8 +14663,8 @@
   "entity_ids": [
     "punarbhawa"
   ],
-  "char_start": 244164,
-  "char_end": 244362
+  "char_start": 244505,
+  "char_end": 244703
 }
 
 {
@@ -14679,8 +14679,8 @@
   "entity_ids": [
     "urip"
   ],
-  "char_start": 244363,
-  "char_end": 244816
+  "char_start": 244704,
+  "char_end": 245157
 }
 
 {
@@ -14695,8 +14695,8 @@
   "entity_ids": [
     "amariaran"
   ],
-  "char_start": 244817,
-  "char_end": 245141
+  "char_start": 245158,
+  "char_end": 245482
 }
 
 {
@@ -14711,8 +14711,8 @@
   "entity_ids": [
     "sok_cegceg"
   ],
-  "char_start": 245142,
-  "char_end": 245705
+  "char_start": 245483,
+  "char_end": 246046
 }
 
 {
@@ -14727,8 +14727,8 @@
   "entity_ids": [
     "santha_yana"
   ],
-  "char_start": 245706,
-  "char_end": 246037
+  "char_start": 246047,
+  "char_end": 246378
 }
 
 {
@@ -14743,8 +14743,8 @@
   "entity_ids": [
     "pangkung_karung"
   ],
-  "char_start": 246038,
-  "char_end": 246329
+  "char_start": 246379,
+  "char_end": 246670
 }
 
 {
@@ -14759,8 +14759,8 @@
   "entity_ids": [
     "pipis_satakan"
   ],
-  "char_start": 246330,
-  "char_end": 246589
+  "char_start": 246671,
+  "char_end": 246930
 }
 
 {
@@ -14775,8 +14775,8 @@
   "entity_ids": [
     "siddhaning_yadnya"
   ],
-  "char_start": 246590,
-  "char_end": 246887
+  "char_start": 246931,
+  "char_end": 247228
 }
 
 {
@@ -14791,8 +14791,8 @@
   "entity_ids": [
     "beya"
   ],
-  "char_start": 246888,
-  "char_end": 247132
+  "char_start": 247229,
+  "char_end": 247473
 }
 
 {
@@ -14807,8 +14807,8 @@
   "entity_ids": [
     "bhuta_loka"
   ],
-  "char_start": 247133,
-  "char_end": 247433
+  "char_start": 247474,
+  "char_end": 247774
 }
 
 {
@@ -14823,8 +14823,8 @@
   "entity_ids": [
     "kasepekang"
   ],
-  "char_start": 247434,
-  "char_end": 247703
+  "char_start": 247775,
+  "char_end": 248044
 }
 
 {
@@ -14839,8 +14839,8 @@
   "entity_ids": [
     "pujastawa"
   ],
-  "char_start": 247704,
-  "char_end": 248064
+  "char_start": 248045,
+  "char_end": 248405
 }
 
 {
@@ -14855,8 +14855,8 @@
   "entity_ids": [
     "pesamuhan"
   ],
-  "char_start": 248065,
-  "char_end": 248310
+  "char_start": 248406,
+  "char_end": 248651
 }
 
 {
@@ -14871,8 +14871,8 @@
   "entity_ids": [
     "galih"
   ],
-  "char_start": 248311,
-  "char_end": 248757
+  "char_start": 248652,
+  "char_end": 249098
 }
 
 {
@@ -14887,8 +14887,8 @@
   "entity_ids": [
     "tembong"
   ],
-  "char_start": 248758,
-  "char_end": 248909
+  "char_start": 249099,
+  "char_end": 249250
 }
 
 {
@@ -14903,8 +14903,8 @@
   "entity_ids": [
     "lemat"
   ],
-  "char_start": 248910,
-  "char_end": 249088
+  "char_start": 249251,
+  "char_end": 249429
 }
 
 {
@@ -14919,8 +14919,8 @@
   "entity_ids": [
     "itihasa"
   ],
-  "char_start": 249089,
-  "char_end": 249398
+  "char_start": 249430,
+  "char_end": 249739
 }
 
 {
@@ -14935,8 +14935,8 @@
   "entity_ids": [
     "segara"
   ],
-  "char_start": 249399,
-  "char_end": 249561
+  "char_start": 249740,
+  "char_end": 249902
 }
 
 {
@@ -14951,8 +14951,8 @@
   "entity_ids": [
     "trunyan"
   ],
-  "char_start": 249562,
-  "char_end": 249805
+  "char_start": 249903,
+  "char_end": 250146
 }
 
 {
@@ -14967,8 +14967,8 @@
   "entity_ids": [
     "meru"
   ],
-  "char_start": 249806,
-  "char_end": 250172
+  "char_start": 250147,
+  "char_end": 250513
 }
 
 {
@@ -14983,8 +14983,8 @@
   "entity_ids": [
     "ambekan"
   ],
-  "char_start": 250173,
-  "char_end": 250332
+  "char_start": 250514,
+  "char_end": 250673
 }
 
 {
@@ -14999,8 +14999,8 @@
   "entity_ids": [
     "ambuh"
   ],
-  "char_start": 250333,
-  "char_end": 250524
+  "char_start": 250674,
+  "char_end": 250865
 }
 
 {
@@ -15015,8 +15015,8 @@
   "entity_ids": [
     "kapar"
   ],
-  "char_start": 250525,
-  "char_end": 250694
+  "char_start": 250866,
+  "char_end": 251035
 }
 
 {
@@ -15031,8 +15031,8 @@
   "entity_ids": [
     "mapurwa_daksina"
   ],
-  "char_start": 250695,
-  "char_end": 251011
+  "char_start": 251036,
+  "char_end": 251352
 }
 
 {
@@ -15047,8 +15047,8 @@
   "entity_ids": [
     "banten_munggah_ring_surya"
   ],
-  "char_start": 251012,
-  "char_end": 251407
+  "char_start": 251353,
+  "char_end": 251748
 }
 
 {
@@ -15063,8 +15063,8 @@
   "entity_ids": [
     "banten_penyanggra"
   ],
-  "char_start": 251408,
-  "char_end": 251968
+  "char_start": 251749,
+  "char_end": 252309
 }
 
 {
@@ -15079,8 +15079,8 @@
   "entity_ids": [
     "sesari"
   ],
-  "char_start": 251969,
-  "char_end": 252207
+  "char_start": 252310,
+  "char_end": 252548
 }
 
 {
@@ -15095,8 +15095,8 @@
   "entity_ids": [
     "satya"
   ],
-  "char_start": 252208,
-  "char_end": 252473
+  "char_start": 252549,
+  "char_end": 252814
 }
 
 {
@@ -15111,8 +15111,8 @@
   "entity_ids": [
     "parama_suksma"
   ],
-  "char_start": 252474,
-  "char_end": 252838
+  "char_start": 252815,
+  "char_end": 253179
 }
 
 {
@@ -15127,8 +15127,8 @@
   "entity_ids": [
     "guru_pangajian"
   ],
-  "char_start": 252839,
-  "char_end": 253200
+  "char_start": 253180,
+  "char_end": 253541
 }
 
 {
@@ -15143,8 +15143,8 @@
   "entity_ids": [
     "hitungan_cekur"
   ],
-  "char_start": 253201,
-  "char_end": 253589
+  "char_start": 253542,
+  "char_end": 253930
 }
 
 {
@@ -15159,8 +15159,8 @@
   "entity_ids": [
     "kepus_pungsed"
   ],
-  "char_start": 253590,
-  "char_end": 253910
+  "char_start": 253931,
+  "char_end": 254251
 }
 
 {
@@ -15175,8 +15175,8 @@
   "entity_ids": [
     "lontar_aji_swamandala"
   ],
-  "char_start": 253911,
-  "char_end": 254225
+  "char_start": 254252,
+  "char_end": 254566
 }
 
 {
@@ -15191,8 +15191,8 @@
   "entity_ids": [
     "tabanan"
   ],
-  "char_start": 254226,
-  "char_end": 254456
+  "char_start": 254567,
+  "char_end": 254797
 }
 
 {
@@ -15207,8 +15207,8 @@
   "entity_ids": [
     "denpasar"
   ],
-  "char_start": 254457,
-  "char_end": 254652
+  "char_start": 254798,
+  "char_end": 254993
 }
 
 {
@@ -15223,8 +15223,8 @@
   "entity_ids": [
     "adharma"
   ],
-  "char_start": 254653,
-  "char_end": 254847
+  "char_start": 254994,
+  "char_end": 255188
 }
 
 {
@@ -15239,8 +15239,8 @@
   "entity_ids": [
     "amusti"
   ],
-  "char_start": 254848,
-  "char_end": 255248
+  "char_start": 255189,
+  "char_end": 255589
 }
 
 {
@@ -15255,8 +15255,8 @@
   "entity_ids": [
     "wakul_daksina"
   ],
-  "char_start": 255249,
-  "char_end": 255398
+  "char_start": 255590,
+  "char_end": 255739
 }
 
 {
@@ -15271,8 +15271,8 @@
   "entity_ids": [
     "pura_besakih"
   ],
-  "char_start": 255399,
-  "char_end": 255706
+  "char_start": 255740,
+  "char_end": 256047
 }
 
 {
@@ -15287,8 +15287,8 @@
   "entity_ids": [
     "ayam_brumbun"
   ],
-  "char_start": 255707,
-  "char_end": 256039
+  "char_start": 256048,
+  "char_end": 256380
 }
 
 {
@@ -15303,8 +15303,8 @@
   "entity_ids": [
     "campuhan"
   ],
-  "char_start": 256040,
-  "char_end": 256241
+  "char_start": 256381,
+  "char_end": 256582
 }
 
 {
@@ -15319,8 +15319,8 @@
   "entity_ids": [
     "kelebutan"
   ],
-  "char_start": 256242,
-  "char_end": 256410
+  "char_start": 256583,
+  "char_end": 256751
 }
 
 {
@@ -15335,8 +15335,8 @@
   "entity_ids": [
     "pancoran"
   ],
-  "char_start": 256411,
-  "char_end": 256595
+  "char_start": 256752,
+  "char_end": 256936
 }
 
 {
@@ -15351,8 +15351,8 @@
   "entity_ids": [
     "dasaksara"
   ],
-  "char_start": 256596,
-  "char_end": 256780
+  "char_start": 256937,
+  "char_end": 257121
 }
 
 {
@@ -15367,8 +15367,8 @@
   "entity_ids": [
     "rajah"
   ],
-  "char_start": 256781,
-  "char_end": 257046
+  "char_start": 257122,
+  "char_end": 257387
 }
 
 {
@@ -15383,8 +15383,8 @@
   "entity_ids": [
     "gegantusan"
   ],
-  "char_start": 257047,
-  "char_end": 257191
+  "char_start": 257388,
+  "char_end": 257532
 }
 
 {
@@ -15399,8 +15399,8 @@
   "entity_ids": [
     "papeselan"
   ],
-  "char_start": 257192,
-  "char_end": 257290
+  "char_start": 257533,
+  "char_end": 257631
 }
 
 {
@@ -15415,8 +15415,8 @@
   "entity_ids": [
     "jaja_gina"
   ],
-  "char_start": 257291,
-  "char_end": 257494
+  "char_start": 257632,
+  "char_end": 257835
 }
 
 {
@@ -15431,8 +15431,8 @@
   "entity_ids": [
     "jejahitan"
   ],
-  "char_start": 257495,
-  "char_end": 257719
+  "char_start": 257836,
+  "char_end": 258060
 }
 
 {
@@ -15447,8 +15447,8 @@
   "entity_ids": [
     "kahyangan"
   ],
-  "char_start": 257720,
-  "char_end": 257937
+  "char_start": 258061,
+  "char_end": 258278
 }
 
 {
@@ -15463,8 +15463,8 @@
   "entity_ids": [
     "lamak"
   ],
-  "char_start": 257938,
-  "char_end": 258171
+  "char_start": 258279,
+  "char_end": 258512
 }
 
 {
@@ -15479,8 +15479,8 @@
   "entity_ids": [
     "pekir"
   ],
-  "char_start": 258172,
-  "char_end": 258445
+  "char_start": 258513,
+  "char_end": 258786
 }
 
 {
@@ -15495,8 +15495,8 @@
   "entity_ids": [
     "prada"
   ],
-  "char_start": 258446,
-  "char_end": 258654
+  "char_start": 258787,
+  "char_end": 258995
 }
 
 {
@@ -15511,8 +15511,8 @@
   "entity_ids": [
     "pras_daksina"
   ],
-  "char_start": 258655,
-  "char_end": 258932
+  "char_start": 258996,
+  "char_end": 259273
 }
 
 {
@@ -15527,8 +15527,8 @@
   "entity_ids": [
     "sisya"
   ],
-  "char_start": 258933,
-  "char_end": 259097
+  "char_start": 259274,
+  "char_end": 259438
 }
 
 {
@@ -15543,8 +15543,8 @@
   "entity_ids": [
     "stotra"
   ],
-  "char_start": 259098,
-  "char_end": 259343
+  "char_start": 259439,
+  "char_end": 259684
 }
 
 {
@@ -15559,8 +15559,8 @@
   "entity_ids": [
     "ulah_pati"
   ],
-  "char_start": 259344,
-  "char_end": 259611
+  "char_start": 259685,
+  "char_end": 259952
 }
 
 {
@@ -15575,8 +15575,8 @@
   "entity_ids": [
     "wesnawa"
   ],
-  "char_start": 259612,
-  "char_end": 259979
+  "char_start": 259953,
+  "char_end": 260320
 }
 
 {
@@ -15591,8 +15591,8 @@
   "entity_ids": [
     "dewi_parwati"
   ],
-  "char_start": 259980,
-  "char_end": 260199
+  "char_start": 260321,
+  "char_end": 260540
 }
 
 {
@@ -15607,8 +15607,8 @@
   "entity_ids": [
     "paturon"
   ],
-  "char_start": 260200,
-  "char_end": 260367
+  "char_start": 260541,
+  "char_end": 260708
 }
 
 {
@@ -15623,8 +15623,8 @@
   "entity_ids": [
     "sampian_urasari"
   ],
-  "char_start": 260368,
-  "char_end": 260473
+  "char_start": 260709,
+  "char_end": 260814
 }
 
 {

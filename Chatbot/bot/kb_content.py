@@ -71,6 +71,9 @@ PREDICATE_FAMILIES: Dict[str, set] = {
         "DISERTAI_KEMBALINYA_UNSUR_BADAN_KE", "MERUPAKAN_TAHAP_MENCAPAI", "MENUNJUKKAN_JALAN_ATMA_KE",
         # "ngaben adalah kewajiban suci (swadharma)", corpus L650/L653/L680 (NLU sweep 2026-10-19)
         "MERUPAKAN_KEWAJIBAN",
+        # "semua alat upakara dan sesajen ... bukan hanya merupakan suatu simbol" (L1081), "belit kanan dan belit kiri
+        # mengandung makna purusa dan pradana" (L858), "hal ini bermakna agar gigi ... kokoh" (L3177) -- V2 2026-11-02
+        "BUKAN_HANYA_MERUPAKAN", "MENGANDUNG_MAKNA", "BERMAKNA_AGAR",
     },
     "lokasi": {
         # "bangbang rare menjadi tempat pemakaman khusus bayi pada upacara ngelungah" (2026-10-19)
@@ -110,6 +113,9 @@ PREDICATE_FAMILIES: Dict[str, set] = {
         # the one order predicate missing here (2026-10-14): "kapan nyiramang layon" lost "ngulapin
         # diikuti oleh nyiramang layon" and "... diikuti oleh pangringkes"
         "DIIKUTI_OLEH",
+        # the order of the sarana put into the periuk of Tirtha Pangentas (L3890-3902) and of the tirthas sprinkled on
+        # the corpse (L3978) -- V2 2026-11-02
+        "DIMASUKKAN_SETELAH", "DIPERCIKKAN_SAAT",
     },
     # the offerings / equipment a ceremony or stage uses (sarana upacara)
     "sarana": {
@@ -132,6 +138,12 @@ PREDICATE_FAMILIES: Dict[str, set] = {
         "HANYA_DAPAT_DIBUAT_OLEH",
         # "puri dihuni oleh raja bali", "setra dimiliki oleh desa adat" (Balinese terms, 2026-10-28)
         "DIHUNI_OLEH", "DIMILIKI_OLEH",
+        # naga banda "dipanah oleh Ida Peranda yang muput karya" (L1681), mantra "diucapkan oleh orang yang memimpin
+        # upacara" (L3252), nyiramang layon "akan melibatkan Krama Banjar" (L2427), the elder who cleans the head first
+        # (L2777) -- V2 2026-11-02
+        "DIPANAH_OLEH", "DIUCAPKAN_OLEH", "MELIBATKAN", "DIAWALI_OLEH",
+        # nyekeh "lebih sering ditempuh keluarga raja atau pendeta" (L894): who usually holds it, not a rule (2026-11-03)
+        "LEBIH_SERING_DITEMPUH_OLEH",
     },
     "fungsi": {
         "DIPAKAI_UNTUK", "DIGUNAKAN_UNTUK", "DIGUNAKAN_PADA", "DIGUNAKAN_DALAM",
@@ -174,6 +186,8 @@ PREDICATE_FAMILIES: Dict[str, set] = {
         "MENDAPAT_PENGARUH_DARI",
         # "kakawin ditulis dalam bahasa kawi" (2026-10-02)
         "DITULIS_DALAM",
+        # tirtha kawitan in the order of the tirthas sprinkled "dari tingkatan paling rendah" (L3978) -- V2 2026-11-02
+        "BERADA_PADA_TINGKATAN",
     },
     # which text (lontar) describes the term ("dijelaskan dalam lontar apa")
     "sumber": {"DIJELASKAN_DALAM", "MERINCI"},
@@ -201,6 +215,9 @@ PREDICATE_FAMILIES: Dict[str, set] = {
         "MERUPAKAN_PERUBAHAN_DARI", "TATA_PELAKSANAAN_SAMA_DENGAN",
         # how a baby's body is handled by age (2026-10-02)
         "DIUPACARAI_DENGAN", "DIUPACARAI_DENGAN_CARA",
+        # how Tirtha Pangentas is made (L3794-3962) and how Naga Banda is used (L1678 "bagaimana cara
+        # penggunaannya?") -- V2 2026-11-02
+        "DIBUAT_MELALUI", "DIGUNAKAN_DENGAN_CARA",
     },
 }
 

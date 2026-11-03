@@ -317,8 +317,8 @@
   },
   "scope": {
     "1335|tirtha|weda pengastawa": "general: the passage is about tirtha's price ('berapapun harganya, tirtha itu tetap punya nilai spiritual yang sama, karena dipuja dengan weda pengastawa yang sama') -- any tirtha",
-    "1468|upakara|sajen": "general: 'upakara tersebut' is the rite's whole set of upakara, purified before use; L3679 says the same of tirtha panglukatan 'untuk banten (upakara)'",
-    "1468|upakara|tirtha panglukatan": "general: as 1468|upakara|sajen",
+    "1468|upakara|sajen dan tirtha panglukatan sebagai sarana utamanya, hingga dianggap wajar untuk digunakan": "general: 'upakara tersebut' (L1164) is the rite's whole set of upakara, purified before use; L3679 says the same of tirtha panglukatan 'untuk banten (upakara)'. (The text fact named only 'sajen' until 2026-11-02, plan #23: 'Banten disucikan dengan sajen.')",
+    "1468|upakara|tirtha panglukatan": "general: as the 1468 text fact above",
     "2787|sekah|atas bukur": "general: after pangutpetian the atma wedana's sekah (every kind of it) are raised onto the bukur"
   }
 }

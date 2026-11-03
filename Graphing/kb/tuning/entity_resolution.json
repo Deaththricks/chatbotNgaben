@@ -1003,7 +1003,11 @@
     "ngaben dengan cara yama purwana tatwa": "ngaben cara yama purwana tatwa",
     "ngaben dengan cara yama purwana tattwa": "ngaben cara yama purwana tatwa",
     "cara yama purwana tatwa": "ngaben cara yama purwana tatwa",
-    "cara yama purwana tattwa": "ngaben cara yama purwana tatwa"
+    "cara yama purwana tattwa": "ngaben cara yama purwana tatwa",
+    "_v2_fixes_note_2026_11_02": "other names the corpus gives, now in the cards' 'disebut juga' (plan #23): wang kepeng (L130, L149, L190) is uang kepeng; galeng pengerekan (L3118) is gegaleng; base gulung (L3229-3232) is lekesan.",
+    "wang kepeng": "uang kepeng",
+    "galeng pengerekan": "gegaleng",
+    "base gulung": "lekesan"
   },
   "keep_distinct": [
     "tirtha pangentas",
@@ -1021,6 +1025,7 @@
   ],
   "_keep_distinct_note": "never collapse these into their head word via modifier-strip; they may still get a broader: <head> link.",
   "type_overrides": {
+    "pecahan besi baja": "SARANA_RITUAL",
     "merajan kawitan": "BANGUNAN_RITUAL",
     "pasek": "STRUKTUR_SOSIAL_ADAT",
     "pande": "STRUKTUR_SOSIAL_ADAT",

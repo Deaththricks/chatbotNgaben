@@ -47,6 +47,9 @@ backburner/
 SOURCES.md
 
 conersation.md
+# the user's own daily work log (and its Word copy)
+PROGRESS.md
+PROGRESS.docx
 how_it_works.md
 RASA-DEVIATIONS.md
 Graphing/misc/

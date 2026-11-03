@@ -31104,3 +31104,18 @@
     "context_sentence": "[web balinese terms 2026-10-29] https://www.detik.com/bali/budaya/d-6086234/mengenal-daksina-yang-sarat-simbol-kehidupan-menurut-hindu-bali : \"Bakul atau dalam bahasa bali disebut wakul daksina\""
   }
 }
+
+{
+  "subject_id": "pecahan_besi_baja",
+  "subject_name": "pecahan besi baja",
+  "predicate": "TERBUAT_DARI",
+  "object_id": "baja",
+  "object_name": "baja",
+  "confidence": "HIGH",
+  "nl": "pecahan besi baja terbuat dari baja",
+  "raw_relation": "TERBUAT_DARI",
+  "provenance": {
+    "sentence_id": 901845,
+    "context_sentence": "Lempengan Waja (baja) atau Besi pada Gigi: ... giliran gigi jenazah ditaruhkan lempengan-lempengan baja atau besi. Lempengan baja ini biasanya diambilkan dari pecahan-pecahan penggorengan (penggorengan kuno) (corpus L3177)"
+  }
+}

@@ -1,5 +1,8 @@
 {
   "_dewasa_madya_note_2026_10_27": "sasih kaenem and kapitu are GRADED dewasa madya (days 'sedang-sedang saja' for Pitra Yadnya), not called by another name: the sebutan-lain template said 'Sasih kaenem juga dikenal sebagai dewasa madya' (sheet Failed, route audit 2026-10-27). Corpus S400 'sasih kaenem dan kapitu disebut dewasa madya'.",
+  "_nyekeh_performer_note_2026_11_03": "S1128 'nyekeh sawa lebih sering ditempuh keluarga raja atau pendeta' (L894; L891 'biasanya ditempuh ... terhadap seorang raja, keluarganya atau seorang pendeta') was read as nyekeh DILAKUKAN_OLEH keluarga raja / keluarga pendeta, and 'siapa yg mimpin upacaranya?' about pitra yadnya answered 'nyekeh dilakukan oleh keluarga pendeta dan keluarga raja' -- a tendency said as a rule (human test 2026-11-03). Fixed to LEBIH_SERING_DITEMPUH_OLEH ('nyekeh lebih sering ditempuh oleh ...'), the corpus's own words; rejecting them made 'siapa yang melakukan nyekeh' say the doer is not recorded.",
+  "1128|nyekeh sawa|keluarga pendeta": "fix: nyekeh | LEBIH_SERING_DITEMPUH_OLEH | keluarga pendeta",
+  "1128|nyekeh sawa|keluarga raja": "fix: nyekeh | LEBIH_SERING_DITEMPUH_OLEH | keluarga raja",
   "400|sasih kaenem|dewasa madya": "fix: sasih kaenem | TERGOLONG_SEBAGAI | dewasa madya",
   "400|sasih kapitu|dewasa madya": "fix: sasih kapitu | TERGOLONG_SEBAGAI | dewasa madya",
   "809|pitra yadnya dataran rendah|hasil penyempurnaan terakhir dang hyang dwijendra": "reject",

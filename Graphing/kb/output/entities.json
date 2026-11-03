@@ -32,12 +32,6 @@
           "value": "sungai",
           "sentence_id": 58
         }
-      ],
-      "MENINGKAT_STATUS": [
-        {
-          "value": "dari bekas benda badan linggasarira menjadi mahabutha yang suci, setelah diarak mapradaksina sebagai lambang diresapkannya sinar suci Hyang Widhi",
-          "sentence_id": 900326
-        }
       ]
     },
     "mention_passages": [
@@ -407,7 +401,14 @@
     "definition": "Alat upakara adalah perlengkapan upacara yang bukan sesajen, dipakai sebagai sarana ritual. Dalam Ngaben, alat-alat upakara seperti adegan, angenan, pisang jati, panguryagan, sok cegceg, dan damar kurung diplaspas bersama kajang pada upacara pabersihan, dan pada waktu pembakaran alat-alat upakara tertentu dihimpun di bale salunglung.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BUKAN_HANYA_MERUPAKAN": [
+        {
+          "value": "simbol atau perlambang, tetapi diyakini memiliki daya magis-religius yang dimanfaatkan dalam upacara untuk mencapai sasaran yang dikehendaki; kuat tidaknya daya magis-religius ditentukan antara lain oleh benar tidaknya bentuknya, kemantapan hati tukang dan pendeta yang memujanya, dan terutama ketulusan hati umat yang beryadnya",
+          "sentence_id": 901853
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_037",
       "upacara_atiw_1104",
@@ -1989,9 +1990,15 @@
     "definition_source": "glossary",
     "broader": null,
     "attributes": {
+      "BUKAN_HANYA_MERUPAKAN": [
+        {
+          "value": "simbol atau perlambang, tetapi diyakini memiliki daya magis-religius yang dimanfaatkan dalam upacara untuk mencapai sasaran yang dikehendaki; kuat tidaknya daya magis-religius ditentukan antara lain oleh benar tidaknya bentuknya, kemantapan hati tukang dan pendeta yang memujanya, dan terutama ketulusan hati umat yang beryadnya",
+          "sentence_id": 901851
+        }
+      ],
       "DISUCIKAN_DENGAN": [
         {
-          "value": "sajen",
+          "value": "sajen dan tirtha panglukatan sebagai sarana utamanya, hingga dianggap wajar untuk digunakan",
           "sentence_id": 1468
         }
       ]
@@ -2441,7 +2448,7 @@
     "name": "base",
     "type": "SARANA_RITUAL",
     "aliases": [],
-    "definition": "Base (daun sirih) dalam Nyiramang Layon dibuat menjadi dua bentuk: paes gedubang (sirih lengkap yang dikunyah hingga ampasnya berwarna merah) dan lekesan (sirih yang digulung), yang dirangkai menjadi kawangen jeriji.",
+    "definition": "Base (disebut juga daun sirih) adalah daun tanaman sirih yang dipakai sebagai sarana upacara. Dalam Nyiramang Layon, base dibuat menjadi dua bentuk: paes gedubang (sirih lengkap yang dikunyah hingga ampasnya berwarna merah) dan lekesan (sirih yang digulung), yang dirangkai menjadi kawangen jeriji.",
     "definition_source": "glossary",
     "broader": null,
     "attributes": {},
@@ -2618,7 +2625,7 @@
     "name": "beras catur",
     "type": "SARANA_RITUAL",
     "aliases": [],
-    "definition": "Beras catur adalah empat jenis beras -- putih, merah, kuning, dan hitam -- yang diletakkan di dada sawa bersama daksina, masing-masing menurut arahnya. Beras catur melambangkan kekuatan Panca Dewata selaku manifestasi Hyang Widhi yang mengelola alam semesta (bhuwana agung): beras putih untuk Iswara (timur), beras merah untuk Brahma (selatan), beras kuning untuk Mahadewa, dan seterusnya menurut arahnya.",
+    "definition": "Beras catur adalah empat jenis beras -- putih, merah, kuning, dan hitam -- yang diletakkan di dada sawa bersama daksina, masing-masing menurut arahnya. Beras catur melambangkan kekuatan Panca Dewata selaku manifestasi Hyang Widhi yang mengelola alam semesta (bhuwana agung): beras putih untuk Iswara (timur), beras merah untuk Brahma (selatan), beras kuning untuk Mahadewa (barat), dan beras hitam untuk Wisnu (utara); gabungan segenap warnanya melambangkan kekuatan Siwa di tengah.",
     "definition_source": "glossary",
     "broader": null,
     "attributes": {},
@@ -2637,7 +2644,14 @@
     "definition": "Beras hitam adalah beras berwarna hitam, salah satu dari empat jenis beras dalam beras catur.",
     "definition_source": "glossary",
     "broader": "beras",
-    "attributes": {},
+    "attributes": {
+      "MELAMBANGKAN": [
+        {
+          "value": "kekuatan Wisnu, arahnya utara",
+          "sentence_id": 901847
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_722",
       "upacara_atiw_1113"
@@ -2668,7 +2682,14 @@
     "definition": "Beras berpewarna kuning alami yang dicampur dalam sekar ura (taburan bunga) untuk menerangi jalan roh jenazah.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "MELAMBANGKAN": [
+        {
+          "value": "kekuatan Mahadewa, arahnya barat, bila menjadi bagian beras catur",
+          "sentence_id": 901850
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_338",
       "upacara_atiw_1113",
@@ -2689,7 +2710,14 @@
     "definition": "Beras merah adalah beras berwarna merah, salah satu dari empat jenis beras dalam beras catur.",
     "definition_source": "glossary",
     "broader": "beras",
-    "attributes": {},
+    "attributes": {
+      "MELAMBANGKAN": [
+        {
+          "value": "kekuatan Brahma, arahnya selatan",
+          "sentence_id": 901849
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_721",
       "upacara_atiw_1113"
@@ -2705,7 +2733,14 @@
     "definition": "Beras putih adalah beras berwarna putih, salah satu dari empat jenis beras dalam beras catur.",
     "definition_source": "glossary",
     "broader": "beras",
-    "attributes": {},
+    "attributes": {
+      "MELAMBANGKAN": [
+        {
+          "value": "kekuatan Iswara, arahnya timur",
+          "sentence_id": 901848
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_720",
       "upacara_atiw_1113"
@@ -5378,7 +5413,7 @@
     "aliases": [
       "gegaleng kepala"
     ],
-    "definition": "Gegaleng berarti bantal; dalam Ngaben, gegaleng adalah bantal atau ganjalan kepala jenazah yang dibuat dari 250 keping uang kepeng dan potongan-potongan dahan kayu dapdap yang dibungkus kain putih, menggantikan bantal kapuk yang dipakai semasa hidup.",
+    "definition": "Gegaleng berarti bantal; dalam Ngaben, gegaleng adalah bantal atau ganjalan kepala jenazah yang dibuat dari 250 keping uang kepeng dan potongan-potongan dahan kayu dapdap yang dibungkus kain putih, menggantikan bantal kapuk yang dipakai semasa hidup. Karena menggantikan bantal kapuk yang dipakai pada Pabersihan Hidup, gegaleng juga disebut galeng pengerekan.",
     "definition_source": "glossary",
     "broader": null,
     "attributes": {
@@ -6651,7 +6686,14 @@
     "definition": "Jijih adalah sebutan untuk sejumlah butir padi (umumnya 12 atau 9 biji) yang bersama sarana lain seperti Pripih Emas, Recadana, Ulantaga, dan Kalpika dimasukkan ke dalam periuk dan diberkati dengan puja mantra khusus sebagai bagian dari sarana penyucian dalam upacara ngaben.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DIMASUKKAN_SETELAH": [
+        {
+          "value": "padang lepas, setelah dimantrai oleh Ida Sang Sulinggih, bersama pripih emas, ulantaga, kalpika, dan sarana lainnya, dalam pembuatan Tirtha Pangentas",
+          "sentence_id": 901868
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_203",
       "upacara_atiw_1405",
@@ -7260,7 +7302,14 @@
     "definition": "Kalpika adalah salah satu sarana kecil -- bersama Pripih Emas, Jijih (biji padi), Recadana, dan Ulantaga -- yang dimasukkan ke dalam periuk atau dipasang pada ujung panah dalam pembuatan Tirtha (misalnya Tirtha Pemanah), dan disertai puja mantra khusus.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DIMASUKKAN_SETELAH": [
+        {
+          "value": "padang lepas, setelah dimantrai oleh Ida Sang Sulinggih, bersama biji padi (jijih), pripih emas, ulantaga, dan sarana lainnya, dalam pembuatan Tirtha Pangentas",
+          "sentence_id": 901870
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_206",
       "upacara_atiw_1397",
@@ -7769,7 +7818,14 @@
     "definition": "Kayu cendana adalah kayu dari pohon cendana yang dipakai dalam berbagai sarana Ngaben: sembilan batang kecil sebesar batang korek api menjadi salah satu unsur pengawak, bersama jun pere berisi air dan lembaran daun alang-alang; papan cendana tipis dipakai untuk roman muka adegan dan untuk awak-awakaning sawa; serbuknya dicampurkan pada air kumkuman; dan pripih cendana termasuk sarana upacara.",
     "definition_source": "glossary",
     "broader": "kayu",
-    "attributes": {},
+    "attributes": {
+      "MELAMBANGKAN": [
+        {
+          "value": "jasad mendiang dalam Ngaben Svasta: bila jenazah tidak ditemukan atau meninggal di perantauan, kayu cendana dan aksara sakral dipakai sebagai simbol pengganti jasad",
+          "sentence_id": 901855
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_008",
       "laporan_komp_371",
@@ -8953,10 +9009,16 @@
       "lembaran daun sirih",
       "lima buah lembaran-lembaran daun sirih"
     ],
-    "definition": "Lekesan adalah sarana persembahyangan umum berupa gulungan daun sirih, biasa menjadi salah satu komponen kawangen dalam Hindu Bali. Dalam upacara Ngaben, lekesan dibuat dari daun sirih yang digulung berisi tembakau, diikat benang putih, diisi bawang putih di ujungnya, dan dimasukkan ke lubang satu keping uang kepeng, lalu ditempelkan pada gigi jenazah.",
+    "definition": "Lekesan (disebut juga base gulung) adalah sarana persembahyangan umum berupa gulungan daun sirih, biasa menjadi salah satu komponen kawangen dalam Hindu Bali. Dalam upacara Ngaben, lekesan dibuat dari daun sirih yang digulung berisi tembakau, diikat benang putih, diisi bawang putih di ujungnya, dan dimasukkan ke lubang satu keping uang kepeng, lalu ditempelkan pada gigi jenazah.",
     "definition_source": "glossary",
     "broader": null,
     "attributes": {
+      "BERMAKNA_AGAR": [
+        {
+          "value": "orang yang meninggal, bila kelak numitis, memiliki jari tangan dan kaki yang indah, lentik, kuat, dan cekatan, sehingga dapat berkarya dengan baik dan hidup bahagia -- itulah makna base gulung (lekesan) dalam kawangen jeriji",
+          "sentence_id": 901846
+        }
+      ],
       "DIIKAT_DENGAN": [
         {
           "value": "benang putih",
@@ -9928,7 +9990,14 @@
     "definition": "Mantra adalah ucapan suci, yaitu rangkaian kata suci yang diucapkan untuk menyertai suatu tindakan upacara. Dalam Ngaben, setiap langkah pangringkes disertai mantranya sendiri, misalnya saat membangunkan jenazah untuk dimandikan dan saat membasuhnya dengan wewangian. Mantra-mantra itu bersumber dari Weda.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DIUCAPKAN_OLEH": [
+        {
+          "value": "orang yang memimpin upacara, misalnya dalam Nyiramang Layon; semua yang hadir diharapkan ikut mengucapkannya walaupun dalam hati, dan bila tidak bisa, boleh dengan bahasa sehari-hari",
+          "sentence_id": 901871
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_774",
       "upacara_atiw_1025",
@@ -10721,6 +10790,24 @@
         {
           "value": "1.600 depa (sekitar 2,4 km), menurut ketentuan teknisnya",
           "sentence_id": 900342
+        }
+      ],
+      "DIGUNAKAN_DENGAN_CARA": [
+        {
+          "value": "menjelang dan sampai hari Pabersihan, naga banda diletakkan berdampingan dengan jenazah di Bale Semanggen, kepalanya menghadap barat daya dan ekornya ke timur laut, sehingga sawa bagaikan diikat olehnya; pada hari Pabersihan ia diplaspas bersama kajang; dan menjelang pemberangkatan ke tunon (tempat pembakaran), ia dipanah oleh Ida Peranda yang memimpin upacara",
+          "sentence_id": 901859
+        }
+      ],
+      "DIGUNAKAN_SAAT": [
+        {
+          "value": "Palebon: menjelang dan sampai hari Pabersihan ia diletakkan berdampingan dengan jenazah di Bale Semanggen, pada hari Pabersihan diplaspas bersama kajang, dan menjelang pemberangkatan ke tunon dipanah oleh Ida Peranda yang memimpin upacara",
+          "sentence_id": 901860
+        }
+      ],
+      "DIPANAH_OLEH": [
+        {
+          "value": "Ida Peranda yang memimpin upacara, menjelang pemberangkatan ke tunon; artinya pikiran Peranda ikut menyertai perjalanan mendiang bersama naga ke alam lain",
+          "sentence_id": 901861
         }
       ],
       "DITUJUKAN_UNTUK": [
@@ -11885,7 +11972,7 @@
     "definition_source": "glossary",
     "broader": null,
     "attributes": {
-      "DILAKUKAN_OLEH": [
+      "LEBIH_SERING_DITEMPUH_OLEH": [
         {
           "value": "keluarga pendeta",
           "sentence_id": 1128
@@ -11951,7 +12038,26 @@
     "definition": "Nyiramang Layon (disebut juga Nyiramin atau Nyiraman) adalah upacara memandikan jenazah (layon), bersama Ngeringkes merupakan tahap kedua dari delapan tahapan pelaksanaan Ngaben. Urutannya: nedunan layon (menurunkan jenazah), Pabersihan Hidup, sembah bhakti keluarga, Pabersihan Mati (ngelelet), ngeringkes, lalu memunjung atau mesaji. Dua tahap terpenting Nyiramang Layon adalah penyucian jenazah, masing-masing dengan maknanya: pada Pabersihan Hidup yang meninggal dianggap masih hidup dan masih memiliki kesempatan terakhir sebagai orang yang masih hidup, sehingga ia diperlakukan seperti layaknya orang hidup; pada Pabersihan Mati ia dianggap benar-benar telah mati, dan keluarga berharap bila kelak ia numitis (lahir kembali), ia menjadi orang yang baik dan sempurna, melebihi semasa hidupnya. Upacara ini biasanya dilakukan di natah (halaman rumah) di atas pepaga atau asagan, dan seluruh alat upacaranya disebut eteh-eteh pabersihan atau panusangan.",
     "definition_source": "glossary (corpus; the meaning sentence added 2026-10-30 (the user: 'yes please' to fixing 'kenapa jenazah dimandikan sebelum dibakar?', which got 'Maaf, alasannya belum tercatat' above a dump of this card -- the card stated no meaning, its stage pabersihan hidup did): L3651 ('dalam Upacara Nyiramang Layon, ada dua tahap penting'), L3654 (Pabersihan Hidup: the dead still counted as living, a last chance as a living person, so treated as one), L3657 (Pabersihan Mati: truly dead; the family hopes that on 'numitis' they become good and perfect, more than in life). The Ulu-Teben / Suci-Leteh/Cemer line (L3662) is about etiquette and is left out)",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "memelihara badan wadag mendiang dengan baik walaupun sudah menjadi jenazah, dengan harapan bila kelak ia numitis akan menjadi orang yang lebih sempurna dari sebelumnya",
+          "sentence_id": 901856
+        }
+      ],
+      "DILAKUKAN_OLEH": [
+        {
+          "value": "keluarga bersama pemangku: kemaluan jenazah ditutup oleh anak tertua atau terkecil sesuai jenis kelamin almarhum, dan keramas dilakukan terlebih dahulu oleh anak tertua atau orang tua almarhum, lalu dilanjutkan oleh pemangku yang ditunjuk",
+          "sentence_id": 901873
+        }
+      ],
+      "MELIBATKAN": [
+        {
+          "value": "Krama Banjar dan sanak keluarga",
+          "sentence_id": 901872
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_009",
       "laporan_komp_036",
@@ -12145,7 +12251,14 @@
     "definition": "Pabersihan Hidup (pebersihan atau pembersihan hidup) adalah tahap kedua upacara Nyiramang Layon, sesudah nedunan layon, dan tahap pertama penyucian jenazah: jenazah dimandikan, dikeramas, disisir, dihias, dan diberi pakaian lengkap seperti orang yang masih hidup, karena pada tahap ini jenazah masih dianggap sebagai orang hidup; karena itu kuku jenazah tidak boleh dikerik pada tahap ini. Pabersihan Hidup memiliki makna bahwa yang meninggal itu dianggap masih hidup dan masih memiliki kesempatan terakhir sebagai orang yang masih hidup. Sesudahnya dilakukan sembah bhakti keluarga, lalu Pabersihan Mati (ngelelet). Secara umum, dalam budaya dan agama Hindu di Bali, pabersihan hidup adalah rangkaian ritual penyucian untuk membersihkan diri secara lahir (fisik) dan batin (niskala/spiritual) dari segala kotoran, energi negatif, serta pengaruh buruk yang disebut leteh.",
     "definition_source": "glossary (user (Balinese speaker), 2026-10-28, the user's own words for the general meaning, the closing sentence: 'Pebersihan (atau pembersihan) hidup dalam budaya dan agama Hindu di Bali adalah rangkaian ritual penyucian untuk membersihkan diri secara lahir (fisik) dan batin (niskala/spiritual) dari segala kotoran, energi negatif, serta pengaruh buruk yang disebut leteh' (opened with 'Secara umum,'). It is not the first sentence: the bot shows a term's first sentence alone in stage lists, and as the first, 'bagaimana cara memandikan jenazah' glossed the corpse-washing step as cleansing oneself from leteh (free 1,864 run, 2026-10-28). The Ngaben sentences before it are the corpus's (L2747-2760, L3033; the meaning in L3654's words, 'yang memiliki makna bahwa yang meninggal itu dianggap masih hidup, dan masih memiliki kesempatan terakhir sebagai orang yang masih hidup' -- 'apa makna pabersihan hidup' had said none is recorded). Edge: sid 901580 (BERTUJUAN_MEMBERSIHKAN_DARI leteh))",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DIAWALI_OLEH": [
+        {
+          "value": "orang yang dituakan -- yang telah melakukan pawintenan, atau yang lebih tua atau sebaya dengan yang meninggal -- yang diberi kesempatan terlebih dulu membersihkan kepala dan muka layon",
+          "sentence_id": 901874
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_274",
       "upacara_atiw_1292",
@@ -12226,7 +12339,14 @@
     "definition": "Sejenis rumput yang dimantrai oleh Ida Sang Sulinggih dan dimasukkan ke dalam periuk bersama sarana lain seperti Pripih Emas, Ulantaga, dan Recadana, sebagai salah satu bahan dalam pembuatan Tirtha Pangentas.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DIMASUKKAN_SETELAH": [
+        {
+          "value": "pramakusa, setelah dimantrai, dalam pembuatan Tirtha Pangentas; sesudahnya biji padi (jijih), pripih emas, ulantaga, kalpika, dan sarana lainnya dimasukkan",
+          "sentence_id": 901866
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_214",
       "upacara_atiw_1405",
@@ -13038,7 +13158,20 @@
     "definition": "Pangringkes (disebut juga Ngeringkes atau Upacara Pangringkesan) adalah upacara membungkus atau menggulung jenazah dengan kain putih dalam rangkaian Ngaben, dilaksanakan setelah Pabersihan Mati selesai. Bersama Nyiramin (memandikan jenazah), ngeringkes merupakan tahap kedua dari delapan tahapan pelaksanaan Ngaben. Ngeringkes juga merupakan tahap kelima upacara Nyiramang Layon, sesudah Pabersihan Mati.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DILAKUKAN_DENGAN": [
+        {
+          "value": "membentangkan tikar dan kain putih pangringkes di bawah jenazah, lalu meletakkan berbagai sarana simbolik pada tubuhnya -- antara lain sesisir pisang, sarana pada mata, alis, telinga, persendian, dan aurat, serta cincin permata di mulutnya -- sambil memercikkan tirtha pengeringkes; kain putih kemudian digulungkan ke tubuh, tepinya dari arah tangan kanan bagi laki-laki dan sebaliknya bagi perempuan, ujung-ujungnya disimpulkan, dan tubuh dililit benang atau pita putih; pembungkus luarnya tikar yang diikat tali bambu kira-kira tiap 15 cm, lalu ante (jeruji bilah bambu) disorongkan dan jenazah diikat dengan tali ktekung",
+          "sentence_id": 901857
+        }
+      ],
+      "MENGANDUNG_MAKNA": [
+        {
+          "value": "purusa dan pradana: kain dan tikarnya digulung dari arah kanan atau kiri sesuai jenis kelamin mendiang",
+          "sentence_id": 901854
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_009",
       "laporan_komp_554",
@@ -13382,12 +13515,19 @@
   {
     "id": "pecahan_besi_baja",
     "name": "pecahan besi baja",
-    "type": "ISTILAH_UMUM_RITUAL",
+    "type": "SARANA_RITUAL",
     "aliases": [],
     "definition": "Serpihan besi baja yang diletakkan pada gigi jenazah sebagai salah satu kelengkapan (eteh-eteh) dalam upacara memandikan dan menghias jenazah.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA_AGAR": [
+        {
+          "value": "gigi orang yang meninggal, bila kelak numitis, menjadi sangat kokoh dan kuat bagaikan besi baja",
+          "sentence_id": 901844
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_128",
       "upacara_atiw_1289"
@@ -14531,6 +14671,10 @@
         {
           "value": "turunnya purusa meresapi pradana material memperoleh imbas kesucian dari yang immaterial",
           "sentence_id": 2370
+        },
+        {
+          "value": "diresapkannya sinar suci Hyang Widhi: dalam Atma Wedana, suku tunggal berisi abu diarak mapradaksina hingga status dan kesucian abu di dalamnya meningkat dari bekas benda badan linggasarira menjadi mahabutha yang suci",
+          "sentence_id": 900326
         }
       ]
     },
@@ -14610,6 +14754,12 @@
         {
           "value": "sebelum dimasukkan ke dalam priuk",
           "sentence_id": 4266
+        }
+      ],
+      "DIMASUKKAN_SETELAH": [
+        {
+          "value": "periuk diisi Tirtha Gangga yang baru diturunkan dan sarana-sarananya dihidupkan dengan mantra; dalam pembuatan Tirtha Pangentas, pramakusa adalah sarana pertama yang dimasukkan ke periuk, setelah dimantrai, lalu disusul padang lepas",
+          "sentence_id": 901865
         }
       ]
     },
@@ -14812,7 +14962,14 @@
     "definition": "Lempengan emas tipis yang dimantrai dan digunakan sebagai salah satu pedagingan atau sarana upacara (bersama pripih perak, tembaga, dan cendana), lazim dimasukkan ke dalam sarana pembuatan Tirtha Pangentas.",
     "definition_source": "glossary",
     "broader": "pripih",
-    "attributes": {},
+    "attributes": {
+      "DIMASUKKAN_SETELAH": [
+        {
+          "value": "padang lepas, setelah dimantrai oleh Ida Sang Sulinggih, bersama biji padi (jijih), ulantaga, kalpika, dan sarana lainnya, dalam pembuatan Tirtha Pangentas",
+          "sentence_id": 901867
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_220",
       "upacara_atiw_1405",
@@ -17085,7 +17242,14 @@
     "definition": "Sesajen adalah istilah umum untuk persembahan atau sesaji yang dihaturkan kepada Ida Sang Hyang Widhi Wasa, para dewa, maupun leluhur dalam ritual Hindu Bali. Dalam upacara Ngaben, sesajen dipersembahkan kepada mendiang, meliputi antara lain nasi angkeb dan diuskamaligi; pada upacara untuk jenazah bayi, sesajen juga ditujukan kepada Ida Bhatara Kumara, yang diyakini mengasuh bayi.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BUKAN_HANYA_MERUPAKAN": [
+        {
+          "value": "simbol atau perlambang, tetapi diyakini memiliki daya magis-religius yang dimanfaatkan dalam upacara untuk mencapai sasaran yang dikehendaki; kuat tidaknya daya magis-religius ditentukan antara lain oleh benar tidaknya bentuknya, kemantapan hati tukang dan pendeta yang memujanya, dan terutama ketulusan hati umat yang beryadnya",
+          "sentence_id": 901852
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_295",
       "upacara_atiw_1060",
@@ -18843,6 +19007,12 @@
           "value": "gria ida sang sulinggih (kediaman pendeta) atau di rumah",
           "sentence_id": 4121
         }
+      ],
+      "DIBUAT_MELALUI": [
+        {
+          "value": "urutan berikut oleh Ida Sang Sulinggih: Ngarga Tirtha (menyucikan diri secara skala dan niskala lalu menurunkan Tirtha Gangga); memerciki alat-alat pembuatannya tiga kali dengan tirtha yang baru dibuat sambil mengucapkan mantra; mengisi periuk dengan Tirtha Gangga yang baru diturunkan; menghidupkan sarana-sarananya dengan serangkaian mantra; memasukkan pramakusa yang telah dimantrai ke dalam periuk, lalu padang lepas, dan sesudahnya biji padi (jijih), pripih emas, ulantaga, kalpika, dan sarana lainnya, masing-masing dimantrai lebih dulu; mengucapkan mantra Pralina; dan menutupnya dengan sikap tangan suci sebagai penutup",
+          "sentence_id": 901858
+        }
       ]
     },
     "mention_passages": [
@@ -19179,6 +19349,12 @@
           "value": "sarana pengantar agar roh orang yang meninggal mendapat tempat yang baik dan tidak mengalami kesengsaraan",
           "sentence_id": 900352
         }
+      ],
+      "DIPERCIKKAN_SAAT": [
+        {
+          "value": "puncak pengabenan, ketika jenazah sudah dibaringkan di tempat pembakaran: paling akhir, sesudah tirtha dari merajan, Tirtha Kawitan, dan tirtha dari griya, karena tirtha dipercikkan dari tingkatan paling rendah",
+          "sentence_id": 901864
+        }
       ]
     },
     "mention_passages": [
@@ -19197,10 +19373,22 @@
     "definition_source": "glossary",
     "broader": "tirtha",
     "attributes": {
+      "BERADA_PADA_TINGKATAN": [
+        {
+          "value": "kedua dari yang paling rendah dalam urutan pemercikan tirtha pada jenazah: sesudah tirtha dari merajan, sebelum tirtha dari griya dan tirtha Kahyangan Tiga",
+          "sentence_id": 901863
+        }
+      ],
       "BERFUNGSI_SEBAGAI": [
         {
           "value": "sarana memohon pamit kepada leluhur, agar kelak mendiang dapat ikut masuk ke alam kedewataan",
           "sentence_id": 900351
+        }
+      ],
+      "DIPERCIKKAN_SAAT": [
+        {
+          "value": "puncak pengabenan, ketika jenazah sudah dibaringkan di tempat pembakaran: sesudah Tirtha Pabersihan, Tirtha Penembak, dan Tirtha Pangentas, tirtha lainnya dipercikkan dari tingkatan paling rendah -- tirtha dari merajan, Tirtha Kawitan, tirtha dari griya, hingga tirtha Kahyangan Tiga",
+          "sentence_id": 901862
         }
       ]
     },
@@ -19639,7 +19827,7 @@
       "uang kepeng sebanyak 250 biji",
       "wang kepeng/bolong"
     ],
-    "definition": "Uang kepeng adalah uang logam tradisional Bali berlubang tengah, dipakai sebagai sarana ritual. Dalam Ngaben, uang kepeng merupakan simbol kekuatan Panca Datu, yaitu lambang kehidupan dan kekuatan lima dewa yang berada di kelima penjuru mata angin; uang kepeng yang asli diyakini mengandung lima unsur logam: perak, tembaga, emas, besi, dan logam campuran.",
+    "definition": "Uang kepeng (disebut juga pipis bolong atau wang kepeng) adalah uang logam tradisional Bali berlubang tengah, dipakai sebagai sarana ritual. Dalam Ngaben, uang kepeng merupakan simbol kekuatan Panca Datu, yaitu lambang kehidupan dan kekuatan lima dewa yang berada di kelima penjuru mata angin; uang kepeng yang asli diyakini mengandung lima unsur logam: perak, tembaga, emas, besi, dan logam campuran.",
     "definition_source": "glossary",
     "broader": null,
     "attributes": {},
@@ -19827,7 +20015,14 @@
     "definition": "Sarana upacara berupa berkas kertas bersurat khusus berisi bendera kecil bertangkai lidi (disebut juga walantaga), dipakai bersama kekitir khusus dalam pembuatan Tirtha Pangentas untuk upacara Ngaben.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DIMASUKKAN_SETELAH": [
+        {
+          "value": "padang lepas, setelah dimantrai oleh Ida Sang Sulinggih, bersama biji padi (jijih), pripih emas, kalpika, dan sarana lainnya, dalam pembuatan Tirtha Pangentas",
+          "sentence_id": 901869
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_230",
       "upacara_atiw_1091",
