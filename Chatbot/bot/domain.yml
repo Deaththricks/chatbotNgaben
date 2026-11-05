@@ -53,11 +53,11 @@ actions:
 
 responses:
   utter_sapa:
-    - text: "Om Swastiastu, Saya asisten istilah upacara Ngaben berbasis AI. Silakan tanyakan istilah, tahapan, atau makna yang ingin Anda ketahui."
+    - text: "Om Swastiastu, saya asisten AI untuk upacara adat Bali."
   utter_pamit:
     - text: "Om Santih Santih Santih, Semoga bermanfaat."
   utter_iamabot:
-    - text: "Saya bot glosarium istilah Ngaben. Jawaban saya disintesis langsung dari basis pengetahuan terminologi upacara Ngaben (GraphRAG)."
+    - text: "Saya asisten AI untuk upacara adat Bali."
   utter_digidaw:
     - text: "rawr rawr rawr..."
   utter_out_of_scope:

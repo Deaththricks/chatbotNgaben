@@ -4509,17 +4509,6 @@
 }
 
 {
-  "id": "f900143_ngangkid_ngaben",
-  "text": "ngangkid dilakukan menjelang ngaben.",
-  "subject_id": "ngangkid",
-  "predicate": "DILAKUKAN_MENJELANG",
-  "object_id": "ngaben",
-  "confidence": "HIGH",
-  "source_sentence": "[ngaben-merge-cleaned.txt baris 1717] ngangkid galih yang dilakukan sehari menjelang pangabenan",
-  "sentence_id": 900143
-}
-
-{
   "id": "f900144_ngangkid_asti_wedan",
   "text": "ngangkid adalah bagian dari asti wedana.",
   "subject_id": "ngangkid",
@@ -13123,7 +13112,7 @@
 
 {
   "id": "f900962_bale_pamuu_daun_enau",
-  "text": "variasi (pilihan lain menurut sumber): bale pamuunan memakai daun enau sebagai pengganti kertas.",
+  "text": "variasi (pilihan lain): bale pamuunan memakai daun enau sebagai pengganti kertas.",
   "subject_id": "bale_pamuunan",
   "predicate": "TERBUAT_DARI",
   "object_id": "daun_enau",
@@ -13131,7 +13120,7 @@
   "source_sentence": "[kurasi sarana tree 2026-10-01] L1705: Atau bisa pula dibuat dari janur enau yang sulit terbakar.",
   "sentence_id": 900962,
   "variant": {
-    "region": "pilihan lain menurut sumber",
+    "region": "pilihan lain",
     "op": "ganti",
     "replaces": "kertas",
     "source": "korpus L1705"
@@ -13322,7 +13311,7 @@
 
 {
   "id": "f900979_pangkon_perak",
-  "text": "variasi (pilihan lain menurut sumber): pangkon memakai perak sebagai pengganti tanah liat.",
+  "text": "variasi (pilihan lain): pangkon memakai perak sebagai pengganti tanah liat.",
   "subject_id": "pangkon",
   "predicate": "TERBUAT_DARI",
   "object_id": "perak",
@@ -13330,7 +13319,7 @@
   "source_sentence": "[kurasi sarana tree 2026-10-01] L1158: Adegan yaitu suatu bentuk alat upakara yang terbuat dari daun rontal, beralaskan bakul kecil atau pangkon (paso kecil agak tinggi dari tanah atau perak).",
   "sentence_id": 900979,
   "variant": {
-    "region": "pilihan lain menurut sumber",
+    "region": "pilihan lain",
     "op": "ganti",
     "replaces": "tanah liat",
     "source": "korpus L1158"
@@ -13664,7 +13653,7 @@
 
 {
   "id": "f901014_awak_awaka_kayu_majag",
-  "text": "variasi (pilihan lain menurut sumber): awak-awakaning sawa memakai kayu majagau sebagai pengganti kayu cendana.",
+  "text": "variasi (pilihan lain): awak-awakaning sawa memakai kayu majagau sebagai pengganti kayu cendana.",
   "subject_id": "awak_awakaning_sawa",
   "predicate": "TERBUAT_DARI",
   "object_id": "kayu_majagau",
@@ -13672,7 +13661,7 @@
   "source_sentence": "[kurasi sarana tree 2026-10-01] L1200: Untuk itu sebuah adegan yang sudah disisipkan sebuah awak-awakaning sawa yang terbuat dari sebilah papan cendana atau majagau tipis, diarak menuju setra tempat jasad mendiang ditanam atau bakar titip.",
   "sentence_id": 901014,
   "variant": {
-    "region": "pilihan lain menurut sumber",
+    "region": "pilihan lain",
     "op": "ganti",
     "replaces": "kayu cendana",
     "source": "korpus L1200"
@@ -13725,7 +13714,7 @@
 
 {
   "id": "f901019_suwah_peta_kayu",
-  "text": "variasi (pilihan lain menurut sumber): suwah petat memakai kayu sebagai pengganti bambu.",
+  "text": "variasi (pilihan lain): suwah petat memakai kayu sebagai pengganti bambu.",
   "subject_id": "suwah_petat",
   "predicate": "TERBUAT_DARI",
   "object_id": "kayu",
@@ -13733,7 +13722,7 @@
   "source_sentence": "[kurasi sarana tree 2026-10-01] L2556: Suwah Petat (Sisir dibuat dari bambu atau kayu), yang akan digunakan untuk menyisir jenazah pada permulaan upacara Nyiramang Layon.",
   "sentence_id": 901019,
   "variant": {
-    "region": "pilihan lain menurut sumber",
+    "region": "pilihan lain",
     "op": "ganti",
     "replaces": "bambu",
     "source": "korpus L2556"
@@ -22870,4 +22859,169 @@
   "confidence": "HIGH",
   "source_sentence": "Lempengan Waja (baja) atau Besi pada Gigi: ... giliran gigi jenazah ditaruhkan lempengan-lempengan baja atau besi. Lempengan baja ini biasanya diambilkan dari pecahan-pecahan penggorengan (penggorengan kuno) (corpus L3177)",
   "sentence_id": 901845
+}
+
+{
+  "id": "f901875_pengutanga_setra",
+  "text": "pengutangan dilakukan di setra.",
+  "subject_id": "pengutangan",
+  "predicate": "DILAKUKAN_DI",
+  "object_id": "setra",
+  "confidence": "HIGH",
+  "source_sentence": "Sampai pada hari yang telah ditentukan atau hari Pengutangan, dilaksanakan Pelebon, diawali dengan Upacara Ngaskara dan Caru Pengelambuk, selanjutnya jenazah dinaikkan ke usungan lalu berangkat ke Setra. (corpus L129)",
+  "sentence_id": 901875
+}
+
+{
+  "id": "f901876_palebon_setra",
+  "text": "palebon dilakukan di setra.",
+  "subject_id": "palebon",
+  "predicate": "DILAKUKAN_DI",
+  "object_id": "setra",
+  "confidence": "HIGH",
+  "source_sentence": "Sampai pada hari yang telah ditentukan atau hari Pengutangan, dilaksanakan Pelebon, diawali dengan Upacara Ngaskara dan Caru Pengelambuk, selanjutnya jenazah dinaikkan ke usungan lalu berangkat ke Setra. (corpus L129)",
+  "sentence_id": 901876
+}
+
+{
+  "id": "f901877_matur_piun_pura_dalem",
+  "text": "matur piuning dilakukan di pura dalem.",
+  "subject_id": "matur_piuning",
+  "predicate": "DILAKUKAN_DI",
+  "object_id": "pura_dalem",
+  "confidence": "HIGH",
+  "source_sentence": "Namun sebelumnya diadakan upacara Ngaturang Piuning ke Pura Dalem dan Prajapati dengan menyertakan Daksina Linggih sebagai perwujudan atma yang meninggal. (corpus L132)",
+  "sentence_id": 901877
+}
+
+{
+  "id": "f901884_pabersihan_sulinggih",
+  "text": "pabersihan dipimpin oleh sulinggih.",
+  "subject_id": "pabersihan",
+  "predicate": "DIPIMPIN_OLEH",
+  "object_id": "sulinggih",
+  "confidence": "HIGH",
+  "source_sentence": "Maka tidak heran, dibandingkan acara-acara lainnya, dalam acara inilah sang pendeta paling banyak mengambil peran. (corpus L1223) Selanjutnya, menjelang pemberangkatan ke tunon (tempat me\"nunu\"/membakar), Naga Banda sekali lagi dipanah oleh Ida Peranda yang muput karya. (corpus L1681)",
+  "sentence_id": 901884
+}
+
+{
+  "id": "f901894_upadesa_sulinggih",
+  "text": "upadesa dilakukan oleh sulinggih.",
+  "subject_id": "upadesa",
+  "predicate": "DILAKUKAN_OLEH",
+  "object_id": "sulinggih",
+  "confidence": "HIGH",
+  "source_sentence": "Berangkaian dengan acara Paguntingan, diteruskanlah dengan acara Upadesa. ... Dengan Pujastawa selaku pengantarnya, terutama dengan kemampuan jnyananya yang suci, sang pendeta pun memberikan Upadesa (\"pawisik wara warah\") atau amanat petunjuk jalan kepada atma mendiang, betapa seyogyanya dia membawa diri di alam lain itu. (corpus L1355)",
+  "sentence_id": 901894
+}
+
+{
+  "id": "f901899_atma_wedan_sulinggih",
+  "text": "atma wedana dipimpin oleh sulinggih.",
+  "subject_id": "atma_wedana",
+  "predicate": "DIPIMPIN_OLEH",
+  "object_id": "sulinggih",
+  "confidence": "HIGH",
+  "source_sentence": "Pawedan di samping sebagai tempat Ngajum serta mengutpeti sekah, juga terutama merupakan tempat sang sulinggih dalam memuja bagi segenap upacara Atma Wedana ini. (corpus L2160)",
+  "sentence_id": 901899
+}
+
+{
+  "id": "f901901_atma_wedan_payadnyan",
+  "text": "atma wedana dilakukan di payadnyan.",
+  "subject_id": "atma_wedana",
+  "predicate": "DILAKUKAN_DI",
+  "object_id": "payadnyan",
+  "confidence": "HIGH",
+  "source_sentence": "Kecuali untuk Ngangsen, demi kepentingan Atma Wedana jenis lainnya, orang sengaja mencari dan menggunakan satu areal yang khusus. (corpus L2049) Arena dengan isinya itu dinamakan Payadnyan, nama yang berasal dari nama satu bangunan pokok yang terdapat di dalamnya. (corpus L2049)",
+  "sentence_id": 901901
+}
+
+{
+  "id": "f901902_amariaran_sulinggih",
+  "text": "amariaran dilakukan oleh sulinggih.",
+  "subject_id": "amariaran",
+  "predicate": "DILAKUKAN_OLEH",
+  "object_id": "sulinggih",
+  "confidence": "HIGH",
+  "source_sentence": "Memang kurang lebih begitulah makna Pujastawa Pamralinan yang dirafalkan oleh sang pendeta pada dan untuk acara ini. (corpus L2245) Kongkretnya, dilakukanlah Puja Amariaran, yakni pencabutan nama, penghapusan pribadi dan \"keakuan\" Sang Pitara, hingga yang tinggal nanti adalah atma yang suci tanpa noda apapun juga, tanpa unsur aku, tanpa nama dan tanpa rupa. (corpus L2248)",
+  "sentence_id": 901902
+}
+
+{
+  "id": "f901904_pralina_sulinggih",
+  "text": "pralina dilakukan oleh sulinggih.",
+  "subject_id": "pralina",
+  "predicate": "DILAKUKAN_OLEH",
+  "object_id": "sulinggih",
+  "confidence": "HIGH",
+  "source_sentence": "Memang kurang lebih begitulah makna Pujastawa Pamralinan yang dirafalkan oleh sang pendeta pada dan untuk acara ini. (corpus L2245)",
+  "sentence_id": 901904
+}
+
+{
+  "id": "f901906_matur_piun_pemangku",
+  "text": "matur piuning dipimpin oleh pemangku.",
+  "subject_id": "matur_piuning",
+  "predicate": "DIPIMPIN_OLEH",
+  "object_id": "pemangku",
+  "confidence": "HIGH",
+  "source_sentence": "Acara ini cukup dipimpin oleh pemangku setempat. (corpus L147)",
+  "sentence_id": 901906
+}
+
+{
+  "id": "f901922_ngangkid_kuburan",
+  "text": "ngangkid dilakukan di kuburan.",
+  "subject_id": "ngangkid",
+  "predicate": "DILAKUKAN_DI",
+  "object_id": "kuburan",
+  "confidence": "HIGH",
+  "source_sentence": "Namun perlu diketengahkan, Ngangkid Galih itu yakni dalam hal Pangabenan sendiri dan dilakukan pada kuburan tempat mendiang ditanam dulu. (corpus L1726)",
+  "sentence_id": 901922
+}
+
+{
+  "id": "f901924_ngaben_sva_setra",
+  "text": "ngaben svasta dilakukan di setra.",
+  "subject_id": "ngaben_svasta",
+  "predicate": "DILAKUKAN_DI",
+  "object_id": "setra",
+  "confidence": "HIGH",
+  "source_sentence": "Terutama (hampir) segala upacaranya dilakukan sekaligus di setra. (corpus L1152)",
+  "sentence_id": 901924
+}
+
+{
+  "id": "f901931_mapendem_setra",
+  "text": "mapendem dilakukan di setra.",
+  "subject_id": "mapendem",
+  "predicate": "DILAKUKAN_DI",
+  "object_id": "setra",
+  "confidence": "HIGH",
+  "source_sentence": "Yaitu upacara ngaben yang mana orang yang diaben, jenazahnya terlebih dahulu ditanam di setra. (corpus L113)",
+  "sentence_id": 901931
+}
+
+{
+  "id": "f901943_upacara_ng_setra",
+  "text": "upacara ngaben titip dilakukan di setra.",
+  "subject_id": "upacara_ngaben_titip",
+  "predicate": "DILAKUKAN_DI",
+  "object_id": "setra",
+  "confidence": "HIGH",
+  "source_sentence": "Sawa yang dititipkan di kuburan atau setra akan digali setelah tiba saatnya upacara Ngaben. (corpus L934)",
+  "sentence_id": 901943
+}
+
+{
+  "id": "f901960_dewa_yadny_pura",
+  "text": "dewa yadnya dilakukan di pura.",
+  "subject_id": "dewa_yadnya",
+  "predicate": "DILAKUKAN_DI",
+  "object_id": "pura",
+  "confidence": "HIGH",
+  "source_sentence": "[web ayuthaya 2026-11-03] https://www.indonesia.travel/id-id/travel-ideas/culture/upacara-keagamaan-bali/ : \"Pura menjadi pusat pelaksanaan upacara Dewa Yadnya sebagai tempat pemujaan dan persembahyangan kepada Tuhan.\"",
+  "sentence_id": 901960
 }

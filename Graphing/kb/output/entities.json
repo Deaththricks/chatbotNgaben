@@ -27,6 +27,12 @@
     "definition_source": "glossary",
     "broader": null,
     "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "hasil Ngaben yang lahiriah (sekala) semata; secara niskala (batiniah) Ngaben memusnahkan jasad sawa sehalus mungkin hingga menjadi unsur Pancamahabutha, yang lebih halus dari abu",
+          "sentence_id": 901956
+        }
+      ],
       "DIHANYUTKAN_KE": [
         {
           "value": "sungai",
@@ -453,7 +459,14 @@
     "definition": "Amariaran (puja amariaran) adalah acara dalam atma wedana berupa pencabutan nama, penghapusan pribadi dan keakuan sang pitara, hingga yang tinggal hanya atma yang suci tanpa noda, tanpa nama, dan tanpa rupa; bersamaan dengan itu suksma sarira mendiang dikelupas. Sesudah amariaran dan pralina menyusul ngliwet.",
     "definition_source": "glossary (corpus L2248, L2266)",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "mencabut nama, menghapus pribadi dan keakuan Sang Pitara, hingga yang tinggal hanya atma yang suci tanpa noda, tanpa nama dan tanpa rupa; atma dipersilakan meninggalkan suksma sariranya, sehingga terbebas dari ikatan badannya yang berunsur materi",
+          "sentence_id": 901903
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_913",
       "upacara_atiw_1256",
@@ -486,7 +499,14 @@
     "definition": "Ambuh adalah sampo untuk mencuci rambut jenazah pada upacara Nyiramang Layon: di beberapa desa dibuat dari daun dapdap yang dihaluskan, di desa lain dipakai air daun kembang sepatu.",
     "definition_source": "glossary (corpus L196, L2803)",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "membersihkan rambut jenazah sebagai sampo, baik yang dibuat dari daun dapdap maupun dari air daun kembang sepatu",
+          "sentence_id": 902006
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_932",
       "upacara_atiw_1006",
@@ -504,7 +524,14 @@
     "definition": "Amrethi Karana adalah tahap keempat dalam Ngarga Tirtha, sesudah Pademi: Ida Sang Sulinggih mengucurkan Tirtha Amertha dalam dirinya sehingga sisa kekotoran musnah dan badannya mulai bersinar bagaikan matahari. Langkah ini disertai mantram Amrethi Karana; sisa kekotoran itu adalah abu dari pembakaran pada Dagdhi Karana. Ngarga Tirtha adalah penyucian diri sang sulinggih sebelum ia membuat Tirtha Pangentas.",
     "definition_source": "glossary (corpus L3794-3809 (canon audit 2026-10-28: the old card called it a purification stage of Atma Wedana that poured Tirtha Amertha into the pitara; its only corpus line, L3809, is step e of Ida Sang Sulinggih's own purification in ngarga tirtha before making Tirtha Pangentas))",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "mengucurkan Tirtha Amertha di dalam diri, sehingga abu kekotoran musnah dan badan mulai bersinar bagaikan matahari",
+          "sentence_id": 901936
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_044",
       "upacara_atiw_1414"
@@ -650,7 +677,14 @@
     "definition": "Kain penutup kemaluan jenazah (baga untuk perempuan, purus untuk laki-laki), termasuk salah satu eteh-eteh sawa yang disiapkan bersama kain-kain lain sebelum upacara Nyiramang Layon.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "agar kelak, ketika numitis, nafsu seksual mendiang dapat diredam dan dikendalikan, serta alat kelaminnya tumbuh dan berkembang sehat sehingga mampu menyambung keturunan",
+          "sentence_id": 901989
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_054",
       "upacara_atiw_1006",
@@ -703,7 +737,14 @@
     "definition": "Rangka atau ikatan dari bilah-bilah bambu (galar) yang dibuat berdasarkan hitungan Rumus Galar, digunakan untuk mengikat jenazah dan diikat dengan tali rotan (Tali Penyalin).",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "mengukuhkan jenazah yang telah dibungkus, sebagai langkah terakhir pangringkesan",
+          "sentence_id": 902007
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_043",
       "upacara_atiw_1079",
@@ -981,7 +1022,14 @@
     "definition": "Asti Wedana (atiwa-tiwa asti vedana) adalah jenis Ngaben berupa pembakaran tulang belulang jenazah yang sebelumnya telah dikubur, lalu digali kembali dari kuburan (ngangkid galih) sesuai aturan adat setempat. Tata pelaksanaannya dimulai dengan matur piuning ke Pura Dalem, lalu pembakaran, hingga nganyut (menghanyutkan abu), dan menjadi acuan bagi Ngaben Svasta.",
     "definition_source": "glossary",
     "broader": "ngaben",
-    "attributes": {},
+    "attributes": {
+      "DILAKUKAN_DI": [
+        {
+          "value": "kuburan (setra) tempat jenazah dulu ditanam, tempat tulang belulangnya digali kembali, dengan matur piuning lebih dahulu ke Pura Dalem",
+          "sentence_id": 901920
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_008",
       "laporan_komp_459",
@@ -1132,6 +1180,12 @@
     "definition_source": "glossary (2026-10-02: the sentence why it follows Ngaben (jiwa still berbadan halus / suksma sarira, still a pitra) from corpus L1125, L2073, L2169 (conersation.md Q58/Q71). 2026-10-07: 'Mamukur, Sekah Kurung, dan Ngangsen (Atma Wedana darurat atau titipan ...)' read as all three being the emergency kind (batch Q96); now only Ngangsen is, and the others use the Payadnyan arena, as corpus L2049 says ('Kecuali untuk Ngangsen, demi kepentingan Atma Wedana jenis lainnya, orang sengaja mencari ... satu areal yang khusus'). 2026-10-28 (canon audit): Amrethi Karana taken out of its stage list (L3809 is a step of the sulinggih's ngarga tirtha, not of Atma Wedana))",
     "broader": "pitra_yadnya",
     "attributes": {
+      "MELIBATKAN": [
+        {
+          "value": "segenap keluarga yang wajar memberikan sembah bakti kepada mendiang, mengiringi Saji Tarpana",
+          "sentence_id": 901900
+        }
+      ],
       "SEBUTAN_BERASAL_DARI": [
         {
           "value": "kata roras",
@@ -1348,7 +1402,14 @@
     "definition": "Semacam sabun atau mangir tradisional dari beras yang direndam dan digiling halus dicampur sedikit kunir, dioleskan pada tubuh atau dada jenazah saat memandikan jenazah.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "menggantikan sabun agar jenazah kelihatan bersih dan segar, dan agar kulitnya menjadi putih dan bersih sehingga kelak bila numitis kulitnya halus, putih, dan bersih",
+          "sentence_id": 902008
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_057",
       "upacara_atiw_1291",
@@ -1487,7 +1548,14 @@
     "definition": "Baem-warak adalah serbuk darah badak yang telah mengental, dicampurkan sekadarnya ke dalam bubur liwet.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "pengganti atau bernilai sebagai serum darah, yang mampu mengambil sari makanan yang halus; badak sendiri dianggap hewan yang suci",
+          "sentence_id": 901957
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_683",
       "upacara_atiw_1258"
@@ -2430,7 +2498,14 @@
     "definition": "Banten Teben adalah sebutan umum untuk sajen yang diletakkan di bagian bawah atau dekat lantai (teben), lazim dihaturkan dalam berbagai upacara Hindu Bali. Dalam upacara Ngaben, Banten Teben diletakkan dekat kaki jenazah, dihaturkan disertai sembah bhakti (muspa) segenap keluarga sebagai bagian dari Saji Tarpana.",
     "definition_source": "glossary",
     "broader": "banten",
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "menjadi oleh-oleh yang dibawa mendiang dalam perjalanannya ke alam lain, bagi para penghadang yang dijumpai di perjalanan, sehingga mendiang akrab dengan mereka dan diterima sebagai warga baru di alam roh",
+          "sentence_id": 902005
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_064",
       "upacara_atiw_1145",
@@ -2516,7 +2591,7 @@
     "name": "bayuhan",
     "type": "SARANA_RITUAL",
     "aliases": [],
-    "definition": "Bayuhan adalah salah satu banten sarana pembuatan tirta pangentas; isinya belum dirinci dalam sumber yang ada.",
+    "definition": "Bayuhan adalah salah satu banten sarana pembuatan tirta pangentas.",
     "definition_source": "glossary",
     "broader": null,
     "attributes": {},
@@ -2535,7 +2610,14 @@
     "definition": "Benang adalah bahan pintalan halus untuk mengikat. Dalam Ngaben, benang putih mengikat lekesan (gulungan daun sirih), tali benang mengikat kawangen jeriji, dan benang dalam gulungan (tukelan) termasuk isi banten penebusan.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DIGUNAKAN_UNTUK": [
+        {
+          "value": "mengikat permata mirah yang dimasukkan ke mulut jenazah, agar mudah diambil kembali setibanya di setra",
+          "sentence_id": 901953
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_725",
       "upacara_atiw_1006",
@@ -3077,7 +3159,14 @@
     "definition": "Bhuta Yadnya adalah salah satu dari Panca Yadnya (lima jenis persembahan suci Hindu Bali), yaitu persembahan kepada Bhuta Kala -- kekuatan unsur-unsur alam -- untuk menetralisir dan menyelaraskannya agar harmonis, bukan sekadar mengusir \"roh jahat\"; wujudnya antara lain caru dan segehan. Hari baik (dewasa) untuk Bhuta Yadnya, seperti sasih Kaenem dan Kapitu, berbeda dari hari baik untuk Pitra Yadnya seperti Ngaben.",
     "definition_source": "glossary",
     "broader": "panca_yadnya",
-    "attributes": {},
+    "attributes": {
+      "DIPIMPIN_OLEH": [
+        {
+          "value": "pemangku (pinandita) untuk caru tingkat kecil; caru yang lebih besar memerlukan izin atau petunjuk khusus dari pandita (sulinggih)",
+          "sentence_id": 901971
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_380",
       "upacara_atiw_1016",
@@ -3743,7 +3832,20 @@
     "definition": "Caru (mecaru) adalah upacara Bhuta Yadnya berupa persembahan kepada Bhuta Kala untuk menyelaraskan hubungan manusia dengan alam (bhuana agung dan bhuana alit) agar harmonis; dalam rangkaian pengabenan dilakukan antara lain Caru Pengelambuk sebelum upacara palebon.",
     "definition_source": "glossary (web: https://www.komangputra.com/jenis-jenis-upacara-bhuta-yadnya-caru.html/2 ; https://phdi.parisada.or.id/artikel.php?id=bhuta-yadnya)",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DILAKUKAN_DI": [
+        {
+          "value": "pekarangan rumah, merajan, serta merajan dadia sebagai pembersihan terakhir rangkaian pengabenan; caru ayam brumbun dihaturkan di natah",
+          "sentence_id": 901878
+        }
+      ],
+      "DIPIMPIN_OLEH": [
+        {
+          "value": "pemangku (pinandita) untuk caru tingkat kecil; caru yang lebih besar memerlukan izin atau petunjuk khusus dari pandita (sulinggih)",
+          "sentence_id": 901972
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_540",
       "upacara_atiw_1001",
@@ -3829,7 +3931,7 @@
     "name": "cecepan",
     "type": "SARANA_RITUAL",
     "aliases": [],
-    "definition": "Cecepan adalah perlengkapan yang dihaturkan pada upacara ngulapin; wujudnya belum diuraikan dalam sumber yang ada.",
+    "definition": "Cecepan adalah perlengkapan yang dihaturkan pada upacara ngulapin.",
     "definition_source": "glossary",
     "broader": null,
     "attributes": {},
@@ -4009,7 +4111,14 @@
     "definition": "Dagdhi Karana adalah tahap kedua dalam Ngarga Tirtha, sesudah Ngili Atma: Ida Sang Sulinggih membakar segala yang tidak suci dalam dirinya, yaitu noda, dosa, dan sifat-sifat jahat, dengan api yang berasal dari tujuh lapisan bumi, sehingga semuanya menjadi abu dan badannya menjadi suci; langkah ini disertai mantram Dagdhi Karana.",
     "definition_source": "glossary (corpus L3803, L3809 (the abu that Amrethi Karana washes away))",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "membakar segala yang tidak suci dalam diri -- noda, dosa dan sifat-sifat jahat -- hingga menjadi abu, sehingga badan menjadi suci",
+          "sentence_id": 901934
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_047",
       "upacara_atiw_1413"
@@ -4476,7 +4585,14 @@
     "definition": "Don tunjung (daun teratai) ditambahkan pada angkeb sarira penutup kelamin jenazah perempuan saat Pabersihan Mati.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "harapan agar kelamin mendiang perempuan kelak sehat dan nafsunya terkendali",
+          "sentence_id": 901990
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_581",
       "upacara_atiw_1029",
@@ -4495,7 +4611,14 @@
     "definition": "Don tuwung polo (daun terong bola, daunnya berduri banyak) ditambahkan pada angkeb sarira penutup kelamin jenazah laki-laki saat Pabersihan Mati; kini jarang dipakai karena tanamannya sukar didapat.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "harapan agar kelamin mendiang laki-laki kelak sehat dan nafsunya terkendali",
+          "sentence_id": 901991
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_580",
       "upacara_atiw_1011",
@@ -4923,10 +5046,17 @@
     "name": "dewasa ngaben",
     "type": "KONSEP_HUKUM_ADAT",
     "aliases": [],
-    "definition": "Dewasa ngaben adalah hari baik untuk melaksanakan Ngaben. Berdasarkan sasih, yang baik untuk Pitra Yadnya, khususnya Ngaben, adalah sasih kasa, karo, dan katiga, dengan yang utama sasih karo; sasih kaenem dan kapitu tergolong dewasa madya; pada sasih kadasa tidak boleh membakar jenazah, tetapi sangat baik untuk Mamukur atau nyekah; sasih dyestha dan asada dianggap sasih mati; sasih paruwak tahuk dan malamasa dihindari. Berdasarkan wuku dan wewaran, wuku ingkel wong dan was penganten tidak boleh dijadikan patokan, dan hari gotongan, semut sedulur, pasah, purwani, purnama, tilem, serta gagak anungsang pati tidak boleh dipakai; hari yang dibolehkan antara lain buda dan wraspati wuku landep, anggara dan saniscara wuku ukir, buda dan sukra wuku kuningan, serta sukra wuku kelawu, asal tidak bertepatan dengan kekeran desa atau kekeran jagat. Bila Ngaben dilaksanakan dalam tujuh hari sejak kematian, tidak perlu memilih dewasa, tetapi tetap menghindari saniscara kliwon, buda kliwon, anggara kliwon, buda wage, purwani, purnama, tilem, dan patirtan di kahyangan desa atau merajan (piagam campuhan 1961).",
-    "definition_source": "glossary",
+    "definition": "Dewasa ngaben adalah hari baik untuk melaksanakan Ngaben, yang dipilih menurut sasih serta wuku dan wewaran. Hari baik untuk Ngaben dimohonkan kepada sulinggih atau rohaniawan yang dianggap berhak, lalu disetujui prajuru desa adat. Berdasarkan sasih, yang baik untuk Pitra Yadnya, khususnya Ngaben, adalah sasih kasa, karo, dan katiga, dengan yang utama sasih karo; sasih kaenem dan kapitu tergolong dewasa madya; pada sasih kadasa tidak boleh membakar jenazah, tetapi sangat baik untuk Mamukur atau nyekah; sasih dyestha dan asada dianggap sasih mati; sasih paruwak tahuk dan malamasa dihindari. Berdasarkan wuku dan wewaran, wuku ingkel wong dan was penganten tidak boleh dijadikan patokan, dan hari gotongan, semut sedulur, pasah, purwani, purnama, tilem, serta gagak anungsang pati tidak boleh dipakai; hari yang dibolehkan antara lain buda dan wraspati wuku landep, anggara dan saniscara wuku ukir, buda dan sukra wuku kuningan, serta sukra wuku kelawu, asal tidak bertepatan dengan kekeran desa atau kekeran jagat. Bila Ngaben dilaksanakan dalam tujuh hari sejak kematian, tidak perlu memilih dewasa, tetapi tetap menghindari saniscara kliwon, buda kliwon, anggara kliwon, buda wage, purwani, purnama, tilem, dan patirtan di kahyangan desa atau merajan (piagam campuhan 1961).",
+    "definition_source": "glossary (corpus. AYUTHAYA repair pass 2026-11-04 (Qwen once glossed it 'perhitungan astrologi Hindu'): 'yang dipilih menurut sasih serta wuku dan wewaran' sums up the card's own sasih / wuku / wewaran rules; 'Hari baik untuk Ngaben dimohonkan kepada sulinggih atau rohaniawan yang dianggap berhak, lalu disetujui prajuru desa adat' is corpus L937 ('dewasa ayu (hari baik) harus tetap dicari dari seorang sulinggih atau rohaniawan yang dianggap berhak, serta disetujui pula oleh prajuru adat') and L2710 (the dewasa for Nyiramang Layon and Pengutangan comes from the sulinggih, then the Jro Bendesa / Kelian Adat's approval))",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DIMOHON_DARI": [
+        {
+          "value": "sulinggih atau rohaniawan yang dianggap berhak, lalu disetujui prajuru desa adat",
+          "sentence_id": 902011
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_604",
       "upacara_atiw_1021"
@@ -5492,7 +5622,7 @@
     "name": "genjer-genjer",
     "type": "SARANA_RITUAL",
     "aliases": [],
-    "definition": "Genjer-genjer termasuk eteh-eteh upacara nganget don bingin pada atma wedana; wujudnya belum diuraikan dalam sumber yang ada.",
+    "definition": "Genjer-genjer termasuk eteh-eteh upacara nganget don bingin pada atma wedana.",
     "definition_source": "glossary",
     "broader": null,
     "attributes": {},
@@ -5971,7 +6101,14 @@
     "definition": "Iber-iber adalah dua atau tiga ekor anak ayam atau burung perkutut dalam sebuah keranjang kecil yang semula digantung di bawah balai-balai bade, lalu dilepas hingga terbang saat bade tiba di tempat pembakaran. Namanya berakar dari kata iber (terbang). Melepas satwa yang disayangi itu mengingatkan mendiang bahwa yang dikasihinya hanyalah benda duniawi yang tak bernilai bagi kehidupan di alam lain, sehingga kasih sayangnya pun harus dilepaskan dengan tulus.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "peringatan bagi mendiang bahwa satwa yang dikasihinya hanyalah benda duniawi rendah, pemuas nafsu yang tak bernilai bagi kehidupan di alam lain: kasih sayang kepada satwa kesayangannya hendaklah dilepaskan dengan tulus, termasuk cinta kasih palsu yang mengikat diri dengan dunia",
+          "sentence_id": 901992
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_781",
       "upacara_atiw_1203",
@@ -6139,6 +6276,12 @@
     "definition_source": "glossary",
     "broader": null,
     "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "agar badan kasar (stula sarira) maupun suksma sarira (roh) mendiang tetap utuh, supaya kelak bila numitis kembali keduanya masih dalam satu kesatuan",
+          "sentence_id": 902001
+        }
+      ],
       "DIPASANG_PADA": [
         {
           "value": "ibu jari tangan dan kaki",
@@ -6265,7 +6408,7 @@
     "name": "jebugarum",
     "type": "SARANA_RITUAL",
     "aliases": [],
-    "definition": "Jebugarum adalah salah satu bahan anget-angetan, parem yang ditempelkan pada hulu hati jenazah; wujudnya belum diuraikan dalam sumber yang ada.",
+    "definition": "Jebugarum adalah salah satu bahan anget-angetan, parem yang ditempelkan pada hulu hati jenazah.",
     "definition_source": "glossary",
     "broader": null,
     "attributes": {},
@@ -6836,7 +6979,14 @@
     "definition": "Kain adalah lembaran tenunan. Dalam Ngaben, kain adalah salah satu bahan pembuat Bade dan Lembu.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DIGUNAKAN_UNTUK": [
+        {
+          "value": "mengganjal dagu jenazah, sebagai buntelan kain di bagian leher, agar rahangnya tidak bergerak dan mulutnya tidak ternganga",
+          "sentence_id": 901949
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_009",
       "laporan_komp_710",
@@ -7252,7 +7402,7 @@
     "name": "kaklentingan",
     "type": "SARANA_RITUAL",
     "aliases": [],
-    "definition": "Kaklentingan adalah banten yang dihaturkan di hadapan puspalingga pada upacara penyekahan (atma wedana), juga sebagai tambahan bila sekah lebih dari satu; isinya belum dirinci dalam sumber yang ada.",
+    "definition": "Kaklentingan adalah banten yang dihaturkan di hadapan puspalingga pada upacara penyekahan (atma wedana), juga sebagai tambahan bila sekah lebih dari satu.",
     "definition_source": "glossary",
     "broader": null,
     "attributes": {},
@@ -7494,7 +7644,14 @@
     "definition": "Kapas adalah serat putih dari buah tanaman kapas. Dalam Ngaben, kapas adalah salah satu bahan pembuat Bade dan Lembu.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DIGUNAKAN_UNTUK": [
+        {
+          "value": "menutup telinga dan hidung jenazah, agar tidak kemasukan binatang kecil",
+          "sentence_id": 901948
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_712",
       "upacara_atiw_1005",
@@ -7527,7 +7684,7 @@
     "name": "karangan",
     "type": "SARANA_RITUAL",
     "aliases": [],
-    "definition": "Karangan adalah salah satu banten sarana pembuatan tirta pangentas; isinya belum dirinci dalam sumber yang ada.",
+    "definition": "Karangan adalah salah satu banten sarana pembuatan tirta pangentas.",
     "definition_source": "glossary",
     "broader": null,
     "attributes": {},
@@ -7546,7 +7703,14 @@
     "definition": "Karawista (karowista, sirowista) adalah simpul yang dibuat dari empat helai daun alang-alang. Sang pendeta melekatkannya pada setiap alat upakara, terutama adegan, sebagai ciri telah disangaskara; karawista juga termasuk sarana pembuatan tirta pangentas.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "ciri bahwa alat upakara yang dilekatinya, terutama adegan, telah disangaskara oleh sang pendeta",
+          "sentence_id": 901993
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_609",
       "upacara_atiw_1141"
@@ -8261,7 +8425,14 @@
     "definition": "Ketipat bantal adalah ketupat dan kue ketan yang dibungkus janur; ia menjadi banten terpokok upacara nyegara gunung, sehingga upacara itu dijuluki ngaturang ketipat bantal.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "dua unsur: ketupat, yang pipih persegi empat, adalah manifestasi yoni, perlambang pradana (wanita), sedangkan bantal (kue ketan yang dibungkus janur), yang bulat panjang, mirip lingga, lambang unsur purusa (laki-laki)",
+          "sentence_id": 902002
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_620",
       "upacara_atiw_1264"
@@ -8342,7 +8513,7 @@
     "name": "kikir",
     "type": "SARANA_RITUAL",
     "aliases": [],
-    "definition": "Kikir adalah alat pengikir/pengasah (rasp/file) yang secara normal dipakai dalam rangkaian upacara Potong Gigi simbolis pasca-kematian pada jenazah -- digantikan oleh kuncup teratai bila bibir jenazah terkatup rapat sehingga kikir tak dapat dipakai langsung.",
+    "definition": "Kikir adalah alat pengikir/pengasah (rasp/file) gigi pada upacara Potong Gigi bagi orang yang masih hidup. Pada potong gigi bagi jenazah, kikir tidak boleh dipakai dan diganti dengan kuncup teratai.",
     "definition_source": "glossary",
     "broader": null,
     "attributes": {},
@@ -8672,7 +8843,14 @@
     "definition": "Kue ketan adalah salah satu isi ketipat bantal: ketupat dan kue ketan yang dibungkus janur.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "unsur purusa (laki-laki): pada ketipat bantal, kue ketan yang dibungkus janur (bantal) berbentuk bulat panjang, mirip lingga, sedangkan ketupatnya perlambang pradana (wanita)",
+          "sentence_id": 902003
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_724",
       "upacara_atiw_1264"
@@ -8787,10 +8965,17 @@
     "name": "kuncup teratai",
     "type": "SARANA_RITUAL",
     "aliases": [],
-    "definition": "Kuncup teratai (bunga teratai yang belum mekar) adalah sarana yang digosokkan pada bibir jenazah sebagai pengganti kikir, dipakai dalam rangkaian upacara Potong Gigi simbolis pasca-kematian bila bibir jenazah terkatup rapat.",
+    "definition": "Kuncup teratai (bunga teratai yang belum mekar) adalah sarana pengganti kikir pada upacara Potong Gigi simbolis bagi jenazah: kuncup teratai digosokkan secara simbolis pada gigi jenazah, atau pada bibir saja bila bibir jenazah terkatup.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "bunga tunjung (teratai) adalah linggih Ida Sanghyang Widhi, Sang Pencipta, Pemelihara dan Pelebur, sehingga potong gigi pada jenazah yang memakai kuncup teratai sebagai pengganti kikir terlaksana melalui kuasa Tuhan",
+          "sentence_id": 901980
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_406",
       "upacara_atiw_1329"
@@ -9263,7 +9448,14 @@
     "definition": "Lis bale gading adalah rangkaian sarana ritual yang terdiri dari berbagai unsur seperti sasap, rangkadan, sorohan kecil, daksina, tipat, raka-raka, padma, bersihan payasan, benang tatebus, sampian pusung, sanggah urip, gelar sanga, sorohan, lis amuan-amuan, dan coblong.",
     "definition_source": "glossary",
     "broader": "lis",
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "pembersihan jenazah yang dipercikinya, karena jenazah akan bersiap melaksanakan upacara persembahyangan",
+          "sentence_id": 901994
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_264",
       "upacara_atiw_1031",
@@ -9614,7 +9806,20 @@
     "definition": "Madiksa (disebut juga Mawinten) adalah upacara pentahbisan/penyucian yang menjadikan seorang rohaniwan Hindu Bali sah menyandang gelar Pandita/Sulinggih, sehingga berwenang memuja Ida Sang Hyang Widhi Wasa, membuat tirtha (air suci), dan memimpin upacara Panca Yadnya termasuk Ngaben.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "melepaskan ikatan duniawi calon dan menjadikannya sulinggih, pemuka agama bagi umat Hindu Bali",
+          "sentence_id": 901966
+        }
+      ],
+      "DIPIMPIN_OLEH": [
+        {
+          "value": "tiga guru suci yang menuntun calon sulinggih, yang juga memberinya bekal dan nama baru",
+          "sentence_id": 901965
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_382",
       "upacara_atiw_1142",
@@ -9737,7 +9942,7 @@
     "name": "mahabharata",
     "type": "NASKAH_SUCI",
     "aliases": [],
-    "definition": "Mahabharata adalah wiracarita (itihasa) Hindu tentang perang keluarga Pandawa dan Korawa; dalam sumber Ngaben, kisah Rsi Bisma dan Arjuna dari Bisma Parwa menjadi dasar filosofis Tirtha Penembak.",
+    "definition": "Mahabharata adalah wiracarita (itihasa) Hindu tentang perang keluarga Pandawa dan Korawa; dalam Ngaben, kisah Rsi Bisma dan Arjuna dari Bisma Parwa menjadi dasar filosofis Tirtha Penembak.",
     "definition_source": "glossary (web: https://tirto.id/urutan-pandawa-lima-arti-nama-serta-karakter-watak-sifat-gw9l)",
     "broader": null,
     "attributes": {},
@@ -9812,6 +10017,12 @@
     "definition_source": "glossary",
     "broader": null,
     "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "agar kelak bila mendiang numitis kembali, ia memiliki pendengaran yang tajam dan peka serta dapat menyerap setiap pembicaraan, perkataan, dan nasihat yang baik, bagaikan sarang lebah yang menyimpan madu yang manis",
+          "sentence_id": 902004
+        }
+      ],
       "DILETAKKAN_DI": [
         {
           "value": "kedua lubang telinga jenazah saat upacara ngelelet",
@@ -9882,6 +10093,24 @@
         {
           "value": "putru",
           "sentence_id": 1850
+        }
+      ],
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "memberi petunjuk, nasihat dan pengarahan, baik kepada pitra yang diaben maupun kepada orang yang melakukan Ngaben, dengan membaca lontar tentang perjalanan atma ke alam lain (lontar Putru) atau salah satu parwa Mahabharata",
+          "sentence_id": 901889
+        }
+      ],
+      "DILAKUKAN_DI": [
+        {
+          "value": "tempat khusus yang disediakan, biasanya di sebelah balai pemujaan Ida Sang Sulinggih",
+          "sentence_id": 901888
+        }
+      ],
+      "DILAKUKAN_OLEH": [
+        {
+          "value": "satu atau dua orang pembaca lontar, bukan oleh sang pendeta",
+          "sentence_id": 901887
         }
       ]
     },
@@ -10039,10 +10268,29 @@
     "name": "manusa yadnya",
     "type": "RITUAL",
     "aliases": [],
-    "definition": "Manusa Yadnya adalah salah satu dari Panca Yadnya, yaitu yadnya (persembahan suci) untuk manusia, seperti upacara potong gigi (mepandes) dan upacara siklus hidup lainnya; menurut sumber Ngaben, sasih Kalima baik untuk Dewa dan Manusa Yadnya.",
+    "definition": "Manusa Yadnya adalah salah satu dari Panca Yadnya, yaitu yadnya (persembahan suci) untuk manusia, seperti upacara potong gigi (mepandes) dan upacara siklus hidup lainnya; sasih Kalima baik untuk Dewa dan Manusa Yadnya.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "memelihara hidup dan membersihkan lahir batin manusia, sejak terwujudnya jasmani di dalam kandungan sampai akhir hidupnya",
+          "sentence_id": 901970
+        }
+      ],
+      "DILAKUKAN_DI": [
+        {
+          "value": "lingkungan rumah keluarga, untuk upacara siklus hidup seperti potong gigi",
+          "sentence_id": 901961
+        }
+      ],
+      "MELIBATKAN": [
+        {
+          "value": "keluarga, bersama pemangku atau sulinggih sesuai kebutuhan ritual",
+          "sentence_id": 901962
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_514",
       "upacara_atiw_1017",
@@ -10199,7 +10447,14 @@
     "definition": "Masesalin adalah upacara pada malam hari menjelang Pabersihan, ketika segenap pangringkes sawa, baik sawa sungguhan maupun lambang, diperbarui seluruhnya; pada saat ini sebuah bungkusan kecil berisi Panca Datu disisipkan ke mulut sawa.",
     "definition_source": "glossary (corpus L1226, L1235)",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DILAKUKAN_DI": [
+        {
+          "value": "tempat sawa dibaringkan di atas tumpang salu yang dikurung paplengkungan; pada malam yang sama bahan bekas pangringkes dibawa ke setra dan dibakar",
+          "sentence_id": 901892
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_903",
       "upacara_atiw_1125",
@@ -10265,7 +10520,14 @@
     "definition": "Matur piuning adalah tindakan menghaturkan piuning, yaitu permakluman atau pemberitahuan formal kepada sosok niskala (seperti Sedahan Setra atau Ida Bhatara di Pura Dalem) sebelum penguburan atau pembakaran jenazah -- misalnya Tegteg yang diiring ke Pura Dalem untuk matur piuning dan memohon atma yang akan diaben; menjadi tahap awal Asti Wedana dan juga dilakukan pada Ngelungah dan Ngulapin.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "memberitahukan secara resmi dan memohon atma yang akan diaben, dengan tegteg diiring ke Pura Dalem",
+          "sentence_id": 901907
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_390",
       "upacara_atiw_1037",
@@ -10315,7 +10577,26 @@
     "definition": "Memunjung (mesaji) adalah tahap keenam upacara Nyiramang Layon, yaitu menghaturkan punjung atau sesaji kepada roh mendiang; kain rantasan, pakaian pengganti untuk roh, ditaruh dalam acara ini.",
     "definition_source": "glossary (corpus L2651, L2662, L3030)",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "menjamu atau memberi makan roh orang yang baru meninggal, yang dianggap masih berada di dekat jenazahnya",
+          "sentence_id": 901910
+        }
+      ],
+      "DILAKUKAN_DI": [
+        {
+          "value": "tempat jenazah disemayamkan (balai-balai persemayaman); di beberapa tempat dilakukan ketika jenazah masih di atas pepaga atau asagan",
+          "sentence_id": 901909
+        }
+      ],
+      "DILAKUKAN_OLEH": [
+        {
+          "value": "keluarga orang yang meninggal",
+          "sentence_id": 901908
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_904",
       "upacara_atiw_1302",
@@ -10656,7 +10937,20 @@
     "definition": "Mirah adalah batu permata, salah satu sarana pembuatan Tirtha Pangentas dan bagian dari pedagingannya bersama pripih emas, pripih perak, dan pripih tembaga.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "harapan agar mendiang bila kelak numitis menjadi orang yang masyhur dan terpandang, bagaikan permata mirah yang selalu dipuji karena keindahannya (permata mirah dimasukkan ke mulut jenazah)",
+          "sentence_id": 901946
+        }
+      ],
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "meredam bau busuk jenazah, karena permata mirah yang asli diyakini dapat menghilangkan bau busuk",
+          "sentence_id": 901947
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_595",
       "upacara_atiw_1244",
@@ -10697,7 +10991,14 @@
     "definition": "Mlaspas Kajang adalah upacara penyucian/pentasbihan (mlaspas) atas Kajang (kain berisi aksara suci pembungkus jenazah) sebelum digunakan. Dilaksanakan bersama Manah Tirtha Ening, sebelum Upacara Ngaskara yang mengawali rangkaian Pelebon/Pabersihan.",
     "definition_source": "glossary",
     "broader": "mlaspas",
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "menyucikan kajang beserta alat-alat upakara seperti angenan, pisang jati, panguryagan, damar kurung dan adegan, sehingga hidup dan suci secara religius serta siap dipakai; kajang lalu diletakkan di atas paplengkungan jenazah sebagai kain kafan teratas",
+          "sentence_id": 901898
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_394",
       "upacara_atiw_1132"
@@ -10862,6 +11163,12 @@
     "definition_source": "glossary",
     "broader": null,
     "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "membangunkan almarhum seperti membangunkan orang yang sedang tidur, dengan memanggil namanya dan berkata lemah lembut, serta memberitahukan bahwa ia akan segera dimandikan",
+          "sentence_id": 901911
+        }
+      ],
       "DILAKUKAN_DENGAN": [
         {
           "value": "memanggil nama almarhum dan mengucapkan kata-kata lemah lembut",
@@ -10979,7 +11286,20 @@
     "definition": "Nedunan layon (menurunkan jenazah) adalah tahap pertama dalam urutan upacara Nyiramang Layon.",
     "definition_source": "glossary (corpus L2651, L2657)",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "kaki jenazah dikeluarkan lebih dulu, sehingga kaki di muka dan kepala di belakang: jenazah dianggap berjalan dengan kakinya, bukan dengan kepalanya",
+          "sentence_id": 901981
+        }
+      ],
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "menurunkan jenazah dari balai-balai tempat jenazah disemayamkan ke pepaga atau asagan di halaman rumah, tempat jenazah dimandikan",
+          "sentence_id": 901959
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_897",
       "upacara_atiw_1301"
@@ -11050,6 +11370,12 @@
         {
           "value": "siklus kematian",
           "sentence_id": 4
+        }
+      ],
+      "MELIBATKAN": [
+        {
+          "value": "yajamana, yaitu keluarga yang punya upacara, bersama tukang-tukang yang membantu dan sulinggih (seperti pada setiap yadnya, kesucian hati ketiga pihak menentukan berhasilnya yadnya); krama banjar, yang ikut membersihkan jenazah pada Nyiramang Layon dan mengusung bade ke setra; undagi, yang menggarap bade atau wadah dan lembu serta melakukan upacara mlaspas bade dan sarana pangabenan hasil garapannya; prajuru desa adat, yang menyetujui dewasa (hari baik) Nyiramang Layon dan Pengutangan dari sulinggih dan hadir pada Penebusan mewakili masyarakat umum; serta pemangku, misalnya pada matur piuning ke Pura Dalem dan saat memanah air untuk tirtha ening",
+          "sentence_id": 901984
         }
       ],
       "MENJAGA": [
@@ -11221,6 +11547,12 @@
     "definition_source": "glossary",
     "broader": "ngaben",
     "attributes": {
+      "DILAKUKAN_OLEH": [
+        {
+          "value": "banjar, desa, atau kelompok dadia (keluarga besar), dengan biaya yang ditanggung bersama",
+          "sentence_id": 901925
+        }
+      ],
       "MEMUNGKINKAN": [
         {
           "value": "Ngaben berstandar agak tinggi ditempuh dengan biaya ringan, karena biayanya ditanggung bersama",
@@ -11251,7 +11583,14 @@
     "definition": "Ngaben Numandang Mantri (disebut juga Ngelanus) adalah Ngaben yang upacara lanjutannya digelar tanpa jeda waktu: begitu pembakaran jenazah selesai dan nganyut dilakukan, seketika itu dilanjutkan mapegat mangening-ngening, mecaru, ngerorasin, nyepuh, penyekahan, ngajum sekah, pralina, dan ngadegan puspalingga, lalu diakhiri nganyut ke segara. Cara ini ditempuh untuk menghemat dana dan waktu penyelenggara.",
     "definition_source": "glossary",
     "broader": "ngaben",
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "menghemat dana dan waktu para penyelenggara, dengan melanjutkan upacara tanpa jeda waktu sesudah pembakaran",
+          "sentence_id": 901927
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_018",
       "laporan_komp_559",
@@ -11348,6 +11687,18 @@
           "value": "upacara pernyataan parama suksmaning idep",
           "sentence_id": 2969
         }
+      ],
+      "DILAKUKAN_DI": [
+        {
+          "value": "Pamrajan Sang Sulinggih serta pura yang dituju, sekaligus dengan Nyegara Gunung",
+          "sentence_id": 901881
+        }
+      ],
+      "MELIBATKAN": [
+        {
+          "value": "keluarga atau banjar sebagai pihak yang beryadnya, bersama Bhatara Bhatari yang semula diupacarai Patileman, yang ikut disertakan dengan Daksina Tapakan sebagai simbolnya",
+          "sentence_id": 901882
+        }
       ]
     },
     "mention_passages": [
@@ -11386,7 +11737,14 @@
     "definition": "Ngalukat adalah penyucian (pembersihan) tingkat awal dengan Tirtha Panglukatan, dilakukan pada banten, adegan, dan sarana upacara lainnya sebelum diupacarai lebih lanjut.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "membersihkan (menyucikan) tingkat awal banten, adegan, dan sarana upacara lainnya dengan Tirtha Panglukatan",
+          "sentence_id": 901942
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_474",
       "upacara_atiw_1394"
@@ -11422,7 +11780,26 @@
     "definition": "Ngangkid galih (\"mengangkat tulang\") adalah kegiatan membongkar kuburan lalu mengangkat tulang-belulang mendiang yang akan diaben, dilakukan sehari menjelang pengabenan bila mendiang sebelumnya telah melalui upacara tanam titip; kegiatan ini hampir hanya merupakan kerja fisik.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "mengangkat tulang belulang mendiang yang telah ditanam titip agar dapat diaben; kegiatannya hampir hanya kegiatan kerja semata, tanpa makna keupacaraan",
+          "sentence_id": 901923
+        }
+      ],
+      "DILAKUKAN_MENJELANG": [
+        {
+          "value": "pangabenan, sehari sebelumnya, hanya bila mendiang yang diaben telah melalui upacara tanam titip",
+          "sentence_id": 900143
+        }
+      ],
+      "DIPIMPIN_OLEH": [
+        {
+          "value": "pinandita (pemangku), pandita, atau sulinggih; para keturunannya bergantian memegang ujung benang pengikat uang kepeng sebagai ungkapan bahwa semua keluarga siap melaksanakan upacara",
+          "sentence_id": 901921
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_475",
       "upacara_atiw_1186",
@@ -11508,7 +11885,14 @@
     "definition": "Ngarga tirtha adalah pemujaan Ida Sang Sulinggih untuk membuat tirtha dengan menurunkan Tirtha Gangga. Sang sulinggih mula-mula membersihkan diri secara sekala (jasmani) dan niskala (rohani), dimulai dengan berkumur, lalu berturut-turut melakukan delapan tahap, masing-masing dengan mantramnya: Ngili Atma, Dagdhi Karana, Pademi, Amrethi Karana, Siwi Karana, Udhakanjali, Nuntun Sanghyang Saptongkara Atma, dan Ngastawa Gangga. Tirtha yang dihasilkannya dipakai untuk penyucian dan pembersihan; dalam Ngaben, sesudah ngarga tirtha sang sulinggih menyucikan sarana-sarana pembuatan Tirtha Pangentas dengan tirtha itu, lalu membuat Tirtha Pangentas.",
     "definition_source": "glossary (corpus L3794, L3797-3821, L3824 (canon audit 2026-10-28; 2026-10-29 its eight named steps listed in the corpus order -- the corpus letters them b-i after the self-cleansing of step a, and labels Amrethi Karana 'c.' at position e))",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DILAKUKAN_DI": [
+        {
+          "value": "gria Ida Sang Sulinggih, atau di rumah atau tempat upacara pengabenan dilaksanakan, sebagai bagian awal pembuatan Tirtha Pangentas",
+          "sentence_id": 901932
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_045",
       "upacara_atiw_1412",
@@ -11525,7 +11909,14 @@
     "definition": "Ngastawa Gangga adalah tahap kedelapan dalam Ngarga Tirtha, yang terakhir, sesudah Nuntun Sanghyang Saptongkara Atma: Ida Sang Sulinggih memohon turunnya Tirtha Gangga dengan mantra Gangga Stawa. Sesudah Ngarga Tirtha selesai, sang sulinggih menyucikan sarana-sarana pembuatan Tirtha Pangentas dengan tirtha yang baru dibuatnya.",
     "definition_source": "glossary (corpus L3821, L3824 (its mantra, Gangga Stawa, is its alias in entity_resolution force_merge))",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "menurunkan Gangga, dengan mantra Gangga Stawa",
+          "sentence_id": 901939
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_052",
       "upacara_atiw_1414",
@@ -11558,7 +11949,14 @@
     "definition": "Ngelinggihang berarti \"menstanakan/mendudukkan\" sesuatu yang suci ke tempatnya (dari kata \"linggih\", kedudukan/singgasana) -- misalnya dalam \"Ngelinggihang Dewa Hyang\" (mengukuhkan leluhur yang telah diaben ke kedudukannya sebagai Dewa Hyang) atau dalam Upacara Mapulang Lingga (menstanakan Tuhan/Brahman ke dalam diri seorang sulinggih).",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DILAKUKAN_DI": [
+        {
+          "value": "pamrajan (sanggah pretiwi), lalu setelah ngajar-ajar di merajan dadia atau pamaksan keluarga masing-masing",
+          "sentence_id": 901879
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_395",
       "upacara_atiw_1001",
@@ -11577,7 +11975,14 @@
     "definition": "Ngeluhurang Bhatara Kumara adalah upacara ketika bayi yang tali pusatnya sudah lepas meninggal, untuk mempersilakan Bhatara Kumara, dewa pengasuh bayi, kembali ke kahyangan karena yang diasuhnya telah tiada.",
     "definition_source": "glossary (corpus L714, L723; the upacara ngelungah card)",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "mempersilakan Bhatara Kumara, dewa pengasuh bayi, kembali ke kahyangan, karena bayi yang diasuhnya telah tiada",
+          "sentence_id": 902010
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_899",
       "upacara_atiw_1063"
@@ -11659,7 +12064,14 @@
     "definition": "Ngili Atma adalah tahap pertama dalam Ngarga Tirtha, sesudah Ida Sang Sulinggih membersihkan diri secara sekala dan niskala: sang sulinggih menuntun Sang Atma di dalam dirinya, karena badannya akan dibersihkan, sambil mengucapkan mantramnya.",
     "definition_source": "glossary (corpus L3800 (2026-10-29: tahap 'pertama' counts the named steps after the self-cleansing of L3797, as in ngarga tirtha's card))",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "menuntun Sang Atma di dalam diri Ida Sang Sulinggih, karena badannya akan dibersihkan",
+          "sentence_id": 901933
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_046",
       "upacara_atiw_1413"
@@ -11675,7 +12087,14 @@
     "definition": "Ngliwet (ngeliwet) adalah acara singkat dalam Atma Wedana, sesudah amariaran dan pralina: di depan sanggar surya, dengan tungku dan periuk tanah yang kecil, dibuat bubur (liwet) beras yang dicampur sedikit baem-warak (serbuk darah badak yang mengental), lalu liwet itu dihaturkan dalam periuknya ke hadapan atma mendiang. Liwet melambangkan sari makanan yang maha halus dan suci, santapan bagi atma.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "membuat santapan yang maha halus dan suci bagi atma mendiang; liwet (bubur) adalah perlambang sari makanan yang halus",
+          "sentence_id": 901905
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_777",
       "upacara_atiw_1258"
@@ -11864,7 +12283,20 @@
     "definition": "Nuduk Galih adalah tahap keenam dari delapan tahapan pelaksanaan Ngaben, yaitu pengumpulan sisa-sisa tulang (galih) dan abu setelah pembakaran jenazah; galih yang dipungut itu lalu diuyeg (ditumbuk) di atas sesenden.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "memungut sisa tulang (galih) yang lalu ditumbuk di atas sesenden dan ditaruh pada nyuh gading yang telah dikasturi sebagai wujud Puspa Asti",
+          "sentence_id": 901913
+        }
+      ],
+      "DILAKUKAN_DI": [
+        {
+          "value": "tempat pembasmian di setra, sesudah pembakaran jenazah selesai",
+          "sentence_id": 901912
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_009",
       "laporan_komp_557"
@@ -11949,7 +12381,26 @@
     "definition": "Nyegara Gunung adalah upacara ucapan terima kasih kepada Siwa selaku penguasa gunung serta kepada penguasa laut, atas karunia hasil gunung (tumbuh-tumbuhan dan hewan darat) dan hasil laut yang telah digunakan dalam yadnya. Upacara ini biasanya dilaksanakan sekaligus dengan Ngajar-ajar, sebelum lewat 12 hari setelah Patileman, di pura yang dipandang layak untuk memuja penguasa gunung dan laut. Dalam ringkasan tahapan Ngaben, nyegara gunung adalah tahap kedelapan (terakhir) dari delapan tahapan pelaksanaan Ngaben: ritual penyucian roh di pura tertentu untuk mensyukuri selesainya prosesi.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "pernyataan terima kasih kepada Sang Hyang Siwa selaku penguasa gunung serta kepada penguasa laut, atas karunia hasil gunung dan hasil laut yang telah digunakan dalam yadnya",
+          "sentence_id": 901978
+        }
+      ],
+      "DILAKUKAN_DI": [
+        {
+          "value": "sebuah atau beberapa pura yang dirasa paling wajar untuk pemujaan kepada penguasa gunung dan laut",
+          "sentence_id": 901880
+        }
+      ],
+      "MELIBATKAN": [
+        {
+          "value": "keluarga atau banjar sebagai pihak yang beryadnya, bersama Bhatara Bhatari yang semula diupacarai Patileman, yang ikut disertakan dengan Daksina Tapakan sebagai simbolnya",
+          "sentence_id": 901883
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_009",
       "laporan_komp_558",
@@ -11972,6 +12423,12 @@
     "definition_source": "glossary",
     "broader": null,
     "attributes": {
+      "DILAKUKAN_DI": [
+        {
+          "value": "rumah adat, tempat jenazah dibaringkan dalam jangka waktu agak lama",
+          "sentence_id": 901928
+        }
+      ],
       "LEBIH_SERING_DITEMPUH_OLEH": [
         {
           "value": "keluarga pendeta",
@@ -12143,7 +12600,20 @@
     "definition": "Odalan (piodalan, pujawali) adalah upacara di pura untuk memperingati hari jadi atau hari disucikannya pura itu sebagai tempat pemujaan Ida Sang Hyang Widhi Wasa; upacara ini termasuk Dewa Yadnya, dan namanya berasal dari kata wedal, yang berarti keluar atau lahir. Odalan dirayakan setiap 210 hari menurut pawukon atau setahun sekali menurut kalender Saka, didahului matur piuning dan pembersihan pura. Dalam Ngaben, hari odalan di desa termasuk kekeran desa sehingga dihindari, dan pada odalan di Kahyangan Tiga jenazah tidak boleh dikubur atau dibakar.",
     "definition_source": "glossary (web (approved 2026-10-29): detik.com/bali mengenal odalan (wedal, 210 hari / setahun, matur piuning, pujawali), en.wikipedia Odalan (Dewa Yadnya); corpus L265, L762)",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "mewujudkan kehidupan harmonis dan sejahtera lahir batin, sebagai wujud bhakti kepada Ida Sang Hyang Widhi",
+          "sentence_id": 901964
+        }
+      ],
+      "MELIBATKAN": [
+        {
+          "value": "umat Hindu; piodalan besar biasanya diikuti semua masyarakat di dalam maupun di luar desa dari berbagai dadia",
+          "sentence_id": 901963
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_812",
       "upacara_atiw_1021",
@@ -12182,7 +12652,20 @@
     "definition": "Pabasmian (disebut juga pembasmian) adalah tahap kelima dari delapan tahapan pelaksanaan Ngaben, yaitu proses kremasi (pembakaran) jenazah di dalam sarana Patulangan, di tempat pembasmian di setra.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "pembakaran jasad secara skala dengan api alam, sedangkan secara niskala dengan api yang dikeluarkan melalui puja pandita, yang disebut Agni Pralina",
+          "sentence_id": 901914
+        }
+      ],
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "memusnahkan jasad sawa sehalus mungkin hingga kembali menjadi unsur Pancamahabutha, sebagaimana tujuan pokok Ngaben",
+          "sentence_id": 901915
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_009",
       "laporan_komp_556"
@@ -12199,10 +12682,22 @@
     "definition_source": "glossary",
     "broader": null,
     "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "menyucikan sawa menjelang pangabenan; beberapa bagian upacaranya merupakan komunikasi religius antara roh mendiang dengan keluarga yang masih hidup",
+          "sentence_id": 901886
+        }
+      ],
       "DILAKUKAN": [
         {
           "value": "dua atau tiga hari sebelum ngaben",
           "sentence_id": 1889
+        }
+      ],
+      "DILAKUKAN_DI": [
+        {
+          "value": "rumah duka: sawa dibaringkan di atas tumpang salu di Bale Semanggen, dan sajennya diletakkan di halaman rumah di depan balai pemujaan sang pendeta",
+          "sentence_id": 901885
         }
       ]
     },
@@ -12252,10 +12747,28 @@
     "definition_source": "glossary (user (Balinese speaker), 2026-10-28, the user's own words for the general meaning, the closing sentence: 'Pebersihan (atau pembersihan) hidup dalam budaya dan agama Hindu di Bali adalah rangkaian ritual penyucian untuk membersihkan diri secara lahir (fisik) dan batin (niskala/spiritual) dari segala kotoran, energi negatif, serta pengaruh buruk yang disebut leteh' (opened with 'Secara umum,'). It is not the first sentence: the bot shows a term's first sentence alone in stage lists, and as the first, 'bagaimana cara memandikan jenazah' glossed the corpse-washing step as cleansing oneself from leteh (free 1,864 run, 2026-10-28). The Ngaben sentences before it are the corpus's (L2747-2760, L3033; the meaning in L3654's words, 'yang memiliki makna bahwa yang meninggal itu dianggap masih hidup, dan masih memiliki kesempatan terakhir sebagai orang yang masih hidup' -- 'apa makna pabersihan hidup' had said none is recorded). Edge: sid 901580 (BERTUJUAN_MEMBERSIHKAN_DARI leteh))",
     "broader": null,
     "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "bahwa yang suci dibersihkan lebih dulu: kepala dan muka jenazah dibersihkan pertama, karena secara filosofi kepala adalah pintu Siwa (pintu Sang Pencipta), tempat yang suci, sedangkan seluruh badan adalah lambang dunia (bhuana alit), agar penyucian tidak percuma; air bekas badan atau kaki pun tidak boleh dipakai lagi di kepala, sesuai urutan dari hulu ke teben",
+          "sentence_id": 901983
+        }
+      ],
       "DIAWALI_OLEH": [
         {
           "value": "orang yang dituakan -- yang telah melakukan pawintenan, atau yang lebih tua atau sebaya dengan yang meninggal -- yang diberi kesempatan terlebih dulu membersihkan kepala dan muka layon",
           "sentence_id": 901874
+        }
+      ],
+      "DILAKUKAN_OLEH": [
+        {
+          "value": "krama dan keluarga, yang membuka pakaian dan memandikan jenazah setelah orang yang dituakan selesai membersihkan kepala dan muka layon",
+          "sentence_id": 901982
+        }
+      ],
+      "SYARAT": [
+        {
+          "value": "orang yang lebih muda dari mendiang tidak boleh memandikan bagian di atas bahu jenazah, hanya bagian di bawah leher, karena memaksakannya secara etika disebut tulah",
+          "sentence_id": 901986
         }
       ]
     },
@@ -12363,7 +12876,14 @@
     "definition": "Pademi adalah tahap ketiga dalam Ngarga Tirtha, sesudah Dagdhi Karana: dengan mantram Pademi, Ida Sang Sulinggih memadamkan api rahasia yang ada dalam tubuhnya serta menghanyutkan kotoran dari badannya sehingga badannya menjadi suci.",
     "definition_source": "glossary (corpus L3806)",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "memadamkan api rahasia di dalam tubuh serta menghanyutkan kotoran dari badan, sehingga badan menjadi suci",
+          "sentence_id": 901935
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_048",
       "upacara_atiw_1413"
@@ -12514,7 +13034,14 @@
     "definition": "Paguntingan adalah acara dalam rangkaian Pabersihan pengabenan yang dirangkaikan langsung dengan acara Upadesa, ketika sang pendeta memberi amanat petunjuk jalan kepada atma mendiang.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "tanda bahwa sang atma yang akan beralih ke alam lain telah mulai resmi menjadi warga alam sana; sama seperti pemotongan rambut pada upacara Manusa Yadnya yang meningkatkan kedudukan seseorang",
+          "sentence_id": 901893
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_502",
       "upacara_atiw_1143",
@@ -12686,6 +13213,12 @@
           "value": "mendiang dan keluarga yang masih hidup",
           "sentence_id": 1782
         }
+      ],
+      "DILAKUKAN_DI": [
+        {
+          "value": "halaman rumah, dengan sajen bebangkitnya diletakkan di depan balai pemujaan sang pendeta",
+          "sentence_id": 901890
+        }
       ]
     },
     "mention_passages": [
@@ -12770,7 +13303,14 @@
     "definition": "Panah adalah anak panah dari sebilah bambu yang dipakai dalam Ngaben untuk memperoleh tirtha. Untuk Tirtha Ening, air dipanah tiga kali dengan panah yang ujungnya diisi sekuntum bunga harum; untuk Tirtha Pemanah, ujung panahnya diisi kalpika.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "dengan memanah air ening, yang beryadnya seakan-akan mempersilakan Sang Pitara bercermin pada air jernih, agar bayangannya tampak dan ia dapat diajak berkomunikasi",
+          "sentence_id": 901955
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_638",
       "upacara_atiw_1039",
@@ -12880,7 +13420,14 @@
     "definition": "Panca Yadnya adalah kerangka lima jenis persembahan suci wajib dalam Hindu Bali: Dewa Yadnya (kepada dewa), Rsi Yadnya (kepada pendeta/orang suci), Pitra Yadnya (kepada leluhur/roh, termasuk Ngaben), Manusa Yadnya (upacara daur hidup manusia), dan Bhuta Yadnya (menyelaraskan kekuatan alam). Dalam upacara Ngaben, seorang Pandita berwenang memimpin berbagai upacara Panca Yadnya, termasuk Ngaben sebagai bagian dari Pitra Yadnya.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "membayar tiga utang yang dibawa manusia: utang kepada Ida Sang Hyang Widhi yang memberi kehidupan beserta isinya, kepada para guru rohani yang memberi tuntunan hidup, dan kepada para leluhur yang memberi kehidupan penuh kasih tanpa pamrih",
+          "sentence_id": 901969
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_383",
       "upacara_atiw_1049"
@@ -13040,6 +13587,12 @@
           "sentence_id": 900340
         }
       ],
+      "DILAKUKAN_DI": [
+        {
+          "value": "rumah pihak yang beryadnya, untuk sebagian acaranya",
+          "sentence_id": 901926
+        }
+      ],
       "DITUJUKAN_UNTUK": [
         {
           "value": "mendiang yang telah tak ada sawanya lagi",
@@ -13142,7 +13695,14 @@
     "definition": "Panglong adalah paruh bulan gelap dalam kalender Bali, yaitu 15 hari sesudah purnama: panglong ke-1 jatuh sehari sesudah purnama, panglong ke-14 disebut purwani, dan panglong ke-15 adalah tilem.",
     "definition_source": "glossary (web (approved 2026-10-29): https://www.wikiwand.com/en/articles/Penanggalen ; https://kiwix.lema.org/wikipedia_en_all_mini_2024-02/A/Penanggal)",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "masa kemunduran, saat cahaya bulan berangsur redup: manusia diingatkan untuk menurunkan ego dan merenung",
+          "sentence_id": 901977
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_867",
       "upacara_atiw_1020"
@@ -13543,7 +14103,14 @@
     "definition": "Serpihan kaca yang diletakkan pada kedua mata jenazah sebagai salah satu kelengkapan dalam upacara memandikan dan menghias jenazah.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "agar dalam perjalanan menuju tujuan akhirnya, yaitu Brahman (Tuhan), jalan mendiang terlihat jelas sehingga tujuannya cepat tercapai; juga harapan agar bila kelak numitis ia memiliki mata yang indah dengan penglihatan yang terang benderang",
+          "sentence_id": 901995
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_129",
       "upacara_atiw_1006",
@@ -13712,7 +14279,14 @@
     "definition": "Penanggal (pinanggal) adalah paruh bulan terang dalam kalender Bali, yaitu 15 hari sesudah tilem: penanggal ke-1 jatuh sehari sesudah tilem, penanggal ke-14 disebut purwani, dan penanggal ke-15 adalah purnama.",
     "definition_source": "glossary (web (approved 2026-10-29): https://www.wikiwand.com/en/articles/Penanggalen ; https://kiwix.lema.org/wikipedia_en_all_mini_2024-02/A/Penanggal)",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "masa pertumbuhan, saat bulan semakin terang: manusia diibaratkan sedang berkembang, belajar, dan mencari cahaya kebijaksanaan",
+          "sentence_id": 901976
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_866"
     ],
@@ -13724,7 +14298,7 @@
     "name": "penastan",
     "type": "SARANA_RITUAL",
     "aliases": [],
-    "definition": "Penastan adalah perlengkapan yang dihaturkan pada upacara ngulapin; wujudnya belum diuraikan dalam sumber yang ada.",
+    "definition": "Penastan adalah perlengkapan yang dihaturkan pada upacara ngulapin.",
     "definition_source": "glossary",
     "broader": null,
     "attributes": {},
@@ -13747,6 +14321,12 @@
     "definition_source": "glossary",
     "broader": null,
     "attributes": {
+      "DILAKUKAN_DI": [
+        {
+          "value": "halaman rumah, dengan sajen bebangkitnya diletakkan berdekatan dengan sajen Pamerasan",
+          "sentence_id": 901891
+        }
+      ],
       "SEBANDING_DENGAN": [
         {
           "value": "tinggi-rendahnya kedudukan/jabatan mendiang semasa hidup",
@@ -13904,7 +14484,14 @@
     "definition": "Pengutangan adalah sebutan untuk hari pelaksanaan pembakaran jenazah (juga disebut hari Pelebon) dalam rangkaian Ngaben. Pada hari ini, jenazah yang telah disemayamkan (misalnya di Bale Gede) diawali dengan upacara Ngaskara dan Caru Pengelambuk sebelum dinaikkan ke usungan menuju setra.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "membawa jenazah ke setra untuk dibakar dalam upacara palebon, setelah diawali Upacara Ngaskara dan Caru Pengelambuk",
+          "sentence_id": 901916
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_391",
       "upacara_atiw_1309",
@@ -14327,7 +14914,14 @@
     "definition": "Pisang adalah buah pisang. Pisang menjadi salah satu isi banyak banten, misalnya canang sari dan banten peras.",
     "definition_source": "glossary (web: https://sejarahharirayahindu.blogspot.com/2012/02/banten-panjang-ilang.html ; https://sejarahharirayahindu.blogspot.com/2012/04/banten-peras.html)",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DIGUNAKAN_UNTUK": [
+        {
+          "value": "membuat minyak untuk memijat jenazah: sekitar sepuluh biji pisang mentah digoreng, lalu minyak bekas gorengannya dipakai memijat sekujur tubuh jenazah agar ototnya tetap lentur dan tidak cepat kaku",
+          "sentence_id": 901950
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_746",
       "upacara_atiw_1035",
@@ -14351,7 +14945,14 @@
     "definition": "Pisang jati adalah alat upakara berbadankan bakul kecil (bagaikan daksina) yang diupacarai mlaspas bersamaan dengan kajang, angenan, panguryagan, sok cegceg, damar kurung, dan adegan.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "tempat dilekatkannya keakuan (ego) mendiang saat pendeta menguraikan diri pribadinya, karena kata pisang jati dekat bunyinya dengan sang jati, yaitu aku; 1.001 macam ramuan di dalamnya melambangkan materi tubuh (otak, sumsum, darah, saraf, dan sebagainya)",
+          "sentence_id": 901996
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_479",
       "upacara_atiw_1136",
@@ -14500,6 +15101,12 @@
     "definition_source": "glossary (2026-10-02: reordered so the general meaning (pengorbanan kepada leluhur) is the first 'X adalah' sentence; the user asked for it before the meaning as a term (conersation.md Q4). Same corpus wording.)",
     "broader": "panca_yadnya",
     "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "menjadikan arwah orang yang telah meninggal menjadi suci",
+          "sentence_id": 902009
+        }
+      ],
       "DITUJUKAN_UNTUK": [
         {
           "value": "orangtua",
@@ -14624,10 +15231,33 @@
     "name": "potong gigi",
     "type": "RITUAL",
     "aliases": [],
-    "definition": "Potong gigi (metatah atau mepandes) adalah upacara Manusa Yadnya berupa pengikiran enam gigi taring dan seri atas yang melambangkan pengendalian enam musuh dalam diri (sad ripu). Bila seseorang meninggal sebelum melaluinya, dalam rangkaian Ngaben dilakukan potong gigi simbolis pada jenazah dengan kikir, atau dengan kuncup teratai bila bibir jenazah terkatup rapat.",
-    "definition_source": "glossary (web: https://www.detik.com/bali/budaya/d-6718374/mengenal-metatah-atau-mepandes-upacara-potong-gigi-di-bali)",
+    "definition": "Potong gigi (metatah atau mepandes) adalah upacara Manusa Yadnya berupa pengikiran enam gigi taring dan seri atas yang melambangkan pengendalian enam musuh dalam diri (sad ripu). Bila orang dewasa meninggal sebelum melaluinya, keluarga boleh mengadakan potong gigi simbolis pada jenazah dalam rangkaian Nyiramang Layon; kikir tidak boleh dipakai pada jenazah, melainkan diganti kuncup teratai yang digosokkan pada gigi jenazah, atau pada bibir saja bila bibir jenazah terkatup.",
+    "definition_source": "glossary (web: https://www.detik.com/bali/budaya/d-6718374/mengenal-metatah-atau-mepandes-upacara-potong-gigi-di-bali (first sentence); the sentence on a corpse is corpus L2465, L2613, L2885, L2902 (AYUTHAYA part B review 2026-11-04: no kikir on a corpse -- the old 'dengan kikir, atau dengan kuncup teratai bila bibir terkatup' was wrong; kikir, kuncup teratai and sangging cards fixed the same day))",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DILAKUKAN_DI": [
+        {
+          "value": "lingkungan rumah, seperti upacara siklus hidup lainnya",
+          "sentence_id": 901940
+        },
+        {
+          "value": "pepaga atau asagan tempat jenazah dimandikan, bila potong gigi dilakukan pada jenazah: sangging berdiri di atas secekal padi di muka pepaga, sesudah Upacara Pabersihan Hidup dan sebelum pebaktian, ketika jenazah masih diperlakukan sebagai orang hidup",
+          "sentence_id": 901941
+        }
+      ],
+      "DILAKUKAN_OLEH": [
+        {
+          "value": "sangging (tukang potong gigi); bila potong gigi dilakukan pada jenazah, peran sangging digantikan oleh orang tua laki-laki (bapak) almarhum, karena bapak adalah lambang penciptaan",
+          "sentence_id": 901979
+        }
+      ],
+      "SYARAT": [
+        {
+          "value": "potong gigi bagi orang yang telah meninggal tidak wajib: Keputusan Kesatuan Tafsir Parisada Hindu Dharma Indonesia menetapkan bahwa potong gigi bagi jenazah tidak perlu diadakan, sebab disebut menyiksa mayat; bila keluarga tetap menginginkannya, misalnya karena orang tuanya merasa masih punya utang kepada anaknya, potong gigi boleh diadakan secara simbolis dengan sarana pengganti, karena agama adalah rasa",
+          "sentence_id": 901987
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_499",
       "upacara_atiw_1254",
@@ -15099,7 +15729,14 @@
     "definition": "Punjung adalah sajian berupa nasi beserta lauk-pauknya yang secara umum dihaturkan atau disediakan sebagai bagian dari suatu upacara maupun sebagai bekal bagi seseorang. Dalam upacara Ngaben, punjung berisi nasi dengan lauknya, kopi, dan rokok, yang ditaruhkan di samping jenazah.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "disuguhkan di samping jenazah orang yang baru meninggal, berisi nasi dengan lauknya, kopi, rokok bagi yang semasa hidupnya suka merokok, serta sedikit jajan, karena roh orang yang baru meninggal dipercaya masih berada di dekat jasadnya dan masih memerlukan makan dan minum",
+          "sentence_id": 901958
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_284",
       "upacara_atiw_1000",
@@ -15291,7 +15928,14 @@
     "definition": "Purnama adalah hari bulan purnama (bulan penuh) dalam kalender Bali. Jenazah yang telah melewati Purnama dan Tilem sekurang-kurangnya satu bulan disebut berstatus Masekeh, salah satu syarat sebelum diupacarai Ngaben.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "hari suci untuk memuja bulan, wujud kekuasaan Hyang Widhi, dan memohon anugerah Hyang Widhi; bulan pada Purnama dan matahari pada Tilem melebur segala mala (kekotoran) di dunia, sehingga pada Purnama umat hendaknya membersihkan diri lahir batin",
+          "sentence_id": 901975
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_421",
       "upacara_atiw_1020",
@@ -15351,6 +15995,12 @@
     "definition_source": "glossary",
     "broader": null,
     "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "wujud atma mendiang, yang oleh puja sulinggih dipertemukan dengan cili, wujud badannya",
+          "sentence_id": 901997
+        }
+      ],
       "DIPANGKU_OLEH": [
         {
           "value": "salah seorang keluarga",
@@ -15755,7 +16405,14 @@
     "definition": "Rotan (penyalin) adalah batang tumbuhan merambat yang lentur dan kuat. Dalam Ngaben, rotan dibuat menjadi tali penyalin pengikat ante dan sumpe pengikat peti jenazah.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DIGUNAKAN_UNTUK": [
+        {
+          "value": "membuat sumpe (anyaman rotan), pengikat peti jenazah yang dibuat tanpa paku, yang menguatkan rekatan badan peti dengan tutupnya",
+          "sentence_id": 901952
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_718",
       "upacara_atiw_1089",
@@ -15793,7 +16450,20 @@
     "definition": "Rsi Yadnya adalah salah satu dari Panca Yadnya, yaitu yadnya (persembahan suci) yang ditujukan kepada para rsi, orang suci, dan pendeta, misalnya berupa punia dan penghormatan kepada sulinggih.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DILAKUKAN_DI": [
+        {
+          "value": "gria, kediaman sulinggih: umat mengunjungi sulinggih, mempersembahkan punia, lalu bersembahyang bersama di gria",
+          "sentence_id": 901973
+        }
+      ],
+      "DILAKUKAN_OLEH": [
+        {
+          "value": "umat Hindu, sebagai penghormatan atas peran sulinggih dalam pelaksanaan upacara agama",
+          "sentence_id": 901974
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_515",
       "upacara_atiw_1049"
@@ -16017,7 +16687,7 @@
     "name": "sampar wantu",
     "type": "SARANA_RITUAL",
     "aliases": [],
-    "definition": "Sampar wantu adalah salah satu bahan anget-angetan, parem yang ditempelkan pada hulu hati jenazah; wujudnya belum diuraikan dalam sumber yang ada.",
+    "definition": "Sampar wantu adalah salah satu bahan anget-angetan, parem yang ditempelkan pada hulu hati jenazah.",
     "definition_source": "glossary",
     "broader": null,
     "attributes": {},
@@ -16243,7 +16913,7 @@
     "name": "sangging",
     "type": "STRUKTUR_SOSIAL_ADAT",
     "aliases": [],
-    "definition": "Sangging adalah orang yang melaksanakan atau menyelesaikan upacara potong gigi jenazah dalam Ngaben, biasanya orang tua laki-laki almarhum. Saat bertugas ia berpijak pada padi satu cekal, dan untuknya disediakan gelang dari uang kepeng (pipis satakan, 200 kepeng).",
+    "definition": "Sangging adalah tukang potong gigi, orang yang melaksanakan upacara potong gigi. Pada potong gigi bagi jenazah dalam Ngaben, sangging digantikan oleh orang tua laki-laki almarhum; saat bertugas ia berpijak pada padi satu cekal, dan untuknya disediakan gelang dari uang kepeng (pipis satakan, 200 kepeng).",
     "definition_source": "glossary",
     "broader": null,
     "attributes": {},
@@ -16612,7 +17282,7 @@
     "name": "sasih paruwak tahuk",
     "type": "KONSEP_HUKUM_ADAT",
     "aliases": [],
-    "definition": "Sasih paruwak tahuk adalah sasih \"berbadankan kosong\" (wulan tanpa sirah, bulan tanpa kepala), yaitu sasih yang di dalamnya tidak jatuh hari Tumpek; seperti malamasa, sasih ini dihindari saat memilih dewasa (hari baik) Ngaben. Sasih mana yang menjadi paruwak tahuk ditentukan dari pertemuan wuku dan sasih; sumber menyebut sasih paruwak tahuk terdiri dari pertemuan berikut: wuku landep (tumpek landep) pada sasih dyestha dan sasih kalima; wuku wariga pada sasih asada dan sasih kaenem; wuku kuningan pada sasih kasa dan sasih kapitu; wuku krulut pada sasih karo dan sasih kawulu; wuku uye pada sasih katiga dan sasih kasanga; serta wuku wayang pada sasih kapat dan sasih kadasa. Lontar Aji Swamandala menggolongkan sasih yang tidak mempunyai tumpek dan bulan tanpa sirah ke dalam alaning dewasa (hari-hari buruk), bersama wuku yang tidak mempunyai guru.",
+    "definition": "Sasih paruwak tahuk adalah sasih \"berbadankan kosong\" (wulan tanpa sirah, bulan tanpa kepala), yaitu sasih yang di dalamnya tidak jatuh hari Tumpek; seperti malamasa, sasih ini dihindari saat memilih dewasa (hari baik) Ngaben. Sasih mana yang menjadi paruwak tahuk ditentukan dari pertemuan wuku dan sasih; sasih paruwak tahuk terdiri dari pertemuan berikut: wuku landep (tumpek landep) pada sasih dyestha dan sasih kalima; wuku wariga pada sasih asada dan sasih kaenem; wuku kuningan pada sasih kasa dan sasih kapitu; wuku krulut pada sasih karo dan sasih kawulu; wuku uye pada sasih katiga dan sasih kasanga; serta wuku wayang pada sasih kapat dan sasih kadasa. Lontar Aji Swamandala menggolongkan sasih yang tidak mempunyai tumpek dan bulan tanpa sirah ke dalam alaning dewasa (hari-hari buruk), bersama wuku yang tidak mempunyai guru.",
     "definition_source": "glossary (corpus L231-237 (the list of six tumpek/sasih pairs added 2026-10-02; the old inference 'jadi bukan nama salah satu sasih' removed); web for the alaning dewasa sentence: http://madesuliartini.blogspot.com/2014/01/kajian-wariga-dalam-lontar-aji.html (Kajian Wariga dalam Lontar Aji Swamandala: 'Inilah alanya (buruknya) hari: wuku tidak mempunyai guru, sasih yang tidak mempunyai tumpek, bulan yang tidak mempunyai sirah ...') -- added 2026-10-05, approved by the user 2026-10-05. The lontar's caru alaning dewasa remedy is left out: it is about bad days in general, and the user does not know whether it is done for Ngaben (2026-10-05))",
     "broader": "sasih",
     "attributes": {},
@@ -16804,6 +17474,18 @@
     "definition_source": "glossary",
     "broader": "ngaben",
     "attributes": {
+      "DILAKUKAN_DI": [
+        {
+          "value": "rumah duka, tempat layon diletakkan di Bale Gede atau Saka Roras setelah dimandikan, lalu di setra, tempat pembakarannya",
+          "sentence_id": 901918
+        }
+      ],
+      "DIPERUNTUKKAN_BAGI": [
+        {
+          "value": "keluarga puri, gria, dan mereka yang martabat sosialnya wajar untuk upacara sebesar Sawa Wedana, karena ekonominya mapan maupun karena faktor historis",
+          "sentence_id": 901919
+        }
+      ],
       "MEMBERIKAN": [
         {
           "value": "wibawa dan kemegahan semantap-mantapnya",
@@ -16879,7 +17561,7 @@
     "name": "segau",
     "type": "SARANA_RITUAL",
     "aliases": [],
-    "definition": "Segau adalah salah satu sarana penyucian mendiang pada atma wedana; wujudnya belum diuraikan dalam sumber yang ada.",
+    "definition": "Segau adalah salah satu sarana penyucian mendiang pada atma wedana.",
     "definition_source": "glossary",
     "broader": null,
     "attributes": {},
@@ -16898,7 +17580,20 @@
     "definition": "Segehan adalah bentuk Bhuta Yadnya yang paling sederhana, berupa sajen kecil (nasi dengan lauk sederhana) yang dihaturkan kepada Bhuta Kala di bawah atau di tanah, agar kekuatan alam tidak mengganggu dan tetap harmonis.",
     "definition_source": "glossary (web: https://www.komangputra.com/jenis-jenis-upacara-bhuta-yadnya-caru.html/2 ; https://phdi.parisada.or.id/artikel.php?id=bhuta-yadnya)",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DILAKUKAN_DI": [
+        {
+          "value": "sudut merajan keluarga, halaman pura, pintu masuk rumah, dan persimpangan jalan; dihaturkan setiap hari",
+          "sentence_id": 901967
+        }
+      ],
+      "DILAKUKAN_OLEH": [
+        {
+          "value": "umat Hindu Bali sendiri, yang menyiapkannya setiap hari",
+          "sentence_id": 901968
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_541",
       "upacara_atiw_1194",
@@ -17020,6 +17715,12 @@
     "definition_source": "glossary",
     "broader": "sekah",
     "attributes": {
+      "MELAMBANGKAN": [
+        {
+          "value": "pitra mendiang beserta suksma sariranya: pitra dipersilakan masuk dan memakainya sebagai perlambang diri yang dihuni",
+          "sentence_id": 901954
+        }
+      ],
       "MENGGUNAKAN": [
         {
           "value": "meja pendek kecil",
@@ -17063,7 +17764,14 @@
     "definition": "Sekah sangge (sangge) adalah sekah tambahan tanpa nama (anonim) berbentuk sangge atau lingga yang dibuat melalui acara Ngajum dalam upacara Atma Wedana, dan hanya digunakan dalam Patileman tingkat Mamukur dan Sekah Kurung; menurut ucapan orang tua-tua, sangge adalah \"sang ngae\" (yang menciptakan) diri kita.",
     "definition_source": "glossary",
     "broader": "sekah",
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "tempat masuknya para leluhur yang telah menjadi bhatara atau bhatari, tanpa nama, rupa, dan warna, yang dimohon turun kembali agar menjadi pemandu (penunjuk jalan) bagi pitra mendiang supaya tidak tersesat menuju Dewaloka",
+          "sentence_id": 901998
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_160",
       "upacara_atiw_1041",
@@ -17186,7 +17894,14 @@
     "definition": "Sembah bhakti (sembah bakti, muspa, pebaktian) adalah tindakan menyembah sebagai wujud bakti. Dalam Ngaben, keluarga melakukan sembah bhakti kepada pitara mendiang saat sesajen diayabkan kepadanya, misalnya pada saji tarpana, dan kepada pendeta saat adegan dibawa menghadapnya. Sembah bhakti keluarga juga merupakan tahap ketiga upacara Nyiramang Layon, sesudah Pabersihan Hidup dan sebelum Pabersihan Mati. Sarananya antara lain bunga, kawangen, dan dupa, dan sebaiknya ada yang memimpin, misalnya jro mangku atau pinandita. Yang pantang ikut menyembah pitara: wanita yang sedang datang bulan, wanita hamil atau yang masih menyusui bayi, dan anak-anak yang belum tanggal gigi.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "SYARAT": [
+        {
+          "value": "yang tidak boleh menyembah mendiang adalah orang yang lebih tua darinya, karena yang tua tidak pantas menyembah yang lebih muda; cicit mendiang, yang dianggap setingkat dengannya, dan orang hamil, karena bayi dalam kandungannya bisa saja menjelma sebagai cicit mendiang; ibu menyusui, karena air susunya, makanan bayi yang masih dianggap dewa, bisa menjadi leteh; serta anak yang giginya belum tanggal, yang masih dianggap dewa. Bila mereka menyembah, mendiang dipercaya menjadi tulah (sukar mendapat sorga); sembah kepada Ida Sang Hyang Widhi (sembah pertama, kedua, ketiga dan kelima) tetap boleh mereka lakukan",
+          "sentence_id": 901985
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_779",
       "upacara_atiw_1042",
@@ -17587,7 +18302,14 @@
     "definition": "Siwi Karana adalah tahap kelima dalam Ngarga Tirtha, sesudah Amrethi Karana: Ida Sang Sulinggih bersujud kepada penguasa alam dengan mantram Siwi Karana.",
     "definition_source": "glossary (corpus L3812)",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "bersujud ke hadapan penguasa alam, dengan mantram Siwi Karana",
+          "sentence_id": 901937
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_049",
       "upacara_atiw_1414",
@@ -18169,7 +18891,7 @@
     "name": "tahenan",
     "type": "SARANA_RITUAL",
     "aliases": [],
-    "definition": "Tahenan adalah banten yang dihaturkan di hadapan puspalingga pada upacara penyekahan (atma wedana), juga sebagai tambahan bila sekah lebih dari satu; isinya belum dirinci dalam sumber yang ada.",
+    "definition": "Tahenan adalah banten yang dihaturkan di hadapan puspalingga pada upacara penyekahan (atma wedana), juga sebagai tambahan bila sekah lebih dari satu.",
     "definition_source": "glossary",
     "broader": null,
     "attributes": {},
@@ -18503,7 +19225,7 @@
     "name": "tatopong",
     "type": "SARANA_RITUAL",
     "aliases": [],
-    "definition": "Tatopong termasuk eteh-eteh upacara nganget don bingin pada atma wedana; wujudnya belum diuraikan dalam sumber yang ada.",
+    "definition": "Tatopong termasuk eteh-eteh upacara nganget don bingin pada atma wedana.",
     "definition_source": "glossary",
     "broader": null,
     "attributes": {},
@@ -18902,7 +19624,14 @@
     "definition": "Tilem adalah hari bulan mati (bulan baru) dalam kalender Bali. Jenazah yang telah melewati Purnama dan Tilem sekurang-kurangnya satu bulan disebut berstatus Masekeh, salah satu syarat sebelum diupacarai Ngaben.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "hari suci Dewa Surya (matahari): seperti bulan pada Purnama, matahari pada Tilem melebur segala mala (kekotoran) di dunia",
+          "sentence_id": 902012
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_422",
       "upacara_atiw_1020",
@@ -19013,6 +19742,12 @@
           "value": "urutan berikut oleh Ida Sang Sulinggih: Ngarga Tirtha (menyucikan diri secara skala dan niskala lalu menurunkan Tirtha Gangga); memerciki alat-alat pembuatannya tiga kali dengan tirtha yang baru dibuat sambil mengucapkan mantra; mengisi periuk dengan Tirtha Gangga yang baru diturunkan; menghidupkan sarana-sarananya dengan serangkaian mantra; memasukkan pramakusa yang telah dimantrai ke dalam periuk, lalu padang lepas, dan sesudahnya biji padi (jijih), pripih emas, ulantaga, kalpika, dan sarana lainnya, masing-masing dimantrai lebih dulu; mengucapkan mantra Pralina; dan menutupnya dengan sikap tangan suci sebagai penutup",
           "sentence_id": 901858
         }
+      ],
+      "DIBUAT_SAAT": [
+        {
+          "value": "hari puncak pengabenan (pembakaran jenazah), karena Tirtha Pangentas tidak boleh diinapkan",
+          "sentence_id": 901988
+        }
       ]
     },
     "mention_passages": [
@@ -19083,7 +19818,7 @@
     "name": "tirta pemerelina",
     "type": "TIRTHA_SUCI",
     "aliases": [],
-    "definition": "Tirta pemerelina adalah salah satu tirta dalam tetandingan upakara pengaskaran (sangaskara) Ngaben, disebut bersama utik dan geni pamralinan; sumber tidak menguraikan kegunaannya.",
+    "definition": "Tirta pemerelina adalah salah satu tirta dalam tetandingan upakara pengaskaran (sangaskara) Ngaben, disebut bersama utik dan geni pamralinan.",
     "definition_source": "glossary",
     "broader": "tirtha",
     "attributes": {},
@@ -19123,7 +19858,7 @@
     "name": "tirta penyeeb",
     "type": "TIRTHA_SUCI",
     "aliases": [],
-    "definition": "Tirta penyeeb adalah salah satu tirta dalam tetandingan upakara pengaskaran (sangaskara) Ngaben, disebut sesudah tirta penembak dan tirta pengentas; sumber tidak menguraikan kegunaannya.",
+    "definition": "Tirta penyeeb adalah salah satu tirta dalam tetandingan upakara pengaskaran (sangaskara) Ngaben, disebut sesudah tirta penembak dan tirta pengentas.",
     "definition_source": "glossary",
     "broader": "tirtha",
     "attributes": {},
@@ -19486,6 +20221,12 @@
     "definition_source": "glossary",
     "broader": "tirtha",
     "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "dua hal: bagi sang yajamana, rasa puas telah mampu mempersembahkan upakara yang lengkap sesuai ketentuan; dan sarana penentu hukum secara lahiriah: atma tidak boleh membawa beban atau utang duniawi, maka kewajiban mendiang yang belum sempat dilaksanakan semasa hidupnya dibayar oleh keturunannya dengan tirtha penembak, yang menjadi pemberi jalan menuju pembebasan atma",
+          "sentence_id": 901999
+        }
+      ],
       "DIBAWA_KE": [
         {
           "value": "setra untuk dipergunakan pada waktu pembakaran",
@@ -19932,7 +20673,14 @@
     "definition": "Udhakanjali adalah tahap keenam dalam Ngarga Tirtha, sesudah Siwi Karana: Ida Sang Sulinggih mewujudkan Dewa Siwa di dalam dirinya sendiri dengan mengucapkan mantram Udhakanjali.",
     "definition_source": "glossary (corpus L3815)",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "mewujudkan Dewa Siwa di dalam diri Ida Sang Sulinggih sendiri",
+          "sentence_id": 901938
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_050",
       "upacara_atiw_1414"
@@ -20170,7 +20918,14 @@
     "definition": "Suatu tradisi di beberapa desa di Bali berupa upacara berjalan (menerobos) membungkuk di bawah jenazah yang telah selesai menjalani Upacara Ngeringkes (Pangringkesan/pembungkusan jenazah); dilakukan oleh keluarga mendiang yang patut menyembah (orang yang lebih tua dari yang meninggal, wanita hamil, dan wanita menyusui tidak diikutkan) dengan menerobos di bawah jenazah (di Pepaga/Asagan) bolak-balik sebanyak tiga kali. Maknanya adalah konsep \"Satya\" (kesetiaan): keluarga menyatakan kesetiaan kepada mendiang baik dalam keadaan senang maupun susah, baik semasa hidup maupun setelah mati, dengan harapan \"kekuatan\" orang yang meninggal menurun atau tetap berada pada keluarga yang \"nyulubin\". Merupakan kepercayaan/tradisi setempat yang diwariskan turun-temurun, tidak seragam di semua desa/daerah",
     "definition_source": "relation:S900042",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DILAKUKAN_DI": [
+        {
+          "value": "bawah pepaga atau asagan tempat jenazah berada, setelah jenazah selesai diringkes",
+          "sentence_id": 901929
+        }
+      ]
+    },
     "mention_passages": [
       "upacara_atiw_1369",
       "upacara_atiw_1370",
@@ -20187,7 +20942,20 @@
     "definition": "Upacara penguburan atau pembakaran sementara (\"titip\") bagi jenazah yang belum bisa segera diaben secara tuntas, memakai tirtha pabersihan dan tirta panglukatan, hingga tiba saatnya digelar upacara Ngaben yang sesungguhnya.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "upacara titipan sementara -- seperti kata pepatah \"sebelum ada rotan, akar pun berguna\" -- sampai tiba saatnya upacara Ngaben; sawa yang dititipkan di kuburan atau setra digali lagi ketika Ngaben tiba",
+          "sentence_id": 901945
+        }
+      ],
+      "MELIBATKAN": [
+        {
+          "value": "sulinggih atau rohaniawan yang dianggap berhak, yang memberi dewasa ayu (hari baik), serta prajuru adat yang memberi persetujuan",
+          "sentence_id": 901944
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_188"
     ],
@@ -20205,6 +20973,12 @@
     "definition_source": "glossary",
     "broader": null,
     "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "menyelesaikan sawa atau badan kasar anak saja; upacaranya tidak dilanjutkan dengan Atma Wedana, karena jiwa kanak-kanak dinilai masih suci dan belum dibebani karma pala",
+          "sentence_id": 901930
+        }
+      ],
       "DILAKUKAN": [
         {
           "value": "minimal 12 hari setelah jenazah bayi dikubur",
@@ -20227,7 +21001,20 @@
     "definition": "Upacara menghaturkan sajen istimewa (Saji) kepada roh mendiang yang \"bercermin\" pada Tirtha Ening, diiringi sembah bhakti keluarga; merupakan salah satu klimaks dalam rangkaian upacara Atma Wedana/Patileman.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "mempersilakan Sang Pitara menikmati saji yang dihaturkan keturunannya",
+          "sentence_id": 901896
+        }
+      ],
+      "MELIBATKAN": [
+        {
+          "value": "segenap keluarga yang wajar menyembah, dengan sembah bhakti (muspa); orang yang sedang datang bulan, hamil atau menyusui bayi, serta anak-anak yang belum tanggal gigi, pantang ikut menyembah Sang Pitara",
+          "sentence_id": 901897
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_233",
       "upacara_atiw_1255"
@@ -20243,7 +21030,14 @@
     "definition": "Upadesa (dalam masyarakat lebih dikenal dengan nama upanisad) berarti \"bisikan dang guru\" kepada sisya, atau \"tatwa pengarahan hidup\". Dalam Ngaben, acara Upadesa diteruskan setelah Paguntingan: dengan pujastawa dan jnyananya yang suci, sang pendeta memberikan amanat petunjuk jalan (pawisik wara warah) kepada atma mendiang tentang cara membawa diri di alam lain.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERTUJUAN_UNTUK": [
+        {
+          "value": "memberi atma mendiang amanat petunjuk jalan, bagaimana sepatutnya ia membawa diri di alam lain",
+          "sentence_id": 901895
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_494",
       "upacara_atiw_1143",
@@ -20326,7 +21120,14 @@
     "definition": "Upih adalah pelepah pinang yang lebar. Damar kurung dikurung dengan bingkai bambu dan upih.",
     "definition_source": "glossary (web: https://www.komangputra.com/tata-cara-mendem-sawa-dan-pelaksanaan-ngaben-sederhana.html/6)",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DIGUNAKAN_UNTUK": [
+        {
+          "value": "memukul tanah kuburan tiga kali berturut-turut sebagai tanda panggilan kepada atma mendiang saat ngulapin",
+          "sentence_id": 901951
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_740",
       "upacara_atiw_1117",
@@ -20674,7 +21475,7 @@
     "name": "was penganten",
     "type": "KONSEP_HUKUM_ADAT",
     "aliases": [],
-    "definition": "Was penganten adalah sebutan yang, menurut dewasa ngaben, tidak diperkenankan sebagai patokan untuk Ngaben, disebut bersama wuku ingkel wong; artinya belum diuraikan dalam sumber yang ada.",
+    "definition": "Was penganten adalah sebutan yang, menurut dewasa ngaben, tidak diperkenankan sebagai patokan untuk Ngaben, disebut bersama wuku ingkel wong.",
     "definition_source": "glossary (corpus L240, L242 (meaning not in the corpus nor found on the web: the card says so))",
     "broader": null,
     "attributes": {},
@@ -20694,7 +21495,14 @@
     "definition": "Wawu Lampus (secara harfiah \"baru saja meninggal\") adalah tahap awal segera setelah kematian: pembersihan awal jenazah di rumah, lalu penutupan jenazah dengan kain putih dari ujung kepala hingga ujung kaki agar tidak kelihatan sama sekali, dilakukan sebelum upacara Nyiramang Layon (memandikan jenazah).",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "DILAKUKAN_DI": [
+        {
+          "value": "tempat seseorang meninggal, baik di rumah sakit maupun di rumah sendiri",
+          "sentence_id": 901917
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_434",
       "upacara_atiw_1275",
@@ -20999,7 +21807,14 @@
     "definition": "Yeh panembak adalah \"air suci\" yang sebenarnya bukan tirtha, karena diambil begitu saja tanpa diantar atau dipuja dengan sloka apa pun; diambil tengah malam (pukul 00.00) sehari menjelang pengabenan. Menurut sejumlah pakar, yeh panembak adalah sarana penyucian jenazah dari penganut sekte Paksa Surya.",
     "definition_source": "glossary",
     "broader": null,
-    "attributes": {},
+    "attributes": {
+      "BERMAKNA": [
+        {
+          "value": "harapan, yang dilambangkan oleh cara mengambilnya dengan gerak dari hulu ke teben dan dari teben ke hulu, agar yeh panembak memiliki daya kekuatan religius untuk menyucikan jenazah secara dualisme; pengambilannya oleh anak, ahli waris utama, juga menjadi ujian seberapa besar bakti sang anak kepada orang tuanya",
+          "sentence_id": 902000
+        }
+      ]
+    },
     "mention_passages": [
       "laporan_komp_496",
       "upacara_atiw_1092",
