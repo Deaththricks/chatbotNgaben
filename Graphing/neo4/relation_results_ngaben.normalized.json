@@ -34509,9 +34509,9 @@
     "context_sentence": "Saking besarnya, upacara ini merupakan pilihan bagi keluarga puri, geria, jero dan mereka yang martabat sosialnya wajar untuk itu, baik karena ekonominya mapan, maupun karena faktor historis. (corpus L1182)",
     "subject": "sawa wedana",
     "subject_label": "RITUAL_KEMATIAN",
-    "relation": "DIPERUNTUKKAN_BAGI",
-    "raw_relation": "DIPERUNTUKKAN_BAGI",
-    "object": "keluarga puri, gria, dan mereka yang martabat sosialnya wajar untuk upacara sebesar Sawa Wedana, karena ekonominya mapan maupun karena faktor historis",
+    "relation": "LEBIH_SERING_DITEMPUH_OLEH",
+    "raw_relation": "LEBIH_SERING_DITEMPUH_OLEH",
+    "object": "keluarga puri dan gria, serta mereka yang martabat sosialnya wajar untuk upacara sebesar Sawa Wedana, karena ekonominya mapan maupun karena faktor historis",
     "object_label": null,
     "object_type": "LITERAL",
     "source": "manual_addition+ayuthaya_2026_11_03"
@@ -34787,7 +34787,7 @@
     "subject_label": "TAHAPAN_UPACARA",
     "relation": "BERTUJUAN_UNTUK",
     "raw_relation": "BERTUJUAN_UNTUK",
-    "object": "membersihkan (menyucikan) tingkat awal banten, adegan, dan sarana upacara lainnya dengan Tirtha Panglukatan",
+    "object": "membersihkan (menyucikan) tingkat awal banten, adegan, dan sarana upacara lainnya dengan Tirtha Panglukatan dalam Ngaben",
     "object_label": null,
     "object_type": "LITERAL",
     "source": "manual_addition+ayuthaya_2026_11_03"
@@ -35631,5 +35631,53 @@
     "object_label": null,
     "object_type": "LITERAL",
     "source": "manual_addition+web_ayuthaya_2026_11_03"
+  },
+  {
+    "sentence_id": 902013,
+    "context_sentence": "[corpus L852, pangringkes] Pada mata, alis, telinga, tiap-tiap ruas tulang, persendian, aurat dan sebagainya, diletakkan beraneka jenis sarana, termasuk cincin permata yang dimasukkan ke dalam mulut jenazah. Hal ini diyakini, bahwa cincin yang disebut monmon itu merupakan sarana untuk meredam bau di kala terjadi pembusukan.",
+    "subject": "monmon",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DILETAKKAN_DI",
+    "raw_relation": "DILETAKKAN_DI",
+    "object": "mulut jenazah",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+style_test_2026_11_06"
+  },
+  {
+    "sentence_id": 902014,
+    "context_sentence": "[corpus L852, pangringkes] Pada mata, alis, telinga, tiap-tiap ruas tulang, persendian, aurat dan sebagainya, diletakkan beraneka jenis sarana, termasuk cincin permata yang dimasukkan ke dalam mulut jenazah. Hal ini diyakini, bahwa cincin yang disebut monmon itu merupakan sarana untuk meredam bau di kala terjadi pembusukan.",
+    "subject": "monmon",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "BERFUNGSI_SEBAGAI",
+    "raw_relation": "BERFUNGSI_SEBAGAI",
+    "object": "sarana untuk meredam bau ketika jenazah membusuk",
+    "object_label": null,
+    "object_type": "LITERAL",
+    "source": "manual_addition+style_test_2026_11_06"
+  },
+  {
+    "sentence_id": 902015,
+    "context_sentence": "[corpus L852] Kemudian jenazah ... mulailah diberi berbagai sarana simbolik pangringkesan ... Pada mata, alis, telinga, tiap-tiap ruas tulang, persendian, aurat dan sebagainya, diletakkan beraneka jenis sarana, termasuk cincin permata yang dimasukkan ke dalam mulut jenazah. Hal ini diyakini, bahwa cincin yang disebut monmon itu merupakan sarana untuk meredam bau di kala terjadi pembusukan.",
+    "subject": "monmon",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIGUNAKAN_DALAM",
+    "raw_relation": "DIGUNAKAN_DALAM",
+    "object": "pangringkes",
+    "object_label": "TAHAPAN_UPACARA",
+    "object_type": "ENTITY",
+    "source": "manual_addition+style_test_2026_11_06"
+  },
+  {
+    "sentence_id": 902016,
+    "context_sentence": "[corpus L213, E. Memandikan Jenazah] 4. Kelengkapan sawa yang dipasang selanjutnya adalah sebagai berikut: kaca diletakkan pada mata; monmon pada mulut; daun intaran pada alis; daun delem pada pipi; bunga menuh pada hidung; ...",
+    "subject": "monmon",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIGUNAKAN_DALAM",
+    "raw_relation": "DIGUNAKAN_DALAM",
+    "object": "nyiramang layon",
+    "object_label": "TAHAPAN_UPACARA",
+    "object_type": "ENTITY",
+    "source": "manual_addition+style_test_2026_11_06"
   }
 ]

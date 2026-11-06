@@ -50,6 +50,7 @@ actions:
   - action_llm_fallback
   - action_out_of_scope
   - action_sapa
+  - action_pamit
 
 responses:
   utter_sapa:

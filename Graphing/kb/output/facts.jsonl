@@ -23025,3 +23025,25 @@
   "source_sentence": "[web ayuthaya 2026-11-03] https://www.indonesia.travel/id-id/travel-ideas/culture/upacara-keagamaan-bali/ : \"Pura menjadi pusat pelaksanaan upacara Dewa Yadnya sebagai tempat pemujaan dan persembahyangan kepada Tuhan.\"",
   "sentence_id": 901960
 }
+
+{
+  "id": "f902015_monmon_pangringke",
+  "text": "monmon digunakan dalam pangringkes.",
+  "subject_id": "monmon",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "pangringkes",
+  "confidence": "HIGH",
+  "source_sentence": "[corpus L852] Kemudian jenazah ... mulailah diberi berbagai sarana simbolik pangringkesan ... Pada mata, alis, telinga, tiap-tiap ruas tulang, persendian, aurat dan sebagainya, diletakkan beraneka jenis sarana, termasuk cincin permata yang dimasukkan ke dalam mulut jenazah. Hal ini diyakini, bahwa cincin yang disebut monmon itu merupakan sarana untuk meredam bau di kala terjadi pembusukan.",
+  "sentence_id": 902015
+}
+
+{
+  "id": "f902016_monmon_nyiramang_",
+  "text": "monmon digunakan dalam nyiramang layon.",
+  "subject_id": "monmon",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "nyiramang_layon",
+  "confidence": "HIGH",
+  "source_sentence": "[corpus L213, E. Memandikan Jenazah] 4. Kelengkapan sawa yang dipasang selanjutnya adalah sebagai berikut: kaca diletakkan pada mata; monmon pada mulut; daun intaran pada alis; daun delem pada pipi; bunga menuh pada hidung; ...",
+  "sentence_id": 902016
+}

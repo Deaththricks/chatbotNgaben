@@ -7,10 +7,11 @@ rules:
       - intent: sapa
       - action: action_sapa
 
+  # action_pamit says goodbye, or invites a question NLU read as one ("saya mau nanya")
   - rule: pamit
     steps:
       - intent: pamit
-      - action: utter_pamit
+      - action: action_pamit
 
   - rule: bot challenge
     steps:
