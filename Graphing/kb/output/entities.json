@@ -1486,8 +1486,8 @@
     "name": "bade",
     "type": "SARANA_RITUAL",
     "aliases": [],
-    "definition": "Bade adalah menara pengusung jenazah bertingkat yang lengkap dengan badawang nala sebagai dasar bangunannya, tempat jenazah diletakkan saat diarak menuju setra. Jumlah tingkatnya menandai kedudukan: bertingkat sebelas untuk jenazah raja Bali (Gelgel/Klungkung), sembilan untuk keluarga raja atau raja-raja bawahan, dan tujuh untuk keluarga yang leluhurnya pernah menjadi punggawa atau pejabat sederajat. Bade dan lembu baru menjadi sarana yang \"siap pakai\" setelah diupacarai mlaspas dengan sesajen dan Tirtha Pamlaspas. Bade dan lembu lazimnya dipakai golongan berkasta lebih tinggi. Wadah, yaitu usungan tanpa badawang nala, lazimnya dipakai oleh warga (klan) dan masyarakat yang tidak berkasta.",
-    "definition_source": "glossary (corpus md 4531-4548; web for 'masyarakat umum memakai wadah': https://baliexpress.jawapos.com/balinese/671135613/ini-dia-simbolisasi-dan-makna-wadah-bade-dan-lembu-pada-acara-ngaben-umat-hindu-di-bali -- reworded 2026-10-01 as usual practice ('lazimnya'; the source says wadah is 'biasanya' used by people without caste), two sentences each with its own subject; approved by the user 2026-10-01. 2026-10-02: same claims, wadah made the subject of the second sentence (corpus L1578 'Wadah dipakai oleh sesuatu warga (clan)') because the model kept reading 'warga (klan)' as users of the bade)",
+    "definition": "Bade adalah menara pengusung jenazah bertingkat yang lengkap dengan badawang nala sebagai dasar bangunannya, tempat jenazah diletakkan saat diarak menuju setra. Jumlah tingkatnya menandai kedudukan: bertingkat sebelas untuk jenazah raja Bali (Gelgel/Klungkung), sembilan untuk keluarga raja atau raja-raja bawahan, dan tujuh untuk keluarga yang leluhurnya pernah menjadi punggawa atau pejabat sederajat. Bade dan lembu baru menjadi sarana yang \"siap pakai\" setelah diupacarai mlaspas dengan sesajen dan Tirtha Pamlaspas. Bade dan lembu lazimnya dipakai golongan berkasta lebih tinggi. Wadah, yaitu usungan tanpa badawang nala, lazimnya dipakai oleh warga (klan) dan masyarakat yang tidak berkasta. Di setra, bade dibakar bersama Bale Salunglung; sesudah keduanya terbakar, Bale Pamuunan pun dibakar.",
+    "definition_source": "glossary (corpus md 4531-4548; web for 'masyarakat umum memakai wadah': https://baliexpress.jawapos.com/balinese/671135613/ini-dia-simbolisasi-dan-makna-wadah-bade-dan-lembu-pada-acara-ngaben-umat-hindu-di-bali -- reworded 2026-10-01 as usual practice ('lazimnya'; the source says wadah is 'biasanya' used by people without caste), two sentences each with its own subject; approved by the user 2026-10-01. 2026-10-02: same claims, wadah made the subject of the second sentence (corpus L1578 'Wadah dipakai oleh sesuatu warga (clan)') because the model kept reading 'warga (klan)' as users of the bade. 2026-11-07: last sentence 'Di setra, bade dibakar bersama Bale Salunglung; sesudah keduanya terbakar, Bale Pamuunan pun dibakar.' from corpus L1708 ('Setelah Bade dan Bale Salunglung, terbakar, Balai Pamuunan pun juga diserahkan kepada Sang Jago Merah'): 'apakah bade harus dibakar?' had nothing to answer from (plan #28 open list))",
     "broader": "usungan",
     "attributes": {
       "DILETAKKAN_DI": [
@@ -3793,19 +3793,22 @@
     "id": "canang_sari",
     "name": "canang sari",
     "type": "SARANA_RITUAL",
-    "aliases": [],
-    "definition": "Sarana persembahan sehari-hari yang juga dihaturkan dalam rangkaian upacara jenazah, misalnya dilengkapkan pada soda atau diletakkan bersama kawangen di atas tangan jenazah yang telah dihias.",
-    "definition_source": "glossary",
+    "aliases": [
+      "canang"
+    ],
+    "definition": "Canang sari (disebut juga canang) adalah sarana persembahan sehari-hari yang juga dihaturkan dalam rangkaian upacara jenazah, misalnya dilengkapkan pada soda atau diletakkan bersama kawangen di atas tangan jenazah yang telah dihias.",
+    "definition_source": "glossary (glossary; 2026-11-09 'disebut juga canang': user (Balinese speaker): \"just 'canang' is interchangeably used to refer as 'canang sari'\"; corpus L3374 uses bare 'canang' for it ('peras soda dan canang'). Alias row sid 902017; force_merge canang -> canang sari. Canang meraka / oyodan / tambur stay their own cards, not kinds of canang sari)",
     "broader": null,
     "attributes": {},
     "mention_passages": [
       "laporan_komp_071",
       "upacara_atiw_1006",
       "upacara_atiw_1327",
+      "upacara_atiw_1377",
       "upacara_atiw_1382"
     ],
     "resolve_method": "unresolved",
-    "n_source_strings": 1
+    "n_source_strings": 2
   },
   {
     "id": "canang_tambur",
@@ -14130,8 +14133,8 @@
     "name": "pecahan kaca",
     "type": "SARANA_RITUAL",
     "aliases": [],
-    "definition": "Serpihan kaca yang diletakkan pada kedua mata jenazah sebagai salah satu kelengkapan dalam upacara memandikan dan menghias jenazah.",
-    "definition_source": "glossary",
+    "definition": "Serpihan kaca yang diletakkan pada kedua mata jenazah sebagai salah satu kelengkapan dalam upacara memandikan dan menghias jenazah. Pada Pabersihan Mati, sesudah bunga teleng, sebuah pecahan kaca (bila memungkinkan berbentuk bundar) ditaruh di atas setiap kelopak mata jenazah; maknanya agar dalam perjalanannya menuju tujuan akhir, yaitu Brahman (Tuhan), mendiang dapat melihat dengan jelas sehingga tujuannya cepat tercapai, dan agar kelak ketika numitis (lahir kembali) ia memiliki mata yang indah dan penglihatan yang terang.",
+    "definition_source": "glossary (glossary; 2026-11-07: second sentence (where it is laid and what it means) from corpus L3148 ('Pecahan Kaca pada Mata: Setelah selesai menaruh Bunga Teleng, dilanjutkan dengan menaruh pecahan kaca ... makna penempatan kaca tersebut adalah agar dalam perjalanannya ke tujuan akhir yaitu untuk menuju Brahman (Tuhan), terlihat jelas ... apabila orang tersebut manumadi atau numitis agar ia memiliki mata yang indah'); 'kenapa matanya ditutup kaca?' found no reason (plan #28 open list))",
     "broader": null,
     "attributes": {
       "BERMAKNA": [

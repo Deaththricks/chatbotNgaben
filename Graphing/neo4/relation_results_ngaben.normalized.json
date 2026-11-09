@@ -24479,7 +24479,7 @@
     "object_type": "ENTITY",
     "source": "manual_addition+web_sarana_2026_10_02",
     "variant": {
-      "region": "sebagian sumber (atap)",
+      "region": "untuk atapnya",
       "op": "tambah",
       "source": "https://cakepane.blogspot.com/2015/08/sanggah-tawang-dan-sanggah-surya.html"
     }
@@ -35679,5 +35679,17 @@
     "object_label": "TAHAPAN_UPACARA",
     "object_type": "ENTITY",
     "source": "manual_addition+style_test_2026_11_06"
+  },
+  {
+    "sentence_id": 902017,
+    "context_sentence": "[pengguna 2026-11-09] pemilik proyek (penutur bahasa Bali): \"just 'canang' is interchangeably used to refer as 'canang sari'\". [corpus L3374, Mesaji / Memunjung] Adapun upakara atau \"bebantenan\" yang dipersiapkan tidaklah begitu sama di tiap daerah, namun pada dasarnya upakara tersebut terdiri dari : punjung (nasi) lengkap dengan lauknya, ayaban, peras soda dan canang.",
+    "subject": "canang",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIGUNAKAN_DALAM",
+    "raw_relation": "DIGUNAKAN_DALAM",
+    "object": "memunjung",
+    "object_label": "TAHAPAN_UPACARA",
+    "object_type": "ENTITY",
+    "source": "manual_addition+user_knowledge_2026_11_09"
   }
 ]

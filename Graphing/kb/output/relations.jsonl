@@ -19773,14 +19773,14 @@
   "object_id": "alang_alang",
   "object_name": "alang-alang",
   "confidence": "HIGH",
-  "nl": "variasi (sebagian sumber (atap)): sanggar surya terbuat dari alang-alang (sebagai tambahan)",
+  "nl": "variasi (untuk atapnya): sanggar surya terbuat dari alang-alang (sebagai tambahan)",
   "raw_relation": "TERBUAT_DARI",
   "provenance": {
     "sentence_id": 901088,
     "context_sentence": "[web sarana 2026-10-02] https://cakepane.blogspot.com/2015/08/sanggah-tawang-dan-sanggah-surya.html : \"Sanggah ini berbentuk segi empat panjang mirip dengan Sanggah Tawang hanya ruangannya satu dan memakai atap lalang atau kelabang.\""
   },
   "variant": {
-    "region": "sebagian sumber (atap)",
+    "region": "untuk atapnya",
     "op": "tambah",
     "source": "https://cakepane.blogspot.com/2015/08/sanggah-tawang-dan-sanggah-surya.html"
   }
@@ -31357,5 +31357,20 @@
   "provenance": {
     "sentence_id": 902016,
     "context_sentence": "[corpus L213, E. Memandikan Jenazah] 4. Kelengkapan sawa yang dipasang selanjutnya adalah sebagai berikut: kaca diletakkan pada mata; monmon pada mulut; daun intaran pada alis; daun delem pada pipi; bunga menuh pada hidung; ..."
+  }
+}
+
+{
+  "subject_id": "canang_sari",
+  "subject_name": "canang sari",
+  "predicate": "DIGUNAKAN_DALAM",
+  "object_id": "memunjung",
+  "object_name": "memunjung",
+  "confidence": "HIGH",
+  "nl": "canang sari digunakan dalam memunjung",
+  "raw_relation": "DIGUNAKAN_DALAM",
+  "provenance": {
+    "sentence_id": 902017,
+    "context_sentence": "[pengguna 2026-11-09] pemilik proyek (penutur bahasa Bali): \"just 'canang' is interchangeably used to refer as 'canang sari'\". [corpus L3374, Mesaji / Memunjung] Adapun upakara atau \"bebantenan\" yang dipersiapkan tidaklah begitu sama di tiap daerah, namun pada dasarnya upakara tersebut terdiri dari : punjung (nasi) lengkap dengan lauknya, ayaban, peras soda dan canang."
   }
 }

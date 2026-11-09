@@ -380,7 +380,8 @@ class KbResolver:
         phrase is common, so "kepada jenazah" became kepala jenazah, the corpse's head (2026-10-07
         batch) -- both words everyday. Beside a word only that name has, the everyday word is the
         user's slip: "sredaning citra" is sredaning cita. An edit at a word boundary counts only
-        when both words it touches are everyday ones."""
+        when both words it touches are everyday ones. Not when the other words are a KB name as written:
+        "ngaben mahal gak" is Ngaben and "mahal", and became ngaben massal (style test 2026-11-07)."""
         spans, pos = [], 0
         toks = [t for t in re.split(r"[\s\-/]+", raw) if t]
         for t in toks:
@@ -390,8 +391,9 @@ class KbResolver:
         for op in Levenshtein.editops(key, k):
             p = op.src_pos
             touching = [t for a, b, t in spans if a <= p < b or (op.tag == "insert" and p == b)]
+            rest = [t for t in toks if t not in touching]
             if (touching and all(t in self.common_words for t in touching)
-                    and all(t in self.common_words for t in toks if t not in touching)):
+                    and (all(t in self.common_words for t in rest) or " ".join(rest) in self.surface)):
                 return True
         return False
 

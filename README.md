@@ -73,9 +73,10 @@ Keep Neo4j running, then open two PowerShell windows in `Chatbot\bot`:
 
 Try `apa itu ngaben`, `apa saja tahapan dalam ngaben`, `mangle terbuat dari apa` (templates, no
 LLM) and `apa hubungan bade dan wadah`, `ngaben pas purnama boleh gak?` (the LLM).
-If Groq is unreachable or out of quota the bot still answers: templates as usual, the rest from the
-stored definitions only. Each LLM call's tokens are logged in `Chatbot\bot\actions\llm_usage_log.jsonl`,
-and each question's route (template or LLM) in `routing_log.jsonl`.
+If Groq is unreachable or out of quota the bot still answers: templates as usual, the rest briefly from the
+cards (the asked aspect, or each term's first sentence). Each LLM call's tokens are logged in
+`Chatbot\bot\actions\llm_usage_log.jsonl`, each failed call and why in `llm_error_log.jsonl`, and each question's
+route (template or LLM) in `routing_log.jsonl`.
 
 ## How the bot answers a question
 
@@ -95,8 +96,9 @@ and each question's route (template or LLM) in `routing_log.jsonl`.
        rule, good or avoided days, the order of two stages, ...), else with Qwen, given the rules for this kind
        of question (`_synthesis_rules`); then `_answer_checks` cuts what the KB does not support and adds what
        the answer left out.
-3. If Groq is unreachable the answer comes from the stored definitions; if Neo4j is, the bot answers from the
-   definitions and says the graph could not be reached.
+3. If Groq is unreachable the answer is a short one from the cards (`_llm_failed_answer`: the asked aspect's
+   template, a price question's stated amounts, else each term's first sentence); if Neo4j is, the bot answers from
+   the definitions and says the graph could not be reached.
 
 **Where to change things** (the docstring at the top of `actions/actions.py` maps the whole file):
 

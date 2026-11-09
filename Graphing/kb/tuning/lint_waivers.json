@@ -216,7 +216,10 @@
     "klungah_nyuh_gading>kelapa": "kind of klungah (its broader), which is a kind of kelapa",
     "dewa_hyang>pitra": "a pitra becomes dewa hyang once purified (corpus L1963: 'dari pitra menjadi bhatara'); a change of standing, not a kind (2026-10-28)",
     "nawa_dewata>dewa": "a set of nine dewa; its members are kinds of dewa (2026-10-28)",
-    "krama_masyarakat_banjar>warga": "'warga suatu banjar' is the plain 'members' sense, which the warga card also gives (2026-10-28)"
+    "krama_masyarakat_banjar>warga": "'warga suatu banjar' is the plain 'members' sense, which the warga card also gives (2026-10-28)",
+    "canang_meraka>canang_sari": "'canang' here is the offering in general; bare 'canang' resolves to canang sari only as its everyday name (user, 2026-11-09). Canang meraka is its own canang, not a kind of canang sari",
+    "canang_oyodan>canang_sari": "'canang' here is the offering in general; bare 'canang' resolves to canang sari only as its everyday name (user, 2026-11-09). Canang oyodan is its own canang, not a kind of canang sari",
+    "canang_tambur>canang_sari": "'canang' here is the offering in general; bare 'canang' resolves to canang sari only as its everyday name (user, 2026-11-09). Canang tambur is its own canang, not a kind of canang sari"
   },
   "comp_leaves": {
     "gegantusan": "a content of daksina; no source found says what it holds",
