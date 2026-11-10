@@ -4991,7 +4991,7 @@
     "name": "dewa yadnya",
     "type": "RITUAL",
     "aliases": [],
-    "definition": "Dewa Yadnya adalah salah satu dari Panca Yadnya, yaitu persembahan yang ditujukan kepada para dewa sebagai manifestasi Ida Sang Hyang Widhi Wasa. Dalam upacara Ngaben, hari baik untuk Dewa Yadnya (seperti sasih Kapat) berbeda dari hari baik untuk Pitra Yadnya seperti Ngaben, dan arah pradaksina (memutar searah jarum jam) yang dipakai dalam upacara Dewa Yadnya di pura berlawanan dengan arah prasawya yang dipakai saat memutar Bade dalam prosesi Ngaben.",
+    "definition": "Dewa Yadnya adalah salah satu dari Panca Yadnya, yaitu persembahan suci yang ditujukan kepada para dewa dan manifestasi Ida Sang Hyang Widhi Wasa, yang umumnya dilaksanakan di pura (seperti upacara piodalan, ngenteg linggih, dan ngusaba).",
     "definition_source": "glossary",
     "broader": "panca_yadnya",
     "attributes": {},
@@ -10271,7 +10271,7 @@
     "name": "manusa yadnya",
     "type": "RITUAL",
     "aliases": [],
-    "definition": "Manusa Yadnya adalah salah satu dari Panca Yadnya, yaitu yadnya (persembahan suci) untuk manusia, seperti upacara potong gigi (mepandes) dan upacara siklus hidup lainnya; sasih Kalima baik untuk Dewa dan Manusa Yadnya.",
+    "definition": "Manusa Yadnya adalah salah satu dari Panca Yadnya, yaitu yadnya (persembahan suci) yang ditujukan untuk manusia, berkaitan dengan pemeliharaan dan penyucian siklus hidup manusia (seperti upacara kelahiran, upacara potong gigi atau mepandes, hingga perkawinan).",
     "definition_source": "glossary",
     "broader": null,
     "attributes": {
@@ -11887,7 +11887,7 @@
     "name": "nganyut",
     "type": "TAHAPAN_UPACARA",
     "aliases": [],
-    "definition": "Secara harfiah \"nganyut\" berarti menghanyutkan atau melarungkan sesuatu ke aliran air (sungai atau laut). Dalam upacara Ngaben, nganyut adalah pelarungan abu jenazah hasil pembakaran ke sungai atau laut, melambangkan pelepasan terakhir menuju moksha. Nganyut adalah tahap ketujuh dari delapan tahapan pelaksanaan Ngaben. Abu dihanyutkan ke laut agar bekas jasad mendiang menyatu kembali dengan Pancamahabutha menurut asalnya masing-masing; permohonan itu disertai sajen yang dihaturkan kepada penguasa laut. Bila tidak memungkinkan ke laut, abu boleh dihanyutkan ke sungai, karena sungai itu akhirnya mengalir ke laut.",
+    "definition": "Secara harfiah \"nganyut\" berarti menghanyutkan atau melarungkan sesuatu ke aliran air (sungai atau laut). Dalam upacara Ngaben, nganyut adalah pelarungan abu jenazah hasil pembakaran ke sungai atau laut, melambangkan pelepasan terakhir menuju moksha. Nganyut adalah tahap ketujuh dari delapan tahapan pelaksanaan Ngaben. Abu dihanyutkan ke laut agar bekas jasad mendiang menyatu kembali dengan Pancamahabutha menurut asalnya masing-masing; permohonan itu disertai sajen yang dihaturkan kepada penguasa laut. Bila tidak memungkinkan ke laut (misalnya bagi desa atau pemukiman yang jauh dari laut sehingga lebih dekat dan praktis menjangkau sungai atau tukad), abu boleh dilarung ke sungai, karena secara filosofis sungai itu akhirnya mengalir ke laut sehingga maknanya tetap sama.",
     "definition_source": "glossary (corpus L35 (the stage summary); why the sea, added 2026-11-06 (style test: 'kenapa abu jenazah dibuang ke laut?' got 'belum tersedia'): L1882 ('sajen yang bermakna memohon anugrah kepada Hyang Wisnu atau Hyang Baruna (penguasa laut) ... semoga bekas jasad mendiang dapat manunggal dengan Pancamahabhuta menurut jenis asalnya masing-masing') and L1879 ('Jika tidak memungkinkan ke laut, maka dihanyutkan ke sungai pun bisa, karena sungai tersebut toh akhirnya mengalir ke laut'); the sea god is said as 'penguasa laut', as nyegara gunung's card does (Baruna has no card))",
     "broader": null,
     "attributes": {

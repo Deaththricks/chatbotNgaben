@@ -1130,6 +1130,7 @@ def _present(text: Text) -> str:
     """The message as the user reads it: no "basis data", an unrecorded thing "belum tersedia" (_NO_INFO)."""
     for pattern, repl in _PRESENT_RULES:
         text = pattern.sub(repl, text)
+    text = _drop_contradictory_no_link(text)
     return text
 
 
@@ -1267,6 +1268,9 @@ def _plain_other_name(e: Dict[str, Any], asked: Text) -> bool:
     ("Bade tingkat ... tingkatan bade", 2026-10-08 replay)."""
     resolver = get_resolver()
     words = _WORD_RE.findall(asked.lower())
+    recorded_aliases = {_ortho_key(n) for n in (e.get("aliases") or [])}
+    if _ortho_key(asked) in recorded_aliases:
+        return True
     if (_VERB_FORM_RE.match(asked) or any(_VERB_FORM_RE.match(w) for w in words)
             or all(_is_everyday_word(w, resolver) or w in _ALIAS_NAME_WORDS or _root(w) in _sentence_roots(e["name"])
                    for w in words)):
@@ -1286,16 +1290,54 @@ _PAREN_RE = re.compile(r"\([^()]*\)")
 _NAMES_LIST_RE = r"\s*\((?:disebut\s+juga|juga\s+disebut|dikenal\s+(?:juga\s+)?sebagai)\s+"
 
 
+def _all_synonyms(e: Dict[str, Any], asked: Text) -> List[str]:
+    """All recorded synonyms / other names of `e` (canonical name, aliases, definition names,
+    graph relationships), excluding `asked` and spelling variants of `asked`, with canonical name first."""
+    name = e["name"]
+    card = re.search(rf"(?<![\w-]){re.escape(name)}(?![\w-])", e.get("definition") or "", re.I)
+    name_cased = card.group(0) if card else " ".join(w.capitalize() for w in name.split())
+
+    other_name_preds = PREDICATE_FAMILIES.get("sebutan_lain", set()) - {"ADALAH"}
+    raw_syns = [name_cased]
+    raw_syns.extend(e.get("aliases") or [])
+    raw_syns.extend(_definition_other_names(e))
+    for rel in e.get("relationships") or []:
+        if rel.get("relation") in other_name_preds and rel.get("target") and not rel.get("variant_op"):
+            raw_syns.append(rel["target"])
+
+    asked_key = _ortho_key(asked)
+    seen = {asked_key}
+    synonyms = []
+    for s in raw_syns:
+        s_clean = s.strip()
+        k = _ortho_key(s_clean)
+        if not s_clean or k in seen or len(s_clean.split()) > 4:
+            continue
+        if _same_name(s_clean, asked):
+            continue
+        seen.add(k)
+        cased_syn = " ".join(w.capitalize() for w in s_clean.split()) if s_clean.islower() else s_clean
+        synonyms.append(cased_syn)
+    return synonyms
+
+
+def _format_synonyms_phrase(synonyms: List[str]) -> str:
+    """Format synonyms as: '(disebut juga A, B, atau C)'"""
+    if not synonyms:
+        return ""
+    if len(synonyms) == 1:
+        return f"(disebut juga {synonyms[0]})"
+    elif len(synonyms) == 2:
+        return f"(disebut juga {synonyms[0]} atau {synonyms[1]})"
+    else:
+        joined = ", ".join(synonyms[:-1])
+        return f"(disebut juga {joined}, atau {synonyms[-1]})"
+
+
 def _in_asked_names(answer: Text, enriched: List[Dict[str, Any]], user_msg: Text = "") -> str:
-    """The answer in the name the user asked by (user, 2026-11-03, the AYUTHAYA change: "if a user ask 'what is X', i
-    want the bot to answer in terms of X instead of its synonyms ... It would be great that only later on that they let
-    mention what the synonyms are"): "apa perbedaan ngaben dan ngerorasin" was answered about Atma Wedana. The KB name
-    gives way to the asked one, but not inside a longer name holding it ("dewasa ngaben"), nor in a clause that speaks
-    of names, nor when the user wrote the KB name too ("apa itu paratma atau brahman"). A bracket naming the asked one
-    names the KB name instead ("Sebel (Cuntaka)", not "Sebel (sebel)"); a "(disebut juga ...)" list after the asked name
-    that lacks the KB name gets it first; with no such list and the KB name said nowhere, the first paragraph ends with
-    "<asked> juga dikenal sebagai <name>" -- unless the two are one name written two ways (`_same_name`: "Dewa siwa juga
-    dikenal sebagai Shiwa", 2026-11-06)."""
+    """The answer in the name the user asked by. When the user asks about a term X by an alias/synonym,
+    the bot answers using term X first and immediately explains all synonyms of X, replacing references
+    to the canonical name with X."""
     resolver = get_resolver()
     for e in enriched:
         asked, name = e.get("asked_as"), e["name"]
@@ -1346,16 +1388,28 @@ def _in_asked_names(answer: Text, enriched: List[Dict[str, Any]], user_msg: Text
         out = re.sub(r"[^.!?;:\n]+[.!?;:]*", clause, out)
         for key, value in masks.items():
             out = out.replace(key, value)
-        if out != answer:
-            listed = re.search(rf"(?<![\w-]){re.escape(asked)}{_NAMES_LIST_RE}[^)]*\)", out, re.I)
-            if listed and not held.search(listed.group(0)):
-                opening = re.match(rf".*?{_NAMES_LIST_RE}", listed.group(0), re.I | re.S).end()
-                at = listed.start() + opening
-                out = f"{out[:at]}{name_cased}, {out[at:]}"
-            elif not listed and not held.search(out) and not _same_name(asked, name):
+
+        syns = _all_synonyms(e, asked)
+        phrase = _format_synonyms_phrase(syns) if syns else ""
+        if phrase:
+            m_first = re.search(rf"(?<![\w-]){re.escape(asked)}(?![\w-])", out, re.I)
+            if m_first:
+                after_asked = out[m_first.end():]
+                m_paren = re.match(r"\s*\(([^)]+)\)", after_asked)
+                syn_keys = {_ortho_key(s) for s in syns} | {_ortho_key(name)}
+                if m_paren:
+                    content = m_paren.group(1).lower()
+                    is_syn_bracket = (any(_ortho_key(w) in syn_keys for w in re.split(r"[,;/]|\b(?:atau|dan|disebut|juga|dikenal|sebagai)\b", content) if w.strip())
+                                      or bool(re.search(r"\b(?:disebut|dikenal)\b", content)))
+                    if is_syn_bracket:
+                        out = out[:m_first.end()] + f" {phrase}" + after_asked[m_paren.end():]
+                    else:
+                        out = out[:m_first.end()] + f" {phrase}" + after_asked
+                else:
+                    out = out[:m_first.end()] + f" {phrase}" + after_asked
+            elif not _same_name(asked, name):
                 first, sep, rest = out.partition("\n\n")
-                out = (f"{first.rstrip()} {cased(asked[:1].upper() + asked[1:])} juga dikenal sebagai {name_cased}."
-                       f"{sep}{rest}")
+                out = f"{cased(asked[:1].upper() + asked[1:])} {phrase} {first.rstrip()}{sep}{rest}"
         answer = out
     return answer
 
@@ -1842,6 +1896,16 @@ def _root(word: str) -> str:
     return word
 
 
+_BALINESE_SYNONYMS: Dict[str, str] = {
+    "tukad": "sungai",
+    "pasih": "laut",
+    "segara": "laut",
+    "setra": "kuburan",
+    "layon": "jenazah",
+    "sawa": "jenazah",
+}
+
+
 def _is_everyday_word(word: str, resolver) -> bool:
     """In the common-word list (6k words of a formal corpus), or sharing a root with one of
     them: the list has "menghindari" but not "dihindari", "gigi" but not "giginya". Its spoken forms too
@@ -1849,6 +1913,9 @@ def _is_everyday_word(word: str, resolver) -> bool:
     global _EVERYDAY_ROOTS
     if _EVERYDAY_ROOTS is None:
         _EVERYDAY_ROOTS = frozenset(_root(w) for w in resolver.common_words)
+    wl = word.lower()
+    if wl in _BALINESE_SYNONYMS:
+        return True
     # (a word of a KB name keeps its own spelling: "kepeng" of uang kepeng is no "kepang", "ngajar" of ngajar-ajar)
     forms = {word} if _ortho_token(word) in resolver.name_tokens else _colloquial_forms(word)
     return any(w in resolver.common_words or _root(w) in _EVERYDAY_ROOTS for w in forms)
@@ -2101,6 +2168,54 @@ class _Scan:
     turns: List[str]                          # the recent user turns, this one last (recent_user_turns)
     entity_history: List[str]
     current_entity: Optional[str]
+    tracker: Optional[Any] = None
+
+
+def _recent_compared_terms(s: _Scan) -> list:
+    """The two most recently discussed distinct terms from the conversation history,
+    for a comparison, difference, or similarity question that names neither subject
+    (e.g. 'apa perbedaannya?', 'apa perbedaan keduanya?', 'apa persamaannya?').
+    Returns [older_match, newer_match] if two distinct entities are found, else []."""
+    resolver = s.resolver
+    names: List[str] = []
+    if s.current_entity:
+        names.append(s.current_entity)
+    for h in reversed(s.entity_history or []):
+        if h and h not in names:
+            names.append(h)
+
+    # Also check prior turns if history had fewer than 2 terms
+    if len(names) < 2:
+        prior_turns = s.turns[:-1] if len(s.turns) > 1 else []
+        for t in reversed(prior_turns):
+            mentioned, _ = _mentioned_terms(t, resolver)
+            for m, _ in mentioned:
+                if m.name not in names and m.id not in names:
+                    names.append(m.name)
+
+    matches = []
+    seen_ids = set()
+    for name in names:
+        m = resolver.resolve(name)
+        if m and m.id not in seen_ids:
+            matches.append(m)
+            seen_ids.add(m.id)
+        if len(matches) == 2:
+            break
+
+    if len(matches) == 2:
+        # Return in chronological order [older, newer] so the earlier entity comes first
+        return [matches[1], matches[0]]
+    return matches
+
+
+_AFFIRM_SUGGESTION_RE = re.compile(
+    r"^\s*(?:iya|ya|betul|benar|yup|yap|yo|ok|oke|yep|hooh|yoi|iyo)"
+    r"(?:\s+(?:itu|yang\s+itu|maksud\s+(?:saya|aku)(?:\s+itu)?|bener|betul))?\s*[.!?]*\s*$"
+    r"|^\s*(?:itu|yang\s+itu|maksud\s+(?:saya|aku)\s+(?:itu)?)\s*[.!?]*\s*$"
+    r"|^\s*(?:yang\s+pertama|pertama|yang\s+kedua|kedua|yang\s+ketiga|ketiga)\s*[.!?]*\s*$",
+    re.I
+)
 
 
 def _extract_and_resolve(
@@ -2134,8 +2249,42 @@ def _extract_and_resolve(
     neo4j_conn.failed = False   # this turn's graph queries start clean (see Neo4jConnection)
     turns = recent_user_turns(tracker, limit=4)
     resolver = get_resolver()
+
+    last_bot = _last_bot_utterance(tracker) if tracker is not None else None
+    if last_bot:
+        m_sugg = re.search(r"Mungkin\s+maksud\s+Anda:\s*([^?]+)\?", last_bot, re.I)
+        if m_sugg:
+            suggestions = [sg.strip() for sg in m_sugg.group(1).split(",") if sg.strip()]
+            chosen = None
+            if _AFFIRM_SUGGESTION_RE.match(user_msg):
+                if re.search(r"\bkedua\b", user_msg, re.I) and len(suggestions) >= 2:
+                    chosen = suggestions[1]
+                elif re.search(r"\bketiga\b", user_msg, re.I) and len(suggestions) >= 3:
+                    chosen = suggestions[2]
+                elif suggestions:
+                    chosen = suggestions[0]
+            else:
+                chosen = next((sg for sg in suggestions if re.search(rf"\b{re.escape(sg)}\b", user_msg, re.I)), None)
+            if chosen:
+                m_chosen = resolver.resolve(chosen)
+                if m_chosen:
+                    prev_turns = [t for t in turns[:-1] if t.strip()] if len(turns) > 1 else []
+                    prev_user_msg = prev_turns[-1] if prev_turns else ""
+                    m_unres = (re.search(r"tidak\s+menemukan\s+'([^']+)'", last_bot, re.I)
+                               or re.search(r"informasi\s+(?:tentang|mengenai)\s+'([^']+)'", last_bot, re.I))
+                    unres = m_unres.group(1) if m_unres else ""
+                    if unres and prev_user_msg and re.search(re.escape(unres), prev_user_msg, re.I):
+                        recon = re.sub(re.escape(unres), chosen, prev_user_msg, count=1, flags=re.I)
+                    else:
+                        recon = f"siapa itu {chosen}" if "siapa" in prev_user_msg.lower() else f"apa itu {chosen}"
+                    user_msg = recon
+                    if hasattr(tracker, "latest_message") and isinstance(tracker.latest_message, dict):
+                        tracker.latest_message["text"] = recon
+                    enriched = _enrich([m_chosen], {m_chosen.id: chosen}, {m_chosen.id: chosen})
+                    return enriched, [], [m_chosen.name]
+
     mentioned, leftover = _mentioned_terms(user_msg, resolver)
-    s = _Scan(user_msg, resolver, mentioned, leftover, turns, entity_history, current_entity)
+    s = _Scan(user_msg, resolver, mentioned, leftover, turns, entity_history, current_entity, tracker)
     partial = _partial_name(user_msg, mentioned, resolver)
     if partial:
         suggestions = ([] if all(_is_everyday_word(w, resolver) for w in _WORD_RE.findall(partial.lower()))
@@ -2201,6 +2350,19 @@ def _extract_and_resolve(
         rite = _rite_of_act(matches[0], s.leftover)
         if rite:
             matches.append(rite)
+    # a comparison/difference/similarity question ("apa perbedaannya?", "apa perbedaan keduanya?",
+    # "apa persamaannya?", "apa bedanya dengan X?"): compare the two most recently discussed terms from the history
+    if (_COMPARE_Q_RE.search(user_msg) or re.search(r"\bkeduanya\b", user_msg, re.I)):
+        if not own_order:
+            two = _recent_compared_terms(s)
+            if len(two) == 2:
+                if len(matches) < 2 or {m.id for m in matches} != {m.id for m in two}:
+                    matches = two
+        elif len(matches) < 2:
+            two = _recent_compared_terms(s)
+            other = next((m for m in two if m.id not in {x.id for x in matches}), None)
+            if other:
+                matches = [other, matches[0]]
     matched_ids = {m.id for m in matches}   # before the cap: a word-meaning part counts these too
     matches = matches[:4]
     if _WORD_MEANING_RE.search(user_msg):
@@ -2371,6 +2533,10 @@ def _extracted_terms(s: _Scan) -> List[str]:
     - If the current input uses a pronoun or ellipsis ("itu", "ini", "yang tadi",
       "yang pertama", "yang kedua", "keduanya", etc.), replace it with the actual
       term(s) it refers to, using the recent conversation and the entities list above.
+    - If the current input asks about a difference, comparison, or similarity
+      ("apa perbedaannya", "apa bedanya", "keduanya", "persamaannya", "apa perbedaan keduanya")
+      without naming the terms, return the TWO most recently discussed terms being
+      compared from the recent conversation turns, not just the single current topic.
     - A generic collective reference with no specific noun of its own ("setiap
       barang", "semua itu", "masing-masing", "setiap hal tersebut", "setiap
       bagiannya") is NOT itself a term to look up -- it means "every part of
@@ -2625,7 +2791,7 @@ def _case_follow_up(tracker: Tracker, user_msg: Text) -> bool:
         return False
     mentioned, leftover = _mentioned_terms(user_msg, resolver)
     s = _Scan(user_msg, resolver, mentioned, leftover, recent_user_turns(tracker), tracker.get_slot("entity_history") or [],
-              tracker.get_slot("current_entity"))
+              tracker.get_slot("current_entity"), tracker)
     return any(_carried_case(s, mentioned))
 
 
@@ -2634,7 +2800,7 @@ def _refers_back(s: _Scan, own_order: List[str]) -> bool:
     # (clean_query peels "apa itu" but not "siapa itu", whose "itu" points at nothing)
     anaphor = bool(_ANAPHOR_RE.search(re.sub(r"^\s*siapa\s+itu\b", "", s.resolver.clean_query(s.msg))))
     # ... or quotes the topic's own card ("karunia seperti apa yang dimaksud?" after anugerah raja)
-    return anaphor or bool(not own_order and _quotes_topic(s.leftover, s.current_entity, s.resolver))
+    return anaphor or bool(not own_order and _quotes_topic(s.leftover, s.current_entity, s.resolver, s.tracker))
 
 
 def _without_carried_terms(s: _Scan, matches: list, own_order: List[str], anaphor: bool,
@@ -2654,8 +2820,9 @@ def _without_carried_terms(s: _Scan, matches: list, own_order: List[str], anapho
     # LLM still returned the last topic, which the grounding check accepts (any word of the
     # history counts), so each was answered about jenazah / nyiramang layon (conersation.md
     # 2026-10-02). Without a word pointing back, only terms the message itself says count.
+    recent_bot_words = set().union(*(_WORD_RE.findall(u.lower()) for u in _recent_bot_utterances(s.tracker, n=2))) if s.tracker else set()
     unknown_word = (not own_order and not anaphor and not _ORDINAL_REF_RE.search(user_msg)
-                    and any(not _is_everyday_word(w, resolver) for w in s.leftover))
+                    and any(not _is_everyday_word(w, resolver) and w not in recent_bot_words for w in s.leftover))
     if (own_order and not needs_history) or unknown_word:
         said = set(re.findall(r"\w+", user_msg.lower()))
         matches = [m for m in matches if m.id in own_order or any(
@@ -3147,7 +3314,10 @@ def _asks_about_day(user_msg: Text, day_talk: bool = False) -> bool:
     return False
 # a list question ("banten apa saja ...", "sebutkan ...") -- see _class_filter
 _LIST_Q_RE = re.compile(r"\bapa saja\b|\bsebutkan\b|\bmana saja\b|\bapa-apa saja\b", re.I)
-_COMPARE_Q_RE = re.compile(r"\bperbedaan\b|\bbeda(nya)?\b|\bmembedakan\b", re.I)
+_COMPARE_Q_RE = re.compile(
+    r"\b(?:perbedaan(?:nya)?|beda(?:nya)?|membedakan|persamaan(?:nya)?|kesamaan(?:nya)?|samanya)\b",
+    re.I
+)
 # "apa hubungan X dengan Y": with every edge of both terms in context the model padded
 # the answer with each term's unrelated facts ("sawa ... disertai kakawin ... berada di
 # galar", conersation.md items 5 and 7, 2026-09-25) -- only the linking edges are shown
@@ -3946,7 +4116,8 @@ def _asked_specifics(user_msg: Text, enriched: List[Dict[str, Any]]) -> set:
     # very word that makes the question (2026-10-08 replay)
     names = set()
     for e in enriched:
-        names |= _sentence_roots(" ".join([e.get("name") or ""] + list(e.get("aliases") or [])))
+        names |= _sentence_roots(" ".join([e.get("name") or "", e.get("asked_as") or "", e.get("typed_as") or ""]
+                                          + list(e.get("aliases") or [])))
     words = {w for w in _WORD_RE.findall(user_msg.lower()) if len(w) >= 3 and w not in _STOPWORDS_ID
              and w not in _QUESTION_WORDS and w not in _ASPECT_WORDS and _root(w) not in names}
     return words | {_NUMBER_WORDS[n] for n in re.findall(r"\b\d{1,2}\b", user_msg) if n in _NUMBER_WORDS} | \
@@ -3999,9 +4170,17 @@ def _next_list_item(s: Text, roots: set, said: List[set], said_texts: List[Text]
     if not item:
         return False
     parents = _item_parents(item)
+    content = get_content()
+    resolver = get_resolver()
+    item_entity = resolver.by_id.get(item)
+    item_names = [content.entity_name.get(item, item)] + list((item_entity or {}).get("aliases") or [])
     for t in near:
         other = _opening_term(t)
         if not other or other == item or not parents & _item_parents(other):
+            return False
+        # If t itself already mentions/describes item, t already covers item;
+        # s is repeating what t said about item, not introducing a next distinct item.
+        if any(re.search(rf"\b{re.escape(n)}\b", t, re.I) for n in item_names if n):
             return False
     return True
 
@@ -4084,7 +4263,7 @@ def _drop_repeated_sentences(answer: Text, earlier: Text = "", loose: bool = Tru
             covered_prior = len(roots & (union | prior_union)) / len(roots)
             repeats_prior = (not (protect_re and protect_re.search(s))
                              and (best_prior >= 0.8 or loose and (best_prior >= 0.6 or covered_prior >= 0.75)))
-            repeats = (best >= 0.8 or covered >= 0.9 and len(roots) >= 6
+            repeats = (best >= 0.75 or (loose and (best >= 0.65 or covered >= 0.75)) or covered >= 0.85 and len(roots) >= 6
                        or _SUMMARY_OPENER_RE.match(s) and covered >= 0.7
                        # a closing sentence saying again what came before ("Pembersihan fisik dan
                        # spiritual ... bertujuan untuk memastikan jenazah ... siap untuk proses pembakaran")
@@ -4481,6 +4660,7 @@ _FOCUS_FILLER = frozenset("""
 saja hal ada harus sih dong deh emang memang lantas kalau kalao kalo kalok jika bila apabila misalnya semisal
 nggak ngga enggak gak tak dilakukan dilaksanakan melakukan melaksanakan saat ketika dan atau serta lalu
 boleh bolehkah wajib dilarang melakukannya melaksanakannya dilakukannya dilaksanakannya terjadi
+kedua keduanya ketiga tersebut ini itu antara
 """.split())
 _NEGATION_WORDS = {"nggak": "tidak", "ngga": "tidak", "enggak": "tidak", "gak": "tidak", "ga": "tidak",
                    "tak": "tidak"}
@@ -4579,7 +4759,7 @@ def _question_focus(question: Text, enriched: List[Dict[str, Any]], families: Li
         subject = (f"{' dan '.join(judged)} dihindari untuk {' dan '.join(others)}")
         aspect = "alasan"
     elif len(names) >= 2 and _COMPARE_Q_RE.search(question):
-        aspect = "perbedaan"
+        aspect = "persamaan" if re.search(r"\b(?:persamaan|kesamaan|samanya)\b", question, re.I) else "perbedaan"
     elif len(names) >= 2 and _RELATION_Q_RE.search(question):
         aspect = "hubungan"
     else:
@@ -6442,6 +6622,119 @@ RETURN [n IN nodes(p) | n.id] AS p_ids, [r IN relationships(p) | type(r)] AS p_r
 _NO_LINK_RE = re.compile(r"\btidak\s+(?:ada|memiliki|mempunyai)\s+(?:\w+\s+)?(?:hubungan|kaitan|keterkaitan)\b"
                          r"|\b(?:hubungan|kaitan)\b[^.!?\n]{0,80}\b(?:belum|tidak)\s+tercatat\b", re.I)
 
+_REL_NEG_RE = re.compile(
+    r"\b(?:tidak\s+(?:ada|memiliki|mempunyai|ditemukan|tercatat|tersedia|memberikan|melakukan)|"
+    r"belum\s+(?:tercatat|tersedia|ditemukan|disebutkan|diketahui)|"
+    r"bukan\s+(?:merupakan|bagian))\b", re.I
+)
+
+_REL_LINK_RE = re.compile(
+    r"\b(?:hubungan|kaitan|terkait|berhubungan|berkaitan|sama-sama|keduanya|kedua-duanya|"
+    r"tahap\w*|bagian|sarana|tujuan|menuju|mencapai|peran|fungsi|proses|"
+    r"melalui|dihubungkan|menghubungkan|langkah|jalan|merupakan|adalah)\b", re.I
+)
+
+
+def _entity_surfaces(e: Any) -> List[str]:
+    content = get_content()
+    resolver = get_resolver()
+    if isinstance(e, str):
+        eid, ename = e, e
+        aliases = []
+        asked_as = None
+        typed_as = None
+    else:
+        eid = e.get("id") or ""
+        ename = e.get("name") or ""
+        aliases = list(e.get("aliases") or [])
+        asked_as = e.get("asked_as")
+        typed_as = e.get("typed_as")
+
+    names = [ename, content.entity_name.get(eid, "")]
+    if eid and resolver and hasattr(resolver, "by_id"):
+        names += list((resolver.by_id.get(eid) or {}).get("aliases") or [])
+    names += aliases
+    if asked_as:
+        names.append(asked_as)
+    if typed_as:
+        names.append(typed_as)
+    result: List[str] = []
+    for n in names:
+        if n and n.strip():
+            ns = n.strip()
+            result.append(ns)
+            wt = _without_titles(ns)
+            if wt and wt != ns:
+                result.append(wt)
+    seen = set()
+    dedup: List[str] = []
+    for s in result:
+        low = s.lower()
+        if low not in seen and len(low) >= 3:
+            seen.add(low)
+            dedup.append(s)
+    return dedup
+
+
+def _explains_relationship(text: Text, a: Any, b: Any) -> bool:
+    """True when text actually explains how a and b are related or connected (even via another stage/concept),
+    so we never contradict the answer with 'tidak ada hubungan / informasi belum tersedia'."""
+    if not text or not a or not b:
+        return False
+    s_a = _entity_surfaces(a)
+    s_b = _entity_surfaces(b)
+    if not s_a or not s_b:
+        return False
+    re_a = re.compile(rf"\b(?:{'|'.join(re.escape(n) for n in s_a)})\b", re.I)
+    re_b = re.compile(rf"\b(?:{'|'.join(re.escape(n) for n in s_b)})\b", re.I)
+
+    for s in _sentences(text):
+        if _REL_NEG_RE.search(s):
+            continue
+        has_a = bool(re_a.search(s))
+        has_b = bool(re_b.search(s))
+        if has_a and has_b and _REL_LINK_RE.search(s):
+            return True
+
+    sents = [s for s in _sentences(text) if not _REL_NEG_RE.search(s)]
+    for i in range(len(sents) - 1):
+        s1, s2 = sents[i], sents[i + 1]
+        pair = f"{s1} {s2}"
+        if re_a.search(pair) and re_b.search(pair):
+            if re.search(r"\b(?:hubungan\s+(?:ini|antara)|keduanya|kaitan|melalui|sehingga|dengan\s+demikian)\b", pair, re.I):
+                return True
+    return False
+
+
+_CONTRADICTORY_NO_LINK_RE = re.compile(
+    r"^\s*(?:Maaf,\s+)?(?:"
+    r"(?:Informasi\s+(?:tentang|mengenai)\s+)?(?:hubungan|kaitan|perbedaan|persamaan|kesamaan)(?:\s+langsung)?\s+antara\s+(?P<a>.+?)\s+dan\s+(?P<b>.+?)\s+belum\s+(?:tersedia|tercatat)"
+    r"|Tidak\s+ada\s+(?:hubungan|kaitan|perbedaan|persamaan|kesamaan)(?:\s+langsung)?\s+antara\s+(?P<a2>.+?)\s+dan\s+(?P<b2>.+?)\s+yang\s+(?:tercatat|tersedia|tercantum)"
+    r"|Maaf,\s+informasi\s+detail\s+mengenai\s+hal\s+tersebut\s+belum\s+(?:tersedia|tercatat)"
+    r")\s*[.:!?]\s*",
+    re.I
+)
+
+
+def _drop_contradictory_no_link(answer: Text, enriched: Optional[List[Dict[str, Any]]] = None) -> Text:
+    """Drop contradictory refusal sentences if the rest of the answer explains the relationship or facts."""
+    if not answer:
+        return answer
+    m = _CONTRADICTORY_NO_LINK_RE.match(answer)
+    if m:
+        rest = answer[m.end():].lstrip()
+        rest = re.sub(r"^(?:Secara\s+tidak\s+langsung,?\s*)", "", rest, flags=re.I)
+        if enriched and len(enriched) >= 2:
+            a_ent, b_ent = enriched[0], enriched[1]
+        else:
+            a_name = (m.group("a") or m.group("a2") or "").strip()
+            b_name = (m.group("b") or m.group("b2") or "").strip()
+            a_ent = {"id": a_name, "name": a_name} if a_name else None
+            b_ent = {"id": b_name, "name": b_name} if b_name else None
+        if a_ent and b_ent and _explains_relationship(rest, a_ent, b_ent):
+            return rest[:1].upper() + rest[1:] if rest else answer
+    return answer
+
 
 def _say_no_link(answer: Text, a: Dict[str, Any], b: Dict[str, Any]) -> Text:
     """A relation question about two terms nothing joins -- no edge, no chain of kinds or parts, a definition naming
@@ -6451,6 +6744,8 @@ def _say_no_link(answer: Text, a: Dict[str, Any], b: Dict[str, Any]) -> Text:
     opening "Hubungan (antara) ..." is then the indirect link, as in _complete_chain_link: not cut -- "Hubungan antara
     yadnya dan kayu cendana terletak pada peran kayu cendana sebagai ... sarana ... dalam upacara Ngaben" is true."""
     if _NO_LINK_RE.search(answer):
+        return answer
+    if _explains_relationship(answer, a, b):
         return answer
     if (b["name"].lower() in _named_in(a.get("definition") or "")
             or a["name"].lower() in _named_in(b.get("definition") or "")):
@@ -6547,8 +6842,8 @@ def _complete_chain_link(answer: Text, enriched: List[Dict[str, Any]], relation:
     first = next((s for s in sentences if s.strip()), "")
     if re.search(r"\btidak ada (?:hubungan|kaitan|perbedaan)\b", first, re.I):
         cut = answer.index(first) + len(first)
-        # (the names as their cards write them: "Secara tidak langsung, Pangringkes ...", never "dewa Siwa")
-        return f"{answer[:cut].rstrip()} Secara tidak langsung, {text}.{answer[cut:]}"
+        # (the names as their cards write them: "Pangringkes ...", replacing the refusal clause)
+        return f"{text[:1].upper()}{text[1:]}.{answer[cut:]}"
     return f"{text[:1].upper()}{text[1:]}. {answer.lstrip()}"
 
 
@@ -6597,6 +6892,54 @@ def _kind_contrast_lead(enriched: List[Dict[str, Any]], user_msg: Text) -> Optio
     return f"{title} adalah salah satu jenis {cname}, jadi pada dasarnya {same}. Bedanya, {differs}."
 
 
+def _drop_irrelevant_comparison_sentences(answer: Text, enriched: List[Dict[str, Any]], user_msg: Text) -> Text:
+    """Drop sentences in a comparison answer that mention unrelated third-party ceremonies
+    (e.g. Ngaben, Pitra Yadnya, Bade, prasawya when comparing Manusa Yadnya vs Dewa Yadnya)
+    or unasked auspicious calendar details (sasih Kapat/Kalima) when not asked."""
+    if len(enriched) != 2:
+        return answer
+    asked_terms = {e["id"] for e in enriched} | {e["name"].lower() for e in enriched}
+    for e in enriched:
+        for a in e.get("aliases") or []:
+            asked_terms.add(a.lower())
+        if e.get("asked_as"):
+            asked_terms.add(e["asked_as"].lower())
+        if e.get("typed_as"):
+            asked_terms.add(e["typed_as"].lower())
+
+    asked_sasih = bool(re.search(r"\b(?:sasih|bulan|hari|kapan|waktu|dewasa)\b", user_msg, re.I))
+    asked_ngaben = any(t in asked_terms for t in ("ngaben", "pitra_yadnya", "pitra yadnya", "bade", "palebon")) or bool(
+        re.search(r"\b(?:ngaben|pitra|bade|kremasi|palebon)\b", user_msg, re.I))
+
+    # Third ceremonies/elements to prune if unasked in this comparison
+    unasked_ceremonies_re = re.compile(
+        r"\b(?:ngaben|pitra\s+yadnya|bade|prasawya)\b", re.I
+    ) if not asked_ngaben else None
+
+    unasked_calendar_re = re.compile(
+        r"\b(?:sasih\s+[a-z]+|penentuan\s+hari\s+baik)\b", re.I
+    ) if not asked_sasih else None
+
+    parts = re.split(r"(\n+)", answer)
+    new_parts = []
+    for part in parts:
+        if part.startswith("\n"):
+            new_parts.append(part)
+            continue
+        sents = _sentences(part)
+        kept = []
+        for s in sents:
+            if unasked_ceremonies_re and unasked_ceremonies_re.search(s):
+                continue
+            if unasked_calendar_re and unasked_calendar_re.search(s):
+                continue
+            kept.append(s)
+        if kept:
+            new_parts.append(" ".join(kept))
+    res = "".join(new_parts)
+    return re.sub(r"\n{3,}", "\n\n", res).strip()
+
+
 def _complete_contrast(answer: Text, enriched: List[Dict[str, Any]], user_msg: Text = "") -> Text:
     """A comparison answer that never says how the two differ opens with what each is: "apa perbedaan pancamaha butha
     dan moksa" got the two definitions one after the other, "apa perbedaan sekah dan adegan" "Perbedaan utama ...
@@ -6617,7 +6960,8 @@ def _complete_contrast(answer: Text, enriched: List[Dict[str, Any]], user_msg: T
         # antara Ngaben dan Pitra Yadnya terletak pada cakupannya: Ngaben adalah salah satu jenis ... Pitra Yadnya"
         if any(len(names_re.findall(s)) >= 2 and re.search(r"\b(?:jenis|bagian|termasuk)\b", s, re.I)
                and _CONTRAST_RE.search(s) for s in opening):
-            return after[:1].upper() + after[1:] if hollow else answer
+            res = after[:1].upper() + after[1:] if hollow else answer
+            return _drop_irrelevant_comparison_sentences(res, enriched, user_msg)
         # the model's own "Ngaben massal merupakan salah satu jenis dari Ngaben." says only what the lead says (too
         # short for _drop_repeated_sentences to count it a repeat)
         only_kind = re.compile(r"\s*(?:merupakan|adalah|termasuk|(?:salah\s+)?satu|jenis|dari|dalam|bagian|·|,)\s*", re.I)
@@ -6626,30 +6970,112 @@ def _complete_contrast(answer: Text, enriched: List[Dict[str, Any]], user_msg: T
             if re.search(r"\bjenis\b", p, re.I) and rest.count("·") >= 2 and not only_kind.sub("", rest).strip():
                 after = after.replace(p, "", 1)
         # (and the model's miss: the lead answers from the two cards)
-        after = re.sub(r"(?:\A|(?<=[.!?\n]))\s*Maaf,[^.!?\n]*\b(?:belum|tidak)\s+(?:tercatat|tersedia)[^.!?\n]*[.!?]", "",
+        after = re.sub(r"(?:\A|(?<=[.!?\n]))\s*Maaf,[^.!?\n]*\b(?:belum|tidak)\s+(?:tercatat|tersedia)[^.!?\n]*[.!?](?:\s*Yang\s+(?:tercatat|tersedia)\s+(?:tentang|mengenai)\s+[^:\n]+:\s*)?", "\n\n",
                        after)
         after = re.sub(r"[ \t]+\n", "\n", re.sub(r"\n{3,}", "\n\n", after)).strip()
-        return _drop_repeated_sentences(f"{kind_lead}\n\n{after}", loose=False)
+        res = _drop_repeated_sentences(f"{kind_lead}\n\n{after}", loose=True)
+        return _drop_irrelevant_comparison_sentences(res, enriched, user_msg)
     if _CONTRAST_RE.search(" ".join(opening)):
         # the model says the difference: a hollow lead-in before it goes, nothing is added
-        return after[:1].upper() + after[1:] if hollow else answer
+        after = re.sub(r"(?:\A|(?<=[.!?\n]))\s*Maaf,[^.!?\n]*\b(?:belum|tidak)\s+(?:tercatat|tersedia)[^.!?\n]*[.!?](?:\s*Yang\s+(?:tercatat|tersedia)\s+(?:tentang|mengenai)\s+[^:\n]+:\s*)?", "\n\n",
+                       after)
+        after = re.sub(r"[ \t]+\n", "\n", re.sub(r"\n{3,}", "\n\n", after)).strip()
+        res = after[:1].upper() + after[1:] if hollow else (after or answer)
+        return _drop_irrelevant_comparison_sentences(res, enriched, user_msg)
     sides = []
     for e in enriched:
-        # (the whole first sentence: cut short, moksa's ended "... yakni bhuwana agung (Panca Maha .")
+        # Core definition (primary clause before semicolon) so secondary clauses
+        # are not duplicated when the body elaborates on them
         g = _gloss(e["id"], limit=10 ** 6).rstrip(".")
         if not g:
             return answer
+        core_g = g.split(";")[0].strip()
         name = _card_cased(e["id"], e.get("asked_as") or e.get("typed_as"))
-        sides.append(f"{name[:1].upper()}{name[1:]} adalah {g}" if not re.match(r"(?:berarti|merupakan|adalah)\b", g)
-                     else f"{name[:1].upper()}{name[1:]} {g}")
+        sides.append(f"{name[:1].upper()}{name[1:]} adalah {core_g}" if not re.match(r"(?:berarti|merupakan|adalah)\b", core_g)
+                     else f"{name[:1].upper()}{name[1:]} {core_g}")
     lead = f"Perbedaannya: {sides[0]}, sedangkan {sides[1]}."
     # (the model's miss goes: the lead answers from the two cards)
-    rest = re.sub(r"(?:\A|(?<=[.!?\n]))\s*Maaf,[^.!?\n]*\b(?:belum|tidak)\s+(?:tercatat|tersedia)[^.!?\n]*[.!?]", "",
+    rest = re.sub(r"(?:\A|(?<=[.!?\n]))\s*Maaf,[^.!?\n]*\b(?:belum|tidak)\s+(?:tercatat|tersedia)[^.!?\n]*[.!?](?:\s*Yang\s+(?:tercatat|tersedia)\s+(?:tentang|mengenai)\s+[^:\n]+:\s*)?", "\n\n",
                   after)
+    rest = re.sub(r"[ \t]+\n", "\n", re.sub(r"\n{3,}", "\n\n", rest)).strip()
     # after the shared class _complete_chain_link puts first ("X dan Y sama-sama termasuk ..."), not before it
     shared = re.match(r"\s*[^.!?\n]*\bsama-sama\b[^.!?\n]*[.!?]\s*", rest)
     head, rest = (shared.group(0).strip() + " ", rest[shared.end():]) if shared else ("", rest)
-    return _drop_repeated_sentences(f"{head}{lead}\n\n{rest.lstrip()}", loose=False)
+    res = _drop_repeated_sentences(f"{head}{lead}\n\n{rest.lstrip()}", loose=True)
+    return _drop_irrelevant_comparison_sentences(res, enriched, user_msg)
+
+
+def _complete_similarity(answer: Text, enriched: List[Dict[str, Any]], user_msg: Text = "") -> Text:
+    """A comparison answer asking for similarities (persamaan/kesamaan) between two terms.
+    If the answer already states a similarity (e.g. using 'sama-sama', 'keduanya', 'kesamaan'),
+    any trailing refusal/miss sentence is stripped. If no similarity was stated or the model
+    refused, formulates the similarity from shared categories in the KB or definitions."""
+    if len(enriched) != 2:
+        return answer
+    hollow = _HOLLOW_CONTRAST_RE.match(answer) if _HOLLOW_CONTRAST_RE else None
+    after = answer[hollow.end():] if hollow else answer
+    after = re.sub(r"(?:\A|(?<=[.!?\n]))\s*Maaf,[^.!?\n]*\b(?:belum|tidak)\s+(?:tercatat|tersedia)[^.!?\n]*[.!?](?:\s*Yang\s+(?:tercatat|tersedia)\s+(?:tentang|mengenai)\s+[^:\n]+:\s*)?", "\n\n",
+                   after)
+    after = re.sub(r"[ \t]+\n", "\n", re.sub(r"\n{3,}", "\n\n", after)).strip()
+    opening = _sentences(after)[:2]
+    if any(re.search(r"\b(?:sama-sama|keduanya|persamaan(?:nya)?|kesamaan(?:nya)?|memiliki kesamaan|serupa)\b", s, re.I)
+           for s in opening):
+        res = after[:1].upper() + after[1:]
+        return _drop_irrelevant_comparison_sentences(res, enriched, user_msg)
+
+    a, b = enriched[0], enriched[1]
+    content = get_content()
+    name_a = _card_cased(a["id"], a.get("asked_as") or a.get("typed_as"))
+    name_b = _card_cased(b["id"], b.get("asked_as") or b.get("typed_as"))
+    name_a_cap = f"{name_a[:1].upper()}{name_a[1:]}"
+    name_b_cap = f"{name_b[:1].upper()}{name_b[1:]}"
+
+    pa = set(content.kind_parents.get(a["id"]) or [])
+    pb = set(content.kind_parents.get(b["id"]) or [])
+    shared = pa & pb
+    if shared:
+        parent_id = next(iter(shared))
+        parent_name = _card_cased(parent_id)
+        if _NUMERAL_SET_RE.match(content.entity_name.get(parent_id, parent_id)):
+            lead = f"{name_a_cap} dan {name_b_cap} sama-sama termasuk {parent_name}."
+        else:
+            lead = f"{name_a_cap} dan {name_b_cap} sama-sama termasuk jenis {parent_name}."
+    else:
+        try:
+            rows = neo4j_conn.query(_CHAIN_QUERY, {"a": a["id"], "b": b["id"]})
+        except Exception:
+            rows = []
+        if rows and rows[0].get("shared") and rows[0]["shared"][0]:
+            mid, rel = rows[0]["shared"]
+            mid_name = _card_cased(mid)
+            lead = (f"{name_a_cap} dan {name_b_cap} sama-sama termasuk {mid_name}." if rel == "TERMASUK_JENIS"
+                    else f"{name_a_cap} dan {name_b_cap} sama-sama tahapan {mid_name}." if content.entity_type.get(a["id"]) in _STAGE_TYPES
+                    else f"{name_a_cap} dan {name_b_cap} sama-sama bagian dari {mid_name}.")
+        else:
+            ta = content.entity_type.get(a["id"])
+            tb = content.entity_type.get(b["id"])
+            if ta and ta == tb:
+                t_label = ta.lower().replace("_", " ")
+                lead = f"{name_a_cap} dan {name_b_cap} sama-sama merupakan {t_label}."
+            else:
+                lead = f"{name_a_cap} dan {name_b_cap} keduanya memiliki keterkaitan dalam konteks upacara keagamaan Hindu Bali."
+
+    sides = []
+    for e in enriched:
+        g = _gloss(e["id"], limit=10 ** 6).rstrip(".")
+        if g:
+            core_g = g.split(";")[0].strip()
+            name = _card_cased(e["id"], e.get("asked_as") or e.get("typed_as"))
+            sides.append(f"{name[:1].upper()}{name[1:]} adalah {core_g}" if not re.match(r"(?:berarti|merupakan|adalah)\b", core_g)
+                         else f"{name[:1].upper()}{name[1:]} {core_g}")
+    if len(sides) == 2 and not after:
+        body = f"{sides[0]}. Sementara itu, {sides[1]}."
+        res = f"{lead}\n\n{body}"
+        return _drop_irrelevant_comparison_sentences(res, enriched, user_msg)
+    elif after:
+        res = _drop_repeated_sentences(f"{lead}\n\n{after}", loose=True)
+        return _drop_irrelevant_comparison_sentences(res, enriched, user_msg)
+    return _drop_irrelevant_comparison_sentences(lead, enriched, user_msg)
 
 
 def _complete_stated_link(answer: Text, enriched: List[Dict[str, Any]]) -> Text:
@@ -7600,11 +8026,28 @@ def _synthesis_rules(q: _Question) -> str:
     if _COMPARE_Q_RE.search(user_msg):
         # "ngangsen ... mengangkat status pitra" -- its definition says the status is NOT
         # changed; "ngerorasin ... tanpa tujuan ..." was invented as the contrast
-        synth_sys_prompt += (
-            "\n    17. The user asks how terms differ. State only differences the facts show. A fact given "
-            "for one term only is not evidence that the other term lacks it or does the opposite. Keep "
-            "each fact's meaning exactly: never turn 'belum' or 'tidak' into its opposite. When a "
-            "definition says why one comes after or depends on the other, say that too.\n")
+        is_similarity = bool(re.search(r"\b(?:persamaan|kesamaan|samanya)\b", user_msg, re.I))
+        if is_similarity:
+            synth_sys_prompt += (
+                "\n    17. The user asks how the terms are SIMILAR (persamaan). Look at both definitions and their relationships. State the shared categories, "
+                "purposes, elements, or contexts that both terms have in common according to the context (e.g. both "
+                "being part of the same class such as Panca Yadnya, or having similar spiritual roles in Ngaben). "
+                "Formulate the similarity directly from their definitions and facts. NEVER claim information is missing "
+                "or say 'belum tercatat' merely because a direct similarity relation is not pre-written in the database. "
+                "Only state similarities the facts support -- do not claim they are identical where they differ. "
+                "State each fact ONCE: do NOT give the definition or role of a term in the opening comparison and then repeat that same definition or explanation again in later paragraphs.\n")
+        else:
+            synth_sys_prompt += (
+                "\n    17. The user asks how terms differ or compare (differences/perbedaan). Look at both definitions and their relationships. "
+                "Formulate what distinguishes each term (e.g. X is ..., whereas Y is ...; differences in purpose, materials, caste/users, or sequence) "
+                "directly from their definitions and facts. NEVER claim information is missing or say 'belum tercatat' merely because a direct contrast "
+                "relation is not pre-written in the database. State only differences the facts show. A fact given "
+                "for one term only is not evidence that the other term lacks it or does the opposite. Keep "
+                "each fact's meaning exactly: never turn 'belum' or 'tidak' into its opposite. When a "
+                "definition says why one comes after or depends on the other, say that too. "
+                "Focus strictly on the core differences between the two terms: their fundamental meaning, purpose, target (who/what the offering is for), and principal types or rituals. "
+                "Do NOT include minor incidental details (such as auspicious calendar months like sasih, ritual directions like pradaksina vs prasawya, or comparisons with unrelated third ceremonies like Ngaben or Pitra Yadnya) unless the user's question explicitly asks about those aspects. "
+                "State each fact ONCE: do NOT give the definition or explanation of a term in the opening comparison and then repeat that same definition or explanation again in later paragraphs.\n")
     if link_to:
         # "apa hubungan palebon dengan bade" re-described both terms one by one
         synth_sys_prompt += (
@@ -7700,6 +8143,15 @@ def _synthesis_rules(q: _Question) -> str:
         synth_sys_prompt += (
             f"\n    20. The user also asked about: {', '.join(missing)}. It is NOT in the context: say in "
             "one sentence that it is not recorded, and never describe it or relate it to anything.\n")
+    # A question asking for something the context does not cover (e.g. "apa pakaian yang digunakan pada saat ngaben")
+    if (len(enriched) == 1 and not q.families and not missing_aspects and not why_q and not consequence_q
+            and not _COMPARE_Q_RE.search(user_msg) and not _RELATION_Q_RE.search(user_msg)):
+        thing = _ungrounded_asked_thing(user_msg, enriched)
+        if thing:
+            synth_sys_prompt += (
+                f"\n    33. The question asks specifically about \"{thing}\". The context does "
+                "not contain information about this. Use rule 5: say this specific information "
+                "is not recorded. Do not answer with the definition or other available facts.\n")
     return synth_sys_prompt
 
 
@@ -7796,6 +8248,16 @@ def _code_answer(q: _Question) -> Optional[str]:
                 else _code_miss(user_msg, enriched, families, missing_aspects))
         if miss:
             return _tidy_answer(miss)
+    # A question asking for a specific thing the KB does not cover: "apa pakaian
+    # yang digunakan pada saat ngaben" -- with no aspect detected, the LLM got
+    # rule 4's instruction to use the available data and returned ngaben's
+    # definition as if it answered the clothing question (conersation.md section IV,
+    # 2026-11-09). The miss catches it before the model is called.
+    if (not follow_up and len(enriched) == 1 and not families
+            and not _COMPARE_Q_RE.search(user_msg) and not _RELATION_Q_RE.search(user_msg)):
+        thing = _ungrounded_asked_thing(user_msg, enriched)
+        if thing:
+            return _tidy_answer(_template_miss(f"informasi tentang {thing} pada", enriched[0]))
     return None
 
 
@@ -7852,6 +8314,10 @@ def _llm_failed_answer(q: _Question) -> str:
                  if re.search(r"\d[\d.,]*\s*(?:juta|ribu|rupiah|kepeng)\b", s, re.I)]
         if money:
             return " ".join(dict.fromkeys(money[:3]))
+    if len(enriched) >= 2 and _COMPARE_Q_RE.search(q.msg):
+        if re.search(r"\b(?:persamaan|kesamaan|samanya)\b", q.msg, re.I):
+            return _complete_similarity("", enriched, q.msg)
+        return _complete_contrast("", enriched, q.msg)
     parts: List[str] = []
     for e in enriched[:2]:
         lead = _first_sentence(_deterministic_answer([dict(e, aspect_facts=[])]) or "", limit=400)
@@ -7877,8 +8343,9 @@ def _answer_overrides(q: _Question, answer: str) -> str:
         # comparison 2026-10-20)
         # not a consequence question ("tanpa" is a relation word): "apa yang terjadi jika Sorohan Kecil dilakukan
         # tanpa ngaben" got "Maaf, hubungan antara sorohan kecil dan ngaben belum tercatat" (plan #16)
+        compare_q = len(enriched) >= 2 and bool(_COMPARE_Q_RE.search(user_msg)) and not consequence_q
         relation_q = len(enriched) >= 2 and bool(_RELATION_Q_RE.search(user_msg)) and not consequence_q
-        plain = (aspect_preds is None and not _SPECIFIC_Q_RE.search(user_msg) and not relation_q
+        plain = (aspect_preds is None and not _SPECIFIC_Q_RE.search(user_msg) and not relation_q and not compare_q
                  and not _ORDER_Q_RE.search(user_msg)
                  and (overview or bool(_WHAT_IS_SHAPE_RE.search(user_msg))))
         known = _known_sentence(about.get("definition"))
@@ -7887,15 +8354,33 @@ def _answer_overrides(q: _Question, answer: str) -> str:
                 # "apa itu X" refused although X's definition was right there
                 _log_refusal(user_msg, enriched, answer)
                 answer = _deterministic_answer(enriched)
+            elif compare_q:
+                # User asked difference or similarity between multiple terms:
+                # Strip refusal phrases and ensure comparative answer is formulated
+                _log_refusal(user_msg, enriched, answer)
+                cleaned = re.sub(r"(?:\A|(?<=[.!?\n]))\s*Maaf,[^.!?\n]*\b(?:belum|tidak)\s+(?:tercatat|tersedia)[^.!?\n]*[.!?]", "", answer).strip()
+                cleaned = re.sub(r"[ \t]+\n", "\n", re.sub(r"\n{3,}", "\n\n", cleaned)).strip()
+                if cleaned and len(_content_words(cleaned)) >= 6:
+                    answer = cleaned
+                else:
+                    if re.search(r"\b(?:persamaan|kesamaan|samanya)\b", user_msg, re.I):
+                        answer = _complete_similarity("", enriched, user_msg)
+                    else:
+                        answer = _complete_contrast("", enriched, user_msg)
             elif relation_q:
-                # no link recorded: say so about both, with what each is
-                _log_refusal(user_msg, enriched, answer, kept=True)
-                a, b = enriched[0], enriched[1]
-                answer = f"Maaf, hubungan antara {a['name']} dan {b['name']} belum tercatat di basis data."
-                for e in (a, b):
-                    k = _known_sentence(e.get("definition"))
-                    if k:
-                        answer += f" Yang tercatat tentang {e['name']}: {k}"
+                cleaned = re.sub(r"(?:\A|(?<=[.!?\n]))\s*Maaf,[^.!?\n]*\b(?:belum|tidak)\s+(?:tercatat|tersedia|disebutkan|ditemukan)[^.!?\n]*[.!?]", "", answer).strip()
+                cleaned = re.sub(r"[ \t]+\n", "\n", re.sub(r"\n{3,}", "\n\n", cleaned)).strip()
+                if cleaned and len(enriched) >= 2 and _explains_relationship(cleaned, enriched[0], enriched[1]):
+                    answer = cleaned
+                else:
+                    # no link recorded: say so about both, with what each is
+                    _log_refusal(user_msg, enriched, answer, kept=True)
+                    a, b = enriched[0], enriched[1]
+                    answer = f"Maaf, hubungan antara {a['name']} dan {b['name']} belum tercatat di basis data."
+                    for e in (a, b):
+                        k = _known_sentence(e.get("definition"))
+                        if k:
+                            answer += f" Yang tercatat tentang {e['name']}: {k}"
             else:
                 # the asked detail really is not recorded: keep the refusal, add what is
                 _log_refusal(user_msg, enriched, answer, kept=True)
@@ -7903,7 +8388,12 @@ def _answer_overrides(q: _Question, answer: str) -> str:
                     answer = f"{answer.rstrip()} Yang tercatat tentang {about['name']}: {known}"
         elif _has_fabrication_signal(answer, enriched, raw_context):
             _log_fabrication(user_msg, enriched, answer)
-            if plain or not known:
+            if compare_q:
+                if re.search(r"\b(?:persamaan|kesamaan|samanya)\b", user_msg, re.I):
+                    answer = _complete_similarity("", enriched, user_msg)
+                else:
+                    answer = _complete_contrast("", enriched, user_msg)
+            elif plain or not known:
                 answer = _deterministic_answer(enriched)
             else:
                 # an invented reason for "kenapa angka 11 dipilih ..." is replaced by an
@@ -8038,7 +8528,10 @@ def _answer_checks(q: _Question, answer: str) -> str:
         # (not on a why-question: "kenapa bisa beda?" after Karangasem vs Denpasar asks why practice differs, and got
         # "Perbedaannya: Desa kala patra adalah ..., sedangkan Ngaben adalah ...", style test 2026-11-07)
         if _COMPARE_Q_RE.search(user_msg) and not why_q:
-            answer = _complete_contrast(answer, enriched, user_msg)
+            if re.search(r"\b(?:persamaan|kesamaan|samanya)\b", user_msg, re.I):
+                answer = _complete_similarity(answer, enriched, user_msg)
+            else:
+                answer = _complete_contrast(answer, enriched, user_msg)
     if why_q and _WHY_AVOID_Q_RE.search(user_msg):
         answer = _complete_stated_reasons(answer, enriched, user_msg)
     if composition_q:
@@ -8077,16 +8570,29 @@ def _answer_checks(q: _Question, answer: str) -> str:
     if not answer.strip():
         # the guards above cut every sentence: "apa fungsi bale delod dalam prosesi persemayaman
         # jenazah?" reached the user as silence (2026-10-08 batch)
-        known = _known_sentence(about.get("definition"))
-        answer = _name_missing("Maaf, informasi detail mengenai hal tersebut belum tercatat di basis data."
-                               + (f" Yang tercatat tentang {about['name']}: {known}" if known else ""),
-                               user_msg, enriched, families, class_list)
+        if len(enriched) >= 2 and _COMPARE_Q_RE.search(user_msg):
+            if re.search(r"\b(?:persamaan|kesamaan|samanya)\b", user_msg, re.I):
+                answer = _complete_similarity("", enriched, user_msg)
+            else:
+                answer = _complete_contrast("", enriched, user_msg)
+        else:
+            known = _known_sentence(about.get("definition"))
+            answer = _name_missing("Maaf, informasi detail mengenai hal tersebut belum tercatat di basis data."
+                                   + (f" Yang tercatat tentang {about['name']}: {known}" if known else ""),
+                                   user_msg, enriched, families, class_list)
     elif _MISS_LEAD_RE.fullmatch(answer.strip()) and about:
         # ... or every sentence but the miss: "kenapa bisa mahal?" read "Maaf, alasannya belum tercatat di basis data."
         # alone (style test 2026-11-07); the closest recorded fact follows, as on any other miss
-        known = _known_sentence(about.get("definition"))
-        if known:
-            answer = f"{answer.strip()} Yang tercatat tentang {about['name']}: {known}"
+        if len(enriched) >= 2 and _COMPARE_Q_RE.search(user_msg):
+            if re.search(r"\b(?:persamaan|kesamaan|samanya)\b", user_msg, re.I):
+                answer = _complete_similarity("", enriched, user_msg)
+            else:
+                answer = _complete_contrast("", enriched, user_msg)
+        else:
+            known = _known_sentence(about.get("definition"))
+            if known:
+                answer = f"{answer.strip()} Yang tercatat tentang {about['name']}: {known}"
+    answer = _drop_contradictory_no_link(answer, enriched)
     return answer
 
 
@@ -8136,7 +8642,7 @@ def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]], tracker: Optiona
     synth_user_prompt = _synthesis_user_prompt(q, synth_sys_prompt)
     code = _code_answer(q)
     if code is not None:
-        return code
+        return _closing_notes(q, code)
     try:
         answer = _llm_answer(q, synth_sys_prompt, synth_user_prompt)
     except Exception as e:
@@ -8144,7 +8650,7 @@ def _synthesize(user_msg: Text, enriched: List[Dict[str, Any]], tracker: Optiona
         # answer instead of crashing the action and leaving the user with no
         # reply at all.
         print(f"LLM synthesis error: {e}")
-        return _llm_failed_answer(q)
+        return _closing_notes(q, _llm_failed_answer(q))
     answer = _answer_overrides(q, answer)
     answer = _answer_checks(q, answer)
     return _closing_notes(q, answer)
@@ -8682,6 +9188,56 @@ def _asked_thing(leftover: List[str], intent: Optional[Text]) -> bool:
                and not _VERB_FORM_RE.match(w) and not re.match(r"(?:di|me|ber|ter|per)\w{4,}", w)
                and not w.endswith("kan")
                for x, w in ((x, re.sub(r"nya$", "", x)) for x in leftover))
+
+
+# Words too generic to flag as an ungrounded asked thing: common time/manner/place
+# words that appear beside a topic without being the question's subject.
+_GENERIC_QUESTION_NOUNS = frozenset({
+    "saat", "waktu", "masa", "kali", "hari", "cara", "tempat", "orang", "pihak",
+    "kata", "nama", "lain", "umum", "awal", "akhir", "lainnya", "biasa", "asli",
+    "bisa", "harus", "perlu", "wajib", "utama", "dasar", "kedua", "keduanya",
+    "ketiga", "ketiganya", "keempat", "kelima", "semua", "semuanya", "masing-masing",
+    "hal", "antara", "persamaan", "persamaannya", "kesamaan", "kesamaannya",
+    "perbedaan", "perbedaannya", "beda", "bedanya", "hubungan", "hubungannya",
+    "kaitan", "kaitannya",
+})
+
+
+def _ungrounded_asked_thing(user_msg: Text, enriched: List[Dict[str, Any]]) -> Optional[str]:
+    """A content noun the question asks for that appears nowhere in the KB context:
+    'pakaian' in 'apa pakaian yang digunakan pada saat ngaben'. Returns the noun,
+    or None. Used by _code_answer to return a miss when the question asks for
+    something the KB does not cover (conersation.md section IV, 2026-11-09)."""
+    if not enriched or len(enriched) != 1:
+        return None
+    if _COMPARE_Q_RE.search(user_msg) or _RELATION_Q_RE.search(user_msg) or re.search(r"\bkeduanya\b", user_msg, re.I):
+        return None
+    resolver = get_resolver()
+    _, leftover = _mentioned_terms(user_msg, resolver)
+    vocab = _context_vocabulary(enriched)
+    entity_surfaces = {
+        s.lower() for e in enriched
+        for s in [e["name"]] + list(e.get("aliases") or []) + [e.get("asked_as") or "", e.get("typed_as") or ""]
+        if s
+    }
+    for w in leftover:
+        wl = w.lower()
+        base = re.sub(r"nya$", "", wl)
+        if (len(base) >= 4 and wl not in _STOPWORDS_ID and base not in _STOPWORDS_ID
+                and wl not in _GENERIC_QUESTION_NOUNS and base not in _GENERIC_QUESTION_NOUNS
+                and wl not in _META_TERMS and base not in _META_TERMS
+                and wl not in _QUESTION_WORDS and base not in _QUESTION_WORDS
+                and wl not in _ASPECT_VOCAB and base not in _ASPECT_VOCAB
+                and wl not in _ASK_FILLER and base not in _ASK_FILLER
+                and not _COMPARE_Q_RE.search(wl) and not _COMPARE_Q_RE.search(base)
+                and not _RELATION_Q_RE.search(wl) and not _RELATION_Q_RE.search(base)
+                and not re.match(r"^ke(?:dua|tiga|empat|lima|enam|tujuh|delapan|sembilan|sepuluh)", wl)
+                and wl not in entity_surfaces and base not in entity_surfaces
+                and not _VERB_FORM_RE.match(wl) and not re.match(r"(?:di|me|ber|ter|per)\w{4,}", wl)
+                and not wl.endswith("kan")
+                and not _grounded(wl, vocab) and not _grounded(base, vocab)):
+            return wl
+    return None
 
 
 def _template_route(user_msg: Text, intent: Optional[Text], current_entity: Optional[Text],
@@ -10282,7 +10838,9 @@ def _template_sarana(family: str, enriched: List[Dict[str, Any]], user_msg: Text
 def _template_other_names(family: str, enriched: List[Dict[str, Any]], user_msg: Text) -> Optional[str]:
     """One list of its other names, the refined one apart."""
     e = enriched[0]
-    name = e["name"]
+    asked = e.get("asked_as")
+    is_asked_other = bool(asked and _ortho_key(asked) != _ortho_key(e["name"]) and _plain_other_name(e, asked))
+    name = asked if is_asked_other else e["name"]
     title = f"{name[:1].upper()}{name[1:]}"
     rels = e.get("relationships") or []
     content = get_content()
@@ -10302,6 +10860,10 @@ def _template_other_names(family: str, enriched: List[Dict[str, Any]], user_msg:
         else:
             refined.append(target)
     names += (e.get("aliases") or []) + _definition_other_names(e)
+    if is_asked_other:
+        card = re.search(rf"(?<![\w-]){re.escape(e['name'])}(?![\w-])", e.get("definition") or "", re.I)
+        name_cased = card.group(0) if card else e["name"][:1].upper() + e["name"][1:]
+        names.insert(0, name_cased)
 
     def key(n: Text) -> str:
         # one name with or without its rite word: "upacara ngelelet, Ngelelet, dan Melelet" (2026-10-26)
@@ -10554,21 +11116,44 @@ def _topic_class_words(mentioned: List[tuple], topic, user_msg: Text) -> List[tu
                  or any(content.is_kind_of(x, m.id) for x in members))]
 
 
-def _card_uses(topic, words: List[str]) -> bool:
-    """Every word is in the topic's own card (its definition and name), on its first five letters."""
+_CONJUNCTIONS_MODALS: frozenset = frozenset({
+    "kalau", "kalo", "klo", "jika", "bila", "apabila", "bisa", "boleh", "harus", "perlu",
+    "ada", "kok", "kenapa", "mengapa", "gimana", "bagaimana", "kenapakah", "kenapaan",
+    "melakukan", "dilakukan", "lakukan"
+})
+
+
+def _card_uses(topic, words: List[str], extra_words: Optional[set] = None) -> bool:
+    """Every word is in the topic's own card (its definition and name), on its first five letters,
+    or matches via Balinese synonym (e.g. tukad -> sungai) or appears in recent bot utterances."""
     dwords = set(_WORD_RE.findall((_definition_text(topic.entity) + " " + topic.entity["name"]).lower()))
-    return all(any(d[:5] == w[:5] if len(w) >= 5 else d == w for d in dwords) for w in words)
+    if extra_words:
+        dwords |= extra_words
+    def matches(w: str) -> bool:
+        syn = _BALINESE_SYNONYMS.get(w, w)
+        for target in (w, syn):
+            if any(d[:5] == target[:5] if len(target) >= 5 else d == target for d in dwords):
+                return True
+        return False
+    return all(matches(w) for w in words)
 
 
-def _quotes_topic(leftover: List[str], current_entity: Optional[Text], resolver) -> bool:
+def _quotes_topic(leftover: List[str], current_entity: Optional[Text], resolver, tracker: Optional[Any] = None) -> bool:
     """A message naming no term whose every content word is in the topic's own card asks about the topic:
     "karunia seperti apa yang dimaksud?" after "Anugerah raja adalah karunia dari raja ..." got "Maaf, saya tidak
     menemukan 'karunia' ... Mungkin maksud Anda: arjuna?" (user, 2026-10-28). Pointing words (maksud, dimaksud,
     contohnya ...) are no content."""
     topic = resolver.resolve(current_entity) if current_entity else None
     words = [re.sub(r"nya$", "", w) for w in leftover if w not in _STOPWORDS_ID and w not in _FOLLOW_UP_META
+             and w not in _CONJUNCTIONS_MODALS and w not in _QUESTION_WORDS
              and not {w, re.sub(r"nya$", "", w), re.sub(r"^di", "", w)} & _POINTER_WORDS]
-    return bool(topic and words and _card_uses(topic, words))
+    if not topic or not words:
+        return False
+    extra = set()
+    if tracker is not None:
+        for u in _recent_bot_utterances(tracker, n=2):
+            extra.update(_WORD_RE.findall(u.lower()))
+    return _card_uses(topic, words, extra_words=extra)
 
 
 def _slot_events(entity_history: List[str], found_names: List[str]) -> List[Dict[Text, Any]]:
@@ -10619,6 +11204,7 @@ class ActionGraphRAG(Action):
             # this turn shouldn't erase what was successfully established earlier.
             return []
 
+        user_msg = tracker.latest_message.get("text", user_msg)
         answer = _synthesize(user_msg, enriched, tracker)
         dispatcher.utter_message(text=answer)
         return _slot_events(entity_history, found_names)
@@ -10707,6 +11293,7 @@ class ActionLLMFallback(Action):
             current_entity=current_entity, announce_miss=False
         )
         if enriched:
+            user_msg = tracker.latest_message.get("text", user_msg)
             answer = _synthesize(user_msg, enriched, tracker)
             dispatcher.utter_message(text=answer)
             return _slot_events(entity_history, found_names)
