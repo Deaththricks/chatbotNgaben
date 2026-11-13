@@ -13,10 +13,11 @@ rules:
       - intent: pamit
       - action: action_pamit
 
+  # action_bot_challenge says it is a bot, or answers a Ngaben question NLU read as one ("kalau mamukur?")
   - rule: bot challenge
     steps:
       - intent: bot_challenge
-      - action: utter_iamabot
+      - action: action_bot_challenge
 
   - rule: digidaw
     steps:

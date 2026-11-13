@@ -62,6 +62,8 @@
   "DILAKUKAN_DI":         { "template": "{s} dilakukan di {o}",              "ok_prep": ["di", "pada", "ke"] },
   "DILAKUKAN_DENGAN":     { "template": "{s} dilakukan dengan {o}",          "ok_prep": ["dengan"] },
   "DILAKUKAN_OLEH":       { "template": "{s} dilakukan oleh {o}",            "ok_prep": ["oleh"] },
+  "DIJUNJUNG_OLEH":       { "template": "{s} dijunjung oleh {o}",            "ok_prep": ["oleh"] },
+  "DIHATURKAN_OLEH":      { "template": "{s} dihaturkan oleh {o}",           "ok_prep": ["oleh"] },
   "LEBIH_SERING_DITEMPUH_OLEH": { "template": "{s} lebih sering ditempuh oleh {o}", "ok_prep": ["oleh"] },
   "BERDASARKAN":          { "template": "{s} dilakukan berdasarkan {o}",     "ok_prep": ["berdasarkan", "menurut", "sesuai", "dengan"] },
   "MENURUT":              { "template": "{s} dilakukan menurut {o}",         "ok_prep": ["menurut"] },

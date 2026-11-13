@@ -23058,3 +23058,69 @@
   "source_sentence": "[pengguna 2026-11-09] pemilik proyek (penutur bahasa Bali): \"just 'canang' is interchangeably used to refer as 'canang sari'\". [corpus L3374, Mesaji / Memunjung] Adapun upakara atau \"bebantenan\" yang dipersiapkan tidaklah begitu sama di tiap daerah, namun pada dasarnya upakara tersebut terdiri dari : punjung (nasi) lengkap dengan lauknya, ayaban, peras soda dan canang.",
   "sentence_id": 902017
 }
+
+{
+  "id": "f902018_sembah_bha_yajamana",
+  "text": "sembah bhakti dilakukan oleh yajamana.",
+  "subject_id": "sembah_bhakti",
+  "predicate": "DILAKUKAN_OLEH",
+  "object_id": "yajamana",
+  "confidence": "HIGH",
+  "source_sentence": "[corpus L1167] Kepada mendiang, diayabkanlah sesajen antara lain: diuskamaligi, nasi angkeb, saji dan lain-lain. Ini diiringi dengan sembah bhakti keluarga. [yajamana = the family holding the ceremony: corpus L2287 'si Yajamana alias sang mayadnya sekeluarga'; ngaben's MELIBATKAN row sid 901984 'yajamana, yaitu keluarga yang punya upacara']",
+  "sentence_id": 902018
+}
+
+{
+  "id": "f902019_upacara_me_yajamana",
+  "text": "upacara mesulub dilakukan oleh yajamana.",
+  "subject_id": "upacara_mesulub",
+  "predicate": "DILAKUKAN_OLEH",
+  "object_id": "yajamana",
+  "confidence": "HIGH",
+  "source_sentence": "[corpus L3341] Di dalam \"Upacara Mesulub\", semua keluarga dari yang meninggal, khususnya yang patut menyembah ..., mereka akan berjalan membungkuk di bawah Pepaga/Asagan. [yajamana = the family holding the ceremony: corpus L2287 'si Yajamana alias sang mayadnya sekeluarga'; ngaben's MELIBATKAN row sid 901984 'yajamana, yaitu keluarga yang punya upacara']",
+  "sentence_id": 902019
+}
+
+{
+  "id": "f902020_muspa_pami_yajamana",
+  "text": "muspa pamitan dilakukan oleh yajamana.",
+  "subject_id": "muspa_pamitan",
+  "predicate": "DILAKUKAN_OLEH",
+  "object_id": "yajamana",
+  "confidence": "HIGH",
+  "source_sentence": "[corpus L1209] Selanjutnya, bersama keluarga atau anak keturunan selaku wakilnya, mendiang melakumuspa pamitan kepada Sang Hyang Prajapati, Pura Dalem dan Sedahan Setra. [yajamana = the family holding the ceremony: corpus L2287 'si Yajamana alias sang mayadnya sekeluarga'; ngaben's MELIBATKAN row sid 901984 'yajamana, yaitu keluarga yang punya upacara']",
+  "sentence_id": 902020
+}
+
+{
+  "id": "f902021_lancingan_yajamana",
+  "text": "lancingan dijunjung oleh yajamana.",
+  "subject_id": "lancingan",
+  "predicate": "DIJUNJUNG_OLEH",
+  "object_id": "yajamana",
+  "confidence": "HIGH",
+  "source_sentence": "[corpus L1810] Kajang yang hanya beberapa asta panjangnya, diberilah sambungan (\"lancingan\") kain putih dua atau 30 meter lagi, hingga puluhan anggota keluarga dapat berbaris menjunjungnya keluar dari rumah menuju tempat Bade, selaku tanda hormat baktinya kepada mendiang. [yajamana = the family holding the ceremony: corpus L2287 'si Yajamana alias sang mayadnya sekeluarga'; ngaben's MELIBATKAN row sid 901984 'yajamana, yaitu keluarga yang punya upacara']",
+  "sentence_id": 902021
+}
+
+{
+  "id": "f902022_tirtha_pen_yajamana",
+  "text": "tirtha penembak dihaturkan oleh yajamana.",
+  "subject_id": "tirtha_penembak",
+  "predicate": "DIHATURKAN_OLEH",
+  "object_id": "yajamana",
+  "confidence": "HIGH",
+  "source_sentence": "[corpus L3699] Tirtha Penembak ini adalah merupakan Tirtha yang wajib dipersembahkan oleh \"Sang Yajamana\" atau orang yang memiliki upacara tersebut. [yajamana = the family holding the ceremony: corpus L2287 'si Yajamana alias sang mayadnya sekeluarga'; ngaben's MELIBATKAN row sid 901984 'yajamana, yaitu keluarga yang punya upacara']",
+  "sentence_id": 902022
+}
+
+{
+  "id": "f902023_punia_yajamana",
+  "text": "punia dihaturkan oleh yajamana.",
+  "subject_id": "punia",
+  "predicate": "DIHATURKAN_OLEH",
+  "object_id": "yajamana",
+  "confidence": "HIGH",
+  "source_sentence": "[corpus L2317] Terutama, inilah pula saatnya bagi sang mayadnya menghaturkan punia ... [L1060] Setiap orang yang melaksanakan yadnya serta menggunakan panglokapalasrayan nya Pendeta, hendaklah menghaturkan punia sesuai dengan jenis yadnya (nista, madya, utama). [yajamana = the family holding the ceremony: corpus L2287 'si Yajamana alias sang mayadnya sekeluarga'; ngaben's MELIBATKAN row sid 901984 'yajamana, yaitu keluarga yang punya upacara']",
+  "sentence_id": 902023
+}

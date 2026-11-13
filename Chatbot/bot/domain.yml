@@ -51,6 +51,7 @@ actions:
   - action_out_of_scope
   - action_sapa
   - action_pamit
+  - action_bot_challenge
 
 responses:
   utter_sapa:
