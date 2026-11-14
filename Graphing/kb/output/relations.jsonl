@@ -31464,3 +31464,93 @@
     "context_sentence": "[corpus L2317] Terutama, inilah pula saatnya bagi sang mayadnya menghaturkan punia ... [L1060] Setiap orang yang melaksanakan yadnya serta menggunakan panglokapalasrayan nya Pendeta, hendaklah menghaturkan punia sesuai dengan jenis yadnya (nista, madya, utama). [yajamana = the family holding the ceremony: corpus L2287 'si Yajamana alias sang mayadnya sekeluarga'; ngaben's MELIBATKAN row sid 901984 'yajamana, yaitu keluarga yang punya upacara']"
   }
 }
+
+{
+  "subject_id": "lembu",
+  "subject_name": "lembu",
+  "predicate": "DIGUNAKAN_OLEH",
+  "object_id": "sulinggih",
+  "object_name": "sulinggih",
+  "confidence": "HIGH",
+  "nl": "lembu digunakan oleh sulinggih",
+  "raw_relation": "DIGUNAKAN_OLEH",
+  "provenance": {
+    "sentence_id": 902024,
+    "context_sentence": "[corpus L43] Lembu (Putih/Hitam): Putih untuk Pendeta/Sulinggih; Hitam untuk kasta Brahmana Welaka dan Ksatria."
+  }
+}
+
+{
+  "subject_id": "lembu",
+  "subject_name": "lembu",
+  "predicate": "DIGUNAKAN_OLEH",
+  "object_id": "brahmana",
+  "object_name": "brahmana",
+  "confidence": "HIGH",
+  "nl": "lembu digunakan oleh brahmana",
+  "raw_relation": "DIGUNAKAN_OLEH",
+  "provenance": {
+    "sentence_id": 902025,
+    "context_sentence": "[corpus L43] Lembu (Putih/Hitam): Putih untuk Pendeta/Sulinggih; Hitam untuk kasta Brahmana Welaka dan Ksatria. [Brahmana Welaka = Brahmana yang bukan pendeta]"
+  }
+}
+
+{
+  "subject_id": "lembu",
+  "subject_name": "lembu",
+  "predicate": "DIGUNAKAN_OLEH",
+  "object_id": "ksatria",
+  "object_name": "ksatria",
+  "confidence": "HIGH",
+  "nl": "lembu digunakan oleh ksatria",
+  "raw_relation": "DIGUNAKAN_OLEH",
+  "provenance": {
+    "sentence_id": 902026,
+    "context_sentence": "[corpus L43] Lembu (Putih/Hitam): Putih untuk Pendeta/Sulinggih; Hitam untuk kasta Brahmana Welaka dan Ksatria."
+  }
+}
+
+{
+  "subject_id": "singa",
+  "subject_name": "singa",
+  "predicate": "DIGUNAKAN_OLEH",
+  "object_id": "pasek",
+  "object_name": "pasek",
+  "confidence": "HIGH",
+  "nl": "singa digunakan oleh pasek",
+  "raw_relation": "DIGUNAKAN_OLEH",
+  "provenance": {
+    "sentence_id": 902027,
+    "context_sentence": "[corpus L44] Singa: Umumnya digunakan oleh Raja-raja atau warga Pasek."
+  }
+}
+
+{
+  "subject_id": "gedarba",
+  "subject_name": "gedarba",
+  "predicate": "DIGUNAKAN_OLEH",
+  "object_id": "wangsa_sudra_jadma",
+  "object_name": "wangsa sudra jadma",
+  "confidence": "HIGH",
+  "nl": "gedarba digunakan oleh wangsa sudra jadma",
+  "raw_relation": "DIGUNAKAN_OLEH",
+  "provenance": {
+    "sentence_id": 902028,
+    "context_sentence": "[corpus L45] Gedarba: Berbentuk menyerupai beruang berwarna hitam, digunakan oleh wangsa sudra jadma (masyarakat umum)."
+  }
+}
+
+{
+  "subject_id": "gajah_mina",
+  "subject_name": "gajah mina",
+  "predicate": "DIGUNAKAN_OLEH",
+  "object_id": "wesia",
+  "object_name": "wesia",
+  "confidence": "HIGH",
+  "nl": "gajah mina digunakan oleh wesia",
+  "raw_relation": "DIGUNAKAN_OLEH",
+  "provenance": {
+    "sentence_id": 902029,
+    "context_sentence": "[corpus L46] Gajah Mina: Kombinasi gajah dan ikan, digunakan oleh golongan Wesia."
+  }
+}

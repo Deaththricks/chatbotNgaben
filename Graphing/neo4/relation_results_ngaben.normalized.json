@@ -35763,5 +35763,77 @@
     "object_label": "STRUKTUR_SOSIAL_ADAT",
     "object_type": "ENTITY",
     "source": "manual_addition+family_role_2026_11_12"
+  },
+  {
+    "sentence_id": 902024,
+    "context_sentence": "[corpus L43] Lembu (Putih/Hitam): Putih untuk Pendeta/Sulinggih; Hitam untuk kasta Brahmana Welaka dan Ksatria.",
+    "subject": "lembu",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIGUNAKAN_OLEH",
+    "raw_relation": "DIGUNAKAN_OLEH",
+    "object": "sulinggih",
+    "object_label": "ENTITAS_KEAGAMAAN",
+    "object_type": "ENTITY",
+    "source": "manual_addition+petulangan_wangsa_2026_11_14"
+  },
+  {
+    "sentence_id": 902025,
+    "context_sentence": "[corpus L43] Lembu (Putih/Hitam): Putih untuk Pendeta/Sulinggih; Hitam untuk kasta Brahmana Welaka dan Ksatria. [Brahmana Welaka = Brahmana yang bukan pendeta]",
+    "subject": "lembu",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIGUNAKAN_OLEH",
+    "raw_relation": "DIGUNAKAN_OLEH",
+    "object": "brahmana",
+    "object_label": "KASTA_SOSIAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+petulangan_wangsa_2026_11_14"
+  },
+  {
+    "sentence_id": 902026,
+    "context_sentence": "[corpus L43] Lembu (Putih/Hitam): Putih untuk Pendeta/Sulinggih; Hitam untuk kasta Brahmana Welaka dan Ksatria.",
+    "subject": "lembu",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIGUNAKAN_OLEH",
+    "raw_relation": "DIGUNAKAN_OLEH",
+    "object": "ksatria",
+    "object_label": "KASTA_SOSIAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+petulangan_wangsa_2026_11_14"
+  },
+  {
+    "sentence_id": 902027,
+    "context_sentence": "[corpus L44] Singa: Umumnya digunakan oleh Raja-raja atau warga Pasek.",
+    "subject": "singa",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIGUNAKAN_OLEH",
+    "raw_relation": "DIGUNAKAN_OLEH",
+    "object": "pasek",
+    "object_label": "STRUKTUR_SOSIAL_ADAT",
+    "object_type": "ENTITY",
+    "source": "manual_addition+petulangan_wangsa_2026_11_14"
+  },
+  {
+    "sentence_id": 902028,
+    "context_sentence": "[corpus L45] Gedarba: Berbentuk menyerupai beruang berwarna hitam, digunakan oleh wangsa sudra jadma (masyarakat umum).",
+    "subject": "gedarba",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIGUNAKAN_OLEH",
+    "raw_relation": "DIGUNAKAN_OLEH",
+    "object": "wangsa sudra jadma",
+    "object_label": "KASTA_SOSIAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+petulangan_wangsa_2026_11_14"
+  },
+  {
+    "sentence_id": 902029,
+    "context_sentence": "[corpus L46] Gajah Mina: Kombinasi gajah dan ikan, digunakan oleh golongan Wesia.",
+    "subject": "gajah mina",
+    "subject_label": "SARANA_RITUAL",
+    "relation": "DIGUNAKAN_OLEH",
+    "raw_relation": "DIGUNAKAN_OLEH",
+    "object": "wesia",
+    "object_label": "KASTA_SOSIAL",
+    "object_type": "ENTITY",
+    "source": "manual_addition+petulangan_wangsa_2026_11_14"
   }
 ]
