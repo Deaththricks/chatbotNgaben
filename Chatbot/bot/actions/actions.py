@@ -11586,14 +11586,30 @@ _WHICH_RITE_Q_RE = re.compile(r"\b(?:digunakan|dipakai|dihaturkan|dipersembahkan
 _KINDS_LIST_Q_RE = re.compile(r"\bapa\s+saja\b(?!\s+yang\s+(?:di|ber|ter|me)\w+)", re.I)
 
 
+def _without_own_names(user_msg: Text, mentioned: list) -> str:
+    """The message with the names of its terms (the _mentioned_terms matches: each one's name and aliases) marked " · ",
+    longest first: a question's shapes and aspect words are read without them. "pura kahyangan tiga" holds a number,
+    and "tingkatan bade" a kinds word: "apa yang menentukan tingkatan bade?" got "Maaf, informasi tersebut belum
+    tersedia" from the kinds template once "tingkatan" asked kinds (user's live session, 2026-11-18). Not without the
+    surface the scan matched, which can take the asked tier along ("bade tingkat 9")."""
+    names = {n for m, _ in mentioned for n in [m.name] + list(m.entity.get("aliases") or []) if n}
+    rest = user_msg
+    for n in sorted(names, key=len, reverse=True):
+        # a mark, not a space: "pada saat ngaben apa" read as "saat apa", a time question, and "pakaian yang digunakan
+        # pada saat ngaben apa" got "Ngaben dilakukan sebelum atma wedana ..." (conersation.md section IV, 2026-11-03)
+        rest = re.sub(rf"(?<![\w-]){re.escape(n)}(?![\w-])", " · ", rest, flags=re.I)
+    return rest
+
+
 def _inferred_template_intent(user_msg: Text) -> Optional[str]:
     """The simple intent a message's own words name -- for a turn NLU read as tanya_kompleks or nlu_fallback: one
     aspect family (the stages with their how), a word-meaning question, or a what-is shape with no aspect. None
     otherwise. Each retrain misreads a different ~2 of 83 probes, and a simple question read as complex went to Qwen
-    ("Pedangal disebut juga apa", "apa tahapan setelah atma wedana" on the 2026-10-27 retrain)."""
+    ("Pedangal disebut juga apa", "apa tahapan setelah atma wedana" on the 2026-10-27 retrain). Its aspect words are
+    read without the names of its terms (_without_own_names)."""
     if _WORD_MEANING_RE.search(user_msg):
         return "tanya_asal_kata"
-    families = set(_aspect_families(user_msg))
+    families = set(_aspect_families(_without_own_names(user_msg, _mentioned_terms(user_msg, get_resolver())[0])))
     if families == {"tahapan", "cara"}:
         families = {"tahapan"}
     if len(families) == 1:
@@ -11783,15 +11799,7 @@ def _template_route(user_msg: Text, intent: Optional[Text], current_entity: Opti
     mentioned, leftover = _mentioned_terms(user_msg, resolver)
     if len(mentioned) > 1:
         return None, "two or more terms"
-    # the shapes are read without the term's own names: "pura kahyangan tiga" holds a number. Not
-    # without the surface the scan matched, which can take the asked tier along ("bade tingkat 9")
-    rest = user_msg
-    for m, _ in mentioned:
-        for n in sorted([m.name] + list(m.entity.get("aliases") or []), key=len, reverse=True):
-            # a mark, not a space: "pada saat ngaben apa" read as "saat apa", a time question, and "pakaian yang
-            # digunakan pada saat ngaben apa" got "Ngaben dilakukan sebelum atma wedana ..." (conersation.md
-            # section IV, 2026-11-03)
-            rest = re.sub(rf"(?<![\w-]){re.escape(n)}(?![\w-])", " · ", rest, flags=re.I)
+    rest = _without_own_names(user_msg, mentioned)
     # "apakah sekah", "apakah itu lembu": the old what-is form, not a yes/no question (it went to the LLM, then with
     # a reasoning note of ~600 tokens, for the definition; LLM comparison 2026-10-20)
     if _whether_question(rest) and not (mentioned and re.fullmatch(r"\W*apakah(?:\s+itu)?\W*(?:itu\W*)?", rest, re.I)):
@@ -13257,8 +13265,9 @@ def _template_kinds(family: str, enriched: List[Dict[str, Any]], user_msg: Text)
     kinds = [k for k in dict.fromkeys(kinds) if k in content.entity_name]
     if not kinds:
         # "apa saja sasih yang berbadankan kosong?" names no "jenis": its definition holds the list
-        # (sasih paruwak tahuk), and "jenis ... belum tercatat" answered a question nobody asked
-        if not _KINDS_Q_RE.search(user_msg):
+        # (sasih paruwak tahuk), and "jenis ... belum tercatat" answered a question nobody asked. Nor does a term's own
+        # name: "apa saja tingkatan bade?" asks for what its card lists (_without_own_names)
+        if not _KINDS_Q_RE.search(_without_own_names(user_msg, _mentioned_terms(user_msg, get_resolver())[0])):
             return _deterministic_answer([dict(e, aspect_facts=[])]) or None
         # a definition that divides it says its kinds: "Maaf, jenis yadnya belum tercatat" stood above "Yadnya
         # dibagi menjadi lima (Panca Yadnya): Dewa Yadnya, ..." (sheet Failed, 2026-10-27)
